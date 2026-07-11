@@ -1,4 +1,10 @@
 {
+<<<<<<< HEAD
   "src/Models/akuity.io": "1.1.0",
   "src/Models/aquasecurity.github.io": "1.1.0"
 }
+=======
+  "src/akuity.io": "1.1.1",
+  "src/aquasecurity.github.io": "1.1.1"
+}
+>>>>>>> 6defdcf4fa523dc431aba51b9f754719d1ce0854
