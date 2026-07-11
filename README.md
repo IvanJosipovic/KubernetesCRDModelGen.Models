@@ -1,0 +1,2 @@
+# KubernetesCRDModelGen.Models
+

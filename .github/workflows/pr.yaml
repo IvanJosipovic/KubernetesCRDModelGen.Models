@@ -1,0 +1,13 @@
+name: PR Build & Test
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  build-test:
+    permissions:
+      contents: read
+    uses: IvanJosipovic/templates/.github/workflows/csharp-build-test.yaml@main
+    with:
+      run_tests: false
