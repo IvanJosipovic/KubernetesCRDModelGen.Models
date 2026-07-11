@@ -1,0 +1,52 @@
+name: publish-nuget
+
+on:
+  push:
+    tags:
+      - "*-v*"
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v5
+        with:
+          global-json-file: global.json
+
+      - name: Resolve package from tag
+        id: package
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          tag="${GITHUB_REF_NAME}"
+          component="${tag%-v*}"
+
+          project="$(find "src/${component}" -name "*.csproj" | head -n 1)"
+
+          echo "component=${component}" >> "$GITHUB_OUTPUT"
+
+          test -f "$project"
+
+      - name: Pack
+        run: |
+          dotnet pack "${{ steps.package.outputs.project }}" \
+            --configuration Release \
+            --output artifacts \
+            -p:ContinuousIntegrationBuild=true \
+            -p:Version=${{ steps.package.outputs.version }} \
+            -p:PackageVersion=${{ steps.package.outputs.version }}
+
+      # - name: Push to NuGet
+      #   run: |
+      #     dotnet nuget push "artifacts/*.nupkg" \
+      #       --api-key "${{ secrets.NUGET_API_KEY }}" \
+      #       --source "https://api.nuget.org/v3/index.json" \
+      #       --skip-duplicate
