@@ -1,9 +1,9 @@
 <Solution>
-  <Folder Name="/src/" />
-  <Folder Name="/src/akuity.io/">
-    <Project Path="src/akuity.io/KubernetesCRDModelGen.Models.akuity.io.csproj" />
+  <Folder Name="/src/Models/" />
+  <Folder Name="/src/Models/akuity.io/">
+    <Project Path="src/Models/akuity.io/KubernetesCRDModelGen.Models.akuity.io.csproj" />
   </Folder>
-  <Folder Name="/src/aquasecurity.github.io/">
-    <Project Path="src/aquasecurity.github.io/KubernetesCRDModelGen.Models.aquasecurity.github.io.csproj" />
+  <Folder Name="/src/Models/aquasecurity.github.io/">
+    <Project Path="src/Models/aquasecurity.github.io/KubernetesCRDModelGen.Models.aquasecurity.github.io.csproj" />
   </Folder>
 </Solution>

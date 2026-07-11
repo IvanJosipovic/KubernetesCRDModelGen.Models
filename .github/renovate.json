@@ -27,7 +27,7 @@
       "automerge": false,
       "semanticCommitType": "fix",
       "matchFileNames": [
-        "src/**"
+        "src/Models/**"
       ]
     },
     {

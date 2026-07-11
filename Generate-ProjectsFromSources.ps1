@@ -1,7 +1,7 @@
 [CmdletBinding()]
 param(
     [string]$SourcesFile = (Join-Path $PSScriptRoot 'sources.json'),
-    [string]$SrcDirectory = (Join-Path $PSScriptRoot 'src'),
+    [string]$SrcDirectory = (Join-Path $PSScriptRoot 'src\Models'),
     [string]$SolutionFile = (Join-Path $PSScriptRoot 'KubernetesCRDModelGen.Models.slnx'),
     [string]$ReleasePleaseConfigFile = (Join-Path $PSScriptRoot 'release-please-config.json'),
     [string]$ReleasePleaseManifestFile = (Join-Path $PSScriptRoot '.release-please-manifest.json')
@@ -51,20 +51,28 @@ if (-not (Test-Path -LiteralPath $SrcDirectory)) {
     New-Item -ItemType Directory -Path $SrcDirectory | Out-Null
 }
 
-$releasePleaseConfig = $null
-$releasePleaseManifest = $null
-$releasePleaseConfigChanged = $false
-$releasePleaseManifestChanged = $false
-
+# Do not merge existing release-please files. Preserve only an existing '$schema' if present,
+# but always regenerate and overwrite the config and manifest from sources.
+$releasePleaseSchema = $null
 if (Test-Path -LiteralPath $ReleasePleaseConfigFile) {
-    $releasePleaseConfig = Get-Content -LiteralPath $ReleasePleaseConfigFile -Raw | ConvertFrom-Json -AsHashtable
-    if (-not $releasePleaseConfig.ContainsKey('packages')) {
-        $releasePleaseConfig['packages'] = [ordered]@{}
+    $existing = Get-Content -LiteralPath $ReleasePleaseConfigFile -Raw | ConvertFrom-Json -AsHashtable
+    if ($existing -ne $null -and $existing.ContainsKey('$schema')) {
+        $releasePleaseSchema = $existing['$schema']
     }
 }
 
+$releasePleaseConfig = [ordered]@{
+    '$schema' = $releasePleaseSchema
+    'packages' = [ordered]@{}
+}
+
+$releasePleaseManifest = $null
 if (Test-Path -LiteralPath $ReleasePleaseManifestFile) {
     $releasePleaseManifest = Get-Content -LiteralPath $ReleasePleaseManifestFile -Raw | ConvertFrom-Json -AsHashtable
+}
+
+if ($releasePleaseManifest -eq $null) {
+    $releasePleaseManifest = [ordered]@{}
 }
 
 $sources = Get-Content -LiteralPath $SourcesFile -Raw | ConvertFrom-Json
@@ -95,7 +103,7 @@ foreach ($source in $sortedSources) {
     $groupDirectory = Join-Path $SrcDirectory $group
     $projectName = "KubernetesCRDModelGen.Models.$group"
     $projectFile = Join-Path $groupDirectory "$projectName.csproj"
-    $releasePleasePath = "src/$group"
+    $releasePleasePath = "src/Models/$group"
 
     if (-not (Test-Path -LiteralPath $groupDirectory)) {
         New-Item -ItemType Directory -Path $groupDirectory | Out-Null
@@ -106,29 +114,48 @@ foreach ($source in $sortedSources) {
 
     <PropertyGroup>
         <PackageId>{0}</PackageId>
-        <Version>1.0.0</Version>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="KubernetesClient" Version="19.0.2" />
+        <PackageReference Include="KubernetesClient" Version="19.0.2"/>
         <PackageReference Include="KubernetesCRDModelGen.SourceGenerator" Version="1.6.0">
             <PrivateAssets>all</PrivateAssets>
         </PackageReference>
     </ItemGroup>
 
     <ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
-        <PackageReference Include="System.Text.Json" Version="9.0.*" />
+        <PackageReference Include="System.Text.Json" Version="9.0.*"/>
     </ItemGroup>
 
 </Project>
 '@ -f $projectName
 
-    if (Test-Path -LiteralPath $projectFile) {
-        Write-Host "Skipped existing $projectFile"
+    # Always write/overwrite the project file on each run, but do not overwrite Version.Build.props
+    $projectExisted = Test-Path -LiteralPath $projectFile
+    Set-Content -LiteralPath $projectFile -Value $projectContent -NoNewline
+    if ($projectExisted) {
+        Write-Host "Overwrote $projectFile"
     }
     else {
-        Set-Content -LiteralPath $projectFile -Value $projectContent -NoNewline
         Write-Host "Wrote $projectFile"
+    }
+
+    # Also write Directory.Build.props containing the Version property if it doesn't exist.
+    $propsFile = Join-Path $groupDirectory 'Directory.Build.props'
+    $propsContent = @'
+<Project>
+    <PropertyGroup>
+        <Version>1.0.0</Version>
+    </PropertyGroup>
+</Project>
+'@
+
+    if (Test-Path -LiteralPath $propsFile) {
+        Write-Host "Left existing $propsFile"
+    }
+    else {
+        Set-Content -LiteralPath $propsFile -Value $propsContent -NoNewline
+        Write-Host "Wrote $propsFile"
     }
 
     if (Test-Path -LiteralPath $SolutionFile) {
@@ -147,63 +174,53 @@ foreach ($source in $sortedSources) {
         }
     }
 
-    if ($null -ne $releasePleaseConfig) {
-        $releasePleaseConfig['packages'][$releasePleasePath] = [ordered]@{
-            'release-type' = 'simple'
-            'component' = $group
-            'extra-files' = @(
-                [ordered]@{
-                    'type' = 'xml'
-                    'path' = "src/$($group)/$($projectName).csproj"
-                    'xpath' = '//Project/PropertyGroup/Version'
-                    'glob' = $true
-                }
-            )
-        }
-        $releasePleaseConfigChanged = $true
-        Write-Host "Added $releasePleasePath to $ReleasePleaseConfigFile"
+    $releasePleaseConfig['packages'][$releasePleasePath] = [ordered]@{
+        'release-type' = 'simple'
+        'component' = $group
+        'extra-files' = @(
+            [ordered]@{
+                'type' = 'xml'
+                'path' = "src/Models/$($group)/Directory.Build.props"
+                'xpath' = '//Project/PropertyGroup/Version'
+            }
+        )
     }
 
-    if ($null -ne $releasePleaseManifest) {
-        if (-not $releasePleaseManifest.ContainsKey($releasePleasePath)) {
-            $releasePleaseManifest[$releasePleasePath] = '1.0.0'
-            $releasePleaseManifestChanged = $true
-            Write-Host "Added $releasePleasePath to $ReleasePleaseManifestFile"
-        }
-        else {
-            Write-Host "Already in release-please manifest $releasePleasePath"
-        }
+    Write-Host "Added $releasePleasePath to $ReleasePleaseConfigFile"
+
+    if (-not $releasePleaseManifest.ContainsKey($releasePleasePath)) {
+        $releasePleaseManifest[$releasePleasePath] = '1.0.0'
+        Write-Host "Added $releasePleasePath to $ReleasePleaseManifestFile"
+    }
+    else {
+        Write-Host "Already in release-please manifest $releasePleasePath"
     }
 }
 
-if ($null -ne $releasePleaseConfig) {
-    $sortedPackages = [ordered]@{}
-    foreach ($packagePath in ($releasePleaseConfig['packages'].Keys | Sort-Object)) {
-        $sortedPackages[$packagePath] = $releasePleaseConfig['packages'][$packagePath]
-    }
-
-    $releasePleaseConfig = [ordered]@{
-        '$schema' = $releasePleaseConfig['$schema']
-        'packages' = $sortedPackages
-    }
-
-    if (Set-JsonFileIfChanged -Path $ReleasePleaseConfigFile -InputObject $releasePleaseConfig) {
-        $releasePleaseConfigChanged = $true
-        Write-Host "Sorted and wrote $ReleasePleaseConfigFile"
-    }
+# Always overwrite release-please config file (do not merge)
+$sortedPackages = [ordered]@{}
+foreach ($packagePath in ($releasePleaseConfig['packages'].Keys | Sort-Object)) {
+    $sortedPackages[$packagePath] = $releasePleaseConfig['packages'][$packagePath]
 }
 
-if ($null -ne $releasePleaseManifest) {
-    $sortedManifest = [ordered]@{}
-    foreach ($manifestPath in ($releasePleaseManifest.Keys | Sort-Object)) {
-        $sortedManifest[$manifestPath] = $releasePleaseManifest[$manifestPath]
-    }
-
-    if (Set-JsonFileIfChanged -Path $ReleasePleaseManifestFile -InputObject $sortedManifest) {
-        $releasePleaseManifestChanged = $true
-        Write-Host "Sorted and wrote $ReleasePleaseManifestFile"
-    }
+$releasePleaseConfig = [ordered]@{
+    '$schema' = $releasePleaseConfig['$schema']
+    'packages' = $sortedPackages
 }
+
+$releasePleaseJson = ConvertTo-JsonContent -InputObject $releasePleaseConfig
+Set-Content -LiteralPath $ReleasePleaseConfigFile -Value $releasePleaseJson -NoNewline
+Write-Host "Wrote $ReleasePleaseConfigFile (overwritten)"
+
+# Always overwrite release-please manifest file (do not merge)
+$sortedManifest = [ordered]@{}
+foreach ($manifestPath in ($releasePleaseManifest.Keys | Sort-Object)) {
+    $sortedManifest[$manifestPath] = $releasePleaseManifest[$manifestPath]
+}
+
+$releasePleaseManifestJson = ConvertTo-JsonContent -InputObject $sortedManifest
+Set-Content -LiteralPath $ReleasePleaseManifestFile -Value $releasePleaseManifestJson -NoNewline
+Write-Host "Wrote $ReleasePleaseManifestFile (overwritten)"
 
 if (Set-JsonFileIfChanged -Path $SourcesFile -InputObject $sortedSources) {
     Write-Host "Sorted and wrote $SourcesFile"

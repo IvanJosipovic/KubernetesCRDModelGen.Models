@@ -1,27 +1,25 @@
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
   "packages": {
-    "src/akuity.io": {
+    "src/Models/akuity.io": {
       "release-type": "simple",
       "component": "akuity.io",
       "extra-files": [
         {
           "type": "xml",
-          "path": "src/akuity.io/KubernetesCRDModelGen.Models.akuity.io.csproj",
-          "xpath": "//Project/PropertyGroup/Version",
-          "glob": true
+          "path": "src/Models/akuity.io/Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
         }
       ]
     },
-    "src/aquasecurity.github.io": {
+    "src/Models/aquasecurity.github.io": {
       "release-type": "simple",
       "component": "aquasecurity.github.io",
       "extra-files": [
         {
           "type": "xml",
-          "path": "src/aquasecurity.github.io/KubernetesCRDModelGen.Models.aquasecurity.github.io.csproj",
-          "xpath": "//Project/PropertyGroup/Version",
-          "glob": true
+          "path": "src/Models/aquasecurity.github.io/Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
         }
       ]
     }
