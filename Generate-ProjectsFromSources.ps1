@@ -148,26 +148,20 @@ foreach ($source in $sortedSources) {
     }
 
     if ($null -ne $releasePleaseConfig) {
-        if (-not $releasePleaseConfig['packages'].ContainsKey($releasePleasePath)) {
-            $releasePleaseConfig['packages'][$releasePleasePath] = [ordered]@{
-                'release-type' = 'simple'
-                'component' = $group
-                'changelog-path' = 'CHANGELOG.md'
-                'extra-files' = @(
-                    [ordered]@{
-                        'type' = 'xml'
-                        'path' = '*.csproj'
-                        'xpath' = '/Project/PropertyGroup/Version'
-                        'glob' = $true
-                    }
-                )
-            }
-            $releasePleaseConfigChanged = $true
-            Write-Host "Added $releasePleasePath to $ReleasePleaseConfigFile"
+        $releasePleaseConfig['packages'][$releasePleasePath] = [ordered]@{
+            'release-type' = 'simple'
+            'component' = $group
+            'extra-files' = @(
+                [ordered]@{
+                    'type' = 'xml'
+                    'path' = "src/$($group)/$($projectName).csproj"
+                    'xpath' = '//Project/PropertyGroup/Version'
+                    'glob' = $true
+                }
+            )
         }
-        else {
-            Write-Host "Already in release-please config $releasePleasePath"
-        }
+        $releasePleaseConfigChanged = $true
+        Write-Host "Added $releasePleasePath to $ReleasePleaseConfigFile"
     }
 
     if ($null -ne $releasePleaseManifest) {

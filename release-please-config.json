@@ -4,12 +4,11 @@
     "src/akuity.io": {
       "release-type": "simple",
       "component": "akuity.io",
-      "changelog-path": "CHANGELOG.md",
       "extra-files": [
         {
           "type": "xml",
-          "path": "*.csproj",
-          "xpath": "/Project/PropertyGroup/Version",
+          "path": "src/akuity.io/KubernetesCRDModelGen.Models.akuity.io.csproj",
+          "xpath": "//Project/PropertyGroup/Version",
           "glob": true
         }
       ]
@@ -17,12 +16,11 @@
     "src/aquasecurity.github.io": {
       "release-type": "simple",
       "component": "aquasecurity.github.io",
-      "changelog-path": "CHANGELOG.md",
       "extra-files": [
         {
           "type": "xml",
-          "path": "*.csproj",
-          "xpath": "/Project/PropertyGroup/Version",
+          "path": "src/aquasecurity.github.io/KubernetesCRDModelGen.Models.aquasecurity.github.io.csproj",
+          "xpath": "//Project/PropertyGroup/Version",
           "glob": true
         }
       ]

@@ -41,8 +41,6 @@ jobs:
             --configuration Release \
             --output artifacts \
             -p:ContinuousIntegrationBuild=true \
-            -p:Version=${{ steps.package.outputs.version }} \
-            -p:PackageVersion=${{ steps.package.outputs.version }}
 
       # - name: Push to NuGet
       #   run: |
