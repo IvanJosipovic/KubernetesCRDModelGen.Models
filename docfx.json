@@ -5,10 +5,45 @@
       "src": [
         {
           "src": "src/KubernetesCRDModelGen.Sync",
-          "files": ["/bin/Release/net10.0/KubernetesCRDModelGen.Sync.dll"]
+          "files": [
+            "/bin/Release/net10.0/KubernetesCRDModelGen.Sync.dll"
+          ]
         }
       ],
       "dest": "api/KubernetesCRDModelGen.Sync/"
+    },
+    {
+      "src": [
+        {
+          "src": "src/Models/akuity.io",
+          "files": [
+            "/bin/Release/net10.0/KubernetesCRDModelGen.Models.akuity.io.dll"
+          ]
+        }
+      ],
+      "dest": "api/KubernetesCRDModelGen.akuity.io/"
+    },
+    {
+      "src": [
+        {
+          "src": "src/Models/aquasecurity.github.io",
+          "files": [
+            "/bin/Release/net10.0/KubernetesCRDModelGen.Models.aquasecurity.github.io.dll"
+          ]
+        }
+      ],
+      "dest": "api/KubernetesCRDModelGen.aquasecurity.github.io/"
+    },
+    {
+      "src": [
+        {
+          "src": "src/Models/k8s.aws",
+          "files": [
+            "/bin/Release/net10.0/KubernetesCRDModelGen.Models.k8s.aws.dll"
+          ]
+        }
+      ],
+      "dest": "api/KubernetesCRDModelGen.k8s.aws/"
     }
   ],
   "build": {
