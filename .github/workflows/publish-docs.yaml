@@ -1,3 +1,5 @@
+name: Publish Docs
+
 on:
   push:
     branches:
@@ -14,6 +16,7 @@ concurrency:
 
 jobs:
   publish-docs:
+    name: Publish Docs
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

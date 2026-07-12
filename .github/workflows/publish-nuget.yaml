@@ -1,4 +1,4 @@
-name: publish-nuget
+name: Publish NuGet
 
 on:
   push:
@@ -6,10 +6,12 @@ on:
       - "*-v*"
 
 permissions:
+  id-token: write
   contents: read
 
 jobs:
   publish:
+    name: Publish NuGet
     environment:
       name: production
     runs-on: ubuntu-latest

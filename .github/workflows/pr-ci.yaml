@@ -1,4 +1,4 @@
-name: PR Build & Test
+name: PR CI
 
 on:
   pull_request:
@@ -6,6 +6,7 @@ on:
 
 jobs:
   build-test:
+    name: Build & Test
     permissions:
       contents: read
     uses: IvanJosipovic/templates/.github/workflows/csharp-build-test.yaml@main
