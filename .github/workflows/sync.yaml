@@ -1,11 +1,11 @@
-name: Update CRDs
+name: Sync
 
 on:
   workflow_dispatch
 
 jobs:
-  sync-crds:
-    name: Update CRDs
+  sync:
+    name: Sync
     runs-on: ubuntu-latest
     steps:
 
@@ -30,7 +30,7 @@ jobs:
         shell: pwsh
         run: |
           foreach ($Dir in Get-ChildItem -Directory -Path src/Models) {
-            $YamlFiles = Get-ChildItem -Path $Dir.FullName + "/crds/" -Filter *.yaml -File -ErrorAction SilentlyContinue
+            $YamlFiles = Get-ChildItem -Path $($Dir.FullName + "/crds/") -Filter *.yaml -File -ErrorAction SilentlyContinue
 
             if ($YamlFiles -eq $null -or $YamlFiles.Count -eq 0) {
               throw "No .yaml file found in directory: $($Dir.FullName)"
@@ -44,7 +44,7 @@ jobs:
         shell: pwsh
         run: |
           foreach ($Dir in Get-ChildItem -Directory -Path src/Models) {
-            $CsFiles = Get-ChildItem -Path $Dir.FullName + "/Generated/" -Filter *.cs -File -Recurse -ErrorAction SilentlyContinue
+            $CsFiles = Get-ChildItem -Path $($Dir.FullName + "/Generated/") -Filter *.cs -File -Recurse -ErrorAction SilentlyContinue
 
             if ($CsFiles -eq $null -or $CsFiles.Count -eq 0) {
               throw "No .cs file found in directory: $($Dir.FullName)"
