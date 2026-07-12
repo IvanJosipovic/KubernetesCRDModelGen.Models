@@ -221,7 +221,13 @@ internal class ProjectGenerator
         var serializer = SolutionSerializers.GetSerializerByMoniker(solutionPath);
         var solution = await serializer.OpenAsync(solutionPath, cancellationToken).ConfigureAwait(false);
 
-        var solutionProjectPath = $"{ModelsPath}/{projectName}/KubernetesCRDModelGen.Models.{projectName}.csproj".Replace('/', '\\');
+        var solutionProjectPath = $"{ModelsPath}/{projectName}/KubernetesCRDModelGen.Models.{projectName}.csproj";
+
+        if (OperatingSystem.IsWindows())
+        {
+            solutionProjectPath = solutionProjectPath.Replace('/', '\\');
+        }
+
         if (solution.FindProject(solutionProjectPath) is not null)
         {
             return;
