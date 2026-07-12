@@ -194,7 +194,7 @@ internal class ProjectGenerator
                 .Select(projectName =>
                 {
                     var packageId = $"KubernetesCRDModelGen.Models.{projectName}";
-                    var packagePath = $"/{ModelsPath}/{packageId}";
+                    var packagePath = $"/{ModelsPath}/{projectName}";
 
                     return $"| `{projectName}` | [{packagePath}]({packagePath}) | [{packageId}](https://www.nuget.org/packages/{packageId}) |";
                 }).Aggregate((current, next) => current + "\r\n" + next);

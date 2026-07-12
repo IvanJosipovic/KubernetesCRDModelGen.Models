@@ -10,8 +10,8 @@ Generated packages follow this layout:
 <!-- StartOfReplace -->
 | CRD group | Project path | NuGet package |
 | --- | --- | --- |
-| `akuity.io` | [/src/Models/KubernetesCRDModelGen.Models.akuity.io](/src/Models/KubernetesCRDModelGen.Models.akuity.io) | [KubernetesCRDModelGen.Models.akuity.io](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.akuity.io) |
-| `aquasecurity.github.io` | [/src/Models/KubernetesCRDModelGen.Models.aquasecurity.github.io](/src/Models/KubernetesCRDModelGen.Models.aquasecurity.github.io) | [KubernetesCRDModelGen.Models.aquasecurity.github.io](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.aquasecurity.github.io) |<!-- EndOfReplace -->
+| `akuity.io` | [/src/Models/akuity.io](/src/Models/akuity.io) | [KubernetesCRDModelGen.Models.akuity.io](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.akuity.io) |
+| `aquasecurity.github.io` | [/src/Models/aquasecurity.github.io](/src/Models/aquasecurity.github.io) | [KubernetesCRDModelGen.Models.aquasecurity.github.io](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.aquasecurity.github.io) |<!-- EndOfReplace -->
 
 New groups are generated into `src/Models/{group}` and are automatically added to the solution, release-please configuration, and release-please manifest.
 
