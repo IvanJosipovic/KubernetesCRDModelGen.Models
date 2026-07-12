@@ -46,28 +46,28 @@ internal class Worker : BackgroundService
                     {
                         foreach (var directUrl in item.DirectUrl)
                         {
-                            await _CRDDownloader.ProcessDirectUrl(directUrl);
+                            await _CRDDownloader.ProcessDirectUrl(directUrl, item.Group);
                         }
                     }
                     if (item.GitHub != null && item.GitHub.Length > 0)
                     {
                         foreach (var github in item.GitHub)
                         {
-                            await _CRDDownloader.ProcessGitHub(github);
+                            await _CRDDownloader.ProcessGitHub(github, item.Group);
                         }
                     }
                     if (item.Helm != null && item.Helm.Length > 0)
                     {
                         foreach (var helm in item.Helm)
                         {
-                            await _CRDDownloader.ProcessHelmChart(helm);
+                            await _CRDDownloader.ProcessHelmChart(helm, item.Group);
                         }
                     }
                     if (item.OCI != null && item.OCI.Length > 0)
                     {
                         foreach (var oci in item.OCI)
                         {
-                            await _CRDDownloader.ProcessOCI(oci);
+                            await _CRDDownloader.ProcessOCI(oci, item.Group);
                         }
                     }
                 }

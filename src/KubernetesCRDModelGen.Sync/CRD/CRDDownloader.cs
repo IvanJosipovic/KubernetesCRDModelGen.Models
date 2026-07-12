@@ -7,6 +7,7 @@ using System.Formats.Tar;
 using System.IO.Compression;
 using System.Net.Http.Json;
 using System.Reflection;
+using System.Text;
 using YamlDotNet.Core;
 using YamlDotNet.Core.Events;
 using YamlDotNet.Serialization;
@@ -31,34 +32,36 @@ internal class CRDDownloader
         deserializer = GetDeserializer();
     }
 
-    public async Task ProcessOCI(Config.OCIConfig item)
+    public async Task ProcessOCI(Config.OCIConfig item, string projectName)
     {
         var streams = await OCIClient.GetYamlStreams(item);
 
-        SaveYamlStreams(streams);
+        SaveYamlStreams(streams, projectName);
     }
 
-    public async Task ProcessHelmChart(Config.HelmConfig config)
+    public async Task ProcessHelmChart(Config.HelmConfig config, string projectName)
     {
         using var stream = new MemoryStream();
-
+        var errors = new StringBuilder();
         var args = $"template {config.Chart}{(config.IsOCI ? "" : " --repo")} {config.Repo} --include-crds{(config.PreRelease.GetValueOrDefault() ? " --devel" : "")} {config.CMD}".TrimEnd();
 
-        await Cli.Wrap("helm")
+        var cmd = await Cli.Wrap("helm")
             .WithArguments(args)
             .WithStandardOutputPipe(PipeTarget.ToStream(stream))
-            .WithStandardErrorPipe(PipeTarget.ToDelegate((msg) =>
-            {
-                _logger.LogError("Error Helm Template {chart} {repo}: {message}", config.Chart, config.Repo, msg);
-            }))
+            .WithStandardErrorPipe(PipeTarget.ToStringBuilder(errors))
             .ExecuteBufferedAsync();
+
+        if (!cmd.IsSuccess && errors.Length > 0)
+        {
+            _logger.LogError("Error Helm Template {chart} {repo}: {message}", config.Chart, config.Repo, errors.ToString());
+        }
 
         stream.Position = 0;
 
-        SaveYamlStream(stream);
+        SaveYamlStream(stream, projectName);
     }
 
-    public async Task ProcessDirectUrl(Config.DirectUrlConfig config)
+    public async Task ProcessDirectUrl(Config.DirectUrlConfig config, string projectName)
     {
         using var client = httpClientFactory.CreateClient();
 
@@ -71,19 +74,19 @@ internal class CRDDownloader
 
         if (ext == ".yaml" || ext == ".yml")
         {
-            SaveYamlStream(stream);
+            SaveYamlStream(stream, projectName);
         }
         else if (config.Url.EndsWith(".zip"))
         {
-            SaveYamlStream(stream, CompressionType.Zip);
+            SaveYamlStream(stream, CompressionType.Zip, projectName);
         }
         else if (config.Url.EndsWith(".tar.gz"))
         {
-            SaveYamlStream(stream, CompressionType.TarGz);
+            SaveYamlStream(stream, CompressionType.TarGz, projectName);
         }
     }
 
-    public async Task ProcessGitHub(Config.GitHubConfig config)
+    public async Task ProcessGitHub(Config.GitHubConfig config, string projectName)
     {
         using var client = httpClientFactory.CreateClient();
         client.DefaultRequestHeaders.UserAgent.TryParseAdd("KubernetesCRDModelGen");
@@ -101,7 +104,7 @@ internal class CRDDownloader
         {
             if (!string.IsNullOrEmpty(config.AssetFilter) && item.name.StartsWith(config.AssetFilter, StringComparison.InvariantCultureIgnoreCase))
             {
-                await ProcessDirectUrl(new Config.DirectUrlConfig { Url = item.browser_download_url });
+                await ProcessDirectUrl(new Config.DirectUrlConfig { Url = item.browser_download_url }, projectName);
             }
         }
     }
@@ -168,27 +171,27 @@ internal class CRDDownloader
         return result;
     }
 
-    private void SaveYamlStreams(List<Stream> streams)
+    private void SaveYamlStreams(List<Stream> streams, string projectName)
     {
         foreach (var stream in streams)
         {
-            SaveYamlStream(stream);
+            SaveYamlStream(stream, projectName);
         }
     }
 
-    private void SaveYamlStream(Stream stream, CompressionType compressionType)
+    private void SaveYamlStream(Stream stream, CompressionType compressionType, string projectName)
     {
         var streams = ExtractAllYaml(stream, compressionType);
-        SaveYamlStreams(streams);
+        SaveYamlStreams(streams, projectName);
     }
 
-    private void SaveYamlStream(Stream stream)
+    private void SaveYamlStream(Stream stream, string projectName)
     {
         try
         {
             var crds = LoadCRDFromStream(stream);
 
-            var projDirctory = Path.Combine(configuration.GetValue<string>("RootDirectory"), "src", "Models", crds.First().Spec.Group);
+            var projDirctory = Path.Combine(configuration.GetValue<string>("RootDirectory"), "src", "Models", projectName);
 
             var crdDirectory = Path.Combine(projDirctory, "crds");
 

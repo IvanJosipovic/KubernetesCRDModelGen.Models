@@ -7,8 +7,5 @@
   <Folder Name="/src/">
     <Project Path="src/KubernetesCRDModelGen.Sync/KubernetesCRDModelGen.Sync.csproj" />
   </Folder>
-  <Folder Name="/src/Models/">
-    <Project Path="src/Models/akuity.io/KubernetesCRDModelGen.Models.akuity.io.csproj" />
-    <Project Path="src/Models/aquasecurity.github.io/KubernetesCRDModelGen.Models.aquasecurity.github.io.csproj" />
-  </Folder>
+  <Folder Name="/src/Models/" />
 </Solution>

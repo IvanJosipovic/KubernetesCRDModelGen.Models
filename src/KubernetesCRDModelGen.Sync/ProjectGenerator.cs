@@ -77,11 +77,8 @@ internal class ProjectGenerator
                 <ItemGroup>
                     <None Include="README.md" Pack="true" PackagePath="\" />
                     <AdditionalFiles Include="crds\*.yaml" />
+                    <None Include="Generated\**\*.*" />
                 </ItemGroup>
-
-                <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
-                  <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
-                </PropertyGroup>
 
                 <ItemGroup>
                     <PackageReference Include="KubernetesClient" Version="19.0.2"/>
