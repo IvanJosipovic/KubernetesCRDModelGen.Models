@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/kubernetescrdmodelgen.sync.schema.json",
+  "title": "KubernetesCRDModelGen Sync Configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "Config"
+  ],
+  "properties": {
+    "Config": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Config"
+      }
+    }
+  },
+  "$defs": {
+    "Config": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "Group"
+      ],
+      "properties": {
+        "Group": {
+          "type": "string",
+          "description": "Group identifier."
+        },
+        "DirectUrl": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/DirectUrl"
+          }
+        },
+        "GitHub": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/GitHub"
+          }
+        },
+        "Helm": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Helm"
+          }
+        },
+        "OCI": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/OCI"
+          }
+        }
+      }
+    },
+
+    "DirectUrl": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "Url"
+      ],
+      "properties": {
+        "Url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Direct URL to the resource."
+        },
+        "ArchivePathRegex": {
+          "type": "string",
+          "description": "Regex filter applied to paths within an archive (zip, tar.gz, etc.)."
+        }
+      }
+    },
+
+    "GitHub": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "Repo"
+      ],
+      "properties": {
+        "Repo": {
+          "type": "string",
+          "pattern": "^[^/]+/[^/]+$",
+          "description": "GitHub repository in owner/repository format."
+        },
+        "AssetNameRegex": {
+          "type": "string",
+          "description": "Regex filter applied to GitHub release asset names."
+        },
+        "ArchivePathRegex": {
+          "type": "string",
+          "description": "Regex filter applied to paths within an extracted archive."
+        },
+        "PreRelease": {
+          "type": "boolean",
+          "description": "Whether pre-release versions should be considered when selecting the latest release."
+        }
+      }
+    },
+
+    "Helm": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "Repo",
+        "Chart"
+      ],
+      "properties": {
+        "Repo": {
+          "type": "string",
+          "description": "Helm repository URL or OCI registry URL."
+        },
+        "Chart": {
+          "type": "string",
+          "description": "Chart name."
+        },
+        "PreRelease": {
+          "type": "boolean",
+          "description": "Whether pre-release chart versions should be considered."
+        },
+        "CMD": {
+          "type": "string",
+          "description": "Optional command to execute after retrieving the chart."
+        }
+      }
+    },
+
+    "OCI": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "Image"
+      ],
+      "properties": {
+        "Image": {
+          "type": "string",
+          "description": "OCI image reference."
+        },
+        "PreRelease": {
+          "type": "boolean",
+          "description": "Whether pre-release tags should be considered when selecting the latest tag."
+        }
+      }
+    }
+  }
+}

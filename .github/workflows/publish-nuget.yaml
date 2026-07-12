@@ -10,6 +10,8 @@ permissions:
 
 jobs:
   publish:
+    environment:
+      name: production
     runs-on: ubuntu-latest
 
     steps:
@@ -40,13 +42,20 @@ jobs:
           dotnet pack "${{ steps.package.outputs.project }}" \
             --configuration Release \
             --output artifacts \
-            -p:ContinuousIntegrationBuild=true \
+            -p:ContinuousIntegrationBuild=true
+
+      - name: NuGet login (OIDC → temp API key)
+        uses: NuGet/login@v1
+        id: login
+        with:
+          user: IvanJosipovic
 
       # - name: Push to NuGet
       #   run: |
       #     dotnet nuget push "artifacts/*.nupkg" \
       #       --api-key "${{ secrets.NUGET_API_KEY }}" \
       #       --source "https://api.nuget.org/v3/index.json" \
+      #       -k ${{steps.login.outputs.NUGET_API_KEY}}
       #       --skip-duplicate
 
       - name: Upload Artifacts

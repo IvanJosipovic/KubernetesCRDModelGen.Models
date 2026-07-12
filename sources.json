@@ -1,15 +1,223 @@
 {
+  "$schema": "./sources.schema.json",
   "Config": [
-    {
-      "Group": "akuity.io",
-      "Helm": [
-        {
-          "Chart": "kargo",
-          "Repo": "oci://ghcr.io/akuity/kargo-charts/kargo",
-          "Cmd": "--set api.adminAccount.passwordHash=test --set api.adminAccount.tokenSigningKey=test"
-        }
-      ]
-    },
+    // {
+    //   "Group": "k8s.aws",
+    //   "Helm": [
+    //     {
+    //       "Chart": "s3-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/s3-chart"
+    //     },
+    //     {
+    //       "Chart": "rds-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/rds-chart"
+    //     },
+    //     {
+    //       "Chart": "ec2-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/ec2-chart"
+    //     },
+    //     {
+    //       "Chart": "iam-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/iam-chart"
+    //     },
+    //     {
+    //       "Chart": "sns-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/sns-chart"
+    //     },
+    //     {
+    //       "Chart": "memorydb-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/memorydb-chart"
+    //     },
+    //     {
+    //       "Chart": "ack-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/ack-chart"
+    //     },
+    //     {
+    //       "Chart": "eks-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/eks-chart"
+    //     },
+    //     {
+    //       "Chart": "sqs-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/sqs-chart"
+    //     },
+    //     {
+    //       "Chart": "dynamodb-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/dynamodb-chart"
+    //     },
+    //     {
+    //       "Chart": "elasticache-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/elasticache-chart"
+    //     },
+    //     {
+    //       "Chart": "route53-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/route53-chart"
+    //     },
+    //     {
+    //       "Chart": "acm-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/acm-chart"
+    //     },
+    //     {
+    //       "Chart": "sagemaker-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/sagemaker-chart"
+    //     },
+    //     {
+    //       "Chart": "efs-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/efs-chart"
+    //     },
+    //     {
+    //       "Chart": "ecr-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/ecr-chart"
+    //     },
+    //     {
+    //       "Chart": "kms-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/kms-chart"
+    //     },
+    //     {
+    //       "Chart": "applicationautoscaling-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/applicationautoscaling-chart"
+    //     },
+    //     {
+    //       "Chart": "lambda-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/lambda-chart"
+    //     },
+    //     {
+    //       "Chart": "kafka-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/kafka-chart"
+    //     },
+    //     {
+    //       "Chart": "secretsmanager-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/secretsmanager-chart"
+    //     },
+    //     {
+    //       "Chart": "apigatewayv2-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/apigatewayv2-chart"
+    //     },
+    //     {
+    //       "Chart": "cloudfront-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/cloudfront-chart"
+    //     },
+    //     {
+    //       "Chart": "cloudwatchlogs-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/cloudwatchlogs-chart"
+    //     },
+    //     {
+    //       "Chart": "eventbridge-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/eventbridge-chart"
+    //     },
+    //     {
+    //       "Chart": "ram-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/ram-chart"
+    //     },
+    //     {
+    //       "Chart": "opensearchservice-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/opensearchservice-chart"
+    //     },
+    //     {
+    //       "Chart": "elbv2-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/elbv2-chart"
+    //     },
+    //     {
+    //       "Chart": "ecs-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/ecs-chart"
+    //     },
+    //     {
+    //       "Chart": "mq-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/mq-chart"
+    //     },
+    //     {
+    //       "Chart": "sfn-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/sfn-chart"
+    //     },
+    //     {
+    //       "Chart": "prometheusservice-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/prometheusservice-chart"
+    //     },
+    //     {
+    //       "Chart": "ses-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/ses-chart"
+    //     },
+    //     {
+    //       "Chart": "cloudwatch-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/cloudwatch-chart"
+    //     },
+    //     {
+    //       "Chart": "pipes-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/pipes-chart"
+    //     },
+    //     {
+    //       "Chart": "emrcontainers-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/emrcontainers-chart"
+    //     },
+    //     {
+    //       "Chart": "wafv2-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/wafv2-chart"
+    //     },
+    //     {
+    //       "Chart": "firehose-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/firehose-chart"
+    //     },
+    //     {
+    //       "Chart": "cloudtrail-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/cloudtrail-chart"
+    //     },
+    //     {
+    //       "Chart": "documentdb-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/documentdb-chart"
+    //     },
+    //     {
+    //       "Chart": "kinesis-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/kinesis-chart"
+    //     },
+    //     {
+    //       "Chart": "apigateway-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/apigateway-chart"
+    //     },
+    //     {
+    //       "Chart": "acmpca-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/acmpca-chart"
+    //     },
+    //     {
+    //       "Chart": "keyspaces-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/keyspaces-chart"
+    //     },
+    //     {
+    //       "Chart": "route53resolver-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/route53resolver-chart"
+    //     },
+    //     {
+    //       "Chart": "organizations-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/organizations-chart"
+    //     },
+    //     {
+    //       "Chart": "networkfirewall-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/networkfirewall-chart"
+    //     },
+    //     {
+    //       "Chart": "athena-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/athena-chart"
+    //     },
+    //     {
+    //       "Chart": "ssm-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/ssm-chart"
+    //     },
+    //     {
+    //       "Chart": "recyclebin-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/recyclebin-chart"
+    //     },
+    //     {
+    //       "Chart": "ecrpublic-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/ecrpublic-chart"
+    //     },
+    //     {
+    //       "Chart": "codeartifact-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/codeartifact-chart"
+    //     },
+    //     {
+    //       "Chart": "cognitoidentityprovider-chart",
+    //       "Repo": "oci://public.ecr.aws/aws-controllers-k8s/cognitoidentityprovider-chart"
+    //     }
+    //   ]
+    // },
     {
       "Group": "aquasecurity.github.io",
       "Helm": [
@@ -18,6 +226,348 @@
           "Repo": "https://aquasecurity.github.io/helm-charts/"
         }
       ]
-    }
+    },
+    {
+      "Group": "akuity.io",
+      "Helm": [
+        {
+          "Chart": "kargo",
+          "Repo": "oci://ghcr.io/akuity/kargo-charts/kargo",
+          "CMD": "--set api.adminAccount.passwordHash=test --set api.adminAccount.tokenSigningKey=test"
+        }
+      ]
+    },
+    // {
+    //   "Group": "argoproj.io",
+    //   "Helm": [
+    //     {
+    //       "Chart": "argo-cd",
+    //       "Repo": "https://argoproj.github.io/argo-helm",
+    //       "CMD": "--set extensions.enabled=true"
+    //     },
+    //     {
+    //       "Chart": "argo-events",
+    //       "Repo": "https://argoproj.github.io/argo-helm"
+    //     },
+    //     {
+    //       "Chart": "argo-rollouts",
+    //       "Repo": "https://argoproj.github.io/argo-helm"
+    //     }
+    //   ],
+    //   "GitHub": [
+    //     {
+    //       "Repo": "argoproj/argo-workflows",
+    //       "AssetNameRegex": "install\\.yaml"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "azure.com",
+    //   "GitHub": [
+    //     {
+    //       "Repo": "Azure/azure-service-operator",
+    //       "AssetNameRegex": "azureserviceoperator_customresourcedefinitions_"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "cnrm.cloud.google.com",
+    //   "DirectUrl": [
+    //     {
+    //       "Url": "https://github.com/GoogleCloudPlatform/k8s-config-connector/archive/refs/heads/master.zip",
+    //       "ArchivePathRegex": "k8s-config-connector-master/config/crds/resources/"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "aws.upbound.io",
+    //   "DirectUrl": [
+    //     {
+    //       "Url": "https://github.com/crossplane-contrib/provider-upjet-aws/archive/refs/heads/main.zip",
+    //       "ArchivePathRegex": "provider-upjet-aws-main/package/crds/"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "azapi.upbound.io",
+    //   "DirectUrl": [
+    //     {
+    //       "Url": "https://github.com/upbound/provider-upjet-azapi/archive/refs/heads/main.zip",
+    //       "ArchivePathRegex": "provider-upjet-azapi-main/package/crds/"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "azure.upbound.io",
+    //   "DirectUrl": [
+    //     {
+    //       "Url": "https://github.com/crossplane-contrib/provider-upjet-azure/archive/refs/heads/main.zip",
+    //       "ArchivePathRegex": "provider-upjet-azure-main/package/crds/"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "azuread.upbound.io",
+    //   "DirectUrl": [
+    //     {
+    //       "Url": "https://github.com/crossplane-contrib/provider-upjet-azuread/archive/refs/heads/main.zip",
+    //       "ArchivePathRegex": "provider-upjet-azuread-main/package/crds/"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "crossplane.io",
+    //   "DirectUrl": [
+    //     {
+    //       "Url": "https://github.com/crossplane/crossplane/archive/refs/heads/main.zip",
+    //       "ArchivePathRegex": "crossplane-main/cluster/crds/"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "databricks.crossplane.io",
+    //   "DirectUrl": [
+    //     {
+    //       "Url": "https://github.com/glalanne/provider-databricks/archive/refs/heads/main.zip",
+    //       "ArchivePathRegex": "provider-databricks-main/package/crds/"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "databricks.upbound.io",
+    //   "OCI": [
+    //     {
+    //       "Image": "xpkg.upbound.io/upbound/provider-databricks"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "gcp.upbound.io",
+    //   "DirectUrl": [
+    //     {
+    //       "Url": "https://github.com/crossplane-contrib/provider-upjet-gcp/archive/refs/heads/main.zip",
+    //       "ArchivePathRegex": "provider-upjet-gcp-main/package/crds/"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "github.upbound.io",
+    //   "DirectUrl": [
+    //     {
+    //       "Url": "https://github.com/crossplane-contrib/provider-upjet-github/archive/refs/heads/main.zip",
+    //       "ArchivePathRegex": "provider-upjet-github-main/package/crds/"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "helm.crossplane.io",
+    //   "DirectUrl": [
+    //     {
+    //       "Url": "https://github.com/crossplane-contrib/provider-helm/archive/refs/heads/main.zip",
+    //       "ArchivePathRegex": "provider-helm-main/package/crds/"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "http.crossplane.io",
+    //   "DirectUrl": [
+    //     {
+    //       "Url": "https://github.com/crossplane-contrib/provider-http/archive/refs/heads/main.zip",
+    //       "ArchivePathRegex": "provider-http-main/package/crds/"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "kubernetes.crossplane.io",
+    //   "DirectUrl": [
+    //     {
+    //       "Url": "https://github.com/crossplane-contrib/provider-kubernetes/archive/refs/heads/main.zip",
+    //       "ArchivePathRegex": "provider-kubernetes-main/package/crds/"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "opentofu.upbound.io",
+    //   "DirectUrl": [
+    //     {
+    //       "Url": "https://github.com/upbound/provider-opentofu/archive/refs/heads/main.zip",
+    //       "ArchivePathRegex": "provider-opentofu-main/package/crds/"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "tf.upbound.io",
+    //   "DirectUrl": [
+    //     {
+    //       "Url": "https://github.com/crossplane-contrib/provider-terraform/archive/refs/heads/main.zip",
+    //       "ArchivePathRegex": "provider-terraform-main/package/crds/"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "upbound.io",
+    //   "DirectUrl": [
+    //     {
+    //       "Url": "https://github.com/upbound/provider-upbound/archive/refs/heads/main.zip",
+    //       "ArchivePathRegex": "provider-upbound-main/package/crds/"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "vault.upbound.io",
+    //   "DirectUrl": [
+    //     {
+    //       "Url": "https://github.com/upbound/provider-vault/archive/refs/heads/main.zip",
+    //       "ArchivePathRegex": "provider-vault-main/package/crds/"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "fluxcd.io",
+    //   "DirectUrl": [
+    //     {
+    //       "Url": "https://github.com/fluxcd/flux2/releases/latest/download/manifests.tar.gz"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "gateway.networking.k8s.io",
+    //   "DirectUrl": [
+    //     {
+    //       "Url": "https://github.com/kubernetes-sigs/gateway-api/archive/refs/heads/main.zip",
+    //       "ArchivePathRegex": "gateway-api-main/config/crd/standard/"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "istio.io",
+    //   "Helm": [
+    //     {
+    //       "Chart": "base",
+    //       "Repo": "https://istio-release.storage.googleapis.com/charts"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "jetstack.io",
+    //   "Helm": [
+    //     {
+    //       "Chart": "cert-manager",
+    //       "Repo": "https://charts.jetstack.io",
+    //       "CMD": "--set installCRDs=true"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "keda.sh",
+    //   "Helm": [
+    //     {
+    //       "Chart": "keda",
+    //       "Repo": "https://kedacore.github.io/charts"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "knative.dev",
+    //   "GitHub": [
+    //     {
+    //       "Repo": "knative/serving",
+    //       "AssetNameRegex": "serving-crds\\.yaml"
+    //     },
+    //     {
+    //       "Repo": "knative/eventing",
+    //       "AssetNameRegex": "eventing-crds\\.yaml"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "kubevirt.io",
+    //   "GitHub": [
+    //     {
+    //       "Repo": "kubevirt/kubevirt",
+    //       "AssetNameRegex": "kubevirt-operator\\.yaml"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "kyverno.io",
+    //   "Helm": [
+    //     {
+    //       "Chart": "kyverno",
+    //       "Repo": "https://kyverno.github.io/kyverno"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "longhorn.io",
+    //   "Helm": [
+    //     {
+    //       "Chart": "longhorn",
+    //       "Repo": "https://charts.longhorn.io"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "postgresql.cnpg.io",
+    //   "Helm": [
+    //     {
+    //       "Chart": "cloudnative-pg",
+    //       "Repo": "https://cloudnative-pg.github.io/charts"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "projectcalico.org",
+    //   "DirectUrl": [
+    //     {
+    //       "Url": "https://raw.githubusercontent.com/projectcalico/calico/master/manifests/crds.yaml"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "secrets-store.csi.x-k8s.io",
+    //   "Helm": [
+    //     {
+    //       "Chart": "secrets-store-csi-driver",
+    //       "Repo": "https://kubernetes-sigs.github.io/secrets-store-csi-driver/charts"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "storage.k8s.io",
+    //   "DirectUrl": [
+    //     {
+    //       "Url": "https://github.com/kubernetes-csi/external-snapshotter/archive/refs/heads/master.zip",
+    //       "ArchivePathRegex": "external-snapshotter-master/client/config/crd/"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "strimzi.io",
+    //   "Helm": [
+    //     {
+    //       "Chart": "strimzi-kafka-operator",
+    //       "Repo": "oci://quay.io/strimzi-helm/strimzi-kafka-operator"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "temporal.io",
+    //   "Helm": [
+    //     {
+    //       "Chart": "temporal-worker-controller-crds",
+    //       "Repo": "oci://docker.io/temporalio/temporal-worker-controller-crds"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "Group": "traefik.io",
+    //   "Helm": [
+    //     {
+    //       "Chart": "traefik",
+    //       "Repo": "https://traefik.github.io/charts"
+    //     }
+    //   ]
+    // }
   ]
 }

@@ -8,6 +8,7 @@ using System.IO.Compression;
 using System.Net.Http.Json;
 using System.Reflection;
 using System.Text;
+using System.Text.RegularExpressions;
 using YamlDotNet.Core;
 using YamlDotNet.Core.Events;
 using YamlDotNet.Serialization;
@@ -78,11 +79,11 @@ internal class CRDDownloader
         }
         else if (config.Url.EndsWith(".zip"))
         {
-            SaveYamlStream(stream, CompressionType.Zip, projectName);
+            SaveYamlStream(stream, CompressionType.Zip, projectName, config.ArchivePathRegex);
         }
         else if (config.Url.EndsWith(".tar.gz"))
         {
-            SaveYamlStream(stream, CompressionType.TarGz, projectName);
+            SaveYamlStream(stream, CompressionType.TarGz, projectName, config.ArchivePathRegex);
         }
     }
 
@@ -97,14 +98,16 @@ internal class CRDDownloader
             .Where(x => x.assets.Length != 0)
             .Select(x => new { Release = x, Version = SemVersion.TryParse(x.name, SemVersionStyles.Any, out var ver) ? ver : null })
             .Where(x => x.Version is not null && (config.PreRelease == true || (!x.Version.IsPrerelease && !x.Release.prerelease)))
-            .OrderByDescending(x => x.Version)
+            .OrderByDescending(x => x.Version!, SemVersion.SortOrderComparer)
             .First().Release;
+
+        var regex = config.AssetNameRegex != null ? new Regex(config.AssetNameRegex, RegexOptions.IgnoreCase) : null;
 
         foreach (var item in release.assets)
         {
-            if (!string.IsNullOrEmpty(config.AssetFilter) && item.name.StartsWith(config.AssetFilter, StringComparison.InvariantCultureIgnoreCase))
+            if (regex != null && regex.IsMatch(item.name))
             {
-                await ProcessDirectUrl(new Config.DirectUrlConfig { Url = item.browser_download_url }, projectName);
+                await ProcessDirectUrl(new Config.DirectUrlConfig { Url = item.browser_download_url, ArchivePathRegex = config.ArchivePathRegex }, projectName);
             }
         }
     }
@@ -115,9 +118,11 @@ internal class CRDDownloader
         TarGz
     }
 
-    internal static List<Stream> ExtractAllYaml(Stream stream, CompressionType compressionType)
+    internal static List<Stream> ExtractAllYaml(Stream stream, CompressionType compressionType, string? regexFilter = null)
     {
         var result = new List<Stream>();
+
+        var filter = regexFilter != null ? new Regex(regexFilter, RegexOptions.IgnoreCase) : null;
 
         switch (compressionType)
         {
@@ -129,6 +134,12 @@ internal class CRDDownloader
                     if (entry.FullName.EndsWith(".yaml", StringComparison.OrdinalIgnoreCase) ||
                         entry.FullName.EndsWith(".yml", StringComparison.OrdinalIgnoreCase))
                     {
+
+                        if (filter != null && !filter.IsMatch(entry.FullName))
+                        {
+                            continue;
+                        }
+
                         using var entryStream = entry.Open();
                         var ms = new MemoryStream();
                         entryStream.CopyTo(ms);
@@ -151,6 +162,11 @@ internal class CRDDownloader
                          name.EndsWith(".yml", StringComparison.OrdinalIgnoreCase)))
                     {
                         if (entry.DataStream == null || !entry.DataStream.CanRead)
+                        {
+                            continue;
+                        }
+
+                        if (filter != null && !filter.IsMatch(name))
                         {
                             continue;
                         }
@@ -179,9 +195,9 @@ internal class CRDDownloader
         }
     }
 
-    private void SaveYamlStream(Stream stream, CompressionType compressionType, string projectName)
+    private void SaveYamlStream(Stream stream, CompressionType compressionType, string projectName, string? regexFilter = null)
     {
-        var streams = ExtractAllYaml(stream, compressionType);
+        var streams = ExtractAllYaml(stream, compressionType, regexFilter);
         SaveYamlStreams(streams, projectName);
     }
 

@@ -194,15 +194,15 @@ internal class ProjectGenerator
                     var packagePath = $"/{ModelsPath}/{projectName}";
 
                     return $"| `{projectName}` | [{packagePath}]({packagePath}) | [{packageId}](https://www.nuget.org/packages/{packageId}) |";
-                }).Aggregate((current, next) => current + "\r\n" + next);
+                }).Aggregate((current, next) => current + "\n" + next);
 
         var replacementContent = readmeContent[..(startIndex + startMarker.Length)]
-            + "\r\n"
+            + "\n"
             + """
             | CRD group | Project path | NuGet package |
             | --- | --- | --- |
             """
-            + "\r\n"
+            + "\n"
             + packageRows
             + readmeContent[endIndex..];
 
