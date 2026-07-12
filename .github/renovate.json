@@ -4,6 +4,8 @@
   "timezone": "America/Vancouver",
   "dependencyDashboard": true,
   "semanticCommits": "enabled",
+  "prConcurrentLimit": 0,
+  "prHourlyLimit": 0,
   "assignees": [
     "@ivanjosipovic"
   ],
