@@ -22,6 +22,17 @@
           "xpath": "//Project/PropertyGroup/Version"
         }
       ]
+    },
+    "src/Models/k8s.aws": {
+      "release-type": "simple",
+      "component": "k8s.aws",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "src/Models/k8s.aws/Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
     }
   }
 }
