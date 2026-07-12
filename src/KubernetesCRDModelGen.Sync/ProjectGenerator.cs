@@ -84,7 +84,7 @@ internal class ProjectGenerator
     {
         var projectPath = $"src/Models/{projectName}";
         var assemblyPath = $"/bin/Release/net10.0/KubernetesCRDModelGen.Models.{projectName}.dll";
-        var destinationPath = $"api/KubernetesCRDModelGen.{projectName}/";
+        var destinationPath = $"api/KubernetesCRDModelGen.Models.{projectName}";
 
         return new JsonObject
         {
@@ -111,13 +111,15 @@ internal class ProjectGenerator
         {
             "items:",
             "- name: API Reference",
-            "  href: index.md"
+            "  href: index.md",
+            "- name: KubernetesCRDModelGen.Sync",
+            "  href: KubernetesCRDModelGen.Sync/toc.yml",
         };
 
         foreach (var group in groups)
         {
-            tocLines.Add($"- name: {group}");
-            tocLines.Add($"  href: KubernetesCRDModelGen.{group}/toc.yml");
+            tocLines.Add($"- name: KubernetesCRDModelGen.Models.{group}");
+            tocLines.Add($"  href: KubernetesCRDModelGen.Models.{group}/toc.yml");
         }
 
         File.WriteAllText(apiTocPath, string.Join(Environment.NewLine, tocLines) + Environment.NewLine);
@@ -293,7 +295,7 @@ internal class ProjectGenerator
                     var packageId = $"KubernetesCRDModelGen.Models.{projectName}";
                     var packagePath = $"/{ModelsPath}/{projectName}";
 
-                    return $"| `{projectName}` | [Docs](https://ivanjosipovic.github.io/KubernetesCRDModelGen.Models/api/{packageId}.html) | [{packageId}](https://www.nuget.org/packages/{packageId}) |";
+                    return $"| `{projectName}` | [Docs](https://ivanjosipovic.github.io/KubernetesCRDModelGen.Models/api/{packageId}) | [{packageId}](https://www.nuget.org/packages/{packageId}) |";
                 }).Aggregate((current, next) => current + "\n" + next);
 
         var replacementContent = readmeContent[..(startIndex + startMarker.Length)]
