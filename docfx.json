@@ -4,11 +4,11 @@
     {
       "src": [
         {
-          "src": "src/",
-          "files": ["**/bin/Release/net10.0/KubernetesCRDModelGen*.dll"]
+          "src": "src/KubernetesCRDModelGen.Sync",
+          "files": ["/bin/Release/net10.0/KubernetesCRDModelGen.Sync.dll"]
         }
       ],
-      "dest": "api"
+      "dest": "api/KubernetesCRDModelGen.Sync/"
     }
   ],
   "build": {
@@ -38,7 +38,7 @@
       "_appName": "KubernetesCRDModelGen.Models",
       "_appTitle": "KubernetesCRDModelGen.Models",
       "_enableSearch": false,
-      "pdf": true
+      "pdf": false
     }
   }
 }

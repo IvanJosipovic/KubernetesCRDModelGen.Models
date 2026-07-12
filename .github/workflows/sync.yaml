@@ -31,7 +31,7 @@ jobs:
         run: rm -rf src/Models/*/Generated
 
       - name: Sync CRDs
-        run: dotnet run --project src/KubernetesCRDModelGen.Sync/KubernetesCRDModelGen.Sync.csproj --RootDirectory=$PWD
+        run: dotnet run -c Release --project src/KubernetesCRDModelGen.Sync/KubernetesCRDModelGen.Sync.csproj --RootDirectory=$PWD
 
       - name: Validate Yamls
         shell: pwsh

@@ -23,6 +23,106 @@ internal class ProjectGenerator
         AddProjectsToSolution(projectName, rootDirectory).GetAwaiter().GetResult();
     }
 
+    public static void GenerateDocFx(IEnumerable<Config> configs, string rootDirectory)
+    {
+        ArgumentNullException.ThrowIfNull(configs);
+
+        var distinctGroups = configs
+            .Select(config => config.Group)
+            .Where(group => !string.IsNullOrWhiteSpace(group))
+            .Distinct(StringComparer.Ordinal)
+            .Order(StringComparer.Ordinal)
+            .ToList();
+
+        var docFxPath = Path.Combine(rootDirectory, "docfx.json");
+
+        if (!File.Exists(docFxPath))
+        {
+            throw new FileNotFoundException("DocFX configuration file was not found.", docFxPath);
+        }
+
+        var docFxConfig = JsonNode.Parse(File.ReadAllText(docFxPath))?.AsObject()
+            ?? throw new InvalidOperationException($"Unable to parse {docFxPath} as a JSON object.");
+
+        if (docFxConfig["metadata"] is not JsonArray metadata)
+        {
+            metadata = [];
+            docFxConfig["metadata"] = metadata;
+        }
+
+        foreach (var group in distinctGroups)
+        {
+            var metadataEntry = BuildDocFxMetadataEntry(group);
+            var projectSrc = metadataEntry["src"]?[0]?["src"]?.GetValue<string>();
+
+            var existingEntry = metadata
+                .OfType<JsonObject>()
+                .FirstOrDefault(entry =>
+                    string.Equals(
+                        entry["src"]?[0]?["src"]?.GetValue<string>(),
+                        projectSrc,
+                        StringComparison.Ordinal));
+
+            if (existingEntry is null)
+            {
+                metadata.Add(metadataEntry);
+            }
+            else
+            {
+                existingEntry["src"] = metadataEntry["src"]?.DeepClone();
+                existingEntry["dest"] = metadataEntry["dest"]?.DeepClone();
+            }
+        }
+
+        var docFxContent = docFxConfig.ToJsonString(new JsonSerializerOptions { WriteIndented = true });
+        File.WriteAllText(docFxPath, docFxContent);
+
+        GenerateApiToc(distinctGroups, rootDirectory);
+    }
+
+    private static JsonObject BuildDocFxMetadataEntry(string projectName)
+    {
+        var projectPath = $"src/Models/{projectName}";
+        var assemblyPath = $"/bin/Release/net10.0/KubernetesCRDModelGen.Models.{projectName}.dll";
+        var destinationPath = $"api/KubernetesCRDModelGen.{projectName}/";
+
+        return new JsonObject
+        {
+            ["src"] = new JsonArray
+            {
+                new JsonObject
+                {
+                    ["src"] = projectPath,
+                    ["files"] = new JsonArray(assemblyPath)
+                }
+            },
+            ["dest"] = destinationPath
+        };
+    }
+
+    private static void GenerateApiToc(IEnumerable<string> groups, string rootDirectory)
+    {
+        var apiDirectoryPath = Path.Combine(rootDirectory, "api");
+        Directory.CreateDirectory(apiDirectoryPath);
+
+        var apiTocPath = Path.Combine(apiDirectoryPath, "toc.yml");
+
+        var tocLines = new List<string>
+        {
+            "items:",
+            "- name: API Reference",
+            "  href: index.md"
+        };
+
+        foreach (var group in groups)
+        {
+            tocLines.Add($"- name: {group}");
+            tocLines.Add($"  href: KubernetesCRDModelGen.{group}/toc.yml");
+        }
+
+        File.WriteAllText(apiTocPath, string.Join(Environment.NewLine, tocLines) + Environment.NewLine);
+    }
+
     private static void GenerateReadme(string projectName, string projectDir)
     {
         var readmeContent = $"""
@@ -193,16 +293,13 @@ internal class ProjectGenerator
                     var packageId = $"KubernetesCRDModelGen.Models.{projectName}";
                     var packagePath = $"/{ModelsPath}/{projectName}";
 
-                    return $"| `{projectName}` | [{packagePath}]({packagePath}) | [{packageId}](https://www.nuget.org/packages/{packageId}) |";
+                    return $"| `{projectName}` | [Docs](https://ivanjosipovic.github.io/KubernetesCRDModelGen.Models/api/{packageId}.html) | [{packageId}](https://www.nuget.org/packages/{packageId}) |";
                 }).Aggregate((current, next) => current + "\n" + next);
 
         var replacementContent = readmeContent[..(startIndex + startMarker.Length)]
             + "\n"
-            + """
-            | CRD group | Project path | NuGet package |
-            | --- | --- | --- |
-            """
-            + "\n"
+            + "| CRD group | Project docs | NuGet package |\n"
+            + "| --- | --- | --- |\n"
             + packageRows
             + readmeContent[endIndex..];
 
@@ -218,8 +315,10 @@ internal class ProjectGenerator
             throw new FileNotFoundException("Solution file was not found.", solutionPath);
         }
 
-        var serializer = SolutionSerializers.GetSerializerByMoniker(solutionPath);
-        var solution = await serializer.OpenAsync(solutionPath, cancellationToken).ConfigureAwait(false);
+        var serializer = SolutionSerializers.GetSerializerByMoniker(solutionPath)
+            ?? throw new InvalidOperationException($"Unable to get a solution serializer for '{solutionPath}'.");
+        var solution = await serializer.OpenAsync(solutionPath, cancellationToken).ConfigureAwait(false)
+            ?? throw new InvalidOperationException($"Unable to open solution '{solutionPath}'.");
 
         var solutionProjectPath = $"{ModelsPath}/{projectName}/KubernetesCRDModelGen.Models.{projectName}.csproj";
 
@@ -233,9 +332,9 @@ internal class ProjectGenerator
             return;
         }
 
-        var modelsFolder = solution.FindFolder("/src/Models/");
-
-        modelsFolder ??= solution.AddFolder("/src/Models/");
+        var modelsFolder = solution.FindFolder("/src/Models/")
+            ?? solution.AddFolder("/src/Models/")
+            ?? throw new InvalidOperationException("Unable to find or create '/src/Models/' solution folder.");
 
         solution.AddProject(solutionProjectPath, projectTypeName: null, modelsFolder);
         await serializer.SaveAsync(solutionPath, solution, cancellationToken).ConfigureAwait(false);

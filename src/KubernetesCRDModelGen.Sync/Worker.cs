@@ -28,11 +28,18 @@ internal class Worker : BackgroundService
 
             var rootDirectory = configuration.GetValue<string>("RootDirectory");
 
+            if (string.IsNullOrWhiteSpace(rootDirectory))
+            {
+                throw new InvalidOperationException("RootDirectory configuration value is required.");
+            }
+
             _logger.LogInformation("Root Directory: {dir}", rootDirectory);
 
-            var configs = configuration.GetSection("Config").Get<List<Config>>();
+            var configs = configuration.GetSection("Config").Get<List<Config>>()!
+                ?? throw new InvalidOperationException("Config section is required.");
 
             ProjectGenerator.UpdateRootReadmePackageList(configs, rootDirectory);
+            ProjectGenerator.GenerateDocFx(configs, rootDirectory);
 
             foreach (var item in configs)
             {
