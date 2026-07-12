@@ -50,7 +50,7 @@
         {
       "customType": "regex",
       "managerFilePatterns": [
-        "/^src\\/KubernetesCRDModelGen\\.Sync\\/ProjectGenerator.cs\\.cs$/"
+        "/^src\\/KubernetesCRDModelGen\\.Sync\\/ProjectGenerator\\.cs$/"
       ],
       "matchStrings": [
         "<PackageReference\\s+Include=\\\"(?<depName>[^\\\"]+)\\\"\\s+Version=\\\"(?<currentValue>[^\\\"]+)\\\"(?:\\s*/>|\\s*>)"
