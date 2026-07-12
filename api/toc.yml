@@ -1,9 +1,11 @@
 items:
 - name: API Reference
   href: index.md
-- name: akuity.io
-  href: KubernetesCRDModelGen.akuity.io/toc.yml
-- name: aquasecurity.github.io
-  href: KubernetesCRDModelGen.aquasecurity.github.io/toc.yml
-- name: k8s.aws
-  href: KubernetesCRDModelGen.k8s.aws/toc.yml
+- name: KubernetesCRDModelGen.Sync
+  href: KubernetesCRDModelGen.Sync/toc.yml
+- name: KubernetesCRDModelGen.Models.akuity.io
+  href: KubernetesCRDModelGen.Models.akuity.io/toc.yml
+- name: KubernetesCRDModelGen.Models.aquasecurity.github.io
+  href: KubernetesCRDModelGen.Models.aquasecurity.github.io/toc.yml
+- name: KubernetesCRDModelGen.Models.k8s.aws
+  href: KubernetesCRDModelGen.Models.k8s.aws/toc.yml
