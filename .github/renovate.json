@@ -45,5 +45,17 @@
         "benchmarks/**"
       ]
     }
-  ]
+  ],
+   "customManagers": [
+        {
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^src\\/KubernetesCRDModelGen\\.Sync\\/ProjectGenerator.cs\\.cs$/"
+      ],
+      "matchStrings": [
+        "<PackageReference\\s+Include=\\\"(?<depName>[^\\\"]+)\\\"\\s+Version=\\\"(?<currentValue>[^\\\"]+)\\\"(?:\\s*/>|\\s*>)"
+      ],
+      "datasourceTemplate": "nuget"
+    }
+   ]
 }
