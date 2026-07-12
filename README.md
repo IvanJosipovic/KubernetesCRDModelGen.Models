@@ -1,7 +1,5 @@
 # KubernetesCRDModelGen.Models
 
-[![Build](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/actions/workflows/build.yml/badge.svg)](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/actions)
-
 Generated C# model packages for Kubernetes CustomResourceDefinitions (CRDs).
 
 This repository uses [`KubernetesCRDModelGen.SourceGenerator`](https://www.nuget.org/packages/KubernetesCRDModelGen.SourceGenerator) to generate strongly typed .NET models from CRD YAML files. Each CRD API group is published as its own NuGet package under the `KubernetesCRDModelGen.Models.*` package namespace.
@@ -13,8 +11,10 @@ Generated packages follow this layout:
 | CRD group | Project path | NuGet package |
 | --- | --- | --- |
 <!-- StartOfReplace -->
-| `akuity.io` | `[/src/Models/KubernetesCRDModelGen.Models.akuity.io](/src/Models/KubernetesCRDModelGen.Models.akuity.io)` | [`KubernetesCRDModelGen.Models.akuity.io`](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.akuity.io) |
-| `aquasecurity.github.io` | `[/src/Models/KubernetesCRDModelGen.Models.aquasecurity.github.io](/src/Models/KubernetesCRDModelGen.Models.aquasecurity.github.io)` | [`KubernetesCRDModelGen.Models.aquasecurity.github.io`](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.aquasecurity.github.io) |
+| `akuity.io` | [/src/Models/KubernetesCRDModelGen.Models.akuity.io](/src/Models/KubernetesCRDModelGen.Models.akuity.io) | [KubernetesCRDModelGen.Models.akuity.io](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.akuity.io) |
+
+| `aquasecurity.github.io` | [/src/Models/KubernetesCRDModelGen.Models.aquasecurity.github.io](/src/Models/KubernetesCRDModelGen.Models.aquasecurity.github.io) | [KubernetesCRDModelGen.Models.aquasecurity.github.io](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.aquasecurity.github.io) |
+
 
 <!-- EndOfReplace -->
 
@@ -34,17 +34,17 @@ Then reference the generated model types from your application alongside the off
 
 ```text
 .
-├── sources.json                                # CRD source configuration
-├── release-please-config.json                 # release-please package configuration
-├── .release-please-manifest.json              # release-please package versions
+├── sources.json                                             # CRD source configuration
+├── release-please-config.json                               # release-please package configuration
+├── .release-please-manifest.json                            # release-please package versions
 ├── src/
-│   ├── KubernetesCRDModelGen.Sync/             # Worker service that generates projects and CRD inputs
-│   └── Models/                                 # Generated model package projects
+│   ├── KubernetesCRDModelGen.Sync/                          # Worker service that generates projects and CRD inputs
+│   └── Models/                                              # Generated model package projects
 │       └── {group}/
-│           ├── crds/                           # CRD YAML inputs
-│           ├── Directory.Build.props           # Package version
-│           ├── KubernetesCRDModelGen.Models.{group}.csproj
-│           └── README.md
+│           ├── crds/                                        # CRD YAML inputs
+│           ├── Directory.Build.props                        # Package version
+│           ├── KubernetesCRDModelGen.Models.{group}.csproj  # Group C# Project
+│           └── README.md                                    # Group Project Readme
 ```
 
 ## Updating generated projects

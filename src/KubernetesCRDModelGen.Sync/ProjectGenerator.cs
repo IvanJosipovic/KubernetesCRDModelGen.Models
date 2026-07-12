@@ -196,7 +196,7 @@ internal class ProjectGenerator
                     var packageId = $"KubernetesCRDModelGen.Models.{projectName}";
                     var packagePath = $"/{ModelsPath}/{packageId}";
 
-                    return $"| `{projectName}` | `[{packagePath}]({packagePath})` | [`{packageId}`](https://www.nuget.org/packages/{packageId}) |\r\n";
+                    return $"| `{projectName}` | [{packagePath}]({packagePath}) | [{packageId}](https://www.nuget.org/packages/{packageId}) |\r\n\r\n";
                 }).Aggregate((current, next) => current + next);
 
         var replacementContent = readmeContent[..(startIndex + startMarker.Length)]
