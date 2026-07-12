@@ -1,7 +1,40 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
     <PropertyGroup>
+        <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
         <PackageId>KubernetesCRDModelGen.Models.aquasecurity.github.io</PackageId>
+        <RepositoryUrl>https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models</RepositoryUrl>
+        <Description>C# models for Kubernetes CRDs in group aquasecurity.github.io</Description>
+        <Authors>Ivan Josipovic</Authors>
+        <PackageTags>Kubernetes CustomResourceDefinition CRD Models</PackageTags>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <IsPackable>true</IsPackable>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <NoWarn>$(NoWarn);CS1591;CS8618</NoWarn>
+        <WarningsAsErrors>$(WarningsAsErrors);CS8784;CS8785</WarningsAsErrors>
+        <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+        <CompilerGeneratedFilesOutputPath>Generated</CompilerGeneratedFilesOutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <!-- Exclude the output of source generators from the compilation -->
+        <Compile Remove="$(CompilerGeneratedFilesOutputPath)/**/*.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="\" />
+        <AdditionalFiles Include="crds\*.yaml" />
+    </ItemGroup>
+
+    <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+      <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
     </PropertyGroup>
 
     <ItemGroup>
@@ -14,5 +47,4 @@
     <ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
         <PackageReference Include="System.Text.Json" Version="9.0.*"/>
     </ItemGroup>
-
 </Project>

@@ -1,23 +1,24 @@
-[
-  {
-    "group": "akuity.io",
-    "helmSources": [
-      {
-        "name": "kargo",
-        "repo": "oci://ghcr.io/akuity/kargo-charts/kargo",
-        "cmd": "--set api.adminAccount.passwordHash=test --set api.adminAccount.tokenSigningKey=test",
-        "version": "1.10.4"
-      }
-    ]
-  },
-  {
-    "group": "aquasecurity.github.io",
-    "helmSources": [
-      {
-        "name": "trivy-operator",
-        "repo": "https://aquasecurity.github.io/helm-charts/",
-        "version": "0.30.1"
-      }
-    ]
-  }
-]
+{
+  "RootDirectory": "C:\\repos\\KubernetesCRDModelGen.Models",
+  "Config": [
+    {
+      "group": "akuity.io",
+      "helmSources": [
+        {
+          "name": "kargo",
+          "repo": "oci://ghcr.io/akuity/kargo-charts/kargo",
+          "cmd": "--set api.adminAccount.passwordHash=test --set api.adminAccount.tokenSigningKey=test"
+        }
+      ]
+    },
+    {
+      "group": "aquasecurity.github.io",
+      "helmSources": [
+        {
+          "name": "trivy-operator",
+          "repo": "https://aquasecurity.github.io/helm-charts/"
+        }
+      ]
+    }
+  ]
+}
