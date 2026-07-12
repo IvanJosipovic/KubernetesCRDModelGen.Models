@@ -3,6 +3,10 @@ name: Sync
 on:
   workflow_dispatch
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   sync:
     name: Sync
@@ -66,8 +70,8 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
           branch: sync-charts
-          commit-message: "feat: Update CRDs"
-          title: "feat: Update CRDs"
+          commit-message: "feat: Sync"
+          title: "feat: Sync"
           body: "Automated CRD Sync"
 
       - name: Enable Pull Request Automerge
@@ -76,8 +80,4 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
-
           merge-method: squash
-
-
-
