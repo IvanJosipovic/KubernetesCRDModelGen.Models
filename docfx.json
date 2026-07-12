@@ -21,7 +21,7 @@
           ]
         }
       ],
-      "dest": "api/KubernetesCRDModelGen.akuity.io/"
+      "dest": "api/KubernetesCRDModelGen.Models.akuity.io"
     },
     {
       "src": [
@@ -32,7 +32,7 @@
           ]
         }
       ],
-      "dest": "api/KubernetesCRDModelGen.aquasecurity.github.io/"
+      "dest": "api/KubernetesCRDModelGen.Models.aquasecurity.github.io"
     },
     {
       "src": [
@@ -43,7 +43,7 @@
           ]
         }
       ],
-      "dest": "api/KubernetesCRDModelGen.k8s.aws/"
+      "dest": "api/KubernetesCRDModelGen.Models.k8s.aws"
     }
   ],
   "build": {

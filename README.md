@@ -10,9 +10,9 @@ Generated packages follow this layout:
 <!-- StartOfReplace -->
 | CRD group | Project docs | NuGet package |
 | --- | --- | --- |
-| `akuity.io` | [Docs](https://ivanjosipovic.github.io/KubernetesCRDModelGen.Models/api/KubernetesCRDModelGen.Models.akuity.io.html) | [KubernetesCRDModelGen.Models.akuity.io](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.akuity.io) |
-| `aquasecurity.github.io` | [Docs](https://ivanjosipovic.github.io/KubernetesCRDModelGen.Models/api/KubernetesCRDModelGen.Models.aquasecurity.github.io.html) | [KubernetesCRDModelGen.Models.aquasecurity.github.io](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.aquasecurity.github.io) |
-| `k8s.aws` | [Docs](https://ivanjosipovic.github.io/KubernetesCRDModelGen.Models/api/KubernetesCRDModelGen.Models.k8s.aws.html) | [KubernetesCRDModelGen.Models.k8s.aws](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.k8s.aws) |<!-- EndOfReplace -->
+| `akuity.io` | [Docs](https://ivanjosipovic.github.io/KubernetesCRDModelGen.Models/api/KubernetesCRDModelGen.Models.akuity.io) | [KubernetesCRDModelGen.Models.akuity.io](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.akuity.io) |
+| `aquasecurity.github.io` | [Docs](https://ivanjosipovic.github.io/KubernetesCRDModelGen.Models/api/KubernetesCRDModelGen.Models.aquasecurity.github.io) | [KubernetesCRDModelGen.Models.aquasecurity.github.io](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.aquasecurity.github.io) |
+| `k8s.aws` | [Docs](https://ivanjosipovic.github.io/KubernetesCRDModelGen.Models/api/KubernetesCRDModelGen.Models.k8s.aws) | [KubernetesCRDModelGen.Models.k8s.aws](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.k8s.aws) |<!-- EndOfReplace -->
 
 New groups are generated into `src/Models/{group}` and are automatically added to the solution, release-please configuration, and release-please manifest.
 
