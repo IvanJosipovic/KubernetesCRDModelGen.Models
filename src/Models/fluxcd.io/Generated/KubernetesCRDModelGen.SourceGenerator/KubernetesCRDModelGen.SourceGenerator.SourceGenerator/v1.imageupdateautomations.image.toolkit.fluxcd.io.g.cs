@@ -576,7 +576,6 @@ public partial class V1ImageUpdateAutomationStatus
     public IDictionary<string, V1ImageUpdateAutomationStatusObservedPolicies>? ObservedPolicies { get; set; }
 
     /// <summary>
-    /// ObservedPolicies []ObservedPolicy `json:&quot;observedPolicies,omitempty&quot;`
     /// ObservedSourceRevision is the last observed source revision. This can be
     /// used to determine if the source has been updated since last observation.
     /// </summary>

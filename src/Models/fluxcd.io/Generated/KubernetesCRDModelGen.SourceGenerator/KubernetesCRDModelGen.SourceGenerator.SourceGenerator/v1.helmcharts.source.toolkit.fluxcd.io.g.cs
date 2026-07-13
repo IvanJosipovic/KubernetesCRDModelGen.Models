@@ -405,7 +405,7 @@ public partial class V1HelmChartStatus
     /// <summary>
     /// URL is the dynamic fetch link for the latest Artifact.
     /// It is provided on a &quot;best effort&quot; basis, and using the precise
-    /// BucketStatus.Artifact data is recommended.
+    /// HelmChartStatus.Artifact data is recommended.
     /// </summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
