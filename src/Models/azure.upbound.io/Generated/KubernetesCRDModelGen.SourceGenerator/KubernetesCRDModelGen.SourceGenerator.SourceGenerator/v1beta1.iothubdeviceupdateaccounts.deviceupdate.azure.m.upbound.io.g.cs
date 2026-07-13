@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.deviceupdate.azure.m.upbound.io;
 /// <summary>IOTHubDeviceUpdateAccount is the Schema for the IOTHubDeviceUpdateAccounts API. Manages an IoT Hub Device Update Account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IOTHubDeviceUpdateAccountList : IKubernetesObject<V1ListMeta>, IItems<V1beta1IOTHubDeviceUpdateAccount>
@@ -37,7 +37,7 @@ public partial class V1beta1IOTHubDeviceUpdateAccountList : IKubernetesObject<V1
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDeviceUpdateAccountSpecForProviderIdentity
 {
@@ -56,7 +56,7 @@ public partial class V1beta1IOTHubDeviceUpdateAccountSpecForProviderIdentity
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateAccountSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1IOTHubDeviceUpdateAccountSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -72,7 +72,7 @@ public enum V1beta1IOTHubDeviceUpdateAccountSpecForProviderResourceGroupNameRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateAccountSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1IOTHubDeviceUpdateAccountSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -83,7 +83,7 @@ public enum V1beta1IOTHubDeviceUpdateAccountSpecForProviderResourceGroupNameRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDeviceUpdateAccountSpecForProviderResourceGroupNameRefPolicy
 {
@@ -107,7 +107,7 @@ public partial class V1beta1IOTHubDeviceUpdateAccountSpecForProviderResourceGrou
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDeviceUpdateAccountSpecForProviderResourceGroupNameRef
 {
@@ -130,7 +130,7 @@ public partial class V1beta1IOTHubDeviceUpdateAccountSpecForProviderResourceGrou
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateAccountSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1IOTHubDeviceUpdateAccountSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -146,7 +146,7 @@ public enum V1beta1IOTHubDeviceUpdateAccountSpecForProviderResourceGroupNameSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateAccountSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1IOTHubDeviceUpdateAccountSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -157,7 +157,7 @@ public enum V1beta1IOTHubDeviceUpdateAccountSpecForProviderResourceGroupNameSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDeviceUpdateAccountSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -181,7 +181,7 @@ public partial class V1beta1IOTHubDeviceUpdateAccountSpecForProviderResourceGrou
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDeviceUpdateAccountSpecForProviderResourceGroupNameSelector
 {
@@ -205,7 +205,7 @@ public partial class V1beta1IOTHubDeviceUpdateAccountSpecForProviderResourceGrou
     public V1beta1IOTHubDeviceUpdateAccountSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDeviceUpdateAccountSpecForProvider
 {
@@ -243,7 +243,7 @@ public partial class V1beta1IOTHubDeviceUpdateAccountSpecForProvider
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDeviceUpdateAccountSpecInitProviderIdentity
 {
@@ -268,7 +268,7 @@ public partial class V1beta1IOTHubDeviceUpdateAccountSpecInitProviderIdentity
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDeviceUpdateAccountSpecInitProvider
 {
@@ -297,7 +297,7 @@ public partial class V1beta1IOTHubDeviceUpdateAccountSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateAccountSpecManagementPoliciesEnum>))]
 public enum V1beta1IOTHubDeviceUpdateAccountSpecManagementPoliciesEnum
 {
@@ -320,7 +320,7 @@ public enum V1beta1IOTHubDeviceUpdateAccountSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDeviceUpdateAccountSpecProviderConfigRef
 {
@@ -339,7 +339,7 @@ public partial class V1beta1IOTHubDeviceUpdateAccountSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDeviceUpdateAccountSpecWriteConnectionSecretToRef
 {
@@ -349,7 +349,7 @@ public partial class V1beta1IOTHubDeviceUpdateAccountSpecWriteConnectionSecretTo
 }
 
 /// <summary>IOTHubDeviceUpdateAccountSpec defines the desired state of IOTHubDeviceUpdateAccount</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDeviceUpdateAccountSpec
 {
@@ -401,7 +401,7 @@ public partial class V1beta1IOTHubDeviceUpdateAccountSpec
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDeviceUpdateAccountStatusAtProviderIdentity
 {
@@ -422,7 +422,7 @@ public partial class V1beta1IOTHubDeviceUpdateAccountStatusAtProviderIdentity
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDeviceUpdateAccountStatusAtProvider
 {
@@ -460,7 +460,7 @@ public partial class V1beta1IOTHubDeviceUpdateAccountStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDeviceUpdateAccountStatusConditions
 {
@@ -503,7 +503,7 @@ public partial class V1beta1IOTHubDeviceUpdateAccountStatusConditions
 }
 
 /// <summary>IOTHubDeviceUpdateAccountStatus defines the observed state of IOTHubDeviceUpdateAccount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDeviceUpdateAccountStatus
 {
@@ -524,7 +524,7 @@ public partial class V1beta1IOTHubDeviceUpdateAccountStatus
 }
 
 /// <summary>IOTHubDeviceUpdateAccount is the Schema for the IOTHubDeviceUpdateAccounts API. Manages an IoT Hub Device Update Account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IOTHubDeviceUpdateAccount : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1IOTHubDeviceUpdateAccountSpec>, IStatus<V1beta1IOTHubDeviceUpdateAccountStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.unity.databricks.m.crossplane.io;
 /// <summary>CatalogWorkspaceBinding is the Schema for the CatalogWorkspaceBindings API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CatalogWorkspaceBindingList : IKubernetesObject<V1ListMeta>, IItems<V1beta1CatalogWorkspaceBinding>
@@ -36,7 +36,7 @@ public partial class V1beta1CatalogWorkspaceBindingList : IKubernetesObject<V1Li
     public required IList<V1beta1CatalogWorkspaceBinding> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingSpecForProviderProviderConfig
 {
@@ -51,7 +51,7 @@ public partial class V1beta1CatalogWorkspaceBindingSpecForProviderProviderConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogWorkspaceBindingSpecForProviderSecurableNameRefPolicyResolutionEnum>))]
 public enum V1beta1CatalogWorkspaceBindingSpecForProviderSecurableNameRefPolicyResolutionEnum
 {
@@ -67,7 +67,7 @@ public enum V1beta1CatalogWorkspaceBindingSpecForProviderSecurableNameRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogWorkspaceBindingSpecForProviderSecurableNameRefPolicyResolveEnum>))]
 public enum V1beta1CatalogWorkspaceBindingSpecForProviderSecurableNameRefPolicyResolveEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1CatalogWorkspaceBindingSpecForProviderSecurableNameRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingSpecForProviderSecurableNameRefPolicy
 {
@@ -102,7 +102,7 @@ public partial class V1beta1CatalogWorkspaceBindingSpecForProviderSecurableNameR
 }
 
 /// <summary>Reference to a Catalog in unity to populate securableName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingSpecForProviderSecurableNameRef
 {
@@ -125,7 +125,7 @@ public partial class V1beta1CatalogWorkspaceBindingSpecForProviderSecurableNameR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogWorkspaceBindingSpecForProviderSecurableNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1CatalogWorkspaceBindingSpecForProviderSecurableNameSelectorPolicyResolutionEnum
 {
@@ -141,7 +141,7 @@ public enum V1beta1CatalogWorkspaceBindingSpecForProviderSecurableNameSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogWorkspaceBindingSpecForProviderSecurableNameSelectorPolicyResolveEnum>))]
 public enum V1beta1CatalogWorkspaceBindingSpecForProviderSecurableNameSelectorPolicyResolveEnum
 {
@@ -152,7 +152,7 @@ public enum V1beta1CatalogWorkspaceBindingSpecForProviderSecurableNameSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingSpecForProviderSecurableNameSelectorPolicy
 {
@@ -176,7 +176,7 @@ public partial class V1beta1CatalogWorkspaceBindingSpecForProviderSecurableNameS
 }
 
 /// <summary>Selector for a Catalog in unity to populate securableName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingSpecForProviderSecurableNameSelector
 {
@@ -206,7 +206,7 @@ public partial class V1beta1CatalogWorkspaceBindingSpecForProviderSecurableNameS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogWorkspaceBindingSpecForProviderWorkspaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1CatalogWorkspaceBindingSpecForProviderWorkspaceIdRefPolicyResolutionEnum
 {
@@ -222,7 +222,7 @@ public enum V1beta1CatalogWorkspaceBindingSpecForProviderWorkspaceIdRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogWorkspaceBindingSpecForProviderWorkspaceIdRefPolicyResolveEnum>))]
 public enum V1beta1CatalogWorkspaceBindingSpecForProviderWorkspaceIdRefPolicyResolveEnum
 {
@@ -233,7 +233,7 @@ public enum V1beta1CatalogWorkspaceBindingSpecForProviderWorkspaceIdRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingSpecForProviderWorkspaceIdRefPolicy
 {
@@ -257,7 +257,7 @@ public partial class V1beta1CatalogWorkspaceBindingSpecForProviderWorkspaceIdRef
 }
 
 /// <summary>Reference to a MwsWorkspaces in deployment to populate workspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingSpecForProviderWorkspaceIdRef
 {
@@ -280,7 +280,7 @@ public partial class V1beta1CatalogWorkspaceBindingSpecForProviderWorkspaceIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogWorkspaceBindingSpecForProviderWorkspaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1CatalogWorkspaceBindingSpecForProviderWorkspaceIdSelectorPolicyResolutionEnum
 {
@@ -296,7 +296,7 @@ public enum V1beta1CatalogWorkspaceBindingSpecForProviderWorkspaceIdSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogWorkspaceBindingSpecForProviderWorkspaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1CatalogWorkspaceBindingSpecForProviderWorkspaceIdSelectorPolicyResolveEnum
 {
@@ -307,7 +307,7 @@ public enum V1beta1CatalogWorkspaceBindingSpecForProviderWorkspaceIdSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingSpecForProviderWorkspaceIdSelectorPolicy
 {
@@ -331,7 +331,7 @@ public partial class V1beta1CatalogWorkspaceBindingSpecForProviderWorkspaceIdSel
 }
 
 /// <summary>Selector for a MwsWorkspaces in deployment to populate workspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingSpecForProviderWorkspaceIdSelector
 {
@@ -355,7 +355,7 @@ public partial class V1beta1CatalogWorkspaceBindingSpecForProviderWorkspaceIdSel
     public V1beta1CatalogWorkspaceBindingSpecForProviderWorkspaceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingSpecForProvider
 {
@@ -398,7 +398,7 @@ public partial class V1beta1CatalogWorkspaceBindingSpecForProvider
     public V1beta1CatalogWorkspaceBindingSpecForProviderWorkspaceIdSelector? WorkspaceIdSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingSpecInitProviderProviderConfig
 {
@@ -413,7 +413,7 @@ public partial class V1beta1CatalogWorkspaceBindingSpecInitProviderProviderConfi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogWorkspaceBindingSpecInitProviderSecurableNameRefPolicyResolutionEnum>))]
 public enum V1beta1CatalogWorkspaceBindingSpecInitProviderSecurableNameRefPolicyResolutionEnum
 {
@@ -429,7 +429,7 @@ public enum V1beta1CatalogWorkspaceBindingSpecInitProviderSecurableNameRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogWorkspaceBindingSpecInitProviderSecurableNameRefPolicyResolveEnum>))]
 public enum V1beta1CatalogWorkspaceBindingSpecInitProviderSecurableNameRefPolicyResolveEnum
 {
@@ -440,7 +440,7 @@ public enum V1beta1CatalogWorkspaceBindingSpecInitProviderSecurableNameRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingSpecInitProviderSecurableNameRefPolicy
 {
@@ -464,7 +464,7 @@ public partial class V1beta1CatalogWorkspaceBindingSpecInitProviderSecurableName
 }
 
 /// <summary>Reference to a Catalog in unity to populate securableName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingSpecInitProviderSecurableNameRef
 {
@@ -487,7 +487,7 @@ public partial class V1beta1CatalogWorkspaceBindingSpecInitProviderSecurableName
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogWorkspaceBindingSpecInitProviderSecurableNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1CatalogWorkspaceBindingSpecInitProviderSecurableNameSelectorPolicyResolutionEnum
 {
@@ -503,7 +503,7 @@ public enum V1beta1CatalogWorkspaceBindingSpecInitProviderSecurableNameSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogWorkspaceBindingSpecInitProviderSecurableNameSelectorPolicyResolveEnum>))]
 public enum V1beta1CatalogWorkspaceBindingSpecInitProviderSecurableNameSelectorPolicyResolveEnum
 {
@@ -514,7 +514,7 @@ public enum V1beta1CatalogWorkspaceBindingSpecInitProviderSecurableNameSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingSpecInitProviderSecurableNameSelectorPolicy
 {
@@ -538,7 +538,7 @@ public partial class V1beta1CatalogWorkspaceBindingSpecInitProviderSecurableName
 }
 
 /// <summary>Selector for a Catalog in unity to populate securableName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingSpecInitProviderSecurableNameSelector
 {
@@ -568,7 +568,7 @@ public partial class V1beta1CatalogWorkspaceBindingSpecInitProviderSecurableName
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogWorkspaceBindingSpecInitProviderWorkspaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1CatalogWorkspaceBindingSpecInitProviderWorkspaceIdRefPolicyResolutionEnum
 {
@@ -584,7 +584,7 @@ public enum V1beta1CatalogWorkspaceBindingSpecInitProviderWorkspaceIdRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogWorkspaceBindingSpecInitProviderWorkspaceIdRefPolicyResolveEnum>))]
 public enum V1beta1CatalogWorkspaceBindingSpecInitProviderWorkspaceIdRefPolicyResolveEnum
 {
@@ -595,7 +595,7 @@ public enum V1beta1CatalogWorkspaceBindingSpecInitProviderWorkspaceIdRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingSpecInitProviderWorkspaceIdRefPolicy
 {
@@ -619,7 +619,7 @@ public partial class V1beta1CatalogWorkspaceBindingSpecInitProviderWorkspaceIdRe
 }
 
 /// <summary>Reference to a MwsWorkspaces in deployment to populate workspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingSpecInitProviderWorkspaceIdRef
 {
@@ -642,7 +642,7 @@ public partial class V1beta1CatalogWorkspaceBindingSpecInitProviderWorkspaceIdRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogWorkspaceBindingSpecInitProviderWorkspaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1CatalogWorkspaceBindingSpecInitProviderWorkspaceIdSelectorPolicyResolutionEnum
 {
@@ -658,7 +658,7 @@ public enum V1beta1CatalogWorkspaceBindingSpecInitProviderWorkspaceIdSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogWorkspaceBindingSpecInitProviderWorkspaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1CatalogWorkspaceBindingSpecInitProviderWorkspaceIdSelectorPolicyResolveEnum
 {
@@ -669,7 +669,7 @@ public enum V1beta1CatalogWorkspaceBindingSpecInitProviderWorkspaceIdSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingSpecInitProviderWorkspaceIdSelectorPolicy
 {
@@ -693,7 +693,7 @@ public partial class V1beta1CatalogWorkspaceBindingSpecInitProviderWorkspaceIdSe
 }
 
 /// <summary>Selector for a MwsWorkspaces in deployment to populate workspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingSpecInitProviderWorkspaceIdSelector
 {
@@ -729,7 +729,7 @@ public partial class V1beta1CatalogWorkspaceBindingSpecInitProviderWorkspaceIdSe
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingSpecInitProvider
 {
@@ -776,7 +776,7 @@ public partial class V1beta1CatalogWorkspaceBindingSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogWorkspaceBindingSpecManagementPoliciesEnum>))]
 public enum V1beta1CatalogWorkspaceBindingSpecManagementPoliciesEnum
 {
@@ -799,7 +799,7 @@ public enum V1beta1CatalogWorkspaceBindingSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingSpecProviderConfigRef
 {
@@ -818,7 +818,7 @@ public partial class V1beta1CatalogWorkspaceBindingSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingSpecWriteConnectionSecretToRef
 {
@@ -828,7 +828,7 @@ public partial class V1beta1CatalogWorkspaceBindingSpecWriteConnectionSecretToRe
 }
 
 /// <summary>CatalogWorkspaceBindingSpec defines the desired state of CatalogWorkspaceBinding</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingSpec
 {
@@ -879,7 +879,7 @@ public partial class V1beta1CatalogWorkspaceBindingSpec
     public V1beta1CatalogWorkspaceBindingSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingStatusAtProviderProviderConfig
 {
@@ -888,7 +888,7 @@ public partial class V1beta1CatalogWorkspaceBindingStatusAtProviderProviderConfi
     public string? WorkspaceId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingStatusAtProvider
 {
@@ -919,7 +919,7 @@ public partial class V1beta1CatalogWorkspaceBindingStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingStatusConditions
 {
@@ -962,7 +962,7 @@ public partial class V1beta1CatalogWorkspaceBindingStatusConditions
 }
 
 /// <summary>CatalogWorkspaceBindingStatus defines the observed state of CatalogWorkspaceBinding.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogWorkspaceBindingStatus
 {
@@ -983,7 +983,7 @@ public partial class V1beta1CatalogWorkspaceBindingStatus
 }
 
 /// <summary>CatalogWorkspaceBinding is the Schema for the CatalogWorkspaceBindings API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CatalogWorkspaceBinding : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1CatalogWorkspaceBindingSpec>, IStatus<V1beta1CatalogWorkspaceBindingStatus?>

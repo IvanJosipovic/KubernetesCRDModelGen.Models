@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.synapse.azure.com;
 /// - Generated from: /synapse/resource-manager/Microsoft.Synapse/stable/2021-06-01/workspace.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Synapse/workspaces/{workspaceName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20210601WorkspaceList : IKubernetesObject<V1ListMeta>, IItems<V20210601Workspace>
@@ -41,7 +41,7 @@ public partial class V20210601WorkspaceList : IKubernetesObject<V1ListMeta>, IIt
 }
 
 /// <summary>CspWorkspaceAdminProperties: Initial workspace AAD admin properties for a CSP subscription</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceSpecCspWorkspaceAdminProperties
 {
@@ -51,7 +51,7 @@ public partial class V20210601WorkspaceSpecCspWorkspaceAdminProperties
 }
 
 /// <summary>AccountUrlFromConfig: Account URL</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceSpecDefaultDataLakeStorageAccountUrlFromConfig
 {
@@ -68,7 +68,7 @@ public partial class V20210601WorkspaceSpecDefaultDataLakeStorageAccountUrlFromC
 }
 
 /// <summary>ResourceReference: ARM resource Id of this storage account</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceSpecDefaultDataLakeStorageResourceReference
 {
@@ -94,7 +94,7 @@ public partial class V20210601WorkspaceSpecDefaultDataLakeStorageResourceReferen
 }
 
 /// <summary>DefaultDataLakeStorage: Workspace default data lake storage account details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceSpecDefaultDataLakeStorage
 {
@@ -120,7 +120,7 @@ public partial class V20210601WorkspaceSpecDefaultDataLakeStorage
 }
 
 /// <summary>UserAssignedIdentityReference: User assigned identity resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceSpecEncryptionCmkKekIdentityUserAssignedIdentityReference
 {
@@ -146,7 +146,7 @@ public partial class V20210601WorkspaceSpecEncryptionCmkKekIdentityUserAssignedI
 }
 
 /// <summary>KekIdentity: Key encryption key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceSpecEncryptionCmkKekIdentity
 {
@@ -160,7 +160,7 @@ public partial class V20210601WorkspaceSpecEncryptionCmkKekIdentity
 }
 
 /// <summary>Key: The key object of the workspace</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceSpecEncryptionCmkKey
 {
@@ -174,7 +174,7 @@ public partial class V20210601WorkspaceSpecEncryptionCmkKey
 }
 
 /// <summary>Cmk: Customer Managed Key Details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceSpecEncryptionCmk
 {
@@ -188,7 +188,7 @@ public partial class V20210601WorkspaceSpecEncryptionCmk
 }
 
 /// <summary>Encryption: The encryption details of the workspace</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceSpecEncryption
 {
@@ -198,7 +198,7 @@ public partial class V20210601WorkspaceSpecEncryption
 }
 
 /// <summary>Type: The type of managed identity for the workspace</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20210601WorkspaceSpecIdentityTypeEnum>))]
 public enum V20210601WorkspaceSpecIdentityTypeEnum
 {
@@ -211,7 +211,7 @@ public enum V20210601WorkspaceSpecIdentityTypeEnum
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceSpecIdentityUserAssignedIdentitiesReference
 {
@@ -237,7 +237,7 @@ public partial class V20210601WorkspaceSpecIdentityUserAssignedIdentitiesReferen
 }
 
 /// <summary>Information about the user assigned identity for the resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceSpecIdentityUserAssignedIdentities
 {
@@ -247,7 +247,7 @@ public partial class V20210601WorkspaceSpecIdentityUserAssignedIdentities
 }
 
 /// <summary>Identity: Identity of the workspace</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceSpecIdentity
 {
@@ -261,7 +261,7 @@ public partial class V20210601WorkspaceSpecIdentity
 }
 
 /// <summary>ManagedVirtualNetworkSettings: Managed Virtual Network Settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceSpecManagedVirtualNetworkSettings
 {
@@ -283,7 +283,7 @@ public partial class V20210601WorkspaceSpecManagedVirtualNetworkSettings
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceSpecOperatorSpecConfigMapExpressions
 {
@@ -324,7 +324,7 @@ public partial class V20210601WorkspaceSpecOperatorSpecConfigMapExpressions
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceSpecOperatorSpecSecretExpressions
 {
@@ -364,7 +364,7 @@ public partial class V20210601WorkspaceSpecOperatorSpecSecretExpressions
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceSpecOperatorSpec
 {
@@ -382,7 +382,7 @@ public partial class V20210601WorkspaceSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceSpecOwner
 {
@@ -395,7 +395,7 @@ public partial class V20210601WorkspaceSpecOwner
 }
 
 /// <summary>PublicNetworkAccess: Enable or Disable public network access to workspace</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20210601WorkspaceSpecPublicNetworkAccessEnum>))]
 public enum V20210601WorkspaceSpecPublicNetworkAccessEnum
 {
@@ -406,7 +406,7 @@ public enum V20210601WorkspaceSpecPublicNetworkAccessEnum
 }
 
 /// <summary>PurviewResourceReference: Purview Resource ID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceSpecPurviewConfigurationPurviewResourceReference
 {
@@ -432,7 +432,7 @@ public partial class V20210601WorkspaceSpecPurviewConfigurationPurviewResourceRe
 }
 
 /// <summary>PurviewConfiguration: Purview Configuration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceSpecPurviewConfiguration
 {
@@ -442,7 +442,7 @@ public partial class V20210601WorkspaceSpecPurviewConfiguration
 }
 
 /// <summary>SqlAdministratorLoginPassword: SQL administrator login password</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceSpecSqlAdministratorLoginPassword
 {
@@ -459,7 +459,7 @@ public partial class V20210601WorkspaceSpecSqlAdministratorLoginPassword
 }
 
 /// <summary>VirtualNetworkProfile: Virtual Network profile</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceSpecVirtualNetworkProfile
 {
@@ -469,7 +469,7 @@ public partial class V20210601WorkspaceSpecVirtualNetworkProfile
 }
 
 /// <summary>WorkspaceRepositoryConfiguration: Git integration settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceSpecWorkspaceRepositoryConfiguration
 {
@@ -510,7 +510,7 @@ public partial class V20210601WorkspaceSpecWorkspaceRepositoryConfiguration
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceSpec
 {
@@ -613,7 +613,7 @@ public partial class V20210601WorkspaceSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceStatusConditions
 {
@@ -659,7 +659,7 @@ public partial class V20210601WorkspaceStatusConditions
 }
 
 /// <summary>CspWorkspaceAdminProperties: Initial workspace AAD admin properties for a CSP subscription</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceStatusCspWorkspaceAdminProperties
 {
@@ -669,7 +669,7 @@ public partial class V20210601WorkspaceStatusCspWorkspaceAdminProperties
 }
 
 /// <summary>DefaultDataLakeStorage: Workspace default data lake storage account details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceStatusDefaultDataLakeStorage
 {
@@ -691,7 +691,7 @@ public partial class V20210601WorkspaceStatusDefaultDataLakeStorage
 }
 
 /// <summary>KekIdentity: Key encryption key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceStatusEncryptionCmkKekIdentity
 {
@@ -705,7 +705,7 @@ public partial class V20210601WorkspaceStatusEncryptionCmkKekIdentity
 }
 
 /// <summary>Key: The key object of the workspace</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceStatusEncryptionCmkKey
 {
@@ -719,7 +719,7 @@ public partial class V20210601WorkspaceStatusEncryptionCmkKey
 }
 
 /// <summary>Cmk: Customer Managed Key Details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceStatusEncryptionCmk
 {
@@ -737,7 +737,7 @@ public partial class V20210601WorkspaceStatusEncryptionCmk
 }
 
 /// <summary>Encryption: The encryption details of the workspace</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceStatusEncryption
 {
@@ -751,7 +751,7 @@ public partial class V20210601WorkspaceStatusEncryption
 }
 
 /// <summary>User Assigned Managed Identity</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceStatusIdentityUserAssignedIdentities
 {
@@ -765,7 +765,7 @@ public partial class V20210601WorkspaceStatusIdentityUserAssignedIdentities
 }
 
 /// <summary>Identity: Identity of the workspace</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceStatusIdentity
 {
@@ -787,7 +787,7 @@ public partial class V20210601WorkspaceStatusIdentity
 }
 
 /// <summary>ManagedVirtualNetworkSettings: Managed Virtual Network Settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceStatusManagedVirtualNetworkSettings
 {
@@ -805,7 +805,7 @@ public partial class V20210601WorkspaceStatusManagedVirtualNetworkSettings
 }
 
 /// <summary>A private endpoint connection</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceStatusPrivateEndpointConnections
 {
@@ -818,7 +818,7 @@ public partial class V20210601WorkspaceStatusPrivateEndpointConnections
 }
 
 /// <summary>PurviewConfiguration: Purview Configuration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceStatusPurviewConfiguration
 {
@@ -828,7 +828,7 @@ public partial class V20210601WorkspaceStatusPurviewConfiguration
 }
 
 /// <summary>VirtualNetworkProfile: Virtual Network profile</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceStatusVirtualNetworkProfile
 {
@@ -838,7 +838,7 @@ public partial class V20210601WorkspaceStatusVirtualNetworkProfile
 }
 
 /// <summary>WorkspaceRepositoryConfiguration: Git integration settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceStatusWorkspaceRepositoryConfiguration
 {
@@ -880,7 +880,7 @@ public partial class V20210601WorkspaceStatusWorkspaceRepositoryConfiguration
 }
 
 /// <summary>A workspace</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20210601WorkspaceStatus
 {
@@ -1008,7 +1008,7 @@ public partial class V20210601WorkspaceStatus
 /// - Generated from: /synapse/resource-manager/Microsoft.Synapse/stable/2021-06-01/workspace.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Synapse/workspaces/{workspaceName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20210601Workspace : IKubernetesObject<V1ObjectMeta>, ISpec<V20210601WorkspaceSpec?>, IStatus<V20210601WorkspaceStatus?>

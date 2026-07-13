@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.rds.services.k8s.aws;
 /// <summary>DBClusterEndpoint is the Schema for the DBClusterEndpoints API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1DBClusterEndpointList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1DBClusterEndpoint>
@@ -40,7 +40,7 @@ public partial class V1alpha1DBClusterEndpointList : IKubernetesObject<V1ListMet
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DBClusterEndpointSpecDbClusterIdentifierRefFrom
 {
@@ -60,7 +60,7 @@ public partial class V1alpha1DBClusterEndpointSpecDbClusterIdentifierRefFrom
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DBClusterEndpointSpecDbClusterIdentifierRef
 {
@@ -80,7 +80,7 @@ public partial class V1alpha1DBClusterEndpointSpecDbClusterIdentifierRef
 /// (https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Tagging.html)
 /// in the Amazon Aurora User Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DBClusterEndpointSpecTags
 {
@@ -109,7 +109,7 @@ public partial class V1alpha1DBClusterEndpointSpecTags
 /// For the data structure that represents Amazon RDS DB instance endpoints,
 /// see Endpoint.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DBClusterEndpointSpec
 {
@@ -165,7 +165,7 @@ public partial class V1alpha1DBClusterEndpointSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DBClusterEndpointStatusAckResourceMetadata
 {
@@ -202,7 +202,7 @@ public partial class V1alpha1DBClusterEndpointStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DBClusterEndpointStatusConditions
 {
@@ -228,7 +228,7 @@ public partial class V1alpha1DBClusterEndpointStatusConditions
 }
 
 /// <summary>DBClusterEndpointStatus defines the observed state of DBClusterEndpoint</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DBClusterEndpointStatus
 {
@@ -271,7 +271,7 @@ public partial class V1alpha1DBClusterEndpointStatus
 }
 
 /// <summary>DBClusterEndpoint is the Schema for the DBClusterEndpoints API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1DBClusterEndpoint : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1DBClusterEndpointSpec?>, IStatus<V1alpha1DBClusterEndpointStatus?>

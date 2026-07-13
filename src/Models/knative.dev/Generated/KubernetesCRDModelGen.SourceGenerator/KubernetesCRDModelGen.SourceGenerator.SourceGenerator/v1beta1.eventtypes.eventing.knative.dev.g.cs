@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.eventing.knative.dev;
 /// <summary>EventType represents a type of event that can be consumed from a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("eventing.knative.dev/v1beta1 EventType is deprecated; see https://knative.dev/docs/eventing/event-registry/ for instructions to migrate to eventing.knative.dev/v1beta2 EventType")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -38,7 +38,7 @@ public partial class V1beta1EventTypeList : IKubernetesObject<V1ListMeta>, IItem
 }
 
 /// <summary>Reference a resource. For example, Broker.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("eventing.knative.dev/v1beta1 EventType is deprecated; see https://knative.dev/docs/eventing/event-registry/ for instructions to migrate to eventing.knative.dev/v1beta2 EventType")]
 public partial class V1beta1EventTypeSpecReference
@@ -65,7 +65,7 @@ public partial class V1beta1EventTypeSpecReference
 }
 
 /// <summary>Spec defines the desired state of the EventType.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("eventing.knative.dev/v1beta1 EventType is deprecated; see https://knative.dev/docs/eventing/event-registry/ for instructions to migrate to eventing.knative.dev/v1beta2 EventType")]
 public partial class V1beta1EventTypeSpec
@@ -98,7 +98,7 @@ public partial class V1beta1EventTypeSpec
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("eventing.knative.dev/v1beta1 EventType is deprecated; see https://knative.dev/docs/eventing/event-registry/ for instructions to migrate to eventing.knative.dev/v1beta2 EventType")]
 public partial class V1beta1EventTypeStatusConditions
@@ -129,7 +129,7 @@ public partial class V1beta1EventTypeStatusConditions
 }
 
 /// <summary>Status represents the current state of the EventType. This data may be out of date.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("eventing.knative.dev/v1beta1 EventType is deprecated; see https://knative.dev/docs/eventing/event-registry/ for instructions to migrate to eventing.knative.dev/v1beta2 EventType")]
 public partial class V1beta1EventTypeStatus
@@ -148,7 +148,7 @@ public partial class V1beta1EventTypeStatus
 }
 
 /// <summary>EventType represents a type of event that can be consumed from a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("eventing.knative.dev/v1beta1 EventType is deprecated; see https://knative.dev/docs/eventing/event-registry/ for instructions to migrate to eventing.knative.dev/v1beta2 EventType")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

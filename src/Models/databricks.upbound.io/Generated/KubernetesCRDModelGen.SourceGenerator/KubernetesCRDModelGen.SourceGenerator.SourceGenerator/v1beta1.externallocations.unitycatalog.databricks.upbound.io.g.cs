@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.unitycatalog.databricks.upbound.io;
 /// <summary>ExternalLocation is the Schema for the ExternalLocations API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ExternalLocationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ExternalLocation>
@@ -45,7 +45,7 @@ public partial class V1beta1ExternalLocationList : IKubernetesObject<V1ListMeta>
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExternalLocationSpecDeletionPolicyEnum>))]
 public enum V1beta1ExternalLocationSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1ExternalLocationSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExternalLocationSpecForProviderCredentialNameRefPolicyResolutionEnum>))]
 public enum V1beta1ExternalLocationSpecForProviderCredentialNameRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1ExternalLocationSpecForProviderCredentialNameRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExternalLocationSpecForProviderCredentialNameRefPolicyResolveEnum>))]
 public enum V1beta1ExternalLocationSpecForProviderCredentialNameRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1ExternalLocationSpecForProviderCredentialNameRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderCredentialNameRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1ExternalLocationSpecForProviderCredentialNameRefPoli
 }
 
 /// <summary>Reference to a StorageCredential in unitycatalog to populate credentialName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderCredentialNameRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1ExternalLocationSpecForProviderCredentialNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExternalLocationSpecForProviderCredentialNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ExternalLocationSpecForProviderCredentialNameSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1ExternalLocationSpecForProviderCredentialNameSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExternalLocationSpecForProviderCredentialNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ExternalLocationSpecForProviderCredentialNameSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1ExternalLocationSpecForProviderCredentialNameSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderCredentialNameSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1ExternalLocationSpecForProviderCredentialNameSelecto
 }
 
 /// <summary>Selector for a StorageCredential in unitycatalog to populate credentialName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderCredentialNameSelector
 {
@@ -203,7 +203,7 @@ public partial class V1beta1ExternalLocationSpecForProviderCredentialNameSelecto
 }
 
 /// <summary>The options for Server-Side Encryption to be used by each Databricks s3 client when connecting to S3 cloud storage (AWS).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderEncryptionDetailsSseEncryptionDetails
 {
@@ -215,7 +215,7 @@ public partial class V1beta1ExternalLocationSpecForProviderEncryptionDetailsSseE
 }
 
 /// <summary>The options for Server-Side Encryption to be used by each Databricks s3 client when connecting to S3 cloud storage (AWS).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderEncryptionDetails
 {
@@ -224,7 +224,7 @@ public partial class V1beta1ExternalLocationSpecForProviderEncryptionDetails
     public V1beta1ExternalLocationSpecForProviderEncryptionDetailsSseEncryptionDetails? SseEncryptionDetails { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProvider
 {
@@ -295,7 +295,7 @@ public partial class V1beta1ExternalLocationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExternalLocationSpecInitProviderCredentialNameRefPolicyResolutionEnum>))]
 public enum V1beta1ExternalLocationSpecInitProviderCredentialNameRefPolicyResolutionEnum
 {
@@ -311,7 +311,7 @@ public enum V1beta1ExternalLocationSpecInitProviderCredentialNameRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExternalLocationSpecInitProviderCredentialNameRefPolicyResolveEnum>))]
 public enum V1beta1ExternalLocationSpecInitProviderCredentialNameRefPolicyResolveEnum
 {
@@ -322,7 +322,7 @@ public enum V1beta1ExternalLocationSpecInitProviderCredentialNameRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderCredentialNameRefPolicy
 {
@@ -346,7 +346,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderCredentialNameRefPol
 }
 
 /// <summary>Reference to a StorageCredential in unitycatalog to populate credentialName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderCredentialNameRef
 {
@@ -365,7 +365,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderCredentialNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExternalLocationSpecInitProviderCredentialNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ExternalLocationSpecInitProviderCredentialNameSelectorPolicyResolutionEnum
 {
@@ -381,7 +381,7 @@ public enum V1beta1ExternalLocationSpecInitProviderCredentialNameSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExternalLocationSpecInitProviderCredentialNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ExternalLocationSpecInitProviderCredentialNameSelectorPolicyResolveEnum
 {
@@ -392,7 +392,7 @@ public enum V1beta1ExternalLocationSpecInitProviderCredentialNameSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderCredentialNameSelectorPolicy
 {
@@ -416,7 +416,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderCredentialNameSelect
 }
 
 /// <summary>Selector for a StorageCredential in unitycatalog to populate credentialName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderCredentialNameSelector
 {
@@ -437,7 +437,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderCredentialNameSelect
 }
 
 /// <summary>The options for Server-Side Encryption to be used by each Databricks s3 client when connecting to S3 cloud storage (AWS).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderEncryptionDetailsSseEncryptionDetails
 {
@@ -449,7 +449,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderEncryptionDetailsSse
 }
 
 /// <summary>The options for Server-Side Encryption to be used by each Databricks s3 client when connecting to S3 cloud storage (AWS).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderEncryptionDetails
 {
@@ -470,7 +470,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderEncryptionDetails
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProvider
 {
@@ -539,7 +539,7 @@ public partial class V1beta1ExternalLocationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExternalLocationSpecManagementPoliciesEnum>))]
 public enum V1beta1ExternalLocationSpecManagementPoliciesEnum
 {
@@ -563,7 +563,7 @@ public enum V1beta1ExternalLocationSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExternalLocationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1ExternalLocationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -579,7 +579,7 @@ public enum V1beta1ExternalLocationSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExternalLocationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1ExternalLocationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -590,7 +590,7 @@ public enum V1beta1ExternalLocationSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecProviderConfigRefPolicy
 {
@@ -618,7 +618,7 @@ public partial class V1beta1ExternalLocationSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecProviderConfigRef
 {
@@ -637,7 +637,7 @@ public partial class V1beta1ExternalLocationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecWriteConnectionSecretToRef
 {
@@ -651,7 +651,7 @@ public partial class V1beta1ExternalLocationSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ExternalLocationSpec defines the desired state of ExternalLocation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpec
 {
@@ -719,7 +719,7 @@ public partial class V1beta1ExternalLocationSpec
 }
 
 /// <summary>The options for Server-Side Encryption to be used by each Databricks s3 client when connecting to S3 cloud storage (AWS).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatusAtProviderEncryptionDetailsSseEncryptionDetails
 {
@@ -731,7 +731,7 @@ public partial class V1beta1ExternalLocationStatusAtProviderEncryptionDetailsSse
 }
 
 /// <summary>The options for Server-Side Encryption to be used by each Databricks s3 client when connecting to S3 cloud storage (AWS).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatusAtProviderEncryptionDetails
 {
@@ -740,7 +740,7 @@ public partial class V1beta1ExternalLocationStatusAtProviderEncryptionDetails
     public V1beta1ExternalLocationStatusAtProviderEncryptionDetailsSseEncryptionDetails? SseEncryptionDetails { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatusAtProvider
 {
@@ -825,7 +825,7 @@ public partial class V1beta1ExternalLocationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatusConditions
 {
@@ -868,7 +868,7 @@ public partial class V1beta1ExternalLocationStatusConditions
 }
 
 /// <summary>ExternalLocationStatus defines the observed state of ExternalLocation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatus
 {
@@ -889,7 +889,7 @@ public partial class V1beta1ExternalLocationStatus
 }
 
 /// <summary>ExternalLocation is the Schema for the ExternalLocations API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ExternalLocation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ExternalLocationSpec>, IStatus<V1beta1ExternalLocationStatus?>

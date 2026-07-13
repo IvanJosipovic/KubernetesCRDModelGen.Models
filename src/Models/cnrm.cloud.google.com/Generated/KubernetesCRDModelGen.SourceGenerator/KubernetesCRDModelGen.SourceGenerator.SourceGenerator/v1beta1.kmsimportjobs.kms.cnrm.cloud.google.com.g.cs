@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.kms.cnrm.cloud.google.com;
 /// <summary>KMSImportJob is the Schema for the KMSImportJob API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1KMSImportJobList : IKubernetesObject<V1ListMeta>, IItems<V1beta1KMSImportJob>
@@ -37,7 +37,7 @@ public partial class V1beta1KMSImportJobList : IKubernetesObject<V1ListMeta>, II
 }
 
 /// <summary>KMSKeyRingRef defines the resource reference to KMSKeyRing, which &quot;External&quot; field holds the GCP identifier for the KRM object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KMSImportJobSpecKmsKeyRingRef
 {
@@ -55,7 +55,7 @@ public partial class V1beta1KMSImportJobSpecKmsKeyRingRef
 }
 
 /// <summary>KMSImportJobSpec defines the desired state of KMSImportJob</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KMSImportJobSpec
 {
@@ -76,7 +76,7 @@ public partial class V1beta1KMSImportJobSpec
     public string? ResourceID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KMSImportJobStatusConditions
 {
@@ -102,7 +102,7 @@ public partial class V1beta1KMSImportJobStatusConditions
 }
 
 /// <summary>Output only. The certificate chains needed to validate the attestation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KMSImportJobStatusObservedStateAttestationCertChains
 {
@@ -120,7 +120,7 @@ public partial class V1beta1KMSImportJobStatusObservedStateAttestationCertChains
 }
 
 /// <summary>Output only. Statement that was generated and signed by the key creator (for example, an HSM) at key creation time. Use this statement to verify attributes of the key as stored on the HSM, independently of Google. Only present if the chosen [ImportMethod][google.cloud.kms.v1.ImportJob.ImportMethod] is one with a protection level of [HSM][google.cloud.kms.v1.ProtectionLevel.HSM].</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KMSImportJobStatusObservedStateAttestation
 {
@@ -138,7 +138,7 @@ public partial class V1beta1KMSImportJobStatusObservedStateAttestation
 }
 
 /// <summary>Output only. The public key with which to wrap key material prior to import. Only returned if [state][google.cloud.kms.v1.ImportJob.state] is [ACTIVE][google.cloud.kms.v1.ImportJob.ImportJobState.ACTIVE].</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KMSImportJobStatusObservedStatePublicKey
 {
@@ -148,7 +148,7 @@ public partial class V1beta1KMSImportJobStatusObservedStatePublicKey
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KMSImportJobStatusObservedState
 {
@@ -182,7 +182,7 @@ public partial class V1beta1KMSImportJobStatusObservedState
 }
 
 /// <summary>KMSImportJobStatus defines the config connector machine state of KMSImportJob</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KMSImportJobStatus
 {
@@ -204,7 +204,7 @@ public partial class V1beta1KMSImportJobStatus
 }
 
 /// <summary>KMSImportJob is the Schema for the KMSImportJob API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1KMSImportJob : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1KMSImportJobSpec>, IStatus<V1beta1KMSImportJobStatus?>

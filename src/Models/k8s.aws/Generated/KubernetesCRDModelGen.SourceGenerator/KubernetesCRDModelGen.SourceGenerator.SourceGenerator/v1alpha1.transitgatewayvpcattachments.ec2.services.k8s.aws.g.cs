@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ec2.services.k8s.aws;
 /// <summary>TransitGatewayVPCAttachment is the Schema for the TransitGatewayVPCAttachments API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1TransitGatewayVPCAttachmentList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1TransitGatewayVPCAttachment>
@@ -37,7 +37,7 @@ public partial class V1alpha1TransitGatewayVPCAttachmentList : IKubernetesObject
 }
 
 /// <summary>The VPC attachment options.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TransitGatewayVPCAttachmentSpecOptions
 {
@@ -58,7 +58,7 @@ public partial class V1alpha1TransitGatewayVPCAttachmentSpecOptions
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TransitGatewayVPCAttachmentSpecSubnetRefsFrom
 {
@@ -78,7 +78,7 @@ public partial class V1alpha1TransitGatewayVPCAttachmentSpecSubnetRefsFrom
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TransitGatewayVPCAttachmentSpecSubnetRefs
 {
@@ -91,7 +91,7 @@ public partial class V1alpha1TransitGatewayVPCAttachmentSpecSubnetRefs
 }
 
 /// <summary>Describes a tag.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TransitGatewayVPCAttachmentSpecTags
 {
@@ -106,7 +106,7 @@ public partial class V1alpha1TransitGatewayVPCAttachmentSpecTags
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TransitGatewayVPCAttachmentSpecTransitGatewayRefFrom
 {
@@ -126,7 +126,7 @@ public partial class V1alpha1TransitGatewayVPCAttachmentSpecTransitGatewayRefFro
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TransitGatewayVPCAttachmentSpecTransitGatewayRef
 {
@@ -142,7 +142,7 @@ public partial class V1alpha1TransitGatewayVPCAttachmentSpecTransitGatewayRef
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TransitGatewayVPCAttachmentSpecVpcRefFrom
 {
@@ -162,7 +162,7 @@ public partial class V1alpha1TransitGatewayVPCAttachmentSpecVpcRefFrom
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TransitGatewayVPCAttachmentSpecVpcRef
 {
@@ -179,7 +179,7 @@ public partial class V1alpha1TransitGatewayVPCAttachmentSpecVpcRef
 /// 
 /// Describes a VPC attachment.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TransitGatewayVPCAttachmentSpec
 {
@@ -245,7 +245,7 @@ public partial class V1alpha1TransitGatewayVPCAttachmentSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TransitGatewayVPCAttachmentStatusAckResourceMetadata
 {
@@ -282,7 +282,7 @@ public partial class V1alpha1TransitGatewayVPCAttachmentStatusAckResourceMetadat
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TransitGatewayVPCAttachmentStatusConditions
 {
@@ -308,7 +308,7 @@ public partial class V1alpha1TransitGatewayVPCAttachmentStatusConditions
 }
 
 /// <summary>TransitGatewayVPCAttachmentStatus defines the observed state of TransitGatewayVPCAttachment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TransitGatewayVPCAttachmentStatus
 {
@@ -350,7 +350,7 @@ public partial class V1alpha1TransitGatewayVPCAttachmentStatus
 }
 
 /// <summary>TransitGatewayVPCAttachment is the Schema for the TransitGatewayVPCAttachments API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1TransitGatewayVPCAttachment : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1TransitGatewayVPCAttachmentSpec?>, IStatus<V1alpha1TransitGatewayVPCAttachmentStatus?>

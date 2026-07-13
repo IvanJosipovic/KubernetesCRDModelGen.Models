@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sql.azure.upbound.io;
 /// <summary>MSSQLServerTransparentDataEncryption is the Schema for the MSSQLServerTransparentDataEncryptions API. Manages the transparent data encryption configuration for a MSSQL Server</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MSSQLServerTransparentDataEncryptionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MSSQLServerTransparentDataEncryption>
@@ -45,7 +45,7 @@ public partial class V1beta1MSSQLServerTransparentDataEncryptionList : IKubernet
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerTransparentDataEncryptionSpecDeletionPolicyEnum>))]
 public enum V1beta1MSSQLServerTransparentDataEncryptionSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1MSSQLServerTransparentDataEncryptionSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderKeyVaultKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderKeyVaultKeyIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderKeyVaultKe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderKeyVaultKeyIdRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderKeyVaultKeyIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderKeyVaultKe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderKeyVaultKeyIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderK
 }
 
 /// <summary>Reference to a Key in keyvault to populate keyVaultKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderKeyVaultKeyIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderK
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderKeyVaultKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderKeyVaultKeyIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderKeyVaultKe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderKeyVaultKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderKeyVaultKeyIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderKeyVaultKe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderKeyVaultKeyIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderK
 }
 
 /// <summary>Selector for a Key in keyvault to populate keyVaultKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderKeyVaultKeyIdSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderK
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderServerIdRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderServerIdRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderServerIdRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderServerIdRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderServerIdRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderServerIdRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderServerIdRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderS
 }
 
 /// <summary>Reference to a MSSQLServer in sql to populate serverId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderServerIdRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderServerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderServerIdSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderServerIdSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderServerIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderServerIdSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderServerIdSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderServerIdSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderS
 }
 
 /// <summary>Selector for a MSSQLServer in sql to populate serverId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderServerIdSelector
 {
@@ -349,7 +349,7 @@ public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderS
     public V1beta1MSSQLServerTransparentDataEncryptionSpecForProviderServerIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecForProvider
 {
@@ -392,7 +392,7 @@ public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerTransparentDataEncryptionSpecInitProviderKeyVaultKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerTransparentDataEncryptionSpecInitProviderKeyVaultKeyIdRefPolicyResolutionEnum
 {
@@ -408,7 +408,7 @@ public enum V1beta1MSSQLServerTransparentDataEncryptionSpecInitProviderKeyVaultK
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerTransparentDataEncryptionSpecInitProviderKeyVaultKeyIdRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerTransparentDataEncryptionSpecInitProviderKeyVaultKeyIdRefPolicyResolveEnum
 {
@@ -419,7 +419,7 @@ public enum V1beta1MSSQLServerTransparentDataEncryptionSpecInitProviderKeyVaultK
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecInitProviderKeyVaultKeyIdRefPolicy
 {
@@ -443,7 +443,7 @@ public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecInitProvider
 }
 
 /// <summary>Reference to a Key in keyvault to populate keyVaultKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecInitProviderKeyVaultKeyIdRef
 {
@@ -462,7 +462,7 @@ public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecInitProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerTransparentDataEncryptionSpecInitProviderKeyVaultKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerTransparentDataEncryptionSpecInitProviderKeyVaultKeyIdSelectorPolicyResolutionEnum
 {
@@ -478,7 +478,7 @@ public enum V1beta1MSSQLServerTransparentDataEncryptionSpecInitProviderKeyVaultK
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerTransparentDataEncryptionSpecInitProviderKeyVaultKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerTransparentDataEncryptionSpecInitProviderKeyVaultKeyIdSelectorPolicyResolveEnum
 {
@@ -489,7 +489,7 @@ public enum V1beta1MSSQLServerTransparentDataEncryptionSpecInitProviderKeyVaultK
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecInitProviderKeyVaultKeyIdSelectorPolicy
 {
@@ -513,7 +513,7 @@ public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecInitProvider
 }
 
 /// <summary>Selector for a Key in keyvault to populate keyVaultKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecInitProviderKeyVaultKeyIdSelector
 {
@@ -545,7 +545,7 @@ public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecInitProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecInitProvider
 {
@@ -574,7 +574,7 @@ public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerTransparentDataEncryptionSpecManagementPoliciesEnum>))]
 public enum V1beta1MSSQLServerTransparentDataEncryptionSpecManagementPoliciesEnum
 {
@@ -598,7 +598,7 @@ public enum V1beta1MSSQLServerTransparentDataEncryptionSpecManagementPoliciesEnu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerTransparentDataEncryptionSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerTransparentDataEncryptionSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -614,7 +614,7 @@ public enum V1beta1MSSQLServerTransparentDataEncryptionSpecProviderConfigRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerTransparentDataEncryptionSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerTransparentDataEncryptionSpecProviderConfigRefPolicyResolveEnum
 {
@@ -625,7 +625,7 @@ public enum V1beta1MSSQLServerTransparentDataEncryptionSpecProviderConfigRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecProviderConfigRefPolicy
 {
@@ -653,7 +653,7 @@ public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecProviderConf
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecProviderConfigRef
 {
@@ -672,7 +672,7 @@ public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecProviderConf
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecWriteConnectionSecretToRef
 {
@@ -686,7 +686,7 @@ public partial class V1beta1MSSQLServerTransparentDataEncryptionSpecWriteConnect
 }
 
 /// <summary>MSSQLServerTransparentDataEncryptionSpec defines the desired state of MSSQLServerTransparentDataEncryption</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerTransparentDataEncryptionSpec
 {
@@ -753,7 +753,7 @@ public partial class V1beta1MSSQLServerTransparentDataEncryptionSpec
     public V1beta1MSSQLServerTransparentDataEncryptionSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerTransparentDataEncryptionStatusAtProvider
 {
@@ -779,7 +779,7 @@ public partial class V1beta1MSSQLServerTransparentDataEncryptionStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerTransparentDataEncryptionStatusConditions
 {
@@ -822,7 +822,7 @@ public partial class V1beta1MSSQLServerTransparentDataEncryptionStatusConditions
 }
 
 /// <summary>MSSQLServerTransparentDataEncryptionStatus defines the observed state of MSSQLServerTransparentDataEncryption.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerTransparentDataEncryptionStatus
 {
@@ -843,7 +843,7 @@ public partial class V1beta1MSSQLServerTransparentDataEncryptionStatus
 }
 
 /// <summary>MSSQLServerTransparentDataEncryption is the Schema for the MSSQLServerTransparentDataEncryptions API. Manages the transparent data encryption configuration for a MSSQL Server</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MSSQLServerTransparentDataEncryption : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MSSQLServerTransparentDataEncryptionSpec>, IStatus<V1beta1MSSQLServerTransparentDataEncryptionStatus?>

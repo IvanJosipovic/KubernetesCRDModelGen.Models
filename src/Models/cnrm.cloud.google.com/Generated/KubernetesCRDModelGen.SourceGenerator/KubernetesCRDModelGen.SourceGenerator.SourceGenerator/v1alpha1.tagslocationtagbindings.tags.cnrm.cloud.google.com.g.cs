@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.tags.cnrm.cloud.google.com;
 /// <summary>TagsLocationTagBinding is the Schema for the TagsLocationTagBinding API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1TagsLocationTagBindingList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1TagsLocationTagBinding>
@@ -37,7 +37,7 @@ public partial class V1alpha1TagsLocationTagBindingList : IKubernetesObject<V1Li
 }
 
 /// <summary>ParentRef is a reference to a parent resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TagsLocationTagBindingSpecParentRef
 {
@@ -59,7 +59,7 @@ public partial class V1alpha1TagsLocationTagBindingSpecParentRef
 }
 
 /// <summary>TagsTagValueRef is a reference to a TagsTagValue resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TagsLocationTagBindingSpecTagValueRef
 {
@@ -77,7 +77,7 @@ public partial class V1alpha1TagsLocationTagBindingSpecTagValueRef
 }
 
 /// <summary>TagsLocationTagBindingSpec defines the desired state of TagsLocationTagBinding</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TagsLocationTagBindingSpec
 {
@@ -98,7 +98,7 @@ public partial class V1alpha1TagsLocationTagBindingSpec
     public required V1alpha1TagsLocationTagBindingSpecTagValueRef TagValueRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TagsLocationTagBindingStatusConditions
 {
@@ -124,7 +124,7 @@ public partial class V1alpha1TagsLocationTagBindingStatusConditions
 }
 
 /// <summary>TagsLocationTagBindingStatus defines the config connector machine state of TagsLocationTagBinding</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TagsLocationTagBindingStatus
 {
@@ -146,7 +146,7 @@ public partial class V1alpha1TagsLocationTagBindingStatus
 }
 
 /// <summary>TagsLocationTagBinding is the Schema for the TagsLocationTagBinding API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1TagsLocationTagBinding : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1TagsLocationTagBindingSpec>, IStatus<V1alpha1TagsLocationTagBindingStatus?>

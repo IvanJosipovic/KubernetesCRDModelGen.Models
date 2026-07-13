@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.insights.azure.m.upbound.io;
 /// <summary>ApplicationInsightsWorkbook is the Schema for the ApplicationInsightsWorkbooks API. Manages an Azure Workbook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ApplicationInsightsWorkbookList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ApplicationInsightsWorkbook>
@@ -37,7 +37,7 @@ public partial class V1beta1ApplicationInsightsWorkbookList : IKubernetesObject<
 }
 
 /// <summary>An identity block as defined below. Changing this forces a new Workbook to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsWorkbookSpecForProviderIdentity
 {
@@ -56,7 +56,7 @@ public partial class V1beta1ApplicationInsightsWorkbookSpecForProviderIdentity
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsWorkbookSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1ApplicationInsightsWorkbookSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -72,7 +72,7 @@ public enum V1beta1ApplicationInsightsWorkbookSpecForProviderResourceGroupNameRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsWorkbookSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1ApplicationInsightsWorkbookSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -83,7 +83,7 @@ public enum V1beta1ApplicationInsightsWorkbookSpecForProviderResourceGroupNameRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsWorkbookSpecForProviderResourceGroupNameRefPolicy
 {
@@ -107,7 +107,7 @@ public partial class V1beta1ApplicationInsightsWorkbookSpecForProviderResourceGr
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsWorkbookSpecForProviderResourceGroupNameRef
 {
@@ -130,7 +130,7 @@ public partial class V1beta1ApplicationInsightsWorkbookSpecForProviderResourceGr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsWorkbookSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ApplicationInsightsWorkbookSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -146,7 +146,7 @@ public enum V1beta1ApplicationInsightsWorkbookSpecForProviderResourceGroupNameSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsWorkbookSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ApplicationInsightsWorkbookSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -157,7 +157,7 @@ public enum V1beta1ApplicationInsightsWorkbookSpecForProviderResourceGroupNameSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsWorkbookSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -181,7 +181,7 @@ public partial class V1beta1ApplicationInsightsWorkbookSpecForProviderResourceGr
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsWorkbookSpecForProviderResourceGroupNameSelector
 {
@@ -205,7 +205,7 @@ public partial class V1beta1ApplicationInsightsWorkbookSpecForProviderResourceGr
     public V1beta1ApplicationInsightsWorkbookSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsWorkbookSpecForProvider
 {
@@ -263,7 +263,7 @@ public partial class V1beta1ApplicationInsightsWorkbookSpecForProvider
 }
 
 /// <summary>An identity block as defined below. Changing this forces a new Workbook to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsWorkbookSpecInitProviderIdentity
 {
@@ -282,7 +282,7 @@ public partial class V1beta1ApplicationInsightsWorkbookSpecInitProviderIdentity
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsWorkbookSpecInitProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1ApplicationInsightsWorkbookSpecInitProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1ApplicationInsightsWorkbookSpecInitProviderResourceGroupNameR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsWorkbookSpecInitProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1ApplicationInsightsWorkbookSpecInitProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -309,7 +309,7 @@ public enum V1beta1ApplicationInsightsWorkbookSpecInitProviderResourceGroupNameR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsWorkbookSpecInitProviderResourceGroupNameRefPolicy
 {
@@ -333,7 +333,7 @@ public partial class V1beta1ApplicationInsightsWorkbookSpecInitProviderResourceG
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsWorkbookSpecInitProviderResourceGroupNameRef
 {
@@ -356,7 +356,7 @@ public partial class V1beta1ApplicationInsightsWorkbookSpecInitProviderResourceG
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsWorkbookSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ApplicationInsightsWorkbookSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -372,7 +372,7 @@ public enum V1beta1ApplicationInsightsWorkbookSpecInitProviderResourceGroupNameS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsWorkbookSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ApplicationInsightsWorkbookSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -383,7 +383,7 @@ public enum V1beta1ApplicationInsightsWorkbookSpecInitProviderResourceGroupNameS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsWorkbookSpecInitProviderResourceGroupNameSelectorPolicy
 {
@@ -407,7 +407,7 @@ public partial class V1beta1ApplicationInsightsWorkbookSpecInitProviderResourceG
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsWorkbookSpecInitProviderResourceGroupNameSelector
 {
@@ -443,7 +443,7 @@ public partial class V1beta1ApplicationInsightsWorkbookSpecInitProviderResourceG
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsWorkbookSpecInitProvider
 {
@@ -504,7 +504,7 @@ public partial class V1beta1ApplicationInsightsWorkbookSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsWorkbookSpecManagementPoliciesEnum>))]
 public enum V1beta1ApplicationInsightsWorkbookSpecManagementPoliciesEnum
 {
@@ -527,7 +527,7 @@ public enum V1beta1ApplicationInsightsWorkbookSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsWorkbookSpecProviderConfigRef
 {
@@ -546,7 +546,7 @@ public partial class V1beta1ApplicationInsightsWorkbookSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsWorkbookSpecWriteConnectionSecretToRef
 {
@@ -556,7 +556,7 @@ public partial class V1beta1ApplicationInsightsWorkbookSpecWriteConnectionSecret
 }
 
 /// <summary>ApplicationInsightsWorkbookSpec defines the desired state of ApplicationInsightsWorkbook</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsWorkbookSpec
 {
@@ -608,7 +608,7 @@ public partial class V1beta1ApplicationInsightsWorkbookSpec
 }
 
 /// <summary>An identity block as defined below. Changing this forces a new Workbook to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsWorkbookStatusAtProviderIdentity
 {
@@ -629,7 +629,7 @@ public partial class V1beta1ApplicationInsightsWorkbookStatusAtProviderIdentity
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsWorkbookStatusAtProvider
 {
@@ -683,7 +683,7 @@ public partial class V1beta1ApplicationInsightsWorkbookStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsWorkbookStatusConditions
 {
@@ -726,7 +726,7 @@ public partial class V1beta1ApplicationInsightsWorkbookStatusConditions
 }
 
 /// <summary>ApplicationInsightsWorkbookStatus defines the observed state of ApplicationInsightsWorkbook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsWorkbookStatus
 {
@@ -747,7 +747,7 @@ public partial class V1beta1ApplicationInsightsWorkbookStatus
 }
 
 /// <summary>ApplicationInsightsWorkbook is the Schema for the ApplicationInsightsWorkbooks API. Manages an Azure Workbook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ApplicationInsightsWorkbook : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ApplicationInsightsWorkbookSpec>, IStatus<V1beta1ApplicationInsightsWorkbookStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.longhorn.io;
 /// <summary>Backup is where Longhorn stores backup object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2BackupList : IKubernetesObject<V1ListMeta>, IItems<V1beta2Backup>
@@ -37,7 +37,7 @@ public partial class V1beta2BackupList : IKubernetesObject<V1ListMeta>, IItems<V
 }
 
 /// <summary>The backup block size. 0 means the legacy default size 2MiB, and -1 indicate the block size is invalid.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupSpecBackupBlockSizeEnum>))]
 public enum V1beta2BackupSpecBackupBlockSizeEnum
 {
@@ -53,7 +53,7 @@ public enum V1beta2BackupSpecBackupBlockSizeEnum
 /// The backup mode of this backup.
 /// Can be &quot;full&quot; or &quot;incremental&quot;
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupSpecBackupModeEnum>))]
 public enum V1beta2BackupSpecBackupModeEnum
 {
@@ -64,7 +64,7 @@ public enum V1beta2BackupSpecBackupModeEnum
 }
 
 /// <summary>BackupSpec defines the desired state of the Longhorn backup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupSpec
 {
@@ -93,7 +93,7 @@ public partial class V1beta2BackupSpec
 }
 
 /// <summary>BackupStatus defines the observed state of the Longhorn backup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupStatus
 {
@@ -186,7 +186,7 @@ public partial class V1beta2BackupStatus
 }
 
 /// <summary>Backup is where Longhorn stores backup object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2Backup : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2BackupSpec?>, IStatus<V1beta2BackupStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datafactory.azure.upbound.io;
 /// <summary>LinkedServiceSFTP is the Schema for the LinkedServiceSFTPs API. Manages a Linked Service (connection) between an SFTP Server and Azure Data Factory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LinkedServiceSFTPList : IKubernetesObject<V1ListMeta>, IItems<V1beta1LinkedServiceSFTP>
@@ -45,7 +45,7 @@ public partial class V1beta1LinkedServiceSFTPList : IKubernetesObject<V1ListMeta
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceSFTPSpecDeletionPolicyEnum>))]
 public enum V1beta1LinkedServiceSFTPSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1LinkedServiceSFTPSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceSFTPSpecForProviderDataFactoryIdRefPolicyResolutionEnum>))]
 public enum V1beta1LinkedServiceSFTPSpecForProviderDataFactoryIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1LinkedServiceSFTPSpecForProviderDataFactoryIdRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceSFTPSpecForProviderDataFactoryIdRefPolicyResolveEnum>))]
 public enum V1beta1LinkedServiceSFTPSpecForProviderDataFactoryIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1LinkedServiceSFTPSpecForProviderDataFactoryIdRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPSpecForProviderDataFactoryIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1LinkedServiceSFTPSpecForProviderDataFactoryIdRefPoli
 }
 
 /// <summary>Reference to a Factory in datafactory to populate dataFactoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPSpecForProviderDataFactoryIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1LinkedServiceSFTPSpecForProviderDataFactoryIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceSFTPSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1LinkedServiceSFTPSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1LinkedServiceSFTPSpecForProviderDataFactoryIdSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceSFTPSpecForProviderDataFactoryIdSelectorPolicyResolveEnum>))]
 public enum V1beta1LinkedServiceSFTPSpecForProviderDataFactoryIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1LinkedServiceSFTPSpecForProviderDataFactoryIdSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPSpecForProviderDataFactoryIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1LinkedServiceSFTPSpecForProviderDataFactoryIdSelecto
 }
 
 /// <summary>Selector for a Factory in datafactory to populate dataFactoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPSpecForProviderDataFactoryIdSelector
 {
@@ -202,7 +202,7 @@ public partial class V1beta1LinkedServiceSFTPSpecForProviderDataFactoryIdSelecto
     public V1beta1LinkedServiceSFTPSpecForProviderDataFactoryIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPSpecForProviderKeyVaultPassword
 {
@@ -216,7 +216,7 @@ public partial class V1beta1LinkedServiceSFTPSpecForProviderKeyVaultPassword
 }
 
 /// <summary>A key_vault_private_key_content_base64 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPSpecForProviderKeyVaultPrivateKeyContentBase64
 {
@@ -230,7 +230,7 @@ public partial class V1beta1LinkedServiceSFTPSpecForProviderKeyVaultPrivateKeyCo
 }
 
 /// <summary>A key_vault_private_key_passphrase block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPSpecForProviderKeyVaultPrivateKeyPassphrase
 {
@@ -244,7 +244,7 @@ public partial class V1beta1LinkedServiceSFTPSpecForProviderKeyVaultPrivateKeyPa
 }
 
 /// <summary>Password to log on to the SFTP Server for Basic Authentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPSpecForProviderPasswordSecretRef
 {
@@ -262,7 +262,7 @@ public partial class V1beta1LinkedServiceSFTPSpecForProviderPasswordSecretRef
 }
 
 /// <summary>The Base64 encoded private key content in OpenSSH format used to log on to the SFTP server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPSpecForProviderPrivateKeyContentBase64SecretRef
 {
@@ -280,7 +280,7 @@ public partial class V1beta1LinkedServiceSFTPSpecForProviderPrivateKeyContentBas
 }
 
 /// <summary>The passphrase for the private key if the key is encrypted.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPSpecForProviderPrivateKeyPassphraseSecretRef
 {
@@ -297,7 +297,7 @@ public partial class V1beta1LinkedServiceSFTPSpecForProviderPrivateKeyPassphrase
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPSpecForProvider
 {
@@ -386,7 +386,7 @@ public partial class V1beta1LinkedServiceSFTPSpecForProvider
     public string? Username { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPSpecInitProviderKeyVaultPassword
 {
@@ -400,7 +400,7 @@ public partial class V1beta1LinkedServiceSFTPSpecInitProviderKeyVaultPassword
 }
 
 /// <summary>A key_vault_private_key_content_base64 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPSpecInitProviderKeyVaultPrivateKeyContentBase64
 {
@@ -414,7 +414,7 @@ public partial class V1beta1LinkedServiceSFTPSpecInitProviderKeyVaultPrivateKeyC
 }
 
 /// <summary>A key_vault_private_key_passphrase block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPSpecInitProviderKeyVaultPrivateKeyPassphrase
 {
@@ -428,7 +428,7 @@ public partial class V1beta1LinkedServiceSFTPSpecInitProviderKeyVaultPrivateKeyP
 }
 
 /// <summary>Password to log on to the SFTP Server for Basic Authentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPSpecInitProviderPasswordSecretRef
 {
@@ -446,7 +446,7 @@ public partial class V1beta1LinkedServiceSFTPSpecInitProviderPasswordSecretRef
 }
 
 /// <summary>The Base64 encoded private key content in OpenSSH format used to log on to the SFTP server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPSpecInitProviderPrivateKeyContentBase64SecretRef
 {
@@ -464,7 +464,7 @@ public partial class V1beta1LinkedServiceSFTPSpecInitProviderPrivateKeyContentBa
 }
 
 /// <summary>The passphrase for the private key if the key is encrypted.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPSpecInitProviderPrivateKeyPassphraseSecretRef
 {
@@ -493,7 +493,7 @@ public partial class V1beta1LinkedServiceSFTPSpecInitProviderPrivateKeyPassphras
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPSpecInitProvider
 {
@@ -574,7 +574,7 @@ public partial class V1beta1LinkedServiceSFTPSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceSFTPSpecManagementPoliciesEnum>))]
 public enum V1beta1LinkedServiceSFTPSpecManagementPoliciesEnum
 {
@@ -598,7 +598,7 @@ public enum V1beta1LinkedServiceSFTPSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceSFTPSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1LinkedServiceSFTPSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -614,7 +614,7 @@ public enum V1beta1LinkedServiceSFTPSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceSFTPSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1LinkedServiceSFTPSpecProviderConfigRefPolicyResolveEnum
 {
@@ -625,7 +625,7 @@ public enum V1beta1LinkedServiceSFTPSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPSpecProviderConfigRefPolicy
 {
@@ -653,7 +653,7 @@ public partial class V1beta1LinkedServiceSFTPSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPSpecProviderConfigRef
 {
@@ -672,7 +672,7 @@ public partial class V1beta1LinkedServiceSFTPSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPSpecWriteConnectionSecretToRef
 {
@@ -686,7 +686,7 @@ public partial class V1beta1LinkedServiceSFTPSpecWriteConnectionSecretToRef
 }
 
 /// <summary>LinkedServiceSFTPSpec defines the desired state of LinkedServiceSFTP</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPSpec
 {
@@ -753,7 +753,7 @@ public partial class V1beta1LinkedServiceSFTPSpec
     public V1beta1LinkedServiceSFTPSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPStatusAtProviderKeyVaultPassword
 {
@@ -767,7 +767,7 @@ public partial class V1beta1LinkedServiceSFTPStatusAtProviderKeyVaultPassword
 }
 
 /// <summary>A key_vault_private_key_content_base64 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPStatusAtProviderKeyVaultPrivateKeyContentBase64
 {
@@ -781,7 +781,7 @@ public partial class V1beta1LinkedServiceSFTPStatusAtProviderKeyVaultPrivateKeyC
 }
 
 /// <summary>A key_vault_private_key_passphrase block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPStatusAtProviderKeyVaultPrivateKeyPassphrase
 {
@@ -794,7 +794,7 @@ public partial class V1beta1LinkedServiceSFTPStatusAtProviderKeyVaultPrivateKeyP
     public string? SecretName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPStatusAtProvider
 {
@@ -868,7 +868,7 @@ public partial class V1beta1LinkedServiceSFTPStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPStatusConditions
 {
@@ -911,7 +911,7 @@ public partial class V1beta1LinkedServiceSFTPStatusConditions
 }
 
 /// <summary>LinkedServiceSFTPStatus defines the observed state of LinkedServiceSFTP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceSFTPStatus
 {
@@ -932,7 +932,7 @@ public partial class V1beta1LinkedServiceSFTPStatus
 }
 
 /// <summary>LinkedServiceSFTP is the Schema for the LinkedServiceSFTPs API. Manages a Linked Service (connection) between an SFTP Server and Azure Data Factory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LinkedServiceSFTP : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1LinkedServiceSFTPSpec>, IStatus<V1beta1LinkedServiceSFTPStatus?>

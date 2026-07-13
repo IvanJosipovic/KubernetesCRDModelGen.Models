@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bigquery.gcp.m.upbound.io;
 /// <summary>Routine is the Schema for the Routines API. A user-defined function or a stored procedure that belongs to a Dataset</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RoutineList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Routine>
@@ -36,7 +36,7 @@ public partial class V1beta1RoutineList : IKubernetesObject<V1ListMeta>, IItems<
     public required IList<V1beta1Routine> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecForProviderArguments
 {
@@ -78,7 +78,7 @@ public partial class V1beta1RoutineSpecForProviderArguments
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecForProviderDatasetIdRefPolicyResolutionEnum>))]
 public enum V1beta1RoutineSpecForProviderDatasetIdRefPolicyResolutionEnum
 {
@@ -94,7 +94,7 @@ public enum V1beta1RoutineSpecForProviderDatasetIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecForProviderDatasetIdRefPolicyResolveEnum>))]
 public enum V1beta1RoutineSpecForProviderDatasetIdRefPolicyResolveEnum
 {
@@ -105,7 +105,7 @@ public enum V1beta1RoutineSpecForProviderDatasetIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecForProviderDatasetIdRefPolicy
 {
@@ -129,7 +129,7 @@ public partial class V1beta1RoutineSpecForProviderDatasetIdRefPolicy
 }
 
 /// <summary>Reference to a Dataset in bigquery to populate datasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecForProviderDatasetIdRef
 {
@@ -152,7 +152,7 @@ public partial class V1beta1RoutineSpecForProviderDatasetIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecForProviderDatasetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1RoutineSpecForProviderDatasetIdSelectorPolicyResolutionEnum
 {
@@ -168,7 +168,7 @@ public enum V1beta1RoutineSpecForProviderDatasetIdSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecForProviderDatasetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1RoutineSpecForProviderDatasetIdSelectorPolicyResolveEnum
 {
@@ -179,7 +179,7 @@ public enum V1beta1RoutineSpecForProviderDatasetIdSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecForProviderDatasetIdSelectorPolicy
 {
@@ -203,7 +203,7 @@ public partial class V1beta1RoutineSpecForProviderDatasetIdSelectorPolicy
 }
 
 /// <summary>Selector for a Dataset in bigquery to populate datasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecForProviderDatasetIdSelector
 {
@@ -233,7 +233,7 @@ public partial class V1beta1RoutineSpecForProviderDatasetIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionRefPolicyResolutionEnum>))]
 public enum V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionRefPolicyResolutionEnum
 {
@@ -249,7 +249,7 @@ public enum V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionRefPolicyResolveEnum>))]
 public enum V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionRefPolicyResolveEnum
 {
@@ -260,7 +260,7 @@ public enum V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionRefPolicy
 {
@@ -284,7 +284,7 @@ public partial class V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectio
 }
 
 /// <summary>Reference to a Connection in bigquery to populate connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionRef
 {
@@ -307,7 +307,7 @@ public partial class V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionSelectorPolicyResolutionEnum>))]
 public enum V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionSelectorPolicyResolutionEnum
 {
@@ -323,7 +323,7 @@ public enum V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionSelectorPolicyResolveEnum>))]
 public enum V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionSelectorPolicyResolveEnum
 {
@@ -334,7 +334,7 @@ public enum V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionSelectorPolicy
 {
@@ -358,7 +358,7 @@ public partial class V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectio
 }
 
 /// <summary>Selector for a Connection in bigquery to populate connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectionSelector
 {
@@ -386,7 +386,7 @@ public partial class V1beta1RoutineSpecForProviderRemoteFunctionOptionsConnectio
 /// Remote function specific options.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecForProviderRemoteFunctionOptions
 {
@@ -437,7 +437,7 @@ public partial class V1beta1RoutineSpecForProviderRemoteFunctionOptions
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecForProviderSparkOptionsConnectionRefPolicyResolutionEnum>))]
 public enum V1beta1RoutineSpecForProviderSparkOptionsConnectionRefPolicyResolutionEnum
 {
@@ -453,7 +453,7 @@ public enum V1beta1RoutineSpecForProviderSparkOptionsConnectionRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecForProviderSparkOptionsConnectionRefPolicyResolveEnum>))]
 public enum V1beta1RoutineSpecForProviderSparkOptionsConnectionRefPolicyResolveEnum
 {
@@ -464,7 +464,7 @@ public enum V1beta1RoutineSpecForProviderSparkOptionsConnectionRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecForProviderSparkOptionsConnectionRefPolicy
 {
@@ -488,7 +488,7 @@ public partial class V1beta1RoutineSpecForProviderSparkOptionsConnectionRefPolic
 }
 
 /// <summary>Reference to a Connection in bigquery to populate connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecForProviderSparkOptionsConnectionRef
 {
@@ -511,7 +511,7 @@ public partial class V1beta1RoutineSpecForProviderSparkOptionsConnectionRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecForProviderSparkOptionsConnectionSelectorPolicyResolutionEnum>))]
 public enum V1beta1RoutineSpecForProviderSparkOptionsConnectionSelectorPolicyResolutionEnum
 {
@@ -527,7 +527,7 @@ public enum V1beta1RoutineSpecForProviderSparkOptionsConnectionSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecForProviderSparkOptionsConnectionSelectorPolicyResolveEnum>))]
 public enum V1beta1RoutineSpecForProviderSparkOptionsConnectionSelectorPolicyResolveEnum
 {
@@ -538,7 +538,7 @@ public enum V1beta1RoutineSpecForProviderSparkOptionsConnectionSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecForProviderSparkOptionsConnectionSelectorPolicy
 {
@@ -562,7 +562,7 @@ public partial class V1beta1RoutineSpecForProviderSparkOptionsConnectionSelector
 }
 
 /// <summary>Selector for a Connection in bigquery to populate connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecForProviderSparkOptionsConnectionSelector
 {
@@ -590,7 +590,7 @@ public partial class V1beta1RoutineSpecForProviderSparkOptionsConnectionSelector
 /// Optional. If language is one of &quot;PYTHON&quot;, &quot;JAVA&quot;, &quot;SCALA&quot;, this field stores the options for spark stored procedure.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecForProviderSparkOptions
 {
@@ -657,7 +657,7 @@ public partial class V1beta1RoutineSpecForProviderSparkOptions
     public string? RuntimeVersion { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecForProvider
 {
@@ -778,7 +778,7 @@ public partial class V1beta1RoutineSpecForProvider
     public V1beta1RoutineSpecForProviderSparkOptions? SparkOptions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecInitProviderArguments
 {
@@ -820,7 +820,7 @@ public partial class V1beta1RoutineSpecInitProviderArguments
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionRefPolicyResolutionEnum>))]
 public enum V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionRefPolicyResolutionEnum
 {
@@ -836,7 +836,7 @@ public enum V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionRefPolicyResolveEnum>))]
 public enum V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionRefPolicyResolveEnum
 {
@@ -847,7 +847,7 @@ public enum V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionRefPolicy
 {
@@ -871,7 +871,7 @@ public partial class V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnecti
 }
 
 /// <summary>Reference to a Connection in bigquery to populate connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionRef
 {
@@ -894,7 +894,7 @@ public partial class V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnecti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionSelectorPolicyResolutionEnum>))]
 public enum V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionSelectorPolicyResolutionEnum
 {
@@ -910,7 +910,7 @@ public enum V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionSelectorPolicyResolveEnum>))]
 public enum V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionSelectorPolicyResolveEnum
 {
@@ -921,7 +921,7 @@ public enum V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionSelectorPolicy
 {
@@ -945,7 +945,7 @@ public partial class V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnecti
 }
 
 /// <summary>Selector for a Connection in bigquery to populate connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnectionSelector
 {
@@ -973,7 +973,7 @@ public partial class V1beta1RoutineSpecInitProviderRemoteFunctionOptionsConnecti
 /// Remote function specific options.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecInitProviderRemoteFunctionOptions
 {
@@ -1024,7 +1024,7 @@ public partial class V1beta1RoutineSpecInitProviderRemoteFunctionOptions
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecInitProviderSparkOptionsConnectionRefPolicyResolutionEnum>))]
 public enum V1beta1RoutineSpecInitProviderSparkOptionsConnectionRefPolicyResolutionEnum
 {
@@ -1040,7 +1040,7 @@ public enum V1beta1RoutineSpecInitProviderSparkOptionsConnectionRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecInitProviderSparkOptionsConnectionRefPolicyResolveEnum>))]
 public enum V1beta1RoutineSpecInitProviderSparkOptionsConnectionRefPolicyResolveEnum
 {
@@ -1051,7 +1051,7 @@ public enum V1beta1RoutineSpecInitProviderSparkOptionsConnectionRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecInitProviderSparkOptionsConnectionRefPolicy
 {
@@ -1075,7 +1075,7 @@ public partial class V1beta1RoutineSpecInitProviderSparkOptionsConnectionRefPoli
 }
 
 /// <summary>Reference to a Connection in bigquery to populate connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecInitProviderSparkOptionsConnectionRef
 {
@@ -1098,7 +1098,7 @@ public partial class V1beta1RoutineSpecInitProviderSparkOptionsConnectionRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecInitProviderSparkOptionsConnectionSelectorPolicyResolutionEnum>))]
 public enum V1beta1RoutineSpecInitProviderSparkOptionsConnectionSelectorPolicyResolutionEnum
 {
@@ -1114,7 +1114,7 @@ public enum V1beta1RoutineSpecInitProviderSparkOptionsConnectionSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecInitProviderSparkOptionsConnectionSelectorPolicyResolveEnum>))]
 public enum V1beta1RoutineSpecInitProviderSparkOptionsConnectionSelectorPolicyResolveEnum
 {
@@ -1125,7 +1125,7 @@ public enum V1beta1RoutineSpecInitProviderSparkOptionsConnectionSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecInitProviderSparkOptionsConnectionSelectorPolicy
 {
@@ -1149,7 +1149,7 @@ public partial class V1beta1RoutineSpecInitProviderSparkOptionsConnectionSelecto
 }
 
 /// <summary>Selector for a Connection in bigquery to populate connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecInitProviderSparkOptionsConnectionSelector
 {
@@ -1177,7 +1177,7 @@ public partial class V1beta1RoutineSpecInitProviderSparkOptionsConnectionSelecto
 /// Optional. If language is one of &quot;PYTHON&quot;, &quot;JAVA&quot;, &quot;SCALA&quot;, this field stores the options for spark stored procedure.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecInitProviderSparkOptions
 {
@@ -1256,7 +1256,7 @@ public partial class V1beta1RoutineSpecInitProviderSparkOptions
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecInitProvider
 {
@@ -1369,7 +1369,7 @@ public partial class V1beta1RoutineSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutineSpecManagementPoliciesEnum>))]
 public enum V1beta1RoutineSpecManagementPoliciesEnum
 {
@@ -1392,7 +1392,7 @@ public enum V1beta1RoutineSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecProviderConfigRef
 {
@@ -1411,7 +1411,7 @@ public partial class V1beta1RoutineSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecWriteConnectionSecretToRef
 {
@@ -1421,7 +1421,7 @@ public partial class V1beta1RoutineSpecWriteConnectionSecretToRef
 }
 
 /// <summary>RoutineSpec defines the desired state of Routine</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpec
 {
@@ -1472,7 +1472,7 @@ public partial class V1beta1RoutineSpec
     public V1beta1RoutineSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineStatusAtProviderArguments
 {
@@ -1512,7 +1512,7 @@ public partial class V1beta1RoutineStatusAtProviderArguments
 /// Remote function specific options.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineStatusAtProviderRemoteFunctionOptions
 {
@@ -1553,7 +1553,7 @@ public partial class V1beta1RoutineStatusAtProviderRemoteFunctionOptions
 /// Optional. If language is one of &quot;PYTHON&quot;, &quot;JAVA&quot;, &quot;SCALA&quot;, this field stores the options for spark stored procedure.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineStatusAtProviderSparkOptions
 {
@@ -1612,7 +1612,7 @@ public partial class V1beta1RoutineStatusAtProviderSparkOptions
     public string? RuntimeVersion { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineStatusAtProvider
 {
@@ -1744,7 +1744,7 @@ public partial class V1beta1RoutineStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineStatusConditions
 {
@@ -1787,7 +1787,7 @@ public partial class V1beta1RoutineStatusConditions
 }
 
 /// <summary>RoutineStatus defines the observed state of Routine.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineStatus
 {
@@ -1808,7 +1808,7 @@ public partial class V1beta1RoutineStatus
 }
 
 /// <summary>Routine is the Schema for the Routines API. A user-defined function or a stored procedure that belongs to a Dataset</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Routine : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RoutineSpec>, IStatus<V1beta1RoutineStatus?>

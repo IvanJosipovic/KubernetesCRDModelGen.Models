@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.kusto.azure.com;
 /// - Generated from: /azure-kusto/resource-manager/Microsoft.Kusto/Kusto/stable/2024-04-13/kusto.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Kusto/clusters/{clusterName}/databases/{databaseName}/dataConnections/{dataConnectionName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20240413DataConnectionList : IKubernetesObject<V1ListMeta>, IItems<V1api20240413DataConnection>
@@ -41,7 +41,7 @@ public partial class V1api20240413DataConnectionList : IKubernetesObject<V1ListM
 }
 
 /// <summary>CosmosDbAccountResourceReference: The resource ID of the Cosmos DB account used to create the data connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240413DataConnectionSpecCosmosDbDataConnectionCosmosDbAccountResourceReference
 {
@@ -67,7 +67,7 @@ public partial class V1api20240413DataConnectionSpecCosmosDbDataConnectionCosmos
 }
 
 /// <summary>Kind: Kind of the endpoint for the data connection</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240413DataConnectionSpecCosmosDbDataConnectionKindEnum>))]
 public enum V1api20240413DataConnectionSpecCosmosDbDataConnectionKindEnum
 {
@@ -79,7 +79,7 @@ public enum V1api20240413DataConnectionSpecCosmosDbDataConnectionKindEnum
 /// ManagedIdentityResourceReference: The resource ID of a managed system or user-assigned identity. The identity is used to
 /// authenticate with Cosmos DB.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240413DataConnectionSpecCosmosDbDataConnectionManagedIdentityResourceReference
 {
@@ -105,7 +105,7 @@ public partial class V1api20240413DataConnectionSpecCosmosDbDataConnectionManage
 }
 
 /// <summary>CosmosDb: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240413DataConnectionSpecCosmosDbDataConnection
 {
@@ -156,7 +156,7 @@ public partial class V1api20240413DataConnectionSpecCosmosDbDataConnection
 }
 
 /// <summary>BlobStorageEventType: The name of blob storage event type to process.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240413DataConnectionSpecEventGridDataConnectionBlobStorageEventTypeEnum>))]
 public enum V1api20240413DataConnectionSpecEventGridDataConnectionBlobStorageEventTypeEnum
 {
@@ -167,7 +167,7 @@ public enum V1api20240413DataConnectionSpecEventGridDataConnectionBlobStorageEve
 }
 
 /// <summary>DataFormat: The data format of the message. Optionally the data format can be added to each message.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240413DataConnectionSpecEventGridDataConnectionDataFormatEnum>))]
 public enum V1api20240413DataConnectionSpecEventGridDataConnectionDataFormatEnum
 {
@@ -209,7 +209,7 @@ public enum V1api20240413DataConnectionSpecEventGridDataConnectionDataFormatEnum
 /// DatabaseRouting: Indication for database routing information from the data connection, by default only database routing
 /// information is allowed
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240413DataConnectionSpecEventGridDataConnectionDatabaseRoutingEnum>))]
 public enum V1api20240413DataConnectionSpecEventGridDataConnectionDatabaseRoutingEnum
 {
@@ -220,7 +220,7 @@ public enum V1api20240413DataConnectionSpecEventGridDataConnectionDatabaseRoutin
 }
 
 /// <summary>EventGridResourceReference: The resource ID of the event grid that is subscribed to the storage account events.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240413DataConnectionSpecEventGridDataConnectionEventGridResourceReference
 {
@@ -246,7 +246,7 @@ public partial class V1api20240413DataConnectionSpecEventGridDataConnectionEvent
 }
 
 /// <summary>EventHubResourceReference: The resource ID where the event grid is configured to send events.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240413DataConnectionSpecEventGridDataConnectionEventHubResourceReference
 {
@@ -272,7 +272,7 @@ public partial class V1api20240413DataConnectionSpecEventGridDataConnectionEvent
 }
 
 /// <summary>Kind: Kind of the endpoint for the data connection</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240413DataConnectionSpecEventGridDataConnectionKindEnum>))]
 public enum V1api20240413DataConnectionSpecEventGridDataConnectionKindEnum
 {
@@ -284,7 +284,7 @@ public enum V1api20240413DataConnectionSpecEventGridDataConnectionKindEnum
 /// ManagedIdentityResourceReference: The resource ID of a managed identity (system or user assigned) to be used to
 /// authenticate with event hub and storage account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240413DataConnectionSpecEventGridDataConnectionManagedIdentityResourceReference
 {
@@ -310,7 +310,7 @@ public partial class V1api20240413DataConnectionSpecEventGridDataConnectionManag
 }
 
 /// <summary>StorageAccountResourceReference: The resource ID of the storage account where the data resides.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240413DataConnectionSpecEventGridDataConnectionStorageAccountResourceReference
 {
@@ -336,7 +336,7 @@ public partial class V1api20240413DataConnectionSpecEventGridDataConnectionStora
 }
 
 /// <summary>EventGrid: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240413DataConnectionSpecEventGridDataConnection
 {
@@ -406,7 +406,7 @@ public partial class V1api20240413DataConnectionSpecEventGridDataConnection
 }
 
 /// <summary>Compression: The event hub messages compression type</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240413DataConnectionSpecEventHubDataConnectionCompressionEnum>))]
 public enum V1api20240413DataConnectionSpecEventHubDataConnectionCompressionEnum
 {
@@ -417,7 +417,7 @@ public enum V1api20240413DataConnectionSpecEventHubDataConnectionCompressionEnum
 }
 
 /// <summary>DataFormat: The data format of the message. Optionally the data format can be added to each message.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240413DataConnectionSpecEventHubDataConnectionDataFormatEnum>))]
 public enum V1api20240413DataConnectionSpecEventHubDataConnectionDataFormatEnum
 {
@@ -459,7 +459,7 @@ public enum V1api20240413DataConnectionSpecEventHubDataConnectionDataFormatEnum
 /// DatabaseRouting: Indication for database routing information from the data connection, by default only database routing
 /// information is allowed
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240413DataConnectionSpecEventHubDataConnectionDatabaseRoutingEnum>))]
 public enum V1api20240413DataConnectionSpecEventHubDataConnectionDatabaseRoutingEnum
 {
@@ -470,7 +470,7 @@ public enum V1api20240413DataConnectionSpecEventHubDataConnectionDatabaseRouting
 }
 
 /// <summary>EventHubResourceReference: The resource ID of the event hub to be used to create a data connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240413DataConnectionSpecEventHubDataConnectionEventHubResourceReference
 {
@@ -496,7 +496,7 @@ public partial class V1api20240413DataConnectionSpecEventHubDataConnectionEventH
 }
 
 /// <summary>Kind: Kind of the endpoint for the data connection</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240413DataConnectionSpecEventHubDataConnectionKindEnum>))]
 public enum V1api20240413DataConnectionSpecEventHubDataConnectionKindEnum
 {
@@ -508,7 +508,7 @@ public enum V1api20240413DataConnectionSpecEventHubDataConnectionKindEnum
 /// ManagedIdentityResourceReference: The resource ID of a managed identity (system or user assigned) to be used to
 /// authenticate with event hub.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240413DataConnectionSpecEventHubDataConnectionManagedIdentityResourceReference
 {
@@ -534,7 +534,7 @@ public partial class V1api20240413DataConnectionSpecEventHubDataConnectionManage
 }
 
 /// <summary>EventHub: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240413DataConnectionSpecEventHubDataConnection
 {
@@ -600,7 +600,7 @@ public partial class V1api20240413DataConnectionSpecEventHubDataConnection
 }
 
 /// <summary>DataFormat: The data format of the message. Optionally the data format can be added to each message.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240413DataConnectionSpecIotHubDataConnectionDataFormatEnum>))]
 public enum V1api20240413DataConnectionSpecIotHubDataConnectionDataFormatEnum
 {
@@ -642,7 +642,7 @@ public enum V1api20240413DataConnectionSpecIotHubDataConnectionDataFormatEnum
 /// DatabaseRouting: Indication for database routing information from the data connection, by default only database routing
 /// information is allowed
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240413DataConnectionSpecIotHubDataConnectionDatabaseRoutingEnum>))]
 public enum V1api20240413DataConnectionSpecIotHubDataConnectionDatabaseRoutingEnum
 {
@@ -653,7 +653,7 @@ public enum V1api20240413DataConnectionSpecIotHubDataConnectionDatabaseRoutingEn
 }
 
 /// <summary>IotHubResourceReference: The resource ID of the Iot hub to be used to create a data connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240413DataConnectionSpecIotHubDataConnectionIotHubResourceReference
 {
@@ -679,7 +679,7 @@ public partial class V1api20240413DataConnectionSpecIotHubDataConnectionIotHubRe
 }
 
 /// <summary>Kind: Kind of the endpoint for the data connection</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240413DataConnectionSpecIotHubDataConnectionKindEnum>))]
 public enum V1api20240413DataConnectionSpecIotHubDataConnectionKindEnum
 {
@@ -688,7 +688,7 @@ public enum V1api20240413DataConnectionSpecIotHubDataConnectionKindEnum
 }
 
 /// <summary>IotHub: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240413DataConnectionSpecIotHubDataConnection
 {
@@ -751,7 +751,7 @@ public partial class V1api20240413DataConnectionSpecIotHubDataConnection
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240413DataConnectionSpecOperatorSpecConfigMapExpressions
 {
@@ -792,7 +792,7 @@ public partial class V1api20240413DataConnectionSpecOperatorSpecConfigMapExpress
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240413DataConnectionSpecOperatorSpecSecretExpressions
 {
@@ -832,7 +832,7 @@ public partial class V1api20240413DataConnectionSpecOperatorSpecSecretExpression
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240413DataConnectionSpecOperatorSpec
 {
@@ -850,7 +850,7 @@ public partial class V1api20240413DataConnectionSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a kusto.azure.com/Database resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240413DataConnectionSpecOwner
 {
@@ -862,7 +862,7 @@ public partial class V1api20240413DataConnectionSpecOwner
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240413DataConnectionSpec
 {
@@ -906,7 +906,7 @@ public partial class V1api20240413DataConnectionSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240413DataConnectionStatusConditions
 {
@@ -952,7 +952,7 @@ public partial class V1api20240413DataConnectionStatusConditions
 }
 
 /// <summary>CosmosDb: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240413DataConnectionStatusCosmosDb
 {
@@ -1022,7 +1022,7 @@ public partial class V1api20240413DataConnectionStatusCosmosDb
 }
 
 /// <summary>EventGrid: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240413DataConnectionStatusEventGrid
 {
@@ -1111,7 +1111,7 @@ public partial class V1api20240413DataConnectionStatusEventGrid
 }
 
 /// <summary>EventHub: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240413DataConnectionStatusEventHub
 {
@@ -1196,7 +1196,7 @@ public partial class V1api20240413DataConnectionStatusEventHub
 }
 
 /// <summary>IotHub: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240413DataConnectionStatusIotHub
 {
@@ -1269,7 +1269,7 @@ public partial class V1api20240413DataConnectionStatusIotHub
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240413DataConnectionStatus
 {
@@ -1303,7 +1303,7 @@ public partial class V1api20240413DataConnectionStatus
 /// - Generated from: /azure-kusto/resource-manager/Microsoft.Kusto/Kusto/stable/2024-04-13/kusto.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Kusto/clusters/{clusterName}/databases/{databaseName}/dataConnections/{dataConnectionName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20240413DataConnection : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20240413DataConnectionSpec?>, IStatus<V1api20240413DataConnectionStatus?>

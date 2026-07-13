@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datafactory.azure.upbound.io;
 /// <summary>LinkedServiceAzureFunction is the Schema for the LinkedServiceAzureFunctions API. Manages a Linked Service (connection) between an Azure Function Account and Azure Data Factory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2LinkedServiceAzureFunctionList : IKubernetesObject<V1ListMeta>, IItems<V1beta2LinkedServiceAzureFunction>
@@ -45,7 +45,7 @@ public partial class V1beta2LinkedServiceAzureFunctionList : IKubernetesObject<V
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinkedServiceAzureFunctionSpecDeletionPolicyEnum>))]
 public enum V1beta2LinkedServiceAzureFunctionSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2LinkedServiceAzureFunctionSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinkedServiceAzureFunctionSpecForProviderDataFactoryIdRefPolicyResolutionEnum>))]
 public enum V1beta2LinkedServiceAzureFunctionSpecForProviderDataFactoryIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2LinkedServiceAzureFunctionSpecForProviderDataFactoryIdRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinkedServiceAzureFunctionSpecForProviderDataFactoryIdRefPolicyResolveEnum>))]
 public enum V1beta2LinkedServiceAzureFunctionSpecForProviderDataFactoryIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2LinkedServiceAzureFunctionSpecForProviderDataFactoryIdRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceAzureFunctionSpecForProviderDataFactoryIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2LinkedServiceAzureFunctionSpecForProviderDataFactory
 }
 
 /// <summary>Reference to a Factory in datafactory to populate dataFactoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceAzureFunctionSpecForProviderDataFactoryIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta2LinkedServiceAzureFunctionSpecForProviderDataFactory
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinkedServiceAzureFunctionSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2LinkedServiceAzureFunctionSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2LinkedServiceAzureFunctionSpecForProviderDataFactoryIdSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinkedServiceAzureFunctionSpecForProviderDataFactoryIdSelectorPolicyResolveEnum>))]
 public enum V1beta2LinkedServiceAzureFunctionSpecForProviderDataFactoryIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2LinkedServiceAzureFunctionSpecForProviderDataFactoryIdSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceAzureFunctionSpecForProviderDataFactoryIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2LinkedServiceAzureFunctionSpecForProviderDataFactory
 }
 
 /// <summary>Selector for a Factory in datafactory to populate dataFactoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceAzureFunctionSpecForProviderDataFactoryIdSelector
 {
@@ -203,7 +203,7 @@ public partial class V1beta2LinkedServiceAzureFunctionSpecForProviderDataFactory
 }
 
 /// <summary>The system key of the Azure Function. Exactly one of either key or key_vault_key is required</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceAzureFunctionSpecForProviderKeySecretRef
 {
@@ -221,7 +221,7 @@ public partial class V1beta2LinkedServiceAzureFunctionSpecForProviderKeySecretRe
 }
 
 /// <summary>A key_vault_key block as defined below. Use this Argument to store the system key of the Azure Function in an existing Key Vault. It needs an existing Key Vault Data Factory Linked Service. Exactly one of either key or key_vault_key is required.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceAzureFunctionSpecForProviderKeyVaultKey
 {
@@ -234,7 +234,7 @@ public partial class V1beta2LinkedServiceAzureFunctionSpecForProviderKeyVaultKey
     public string? SecretName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceAzureFunctionSpecForProvider
 {
@@ -284,7 +284,7 @@ public partial class V1beta2LinkedServiceAzureFunctionSpecForProvider
 }
 
 /// <summary>The system key of the Azure Function. Exactly one of either key or key_vault_key is required</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceAzureFunctionSpecInitProviderKeySecretRef
 {
@@ -302,7 +302,7 @@ public partial class V1beta2LinkedServiceAzureFunctionSpecInitProviderKeySecretR
 }
 
 /// <summary>A key_vault_key block as defined below. Use this Argument to store the system key of the Azure Function in an existing Key Vault. It needs an existing Key Vault Data Factory Linked Service. Exactly one of either key or key_vault_key is required.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceAzureFunctionSpecInitProviderKeyVaultKey
 {
@@ -327,7 +327,7 @@ public partial class V1beta2LinkedServiceAzureFunctionSpecInitProviderKeyVaultKe
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceAzureFunctionSpecInitProvider
 {
@@ -368,7 +368,7 @@ public partial class V1beta2LinkedServiceAzureFunctionSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinkedServiceAzureFunctionSpecManagementPoliciesEnum>))]
 public enum V1beta2LinkedServiceAzureFunctionSpecManagementPoliciesEnum
 {
@@ -392,7 +392,7 @@ public enum V1beta2LinkedServiceAzureFunctionSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinkedServiceAzureFunctionSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2LinkedServiceAzureFunctionSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -408,7 +408,7 @@ public enum V1beta2LinkedServiceAzureFunctionSpecProviderConfigRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinkedServiceAzureFunctionSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2LinkedServiceAzureFunctionSpecProviderConfigRefPolicyResolveEnum
 {
@@ -419,7 +419,7 @@ public enum V1beta2LinkedServiceAzureFunctionSpecProviderConfigRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceAzureFunctionSpecProviderConfigRefPolicy
 {
@@ -447,7 +447,7 @@ public partial class V1beta2LinkedServiceAzureFunctionSpecProviderConfigRefPolic
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceAzureFunctionSpecProviderConfigRef
 {
@@ -466,7 +466,7 @@ public partial class V1beta2LinkedServiceAzureFunctionSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceAzureFunctionSpecWriteConnectionSecretToRef
 {
@@ -480,7 +480,7 @@ public partial class V1beta2LinkedServiceAzureFunctionSpecWriteConnectionSecretT
 }
 
 /// <summary>LinkedServiceAzureFunctionSpec defines the desired state of LinkedServiceAzureFunction</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceAzureFunctionSpec
 {
@@ -548,7 +548,7 @@ public partial class V1beta2LinkedServiceAzureFunctionSpec
 }
 
 /// <summary>A key_vault_key block as defined below. Use this Argument to store the system key of the Azure Function in an existing Key Vault. It needs an existing Key Vault Data Factory Linked Service. Exactly one of either key or key_vault_key is required.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceAzureFunctionStatusAtProviderKeyVaultKey
 {
@@ -561,7 +561,7 @@ public partial class V1beta2LinkedServiceAzureFunctionStatusAtProviderKeyVaultKe
     public string? SecretName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceAzureFunctionStatusAtProvider
 {
@@ -603,7 +603,7 @@ public partial class V1beta2LinkedServiceAzureFunctionStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceAzureFunctionStatusConditions
 {
@@ -646,7 +646,7 @@ public partial class V1beta2LinkedServiceAzureFunctionStatusConditions
 }
 
 /// <summary>LinkedServiceAzureFunctionStatus defines the observed state of LinkedServiceAzureFunction.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceAzureFunctionStatus
 {
@@ -667,7 +667,7 @@ public partial class V1beta2LinkedServiceAzureFunctionStatus
 }
 
 /// <summary>LinkedServiceAzureFunction is the Schema for the LinkedServiceAzureFunctions API. Manages a Linked Service (connection) between an Azure Function Account and Azure Data Factory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2LinkedServiceAzureFunction : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2LinkedServiceAzureFunctionSpec>, IStatus<V1beta2LinkedServiceAzureFunctionStatus?>

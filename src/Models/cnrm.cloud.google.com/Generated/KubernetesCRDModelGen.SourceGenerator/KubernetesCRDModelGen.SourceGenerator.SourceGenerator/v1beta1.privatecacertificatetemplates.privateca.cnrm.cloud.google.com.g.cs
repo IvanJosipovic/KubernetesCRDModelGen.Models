@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.privateca.cnrm.cloud.google.com;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PrivateCACertificateTemplateList : IKubernetesObject<V1ListMeta>, IItems<V1beta1PrivateCACertificateTemplate>
@@ -36,7 +36,7 @@ public partial class V1beta1PrivateCACertificateTemplateList : IKubernetesObject
 }
 
 /// <summary>Optional. A CEL expression that may be used to validate the resolved X.509 Subject and/or Subject Alternative Name before a certificate is signed. To see the full allowed syntax and some examples, see https://cloud.google.com/certificate-authority-service/docs/using-cel</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACertificateTemplateSpecIdentityConstraintsCelExpression
 {
@@ -58,7 +58,7 @@ public partial class V1beta1PrivateCACertificateTemplateSpecIdentityConstraintsC
 }
 
 /// <summary>Optional. Describes constraints on identities that may be appear in Certificates issued using this template. If this is omitted, then this template will not add restrictions on a certificate&apos;s identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACertificateTemplateSpecIdentityConstraints
 {
@@ -75,7 +75,7 @@ public partial class V1beta1PrivateCACertificateTemplateSpecIdentityConstraints
     public V1beta1PrivateCACertificateTemplateSpecIdentityConstraintsCelExpression? CelExpression { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACertificateTemplateSpecPassthroughExtensionsAdditionalExtensions
 {
@@ -85,7 +85,7 @@ public partial class V1beta1PrivateCACertificateTemplateSpecPassthroughExtension
 }
 
 /// <summary>Optional. Describes the set of X.509 extensions that may appear in a Certificate issued using this CertificateTemplate. If a certificate request sets extensions that don&apos;t appear in the passthrough_extensions, those extensions will be dropped. If the issuing CaPool&apos;s IssuancePolicy defines baseline_values that don&apos;t appear here, the certificate issuance request will fail. If this is omitted, then this template will not add restrictions on a certificate&apos;s X.509 extensions. These constraints do not apply to X.509 extensions set in this CertificateTemplate&apos;s predefined_values.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACertificateTemplateSpecPassthroughExtensions
 {
@@ -99,7 +99,7 @@ public partial class V1beta1PrivateCACertificateTemplateSpecPassthroughExtension
 }
 
 /// <summary>Required. The OID for this X.509 extension.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACertificateTemplateSpecPredefinedValuesAdditionalExtensionsObjectId
 {
@@ -108,7 +108,7 @@ public partial class V1beta1PrivateCACertificateTemplateSpecPredefinedValuesAddi
     public required IList<long> ObjectIdPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACertificateTemplateSpecPredefinedValuesAdditionalExtensions
 {
@@ -126,7 +126,7 @@ public partial class V1beta1PrivateCACertificateTemplateSpecPredefinedValuesAddi
 }
 
 /// <summary>Optional. Describes options in this X509Parameters that are relevant in a CA certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACertificateTemplateSpecPredefinedValuesCaOptions
 {
@@ -140,7 +140,7 @@ public partial class V1beta1PrivateCACertificateTemplateSpecPredefinedValuesCaOp
 }
 
 /// <summary>Describes high-level ways in which a key may be used.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACertificateTemplateSpecPredefinedValuesKeyUsageBaseKeyUsage
 {
@@ -182,7 +182,7 @@ public partial class V1beta1PrivateCACertificateTemplateSpecPredefinedValuesKeyU
 }
 
 /// <summary>Detailed scenarios in which a key may be used.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACertificateTemplateSpecPredefinedValuesKeyUsageExtendedKeyUsage
 {
@@ -211,7 +211,7 @@ public partial class V1beta1PrivateCACertificateTemplateSpecPredefinedValuesKeyU
     public bool? TimeStamping { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACertificateTemplateSpecPredefinedValuesKeyUsageUnknownExtendedKeyUsages
 {
@@ -221,7 +221,7 @@ public partial class V1beta1PrivateCACertificateTemplateSpecPredefinedValuesKeyU
 }
 
 /// <summary>Optional. Indicates the intended use for keys that correspond to a certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACertificateTemplateSpecPredefinedValuesKeyUsage
 {
@@ -238,7 +238,7 @@ public partial class V1beta1PrivateCACertificateTemplateSpecPredefinedValuesKeyU
     public IList<V1beta1PrivateCACertificateTemplateSpecPredefinedValuesKeyUsageUnknownExtendedKeyUsages>? UnknownExtendedKeyUsages { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACertificateTemplateSpecPredefinedValuesPolicyIds
 {
@@ -248,7 +248,7 @@ public partial class V1beta1PrivateCACertificateTemplateSpecPredefinedValuesPoli
 }
 
 /// <summary>Optional. A set of X.509 values that will be applied to all issued certificates that use this template. If the certificate request includes conflicting values for the same properties, they will be overwritten by the values defined here. If the issuing CaPool&apos;s IssuancePolicy defines conflicting baseline_values for the same properties, the certificate issuance request will fail.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACertificateTemplateSpecPredefinedValues
 {
@@ -274,7 +274,7 @@ public partial class V1beta1PrivateCACertificateTemplateSpecPredefinedValues
 }
 
 /// <summary>Immutable. The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACertificateTemplateSpecProjectRef
 {
@@ -295,7 +295,7 @@ public partial class V1beta1PrivateCACertificateTemplateSpecProjectRef
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACertificateTemplateSpec
 {
@@ -328,7 +328,7 @@ public partial class V1beta1PrivateCACertificateTemplateSpec
     public string? ResourceID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACertificateTemplateStatusConditions
 {
@@ -353,7 +353,7 @@ public partial class V1beta1PrivateCACertificateTemplateStatusConditions
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateCACertificateTemplateStatus
 {
@@ -374,7 +374,7 @@ public partial class V1beta1PrivateCACertificateTemplateStatus
     public DateTime? UpdateTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PrivateCACertificateTemplate : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PrivateCACertificateTemplateSpec>, IStatus<V1beta1PrivateCACertificateTemplateStatus?>

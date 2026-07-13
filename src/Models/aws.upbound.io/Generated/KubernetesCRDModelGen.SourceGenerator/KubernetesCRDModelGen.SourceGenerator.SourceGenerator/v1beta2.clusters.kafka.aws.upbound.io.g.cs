@@ -13,7 +13,7 @@ namespace KubernetesCRDModelGen.Models.kafka.aws.upbound.io;
 /// Cluster is the Schema for the Clusters API.
 /// Deprecated: This API version (v1beta2) has been deprecated in release v2.6.0.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -49,7 +49,7 @@ public partial class V1beta2ClusterList : IKubernetesObject<V1ListMeta>, IItems<
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecDeletionPolicyEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecDeletionPolicyEnum
@@ -66,7 +66,7 @@ public enum V1beta2ClusterSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderBrokerNodeGroupInfoClientSubnetsRefsPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderBrokerNodeGroupInfoClientSubnetsRefsPolicyResolutionEnum
@@ -83,7 +83,7 @@ public enum V1beta2ClusterSpecForProviderBrokerNodeGroupInfoClientSubnetsRefsPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderBrokerNodeGroupInfoClientSubnetsRefsPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderBrokerNodeGroupInfoClientSubnetsRefsPolicyResolveEnum
@@ -95,7 +95,7 @@ public enum V1beta2ClusterSpecForProviderBrokerNodeGroupInfoClientSubnetsRefsPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoClientSubnetsRefsPolicy
@@ -120,7 +120,7 @@ public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoClientSubne
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoClientSubnetsRefs
@@ -140,7 +140,7 @@ public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoClientSubne
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderBrokerNodeGroupInfoClientSubnetsSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderBrokerNodeGroupInfoClientSubnetsSelectorPolicyResolutionEnum
@@ -157,7 +157,7 @@ public enum V1beta2ClusterSpecForProviderBrokerNodeGroupInfoClientSubnetsSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderBrokerNodeGroupInfoClientSubnetsSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderBrokerNodeGroupInfoClientSubnetsSelectorPolicyResolveEnum
@@ -169,7 +169,7 @@ public enum V1beta2ClusterSpecForProviderBrokerNodeGroupInfoClientSubnetsSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoClientSubnetsSelectorPolicy
@@ -194,7 +194,7 @@ public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoClientSubne
 }
 
 /// <summary>Selector for a list of Subnet in ec2 to populate clientSubnets.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoClientSubnetsSelector
@@ -215,7 +215,7 @@ public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoClientSubne
     public V1beta2ClusterSpecForProviderBrokerNodeGroupInfoClientSubnetsSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoConnectivityInfoPublicAccess
@@ -225,7 +225,7 @@ public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoConnectivit
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSasl
@@ -239,7 +239,7 @@ public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoConnectivit
     public bool? Scram { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthentication
@@ -253,7 +253,7 @@ public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoConnectivit
     public bool? Tls { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivity
@@ -263,7 +263,7 @@ public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoConnectivit
     public IList<V1beta2ClusterSpecForProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthentication>? ClientAuthentication { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoConnectivityInfo
@@ -283,7 +283,7 @@ public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoConnectivit
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderBrokerNodeGroupInfoSecurityGroupsRefsPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderBrokerNodeGroupInfoSecurityGroupsRefsPolicyResolutionEnum
@@ -300,7 +300,7 @@ public enum V1beta2ClusterSpecForProviderBrokerNodeGroupInfoSecurityGroupsRefsPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderBrokerNodeGroupInfoSecurityGroupsRefsPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderBrokerNodeGroupInfoSecurityGroupsRefsPolicyResolveEnum
@@ -312,7 +312,7 @@ public enum V1beta2ClusterSpecForProviderBrokerNodeGroupInfoSecurityGroupsRefsPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoSecurityGroupsRefsPolicy
@@ -337,7 +337,7 @@ public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoSecurityGro
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoSecurityGroupsRefs
@@ -357,7 +357,7 @@ public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoSecurityGro
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderBrokerNodeGroupInfoSecurityGroupsSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderBrokerNodeGroupInfoSecurityGroupsSelectorPolicyResolutionEnum
@@ -374,7 +374,7 @@ public enum V1beta2ClusterSpecForProviderBrokerNodeGroupInfoSecurityGroupsSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderBrokerNodeGroupInfoSecurityGroupsSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderBrokerNodeGroupInfoSecurityGroupsSelectorPolicyResolveEnum
@@ -386,7 +386,7 @@ public enum V1beta2ClusterSpecForProviderBrokerNodeGroupInfoSecurityGroupsSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoSecurityGroupsSelectorPolicy
@@ -411,7 +411,7 @@ public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoSecurityGro
 }
 
 /// <summary>Selector for a list of SecurityGroup in ec2 to populate securityGroups.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoSecurityGroupsSelector
@@ -432,7 +432,7 @@ public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoSecurityGro
     public V1beta2ClusterSpecForProviderBrokerNodeGroupInfoSecurityGroupsSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughput
@@ -446,7 +446,7 @@ public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoStorageInfo
     public double? VolumeThroughput { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoStorageInfoEbsStorageInfo
@@ -460,7 +460,7 @@ public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoStorageInfo
     public double? VolumeSize { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoStorageInfo
@@ -470,7 +470,7 @@ public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoStorageInfo
     public IList<V1beta2ClusterSpecForProviderBrokerNodeGroupInfoStorageInfoEbsStorageInfo>? EbsStorageInfo { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfo
@@ -516,7 +516,7 @@ public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfo
     public IList<V1beta2ClusterSpecForProviderBrokerNodeGroupInfoStorageInfo>? StorageInfo { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderClientAuthenticationSasl
@@ -530,7 +530,7 @@ public partial class V1beta2ClusterSpecForProviderClientAuthenticationSasl
     public bool? Scram { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderClientAuthenticationTls
@@ -540,7 +540,7 @@ public partial class V1beta2ClusterSpecForProviderClientAuthenticationTls
     public IList<string>? CertificateAuthorityArns { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderClientAuthentication
@@ -564,7 +564,7 @@ public partial class V1beta2ClusterSpecForProviderClientAuthentication
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderConfigurationInfoArnRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderConfigurationInfoArnRefPolicyResolutionEnum
@@ -581,7 +581,7 @@ public enum V1beta2ClusterSpecForProviderConfigurationInfoArnRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderConfigurationInfoArnRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderConfigurationInfoArnRefPolicyResolveEnum
@@ -593,7 +593,7 @@ public enum V1beta2ClusterSpecForProviderConfigurationInfoArnRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderConfigurationInfoArnRefPolicy
@@ -618,7 +618,7 @@ public partial class V1beta2ClusterSpecForProviderConfigurationInfoArnRefPolicy
 }
 
 /// <summary>Reference to a Configuration in kafka to populate arn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderConfigurationInfoArnRef
@@ -638,7 +638,7 @@ public partial class V1beta2ClusterSpecForProviderConfigurationInfoArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderConfigurationInfoArnSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderConfigurationInfoArnSelectorPolicyResolutionEnum
@@ -655,7 +655,7 @@ public enum V1beta2ClusterSpecForProviderConfigurationInfoArnSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderConfigurationInfoArnSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderConfigurationInfoArnSelectorPolicyResolveEnum
@@ -667,7 +667,7 @@ public enum V1beta2ClusterSpecForProviderConfigurationInfoArnSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderConfigurationInfoArnSelectorPolicy
@@ -692,7 +692,7 @@ public partial class V1beta2ClusterSpecForProviderConfigurationInfoArnSelectorPo
 }
 
 /// <summary>Selector for a Configuration in kafka to populate arn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderConfigurationInfoArnSelector
@@ -713,7 +713,7 @@ public partial class V1beta2ClusterSpecForProviderConfigurationInfoArnSelector
     public V1beta2ClusterSpecForProviderConfigurationInfoArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderConfigurationInfo
@@ -741,7 +741,7 @@ public partial class V1beta2ClusterSpecForProviderConfigurationInfo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderEncryptionInfoEncryptionAtRestKmsKeyArnRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderEncryptionInfoEncryptionAtRestKmsKeyArnRefPolicyResolutionEnum
@@ -758,7 +758,7 @@ public enum V1beta2ClusterSpecForProviderEncryptionInfoEncryptionAtRestKmsKeyArn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderEncryptionInfoEncryptionAtRestKmsKeyArnRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderEncryptionInfoEncryptionAtRestKmsKeyArnRefPolicyResolveEnum
@@ -770,7 +770,7 @@ public enum V1beta2ClusterSpecForProviderEncryptionInfoEncryptionAtRestKmsKeyArn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderEncryptionInfoEncryptionAtRestKmsKeyArnRefPolicy
@@ -795,7 +795,7 @@ public partial class V1beta2ClusterSpecForProviderEncryptionInfoEncryptionAtRest
 }
 
 /// <summary>Reference to a Key in kms to populate encryptionAtRestKmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderEncryptionInfoEncryptionAtRestKmsKeyArnRef
@@ -815,7 +815,7 @@ public partial class V1beta2ClusterSpecForProviderEncryptionInfoEncryptionAtRest
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderEncryptionInfoEncryptionAtRestKmsKeyArnSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderEncryptionInfoEncryptionAtRestKmsKeyArnSelectorPolicyResolutionEnum
@@ -832,7 +832,7 @@ public enum V1beta2ClusterSpecForProviderEncryptionInfoEncryptionAtRestKmsKeyArn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderEncryptionInfoEncryptionAtRestKmsKeyArnSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderEncryptionInfoEncryptionAtRestKmsKeyArnSelectorPolicyResolveEnum
@@ -844,7 +844,7 @@ public enum V1beta2ClusterSpecForProviderEncryptionInfoEncryptionAtRestKmsKeyArn
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderEncryptionInfoEncryptionAtRestKmsKeyArnSelectorPolicy
@@ -869,7 +869,7 @@ public partial class V1beta2ClusterSpecForProviderEncryptionInfoEncryptionAtRest
 }
 
 /// <summary>Selector for a Key in kms to populate encryptionAtRestKmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderEncryptionInfoEncryptionAtRestKmsKeyArnSelector
@@ -890,7 +890,7 @@ public partial class V1beta2ClusterSpecForProviderEncryptionInfoEncryptionAtRest
     public V1beta2ClusterSpecForProviderEncryptionInfoEncryptionAtRestKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderEncryptionInfoEncryptionInTransit
@@ -904,7 +904,7 @@ public partial class V1beta2ClusterSpecForProviderEncryptionInfoEncryptionInTran
     public bool? InCluster { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderEncryptionInfo
@@ -932,7 +932,7 @@ public partial class V1beta2ClusterSpecForProviderEncryptionInfo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupRefPolicyResolutionEnum
@@ -949,7 +949,7 @@ public enum V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatchLogsLogG
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupRefPolicyResolveEnum
@@ -961,7 +961,7 @@ public enum V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatchLogsLogG
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupRefPolicy
@@ -986,7 +986,7 @@ public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatc
 }
 
 /// <summary>Reference to a Group in cloudwatchlogs to populate logGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupRef
@@ -1006,7 +1006,7 @@ public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupSelectorPolicyResolutionEnum
@@ -1023,7 +1023,7 @@ public enum V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatchLogsLogG
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupSelectorPolicyResolveEnum
@@ -1035,7 +1035,7 @@ public enum V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatchLogsLogG
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupSelectorPolicy
@@ -1060,7 +1060,7 @@ public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatc
 }
 
 /// <summary>Selector for a Group in cloudwatchlogs to populate logGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupSelector
@@ -1081,7 +1081,7 @@ public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatc
     public V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatchLogs
@@ -1109,7 +1109,7 @@ public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsCloudwatc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamRefPolicyResolutionEnum
@@ -1126,7 +1126,7 @@ public enum V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsFirehoseDeliverySt
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamRefPolicyResolveEnum
@@ -1138,7 +1138,7 @@ public enum V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsFirehoseDeliverySt
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamRefPolicy
@@ -1163,7 +1163,7 @@ public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsFirehoseD
 }
 
 /// <summary>Reference to a DeliveryStream in firehose to populate deliveryStream.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamRef
@@ -1183,7 +1183,7 @@ public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsFirehoseD
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamSelectorPolicyResolutionEnum
@@ -1200,7 +1200,7 @@ public enum V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsFirehoseDeliverySt
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamSelectorPolicyResolveEnum
@@ -1212,7 +1212,7 @@ public enum V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsFirehoseDeliverySt
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamSelectorPolicy
@@ -1237,7 +1237,7 @@ public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsFirehoseD
 }
 
 /// <summary>Selector for a DeliveryStream in firehose to populate deliveryStream.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamSelector
@@ -1258,7 +1258,7 @@ public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsFirehoseD
     public V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsFirehose
@@ -1286,7 +1286,7 @@ public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsFirehose
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsS3BucketRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsS3BucketRefPolicyResolutionEnum
@@ -1303,7 +1303,7 @@ public enum V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsS3BucketRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsS3BucketRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsS3BucketRefPolicyResolveEnum
@@ -1315,7 +1315,7 @@ public enum V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsS3BucketRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsS3BucketRefPolicy
@@ -1340,7 +1340,7 @@ public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsS3BucketR
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsS3BucketRef
@@ -1360,7 +1360,7 @@ public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsS3BucketR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsS3BucketSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsS3BucketSelectorPolicyResolutionEnum
@@ -1377,7 +1377,7 @@ public enum V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsS3BucketSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsS3BucketSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsS3BucketSelectorPolicyResolveEnum
@@ -1389,7 +1389,7 @@ public enum V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsS3BucketSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsS3BucketSelectorPolicy
@@ -1414,7 +1414,7 @@ public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsS3BucketS
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsS3BucketSelector
@@ -1435,7 +1435,7 @@ public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsS3BucketS
     public V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsS3BucketSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsS3
@@ -1461,7 +1461,7 @@ public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsS3
     public string? Prefix { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogs
@@ -1479,7 +1479,7 @@ public partial class V1beta2ClusterSpecForProviderLoggingInfoBrokerLogs
     public IList<V1beta2ClusterSpecForProviderLoggingInfoBrokerLogsS3>? S3 { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderLoggingInfo
@@ -1489,7 +1489,7 @@ public partial class V1beta2ClusterSpecForProviderLoggingInfo
     public IList<V1beta2ClusterSpecForProviderLoggingInfoBrokerLogs>? BrokerLogs { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderOpenMonitoringPrometheusJmxExporter
@@ -1499,7 +1499,7 @@ public partial class V1beta2ClusterSpecForProviderOpenMonitoringPrometheusJmxExp
     public bool? EnabledInBroker { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderOpenMonitoringPrometheusNodeExporter
@@ -1509,7 +1509,7 @@ public partial class V1beta2ClusterSpecForProviderOpenMonitoringPrometheusNodeEx
     public bool? EnabledInBroker { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderOpenMonitoringPrometheus
@@ -1523,7 +1523,7 @@ public partial class V1beta2ClusterSpecForProviderOpenMonitoringPrometheus
     public IList<V1beta2ClusterSpecForProviderOpenMonitoringPrometheusNodeExporter>? NodeExporter { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderOpenMonitoring
@@ -1533,7 +1533,7 @@ public partial class V1beta2ClusterSpecForProviderOpenMonitoring
     public IList<V1beta2ClusterSpecForProviderOpenMonitoringPrometheus>? Prometheus { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderRebalancing
@@ -1543,7 +1543,7 @@ public partial class V1beta2ClusterSpecForProviderRebalancing
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProvider
@@ -1614,7 +1614,7 @@ public partial class V1beta2ClusterSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoClientSubnetsRefsPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoClientSubnetsRefsPolicyResolutionEnum
@@ -1631,7 +1631,7 @@ public enum V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoClientSubnetsRefsPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoClientSubnetsRefsPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoClientSubnetsRefsPolicyResolveEnum
@@ -1643,7 +1643,7 @@ public enum V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoClientSubnetsRefsPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoClientSubnetsRefsPolicy
@@ -1668,7 +1668,7 @@ public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoClientSubn
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoClientSubnetsRefs
@@ -1688,7 +1688,7 @@ public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoClientSubn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoClientSubnetsSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoClientSubnetsSelectorPolicyResolutionEnum
@@ -1705,7 +1705,7 @@ public enum V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoClientSubnetsSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoClientSubnetsSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoClientSubnetsSelectorPolicyResolveEnum
@@ -1717,7 +1717,7 @@ public enum V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoClientSubnetsSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoClientSubnetsSelectorPolicy
@@ -1742,7 +1742,7 @@ public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoClientSubn
 }
 
 /// <summary>Selector for a list of Subnet in ec2 to populate clientSubnets.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoClientSubnetsSelector
@@ -1763,7 +1763,7 @@ public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoClientSubn
     public V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoClientSubnetsSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoConnectivityInfoPublicAccess
@@ -1773,7 +1773,7 @@ public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoConnectivi
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSasl
@@ -1787,7 +1787,7 @@ public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoConnectivi
     public bool? Scram { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthentication
@@ -1801,7 +1801,7 @@ public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoConnectivi
     public bool? Tls { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivity
@@ -1811,7 +1811,7 @@ public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoConnectivi
     public IList<V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthentication>? ClientAuthentication { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoConnectivityInfo
@@ -1831,7 +1831,7 @@ public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoConnectivi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGroupsRefsPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGroupsRefsPolicyResolutionEnum
@@ -1848,7 +1848,7 @@ public enum V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGroupsRefsP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGroupsRefsPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGroupsRefsPolicyResolveEnum
@@ -1860,7 +1860,7 @@ public enum V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGroupsRefsP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGroupsRefsPolicy
@@ -1885,7 +1885,7 @@ public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGr
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGroupsRefs
@@ -1905,7 +1905,7 @@ public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGroupsSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGroupsSelectorPolicyResolutionEnum
@@ -1922,7 +1922,7 @@ public enum V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGroupsSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGroupsSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGroupsSelectorPolicyResolveEnum
@@ -1934,7 +1934,7 @@ public enum V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGroupsSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGroupsSelectorPolicy
@@ -1959,7 +1959,7 @@ public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGr
 }
 
 /// <summary>Selector for a list of SecurityGroup in ec2 to populate securityGroups.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGroupsSelector
@@ -1980,7 +1980,7 @@ public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGr
     public V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGroupsSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughput
@@ -1994,7 +1994,7 @@ public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoStorageInf
     public double? VolumeThroughput { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoStorageInfoEbsStorageInfo
@@ -2008,7 +2008,7 @@ public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoStorageInf
     public double? VolumeSize { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoStorageInfo
@@ -2018,7 +2018,7 @@ public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoStorageInf
     public IList<V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoStorageInfoEbsStorageInfo>? EbsStorageInfo { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfo
@@ -2064,7 +2064,7 @@ public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfo
     public IList<V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoStorageInfo>? StorageInfo { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderClientAuthenticationSasl
@@ -2078,7 +2078,7 @@ public partial class V1beta2ClusterSpecInitProviderClientAuthenticationSasl
     public bool? Scram { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderClientAuthenticationTls
@@ -2088,7 +2088,7 @@ public partial class V1beta2ClusterSpecInitProviderClientAuthenticationTls
     public IList<string>? CertificateAuthorityArns { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderClientAuthentication
@@ -2112,7 +2112,7 @@ public partial class V1beta2ClusterSpecInitProviderClientAuthentication
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderConfigurationInfoArnRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderConfigurationInfoArnRefPolicyResolutionEnum
@@ -2129,7 +2129,7 @@ public enum V1beta2ClusterSpecInitProviderConfigurationInfoArnRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderConfigurationInfoArnRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderConfigurationInfoArnRefPolicyResolveEnum
@@ -2141,7 +2141,7 @@ public enum V1beta2ClusterSpecInitProviderConfigurationInfoArnRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderConfigurationInfoArnRefPolicy
@@ -2166,7 +2166,7 @@ public partial class V1beta2ClusterSpecInitProviderConfigurationInfoArnRefPolicy
 }
 
 /// <summary>Reference to a Configuration in kafka to populate arn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderConfigurationInfoArnRef
@@ -2186,7 +2186,7 @@ public partial class V1beta2ClusterSpecInitProviderConfigurationInfoArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderConfigurationInfoArnSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderConfigurationInfoArnSelectorPolicyResolutionEnum
@@ -2203,7 +2203,7 @@ public enum V1beta2ClusterSpecInitProviderConfigurationInfoArnSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderConfigurationInfoArnSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderConfigurationInfoArnSelectorPolicyResolveEnum
@@ -2215,7 +2215,7 @@ public enum V1beta2ClusterSpecInitProviderConfigurationInfoArnSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderConfigurationInfoArnSelectorPolicy
@@ -2240,7 +2240,7 @@ public partial class V1beta2ClusterSpecInitProviderConfigurationInfoArnSelectorP
 }
 
 /// <summary>Selector for a Configuration in kafka to populate arn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderConfigurationInfoArnSelector
@@ -2261,7 +2261,7 @@ public partial class V1beta2ClusterSpecInitProviderConfigurationInfoArnSelector
     public V1beta2ClusterSpecInitProviderConfigurationInfoArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderConfigurationInfo
@@ -2289,7 +2289,7 @@ public partial class V1beta2ClusterSpecInitProviderConfigurationInfo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderEncryptionInfoEncryptionAtRestKmsKeyArnRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderEncryptionInfoEncryptionAtRestKmsKeyArnRefPolicyResolutionEnum
@@ -2306,7 +2306,7 @@ public enum V1beta2ClusterSpecInitProviderEncryptionInfoEncryptionAtRestKmsKeyAr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderEncryptionInfoEncryptionAtRestKmsKeyArnRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderEncryptionInfoEncryptionAtRestKmsKeyArnRefPolicyResolveEnum
@@ -2318,7 +2318,7 @@ public enum V1beta2ClusterSpecInitProviderEncryptionInfoEncryptionAtRestKmsKeyAr
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderEncryptionInfoEncryptionAtRestKmsKeyArnRefPolicy
@@ -2343,7 +2343,7 @@ public partial class V1beta2ClusterSpecInitProviderEncryptionInfoEncryptionAtRes
 }
 
 /// <summary>Reference to a Key in kms to populate encryptionAtRestKmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderEncryptionInfoEncryptionAtRestKmsKeyArnRef
@@ -2363,7 +2363,7 @@ public partial class V1beta2ClusterSpecInitProviderEncryptionInfoEncryptionAtRes
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderEncryptionInfoEncryptionAtRestKmsKeyArnSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderEncryptionInfoEncryptionAtRestKmsKeyArnSelectorPolicyResolutionEnum
@@ -2380,7 +2380,7 @@ public enum V1beta2ClusterSpecInitProviderEncryptionInfoEncryptionAtRestKmsKeyAr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderEncryptionInfoEncryptionAtRestKmsKeyArnSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderEncryptionInfoEncryptionAtRestKmsKeyArnSelectorPolicyResolveEnum
@@ -2392,7 +2392,7 @@ public enum V1beta2ClusterSpecInitProviderEncryptionInfoEncryptionAtRestKmsKeyAr
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderEncryptionInfoEncryptionAtRestKmsKeyArnSelectorPolicy
@@ -2417,7 +2417,7 @@ public partial class V1beta2ClusterSpecInitProviderEncryptionInfoEncryptionAtRes
 }
 
 /// <summary>Selector for a Key in kms to populate encryptionAtRestKmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderEncryptionInfoEncryptionAtRestKmsKeyArnSelector
@@ -2438,7 +2438,7 @@ public partial class V1beta2ClusterSpecInitProviderEncryptionInfoEncryptionAtRes
     public V1beta2ClusterSpecInitProviderEncryptionInfoEncryptionAtRestKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderEncryptionInfoEncryptionInTransit
@@ -2452,7 +2452,7 @@ public partial class V1beta2ClusterSpecInitProviderEncryptionInfoEncryptionInTra
     public bool? InCluster { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderEncryptionInfo
@@ -2480,7 +2480,7 @@ public partial class V1beta2ClusterSpecInitProviderEncryptionInfo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupRefPolicyResolutionEnum
@@ -2497,7 +2497,7 @@ public enum V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwatchLogsLog
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupRefPolicyResolveEnum
@@ -2509,7 +2509,7 @@ public enum V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwatchLogsLog
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupRefPolicy
@@ -2534,7 +2534,7 @@ public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwat
 }
 
 /// <summary>Reference to a Group in cloudwatchlogs to populate logGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupRef
@@ -2554,7 +2554,7 @@ public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupSelectorPolicyResolutionEnum
@@ -2571,7 +2571,7 @@ public enum V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwatchLogsLog
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupSelectorPolicyResolveEnum
@@ -2583,7 +2583,7 @@ public enum V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwatchLogsLog
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupSelectorPolicy
@@ -2608,7 +2608,7 @@ public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwat
 }
 
 /// <summary>Selector for a Group in cloudwatchlogs to populate logGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupSelector
@@ -2629,7 +2629,7 @@ public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwat
     public V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwatchLogsLogGroupSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwatchLogs
@@ -2657,7 +2657,7 @@ public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsCloudwat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamRefPolicyResolutionEnum
@@ -2674,7 +2674,7 @@ public enum V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsFirehoseDeliveryS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamRefPolicyResolveEnum
@@ -2686,7 +2686,7 @@ public enum V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsFirehoseDeliveryS
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamRefPolicy
@@ -2711,7 +2711,7 @@ public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsFirehose
 }
 
 /// <summary>Reference to a DeliveryStream in firehose to populate deliveryStream.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamRef
@@ -2731,7 +2731,7 @@ public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsFirehose
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamSelectorPolicyResolutionEnum
@@ -2748,7 +2748,7 @@ public enum V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsFirehoseDeliveryS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamSelectorPolicyResolveEnum
@@ -2760,7 +2760,7 @@ public enum V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsFirehoseDeliveryS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamSelectorPolicy
@@ -2785,7 +2785,7 @@ public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsFirehose
 }
 
 /// <summary>Selector for a DeliveryStream in firehose to populate deliveryStream.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamSelector
@@ -2806,7 +2806,7 @@ public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsFirehose
     public V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsFirehoseDeliveryStreamSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsFirehose
@@ -2834,7 +2834,7 @@ public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsFirehose
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsS3BucketRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsS3BucketRefPolicyResolutionEnum
@@ -2851,7 +2851,7 @@ public enum V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsS3BucketRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsS3BucketRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsS3BucketRefPolicyResolveEnum
@@ -2863,7 +2863,7 @@ public enum V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsS3BucketRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsS3BucketRefPolicy
@@ -2888,7 +2888,7 @@ public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsS3Bucket
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsS3BucketRef
@@ -2908,7 +2908,7 @@ public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsS3Bucket
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsS3BucketSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsS3BucketSelectorPolicyResolutionEnum
@@ -2925,7 +2925,7 @@ public enum V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsS3BucketSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsS3BucketSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsS3BucketSelectorPolicyResolveEnum
@@ -2937,7 +2937,7 @@ public enum V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsS3BucketSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsS3BucketSelectorPolicy
@@ -2962,7 +2962,7 @@ public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsS3Bucket
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsS3BucketSelector
@@ -2983,7 +2983,7 @@ public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsS3Bucket
     public V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsS3BucketSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsS3
@@ -3009,7 +3009,7 @@ public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsS3
     public string? Prefix { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogs
@@ -3027,7 +3027,7 @@ public partial class V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogs
     public IList<V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogsS3>? S3 { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderLoggingInfo
@@ -3037,7 +3037,7 @@ public partial class V1beta2ClusterSpecInitProviderLoggingInfo
     public IList<V1beta2ClusterSpecInitProviderLoggingInfoBrokerLogs>? BrokerLogs { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderOpenMonitoringPrometheusJmxExporter
@@ -3047,7 +3047,7 @@ public partial class V1beta2ClusterSpecInitProviderOpenMonitoringPrometheusJmxEx
     public bool? EnabledInBroker { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderOpenMonitoringPrometheusNodeExporter
@@ -3057,7 +3057,7 @@ public partial class V1beta2ClusterSpecInitProviderOpenMonitoringPrometheusNodeE
     public bool? EnabledInBroker { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderOpenMonitoringPrometheus
@@ -3071,7 +3071,7 @@ public partial class V1beta2ClusterSpecInitProviderOpenMonitoringPrometheus
     public IList<V1beta2ClusterSpecInitProviderOpenMonitoringPrometheusNodeExporter>? NodeExporter { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderOpenMonitoring
@@ -3081,7 +3081,7 @@ public partial class V1beta2ClusterSpecInitProviderOpenMonitoring
     public IList<V1beta2ClusterSpecInitProviderOpenMonitoringPrometheus>? Prometheus { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderRebalancing
@@ -3103,7 +3103,7 @@ public partial class V1beta2ClusterSpecInitProviderRebalancing
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProvider
@@ -3165,7 +3165,7 @@ public partial class V1beta2ClusterSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecManagementPoliciesEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecManagementPoliciesEnum
@@ -3190,7 +3190,7 @@ public enum V1beta2ClusterSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecProviderConfigRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecProviderConfigRefPolicyResolutionEnum
@@ -3207,7 +3207,7 @@ public enum V1beta2ClusterSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClusterSpecProviderConfigRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta2ClusterSpecProviderConfigRefPolicyResolveEnum
@@ -3219,7 +3219,7 @@ public enum V1beta2ClusterSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecProviderConfigRefPolicy
@@ -3248,7 +3248,7 @@ public partial class V1beta2ClusterSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecProviderConfigRef
@@ -3268,7 +3268,7 @@ public partial class V1beta2ClusterSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecWriteConnectionSecretToRef
@@ -3283,7 +3283,7 @@ public partial class V1beta2ClusterSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ClusterSpec defines the desired state of Cluster</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpec
@@ -3351,7 +3351,7 @@ public partial class V1beta2ClusterSpec
     public V1beta2ClusterSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderBrokerNodeGroupInfoConnectivityInfoPublicAccess
@@ -3361,7 +3361,7 @@ public partial class V1beta2ClusterStatusAtProviderBrokerNodeGroupInfoConnectivi
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSasl
@@ -3375,7 +3375,7 @@ public partial class V1beta2ClusterStatusAtProviderBrokerNodeGroupInfoConnectivi
     public bool? Scram { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthentication
@@ -3389,7 +3389,7 @@ public partial class V1beta2ClusterStatusAtProviderBrokerNodeGroupInfoConnectivi
     public bool? Tls { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivity
@@ -3399,7 +3399,7 @@ public partial class V1beta2ClusterStatusAtProviderBrokerNodeGroupInfoConnectivi
     public IList<V1beta2ClusterStatusAtProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthentication>? ClientAuthentication { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderBrokerNodeGroupInfoConnectivityInfo
@@ -3413,7 +3413,7 @@ public partial class V1beta2ClusterStatusAtProviderBrokerNodeGroupInfoConnectivi
     public IList<V1beta2ClusterStatusAtProviderBrokerNodeGroupInfoConnectivityInfoVpcConnectivity>? VpcConnectivity { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughput
@@ -3427,7 +3427,7 @@ public partial class V1beta2ClusterStatusAtProviderBrokerNodeGroupInfoStorageInf
     public double? VolumeThroughput { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderBrokerNodeGroupInfoStorageInfoEbsStorageInfo
@@ -3441,7 +3441,7 @@ public partial class V1beta2ClusterStatusAtProviderBrokerNodeGroupInfoStorageInf
     public double? VolumeSize { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderBrokerNodeGroupInfoStorageInfo
@@ -3451,7 +3451,7 @@ public partial class V1beta2ClusterStatusAtProviderBrokerNodeGroupInfoStorageInf
     public IList<V1beta2ClusterStatusAtProviderBrokerNodeGroupInfoStorageInfoEbsStorageInfo>? EbsStorageInfo { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderBrokerNodeGroupInfo
@@ -3481,7 +3481,7 @@ public partial class V1beta2ClusterStatusAtProviderBrokerNodeGroupInfo
     public IList<V1beta2ClusterStatusAtProviderBrokerNodeGroupInfoStorageInfo>? StorageInfo { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderClientAuthenticationSasl
@@ -3495,7 +3495,7 @@ public partial class V1beta2ClusterStatusAtProviderClientAuthenticationSasl
     public bool? Scram { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderClientAuthenticationTls
@@ -3505,7 +3505,7 @@ public partial class V1beta2ClusterStatusAtProviderClientAuthenticationTls
     public IList<string>? CertificateAuthorityArns { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderClientAuthentication
@@ -3523,7 +3523,7 @@ public partial class V1beta2ClusterStatusAtProviderClientAuthentication
     public bool? Unauthenticated { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderConfigurationInfo
@@ -3537,7 +3537,7 @@ public partial class V1beta2ClusterStatusAtProviderConfigurationInfo
     public double? Revision { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderEncryptionInfoEncryptionInTransit
@@ -3551,7 +3551,7 @@ public partial class V1beta2ClusterStatusAtProviderEncryptionInfoEncryptionInTra
     public bool? InCluster { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderEncryptionInfo
@@ -3565,7 +3565,7 @@ public partial class V1beta2ClusterStatusAtProviderEncryptionInfo
     public IList<V1beta2ClusterStatusAtProviderEncryptionInfoEncryptionInTransit>? EncryptionInTransit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderLoggingInfoBrokerLogsCloudwatchLogs
@@ -3579,7 +3579,7 @@ public partial class V1beta2ClusterStatusAtProviderLoggingInfoBrokerLogsCloudwat
     public string? LogGroup { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderLoggingInfoBrokerLogsFirehose
@@ -3593,7 +3593,7 @@ public partial class V1beta2ClusterStatusAtProviderLoggingInfoBrokerLogsFirehose
     public bool? Enabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderLoggingInfoBrokerLogsS3
@@ -3611,7 +3611,7 @@ public partial class V1beta2ClusterStatusAtProviderLoggingInfoBrokerLogsS3
     public string? Prefix { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderLoggingInfoBrokerLogs
@@ -3629,7 +3629,7 @@ public partial class V1beta2ClusterStatusAtProviderLoggingInfoBrokerLogs
     public IList<V1beta2ClusterStatusAtProviderLoggingInfoBrokerLogsS3>? S3 { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderLoggingInfo
@@ -3639,7 +3639,7 @@ public partial class V1beta2ClusterStatusAtProviderLoggingInfo
     public IList<V1beta2ClusterStatusAtProviderLoggingInfoBrokerLogs>? BrokerLogs { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderOpenMonitoringPrometheusJmxExporter
@@ -3649,7 +3649,7 @@ public partial class V1beta2ClusterStatusAtProviderOpenMonitoringPrometheusJmxEx
     public bool? EnabledInBroker { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderOpenMonitoringPrometheusNodeExporter
@@ -3659,7 +3659,7 @@ public partial class V1beta2ClusterStatusAtProviderOpenMonitoringPrometheusNodeE
     public bool? EnabledInBroker { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderOpenMonitoringPrometheus
@@ -3673,7 +3673,7 @@ public partial class V1beta2ClusterStatusAtProviderOpenMonitoringPrometheus
     public IList<V1beta2ClusterStatusAtProviderOpenMonitoringPrometheusNodeExporter>? NodeExporter { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderOpenMonitoring
@@ -3683,7 +3683,7 @@ public partial class V1beta2ClusterStatusAtProviderOpenMonitoring
     public IList<V1beta2ClusterStatusAtProviderOpenMonitoringPrometheus>? Prometheus { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderRebalancing
@@ -3693,7 +3693,7 @@ public partial class V1beta2ClusterStatusAtProviderRebalancing
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProvider
@@ -3826,7 +3826,7 @@ public partial class V1beta2ClusterStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusConditions
@@ -3870,7 +3870,7 @@ public partial class V1beta2ClusterStatusConditions
 }
 
 /// <summary>ClusterStatus defines the observed state of Cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatus
@@ -3895,7 +3895,7 @@ public partial class V1beta2ClusterStatus
 /// Cluster is the Schema for the Clusters API.
 /// Deprecated: This API version (v1beta2) has been deprecated in release v2.6.0.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

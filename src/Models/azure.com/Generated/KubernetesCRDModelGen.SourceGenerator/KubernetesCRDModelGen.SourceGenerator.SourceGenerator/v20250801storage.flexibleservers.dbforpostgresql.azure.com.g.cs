@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.dbforpostgresql.azure.com;
 /// - Generated from: /postgresql/resource-manager/Microsoft.DBforPostgreSQL/stable/2025-08-01/openapi.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DBforPostgreSQL/flexibleServers/{serverName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20250801storageFlexibleServerList : IKubernetesObject<V1ListMeta>, IItems<V20250801storageFlexibleServer>
@@ -45,7 +45,7 @@ public partial class V20250801storageFlexibleServerList : IKubernetesObject<V1Li
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecAdministratorLoginPassword
 {
@@ -65,7 +65,7 @@ public partial class V20250801storageFlexibleServerSpecAdministratorLoginPasswor
 /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecAuthConfigTenantIdFromConfig
 {
@@ -85,7 +85,7 @@ public partial class V20250801storageFlexibleServerSpecAuthConfigTenantIdFromCon
 /// Storage version of v20250801.AuthConfig
 /// Authentication configuration properties of a server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecAuthConfig
 {
@@ -117,7 +117,7 @@ public partial class V20250801storageFlexibleServerSpecAuthConfig
 /// Storage version of v20250801.Backup
 /// Backup properties of a server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecBackup
 {
@@ -139,7 +139,7 @@ public partial class V20250801storageFlexibleServerSpecBackup
 /// Storage version of v20250801.Cluster
 /// Cluster properties of a server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecCluster
 {
@@ -161,7 +161,7 @@ public partial class V20250801storageFlexibleServerSpecCluster
 /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecDataEncryptionGeoBackupKeyURIFromConfig
 {
@@ -182,7 +182,7 @@ public partial class V20250801storageFlexibleServerSpecDataEncryptionGeoBackupKe
 /// Key Vault for data encryption of the geographically redundant storage associated to a server that is configured to
 /// support geographically redundant backups.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecDataEncryptionGeoBackupUserAssignedIdentityReference
 {
@@ -211,7 +211,7 @@ public partial class V20250801storageFlexibleServerSpecDataEncryptionGeoBackupUs
 /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecDataEncryptionPrimaryKeyURIFromConfig
 {
@@ -231,7 +231,7 @@ public partial class V20250801storageFlexibleServerSpecDataEncryptionPrimaryKeyU
 /// PrimaryUserAssignedIdentityReference: Identifier of the user assigned managed identity used to access the key in Azure
 /// Key Vault for data encryption of the primary storage associated to a server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecDataEncryptionPrimaryUserAssignedIdentityReference
 {
@@ -260,7 +260,7 @@ public partial class V20250801storageFlexibleServerSpecDataEncryptionPrimaryUser
 /// Storage version of v20250801.DataEncryption
 /// Data encryption properties of a server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecDataEncryption
 {
@@ -314,7 +314,7 @@ public partial class V20250801storageFlexibleServerSpecDataEncryption
 /// Storage version of v20250801.HighAvailability
 /// High availability properties of a server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecHighAvailability
 {
@@ -333,7 +333,7 @@ public partial class V20250801storageFlexibleServerSpecHighAvailability
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecIdentityUserAssignedIdentitiesReference
 {
@@ -362,7 +362,7 @@ public partial class V20250801storageFlexibleServerSpecIdentityUserAssignedIdent
 /// Storage version of v20250801.UserAssignedIdentityDetails
 /// Information about the user assigned identity for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecIdentityUserAssignedIdentities
 {
@@ -382,7 +382,7 @@ public partial class V20250801storageFlexibleServerSpecIdentityUserAssignedIdent
 /// Storage version of v20250801.UserAssignedIdentity
 /// Identities associated with a server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecIdentity
 {
@@ -407,7 +407,7 @@ public partial class V20250801storageFlexibleServerSpecIdentity
 /// Storage version of v20250801.MaintenanceWindow
 /// Maintenance window properties of a server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecMaintenanceWindow
 {
@@ -436,7 +436,7 @@ public partial class V20250801storageFlexibleServerSpecMaintenanceWindow
 /// in case you want the server to be integrated into your own virtual network. For an update operation, you only have to
 /// provide this property if you want to change the value assigned for the private DNS zone.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecNetworkDelegatedSubnetResourceReference
 {
@@ -466,7 +466,7 @@ public partial class V20250801storageFlexibleServerSpecNetworkDelegatedSubnetRes
 /// case you want the server to be integrated into your own virtual network. For an update operation, you only have to
 /// provide this property if you want to change the value assigned for the private DNS zone.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecNetworkPrivateDnsZoneArmResourceReference
 {
@@ -495,7 +495,7 @@ public partial class V20250801storageFlexibleServerSpecNetworkPrivateDnsZoneArmR
 /// Storage version of v20250801.Network
 /// Network properties of a server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecNetwork
 {
@@ -531,7 +531,7 @@ public partial class V20250801storageFlexibleServerSpecNetwork
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecOperatorSpecConfigMapExpressions
 {
@@ -572,7 +572,7 @@ public partial class V20250801storageFlexibleServerSpecOperatorSpecConfigMapExpr
 /// Note: This is similar to: SecretDestination in secrets.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecOperatorSpecConfigMapsFullyQualifiedDomainName
 {
@@ -597,7 +597,7 @@ public partial class V20250801storageFlexibleServerSpecOperatorSpecConfigMapsFul
 }
 
 /// <summary>Storage version of v20250801.FlexibleServerOperatorConfigMaps</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecOperatorSpecConfigMaps
 {
@@ -622,7 +622,7 @@ public partial class V20250801storageFlexibleServerSpecOperatorSpecConfigMaps
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecOperatorSpecSecretExpressions
 {
@@ -663,7 +663,7 @@ public partial class V20250801storageFlexibleServerSpecOperatorSpecSecretExpress
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecOperatorSpecSecretsFullyQualifiedDomainName
 {
@@ -688,7 +688,7 @@ public partial class V20250801storageFlexibleServerSpecOperatorSpecSecretsFullyQ
 }
 
 /// <summary>Storage version of v20250801.FlexibleServerOperatorSecrets</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecOperatorSpecSecrets
 {
@@ -712,7 +712,7 @@ public partial class V20250801storageFlexibleServerSpecOperatorSpecSecrets
 /// Storage version of v20250801.FlexibleServerOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecOperatorSpec
 {
@@ -743,7 +743,7 @@ public partial class V20250801storageFlexibleServerSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecOwner
 {
@@ -759,7 +759,7 @@ public partial class V20250801storageFlexibleServerSpecOwner
 /// Storage version of v20250801.Replica
 /// Replica properties of a server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecReplica
 {
@@ -784,7 +784,7 @@ public partial class V20250801storageFlexibleServerSpecReplica
 /// Storage version of v20250801.Sku
 /// Compute information of a server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecSku
 {
@@ -807,7 +807,7 @@ public partial class V20250801storageFlexibleServerSpecSku
 /// &apos;createMode&apos; is &apos;PointInTimeRestore&apos;, &apos;GeoRestore&apos;, &apos;Replica&apos;, or &apos;ReviveDropped&apos;. This property is returned only when
 /// the target server is a read replica.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecSourceServerResourceReference
 {
@@ -836,7 +836,7 @@ public partial class V20250801storageFlexibleServerSpecSourceServerResourceRefer
 /// Storage version of v20250801.Storage
 /// Storage properties of a server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpecStorage
 {
@@ -867,7 +867,7 @@ public partial class V20250801storageFlexibleServerSpecStorage
 }
 
 /// <summary>Storage version of v20250801.FlexibleServer_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerSpec
 {
@@ -1024,7 +1024,7 @@ public partial class V20250801storageFlexibleServerSpec
 /// Storage version of v20250801.AuthConfig_STATUS
 /// Authentication configuration properties of a server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerStatusAuthConfig
 {
@@ -1049,7 +1049,7 @@ public partial class V20250801storageFlexibleServerStatusAuthConfig
 /// Storage version of v20250801.Backup_STATUS
 /// Backup properties of a server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerStatusBackup
 {
@@ -1074,7 +1074,7 @@ public partial class V20250801storageFlexibleServerStatusBackup
 /// Storage version of v20250801.Cluster_STATUS
 /// Cluster properties of a server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerStatusCluster
 {
@@ -1093,7 +1093,7 @@ public partial class V20250801storageFlexibleServerStatusCluster
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerStatusConditions
 {
@@ -1142,7 +1142,7 @@ public partial class V20250801storageFlexibleServerStatusConditions
 /// Storage version of v20250801.DataEncryption_STATUS
 /// Data encryption properties of a server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerStatusDataEncryption
 {
@@ -1179,7 +1179,7 @@ public partial class V20250801storageFlexibleServerStatusDataEncryption
 /// Storage version of v20250801.HighAvailability_STATUS
 /// High availability properties of a server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerStatusHighAvailability
 {
@@ -1204,7 +1204,7 @@ public partial class V20250801storageFlexibleServerStatusHighAvailability
 /// Storage version of v20250801.UserIdentity_STATUS
 /// User assigned managed identity associated with a server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerStatusIdentityUserAssignedIdentities
 {
@@ -1226,7 +1226,7 @@ public partial class V20250801storageFlexibleServerStatusIdentityUserAssignedIde
 /// Storage version of v20250801.UserAssignedIdentity_STATUS
 /// Identities associated with a server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerStatusIdentity
 {
@@ -1254,7 +1254,7 @@ public partial class V20250801storageFlexibleServerStatusIdentity
 /// Storage version of v20250801.MaintenanceWindow_STATUS
 /// Maintenance window properties of a server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerStatusMaintenanceWindow
 {
@@ -1282,7 +1282,7 @@ public partial class V20250801storageFlexibleServerStatusMaintenanceWindow
 /// Storage version of v20250801.Network_STATUS
 /// Network properties of a server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerStatusNetwork
 {
@@ -1307,7 +1307,7 @@ public partial class V20250801storageFlexibleServerStatusNetwork
 /// Storage version of v20250801.PrivateEndpointConnection_STATUS
 /// The private endpoint connection resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerStatusPrivateEndpointConnections
 {
@@ -1326,7 +1326,7 @@ public partial class V20250801storageFlexibleServerStatusPrivateEndpointConnecti
 /// Storage version of v20250801.Replica_STATUS
 /// Replica properties of a server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerStatusReplica
 {
@@ -1357,7 +1357,7 @@ public partial class V20250801storageFlexibleServerStatusReplica
 /// Storage version of v20250801.Sku_STATUS
 /// Compute information of a server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerStatusSku
 {
@@ -1379,7 +1379,7 @@ public partial class V20250801storageFlexibleServerStatusSku
 /// Storage version of v20250801.Storage_STATUS
 /// Storage properties of a server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerStatusStorage
 {
@@ -1413,7 +1413,7 @@ public partial class V20250801storageFlexibleServerStatusStorage
 /// Storage version of v20250801.SystemData_STATUS
 /// Metadata pertaining to creation and last modification of the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerStatusSystemData
 {
@@ -1444,7 +1444,7 @@ public partial class V20250801storageFlexibleServerStatusSystemData
 }
 
 /// <summary>Storage version of v20250801.FlexibleServer_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250801storageFlexibleServerStatus
 {
@@ -1600,7 +1600,7 @@ public partial class V20250801storageFlexibleServerStatus
 /// - Generated from: /postgresql/resource-manager/Microsoft.DBforPostgreSQL/stable/2025-08-01/openapi.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DBforPostgreSQL/flexibleServers/{serverName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20250801storageFlexibleServer : IKubernetesObject<V1ObjectMeta>, ISpec<V20250801storageFlexibleServerSpec?>, IStatus<V20250801storageFlexibleServerStatus?>

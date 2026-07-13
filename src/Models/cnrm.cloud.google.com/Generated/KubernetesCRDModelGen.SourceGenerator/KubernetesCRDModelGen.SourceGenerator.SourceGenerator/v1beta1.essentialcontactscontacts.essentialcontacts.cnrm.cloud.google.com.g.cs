@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.essentialcontacts.cnrm.cloud.google.com;
 /// <summary>EssentialContactsContact is the Schema for the EssentialContactsContact API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EssentialContactsContactList : IKubernetesObject<V1ListMeta>, IItems<V1beta1EssentialContactsContact>
@@ -37,7 +37,7 @@ public partial class V1beta1EssentialContactsContactList : IKubernetesObject<V1L
 }
 
 /// <summary>FolderRef represents the Folder that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EssentialContactsContactSpecFolderRef
 {
@@ -55,7 +55,7 @@ public partial class V1beta1EssentialContactsContactSpecFolderRef
 }
 
 /// <summary>OrganizationRef represents the Organization that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EssentialContactsContactSpecOrganizationRef
 {
@@ -65,7 +65,7 @@ public partial class V1beta1EssentialContactsContactSpecOrganizationRef
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EssentialContactsContactSpecProjectRef
 {
@@ -87,7 +87,7 @@ public partial class V1beta1EssentialContactsContactSpecProjectRef
 }
 
 /// <summary>EssentialContactsContactSpec defines the desired state of EssentialContactsContact</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EssentialContactsContactSpec
 {
@@ -120,7 +120,7 @@ public partial class V1beta1EssentialContactsContactSpec
     public string? ResourceID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EssentialContactsContactStatusConditions
 {
@@ -146,7 +146,7 @@ public partial class V1beta1EssentialContactsContactStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EssentialContactsContactStatusObservedState
 {
@@ -160,7 +160,7 @@ public partial class V1beta1EssentialContactsContactStatusObservedState
 }
 
 /// <summary>EssentialContactsContactStatus defines the config connector machine state of EssentialContactsContact</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EssentialContactsContactStatus
 {
@@ -182,7 +182,7 @@ public partial class V1beta1EssentialContactsContactStatus
 }
 
 /// <summary>EssentialContactsContact is the Schema for the EssentialContactsContact API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EssentialContactsContact : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1EssentialContactsContactSpec>, IStatus<V1beta1EssentialContactsContactStatus?>

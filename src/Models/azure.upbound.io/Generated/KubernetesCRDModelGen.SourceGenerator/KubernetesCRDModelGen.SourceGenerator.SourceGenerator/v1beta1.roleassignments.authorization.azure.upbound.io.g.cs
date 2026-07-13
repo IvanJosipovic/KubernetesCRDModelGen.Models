@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.authorization.azure.upbound.io;
 /// <summary>RoleAssignment is the Schema for the RoleAssignments API. Assigns a given Principal (User or Group) to a given Role.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RoleAssignmentList : IKubernetesObject<V1ListMeta>, IItems<V1beta1RoleAssignment>
@@ -45,7 +45,7 @@ public partial class V1beta1RoleAssignmentList : IKubernetesObject<V1ListMeta>, 
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoleAssignmentSpecDeletionPolicyEnum>))]
 public enum V1beta1RoleAssignmentSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1RoleAssignmentSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoleAssignmentSpecForProviderRoleDefinitionIdRefPolicyResolutionEnum>))]
 public enum V1beta1RoleAssignmentSpecForProviderRoleDefinitionIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1RoleAssignmentSpecForProviderRoleDefinitionIdRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoleAssignmentSpecForProviderRoleDefinitionIdRefPolicyResolveEnum>))]
 public enum V1beta1RoleAssignmentSpecForProviderRoleDefinitionIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1RoleAssignmentSpecForProviderRoleDefinitionIdRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoleAssignmentSpecForProviderRoleDefinitionIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1RoleAssignmentSpecForProviderRoleDefinitionIdRefPoli
 }
 
 /// <summary>Reference to a RoleDefinition in authorization to populate roleDefinitionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoleAssignmentSpecForProviderRoleDefinitionIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1RoleAssignmentSpecForProviderRoleDefinitionIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoleAssignmentSpecForProviderRoleDefinitionIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1RoleAssignmentSpecForProviderRoleDefinitionIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1RoleAssignmentSpecForProviderRoleDefinitionIdSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoleAssignmentSpecForProviderRoleDefinitionIdSelectorPolicyResolveEnum>))]
 public enum V1beta1RoleAssignmentSpecForProviderRoleDefinitionIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1RoleAssignmentSpecForProviderRoleDefinitionIdSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoleAssignmentSpecForProviderRoleDefinitionIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1RoleAssignmentSpecForProviderRoleDefinitionIdSelecto
 }
 
 /// <summary>Selector for a RoleDefinition in authorization to populate roleDefinitionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoleAssignmentSpecForProviderRoleDefinitionIdSelector
 {
@@ -202,7 +202,7 @@ public partial class V1beta1RoleAssignmentSpecForProviderRoleDefinitionIdSelecto
     public V1beta1RoleAssignmentSpecForProviderRoleDefinitionIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoleAssignmentSpecForProvider
 {
@@ -265,7 +265,7 @@ public partial class V1beta1RoleAssignmentSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoleAssignmentSpecInitProviderRoleDefinitionIdRefPolicyResolutionEnum>))]
 public enum V1beta1RoleAssignmentSpecInitProviderRoleDefinitionIdRefPolicyResolutionEnum
 {
@@ -281,7 +281,7 @@ public enum V1beta1RoleAssignmentSpecInitProviderRoleDefinitionIdRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoleAssignmentSpecInitProviderRoleDefinitionIdRefPolicyResolveEnum>))]
 public enum V1beta1RoleAssignmentSpecInitProviderRoleDefinitionIdRefPolicyResolveEnum
 {
@@ -292,7 +292,7 @@ public enum V1beta1RoleAssignmentSpecInitProviderRoleDefinitionIdRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoleAssignmentSpecInitProviderRoleDefinitionIdRefPolicy
 {
@@ -316,7 +316,7 @@ public partial class V1beta1RoleAssignmentSpecInitProviderRoleDefinitionIdRefPol
 }
 
 /// <summary>Reference to a RoleDefinition in authorization to populate roleDefinitionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoleAssignmentSpecInitProviderRoleDefinitionIdRef
 {
@@ -335,7 +335,7 @@ public partial class V1beta1RoleAssignmentSpecInitProviderRoleDefinitionIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoleAssignmentSpecInitProviderRoleDefinitionIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1RoleAssignmentSpecInitProviderRoleDefinitionIdSelectorPolicyResolutionEnum
 {
@@ -351,7 +351,7 @@ public enum V1beta1RoleAssignmentSpecInitProviderRoleDefinitionIdSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoleAssignmentSpecInitProviderRoleDefinitionIdSelectorPolicyResolveEnum>))]
 public enum V1beta1RoleAssignmentSpecInitProviderRoleDefinitionIdSelectorPolicyResolveEnum
 {
@@ -362,7 +362,7 @@ public enum V1beta1RoleAssignmentSpecInitProviderRoleDefinitionIdSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoleAssignmentSpecInitProviderRoleDefinitionIdSelectorPolicy
 {
@@ -386,7 +386,7 @@ public partial class V1beta1RoleAssignmentSpecInitProviderRoleDefinitionIdSelect
 }
 
 /// <summary>Selector for a RoleDefinition in authorization to populate roleDefinitionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoleAssignmentSpecInitProviderRoleDefinitionIdSelector
 {
@@ -418,7 +418,7 @@ public partial class V1beta1RoleAssignmentSpecInitProviderRoleDefinitionIdSelect
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoleAssignmentSpecInitProvider
 {
@@ -479,7 +479,7 @@ public partial class V1beta1RoleAssignmentSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoleAssignmentSpecManagementPoliciesEnum>))]
 public enum V1beta1RoleAssignmentSpecManagementPoliciesEnum
 {
@@ -503,7 +503,7 @@ public enum V1beta1RoleAssignmentSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoleAssignmentSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1RoleAssignmentSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -519,7 +519,7 @@ public enum V1beta1RoleAssignmentSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoleAssignmentSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1RoleAssignmentSpecProviderConfigRefPolicyResolveEnum
 {
@@ -530,7 +530,7 @@ public enum V1beta1RoleAssignmentSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoleAssignmentSpecProviderConfigRefPolicy
 {
@@ -558,7 +558,7 @@ public partial class V1beta1RoleAssignmentSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoleAssignmentSpecProviderConfigRef
 {
@@ -577,7 +577,7 @@ public partial class V1beta1RoleAssignmentSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoleAssignmentSpecWriteConnectionSecretToRef
 {
@@ -591,7 +591,7 @@ public partial class V1beta1RoleAssignmentSpecWriteConnectionSecretToRef
 }
 
 /// <summary>RoleAssignmentSpec defines the desired state of RoleAssignment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoleAssignmentSpec
 {
@@ -658,7 +658,7 @@ public partial class V1beta1RoleAssignmentSpec
     public V1beta1RoleAssignmentSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoleAssignmentStatusAtProvider
 {
@@ -712,7 +712,7 @@ public partial class V1beta1RoleAssignmentStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoleAssignmentStatusConditions
 {
@@ -755,7 +755,7 @@ public partial class V1beta1RoleAssignmentStatusConditions
 }
 
 /// <summary>RoleAssignmentStatus defines the observed state of RoleAssignment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoleAssignmentStatus
 {
@@ -776,7 +776,7 @@ public partial class V1beta1RoleAssignmentStatus
 }
 
 /// <summary>RoleAssignment is the Schema for the RoleAssignments API. Assigns a given Principal (User or Group) to a given Role.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RoleAssignment : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RoleAssignmentSpec>, IStatus<V1beta1RoleAssignmentStatus?>

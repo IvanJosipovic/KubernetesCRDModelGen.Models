@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.storage.gcp.m.upbound.io;
 /// <summary>HMACKey is the Schema for the HMACKeys API. The hmacKeys resource represents an HMAC key within Cloud Storage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1HMACKeyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1HMACKey>
@@ -42,7 +42,7 @@ public partial class V1beta1HMACKeyList : IKubernetesObject<V1ListMeta>, IItems<
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HMACKeySpecForProviderServiceAccountEmailRefPolicyResolutionEnum>))]
 public enum V1beta1HMACKeySpecForProviderServiceAccountEmailRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1HMACKeySpecForProviderServiceAccountEmailRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HMACKeySpecForProviderServiceAccountEmailRefPolicyResolveEnum>))]
 public enum V1beta1HMACKeySpecForProviderServiceAccountEmailRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1HMACKeySpecForProviderServiceAccountEmailRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HMACKeySpecForProviderServiceAccountEmailRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1HMACKeySpecForProviderServiceAccountEmailRefPolicy
 }
 
 /// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HMACKeySpecForProviderServiceAccountEmailRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1HMACKeySpecForProviderServiceAccountEmailRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HMACKeySpecForProviderServiceAccountEmailSelectorPolicyResolutionEnum>))]
 public enum V1beta1HMACKeySpecForProviderServiceAccountEmailSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1HMACKeySpecForProviderServiceAccountEmailSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HMACKeySpecForProviderServiceAccountEmailSelectorPolicyResolveEnum>))]
 public enum V1beta1HMACKeySpecForProviderServiceAccountEmailSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1HMACKeySpecForProviderServiceAccountEmailSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HMACKeySpecForProviderServiceAccountEmailSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1HMACKeySpecForProviderServiceAccountEmailSelectorPol
 }
 
 /// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HMACKeySpecForProviderServiceAccountEmailSelector
 {
@@ -191,7 +191,7 @@ public partial class V1beta1HMACKeySpecForProviderServiceAccountEmailSelector
     public V1beta1HMACKeySpecForProviderServiceAccountEmailSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HMACKeySpecForProvider
 {
@@ -229,7 +229,7 @@ public partial class V1beta1HMACKeySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HMACKeySpecInitProviderServiceAccountEmailRefPolicyResolutionEnum>))]
 public enum V1beta1HMACKeySpecInitProviderServiceAccountEmailRefPolicyResolutionEnum
 {
@@ -245,7 +245,7 @@ public enum V1beta1HMACKeySpecInitProviderServiceAccountEmailRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HMACKeySpecInitProviderServiceAccountEmailRefPolicyResolveEnum>))]
 public enum V1beta1HMACKeySpecInitProviderServiceAccountEmailRefPolicyResolveEnum
 {
@@ -256,7 +256,7 @@ public enum V1beta1HMACKeySpecInitProviderServiceAccountEmailRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HMACKeySpecInitProviderServiceAccountEmailRefPolicy
 {
@@ -280,7 +280,7 @@ public partial class V1beta1HMACKeySpecInitProviderServiceAccountEmailRefPolicy
 }
 
 /// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HMACKeySpecInitProviderServiceAccountEmailRef
 {
@@ -303,7 +303,7 @@ public partial class V1beta1HMACKeySpecInitProviderServiceAccountEmailRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HMACKeySpecInitProviderServiceAccountEmailSelectorPolicyResolutionEnum>))]
 public enum V1beta1HMACKeySpecInitProviderServiceAccountEmailSelectorPolicyResolutionEnum
 {
@@ -319,7 +319,7 @@ public enum V1beta1HMACKeySpecInitProviderServiceAccountEmailSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HMACKeySpecInitProviderServiceAccountEmailSelectorPolicyResolveEnum>))]
 public enum V1beta1HMACKeySpecInitProviderServiceAccountEmailSelectorPolicyResolveEnum
 {
@@ -330,7 +330,7 @@ public enum V1beta1HMACKeySpecInitProviderServiceAccountEmailSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HMACKeySpecInitProviderServiceAccountEmailSelectorPolicy
 {
@@ -354,7 +354,7 @@ public partial class V1beta1HMACKeySpecInitProviderServiceAccountEmailSelectorPo
 }
 
 /// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HMACKeySpecInitProviderServiceAccountEmailSelector
 {
@@ -390,7 +390,7 @@ public partial class V1beta1HMACKeySpecInitProviderServiceAccountEmailSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HMACKeySpecInitProvider
 {
@@ -426,7 +426,7 @@ public partial class V1beta1HMACKeySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HMACKeySpecManagementPoliciesEnum>))]
 public enum V1beta1HMACKeySpecManagementPoliciesEnum
 {
@@ -449,7 +449,7 @@ public enum V1beta1HMACKeySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HMACKeySpecProviderConfigRef
 {
@@ -468,7 +468,7 @@ public partial class V1beta1HMACKeySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HMACKeySpecWriteConnectionSecretToRef
 {
@@ -478,7 +478,7 @@ public partial class V1beta1HMACKeySpecWriteConnectionSecretToRef
 }
 
 /// <summary>HMACKeySpec defines the desired state of HMACKey</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HMACKeySpec
 {
@@ -529,7 +529,7 @@ public partial class V1beta1HMACKeySpec
     public V1beta1HMACKeySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HMACKeyStatusAtProvider
 {
@@ -570,7 +570,7 @@ public partial class V1beta1HMACKeyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HMACKeyStatusConditions
 {
@@ -613,7 +613,7 @@ public partial class V1beta1HMACKeyStatusConditions
 }
 
 /// <summary>HMACKeyStatus defines the observed state of HMACKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HMACKeyStatus
 {
@@ -634,7 +634,7 @@ public partial class V1beta1HMACKeyStatus
 }
 
 /// <summary>HMACKey is the Schema for the HMACKeys API. The hmacKeys resource represents an HMAC key within Cloud Storage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1HMACKey : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1HMACKeySpec>, IStatus<V1beta1HMACKeyStatus?>

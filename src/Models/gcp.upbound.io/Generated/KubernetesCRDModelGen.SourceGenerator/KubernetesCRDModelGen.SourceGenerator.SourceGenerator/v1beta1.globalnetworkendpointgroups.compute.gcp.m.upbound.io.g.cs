@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.m.upbound.io;
 /// <summary>GlobalNetworkEndpointGroup is the Schema for the GlobalNetworkEndpointGroups API. A global network endpoint group contains endpoints that reside outside of Google Cloud.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1GlobalNetworkEndpointGroupList : IKubernetesObject<V1ListMeta>, IItems<V1beta1GlobalNetworkEndpointGroup>
@@ -36,7 +36,7 @@ public partial class V1beta1GlobalNetworkEndpointGroupList : IKubernetesObject<V
     public required IList<V1beta1GlobalNetworkEndpointGroup> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalNetworkEndpointGroupSpecForProvider
 {
@@ -81,7 +81,7 @@ public partial class V1beta1GlobalNetworkEndpointGroupSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalNetworkEndpointGroupSpecInitProvider
 {
@@ -118,7 +118,7 @@ public partial class V1beta1GlobalNetworkEndpointGroupSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GlobalNetworkEndpointGroupSpecManagementPoliciesEnum>))]
 public enum V1beta1GlobalNetworkEndpointGroupSpecManagementPoliciesEnum
 {
@@ -141,7 +141,7 @@ public enum V1beta1GlobalNetworkEndpointGroupSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalNetworkEndpointGroupSpecProviderConfigRef
 {
@@ -160,7 +160,7 @@ public partial class V1beta1GlobalNetworkEndpointGroupSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalNetworkEndpointGroupSpecWriteConnectionSecretToRef
 {
@@ -170,7 +170,7 @@ public partial class V1beta1GlobalNetworkEndpointGroupSpecWriteConnectionSecretT
 }
 
 /// <summary>GlobalNetworkEndpointGroupSpec defines the desired state of GlobalNetworkEndpointGroup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalNetworkEndpointGroupSpec
 {
@@ -221,7 +221,7 @@ public partial class V1beta1GlobalNetworkEndpointGroupSpec
     public V1beta1GlobalNetworkEndpointGroupSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalNetworkEndpointGroupStatusAtProvider
 {
@@ -263,7 +263,7 @@ public partial class V1beta1GlobalNetworkEndpointGroupStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalNetworkEndpointGroupStatusConditions
 {
@@ -306,7 +306,7 @@ public partial class V1beta1GlobalNetworkEndpointGroupStatusConditions
 }
 
 /// <summary>GlobalNetworkEndpointGroupStatus defines the observed state of GlobalNetworkEndpointGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalNetworkEndpointGroupStatus
 {
@@ -327,7 +327,7 @@ public partial class V1beta1GlobalNetworkEndpointGroupStatus
 }
 
 /// <summary>GlobalNetworkEndpointGroup is the Schema for the GlobalNetworkEndpointGroups API. A global network endpoint group contains endpoints that reside outside of Google Cloud.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1GlobalNetworkEndpointGroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1GlobalNetworkEndpointGroupSpec>, IStatus<V1beta1GlobalNetworkEndpointGroupStatus?>

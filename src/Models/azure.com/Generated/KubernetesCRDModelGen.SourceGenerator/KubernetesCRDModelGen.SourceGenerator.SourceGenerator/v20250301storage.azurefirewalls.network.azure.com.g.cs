@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.network.azure.com;
 /// - Generated from: /network/resource-manager/Microsoft.Network/Network/stable/2025-03-01/azureFirewall.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/azureFirewalls/{azureFirewallName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20250301storageAzureFirewallList : IKubernetesObject<V1ListMeta>, IItems<V20250301storageAzureFirewall>
@@ -45,7 +45,7 @@ public partial class V20250301storageAzureFirewallList : IKubernetesObject<V1Lis
 /// Storage version of v20250301.AzureFirewallRCAction
 /// Properties of the AzureFirewallRCAction.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecApplicationRuleCollectionsAction
 {
@@ -64,7 +64,7 @@ public partial class V20250301storageAzureFirewallSpecApplicationRuleCollections
 /// Storage version of v20250301.AzureFirewallApplicationRuleProtocol
 /// Properties of the application rule protocol.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecApplicationRuleCollectionsRulesProtocols
 {
@@ -86,7 +86,7 @@ public partial class V20250301storageAzureFirewallSpecApplicationRuleCollections
 /// Storage version of v20250301.AzureFirewallApplicationRule
 /// Properties of an application rule.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecApplicationRuleCollectionsRules
 {
@@ -123,7 +123,7 @@ public partial class V20250301storageAzureFirewallSpecApplicationRuleCollections
 /// Storage version of v20250301.AzureFirewallApplicationRuleCollection
 /// Application rule collection resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecApplicationRuleCollections
 {
@@ -155,7 +155,7 @@ public partial class V20250301storageAzureFirewallSpecApplicationRuleCollections
 /// Storage version of v20250301.AzureFirewallAutoscaleConfiguration
 /// Azure Firewall Autoscale Configuration parameters.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecAutoscaleConfiguration
 {
@@ -177,7 +177,7 @@ public partial class V20250301storageAzureFirewallSpecAutoscaleConfiguration
 /// Storage version of v20250301.ExtendedLocation
 /// ExtendedLocation complex type.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecExtendedLocation
 {
@@ -196,7 +196,7 @@ public partial class V20250301storageAzureFirewallSpecExtendedLocation
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecFirewallPolicyReference
 {
@@ -225,7 +225,7 @@ public partial class V20250301storageAzureFirewallSpecFirewallPolicyReference
 /// Storage version of v20250301.SubResource
 /// Reference to another subresource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecFirewallPolicy
 {
@@ -245,7 +245,7 @@ public partial class V20250301storageAzureFirewallSpecFirewallPolicy
 /// Storage version of v20250301.AzureFirewallPublicIPAddress
 /// Public IP Address associated with azure firewall.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecHubIPAddressesPublicIPsAddresses
 {
@@ -264,7 +264,7 @@ public partial class V20250301storageAzureFirewallSpecHubIPAddressesPublicIPsAdd
 /// Storage version of v20250301.HubPublicIPAddresses
 /// Public IP addresses associated with azure firewall.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecHubIPAddressesPublicIPs
 {
@@ -286,7 +286,7 @@ public partial class V20250301storageAzureFirewallSpecHubIPAddressesPublicIPs
 /// Storage version of v20250301.HubIPAddresses
 /// IP addresses associated with azure firewall.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecHubIPAddresses
 {
@@ -309,7 +309,7 @@ public partial class V20250301storageAzureFirewallSpecHubIPAddresses
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecIpConfigurationsPublicIPAddressReference
 {
@@ -338,7 +338,7 @@ public partial class V20250301storageAzureFirewallSpecIpConfigurationsPublicIPAd
 /// Storage version of v20250301.SubResource
 /// Reference to another subresource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecIpConfigurationsPublicIPAddress
 {
@@ -355,7 +355,7 @@ public partial class V20250301storageAzureFirewallSpecIpConfigurationsPublicIPAd
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecIpConfigurationsSubnetReference
 {
@@ -384,7 +384,7 @@ public partial class V20250301storageAzureFirewallSpecIpConfigurationsSubnetRefe
 /// Storage version of v20250301.SubResource
 /// Reference to another subresource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecIpConfigurationsSubnet
 {
@@ -404,7 +404,7 @@ public partial class V20250301storageAzureFirewallSpecIpConfigurationsSubnet
 /// Storage version of v20250301.AzureFirewallIPConfiguration
 /// IP configuration of an Azure Firewall.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecIpConfigurations
 {
@@ -434,7 +434,7 @@ public partial class V20250301storageAzureFirewallSpecIpConfigurations
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecManagementIpConfigurationPublicIPAddressReference
 {
@@ -463,7 +463,7 @@ public partial class V20250301storageAzureFirewallSpecManagementIpConfigurationP
 /// Storage version of v20250301.SubResource
 /// Reference to another subresource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecManagementIpConfigurationPublicIPAddress
 {
@@ -480,7 +480,7 @@ public partial class V20250301storageAzureFirewallSpecManagementIpConfigurationP
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecManagementIpConfigurationSubnetReference
 {
@@ -509,7 +509,7 @@ public partial class V20250301storageAzureFirewallSpecManagementIpConfigurationS
 /// Storage version of v20250301.SubResource
 /// Reference to another subresource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecManagementIpConfigurationSubnet
 {
@@ -529,7 +529,7 @@ public partial class V20250301storageAzureFirewallSpecManagementIpConfigurationS
 /// Storage version of v20250301.AzureFirewallIPConfiguration
 /// IP configuration of an Azure Firewall.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecManagementIpConfiguration
 {
@@ -562,7 +562,7 @@ public partial class V20250301storageAzureFirewallSpecManagementIpConfiguration
 /// Storage version of v20250301.AzureFirewallNatRCAction
 /// AzureFirewall NAT Rule Collection Action.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecNatRuleCollectionsAction
 {
@@ -581,7 +581,7 @@ public partial class V20250301storageAzureFirewallSpecNatRuleCollectionsAction
 /// Storage version of v20250301.AzureFirewallNatRule
 /// Properties of a NAT rule.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecNatRuleCollectionsRules
 {
@@ -627,7 +627,7 @@ public partial class V20250301storageAzureFirewallSpecNatRuleCollectionsRules
 /// Storage version of v20250301.AzureFirewallNatRuleCollection
 /// NAT rule collection resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecNatRuleCollections
 {
@@ -659,7 +659,7 @@ public partial class V20250301storageAzureFirewallSpecNatRuleCollections
 /// Storage version of v20250301.AzureFirewallRCAction
 /// Properties of the AzureFirewallRCAction.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecNetworkRuleCollectionsAction
 {
@@ -678,7 +678,7 @@ public partial class V20250301storageAzureFirewallSpecNetworkRuleCollectionsActi
 /// Storage version of v20250301.AzureFirewallNetworkRule
 /// Properties of the network rule.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecNetworkRuleCollectionsRules
 {
@@ -721,7 +721,7 @@ public partial class V20250301storageAzureFirewallSpecNetworkRuleCollectionsRule
 /// Storage version of v20250301.AzureFirewallNetworkRuleCollection
 /// Network rule collection resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecNetworkRuleCollections
 {
@@ -754,7 +754,7 @@ public partial class V20250301storageAzureFirewallSpecNetworkRuleCollections
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecOperatorSpecConfigMapExpressions
 {
@@ -795,7 +795,7 @@ public partial class V20250301storageAzureFirewallSpecOperatorSpecConfigMapExpre
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecOperatorSpecSecretExpressions
 {
@@ -835,7 +835,7 @@ public partial class V20250301storageAzureFirewallSpecOperatorSpecSecretExpressi
 /// Storage version of v20250301.AzureFirewallOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecOperatorSpec
 {
@@ -858,7 +858,7 @@ public partial class V20250301storageAzureFirewallSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecOwner
 {
@@ -874,7 +874,7 @@ public partial class V20250301storageAzureFirewallSpecOwner
 /// Storage version of v20250301.AzureFirewallSku
 /// SKU of an Azure Firewall.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecSku
 {
@@ -893,7 +893,7 @@ public partial class V20250301storageAzureFirewallSpecSku
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecVirtualHubReference
 {
@@ -922,7 +922,7 @@ public partial class V20250301storageAzureFirewallSpecVirtualHubReference
 /// Storage version of v20250301.SubResource
 /// Reference to another subresource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpecVirtualHub
 {
@@ -939,7 +939,7 @@ public partial class V20250301storageAzureFirewallSpecVirtualHub
 }
 
 /// <summary>Storage version of v20250301.AzureFirewall_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallSpec
 {
@@ -1056,7 +1056,7 @@ public partial class V20250301storageAzureFirewallSpec
 /// Storage version of v20250301.AzureFirewallApplicationRuleCollection_STATUS
 /// Application rule collection resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallStatusApplicationRuleCollections
 {
@@ -1075,7 +1075,7 @@ public partial class V20250301storageAzureFirewallStatusApplicationRuleCollectio
 /// Storage version of v20250301.AzureFirewallAutoscaleConfiguration_STATUS
 /// Azure Firewall Autoscale Configuration parameters.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallStatusAutoscaleConfiguration
 {
@@ -1094,7 +1094,7 @@ public partial class V20250301storageAzureFirewallStatusAutoscaleConfiguration
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallStatusConditions
 {
@@ -1143,7 +1143,7 @@ public partial class V20250301storageAzureFirewallStatusConditions
 /// Storage version of v20250301.ExtendedLocation_STATUS
 /// ExtendedLocation complex type.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallStatusExtendedLocation
 {
@@ -1165,7 +1165,7 @@ public partial class V20250301storageAzureFirewallStatusExtendedLocation
 /// Storage version of v20250301.SubResource_STATUS
 /// Reference to another subresource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallStatusFirewallPolicy
 {
@@ -1184,7 +1184,7 @@ public partial class V20250301storageAzureFirewallStatusFirewallPolicy
 /// Storage version of v20250301.AzureFirewallPublicIPAddress_STATUS
 /// Public IP Address associated with azure firewall.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallStatusHubIPAddressesPublicIPsAddresses
 {
@@ -1203,7 +1203,7 @@ public partial class V20250301storageAzureFirewallStatusHubIPAddressesPublicIPsA
 /// Storage version of v20250301.HubPublicIPAddresses_STATUS
 /// Public IP addresses associated with azure firewall.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallStatusHubIPAddressesPublicIPs
 {
@@ -1225,7 +1225,7 @@ public partial class V20250301storageAzureFirewallStatusHubIPAddressesPublicIPs
 /// Storage version of v20250301.HubIPAddresses_STATUS
 /// IP addresses associated with azure firewall.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallStatusHubIPAddresses
 {
@@ -1251,7 +1251,7 @@ public partial class V20250301storageAzureFirewallStatusHubIPAddresses
 /// Storage version of v20250301.AzureFirewallIPConfiguration_STATUS
 /// IP configuration of an Azure Firewall.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallStatusIpConfigurations
 {
@@ -1270,7 +1270,7 @@ public partial class V20250301storageAzureFirewallStatusIpConfigurations
 /// Storage version of v20250301.AzureFirewallIpGroups_STATUS
 /// IpGroups associated with azure firewall.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallStatusIpGroups
 {
@@ -1292,7 +1292,7 @@ public partial class V20250301storageAzureFirewallStatusIpGroups
 /// Storage version of v20250301.AzureFirewallIPConfiguration_STATUS
 /// IP configuration of an Azure Firewall.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallStatusManagementIpConfiguration
 {
@@ -1311,7 +1311,7 @@ public partial class V20250301storageAzureFirewallStatusManagementIpConfiguratio
 /// Storage version of v20250301.AzureFirewallNatRuleCollection_STATUS
 /// NAT rule collection resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallStatusNatRuleCollections
 {
@@ -1330,7 +1330,7 @@ public partial class V20250301storageAzureFirewallStatusNatRuleCollections
 /// Storage version of v20250301.AzureFirewallNetworkRuleCollection_STATUS
 /// Network rule collection resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallStatusNetworkRuleCollections
 {
@@ -1349,7 +1349,7 @@ public partial class V20250301storageAzureFirewallStatusNetworkRuleCollections
 /// Storage version of v20250301.AzureFirewallSku_STATUS
 /// SKU of an Azure Firewall.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallStatusSku
 {
@@ -1371,7 +1371,7 @@ public partial class V20250301storageAzureFirewallStatusSku
 /// Storage version of v20250301.SubResource_STATUS
 /// Reference to another subresource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallStatusVirtualHub
 {
@@ -1390,7 +1390,7 @@ public partial class V20250301storageAzureFirewallStatusVirtualHub
 /// Storage version of v20250301.AzureFirewall_STATUS
 /// Azure Firewall resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301storageAzureFirewallStatus
 {
@@ -1505,7 +1505,7 @@ public partial class V20250301storageAzureFirewallStatus
 /// - Generated from: /network/resource-manager/Microsoft.Network/Network/stable/2025-03-01/azureFirewall.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/azureFirewalls/{azureFirewallName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20250301storageAzureFirewall : IKubernetesObject<V1ObjectMeta>, ISpec<V20250301storageAzureFirewallSpec?>, IStatus<V20250301storageAzureFirewallStatus?>

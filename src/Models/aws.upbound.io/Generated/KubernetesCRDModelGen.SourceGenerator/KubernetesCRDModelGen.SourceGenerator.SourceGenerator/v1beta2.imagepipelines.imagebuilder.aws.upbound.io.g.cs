@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.imagebuilder.aws.upbound.io;
 /// <summary>ImagePipeline is the Schema for the ImagePipelines API. Manages an Image Builder Image Pipeline</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ImagePipelineList : IKubernetesObject<V1ListMeta>, IItems<V1beta2ImagePipeline>
@@ -45,7 +45,7 @@ public partial class V1beta2ImagePipelineList : IKubernetesObject<V1ListMeta>, I
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ImagePipelineSpecDeletionPolicyEnum>))]
 public enum V1beta2ImagePipelineSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2ImagePipelineSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ImagePipelineSpecForProviderImageRecipeArnRefPolicyResolutionEnum>))]
 public enum V1beta2ImagePipelineSpecForProviderImageRecipeArnRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2ImagePipelineSpecForProviderImageRecipeArnRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ImagePipelineSpecForProviderImageRecipeArnRefPolicyResolveEnum>))]
 public enum V1beta2ImagePipelineSpecForProviderImageRecipeArnRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2ImagePipelineSpecForProviderImageRecipeArnRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecForProviderImageRecipeArnRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2ImagePipelineSpecForProviderImageRecipeArnRefPolicy
 }
 
 /// <summary>Reference to a ImageRecipe in imagebuilder to populate imageRecipeArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecForProviderImageRecipeArnRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta2ImagePipelineSpecForProviderImageRecipeArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ImagePipelineSpecForProviderImageRecipeArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2ImagePipelineSpecForProviderImageRecipeArnSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2ImagePipelineSpecForProviderImageRecipeArnSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ImagePipelineSpecForProviderImageRecipeArnSelectorPolicyResolveEnum>))]
 public enum V1beta2ImagePipelineSpecForProviderImageRecipeArnSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2ImagePipelineSpecForProviderImageRecipeArnSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecForProviderImageRecipeArnSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2ImagePipelineSpecForProviderImageRecipeArnSelectorPo
 }
 
 /// <summary>Selector for a ImageRecipe in imagebuilder to populate imageRecipeArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecForProviderImageRecipeArnSelector
 {
@@ -203,7 +203,7 @@ public partial class V1beta2ImagePipelineSpecForProviderImageRecipeArnSelector
 }
 
 /// <summary>Configuration block with ECR configuration for image scanning. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecForProviderImageScanningConfigurationEcrConfiguration
 {
@@ -217,7 +217,7 @@ public partial class V1beta2ImagePipelineSpecForProviderImageScanningConfigurati
 }
 
 /// <summary>Configuration block with image scanning configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecForProviderImageScanningConfiguration
 {
@@ -231,7 +231,7 @@ public partial class V1beta2ImagePipelineSpecForProviderImageScanningConfigurati
 }
 
 /// <summary>Configuration block with image tests configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecForProviderImageTestsConfiguration
 {
@@ -250,7 +250,7 @@ public partial class V1beta2ImagePipelineSpecForProviderImageTestsConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ImagePipelineSpecForProviderInfrastructureConfigurationArnRefPolicyResolutionEnum>))]
 public enum V1beta2ImagePipelineSpecForProviderInfrastructureConfigurationArnRefPolicyResolutionEnum
 {
@@ -266,7 +266,7 @@ public enum V1beta2ImagePipelineSpecForProviderInfrastructureConfigurationArnRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ImagePipelineSpecForProviderInfrastructureConfigurationArnRefPolicyResolveEnum>))]
 public enum V1beta2ImagePipelineSpecForProviderInfrastructureConfigurationArnRefPolicyResolveEnum
 {
@@ -277,7 +277,7 @@ public enum V1beta2ImagePipelineSpecForProviderInfrastructureConfigurationArnRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecForProviderInfrastructureConfigurationArnRefPolicy
 {
@@ -301,7 +301,7 @@ public partial class V1beta2ImagePipelineSpecForProviderInfrastructureConfigurat
 }
 
 /// <summary>Reference to a InfrastructureConfiguration in imagebuilder to populate infrastructureConfigurationArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecForProviderInfrastructureConfigurationArnRef
 {
@@ -320,7 +320,7 @@ public partial class V1beta2ImagePipelineSpecForProviderInfrastructureConfigurat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ImagePipelineSpecForProviderInfrastructureConfigurationArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2ImagePipelineSpecForProviderInfrastructureConfigurationArnSelectorPolicyResolutionEnum
 {
@@ -336,7 +336,7 @@ public enum V1beta2ImagePipelineSpecForProviderInfrastructureConfigurationArnSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ImagePipelineSpecForProviderInfrastructureConfigurationArnSelectorPolicyResolveEnum>))]
 public enum V1beta2ImagePipelineSpecForProviderInfrastructureConfigurationArnSelectorPolicyResolveEnum
 {
@@ -347,7 +347,7 @@ public enum V1beta2ImagePipelineSpecForProviderInfrastructureConfigurationArnSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecForProviderInfrastructureConfigurationArnSelectorPolicy
 {
@@ -371,7 +371,7 @@ public partial class V1beta2ImagePipelineSpecForProviderInfrastructureConfigurat
 }
 
 /// <summary>Selector for a InfrastructureConfiguration in imagebuilder to populate infrastructureConfigurationArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecForProviderInfrastructureConfigurationArnSelector
 {
@@ -392,7 +392,7 @@ public partial class V1beta2ImagePipelineSpecForProviderInfrastructureConfigurat
 }
 
 /// <summary>Configuration block with logging configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecForProviderLoggingConfiguration
 {
@@ -406,7 +406,7 @@ public partial class V1beta2ImagePipelineSpecForProviderLoggingConfiguration
 }
 
 /// <summary>Configuration block with schedule settings. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecForProviderSchedule
 {
@@ -423,7 +423,7 @@ public partial class V1beta2ImagePipelineSpecForProviderSchedule
     public string? Timezone { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecForProviderWorkflowParameter
 {
@@ -436,7 +436,7 @@ public partial class V1beta2ImagePipelineSpecForProviderWorkflowParameter
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecForProviderWorkflow
 {
@@ -457,7 +457,7 @@ public partial class V1beta2ImagePipelineSpecForProviderWorkflow
     public string? WorkflowArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecForProvider
 {
@@ -551,7 +551,7 @@ public partial class V1beta2ImagePipelineSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ImagePipelineSpecInitProviderImageRecipeArnRefPolicyResolutionEnum>))]
 public enum V1beta2ImagePipelineSpecInitProviderImageRecipeArnRefPolicyResolutionEnum
 {
@@ -567,7 +567,7 @@ public enum V1beta2ImagePipelineSpecInitProviderImageRecipeArnRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ImagePipelineSpecInitProviderImageRecipeArnRefPolicyResolveEnum>))]
 public enum V1beta2ImagePipelineSpecInitProviderImageRecipeArnRefPolicyResolveEnum
 {
@@ -578,7 +578,7 @@ public enum V1beta2ImagePipelineSpecInitProviderImageRecipeArnRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecInitProviderImageRecipeArnRefPolicy
 {
@@ -602,7 +602,7 @@ public partial class V1beta2ImagePipelineSpecInitProviderImageRecipeArnRefPolicy
 }
 
 /// <summary>Reference to a ImageRecipe in imagebuilder to populate imageRecipeArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecInitProviderImageRecipeArnRef
 {
@@ -621,7 +621,7 @@ public partial class V1beta2ImagePipelineSpecInitProviderImageRecipeArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ImagePipelineSpecInitProviderImageRecipeArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2ImagePipelineSpecInitProviderImageRecipeArnSelectorPolicyResolutionEnum
 {
@@ -637,7 +637,7 @@ public enum V1beta2ImagePipelineSpecInitProviderImageRecipeArnSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ImagePipelineSpecInitProviderImageRecipeArnSelectorPolicyResolveEnum>))]
 public enum V1beta2ImagePipelineSpecInitProviderImageRecipeArnSelectorPolicyResolveEnum
 {
@@ -648,7 +648,7 @@ public enum V1beta2ImagePipelineSpecInitProviderImageRecipeArnSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecInitProviderImageRecipeArnSelectorPolicy
 {
@@ -672,7 +672,7 @@ public partial class V1beta2ImagePipelineSpecInitProviderImageRecipeArnSelectorP
 }
 
 /// <summary>Selector for a ImageRecipe in imagebuilder to populate imageRecipeArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecInitProviderImageRecipeArnSelector
 {
@@ -693,7 +693,7 @@ public partial class V1beta2ImagePipelineSpecInitProviderImageRecipeArnSelector
 }
 
 /// <summary>Configuration block with ECR configuration for image scanning. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecInitProviderImageScanningConfigurationEcrConfiguration
 {
@@ -707,7 +707,7 @@ public partial class V1beta2ImagePipelineSpecInitProviderImageScanningConfigurat
 }
 
 /// <summary>Configuration block with image scanning configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecInitProviderImageScanningConfiguration
 {
@@ -721,7 +721,7 @@ public partial class V1beta2ImagePipelineSpecInitProviderImageScanningConfigurat
 }
 
 /// <summary>Configuration block with image tests configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecInitProviderImageTestsConfiguration
 {
@@ -740,7 +740,7 @@ public partial class V1beta2ImagePipelineSpecInitProviderImageTestsConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ImagePipelineSpecInitProviderInfrastructureConfigurationArnRefPolicyResolutionEnum>))]
 public enum V1beta2ImagePipelineSpecInitProviderInfrastructureConfigurationArnRefPolicyResolutionEnum
 {
@@ -756,7 +756,7 @@ public enum V1beta2ImagePipelineSpecInitProviderInfrastructureConfigurationArnRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ImagePipelineSpecInitProviderInfrastructureConfigurationArnRefPolicyResolveEnum>))]
 public enum V1beta2ImagePipelineSpecInitProviderInfrastructureConfigurationArnRefPolicyResolveEnum
 {
@@ -767,7 +767,7 @@ public enum V1beta2ImagePipelineSpecInitProviderInfrastructureConfigurationArnRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecInitProviderInfrastructureConfigurationArnRefPolicy
 {
@@ -791,7 +791,7 @@ public partial class V1beta2ImagePipelineSpecInitProviderInfrastructureConfigura
 }
 
 /// <summary>Reference to a InfrastructureConfiguration in imagebuilder to populate infrastructureConfigurationArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecInitProviderInfrastructureConfigurationArnRef
 {
@@ -810,7 +810,7 @@ public partial class V1beta2ImagePipelineSpecInitProviderInfrastructureConfigura
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ImagePipelineSpecInitProviderInfrastructureConfigurationArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2ImagePipelineSpecInitProviderInfrastructureConfigurationArnSelectorPolicyResolutionEnum
 {
@@ -826,7 +826,7 @@ public enum V1beta2ImagePipelineSpecInitProviderInfrastructureConfigurationArnSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ImagePipelineSpecInitProviderInfrastructureConfigurationArnSelectorPolicyResolveEnum>))]
 public enum V1beta2ImagePipelineSpecInitProviderInfrastructureConfigurationArnSelectorPolicyResolveEnum
 {
@@ -837,7 +837,7 @@ public enum V1beta2ImagePipelineSpecInitProviderInfrastructureConfigurationArnSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecInitProviderInfrastructureConfigurationArnSelectorPolicy
 {
@@ -861,7 +861,7 @@ public partial class V1beta2ImagePipelineSpecInitProviderInfrastructureConfigura
 }
 
 /// <summary>Selector for a InfrastructureConfiguration in imagebuilder to populate infrastructureConfigurationArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecInitProviderInfrastructureConfigurationArnSelector
 {
@@ -882,7 +882,7 @@ public partial class V1beta2ImagePipelineSpecInitProviderInfrastructureConfigura
 }
 
 /// <summary>Configuration block with logging configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecInitProviderLoggingConfiguration
 {
@@ -896,7 +896,7 @@ public partial class V1beta2ImagePipelineSpecInitProviderLoggingConfiguration
 }
 
 /// <summary>Configuration block with schedule settings. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecInitProviderSchedule
 {
@@ -913,7 +913,7 @@ public partial class V1beta2ImagePipelineSpecInitProviderSchedule
     public string? Timezone { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecInitProviderWorkflowParameter
 {
@@ -926,7 +926,7 @@ public partial class V1beta2ImagePipelineSpecInitProviderWorkflowParameter
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecInitProviderWorkflow
 {
@@ -959,7 +959,7 @@ public partial class V1beta2ImagePipelineSpecInitProviderWorkflow
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecInitProvider
 {
@@ -1044,7 +1044,7 @@ public partial class V1beta2ImagePipelineSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ImagePipelineSpecManagementPoliciesEnum>))]
 public enum V1beta2ImagePipelineSpecManagementPoliciesEnum
 {
@@ -1068,7 +1068,7 @@ public enum V1beta2ImagePipelineSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ImagePipelineSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2ImagePipelineSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1084,7 +1084,7 @@ public enum V1beta2ImagePipelineSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ImagePipelineSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2ImagePipelineSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1095,7 +1095,7 @@ public enum V1beta2ImagePipelineSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecProviderConfigRefPolicy
 {
@@ -1123,7 +1123,7 @@ public partial class V1beta2ImagePipelineSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecProviderConfigRef
 {
@@ -1142,7 +1142,7 @@ public partial class V1beta2ImagePipelineSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpecWriteConnectionSecretToRef
 {
@@ -1156,7 +1156,7 @@ public partial class V1beta2ImagePipelineSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ImagePipelineSpec defines the desired state of ImagePipeline</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineSpec
 {
@@ -1224,7 +1224,7 @@ public partial class V1beta2ImagePipelineSpec
 }
 
 /// <summary>Configuration block with ECR configuration for image scanning. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineStatusAtProviderImageScanningConfigurationEcrConfiguration
 {
@@ -1238,7 +1238,7 @@ public partial class V1beta2ImagePipelineStatusAtProviderImageScanningConfigurat
 }
 
 /// <summary>Configuration block with image scanning configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineStatusAtProviderImageScanningConfiguration
 {
@@ -1252,7 +1252,7 @@ public partial class V1beta2ImagePipelineStatusAtProviderImageScanningConfigurat
 }
 
 /// <summary>Configuration block with image tests configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineStatusAtProviderImageTestsConfiguration
 {
@@ -1266,7 +1266,7 @@ public partial class V1beta2ImagePipelineStatusAtProviderImageTestsConfiguration
 }
 
 /// <summary>Configuration block with logging configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineStatusAtProviderLoggingConfiguration
 {
@@ -1280,7 +1280,7 @@ public partial class V1beta2ImagePipelineStatusAtProviderLoggingConfiguration
 }
 
 /// <summary>Configuration block with schedule settings. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineStatusAtProviderSchedule
 {
@@ -1297,7 +1297,7 @@ public partial class V1beta2ImagePipelineStatusAtProviderSchedule
     public string? Timezone { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineStatusAtProviderWorkflowParameter
 {
@@ -1310,7 +1310,7 @@ public partial class V1beta2ImagePipelineStatusAtProviderWorkflowParameter
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineStatusAtProviderWorkflow
 {
@@ -1331,7 +1331,7 @@ public partial class V1beta2ImagePipelineStatusAtProviderWorkflow
     public string? WorkflowArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineStatusAtProvider
 {
@@ -1436,7 +1436,7 @@ public partial class V1beta2ImagePipelineStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineStatusConditions
 {
@@ -1479,7 +1479,7 @@ public partial class V1beta2ImagePipelineStatusConditions
 }
 
 /// <summary>ImagePipelineStatus defines the observed state of ImagePipeline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImagePipelineStatus
 {
@@ -1500,7 +1500,7 @@ public partial class V1beta2ImagePipelineStatus
 }
 
 /// <summary>ImagePipeline is the Schema for the ImagePipelines API. Manages an Image Builder Image Pipeline</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ImagePipeline : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2ImagePipelineSpec>, IStatus<V1beta2ImagePipelineStatus?>

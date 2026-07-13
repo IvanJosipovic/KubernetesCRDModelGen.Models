@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.cnrm.cloud.google.com;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ComputeBackendServiceList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ComputeBackendService>
@@ -35,7 +35,7 @@ public partial class V1beta1ComputeBackendServiceList : IKubernetesObject<V1List
     public required IList<V1beta1ComputeBackendService> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecBackendGroupInstanceGroupRef
 {
@@ -52,7 +52,7 @@ public partial class V1beta1ComputeBackendServiceSpecBackendGroupInstanceGroupRe
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecBackendGroupNetworkEndpointGroupRef
 {
@@ -87,7 +87,7 @@ public partial class V1beta1ComputeBackendServiceSpecBackendGroupNetworkEndpoint
 /// When the &apos;load_balancing_scheme&apos; is INTERNAL, only instance groups
 /// are supported.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecBackendGroup
 {
@@ -98,7 +98,7 @@ public partial class V1beta1ComputeBackendServiceSpecBackendGroup
     public V1beta1ComputeBackendServiceSpecBackendGroupNetworkEndpointGroupRef? NetworkEndpointGroupRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecBackend
 {
@@ -234,7 +234,7 @@ public partial class V1beta1ComputeBackendServiceSpecBackend
     public double? MaxUtilization { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecCdnPolicyBypassCacheOnRequestHeaders
 {
@@ -244,7 +244,7 @@ public partial class V1beta1ComputeBackendServiceSpecCdnPolicyBypassCacheOnReque
 }
 
 /// <summary>The CacheKeyPolicy for this CdnPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecCdnPolicyCacheKeyPolicy
 {
@@ -302,7 +302,7 @@ public partial class V1beta1ComputeBackendServiceSpecCdnPolicyCacheKeyPolicy
     public IList<string>? QueryStringWhitelist { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecCdnPolicyNegativeCachingPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1ComputeBackendServiceSpecCdnPolicyNegativeCachingPol
 }
 
 /// <summary>Cloud CDN configuration for this BackendService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecCdnPolicy
 {
@@ -391,7 +391,7 @@ public partial class V1beta1ComputeBackendServiceSpecCdnPolicy
 }
 
 /// <summary>The timeout for new network connections to hosts.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecCircuitBreakersConnectTimeout
 {
@@ -416,7 +416,7 @@ public partial class V1beta1ComputeBackendServiceSpecCircuitBreakersConnectTimeo
 /// Settings controlling the volume of connections to a backend service. This field
 /// is applicable only when the load_balancing_scheme is set to INTERNAL_SELF_MANAGED.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecCircuitBreakers
 {
@@ -467,7 +467,7 @@ public partial class V1beta1ComputeBackendServiceSpecCircuitBreakers
 /// This is available only for Layer 4 Internal Load Balancing and
 /// Network Load Balancing.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecConnectionTrackingPolicy
 {
@@ -520,7 +520,7 @@ public partial class V1beta1ComputeBackendServiceSpecConnectionTrackingPolicy
 }
 
 /// <summary>Lifetime of the cookie.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecConsistentHashHttpCookieTtl
 {
@@ -547,7 +547,7 @@ public partial class V1beta1ComputeBackendServiceSpecConsistentHashHttpCookieTtl
 /// balancer. If the cookie is not present, it will be generated.
 /// This field is applicable if the sessionAffinity is set to HTTP_COOKIE.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecConsistentHashHttpCookie
 {
@@ -574,7 +574,7 @@ public partial class V1beta1ComputeBackendServiceSpecConsistentHashHttpCookie
 /// INTERNAL_SELF_MANAGED. This field is only applicable when locality_lb_policy is
 /// set to MAGLEV or RING_HASH.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecConsistentHash
 {
@@ -610,7 +610,7 @@ public partial class V1beta1ComputeBackendServiceSpecConsistentHash
 /// The resource URL for the edge security policy associated with this
 /// backend service.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecEdgeSecurityPolicyRef
 {
@@ -628,7 +628,7 @@ public partial class V1beta1ComputeBackendServiceSpecEdgeSecurityPolicyRef
 }
 
 /// <summary>Policy for failovers.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecFailoverPolicy
 {
@@ -668,7 +668,7 @@ public partial class V1beta1ComputeBackendServiceSpecFailoverPolicy
     public double? FailoverRatio { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecHealthChecksHealthCheckRef
 {
@@ -685,7 +685,7 @@ public partial class V1beta1ComputeBackendServiceSpecHealthChecksHealthCheckRef
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecHealthChecksHttpHealthCheckRef
 {
@@ -707,7 +707,7 @@ public partial class V1beta1ComputeBackendServiceSpecHealthChecksHttpHealthCheck
 /// ComputeBackendService. Currently at most one health check can be
 /// specified, and a health check is required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecHealthChecks
 {
@@ -719,7 +719,7 @@ public partial class V1beta1ComputeBackendServiceSpecHealthChecks
 }
 
 /// <summary>OAuth2 Client ID for IAP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecIapOauth2ClientIdRef
 {
@@ -737,7 +737,7 @@ public partial class V1beta1ComputeBackendServiceSpecIapOauth2ClientIdRef
 }
 
 /// <summary>Reference to a value with the given key in the given Secret in the resource&apos;s namespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecIapOauth2ClientSecretValueFromSecretKeyRef
 {
@@ -751,7 +751,7 @@ public partial class V1beta1ComputeBackendServiceSpecIapOauth2ClientSecretValueF
 }
 
 /// <summary>Source for the field&apos;s value. Cannot be used if &apos;value&apos; is specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecIapOauth2ClientSecretValueFrom
 {
@@ -761,7 +761,7 @@ public partial class V1beta1ComputeBackendServiceSpecIapOauth2ClientSecretValueF
 }
 
 /// <summary>OAuth2 Client Secret for IAP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecIapOauth2ClientSecret
 {
@@ -775,7 +775,7 @@ public partial class V1beta1ComputeBackendServiceSpecIapOauth2ClientSecret
 }
 
 /// <summary>Settings for enabling Cloud Identity Aware Proxy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecIap
 {
@@ -800,7 +800,7 @@ public partial class V1beta1ComputeBackendServiceSpecIap
 /// The configuration for a custom policy implemented by the user and
 /// deployed with the client.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecLocalityLbPoliciesCustomPolicy
 {
@@ -827,7 +827,7 @@ public partial class V1beta1ComputeBackendServiceSpecLocalityLbPoliciesCustomPol
 }
 
 /// <summary>The configuration for a built-in load balancing policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecLocalityLbPoliciesPolicy
 {
@@ -872,7 +872,7 @@ public partial class V1beta1ComputeBackendServiceSpecLocalityLbPoliciesPolicy
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecLocalityLbPolicies
 {
@@ -892,7 +892,7 @@ public partial class V1beta1ComputeBackendServiceSpecLocalityLbPolicies
 /// This field denotes the logging options for the load balancer traffic served by this backend service.
 /// If logging is enabled, logs will be exported to Stackdriver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecLogConfig
 {
@@ -915,7 +915,7 @@ public partial class V1beta1ComputeBackendServiceSpecLogConfig
 /// only be specified when the load balancing scheme is set to
 /// INTERNAL.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecNetworkRef
 {
@@ -937,7 +937,7 @@ public partial class V1beta1ComputeBackendServiceSpecNetworkRef
 /// time multiplied by the number of times the host has been ejected. Defaults to
 /// 30000ms or 30s.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecOutlierDetectionBaseEjectionTime
 {
@@ -961,7 +961,7 @@ public partial class V1beta1ComputeBackendServiceSpecOutlierDetectionBaseEjectio
 /// Time interval between ejection sweep analysis. This can result in both new
 /// ejections as well as hosts being returned to service. Defaults to 10 seconds.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecOutlierDetectionInterval
 {
@@ -986,7 +986,7 @@ public partial class V1beta1ComputeBackendServiceSpecOutlierDetectionInterval
 /// This field is applicable only when the load_balancing_scheme is set
 /// to INTERNAL_SELF_MANAGED.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecOutlierDetection
 {
@@ -1084,7 +1084,7 @@ public partial class V1beta1ComputeBackendServiceSpecOutlierDetection
 }
 
 /// <summary>The security policy associated with this backend service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecSecurityPolicyRef
 {
@@ -1107,7 +1107,7 @@ public partial class V1beta1ComputeBackendServiceSpecSecurityPolicyRef
 /// does not affect configuration unless it is attached to a backend
 /// service resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecSecuritySettingsClientTLSPolicyRef
 {
@@ -1130,7 +1130,7 @@ public partial class V1beta1ComputeBackendServiceSpecSecuritySettingsClientTLSPo
 /// load_balancing_scheme set to INTERNAL_MANAGED; or a global backend service with the
 /// load_balancing_scheme set to INTERNAL_SELF_MANAGED.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecSecuritySettings
 {
@@ -1153,7 +1153,7 @@ public partial class V1beta1ComputeBackendServiceSpecSecuritySettings
 }
 
 /// <summary>Subsetting configuration for this BackendService. Currently this is applicable only for Internal TCP/UDP load balancing and Internal HTTP(S) load balancing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpecSubsetting
 {
@@ -1162,7 +1162,7 @@ public partial class V1beta1ComputeBackendServiceSpecSubsetting
     public required string Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceSpec
 {
@@ -1432,7 +1432,7 @@ public partial class V1beta1ComputeBackendServiceSpec
     public int? TimeoutSec { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceStatusConditions
 {
@@ -1457,7 +1457,7 @@ public partial class V1beta1ComputeBackendServiceStatusConditions
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeBackendServiceStatus
 {
@@ -1488,7 +1488,7 @@ public partial class V1beta1ComputeBackendServiceStatus
     public string? SelfLink { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ComputeBackendService : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ComputeBackendServiceSpec>, IStatus<V1beta1ComputeBackendServiceStatus?>

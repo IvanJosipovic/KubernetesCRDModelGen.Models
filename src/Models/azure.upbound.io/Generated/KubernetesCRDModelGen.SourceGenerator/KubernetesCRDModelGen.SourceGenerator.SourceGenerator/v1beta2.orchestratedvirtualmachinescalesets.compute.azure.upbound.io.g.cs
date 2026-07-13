@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.azure.upbound.io;
 /// <summary>OrchestratedVirtualMachineScaleSet is the Schema for the OrchestratedVirtualMachineScaleSets API. Manages an Virtual Machine Scale Set in Flexible Orchestration Mode.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetList : IKubernetesObject<V1ListMeta>, IItems<V1beta2OrchestratedVirtualMachineScaleSet>
@@ -45,7 +45,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetList : IKubernetes
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OrchestratedVirtualMachineScaleSetSpecDeletionPolicyEnum>))]
 public enum V1beta2OrchestratedVirtualMachineScaleSetSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2OrchestratedVirtualMachineScaleSetSpecDeletionPolicyEnum
 }
 
 /// <summary>An additional_capabilities block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderAdditionalCapabilities
 {
@@ -66,7 +66,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderAdd
 }
 
 /// <summary>An automatic_instance_repair block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderAutomaticInstanceRepair
 {
@@ -84,7 +84,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderAut
 }
 
 /// <summary>A boot_diagnostics block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderBootDiagnostics
 {
@@ -93,7 +93,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderBoo
     public string? StorageAccountUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderDataDisk
 {
@@ -135,7 +135,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderDat
 }
 
 /// <summary>A protected_settings_from_key_vault block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderExtensionProtectedSettingsFromKeyVault
 {
@@ -149,7 +149,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderExt
 }
 
 /// <summary>A JSON String which specifies Sensitive Settings (such as Passwords) for the Extension.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderExtensionProtectedSettingsSecretRef
 {
@@ -166,7 +166,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderExt
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderExtension
 {
@@ -216,7 +216,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderExt
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderIdentity
 {
@@ -229,7 +229,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderIde
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationPublicIpAddressIpTag
 {
@@ -242,7 +242,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNet
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationPublicIpAddress
 {
@@ -281,7 +281,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNet
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdRefPolicyResolutionEnum
 {
@@ -297,7 +297,7 @@ public enum V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNetworkInter
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdRefPolicyResolveEnum
 {
@@ -308,7 +308,7 @@ public enum V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNetworkInter
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdRefPolicy
 {
@@ -332,7 +332,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNet
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdRef
 {
@@ -351,7 +351,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNet
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdSelectorPolicyResolutionEnum
 {
@@ -367,7 +367,7 @@ public enum V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNetworkInter
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdSelectorPolicyResolveEnum
 {
@@ -378,7 +378,7 @@ public enum V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNetworkInter
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdSelectorPolicy
 {
@@ -402,7 +402,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNet
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdSelector
 {
@@ -422,7 +422,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNet
     public V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfiguration
 {
@@ -467,7 +467,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNet
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNetworkInterface
 {
@@ -509,7 +509,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNet
 }
 
 /// <summary>A diff_disk_settings block as defined above. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsDiskDiffDiskSettings
 {
@@ -523,7 +523,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsD
 }
 
 /// <summary>An os_disk block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsDisk
 {
@@ -553,7 +553,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsD
 }
 
 /// <summary>The Base64-Encoded Custom Data which should be used for this Virtual Machine Scale Set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileCustomDataSecretRef
 {
@@ -571,7 +571,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsP
 }
 
 /// <summary>The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileLinuxConfigurationAdminPasswordSecretRef
 {
@@ -588,7 +588,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsP
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileLinuxConfigurationAdminSshKey
 {
@@ -601,7 +601,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsP
     public string? Username { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileLinuxConfigurationSecretCertificate
 {
@@ -610,7 +610,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsP
     public string? Url { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileLinuxConfigurationSecret
 {
@@ -624,7 +624,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsP
 }
 
 /// <summary>A linux_configuration block as documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileLinuxConfiguration
 {
@@ -666,7 +666,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsP
 }
 
 /// <summary>The XML formatted content that is added to the unattend.xml file for the specified path and component. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileWindowsConfigurationAdditionalUnattendContentContentSecretRef
 {
@@ -683,7 +683,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsP
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileWindowsConfigurationAdditionalUnattendContent
 {
@@ -697,7 +697,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsP
 }
 
 /// <summary>The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileWindowsConfigurationAdminPasswordSecretRef
 {
@@ -714,7 +714,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsP
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileWindowsConfigurationSecretCertificate
 {
@@ -727,7 +727,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsP
     public string? Url { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileWindowsConfigurationSecret
 {
@@ -740,7 +740,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsP
     public string? KeyVaultId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileWindowsConfigurationWinrmListener
 {
@@ -754,7 +754,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsP
 }
 
 /// <summary>A windows_configuration block as documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfileWindowsConfiguration
 {
@@ -808,7 +808,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsP
 }
 
 /// <summary>An os_profile block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsProfile
 {
@@ -826,7 +826,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderOsP
 }
 
 /// <summary>A plan block as documented below. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderPlan
 {
@@ -844,7 +844,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderPla
 }
 
 /// <summary>a priority_mix block as defined below</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderPriorityMix
 {
@@ -863,7 +863,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderPri
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -879,7 +879,7 @@ public enum V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderResourceGrou
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -890,7 +890,7 @@ public enum V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderResourceGrou
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderResourceGroupNameRefPolicy
 {
@@ -914,7 +914,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderRes
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderResourceGroupNameRef
 {
@@ -933,7 +933,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderRes
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -949,7 +949,7 @@ public enum V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderResourceGrou
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -960,7 +960,7 @@ public enum V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderResourceGrou
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -984,7 +984,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderRes
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderResourceGroupNameSelector
 {
@@ -1005,7 +1005,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderRes
 }
 
 /// <summary>A rolling_upgrade_policy block as defined below. This is Required when upgrade_mode is set to Rolling and cannot be specified when upgrade_mode is set to Manual. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderRollingUpgradePolicy
 {
@@ -1039,7 +1039,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderRol
 }
 
 /// <summary>An sku_profile block as defined below. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderSkuProfile
 {
@@ -1053,7 +1053,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderSku
 }
 
 /// <summary>A source_image_reference block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderSourceImageReference
 {
@@ -1075,7 +1075,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderSou
 }
 
 /// <summary>A termination_notification block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderTerminationNotification
 {
@@ -1089,7 +1089,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderTer
 }
 
 /// <summary>The Base64-Encoded User Data which should be used for this Virtual Machine Scale Set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderUserDataBase64SecretRef
 {
@@ -1106,7 +1106,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderUse
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProvider
 {
@@ -1268,7 +1268,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProvider
 }
 
 /// <summary>An additional_capabilities block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderAdditionalCapabilities
 {
@@ -1278,7 +1278,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderAd
 }
 
 /// <summary>An automatic_instance_repair block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderAutomaticInstanceRepair
 {
@@ -1296,7 +1296,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderAu
 }
 
 /// <summary>A boot_diagnostics block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderBootDiagnostics
 {
@@ -1305,7 +1305,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderBo
     public string? StorageAccountUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderDataDisk
 {
@@ -1347,7 +1347,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderDa
 }
 
 /// <summary>A protected_settings_from_key_vault block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderExtensionProtectedSettingsFromKeyVault
 {
@@ -1361,7 +1361,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderEx
 }
 
 /// <summary>A JSON String which specifies Sensitive Settings (such as Passwords) for the Extension.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderExtensionProtectedSettingsSecretRef
 {
@@ -1378,7 +1378,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderEx
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderExtension
 {
@@ -1428,7 +1428,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderEx
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderIdentity
 {
@@ -1441,7 +1441,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderId
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationPublicIpAddressIpTag
 {
@@ -1454,7 +1454,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNe
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationPublicIpAddress
 {
@@ -1493,7 +1493,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdRefPolicyResolutionEnum
 {
@@ -1509,7 +1509,7 @@ public enum V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNetworkInte
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdRefPolicyResolveEnum
 {
@@ -1520,7 +1520,7 @@ public enum V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNetworkInte
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdRefPolicy
 {
@@ -1544,7 +1544,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNe
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdRef
 {
@@ -1563,7 +1563,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdSelectorPolicyResolutionEnum
 {
@@ -1579,7 +1579,7 @@ public enum V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNetworkInte
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdSelectorPolicyResolveEnum
 {
@@ -1590,7 +1590,7 @@ public enum V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNetworkInte
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdSelectorPolicy
 {
@@ -1614,7 +1614,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNe
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdSelector
 {
@@ -1634,7 +1634,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNe
     public V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfiguration
 {
@@ -1679,7 +1679,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNe
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNetworkInterface
 {
@@ -1721,7 +1721,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNe
 }
 
 /// <summary>A diff_disk_settings block as defined above. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsDiskDiffDiskSettings
 {
@@ -1735,7 +1735,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
 }
 
 /// <summary>An os_disk block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsDisk
 {
@@ -1765,7 +1765,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
 }
 
 /// <summary>The Base64-Encoded Custom Data which should be used for this Virtual Machine Scale Set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileCustomDataSecretRef
 {
@@ -1783,7 +1783,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
 }
 
 /// <summary>The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileLinuxConfigurationAdminPasswordSecretRef
 {
@@ -1800,7 +1800,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileLinuxConfigurationAdminSshKey
 {
@@ -1813,7 +1813,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
     public string? Username { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileLinuxConfigurationSecretCertificate
 {
@@ -1822,7 +1822,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
     public string? Url { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileLinuxConfigurationSecret
 {
@@ -1836,7 +1836,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
 }
 
 /// <summary>A linux_configuration block as documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileLinuxConfiguration
 {
@@ -1878,7 +1878,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
 }
 
 /// <summary>The XML formatted content that is added to the unattend.xml file for the specified path and component. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileWindowsConfigurationAdditionalUnattendContentContentSecretRef
 {
@@ -1895,7 +1895,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileWindowsConfigurationAdditionalUnattendContent
 {
@@ -1909,7 +1909,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
 }
 
 /// <summary>The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileWindowsConfigurationAdminPasswordSecretRef
 {
@@ -1926,7 +1926,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileWindowsConfigurationSecretCertificate
 {
@@ -1939,7 +1939,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
     public string? Url { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileWindowsConfigurationSecret
 {
@@ -1952,7 +1952,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
     public string? KeyVaultId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileWindowsConfigurationWinrmListener
 {
@@ -1966,7 +1966,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
 }
 
 /// <summary>A windows_configuration block as documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfileWindowsConfiguration
 {
@@ -2020,7 +2020,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
 }
 
 /// <summary>An os_profile block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOsProfile
 {
@@ -2038,7 +2038,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderOs
 }
 
 /// <summary>A plan block as documented below. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderPlan
 {
@@ -2056,7 +2056,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderPl
 }
 
 /// <summary>a priority_mix block as defined below</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderPriorityMix
 {
@@ -2070,7 +2070,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderPr
 }
 
 /// <summary>A rolling_upgrade_policy block as defined below. This is Required when upgrade_mode is set to Rolling and cannot be specified when upgrade_mode is set to Manual. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderRollingUpgradePolicy
 {
@@ -2104,7 +2104,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderRo
 }
 
 /// <summary>An sku_profile block as defined below. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderSkuProfile
 {
@@ -2118,7 +2118,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderSk
 }
 
 /// <summary>A source_image_reference block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderSourceImageReference
 {
@@ -2140,7 +2140,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderSo
 }
 
 /// <summary>A termination_notification block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderTerminationNotification
 {
@@ -2154,7 +2154,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderTe
 }
 
 /// <summary>The Base64-Encoded User Data which should be used for this Virtual Machine Scale Set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderUserDataBase64SecretRef
 {
@@ -2183,7 +2183,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderUs
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProvider
 {
@@ -2336,7 +2336,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OrchestratedVirtualMachineScaleSetSpecManagementPoliciesEnum>))]
 public enum V1beta2OrchestratedVirtualMachineScaleSetSpecManagementPoliciesEnum
 {
@@ -2360,7 +2360,7 @@ public enum V1beta2OrchestratedVirtualMachineScaleSetSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OrchestratedVirtualMachineScaleSetSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2OrchestratedVirtualMachineScaleSetSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -2376,7 +2376,7 @@ public enum V1beta2OrchestratedVirtualMachineScaleSetSpecProviderConfigRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OrchestratedVirtualMachineScaleSetSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2OrchestratedVirtualMachineScaleSetSpecProviderConfigRefPolicyResolveEnum
 {
@@ -2387,7 +2387,7 @@ public enum V1beta2OrchestratedVirtualMachineScaleSetSpecProviderConfigRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecProviderConfigRefPolicy
 {
@@ -2415,7 +2415,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecProviderConfig
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecProviderConfigRef
 {
@@ -2434,7 +2434,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecProviderConfig
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecWriteConnectionSecretToRef
 {
@@ -2448,7 +2448,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecWriteConnectio
 }
 
 /// <summary>OrchestratedVirtualMachineScaleSetSpec defines the desired state of OrchestratedVirtualMachineScaleSet</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetSpec
 {
@@ -2516,7 +2516,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpec
 }
 
 /// <summary>An additional_capabilities block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderAdditionalCapabilities
 {
@@ -2526,7 +2526,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderAd
 }
 
 /// <summary>An automatic_instance_repair block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderAutomaticInstanceRepair
 {
@@ -2544,7 +2544,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderAu
 }
 
 /// <summary>A boot_diagnostics block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderBootDiagnostics
 {
@@ -2553,7 +2553,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderBo
     public string? StorageAccountUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderDataDisk
 {
@@ -2595,7 +2595,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderDa
 }
 
 /// <summary>A protected_settings_from_key_vault block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderExtensionProtectedSettingsFromKeyVault
 {
@@ -2608,7 +2608,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderEx
     public string? SourceVaultId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderExtension
 {
@@ -2654,7 +2654,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderEx
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderIdentity
 {
@@ -2667,7 +2667,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderId
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderNetworkInterfaceIpConfigurationPublicIpAddressIpTag
 {
@@ -2680,7 +2680,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderNe
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderNetworkInterfaceIpConfigurationPublicIpAddress
 {
@@ -2713,7 +2713,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderNe
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderNetworkInterfaceIpConfiguration
 {
@@ -2750,7 +2750,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderNe
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderNetworkInterface
 {
@@ -2792,7 +2792,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderNe
 }
 
 /// <summary>A diff_disk_settings block as defined above. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsDiskDiffDiskSettings
 {
@@ -2806,7 +2806,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOs
 }
 
 /// <summary>An os_disk block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsDisk
 {
@@ -2835,7 +2835,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOs
     public bool? WriteAcceleratorEnabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfileLinuxConfigurationAdminSshKey
 {
@@ -2848,7 +2848,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOs
     public string? Username { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfileLinuxConfigurationSecretCertificate
 {
@@ -2857,7 +2857,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOs
     public string? Url { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfileLinuxConfigurationSecret
 {
@@ -2871,7 +2871,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOs
 }
 
 /// <summary>A linux_configuration block as documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfileLinuxConfiguration
 {
@@ -2908,7 +2908,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOs
     public IList<V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfileLinuxConfigurationSecret>? Secret { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfileWindowsConfigurationAdditionalUnattendContent
 {
@@ -2917,7 +2917,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOs
     public string? Setting { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfileWindowsConfigurationSecretCertificate
 {
@@ -2930,7 +2930,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOs
     public string? Url { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfileWindowsConfigurationSecret
 {
@@ -2943,7 +2943,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOs
     public string? KeyVaultId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfileWindowsConfigurationWinrmListener
 {
@@ -2957,7 +2957,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOs
 }
 
 /// <summary>A windows_configuration block as documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfileWindowsConfiguration
 {
@@ -3007,7 +3007,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOs
 }
 
 /// <summary>An os_profile block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOsProfile
 {
@@ -3021,7 +3021,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderOs
 }
 
 /// <summary>A plan block as documented below. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderPlan
 {
@@ -3039,7 +3039,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderPl
 }
 
 /// <summary>a priority_mix block as defined below</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderPriorityMix
 {
@@ -3053,7 +3053,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderPr
 }
 
 /// <summary>A rolling_upgrade_policy block as defined below. This is Required when upgrade_mode is set to Rolling and cannot be specified when upgrade_mode is set to Manual. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderRollingUpgradePolicy
 {
@@ -3087,7 +3087,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderRo
 }
 
 /// <summary>An sku_profile block as defined below. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderSkuProfile
 {
@@ -3101,7 +3101,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderSk
 }
 
 /// <summary>A source_image_reference block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderSourceImageReference
 {
@@ -3123,7 +3123,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderSo
 }
 
 /// <summary>A termination_notification block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderTerminationNotification
 {
@@ -3136,7 +3136,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderTe
     public string? Timeout { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProvider
 {
@@ -3294,7 +3294,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusConditions
 {
@@ -3337,7 +3337,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusConditions
 }
 
 /// <summary>OrchestratedVirtualMachineScaleSetStatus defines the observed state of OrchestratedVirtualMachineScaleSet.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OrchestratedVirtualMachineScaleSetStatus
 {
@@ -3358,7 +3358,7 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatus
 }
 
 /// <summary>OrchestratedVirtualMachineScaleSet is the Schema for the OrchestratedVirtualMachineScaleSets API. Manages an Virtual Machine Scale Set in Flexible Orchestration Mode.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2OrchestratedVirtualMachineScaleSet : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2OrchestratedVirtualMachineScaleSetSpec>, IStatus<V1beta2OrchestratedVirtualMachineScaleSetStatus?>

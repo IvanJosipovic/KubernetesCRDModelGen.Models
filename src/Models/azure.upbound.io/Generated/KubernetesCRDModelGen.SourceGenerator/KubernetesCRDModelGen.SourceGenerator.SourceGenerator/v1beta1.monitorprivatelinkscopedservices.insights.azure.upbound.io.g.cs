@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.insights.azure.upbound.io;
 /// <summary>MonitorPrivateLinkScopedService is the Schema for the MonitorPrivateLinkScopedServices API. Manages an Azure Monitor Private Link Scoped Service</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MonitorPrivateLinkScopedServiceList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MonitorPrivateLinkScopedService>
@@ -45,7 +45,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceList : IKubernetesObj
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorPrivateLinkScopedServiceSpecDeletionPolicyEnum>))]
 public enum V1beta1MonitorPrivateLinkScopedServiceSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1MonitorPrivateLinkScopedServiceSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorPrivateLinkScopedServiceSpecForProviderLinkedResourceIdRefPolicyResolutionEnum>))]
 public enum V1beta1MonitorPrivateLinkScopedServiceSpecForProviderLinkedResourceIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1MonitorPrivateLinkScopedServiceSpecForProviderLinkedResourceI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorPrivateLinkScopedServiceSpecForProviderLinkedResourceIdRefPolicyResolveEnum>))]
 public enum V1beta1MonitorPrivateLinkScopedServiceSpecForProviderLinkedResourceIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1MonitorPrivateLinkScopedServiceSpecForProviderLinkedResourceI
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProviderLinkedResourceIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProviderLinked
 }
 
 /// <summary>Reference to a ApplicationInsights in insights to populate linkedResourceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProviderLinkedResourceIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProviderLinked
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorPrivateLinkScopedServiceSpecForProviderLinkedResourceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MonitorPrivateLinkScopedServiceSpecForProviderLinkedResourceIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1MonitorPrivateLinkScopedServiceSpecForProviderLinkedResourceI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorPrivateLinkScopedServiceSpecForProviderLinkedResourceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MonitorPrivateLinkScopedServiceSpecForProviderLinkedResourceIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1MonitorPrivateLinkScopedServiceSpecForProviderLinkedResourceI
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProviderLinkedResourceIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProviderLinked
 }
 
 /// <summary>Selector for a ApplicationInsights in insights to populate linkedResourceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProviderLinkedResourceIdSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProviderLinked
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorPrivateLinkScopedServiceSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1MonitorPrivateLinkScopedServiceSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1MonitorPrivateLinkScopedServiceSpecForProviderResourceGroupNa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorPrivateLinkScopedServiceSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1MonitorPrivateLinkScopedServiceSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1MonitorPrivateLinkScopedServiceSpecForProviderResourceGroupNa
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProviderResourceGroupNameRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProviderResour
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProviderResourceGroupNameRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProviderResour
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorPrivateLinkScopedServiceSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1MonitorPrivateLinkScopedServiceSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1MonitorPrivateLinkScopedServiceSpecForProviderResourceGroupNa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorPrivateLinkScopedServiceSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1MonitorPrivateLinkScopedServiceSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1MonitorPrivateLinkScopedServiceSpecForProviderResourceGroupNa
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProviderResour
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProviderResourceGroupNameSelector
 {
@@ -355,7 +355,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProviderResour
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorPrivateLinkScopedServiceSpecForProviderScopeNameRefPolicyResolutionEnum>))]
 public enum V1beta1MonitorPrivateLinkScopedServiceSpecForProviderScopeNameRefPolicyResolutionEnum
 {
@@ -371,7 +371,7 @@ public enum V1beta1MonitorPrivateLinkScopedServiceSpecForProviderScopeNameRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorPrivateLinkScopedServiceSpecForProviderScopeNameRefPolicyResolveEnum>))]
 public enum V1beta1MonitorPrivateLinkScopedServiceSpecForProviderScopeNameRefPolicyResolveEnum
 {
@@ -382,7 +382,7 @@ public enum V1beta1MonitorPrivateLinkScopedServiceSpecForProviderScopeNameRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProviderScopeNameRefPolicy
 {
@@ -406,7 +406,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProviderScopeN
 }
 
 /// <summary>Reference to a MonitorPrivateLinkScope in insights to populate scopeName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProviderScopeNameRef
 {
@@ -425,7 +425,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProviderScopeN
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorPrivateLinkScopedServiceSpecForProviderScopeNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1MonitorPrivateLinkScopedServiceSpecForProviderScopeNameSelectorPolicyResolutionEnum
 {
@@ -441,7 +441,7 @@ public enum V1beta1MonitorPrivateLinkScopedServiceSpecForProviderScopeNameSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorPrivateLinkScopedServiceSpecForProviderScopeNameSelectorPolicyResolveEnum>))]
 public enum V1beta1MonitorPrivateLinkScopedServiceSpecForProviderScopeNameSelectorPolicyResolveEnum
 {
@@ -452,7 +452,7 @@ public enum V1beta1MonitorPrivateLinkScopedServiceSpecForProviderScopeNameSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProviderScopeNameSelectorPolicy
 {
@@ -476,7 +476,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProviderScopeN
 }
 
 /// <summary>Selector for a MonitorPrivateLinkScope in insights to populate scopeName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProviderScopeNameSelector
 {
@@ -496,7 +496,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProviderScopeN
     public V1beta1MonitorPrivateLinkScopedServiceSpecForProviderScopeNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProvider
 {
@@ -543,7 +543,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorPrivateLinkScopedServiceSpecInitProviderLinkedResourceIdRefPolicyResolutionEnum>))]
 public enum V1beta1MonitorPrivateLinkScopedServiceSpecInitProviderLinkedResourceIdRefPolicyResolutionEnum
 {
@@ -559,7 +559,7 @@ public enum V1beta1MonitorPrivateLinkScopedServiceSpecInitProviderLinkedResource
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorPrivateLinkScopedServiceSpecInitProviderLinkedResourceIdRefPolicyResolveEnum>))]
 public enum V1beta1MonitorPrivateLinkScopedServiceSpecInitProviderLinkedResourceIdRefPolicyResolveEnum
 {
@@ -570,7 +570,7 @@ public enum V1beta1MonitorPrivateLinkScopedServiceSpecInitProviderLinkedResource
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceSpecInitProviderLinkedResourceIdRefPolicy
 {
@@ -594,7 +594,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceSpecInitProviderLinke
 }
 
 /// <summary>Reference to a ApplicationInsights in insights to populate linkedResourceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceSpecInitProviderLinkedResourceIdRef
 {
@@ -613,7 +613,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceSpecInitProviderLinke
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorPrivateLinkScopedServiceSpecInitProviderLinkedResourceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MonitorPrivateLinkScopedServiceSpecInitProviderLinkedResourceIdSelectorPolicyResolutionEnum
 {
@@ -629,7 +629,7 @@ public enum V1beta1MonitorPrivateLinkScopedServiceSpecInitProviderLinkedResource
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorPrivateLinkScopedServiceSpecInitProviderLinkedResourceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MonitorPrivateLinkScopedServiceSpecInitProviderLinkedResourceIdSelectorPolicyResolveEnum
 {
@@ -640,7 +640,7 @@ public enum V1beta1MonitorPrivateLinkScopedServiceSpecInitProviderLinkedResource
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceSpecInitProviderLinkedResourceIdSelectorPolicy
 {
@@ -664,7 +664,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceSpecInitProviderLinke
 }
 
 /// <summary>Selector for a ApplicationInsights in insights to populate linkedResourceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceSpecInitProviderLinkedResourceIdSelector
 {
@@ -696,7 +696,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceSpecInitProviderLinke
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceSpecInitProvider
 {
@@ -717,7 +717,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorPrivateLinkScopedServiceSpecManagementPoliciesEnum>))]
 public enum V1beta1MonitorPrivateLinkScopedServiceSpecManagementPoliciesEnum
 {
@@ -741,7 +741,7 @@ public enum V1beta1MonitorPrivateLinkScopedServiceSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorPrivateLinkScopedServiceSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1MonitorPrivateLinkScopedServiceSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -757,7 +757,7 @@ public enum V1beta1MonitorPrivateLinkScopedServiceSpecProviderConfigRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorPrivateLinkScopedServiceSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1MonitorPrivateLinkScopedServiceSpecProviderConfigRefPolicyResolveEnum
 {
@@ -768,7 +768,7 @@ public enum V1beta1MonitorPrivateLinkScopedServiceSpecProviderConfigRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceSpecProviderConfigRefPolicy
 {
@@ -796,7 +796,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceSpecProviderConfigRef
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceSpecProviderConfigRef
 {
@@ -815,7 +815,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceSpecWriteConnectionSecretToRef
 {
@@ -829,7 +829,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceSpecWriteConnectionSe
 }
 
 /// <summary>MonitorPrivateLinkScopedServiceSpec defines the desired state of MonitorPrivateLinkScopedService</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceSpec
 {
@@ -896,7 +896,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceSpec
     public V1beta1MonitorPrivateLinkScopedServiceSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceStatusAtProvider
 {
@@ -918,7 +918,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceStatusConditions
 {
@@ -961,7 +961,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceStatusConditions
 }
 
 /// <summary>MonitorPrivateLinkScopedServiceStatus defines the observed state of MonitorPrivateLinkScopedService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorPrivateLinkScopedServiceStatus
 {
@@ -982,7 +982,7 @@ public partial class V1beta1MonitorPrivateLinkScopedServiceStatus
 }
 
 /// <summary>MonitorPrivateLinkScopedService is the Schema for the MonitorPrivateLinkScopedServices API. Manages an Azure Monitor Private Link Scoped Service</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MonitorPrivateLinkScopedService : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MonitorPrivateLinkScopedServiceSpec>, IStatus<V1beta1MonitorPrivateLinkScopedServiceStatus?>

@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.signalrservice.azure.com;
 /// - Generated from: /signalr/resource-manager/Microsoft.SignalRService/SignalRService/stable/2024-03-01/signalr.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.SignalRService/signalR/{resourceName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20240301storageSignalRList : IKubernetesObject<V1ListMeta>, IItems<V1api20240301storageSignalR>
@@ -45,7 +45,7 @@ public partial class V1api20240301storageSignalRList : IKubernetesObject<V1ListM
 /// Storage version of v1api20240301.SignalRCorsSettings
 /// Cross-Origin Resource Sharing (CORS) settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecCors
 {
@@ -64,7 +64,7 @@ public partial class V1api20240301storageSignalRSpecCors
 /// Storage version of v1api20240301.SignalRFeature
 /// Feature of a resource, which controls the runtime behavior.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecFeatures
 {
@@ -86,7 +86,7 @@ public partial class V1api20240301storageSignalRSpecFeatures
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecIdentityUserAssignedIdentitiesReference
 {
@@ -115,7 +115,7 @@ public partial class V1api20240301storageSignalRSpecIdentityUserAssignedIdentiti
 /// Storage version of v1api20240301.UserAssignedIdentityDetails
 /// Information about the user assigned identity for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecIdentityUserAssignedIdentities
 {
@@ -135,7 +135,7 @@ public partial class V1api20240301storageSignalRSpecIdentityUserAssignedIdentiti
 /// Storage version of v1api20240301.ManagedIdentity
 /// A class represent managed identities used for request and response
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecIdentity
 {
@@ -157,7 +157,7 @@ public partial class V1api20240301storageSignalRSpecIdentity
 /// Storage version of v1api20240301.LiveTraceCategory
 /// Live trace category configuration of a Microsoft.SignalRService resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecLiveTraceConfigurationCategories
 {
@@ -179,7 +179,7 @@ public partial class V1api20240301storageSignalRSpecLiveTraceConfigurationCatego
 /// Storage version of v1api20240301.LiveTraceConfiguration
 /// Live trace configuration of a Microsoft.SignalRService resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecLiveTraceConfiguration
 {
@@ -201,7 +201,7 @@ public partial class V1api20240301storageSignalRSpecLiveTraceConfiguration
 /// Storage version of v1api20240301.IPRule
 /// An IP rule
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecNetworkACLsIpRules
 {
@@ -223,7 +223,7 @@ public partial class V1api20240301storageSignalRSpecNetworkACLsIpRules
 /// Storage version of v1api20240301.PrivateEndpointACL
 /// ACL for a private endpoint
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecNetworkACLsPrivateEndpoints
 {
@@ -248,7 +248,7 @@ public partial class V1api20240301storageSignalRSpecNetworkACLsPrivateEndpoints
 /// Storage version of v1api20240301.NetworkACL
 /// Network ACL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecNetworkACLsPublicNetwork
 {
@@ -270,7 +270,7 @@ public partial class V1api20240301storageSignalRSpecNetworkACLsPublicNetwork
 /// Storage version of v1api20240301.SignalRNetworkACLs
 /// Network ACLs for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecNetworkACLs
 {
@@ -303,7 +303,7 @@ public partial class V1api20240301storageSignalRSpecNetworkACLs
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecOperatorSpecConfigMapExpressions
 {
@@ -344,7 +344,7 @@ public partial class V1api20240301storageSignalRSpecOperatorSpecConfigMapExpress
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecOperatorSpecSecretExpressions
 {
@@ -385,7 +385,7 @@ public partial class V1api20240301storageSignalRSpecOperatorSpecSecretExpression
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecOperatorSpecSecretsPrimaryConnectionString
 {
@@ -414,7 +414,7 @@ public partial class V1api20240301storageSignalRSpecOperatorSpecSecretsPrimaryCo
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecOperatorSpecSecretsPrimaryKey
 {
@@ -443,7 +443,7 @@ public partial class V1api20240301storageSignalRSpecOperatorSpecSecretsPrimaryKe
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecOperatorSpecSecretsSecondaryConnectionString
 {
@@ -472,7 +472,7 @@ public partial class V1api20240301storageSignalRSpecOperatorSpecSecretsSecondary
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecOperatorSpecSecretsSecondaryKey
 {
@@ -497,7 +497,7 @@ public partial class V1api20240301storageSignalRSpecOperatorSpecSecretsSecondary
 }
 
 /// <summary>Storage version of v1api20240301.SignalROperatorSecrets</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecOperatorSpecSecrets
 {
@@ -545,7 +545,7 @@ public partial class V1api20240301storageSignalRSpecOperatorSpecSecrets
 /// Storage version of v1api20240301.SignalROperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecOperatorSpec
 {
@@ -572,7 +572,7 @@ public partial class V1api20240301storageSignalRSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecOwner
 {
@@ -588,7 +588,7 @@ public partial class V1api20240301storageSignalRSpecOwner
 /// Storage version of v1api20240301.ResourceLogCategory
 /// Resource log category configuration of a Microsoft.SignalRService resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecResourceLogConfigurationCategories
 {
@@ -610,7 +610,7 @@ public partial class V1api20240301storageSignalRSpecResourceLogConfigurationCate
 /// Storage version of v1api20240301.ResourceLogConfiguration
 /// Resource log configuration of a Microsoft.SignalRService resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecResourceLogConfiguration
 {
@@ -629,7 +629,7 @@ public partial class V1api20240301storageSignalRSpecResourceLogConfiguration
 /// Storage version of v1api20240301.ServerlessSettings
 /// Serverless settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecServerless
 {
@@ -648,7 +648,7 @@ public partial class V1api20240301storageSignalRSpecServerless
 /// Storage version of v1api20240301.ResourceSku
 /// The billing information of the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecSku
 {
@@ -673,7 +673,7 @@ public partial class V1api20240301storageSignalRSpecSku
 /// Storage version of v1api20240301.SignalRTlsSettings
 /// TLS settings for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecTls
 {
@@ -692,7 +692,7 @@ public partial class V1api20240301storageSignalRSpecTls
 /// Storage version of v1api20240301.ManagedIdentitySettings
 /// Managed identity settings for upstream.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecUpstreamTemplatesAuthManagedIdentity
 {
@@ -711,7 +711,7 @@ public partial class V1api20240301storageSignalRSpecUpstreamTemplatesAuthManaged
 /// Storage version of v1api20240301.UpstreamAuthSettings
 /// Upstream auth settings. If not set, no auth is used for upstream messages.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecUpstreamTemplatesAuth
 {
@@ -739,7 +739,7 @@ public partial class V1api20240301storageSignalRSpecUpstreamTemplatesAuth
 /// The template defines the pattern
 /// of the event, the hub or the category of the incoming request that matches current URL template.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecUpstreamTemplates
 {
@@ -774,7 +774,7 @@ public partial class V1api20240301storageSignalRSpecUpstreamTemplates
 /// Storage version of v1api20240301.ServerlessUpstreamSettings
 /// The settings for the Upstream when the service is in server-less mode.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpecUpstream
 {
@@ -790,7 +790,7 @@ public partial class V1api20240301storageSignalRSpecUpstream
 }
 
 /// <summary>Storage version of v1api20240301.SignalR_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRSpec
 {
@@ -918,7 +918,7 @@ public partial class V1api20240301storageSignalRSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRStatusConditions
 {
@@ -967,7 +967,7 @@ public partial class V1api20240301storageSignalRStatusConditions
 /// Storage version of v1api20240301.SignalRCorsSettings_STATUS
 /// Cross-Origin Resource Sharing (CORS) settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRStatusCors
 {
@@ -986,7 +986,7 @@ public partial class V1api20240301storageSignalRStatusCors
 /// Storage version of v1api20240301.SignalRFeature_STATUS
 /// Feature of a resource, which controls the runtime behavior.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRStatusFeatures
 {
@@ -1011,7 +1011,7 @@ public partial class V1api20240301storageSignalRStatusFeatures
 /// Storage version of v1api20240301.UserAssignedIdentityProperty_STATUS
 /// Properties of user assigned identity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRStatusIdentityUserAssignedIdentities
 {
@@ -1033,7 +1033,7 @@ public partial class V1api20240301storageSignalRStatusIdentityUserAssignedIdenti
 /// Storage version of v1api20240301.ManagedIdentity_STATUS
 /// A class represent managed identities used for request and response
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRStatusIdentity
 {
@@ -1061,7 +1061,7 @@ public partial class V1api20240301storageSignalRStatusIdentity
 /// Storage version of v1api20240301.LiveTraceCategory_STATUS
 /// Live trace category configuration of a Microsoft.SignalRService resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRStatusLiveTraceConfigurationCategories
 {
@@ -1083,7 +1083,7 @@ public partial class V1api20240301storageSignalRStatusLiveTraceConfigurationCate
 /// Storage version of v1api20240301.LiveTraceConfiguration_STATUS
 /// Live trace configuration of a Microsoft.SignalRService resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRStatusLiveTraceConfiguration
 {
@@ -1105,7 +1105,7 @@ public partial class V1api20240301storageSignalRStatusLiveTraceConfiguration
 /// Storage version of v1api20240301.IPRule_STATUS
 /// An IP rule
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRStatusNetworkACLsIpRules
 {
@@ -1127,7 +1127,7 @@ public partial class V1api20240301storageSignalRStatusNetworkACLsIpRules
 /// Storage version of v1api20240301.PrivateEndpointACL_STATUS
 /// ACL for a private endpoint
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRStatusNetworkACLsPrivateEndpoints
 {
@@ -1152,7 +1152,7 @@ public partial class V1api20240301storageSignalRStatusNetworkACLsPrivateEndpoint
 /// Storage version of v1api20240301.NetworkACL_STATUS
 /// Network ACL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRStatusNetworkACLsPublicNetwork
 {
@@ -1174,7 +1174,7 @@ public partial class V1api20240301storageSignalRStatusNetworkACLsPublicNetwork
 /// Storage version of v1api20240301.SignalRNetworkACLs_STATUS
 /// Network ACLs for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRStatusNetworkACLs
 {
@@ -1206,7 +1206,7 @@ public partial class V1api20240301storageSignalRStatusNetworkACLs
 /// Storage version of v1api20240301.PrivateEndpointConnection_STATUS_SignalR_SubResourceEmbedded
 /// A private endpoint connection to an azure resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRStatusPrivateEndpointConnections
 {
@@ -1225,7 +1225,7 @@ public partial class V1api20240301storageSignalRStatusPrivateEndpointConnections
 /// Storage version of v1api20240301.ResourceLogCategory_STATUS
 /// Resource log category configuration of a Microsoft.SignalRService resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRStatusResourceLogConfigurationCategories
 {
@@ -1247,7 +1247,7 @@ public partial class V1api20240301storageSignalRStatusResourceLogConfigurationCa
 /// Storage version of v1api20240301.ResourceLogConfiguration_STATUS
 /// Resource log configuration of a Microsoft.SignalRService resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRStatusResourceLogConfiguration
 {
@@ -1266,7 +1266,7 @@ public partial class V1api20240301storageSignalRStatusResourceLogConfiguration
 /// Storage version of v1api20240301.ServerlessSettings_STATUS
 /// Serverless settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRStatusServerless
 {
@@ -1285,7 +1285,7 @@ public partial class V1api20240301storageSignalRStatusServerless
 /// Storage version of v1api20240301.SharedPrivateLinkResource_STATUS_SignalR_SubResourceEmbedded
 /// Describes a Shared Private Link Resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRStatusSharedPrivateLinkResources
 {
@@ -1304,7 +1304,7 @@ public partial class V1api20240301storageSignalRStatusSharedPrivateLinkResources
 /// Storage version of v1api20240301.ResourceSku_STATUS
 /// The billing information of the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRStatusSku
 {
@@ -1335,7 +1335,7 @@ public partial class V1api20240301storageSignalRStatusSku
 /// Storage version of v1api20240301.SystemData_STATUS
 /// Metadata pertaining to creation and last modification of the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRStatusSystemData
 {
@@ -1369,7 +1369,7 @@ public partial class V1api20240301storageSignalRStatusSystemData
 /// Storage version of v1api20240301.SignalRTlsSettings_STATUS
 /// TLS settings for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRStatusTls
 {
@@ -1388,7 +1388,7 @@ public partial class V1api20240301storageSignalRStatusTls
 /// Storage version of v1api20240301.ManagedIdentitySettings_STATUS
 /// Managed identity settings for upstream.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRStatusUpstreamTemplatesAuthManagedIdentity
 {
@@ -1407,7 +1407,7 @@ public partial class V1api20240301storageSignalRStatusUpstreamTemplatesAuthManag
 /// Storage version of v1api20240301.UpstreamAuthSettings_STATUS
 /// Upstream auth settings. If not set, no auth is used for upstream messages.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRStatusUpstreamTemplatesAuth
 {
@@ -1435,7 +1435,7 @@ public partial class V1api20240301storageSignalRStatusUpstreamTemplatesAuth
 /// The template defines the pattern
 /// of the event, the hub or the category of the incoming request that matches current URL template.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRStatusUpstreamTemplates
 {
@@ -1470,7 +1470,7 @@ public partial class V1api20240301storageSignalRStatusUpstreamTemplates
 /// Storage version of v1api20240301.ServerlessUpstreamSettings_STATUS
 /// The settings for the Upstream when the service is in server-less mode.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRStatusUpstream
 {
@@ -1486,7 +1486,7 @@ public partial class V1api20240301storageSignalRStatusUpstream
 }
 
 /// <summary>Storage version of v1api20240301.SignalR_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301storageSignalRStatus
 {
@@ -1640,7 +1640,7 @@ public partial class V1api20240301storageSignalRStatus
 /// - Generated from: /signalr/resource-manager/Microsoft.SignalRService/SignalRService/stable/2024-03-01/signalr.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.SignalRService/signalR/{resourceName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20240301storageSignalR : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20240301storageSignalRSpec?>, IStatus<V1api20240301storageSignalRStatus?>

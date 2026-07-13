@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ec2.services.k8s.aws;
 /// <summary>LaunchTemplate is the Schema for the LaunchTemplates API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1LaunchTemplateList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1LaunchTemplate>
@@ -37,7 +37,7 @@ public partial class V1alpha1LaunchTemplateList : IKubernetesObject<V1ListMeta>,
 }
 
 /// <summary>The parameters for a block device for an EBS volume.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataBlockDeviceMappingsEbs
 {
@@ -67,7 +67,7 @@ public partial class V1alpha1LaunchTemplateSpecDataBlockDeviceMappingsEbs
 }
 
 /// <summary>Describes a block device mapping.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataBlockDeviceMappings
 {
@@ -86,7 +86,7 @@ public partial class V1alpha1LaunchTemplateSpecDataBlockDeviceMappings
 }
 
 /// <summary>Describes a target Capacity Reservation or Capacity Reservation group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataCapacityReservationSpecificationCapacityReservationTarget
 {
@@ -105,7 +105,7 @@ public partial class V1alpha1LaunchTemplateSpecDataCapacityReservationSpecificat
 /// Availability Zone). Use the CapacityReservationTarget parameter to explicitly
 /// target a specific Capacity Reservation or a Capacity Reservation group.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataCapacityReservationSpecification
 {
@@ -121,7 +121,7 @@ public partial class V1alpha1LaunchTemplateSpecDataCapacityReservationSpecificat
 /// The CPU options for the instance. Both the core count and threads per core
 /// must be specified in the request.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataCpuOptions
 {
@@ -139,7 +139,7 @@ public partial class V1alpha1LaunchTemplateSpecDataCpuOptions
 }
 
 /// <summary>The credit option for CPU usage of a T instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataCreditSpecification
 {
@@ -152,7 +152,7 @@ public partial class V1alpha1LaunchTemplateSpecDataCreditSpecification
 /// 
 /// A specification for an Elastic Graphics accelerator.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataElasticGPUSpecifications
 {
@@ -165,7 +165,7 @@ public partial class V1alpha1LaunchTemplateSpecDataElasticGPUSpecifications
 /// 
 /// Describes an elastic inference accelerator.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataElasticInferenceAccelerators
 {
@@ -181,7 +181,7 @@ public partial class V1alpha1LaunchTemplateSpecDataElasticInferenceAccelerators
 /// For more information, see What is Nitro Enclaves? (https://docs.aws.amazon.com/enclaves/latest/user/nitro-enclave.html)
 /// in the Amazon Web Services Nitro Enclaves User Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataEnclaveOptions
 {
@@ -193,7 +193,7 @@ public partial class V1alpha1LaunchTemplateSpecDataEnclaveOptions
 /// Indicates whether the instance is configured for hibernation. This parameter
 /// is valid only if the instance meets the hibernation prerequisites (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hibernating-prerequisites.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataHibernationOptions
 {
@@ -202,7 +202,7 @@ public partial class V1alpha1LaunchTemplateSpecDataHibernationOptions
 }
 
 /// <summary>An IAM instance profile.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataIamInstanceProfile
 {
@@ -214,7 +214,7 @@ public partial class V1alpha1LaunchTemplateSpecDataIamInstanceProfile
 }
 
 /// <summary>The options for Spot Instances.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataInstanceMarketOptionsSpotOptions
 {
@@ -235,7 +235,7 @@ public partial class V1alpha1LaunchTemplateSpecDataInstanceMarketOptionsSpotOpti
 }
 
 /// <summary>The market (purchasing) option for the instances.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataInstanceMarketOptions
 {
@@ -252,7 +252,7 @@ public partial class V1alpha1LaunchTemplateSpecDataInstanceMarketOptions
 /// Services Inferentia chips) on an instance. To exclude accelerator-enabled
 /// instance types, set Max to 0.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirementsAcceleratorCount
 {
@@ -264,7 +264,7 @@ public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirementsAccelerat
 }
 
 /// <summary>The minimum and maximum amount of total accelerator memory, in MiB.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirementsAcceleratorTotalMemoryMiB
 {
@@ -280,7 +280,7 @@ public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirementsAccelerat
 /// information, see Amazon EBS–optimized instances (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-optimized.html)
 /// in the Amazon EC2 User Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirementsBaselineEBSBandwidthMbps
 {
@@ -299,7 +299,7 @@ public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirementsBaselineE
 /// 
 /// Currently, only one instance family can be specified in the list.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirementsBaselinePerformanceFactorsCpuReferences
 {
@@ -311,7 +311,7 @@ public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirementsBaselineP
 /// The CPU performance to consider, using an instance family as the baseline
 /// reference.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirementsBaselinePerformanceFactorsCpu
 {
@@ -330,7 +330,7 @@ public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirementsBaselineP
 /// factor. For example, specifying c6i would use the CPU performance of the
 /// c6i family as the baseline reference.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirementsBaselinePerformanceFactors
 {
@@ -343,7 +343,7 @@ public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirementsBaselineP
 }
 
 /// <summary>The minimum and maximum amount of memory per vCPU, in GiB.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirementsMemoryGiBPerVCPU
 {
@@ -355,7 +355,7 @@ public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirementsMemoryGiB
 }
 
 /// <summary>The minimum and maximum amount of memory, in MiB.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirementsMemoryMiB
 {
@@ -377,7 +377,7 @@ public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirementsMemoryMiB
 /// see Available instance bandwidth (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-network-bandwidth.html#available-instance-bandwidth)
 /// in the Amazon EC2 User Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirementsNetworkBandwidthGbps
 {
@@ -389,7 +389,7 @@ public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirementsNetworkBa
 }
 
 /// <summary>The minimum and maximum number of network interfaces.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirementsNetworkInterfaceCount
 {
@@ -401,7 +401,7 @@ public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirementsNetworkIn
 }
 
 /// <summary>The minimum and maximum amount of total local storage, in GB.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirementsTotalLocalStorageGB
 {
@@ -413,7 +413,7 @@ public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirementsTotalLoca
 }
 
 /// <summary>The minimum and maximum number of vCPUs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirementsVCPUCount
 {
@@ -459,7 +459,7 @@ public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirementsVCPUCount
 /// and Spot placement score (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-placement-score.html)
 /// in the Amazon EC2 User Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirements
 {
@@ -578,7 +578,7 @@ public partial class V1alpha1LaunchTemplateSpecDataInstanceRequirements
 }
 
 /// <summary>Describes a license configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataLicenseSpecifications
 {
@@ -587,7 +587,7 @@ public partial class V1alpha1LaunchTemplateSpecDataLicenseSpecifications
 }
 
 /// <summary>The maintenance options of your instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataMaintenanceOptions
 {
@@ -600,7 +600,7 @@ public partial class V1alpha1LaunchTemplateSpecDataMaintenanceOptions
 /// metadata to manage your EC2 instance (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html)
 /// in the Amazon EC2 User Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataMetadataOptions
 {
@@ -621,7 +621,7 @@ public partial class V1alpha1LaunchTemplateSpecDataMetadataOptions
 }
 
 /// <summary>Describes the monitoring for the instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataMonitoring
 {
@@ -630,7 +630,7 @@ public partial class V1alpha1LaunchTemplateSpecDataMonitoring
 }
 
 /// <summary>Describes the IPv4 prefix option for a network interface.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataNetworkInterfacesIpv4Prefixes
 {
@@ -639,7 +639,7 @@ public partial class V1alpha1LaunchTemplateSpecDataNetworkInterfacesIpv4Prefixes
 }
 
 /// <summary>Describes an IPv6 address.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataNetworkInterfacesIpv6Addresses
 {
@@ -648,7 +648,7 @@ public partial class V1alpha1LaunchTemplateSpecDataNetworkInterfacesIpv6Addresse
 }
 
 /// <summary>Describes the IPv6 prefix option for a network interface.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataNetworkInterfacesIpv6Prefixes
 {
@@ -657,7 +657,7 @@ public partial class V1alpha1LaunchTemplateSpecDataNetworkInterfacesIpv6Prefixes
 }
 
 /// <summary>Describes a secondary private IPv4 address for a network interface.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataNetworkInterfacesPrivateIPAddresses
 {
@@ -669,7 +669,7 @@ public partial class V1alpha1LaunchTemplateSpecDataNetworkInterfacesPrivateIPAdd
 }
 
 /// <summary>The parameters for a network interface.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataNetworkInterfaces
 {
@@ -735,7 +735,7 @@ public partial class V1alpha1LaunchTemplateSpecDataNetworkInterfaces
 }
 
 /// <summary>Describes the placement of an instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataPlacement
 {
@@ -768,7 +768,7 @@ public partial class V1alpha1LaunchTemplateSpecDataPlacement
 }
 
 /// <summary>Describes the options for instance hostnames.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataPrivateDNSNameOptions
 {
@@ -783,7 +783,7 @@ public partial class V1alpha1LaunchTemplateSpecDataPrivateDNSNameOptions
 }
 
 /// <summary>Describes a tag.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataTagSpecificationsTags
 {
@@ -798,7 +798,7 @@ public partial class V1alpha1LaunchTemplateSpecDataTagSpecificationsTags
 /// The tags specification for the resources that are created during instance
 /// launch.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecDataTagSpecifications
 {
@@ -810,7 +810,7 @@ public partial class V1alpha1LaunchTemplateSpecDataTagSpecifications
 }
 
 /// <summary>The information for the launch template.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecData
 {
@@ -977,7 +977,7 @@ public partial class V1alpha1LaunchTemplateSpecData
 }
 
 /// <summary>Describes a tag.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpecTags
 {
@@ -993,7 +993,7 @@ public partial class V1alpha1LaunchTemplateSpecTags
 /// 
 /// Describes a launch template.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateSpec
 {
@@ -1031,7 +1031,7 @@ public partial class V1alpha1LaunchTemplateSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateStatusAckResourceMetadata
 {
@@ -1068,7 +1068,7 @@ public partial class V1alpha1LaunchTemplateStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateStatusConditions
 {
@@ -1094,7 +1094,7 @@ public partial class V1alpha1LaunchTemplateStatusConditions
 }
 
 /// <summary>The entity that manages the launch template.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateStatusOperator
 {
@@ -1106,7 +1106,7 @@ public partial class V1alpha1LaunchTemplateStatusOperator
 }
 
 /// <summary>LaunchTemplateStatus defines the observed state of LaunchTemplate</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LaunchTemplateStatus
 {
@@ -1149,7 +1149,7 @@ public partial class V1alpha1LaunchTemplateStatus
 }
 
 /// <summary>LaunchTemplate is the Schema for the LaunchTemplates API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1LaunchTemplate : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1LaunchTemplateSpec?>, IStatus<V1alpha1LaunchTemplateStatus?>

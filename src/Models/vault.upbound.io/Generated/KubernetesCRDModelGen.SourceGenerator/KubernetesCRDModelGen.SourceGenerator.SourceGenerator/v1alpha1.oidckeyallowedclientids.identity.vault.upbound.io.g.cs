@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.identity.vault.upbound.io;
 /// <summary>OidcKeyAllowedClientID is the Schema for the OidcKeyAllowedClientIDs API. Allows an Identity OIDC Role to use an OIDC Named key.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1OidcKeyAllowedClientIDList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1OidcKeyAllowedClientID>
@@ -45,7 +45,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDList : IKubernetesObject<V1Li
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OidcKeyAllowedClientIDSpecDeletionPolicyEnum>))]
 public enum V1alpha1OidcKeyAllowedClientIDSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1alpha1OidcKeyAllowedClientIDSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OidcKeyAllowedClientIDSpecForProviderAllowedClientIdRefPolicyResolutionEnum>))]
 public enum V1alpha1OidcKeyAllowedClientIDSpecForProviderAllowedClientIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1alpha1OidcKeyAllowedClientIDSpecForProviderAllowedClientIdRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OidcKeyAllowedClientIDSpecForProviderAllowedClientIdRefPolicyResolveEnum>))]
 public enum V1alpha1OidcKeyAllowedClientIDSpecForProviderAllowedClientIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1alpha1OidcKeyAllowedClientIDSpecForProviderAllowedClientIdRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDSpecForProviderAllowedClientIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDSpecForProviderAllowedClientI
 }
 
 /// <summary>Reference to a OidcRole in identity to populate allowedClientId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDSpecForProviderAllowedClientIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDSpecForProviderAllowedClientI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OidcKeyAllowedClientIDSpecForProviderAllowedClientIdSelectorPolicyResolutionEnum>))]
 public enum V1alpha1OidcKeyAllowedClientIDSpecForProviderAllowedClientIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1alpha1OidcKeyAllowedClientIDSpecForProviderAllowedClientIdSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OidcKeyAllowedClientIDSpecForProviderAllowedClientIdSelectorPolicyResolveEnum>))]
 public enum V1alpha1OidcKeyAllowedClientIDSpecForProviderAllowedClientIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1alpha1OidcKeyAllowedClientIDSpecForProviderAllowedClientIdSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDSpecForProviderAllowedClientIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDSpecForProviderAllowedClientI
 }
 
 /// <summary>Selector for a OidcRole in identity to populate allowedClientId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDSpecForProviderAllowedClientIdSelector
 {
@@ -208,7 +208,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDSpecForProviderAllowedClientI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OidcKeyAllowedClientIDSpecForProviderKeyNameRefPolicyResolutionEnum>))]
 public enum V1alpha1OidcKeyAllowedClientIDSpecForProviderKeyNameRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1alpha1OidcKeyAllowedClientIDSpecForProviderKeyNameRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OidcKeyAllowedClientIDSpecForProviderKeyNameRefPolicyResolveEnum>))]
 public enum V1alpha1OidcKeyAllowedClientIDSpecForProviderKeyNameRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1alpha1OidcKeyAllowedClientIDSpecForProviderKeyNameRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDSpecForProviderKeyNameRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDSpecForProviderKeyNameRefPoli
 }
 
 /// <summary>Reference to a OidcKey in identity to populate keyName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDSpecForProviderKeyNameRef
 {
@@ -278,7 +278,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDSpecForProviderKeyNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OidcKeyAllowedClientIDSpecForProviderKeyNameSelectorPolicyResolutionEnum>))]
 public enum V1alpha1OidcKeyAllowedClientIDSpecForProviderKeyNameSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1alpha1OidcKeyAllowedClientIDSpecForProviderKeyNameSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OidcKeyAllowedClientIDSpecForProviderKeyNameSelectorPolicyResolveEnum>))]
 public enum V1alpha1OidcKeyAllowedClientIDSpecForProviderKeyNameSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1alpha1OidcKeyAllowedClientIDSpecForProviderKeyNameSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDSpecForProviderKeyNameSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDSpecForProviderKeyNameSelecto
 }
 
 /// <summary>Selector for a OidcKey in identity to populate keyName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDSpecForProviderKeyNameSelector
 {
@@ -349,7 +349,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDSpecForProviderKeyNameSelecto
     public V1alpha1OidcKeyAllowedClientIDSpecForProviderKeyNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDSpecForProvider
 {
@@ -400,7 +400,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OidcKeyAllowedClientIDSpecInitProviderAllowedClientIdRefPolicyResolutionEnum>))]
 public enum V1alpha1OidcKeyAllowedClientIDSpecInitProviderAllowedClientIdRefPolicyResolutionEnum
 {
@@ -416,7 +416,7 @@ public enum V1alpha1OidcKeyAllowedClientIDSpecInitProviderAllowedClientIdRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OidcKeyAllowedClientIDSpecInitProviderAllowedClientIdRefPolicyResolveEnum>))]
 public enum V1alpha1OidcKeyAllowedClientIDSpecInitProviderAllowedClientIdRefPolicyResolveEnum
 {
@@ -427,7 +427,7 @@ public enum V1alpha1OidcKeyAllowedClientIDSpecInitProviderAllowedClientIdRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDSpecInitProviderAllowedClientIdRefPolicy
 {
@@ -451,7 +451,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDSpecInitProviderAllowedClient
 }
 
 /// <summary>Reference to a OidcRole in identity to populate allowedClientId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDSpecInitProviderAllowedClientIdRef
 {
@@ -470,7 +470,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDSpecInitProviderAllowedClient
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OidcKeyAllowedClientIDSpecInitProviderAllowedClientIdSelectorPolicyResolutionEnum>))]
 public enum V1alpha1OidcKeyAllowedClientIDSpecInitProviderAllowedClientIdSelectorPolicyResolutionEnum
 {
@@ -486,7 +486,7 @@ public enum V1alpha1OidcKeyAllowedClientIDSpecInitProviderAllowedClientIdSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OidcKeyAllowedClientIDSpecInitProviderAllowedClientIdSelectorPolicyResolveEnum>))]
 public enum V1alpha1OidcKeyAllowedClientIDSpecInitProviderAllowedClientIdSelectorPolicyResolveEnum
 {
@@ -497,7 +497,7 @@ public enum V1alpha1OidcKeyAllowedClientIDSpecInitProviderAllowedClientIdSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDSpecInitProviderAllowedClientIdSelectorPolicy
 {
@@ -521,7 +521,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDSpecInitProviderAllowedClient
 }
 
 /// <summary>Selector for a OidcRole in identity to populate allowedClientId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDSpecInitProviderAllowedClientIdSelector
 {
@@ -547,7 +547,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDSpecInitProviderAllowedClient
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OidcKeyAllowedClientIDSpecInitProviderKeyNameRefPolicyResolutionEnum>))]
 public enum V1alpha1OidcKeyAllowedClientIDSpecInitProviderKeyNameRefPolicyResolutionEnum
 {
@@ -563,7 +563,7 @@ public enum V1alpha1OidcKeyAllowedClientIDSpecInitProviderKeyNameRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OidcKeyAllowedClientIDSpecInitProviderKeyNameRefPolicyResolveEnum>))]
 public enum V1alpha1OidcKeyAllowedClientIDSpecInitProviderKeyNameRefPolicyResolveEnum
 {
@@ -574,7 +574,7 @@ public enum V1alpha1OidcKeyAllowedClientIDSpecInitProviderKeyNameRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDSpecInitProviderKeyNameRefPolicy
 {
@@ -598,7 +598,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDSpecInitProviderKeyNameRefPol
 }
 
 /// <summary>Reference to a OidcKey in identity to populate keyName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDSpecInitProviderKeyNameRef
 {
@@ -617,7 +617,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDSpecInitProviderKeyNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OidcKeyAllowedClientIDSpecInitProviderKeyNameSelectorPolicyResolutionEnum>))]
 public enum V1alpha1OidcKeyAllowedClientIDSpecInitProviderKeyNameSelectorPolicyResolutionEnum
 {
@@ -633,7 +633,7 @@ public enum V1alpha1OidcKeyAllowedClientIDSpecInitProviderKeyNameSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OidcKeyAllowedClientIDSpecInitProviderKeyNameSelectorPolicyResolveEnum>))]
 public enum V1alpha1OidcKeyAllowedClientIDSpecInitProviderKeyNameSelectorPolicyResolveEnum
 {
@@ -644,7 +644,7 @@ public enum V1alpha1OidcKeyAllowedClientIDSpecInitProviderKeyNameSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDSpecInitProviderKeyNameSelectorPolicy
 {
@@ -668,7 +668,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDSpecInitProviderKeyNameSelect
 }
 
 /// <summary>Selector for a OidcKey in identity to populate keyName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDSpecInitProviderKeyNameSelector
 {
@@ -700,7 +700,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDSpecInitProviderKeyNameSelect
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDSpecInitProvider
 {
@@ -749,7 +749,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OidcKeyAllowedClientIDSpecManagementPoliciesEnum>))]
 public enum V1alpha1OidcKeyAllowedClientIDSpecManagementPoliciesEnum
 {
@@ -773,7 +773,7 @@ public enum V1alpha1OidcKeyAllowedClientIDSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OidcKeyAllowedClientIDSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1alpha1OidcKeyAllowedClientIDSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -789,7 +789,7 @@ public enum V1alpha1OidcKeyAllowedClientIDSpecProviderConfigRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1OidcKeyAllowedClientIDSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1alpha1OidcKeyAllowedClientIDSpecProviderConfigRefPolicyResolveEnum
 {
@@ -800,7 +800,7 @@ public enum V1alpha1OidcKeyAllowedClientIDSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDSpecProviderConfigRefPolicy
 {
@@ -828,7 +828,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDSpecProviderConfigRef
 {
@@ -847,7 +847,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDSpecWriteConnectionSecretToRef
 {
@@ -861,7 +861,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDSpecWriteConnectionSecretToRe
 }
 
 /// <summary>OidcKeyAllowedClientIDSpec defines the desired state of OidcKeyAllowedClientID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDSpec
 {
@@ -928,7 +928,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDSpec
     public V1alpha1OidcKeyAllowedClientIDSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDStatusAtProvider
 {
@@ -961,7 +961,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDStatusConditions
 {
@@ -1004,7 +1004,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDStatusConditions
 }
 
 /// <summary>OidcKeyAllowedClientIDStatus defines the observed state of OidcKeyAllowedClientID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OidcKeyAllowedClientIDStatus
 {
@@ -1025,7 +1025,7 @@ public partial class V1alpha1OidcKeyAllowedClientIDStatus
 }
 
 /// <summary>OidcKeyAllowedClientID is the Schema for the OidcKeyAllowedClientIDs API. Allows an Identity OIDC Role to use an OIDC Named key.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1OidcKeyAllowedClientID : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1OidcKeyAllowedClientIDSpec>, IStatus<V1alpha1OidcKeyAllowedClientIDStatus?>

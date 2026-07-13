@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.cnrm.cloud.google.com;
 /// <summary>ComputeFutureReservation is the Schema for the ComputeFutureReservation API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ComputeFutureReservationList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ComputeFutureReservation>
@@ -37,7 +37,7 @@ public partial class V1alpha1ComputeFutureReservationList : IKubernetesObject<V1
 }
 
 /// <summary>Properties of accelerator resources in this reservation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationSpecAggregateReservationReservedResourcesAccelerator
 {
@@ -50,7 +50,7 @@ public partial class V1alpha1ComputeFutureReservationSpecAggregateReservationRes
     public string? AcceleratorType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationSpecAggregateReservationReservedResources
 {
@@ -60,7 +60,7 @@ public partial class V1alpha1ComputeFutureReservationSpecAggregateReservationRes
 }
 
 /// <summary>Aggregate reservation details for the future reservation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationSpecAggregateReservation
 {
@@ -78,7 +78,7 @@ public partial class V1alpha1ComputeFutureReservationSpecAggregateReservation
 }
 
 /// <summary>Specifies the duration of auto-created reservations. It represents relative time to future reservation start_time when auto-created reservations will be automatically deleted by Compute Engine. Duration time unit is represented as a count of seconds and fractions of seconds at nanosecond resolution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationSpecAutoCreatedReservationsDuration
 {
@@ -92,7 +92,7 @@ public partial class V1alpha1ComputeFutureReservationSpecAutoCreatedReservations
 }
 
 /// <summary>If not present, then FR will not deliver a new commitment or update an existing commitment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationSpecCommitmentInfo
 {
@@ -110,7 +110,7 @@ public partial class V1alpha1ComputeFutureReservationSpecCommitmentInfo
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationSpecProjectRef
 {
@@ -132,7 +132,7 @@ public partial class V1alpha1ComputeFutureReservationSpecProjectRef
 }
 
 /// <summary>The resource reference that defaults to Project if Kind is not specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationSpecShareSettingsProjectMapKeyRef
 {
@@ -156,7 +156,7 @@ public partial class V1alpha1ComputeFutureReservationSpecShareSettingsProjectMap
 }
 
 /// <summary>The project ID, should be same as the key of this project config in the parent map.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationSpecShareSettingsProjectMapValueProjectIDRef
 {
@@ -177,7 +177,7 @@ public partial class V1alpha1ComputeFutureReservationSpecShareSettingsProjectMap
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationSpecShareSettingsProjectMapValue
 {
@@ -186,7 +186,7 @@ public partial class V1alpha1ComputeFutureReservationSpecShareSettingsProjectMap
     public V1alpha1ComputeFutureReservationSpecShareSettingsProjectMapValueProjectIDRef? ProjectIDRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationSpecShareSettingsProjectMap
 {
@@ -199,7 +199,7 @@ public partial class V1alpha1ComputeFutureReservationSpecShareSettingsProjectMap
 }
 
 /// <summary>List of Projects/Folders to share with.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationSpecShareSettings
 {
@@ -212,7 +212,7 @@ public partial class V1alpha1ComputeFutureReservationSpecShareSettings
     public string? ShareType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationSpecSpecificSkuPropertiesInstancePropertiesGuestAccelerators
 {
@@ -225,7 +225,7 @@ public partial class V1alpha1ComputeFutureReservationSpecSpecificSkuPropertiesIn
     public string? AcceleratorType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationSpecSpecificSkuPropertiesInstancePropertiesLocalSsds
 {
@@ -239,7 +239,7 @@ public partial class V1alpha1ComputeFutureReservationSpecSpecificSkuPropertiesIn
 }
 
 /// <summary>Properties of the SKU instances being reserved.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationSpecSpecificSkuPropertiesInstanceProperties
 {
@@ -265,7 +265,7 @@ public partial class V1alpha1ComputeFutureReservationSpecSpecificSkuPropertiesIn
 }
 
 /// <summary>Future Reservation configuration to indicate instance properties and total count.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationSpecSpecificSkuProperties
 {
@@ -282,7 +282,7 @@ public partial class V1alpha1ComputeFutureReservationSpecSpecificSkuProperties
     public long? TotalCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationSpecTimeWindowDuration
 {
@@ -296,7 +296,7 @@ public partial class V1alpha1ComputeFutureReservationSpecTimeWindowDuration
 }
 
 /// <summary>Time window for this Future Reservation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationSpecTimeWindow
 {
@@ -312,7 +312,7 @@ public partial class V1alpha1ComputeFutureReservationSpecTimeWindow
 }
 
 /// <summary>ComputeFutureReservationSpec defines the desired state of ComputeFutureReservation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationSpec
 {
@@ -396,7 +396,7 @@ public partial class V1alpha1ComputeFutureReservationSpec
     public V1alpha1ComputeFutureReservationSpecTimeWindow? TimeWindow { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationStatusConditions
 {
@@ -422,7 +422,7 @@ public partial class V1alpha1ComputeFutureReservationStatusConditions
 }
 
 /// <summary>Properties of accelerator resources in this reservation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationStatusObservedStateAggregateReservationInUseResourcesAccelerator
 {
@@ -435,7 +435,7 @@ public partial class V1alpha1ComputeFutureReservationStatusObservedStateAggregat
     public string? AcceleratorType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationStatusObservedStateAggregateReservationInUseResources
 {
@@ -445,7 +445,7 @@ public partial class V1alpha1ComputeFutureReservationStatusObservedStateAggregat
 }
 
 /// <summary>Aggregate reservation details for the future reservation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationStatusObservedStateAggregateReservation
 {
@@ -455,7 +455,7 @@ public partial class V1alpha1ComputeFutureReservationStatusObservedStateAggregat
 }
 
 /// <summary>Output only. [Output Only] Represents the existing matching usage for the future reservation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusExistingMatchingUsageInfo
 {
@@ -469,7 +469,7 @@ public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusEx
 }
 
 /// <summary>Output only. [Output Only] Represents the matching usage for the future reservation before an amendment was requested.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusLastKnownGoodStateExistingMatchingUsageInfo
 {
@@ -482,7 +482,7 @@ public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusLa
     public string? Timestamp { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusLastKnownGoodStateFutureReservationSpecsShareSettingsProjectMap
 {
@@ -492,7 +492,7 @@ public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusLa
 }
 
 /// <summary>Output only. [Output Only] The previous share settings of the Future Reservation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusLastKnownGoodStateFutureReservationSpecsShareSettings
 {
@@ -505,7 +505,7 @@ public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusLa
     public string? ShareType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusLastKnownGoodStateFutureReservationSpecsSpecificSkuPropertiesInstancePropertiesGuestAccelerators
 {
@@ -518,7 +518,7 @@ public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusLa
     public string? AcceleratorType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusLastKnownGoodStateFutureReservationSpecsSpecificSkuPropertiesInstancePropertiesLocalSsds
 {
@@ -532,7 +532,7 @@ public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusLa
 }
 
 /// <summary>Properties of the SKU instances being reserved.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusLastKnownGoodStateFutureReservationSpecsSpecificSkuPropertiesInstanceProperties
 {
@@ -558,7 +558,7 @@ public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusLa
 }
 
 /// <summary>Output only. [Output Only] The previous instance related properties of the Future Reservation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusLastKnownGoodStateFutureReservationSpecsSpecificSkuProperties
 {
@@ -575,7 +575,7 @@ public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusLa
     public long? TotalCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusLastKnownGoodStateFutureReservationSpecsTimeWindowDuration
 {
@@ -589,7 +589,7 @@ public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusLa
 }
 
 /// <summary>Output only. [Output Only] The previous time window of the Future Reservation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusLastKnownGoodStateFutureReservationSpecsTimeWindow
 {
@@ -604,7 +604,7 @@ public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusLa
     public string? StartTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusLastKnownGoodStateFutureReservationSpecs
 {
@@ -622,7 +622,7 @@ public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusLa
 }
 
 /// <summary>Output only. [Output Only] This field represents the future reservation before an amendment was requested. If the amendment is declined, the Future Reservation will be reverted to the last known good state. The last known good state is not set when updating a future reservation whose Procurement Status is DRAFTING.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusLastKnownGoodState
 {
@@ -650,7 +650,7 @@ public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusLa
     public string? ProcurementStatus { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusSpecificSkuProperties
 {
@@ -660,7 +660,7 @@ public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatusSp
 }
 
 /// <summary>Output only. [Output only] Status of the Future Reservation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatus
 {
@@ -697,7 +697,7 @@ public partial class V1alpha1ComputeFutureReservationStatusObservedStateStatus
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationStatusObservedState
 {
@@ -735,7 +735,7 @@ public partial class V1alpha1ComputeFutureReservationStatusObservedState
 }
 
 /// <summary>ComputeFutureReservationStatus defines the config connector machine state of ComputeFutureReservation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeFutureReservationStatus
 {
@@ -757,7 +757,7 @@ public partial class V1alpha1ComputeFutureReservationStatus
 }
 
 /// <summary>ComputeFutureReservation is the Schema for the ComputeFutureReservation API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ComputeFutureReservation : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ComputeFutureReservationSpec>, IStatus<V1alpha1ComputeFutureReservationStatus?>

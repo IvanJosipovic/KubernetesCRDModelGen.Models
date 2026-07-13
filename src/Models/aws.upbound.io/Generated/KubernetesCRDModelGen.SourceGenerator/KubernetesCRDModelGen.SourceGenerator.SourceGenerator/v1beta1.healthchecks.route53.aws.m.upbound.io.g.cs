@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.route53.aws.m.upbound.io;
 /// <summary>HealthCheck is the Schema for the HealthChecks API. Provides a Route53 health check.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1HealthCheckList : IKubernetesObject<V1ListMeta>, IItems<V1beta1HealthCheck>
@@ -42,7 +42,7 @@ public partial class V1beta1HealthCheckList : IKubernetesObject<V1ListMeta>, IIt
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthCheckSpecForProviderChildHealthchecksRefsPolicyResolutionEnum>))]
 public enum V1beta1HealthCheckSpecForProviderChildHealthchecksRefsPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1HealthCheckSpecForProviderChildHealthchecksRefsPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthCheckSpecForProviderChildHealthchecksRefsPolicyResolveEnum>))]
 public enum V1beta1HealthCheckSpecForProviderChildHealthchecksRefsPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1HealthCheckSpecForProviderChildHealthchecksRefsPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckSpecForProviderChildHealthchecksRefsPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1HealthCheckSpecForProviderChildHealthchecksRefsPolic
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckSpecForProviderChildHealthchecksRefs
 {
@@ -116,7 +116,7 @@ public partial class V1beta1HealthCheckSpecForProviderChildHealthchecksRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthCheckSpecForProviderChildHealthchecksSelectorPolicyResolutionEnum>))]
 public enum V1beta1HealthCheckSpecForProviderChildHealthchecksSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1HealthCheckSpecForProviderChildHealthchecksSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthCheckSpecForProviderChildHealthchecksSelectorPolicyResolveEnum>))]
 public enum V1beta1HealthCheckSpecForProviderChildHealthchecksSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1HealthCheckSpecForProviderChildHealthchecksSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckSpecForProviderChildHealthchecksSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1HealthCheckSpecForProviderChildHealthchecksSelectorP
 }
 
 /// <summary>Selector for a list of HealthCheck in route53 to populate childHealthchecks.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckSpecForProviderChildHealthchecksSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1HealthCheckSpecForProviderChildHealthchecksSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthCheckSpecForProviderCloudwatchAlarmNameRefPolicyResolutionEnum>))]
 public enum V1beta1HealthCheckSpecForProviderCloudwatchAlarmNameRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1HealthCheckSpecForProviderCloudwatchAlarmNameRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthCheckSpecForProviderCloudwatchAlarmNameRefPolicyResolveEnum>))]
 public enum V1beta1HealthCheckSpecForProviderCloudwatchAlarmNameRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1HealthCheckSpecForProviderCloudwatchAlarmNameRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckSpecForProviderCloudwatchAlarmNameRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1HealthCheckSpecForProviderCloudwatchAlarmNameRefPoli
 }
 
 /// <summary>Reference to a MetricAlarm in cloudwatch to populate cloudwatchAlarmName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckSpecForProviderCloudwatchAlarmNameRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1HealthCheckSpecForProviderCloudwatchAlarmNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthCheckSpecForProviderCloudwatchAlarmNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1HealthCheckSpecForProviderCloudwatchAlarmNameSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1HealthCheckSpecForProviderCloudwatchAlarmNameSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthCheckSpecForProviderCloudwatchAlarmNameSelectorPolicyResolveEnum>))]
 public enum V1beta1HealthCheckSpecForProviderCloudwatchAlarmNameSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1HealthCheckSpecForProviderCloudwatchAlarmNameSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckSpecForProviderCloudwatchAlarmNameSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1HealthCheckSpecForProviderCloudwatchAlarmNameSelecto
 }
 
 /// <summary>Selector for a MetricAlarm in cloudwatch to populate cloudwatchAlarmName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckSpecForProviderCloudwatchAlarmNameSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1HealthCheckSpecForProviderCloudwatchAlarmNameSelecto
     public V1beta1HealthCheckSpecForProviderCloudwatchAlarmNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckSpecForProvider
 {
@@ -464,7 +464,7 @@ public partial class V1beta1HealthCheckSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthCheckSpecInitProviderChildHealthchecksRefsPolicyResolutionEnum>))]
 public enum V1beta1HealthCheckSpecInitProviderChildHealthchecksRefsPolicyResolutionEnum
 {
@@ -480,7 +480,7 @@ public enum V1beta1HealthCheckSpecInitProviderChildHealthchecksRefsPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthCheckSpecInitProviderChildHealthchecksRefsPolicyResolveEnum>))]
 public enum V1beta1HealthCheckSpecInitProviderChildHealthchecksRefsPolicyResolveEnum
 {
@@ -491,7 +491,7 @@ public enum V1beta1HealthCheckSpecInitProviderChildHealthchecksRefsPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckSpecInitProviderChildHealthchecksRefsPolicy
 {
@@ -515,7 +515,7 @@ public partial class V1beta1HealthCheckSpecInitProviderChildHealthchecksRefsPoli
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckSpecInitProviderChildHealthchecksRefs
 {
@@ -538,7 +538,7 @@ public partial class V1beta1HealthCheckSpecInitProviderChildHealthchecksRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthCheckSpecInitProviderChildHealthchecksSelectorPolicyResolutionEnum>))]
 public enum V1beta1HealthCheckSpecInitProviderChildHealthchecksSelectorPolicyResolutionEnum
 {
@@ -554,7 +554,7 @@ public enum V1beta1HealthCheckSpecInitProviderChildHealthchecksSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthCheckSpecInitProviderChildHealthchecksSelectorPolicyResolveEnum>))]
 public enum V1beta1HealthCheckSpecInitProviderChildHealthchecksSelectorPolicyResolveEnum
 {
@@ -565,7 +565,7 @@ public enum V1beta1HealthCheckSpecInitProviderChildHealthchecksSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckSpecInitProviderChildHealthchecksSelectorPolicy
 {
@@ -589,7 +589,7 @@ public partial class V1beta1HealthCheckSpecInitProviderChildHealthchecksSelector
 }
 
 /// <summary>Selector for a list of HealthCheck in route53 to populate childHealthchecks.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckSpecInitProviderChildHealthchecksSelector
 {
@@ -619,7 +619,7 @@ public partial class V1beta1HealthCheckSpecInitProviderChildHealthchecksSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthCheckSpecInitProviderCloudwatchAlarmNameRefPolicyResolutionEnum>))]
 public enum V1beta1HealthCheckSpecInitProviderCloudwatchAlarmNameRefPolicyResolutionEnum
 {
@@ -635,7 +635,7 @@ public enum V1beta1HealthCheckSpecInitProviderCloudwatchAlarmNameRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthCheckSpecInitProviderCloudwatchAlarmNameRefPolicyResolveEnum>))]
 public enum V1beta1HealthCheckSpecInitProviderCloudwatchAlarmNameRefPolicyResolveEnum
 {
@@ -646,7 +646,7 @@ public enum V1beta1HealthCheckSpecInitProviderCloudwatchAlarmNameRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckSpecInitProviderCloudwatchAlarmNameRefPolicy
 {
@@ -670,7 +670,7 @@ public partial class V1beta1HealthCheckSpecInitProviderCloudwatchAlarmNameRefPol
 }
 
 /// <summary>Reference to a MetricAlarm in cloudwatch to populate cloudwatchAlarmName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckSpecInitProviderCloudwatchAlarmNameRef
 {
@@ -693,7 +693,7 @@ public partial class V1beta1HealthCheckSpecInitProviderCloudwatchAlarmNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthCheckSpecInitProviderCloudwatchAlarmNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1HealthCheckSpecInitProviderCloudwatchAlarmNameSelectorPolicyResolutionEnum
 {
@@ -709,7 +709,7 @@ public enum V1beta1HealthCheckSpecInitProviderCloudwatchAlarmNameSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthCheckSpecInitProviderCloudwatchAlarmNameSelectorPolicyResolveEnum>))]
 public enum V1beta1HealthCheckSpecInitProviderCloudwatchAlarmNameSelectorPolicyResolveEnum
 {
@@ -720,7 +720,7 @@ public enum V1beta1HealthCheckSpecInitProviderCloudwatchAlarmNameSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckSpecInitProviderCloudwatchAlarmNameSelectorPolicy
 {
@@ -744,7 +744,7 @@ public partial class V1beta1HealthCheckSpecInitProviderCloudwatchAlarmNameSelect
 }
 
 /// <summary>Selector for a MetricAlarm in cloudwatch to populate cloudwatchAlarmName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckSpecInitProviderCloudwatchAlarmNameSelector
 {
@@ -780,7 +780,7 @@ public partial class V1beta1HealthCheckSpecInitProviderCloudwatchAlarmNameSelect
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckSpecInitProvider
 {
@@ -896,7 +896,7 @@ public partial class V1beta1HealthCheckSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HealthCheckSpecManagementPoliciesEnum>))]
 public enum V1beta1HealthCheckSpecManagementPoliciesEnum
 {
@@ -919,7 +919,7 @@ public enum V1beta1HealthCheckSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckSpecProviderConfigRef
 {
@@ -938,7 +938,7 @@ public partial class V1beta1HealthCheckSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckSpecWriteConnectionSecretToRef
 {
@@ -948,7 +948,7 @@ public partial class V1beta1HealthCheckSpecWriteConnectionSecretToRef
 }
 
 /// <summary>HealthCheckSpec defines the desired state of HealthCheck</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckSpec
 {
@@ -999,7 +999,7 @@ public partial class V1beta1HealthCheckSpec
     public V1beta1HealthCheckSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckStatusAtProvider
 {
@@ -1108,7 +1108,7 @@ public partial class V1beta1HealthCheckStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckStatusConditions
 {
@@ -1151,7 +1151,7 @@ public partial class V1beta1HealthCheckStatusConditions
 }
 
 /// <summary>HealthCheckStatus defines the observed state of HealthCheck.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckStatus
 {
@@ -1172,7 +1172,7 @@ public partial class V1beta1HealthCheckStatus
 }
 
 /// <summary>HealthCheck is the Schema for the HealthChecks API. Provides a Route53 health check.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1HealthCheck : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1HealthCheckSpec>, IStatus<V1beta1HealthCheckStatus?>

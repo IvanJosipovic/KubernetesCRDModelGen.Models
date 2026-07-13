@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.kinesisanalyticsv2.aws.m.upbound.io;
 /// <summary>ApplicationSnapshot is the Schema for the ApplicationSnapshots API. Manages a Kinesis Analytics v2 Application Snapshot.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ApplicationSnapshotList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ApplicationSnapshot>
@@ -42,7 +42,7 @@ public partial class V1beta1ApplicationSnapshotList : IKubernetesObject<V1ListMe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationSnapshotSpecForProviderApplicationNameRefPolicyResolutionEnum>))]
 public enum V1beta1ApplicationSnapshotSpecForProviderApplicationNameRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1ApplicationSnapshotSpecForProviderApplicationNameRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationSnapshotSpecForProviderApplicationNameRefPolicyResolveEnum>))]
 public enum V1beta1ApplicationSnapshotSpecForProviderApplicationNameRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1ApplicationSnapshotSpecForProviderApplicationNameRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationSnapshotSpecForProviderApplicationNameRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1ApplicationSnapshotSpecForProviderApplicationNameRef
 }
 
 /// <summary>Reference to a Application in kinesisanalyticsv2 to populate applicationName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationSnapshotSpecForProviderApplicationNameRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1ApplicationSnapshotSpecForProviderApplicationNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationSnapshotSpecForProviderApplicationNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ApplicationSnapshotSpecForProviderApplicationNameSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1ApplicationSnapshotSpecForProviderApplicationNameSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationSnapshotSpecForProviderApplicationNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ApplicationSnapshotSpecForProviderApplicationNameSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1ApplicationSnapshotSpecForProviderApplicationNameSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationSnapshotSpecForProviderApplicationNameSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1ApplicationSnapshotSpecForProviderApplicationNameSel
 }
 
 /// <summary>Selector for a Application in kinesisanalyticsv2 to populate applicationName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationSnapshotSpecForProviderApplicationNameSelector
 {
@@ -191,7 +191,7 @@ public partial class V1beta1ApplicationSnapshotSpecForProviderApplicationNameSel
     public V1beta1ApplicationSnapshotSpecForProviderApplicationNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationSnapshotSpecForProvider
 {
@@ -221,7 +221,7 @@ public partial class V1beta1ApplicationSnapshotSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationSnapshotSpecInitProviderApplicationNameRefPolicyResolutionEnum>))]
 public enum V1beta1ApplicationSnapshotSpecInitProviderApplicationNameRefPolicyResolutionEnum
 {
@@ -237,7 +237,7 @@ public enum V1beta1ApplicationSnapshotSpecInitProviderApplicationNameRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationSnapshotSpecInitProviderApplicationNameRefPolicyResolveEnum>))]
 public enum V1beta1ApplicationSnapshotSpecInitProviderApplicationNameRefPolicyResolveEnum
 {
@@ -248,7 +248,7 @@ public enum V1beta1ApplicationSnapshotSpecInitProviderApplicationNameRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationSnapshotSpecInitProviderApplicationNameRefPolicy
 {
@@ -272,7 +272,7 @@ public partial class V1beta1ApplicationSnapshotSpecInitProviderApplicationNameRe
 }
 
 /// <summary>Reference to a Application in kinesisanalyticsv2 to populate applicationName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationSnapshotSpecInitProviderApplicationNameRef
 {
@@ -295,7 +295,7 @@ public partial class V1beta1ApplicationSnapshotSpecInitProviderApplicationNameRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationSnapshotSpecInitProviderApplicationNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ApplicationSnapshotSpecInitProviderApplicationNameSelectorPolicyResolutionEnum
 {
@@ -311,7 +311,7 @@ public enum V1beta1ApplicationSnapshotSpecInitProviderApplicationNameSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationSnapshotSpecInitProviderApplicationNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ApplicationSnapshotSpecInitProviderApplicationNameSelectorPolicyResolveEnum
 {
@@ -322,7 +322,7 @@ public enum V1beta1ApplicationSnapshotSpecInitProviderApplicationNameSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationSnapshotSpecInitProviderApplicationNameSelectorPolicy
 {
@@ -346,7 +346,7 @@ public partial class V1beta1ApplicationSnapshotSpecInitProviderApplicationNameSe
 }
 
 /// <summary>Selector for a Application in kinesisanalyticsv2 to populate applicationName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationSnapshotSpecInitProviderApplicationNameSelector
 {
@@ -382,7 +382,7 @@ public partial class V1beta1ApplicationSnapshotSpecInitProviderApplicationNameSe
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationSnapshotSpecInitProvider
 {
@@ -403,7 +403,7 @@ public partial class V1beta1ApplicationSnapshotSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationSnapshotSpecManagementPoliciesEnum>))]
 public enum V1beta1ApplicationSnapshotSpecManagementPoliciesEnum
 {
@@ -426,7 +426,7 @@ public enum V1beta1ApplicationSnapshotSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationSnapshotSpecProviderConfigRef
 {
@@ -445,7 +445,7 @@ public partial class V1beta1ApplicationSnapshotSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationSnapshotSpecWriteConnectionSecretToRef
 {
@@ -455,7 +455,7 @@ public partial class V1beta1ApplicationSnapshotSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ApplicationSnapshotSpec defines the desired state of ApplicationSnapshot</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationSnapshotSpec
 {
@@ -506,7 +506,7 @@ public partial class V1beta1ApplicationSnapshotSpec
     public V1beta1ApplicationSnapshotSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationSnapshotStatusAtProvider
 {
@@ -535,7 +535,7 @@ public partial class V1beta1ApplicationSnapshotStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationSnapshotStatusConditions
 {
@@ -578,7 +578,7 @@ public partial class V1beta1ApplicationSnapshotStatusConditions
 }
 
 /// <summary>ApplicationSnapshotStatus defines the observed state of ApplicationSnapshot.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationSnapshotStatus
 {
@@ -599,7 +599,7 @@ public partial class V1beta1ApplicationSnapshotStatus
 }
 
 /// <summary>ApplicationSnapshot is the Schema for the ApplicationSnapshots API. Manages a Kinesis Analytics v2 Application Snapshot.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ApplicationSnapshot : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ApplicationSnapshotSpec>, IStatus<V1beta1ApplicationSnapshotStatus?>

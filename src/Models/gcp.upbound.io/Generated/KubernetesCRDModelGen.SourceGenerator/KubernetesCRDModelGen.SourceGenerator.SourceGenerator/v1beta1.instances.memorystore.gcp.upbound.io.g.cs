@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.memorystore.gcp.upbound.io;
 /// <summary>Instance is the Schema for the Instances API. A Google Cloud Memorystore instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1InstanceList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Instance>
@@ -45,7 +45,7 @@ public partial class V1beta1InstanceList : IKubernetesObject<V1ListMeta>, IItems
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecDeletionPolicyEnum>))]
 public enum V1beta1InstanceSpecDeletionPolicyEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1InstanceSpecDeletionPolicyEnum
 /// Start time of the window in UTC time.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderAutomatedBackupConfigFixedFrequencyScheduleStartTime
 {
@@ -75,7 +75,7 @@ public partial class V1beta1InstanceSpecForProviderAutomatedBackupConfigFixedFre
 /// Trigger automated backups at a fixed frequency.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderAutomatedBackupConfigFixedFrequencySchedule
 {
@@ -91,7 +91,7 @@ public partial class V1beta1InstanceSpecForProviderAutomatedBackupConfigFixedFre
 /// The automated backup config for a instance.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderAutomatedBackupConfig
 {
@@ -117,7 +117,7 @@ public partial class V1beta1InstanceSpecForProviderAutomatedBackupConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecForProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceRefPolicyResolutionEnum>))]
 public enum V1beta1InstanceSpecForProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceRefPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1InstanceSpecForProviderCrossInstanceReplicationConfigPrimaryI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecForProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceRefPolicyResolveEnum>))]
 public enum V1beta1InstanceSpecForProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceRefPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1InstanceSpecForProviderCrossInstanceReplicationConfigPrimaryI
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceRefPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1InstanceSpecForProviderCrossInstanceReplicationConfi
 }
 
 /// <summary>Reference to a Instance in memorystore to populate instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceRef
 {
@@ -187,7 +187,7 @@ public partial class V1beta1InstanceSpecForProviderCrossInstanceReplicationConfi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecForProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceSelectorPolicyResolutionEnum>))]
 public enum V1beta1InstanceSpecForProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceSelectorPolicyResolutionEnum
 {
@@ -203,7 +203,7 @@ public enum V1beta1InstanceSpecForProviderCrossInstanceReplicationConfigPrimaryI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecForProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceSelectorPolicyResolveEnum>))]
 public enum V1beta1InstanceSpecForProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceSelectorPolicyResolveEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1InstanceSpecForProviderCrossInstanceReplicationConfigPrimaryI
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceSelectorPolicy
 {
@@ -238,7 +238,7 @@ public partial class V1beta1InstanceSpecForProviderCrossInstanceReplicationConfi
 }
 
 /// <summary>Selector for a Instance in memorystore to populate instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceSelector
 {
@@ -262,7 +262,7 @@ public partial class V1beta1InstanceSpecForProviderCrossInstanceReplicationConfi
 /// This field is only set for a secondary instance. Details of the primary instance that is used as the replication source for this secondary instance. This is allowed to be set only for clusters whose cluster role is of type SECONDARY.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderCrossInstanceReplicationConfigPrimaryInstance
 {
@@ -279,7 +279,7 @@ public partial class V1beta1InstanceSpecForProviderCrossInstanceReplicationConfi
     public V1beta1InstanceSpecForProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceSelector? InstanceSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderCrossInstanceReplicationConfigSecondaryInstances
 {
@@ -292,7 +292,7 @@ public partial class V1beta1InstanceSpecForProviderCrossInstanceReplicationConfi
 /// Cross instance replication config
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderCrossInstanceReplicationConfig
 {
@@ -321,7 +321,7 @@ public partial class V1beta1InstanceSpecForProviderCrossInstanceReplicationConfi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecForProviderDesiredAutoCreatedEndpointsNetworkRefPolicyResolutionEnum>))]
 public enum V1beta1InstanceSpecForProviderDesiredAutoCreatedEndpointsNetworkRefPolicyResolutionEnum
 {
@@ -337,7 +337,7 @@ public enum V1beta1InstanceSpecForProviderDesiredAutoCreatedEndpointsNetworkRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecForProviderDesiredAutoCreatedEndpointsNetworkRefPolicyResolveEnum>))]
 public enum V1beta1InstanceSpecForProviderDesiredAutoCreatedEndpointsNetworkRefPolicyResolveEnum
 {
@@ -348,7 +348,7 @@ public enum V1beta1InstanceSpecForProviderDesiredAutoCreatedEndpointsNetworkRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderDesiredAutoCreatedEndpointsNetworkRefPolicy
 {
@@ -372,7 +372,7 @@ public partial class V1beta1InstanceSpecForProviderDesiredAutoCreatedEndpointsNe
 }
 
 /// <summary>Reference to a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderDesiredAutoCreatedEndpointsNetworkRef
 {
@@ -391,7 +391,7 @@ public partial class V1beta1InstanceSpecForProviderDesiredAutoCreatedEndpointsNe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecForProviderDesiredAutoCreatedEndpointsNetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta1InstanceSpecForProviderDesiredAutoCreatedEndpointsNetworkSelectorPolicyResolutionEnum
 {
@@ -407,7 +407,7 @@ public enum V1beta1InstanceSpecForProviderDesiredAutoCreatedEndpointsNetworkSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecForProviderDesiredAutoCreatedEndpointsNetworkSelectorPolicyResolveEnum>))]
 public enum V1beta1InstanceSpecForProviderDesiredAutoCreatedEndpointsNetworkSelectorPolicyResolveEnum
 {
@@ -418,7 +418,7 @@ public enum V1beta1InstanceSpecForProviderDesiredAutoCreatedEndpointsNetworkSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderDesiredAutoCreatedEndpointsNetworkSelectorPolicy
 {
@@ -442,7 +442,7 @@ public partial class V1beta1InstanceSpecForProviderDesiredAutoCreatedEndpointsNe
 }
 
 /// <summary>Selector for a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderDesiredAutoCreatedEndpointsNetworkSelector
 {
@@ -462,7 +462,7 @@ public partial class V1beta1InstanceSpecForProviderDesiredAutoCreatedEndpointsNe
     public V1beta1InstanceSpecForProviderDesiredAutoCreatedEndpointsNetworkSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderDesiredAutoCreatedEndpoints
 {
@@ -490,7 +490,7 @@ public partial class V1beta1InstanceSpecForProviderDesiredAutoCreatedEndpoints
     public string? ProjectId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderDesiredPscAutoConnections
 {
@@ -514,7 +514,7 @@ public partial class V1beta1InstanceSpecForProviderDesiredPscAutoConnections
 /// GCS source for the instance.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderGcsSource
 {
@@ -530,7 +530,7 @@ public partial class V1beta1InstanceSpecForProviderGcsSource
 /// Start time of the window in UTC time.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderMaintenancePolicyWeeklyMaintenanceWindowStartTime
 {
@@ -557,7 +557,7 @@ public partial class V1beta1InstanceSpecForProviderMaintenancePolicyWeeklyMainte
     public double? Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderMaintenancePolicyWeeklyMaintenanceWindow
 {
@@ -577,7 +577,7 @@ public partial class V1beta1InstanceSpecForProviderMaintenancePolicyWeeklyMainte
 /// Maintenance policy for a cluster
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderMaintenancePolicy
 {
@@ -595,7 +595,7 @@ public partial class V1beta1InstanceSpecForProviderMaintenancePolicy
 /// Managed backup source for the instance.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderManagedBackupSource
 {
@@ -608,7 +608,7 @@ public partial class V1beta1InstanceSpecForProviderManagedBackupSource
 /// Configuration for AOF based persistence.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderPersistenceConfigAofConfig
 {
@@ -627,7 +627,7 @@ public partial class V1beta1InstanceSpecForProviderPersistenceConfigAofConfig
 /// Configuration for RDB based persistence.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderPersistenceConfigRdbConfig
 {
@@ -655,7 +655,7 @@ public partial class V1beta1InstanceSpecForProviderPersistenceConfigRdbConfig
 /// Represents persistence configuration for a instance.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderPersistenceConfig
 {
@@ -689,7 +689,7 @@ public partial class V1beta1InstanceSpecForProviderPersistenceConfig
 /// Zone distribution configuration for allocation of instance resources.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProviderZoneDistributionConfig
 {
@@ -711,7 +711,7 @@ public partial class V1beta1InstanceSpecForProviderZoneDistributionConfig
     public string? Zone { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProvider
 {
@@ -858,7 +858,7 @@ public partial class V1beta1InstanceSpecForProvider
 /// Start time of the window in UTC time.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderAutomatedBackupConfigFixedFrequencyScheduleStartTime
 {
@@ -874,7 +874,7 @@ public partial class V1beta1InstanceSpecInitProviderAutomatedBackupConfigFixedFr
 /// Trigger automated backups at a fixed frequency.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderAutomatedBackupConfigFixedFrequencySchedule
 {
@@ -890,7 +890,7 @@ public partial class V1beta1InstanceSpecInitProviderAutomatedBackupConfigFixedFr
 /// The automated backup config for a instance.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderAutomatedBackupConfig
 {
@@ -916,7 +916,7 @@ public partial class V1beta1InstanceSpecInitProviderAutomatedBackupConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecInitProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceRefPolicyResolutionEnum>))]
 public enum V1beta1InstanceSpecInitProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceRefPolicyResolutionEnum
 {
@@ -932,7 +932,7 @@ public enum V1beta1InstanceSpecInitProviderCrossInstanceReplicationConfigPrimary
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecInitProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceRefPolicyResolveEnum>))]
 public enum V1beta1InstanceSpecInitProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceRefPolicyResolveEnum
 {
@@ -943,7 +943,7 @@ public enum V1beta1InstanceSpecInitProviderCrossInstanceReplicationConfigPrimary
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceRefPolicy
 {
@@ -967,7 +967,7 @@ public partial class V1beta1InstanceSpecInitProviderCrossInstanceReplicationConf
 }
 
 /// <summary>Reference to a Instance in memorystore to populate instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceRef
 {
@@ -986,7 +986,7 @@ public partial class V1beta1InstanceSpecInitProviderCrossInstanceReplicationConf
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecInitProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceSelectorPolicyResolutionEnum>))]
 public enum V1beta1InstanceSpecInitProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceSelectorPolicyResolutionEnum
 {
@@ -1002,7 +1002,7 @@ public enum V1beta1InstanceSpecInitProviderCrossInstanceReplicationConfigPrimary
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecInitProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceSelectorPolicyResolveEnum>))]
 public enum V1beta1InstanceSpecInitProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceSelectorPolicyResolveEnum
 {
@@ -1013,7 +1013,7 @@ public enum V1beta1InstanceSpecInitProviderCrossInstanceReplicationConfigPrimary
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceSelectorPolicy
 {
@@ -1037,7 +1037,7 @@ public partial class V1beta1InstanceSpecInitProviderCrossInstanceReplicationConf
 }
 
 /// <summary>Selector for a Instance in memorystore to populate instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceSelector
 {
@@ -1061,7 +1061,7 @@ public partial class V1beta1InstanceSpecInitProviderCrossInstanceReplicationConf
 /// This field is only set for a secondary instance. Details of the primary instance that is used as the replication source for this secondary instance. This is allowed to be set only for clusters whose cluster role is of type SECONDARY.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderCrossInstanceReplicationConfigPrimaryInstance
 {
@@ -1078,7 +1078,7 @@ public partial class V1beta1InstanceSpecInitProviderCrossInstanceReplicationConf
     public V1beta1InstanceSpecInitProviderCrossInstanceReplicationConfigPrimaryInstanceInstanceSelector? InstanceSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderCrossInstanceReplicationConfigSecondaryInstances
 {
@@ -1091,7 +1091,7 @@ public partial class V1beta1InstanceSpecInitProviderCrossInstanceReplicationConf
 /// Cross instance replication config
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderCrossInstanceReplicationConfig
 {
@@ -1120,7 +1120,7 @@ public partial class V1beta1InstanceSpecInitProviderCrossInstanceReplicationConf
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecInitProviderDesiredAutoCreatedEndpointsNetworkRefPolicyResolutionEnum>))]
 public enum V1beta1InstanceSpecInitProviderDesiredAutoCreatedEndpointsNetworkRefPolicyResolutionEnum
 {
@@ -1136,7 +1136,7 @@ public enum V1beta1InstanceSpecInitProviderDesiredAutoCreatedEndpointsNetworkRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecInitProviderDesiredAutoCreatedEndpointsNetworkRefPolicyResolveEnum>))]
 public enum V1beta1InstanceSpecInitProviderDesiredAutoCreatedEndpointsNetworkRefPolicyResolveEnum
 {
@@ -1147,7 +1147,7 @@ public enum V1beta1InstanceSpecInitProviderDesiredAutoCreatedEndpointsNetworkRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderDesiredAutoCreatedEndpointsNetworkRefPolicy
 {
@@ -1171,7 +1171,7 @@ public partial class V1beta1InstanceSpecInitProviderDesiredAutoCreatedEndpointsN
 }
 
 /// <summary>Reference to a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderDesiredAutoCreatedEndpointsNetworkRef
 {
@@ -1190,7 +1190,7 @@ public partial class V1beta1InstanceSpecInitProviderDesiredAutoCreatedEndpointsN
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecInitProviderDesiredAutoCreatedEndpointsNetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta1InstanceSpecInitProviderDesiredAutoCreatedEndpointsNetworkSelectorPolicyResolutionEnum
 {
@@ -1206,7 +1206,7 @@ public enum V1beta1InstanceSpecInitProviderDesiredAutoCreatedEndpointsNetworkSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecInitProviderDesiredAutoCreatedEndpointsNetworkSelectorPolicyResolveEnum>))]
 public enum V1beta1InstanceSpecInitProviderDesiredAutoCreatedEndpointsNetworkSelectorPolicyResolveEnum
 {
@@ -1217,7 +1217,7 @@ public enum V1beta1InstanceSpecInitProviderDesiredAutoCreatedEndpointsNetworkSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderDesiredAutoCreatedEndpointsNetworkSelectorPolicy
 {
@@ -1241,7 +1241,7 @@ public partial class V1beta1InstanceSpecInitProviderDesiredAutoCreatedEndpointsN
 }
 
 /// <summary>Selector for a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderDesiredAutoCreatedEndpointsNetworkSelector
 {
@@ -1261,7 +1261,7 @@ public partial class V1beta1InstanceSpecInitProviderDesiredAutoCreatedEndpointsN
     public V1beta1InstanceSpecInitProviderDesiredAutoCreatedEndpointsNetworkSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderDesiredAutoCreatedEndpoints
 {
@@ -1289,7 +1289,7 @@ public partial class V1beta1InstanceSpecInitProviderDesiredAutoCreatedEndpoints
     public string? ProjectId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderDesiredPscAutoConnections
 {
@@ -1313,7 +1313,7 @@ public partial class V1beta1InstanceSpecInitProviderDesiredPscAutoConnections
 /// GCS source for the instance.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderGcsSource
 {
@@ -1329,7 +1329,7 @@ public partial class V1beta1InstanceSpecInitProviderGcsSource
 /// Start time of the window in UTC time.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderMaintenancePolicyWeeklyMaintenanceWindowStartTime
 {
@@ -1356,7 +1356,7 @@ public partial class V1beta1InstanceSpecInitProviderMaintenancePolicyWeeklyMaint
     public double? Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderMaintenancePolicyWeeklyMaintenanceWindow
 {
@@ -1376,7 +1376,7 @@ public partial class V1beta1InstanceSpecInitProviderMaintenancePolicyWeeklyMaint
 /// Maintenance policy for a cluster
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderMaintenancePolicy
 {
@@ -1394,7 +1394,7 @@ public partial class V1beta1InstanceSpecInitProviderMaintenancePolicy
 /// Managed backup source for the instance.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderManagedBackupSource
 {
@@ -1407,7 +1407,7 @@ public partial class V1beta1InstanceSpecInitProviderManagedBackupSource
 /// Configuration for AOF based persistence.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderPersistenceConfigAofConfig
 {
@@ -1426,7 +1426,7 @@ public partial class V1beta1InstanceSpecInitProviderPersistenceConfigAofConfig
 /// Configuration for RDB based persistence.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderPersistenceConfigRdbConfig
 {
@@ -1454,7 +1454,7 @@ public partial class V1beta1InstanceSpecInitProviderPersistenceConfigRdbConfig
 /// Represents persistence configuration for a instance.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderPersistenceConfig
 {
@@ -1488,7 +1488,7 @@ public partial class V1beta1InstanceSpecInitProviderPersistenceConfig
 /// Zone distribution configuration for allocation of instance resources.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProviderZoneDistributionConfig
 {
@@ -1522,7 +1522,7 @@ public partial class V1beta1InstanceSpecInitProviderZoneDistributionConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecInitProvider
 {
@@ -1665,7 +1665,7 @@ public partial class V1beta1InstanceSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecManagementPoliciesEnum>))]
 public enum V1beta1InstanceSpecManagementPoliciesEnum
 {
@@ -1689,7 +1689,7 @@ public enum V1beta1InstanceSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1InstanceSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1705,7 +1705,7 @@ public enum V1beta1InstanceSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1InstanceSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1716,7 +1716,7 @@ public enum V1beta1InstanceSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecProviderConfigRefPolicy
 {
@@ -1744,7 +1744,7 @@ public partial class V1beta1InstanceSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecProviderConfigRef
 {
@@ -1763,7 +1763,7 @@ public partial class V1beta1InstanceSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecWriteConnectionSecretToRef
 {
@@ -1777,7 +1777,7 @@ public partial class V1beta1InstanceSpecWriteConnectionSecretToRef
 }
 
 /// <summary>InstanceSpec defines the desired state of Instance</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpec
 {
@@ -1848,7 +1848,7 @@ public partial class V1beta1InstanceSpec
 /// Start time of the window in UTC time.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderAutomatedBackupConfigFixedFrequencyScheduleStartTime
 {
@@ -1864,7 +1864,7 @@ public partial class V1beta1InstanceStatusAtProviderAutomatedBackupConfigFixedFr
 /// Trigger automated backups at a fixed frequency.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderAutomatedBackupConfigFixedFrequencySchedule
 {
@@ -1880,7 +1880,7 @@ public partial class V1beta1InstanceStatusAtProviderAutomatedBackupConfigFixedFr
 /// The automated backup config for a instance.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderAutomatedBackupConfig
 {
@@ -1900,7 +1900,7 @@ public partial class V1beta1InstanceStatusAtProviderAutomatedBackupConfig
     public string? Retention { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderCrossInstanceReplicationConfigMembershipPrimaryInstance
 {
@@ -1913,7 +1913,7 @@ public partial class V1beta1InstanceStatusAtProviderCrossInstanceReplicationConf
     public string? Uid { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderCrossInstanceReplicationConfigMembershipSecondaryInstance
 {
@@ -1926,7 +1926,7 @@ public partial class V1beta1InstanceStatusAtProviderCrossInstanceReplicationConf
     public string? Uid { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderCrossInstanceReplicationConfigMembership
 {
@@ -1951,7 +1951,7 @@ public partial class V1beta1InstanceStatusAtProviderCrossInstanceReplicationConf
 /// This field is only set for a secondary instance. Details of the primary instance that is used as the replication source for this secondary instance. This is allowed to be set only for clusters whose cluster role is of type SECONDARY.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderCrossInstanceReplicationConfigPrimaryInstance
 {
@@ -1964,7 +1964,7 @@ public partial class V1beta1InstanceStatusAtProviderCrossInstanceReplicationConf
     public string? Uid { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderCrossInstanceReplicationConfigSecondaryInstances
 {
@@ -1981,7 +1981,7 @@ public partial class V1beta1InstanceStatusAtProviderCrossInstanceReplicationConf
 /// Cross instance replication config
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderCrossInstanceReplicationConfig
 {
@@ -2019,7 +2019,7 @@ public partial class V1beta1InstanceStatusAtProviderCrossInstanceReplicationConf
     public string? UpdateTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderDesiredAutoCreatedEndpoints
 {
@@ -2039,7 +2039,7 @@ public partial class V1beta1InstanceStatusAtProviderDesiredAutoCreatedEndpoints
     public string? ProjectId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderDesiredPscAutoConnections
 {
@@ -2059,7 +2059,7 @@ public partial class V1beta1InstanceStatusAtProviderDesiredPscAutoConnections
     public string? ProjectId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderDiscoveryEndpoints
 {
@@ -2091,7 +2091,7 @@ public partial class V1beta1InstanceStatusAtProviderDiscoveryEndpoints
 /// Detailed information of a PSC connection that is created through service connectivity automation.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderEndpointsConnectionsPscAutoConnection
 {
@@ -2160,7 +2160,7 @@ public partial class V1beta1InstanceStatusAtProviderEndpointsConnectionsPscAutoC
     public string? ServiceAttachment { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderEndpointsConnections
 {
@@ -2172,7 +2172,7 @@ public partial class V1beta1InstanceStatusAtProviderEndpointsConnections
     public V1beta1InstanceStatusAtProviderEndpointsConnectionsPscAutoConnection? PscAutoConnection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderEndpoints
 {
@@ -2188,7 +2188,7 @@ public partial class V1beta1InstanceStatusAtProviderEndpoints
 /// GCS source for the instance.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderGcsSource
 {
@@ -2204,7 +2204,7 @@ public partial class V1beta1InstanceStatusAtProviderGcsSource
 /// Start time of the window in UTC time.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderMaintenancePolicyWeeklyMaintenanceWindowStartTime
 {
@@ -2231,7 +2231,7 @@ public partial class V1beta1InstanceStatusAtProviderMaintenancePolicyWeeklyMaint
     public double? Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderMaintenancePolicyWeeklyMaintenanceWindow
 {
@@ -2261,7 +2261,7 @@ public partial class V1beta1InstanceStatusAtProviderMaintenancePolicyWeeklyMaint
 /// Maintenance policy for a cluster
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderMaintenancePolicy
 {
@@ -2293,7 +2293,7 @@ public partial class V1beta1InstanceStatusAtProviderMaintenancePolicy
     public IList<V1beta1InstanceStatusAtProviderMaintenancePolicyWeeklyMaintenanceWindow>? WeeklyMaintenanceWindow { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderMaintenanceSchedule
 {
@@ -2330,7 +2330,7 @@ public partial class V1beta1InstanceStatusAtProviderMaintenanceSchedule
 /// Managed backup source for the instance.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderManagedBackupSource
 {
@@ -2339,7 +2339,7 @@ public partial class V1beta1InstanceStatusAtProviderManagedBackupSource
     public string? Backup { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderManagedServerCaCaCerts
 {
@@ -2351,7 +2351,7 @@ public partial class V1beta1InstanceStatusAtProviderManagedServerCaCaCerts
     public IList<string>? Certificates { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderManagedServerCa
 {
@@ -2364,7 +2364,7 @@ public partial class V1beta1InstanceStatusAtProviderManagedServerCa
     public IList<V1beta1InstanceStatusAtProviderManagedServerCaCaCerts>? CaCerts { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderNodeConfig
 {
@@ -2380,7 +2380,7 @@ public partial class V1beta1InstanceStatusAtProviderNodeConfig
 /// Configuration for AOF based persistence.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderPersistenceConfigAofConfig
 {
@@ -2399,7 +2399,7 @@ public partial class V1beta1InstanceStatusAtProviderPersistenceConfigAofConfig
 /// Configuration for RDB based persistence.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderPersistenceConfigRdbConfig
 {
@@ -2427,7 +2427,7 @@ public partial class V1beta1InstanceStatusAtProviderPersistenceConfigRdbConfig
 /// Represents persistence configuration for a instance.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderPersistenceConfig
 {
@@ -2457,7 +2457,7 @@ public partial class V1beta1InstanceStatusAtProviderPersistenceConfig
     public V1beta1InstanceStatusAtProviderPersistenceConfigRdbConfig? RdbConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderPscAttachmentDetails
 {
@@ -2476,7 +2476,7 @@ public partial class V1beta1InstanceStatusAtProviderPscAttachmentDetails
     public string? ServiceAttachment { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderPscAutoConnections
 {
@@ -2555,7 +2555,7 @@ public partial class V1beta1InstanceStatusAtProviderPscAutoConnections
     public string? ServiceAttachment { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderStateInfoUpdateInfo
 {
@@ -2588,7 +2588,7 @@ public partial class V1beta1InstanceStatusAtProviderStateInfoUpdateInfo
     public double? TargetShardCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderStateInfo
 {
@@ -2605,7 +2605,7 @@ public partial class V1beta1InstanceStatusAtProviderStateInfo
 /// Zone distribution configuration for allocation of instance resources.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProviderZoneDistributionConfig
 {
@@ -2627,7 +2627,7 @@ public partial class V1beta1InstanceStatusAtProviderZoneDistributionConfig
     public string? Zone { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProvider
 {
@@ -2880,7 +2880,7 @@ public partial class V1beta1InstanceStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusConditions
 {
@@ -2923,7 +2923,7 @@ public partial class V1beta1InstanceStatusConditions
 }
 
 /// <summary>InstanceStatus defines the observed state of Instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatus
 {
@@ -2944,7 +2944,7 @@ public partial class V1beta1InstanceStatus
 }
 
 /// <summary>Instance is the Schema for the Instances API. A Google Cloud Memorystore instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Instance : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1InstanceSpec>, IStatus<V1beta1InstanceStatus?>

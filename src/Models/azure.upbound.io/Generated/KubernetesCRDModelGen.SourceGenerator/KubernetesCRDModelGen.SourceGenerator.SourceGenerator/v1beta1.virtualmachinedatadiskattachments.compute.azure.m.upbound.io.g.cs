@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.azure.m.upbound.io;
 /// <summary>VirtualMachineDataDiskAttachment is the Schema for the VirtualMachineDataDiskAttachments API. Manages attaching a Disk to a Virtual Machine.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VirtualMachineDataDiskAttachmentList : IKubernetesObject<V1ListMeta>, IItems<V1beta1VirtualMachineDataDiskAttachment>
@@ -42,7 +42,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentList : IKubernetesOb
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineDataDiskAttachmentSpecForProviderManagedDiskIdRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualMachineDataDiskAttachmentSpecForProviderManagedDiskIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1VirtualMachineDataDiskAttachmentSpecForProviderManagedDiskIdR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineDataDiskAttachmentSpecForProviderManagedDiskIdRefPolicyResolveEnum>))]
 public enum V1beta1VirtualMachineDataDiskAttachmentSpecForProviderManagedDiskIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1VirtualMachineDataDiskAttachmentSpecForProviderManagedDiskIdR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineDataDiskAttachmentSpecForProviderManagedDiskIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentSpecForProviderManag
 }
 
 /// <summary>Reference to a ManagedDisk in compute to populate managedDiskId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineDataDiskAttachmentSpecForProviderManagedDiskIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentSpecForProviderManag
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineDataDiskAttachmentSpecForProviderManagedDiskIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VirtualMachineDataDiskAttachmentSpecForProviderManagedDiskIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1VirtualMachineDataDiskAttachmentSpecForProviderManagedDiskIdS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineDataDiskAttachmentSpecForProviderManagedDiskIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VirtualMachineDataDiskAttachmentSpecForProviderManagedDiskIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1VirtualMachineDataDiskAttachmentSpecForProviderManagedDiskIdS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineDataDiskAttachmentSpecForProviderManagedDiskIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentSpecForProviderManag
 }
 
 /// <summary>Selector for a ManagedDisk in compute to populate managedDiskId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineDataDiskAttachmentSpecForProviderManagedDiskIdSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentSpecForProviderManag
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineDataDiskAttachmentSpecForProviderVirtualMachineIdRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualMachineDataDiskAttachmentSpecForProviderVirtualMachineIdRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1VirtualMachineDataDiskAttachmentSpecForProviderVirtualMachine
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineDataDiskAttachmentSpecForProviderVirtualMachineIdRefPolicyResolveEnum>))]
 public enum V1beta1VirtualMachineDataDiskAttachmentSpecForProviderVirtualMachineIdRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1VirtualMachineDataDiskAttachmentSpecForProviderVirtualMachine
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineDataDiskAttachmentSpecForProviderVirtualMachineIdRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentSpecForProviderVirtu
 }
 
 /// <summary>Reference to a LinuxVirtualMachine in compute to populate virtualMachineId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineDataDiskAttachmentSpecForProviderVirtualMachineIdRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentSpecForProviderVirtu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineDataDiskAttachmentSpecForProviderVirtualMachineIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VirtualMachineDataDiskAttachmentSpecForProviderVirtualMachineIdSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1VirtualMachineDataDiskAttachmentSpecForProviderVirtualMachine
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineDataDiskAttachmentSpecForProviderVirtualMachineIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VirtualMachineDataDiskAttachmentSpecForProviderVirtualMachineIdSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1VirtualMachineDataDiskAttachmentSpecForProviderVirtualMachine
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineDataDiskAttachmentSpecForProviderVirtualMachineIdSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentSpecForProviderVirtu
 }
 
 /// <summary>Selector for a LinuxVirtualMachine in compute to populate virtualMachineId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineDataDiskAttachmentSpecForProviderVirtualMachineIdSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentSpecForProviderVirtu
     public V1beta1VirtualMachineDataDiskAttachmentSpecForProviderVirtualMachineIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineDataDiskAttachmentSpecForProvider
 {
@@ -397,7 +397,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderManagedDiskIdRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderManagedDiskIdRefPolicyResolutionEnum
 {
@@ -413,7 +413,7 @@ public enum V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderManagedDiskId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderManagedDiskIdRefPolicyResolveEnum>))]
 public enum V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderManagedDiskIdRefPolicyResolveEnum
 {
@@ -424,7 +424,7 @@ public enum V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderManagedDiskId
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderManagedDiskIdRefPolicy
 {
@@ -448,7 +448,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderMana
 }
 
 /// <summary>Reference to a ManagedDisk in compute to populate managedDiskId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderManagedDiskIdRef
 {
@@ -471,7 +471,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderMana
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderManagedDiskIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderManagedDiskIdSelectorPolicyResolutionEnum
 {
@@ -487,7 +487,7 @@ public enum V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderManagedDiskId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderManagedDiskIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderManagedDiskIdSelectorPolicyResolveEnum
 {
@@ -498,7 +498,7 @@ public enum V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderManagedDiskId
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderManagedDiskIdSelectorPolicy
 {
@@ -522,7 +522,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderMana
 }
 
 /// <summary>Selector for a ManagedDisk in compute to populate managedDiskId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderManagedDiskIdSelector
 {
@@ -552,7 +552,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderMana
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderVirtualMachineIdRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderVirtualMachineIdRefPolicyResolutionEnum
 {
@@ -568,7 +568,7 @@ public enum V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderVirtualMachin
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderVirtualMachineIdRefPolicyResolveEnum>))]
 public enum V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderVirtualMachineIdRefPolicyResolveEnum
 {
@@ -579,7 +579,7 @@ public enum V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderVirtualMachin
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderVirtualMachineIdRefPolicy
 {
@@ -603,7 +603,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderVirt
 }
 
 /// <summary>Reference to a LinuxVirtualMachine in compute to populate virtualMachineId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderVirtualMachineIdRef
 {
@@ -626,7 +626,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderVirt
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderVirtualMachineIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderVirtualMachineIdSelectorPolicyResolutionEnum
 {
@@ -642,7 +642,7 @@ public enum V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderVirtualMachin
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderVirtualMachineIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderVirtualMachineIdSelectorPolicyResolveEnum
 {
@@ -653,7 +653,7 @@ public enum V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderVirtualMachin
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderVirtualMachineIdSelectorPolicy
 {
@@ -677,7 +677,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderVirt
 }
 
 /// <summary>Selector for a LinuxVirtualMachine in compute to populate virtualMachineId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderVirtualMachineIdSelector
 {
@@ -713,7 +713,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentSpecInitProviderVirt
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineDataDiskAttachmentSpecInitProvider
 {
@@ -762,7 +762,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineDataDiskAttachmentSpecManagementPoliciesEnum>))]
 public enum V1beta1VirtualMachineDataDiskAttachmentSpecManagementPoliciesEnum
 {
@@ -785,7 +785,7 @@ public enum V1beta1VirtualMachineDataDiskAttachmentSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineDataDiskAttachmentSpecProviderConfigRef
 {
@@ -804,7 +804,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentSpecProviderConfigRe
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineDataDiskAttachmentSpecWriteConnectionSecretToRef
 {
@@ -814,7 +814,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentSpecWriteConnectionS
 }
 
 /// <summary>VirtualMachineDataDiskAttachmentSpec defines the desired state of VirtualMachineDataDiskAttachment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineDataDiskAttachmentSpec
 {
@@ -865,7 +865,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentSpec
     public V1beta1VirtualMachineDataDiskAttachmentSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineDataDiskAttachmentStatusAtProvider
 {
@@ -899,7 +899,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineDataDiskAttachmentStatusConditions
 {
@@ -942,7 +942,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentStatusConditions
 }
 
 /// <summary>VirtualMachineDataDiskAttachmentStatus defines the observed state of VirtualMachineDataDiskAttachment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineDataDiskAttachmentStatus
 {
@@ -963,7 +963,7 @@ public partial class V1beta1VirtualMachineDataDiskAttachmentStatus
 }
 
 /// <summary>VirtualMachineDataDiskAttachment is the Schema for the VirtualMachineDataDiskAttachments API. Manages attaching a Disk to a Virtual Machine.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VirtualMachineDataDiskAttachment : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VirtualMachineDataDiskAttachmentSpec>, IStatus<V1beta1VirtualMachineDataDiskAttachmentStatus?>

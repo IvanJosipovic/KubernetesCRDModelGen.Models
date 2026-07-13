@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.route53.aws.m.upbound.io;
 /// <summary>VPCAssociationAuthorization is the Schema for the VPCAssociationAuthorizations API. Authorizes a VPC in a different account to be associated with a local Route53 Hosted Zone</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VPCAssociationAuthorizationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1VPCAssociationAuthorization>
@@ -42,7 +42,7 @@ public partial class V1beta1VPCAssociationAuthorizationList : IKubernetesObject<
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCAssociationAuthorizationSpecForProviderVpcIdRefPolicyResolutionEnum>))]
 public enum V1beta1VPCAssociationAuthorizationSpecForProviderVpcIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1VPCAssociationAuthorizationSpecForProviderVpcIdRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCAssociationAuthorizationSpecForProviderVpcIdRefPolicyResolveEnum>))]
 public enum V1beta1VPCAssociationAuthorizationSpecForProviderVpcIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1VPCAssociationAuthorizationSpecForProviderVpcIdRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCAssociationAuthorizationSpecForProviderVpcIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1VPCAssociationAuthorizationSpecForProviderVpcIdRefPo
 }
 
 /// <summary>Reference to a VPC in ec2 to populate vpcId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCAssociationAuthorizationSpecForProviderVpcIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1VPCAssociationAuthorizationSpecForProviderVpcIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCAssociationAuthorizationSpecForProviderVpcIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPCAssociationAuthorizationSpecForProviderVpcIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1VPCAssociationAuthorizationSpecForProviderVpcIdSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCAssociationAuthorizationSpecForProviderVpcIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VPCAssociationAuthorizationSpecForProviderVpcIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1VPCAssociationAuthorizationSpecForProviderVpcIdSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCAssociationAuthorizationSpecForProviderVpcIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1VPCAssociationAuthorizationSpecForProviderVpcIdSelec
 }
 
 /// <summary>Selector for a VPC in ec2 to populate vpcId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCAssociationAuthorizationSpecForProviderVpcIdSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1VPCAssociationAuthorizationSpecForProviderVpcIdSelec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCAssociationAuthorizationSpecForProviderZoneIdRefPolicyResolutionEnum>))]
 public enum V1beta1VPCAssociationAuthorizationSpecForProviderZoneIdRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1VPCAssociationAuthorizationSpecForProviderZoneIdRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCAssociationAuthorizationSpecForProviderZoneIdRefPolicyResolveEnum>))]
 public enum V1beta1VPCAssociationAuthorizationSpecForProviderZoneIdRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1VPCAssociationAuthorizationSpecForProviderZoneIdRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCAssociationAuthorizationSpecForProviderZoneIdRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1VPCAssociationAuthorizationSpecForProviderZoneIdRefP
 }
 
 /// <summary>Reference to a Zone in route53 to populate zoneId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCAssociationAuthorizationSpecForProviderZoneIdRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1VPCAssociationAuthorizationSpecForProviderZoneIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCAssociationAuthorizationSpecForProviderZoneIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPCAssociationAuthorizationSpecForProviderZoneIdSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1VPCAssociationAuthorizationSpecForProviderZoneIdSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCAssociationAuthorizationSpecForProviderZoneIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VPCAssociationAuthorizationSpecForProviderZoneIdSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1VPCAssociationAuthorizationSpecForProviderZoneIdSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCAssociationAuthorizationSpecForProviderZoneIdSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1VPCAssociationAuthorizationSpecForProviderZoneIdSele
 }
 
 /// <summary>Selector for a Zone in route53 to populate zoneId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCAssociationAuthorizationSpecForProviderZoneIdSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1VPCAssociationAuthorizationSpecForProviderZoneIdSele
     public V1beta1VPCAssociationAuthorizationSpecForProviderZoneIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCAssociationAuthorizationSpecForProvider
 {
@@ -385,7 +385,7 @@ public partial class V1beta1VPCAssociationAuthorizationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCAssociationAuthorizationSpecInitProviderVpcIdRefPolicyResolutionEnum>))]
 public enum V1beta1VPCAssociationAuthorizationSpecInitProviderVpcIdRefPolicyResolutionEnum
 {
@@ -401,7 +401,7 @@ public enum V1beta1VPCAssociationAuthorizationSpecInitProviderVpcIdRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCAssociationAuthorizationSpecInitProviderVpcIdRefPolicyResolveEnum>))]
 public enum V1beta1VPCAssociationAuthorizationSpecInitProviderVpcIdRefPolicyResolveEnum
 {
@@ -412,7 +412,7 @@ public enum V1beta1VPCAssociationAuthorizationSpecInitProviderVpcIdRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCAssociationAuthorizationSpecInitProviderVpcIdRefPolicy
 {
@@ -436,7 +436,7 @@ public partial class V1beta1VPCAssociationAuthorizationSpecInitProviderVpcIdRefP
 }
 
 /// <summary>Reference to a VPC in ec2 to populate vpcId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCAssociationAuthorizationSpecInitProviderVpcIdRef
 {
@@ -459,7 +459,7 @@ public partial class V1beta1VPCAssociationAuthorizationSpecInitProviderVpcIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCAssociationAuthorizationSpecInitProviderVpcIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPCAssociationAuthorizationSpecInitProviderVpcIdSelectorPolicyResolutionEnum
 {
@@ -475,7 +475,7 @@ public enum V1beta1VPCAssociationAuthorizationSpecInitProviderVpcIdSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCAssociationAuthorizationSpecInitProviderVpcIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VPCAssociationAuthorizationSpecInitProviderVpcIdSelectorPolicyResolveEnum
 {
@@ -486,7 +486,7 @@ public enum V1beta1VPCAssociationAuthorizationSpecInitProviderVpcIdSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCAssociationAuthorizationSpecInitProviderVpcIdSelectorPolicy
 {
@@ -510,7 +510,7 @@ public partial class V1beta1VPCAssociationAuthorizationSpecInitProviderVpcIdSele
 }
 
 /// <summary>Selector for a VPC in ec2 to populate vpcId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCAssociationAuthorizationSpecInitProviderVpcIdSelector
 {
@@ -540,7 +540,7 @@ public partial class V1beta1VPCAssociationAuthorizationSpecInitProviderVpcIdSele
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCAssociationAuthorizationSpecInitProviderZoneIdRefPolicyResolutionEnum>))]
 public enum V1beta1VPCAssociationAuthorizationSpecInitProviderZoneIdRefPolicyResolutionEnum
 {
@@ -556,7 +556,7 @@ public enum V1beta1VPCAssociationAuthorizationSpecInitProviderZoneIdRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCAssociationAuthorizationSpecInitProviderZoneIdRefPolicyResolveEnum>))]
 public enum V1beta1VPCAssociationAuthorizationSpecInitProviderZoneIdRefPolicyResolveEnum
 {
@@ -567,7 +567,7 @@ public enum V1beta1VPCAssociationAuthorizationSpecInitProviderZoneIdRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCAssociationAuthorizationSpecInitProviderZoneIdRefPolicy
 {
@@ -591,7 +591,7 @@ public partial class V1beta1VPCAssociationAuthorizationSpecInitProviderZoneIdRef
 }
 
 /// <summary>Reference to a Zone in route53 to populate zoneId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCAssociationAuthorizationSpecInitProviderZoneIdRef
 {
@@ -614,7 +614,7 @@ public partial class V1beta1VPCAssociationAuthorizationSpecInitProviderZoneIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCAssociationAuthorizationSpecInitProviderZoneIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPCAssociationAuthorizationSpecInitProviderZoneIdSelectorPolicyResolutionEnum
 {
@@ -630,7 +630,7 @@ public enum V1beta1VPCAssociationAuthorizationSpecInitProviderZoneIdSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCAssociationAuthorizationSpecInitProviderZoneIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VPCAssociationAuthorizationSpecInitProviderZoneIdSelectorPolicyResolveEnum
 {
@@ -641,7 +641,7 @@ public enum V1beta1VPCAssociationAuthorizationSpecInitProviderZoneIdSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCAssociationAuthorizationSpecInitProviderZoneIdSelectorPolicy
 {
@@ -665,7 +665,7 @@ public partial class V1beta1VPCAssociationAuthorizationSpecInitProviderZoneIdSel
 }
 
 /// <summary>Selector for a Zone in route53 to populate zoneId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCAssociationAuthorizationSpecInitProviderZoneIdSelector
 {
@@ -701,7 +701,7 @@ public partial class V1beta1VPCAssociationAuthorizationSpecInitProviderZoneIdSel
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCAssociationAuthorizationSpecInitProvider
 {
@@ -738,7 +738,7 @@ public partial class V1beta1VPCAssociationAuthorizationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCAssociationAuthorizationSpecManagementPoliciesEnum>))]
 public enum V1beta1VPCAssociationAuthorizationSpecManagementPoliciesEnum
 {
@@ -761,7 +761,7 @@ public enum V1beta1VPCAssociationAuthorizationSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCAssociationAuthorizationSpecProviderConfigRef
 {
@@ -780,7 +780,7 @@ public partial class V1beta1VPCAssociationAuthorizationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCAssociationAuthorizationSpecWriteConnectionSecretToRef
 {
@@ -790,7 +790,7 @@ public partial class V1beta1VPCAssociationAuthorizationSpecWriteConnectionSecret
 }
 
 /// <summary>VPCAssociationAuthorizationSpec defines the desired state of VPCAssociationAuthorization</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCAssociationAuthorizationSpec
 {
@@ -841,7 +841,7 @@ public partial class V1beta1VPCAssociationAuthorizationSpec
     public V1beta1VPCAssociationAuthorizationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCAssociationAuthorizationStatusAtProvider
 {
@@ -863,7 +863,7 @@ public partial class V1beta1VPCAssociationAuthorizationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCAssociationAuthorizationStatusConditions
 {
@@ -906,7 +906,7 @@ public partial class V1beta1VPCAssociationAuthorizationStatusConditions
 }
 
 /// <summary>VPCAssociationAuthorizationStatus defines the observed state of VPCAssociationAuthorization.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCAssociationAuthorizationStatus
 {
@@ -927,7 +927,7 @@ public partial class V1beta1VPCAssociationAuthorizationStatus
 }
 
 /// <summary>VPCAssociationAuthorization is the Schema for the VPCAssociationAuthorizations API. Authorizes a VPC in a different account to be associated with a local Route53 Hosted Zone</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VPCAssociationAuthorization : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VPCAssociationAuthorizationSpec>, IStatus<V1beta1VPCAssociationAuthorizationStatus?>

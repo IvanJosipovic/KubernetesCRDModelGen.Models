@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.route53resolver.services.k8s.aws;
 /// <summary>ResolverQueryLogConfigAssociation is the Schema for the ResolverQueryLogConfigAssociations API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ResolverQueryLogConfigAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ResolverQueryLogConfigAssociation>
@@ -40,7 +40,7 @@ public partial class V1alpha1ResolverQueryLogConfigAssociationList : IKubernetes
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResolverQueryLogConfigAssociationSpecResolverQueryLogConfigRefFrom
 {
@@ -60,7 +60,7 @@ public partial class V1alpha1ResolverQueryLogConfigAssociationSpecResolverQueryL
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResolverQueryLogConfigAssociationSpecResolverQueryLogConfigRef
 {
@@ -76,7 +76,7 @@ public partial class V1alpha1ResolverQueryLogConfigAssociationSpecResolverQueryL
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResolverQueryLogConfigAssociationSpecResourceRefFrom
 {
@@ -96,7 +96,7 @@ public partial class V1alpha1ResolverQueryLogConfigAssociationSpecResourceRefFro
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResolverQueryLogConfigAssociationSpecResourceRef
 {
@@ -118,7 +118,7 @@ public partial class V1alpha1ResolverQueryLogConfigAssociationSpecResourceRef
 /// request, a complex type that contains settings for a specified association
 /// between an Amazon VPC and a query logging configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResolverQueryLogConfigAssociationSpec
 {
@@ -168,7 +168,7 @@ public partial class V1alpha1ResolverQueryLogConfigAssociationSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResolverQueryLogConfigAssociationStatusAckResourceMetadata
 {
@@ -205,7 +205,7 @@ public partial class V1alpha1ResolverQueryLogConfigAssociationStatusAckResourceM
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResolverQueryLogConfigAssociationStatusConditions
 {
@@ -231,7 +231,7 @@ public partial class V1alpha1ResolverQueryLogConfigAssociationStatusConditions
 }
 
 /// <summary>ResolverQueryLogConfigAssociationStatus defines the observed state of ResolverQueryLogConfigAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ResolverQueryLogConfigAssociationStatus
 {
@@ -304,7 +304,7 @@ public partial class V1alpha1ResolverQueryLogConfigAssociationStatus
 }
 
 /// <summary>ResolverQueryLogConfigAssociation is the Schema for the ResolverQueryLogConfigAssociations API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ResolverQueryLogConfigAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ResolverQueryLogConfigAssociationSpec?>, IStatus<V1alpha1ResolverQueryLogConfigAssociationStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.networkmanager.aws.m.upbound.io;
 /// <summary>AttachmentAccepter is the Schema for the AttachmentAccepters API. Manages an AWS Network Manager Attachment Accepter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AttachmentAccepterList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AttachmentAccepter>
@@ -42,7 +42,7 @@ public partial class V1beta1AttachmentAccepterList : IKubernetesObject<V1ListMet
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttachmentAccepterSpecForProviderAttachmentIdRefPolicyResolutionEnum>))]
 public enum V1beta1AttachmentAccepterSpecForProviderAttachmentIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1AttachmentAccepterSpecForProviderAttachmentIdRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttachmentAccepterSpecForProviderAttachmentIdRefPolicyResolveEnum>))]
 public enum V1beta1AttachmentAccepterSpecForProviderAttachmentIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1AttachmentAccepterSpecForProviderAttachmentIdRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttachmentAccepterSpecForProviderAttachmentIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1AttachmentAccepterSpecForProviderAttachmentIdRefPoli
 }
 
 /// <summary>Reference to a VPCAttachment in networkmanager to populate attachmentId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttachmentAccepterSpecForProviderAttachmentIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1AttachmentAccepterSpecForProviderAttachmentIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttachmentAccepterSpecForProviderAttachmentIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AttachmentAccepterSpecForProviderAttachmentIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1AttachmentAccepterSpecForProviderAttachmentIdSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttachmentAccepterSpecForProviderAttachmentIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AttachmentAccepterSpecForProviderAttachmentIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1AttachmentAccepterSpecForProviderAttachmentIdSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttachmentAccepterSpecForProviderAttachmentIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1AttachmentAccepterSpecForProviderAttachmentIdSelecto
 }
 
 /// <summary>Selector for a VPCAttachment in networkmanager to populate attachmentId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttachmentAccepterSpecForProviderAttachmentIdSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1AttachmentAccepterSpecForProviderAttachmentIdSelecto
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttachmentAccepterSpecForProviderAttachmentTypeRefPolicyResolutionEnum>))]
 public enum V1beta1AttachmentAccepterSpecForProviderAttachmentTypeRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1AttachmentAccepterSpecForProviderAttachmentTypeRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttachmentAccepterSpecForProviderAttachmentTypeRefPolicyResolveEnum>))]
 public enum V1beta1AttachmentAccepterSpecForProviderAttachmentTypeRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1AttachmentAccepterSpecForProviderAttachmentTypeRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttachmentAccepterSpecForProviderAttachmentTypeRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1AttachmentAccepterSpecForProviderAttachmentTypeRefPo
 }
 
 /// <summary>Reference to a VPCAttachment in networkmanager to populate attachmentType.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttachmentAccepterSpecForProviderAttachmentTypeRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1AttachmentAccepterSpecForProviderAttachmentTypeRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttachmentAccepterSpecForProviderAttachmentTypeSelectorPolicyResolutionEnum>))]
 public enum V1beta1AttachmentAccepterSpecForProviderAttachmentTypeSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1AttachmentAccepterSpecForProviderAttachmentTypeSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttachmentAccepterSpecForProviderAttachmentTypeSelectorPolicyResolveEnum>))]
 public enum V1beta1AttachmentAccepterSpecForProviderAttachmentTypeSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1AttachmentAccepterSpecForProviderAttachmentTypeSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttachmentAccepterSpecForProviderAttachmentTypeSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1AttachmentAccepterSpecForProviderAttachmentTypeSelec
 }
 
 /// <summary>Selector for a VPCAttachment in networkmanager to populate attachmentType.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttachmentAccepterSpecForProviderAttachmentTypeSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1AttachmentAccepterSpecForProviderAttachmentTypeSelec
     public V1beta1AttachmentAccepterSpecForProviderAttachmentTypeSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttachmentAccepterSpecForProvider
 {
@@ -381,7 +381,7 @@ public partial class V1beta1AttachmentAccepterSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttachmentAccepterSpecInitProviderAttachmentIdRefPolicyResolutionEnum>))]
 public enum V1beta1AttachmentAccepterSpecInitProviderAttachmentIdRefPolicyResolutionEnum
 {
@@ -397,7 +397,7 @@ public enum V1beta1AttachmentAccepterSpecInitProviderAttachmentIdRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttachmentAccepterSpecInitProviderAttachmentIdRefPolicyResolveEnum>))]
 public enum V1beta1AttachmentAccepterSpecInitProviderAttachmentIdRefPolicyResolveEnum
 {
@@ -408,7 +408,7 @@ public enum V1beta1AttachmentAccepterSpecInitProviderAttachmentIdRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttachmentAccepterSpecInitProviderAttachmentIdRefPolicy
 {
@@ -432,7 +432,7 @@ public partial class V1beta1AttachmentAccepterSpecInitProviderAttachmentIdRefPol
 }
 
 /// <summary>Reference to a VPCAttachment in networkmanager to populate attachmentId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttachmentAccepterSpecInitProviderAttachmentIdRef
 {
@@ -455,7 +455,7 @@ public partial class V1beta1AttachmentAccepterSpecInitProviderAttachmentIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttachmentAccepterSpecInitProviderAttachmentIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AttachmentAccepterSpecInitProviderAttachmentIdSelectorPolicyResolutionEnum
 {
@@ -471,7 +471,7 @@ public enum V1beta1AttachmentAccepterSpecInitProviderAttachmentIdSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttachmentAccepterSpecInitProviderAttachmentIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AttachmentAccepterSpecInitProviderAttachmentIdSelectorPolicyResolveEnum
 {
@@ -482,7 +482,7 @@ public enum V1beta1AttachmentAccepterSpecInitProviderAttachmentIdSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttachmentAccepterSpecInitProviderAttachmentIdSelectorPolicy
 {
@@ -506,7 +506,7 @@ public partial class V1beta1AttachmentAccepterSpecInitProviderAttachmentIdSelect
 }
 
 /// <summary>Selector for a VPCAttachment in networkmanager to populate attachmentId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttachmentAccepterSpecInitProviderAttachmentIdSelector
 {
@@ -536,7 +536,7 @@ public partial class V1beta1AttachmentAccepterSpecInitProviderAttachmentIdSelect
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttachmentAccepterSpecInitProviderAttachmentTypeRefPolicyResolutionEnum>))]
 public enum V1beta1AttachmentAccepterSpecInitProviderAttachmentTypeRefPolicyResolutionEnum
 {
@@ -552,7 +552,7 @@ public enum V1beta1AttachmentAccepterSpecInitProviderAttachmentTypeRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttachmentAccepterSpecInitProviderAttachmentTypeRefPolicyResolveEnum>))]
 public enum V1beta1AttachmentAccepterSpecInitProviderAttachmentTypeRefPolicyResolveEnum
 {
@@ -563,7 +563,7 @@ public enum V1beta1AttachmentAccepterSpecInitProviderAttachmentTypeRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttachmentAccepterSpecInitProviderAttachmentTypeRefPolicy
 {
@@ -587,7 +587,7 @@ public partial class V1beta1AttachmentAccepterSpecInitProviderAttachmentTypeRefP
 }
 
 /// <summary>Reference to a VPCAttachment in networkmanager to populate attachmentType.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttachmentAccepterSpecInitProviderAttachmentTypeRef
 {
@@ -610,7 +610,7 @@ public partial class V1beta1AttachmentAccepterSpecInitProviderAttachmentTypeRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttachmentAccepterSpecInitProviderAttachmentTypeSelectorPolicyResolutionEnum>))]
 public enum V1beta1AttachmentAccepterSpecInitProviderAttachmentTypeSelectorPolicyResolutionEnum
 {
@@ -626,7 +626,7 @@ public enum V1beta1AttachmentAccepterSpecInitProviderAttachmentTypeSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttachmentAccepterSpecInitProviderAttachmentTypeSelectorPolicyResolveEnum>))]
 public enum V1beta1AttachmentAccepterSpecInitProviderAttachmentTypeSelectorPolicyResolveEnum
 {
@@ -637,7 +637,7 @@ public enum V1beta1AttachmentAccepterSpecInitProviderAttachmentTypeSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttachmentAccepterSpecInitProviderAttachmentTypeSelectorPolicy
 {
@@ -661,7 +661,7 @@ public partial class V1beta1AttachmentAccepterSpecInitProviderAttachmentTypeSele
 }
 
 /// <summary>Selector for a VPCAttachment in networkmanager to populate attachmentType.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttachmentAccepterSpecInitProviderAttachmentTypeSelector
 {
@@ -697,7 +697,7 @@ public partial class V1beta1AttachmentAccepterSpecInitProviderAttachmentTypeSele
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttachmentAccepterSpecInitProvider
 {
@@ -730,7 +730,7 @@ public partial class V1beta1AttachmentAccepterSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttachmentAccepterSpecManagementPoliciesEnum>))]
 public enum V1beta1AttachmentAccepterSpecManagementPoliciesEnum
 {
@@ -753,7 +753,7 @@ public enum V1beta1AttachmentAccepterSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttachmentAccepterSpecProviderConfigRef
 {
@@ -772,7 +772,7 @@ public partial class V1beta1AttachmentAccepterSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttachmentAccepterSpecWriteConnectionSecretToRef
 {
@@ -782,7 +782,7 @@ public partial class V1beta1AttachmentAccepterSpecWriteConnectionSecretToRef
 }
 
 /// <summary>AttachmentAccepterSpec defines the desired state of AttachmentAccepter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttachmentAccepterSpec
 {
@@ -833,7 +833,7 @@ public partial class V1beta1AttachmentAccepterSpec
     public V1beta1AttachmentAccepterSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttachmentAccepterStatusAtProvider
 {
@@ -886,7 +886,7 @@ public partial class V1beta1AttachmentAccepterStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttachmentAccepterStatusConditions
 {
@@ -929,7 +929,7 @@ public partial class V1beta1AttachmentAccepterStatusConditions
 }
 
 /// <summary>AttachmentAccepterStatus defines the observed state of AttachmentAccepter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttachmentAccepterStatus
 {
@@ -950,7 +950,7 @@ public partial class V1beta1AttachmentAccepterStatus
 }
 
 /// <summary>AttachmentAccepter is the Schema for the AttachmentAccepters API. Manages an AWS Network Manager Attachment Accepter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AttachmentAccepter : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AttachmentAccepterSpec>, IStatus<V1beta1AttachmentAccepterStatus?>

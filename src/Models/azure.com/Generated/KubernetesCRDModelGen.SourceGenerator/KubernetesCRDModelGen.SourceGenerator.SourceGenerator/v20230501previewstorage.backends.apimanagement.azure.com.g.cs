@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.apimanagement.azure.com;
 /// - Generated from: /apimanagement/resource-manager/Microsoft.ApiManagement/ApiManagement/preview/2023-05-01-preview/apimbackends.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ApiManagement/service/{serviceName}/backends/{backendId}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20230501previewstorageBackendList : IKubernetesObject<V1ListMeta>, IItems<V20230501previewstorageBackend>
@@ -45,7 +45,7 @@ public partial class V20230501previewstorageBackendList : IKubernetesObject<V1Li
 /// Storage version of v20230501preview.FailureStatusCodeRange
 /// The failure http status code range
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendSpecCircuitBreakerRulesFailureConditionStatusCodeRanges
 {
@@ -67,7 +67,7 @@ public partial class V20230501previewstorageBackendSpecCircuitBreakerRulesFailur
 /// Storage version of v20230501preview.CircuitBreakerFailureCondition
 /// The trip conditions of the circuit breaker
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendSpecCircuitBreakerRulesFailureCondition
 {
@@ -98,7 +98,7 @@ public partial class V20230501previewstorageBackendSpecCircuitBreakerRulesFailur
 /// Storage version of v20230501preview.CircuitBreakerRule
 /// Rule configuration to trip the backend.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendSpecCircuitBreakerRules
 {
@@ -127,7 +127,7 @@ public partial class V20230501previewstorageBackendSpecCircuitBreakerRules
 /// Storage version of v20230501preview.BackendCircuitBreaker
 /// The configuration of the backend circuit breaker
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendSpecCircuitBreaker
 {
@@ -146,7 +146,7 @@ public partial class V20230501previewstorageBackendSpecCircuitBreaker
 /// Storage version of v20230501preview.BackendAuthorizationHeaderCredentials
 /// Authorization header information.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendSpecCredentialsAuthorization
 {
@@ -168,7 +168,7 @@ public partial class V20230501previewstorageBackendSpecCredentialsAuthorization
 /// Storage version of v20230501preview.BackendCredentialsContract
 /// Details of the Credentials used to connect to Backend.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendSpecCredentials
 {
@@ -204,7 +204,7 @@ public partial class V20230501previewstorageBackendSpecCredentials
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendSpecOperatorSpecConfigMapExpressions
 {
@@ -245,7 +245,7 @@ public partial class V20230501previewstorageBackendSpecOperatorSpecConfigMapExpr
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendSpecOperatorSpecSecretExpressions
 {
@@ -285,7 +285,7 @@ public partial class V20230501previewstorageBackendSpecOperatorSpecSecretExpress
 /// Storage version of v20230501preview.BackendOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendSpecOperatorSpec
 {
@@ -308,7 +308,7 @@ public partial class V20230501previewstorageBackendSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a apimanagement.azure.com/Service resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendSpecOwner
 {
@@ -321,7 +321,7 @@ public partial class V20230501previewstorageBackendSpecOwner
 }
 
 /// <summary>Reference: The unique ARM id of the backend entity. The ARM id should refer to an already existing backend entity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendSpecPoolServicesReference
 {
@@ -350,7 +350,7 @@ public partial class V20230501previewstorageBackendSpecPoolServicesReference
 /// Storage version of v20230501preview.BackendPoolItem
 /// Backend pool service information
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendSpecPoolServices
 {
@@ -370,7 +370,7 @@ public partial class V20230501previewstorageBackendSpecPoolServices
 /// Storage version of v20230501preview.BackendPool
 /// Backend pool information
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendSpecPool
 {
@@ -389,7 +389,7 @@ public partial class V20230501previewstorageBackendSpecPool
 /// Storage version of v20230501preview.X509CertificateName
 /// Properties of server X509Names.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendSpecPropertiesServiceFabricClusterServerX509Names
 {
@@ -411,7 +411,7 @@ public partial class V20230501previewstorageBackendSpecPropertiesServiceFabricCl
 /// Storage version of v20230501preview.BackendServiceFabricClusterProperties
 /// Properties of the Service Fabric Type Backend.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendSpecPropertiesServiceFabricCluster
 {
@@ -445,7 +445,7 @@ public partial class V20230501previewstorageBackendSpecPropertiesServiceFabricCl
 /// Storage version of v20230501preview.BackendProperties
 /// Properties specific to the Backend Type.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendSpecProperties
 {
@@ -468,7 +468,7 @@ public partial class V20230501previewstorageBackendSpecProperties
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendSpecProxyPassword
 {
@@ -488,7 +488,7 @@ public partial class V20230501previewstorageBackendSpecProxyPassword
 /// Storage version of v20230501preview.BackendProxyContract
 /// Details of the Backend WebProxy Server to use in the Request to Backend.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendSpecProxy
 {
@@ -517,7 +517,7 @@ public partial class V20230501previewstorageBackendSpecProxy
 /// ResourceReference: Management Uri of the Resource in External System. This URL can be the Arm Resource Id of Logic Apps,
 /// Function Apps or API Apps.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendSpecResourceReference
 {
@@ -546,7 +546,7 @@ public partial class V20230501previewstorageBackendSpecResourceReference
 /// Storage version of v20230501preview.BackendTlsProperties
 /// Properties controlling TLS Certificate Validation.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendSpecTls
 {
@@ -565,7 +565,7 @@ public partial class V20230501previewstorageBackendSpecTls
 }
 
 /// <summary>Storage version of v20230501preview.Backend_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendSpec
 {
@@ -670,7 +670,7 @@ public partial class V20230501previewstorageBackendSpec
 /// Storage version of v20230501preview.FailureStatusCodeRange_STATUS
 /// The failure http status code range
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendStatusCircuitBreakerRulesFailureConditionStatusCodeRanges
 {
@@ -692,7 +692,7 @@ public partial class V20230501previewstorageBackendStatusCircuitBreakerRulesFail
 /// Storage version of v20230501preview.CircuitBreakerFailureCondition_STATUS
 /// The trip conditions of the circuit breaker
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendStatusCircuitBreakerRulesFailureCondition
 {
@@ -723,7 +723,7 @@ public partial class V20230501previewstorageBackendStatusCircuitBreakerRulesFail
 /// Storage version of v20230501preview.CircuitBreakerRule_STATUS
 /// Rule configuration to trip the backend.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendStatusCircuitBreakerRules
 {
@@ -752,7 +752,7 @@ public partial class V20230501previewstorageBackendStatusCircuitBreakerRules
 /// Storage version of v20230501preview.BackendCircuitBreaker_STATUS
 /// The configuration of the backend circuit breaker
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendStatusCircuitBreaker
 {
@@ -768,7 +768,7 @@ public partial class V20230501previewstorageBackendStatusCircuitBreaker
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendStatusConditions
 {
@@ -817,7 +817,7 @@ public partial class V20230501previewstorageBackendStatusConditions
 /// Storage version of v20230501preview.BackendAuthorizationHeaderCredentials_STATUS
 /// Authorization header information.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendStatusCredentialsAuthorization
 {
@@ -839,7 +839,7 @@ public partial class V20230501previewstorageBackendStatusCredentialsAuthorizatio
 /// Storage version of v20230501preview.BackendCredentialsContract_STATUS
 /// Details of the Credentials used to connect to Backend.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendStatusCredentials
 {
@@ -874,7 +874,7 @@ public partial class V20230501previewstorageBackendStatusCredentials
 /// Storage version of v20230501preview.BackendPoolItem_STATUS
 /// Backend pool service information
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendStatusPoolServices
 {
@@ -893,7 +893,7 @@ public partial class V20230501previewstorageBackendStatusPoolServices
 /// Storage version of v20230501preview.BackendPool_STATUS
 /// Backend pool information
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendStatusPool
 {
@@ -912,7 +912,7 @@ public partial class V20230501previewstorageBackendStatusPool
 /// Storage version of v20230501preview.X509CertificateName_STATUS
 /// Properties of server X509Names.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendStatusPropertiesServiceFabricClusterServerX509Names
 {
@@ -934,7 +934,7 @@ public partial class V20230501previewstorageBackendStatusPropertiesServiceFabric
 /// Storage version of v20230501preview.BackendServiceFabricClusterProperties_STATUS
 /// Properties of the Service Fabric Type Backend.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendStatusPropertiesServiceFabricCluster
 {
@@ -968,7 +968,7 @@ public partial class V20230501previewstorageBackendStatusPropertiesServiceFabric
 /// Storage version of v20230501preview.BackendProperties_STATUS
 /// Properties specific to the Backend Type.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendStatusProperties
 {
@@ -991,7 +991,7 @@ public partial class V20230501previewstorageBackendStatusProperties
 /// Storage version of v20230501preview.BackendProxyContract_STATUS
 /// Details of the Backend WebProxy Server to use in the Request to Backend.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendStatusProxy
 {
@@ -1013,7 +1013,7 @@ public partial class V20230501previewstorageBackendStatusProxy
 /// Storage version of v20230501preview.BackendTlsProperties_STATUS
 /// Properties controlling TLS Certificate Validation.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendStatusTls
 {
@@ -1032,7 +1032,7 @@ public partial class V20230501previewstorageBackendStatusTls
 }
 
 /// <summary>Storage version of v20230501preview.Backend_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230501previewstorageBackendStatus
 {
@@ -1122,7 +1122,7 @@ public partial class V20230501previewstorageBackendStatus
 /// - Generated from: /apimanagement/resource-manager/Microsoft.ApiManagement/ApiManagement/preview/2023-05-01-preview/apimbackends.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ApiManagement/service/{serviceName}/backends/{backendId}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20230501previewstorageBackend : IKubernetesObject<V1ObjectMeta>, ISpec<V20230501previewstorageBackendSpec?>, IStatus<V20230501previewstorageBackendStatus?>

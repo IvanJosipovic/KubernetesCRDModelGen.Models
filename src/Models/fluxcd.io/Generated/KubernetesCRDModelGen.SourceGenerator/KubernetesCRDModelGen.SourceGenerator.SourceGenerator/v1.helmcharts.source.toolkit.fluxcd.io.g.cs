@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.source.toolkit.fluxcd.io;
 /// <summary>HelmChart is the Schema for the helmcharts API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1HelmChartList : IKubernetesObject<V1ListMeta>, IItems<V1HelmChart>
@@ -42,7 +42,7 @@ public partial class V1HelmChartList : IKubernetesObject<V1ListMeta>, IItems<V1H
 /// See the documentation of the values for an explanation on their behavior.
 /// Defaults to ChartVersion when omitted.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1HelmChartSpecReconcileStrategyEnum>))]
 public enum V1HelmChartSpecReconcileStrategyEnum
 {
@@ -56,7 +56,7 @@ public enum V1HelmChartSpecReconcileStrategyEnum
 /// Kind of the referent, valid values are (&apos;HelmRepository&apos;, &apos;GitRepository&apos;,
 /// &apos;Bucket&apos;).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1HelmChartSpecSourceRefKindEnum>))]
 public enum V1HelmChartSpecSourceRefKindEnum
 {
@@ -69,7 +69,7 @@ public enum V1HelmChartSpecSourceRefKindEnum
 }
 
 /// <summary>SourceRef is the reference to the Source the chart is available at.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1HelmChartSpecSourceRef
 {
@@ -93,7 +93,7 @@ public partial class V1HelmChartSpecSourceRef
 /// OIDCIdentityMatch specifies options for verifying the certificate identity,
 /// i.e. the issuer and the subject of the certificate.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1HelmChartSpecVerifyMatchOIDCIdentity
 {
@@ -115,7 +115,7 @@ public partial class V1HelmChartSpecVerifyMatchOIDCIdentity
 }
 
 /// <summary>Provider specifies the technology used to sign the OCI Artifact.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1HelmChartSpecVerifyProviderEnum>))]
 public enum V1HelmChartSpecVerifyProviderEnum
 {
@@ -129,7 +129,7 @@ public enum V1HelmChartSpecVerifyProviderEnum
 /// SecretRef specifies the Kubernetes Secret containing the
 /// trusted public keys.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1HelmChartSpecVerifySecretRef
 {
@@ -145,7 +145,7 @@ public partial class V1HelmChartSpecVerifySecretRef
 /// This field is only supported when using HelmRepository source with spec.type &apos;oci&apos;.
 /// Chart dependencies, which are not bundled in the umbrella chart artifact, are not verified.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1HelmChartSpecVerify
 {
@@ -171,7 +171,7 @@ public partial class V1HelmChartSpecVerify
 }
 
 /// <summary>HelmChartSpec specifies the desired state of a Helm chart.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1HelmChartSpec
 {
@@ -246,7 +246,7 @@ public partial class V1HelmChartSpec
 }
 
 /// <summary>Artifact represents the output of the last successful reconciliation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1HelmChartStatusArtifact
 {
@@ -294,7 +294,7 @@ public partial class V1HelmChartStatusArtifact
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1HelmChartStatusConditionsStatusEnum>))]
 public enum V1HelmChartStatusConditionsStatusEnum
 {
@@ -307,7 +307,7 @@ public enum V1HelmChartStatusConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1HelmChartStatusConditions
 {
@@ -353,7 +353,7 @@ public partial class V1HelmChartStatusConditions
 }
 
 /// <summary>HelmChartStatus records the observed state of the HelmChart.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1HelmChartStatus
 {
@@ -412,7 +412,7 @@ public partial class V1HelmChartStatus
 }
 
 /// <summary>HelmChart is the Schema for the helmcharts API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1HelmChart : IKubernetesObject<V1ObjectMeta>, ISpec<V1HelmChartSpec?>, IStatus<V1HelmChartStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ec2.aws.m.upbound.io;
 /// <summary>EgressOnlyInternetGateway is the Schema for the EgressOnlyInternetGateways API. Provides a resource to create an egress-only Internet gateway.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EgressOnlyInternetGatewayList : IKubernetesObject<V1ListMeta>, IItems<V1beta1EgressOnlyInternetGateway>
@@ -42,7 +42,7 @@ public partial class V1beta1EgressOnlyInternetGatewayList : IKubernetesObject<V1
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EgressOnlyInternetGatewaySpecForProviderVpcIdRefPolicyResolutionEnum>))]
 public enum V1beta1EgressOnlyInternetGatewaySpecForProviderVpcIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1EgressOnlyInternetGatewaySpecForProviderVpcIdRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EgressOnlyInternetGatewaySpecForProviderVpcIdRefPolicyResolveEnum>))]
 public enum V1beta1EgressOnlyInternetGatewaySpecForProviderVpcIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1EgressOnlyInternetGatewaySpecForProviderVpcIdRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EgressOnlyInternetGatewaySpecForProviderVpcIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1EgressOnlyInternetGatewaySpecForProviderVpcIdRefPoli
 }
 
 /// <summary>Reference to a VPC in ec2 to populate vpcId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EgressOnlyInternetGatewaySpecForProviderVpcIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1EgressOnlyInternetGatewaySpecForProviderVpcIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EgressOnlyInternetGatewaySpecForProviderVpcIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1EgressOnlyInternetGatewaySpecForProviderVpcIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1EgressOnlyInternetGatewaySpecForProviderVpcIdSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EgressOnlyInternetGatewaySpecForProviderVpcIdSelectorPolicyResolveEnum>))]
 public enum V1beta1EgressOnlyInternetGatewaySpecForProviderVpcIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1EgressOnlyInternetGatewaySpecForProviderVpcIdSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EgressOnlyInternetGatewaySpecForProviderVpcIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1EgressOnlyInternetGatewaySpecForProviderVpcIdSelecto
 }
 
 /// <summary>Selector for a VPC in ec2 to populate vpcId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EgressOnlyInternetGatewaySpecForProviderVpcIdSelector
 {
@@ -191,7 +191,7 @@ public partial class V1beta1EgressOnlyInternetGatewaySpecForProviderVpcIdSelecto
     public V1beta1EgressOnlyInternetGatewaySpecForProviderVpcIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EgressOnlyInternetGatewaySpecForProvider
 {
@@ -225,7 +225,7 @@ public partial class V1beta1EgressOnlyInternetGatewaySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EgressOnlyInternetGatewaySpecInitProviderVpcIdRefPolicyResolutionEnum>))]
 public enum V1beta1EgressOnlyInternetGatewaySpecInitProviderVpcIdRefPolicyResolutionEnum
 {
@@ -241,7 +241,7 @@ public enum V1beta1EgressOnlyInternetGatewaySpecInitProviderVpcIdRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EgressOnlyInternetGatewaySpecInitProviderVpcIdRefPolicyResolveEnum>))]
 public enum V1beta1EgressOnlyInternetGatewaySpecInitProviderVpcIdRefPolicyResolveEnum
 {
@@ -252,7 +252,7 @@ public enum V1beta1EgressOnlyInternetGatewaySpecInitProviderVpcIdRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EgressOnlyInternetGatewaySpecInitProviderVpcIdRefPolicy
 {
@@ -276,7 +276,7 @@ public partial class V1beta1EgressOnlyInternetGatewaySpecInitProviderVpcIdRefPol
 }
 
 /// <summary>Reference to a VPC in ec2 to populate vpcId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EgressOnlyInternetGatewaySpecInitProviderVpcIdRef
 {
@@ -299,7 +299,7 @@ public partial class V1beta1EgressOnlyInternetGatewaySpecInitProviderVpcIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EgressOnlyInternetGatewaySpecInitProviderVpcIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1EgressOnlyInternetGatewaySpecInitProviderVpcIdSelectorPolicyResolutionEnum
 {
@@ -315,7 +315,7 @@ public enum V1beta1EgressOnlyInternetGatewaySpecInitProviderVpcIdSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EgressOnlyInternetGatewaySpecInitProviderVpcIdSelectorPolicyResolveEnum>))]
 public enum V1beta1EgressOnlyInternetGatewaySpecInitProviderVpcIdSelectorPolicyResolveEnum
 {
@@ -326,7 +326,7 @@ public enum V1beta1EgressOnlyInternetGatewaySpecInitProviderVpcIdSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EgressOnlyInternetGatewaySpecInitProviderVpcIdSelectorPolicy
 {
@@ -350,7 +350,7 @@ public partial class V1beta1EgressOnlyInternetGatewaySpecInitProviderVpcIdSelect
 }
 
 /// <summary>Selector for a VPC in ec2 to populate vpcId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EgressOnlyInternetGatewaySpecInitProviderVpcIdSelector
 {
@@ -386,7 +386,7 @@ public partial class V1beta1EgressOnlyInternetGatewaySpecInitProviderVpcIdSelect
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EgressOnlyInternetGatewaySpecInitProvider
 {
@@ -411,7 +411,7 @@ public partial class V1beta1EgressOnlyInternetGatewaySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EgressOnlyInternetGatewaySpecManagementPoliciesEnum>))]
 public enum V1beta1EgressOnlyInternetGatewaySpecManagementPoliciesEnum
 {
@@ -434,7 +434,7 @@ public enum V1beta1EgressOnlyInternetGatewaySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EgressOnlyInternetGatewaySpecProviderConfigRef
 {
@@ -453,7 +453,7 @@ public partial class V1beta1EgressOnlyInternetGatewaySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EgressOnlyInternetGatewaySpecWriteConnectionSecretToRef
 {
@@ -463,7 +463,7 @@ public partial class V1beta1EgressOnlyInternetGatewaySpecWriteConnectionSecretTo
 }
 
 /// <summary>EgressOnlyInternetGatewaySpec defines the desired state of EgressOnlyInternetGateway</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EgressOnlyInternetGatewaySpec
 {
@@ -514,7 +514,7 @@ public partial class V1beta1EgressOnlyInternetGatewaySpec
     public V1beta1EgressOnlyInternetGatewaySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EgressOnlyInternetGatewayStatusAtProvider
 {
@@ -543,7 +543,7 @@ public partial class V1beta1EgressOnlyInternetGatewayStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EgressOnlyInternetGatewayStatusConditions
 {
@@ -586,7 +586,7 @@ public partial class V1beta1EgressOnlyInternetGatewayStatusConditions
 }
 
 /// <summary>EgressOnlyInternetGatewayStatus defines the observed state of EgressOnlyInternetGateway.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EgressOnlyInternetGatewayStatus
 {
@@ -607,7 +607,7 @@ public partial class V1beta1EgressOnlyInternetGatewayStatus
 }
 
 /// <summary>EgressOnlyInternetGateway is the Schema for the EgressOnlyInternetGateways API. Provides a resource to create an egress-only Internet gateway.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EgressOnlyInternetGateway : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1EgressOnlyInternetGatewaySpec>, IStatus<V1beta1EgressOnlyInternetGatewayStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.networkfirewall.aws.upbound.io;
 /// <summary>LoggingConfiguration is the Schema for the LoggingConfigurations API. Provides an AWS Network Firewall Logging Configuration resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2LoggingConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta2LoggingConfiguration>
@@ -45,7 +45,7 @@ public partial class V1beta2LoggingConfigurationList : IKubernetesObject<V1ListM
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LoggingConfigurationSpecDeletionPolicyEnum>))]
 public enum V1beta2LoggingConfigurationSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2LoggingConfigurationSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LoggingConfigurationSpecForProviderFirewallArnRefPolicyResolutionEnum>))]
 public enum V1beta2LoggingConfigurationSpecForProviderFirewallArnRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2LoggingConfigurationSpecForProviderFirewallArnRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LoggingConfigurationSpecForProviderFirewallArnRefPolicyResolveEnum>))]
 public enum V1beta2LoggingConfigurationSpecForProviderFirewallArnRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2LoggingConfigurationSpecForProviderFirewallArnRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LoggingConfigurationSpecForProviderFirewallArnRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2LoggingConfigurationSpecForProviderFirewallArnRefPol
 }
 
 /// <summary>Reference to a Firewall in networkfirewall to populate firewallArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LoggingConfigurationSpecForProviderFirewallArnRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta2LoggingConfigurationSpecForProviderFirewallArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LoggingConfigurationSpecForProviderFirewallArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2LoggingConfigurationSpecForProviderFirewallArnSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2LoggingConfigurationSpecForProviderFirewallArnSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LoggingConfigurationSpecForProviderFirewallArnSelectorPolicyResolveEnum>))]
 public enum V1beta2LoggingConfigurationSpecForProviderFirewallArnSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2LoggingConfigurationSpecForProviderFirewallArnSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LoggingConfigurationSpecForProviderFirewallArnSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2LoggingConfigurationSpecForProviderFirewallArnSelect
 }
 
 /// <summary>Selector for a Firewall in networkfirewall to populate firewallArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LoggingConfigurationSpecForProviderFirewallArnSelector
 {
@@ -202,7 +202,7 @@ public partial class V1beta2LoggingConfigurationSpecForProviderFirewallArnSelect
     public V1beta2LoggingConfigurationSpecForProviderFirewallArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LoggingConfigurationSpecForProviderLoggingConfigurationLogDestinationConfig
 {
@@ -220,7 +220,7 @@ public partial class V1beta2LoggingConfigurationSpecForProviderLoggingConfigurat
 }
 
 /// <summary>A configuration block describing how AWS Network Firewall performs logging for a firewall. See Logging Configuration below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LoggingConfigurationSpecForProviderLoggingConfiguration
 {
@@ -229,7 +229,7 @@ public partial class V1beta2LoggingConfigurationSpecForProviderLoggingConfigurat
     public IList<V1beta2LoggingConfigurationSpecForProviderLoggingConfigurationLogDestinationConfig>? LogDestinationConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LoggingConfigurationSpecForProvider
 {
@@ -267,7 +267,7 @@ public partial class V1beta2LoggingConfigurationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LoggingConfigurationSpecInitProviderFirewallArnRefPolicyResolutionEnum>))]
 public enum V1beta2LoggingConfigurationSpecInitProviderFirewallArnRefPolicyResolutionEnum
 {
@@ -283,7 +283,7 @@ public enum V1beta2LoggingConfigurationSpecInitProviderFirewallArnRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LoggingConfigurationSpecInitProviderFirewallArnRefPolicyResolveEnum>))]
 public enum V1beta2LoggingConfigurationSpecInitProviderFirewallArnRefPolicyResolveEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta2LoggingConfigurationSpecInitProviderFirewallArnRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LoggingConfigurationSpecInitProviderFirewallArnRefPolicy
 {
@@ -318,7 +318,7 @@ public partial class V1beta2LoggingConfigurationSpecInitProviderFirewallArnRefPo
 }
 
 /// <summary>Reference to a Firewall in networkfirewall to populate firewallArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LoggingConfigurationSpecInitProviderFirewallArnRef
 {
@@ -337,7 +337,7 @@ public partial class V1beta2LoggingConfigurationSpecInitProviderFirewallArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LoggingConfigurationSpecInitProviderFirewallArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2LoggingConfigurationSpecInitProviderFirewallArnSelectorPolicyResolutionEnum
 {
@@ -353,7 +353,7 @@ public enum V1beta2LoggingConfigurationSpecInitProviderFirewallArnSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LoggingConfigurationSpecInitProviderFirewallArnSelectorPolicyResolveEnum>))]
 public enum V1beta2LoggingConfigurationSpecInitProviderFirewallArnSelectorPolicyResolveEnum
 {
@@ -364,7 +364,7 @@ public enum V1beta2LoggingConfigurationSpecInitProviderFirewallArnSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LoggingConfigurationSpecInitProviderFirewallArnSelectorPolicy
 {
@@ -388,7 +388,7 @@ public partial class V1beta2LoggingConfigurationSpecInitProviderFirewallArnSelec
 }
 
 /// <summary>Selector for a Firewall in networkfirewall to populate firewallArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LoggingConfigurationSpecInitProviderFirewallArnSelector
 {
@@ -408,7 +408,7 @@ public partial class V1beta2LoggingConfigurationSpecInitProviderFirewallArnSelec
     public V1beta2LoggingConfigurationSpecInitProviderFirewallArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LoggingConfigurationSpecInitProviderLoggingConfigurationLogDestinationConfig
 {
@@ -426,7 +426,7 @@ public partial class V1beta2LoggingConfigurationSpecInitProviderLoggingConfigura
 }
 
 /// <summary>A configuration block describing how AWS Network Firewall performs logging for a firewall. See Logging Configuration below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LoggingConfigurationSpecInitProviderLoggingConfiguration
 {
@@ -447,7 +447,7 @@ public partial class V1beta2LoggingConfigurationSpecInitProviderLoggingConfigura
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LoggingConfigurationSpecInitProvider
 {
@@ -476,7 +476,7 @@ public partial class V1beta2LoggingConfigurationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LoggingConfigurationSpecManagementPoliciesEnum>))]
 public enum V1beta2LoggingConfigurationSpecManagementPoliciesEnum
 {
@@ -500,7 +500,7 @@ public enum V1beta2LoggingConfigurationSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LoggingConfigurationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2LoggingConfigurationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -516,7 +516,7 @@ public enum V1beta2LoggingConfigurationSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LoggingConfigurationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2LoggingConfigurationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -527,7 +527,7 @@ public enum V1beta2LoggingConfigurationSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LoggingConfigurationSpecProviderConfigRefPolicy
 {
@@ -555,7 +555,7 @@ public partial class V1beta2LoggingConfigurationSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LoggingConfigurationSpecProviderConfigRef
 {
@@ -574,7 +574,7 @@ public partial class V1beta2LoggingConfigurationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LoggingConfigurationSpecWriteConnectionSecretToRef
 {
@@ -588,7 +588,7 @@ public partial class V1beta2LoggingConfigurationSpecWriteConnectionSecretToRef
 }
 
 /// <summary>LoggingConfigurationSpec defines the desired state of LoggingConfiguration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LoggingConfigurationSpec
 {
@@ -655,7 +655,7 @@ public partial class V1beta2LoggingConfigurationSpec
     public V1beta2LoggingConfigurationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LoggingConfigurationStatusAtProviderLoggingConfigurationLogDestinationConfig
 {
@@ -673,7 +673,7 @@ public partial class V1beta2LoggingConfigurationStatusAtProviderLoggingConfigura
 }
 
 /// <summary>A configuration block describing how AWS Network Firewall performs logging for a firewall. See Logging Configuration below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LoggingConfigurationStatusAtProviderLoggingConfiguration
 {
@@ -682,7 +682,7 @@ public partial class V1beta2LoggingConfigurationStatusAtProviderLoggingConfigura
     public IList<V1beta2LoggingConfigurationStatusAtProviderLoggingConfigurationLogDestinationConfig>? LogDestinationConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LoggingConfigurationStatusAtProvider
 {
@@ -711,7 +711,7 @@ public partial class V1beta2LoggingConfigurationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LoggingConfigurationStatusConditions
 {
@@ -754,7 +754,7 @@ public partial class V1beta2LoggingConfigurationStatusConditions
 }
 
 /// <summary>LoggingConfigurationStatus defines the observed state of LoggingConfiguration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LoggingConfigurationStatus
 {
@@ -775,7 +775,7 @@ public partial class V1beta2LoggingConfigurationStatus
 }
 
 /// <summary>LoggingConfiguration is the Schema for the LoggingConfigurations API. Provides an AWS Network Firewall Logging Configuration resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2LoggingConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2LoggingConfigurationSpec>, IStatus<V1beta2LoggingConfigurationStatus?>

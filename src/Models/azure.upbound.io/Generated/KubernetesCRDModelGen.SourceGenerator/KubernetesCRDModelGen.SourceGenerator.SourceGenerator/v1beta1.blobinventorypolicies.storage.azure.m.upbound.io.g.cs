@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.storage.azure.m.upbound.io;
 /// <summary>BlobInventoryPolicy is the Schema for the BlobInventoryPolicys API. Manages a Storage Blob Inventory Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BlobInventoryPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1BlobInventoryPolicy>
@@ -37,7 +37,7 @@ public partial class V1beta1BlobInventoryPolicyList : IKubernetesObject<V1ListMe
 }
 
 /// <summary>A filter block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpecForProviderRulesFilter
 {
@@ -72,7 +72,7 @@ public partial class V1beta1BlobInventoryPolicySpecForProviderRulesFilter
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BlobInventoryPolicySpecForProviderRulesStorageContainerNameRefPolicyResolutionEnum>))]
 public enum V1beta1BlobInventoryPolicySpecForProviderRulesStorageContainerNameRefPolicyResolutionEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1BlobInventoryPolicySpecForProviderRulesStorageContainerNameRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BlobInventoryPolicySpecForProviderRulesStorageContainerNameRefPolicyResolveEnum>))]
 public enum V1beta1BlobInventoryPolicySpecForProviderRulesStorageContainerNameRefPolicyResolveEnum
 {
@@ -99,7 +99,7 @@ public enum V1beta1BlobInventoryPolicySpecForProviderRulesStorageContainerNameRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpecForProviderRulesStorageContainerNameRefPolicy
 {
@@ -123,7 +123,7 @@ public partial class V1beta1BlobInventoryPolicySpecForProviderRulesStorageContai
 }
 
 /// <summary>Reference to a Container in storage to populate storageContainerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpecForProviderRulesStorageContainerNameRef
 {
@@ -146,7 +146,7 @@ public partial class V1beta1BlobInventoryPolicySpecForProviderRulesStorageContai
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BlobInventoryPolicySpecForProviderRulesStorageContainerNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1BlobInventoryPolicySpecForProviderRulesStorageContainerNameSelectorPolicyResolutionEnum
 {
@@ -162,7 +162,7 @@ public enum V1beta1BlobInventoryPolicySpecForProviderRulesStorageContainerNameSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BlobInventoryPolicySpecForProviderRulesStorageContainerNameSelectorPolicyResolveEnum>))]
 public enum V1beta1BlobInventoryPolicySpecForProviderRulesStorageContainerNameSelectorPolicyResolveEnum
 {
@@ -173,7 +173,7 @@ public enum V1beta1BlobInventoryPolicySpecForProviderRulesStorageContainerNameSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpecForProviderRulesStorageContainerNameSelectorPolicy
 {
@@ -197,7 +197,7 @@ public partial class V1beta1BlobInventoryPolicySpecForProviderRulesStorageContai
 }
 
 /// <summary>Selector for a Container in storage to populate storageContainerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpecForProviderRulesStorageContainerNameSelector
 {
@@ -221,7 +221,7 @@ public partial class V1beta1BlobInventoryPolicySpecForProviderRulesStorageContai
     public V1beta1BlobInventoryPolicySpecForProviderRulesStorageContainerNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpecForProviderRules
 {
@@ -268,7 +268,7 @@ public partial class V1beta1BlobInventoryPolicySpecForProviderRules
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BlobInventoryPolicySpecForProviderStorageAccountIdRefPolicyResolutionEnum>))]
 public enum V1beta1BlobInventoryPolicySpecForProviderStorageAccountIdRefPolicyResolutionEnum
 {
@@ -284,7 +284,7 @@ public enum V1beta1BlobInventoryPolicySpecForProviderStorageAccountIdRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BlobInventoryPolicySpecForProviderStorageAccountIdRefPolicyResolveEnum>))]
 public enum V1beta1BlobInventoryPolicySpecForProviderStorageAccountIdRefPolicyResolveEnum
 {
@@ -295,7 +295,7 @@ public enum V1beta1BlobInventoryPolicySpecForProviderStorageAccountIdRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpecForProviderStorageAccountIdRefPolicy
 {
@@ -319,7 +319,7 @@ public partial class V1beta1BlobInventoryPolicySpecForProviderStorageAccountIdRe
 }
 
 /// <summary>Reference to a Account in storage to populate storageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpecForProviderStorageAccountIdRef
 {
@@ -342,7 +342,7 @@ public partial class V1beta1BlobInventoryPolicySpecForProviderStorageAccountIdRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BlobInventoryPolicySpecForProviderStorageAccountIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1BlobInventoryPolicySpecForProviderStorageAccountIdSelectorPolicyResolutionEnum
 {
@@ -358,7 +358,7 @@ public enum V1beta1BlobInventoryPolicySpecForProviderStorageAccountIdSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BlobInventoryPolicySpecForProviderStorageAccountIdSelectorPolicyResolveEnum>))]
 public enum V1beta1BlobInventoryPolicySpecForProviderStorageAccountIdSelectorPolicyResolveEnum
 {
@@ -369,7 +369,7 @@ public enum V1beta1BlobInventoryPolicySpecForProviderStorageAccountIdSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpecForProviderStorageAccountIdSelectorPolicy
 {
@@ -393,7 +393,7 @@ public partial class V1beta1BlobInventoryPolicySpecForProviderStorageAccountIdSe
 }
 
 /// <summary>Selector for a Account in storage to populate storageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpecForProviderStorageAccountIdSelector
 {
@@ -417,7 +417,7 @@ public partial class V1beta1BlobInventoryPolicySpecForProviderStorageAccountIdSe
     public V1beta1BlobInventoryPolicySpecForProviderStorageAccountIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpecForProvider
 {
@@ -439,7 +439,7 @@ public partial class V1beta1BlobInventoryPolicySpecForProvider
 }
 
 /// <summary>A filter block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpecInitProviderRulesFilter
 {
@@ -474,7 +474,7 @@ public partial class V1beta1BlobInventoryPolicySpecInitProviderRulesFilter
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BlobInventoryPolicySpecInitProviderRulesStorageContainerNameRefPolicyResolutionEnum>))]
 public enum V1beta1BlobInventoryPolicySpecInitProviderRulesStorageContainerNameRefPolicyResolutionEnum
 {
@@ -490,7 +490,7 @@ public enum V1beta1BlobInventoryPolicySpecInitProviderRulesStorageContainerNameR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BlobInventoryPolicySpecInitProviderRulesStorageContainerNameRefPolicyResolveEnum>))]
 public enum V1beta1BlobInventoryPolicySpecInitProviderRulesStorageContainerNameRefPolicyResolveEnum
 {
@@ -501,7 +501,7 @@ public enum V1beta1BlobInventoryPolicySpecInitProviderRulesStorageContainerNameR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpecInitProviderRulesStorageContainerNameRefPolicy
 {
@@ -525,7 +525,7 @@ public partial class V1beta1BlobInventoryPolicySpecInitProviderRulesStorageConta
 }
 
 /// <summary>Reference to a Container in storage to populate storageContainerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpecInitProviderRulesStorageContainerNameRef
 {
@@ -548,7 +548,7 @@ public partial class V1beta1BlobInventoryPolicySpecInitProviderRulesStorageConta
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BlobInventoryPolicySpecInitProviderRulesStorageContainerNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1BlobInventoryPolicySpecInitProviderRulesStorageContainerNameSelectorPolicyResolutionEnum
 {
@@ -564,7 +564,7 @@ public enum V1beta1BlobInventoryPolicySpecInitProviderRulesStorageContainerNameS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BlobInventoryPolicySpecInitProviderRulesStorageContainerNameSelectorPolicyResolveEnum>))]
 public enum V1beta1BlobInventoryPolicySpecInitProviderRulesStorageContainerNameSelectorPolicyResolveEnum
 {
@@ -575,7 +575,7 @@ public enum V1beta1BlobInventoryPolicySpecInitProviderRulesStorageContainerNameS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpecInitProviderRulesStorageContainerNameSelectorPolicy
 {
@@ -599,7 +599,7 @@ public partial class V1beta1BlobInventoryPolicySpecInitProviderRulesStorageConta
 }
 
 /// <summary>Selector for a Container in storage to populate storageContainerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpecInitProviderRulesStorageContainerNameSelector
 {
@@ -623,7 +623,7 @@ public partial class V1beta1BlobInventoryPolicySpecInitProviderRulesStorageConta
     public V1beta1BlobInventoryPolicySpecInitProviderRulesStorageContainerNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpecInitProviderRules
 {
@@ -670,7 +670,7 @@ public partial class V1beta1BlobInventoryPolicySpecInitProviderRules
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BlobInventoryPolicySpecInitProviderStorageAccountIdRefPolicyResolutionEnum>))]
 public enum V1beta1BlobInventoryPolicySpecInitProviderStorageAccountIdRefPolicyResolutionEnum
 {
@@ -686,7 +686,7 @@ public enum V1beta1BlobInventoryPolicySpecInitProviderStorageAccountIdRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BlobInventoryPolicySpecInitProviderStorageAccountIdRefPolicyResolveEnum>))]
 public enum V1beta1BlobInventoryPolicySpecInitProviderStorageAccountIdRefPolicyResolveEnum
 {
@@ -697,7 +697,7 @@ public enum V1beta1BlobInventoryPolicySpecInitProviderStorageAccountIdRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpecInitProviderStorageAccountIdRefPolicy
 {
@@ -721,7 +721,7 @@ public partial class V1beta1BlobInventoryPolicySpecInitProviderStorageAccountIdR
 }
 
 /// <summary>Reference to a Account in storage to populate storageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpecInitProviderStorageAccountIdRef
 {
@@ -744,7 +744,7 @@ public partial class V1beta1BlobInventoryPolicySpecInitProviderStorageAccountIdR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BlobInventoryPolicySpecInitProviderStorageAccountIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1BlobInventoryPolicySpecInitProviderStorageAccountIdSelectorPolicyResolutionEnum
 {
@@ -760,7 +760,7 @@ public enum V1beta1BlobInventoryPolicySpecInitProviderStorageAccountIdSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BlobInventoryPolicySpecInitProviderStorageAccountIdSelectorPolicyResolveEnum>))]
 public enum V1beta1BlobInventoryPolicySpecInitProviderStorageAccountIdSelectorPolicyResolveEnum
 {
@@ -771,7 +771,7 @@ public enum V1beta1BlobInventoryPolicySpecInitProviderStorageAccountIdSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpecInitProviderStorageAccountIdSelectorPolicy
 {
@@ -795,7 +795,7 @@ public partial class V1beta1BlobInventoryPolicySpecInitProviderStorageAccountIdS
 }
 
 /// <summary>Selector for a Account in storage to populate storageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpecInitProviderStorageAccountIdSelector
 {
@@ -831,7 +831,7 @@ public partial class V1beta1BlobInventoryPolicySpecInitProviderStorageAccountIdS
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpecInitProvider
 {
@@ -856,7 +856,7 @@ public partial class V1beta1BlobInventoryPolicySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BlobInventoryPolicySpecManagementPoliciesEnum>))]
 public enum V1beta1BlobInventoryPolicySpecManagementPoliciesEnum
 {
@@ -879,7 +879,7 @@ public enum V1beta1BlobInventoryPolicySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpecProviderConfigRef
 {
@@ -898,7 +898,7 @@ public partial class V1beta1BlobInventoryPolicySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpecWriteConnectionSecretToRef
 {
@@ -908,7 +908,7 @@ public partial class V1beta1BlobInventoryPolicySpecWriteConnectionSecretToRef
 }
 
 /// <summary>BlobInventoryPolicySpec defines the desired state of BlobInventoryPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicySpec
 {
@@ -960,7 +960,7 @@ public partial class V1beta1BlobInventoryPolicySpec
 }
 
 /// <summary>A filter block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicyStatusAtProviderRulesFilter
 {
@@ -989,7 +989,7 @@ public partial class V1beta1BlobInventoryPolicyStatusAtProviderRulesFilter
     public IList<string>? PrefixMatch { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicyStatusAtProviderRules
 {
@@ -1022,7 +1022,7 @@ public partial class V1beta1BlobInventoryPolicyStatusAtProviderRules
     public string? StorageContainerName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicyStatusAtProvider
 {
@@ -1040,7 +1040,7 @@ public partial class V1beta1BlobInventoryPolicyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicyStatusConditions
 {
@@ -1083,7 +1083,7 @@ public partial class V1beta1BlobInventoryPolicyStatusConditions
 }
 
 /// <summary>BlobInventoryPolicyStatus defines the observed state of BlobInventoryPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BlobInventoryPolicyStatus
 {
@@ -1104,7 +1104,7 @@ public partial class V1beta1BlobInventoryPolicyStatus
 }
 
 /// <summary>BlobInventoryPolicy is the Schema for the BlobInventoryPolicys API. Manages a Storage Blob Inventory Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BlobInventoryPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1BlobInventoryPolicySpec>, IStatus<V1beta1BlobInventoryPolicyStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bigtable.cnrm.cloud.google.com;
 /// <summary>BigtableAppProfile is the Schema for the BigtableAppProfile API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BigtableAppProfileList : IKubernetesObject<V1ListMeta>, IItems<V1beta1BigtableAppProfile>
@@ -37,7 +37,7 @@ public partial class V1beta1BigtableAppProfileList : IKubernetesObject<V1ListMet
 }
 
 /// <summary>Specifies that this app profile is intended for read-only usage via the Data Boost feature. Please opt-in to this feature by setting the `alpha.cnrm.cloud.google.com/reconciler: direct` annotation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigtableAppProfileSpecDataBoostIsolationReadOnly
 {
@@ -47,7 +47,7 @@ public partial class V1beta1BigtableAppProfileSpecDataBoostIsolationReadOnly
 }
 
 /// <summary>InstanceRef defines the resource reference to BigtableInstance, which &quot;External&quot; field holds the GCP identifier for the KRM object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigtableAppProfileSpecInstanceRef
 {
@@ -65,7 +65,7 @@ public partial class V1beta1BigtableAppProfileSpecInstanceRef
 }
 
 /// <summary>Use a single-cluster routing policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigtableAppProfileSpecSingleClusterRouting
 {
@@ -79,7 +79,7 @@ public partial class V1beta1BigtableAppProfileSpecSingleClusterRouting
 }
 
 /// <summary>The standard options used for isolating this app profile&apos;s traffic from other use cases.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigtableAppProfileSpecStandardIsolation
 {
@@ -89,7 +89,7 @@ public partial class V1beta1BigtableAppProfileSpecStandardIsolation
 }
 
 /// <summary>BigtableAppProfileSpec defines the desired state of BigtableAppProfile</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigtableAppProfileSpec
 {
@@ -126,7 +126,7 @@ public partial class V1beta1BigtableAppProfileSpec
     public V1beta1BigtableAppProfileSpecStandardIsolation? StandardIsolation { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigtableAppProfileStatusConditions
 {
@@ -152,7 +152,7 @@ public partial class V1beta1BigtableAppProfileStatusConditions
 }
 
 /// <summary>BigtableAppProfileStatus defines the config connector machine state of BigtableAppProfile</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigtableAppProfileStatus
 {
@@ -174,7 +174,7 @@ public partial class V1beta1BigtableAppProfileStatus
 }
 
 /// <summary>BigtableAppProfile is the Schema for the BigtableAppProfile API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BigtableAppProfile : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1BigtableAppProfileSpec>, IStatus<V1beta1BigtableAppProfileStatus?>

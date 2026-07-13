@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ssm.aws.upbound.io;
 /// <summary>MaintenanceWindowTarget is the Schema for the MaintenanceWindowTargets API. Provides an SSM Maintenance Window Target resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MaintenanceWindowTargetList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MaintenanceWindowTarget>
@@ -45,7 +45,7 @@ public partial class V1beta1MaintenanceWindowTargetList : IKubernetesObject<V1Li
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTargetSpecDeletionPolicyEnum>))]
 public enum V1beta1MaintenanceWindowTargetSpecDeletionPolicyEnum
 {
@@ -55,7 +55,7 @@ public enum V1beta1MaintenanceWindowTargetSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceWindowTargetSpecForProviderTargets
 {
@@ -72,7 +72,7 @@ public partial class V1beta1MaintenanceWindowTargetSpecForProviderTargets
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTargetSpecForProviderWindowIdRefPolicyResolutionEnum>))]
 public enum V1beta1MaintenanceWindowTargetSpecForProviderWindowIdRefPolicyResolutionEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1MaintenanceWindowTargetSpecForProviderWindowIdRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTargetSpecForProviderWindowIdRefPolicyResolveEnum>))]
 public enum V1beta1MaintenanceWindowTargetSpecForProviderWindowIdRefPolicyResolveEnum
 {
@@ -99,7 +99,7 @@ public enum V1beta1MaintenanceWindowTargetSpecForProviderWindowIdRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceWindowTargetSpecForProviderWindowIdRefPolicy
 {
@@ -123,7 +123,7 @@ public partial class V1beta1MaintenanceWindowTargetSpecForProviderWindowIdRefPol
 }
 
 /// <summary>Reference to a MaintenanceWindow in ssm to populate windowId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceWindowTargetSpecForProviderWindowIdRef
 {
@@ -142,7 +142,7 @@ public partial class V1beta1MaintenanceWindowTargetSpecForProviderWindowIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTargetSpecForProviderWindowIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MaintenanceWindowTargetSpecForProviderWindowIdSelectorPolicyResolutionEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1MaintenanceWindowTargetSpecForProviderWindowIdSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTargetSpecForProviderWindowIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MaintenanceWindowTargetSpecForProviderWindowIdSelectorPolicyResolveEnum
 {
@@ -169,7 +169,7 @@ public enum V1beta1MaintenanceWindowTargetSpecForProviderWindowIdSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceWindowTargetSpecForProviderWindowIdSelectorPolicy
 {
@@ -193,7 +193,7 @@ public partial class V1beta1MaintenanceWindowTargetSpecForProviderWindowIdSelect
 }
 
 /// <summary>Selector for a MaintenanceWindow in ssm to populate windowId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceWindowTargetSpecForProviderWindowIdSelector
 {
@@ -213,7 +213,7 @@ public partial class V1beta1MaintenanceWindowTargetSpecForProviderWindowIdSelect
     public V1beta1MaintenanceWindowTargetSpecForProviderWindowIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceWindowTargetSpecForProvider
 {
@@ -260,7 +260,7 @@ public partial class V1beta1MaintenanceWindowTargetSpecForProvider
     public V1beta1MaintenanceWindowTargetSpecForProviderWindowIdSelector? WindowIdSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceWindowTargetSpecInitProviderTargets
 {
@@ -277,7 +277,7 @@ public partial class V1beta1MaintenanceWindowTargetSpecInitProviderTargets
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTargetSpecInitProviderWindowIdRefPolicyResolutionEnum>))]
 public enum V1beta1MaintenanceWindowTargetSpecInitProviderWindowIdRefPolicyResolutionEnum
 {
@@ -293,7 +293,7 @@ public enum V1beta1MaintenanceWindowTargetSpecInitProviderWindowIdRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTargetSpecInitProviderWindowIdRefPolicyResolveEnum>))]
 public enum V1beta1MaintenanceWindowTargetSpecInitProviderWindowIdRefPolicyResolveEnum
 {
@@ -304,7 +304,7 @@ public enum V1beta1MaintenanceWindowTargetSpecInitProviderWindowIdRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceWindowTargetSpecInitProviderWindowIdRefPolicy
 {
@@ -328,7 +328,7 @@ public partial class V1beta1MaintenanceWindowTargetSpecInitProviderWindowIdRefPo
 }
 
 /// <summary>Reference to a MaintenanceWindow in ssm to populate windowId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceWindowTargetSpecInitProviderWindowIdRef
 {
@@ -347,7 +347,7 @@ public partial class V1beta1MaintenanceWindowTargetSpecInitProviderWindowIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTargetSpecInitProviderWindowIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MaintenanceWindowTargetSpecInitProviderWindowIdSelectorPolicyResolutionEnum
 {
@@ -363,7 +363,7 @@ public enum V1beta1MaintenanceWindowTargetSpecInitProviderWindowIdSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTargetSpecInitProviderWindowIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MaintenanceWindowTargetSpecInitProviderWindowIdSelectorPolicyResolveEnum
 {
@@ -374,7 +374,7 @@ public enum V1beta1MaintenanceWindowTargetSpecInitProviderWindowIdSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceWindowTargetSpecInitProviderWindowIdSelectorPolicy
 {
@@ -398,7 +398,7 @@ public partial class V1beta1MaintenanceWindowTargetSpecInitProviderWindowIdSelec
 }
 
 /// <summary>Selector for a MaintenanceWindow in ssm to populate windowId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceWindowTargetSpecInitProviderWindowIdSelector
 {
@@ -430,7 +430,7 @@ public partial class V1beta1MaintenanceWindowTargetSpecInitProviderWindowIdSelec
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceWindowTargetSpecInitProvider
 {
@@ -474,7 +474,7 @@ public partial class V1beta1MaintenanceWindowTargetSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTargetSpecManagementPoliciesEnum>))]
 public enum V1beta1MaintenanceWindowTargetSpecManagementPoliciesEnum
 {
@@ -498,7 +498,7 @@ public enum V1beta1MaintenanceWindowTargetSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTargetSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1MaintenanceWindowTargetSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -514,7 +514,7 @@ public enum V1beta1MaintenanceWindowTargetSpecProviderConfigRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceWindowTargetSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1MaintenanceWindowTargetSpecProviderConfigRefPolicyResolveEnum
 {
@@ -525,7 +525,7 @@ public enum V1beta1MaintenanceWindowTargetSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceWindowTargetSpecProviderConfigRefPolicy
 {
@@ -553,7 +553,7 @@ public partial class V1beta1MaintenanceWindowTargetSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceWindowTargetSpecProviderConfigRef
 {
@@ -572,7 +572,7 @@ public partial class V1beta1MaintenanceWindowTargetSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceWindowTargetSpecWriteConnectionSecretToRef
 {
@@ -586,7 +586,7 @@ public partial class V1beta1MaintenanceWindowTargetSpecWriteConnectionSecretToRe
 }
 
 /// <summary>MaintenanceWindowTargetSpec defines the desired state of MaintenanceWindowTarget</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceWindowTargetSpec
 {
@@ -653,7 +653,7 @@ public partial class V1beta1MaintenanceWindowTargetSpec
     public V1beta1MaintenanceWindowTargetSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceWindowTargetStatusAtProviderTargets
 {
@@ -664,7 +664,7 @@ public partial class V1beta1MaintenanceWindowTargetStatusAtProviderTargets
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceWindowTargetStatusAtProvider
 {
@@ -708,7 +708,7 @@ public partial class V1beta1MaintenanceWindowTargetStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceWindowTargetStatusConditions
 {
@@ -751,7 +751,7 @@ public partial class V1beta1MaintenanceWindowTargetStatusConditions
 }
 
 /// <summary>MaintenanceWindowTargetStatus defines the observed state of MaintenanceWindowTarget.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceWindowTargetStatus
 {
@@ -772,7 +772,7 @@ public partial class V1beta1MaintenanceWindowTargetStatus
 }
 
 /// <summary>MaintenanceWindowTarget is the Schema for the MaintenanceWindowTargets API. Provides an SSM Maintenance Window Target resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MaintenanceWindowTarget : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MaintenanceWindowTargetSpec>, IStatus<V1beta1MaintenanceWindowTargetStatus?>

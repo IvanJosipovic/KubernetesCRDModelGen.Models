@@ -13,7 +13,7 @@ namespace KubernetesCRDModelGen.Models.unity.databricks.m.crossplane.io;
 /// SQLTable is the Schema for the SQLTables API.
 /// Deprecated: This API version (v1alpha1) has been deprecated.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -46,7 +46,7 @@ public partial class V1alpha1SQLTableList : IKubernetesObject<V1ListMeta>, IItem
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecForProviderCatalogNameRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecForProviderCatalogNameRefPolicyResolutionEnum
@@ -63,7 +63,7 @@ public enum V1alpha1SQLTableSpecForProviderCatalogNameRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecForProviderCatalogNameRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecForProviderCatalogNameRefPolicyResolveEnum
@@ -75,7 +75,7 @@ public enum V1alpha1SQLTableSpecForProviderCatalogNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecForProviderCatalogNameRefPolicy
@@ -100,7 +100,7 @@ public partial class V1alpha1SQLTableSpecForProviderCatalogNameRefPolicy
 }
 
 /// <summary>Reference to a Catalog in unity to populate catalogName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecForProviderCatalogNameRef
@@ -124,7 +124,7 @@ public partial class V1alpha1SQLTableSpecForProviderCatalogNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecForProviderCatalogNameSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecForProviderCatalogNameSelectorPolicyResolutionEnum
@@ -141,7 +141,7 @@ public enum V1alpha1SQLTableSpecForProviderCatalogNameSelectorPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecForProviderCatalogNameSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecForProviderCatalogNameSelectorPolicyResolveEnum
@@ -153,7 +153,7 @@ public enum V1alpha1SQLTableSpecForProviderCatalogNameSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecForProviderCatalogNameSelectorPolicy
@@ -178,7 +178,7 @@ public partial class V1alpha1SQLTableSpecForProviderCatalogNameSelectorPolicy
 }
 
 /// <summary>Selector for a Catalog in unity to populate catalogName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecForProviderCatalogNameSelector
@@ -209,7 +209,7 @@ public partial class V1alpha1SQLTableSpecForProviderCatalogNameSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecForProviderClusterIdRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecForProviderClusterIdRefPolicyResolutionEnum
@@ -226,7 +226,7 @@ public enum V1alpha1SQLTableSpecForProviderClusterIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecForProviderClusterIdRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecForProviderClusterIdRefPolicyResolveEnum
@@ -238,7 +238,7 @@ public enum V1alpha1SQLTableSpecForProviderClusterIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecForProviderClusterIdRefPolicy
@@ -263,7 +263,7 @@ public partial class V1alpha1SQLTableSpecForProviderClusterIdRefPolicy
 }
 
 /// <summary>Reference to a Cluster in compute to populate clusterId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecForProviderClusterIdRef
@@ -287,7 +287,7 @@ public partial class V1alpha1SQLTableSpecForProviderClusterIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecForProviderClusterIdSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecForProviderClusterIdSelectorPolicyResolutionEnum
@@ -304,7 +304,7 @@ public enum V1alpha1SQLTableSpecForProviderClusterIdSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecForProviderClusterIdSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecForProviderClusterIdSelectorPolicyResolveEnum
@@ -316,7 +316,7 @@ public enum V1alpha1SQLTableSpecForProviderClusterIdSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecForProviderClusterIdSelectorPolicy
@@ -341,7 +341,7 @@ public partial class V1alpha1SQLTableSpecForProviderClusterIdSelectorPolicy
 }
 
 /// <summary>Selector for a Cluster in compute to populate clusterId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecForProviderClusterIdSelector
@@ -366,7 +366,7 @@ public partial class V1alpha1SQLTableSpecForProviderClusterIdSelector
     public V1alpha1SQLTableSpecForProviderClusterIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecForProviderColumn
@@ -395,7 +395,7 @@ public partial class V1alpha1SQLTableSpecForProviderColumn
     public string? TypeJson { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecForProviderProviderConfig
@@ -411,7 +411,7 @@ public partial class V1alpha1SQLTableSpecForProviderProviderConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecForProviderSchemaNameRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecForProviderSchemaNameRefPolicyResolutionEnum
@@ -428,7 +428,7 @@ public enum V1alpha1SQLTableSpecForProviderSchemaNameRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecForProviderSchemaNameRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecForProviderSchemaNameRefPolicyResolveEnum
@@ -440,7 +440,7 @@ public enum V1alpha1SQLTableSpecForProviderSchemaNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecForProviderSchemaNameRefPolicy
@@ -465,7 +465,7 @@ public partial class V1alpha1SQLTableSpecForProviderSchemaNameRefPolicy
 }
 
 /// <summary>Reference to a Schema in unity to populate schemaName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecForProviderSchemaNameRef
@@ -489,7 +489,7 @@ public partial class V1alpha1SQLTableSpecForProviderSchemaNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecForProviderSchemaNameSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecForProviderSchemaNameSelectorPolicyResolutionEnum
@@ -506,7 +506,7 @@ public enum V1alpha1SQLTableSpecForProviderSchemaNameSelectorPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecForProviderSchemaNameSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecForProviderSchemaNameSelectorPolicyResolveEnum
@@ -518,7 +518,7 @@ public enum V1alpha1SQLTableSpecForProviderSchemaNameSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecForProviderSchemaNameSelectorPolicy
@@ -543,7 +543,7 @@ public partial class V1alpha1SQLTableSpecForProviderSchemaNameSelectorPolicy
 }
 
 /// <summary>Selector for a Schema in unity to populate schemaName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecForProviderSchemaNameSelector
@@ -574,7 +574,7 @@ public partial class V1alpha1SQLTableSpecForProviderSchemaNameSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecForProviderWarehouseIdRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecForProviderWarehouseIdRefPolicyResolutionEnum
@@ -591,7 +591,7 @@ public enum V1alpha1SQLTableSpecForProviderWarehouseIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecForProviderWarehouseIdRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecForProviderWarehouseIdRefPolicyResolveEnum
@@ -603,7 +603,7 @@ public enum V1alpha1SQLTableSpecForProviderWarehouseIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecForProviderWarehouseIdRefPolicy
@@ -628,7 +628,7 @@ public partial class V1alpha1SQLTableSpecForProviderWarehouseIdRefPolicy
 }
 
 /// <summary>Reference to a SQLEndpoint in sql to populate warehouseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecForProviderWarehouseIdRef
@@ -652,7 +652,7 @@ public partial class V1alpha1SQLTableSpecForProviderWarehouseIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecForProviderWarehouseIdSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecForProviderWarehouseIdSelectorPolicyResolutionEnum
@@ -669,7 +669,7 @@ public enum V1alpha1SQLTableSpecForProviderWarehouseIdSelectorPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecForProviderWarehouseIdSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecForProviderWarehouseIdSelectorPolicyResolveEnum
@@ -681,7 +681,7 @@ public enum V1alpha1SQLTableSpecForProviderWarehouseIdSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecForProviderWarehouseIdSelectorPolicy
@@ -706,7 +706,7 @@ public partial class V1alpha1SQLTableSpecForProviderWarehouseIdSelectorPolicy
 }
 
 /// <summary>Selector for a SQLEndpoint in sql to populate warehouseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecForProviderWarehouseIdSelector
@@ -731,7 +731,7 @@ public partial class V1alpha1SQLTableSpecForProviderWarehouseIdSelector
     public V1alpha1SQLTableSpecForProviderWarehouseIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecForProvider
@@ -846,7 +846,7 @@ public partial class V1alpha1SQLTableSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecInitProviderCatalogNameRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecInitProviderCatalogNameRefPolicyResolutionEnum
@@ -863,7 +863,7 @@ public enum V1alpha1SQLTableSpecInitProviderCatalogNameRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecInitProviderCatalogNameRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecInitProviderCatalogNameRefPolicyResolveEnum
@@ -875,7 +875,7 @@ public enum V1alpha1SQLTableSpecInitProviderCatalogNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecInitProviderCatalogNameRefPolicy
@@ -900,7 +900,7 @@ public partial class V1alpha1SQLTableSpecInitProviderCatalogNameRefPolicy
 }
 
 /// <summary>Reference to a Catalog in unity to populate catalogName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecInitProviderCatalogNameRef
@@ -924,7 +924,7 @@ public partial class V1alpha1SQLTableSpecInitProviderCatalogNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecInitProviderCatalogNameSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecInitProviderCatalogNameSelectorPolicyResolutionEnum
@@ -941,7 +941,7 @@ public enum V1alpha1SQLTableSpecInitProviderCatalogNameSelectorPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecInitProviderCatalogNameSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecInitProviderCatalogNameSelectorPolicyResolveEnum
@@ -953,7 +953,7 @@ public enum V1alpha1SQLTableSpecInitProviderCatalogNameSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecInitProviderCatalogNameSelectorPolicy
@@ -978,7 +978,7 @@ public partial class V1alpha1SQLTableSpecInitProviderCatalogNameSelectorPolicy
 }
 
 /// <summary>Selector for a Catalog in unity to populate catalogName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecInitProviderCatalogNameSelector
@@ -1009,7 +1009,7 @@ public partial class V1alpha1SQLTableSpecInitProviderCatalogNameSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecInitProviderClusterIdRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecInitProviderClusterIdRefPolicyResolutionEnum
@@ -1026,7 +1026,7 @@ public enum V1alpha1SQLTableSpecInitProviderClusterIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecInitProviderClusterIdRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecInitProviderClusterIdRefPolicyResolveEnum
@@ -1038,7 +1038,7 @@ public enum V1alpha1SQLTableSpecInitProviderClusterIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecInitProviderClusterIdRefPolicy
@@ -1063,7 +1063,7 @@ public partial class V1alpha1SQLTableSpecInitProviderClusterIdRefPolicy
 }
 
 /// <summary>Reference to a Cluster in compute to populate clusterId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecInitProviderClusterIdRef
@@ -1087,7 +1087,7 @@ public partial class V1alpha1SQLTableSpecInitProviderClusterIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecInitProviderClusterIdSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecInitProviderClusterIdSelectorPolicyResolutionEnum
@@ -1104,7 +1104,7 @@ public enum V1alpha1SQLTableSpecInitProviderClusterIdSelectorPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecInitProviderClusterIdSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecInitProviderClusterIdSelectorPolicyResolveEnum
@@ -1116,7 +1116,7 @@ public enum V1alpha1SQLTableSpecInitProviderClusterIdSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecInitProviderClusterIdSelectorPolicy
@@ -1141,7 +1141,7 @@ public partial class V1alpha1SQLTableSpecInitProviderClusterIdSelectorPolicy
 }
 
 /// <summary>Selector for a Cluster in compute to populate clusterId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecInitProviderClusterIdSelector
@@ -1166,7 +1166,7 @@ public partial class V1alpha1SQLTableSpecInitProviderClusterIdSelector
     public V1alpha1SQLTableSpecInitProviderClusterIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecInitProviderColumn
@@ -1195,7 +1195,7 @@ public partial class V1alpha1SQLTableSpecInitProviderColumn
     public string? TypeJson { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecInitProviderProviderConfig
@@ -1211,7 +1211,7 @@ public partial class V1alpha1SQLTableSpecInitProviderProviderConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecInitProviderSchemaNameRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecInitProviderSchemaNameRefPolicyResolutionEnum
@@ -1228,7 +1228,7 @@ public enum V1alpha1SQLTableSpecInitProviderSchemaNameRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecInitProviderSchemaNameRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecInitProviderSchemaNameRefPolicyResolveEnum
@@ -1240,7 +1240,7 @@ public enum V1alpha1SQLTableSpecInitProviderSchemaNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecInitProviderSchemaNameRefPolicy
@@ -1265,7 +1265,7 @@ public partial class V1alpha1SQLTableSpecInitProviderSchemaNameRefPolicy
 }
 
 /// <summary>Reference to a Schema in unity to populate schemaName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecInitProviderSchemaNameRef
@@ -1289,7 +1289,7 @@ public partial class V1alpha1SQLTableSpecInitProviderSchemaNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecInitProviderSchemaNameSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecInitProviderSchemaNameSelectorPolicyResolutionEnum
@@ -1306,7 +1306,7 @@ public enum V1alpha1SQLTableSpecInitProviderSchemaNameSelectorPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecInitProviderSchemaNameSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecInitProviderSchemaNameSelectorPolicyResolveEnum
@@ -1318,7 +1318,7 @@ public enum V1alpha1SQLTableSpecInitProviderSchemaNameSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecInitProviderSchemaNameSelectorPolicy
@@ -1343,7 +1343,7 @@ public partial class V1alpha1SQLTableSpecInitProviderSchemaNameSelectorPolicy
 }
 
 /// <summary>Selector for a Schema in unity to populate schemaName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecInitProviderSchemaNameSelector
@@ -1374,7 +1374,7 @@ public partial class V1alpha1SQLTableSpecInitProviderSchemaNameSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecInitProviderWarehouseIdRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecInitProviderWarehouseIdRefPolicyResolutionEnum
@@ -1391,7 +1391,7 @@ public enum V1alpha1SQLTableSpecInitProviderWarehouseIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecInitProviderWarehouseIdRefPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecInitProviderWarehouseIdRefPolicyResolveEnum
@@ -1403,7 +1403,7 @@ public enum V1alpha1SQLTableSpecInitProviderWarehouseIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecInitProviderWarehouseIdRefPolicy
@@ -1428,7 +1428,7 @@ public partial class V1alpha1SQLTableSpecInitProviderWarehouseIdRefPolicy
 }
 
 /// <summary>Reference to a SQLEndpoint in sql to populate warehouseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecInitProviderWarehouseIdRef
@@ -1452,7 +1452,7 @@ public partial class V1alpha1SQLTableSpecInitProviderWarehouseIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecInitProviderWarehouseIdSelectorPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecInitProviderWarehouseIdSelectorPolicyResolutionEnum
@@ -1469,7 +1469,7 @@ public enum V1alpha1SQLTableSpecInitProviderWarehouseIdSelectorPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecInitProviderWarehouseIdSelectorPolicyResolveEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecInitProviderWarehouseIdSelectorPolicyResolveEnum
@@ -1481,7 +1481,7 @@ public enum V1alpha1SQLTableSpecInitProviderWarehouseIdSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecInitProviderWarehouseIdSelectorPolicy
@@ -1506,7 +1506,7 @@ public partial class V1alpha1SQLTableSpecInitProviderWarehouseIdSelectorPolicy
 }
 
 /// <summary>Selector for a SQLEndpoint in sql to populate warehouseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecInitProviderWarehouseIdSelector
@@ -1543,7 +1543,7 @@ public partial class V1alpha1SQLTableSpecInitProviderWarehouseIdSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecInitProvider
@@ -1656,7 +1656,7 @@ public partial class V1alpha1SQLTableSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SQLTableSpecManagementPoliciesEnum>))]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public enum V1alpha1SQLTableSpecManagementPoliciesEnum
@@ -1680,7 +1680,7 @@ public enum V1alpha1SQLTableSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecProviderConfigRef
@@ -1700,7 +1700,7 @@ public partial class V1alpha1SQLTableSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpecWriteConnectionSecretToRef
@@ -1711,7 +1711,7 @@ public partial class V1alpha1SQLTableSpecWriteConnectionSecretToRef
 }
 
 /// <summary>SQLTableSpec defines the desired state of SQLTable</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableSpec
@@ -1763,7 +1763,7 @@ public partial class V1alpha1SQLTableSpec
     public V1alpha1SQLTableSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableStatusAtProviderColumn
@@ -1792,7 +1792,7 @@ public partial class V1alpha1SQLTableStatusAtProviderColumn
     public string? TypeJson { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableStatusAtProviderProviderConfig
@@ -1802,7 +1802,7 @@ public partial class V1alpha1SQLTableStatusAtProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableStatusAtProvider
@@ -1892,7 +1892,7 @@ public partial class V1alpha1SQLTableStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableStatusConditions
@@ -1936,7 +1936,7 @@ public partial class V1alpha1SQLTableStatusConditions
 }
 
 /// <summary>SQLTableStatus defines the observed state of SQLTable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1SQLTableStatus
@@ -1961,7 +1961,7 @@ public partial class V1alpha1SQLTableStatus
 /// SQLTable is the Schema for the SQLTables API.
 /// Deprecated: This API version (v1alpha1) has been deprecated.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

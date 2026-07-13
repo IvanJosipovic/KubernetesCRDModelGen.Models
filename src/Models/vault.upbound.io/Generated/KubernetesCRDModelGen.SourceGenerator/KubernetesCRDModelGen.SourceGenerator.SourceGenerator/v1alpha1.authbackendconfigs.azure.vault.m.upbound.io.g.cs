@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.azure.vault.m.upbound.io;
 /// <summary>AuthBackendConfig is the Schema for the AuthBackendConfigs API. Configures the Azure Auth Backend in Vault.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1AuthBackendConfigList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1AuthBackendConfig>
@@ -42,7 +42,7 @@ public partial class V1alpha1AuthBackendConfigList : IKubernetesObject<V1ListMet
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendConfigSpecForProviderBackendRefPolicyResolutionEnum>))]
 public enum V1alpha1AuthBackendConfigSpecForProviderBackendRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1alpha1AuthBackendConfigSpecForProviderBackendRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendConfigSpecForProviderBackendRefPolicyResolveEnum>))]
 public enum V1alpha1AuthBackendConfigSpecForProviderBackendRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1alpha1AuthBackendConfigSpecForProviderBackendRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendConfigSpecForProviderBackendRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1alpha1AuthBackendConfigSpecForProviderBackendRefPolicy
 }
 
 /// <summary>Reference to a Backend in auth to populate backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendConfigSpecForProviderBackendRef
 {
@@ -116,7 +116,7 @@ public partial class V1alpha1AuthBackendConfigSpecForProviderBackendRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendConfigSpecForProviderBackendSelectorPolicyResolutionEnum>))]
 public enum V1alpha1AuthBackendConfigSpecForProviderBackendSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1alpha1AuthBackendConfigSpecForProviderBackendSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendConfigSpecForProviderBackendSelectorPolicyResolveEnum>))]
 public enum V1alpha1AuthBackendConfigSpecForProviderBackendSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1alpha1AuthBackendConfigSpecForProviderBackendSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendConfigSpecForProviderBackendSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1alpha1AuthBackendConfigSpecForProviderBackendSelectorPoli
 }
 
 /// <summary>Selector for a Backend in auth to populate backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendConfigSpecForProviderBackendSelector
 {
@@ -196,7 +196,7 @@ public partial class V1alpha1AuthBackendConfigSpecForProviderBackendSelector
 /// Currently read permissions to query compute resources are required.
 /// The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendConfigSpecForProviderClientIdSecretRef
 {
@@ -213,7 +213,7 @@ public partial class V1alpha1AuthBackendConfigSpecForProviderClientIdSecretRef
 /// Azure APIs. Mutually exclusive with client_secret_wo. Consider using client_secret_wo instead for enhanced security.
 /// The client secret for credentials to query the Azure APIs. Mutually exclusive with &apos;client_secret_wo&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendConfigSpecForProviderClientSecretSecretRef
 {
@@ -232,7 +232,7 @@ public partial class V1alpha1AuthBackendConfigSpecForProviderClientSecretSecretR
 /// To rotate the secret, update the value and increment client_secret_wo_version.
 /// The client secret for credentials to query the Azure APIs. This field is write-only and will never be stored in state. Mutually exclusive with &apos;client_secret&apos;. Requires &apos;client_secret_wo_version&apos; to trigger updates.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendConfigSpecForProviderClientSecretWoSecretRef
 {
@@ -249,7 +249,7 @@ public partial class V1alpha1AuthBackendConfigSpecForProviderClientSecretWoSecre
 /// organization.
 /// The tenant id for the Azure Active Directory organization.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendConfigSpecForProviderTenantIdSecretRef
 {
@@ -261,7 +261,7 @@ public partial class V1alpha1AuthBackendConfigSpecForProviderTenantIdSecretRef
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendConfigSpecForProvider
 {
@@ -435,7 +435,7 @@ public partial class V1alpha1AuthBackendConfigSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendConfigSpecInitProviderBackendRefPolicyResolutionEnum>))]
 public enum V1alpha1AuthBackendConfigSpecInitProviderBackendRefPolicyResolutionEnum
 {
@@ -451,7 +451,7 @@ public enum V1alpha1AuthBackendConfigSpecInitProviderBackendRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendConfigSpecInitProviderBackendRefPolicyResolveEnum>))]
 public enum V1alpha1AuthBackendConfigSpecInitProviderBackendRefPolicyResolveEnum
 {
@@ -462,7 +462,7 @@ public enum V1alpha1AuthBackendConfigSpecInitProviderBackendRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendConfigSpecInitProviderBackendRefPolicy
 {
@@ -486,7 +486,7 @@ public partial class V1alpha1AuthBackendConfigSpecInitProviderBackendRefPolicy
 }
 
 /// <summary>Reference to a Backend in auth to populate backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendConfigSpecInitProviderBackendRef
 {
@@ -509,7 +509,7 @@ public partial class V1alpha1AuthBackendConfigSpecInitProviderBackendRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendConfigSpecInitProviderBackendSelectorPolicyResolutionEnum>))]
 public enum V1alpha1AuthBackendConfigSpecInitProviderBackendSelectorPolicyResolutionEnum
 {
@@ -525,7 +525,7 @@ public enum V1alpha1AuthBackendConfigSpecInitProviderBackendSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendConfigSpecInitProviderBackendSelectorPolicyResolveEnum>))]
 public enum V1alpha1AuthBackendConfigSpecInitProviderBackendSelectorPolicyResolveEnum
 {
@@ -536,7 +536,7 @@ public enum V1alpha1AuthBackendConfigSpecInitProviderBackendSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendConfigSpecInitProviderBackendSelectorPolicy
 {
@@ -560,7 +560,7 @@ public partial class V1alpha1AuthBackendConfigSpecInitProviderBackendSelectorPol
 }
 
 /// <summary>Selector for a Backend in auth to populate backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendConfigSpecInitProviderBackendSelector
 {
@@ -589,7 +589,7 @@ public partial class V1alpha1AuthBackendConfigSpecInitProviderBackendSelector
 /// Currently read permissions to query compute resources are required.
 /// The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendConfigSpecInitProviderClientIdSecretRef
 {
@@ -606,7 +606,7 @@ public partial class V1alpha1AuthBackendConfigSpecInitProviderClientIdSecretRef
 /// Azure APIs. Mutually exclusive with client_secret_wo. Consider using client_secret_wo instead for enhanced security.
 /// The client secret for credentials to query the Azure APIs. Mutually exclusive with &apos;client_secret_wo&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendConfigSpecInitProviderClientSecretSecretRef
 {
@@ -625,7 +625,7 @@ public partial class V1alpha1AuthBackendConfigSpecInitProviderClientSecretSecret
 /// To rotate the secret, update the value and increment client_secret_wo_version.
 /// The client secret for credentials to query the Azure APIs. This field is write-only and will never be stored in state. Mutually exclusive with &apos;client_secret&apos;. Requires &apos;client_secret_wo_version&apos; to trigger updates.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendConfigSpecInitProviderClientSecretWoSecretRef
 {
@@ -642,7 +642,7 @@ public partial class V1alpha1AuthBackendConfigSpecInitProviderClientSecretWoSecr
 /// organization.
 /// The tenant id for the Azure Active Directory organization.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendConfigSpecInitProviderTenantIdSecretRef
 {
@@ -666,7 +666,7 @@ public partial class V1alpha1AuthBackendConfigSpecInitProviderTenantIdSecretRef
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendConfigSpecInitProvider
 {
@@ -838,7 +838,7 @@ public partial class V1alpha1AuthBackendConfigSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendConfigSpecManagementPoliciesEnum>))]
 public enum V1alpha1AuthBackendConfigSpecManagementPoliciesEnum
 {
@@ -861,7 +861,7 @@ public enum V1alpha1AuthBackendConfigSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendConfigSpecProviderConfigRef
 {
@@ -880,7 +880,7 @@ public partial class V1alpha1AuthBackendConfigSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendConfigSpecWriteConnectionSecretToRef
 {
@@ -890,7 +890,7 @@ public partial class V1alpha1AuthBackendConfigSpecWriteConnectionSecretToRef
 }
 
 /// <summary>AuthBackendConfigSpec defines the desired state of AuthBackendConfig</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendConfigSpec
 {
@@ -941,7 +941,7 @@ public partial class V1alpha1AuthBackendConfigSpec
     public V1alpha1AuthBackendConfigSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendConfigStatusAtProvider
 {
@@ -1071,7 +1071,7 @@ public partial class V1alpha1AuthBackendConfigStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendConfigStatusConditions
 {
@@ -1114,7 +1114,7 @@ public partial class V1alpha1AuthBackendConfigStatusConditions
 }
 
 /// <summary>AuthBackendConfigStatus defines the observed state of AuthBackendConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendConfigStatus
 {
@@ -1135,7 +1135,7 @@ public partial class V1alpha1AuthBackendConfigStatus
 }
 
 /// <summary>AuthBackendConfig is the Schema for the AuthBackendConfigs API. Configures the Azure Auth Backend in Vault.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1AuthBackendConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1AuthBackendConfigSpec>, IStatus<V1alpha1AuthBackendConfigStatus?>

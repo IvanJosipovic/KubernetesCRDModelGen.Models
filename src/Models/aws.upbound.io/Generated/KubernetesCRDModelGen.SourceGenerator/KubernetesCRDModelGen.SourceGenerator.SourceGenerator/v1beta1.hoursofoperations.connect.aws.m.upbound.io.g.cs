@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.connect.aws.m.upbound.io;
 /// <summary>HoursOfOperation is the Schema for the HoursOfOperations API. Provides details about a specific Amazon Connect Hours of Operation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1HoursOfOperationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1HoursOfOperation>
@@ -37,7 +37,7 @@ public partial class V1beta1HoursOfOperationList : IKubernetesObject<V1ListMeta>
 }
 
 /// <summary>A end time block specifies the time that your contact center closes. The end_time is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationSpecForProviderConfigEndTime
 {
@@ -51,7 +51,7 @@ public partial class V1beta1HoursOfOperationSpecForProviderConfigEndTime
 }
 
 /// <summary>A start time block specifies the time that your contact center opens. The start_time is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationSpecForProviderConfigStartTime
 {
@@ -64,7 +64,7 @@ public partial class V1beta1HoursOfOperationSpecForProviderConfigStartTime
     public double? Minutes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationSpecForProviderConfig
 {
@@ -87,7 +87,7 @@ public partial class V1beta1HoursOfOperationSpecForProviderConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HoursOfOperationSpecForProviderInstanceIdRefPolicyResolutionEnum>))]
 public enum V1beta1HoursOfOperationSpecForProviderInstanceIdRefPolicyResolutionEnum
 {
@@ -103,7 +103,7 @@ public enum V1beta1HoursOfOperationSpecForProviderInstanceIdRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HoursOfOperationSpecForProviderInstanceIdRefPolicyResolveEnum>))]
 public enum V1beta1HoursOfOperationSpecForProviderInstanceIdRefPolicyResolveEnum
 {
@@ -114,7 +114,7 @@ public enum V1beta1HoursOfOperationSpecForProviderInstanceIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationSpecForProviderInstanceIdRefPolicy
 {
@@ -138,7 +138,7 @@ public partial class V1beta1HoursOfOperationSpecForProviderInstanceIdRefPolicy
 }
 
 /// <summary>Reference to a Instance in connect to populate instanceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationSpecForProviderInstanceIdRef
 {
@@ -161,7 +161,7 @@ public partial class V1beta1HoursOfOperationSpecForProviderInstanceIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HoursOfOperationSpecForProviderInstanceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1HoursOfOperationSpecForProviderInstanceIdSelectorPolicyResolutionEnum
 {
@@ -177,7 +177,7 @@ public enum V1beta1HoursOfOperationSpecForProviderInstanceIdSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HoursOfOperationSpecForProviderInstanceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1HoursOfOperationSpecForProviderInstanceIdSelectorPolicyResolveEnum
 {
@@ -188,7 +188,7 @@ public enum V1beta1HoursOfOperationSpecForProviderInstanceIdSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationSpecForProviderInstanceIdSelectorPolicy
 {
@@ -212,7 +212,7 @@ public partial class V1beta1HoursOfOperationSpecForProviderInstanceIdSelectorPol
 }
 
 /// <summary>Selector for a Instance in connect to populate instanceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationSpecForProviderInstanceIdSelector
 {
@@ -236,7 +236,7 @@ public partial class V1beta1HoursOfOperationSpecForProviderInstanceIdSelector
     public V1beta1HoursOfOperationSpecForProviderInstanceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationSpecForProvider
 {
@@ -281,7 +281,7 @@ public partial class V1beta1HoursOfOperationSpecForProvider
 }
 
 /// <summary>A end time block specifies the time that your contact center closes. The end_time is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationSpecInitProviderConfigEndTime
 {
@@ -295,7 +295,7 @@ public partial class V1beta1HoursOfOperationSpecInitProviderConfigEndTime
 }
 
 /// <summary>A start time block specifies the time that your contact center opens. The start_time is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationSpecInitProviderConfigStartTime
 {
@@ -308,7 +308,7 @@ public partial class V1beta1HoursOfOperationSpecInitProviderConfigStartTime
     public double? Minutes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationSpecInitProviderConfig
 {
@@ -331,7 +331,7 @@ public partial class V1beta1HoursOfOperationSpecInitProviderConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HoursOfOperationSpecInitProviderInstanceIdRefPolicyResolutionEnum>))]
 public enum V1beta1HoursOfOperationSpecInitProviderInstanceIdRefPolicyResolutionEnum
 {
@@ -347,7 +347,7 @@ public enum V1beta1HoursOfOperationSpecInitProviderInstanceIdRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HoursOfOperationSpecInitProviderInstanceIdRefPolicyResolveEnum>))]
 public enum V1beta1HoursOfOperationSpecInitProviderInstanceIdRefPolicyResolveEnum
 {
@@ -358,7 +358,7 @@ public enum V1beta1HoursOfOperationSpecInitProviderInstanceIdRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationSpecInitProviderInstanceIdRefPolicy
 {
@@ -382,7 +382,7 @@ public partial class V1beta1HoursOfOperationSpecInitProviderInstanceIdRefPolicy
 }
 
 /// <summary>Reference to a Instance in connect to populate instanceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationSpecInitProviderInstanceIdRef
 {
@@ -405,7 +405,7 @@ public partial class V1beta1HoursOfOperationSpecInitProviderInstanceIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HoursOfOperationSpecInitProviderInstanceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1HoursOfOperationSpecInitProviderInstanceIdSelectorPolicyResolutionEnum
 {
@@ -421,7 +421,7 @@ public enum V1beta1HoursOfOperationSpecInitProviderInstanceIdSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HoursOfOperationSpecInitProviderInstanceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1HoursOfOperationSpecInitProviderInstanceIdSelectorPolicyResolveEnum
 {
@@ -432,7 +432,7 @@ public enum V1beta1HoursOfOperationSpecInitProviderInstanceIdSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationSpecInitProviderInstanceIdSelectorPolicy
 {
@@ -456,7 +456,7 @@ public partial class V1beta1HoursOfOperationSpecInitProviderInstanceIdSelectorPo
 }
 
 /// <summary>Selector for a Instance in connect to populate instanceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationSpecInitProviderInstanceIdSelector
 {
@@ -492,7 +492,7 @@ public partial class V1beta1HoursOfOperationSpecInitProviderInstanceIdSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationSpecInitProvider
 {
@@ -533,7 +533,7 @@ public partial class V1beta1HoursOfOperationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HoursOfOperationSpecManagementPoliciesEnum>))]
 public enum V1beta1HoursOfOperationSpecManagementPoliciesEnum
 {
@@ -556,7 +556,7 @@ public enum V1beta1HoursOfOperationSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationSpecProviderConfigRef
 {
@@ -575,7 +575,7 @@ public partial class V1beta1HoursOfOperationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationSpecWriteConnectionSecretToRef
 {
@@ -585,7 +585,7 @@ public partial class V1beta1HoursOfOperationSpecWriteConnectionSecretToRef
 }
 
 /// <summary>HoursOfOperationSpec defines the desired state of HoursOfOperation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationSpec
 {
@@ -637,7 +637,7 @@ public partial class V1beta1HoursOfOperationSpec
 }
 
 /// <summary>A end time block specifies the time that your contact center closes. The end_time is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationStatusAtProviderConfigEndTime
 {
@@ -651,7 +651,7 @@ public partial class V1beta1HoursOfOperationStatusAtProviderConfigEndTime
 }
 
 /// <summary>A start time block specifies the time that your contact center opens. The start_time is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationStatusAtProviderConfigStartTime
 {
@@ -664,7 +664,7 @@ public partial class V1beta1HoursOfOperationStatusAtProviderConfigStartTime
     public double? Minutes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationStatusAtProviderConfig
 {
@@ -681,7 +681,7 @@ public partial class V1beta1HoursOfOperationStatusAtProviderConfig
     public V1beta1HoursOfOperationStatusAtProviderConfigStartTime? StartTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationStatusAtProvider
 {
@@ -734,7 +734,7 @@ public partial class V1beta1HoursOfOperationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationStatusConditions
 {
@@ -777,7 +777,7 @@ public partial class V1beta1HoursOfOperationStatusConditions
 }
 
 /// <summary>HoursOfOperationStatus defines the observed state of HoursOfOperation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationStatus
 {
@@ -798,7 +798,7 @@ public partial class V1beta1HoursOfOperationStatus
 }
 
 /// <summary>HoursOfOperation is the Schema for the HoursOfOperations API. Provides details about a specific Amazon Connect Hours of Operation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1HoursOfOperation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1HoursOfOperationSpec>, IStatus<V1beta1HoursOfOperationStatus?>

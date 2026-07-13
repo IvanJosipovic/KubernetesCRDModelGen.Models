@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrockagentcore.aws.upbound.io;
 /// <summary>APIKeyCredentialProvider is the Schema for the APIKeyCredentialProviders API. Manages an AWS Bedrock AgentCore API Key Credential Provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1APIKeyCredentialProviderList : IKubernetesObject<V1ListMeta>, IItems<V1beta1APIKeyCredentialProvider>
@@ -45,7 +45,7 @@ public partial class V1beta1APIKeyCredentialProviderList : IKubernetesObject<V1L
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIKeyCredentialProviderSpecDeletionPolicyEnum>))]
 public enum V1beta1APIKeyCredentialProviderSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta1APIKeyCredentialProviderSpecDeletionPolicyEnum
 }
 
 /// <summary>API key value. Cannot be used with api_key_wo.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretRef
 {
@@ -74,7 +74,7 @@ public partial class V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretR
 }
 
 /// <summary>Write-only API key value. Cannot be used with api_key. Must be used together with api_key_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderSpecForProviderApiKeyWoSecretRef
 {
@@ -91,7 +91,7 @@ public partial class V1beta1APIKeyCredentialProviderSpecForProviderApiKeyWoSecre
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderSpecForProvider
 {
@@ -120,7 +120,7 @@ public partial class V1beta1APIKeyCredentialProviderSpecForProvider
 }
 
 /// <summary>API key value. Cannot be used with api_key_wo.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretRef
 {
@@ -138,7 +138,7 @@ public partial class V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecret
 }
 
 /// <summary>Write-only API key value. Cannot be used with api_key. Must be used together with api_key_wo_version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderSpecInitProviderApiKeyWoSecretRef
 {
@@ -167,7 +167,7 @@ public partial class V1beta1APIKeyCredentialProviderSpecInitProviderApiKeyWoSecr
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderSpecInitProvider
 {
@@ -192,7 +192,7 @@ public partial class V1beta1APIKeyCredentialProviderSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIKeyCredentialProviderSpecManagementPoliciesEnum>))]
 public enum V1beta1APIKeyCredentialProviderSpecManagementPoliciesEnum
 {
@@ -216,7 +216,7 @@ public enum V1beta1APIKeyCredentialProviderSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIKeyCredentialProviderSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1APIKeyCredentialProviderSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -232,7 +232,7 @@ public enum V1beta1APIKeyCredentialProviderSpecProviderConfigRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIKeyCredentialProviderSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1APIKeyCredentialProviderSpecProviderConfigRefPolicyResolveEnum
 {
@@ -243,7 +243,7 @@ public enum V1beta1APIKeyCredentialProviderSpecProviderConfigRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderSpecProviderConfigRefPolicy
 {
@@ -271,7 +271,7 @@ public partial class V1beta1APIKeyCredentialProviderSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderSpecProviderConfigRef
 {
@@ -290,7 +290,7 @@ public partial class V1beta1APIKeyCredentialProviderSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderSpecWriteConnectionSecretToRef
 {
@@ -304,7 +304,7 @@ public partial class V1beta1APIKeyCredentialProviderSpecWriteConnectionSecretToR
 }
 
 /// <summary>APIKeyCredentialProviderSpec defines the desired state of APIKeyCredentialProvider</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderSpec
 {
@@ -371,7 +371,7 @@ public partial class V1beta1APIKeyCredentialProviderSpec
     public V1beta1APIKeyCredentialProviderSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderStatusAtProviderApiKeySecretArn
 {
@@ -380,7 +380,7 @@ public partial class V1beta1APIKeyCredentialProviderStatusAtProviderApiKeySecret
     public string? SecretArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderStatusAtProvider
 {
@@ -420,7 +420,7 @@ public partial class V1beta1APIKeyCredentialProviderStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderStatusConditions
 {
@@ -463,7 +463,7 @@ public partial class V1beta1APIKeyCredentialProviderStatusConditions
 }
 
 /// <summary>APIKeyCredentialProviderStatus defines the observed state of APIKeyCredentialProvider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderStatus
 {
@@ -484,7 +484,7 @@ public partial class V1beta1APIKeyCredentialProviderStatus
 }
 
 /// <summary>APIKeyCredentialProvider is the Schema for the APIKeyCredentialProviders API. Manages an AWS Bedrock AgentCore API Key Credential Provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1APIKeyCredentialProvider : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1APIKeyCredentialProviderSpec>, IStatus<V1beta1APIKeyCredentialProviderStatus?>

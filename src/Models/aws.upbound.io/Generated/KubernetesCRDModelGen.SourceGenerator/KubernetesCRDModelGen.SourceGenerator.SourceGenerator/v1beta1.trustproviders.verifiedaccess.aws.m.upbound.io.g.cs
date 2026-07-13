@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.verifiedaccess.aws.m.upbound.io;
 /// <summary>TrustProvider is the Schema for the TrustProviders API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TrustProviderList : IKubernetesObject<V1ListMeta>, IItems<V1beta1TrustProvider>
@@ -37,7 +37,7 @@ public partial class V1beta1TrustProviderList : IKubernetesObject<V1ListMeta>, I
 }
 
 /// <summary>A block of options for device identity based trust providers.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecForProviderDeviceOptions
 {
@@ -50,7 +50,7 @@ public partial class V1beta1TrustProviderSpecForProviderDeviceOptions
 /// A LocalSecretKeySelector is a reference to a secret key
 /// in the same namespace with the referencing object.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecForProviderNativeApplicationOidcOptionsClientSecretSecretRef
 {
@@ -63,7 +63,7 @@ public partial class V1beta1TrustProviderSpecForProviderNativeApplicationOidcOpt
 }
 
 /// <summary>The OpenID Connect details for an Native Application OIDC, user-identity based trust provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecForProviderNativeApplicationOidcOptions
 {
@@ -101,7 +101,7 @@ public partial class V1beta1TrustProviderSpecForProviderNativeApplicationOidcOpt
 /// A LocalSecretKeySelector is a reference to a secret key
 /// in the same namespace with the referencing object.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecForProviderOidcOptionsClientSecretSecretRef
 {
@@ -114,7 +114,7 @@ public partial class V1beta1TrustProviderSpecForProviderOidcOptionsClientSecretS
 }
 
 /// <summary>The OpenID Connect details for an oidc-type, user-identity based trust provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecForProviderOidcOptions
 {
@@ -145,7 +145,7 @@ public partial class V1beta1TrustProviderSpecForProviderOidcOptions
     public string? UserInfoEndpoint { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecForProviderSseSpecification
 {
@@ -156,7 +156,7 @@ public partial class V1beta1TrustProviderSpecForProviderSseSpecification
     public string? KmsKeyArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecForProvider
 {
@@ -208,7 +208,7 @@ public partial class V1beta1TrustProviderSpecForProvider
 }
 
 /// <summary>A block of options for device identity based trust providers.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecInitProviderDeviceOptions
 {
@@ -221,7 +221,7 @@ public partial class V1beta1TrustProviderSpecInitProviderDeviceOptions
 /// A LocalSecretKeySelector is a reference to a secret key
 /// in the same namespace with the referencing object.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecInitProviderNativeApplicationOidcOptionsClientSecretSecretRef
 {
@@ -234,7 +234,7 @@ public partial class V1beta1TrustProviderSpecInitProviderNativeApplicationOidcOp
 }
 
 /// <summary>The OpenID Connect details for an Native Application OIDC, user-identity based trust provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecInitProviderNativeApplicationOidcOptions
 {
@@ -272,7 +272,7 @@ public partial class V1beta1TrustProviderSpecInitProviderNativeApplicationOidcOp
 /// A LocalSecretKeySelector is a reference to a secret key
 /// in the same namespace with the referencing object.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecInitProviderOidcOptionsClientSecretSecretRef
 {
@@ -285,7 +285,7 @@ public partial class V1beta1TrustProviderSpecInitProviderOidcOptionsClientSecret
 }
 
 /// <summary>The OpenID Connect details for an oidc-type, user-identity based trust provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecInitProviderOidcOptions
 {
@@ -316,7 +316,7 @@ public partial class V1beta1TrustProviderSpecInitProviderOidcOptions
     public string? UserInfoEndpoint { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecInitProviderSseSpecification
 {
@@ -339,7 +339,7 @@ public partial class V1beta1TrustProviderSpecInitProviderSseSpecification
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecInitProvider
 {
@@ -387,7 +387,7 @@ public partial class V1beta1TrustProviderSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrustProviderSpecManagementPoliciesEnum>))]
 public enum V1beta1TrustProviderSpecManagementPoliciesEnum
 {
@@ -410,7 +410,7 @@ public enum V1beta1TrustProviderSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecProviderConfigRef
 {
@@ -429,7 +429,7 @@ public partial class V1beta1TrustProviderSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpecWriteConnectionSecretToRef
 {
@@ -439,7 +439,7 @@ public partial class V1beta1TrustProviderSpecWriteConnectionSecretToRef
 }
 
 /// <summary>TrustProviderSpec defines the desired state of TrustProvider</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderSpec
 {
@@ -491,7 +491,7 @@ public partial class V1beta1TrustProviderSpec
 }
 
 /// <summary>A block of options for device identity based trust providers.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderStatusAtProviderDeviceOptions
 {
@@ -501,7 +501,7 @@ public partial class V1beta1TrustProviderStatusAtProviderDeviceOptions
 }
 
 /// <summary>The OpenID Connect details for an Native Application OIDC, user-identity based trust provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderStatusAtProviderNativeApplicationOidcOptions
 {
@@ -529,7 +529,7 @@ public partial class V1beta1TrustProviderStatusAtProviderNativeApplicationOidcOp
 }
 
 /// <summary>The OpenID Connect details for an oidc-type, user-identity based trust provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderStatusAtProviderOidcOptions
 {
@@ -553,7 +553,7 @@ public partial class V1beta1TrustProviderStatusAtProviderOidcOptions
     public string? UserInfoEndpoint { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderStatusAtProviderSseSpecification
 {
@@ -564,7 +564,7 @@ public partial class V1beta1TrustProviderStatusAtProviderSseSpecification
     public string? KmsKeyArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderStatusAtProvider
 {
@@ -623,7 +623,7 @@ public partial class V1beta1TrustProviderStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderStatusConditions
 {
@@ -666,7 +666,7 @@ public partial class V1beta1TrustProviderStatusConditions
 }
 
 /// <summary>TrustProviderStatus defines the observed state of TrustProvider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrustProviderStatus
 {
@@ -687,7 +687,7 @@ public partial class V1beta1TrustProviderStatus
 }
 
 /// <summary>TrustProvider is the Schema for the TrustProviders API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TrustProvider : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1TrustProviderSpec>, IStatus<V1beta1TrustProviderStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sql.cnrm.cloud.google.com;
 /// <summary>SQLInstance is the Schema for the sql API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SQLInstanceList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SQLInstance>
@@ -37,7 +37,7 @@ public partial class V1beta1SQLInstanceList : IKubernetesObject<V1ListMeta>, IIt
 }
 
 /// <summary>Binary log coordinates, if specified, identify the position up to which the source instance is cloned. If not specified, the source instance is cloned up to the most recent binary log coordinates.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecCloneSourceBinLogCoordinates
 {
@@ -51,7 +51,7 @@ public partial class V1beta1SQLInstanceSpecCloneSourceBinLogCoordinates
 }
 
 /// <summary>The source SQLInstance to clone</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecCloneSourceSqlInstanceRef
 {
@@ -69,7 +69,7 @@ public partial class V1beta1SQLInstanceSpecCloneSourceSqlInstanceRef
 }
 
 /// <summary>Create this database as a clone of a source instance. Immutable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecCloneSource
 {
@@ -90,7 +90,7 @@ public partial class V1beta1SQLInstanceSpecCloneSource
     public V1beta1SQLInstanceSpecCloneSourceSqlInstanceRef? SqlInstanceRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecEncryptionKMSCryptoKeyRef
 {
@@ -107,7 +107,7 @@ public partial class V1beta1SQLInstanceSpecEncryptionKMSCryptoKeyRef
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecMasterInstanceRef
 {
@@ -125,7 +125,7 @@ public partial class V1beta1SQLInstanceSpecMasterInstanceRef
 }
 
 /// <summary>Reference to a value with the given key in the given Secret in the resource&apos;s namespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecReplicaConfigurationPasswordValueFromSecretKeyRef
 {
@@ -139,7 +139,7 @@ public partial class V1beta1SQLInstanceSpecReplicaConfigurationPasswordValueFrom
 }
 
 /// <summary>Source for the field&apos;s value. Cannot be used if &apos;value&apos; is specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecReplicaConfigurationPasswordValueFrom
 {
@@ -149,7 +149,7 @@ public partial class V1beta1SQLInstanceSpecReplicaConfigurationPasswordValueFrom
 }
 
 /// <summary>Immutable. Password for the replication connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecReplicaConfigurationPassword
 {
@@ -163,7 +163,7 @@ public partial class V1beta1SQLInstanceSpecReplicaConfigurationPassword
 }
 
 /// <summary>The configuration for replication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecReplicaConfiguration
 {
@@ -213,7 +213,7 @@ public partial class V1beta1SQLInstanceSpecReplicaConfiguration
 }
 
 /// <summary>Optional. If the instance is a primary instance, then this field identifies the disaster recovery (DR) replica. A DR replica is an optional configuration for Enterprise Plus edition instances. If the instance is a read replica, then the field is not set. Set this field to a replica name to designate a DR replica for a primary instance. Remove the replica name to remove the DR replica designation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecReplicationClusterFailoverDrReplicaRef
 {
@@ -231,7 +231,7 @@ public partial class V1beta1SQLInstanceSpecReplicationClusterFailoverDrReplicaRe
 }
 
 /// <summary>The configuration for the replication cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecReplicationCluster
 {
@@ -241,7 +241,7 @@ public partial class V1beta1SQLInstanceSpecReplicationCluster
 }
 
 /// <summary>Reference to a value with the given key in the given Secret in the resource&apos;s namespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecRootPasswordValueFromSecretKeyRef
 {
@@ -255,7 +255,7 @@ public partial class V1beta1SQLInstanceSpecRootPasswordValueFromSecretKeyRef
 }
 
 /// <summary>Source for the field&apos;s value. Cannot be used if &apos;value&apos; is specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecRootPasswordValueFrom
 {
@@ -265,7 +265,7 @@ public partial class V1beta1SQLInstanceSpecRootPasswordValueFrom
 }
 
 /// <summary>Initial root password. Required for MS SQL Server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecRootPassword
 {
@@ -278,7 +278,7 @@ public partial class V1beta1SQLInstanceSpecRootPassword
     public V1beta1SQLInstanceSpecRootPasswordValueFrom? ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecSettingsActiveDirectoryConfig
 {
@@ -287,7 +287,7 @@ public partial class V1beta1SQLInstanceSpecSettingsActiveDirectoryConfig
     public required string Domain { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecSettingsAdvancedMachineFeatures
 {
@@ -296,7 +296,7 @@ public partial class V1beta1SQLInstanceSpecSettingsAdvancedMachineFeatures
     public long? ThreadsPerCore { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecSettingsBackupConfigurationBackupRetentionSettings
 {
@@ -309,7 +309,7 @@ public partial class V1beta1SQLInstanceSpecSettingsBackupConfigurationBackupRete
     public string? RetentionUnit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecSettingsBackupConfiguration
 {
@@ -342,7 +342,7 @@ public partial class V1beta1SQLInstanceSpecSettingsBackupConfiguration
 }
 
 /// <summary>Data cache configurations.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecSettingsDataCacheConfig
 {
@@ -351,7 +351,7 @@ public partial class V1beta1SQLInstanceSpecSettingsDataCacheConfig
     public bool? DataCacheEnabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecSettingsDatabaseFlags
 {
@@ -364,7 +364,7 @@ public partial class V1beta1SQLInstanceSpecSettingsDatabaseFlags
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecSettingsDenyMaintenancePeriod
 {
@@ -382,7 +382,7 @@ public partial class V1beta1SQLInstanceSpecSettingsDenyMaintenancePeriod
 }
 
 /// <summary>Configuration of Query Insights.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecSettingsInsightsConfig
 {
@@ -407,7 +407,7 @@ public partial class V1beta1SQLInstanceSpecSettingsInsightsConfig
     public bool? RecordClientAddress { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecSettingsIpConfigurationAuthorizedNetworks
 {
@@ -421,7 +421,7 @@ public partial class V1beta1SQLInstanceSpecSettingsIpConfigurationAuthorizedNetw
     public required string Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecSettingsIpConfigurationPrivateNetworkRef
 {
@@ -438,7 +438,7 @@ public partial class V1beta1SQLInstanceSpecSettingsIpConfigurationPrivateNetwork
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecSettingsIpConfigurationPscConfig
 {
@@ -451,7 +451,7 @@ public partial class V1beta1SQLInstanceSpecSettingsIpConfigurationPscConfig
     public bool? PscEnabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecSettingsIpConfiguration
 {
@@ -485,7 +485,7 @@ public partial class V1beta1SQLInstanceSpecSettingsIpConfiguration
     public string? SslMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecSettingsLocationPreference
 {
@@ -503,7 +503,7 @@ public partial class V1beta1SQLInstanceSpecSettingsLocationPreference
 }
 
 /// <summary>Declares a one-hour maintenance window when an Instance can automatically restart to apply updates. The maintenance window is specified in UTC time.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecSettingsMaintenanceWindow
 {
@@ -520,7 +520,7 @@ public partial class V1beta1SQLInstanceSpecSettingsMaintenanceWindow
     public string? UpdateTrack { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecSettingsPasswordValidationPolicy
 {
@@ -550,7 +550,7 @@ public partial class V1beta1SQLInstanceSpecSettingsPasswordValidationPolicy
 }
 
 /// <summary>The name of the destination bucket (e.g., gs://mybucket).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecSettingsSqlServerAuditConfigBucketRef
 {
@@ -567,7 +567,7 @@ public partial class V1beta1SQLInstanceSpecSettingsSqlServerAuditConfigBucketRef
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecSettingsSqlServerAuditConfig
 {
@@ -585,7 +585,7 @@ public partial class V1beta1SQLInstanceSpecSettingsSqlServerAuditConfig
 }
 
 /// <summary>The settings to use for the database. The configuration is detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpecSettings
 {
@@ -693,7 +693,7 @@ public partial class V1beta1SQLInstanceSpecSettings
     public string? TimeZone { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceSpec
 {
@@ -744,7 +744,7 @@ public partial class V1beta1SQLInstanceSpec
     public required V1beta1SQLInstanceSpecSettings Settings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceStatusConditions
 {
@@ -769,7 +769,7 @@ public partial class V1beta1SQLInstanceStatusConditions
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceStatusIpAddress
 {
@@ -784,7 +784,7 @@ public partial class V1beta1SQLInstanceStatusIpAddress
 }
 
 /// <summary>The configuration for the replication cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceStatusObservedStateReplicationCluster
 {
@@ -798,7 +798,7 @@ public partial class V1beta1SQLInstanceStatusObservedStateReplicationCluster
 }
 
 /// <summary>The observed state of the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceStatusObservedState
 {
@@ -807,7 +807,7 @@ public partial class V1beta1SQLInstanceStatusObservedState
     public V1beta1SQLInstanceStatusObservedStateReplicationCluster? ReplicationCluster { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceStatusServerCaCert
 {
@@ -832,7 +832,7 @@ public partial class V1beta1SQLInstanceStatusServerCaCert
     public string? Sha1Fingerprint { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SQLInstanceStatus
 {
@@ -893,7 +893,7 @@ public partial class V1beta1SQLInstanceStatus
 }
 
 /// <summary>SQLInstance is the Schema for the sql API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SQLInstance : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SQLInstanceSpec>, IStatus<V1beta1SQLInstanceStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.upbound.io;
 /// <summary>PacketMirroring is the Schema for the PacketMirrorings API. Packet Mirroring mirrors traffic to and from particular VM instances.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2PacketMirroringList : IKubernetesObject<V1ListMeta>, IItems<V1beta2PacketMirroring>
@@ -45,7 +45,7 @@ public partial class V1beta2PacketMirroringList : IKubernetesObject<V1ListMeta>,
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecDeletionPolicyEnum>))]
 public enum V1beta2PacketMirroringSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2PacketMirroringSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecForProviderCollectorIlbUrlRefPolicyResolutionEnum>))]
 public enum V1beta2PacketMirroringSpecForProviderCollectorIlbUrlRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2PacketMirroringSpecForProviderCollectorIlbUrlRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecForProviderCollectorIlbUrlRefPolicyResolveEnum>))]
 public enum V1beta2PacketMirroringSpecForProviderCollectorIlbUrlRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2PacketMirroringSpecForProviderCollectorIlbUrlRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecForProviderCollectorIlbUrlRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2PacketMirroringSpecForProviderCollectorIlbUrlRefPoli
 }
 
 /// <summary>Reference to a ForwardingRule in compute to populate url.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecForProviderCollectorIlbUrlRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta2PacketMirroringSpecForProviderCollectorIlbUrlRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecForProviderCollectorIlbUrlSelectorPolicyResolutionEnum>))]
 public enum V1beta2PacketMirroringSpecForProviderCollectorIlbUrlSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2PacketMirroringSpecForProviderCollectorIlbUrlSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecForProviderCollectorIlbUrlSelectorPolicyResolveEnum>))]
 public enum V1beta2PacketMirroringSpecForProviderCollectorIlbUrlSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2PacketMirroringSpecForProviderCollectorIlbUrlSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecForProviderCollectorIlbUrlSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2PacketMirroringSpecForProviderCollectorIlbUrlSelecto
 }
 
 /// <summary>Selector for a ForwardingRule in compute to populate url.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecForProviderCollectorIlbUrlSelector
 {
@@ -209,7 +209,7 @@ public partial class V1beta2PacketMirroringSpecForProviderCollectorIlbUrlSelecto
 /// set to true.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecForProviderCollectorIlb
 {
@@ -230,7 +230,7 @@ public partial class V1beta2PacketMirroringSpecForProviderCollectorIlb
 /// A filter for mirrored traffic.  If unset, all traffic is mirrored.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecForProviderFilter
 {
@@ -260,7 +260,7 @@ public partial class V1beta2PacketMirroringSpecForProviderFilter
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecForProviderMirroredResourcesInstancesUrlRefPolicyResolutionEnum>))]
 public enum V1beta2PacketMirroringSpecForProviderMirroredResourcesInstancesUrlRefPolicyResolutionEnum
 {
@@ -276,7 +276,7 @@ public enum V1beta2PacketMirroringSpecForProviderMirroredResourcesInstancesUrlRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecForProviderMirroredResourcesInstancesUrlRefPolicyResolveEnum>))]
 public enum V1beta2PacketMirroringSpecForProviderMirroredResourcesInstancesUrlRefPolicyResolveEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta2PacketMirroringSpecForProviderMirroredResourcesInstancesUrlRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecForProviderMirroredResourcesInstancesUrlRefPolicy
 {
@@ -311,7 +311,7 @@ public partial class V1beta2PacketMirroringSpecForProviderMirroredResourcesInsta
 }
 
 /// <summary>Reference to a Instance in compute to populate url.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecForProviderMirroredResourcesInstancesUrlRef
 {
@@ -330,7 +330,7 @@ public partial class V1beta2PacketMirroringSpecForProviderMirroredResourcesInsta
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecForProviderMirroredResourcesInstancesUrlSelectorPolicyResolutionEnum>))]
 public enum V1beta2PacketMirroringSpecForProviderMirroredResourcesInstancesUrlSelectorPolicyResolutionEnum
 {
@@ -346,7 +346,7 @@ public enum V1beta2PacketMirroringSpecForProviderMirroredResourcesInstancesUrlSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecForProviderMirroredResourcesInstancesUrlSelectorPolicyResolveEnum>))]
 public enum V1beta2PacketMirroringSpecForProviderMirroredResourcesInstancesUrlSelectorPolicyResolveEnum
 {
@@ -357,7 +357,7 @@ public enum V1beta2PacketMirroringSpecForProviderMirroredResourcesInstancesUrlSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecForProviderMirroredResourcesInstancesUrlSelectorPolicy
 {
@@ -381,7 +381,7 @@ public partial class V1beta2PacketMirroringSpecForProviderMirroredResourcesInsta
 }
 
 /// <summary>Selector for a Instance in compute to populate url.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecForProviderMirroredResourcesInstancesUrlSelector
 {
@@ -401,7 +401,7 @@ public partial class V1beta2PacketMirroringSpecForProviderMirroredResourcesInsta
     public V1beta2PacketMirroringSpecForProviderMirroredResourcesInstancesUrlSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecForProviderMirroredResourcesInstances
 {
@@ -418,7 +418,7 @@ public partial class V1beta2PacketMirroringSpecForProviderMirroredResourcesInsta
     public V1beta2PacketMirroringSpecForProviderMirroredResourcesInstancesUrlSelector? UrlSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecForProviderMirroredResourcesSubnetworks
 {
@@ -431,7 +431,7 @@ public partial class V1beta2PacketMirroringSpecForProviderMirroredResourcesSubne
 /// A means of specifying which resources to mirror.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecForProviderMirroredResources
 {
@@ -460,7 +460,7 @@ public partial class V1beta2PacketMirroringSpecForProviderMirroredResources
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecForProviderNetworkUrlRefPolicyResolutionEnum>))]
 public enum V1beta2PacketMirroringSpecForProviderNetworkUrlRefPolicyResolutionEnum
 {
@@ -476,7 +476,7 @@ public enum V1beta2PacketMirroringSpecForProviderNetworkUrlRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecForProviderNetworkUrlRefPolicyResolveEnum>))]
 public enum V1beta2PacketMirroringSpecForProviderNetworkUrlRefPolicyResolveEnum
 {
@@ -487,7 +487,7 @@ public enum V1beta2PacketMirroringSpecForProviderNetworkUrlRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecForProviderNetworkUrlRefPolicy
 {
@@ -511,7 +511,7 @@ public partial class V1beta2PacketMirroringSpecForProviderNetworkUrlRefPolicy
 }
 
 /// <summary>Reference to a Network in compute to populate url.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecForProviderNetworkUrlRef
 {
@@ -530,7 +530,7 @@ public partial class V1beta2PacketMirroringSpecForProviderNetworkUrlRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecForProviderNetworkUrlSelectorPolicyResolutionEnum>))]
 public enum V1beta2PacketMirroringSpecForProviderNetworkUrlSelectorPolicyResolutionEnum
 {
@@ -546,7 +546,7 @@ public enum V1beta2PacketMirroringSpecForProviderNetworkUrlSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecForProviderNetworkUrlSelectorPolicyResolveEnum>))]
 public enum V1beta2PacketMirroringSpecForProviderNetworkUrlSelectorPolicyResolveEnum
 {
@@ -557,7 +557,7 @@ public enum V1beta2PacketMirroringSpecForProviderNetworkUrlSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecForProviderNetworkUrlSelectorPolicy
 {
@@ -581,7 +581,7 @@ public partial class V1beta2PacketMirroringSpecForProviderNetworkUrlSelectorPoli
 }
 
 /// <summary>Selector for a Network in compute to populate url.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecForProviderNetworkUrlSelector
 {
@@ -607,7 +607,7 @@ public partial class V1beta2PacketMirroringSpecForProviderNetworkUrlSelector
 /// network. All mirrored subnetworks should belong to the given network.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecForProviderNetwork
 {
@@ -624,7 +624,7 @@ public partial class V1beta2PacketMirroringSpecForProviderNetwork
     public V1beta2PacketMirroringSpecForProviderNetworkUrlSelector? UrlSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecForProvider
 {
@@ -694,7 +694,7 @@ public partial class V1beta2PacketMirroringSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecInitProviderCollectorIlbUrlRefPolicyResolutionEnum>))]
 public enum V1beta2PacketMirroringSpecInitProviderCollectorIlbUrlRefPolicyResolutionEnum
 {
@@ -710,7 +710,7 @@ public enum V1beta2PacketMirroringSpecInitProviderCollectorIlbUrlRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecInitProviderCollectorIlbUrlRefPolicyResolveEnum>))]
 public enum V1beta2PacketMirroringSpecInitProviderCollectorIlbUrlRefPolicyResolveEnum
 {
@@ -721,7 +721,7 @@ public enum V1beta2PacketMirroringSpecInitProviderCollectorIlbUrlRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecInitProviderCollectorIlbUrlRefPolicy
 {
@@ -745,7 +745,7 @@ public partial class V1beta2PacketMirroringSpecInitProviderCollectorIlbUrlRefPol
 }
 
 /// <summary>Reference to a ForwardingRule in compute to populate url.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecInitProviderCollectorIlbUrlRef
 {
@@ -764,7 +764,7 @@ public partial class V1beta2PacketMirroringSpecInitProviderCollectorIlbUrlRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecInitProviderCollectorIlbUrlSelectorPolicyResolutionEnum>))]
 public enum V1beta2PacketMirroringSpecInitProviderCollectorIlbUrlSelectorPolicyResolutionEnum
 {
@@ -780,7 +780,7 @@ public enum V1beta2PacketMirroringSpecInitProviderCollectorIlbUrlSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecInitProviderCollectorIlbUrlSelectorPolicyResolveEnum>))]
 public enum V1beta2PacketMirroringSpecInitProviderCollectorIlbUrlSelectorPolicyResolveEnum
 {
@@ -791,7 +791,7 @@ public enum V1beta2PacketMirroringSpecInitProviderCollectorIlbUrlSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecInitProviderCollectorIlbUrlSelectorPolicy
 {
@@ -815,7 +815,7 @@ public partial class V1beta2PacketMirroringSpecInitProviderCollectorIlbUrlSelect
 }
 
 /// <summary>Selector for a ForwardingRule in compute to populate url.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecInitProviderCollectorIlbUrlSelector
 {
@@ -842,7 +842,7 @@ public partial class V1beta2PacketMirroringSpecInitProviderCollectorIlbUrlSelect
 /// set to true.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecInitProviderCollectorIlb
 {
@@ -863,7 +863,7 @@ public partial class V1beta2PacketMirroringSpecInitProviderCollectorIlb
 /// A filter for mirrored traffic.  If unset, all traffic is mirrored.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecInitProviderFilter
 {
@@ -893,7 +893,7 @@ public partial class V1beta2PacketMirroringSpecInitProviderFilter
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecInitProviderMirroredResourcesInstancesUrlRefPolicyResolutionEnum>))]
 public enum V1beta2PacketMirroringSpecInitProviderMirroredResourcesInstancesUrlRefPolicyResolutionEnum
 {
@@ -909,7 +909,7 @@ public enum V1beta2PacketMirroringSpecInitProviderMirroredResourcesInstancesUrlR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecInitProviderMirroredResourcesInstancesUrlRefPolicyResolveEnum>))]
 public enum V1beta2PacketMirroringSpecInitProviderMirroredResourcesInstancesUrlRefPolicyResolveEnum
 {
@@ -920,7 +920,7 @@ public enum V1beta2PacketMirroringSpecInitProviderMirroredResourcesInstancesUrlR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecInitProviderMirroredResourcesInstancesUrlRefPolicy
 {
@@ -944,7 +944,7 @@ public partial class V1beta2PacketMirroringSpecInitProviderMirroredResourcesInst
 }
 
 /// <summary>Reference to a Instance in compute to populate url.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecInitProviderMirroredResourcesInstancesUrlRef
 {
@@ -963,7 +963,7 @@ public partial class V1beta2PacketMirroringSpecInitProviderMirroredResourcesInst
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecInitProviderMirroredResourcesInstancesUrlSelectorPolicyResolutionEnum>))]
 public enum V1beta2PacketMirroringSpecInitProviderMirroredResourcesInstancesUrlSelectorPolicyResolutionEnum
 {
@@ -979,7 +979,7 @@ public enum V1beta2PacketMirroringSpecInitProviderMirroredResourcesInstancesUrlS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecInitProviderMirroredResourcesInstancesUrlSelectorPolicyResolveEnum>))]
 public enum V1beta2PacketMirroringSpecInitProviderMirroredResourcesInstancesUrlSelectorPolicyResolveEnum
 {
@@ -990,7 +990,7 @@ public enum V1beta2PacketMirroringSpecInitProviderMirroredResourcesInstancesUrlS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecInitProviderMirroredResourcesInstancesUrlSelectorPolicy
 {
@@ -1014,7 +1014,7 @@ public partial class V1beta2PacketMirroringSpecInitProviderMirroredResourcesInst
 }
 
 /// <summary>Selector for a Instance in compute to populate url.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecInitProviderMirroredResourcesInstancesUrlSelector
 {
@@ -1034,7 +1034,7 @@ public partial class V1beta2PacketMirroringSpecInitProviderMirroredResourcesInst
     public V1beta2PacketMirroringSpecInitProviderMirroredResourcesInstancesUrlSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecInitProviderMirroredResourcesInstances
 {
@@ -1051,7 +1051,7 @@ public partial class V1beta2PacketMirroringSpecInitProviderMirroredResourcesInst
     public V1beta2PacketMirroringSpecInitProviderMirroredResourcesInstancesUrlSelector? UrlSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecInitProviderMirroredResourcesSubnetworks
 {
@@ -1064,7 +1064,7 @@ public partial class V1beta2PacketMirroringSpecInitProviderMirroredResourcesSubn
 /// A means of specifying which resources to mirror.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecInitProviderMirroredResources
 {
@@ -1093,7 +1093,7 @@ public partial class V1beta2PacketMirroringSpecInitProviderMirroredResources
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecInitProviderNetworkUrlRefPolicyResolutionEnum>))]
 public enum V1beta2PacketMirroringSpecInitProviderNetworkUrlRefPolicyResolutionEnum
 {
@@ -1109,7 +1109,7 @@ public enum V1beta2PacketMirroringSpecInitProviderNetworkUrlRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecInitProviderNetworkUrlRefPolicyResolveEnum>))]
 public enum V1beta2PacketMirroringSpecInitProviderNetworkUrlRefPolicyResolveEnum
 {
@@ -1120,7 +1120,7 @@ public enum V1beta2PacketMirroringSpecInitProviderNetworkUrlRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecInitProviderNetworkUrlRefPolicy
 {
@@ -1144,7 +1144,7 @@ public partial class V1beta2PacketMirroringSpecInitProviderNetworkUrlRefPolicy
 }
 
 /// <summary>Reference to a Network in compute to populate url.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecInitProviderNetworkUrlRef
 {
@@ -1163,7 +1163,7 @@ public partial class V1beta2PacketMirroringSpecInitProviderNetworkUrlRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecInitProviderNetworkUrlSelectorPolicyResolutionEnum>))]
 public enum V1beta2PacketMirroringSpecInitProviderNetworkUrlSelectorPolicyResolutionEnum
 {
@@ -1179,7 +1179,7 @@ public enum V1beta2PacketMirroringSpecInitProviderNetworkUrlSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecInitProviderNetworkUrlSelectorPolicyResolveEnum>))]
 public enum V1beta2PacketMirroringSpecInitProviderNetworkUrlSelectorPolicyResolveEnum
 {
@@ -1190,7 +1190,7 @@ public enum V1beta2PacketMirroringSpecInitProviderNetworkUrlSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecInitProviderNetworkUrlSelectorPolicy
 {
@@ -1214,7 +1214,7 @@ public partial class V1beta2PacketMirroringSpecInitProviderNetworkUrlSelectorPol
 }
 
 /// <summary>Selector for a Network in compute to populate url.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecInitProviderNetworkUrlSelector
 {
@@ -1240,7 +1240,7 @@ public partial class V1beta2PacketMirroringSpecInitProviderNetworkUrlSelector
 /// network. All mirrored subnetworks should belong to the given network.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecInitProviderNetwork
 {
@@ -1269,7 +1269,7 @@ public partial class V1beta2PacketMirroringSpecInitProviderNetwork
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecInitProvider
 {
@@ -1330,7 +1330,7 @@ public partial class V1beta2PacketMirroringSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecManagementPoliciesEnum>))]
 public enum V1beta2PacketMirroringSpecManagementPoliciesEnum
 {
@@ -1354,7 +1354,7 @@ public enum V1beta2PacketMirroringSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2PacketMirroringSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1370,7 +1370,7 @@ public enum V1beta2PacketMirroringSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PacketMirroringSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2PacketMirroringSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1381,7 +1381,7 @@ public enum V1beta2PacketMirroringSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecProviderConfigRefPolicy
 {
@@ -1409,7 +1409,7 @@ public partial class V1beta2PacketMirroringSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecProviderConfigRef
 {
@@ -1428,7 +1428,7 @@ public partial class V1beta2PacketMirroringSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpecWriteConnectionSecretToRef
 {
@@ -1442,7 +1442,7 @@ public partial class V1beta2PacketMirroringSpecWriteConnectionSecretToRef
 }
 
 /// <summary>PacketMirroringSpec defines the desired state of PacketMirroring</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringSpec
 {
@@ -1516,7 +1516,7 @@ public partial class V1beta2PacketMirroringSpec
 /// set to true.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringStatusAtProviderCollectorIlb
 {
@@ -1529,7 +1529,7 @@ public partial class V1beta2PacketMirroringStatusAtProviderCollectorIlb
 /// A filter for mirrored traffic.  If unset, all traffic is mirrored.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringStatusAtProviderFilter
 {
@@ -1553,7 +1553,7 @@ public partial class V1beta2PacketMirroringStatusAtProviderFilter
     public IList<string>? IpProtocols { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringStatusAtProviderMirroredResourcesInstances
 {
@@ -1562,7 +1562,7 @@ public partial class V1beta2PacketMirroringStatusAtProviderMirroredResourcesInst
     public string? Url { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringStatusAtProviderMirroredResourcesSubnetworks
 {
@@ -1575,7 +1575,7 @@ public partial class V1beta2PacketMirroringStatusAtProviderMirroredResourcesSubn
 /// A means of specifying which resources to mirror.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringStatusAtProviderMirroredResources
 {
@@ -1604,7 +1604,7 @@ public partial class V1beta2PacketMirroringStatusAtProviderMirroredResources
 /// network. All mirrored subnetworks should belong to the given network.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringStatusAtProviderNetwork
 {
@@ -1613,7 +1613,7 @@ public partial class V1beta2PacketMirroringStatusAtProviderNetwork
     public string? Url { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringStatusAtProvider
 {
@@ -1682,7 +1682,7 @@ public partial class V1beta2PacketMirroringStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringStatusConditions
 {
@@ -1725,7 +1725,7 @@ public partial class V1beta2PacketMirroringStatusConditions
 }
 
 /// <summary>PacketMirroringStatus defines the observed state of PacketMirroring.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PacketMirroringStatus
 {
@@ -1746,7 +1746,7 @@ public partial class V1beta2PacketMirroringStatus
 }
 
 /// <summary>PacketMirroring is the Schema for the PacketMirrorings API. Packet Mirroring mirrors traffic to and from particular VM instances.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2PacketMirroring : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2PacketMirroringSpec>, IStatus<V1beta2PacketMirroringStatus?>

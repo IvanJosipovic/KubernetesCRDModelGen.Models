@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cosmosdb.azure.m.upbound.io;
 /// <summary>GremlinGraph is the Schema for the GremlinGraphs API. Manages a Gremlin Graph within a Cosmos DB Account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1GremlinGraphList : IKubernetesObject<V1ListMeta>, IItems<V1beta1GremlinGraph>
@@ -42,7 +42,7 @@ public partial class V1beta1GremlinGraphList : IKubernetesObject<V1ListMeta>, II
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GremlinGraphSpecForProviderAccountNameRefPolicyResolutionEnum>))]
 public enum V1beta1GremlinGraphSpecForProviderAccountNameRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1GremlinGraphSpecForProviderAccountNameRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GremlinGraphSpecForProviderAccountNameRefPolicyResolveEnum>))]
 public enum V1beta1GremlinGraphSpecForProviderAccountNameRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1GremlinGraphSpecForProviderAccountNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecForProviderAccountNameRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1GremlinGraphSpecForProviderAccountNameRefPolicy
 }
 
 /// <summary>Reference to a Account in cosmosdb to populate accountName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecForProviderAccountNameRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1GremlinGraphSpecForProviderAccountNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GremlinGraphSpecForProviderAccountNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1GremlinGraphSpecForProviderAccountNameSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1GremlinGraphSpecForProviderAccountNameSelectorPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GremlinGraphSpecForProviderAccountNameSelectorPolicyResolveEnum>))]
 public enum V1beta1GremlinGraphSpecForProviderAccountNameSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1GremlinGraphSpecForProviderAccountNameSelectorPolicyResolveEn
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecForProviderAccountNameSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1GremlinGraphSpecForProviderAccountNameSelectorPolicy
 }
 
 /// <summary>Selector for a Account in cosmosdb to populate accountName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecForProviderAccountNameSelector
 {
@@ -192,7 +192,7 @@ public partial class V1beta1GremlinGraphSpecForProviderAccountNameSelector
 }
 
 /// <summary>An autoscale_settings block as defined below. Requires partition_key_path to be set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecForProviderAutoscaleSettings
 {
@@ -202,7 +202,7 @@ public partial class V1beta1GremlinGraphSpecForProviderAutoscaleSettings
 }
 
 /// <summary>A conflict_resolution_policy blocks as defined below. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecForProviderConflictResolutionPolicy
 {
@@ -225,7 +225,7 @@ public partial class V1beta1GremlinGraphSpecForProviderConflictResolutionPolicy
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GremlinGraphSpecForProviderDatabaseNameRefPolicyResolutionEnum>))]
 public enum V1beta1GremlinGraphSpecForProviderDatabaseNameRefPolicyResolutionEnum
 {
@@ -241,7 +241,7 @@ public enum V1beta1GremlinGraphSpecForProviderDatabaseNameRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GremlinGraphSpecForProviderDatabaseNameRefPolicyResolveEnum>))]
 public enum V1beta1GremlinGraphSpecForProviderDatabaseNameRefPolicyResolveEnum
 {
@@ -252,7 +252,7 @@ public enum V1beta1GremlinGraphSpecForProviderDatabaseNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecForProviderDatabaseNameRefPolicy
 {
@@ -276,7 +276,7 @@ public partial class V1beta1GremlinGraphSpecForProviderDatabaseNameRefPolicy
 }
 
 /// <summary>Reference to a GremlinDatabase in cosmosdb to populate databaseName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecForProviderDatabaseNameRef
 {
@@ -299,7 +299,7 @@ public partial class V1beta1GremlinGraphSpecForProviderDatabaseNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GremlinGraphSpecForProviderDatabaseNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1GremlinGraphSpecForProviderDatabaseNameSelectorPolicyResolutionEnum
 {
@@ -315,7 +315,7 @@ public enum V1beta1GremlinGraphSpecForProviderDatabaseNameSelectorPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GremlinGraphSpecForProviderDatabaseNameSelectorPolicyResolveEnum>))]
 public enum V1beta1GremlinGraphSpecForProviderDatabaseNameSelectorPolicyResolveEnum
 {
@@ -326,7 +326,7 @@ public enum V1beta1GremlinGraphSpecForProviderDatabaseNameSelectorPolicyResolveE
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecForProviderDatabaseNameSelectorPolicy
 {
@@ -350,7 +350,7 @@ public partial class V1beta1GremlinGraphSpecForProviderDatabaseNameSelectorPolic
 }
 
 /// <summary>Selector for a GremlinDatabase in cosmosdb to populate databaseName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecForProviderDatabaseNameSelector
 {
@@ -374,7 +374,7 @@ public partial class V1beta1GremlinGraphSpecForProviderDatabaseNameSelector
     public V1beta1GremlinGraphSpecForProviderDatabaseNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecForProviderIndexPolicyCompositeIndexIndex
 {
@@ -387,7 +387,7 @@ public partial class V1beta1GremlinGraphSpecForProviderIndexPolicyCompositeIndex
     public string? Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecForProviderIndexPolicyCompositeIndex
 {
@@ -396,7 +396,7 @@ public partial class V1beta1GremlinGraphSpecForProviderIndexPolicyCompositeIndex
     public IList<V1beta1GremlinGraphSpecForProviderIndexPolicyCompositeIndexIndex>? Index { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecForProviderIndexPolicySpatialIndex
 {
@@ -406,7 +406,7 @@ public partial class V1beta1GremlinGraphSpecForProviderIndexPolicySpatialIndex
 }
 
 /// <summary>The configuration of the indexing policy. One or more index_policy blocks as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecForProviderIndexPolicy
 {
@@ -441,7 +441,7 @@ public partial class V1beta1GremlinGraphSpecForProviderIndexPolicy
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GremlinGraphSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1GremlinGraphSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -457,7 +457,7 @@ public enum V1beta1GremlinGraphSpecForProviderResourceGroupNameRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GremlinGraphSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1GremlinGraphSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -468,7 +468,7 @@ public enum V1beta1GremlinGraphSpecForProviderResourceGroupNameRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecForProviderResourceGroupNameRefPolicy
 {
@@ -492,7 +492,7 @@ public partial class V1beta1GremlinGraphSpecForProviderResourceGroupNameRefPolic
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecForProviderResourceGroupNameRef
 {
@@ -515,7 +515,7 @@ public partial class V1beta1GremlinGraphSpecForProviderResourceGroupNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GremlinGraphSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1GremlinGraphSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -531,7 +531,7 @@ public enum V1beta1GremlinGraphSpecForProviderResourceGroupNameSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GremlinGraphSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1GremlinGraphSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -542,7 +542,7 @@ public enum V1beta1GremlinGraphSpecForProviderResourceGroupNameSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -566,7 +566,7 @@ public partial class V1beta1GremlinGraphSpecForProviderResourceGroupNameSelector
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecForProviderResourceGroupNameSelector
 {
@@ -590,7 +590,7 @@ public partial class V1beta1GremlinGraphSpecForProviderResourceGroupNameSelector
     public V1beta1GremlinGraphSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecForProviderUniqueKey
 {
@@ -599,7 +599,7 @@ public partial class V1beta1GremlinGraphSpecForProviderUniqueKey
     public IList<string>? Paths { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecForProvider
 {
@@ -677,7 +677,7 @@ public partial class V1beta1GremlinGraphSpecForProvider
 }
 
 /// <summary>An autoscale_settings block as defined below. Requires partition_key_path to be set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecInitProviderAutoscaleSettings
 {
@@ -687,7 +687,7 @@ public partial class V1beta1GremlinGraphSpecInitProviderAutoscaleSettings
 }
 
 /// <summary>A conflict_resolution_policy blocks as defined below. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecInitProviderConflictResolutionPolicy
 {
@@ -704,7 +704,7 @@ public partial class V1beta1GremlinGraphSpecInitProviderConflictResolutionPolicy
     public string? Mode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecInitProviderIndexPolicyCompositeIndexIndex
 {
@@ -717,7 +717,7 @@ public partial class V1beta1GremlinGraphSpecInitProviderIndexPolicyCompositeInde
     public string? Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecInitProviderIndexPolicyCompositeIndex
 {
@@ -726,7 +726,7 @@ public partial class V1beta1GremlinGraphSpecInitProviderIndexPolicyCompositeInde
     public IList<V1beta1GremlinGraphSpecInitProviderIndexPolicyCompositeIndexIndex>? Index { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecInitProviderIndexPolicySpatialIndex
 {
@@ -736,7 +736,7 @@ public partial class V1beta1GremlinGraphSpecInitProviderIndexPolicySpatialIndex
 }
 
 /// <summary>The configuration of the indexing policy. One or more index_policy blocks as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecInitProviderIndexPolicy
 {
@@ -765,7 +765,7 @@ public partial class V1beta1GremlinGraphSpecInitProviderIndexPolicy
     public IList<V1beta1GremlinGraphSpecInitProviderIndexPolicySpatialIndex>? SpatialIndex { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecInitProviderUniqueKey
 {
@@ -786,7 +786,7 @@ public partial class V1beta1GremlinGraphSpecInitProviderUniqueKey
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecInitProvider
 {
@@ -831,7 +831,7 @@ public partial class V1beta1GremlinGraphSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GremlinGraphSpecManagementPoliciesEnum>))]
 public enum V1beta1GremlinGraphSpecManagementPoliciesEnum
 {
@@ -854,7 +854,7 @@ public enum V1beta1GremlinGraphSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecProviderConfigRef
 {
@@ -873,7 +873,7 @@ public partial class V1beta1GremlinGraphSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpecWriteConnectionSecretToRef
 {
@@ -883,7 +883,7 @@ public partial class V1beta1GremlinGraphSpecWriteConnectionSecretToRef
 }
 
 /// <summary>GremlinGraphSpec defines the desired state of GremlinGraph</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphSpec
 {
@@ -935,7 +935,7 @@ public partial class V1beta1GremlinGraphSpec
 }
 
 /// <summary>An autoscale_settings block as defined below. Requires partition_key_path to be set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphStatusAtProviderAutoscaleSettings
 {
@@ -945,7 +945,7 @@ public partial class V1beta1GremlinGraphStatusAtProviderAutoscaleSettings
 }
 
 /// <summary>A conflict_resolution_policy blocks as defined below. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphStatusAtProviderConflictResolutionPolicy
 {
@@ -962,7 +962,7 @@ public partial class V1beta1GremlinGraphStatusAtProviderConflictResolutionPolicy
     public string? Mode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphStatusAtProviderIndexPolicyCompositeIndexIndex
 {
@@ -975,7 +975,7 @@ public partial class V1beta1GremlinGraphStatusAtProviderIndexPolicyCompositeInde
     public string? Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphStatusAtProviderIndexPolicyCompositeIndex
 {
@@ -984,7 +984,7 @@ public partial class V1beta1GremlinGraphStatusAtProviderIndexPolicyCompositeInde
     public IList<V1beta1GremlinGraphStatusAtProviderIndexPolicyCompositeIndexIndex>? Index { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphStatusAtProviderIndexPolicySpatialIndex
 {
@@ -997,7 +997,7 @@ public partial class V1beta1GremlinGraphStatusAtProviderIndexPolicySpatialIndex
 }
 
 /// <summary>The configuration of the indexing policy. One or more index_policy blocks as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphStatusAtProviderIndexPolicy
 {
@@ -1026,7 +1026,7 @@ public partial class V1beta1GremlinGraphStatusAtProviderIndexPolicy
     public IList<V1beta1GremlinGraphStatusAtProviderIndexPolicySpatialIndex>? SpatialIndex { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphStatusAtProviderUniqueKey
 {
@@ -1035,7 +1035,7 @@ public partial class V1beta1GremlinGraphStatusAtProviderUniqueKey
     public IList<string>? Paths { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphStatusAtProvider
 {
@@ -1093,7 +1093,7 @@ public partial class V1beta1GremlinGraphStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphStatusConditions
 {
@@ -1136,7 +1136,7 @@ public partial class V1beta1GremlinGraphStatusConditions
 }
 
 /// <summary>GremlinGraphStatus defines the observed state of GremlinGraph.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GremlinGraphStatus
 {
@@ -1157,7 +1157,7 @@ public partial class V1beta1GremlinGraphStatus
 }
 
 /// <summary>GremlinGraph is the Schema for the GremlinGraphs API. Manages a Gremlin Graph within a Cosmos DB Account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1GremlinGraph : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1GremlinGraphSpec>, IStatus<V1beta1GremlinGraphStatus?>

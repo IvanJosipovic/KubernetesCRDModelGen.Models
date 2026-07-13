@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.notificationhubs.azure.upbound.io;
 /// <summary>AuthorizationRule is the Schema for the AuthorizationRules API. Manages an Authorization Rule associated with a Notification Hub within a Notification Hub Namespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AuthorizationRuleList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AuthorizationRule>
@@ -45,7 +45,7 @@ public partial class V1beta1AuthorizationRuleList : IKubernetesObject<V1ListMeta
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizationRuleSpecDeletionPolicyEnum>))]
 public enum V1beta1AuthorizationRuleSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1AuthorizationRuleSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizationRuleSpecForProviderNamespaceNameRefPolicyResolutionEnum>))]
 public enum V1beta1AuthorizationRuleSpecForProviderNamespaceNameRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1AuthorizationRuleSpecForProviderNamespaceNameRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizationRuleSpecForProviderNamespaceNameRefPolicyResolveEnum>))]
 public enum V1beta1AuthorizationRuleSpecForProviderNamespaceNameRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1AuthorizationRuleSpecForProviderNamespaceNameRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizationRuleSpecForProviderNamespaceNameRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1AuthorizationRuleSpecForProviderNamespaceNameRefPoli
 }
 
 /// <summary>Reference to a NotificationHubNamespace in notificationhubs to populate namespaceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizationRuleSpecForProviderNamespaceNameRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1AuthorizationRuleSpecForProviderNamespaceNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizationRuleSpecForProviderNamespaceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1AuthorizationRuleSpecForProviderNamespaceNameSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1AuthorizationRuleSpecForProviderNamespaceNameSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizationRuleSpecForProviderNamespaceNameSelectorPolicyResolveEnum>))]
 public enum V1beta1AuthorizationRuleSpecForProviderNamespaceNameSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1AuthorizationRuleSpecForProviderNamespaceNameSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizationRuleSpecForProviderNamespaceNameSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1AuthorizationRuleSpecForProviderNamespaceNameSelecto
 }
 
 /// <summary>Selector for a NotificationHubNamespace in notificationhubs to populate namespaceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizationRuleSpecForProviderNamespaceNameSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1AuthorizationRuleSpecForProviderNamespaceNameSelecto
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizationRuleSpecForProviderNotificationHubNameRefPolicyResolutionEnum>))]
 public enum V1beta1AuthorizationRuleSpecForProviderNotificationHubNameRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1AuthorizationRuleSpecForProviderNotificationHubNameRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizationRuleSpecForProviderNotificationHubNameRefPolicyResolveEnum>))]
 public enum V1beta1AuthorizationRuleSpecForProviderNotificationHubNameRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1AuthorizationRuleSpecForProviderNotificationHubNameRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizationRuleSpecForProviderNotificationHubNameRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1AuthorizationRuleSpecForProviderNotificationHubNameR
 }
 
 /// <summary>Reference to a NotificationHub in notificationhubs to populate notificationHubName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizationRuleSpecForProviderNotificationHubNameRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1AuthorizationRuleSpecForProviderNotificationHubNameR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizationRuleSpecForProviderNotificationHubNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1AuthorizationRuleSpecForProviderNotificationHubNameSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1AuthorizationRuleSpecForProviderNotificationHubNameSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizationRuleSpecForProviderNotificationHubNameSelectorPolicyResolveEnum>))]
 public enum V1beta1AuthorizationRuleSpecForProviderNotificationHubNameSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1AuthorizationRuleSpecForProviderNotificationHubNameSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizationRuleSpecForProviderNotificationHubNameSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1AuthorizationRuleSpecForProviderNotificationHubNameS
 }
 
 /// <summary>Selector for a NotificationHub in notificationhubs to populate notificationHubName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizationRuleSpecForProviderNotificationHubNameSelector
 {
@@ -355,7 +355,7 @@ public partial class V1beta1AuthorizationRuleSpecForProviderNotificationHubNameS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizationRuleSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1AuthorizationRuleSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -371,7 +371,7 @@ public enum V1beta1AuthorizationRuleSpecForProviderResourceGroupNameRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizationRuleSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1AuthorizationRuleSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -382,7 +382,7 @@ public enum V1beta1AuthorizationRuleSpecForProviderResourceGroupNameRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizationRuleSpecForProviderResourceGroupNameRefPolicy
 {
@@ -406,7 +406,7 @@ public partial class V1beta1AuthorizationRuleSpecForProviderResourceGroupNameRef
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizationRuleSpecForProviderResourceGroupNameRef
 {
@@ -425,7 +425,7 @@ public partial class V1beta1AuthorizationRuleSpecForProviderResourceGroupNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizationRuleSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1AuthorizationRuleSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -441,7 +441,7 @@ public enum V1beta1AuthorizationRuleSpecForProviderResourceGroupNameSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizationRuleSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1AuthorizationRuleSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -452,7 +452,7 @@ public enum V1beta1AuthorizationRuleSpecForProviderResourceGroupNameSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizationRuleSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -476,7 +476,7 @@ public partial class V1beta1AuthorizationRuleSpecForProviderResourceGroupNameSel
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizationRuleSpecForProviderResourceGroupNameSelector
 {
@@ -496,7 +496,7 @@ public partial class V1beta1AuthorizationRuleSpecForProviderResourceGroupNameSel
     public V1beta1AuthorizationRuleSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizationRuleSpecForProvider
 {
@@ -561,7 +561,7 @@ public partial class V1beta1AuthorizationRuleSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizationRuleSpecInitProvider
 {
@@ -582,7 +582,7 @@ public partial class V1beta1AuthorizationRuleSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizationRuleSpecManagementPoliciesEnum>))]
 public enum V1beta1AuthorizationRuleSpecManagementPoliciesEnum
 {
@@ -606,7 +606,7 @@ public enum V1beta1AuthorizationRuleSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizationRuleSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1AuthorizationRuleSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -622,7 +622,7 @@ public enum V1beta1AuthorizationRuleSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizationRuleSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1AuthorizationRuleSpecProviderConfigRefPolicyResolveEnum
 {
@@ -633,7 +633,7 @@ public enum V1beta1AuthorizationRuleSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizationRuleSpecProviderConfigRefPolicy
 {
@@ -661,7 +661,7 @@ public partial class V1beta1AuthorizationRuleSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizationRuleSpecProviderConfigRef
 {
@@ -680,7 +680,7 @@ public partial class V1beta1AuthorizationRuleSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizationRuleSpecWriteConnectionSecretToRef
 {
@@ -694,7 +694,7 @@ public partial class V1beta1AuthorizationRuleSpecWriteConnectionSecretToRef
 }
 
 /// <summary>AuthorizationRuleSpec defines the desired state of AuthorizationRule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizationRuleSpec
 {
@@ -761,7 +761,7 @@ public partial class V1beta1AuthorizationRuleSpec
     public V1beta1AuthorizationRuleSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizationRuleStatusAtProvider
 {
@@ -795,7 +795,7 @@ public partial class V1beta1AuthorizationRuleStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizationRuleStatusConditions
 {
@@ -838,7 +838,7 @@ public partial class V1beta1AuthorizationRuleStatusConditions
 }
 
 /// <summary>AuthorizationRuleStatus defines the observed state of AuthorizationRule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizationRuleStatus
 {
@@ -859,7 +859,7 @@ public partial class V1beta1AuthorizationRuleStatus
 }
 
 /// <summary>AuthorizationRule is the Schema for the AuthorizationRules API. Manages an Authorization Rule associated with a Notification Hub within a Notification Hub Namespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AuthorizationRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AuthorizationRuleSpec>, IStatus<V1beta1AuthorizationRuleStatus?>

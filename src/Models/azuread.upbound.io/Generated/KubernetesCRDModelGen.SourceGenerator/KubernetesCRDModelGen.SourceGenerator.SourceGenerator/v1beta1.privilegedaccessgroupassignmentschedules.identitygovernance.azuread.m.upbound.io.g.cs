@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.identitygovernance.azuread.m.upbound.io;
 /// <summary>PrivilegedAccessGroupAssignmentSchedule is the Schema for the PrivilegedAccessGroupAssignmentSchedules API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleList : IKubernetesObject<V1ListMeta>, IItems<V1beta1PrivilegedAccessGroupAssignmentSchedule>
@@ -42,7 +42,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleList : IKuber
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderGroupIdRefPolicyResolutionEnum>))]
 public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderGroupIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderGroupId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderGroupIdRefPolicyResolveEnum>))]
 public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderGroupIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderGroupId
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderGroupIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProvid
 }
 
 /// <summary>Reference to a Group in groups to populate groupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderGroupIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderGroupIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderGroupId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderGroupIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderGroupId
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderGroupIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProvid
 }
 
 /// <summary>Selector for a Group in groups to populate groupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderGroupIdSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderPrincipalIdRefPolicyResolutionEnum>))]
 public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderPrincipalIdRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderPrincip
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderPrincipalIdRefPolicyResolveEnum>))]
 public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderPrincipalIdRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderPrincip
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderPrincipalIdRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProvid
 }
 
 /// <summary>Reference to a User in users to populate principalId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderPrincipalIdRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderPrincipalIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderPrincipalIdSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderPrincip
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderPrincipalIdSelectorPolicyResolveEnum>))]
 public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderPrincipalIdSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderPrincip
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderPrincipalIdSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProvid
 }
 
 /// <summary>Selector for a User in users to populate principalId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderPrincipalIdSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProvid
     public V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProviderPrincipalIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProvider
 {
@@ -443,7 +443,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecForProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderGroupIdRefPolicyResolutionEnum>))]
 public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderGroupIdRefPolicyResolutionEnum
 {
@@ -459,7 +459,7 @@ public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderGroupI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderGroupIdRefPolicyResolveEnum>))]
 public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderGroupIdRefPolicyResolveEnum
 {
@@ -470,7 +470,7 @@ public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderGroupI
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderGroupIdRefPolicy
 {
@@ -494,7 +494,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProvi
 }
 
 /// <summary>Reference to a Group in groups to populate groupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderGroupIdRef
 {
@@ -517,7 +517,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProvi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderGroupIdSelectorPolicyResolutionEnum
 {
@@ -533,7 +533,7 @@ public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderGroupI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderGroupIdSelectorPolicyResolveEnum
 {
@@ -544,7 +544,7 @@ public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderGroupI
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderGroupIdSelectorPolicy
 {
@@ -568,7 +568,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProvi
 }
 
 /// <summary>Selector for a Group in groups to populate groupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderGroupIdSelector
 {
@@ -598,7 +598,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProvi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderPrincipalIdRefPolicyResolutionEnum>))]
 public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderPrincipalIdRefPolicyResolutionEnum
 {
@@ -614,7 +614,7 @@ public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderPrinci
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderPrincipalIdRefPolicyResolveEnum>))]
 public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderPrincipalIdRefPolicyResolveEnum
 {
@@ -625,7 +625,7 @@ public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderPrinci
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderPrincipalIdRefPolicy
 {
@@ -649,7 +649,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProvi
 }
 
 /// <summary>Reference to a User in users to populate principalId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderPrincipalIdRef
 {
@@ -672,7 +672,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProvi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderPrincipalIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderPrincipalIdSelectorPolicyResolutionEnum
 {
@@ -688,7 +688,7 @@ public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderPrinci
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderPrincipalIdSelectorPolicyResolveEnum>))]
 public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderPrincipalIdSelectorPolicyResolveEnum
 {
@@ -699,7 +699,7 @@ public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderPrinci
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderPrincipalIdSelectorPolicy
 {
@@ -723,7 +723,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProvi
 }
 
 /// <summary>Selector for a User in users to populate principalId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProviderPrincipalIdSelector
 {
@@ -759,7 +759,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProvi
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProvider
 {
@@ -854,7 +854,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecInitProvi
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivilegedAccessGroupAssignmentScheduleSpecManagementPoliciesEnum>))]
 public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecManagementPoliciesEnum
 {
@@ -877,7 +877,7 @@ public enum V1beta1PrivilegedAccessGroupAssignmentScheduleSpecManagementPolicies
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecProviderConfigRef
 {
@@ -896,7 +896,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecProviderC
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecWriteConnectionSecretToRef
 {
@@ -906,7 +906,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpecWriteConn
 }
 
 /// <summary>PrivilegedAccessGroupAssignmentScheduleSpec defines the desired state of PrivilegedAccessGroupAssignmentSchedule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpec
 {
@@ -957,7 +957,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleSpec
     public V1beta1PrivilegedAccessGroupAssignmentScheduleSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleStatusAtProvider
 {
@@ -1044,7 +1044,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleStatusAtProvi
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleStatusConditions
 {
@@ -1087,7 +1087,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleStatusConditi
 }
 
 /// <summary>PrivilegedAccessGroupAssignmentScheduleStatus defines the observed state of PrivilegedAccessGroupAssignmentSchedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleStatus
 {
@@ -1108,7 +1108,7 @@ public partial class V1beta1PrivilegedAccessGroupAssignmentScheduleStatus
 }
 
 /// <summary>PrivilegedAccessGroupAssignmentSchedule is the Schema for the PrivilegedAccessGroupAssignmentSchedules API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PrivilegedAccessGroupAssignmentSchedule : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PrivilegedAccessGroupAssignmentScheduleSpec>, IStatus<V1beta1PrivilegedAccessGroupAssignmentScheduleStatus?>

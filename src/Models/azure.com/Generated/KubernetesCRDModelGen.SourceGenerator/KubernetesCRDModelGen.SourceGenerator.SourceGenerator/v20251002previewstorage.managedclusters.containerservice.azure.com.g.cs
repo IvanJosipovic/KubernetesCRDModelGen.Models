@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.containerservice.azure.com;
 /// - Generated from: /containerservice/resource-manager/Microsoft.ContainerService/aks/preview/2025-10-02-preview/managedClusters.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ContainerService/managedClusters/{resourceName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20251002previewstorageManagedClusterList : IKubernetesObject<V1ListMeta>, IItems<V20251002previewstorageManagedCluster>
@@ -46,7 +46,7 @@ public partial class V20251002previewstorageManagedClusterList : IKubernetesObje
 /// AADProfile specifies attributes for Azure Active Directory integration. For more details see [managed AAD on
 /// AKS](https://docs.microsoft.com/azure/aks/managed-aad).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAadProfile
 {
@@ -83,7 +83,7 @@ public partial class V20251002previewstorageManagedClusterSpecAadProfile
 /// Storage version of v20251002preview.ManagedClusterAddonProfile
 /// A Kubernetes add-on profile for a managed cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAddonProfiles
 {
@@ -102,7 +102,7 @@ public partial class V20251002previewstorageManagedClusterSpecAddonProfiles
 }
 
 /// <summary>Storage version of v20251002preview.AgentPoolArtifactStreamingProfile</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesArtifactStreamingProfile
 {
@@ -124,7 +124,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesA
 /// Customers use it to create an agentpool with a specified CRG. For more information see [Capacity
 /// Reservation](https://learn.microsoft.com/en-us/azure/virtual-machines/capacity-reservation-overview)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesCapacityReservationGroupReference
 {
@@ -150,7 +150,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesC
 }
 
 /// <summary>SourceResourceReference: This is the ARM ID of the source object to be used to create the target object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesCreationDataSourceResourceReference
 {
@@ -179,7 +179,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesC
 /// Storage version of v20251002preview.CreationData
 /// Data used when creating a target resource from a source resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesCreationData
 {
@@ -199,7 +199,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesC
 /// Storage version of v20251002preview.AgentPoolGatewayProfile
 /// Profile of the managed cluster gateway agent pool.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesGatewayProfile
 {
@@ -218,7 +218,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesG
 /// Storage version of v20251002preview.GPUProfile
 /// GPU settings for the Agent Pool.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesGpuProfile
 {
@@ -242,7 +242,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesG
 /// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/hostGroups/{hostGroupName}.
 /// For more information see [Azure dedicated hosts](https://docs.microsoft.com/azure/virtual-machines/dedicated-hosts).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesHostGroupReference
 {
@@ -272,7 +272,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesH
 /// Kubelet configurations of agent nodes. See [AKS custom node
 /// configuration](https://docs.microsoft.com/azure/aks/custom-node-configuration) for more details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesKubeletConfig
 {
@@ -324,7 +324,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesK
 /// Storage version of v20251002preview.SysctlConfig
 /// Sysctl settings for Linux agent nodes.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesLinuxOSConfigSysctls
 {
@@ -425,7 +425,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesL
 /// OS configurations of Linux agent nodes. See [AKS custom node
 /// configuration](https://docs.microsoft.com/azure/aks/custom-node-configuration) for more details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesLinuxOSConfig
 {
@@ -457,7 +457,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesL
 /// Storage version of v20251002preview.LocalDNSOverride
 /// Overrides for localDNS profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesLocalDNSProfileKubeDNSOverrides
 {
@@ -497,7 +497,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesL
 /// Storage version of v20251002preview.LocalDNSOverride
 /// Overrides for localDNS profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesLocalDNSProfileVnetDNSOverrides
 {
@@ -538,7 +538,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesL
 /// Configures the per-node local DNS, with VnetDNS and KubeDNS overrides. LocalDNS helps improve performance and
 /// reliability of DNS resolution in an AKS cluster. For more details see aka.ms/aks/localdns.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesLocalDNSProfile
 {
@@ -563,7 +563,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesL
 /// Storage version of v20251002preview.PortRange
 /// The port range.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesNetworkProfileAllowedHostPorts
 {
@@ -585,7 +585,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesN
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesNetworkProfileApplicationSecurityGroupsReferences
 {
@@ -614,7 +614,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesN
 /// Storage version of v20251002preview.IPTag
 /// Contains the IPTag associated with the object.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesNetworkProfileNodePublicIPTags
 {
@@ -636,7 +636,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesN
 /// Storage version of v20251002preview.AgentPoolNetworkProfile
 /// Network settings of an agent pool.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesNetworkProfile
 {
@@ -661,7 +661,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesN
 /// NodeCustomizationReference: The resource ID of the node customization resource to use. This can be a version. Omitting
 /// the version will use the latest version of the node customization.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesNodeCustomizationProfileNodeCustomizationReference
 {
@@ -690,7 +690,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesN
 /// Storage version of v20251002preview.NodeCustomizationProfile
 /// Settings to determine the node customization used to provision nodes in a pool.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesNodeCustomizationProfile
 {
@@ -713,7 +713,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesN
 /// NodePublicIPPrefixReference: The public IP prefix ID which VM nodes should use IPs from. This is of the form:
 /// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/publicIPPrefixes/{publicIPPrefixName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesNodePublicIPPrefixReference
 {
@@ -743,7 +743,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesN
 /// on the node subnet (see vnetSubnetID for more details). This is of the form:
 /// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}/subnets/{subnetName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesPodSubnetReference
 {
@@ -772,7 +772,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesP
 /// Storage version of v20251002preview.PowerState
 /// Describes the Power State of the cluster
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesPowerState
 {
@@ -788,7 +788,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesP
 }
 
 /// <summary>ProximityPlacementGroupReference: The ID for Proximity Placement Group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesProximityPlacementGroupReference
 {
@@ -817,7 +817,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesP
 /// Storage version of v20251002preview.AgentPoolSecurityProfile
 /// The security settings of an agent pool.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesSecurityProfile
 {
@@ -842,7 +842,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesS
 /// Storage version of v20251002preview.AgentPoolUpgradeSettings
 /// Settings for upgrading an agentpool
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesUpgradeSettings
 {
@@ -876,7 +876,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesU
 /// Storage version of v20251002preview.AgentPoolBlueGreenUpgradeSettings
 /// Settings for blue-green upgrade on an agentpool
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesUpgradeSettingsBlueGreen
 {
@@ -904,7 +904,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesU
 /// Storage version of v20251002preview.VirtualMachineNodes
 /// Current status on a group of nodes of the same vm size.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesVirtualMachineNodesStatus
 {
@@ -926,7 +926,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesV
 /// Storage version of v20251002preview.AutoScaleProfile
 /// Specifications on auto-scaling.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesVirtualMachinesProfileScaleAutoscale
 {
@@ -951,7 +951,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesV
 /// Storage version of v20251002preview.ManualScaleProfile
 /// Specifications on number of machines.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesVirtualMachinesProfileScaleManual
 {
@@ -973,7 +973,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesV
 /// Storage version of v20251002preview.ScaleProfile
 /// Specifications on how to scale a VirtualMachines agent pool.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesVirtualMachinesProfileScale
 {
@@ -999,7 +999,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesV
 /// Storage version of v20251002preview.VirtualMachinesProfile
 /// Specifications on VirtualMachines agent pool.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesVirtualMachinesProfile
 {
@@ -1024,7 +1024,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesV
 /// pods, otherwise it applies to just nodes. This is of the form:
 /// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}/subnets/{subnetName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesVnetSubnetReference
 {
@@ -1053,7 +1053,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesV
 /// Storage version of v20251002preview.AgentPoolWindowsProfile
 /// The Windows agent pool&apos;s specific profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesWindowsProfile
 {
@@ -1072,7 +1072,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesW
 /// Storage version of v20251002preview.ManagedClusterAgentPoolProfile
 /// Profile for the container service agent pool.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfiles
 {
@@ -1344,7 +1344,7 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfiles
 /// automates the deployment of OSS models for inference and/or training purposes. It provides a set of preset models and
 /// enables distributed inference against them.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAiToolchainOperatorProfile
 {
@@ -1363,7 +1363,7 @@ public partial class V20251002previewstorageManagedClusterSpecAiToolchainOperato
 /// SubnetReference: The subnet to be used when apiserver vnet integration is enabled. It is required when creating a new
 /// cluster with BYO Vnet, or when updating an existing cluster to enable apiserver vnet integration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecApiServerAccessProfileSubnetReference
 {
@@ -1392,7 +1392,7 @@ public partial class V20251002previewstorageManagedClusterSpecApiServerAccessPro
 /// Storage version of v20251002preview.ManagedClusterAPIServerAccessProfile
 /// Access profile for managed cluster API server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecApiServerAccessProfile
 {
@@ -1433,7 +1433,7 @@ public partial class V20251002previewstorageManagedClusterSpecApiServerAccessPro
 /// Storage version of v20251002preview.ManagedClusterPropertiesAutoScalerProfile
 /// Parameters to be applied to the cluster-autoscaler when enabled
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAutoScalerProfile
 {
@@ -1509,7 +1509,7 @@ public partial class V20251002previewstorageManagedClusterSpecAutoScalerProfile
 /// Storage version of v20251002preview.ManagedClusterAutoUpgradeProfile
 /// Auto upgrade profile for a managed cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAutoUpgradeProfile
 {
@@ -1533,7 +1533,7 @@ public partial class V20251002previewstorageManagedClusterSpecAutoUpgradeProfile
 /// Azure Monitor OpenTelemetry based SDKs to collect OpenTelemetry metrics, logs and traces of the application. See
 /// aka.ms/AzureMonitorApplicationMonitoring for an overview.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAzureMonitorProfileAppMonitoringAutoInstrumentation
 {
@@ -1554,7 +1554,7 @@ public partial class V20251002previewstorageManagedClusterSpecAzureMonitorProfil
 /// OpenTelemetry logs and traces of the application using Azure Monitor OpenTelemetry based SDKs. See
 /// aka.ms/AzureMonitorApplicationMonitoring for an overview.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAzureMonitorProfileAppMonitoringOpenTelemetryLogs
 {
@@ -1578,7 +1578,7 @@ public partial class V20251002previewstorageManagedClusterSpecAzureMonitorProfil
 /// OpenTelemetry metrics of the application using Azure Monitor OpenTelemetry based SDKs. See
 /// aka.ms/AzureMonitorApplicationMonitoring for an overview.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAzureMonitorProfileAppMonitoringOpenTelemetryMetrics
 {
@@ -1602,7 +1602,7 @@ public partial class V20251002previewstorageManagedClusterSpecAzureMonitorProfil
 /// through auto-instrumentation of the application using Azure Monitor OpenTelemetry based SDKs. See
 /// aka.ms/AzureMonitorApplicationMonitoring for an overview.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAzureMonitorProfileAppMonitoring
 {
@@ -1645,7 +1645,7 @@ public partial class V20251002previewstorageManagedClusterSpecAzureMonitorProfil
 /// LogAnalyticsWorkspaceResourceReference: Fully Qualified ARM Resource Id of Azure Log Analytics Workspace for storing
 /// Azure Monitor Container Insights Logs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAzureMonitorProfileContainerInsightsLogAnalyticsWorkspaceResourceReference
 {
@@ -1675,7 +1675,7 @@ public partial class V20251002previewstorageManagedClusterSpecAzureMonitorProfil
 /// Azure Monitor Container Insights Profile for Kubernetes Events, Inventory and Container stdout &amp; stderr logs etc. See
 /// aka.ms/AzureMonitorContainerInsights for an overview.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAzureMonitorProfileContainerInsights
 {
@@ -1712,7 +1712,7 @@ public partial class V20251002previewstorageManagedClusterSpecAzureMonitorProfil
 /// kube-state-metrics pod that is deployed with the addon. See aka.ms/AzureManagedPrometheus-optional-parameters for
 /// details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAzureMonitorProfileMetricsKubeStateMetrics
 {
@@ -1736,7 +1736,7 @@ public partial class V20251002previewstorageManagedClusterSpecAzureMonitorProfil
 /// infrastructure metrics to send to an Azure Monitor Workspace and configure additional scraping for custom targets. See
 /// aka.ms/AzureManagedPrometheus for an overview.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAzureMonitorProfileMetrics
 {
@@ -1764,7 +1764,7 @@ public partial class V20251002previewstorageManagedClusterSpecAzureMonitorProfil
 /// Storage version of v20251002preview.ManagedClusterAzureMonitorProfile
 /// Azure Monitor addon profiles for monitoring the managed cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAzureMonitorProfile
 {
@@ -1806,7 +1806,7 @@ public partial class V20251002previewstorageManagedClusterSpecAzureMonitorProfil
 /// ContainerRegistryReference: The resource Id of Azure Container Registry. The registry must have private network access,
 /// premium SKU and zone redundancy.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecBootstrapProfileContainerRegistryReference
 {
@@ -1835,7 +1835,7 @@ public partial class V20251002previewstorageManagedClusterSpecBootstrapProfileCo
 /// Storage version of v20251002preview.ManagedClusterBootstrapProfile
 /// The bootstrap profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecBootstrapProfile
 {
@@ -1858,7 +1858,7 @@ public partial class V20251002previewstorageManagedClusterSpecBootstrapProfile
 }
 
 /// <summary>SourceResourceReference: This is the ARM ID of the source object to be used to create the target object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecCreationDataSourceResourceReference
 {
@@ -1887,7 +1887,7 @@ public partial class V20251002previewstorageManagedClusterSpecCreationDataSource
 /// Storage version of v20251002preview.CreationData
 /// Data used when creating a target resource from a source resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecCreationData
 {
@@ -1908,7 +1908,7 @@ public partial class V20251002previewstorageManagedClusterSpecCreationData
 /// of the form:
 /// &apos;/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/diskEncryptionSets/{encryptionSetName}&apos;
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecDiskEncryptionSetReference
 {
@@ -1937,7 +1937,7 @@ public partial class V20251002previewstorageManagedClusterSpecDiskEncryptionSetR
 /// Storage version of v20251002preview.ExtendedLocation
 /// The complex type of the extended location.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecExtendedLocation
 {
@@ -1959,7 +1959,7 @@ public partial class V20251002previewstorageManagedClusterSpecExtendedLocation
 /// Storage version of v20251002preview.ManagedClusterHostedSystemProfile
 /// Settings for hosted system addons.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecHostedSystemProfile
 {
@@ -1978,7 +1978,7 @@ public partial class V20251002previewstorageManagedClusterSpecHostedSystemProfil
 /// Storage version of v20251002preview.ManagedClusterHTTPProxyConfig
 /// Cluster HTTP proxy configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecHttpProxyConfig
 {
@@ -2006,7 +2006,7 @@ public partial class V20251002previewstorageManagedClusterSpecHttpProxyConfig
 }
 
 /// <summary>ResourceReference: The ARM resource id of the delegated resource - internal use only.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecIdentityDelegatedResourcesResourceReference
 {
@@ -2035,7 +2035,7 @@ public partial class V20251002previewstorageManagedClusterSpecIdentityDelegatedR
 /// Storage version of v20251002preview.DelegatedResource
 /// Delegated resource properties - internal use only.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecIdentityDelegatedResources
 {
@@ -2061,7 +2061,7 @@ public partial class V20251002previewstorageManagedClusterSpecIdentityDelegatedR
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecIdentityUserAssignedIdentitiesReference
 {
@@ -2090,7 +2090,7 @@ public partial class V20251002previewstorageManagedClusterSpecIdentityUserAssign
 /// Storage version of v20251002preview.UserAssignedIdentityDetails
 /// Information about the user assigned identity for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecIdentityUserAssignedIdentities
 {
@@ -2110,7 +2110,7 @@ public partial class V20251002previewstorageManagedClusterSpecIdentityUserAssign
 /// Storage version of v20251002preview.ManagedClusterIdentity
 /// Identity for the managed cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecIdentity
 {
@@ -2135,7 +2135,7 @@ public partial class V20251002previewstorageManagedClusterSpecIdentity
 /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecIdentityProfileClientIdFromConfig
 {
@@ -2155,7 +2155,7 @@ public partial class V20251002previewstorageManagedClusterSpecIdentityProfileCli
 /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecIdentityProfileObjectIdFromConfig
 {
@@ -2172,7 +2172,7 @@ public partial class V20251002previewstorageManagedClusterSpecIdentityProfileObj
 }
 
 /// <summary>ResourceReference: The resource ID of the user assigned identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecIdentityProfileResourceReference
 {
@@ -2201,7 +2201,7 @@ public partial class V20251002previewstorageManagedClusterSpecIdentityProfileRes
 /// Storage version of v20251002preview.UserAssignedIdentity
 /// Details about a user assigned identity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecIdentityProfile
 {
@@ -2241,7 +2241,7 @@ public partial class V20251002previewstorageManagedClusterSpecIdentityProfile
 /// Storage version of v20251002preview.ManagedClusterIngressProfileApplicationLoadBalancer
 /// Application Load Balancer settings for the ingress profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecIngressProfileApplicationLoadBalancer
 {
@@ -2257,7 +2257,7 @@ public partial class V20251002previewstorageManagedClusterSpecIngressProfileAppl
 }
 
 /// <summary>Storage version of v20251002preview.ManagedClusterIngressProfileGatewayConfiguration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecIngressProfileGatewayAPI
 {
@@ -2273,7 +2273,7 @@ public partial class V20251002previewstorageManagedClusterSpecIngressProfileGate
 }
 
 /// <summary>Storage version of v20251002preview.ManagedClusterIngressDefaultDomainProfile</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecIngressProfileWebAppRoutingDefaultDomain
 {
@@ -2289,7 +2289,7 @@ public partial class V20251002previewstorageManagedClusterSpecIngressProfileWebA
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecIngressProfileWebAppRoutingDnsZoneResourceReferences
 {
@@ -2315,7 +2315,7 @@ public partial class V20251002previewstorageManagedClusterSpecIngressProfileWebA
 }
 
 /// <summary>Storage version of v20251002preview.ManagedClusterIngressProfileNginx</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecIngressProfileWebAppRoutingNginx
 {
@@ -2334,7 +2334,7 @@ public partial class V20251002previewstorageManagedClusterSpecIngressProfileWebA
 /// Storage version of v20251002preview.ManagedClusterIngressProfileWebAppRouting
 /// Application Routing add-on settings for the ingress profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecIngressProfileWebAppRouting
 {
@@ -2364,7 +2364,7 @@ public partial class V20251002previewstorageManagedClusterSpecIngressProfileWebA
 /// Storage version of v20251002preview.ManagedClusterIngressProfile
 /// Ingress profile for the container service cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecIngressProfile
 {
@@ -2398,7 +2398,7 @@ public partial class V20251002previewstorageManagedClusterSpecIngressProfile
 /// Storage version of v20251002preview.ContainerServiceSshPublicKey
 /// Contains information about SSH certificate public key data.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecLinuxProfileSshPublicKeys
 {
@@ -2417,7 +2417,7 @@ public partial class V20251002previewstorageManagedClusterSpecLinuxProfileSshPub
 /// Storage version of v20251002preview.ContainerServiceSshConfiguration
 /// SSH configuration for Linux-based VMs running on Azure.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecLinuxProfileSsh
 {
@@ -2436,7 +2436,7 @@ public partial class V20251002previewstorageManagedClusterSpecLinuxProfileSsh
 /// Storage version of v20251002preview.ContainerServiceLinuxProfile
 /// Profile for Linux VMs in the container service cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecLinuxProfile
 {
@@ -2462,7 +2462,7 @@ public partial class V20251002previewstorageManagedClusterSpecLinuxProfile
 /// Storage version of v20251002preview.ManagedClusterCostAnalysis
 /// The cost analysis configuration for the cluster
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecMetricsProfileCostAnalysis
 {
@@ -2481,7 +2481,7 @@ public partial class V20251002previewstorageManagedClusterSpecMetricsProfileCost
 /// Storage version of v20251002preview.ManagedClusterMetricsProfile
 /// The metrics profile for the ManagedCluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecMetricsProfile
 {
@@ -2504,7 +2504,7 @@ public partial class V20251002previewstorageManagedClusterSpecMetricsProfile
 /// Storage version of v20251002preview.AdvancedNetworkingObservability
 /// Observability profile to enable advanced network metrics and flow logs with historical contexts.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecNetworkProfileAdvancedNetworkingObservability
 {
@@ -2523,7 +2523,7 @@ public partial class V20251002previewstorageManagedClusterSpecNetworkProfileAdva
 /// Storage version of v20251002preview.AdvancedNetworkingPerformance
 /// Profile to enable performance-enhancing features on clusters that use Azure CNI powered by Cilium.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecNetworkProfileAdvancedNetworkingPerformance
 {
@@ -2543,7 +2543,7 @@ public partial class V20251002previewstorageManagedClusterSpecNetworkProfileAdva
 /// Encryption configuration for Cilium-based clusters. Once enabled all traffic between Cilium managed pods will be
 /// encrypted when it leaves the node boundary.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecNetworkProfileAdvancedNetworkingSecurityTransitEncryption
 {
@@ -2562,7 +2562,7 @@ public partial class V20251002previewstorageManagedClusterSpecNetworkProfileAdva
 /// Storage version of v20251002preview.AdvancedNetworkingSecurity
 /// Security profile to enable security features on cilium based cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecNetworkProfileAdvancedNetworkingSecurity
 {
@@ -2593,7 +2593,7 @@ public partial class V20251002previewstorageManagedClusterSpecNetworkProfileAdva
 /// Advanced Networking profile for enabling observability and security feature suite on a cluster. For more information see
 /// aka.ms/aksadvancednetworking.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecNetworkProfileAdvancedNetworking
 {
@@ -2633,7 +2633,7 @@ public partial class V20251002previewstorageManagedClusterSpecNetworkProfileAdva
 /// Storage version of v20251002preview.ContainerServiceNetworkProfileKubeProxyConfigIpvsConfig
 /// Holds configuration customizations for IPVS. May only be specified if &apos;mode&apos; is set to &apos;IPVS&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecNetworkProfileKubeProxyConfigIpvsConfig
 {
@@ -2663,7 +2663,7 @@ public partial class V20251002previewstorageManagedClusterSpecNetworkProfileKube
 /// See https://v&lt;version&gt;.docs.kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/ where &lt;version&gt; is
 /// represented by a &lt;major version&gt;-&lt;minor version&gt; string. Kubernetes version 1.23 would be &apos;1-23&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecNetworkProfileKubeProxyConfig
 {
@@ -2692,7 +2692,7 @@ public partial class V20251002previewstorageManagedClusterSpecNetworkProfileKube
 /// Storage version of v20251002preview.ManagedClusterLoadBalancerProfileManagedOutboundIPs
 /// Desired managed outbound IPs for the cluster load balancer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecNetworkProfileLoadBalancerProfileManagedOutboundIPs
 {
@@ -2711,7 +2711,7 @@ public partial class V20251002previewstorageManagedClusterSpecNetworkProfileLoad
 }
 
 /// <summary>Reference: The fully qualified Azure resource id.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecNetworkProfileLoadBalancerProfileOutboundIPPrefixesPublicIPPrefixesReference
 {
@@ -2740,7 +2740,7 @@ public partial class V20251002previewstorageManagedClusterSpecNetworkProfileLoad
 /// Storage version of v20251002preview.ResourceReference
 /// A reference to an Azure resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecNetworkProfileLoadBalancerProfileOutboundIPPrefixesPublicIPPrefixes
 {
@@ -2760,7 +2760,7 @@ public partial class V20251002previewstorageManagedClusterSpecNetworkProfileLoad
 /// Storage version of v20251002preview.ManagedClusterLoadBalancerProfileOutboundIPPrefixes
 /// Desired outbound IP Prefix resources for the cluster load balancer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecNetworkProfileLoadBalancerProfileOutboundIPPrefixes
 {
@@ -2776,7 +2776,7 @@ public partial class V20251002previewstorageManagedClusterSpecNetworkProfileLoad
 }
 
 /// <summary>Reference: The fully qualified Azure resource id.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecNetworkProfileLoadBalancerProfileOutboundIPsPublicIPsReference
 {
@@ -2805,7 +2805,7 @@ public partial class V20251002previewstorageManagedClusterSpecNetworkProfileLoad
 /// Storage version of v20251002preview.ResourceReference
 /// A reference to an Azure resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecNetworkProfileLoadBalancerProfileOutboundIPsPublicIPs
 {
@@ -2825,7 +2825,7 @@ public partial class V20251002previewstorageManagedClusterSpecNetworkProfileLoad
 /// Storage version of v20251002preview.ManagedClusterLoadBalancerProfileOutboundIPs
 /// Desired outbound IP resources for the cluster load balancer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecNetworkProfileLoadBalancerProfileOutboundIPs
 {
@@ -2844,7 +2844,7 @@ public partial class V20251002previewstorageManagedClusterSpecNetworkProfileLoad
 /// Storage version of v20251002preview.ManagedClusterLoadBalancerProfile
 /// Profile of the managed cluster load balancer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecNetworkProfileLoadBalancerProfile
 {
@@ -2896,7 +2896,7 @@ public partial class V20251002previewstorageManagedClusterSpecNetworkProfileLoad
 /// Storage version of v20251002preview.ManagedClusterManagedOutboundIPProfile
 /// Profile of the managed outbound IP resources of the managed cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecNetworkProfileNatGatewayProfileManagedOutboundIPProfile
 {
@@ -2915,7 +2915,7 @@ public partial class V20251002previewstorageManagedClusterSpecNetworkProfileNatG
 /// Storage version of v20251002preview.ManagedClusterNATGatewayProfile
 /// Profile of the managed cluster NAT gateway.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecNetworkProfileNatGatewayProfile
 {
@@ -2941,7 +2941,7 @@ public partial class V20251002previewstorageManagedClusterSpecNetworkProfileNatG
 /// Storage version of v20251002preview.ManagedClusterStaticEgressGatewayProfile
 /// The Static Egress Gateway addon configuration for the cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecNetworkProfileStaticEgressGatewayProfile
 {
@@ -2960,7 +2960,7 @@ public partial class V20251002previewstorageManagedClusterSpecNetworkProfileStat
 /// Storage version of v20251002preview.ContainerServiceNetworkProfile
 /// Profile of network configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecNetworkProfile
 {
@@ -3053,7 +3053,7 @@ public partial class V20251002previewstorageManagedClusterSpecNetworkProfile
 }
 
 /// <summary>Storage version of v20251002preview.ManagedClusterNodeProvisioningProfile</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecNodeProvisioningProfile
 {
@@ -3075,7 +3075,7 @@ public partial class V20251002previewstorageManagedClusterSpecNodeProvisioningPr
 /// Storage version of v20251002preview.ManagedClusterNodeResourceGroupProfile
 /// Node resource group lockdown profile for a managed cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecNodeResourceGroupProfile
 {
@@ -3094,7 +3094,7 @@ public partial class V20251002previewstorageManagedClusterSpecNodeResourceGroupP
 /// Storage version of v20251002preview.ManagedClusterOIDCIssuerProfile
 /// The OIDC issuer profile of the Managed Cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecOidcIssuerProfile
 {
@@ -3114,7 +3114,7 @@ public partial class V20251002previewstorageManagedClusterSpecOidcIssuerProfile
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecOperatorSpecConfigMapExpressions
 {
@@ -3155,7 +3155,7 @@ public partial class V20251002previewstorageManagedClusterSpecOperatorSpecConfig
 /// Note: This is similar to: SecretDestination in secrets.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecOperatorSpecConfigMapsOidcIssuerProfile
 {
@@ -3180,7 +3180,7 @@ public partial class V20251002previewstorageManagedClusterSpecOperatorSpecConfig
 }
 
 /// <summary>Storage version of v20251002preview.ManagedClusterOperatorConfigMaps</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecOperatorSpecConfigMaps
 {
@@ -3205,7 +3205,7 @@ public partial class V20251002previewstorageManagedClusterSpecOperatorSpecConfig
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecOperatorSpecSecretExpressions
 {
@@ -3246,7 +3246,7 @@ public partial class V20251002previewstorageManagedClusterSpecOperatorSpecSecret
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecOperatorSpecSecretsAdminCredentials
 {
@@ -3275,7 +3275,7 @@ public partial class V20251002previewstorageManagedClusterSpecOperatorSpecSecret
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecOperatorSpecSecretsUserCredentials
 {
@@ -3300,7 +3300,7 @@ public partial class V20251002previewstorageManagedClusterSpecOperatorSpecSecret
 }
 
 /// <summary>Storage version of v20251002preview.ManagedClusterOperatorSecrets</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecOperatorSpecSecrets
 {
@@ -3332,7 +3332,7 @@ public partial class V20251002previewstorageManagedClusterSpecOperatorSpecSecret
 /// Storage version of v20251002preview.ManagedClusterOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecOperatorSpec
 {
@@ -3363,7 +3363,7 @@ public partial class V20251002previewstorageManagedClusterSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecOwner
 {
@@ -3379,7 +3379,7 @@ public partial class V20251002previewstorageManagedClusterSpecOwner
 /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecPodIdentityProfileUserAssignedIdentitiesIdentityClientIdFromConfig
 {
@@ -3399,7 +3399,7 @@ public partial class V20251002previewstorageManagedClusterSpecPodIdentityProfile
 /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecPodIdentityProfileUserAssignedIdentitiesIdentityObjectIdFromConfig
 {
@@ -3416,7 +3416,7 @@ public partial class V20251002previewstorageManagedClusterSpecPodIdentityProfile
 }
 
 /// <summary>ResourceReference: The resource ID of the user assigned identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecPodIdentityProfileUserAssignedIdentitiesIdentityResourceReference
 {
@@ -3445,7 +3445,7 @@ public partial class V20251002previewstorageManagedClusterSpecPodIdentityProfile
 /// Storage version of v20251002preview.UserAssignedIdentity
 /// Details about a user assigned identity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecPodIdentityProfileUserAssignedIdentitiesIdentity
 {
@@ -3485,7 +3485,7 @@ public partial class V20251002previewstorageManagedClusterSpecPodIdentityProfile
 /// Storage version of v20251002preview.ManagedClusterPodIdentity
 /// Details about the pod identity assigned to the Managed Cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecPodIdentityProfileUserAssignedIdentities
 {
@@ -3520,7 +3520,7 @@ public partial class V20251002previewstorageManagedClusterSpecPodIdentityProfile
 /// specific Pod/Application](https://azure.github.io/aad-pod-identity/docs/configure/application_exception/) for more
 /// details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecPodIdentityProfileUserAssignedIdentityExceptions
 {
@@ -3546,7 +3546,7 @@ public partial class V20251002previewstorageManagedClusterSpecPodIdentityProfile
 /// The pod identity profile of the Managed Cluster. See [use AAD pod
 /// identity](https://docs.microsoft.com/azure/aks/use-azure-ad-pod-identity) for more details on pod identity integration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecPodIdentityProfile
 {
@@ -3571,7 +3571,7 @@ public partial class V20251002previewstorageManagedClusterSpecPodIdentityProfile
 }
 
 /// <summary>Reference: The ID of the private link resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecPrivateLinkResourcesReference
 {
@@ -3600,7 +3600,7 @@ public partial class V20251002previewstorageManagedClusterSpecPrivateLinkResourc
 /// Storage version of v20251002preview.PrivateLinkResource
 /// A private link resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecPrivateLinkResources
 {
@@ -3632,7 +3632,7 @@ public partial class V20251002previewstorageManagedClusterSpecPrivateLinkResourc
 /// Storage version of v20251002preview.SchedulerInstanceProfile
 /// The scheduler profile for a single scheduler instance.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecSchedulerProfileSchedulerInstanceProfilesUpstream
 {
@@ -3651,7 +3651,7 @@ public partial class V20251002previewstorageManagedClusterSpecSchedulerProfileSc
 /// Storage version of v20251002preview.SchedulerProfileSchedulerInstanceProfiles
 /// Mapping of each scheduler instance to its profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecSchedulerProfileSchedulerInstanceProfiles
 {
@@ -3674,7 +3674,7 @@ public partial class V20251002previewstorageManagedClusterSpecSchedulerProfileSc
 /// Storage version of v20251002preview.SchedulerProfile
 /// The pod scheduler profile for the cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecSchedulerProfile
 {
@@ -3697,7 +3697,7 @@ public partial class V20251002previewstorageManagedClusterSpecSchedulerProfile
 /// KeyVaultResourceReference: Resource ID of key vault. When keyVaultNetworkAccess is `Private`, this field is required and
 /// must be a valid resource ID. When keyVaultNetworkAccess is `Public`, leave the field empty.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecSecurityProfileAzureKeyVaultKmsKeyVaultResourceReference
 {
@@ -3726,7 +3726,7 @@ public partial class V20251002previewstorageManagedClusterSpecSecurityProfileAzu
 /// Storage version of v20251002preview.AzureKeyVaultKms
 /// Azure Key Vault key management service settings for the security profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecSecurityProfileAzureKeyVaultKms
 {
@@ -3759,7 +3759,7 @@ public partial class V20251002previewstorageManagedClusterSpecSecurityProfileAzu
 /// Defender. When Microsoft Defender is enabled, this field is required and must be a valid workspace resource ID. When
 /// Microsoft Defender is disabled, leave the field empty.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecSecurityProfileDefenderLogAnalyticsWorkspaceResourceReference
 {
@@ -3788,7 +3788,7 @@ public partial class V20251002previewstorageManagedClusterSpecSecurityProfileDef
 /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecSecurityProfileDefenderSecurityGatingIdentitiesIdentityClientIdFromConfig
 {
@@ -3808,7 +3808,7 @@ public partial class V20251002previewstorageManagedClusterSpecSecurityProfileDef
 /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecSecurityProfileDefenderSecurityGatingIdentitiesIdentityObjectIdFromConfig
 {
@@ -3825,7 +3825,7 @@ public partial class V20251002previewstorageManagedClusterSpecSecurityProfileDef
 }
 
 /// <summary>ResourceReference: The resource ID of the user assigned identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecSecurityProfileDefenderSecurityGatingIdentitiesIdentityResourceReference
 {
@@ -3854,7 +3854,7 @@ public partial class V20251002previewstorageManagedClusterSpecSecurityProfileDef
 /// Storage version of v20251002preview.UserAssignedIdentity
 /// Details about a user assigned identity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecSecurityProfileDefenderSecurityGatingIdentitiesIdentity
 {
@@ -3891,7 +3891,7 @@ public partial class V20251002previewstorageManagedClusterSpecSecurityProfileDef
 }
 
 /// <summary>Storage version of v20251002preview.ManagedClusterSecurityProfileDefenderSecurityGatingIdentitiesItem</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecSecurityProfileDefenderSecurityGatingIdentities
 {
@@ -3919,7 +3919,7 @@ public partial class V20251002previewstorageManagedClusterSpecSecurityProfileDef
 /// for Containers security findings. Using Admission Controller, it either audits or prevents the deployment of images that
 /// do not meet security standards.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecSecurityProfileDefenderSecurityGating
 {
@@ -3944,7 +3944,7 @@ public partial class V20251002previewstorageManagedClusterSpecSecurityProfileDef
 /// Storage version of v20251002preview.ManagedClusterSecurityProfileDefenderSecurityMonitoring
 /// Microsoft Defender settings for the security profile threat detection.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecSecurityProfileDefenderSecurityMonitoring
 {
@@ -3963,7 +3963,7 @@ public partial class V20251002previewstorageManagedClusterSpecSecurityProfileDef
 /// Storage version of v20251002preview.ManagedClusterSecurityProfileDefender
 /// Microsoft Defender settings for the security profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecSecurityProfileDefender
 {
@@ -4004,7 +4004,7 @@ public partial class V20251002previewstorageManagedClusterSpecSecurityProfileDef
 /// Image Cleaner removes unused images from nodes, freeing up disk space and helping to reduce attack surface area. Here
 /// are settings for the security profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecSecurityProfileImageCleaner
 {
@@ -4026,7 +4026,7 @@ public partial class V20251002previewstorageManagedClusterSpecSecurityProfileIma
 /// Storage version of v20251002preview.ManagedClusterSecurityProfileImageIntegrity
 /// Image integrity related settings for the security profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecSecurityProfileImageIntegrity
 {
@@ -4046,7 +4046,7 @@ public partial class V20251002previewstorageManagedClusterSpecSecurityProfileIma
 /// Encryption at rest of Kubernetes resource objects using service-managed keys. More information on this can be found
 /// under https://aka.ms/aks/kubernetesResourceObjectEncryption.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecSecurityProfileKubernetesResourceObjectEncryptionProfile
 {
@@ -4065,7 +4065,7 @@ public partial class V20251002previewstorageManagedClusterSpecSecurityProfileKub
 /// Storage version of v20251002preview.ManagedClusterSecurityProfileNodeRestriction
 /// Node Restriction settings for the security profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecSecurityProfileNodeRestriction
 {
@@ -4084,7 +4084,7 @@ public partial class V20251002previewstorageManagedClusterSpecSecurityProfileNod
 /// Storage version of v20251002preview.ManagedClusterSecurityProfileWorkloadIdentity
 /// Workload identity settings for the security profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecSecurityProfileWorkloadIdentity
 {
@@ -4103,7 +4103,7 @@ public partial class V20251002previewstorageManagedClusterSpecSecurityProfileWor
 /// Storage version of v20251002preview.ManagedClusterSecurityProfile
 /// Security profile for the container service cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecSecurityProfile
 {
@@ -4170,7 +4170,7 @@ public partial class V20251002previewstorageManagedClusterSpecSecurityProfile
 }
 
 /// <summary>KeyVaultReference: The resource ID of the Key Vault.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecServiceMeshProfileIstioCertificateAuthorityPluginKeyVaultReference
 {
@@ -4199,7 +4199,7 @@ public partial class V20251002previewstorageManagedClusterSpecServiceMeshProfile
 /// Storage version of v20251002preview.IstioPluginCertificateAuthority
 /// Plugin certificates information for Service Mesh.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecServiceMeshProfileIstioCertificateAuthorityPlugin
 {
@@ -4232,7 +4232,7 @@ public partial class V20251002previewstorageManagedClusterSpecServiceMeshProfile
 /// Istio Service Mesh Certificate Authority (CA) configuration. For now, we only support plugin certificates as described
 /// here https://aka.ms/asm-plugin-ca
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecServiceMeshProfileIstioCertificateAuthority
 {
@@ -4255,7 +4255,7 @@ public partial class V20251002previewstorageManagedClusterSpecServiceMeshProfile
 /// Storage version of v20251002preview.IstioEgressGateway
 /// Istio egress gateway configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecServiceMeshProfileIstioComponentsEgressGateways
 {
@@ -4284,7 +4284,7 @@ public partial class V20251002previewstorageManagedClusterSpecServiceMeshProfile
 /// Istio ingress gateway configuration. For now, we support up to one external ingress gateway named
 /// `aks-istio-ingressgateway-external` and one internal ingress gateway named `aks-istio-ingressgateway-internal`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecServiceMeshProfileIstioComponentsIngressGateways
 {
@@ -4306,7 +4306,7 @@ public partial class V20251002previewstorageManagedClusterSpecServiceMeshProfile
 /// Storage version of v20251002preview.IstioComponents
 /// Istio components configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecServiceMeshProfileIstioComponents
 {
@@ -4331,7 +4331,7 @@ public partial class V20251002previewstorageManagedClusterSpecServiceMeshProfile
 /// Storage version of v20251002preview.IstioServiceMesh
 /// Istio service mesh configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecServiceMeshProfileIstio
 {
@@ -4365,7 +4365,7 @@ public partial class V20251002previewstorageManagedClusterSpecServiceMeshProfile
 /// Storage version of v20251002preview.ServiceMeshProfile
 /// Service mesh profile for a managed cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecServiceMeshProfile
 {
@@ -4391,7 +4391,7 @@ public partial class V20251002previewstorageManagedClusterSpecServiceMeshProfile
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecServicePrincipalProfileSecret
 {
@@ -4411,7 +4411,7 @@ public partial class V20251002previewstorageManagedClusterSpecServicePrincipalPr
 /// Storage version of v20251002preview.ManagedClusterServicePrincipalProfile
 /// Information about a service principal identity for the cluster to use for manipulating Azure APIs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecServicePrincipalProfile
 {
@@ -4437,7 +4437,7 @@ public partial class V20251002previewstorageManagedClusterSpecServicePrincipalPr
 /// Storage version of v20251002preview.ManagedClusterSKU
 /// The SKU of a Managed Cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecSku
 {
@@ -4459,7 +4459,7 @@ public partial class V20251002previewstorageManagedClusterSpecSku
 /// Storage version of v20251002preview.ManagedClusterStorageProfileBlobCSIDriver
 /// AzureBlob CSI Driver settings for the storage profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecStorageProfileBlobCSIDriver
 {
@@ -4478,7 +4478,7 @@ public partial class V20251002previewstorageManagedClusterSpecStorageProfileBlob
 /// Storage version of v20251002preview.ManagedClusterStorageProfileDiskCSIDriver
 /// AzureDisk CSI Driver settings for the storage profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecStorageProfileDiskCSIDriver
 {
@@ -4500,7 +4500,7 @@ public partial class V20251002previewstorageManagedClusterSpecStorageProfileDisk
 /// Storage version of v20251002preview.ManagedClusterStorageProfileFileCSIDriver
 /// AzureFile CSI Driver settings for the storage profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecStorageProfileFileCSIDriver
 {
@@ -4519,7 +4519,7 @@ public partial class V20251002previewstorageManagedClusterSpecStorageProfileFile
 /// Storage version of v20251002preview.ManagedClusterStorageProfileSnapshotController
 /// Snapshot Controller settings for the storage profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecStorageProfileSnapshotController
 {
@@ -4538,7 +4538,7 @@ public partial class V20251002previewstorageManagedClusterSpecStorageProfileSnap
 /// Storage version of v20251002preview.ManagedClusterStorageProfile
 /// Storage profile for the container service cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecStorageProfile
 {
@@ -4582,7 +4582,7 @@ public partial class V20251002previewstorageManagedClusterSpecStorageProfile
 /// Storage version of v20251002preview.UpgradeOverrideSettings
 /// Settings for overrides when upgrading a cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecUpgradeSettingsOverrideSettings
 {
@@ -4604,7 +4604,7 @@ public partial class V20251002previewstorageManagedClusterSpecUpgradeSettingsOve
 /// Storage version of v20251002preview.ClusterUpgradeSettings
 /// Settings for upgrading a cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecUpgradeSettings
 {
@@ -4627,7 +4627,7 @@ public partial class V20251002previewstorageManagedClusterSpecUpgradeSettings
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecWindowsProfileAdminPassword
 {
@@ -4647,7 +4647,7 @@ public partial class V20251002previewstorageManagedClusterSpecWindowsProfileAdmi
 /// Storage version of v20251002preview.WindowsGmsaProfile
 /// Windows gMSA Profile in the managed cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecWindowsProfileGmsaProfile
 {
@@ -4672,7 +4672,7 @@ public partial class V20251002previewstorageManagedClusterSpecWindowsProfileGmsa
 /// Storage version of v20251002preview.ManagedClusterWindowsProfile
 /// Profile for Windows VMs in the managed cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecWindowsProfile
 {
@@ -4711,7 +4711,7 @@ public partial class V20251002previewstorageManagedClusterSpecWindowsProfile
 /// Storage version of v20251002preview.ManagedClusterWorkloadAutoScalerProfileKeda
 /// KEDA (Kubernetes Event-driven Autoscaling) settings for the workload auto-scaler profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecWorkloadAutoScalerProfileKeda
 {
@@ -4730,7 +4730,7 @@ public partial class V20251002previewstorageManagedClusterSpecWorkloadAutoScaler
 /// Storage version of v20251002preview.ManagedClusterWorkloadAutoScalerProfileVerticalPodAutoscaler
 /// VPA (Vertical Pod Autoscaler) settings for the workload auto-scaler profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecWorkloadAutoScalerProfileVerticalPodAutoscaler
 {
@@ -4752,7 +4752,7 @@ public partial class V20251002previewstorageManagedClusterSpecWorkloadAutoScaler
 /// Storage version of v20251002preview.ManagedClusterWorkloadAutoScalerProfile
 /// Workload Auto-scaler profile for the managed cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecWorkloadAutoScalerProfile
 {
@@ -4779,7 +4779,7 @@ public partial class V20251002previewstorageManagedClusterSpecWorkloadAutoScaler
 }
 
 /// <summary>Storage version of v20251002preview.ManagedCluster_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpec
 {
@@ -5081,7 +5081,7 @@ public partial class V20251002previewstorageManagedClusterSpec
 /// AADProfile specifies attributes for Azure Active Directory integration. For more details see [managed AAD on
 /// AKS](https://docs.microsoft.com/azure/aks/managed-aad).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAadProfile
 {
@@ -5118,7 +5118,7 @@ public partial class V20251002previewstorageManagedClusterStatusAadProfile
 /// Storage version of v20251002preview.UserAssignedIdentity_STATUS
 /// Details about a user assigned identity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAddonProfilesIdentity
 {
@@ -5143,7 +5143,7 @@ public partial class V20251002previewstorageManagedClusterStatusAddonProfilesIde
 /// Storage version of v20251002preview.ManagedClusterAddonProfile_STATUS
 /// A Kubernetes add-on profile for a managed cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAddonProfiles
 {
@@ -5169,7 +5169,7 @@ public partial class V20251002previewstorageManagedClusterStatusAddonProfiles
 }
 
 /// <summary>Storage version of v20251002preview.AgentPoolArtifactStreamingProfile_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesArtifactStreamingProfile
 {
@@ -5188,7 +5188,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.CreationData_STATUS
 /// Data used when creating a target resource from a source resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesCreationData
 {
@@ -5207,7 +5207,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.AgentPoolGatewayProfile_STATUS
 /// Profile of the managed cluster gateway agent pool.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesGatewayProfile
 {
@@ -5226,7 +5226,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.GPUProfile_STATUS
 /// GPU settings for the Agent Pool.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesGpuProfile
 {
@@ -5249,7 +5249,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Kubelet configurations of agent nodes. See [AKS custom node
 /// configuration](https://docs.microsoft.com/azure/aks/custom-node-configuration) for more details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesKubeletConfig
 {
@@ -5301,7 +5301,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.SysctlConfig_STATUS
 /// Sysctl settings for Linux agent nodes.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesLinuxOSConfigSysctls
 {
@@ -5402,7 +5402,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// OS configurations of Linux agent nodes. See [AKS custom node
 /// configuration](https://docs.microsoft.com/azure/aks/custom-node-configuration) for more details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesLinuxOSConfig
 {
@@ -5434,7 +5434,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.LocalDNSOverride_STATUS
 /// Overrides for localDNS profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesLocalDNSProfileKubeDNSOverrides
 {
@@ -5474,7 +5474,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.LocalDNSOverride_STATUS
 /// Overrides for localDNS profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesLocalDNSProfileVnetDNSOverrides
 {
@@ -5515,7 +5515,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Configures the per-node local DNS, with VnetDNS and KubeDNS overrides. LocalDNS helps improve performance and
 /// reliability of DNS resolution in an AKS cluster. For more details see aka.ms/aks/localdns.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesLocalDNSProfile
 {
@@ -5543,7 +5543,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.PortRange_STATUS
 /// The port range.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesNetworkProfileAllowedHostPorts
 {
@@ -5568,7 +5568,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.IPTag_STATUS
 /// Contains the IPTag associated with the object.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesNetworkProfileNodePublicIPTags
 {
@@ -5590,7 +5590,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.AgentPoolNetworkProfile_STATUS
 /// Network settings of an agent pool.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesNetworkProfile
 {
@@ -5615,7 +5615,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.NodeCustomizationProfile_STATUS
 /// Settings to determine the node customization used to provision nodes in a pool.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesNodeCustomizationProfile
 {
@@ -5634,7 +5634,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.PowerState_STATUS
 /// Describes the Power State of the cluster
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesPowerState
 {
@@ -5653,7 +5653,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.AgentPoolSecurityProfile_STATUS
 /// The security settings of an agent pool.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesSecurityProfile
 {
@@ -5678,7 +5678,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesStatusProvisioningErrorAdditionalInfo
 {
@@ -5700,7 +5700,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesStatusProvisioningErrorDetailsAdditionalInfo
 {
@@ -5719,7 +5719,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 }
 
 /// <summary>Storage version of v20251002preview.ErrorDetail_STATUS_Unrolled</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesStatusProvisioningErrorDetails
 {
@@ -5747,7 +5747,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.ErrorDetail_STATUS
 /// The error detail.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesStatusProvisioningError
 {
@@ -5778,7 +5778,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.AgentPoolStatus_STATUS
 /// Contains read-only information about the Agent Pool.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesStatus
 {
@@ -5801,7 +5801,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.AgentPoolUpgradeSettings_STATUS
 /// Settings for upgrading an agentpool
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesUpgradeSettings
 {
@@ -5835,7 +5835,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.AgentPoolBlueGreenUpgradeSettings_STATUS
 /// Settings for blue-green upgrade on an agentpool
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesUpgradeSettingsBlueGreen
 {
@@ -5863,7 +5863,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.VirtualMachineNodes_STATUS
 /// Current status on a group of nodes of the same vm size.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesVirtualMachineNodesStatus
 {
@@ -5885,7 +5885,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.AutoScaleProfile_STATUS
 /// Specifications on auto-scaling.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesVirtualMachinesProfileScaleAutoscale
 {
@@ -5910,7 +5910,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.ManualScaleProfile_STATUS
 /// Specifications on number of machines.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesVirtualMachinesProfileScaleManual
 {
@@ -5932,7 +5932,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.ScaleProfile_STATUS
 /// Specifications on how to scale a VirtualMachines agent pool.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesVirtualMachinesProfileScale
 {
@@ -5958,7 +5958,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.VirtualMachinesProfile_STATUS
 /// Specifications on VirtualMachines agent pool.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesVirtualMachinesProfile
 {
@@ -5981,7 +5981,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.AgentPoolWindowsProfile_STATUS
 /// The Windows agent pool&apos;s specific profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesWindowsProfile
 {
@@ -6000,7 +6000,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// Storage version of v20251002preview.ManagedClusterAgentPoolProfile_STATUS
 /// Profile for the container service agent pool.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfiles
 {
@@ -6262,7 +6262,7 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
 /// automates the deployment of OSS models for inference and/or training purposes. It provides a set of preset models and
 /// enables distributed inference against them.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAiToolchainOperatorProfile
 {
@@ -6281,7 +6281,7 @@ public partial class V20251002previewstorageManagedClusterStatusAiToolchainOpera
 /// Storage version of v20251002preview.ManagedClusterAPIServerAccessProfile_STATUS
 /// Access profile for managed cluster API server.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusApiServerAccessProfile
 {
@@ -6318,7 +6318,7 @@ public partial class V20251002previewstorageManagedClusterStatusApiServerAccessP
 /// Storage version of v20251002preview.ManagedClusterPropertiesAutoScalerProfile_STATUS
 /// Parameters to be applied to the cluster-autoscaler when enabled
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAutoScalerProfile
 {
@@ -6394,7 +6394,7 @@ public partial class V20251002previewstorageManagedClusterStatusAutoScalerProfil
 /// Storage version of v20251002preview.ManagedClusterAutoUpgradeProfile_STATUS
 /// Auto upgrade profile for a managed cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAutoUpgradeProfile
 {
@@ -6418,7 +6418,7 @@ public partial class V20251002previewstorageManagedClusterStatusAutoUpgradeProfi
 /// Azure Monitor OpenTelemetry based SDKs to collect OpenTelemetry metrics, logs and traces of the application. See
 /// aka.ms/AzureMonitorApplicationMonitoring for an overview.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAzureMonitorProfileAppMonitoringAutoInstrumentation
 {
@@ -6439,7 +6439,7 @@ public partial class V20251002previewstorageManagedClusterStatusAzureMonitorProf
 /// OpenTelemetry logs and traces of the application using Azure Monitor OpenTelemetry based SDKs. See
 /// aka.ms/AzureMonitorApplicationMonitoring for an overview.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAzureMonitorProfileAppMonitoringOpenTelemetryLogs
 {
@@ -6463,7 +6463,7 @@ public partial class V20251002previewstorageManagedClusterStatusAzureMonitorProf
 /// OpenTelemetry metrics of the application using Azure Monitor OpenTelemetry based SDKs. See
 /// aka.ms/AzureMonitorApplicationMonitoring for an overview.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAzureMonitorProfileAppMonitoringOpenTelemetryMetrics
 {
@@ -6487,7 +6487,7 @@ public partial class V20251002previewstorageManagedClusterStatusAzureMonitorProf
 /// through auto-instrumentation of the application using Azure Monitor OpenTelemetry based SDKs. See
 /// aka.ms/AzureMonitorApplicationMonitoring for an overview.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAzureMonitorProfileAppMonitoring
 {
@@ -6531,7 +6531,7 @@ public partial class V20251002previewstorageManagedClusterStatusAzureMonitorProf
 /// Azure Monitor Container Insights Profile for Kubernetes Events, Inventory and Container stdout &amp; stderr logs etc. See
 /// aka.ms/AzureMonitorContainerInsights for an overview.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAzureMonitorProfileContainerInsights
 {
@@ -6564,7 +6564,7 @@ public partial class V20251002previewstorageManagedClusterStatusAzureMonitorProf
 /// kube-state-metrics pod that is deployed with the addon. See aka.ms/AzureManagedPrometheus-optional-parameters for
 /// details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAzureMonitorProfileMetricsKubeStateMetrics
 {
@@ -6588,7 +6588,7 @@ public partial class V20251002previewstorageManagedClusterStatusAzureMonitorProf
 /// infrastructure metrics to send to an Azure Monitor Workspace and configure additional scraping for custom targets. See
 /// aka.ms/AzureManagedPrometheus for an overview.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAzureMonitorProfileMetrics
 {
@@ -6616,7 +6616,7 @@ public partial class V20251002previewstorageManagedClusterStatusAzureMonitorProf
 /// Storage version of v20251002preview.ManagedClusterAzureMonitorProfile_STATUS
 /// Azure Monitor addon profiles for monitoring the managed cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAzureMonitorProfile
 {
@@ -6658,7 +6658,7 @@ public partial class V20251002previewstorageManagedClusterStatusAzureMonitorProf
 /// Storage version of v20251002preview.ManagedClusterBootstrapProfile_STATUS
 /// The bootstrap profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusBootstrapProfile
 {
@@ -6677,7 +6677,7 @@ public partial class V20251002previewstorageManagedClusterStatusBootstrapProfile
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusConditions
 {
@@ -6726,7 +6726,7 @@ public partial class V20251002previewstorageManagedClusterStatusConditions
 /// Storage version of v20251002preview.CreationData_STATUS
 /// Data used when creating a target resource from a source resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusCreationData
 {
@@ -6745,7 +6745,7 @@ public partial class V20251002previewstorageManagedClusterStatusCreationData
 /// Storage version of v20251002preview.ExtendedLocation_STATUS
 /// The complex type of the extended location.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusExtendedLocation
 {
@@ -6767,7 +6767,7 @@ public partial class V20251002previewstorageManagedClusterStatusExtendedLocation
 /// Storage version of v20251002preview.ManagedClusterHostedSystemProfile_STATUS
 /// Settings for hosted system addons.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusHostedSystemProfile
 {
@@ -6786,7 +6786,7 @@ public partial class V20251002previewstorageManagedClusterStatusHostedSystemProf
 /// Storage version of v20251002preview.ManagedClusterHTTPProxyConfig_STATUS
 /// Cluster HTTP proxy configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusHttpProxyConfig
 {
@@ -6820,7 +6820,7 @@ public partial class V20251002previewstorageManagedClusterStatusHttpProxyConfig
 /// Storage version of v20251002preview.DelegatedResource_STATUS
 /// Delegated resource properties - internal use only.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusIdentityDelegatedResources
 {
@@ -6845,7 +6845,7 @@ public partial class V20251002previewstorageManagedClusterStatusIdentityDelegate
 }
 
 /// <summary>Storage version of v20251002preview.ManagedServiceIdentityUserAssignedIdentitiesValue_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusIdentityUserAssignedIdentities
 {
@@ -6867,7 +6867,7 @@ public partial class V20251002previewstorageManagedClusterStatusIdentityUserAssi
 /// Storage version of v20251002preview.ManagedClusterIdentity_STATUS
 /// Identity for the managed cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusIdentity
 {
@@ -6898,7 +6898,7 @@ public partial class V20251002previewstorageManagedClusterStatusIdentity
 /// Storage version of v20251002preview.UserAssignedIdentity_STATUS
 /// Details about a user assigned identity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusIdentityProfile
 {
@@ -6923,7 +6923,7 @@ public partial class V20251002previewstorageManagedClusterStatusIdentityProfile
 /// Storage version of v20251002preview.UserAssignedIdentity_STATUS
 /// Details about a user assigned identity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusIngressProfileApplicationLoadBalancerIdentity
 {
@@ -6948,7 +6948,7 @@ public partial class V20251002previewstorageManagedClusterStatusIngressProfileAp
 /// Storage version of v20251002preview.ManagedClusterIngressProfileApplicationLoadBalancer_STATUS
 /// Application Load Balancer settings for the ingress profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusIngressProfileApplicationLoadBalancer
 {
@@ -6971,7 +6971,7 @@ public partial class V20251002previewstorageManagedClusterStatusIngressProfileAp
 }
 
 /// <summary>Storage version of v20251002preview.ManagedClusterIngressProfileGatewayConfiguration_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusIngressProfileGatewayAPI
 {
@@ -6987,7 +6987,7 @@ public partial class V20251002previewstorageManagedClusterStatusIngressProfileGa
 }
 
 /// <summary>Storage version of v20251002preview.ManagedClusterIngressDefaultDomainProfile_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusIngressProfileWebAppRoutingDefaultDomain
 {
@@ -7009,7 +7009,7 @@ public partial class V20251002previewstorageManagedClusterStatusIngressProfileWe
 /// Storage version of v20251002preview.UserAssignedIdentity_STATUS
 /// Details about a user assigned identity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusIngressProfileWebAppRoutingIdentity
 {
@@ -7031,7 +7031,7 @@ public partial class V20251002previewstorageManagedClusterStatusIngressProfileWe
 }
 
 /// <summary>Storage version of v20251002preview.ManagedClusterIngressProfileNginx_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusIngressProfileWebAppRoutingNginx
 {
@@ -7050,7 +7050,7 @@ public partial class V20251002previewstorageManagedClusterStatusIngressProfileWe
 /// Storage version of v20251002preview.ManagedClusterIngressProfileWebAppRouting_STATUS
 /// Application Routing add-on settings for the ingress profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusIngressProfileWebAppRouting
 {
@@ -7087,7 +7087,7 @@ public partial class V20251002previewstorageManagedClusterStatusIngressProfileWe
 /// Storage version of v20251002preview.ManagedClusterIngressProfile_STATUS
 /// Ingress profile for the container service cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusIngressProfile
 {
@@ -7121,7 +7121,7 @@ public partial class V20251002previewstorageManagedClusterStatusIngressProfile
 /// Storage version of v20251002preview.ContainerServiceSshPublicKey_STATUS
 /// Contains information about SSH certificate public key data.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusLinuxProfileSshPublicKeys
 {
@@ -7140,7 +7140,7 @@ public partial class V20251002previewstorageManagedClusterStatusLinuxProfileSshP
 /// Storage version of v20251002preview.ContainerServiceSshConfiguration_STATUS
 /// SSH configuration for Linux-based VMs running on Azure.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusLinuxProfileSsh
 {
@@ -7159,7 +7159,7 @@ public partial class V20251002previewstorageManagedClusterStatusLinuxProfileSsh
 /// Storage version of v20251002preview.ContainerServiceLinuxProfile_STATUS
 /// Profile for Linux VMs in the container service cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusLinuxProfile
 {
@@ -7185,7 +7185,7 @@ public partial class V20251002previewstorageManagedClusterStatusLinuxProfile
 /// Storage version of v20251002preview.ManagedClusterCostAnalysis_STATUS
 /// The cost analysis configuration for the cluster
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusMetricsProfileCostAnalysis
 {
@@ -7204,7 +7204,7 @@ public partial class V20251002previewstorageManagedClusterStatusMetricsProfileCo
 /// Storage version of v20251002preview.ManagedClusterMetricsProfile_STATUS
 /// The metrics profile for the ManagedCluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusMetricsProfile
 {
@@ -7227,7 +7227,7 @@ public partial class V20251002previewstorageManagedClusterStatusMetricsProfile
 /// Storage version of v20251002preview.AdvancedNetworkingObservability_STATUS
 /// Observability profile to enable advanced network metrics and flow logs with historical contexts.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusNetworkProfileAdvancedNetworkingObservability
 {
@@ -7246,7 +7246,7 @@ public partial class V20251002previewstorageManagedClusterStatusNetworkProfileAd
 /// Storage version of v20251002preview.AdvancedNetworkingPerformance_STATUS
 /// Profile to enable performance-enhancing features on clusters that use Azure CNI powered by Cilium.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusNetworkProfileAdvancedNetworkingPerformance
 {
@@ -7266,7 +7266,7 @@ public partial class V20251002previewstorageManagedClusterStatusNetworkProfileAd
 /// Encryption configuration for Cilium-based clusters. Once enabled all traffic between Cilium managed pods will be
 /// encrypted when it leaves the node boundary.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusNetworkProfileAdvancedNetworkingSecurityTransitEncryption
 {
@@ -7285,7 +7285,7 @@ public partial class V20251002previewstorageManagedClusterStatusNetworkProfileAd
 /// Storage version of v20251002preview.AdvancedNetworkingSecurity_STATUS
 /// Security profile to enable security features on cilium based cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusNetworkProfileAdvancedNetworkingSecurity
 {
@@ -7316,7 +7316,7 @@ public partial class V20251002previewstorageManagedClusterStatusNetworkProfileAd
 /// Advanced Networking profile for enabling observability and security feature suite on a cluster. For more information see
 /// aka.ms/aksadvancednetworking.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusNetworkProfileAdvancedNetworking
 {
@@ -7356,7 +7356,7 @@ public partial class V20251002previewstorageManagedClusterStatusNetworkProfileAd
 /// Storage version of v20251002preview.ContainerServiceNetworkProfileKubeProxyConfigIpvsConfig_STATUS
 /// Holds configuration customizations for IPVS. May only be specified if &apos;mode&apos; is set to &apos;IPVS&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusNetworkProfileKubeProxyConfigIpvsConfig
 {
@@ -7386,7 +7386,7 @@ public partial class V20251002previewstorageManagedClusterStatusNetworkProfileKu
 /// See https://v&lt;version&gt;.docs.kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/ where &lt;version&gt; is
 /// represented by a &lt;major version&gt;-&lt;minor version&gt; string. Kubernetes version 1.23 would be &apos;1-23&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusNetworkProfileKubeProxyConfig
 {
@@ -7415,7 +7415,7 @@ public partial class V20251002previewstorageManagedClusterStatusNetworkProfileKu
 /// Storage version of v20251002preview.ResourceReference_STATUS
 /// A reference to an Azure resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusNetworkProfileLoadBalancerProfileEffectiveOutboundIPs
 {
@@ -7434,7 +7434,7 @@ public partial class V20251002previewstorageManagedClusterStatusNetworkProfileLo
 /// Storage version of v20251002preview.ManagedClusterLoadBalancerProfileManagedOutboundIPs_STATUS
 /// Desired managed outbound IPs for the cluster load balancer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusNetworkProfileLoadBalancerProfileManagedOutboundIPs
 {
@@ -7456,7 +7456,7 @@ public partial class V20251002previewstorageManagedClusterStatusNetworkProfileLo
 /// Storage version of v20251002preview.ResourceReference_STATUS
 /// A reference to an Azure resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusNetworkProfileLoadBalancerProfileOutboundIPPrefixesPublicIPPrefixes
 {
@@ -7475,7 +7475,7 @@ public partial class V20251002previewstorageManagedClusterStatusNetworkProfileLo
 /// Storage version of v20251002preview.ManagedClusterLoadBalancerProfileOutboundIPPrefixes_STATUS
 /// Desired outbound IP Prefix resources for the cluster load balancer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusNetworkProfileLoadBalancerProfileOutboundIPPrefixes
 {
@@ -7494,7 +7494,7 @@ public partial class V20251002previewstorageManagedClusterStatusNetworkProfileLo
 /// Storage version of v20251002preview.ResourceReference_STATUS
 /// A reference to an Azure resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusNetworkProfileLoadBalancerProfileOutboundIPsPublicIPs
 {
@@ -7513,7 +7513,7 @@ public partial class V20251002previewstorageManagedClusterStatusNetworkProfileLo
 /// Storage version of v20251002preview.ManagedClusterLoadBalancerProfileOutboundIPs_STATUS
 /// Desired outbound IP resources for the cluster load balancer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusNetworkProfileLoadBalancerProfileOutboundIPs
 {
@@ -7532,7 +7532,7 @@ public partial class V20251002previewstorageManagedClusterStatusNetworkProfileLo
 /// Storage version of v20251002preview.ManagedClusterLoadBalancerProfile_STATUS
 /// Profile of the managed cluster load balancer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusNetworkProfileLoadBalancerProfile
 {
@@ -7587,7 +7587,7 @@ public partial class V20251002previewstorageManagedClusterStatusNetworkProfileLo
 /// Storage version of v20251002preview.ResourceReference_STATUS
 /// A reference to an Azure resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusNetworkProfileNatGatewayProfileEffectiveOutboundIPs
 {
@@ -7606,7 +7606,7 @@ public partial class V20251002previewstorageManagedClusterStatusNetworkProfileNa
 /// Storage version of v20251002preview.ManagedClusterManagedOutboundIPProfile_STATUS
 /// Profile of the managed outbound IP resources of the managed cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusNetworkProfileNatGatewayProfileManagedOutboundIPProfile
 {
@@ -7625,7 +7625,7 @@ public partial class V20251002previewstorageManagedClusterStatusNetworkProfileNa
 /// Storage version of v20251002preview.ManagedClusterNATGatewayProfile_STATUS
 /// Profile of the managed cluster NAT gateway.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusNetworkProfileNatGatewayProfile
 {
@@ -7654,7 +7654,7 @@ public partial class V20251002previewstorageManagedClusterStatusNetworkProfileNa
 /// Storage version of v20251002preview.ManagedClusterStaticEgressGatewayProfile_STATUS
 /// The Static Egress Gateway addon configuration for the cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusNetworkProfileStaticEgressGatewayProfile
 {
@@ -7673,7 +7673,7 @@ public partial class V20251002previewstorageManagedClusterStatusNetworkProfileSt
 /// Storage version of v20251002preview.ContainerServiceNetworkProfile_STATUS
 /// Profile of network configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusNetworkProfile
 {
@@ -7766,7 +7766,7 @@ public partial class V20251002previewstorageManagedClusterStatusNetworkProfile
 }
 
 /// <summary>Storage version of v20251002preview.ManagedClusterNodeProvisioningProfile_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusNodeProvisioningProfile
 {
@@ -7788,7 +7788,7 @@ public partial class V20251002previewstorageManagedClusterStatusNodeProvisioning
 /// Storage version of v20251002preview.ManagedClusterNodeResourceGroupProfile_STATUS
 /// Node resource group lockdown profile for a managed cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusNodeResourceGroupProfile
 {
@@ -7807,7 +7807,7 @@ public partial class V20251002previewstorageManagedClusterStatusNodeResourceGrou
 /// Storage version of v20251002preview.ManagedClusterOIDCIssuerProfile_STATUS
 /// The OIDC issuer profile of the Managed Cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusOidcIssuerProfile
 {
@@ -7829,7 +7829,7 @@ public partial class V20251002previewstorageManagedClusterStatusOidcIssuerProfil
 /// Storage version of v20251002preview.UserAssignedIdentity_STATUS
 /// Details about a user assigned identity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusPodIdentityProfileUserAssignedIdentitiesIdentity
 {
@@ -7851,7 +7851,7 @@ public partial class V20251002previewstorageManagedClusterStatusPodIdentityProfi
 }
 
 /// <summary>Storage version of v20251002preview.ManagedClusterPodIdentityProvisioningErrorBody_STATUS_Unrolled</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusPodIdentityProfileUserAssignedIdentitiesProvisioningInfoErrorErrorDetails
 {
@@ -7876,7 +7876,7 @@ public partial class V20251002previewstorageManagedClusterStatusPodIdentityProfi
 /// Storage version of v20251002preview.ManagedClusterPodIdentityProvisioningErrorBody_STATUS
 /// An error response from the pod identity provisioning.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusPodIdentityProfileUserAssignedIdentitiesProvisioningInfoErrorError
 {
@@ -7904,7 +7904,7 @@ public partial class V20251002previewstorageManagedClusterStatusPodIdentityProfi
 /// Storage version of v20251002preview.ManagedClusterPodIdentityProvisioningError_STATUS
 /// An error response from the pod identity provisioning.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusPodIdentityProfileUserAssignedIdentitiesProvisioningInfoError
 {
@@ -7924,7 +7924,7 @@ public partial class V20251002previewstorageManagedClusterStatusPodIdentityProfi
 }
 
 /// <summary>Storage version of v20251002preview.ManagedClusterPodIdentityProvisioningInfo_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusPodIdentityProfileUserAssignedIdentitiesProvisioningInfo
 {
@@ -7947,7 +7947,7 @@ public partial class V20251002previewstorageManagedClusterStatusPodIdentityProfi
 /// Storage version of v20251002preview.ManagedClusterPodIdentity_STATUS
 /// Details about the pod identity assigned to the Managed Cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusPodIdentityProfileUserAssignedIdentities
 {
@@ -7989,7 +7989,7 @@ public partial class V20251002previewstorageManagedClusterStatusPodIdentityProfi
 /// specific Pod/Application](https://azure.github.io/aad-pod-identity/docs/configure/application_exception/) for more
 /// details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusPodIdentityProfileUserAssignedIdentityExceptions
 {
@@ -8015,7 +8015,7 @@ public partial class V20251002previewstorageManagedClusterStatusPodIdentityProfi
 /// The pod identity profile of the Managed Cluster. See [use AAD pod
 /// identity](https://docs.microsoft.com/azure/aks/use-azure-ad-pod-identity) for more details on pod identity integration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusPodIdentityProfile
 {
@@ -8043,7 +8043,7 @@ public partial class V20251002previewstorageManagedClusterStatusPodIdentityProfi
 /// Storage version of v20251002preview.PowerState_STATUS
 /// Describes the Power State of the cluster
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusPowerState
 {
@@ -8062,7 +8062,7 @@ public partial class V20251002previewstorageManagedClusterStatusPowerState
 /// Storage version of v20251002preview.PrivateLinkResource_STATUS
 /// A private link resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusPrivateLinkResources
 {
@@ -8096,7 +8096,7 @@ public partial class V20251002previewstorageManagedClusterStatusPrivateLinkResou
 /// Storage version of v20251002preview.SchedulerInstanceProfile_STATUS
 /// The scheduler profile for a single scheduler instance.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusSchedulerProfileSchedulerInstanceProfilesUpstream
 {
@@ -8115,7 +8115,7 @@ public partial class V20251002previewstorageManagedClusterStatusSchedulerProfile
 /// Storage version of v20251002preview.SchedulerProfileSchedulerInstanceProfiles_STATUS
 /// Mapping of each scheduler instance to its profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusSchedulerProfileSchedulerInstanceProfiles
 {
@@ -8138,7 +8138,7 @@ public partial class V20251002previewstorageManagedClusterStatusSchedulerProfile
 /// Storage version of v20251002preview.SchedulerProfile_STATUS
 /// The pod scheduler profile for the cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusSchedulerProfile
 {
@@ -8161,7 +8161,7 @@ public partial class V20251002previewstorageManagedClusterStatusSchedulerProfile
 /// Storage version of v20251002preview.AzureKeyVaultKms_STATUS
 /// Azure Key Vault key management service settings for the security profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusSecurityProfileAzureKeyVaultKms
 {
@@ -8189,7 +8189,7 @@ public partial class V20251002previewstorageManagedClusterStatusSecurityProfileA
 /// Storage version of v20251002preview.UserAssignedIdentity_STATUS
 /// Details about a user assigned identity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusSecurityProfileDefenderSecurityGatingIdentitiesIdentity
 {
@@ -8211,7 +8211,7 @@ public partial class V20251002previewstorageManagedClusterStatusSecurityProfileD
 }
 
 /// <summary>Storage version of v20251002preview.ManagedClusterSecurityProfileDefenderSecurityGatingIdentitiesItem_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusSecurityProfileDefenderSecurityGatingIdentities
 {
@@ -8239,7 +8239,7 @@ public partial class V20251002previewstorageManagedClusterStatusSecurityProfileD
 /// for Containers security findings. Using Admission Controller, it either audits or prevents the deployment of images that
 /// do not meet security standards.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusSecurityProfileDefenderSecurityGating
 {
@@ -8264,7 +8264,7 @@ public partial class V20251002previewstorageManagedClusterStatusSecurityProfileD
 /// Storage version of v20251002preview.ManagedClusterSecurityProfileDefenderSecurityMonitoring_STATUS
 /// Microsoft Defender settings for the security profile threat detection.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusSecurityProfileDefenderSecurityMonitoring
 {
@@ -8283,7 +8283,7 @@ public partial class V20251002previewstorageManagedClusterStatusSecurityProfileD
 /// Storage version of v20251002preview.ManagedClusterSecurityProfileDefender_STATUS
 /// Microsoft Defender settings for the security profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusSecurityProfileDefender
 {
@@ -8319,7 +8319,7 @@ public partial class V20251002previewstorageManagedClusterStatusSecurityProfileD
 /// Image Cleaner removes unused images from nodes, freeing up disk space and helping to reduce attack surface area. Here
 /// are settings for the security profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusSecurityProfileImageCleaner
 {
@@ -8341,7 +8341,7 @@ public partial class V20251002previewstorageManagedClusterStatusSecurityProfileI
 /// Storage version of v20251002preview.ManagedClusterSecurityProfileImageIntegrity_STATUS
 /// Image integrity related settings for the security profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusSecurityProfileImageIntegrity
 {
@@ -8361,7 +8361,7 @@ public partial class V20251002previewstorageManagedClusterStatusSecurityProfileI
 /// Encryption at rest of Kubernetes resource objects using service-managed keys. More information on this can be found
 /// under https://aka.ms/aks/kubernetesResourceObjectEncryption.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusSecurityProfileKubernetesResourceObjectEncryptionProfile
 {
@@ -8380,7 +8380,7 @@ public partial class V20251002previewstorageManagedClusterStatusSecurityProfileK
 /// Storage version of v20251002preview.ManagedClusterSecurityProfileNodeRestriction_STATUS
 /// Node Restriction settings for the security profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusSecurityProfileNodeRestriction
 {
@@ -8399,7 +8399,7 @@ public partial class V20251002previewstorageManagedClusterStatusSecurityProfileN
 /// Storage version of v20251002preview.ManagedClusterSecurityProfileWorkloadIdentity_STATUS
 /// Workload identity settings for the security profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusSecurityProfileWorkloadIdentity
 {
@@ -8418,7 +8418,7 @@ public partial class V20251002previewstorageManagedClusterStatusSecurityProfileW
 /// Storage version of v20251002preview.ManagedClusterSecurityProfile_STATUS
 /// Security profile for the container service cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusSecurityProfile
 {
@@ -8488,7 +8488,7 @@ public partial class V20251002previewstorageManagedClusterStatusSecurityProfile
 /// Storage version of v20251002preview.IstioPluginCertificateAuthority_STATUS
 /// Plugin certificates information for Service Mesh.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusServiceMeshProfileIstioCertificateAuthorityPlugin
 {
@@ -8520,7 +8520,7 @@ public partial class V20251002previewstorageManagedClusterStatusServiceMeshProfi
 /// Istio Service Mesh Certificate Authority (CA) configuration. For now, we only support plugin certificates as described
 /// here https://aka.ms/asm-plugin-ca
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusServiceMeshProfileIstioCertificateAuthority
 {
@@ -8543,7 +8543,7 @@ public partial class V20251002previewstorageManagedClusterStatusServiceMeshProfi
 /// Storage version of v20251002preview.IstioEgressGateway_STATUS
 /// Istio egress gateway configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusServiceMeshProfileIstioComponentsEgressGateways
 {
@@ -8572,7 +8572,7 @@ public partial class V20251002previewstorageManagedClusterStatusServiceMeshProfi
 /// Istio ingress gateway configuration. For now, we support up to one external ingress gateway named
 /// `aks-istio-ingressgateway-external` and one internal ingress gateway named `aks-istio-ingressgateway-internal`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusServiceMeshProfileIstioComponentsIngressGateways
 {
@@ -8594,7 +8594,7 @@ public partial class V20251002previewstorageManagedClusterStatusServiceMeshProfi
 /// Storage version of v20251002preview.IstioComponents_STATUS
 /// Istio components configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusServiceMeshProfileIstioComponents
 {
@@ -8619,7 +8619,7 @@ public partial class V20251002previewstorageManagedClusterStatusServiceMeshProfi
 /// Storage version of v20251002preview.IstioServiceMesh_STATUS
 /// Istio service mesh configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusServiceMeshProfileIstio
 {
@@ -8653,7 +8653,7 @@ public partial class V20251002previewstorageManagedClusterStatusServiceMeshProfi
 /// Storage version of v20251002preview.ServiceMeshProfile_STATUS
 /// Service mesh profile for a managed cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusServiceMeshProfile
 {
@@ -8679,7 +8679,7 @@ public partial class V20251002previewstorageManagedClusterStatusServiceMeshProfi
 /// Storage version of v20251002preview.ManagedClusterServicePrincipalProfile_STATUS
 /// Information about a service principal identity for the cluster to use for manipulating Azure APIs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusServicePrincipalProfile
 {
@@ -8698,7 +8698,7 @@ public partial class V20251002previewstorageManagedClusterStatusServicePrincipal
 /// Storage version of v20251002preview.ManagedClusterSKU_STATUS
 /// The SKU of a Managed Cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusSku
 {
@@ -8720,7 +8720,7 @@ public partial class V20251002previewstorageManagedClusterStatusSku
 /// Storage version of v20251002preview.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusStatusProvisioningErrorAdditionalInfo
 {
@@ -8742,7 +8742,7 @@ public partial class V20251002previewstorageManagedClusterStatusStatusProvisioni
 /// Storage version of v20251002preview.ErrorAdditionalInfo_STATUS
 /// The resource management error additional info.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusStatusProvisioningErrorDetailsAdditionalInfo
 {
@@ -8761,7 +8761,7 @@ public partial class V20251002previewstorageManagedClusterStatusStatusProvisioni
 }
 
 /// <summary>Storage version of v20251002preview.ErrorDetail_STATUS_Unrolled</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusStatusProvisioningErrorDetails
 {
@@ -8789,7 +8789,7 @@ public partial class V20251002previewstorageManagedClusterStatusStatusProvisioni
 /// Storage version of v20251002preview.ErrorDetail_STATUS
 /// The error detail.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusStatusProvisioningError
 {
@@ -8820,7 +8820,7 @@ public partial class V20251002previewstorageManagedClusterStatusStatusProvisioni
 /// Storage version of v20251002preview.ManagedClusterStatus_STATUS
 /// Contains read-only information about the Managed Cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusStatus
 {
@@ -8843,7 +8843,7 @@ public partial class V20251002previewstorageManagedClusterStatusStatus
 /// Storage version of v20251002preview.ManagedClusterStorageProfileBlobCSIDriver_STATUS
 /// AzureBlob CSI Driver settings for the storage profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusStorageProfileBlobCSIDriver
 {
@@ -8862,7 +8862,7 @@ public partial class V20251002previewstorageManagedClusterStatusStorageProfileBl
 /// Storage version of v20251002preview.ManagedClusterStorageProfileDiskCSIDriver_STATUS
 /// AzureDisk CSI Driver settings for the storage profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusStorageProfileDiskCSIDriver
 {
@@ -8884,7 +8884,7 @@ public partial class V20251002previewstorageManagedClusterStatusStorageProfileDi
 /// Storage version of v20251002preview.ManagedClusterStorageProfileFileCSIDriver_STATUS
 /// AzureFile CSI Driver settings for the storage profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusStorageProfileFileCSIDriver
 {
@@ -8903,7 +8903,7 @@ public partial class V20251002previewstorageManagedClusterStatusStorageProfileFi
 /// Storage version of v20251002preview.ManagedClusterStorageProfileSnapshotController_STATUS
 /// Snapshot Controller settings for the storage profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusStorageProfileSnapshotController
 {
@@ -8922,7 +8922,7 @@ public partial class V20251002previewstorageManagedClusterStatusStorageProfileSn
 /// Storage version of v20251002preview.ManagedClusterStorageProfile_STATUS
 /// Storage profile for the container service cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusStorageProfile
 {
@@ -8966,7 +8966,7 @@ public partial class V20251002previewstorageManagedClusterStatusStorageProfile
 /// Storage version of v20251002preview.SystemData_STATUS
 /// Metadata pertaining to creation and last modification of the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusSystemData
 {
@@ -9000,7 +9000,7 @@ public partial class V20251002previewstorageManagedClusterStatusSystemData
 /// Storage version of v20251002preview.UpgradeOverrideSettings_STATUS
 /// Settings for overrides when upgrading a cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusUpgradeSettingsOverrideSettings
 {
@@ -9022,7 +9022,7 @@ public partial class V20251002previewstorageManagedClusterStatusUpgradeSettingsO
 /// Storage version of v20251002preview.ClusterUpgradeSettings_STATUS
 /// Settings for upgrading a cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusUpgradeSettings
 {
@@ -9045,7 +9045,7 @@ public partial class V20251002previewstorageManagedClusterStatusUpgradeSettings
 /// Storage version of v20251002preview.WindowsGmsaProfile_STATUS
 /// Windows gMSA Profile in the managed cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusWindowsProfileGmsaProfile
 {
@@ -9070,7 +9070,7 @@ public partial class V20251002previewstorageManagedClusterStatusWindowsProfileGm
 /// Storage version of v20251002preview.ManagedClusterWindowsProfile_STATUS
 /// Profile for Windows VMs in the managed cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusWindowsProfile
 {
@@ -9102,7 +9102,7 @@ public partial class V20251002previewstorageManagedClusterStatusWindowsProfile
 /// Storage version of v20251002preview.ManagedClusterWorkloadAutoScalerProfileKeda_STATUS
 /// KEDA (Kubernetes Event-driven Autoscaling) settings for the workload auto-scaler profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusWorkloadAutoScalerProfileKeda
 {
@@ -9121,7 +9121,7 @@ public partial class V20251002previewstorageManagedClusterStatusWorkloadAutoScal
 /// Storage version of v20251002preview.ManagedClusterWorkloadAutoScalerProfileVerticalPodAutoscaler_STATUS
 /// VPA (Vertical Pod Autoscaler) settings for the workload auto-scaler profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusWorkloadAutoScalerProfileVerticalPodAutoscaler
 {
@@ -9143,7 +9143,7 @@ public partial class V20251002previewstorageManagedClusterStatusWorkloadAutoScal
 /// Storage version of v20251002preview.ManagedClusterWorkloadAutoScalerProfile_STATUS
 /// Workload Auto-scaler profile for the managed cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusWorkloadAutoScalerProfile
 {
@@ -9173,7 +9173,7 @@ public partial class V20251002previewstorageManagedClusterStatusWorkloadAutoScal
 /// Storage version of v20251002preview.ManagedCluster_STATUS
 /// Managed cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatus
 {
@@ -9503,7 +9503,7 @@ public partial class V20251002previewstorageManagedClusterStatus
 /// - Generated from: /containerservice/resource-manager/Microsoft.ContainerService/aks/preview/2025-10-02-preview/managedClusters.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ContainerService/managedClusters/{resourceName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20251002previewstorageManagedCluster : IKubernetesObject<V1ObjectMeta>, ISpec<V20251002previewstorageManagedClusterSpec?>, IStatus<V20251002previewstorageManagedClusterStatus?>

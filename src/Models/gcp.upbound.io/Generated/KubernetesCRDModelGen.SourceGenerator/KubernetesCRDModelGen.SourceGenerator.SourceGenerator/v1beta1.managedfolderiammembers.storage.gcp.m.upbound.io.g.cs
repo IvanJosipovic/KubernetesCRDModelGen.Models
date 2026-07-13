@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.storage.gcp.m.upbound.io;
 /// <summary>ManagedFolderIAMMember is the Schema for the ManagedFolderIAMMembers API. &lt;no value&gt;</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ManagedFolderIAMMemberList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ManagedFolderIAMMember>
@@ -42,7 +42,7 @@ public partial class V1beta1ManagedFolderIAMMemberList : IKubernetesObject<V1Lis
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedFolderIAMMemberSpecForProviderBucketRefPolicyResolutionEnum>))]
 public enum V1beta1ManagedFolderIAMMemberSpecForProviderBucketRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1ManagedFolderIAMMemberSpecForProviderBucketRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedFolderIAMMemberSpecForProviderBucketRefPolicyResolveEnum>))]
 public enum V1beta1ManagedFolderIAMMemberSpecForProviderBucketRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1ManagedFolderIAMMemberSpecForProviderBucketRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberSpecForProviderBucketRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1ManagedFolderIAMMemberSpecForProviderBucketRefPolicy
 }
 
 /// <summary>Reference to a Bucket in storage to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberSpecForProviderBucketRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1ManagedFolderIAMMemberSpecForProviderBucketRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedFolderIAMMemberSpecForProviderBucketSelectorPolicyResolutionEnum>))]
 public enum V1beta1ManagedFolderIAMMemberSpecForProviderBucketSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1ManagedFolderIAMMemberSpecForProviderBucketSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedFolderIAMMemberSpecForProviderBucketSelectorPolicyResolveEnum>))]
 public enum V1beta1ManagedFolderIAMMemberSpecForProviderBucketSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1ManagedFolderIAMMemberSpecForProviderBucketSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberSpecForProviderBucketSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1ManagedFolderIAMMemberSpecForProviderBucketSelectorP
 }
 
 /// <summary>Selector for a Bucket in storage to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberSpecForProviderBucketSelector
 {
@@ -191,7 +191,7 @@ public partial class V1beta1ManagedFolderIAMMemberSpecForProviderBucketSelector
     public V1beta1ManagedFolderIAMMemberSpecForProviderBucketSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberSpecForProviderCondition
 {
@@ -211,7 +211,7 @@ public partial class V1beta1ManagedFolderIAMMemberSpecForProviderCondition
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedFolderIAMMemberSpecForProviderManagedFolderRefPolicyResolutionEnum>))]
 public enum V1beta1ManagedFolderIAMMemberSpecForProviderManagedFolderRefPolicyResolutionEnum
 {
@@ -227,7 +227,7 @@ public enum V1beta1ManagedFolderIAMMemberSpecForProviderManagedFolderRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedFolderIAMMemberSpecForProviderManagedFolderRefPolicyResolveEnum>))]
 public enum V1beta1ManagedFolderIAMMemberSpecForProviderManagedFolderRefPolicyResolveEnum
 {
@@ -238,7 +238,7 @@ public enum V1beta1ManagedFolderIAMMemberSpecForProviderManagedFolderRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberSpecForProviderManagedFolderRefPolicy
 {
@@ -262,7 +262,7 @@ public partial class V1beta1ManagedFolderIAMMemberSpecForProviderManagedFolderRe
 }
 
 /// <summary>Reference to a ManagedFolder in storage to populate managedFolder.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberSpecForProviderManagedFolderRef
 {
@@ -285,7 +285,7 @@ public partial class V1beta1ManagedFolderIAMMemberSpecForProviderManagedFolderRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedFolderIAMMemberSpecForProviderManagedFolderSelectorPolicyResolutionEnum>))]
 public enum V1beta1ManagedFolderIAMMemberSpecForProviderManagedFolderSelectorPolicyResolutionEnum
 {
@@ -301,7 +301,7 @@ public enum V1beta1ManagedFolderIAMMemberSpecForProviderManagedFolderSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedFolderIAMMemberSpecForProviderManagedFolderSelectorPolicyResolveEnum>))]
 public enum V1beta1ManagedFolderIAMMemberSpecForProviderManagedFolderSelectorPolicyResolveEnum
 {
@@ -312,7 +312,7 @@ public enum V1beta1ManagedFolderIAMMemberSpecForProviderManagedFolderSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberSpecForProviderManagedFolderSelectorPolicy
 {
@@ -336,7 +336,7 @@ public partial class V1beta1ManagedFolderIAMMemberSpecForProviderManagedFolderSe
 }
 
 /// <summary>Selector for a ManagedFolder in storage to populate managedFolder.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberSpecForProviderManagedFolderSelector
 {
@@ -360,7 +360,7 @@ public partial class V1beta1ManagedFolderIAMMemberSpecForProviderManagedFolderSe
     public V1beta1ManagedFolderIAMMemberSpecForProviderManagedFolderSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberSpecForProvider
 {
@@ -402,7 +402,7 @@ public partial class V1beta1ManagedFolderIAMMemberSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedFolderIAMMemberSpecInitProviderBucketRefPolicyResolutionEnum>))]
 public enum V1beta1ManagedFolderIAMMemberSpecInitProviderBucketRefPolicyResolutionEnum
 {
@@ -418,7 +418,7 @@ public enum V1beta1ManagedFolderIAMMemberSpecInitProviderBucketRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedFolderIAMMemberSpecInitProviderBucketRefPolicyResolveEnum>))]
 public enum V1beta1ManagedFolderIAMMemberSpecInitProviderBucketRefPolicyResolveEnum
 {
@@ -429,7 +429,7 @@ public enum V1beta1ManagedFolderIAMMemberSpecInitProviderBucketRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberSpecInitProviderBucketRefPolicy
 {
@@ -453,7 +453,7 @@ public partial class V1beta1ManagedFolderIAMMemberSpecInitProviderBucketRefPolic
 }
 
 /// <summary>Reference to a Bucket in storage to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberSpecInitProviderBucketRef
 {
@@ -476,7 +476,7 @@ public partial class V1beta1ManagedFolderIAMMemberSpecInitProviderBucketRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedFolderIAMMemberSpecInitProviderBucketSelectorPolicyResolutionEnum>))]
 public enum V1beta1ManagedFolderIAMMemberSpecInitProviderBucketSelectorPolicyResolutionEnum
 {
@@ -492,7 +492,7 @@ public enum V1beta1ManagedFolderIAMMemberSpecInitProviderBucketSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedFolderIAMMemberSpecInitProviderBucketSelectorPolicyResolveEnum>))]
 public enum V1beta1ManagedFolderIAMMemberSpecInitProviderBucketSelectorPolicyResolveEnum
 {
@@ -503,7 +503,7 @@ public enum V1beta1ManagedFolderIAMMemberSpecInitProviderBucketSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberSpecInitProviderBucketSelectorPolicy
 {
@@ -527,7 +527,7 @@ public partial class V1beta1ManagedFolderIAMMemberSpecInitProviderBucketSelector
 }
 
 /// <summary>Selector for a Bucket in storage to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberSpecInitProviderBucketSelector
 {
@@ -551,7 +551,7 @@ public partial class V1beta1ManagedFolderIAMMemberSpecInitProviderBucketSelector
     public V1beta1ManagedFolderIAMMemberSpecInitProviderBucketSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberSpecInitProviderCondition
 {
@@ -571,7 +571,7 @@ public partial class V1beta1ManagedFolderIAMMemberSpecInitProviderCondition
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedFolderIAMMemberSpecInitProviderManagedFolderRefPolicyResolutionEnum>))]
 public enum V1beta1ManagedFolderIAMMemberSpecInitProviderManagedFolderRefPolicyResolutionEnum
 {
@@ -587,7 +587,7 @@ public enum V1beta1ManagedFolderIAMMemberSpecInitProviderManagedFolderRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedFolderIAMMemberSpecInitProviderManagedFolderRefPolicyResolveEnum>))]
 public enum V1beta1ManagedFolderIAMMemberSpecInitProviderManagedFolderRefPolicyResolveEnum
 {
@@ -598,7 +598,7 @@ public enum V1beta1ManagedFolderIAMMemberSpecInitProviderManagedFolderRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberSpecInitProviderManagedFolderRefPolicy
 {
@@ -622,7 +622,7 @@ public partial class V1beta1ManagedFolderIAMMemberSpecInitProviderManagedFolderR
 }
 
 /// <summary>Reference to a ManagedFolder in storage to populate managedFolder.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberSpecInitProviderManagedFolderRef
 {
@@ -645,7 +645,7 @@ public partial class V1beta1ManagedFolderIAMMemberSpecInitProviderManagedFolderR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedFolderIAMMemberSpecInitProviderManagedFolderSelectorPolicyResolutionEnum>))]
 public enum V1beta1ManagedFolderIAMMemberSpecInitProviderManagedFolderSelectorPolicyResolutionEnum
 {
@@ -661,7 +661,7 @@ public enum V1beta1ManagedFolderIAMMemberSpecInitProviderManagedFolderSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedFolderIAMMemberSpecInitProviderManagedFolderSelectorPolicyResolveEnum>))]
 public enum V1beta1ManagedFolderIAMMemberSpecInitProviderManagedFolderSelectorPolicyResolveEnum
 {
@@ -672,7 +672,7 @@ public enum V1beta1ManagedFolderIAMMemberSpecInitProviderManagedFolderSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberSpecInitProviderManagedFolderSelectorPolicy
 {
@@ -696,7 +696,7 @@ public partial class V1beta1ManagedFolderIAMMemberSpecInitProviderManagedFolderS
 }
 
 /// <summary>Selector for a ManagedFolder in storage to populate managedFolder.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberSpecInitProviderManagedFolderSelector
 {
@@ -732,7 +732,7 @@ public partial class V1beta1ManagedFolderIAMMemberSpecInitProviderManagedFolderS
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberSpecInitProvider
 {
@@ -772,7 +772,7 @@ public partial class V1beta1ManagedFolderIAMMemberSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedFolderIAMMemberSpecManagementPoliciesEnum>))]
 public enum V1beta1ManagedFolderIAMMemberSpecManagementPoliciesEnum
 {
@@ -795,7 +795,7 @@ public enum V1beta1ManagedFolderIAMMemberSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberSpecProviderConfigRef
 {
@@ -814,7 +814,7 @@ public partial class V1beta1ManagedFolderIAMMemberSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberSpecWriteConnectionSecretToRef
 {
@@ -824,7 +824,7 @@ public partial class V1beta1ManagedFolderIAMMemberSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ManagedFolderIAMMemberSpec defines the desired state of ManagedFolderIAMMember</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberSpec
 {
@@ -875,7 +875,7 @@ public partial class V1beta1ManagedFolderIAMMemberSpec
     public V1beta1ManagedFolderIAMMemberSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberStatusAtProviderCondition
 {
@@ -889,7 +889,7 @@ public partial class V1beta1ManagedFolderIAMMemberStatusAtProviderCondition
     public string? Title { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberStatusAtProvider
 {
@@ -916,7 +916,7 @@ public partial class V1beta1ManagedFolderIAMMemberStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberStatusConditions
 {
@@ -959,7 +959,7 @@ public partial class V1beta1ManagedFolderIAMMemberStatusConditions
 }
 
 /// <summary>ManagedFolderIAMMemberStatus defines the observed state of ManagedFolderIAMMember.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedFolderIAMMemberStatus
 {
@@ -980,7 +980,7 @@ public partial class V1beta1ManagedFolderIAMMemberStatus
 }
 
 /// <summary>ManagedFolderIAMMember is the Schema for the ManagedFolderIAMMembers API. &lt;no value&gt;</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ManagedFolderIAMMember : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ManagedFolderIAMMemberSpec>, IStatus<V1beta1ManagedFolderIAMMemberStatus?>

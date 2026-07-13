@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ec2.services.k8s.aws;
 /// <summary>EgressOnlyInternetGateway is the Schema for the EgressOnlyInternetGateways API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1EgressOnlyInternetGatewayList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1EgressOnlyInternetGateway>
@@ -37,7 +37,7 @@ public partial class V1alpha1EgressOnlyInternetGatewayList : IKubernetesObject<V
 }
 
 /// <summary>Describes a tag.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EgressOnlyInternetGatewaySpecTags
 {
@@ -52,7 +52,7 @@ public partial class V1alpha1EgressOnlyInternetGatewaySpecTags
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EgressOnlyInternetGatewaySpecVpcRefFrom
 {
@@ -72,7 +72,7 @@ public partial class V1alpha1EgressOnlyInternetGatewaySpecVpcRefFrom
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EgressOnlyInternetGatewaySpecVpcRef
 {
@@ -89,7 +89,7 @@ public partial class V1alpha1EgressOnlyInternetGatewaySpecVpcRef
 /// 
 /// Describes an egress-only internet gateway.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EgressOnlyInternetGatewaySpec
 {
@@ -123,7 +123,7 @@ public partial class V1alpha1EgressOnlyInternetGatewaySpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EgressOnlyInternetGatewayStatusAckResourceMetadata
 {
@@ -159,7 +159,7 @@ public partial class V1alpha1EgressOnlyInternetGatewayStatusAckResourceMetadata
 /// Describes the attachment of a VPC to an internet gateway or an egress-only
 /// internet gateway.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EgressOnlyInternetGatewayStatusAttachments
 {
@@ -175,7 +175,7 @@ public partial class V1alpha1EgressOnlyInternetGatewayStatusAttachments
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EgressOnlyInternetGatewayStatusConditions
 {
@@ -201,7 +201,7 @@ public partial class V1alpha1EgressOnlyInternetGatewayStatusConditions
 }
 
 /// <summary>EgressOnlyInternetGatewayStatus defines the observed state of EgressOnlyInternetGateway</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EgressOnlyInternetGatewayStatus
 {
@@ -232,7 +232,7 @@ public partial class V1alpha1EgressOnlyInternetGatewayStatus
 }
 
 /// <summary>EgressOnlyInternetGateway is the Schema for the EgressOnlyInternetGateways API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1EgressOnlyInternetGateway : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1EgressOnlyInternetGatewaySpec?>, IStatus<V1alpha1EgressOnlyInternetGatewayStatus?>

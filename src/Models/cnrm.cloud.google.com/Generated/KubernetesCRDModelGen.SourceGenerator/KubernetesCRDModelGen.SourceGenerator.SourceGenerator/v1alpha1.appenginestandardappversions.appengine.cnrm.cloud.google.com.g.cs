@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appengine.cnrm.cloud.google.com;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1AppEngineStandardAppVersionList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1AppEngineStandardAppVersion>
@@ -36,7 +36,7 @@ public partial class V1alpha1AppEngineStandardAppVersionList : IKubernetesObject
 }
 
 /// <summary>Scheduler settings for standard environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppEngineStandardAppVersionSpecAutomaticScalingStandardSchedulerSettings
 {
@@ -58,7 +58,7 @@ public partial class V1alpha1AppEngineStandardAppVersionSpecAutomaticScalingStan
 }
 
 /// <summary>Automatic scaling is based on request rate, response latencies, and other application metrics.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppEngineStandardAppVersionSpecAutomaticScaling
 {
@@ -98,7 +98,7 @@ public partial class V1alpha1AppEngineStandardAppVersionSpecAutomaticScaling
 }
 
 /// <summary>Basic scaling creates instances when your application receives requests. Each instance will be shut down when the application becomes idle. Basic scaling is ideal for work that is intermittent or driven by user activity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppEngineStandardAppVersionSpecBasicScaling
 {
@@ -114,7 +114,7 @@ public partial class V1alpha1AppEngineStandardAppVersionSpecBasicScaling
     public required int MaxInstances { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppEngineStandardAppVersionSpecDeploymentFiles
 {
@@ -131,7 +131,7 @@ public partial class V1alpha1AppEngineStandardAppVersionSpecDeploymentFiles
 }
 
 /// <summary>Zip File.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppEngineStandardAppVersionSpecDeploymentZip
 {
@@ -145,7 +145,7 @@ public partial class V1alpha1AppEngineStandardAppVersionSpecDeploymentZip
 }
 
 /// <summary>Code and application artifacts that make up this version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppEngineStandardAppVersionSpecDeployment
 {
@@ -162,7 +162,7 @@ public partial class V1alpha1AppEngineStandardAppVersionSpecDeployment
 }
 
 /// <summary>The entrypoint for the application.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppEngineStandardAppVersionSpecEntrypoint
 {
@@ -175,7 +175,7 @@ public partial class V1alpha1AppEngineStandardAppVersionSpecEntrypoint
 /// Executes a script to handle the requests that match this URL pattern.
 /// Only the auto value is supported for Node.js in the App Engine standard environment, for example &quot;script:&quot; &quot;auto&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppEngineStandardAppVersionSpecHandlersScript
 {
@@ -185,7 +185,7 @@ public partial class V1alpha1AppEngineStandardAppVersionSpecHandlersScript
 }
 
 /// <summary>Files served directly to the user for a given URL, such as images, CSS stylesheets, or JavaScript source files. Static file handlers describe which files in the application directory are static files, and which URLs serve them.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppEngineStandardAppVersionSpecHandlersStaticFiles
 {
@@ -231,7 +231,7 @@ public partial class V1alpha1AppEngineStandardAppVersionSpecHandlersStaticFiles
     public string? UploadPathRegex { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppEngineStandardAppVersionSpecHandlers
 {
@@ -270,7 +270,7 @@ public partial class V1alpha1AppEngineStandardAppVersionSpecHandlers
     public string? UrlRegex { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppEngineStandardAppVersionSpecLibraries
 {
@@ -284,7 +284,7 @@ public partial class V1alpha1AppEngineStandardAppVersionSpecLibraries
 }
 
 /// <summary>A service with manual scaling runs continuously, allowing you to perform complex initialization and rely on the state of its memory over time.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppEngineStandardAppVersionSpecManualScaling
 {
@@ -298,7 +298,7 @@ public partial class V1alpha1AppEngineStandardAppVersionSpecManualScaling
     public required int Instances { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppEngineStandardAppVersionSpecServiceRef
 {
@@ -316,7 +316,7 @@ public partial class V1alpha1AppEngineStandardAppVersionSpecServiceRef
 }
 
 /// <summary>Enables VPC connectivity for standard apps.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppEngineStandardAppVersionSpecVpcAccessConnector
 {
@@ -329,7 +329,7 @@ public partial class V1alpha1AppEngineStandardAppVersionSpecVpcAccessConnector
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppEngineStandardAppVersionSpec
 {
@@ -429,7 +429,7 @@ public partial class V1alpha1AppEngineStandardAppVersionSpec
     public V1alpha1AppEngineStandardAppVersionSpecVpcAccessConnector? VpcAccessConnector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppEngineStandardAppVersionStatusConditions
 {
@@ -454,7 +454,7 @@ public partial class V1alpha1AppEngineStandardAppVersionStatusConditions
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppEngineStandardAppVersionStatus
 {
@@ -471,7 +471,7 @@ public partial class V1alpha1AppEngineStandardAppVersionStatus
     public int? ObservedGeneration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1AppEngineStandardAppVersion : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1AppEngineStandardAppVersionSpec>, IStatus<V1alpha1AppEngineStandardAppVersionStatus?>

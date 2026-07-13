@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.upbound.io;
 /// <summary>Snapshot is the Schema for the Snapshots API. Represents a Persistent Disk Snapshot resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2SnapshotList : IKubernetesObject<V1ListMeta>, IItems<V1beta2Snapshot>
@@ -45,7 +45,7 @@ public partial class V1beta2SnapshotList : IKubernetesObject<V1ListMeta>, IItems
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SnapshotSpecDeletionPolicyEnum>))]
 public enum V1beta2SnapshotSpecDeletionPolicyEnum
 {
@@ -60,7 +60,7 @@ public enum V1beta2SnapshotSpecDeletionPolicyEnum
 /// RFC 4648 base64 to either encrypt or decrypt this resource.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecForProviderSnapshotEncryptionKeyRawKeySecretRef
 {
@@ -82,7 +82,7 @@ public partial class V1beta2SnapshotSpecForProviderSnapshotEncryptionKeyRawKeySe
 /// RFC 4648 base64 to either encrypt or decrypt this resource.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecForProviderSnapshotEncryptionKeyRsaEncryptedKeySecretRef
 {
@@ -112,7 +112,7 @@ public partial class V1beta2SnapshotSpecForProviderSnapshotEncryptionKeyRsaEncry
 /// key and you do not need to provide a key to use the snapshot later.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecForProviderSnapshotEncryptionKey
 {
@@ -149,7 +149,7 @@ public partial class V1beta2SnapshotSpecForProviderSnapshotEncryptionKey
 /// RFC 4648 base64 to either encrypt or decrypt this resource.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecForProviderSourceDiskEncryptionKeyRawKeySecretRef
 {
@@ -171,7 +171,7 @@ public partial class V1beta2SnapshotSpecForProviderSourceDiskEncryptionKeyRawKey
 /// RFC 4648 base64 to either encrypt or decrypt this resource.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecForProviderSourceDiskEncryptionKeyRsaEncryptedKeySecretRef
 {
@@ -194,7 +194,7 @@ public partial class V1beta2SnapshotSpecForProviderSourceDiskEncryptionKeyRsaEnc
 /// key.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecForProviderSourceDiskEncryptionKey
 {
@@ -232,7 +232,7 @@ public partial class V1beta2SnapshotSpecForProviderSourceDiskEncryptionKey
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SnapshotSpecForProviderSourceDiskRefPolicyResolutionEnum>))]
 public enum V1beta2SnapshotSpecForProviderSourceDiskRefPolicyResolutionEnum
 {
@@ -248,7 +248,7 @@ public enum V1beta2SnapshotSpecForProviderSourceDiskRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SnapshotSpecForProviderSourceDiskRefPolicyResolveEnum>))]
 public enum V1beta2SnapshotSpecForProviderSourceDiskRefPolicyResolveEnum
 {
@@ -259,7 +259,7 @@ public enum V1beta2SnapshotSpecForProviderSourceDiskRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecForProviderSourceDiskRefPolicy
 {
@@ -283,7 +283,7 @@ public partial class V1beta2SnapshotSpecForProviderSourceDiskRefPolicy
 }
 
 /// <summary>Reference to a Disk in compute to populate sourceDisk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecForProviderSourceDiskRef
 {
@@ -302,7 +302,7 @@ public partial class V1beta2SnapshotSpecForProviderSourceDiskRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SnapshotSpecForProviderSourceDiskSelectorPolicyResolutionEnum>))]
 public enum V1beta2SnapshotSpecForProviderSourceDiskSelectorPolicyResolutionEnum
 {
@@ -318,7 +318,7 @@ public enum V1beta2SnapshotSpecForProviderSourceDiskSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SnapshotSpecForProviderSourceDiskSelectorPolicyResolveEnum>))]
 public enum V1beta2SnapshotSpecForProviderSourceDiskSelectorPolicyResolveEnum
 {
@@ -329,7 +329,7 @@ public enum V1beta2SnapshotSpecForProviderSourceDiskSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecForProviderSourceDiskSelectorPolicy
 {
@@ -353,7 +353,7 @@ public partial class V1beta2SnapshotSpecForProviderSourceDiskSelectorPolicy
 }
 
 /// <summary>Selector for a Disk in compute to populate sourceDisk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecForProviderSourceDiskSelector
 {
@@ -373,7 +373,7 @@ public partial class V1beta2SnapshotSpecForProviderSourceDiskSelector
     public V1beta2SnapshotSpecForProviderSourceDiskSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecForProvider
 {
@@ -458,7 +458,7 @@ public partial class V1beta2SnapshotSpecForProvider
 /// RFC 4648 base64 to either encrypt or decrypt this resource.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecInitProviderSnapshotEncryptionKeyRawKeySecretRef
 {
@@ -480,7 +480,7 @@ public partial class V1beta2SnapshotSpecInitProviderSnapshotEncryptionKeyRawKeyS
 /// RFC 4648 base64 to either encrypt or decrypt this resource.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecInitProviderSnapshotEncryptionKeyRsaEncryptedKeySecretRef
 {
@@ -510,7 +510,7 @@ public partial class V1beta2SnapshotSpecInitProviderSnapshotEncryptionKeyRsaEncr
 /// key and you do not need to provide a key to use the snapshot later.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecInitProviderSnapshotEncryptionKey
 {
@@ -547,7 +547,7 @@ public partial class V1beta2SnapshotSpecInitProviderSnapshotEncryptionKey
 /// RFC 4648 base64 to either encrypt or decrypt this resource.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecInitProviderSourceDiskEncryptionKeyRawKeySecretRef
 {
@@ -569,7 +569,7 @@ public partial class V1beta2SnapshotSpecInitProviderSourceDiskEncryptionKeyRawKe
 /// RFC 4648 base64 to either encrypt or decrypt this resource.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecInitProviderSourceDiskEncryptionKeyRsaEncryptedKeySecretRef
 {
@@ -592,7 +592,7 @@ public partial class V1beta2SnapshotSpecInitProviderSourceDiskEncryptionKeyRsaEn
 /// key.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecInitProviderSourceDiskEncryptionKey
 {
@@ -630,7 +630,7 @@ public partial class V1beta2SnapshotSpecInitProviderSourceDiskEncryptionKey
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SnapshotSpecInitProviderSourceDiskRefPolicyResolutionEnum>))]
 public enum V1beta2SnapshotSpecInitProviderSourceDiskRefPolicyResolutionEnum
 {
@@ -646,7 +646,7 @@ public enum V1beta2SnapshotSpecInitProviderSourceDiskRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SnapshotSpecInitProviderSourceDiskRefPolicyResolveEnum>))]
 public enum V1beta2SnapshotSpecInitProviderSourceDiskRefPolicyResolveEnum
 {
@@ -657,7 +657,7 @@ public enum V1beta2SnapshotSpecInitProviderSourceDiskRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecInitProviderSourceDiskRefPolicy
 {
@@ -681,7 +681,7 @@ public partial class V1beta2SnapshotSpecInitProviderSourceDiskRefPolicy
 }
 
 /// <summary>Reference to a Disk in compute to populate sourceDisk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecInitProviderSourceDiskRef
 {
@@ -700,7 +700,7 @@ public partial class V1beta2SnapshotSpecInitProviderSourceDiskRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SnapshotSpecInitProviderSourceDiskSelectorPolicyResolutionEnum>))]
 public enum V1beta2SnapshotSpecInitProviderSourceDiskSelectorPolicyResolutionEnum
 {
@@ -716,7 +716,7 @@ public enum V1beta2SnapshotSpecInitProviderSourceDiskSelectorPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SnapshotSpecInitProviderSourceDiskSelectorPolicyResolveEnum>))]
 public enum V1beta2SnapshotSpecInitProviderSourceDiskSelectorPolicyResolveEnum
 {
@@ -727,7 +727,7 @@ public enum V1beta2SnapshotSpecInitProviderSourceDiskSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecInitProviderSourceDiskSelectorPolicy
 {
@@ -751,7 +751,7 @@ public partial class V1beta2SnapshotSpecInitProviderSourceDiskSelectorPolicy
 }
 
 /// <summary>Selector for a Disk in compute to populate sourceDisk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecInitProviderSourceDiskSelector
 {
@@ -783,7 +783,7 @@ public partial class V1beta2SnapshotSpecInitProviderSourceDiskSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecInitProvider
 {
@@ -867,7 +867,7 @@ public partial class V1beta2SnapshotSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SnapshotSpecManagementPoliciesEnum>))]
 public enum V1beta2SnapshotSpecManagementPoliciesEnum
 {
@@ -891,7 +891,7 @@ public enum V1beta2SnapshotSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SnapshotSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2SnapshotSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -907,7 +907,7 @@ public enum V1beta2SnapshotSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SnapshotSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2SnapshotSpecProviderConfigRefPolicyResolveEnum
 {
@@ -918,7 +918,7 @@ public enum V1beta2SnapshotSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecProviderConfigRefPolicy
 {
@@ -946,7 +946,7 @@ public partial class V1beta2SnapshotSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecProviderConfigRef
 {
@@ -965,7 +965,7 @@ public partial class V1beta2SnapshotSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpecWriteConnectionSecretToRef
 {
@@ -979,7 +979,7 @@ public partial class V1beta2SnapshotSpecWriteConnectionSecretToRef
 }
 
 /// <summary>SnapshotSpec defines the desired state of Snapshot</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotSpec
 {
@@ -1059,7 +1059,7 @@ public partial class V1beta2SnapshotSpec
 /// key and you do not need to provide a key to use the snapshot later.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotStatusAtProviderSnapshotEncryptionKey
 {
@@ -1089,7 +1089,7 @@ public partial class V1beta2SnapshotStatusAtProviderSnapshotEncryptionKey
 /// key.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotStatusAtProviderSourceDiskEncryptionKey
 {
@@ -1105,7 +1105,7 @@ public partial class V1beta2SnapshotStatusAtProviderSourceDiskEncryptionKey
     public string? KmsKeyServiceAccount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotStatusAtProvider
 {
@@ -1232,7 +1232,7 @@ public partial class V1beta2SnapshotStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotStatusConditions
 {
@@ -1275,7 +1275,7 @@ public partial class V1beta2SnapshotStatusConditions
 }
 
 /// <summary>SnapshotStatus defines the observed state of Snapshot.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotStatus
 {
@@ -1296,7 +1296,7 @@ public partial class V1beta2SnapshotStatus
 }
 
 /// <summary>Snapshot is the Schema for the Snapshots API. Represents a Persistent Disk Snapshot resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2Snapshot : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2SnapshotSpec>, IStatus<V1beta2SnapshotStatus?>

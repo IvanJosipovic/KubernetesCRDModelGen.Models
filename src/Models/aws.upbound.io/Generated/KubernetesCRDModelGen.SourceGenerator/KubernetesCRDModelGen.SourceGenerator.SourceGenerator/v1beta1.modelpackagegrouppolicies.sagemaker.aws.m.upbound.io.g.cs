@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sagemaker.aws.m.upbound.io;
 /// <summary>ModelPackageGroupPolicy is the Schema for the ModelPackageGroupPolicys API. Provides a SageMaker AI Model Package Group Policy resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ModelPackageGroupPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ModelPackageGroupPolicy>
@@ -42,7 +42,7 @@ public partial class V1beta1ModelPackageGroupPolicyList : IKubernetesObject<V1Li
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelPackageGroupPolicySpecForProviderModelPackageGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1ModelPackageGroupPolicySpecForProviderModelPackageGroupNameRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1ModelPackageGroupPolicySpecForProviderModelPackageGroupNameRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelPackageGroupPolicySpecForProviderModelPackageGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1ModelPackageGroupPolicySpecForProviderModelPackageGroupNameRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1ModelPackageGroupPolicySpecForProviderModelPackageGroupNameRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelPackageGroupPolicySpecForProviderModelPackageGroupNameRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1ModelPackageGroupPolicySpecForProviderModelPackageGr
 }
 
 /// <summary>Reference to a ModelPackageGroup in sagemaker to populate modelPackageGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelPackageGroupPolicySpecForProviderModelPackageGroupNameRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1ModelPackageGroupPolicySpecForProviderModelPackageGr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelPackageGroupPolicySpecForProviderModelPackageGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ModelPackageGroupPolicySpecForProviderModelPackageGroupNameSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1ModelPackageGroupPolicySpecForProviderModelPackageGroupNameSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelPackageGroupPolicySpecForProviderModelPackageGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ModelPackageGroupPolicySpecForProviderModelPackageGroupNameSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1ModelPackageGroupPolicySpecForProviderModelPackageGroupNameSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelPackageGroupPolicySpecForProviderModelPackageGroupNameSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1ModelPackageGroupPolicySpecForProviderModelPackageGr
 }
 
 /// <summary>Selector for a ModelPackageGroup in sagemaker to populate modelPackageGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelPackageGroupPolicySpecForProviderModelPackageGroupNameSelector
 {
@@ -191,7 +191,7 @@ public partial class V1beta1ModelPackageGroupPolicySpecForProviderModelPackageGr
     public V1beta1ModelPackageGroupPolicySpecForProviderModelPackageGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelPackageGroupPolicySpecForProvider
 {
@@ -224,7 +224,7 @@ public partial class V1beta1ModelPackageGroupPolicySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelPackageGroupPolicySpecInitProviderModelPackageGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1ModelPackageGroupPolicySpecInitProviderModelPackageGroupNameRefPolicyResolutionEnum
 {
@@ -240,7 +240,7 @@ public enum V1beta1ModelPackageGroupPolicySpecInitProviderModelPackageGroupNameR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelPackageGroupPolicySpecInitProviderModelPackageGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1ModelPackageGroupPolicySpecInitProviderModelPackageGroupNameRefPolicyResolveEnum
 {
@@ -251,7 +251,7 @@ public enum V1beta1ModelPackageGroupPolicySpecInitProviderModelPackageGroupNameR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelPackageGroupPolicySpecInitProviderModelPackageGroupNameRefPolicy
 {
@@ -275,7 +275,7 @@ public partial class V1beta1ModelPackageGroupPolicySpecInitProviderModelPackageG
 }
 
 /// <summary>Reference to a ModelPackageGroup in sagemaker to populate modelPackageGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelPackageGroupPolicySpecInitProviderModelPackageGroupNameRef
 {
@@ -298,7 +298,7 @@ public partial class V1beta1ModelPackageGroupPolicySpecInitProviderModelPackageG
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelPackageGroupPolicySpecInitProviderModelPackageGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ModelPackageGroupPolicySpecInitProviderModelPackageGroupNameSelectorPolicyResolutionEnum
 {
@@ -314,7 +314,7 @@ public enum V1beta1ModelPackageGroupPolicySpecInitProviderModelPackageGroupNameS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelPackageGroupPolicySpecInitProviderModelPackageGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ModelPackageGroupPolicySpecInitProviderModelPackageGroupNameSelectorPolicyResolveEnum
 {
@@ -325,7 +325,7 @@ public enum V1beta1ModelPackageGroupPolicySpecInitProviderModelPackageGroupNameS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelPackageGroupPolicySpecInitProviderModelPackageGroupNameSelectorPolicy
 {
@@ -349,7 +349,7 @@ public partial class V1beta1ModelPackageGroupPolicySpecInitProviderModelPackageG
 }
 
 /// <summary>Selector for a ModelPackageGroup in sagemaker to populate modelPackageGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelPackageGroupPolicySpecInitProviderModelPackageGroupNameSelector
 {
@@ -385,7 +385,7 @@ public partial class V1beta1ModelPackageGroupPolicySpecInitProviderModelPackageG
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelPackageGroupPolicySpecInitProvider
 {
@@ -409,7 +409,7 @@ public partial class V1beta1ModelPackageGroupPolicySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelPackageGroupPolicySpecManagementPoliciesEnum>))]
 public enum V1beta1ModelPackageGroupPolicySpecManagementPoliciesEnum
 {
@@ -432,7 +432,7 @@ public enum V1beta1ModelPackageGroupPolicySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelPackageGroupPolicySpecProviderConfigRef
 {
@@ -451,7 +451,7 @@ public partial class V1beta1ModelPackageGroupPolicySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelPackageGroupPolicySpecWriteConnectionSecretToRef
 {
@@ -461,7 +461,7 @@ public partial class V1beta1ModelPackageGroupPolicySpecWriteConnectionSecretToRe
 }
 
 /// <summary>ModelPackageGroupPolicySpec defines the desired state of ModelPackageGroupPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelPackageGroupPolicySpec
 {
@@ -512,7 +512,7 @@ public partial class V1beta1ModelPackageGroupPolicySpec
     public V1beta1ModelPackageGroupPolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelPackageGroupPolicyStatusAtProvider
 {
@@ -536,7 +536,7 @@ public partial class V1beta1ModelPackageGroupPolicyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelPackageGroupPolicyStatusConditions
 {
@@ -579,7 +579,7 @@ public partial class V1beta1ModelPackageGroupPolicyStatusConditions
 }
 
 /// <summary>ModelPackageGroupPolicyStatus defines the observed state of ModelPackageGroupPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelPackageGroupPolicyStatus
 {
@@ -600,7 +600,7 @@ public partial class V1beta1ModelPackageGroupPolicyStatus
 }
 
 /// <summary>ModelPackageGroupPolicy is the Schema for the ModelPackageGroupPolicys API. Provides a SageMaker AI Model Package Group Policy resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ModelPackageGroupPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ModelPackageGroupPolicySpec>, IStatus<V1beta1ModelPackageGroupPolicyStatus?>

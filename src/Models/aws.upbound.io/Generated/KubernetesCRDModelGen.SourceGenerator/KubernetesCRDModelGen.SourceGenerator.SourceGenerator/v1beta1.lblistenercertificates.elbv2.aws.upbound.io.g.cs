@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.elbv2.aws.upbound.io;
 /// <summary>LBListenerCertificate is the Schema for the LBListenerCertificates API. Provides a Load Balancer Listener Certificate resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LBListenerCertificateList : IKubernetesObject<V1ListMeta>, IItems<V1beta1LBListenerCertificate>
@@ -45,7 +45,7 @@ public partial class V1beta1LBListenerCertificateList : IKubernetesObject<V1List
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerCertificateSpecDeletionPolicyEnum>))]
 public enum V1beta1LBListenerCertificateSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1LBListenerCertificateSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerCertificateSpecForProviderCertificateArnRefPolicyResolutionEnum>))]
 public enum V1beta1LBListenerCertificateSpecForProviderCertificateArnRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1LBListenerCertificateSpecForProviderCertificateArnRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerCertificateSpecForProviderCertificateArnRefPolicyResolveEnum>))]
 public enum V1beta1LBListenerCertificateSpecForProviderCertificateArnRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1LBListenerCertificateSpecForProviderCertificateArnRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateSpecForProviderCertificateArnRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1LBListenerCertificateSpecForProviderCertificateArnRe
 }
 
 /// <summary>Reference to a Certificate in acm to populate certificateArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateSpecForProviderCertificateArnRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1LBListenerCertificateSpecForProviderCertificateArnRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerCertificateSpecForProviderCertificateArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1LBListenerCertificateSpecForProviderCertificateArnSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1LBListenerCertificateSpecForProviderCertificateArnSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerCertificateSpecForProviderCertificateArnSelectorPolicyResolveEnum>))]
 public enum V1beta1LBListenerCertificateSpecForProviderCertificateArnSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1LBListenerCertificateSpecForProviderCertificateArnSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateSpecForProviderCertificateArnSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1LBListenerCertificateSpecForProviderCertificateArnSe
 }
 
 /// <summary>Selector for a Certificate in acm to populate certificateArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateSpecForProviderCertificateArnSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1LBListenerCertificateSpecForProviderCertificateArnSe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerCertificateSpecForProviderListenerArnRefPolicyResolutionEnum>))]
 public enum V1beta1LBListenerCertificateSpecForProviderListenerArnRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1LBListenerCertificateSpecForProviderListenerArnRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerCertificateSpecForProviderListenerArnRefPolicyResolveEnum>))]
 public enum V1beta1LBListenerCertificateSpecForProviderListenerArnRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1LBListenerCertificateSpecForProviderListenerArnRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateSpecForProviderListenerArnRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1LBListenerCertificateSpecForProviderListenerArnRefPo
 }
 
 /// <summary>Reference to a LBListener in elbv2 to populate listenerArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateSpecForProviderListenerArnRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1LBListenerCertificateSpecForProviderListenerArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerCertificateSpecForProviderListenerArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1LBListenerCertificateSpecForProviderListenerArnSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1LBListenerCertificateSpecForProviderListenerArnSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerCertificateSpecForProviderListenerArnSelectorPolicyResolveEnum>))]
 public enum V1beta1LBListenerCertificateSpecForProviderListenerArnSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1LBListenerCertificateSpecForProviderListenerArnSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateSpecForProviderListenerArnSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1LBListenerCertificateSpecForProviderListenerArnSelec
 }
 
 /// <summary>Selector for a LBListener in elbv2 to populate listenerArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateSpecForProviderListenerArnSelector
 {
@@ -349,7 +349,7 @@ public partial class V1beta1LBListenerCertificateSpecForProviderListenerArnSelec
     public V1beta1LBListenerCertificateSpecForProviderListenerArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateSpecForProvider
 {
@@ -391,7 +391,7 @@ public partial class V1beta1LBListenerCertificateSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerCertificateSpecInitProviderCertificateArnRefPolicyResolutionEnum>))]
 public enum V1beta1LBListenerCertificateSpecInitProviderCertificateArnRefPolicyResolutionEnum
 {
@@ -407,7 +407,7 @@ public enum V1beta1LBListenerCertificateSpecInitProviderCertificateArnRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerCertificateSpecInitProviderCertificateArnRefPolicyResolveEnum>))]
 public enum V1beta1LBListenerCertificateSpecInitProviderCertificateArnRefPolicyResolveEnum
 {
@@ -418,7 +418,7 @@ public enum V1beta1LBListenerCertificateSpecInitProviderCertificateArnRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateSpecInitProviderCertificateArnRefPolicy
 {
@@ -442,7 +442,7 @@ public partial class V1beta1LBListenerCertificateSpecInitProviderCertificateArnR
 }
 
 /// <summary>Reference to a Certificate in acm to populate certificateArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateSpecInitProviderCertificateArnRef
 {
@@ -461,7 +461,7 @@ public partial class V1beta1LBListenerCertificateSpecInitProviderCertificateArnR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerCertificateSpecInitProviderCertificateArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1LBListenerCertificateSpecInitProviderCertificateArnSelectorPolicyResolutionEnum
 {
@@ -477,7 +477,7 @@ public enum V1beta1LBListenerCertificateSpecInitProviderCertificateArnSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerCertificateSpecInitProviderCertificateArnSelectorPolicyResolveEnum>))]
 public enum V1beta1LBListenerCertificateSpecInitProviderCertificateArnSelectorPolicyResolveEnum
 {
@@ -488,7 +488,7 @@ public enum V1beta1LBListenerCertificateSpecInitProviderCertificateArnSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateSpecInitProviderCertificateArnSelectorPolicy
 {
@@ -512,7 +512,7 @@ public partial class V1beta1LBListenerCertificateSpecInitProviderCertificateArnS
 }
 
 /// <summary>Selector for a Certificate in acm to populate certificateArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateSpecInitProviderCertificateArnSelector
 {
@@ -538,7 +538,7 @@ public partial class V1beta1LBListenerCertificateSpecInitProviderCertificateArnS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerCertificateSpecInitProviderListenerArnRefPolicyResolutionEnum>))]
 public enum V1beta1LBListenerCertificateSpecInitProviderListenerArnRefPolicyResolutionEnum
 {
@@ -554,7 +554,7 @@ public enum V1beta1LBListenerCertificateSpecInitProviderListenerArnRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerCertificateSpecInitProviderListenerArnRefPolicyResolveEnum>))]
 public enum V1beta1LBListenerCertificateSpecInitProviderListenerArnRefPolicyResolveEnum
 {
@@ -565,7 +565,7 @@ public enum V1beta1LBListenerCertificateSpecInitProviderListenerArnRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateSpecInitProviderListenerArnRefPolicy
 {
@@ -589,7 +589,7 @@ public partial class V1beta1LBListenerCertificateSpecInitProviderListenerArnRefP
 }
 
 /// <summary>Reference to a LBListener in elbv2 to populate listenerArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateSpecInitProviderListenerArnRef
 {
@@ -608,7 +608,7 @@ public partial class V1beta1LBListenerCertificateSpecInitProviderListenerArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerCertificateSpecInitProviderListenerArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1LBListenerCertificateSpecInitProviderListenerArnSelectorPolicyResolutionEnum
 {
@@ -624,7 +624,7 @@ public enum V1beta1LBListenerCertificateSpecInitProviderListenerArnSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerCertificateSpecInitProviderListenerArnSelectorPolicyResolveEnum>))]
 public enum V1beta1LBListenerCertificateSpecInitProviderListenerArnSelectorPolicyResolveEnum
 {
@@ -635,7 +635,7 @@ public enum V1beta1LBListenerCertificateSpecInitProviderListenerArnSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateSpecInitProviderListenerArnSelectorPolicy
 {
@@ -659,7 +659,7 @@ public partial class V1beta1LBListenerCertificateSpecInitProviderListenerArnSele
 }
 
 /// <summary>Selector for a LBListener in elbv2 to populate listenerArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateSpecInitProviderListenerArnSelector
 {
@@ -691,7 +691,7 @@ public partial class V1beta1LBListenerCertificateSpecInitProviderListenerArnSele
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateSpecInitProvider
 {
@@ -724,7 +724,7 @@ public partial class V1beta1LBListenerCertificateSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerCertificateSpecManagementPoliciesEnum>))]
 public enum V1beta1LBListenerCertificateSpecManagementPoliciesEnum
 {
@@ -748,7 +748,7 @@ public enum V1beta1LBListenerCertificateSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerCertificateSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1LBListenerCertificateSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -764,7 +764,7 @@ public enum V1beta1LBListenerCertificateSpecProviderConfigRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerCertificateSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1LBListenerCertificateSpecProviderConfigRefPolicyResolveEnum
 {
@@ -775,7 +775,7 @@ public enum V1beta1LBListenerCertificateSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateSpecProviderConfigRefPolicy
 {
@@ -803,7 +803,7 @@ public partial class V1beta1LBListenerCertificateSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateSpecProviderConfigRef
 {
@@ -822,7 +822,7 @@ public partial class V1beta1LBListenerCertificateSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateSpecWriteConnectionSecretToRef
 {
@@ -836,7 +836,7 @@ public partial class V1beta1LBListenerCertificateSpecWriteConnectionSecretToRef
 }
 
 /// <summary>LBListenerCertificateSpec defines the desired state of LBListenerCertificate</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateSpec
 {
@@ -903,7 +903,7 @@ public partial class V1beta1LBListenerCertificateSpec
     public V1beta1LBListenerCertificateSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateStatusAtProvider
 {
@@ -928,7 +928,7 @@ public partial class V1beta1LBListenerCertificateStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateStatusConditions
 {
@@ -971,7 +971,7 @@ public partial class V1beta1LBListenerCertificateStatusConditions
 }
 
 /// <summary>LBListenerCertificateStatus defines the observed state of LBListenerCertificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerCertificateStatus
 {
@@ -992,7 +992,7 @@ public partial class V1beta1LBListenerCertificateStatus
 }
 
 /// <summary>LBListenerCertificate is the Schema for the LBListenerCertificates API. Provides a Load Balancer Listener Certificate resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LBListenerCertificate : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1LBListenerCertificateSpec>, IStatus<V1beta1LBListenerCertificateStatus?>

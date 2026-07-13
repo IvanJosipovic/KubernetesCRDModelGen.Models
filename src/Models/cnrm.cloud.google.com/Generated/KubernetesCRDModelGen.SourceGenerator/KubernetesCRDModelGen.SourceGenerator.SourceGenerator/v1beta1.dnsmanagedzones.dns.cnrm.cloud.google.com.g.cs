@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dns.cnrm.cloud.google.com;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DNSManagedZoneList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DNSManagedZone>
@@ -36,7 +36,7 @@ public partial class V1beta1DNSManagedZoneList : IKubernetesObject<V1ListMeta>, 
 }
 
 /// <summary>Cloud logging configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DNSManagedZoneSpecCloudLoggingConfig
 {
@@ -45,7 +45,7 @@ public partial class V1beta1DNSManagedZoneSpecCloudLoggingConfig
     public required bool EnableLogging { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DNSManagedZoneSpecDnssecConfigDefaultKeySpecs
 {
@@ -74,7 +74,7 @@ public partial class V1beta1DNSManagedZoneSpecDnssecConfigDefaultKeySpecs
 }
 
 /// <summary>DNSSEC configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DNSManagedZoneSpecDnssecConfig
 {
@@ -103,7 +103,7 @@ public partial class V1beta1DNSManagedZoneSpecDnssecConfig
     public string? State { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DNSManagedZoneSpecForwardingConfigTargetNameServers
 {
@@ -125,7 +125,7 @@ public partial class V1beta1DNSManagedZoneSpecForwardingConfigTargetNameServers
 /// for this zone. The value of this field contains the set of destinations
 /// to forward to.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DNSManagedZoneSpecForwardingConfig
 {
@@ -139,7 +139,7 @@ public partial class V1beta1DNSManagedZoneSpecForwardingConfig
 }
 
 /// <summary>VPC network to forward queries to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DNSManagedZoneSpecPeeringConfigTargetNetworkNetworkRef
 {
@@ -157,7 +157,7 @@ public partial class V1beta1DNSManagedZoneSpecPeeringConfigTargetNetworkNetworkR
 }
 
 /// <summary>The network with which to peer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DNSManagedZoneSpecPeeringConfigTargetNetwork
 {
@@ -170,7 +170,7 @@ public partial class V1beta1DNSManagedZoneSpecPeeringConfigTargetNetwork
 /// The presence of this field indicates that DNS Peering is enabled for this
 /// zone. The value of this field contains the network to peer with.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DNSManagedZoneSpecPeeringConfig
 {
@@ -184,7 +184,7 @@ public partial class V1beta1DNSManagedZoneSpecPeeringConfig
 /// This should be specified in the format like
 /// &apos;projects/*/locations/*/clusters/*&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DNSManagedZoneSpecPrivateVisibilityConfigGkeClustersGkeClusterNameRef
 {
@@ -201,7 +201,7 @@ public partial class V1beta1DNSManagedZoneSpecPrivateVisibilityConfigGkeClusters
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DNSManagedZoneSpecPrivateVisibilityConfigGkeClusters
 {
@@ -215,7 +215,7 @@ public partial class V1beta1DNSManagedZoneSpecPrivateVisibilityConfigGkeClusters
 }
 
 /// <summary>VPC network to bind to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DNSManagedZoneSpecPrivateVisibilityConfigNetworksNetworkRef
 {
@@ -232,7 +232,7 @@ public partial class V1beta1DNSManagedZoneSpecPrivateVisibilityConfigNetworksNet
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DNSManagedZoneSpecPrivateVisibilityConfigNetworks
 {
@@ -245,7 +245,7 @@ public partial class V1beta1DNSManagedZoneSpecPrivateVisibilityConfigNetworks
 /// For privately visible zones, the set of Virtual Private Cloud
 /// resources that the zone is visible from. At least one of &apos;gke_clusters&apos; or &apos;networks&apos; must be specified.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DNSManagedZoneSpecPrivateVisibilityConfig
 {
@@ -258,7 +258,7 @@ public partial class V1beta1DNSManagedZoneSpecPrivateVisibilityConfig
 }
 
 /// <summary>The namespace associated with the zone.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DNSManagedZoneSpecServiceDirectoryConfigNamespace
 {
@@ -274,7 +274,7 @@ public partial class V1beta1DNSManagedZoneSpecServiceDirectoryConfigNamespace
 }
 
 /// <summary>Immutable. The presence of this field indicates that this zone is backed by Service Directory. The value of this field contains information related to the namespace associated with the zone.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DNSManagedZoneSpecServiceDirectoryConfig
 {
@@ -283,7 +283,7 @@ public partial class V1beta1DNSManagedZoneSpecServiceDirectoryConfig
     public required V1beta1DNSManagedZoneSpecServiceDirectoryConfigNamespace Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DNSManagedZoneSpec
 {
@@ -349,7 +349,7 @@ public partial class V1beta1DNSManagedZoneSpec
     public string? Visibility { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DNSManagedZoneStatusConditions
 {
@@ -374,7 +374,7 @@ public partial class V1beta1DNSManagedZoneStatusConditions
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DNSManagedZoneStatus
 {
@@ -405,7 +405,7 @@ public partial class V1beta1DNSManagedZoneStatus
     public int? ObservedGeneration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DNSManagedZone : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DNSManagedZoneSpec>, IStatus<V1beta1DNSManagedZoneStatus?>

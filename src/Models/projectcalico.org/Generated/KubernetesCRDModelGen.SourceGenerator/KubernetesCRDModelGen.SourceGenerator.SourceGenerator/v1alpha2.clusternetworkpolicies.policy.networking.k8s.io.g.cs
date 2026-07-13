@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.policy.networking.k8s.io;
 /// <summary>ClusterNetworkPolicy is a cluster-wide network policy resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha2ClusterNetworkPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1alpha2ClusterNetworkPolicy>
@@ -52,7 +52,7 @@ public partial class V1alpha2ClusterNetworkPolicyList : IKubernetesObject<V1List
 ///   current tier for the selected traffic, and passes
 ///   evaluation to the next tier.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha2ClusterNetworkPolicySpecEgressActionEnum>))]
 public enum V1alpha2ClusterNetworkPolicySpecEgressActionEnum
 {
@@ -65,7 +65,7 @@ public enum V1alpha2ClusterNetworkPolicySpecEgressActionEnum
 }
 
 /// <summary>Range defines a contiguous range of ports.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecEgressProtocolsSctpDestinationPortRange
 {
@@ -85,7 +85,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecEgressProtocolsSctpDestinat
 }
 
 /// <summary>DestinationPort for the match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecEgressProtocolsSctpDestinationPort
 {
@@ -99,7 +99,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecEgressProtocolsSctpDestinat
 }
 
 /// <summary>SCTP specific protocol matches.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecEgressProtocolsSctp
 {
@@ -109,7 +109,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecEgressProtocolsSctp
 }
 
 /// <summary>Range defines a contiguous range of ports.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecEgressProtocolsTcpDestinationPortRange
 {
@@ -129,7 +129,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecEgressProtocolsTcpDestinati
 }
 
 /// <summary>DestinationPort for the match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecEgressProtocolsTcpDestinationPort
 {
@@ -143,7 +143,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecEgressProtocolsTcpDestinati
 }
 
 /// <summary>TCP specific protocol matches.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecEgressProtocolsTcp
 {
@@ -153,7 +153,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecEgressProtocolsTcp
 }
 
 /// <summary>Range defines a contiguous range of ports.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecEgressProtocolsUdpDestinationPortRange
 {
@@ -173,7 +173,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecEgressProtocolsUdpDestinati
 }
 
 /// <summary>DestinationPort for the match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecEgressProtocolsUdpDestinationPort
 {
@@ -187,7 +187,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecEgressProtocolsUdpDestinati
 }
 
 /// <summary>UDP specific protocol matches.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecEgressProtocolsUdp
 {
@@ -200,7 +200,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecEgressProtocolsUdp
 /// ClusterNetworkPolicyProtocol describes additional protocol-specific match rules.
 /// Exactly one field must be set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecEgressProtocols
 {
@@ -229,7 +229,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecEgressProtocols
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecEgressToNamespacesMatchExpressions
 {
@@ -258,7 +258,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecEgressToNamespacesMatchExpr
 /// Namespaces defines a way to select all pods within a set of Namespaces.
 /// Note that host-networked pods are not included in this type of peer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecEgressToNamespaces
 {
@@ -279,7 +279,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecEgressToNamespaces
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecEgressToPodsNamespaceSelectorMatchExpressions
 {
@@ -308,7 +308,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecEgressToPodsNamespaceSelect
 /// NamespaceSelector follows standard label selector
 /// semantics; if empty, it selects all Namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecEgressToPodsNamespaceSelector
 {
@@ -329,7 +329,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecEgressToPodsNamespaceSelect
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecEgressToPodsPodSelectorMatchExpressions
 {
@@ -358,7 +358,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecEgressToPodsPodSelectorMatc
 /// PodSelector is used to explicitly select pods within a namespace;
 /// if empty, it selects all Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecEgressToPodsPodSelector
 {
@@ -380,7 +380,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecEgressToPodsPodSelector
 /// a set of namespaces. Note that host-networked pods
 /// are not included in this type of peer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecEgressToPods
 {
@@ -411,7 +411,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecEgressToPods
 /// traffic&quot;. For &quot;Deny&quot; and &quot;Pass&quot; rules, &quot;fail closed&quot; means: &quot;treat the rule
 /// as a &apos;Deny all&apos; rule&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecEgressTo
 {
@@ -455,7 +455,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecEgressTo
 /// 
 /// &lt;network-policy-api:experimental:validation&gt;
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecEgress
 {
@@ -527,7 +527,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecEgress
 ///   current tier for the selected traffic, and passes
 ///   evaluation to the next tier.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha2ClusterNetworkPolicySpecIngressActionEnum>))]
 public enum V1alpha2ClusterNetworkPolicySpecIngressActionEnum
 {
@@ -543,7 +543,7 @@ public enum V1alpha2ClusterNetworkPolicySpecIngressActionEnum
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecIngressFromNamespacesMatchExpressions
 {
@@ -572,7 +572,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecIngressFromNamespacesMatchE
 /// Namespaces defines a way to select all pods within a set of Namespaces.
 /// Note that host-networked pods are not included in this type of peer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecIngressFromNamespaces
 {
@@ -593,7 +593,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecIngressFromNamespaces
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecIngressFromPodsNamespaceSelectorMatchExpressions
 {
@@ -622,7 +622,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecIngressFromPodsNamespaceSel
 /// NamespaceSelector follows standard label selector
 /// semantics; if empty, it selects all Namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecIngressFromPodsNamespaceSelector
 {
@@ -643,7 +643,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecIngressFromPodsNamespaceSel
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecIngressFromPodsPodSelectorMatchExpressions
 {
@@ -672,7 +672,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecIngressFromPodsPodSelectorM
 /// PodSelector is used to explicitly select pods within a namespace;
 /// if empty, it selects all Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecIngressFromPodsPodSelector
 {
@@ -694,7 +694,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecIngressFromPodsPodSelector
 /// a set of namespaces. Note that host-networked pods
 /// are not included in this type of peer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecIngressFromPods
 {
@@ -725,7 +725,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecIngressFromPods
 /// traffic&quot;. For &quot;Deny&quot; and &quot;Pass&quot; rules, &quot;fail closed&quot; means: &quot;treat the rule
 /// as a &apos;Deny all&apos; rule&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecIngressFrom
 {
@@ -746,7 +746,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecIngressFrom
 }
 
 /// <summary>Range defines a contiguous range of ports.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecIngressProtocolsSctpDestinationPortRange
 {
@@ -766,7 +766,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecIngressProtocolsSctpDestina
 }
 
 /// <summary>DestinationPort for the match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecIngressProtocolsSctpDestinationPort
 {
@@ -780,7 +780,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecIngressProtocolsSctpDestina
 }
 
 /// <summary>SCTP specific protocol matches.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecIngressProtocolsSctp
 {
@@ -790,7 +790,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecIngressProtocolsSctp
 }
 
 /// <summary>Range defines a contiguous range of ports.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecIngressProtocolsTcpDestinationPortRange
 {
@@ -810,7 +810,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecIngressProtocolsTcpDestinat
 }
 
 /// <summary>DestinationPort for the match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecIngressProtocolsTcpDestinationPort
 {
@@ -824,7 +824,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecIngressProtocolsTcpDestinat
 }
 
 /// <summary>TCP specific protocol matches.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecIngressProtocolsTcp
 {
@@ -834,7 +834,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecIngressProtocolsTcp
 }
 
 /// <summary>Range defines a contiguous range of ports.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecIngressProtocolsUdpDestinationPortRange
 {
@@ -854,7 +854,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecIngressProtocolsUdpDestinat
 }
 
 /// <summary>DestinationPort for the match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecIngressProtocolsUdpDestinationPort
 {
@@ -868,7 +868,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecIngressProtocolsUdpDestinat
 }
 
 /// <summary>UDP specific protocol matches.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecIngressProtocolsUdp
 {
@@ -881,7 +881,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecIngressProtocolsUdp
 /// ClusterNetworkPolicyProtocol describes additional protocol-specific match rules.
 /// Exactly one field must be set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecIngressProtocols
 {
@@ -911,7 +911,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecIngressProtocols
 /// set of traffic destined for pods selected by a ClusterNetworkPolicy&apos;s
 /// Subject field.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecIngress
 {
@@ -971,7 +971,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecIngress
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecSubjectNamespacesMatchExpressions
 {
@@ -997,7 +997,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecSubjectNamespacesMatchExpre
 }
 
 /// <summary>Namespaces is used to select pods via namespace selectors.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecSubjectNamespaces
 {
@@ -1018,7 +1018,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecSubjectNamespaces
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecSubjectPodsNamespaceSelectorMatchExpressions
 {
@@ -1047,7 +1047,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecSubjectPodsNamespaceSelecto
 /// NamespaceSelector follows standard label selector
 /// semantics; if empty, it selects all Namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecSubjectPodsNamespaceSelector
 {
@@ -1068,7 +1068,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecSubjectPodsNamespaceSelecto
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecSubjectPodsPodSelectorMatchExpressions
 {
@@ -1097,7 +1097,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecSubjectPodsPodSelectorMatch
 /// PodSelector is used to explicitly select pods within a namespace;
 /// if empty, it selects all Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecSubjectPodsPodSelector
 {
@@ -1115,7 +1115,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecSubjectPodsPodSelector
 }
 
 /// <summary>Pods is used to select pods via namespace AND pod selectors.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecSubjectPods
 {
@@ -1135,7 +1135,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecSubjectPods
 }
 
 /// <summary>Subject defines the pods to which this ClusterNetworkPolicy applies.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpecSubject
 {
@@ -1179,7 +1179,7 @@ public partial class V1alpha2ClusterNetworkPolicySpecSubject
 /// the default kubernetes policy is applied, which says that
 /// all pods can communicate with each other.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha2ClusterNetworkPolicySpecTierEnum>))]
 public enum V1alpha2ClusterNetworkPolicySpecTierEnum
 {
@@ -1190,7 +1190,7 @@ public enum V1alpha2ClusterNetworkPolicySpecTierEnum
 }
 
 /// <summary>Spec defines the desired behavior of ClusterNetworkPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicySpec
 {
@@ -1281,7 +1281,7 @@ public partial class V1alpha2ClusterNetworkPolicySpec
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha2ClusterNetworkPolicyStatusConditionsStatusEnum>))]
 public enum V1alpha2ClusterNetworkPolicyStatusConditionsStatusEnum
 {
@@ -1294,7 +1294,7 @@ public enum V1alpha2ClusterNetworkPolicyStatusConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicyStatusConditions
 {
@@ -1340,7 +1340,7 @@ public partial class V1alpha2ClusterNetworkPolicyStatusConditions
 }
 
 /// <summary>Status is the status to be reported by the implementation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ClusterNetworkPolicyStatus
 {
@@ -1349,7 +1349,7 @@ public partial class V1alpha2ClusterNetworkPolicyStatus
 }
 
 /// <summary>ClusterNetworkPolicy is a cluster-wide network policy resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha2ClusterNetworkPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha2ClusterNetworkPolicySpec>, IStatus<V1alpha2ClusterNetworkPolicyStatus?>

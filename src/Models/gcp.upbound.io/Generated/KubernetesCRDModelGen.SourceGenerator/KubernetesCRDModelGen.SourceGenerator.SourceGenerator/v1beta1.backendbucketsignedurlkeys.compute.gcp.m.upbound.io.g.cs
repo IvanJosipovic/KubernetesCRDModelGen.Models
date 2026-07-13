@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.m.upbound.io;
 /// <summary>BackendBucketSignedURLKey is the Schema for the BackendBucketSignedURLKeys API. A key for signing Cloud CDN signed URLs for BackendBuckets.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BackendBucketSignedURLKeyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1BackendBucketSignedURLKey>
@@ -42,7 +42,7 @@ public partial class V1beta1BackendBucketSignedURLKeyList : IKubernetesObject<V1
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendBucketSignedURLKeySpecForProviderBackendBucketRefPolicyResolutionEnum>))]
 public enum V1beta1BackendBucketSignedURLKeySpecForProviderBackendBucketRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1BackendBucketSignedURLKeySpecForProviderBackendBucketRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendBucketSignedURLKeySpecForProviderBackendBucketRefPolicyResolveEnum>))]
 public enum V1beta1BackendBucketSignedURLKeySpecForProviderBackendBucketRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1BackendBucketSignedURLKeySpecForProviderBackendBucketRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendBucketSignedURLKeySpecForProviderBackendBucketRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1BackendBucketSignedURLKeySpecForProviderBackendBucke
 }
 
 /// <summary>Reference to a BackendBucket in compute to populate backendBucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendBucketSignedURLKeySpecForProviderBackendBucketRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1BackendBucketSignedURLKeySpecForProviderBackendBucke
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendBucketSignedURLKeySpecForProviderBackendBucketSelectorPolicyResolutionEnum>))]
 public enum V1beta1BackendBucketSignedURLKeySpecForProviderBackendBucketSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1BackendBucketSignedURLKeySpecForProviderBackendBucketSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendBucketSignedURLKeySpecForProviderBackendBucketSelectorPolicyResolveEnum>))]
 public enum V1beta1BackendBucketSignedURLKeySpecForProviderBackendBucketSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1BackendBucketSignedURLKeySpecForProviderBackendBucketSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendBucketSignedURLKeySpecForProviderBackendBucketSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1BackendBucketSignedURLKeySpecForProviderBackendBucke
 }
 
 /// <summary>Selector for a BackendBucket in compute to populate backendBucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendBucketSignedURLKeySpecForProviderBackendBucketSelector
 {
@@ -196,7 +196,7 @@ public partial class V1beta1BackendBucketSignedURLKeySpecForProviderBackendBucke
 /// valid RFC 4648 Section 5 base64url encoded string.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendBucketSignedURLKeySpecForProviderKeyValueSecretRef
 {
@@ -208,7 +208,7 @@ public partial class V1beta1BackendBucketSignedURLKeySpecForProviderKeyValueSecr
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendBucketSignedURLKeySpecForProvider
 {
@@ -250,7 +250,7 @@ public partial class V1beta1BackendBucketSignedURLKeySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendBucketSignedURLKeySpecInitProviderBackendBucketRefPolicyResolutionEnum>))]
 public enum V1beta1BackendBucketSignedURLKeySpecInitProviderBackendBucketRefPolicyResolutionEnum
 {
@@ -266,7 +266,7 @@ public enum V1beta1BackendBucketSignedURLKeySpecInitProviderBackendBucketRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendBucketSignedURLKeySpecInitProviderBackendBucketRefPolicyResolveEnum>))]
 public enum V1beta1BackendBucketSignedURLKeySpecInitProviderBackendBucketRefPolicyResolveEnum
 {
@@ -277,7 +277,7 @@ public enum V1beta1BackendBucketSignedURLKeySpecInitProviderBackendBucketRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendBucketSignedURLKeySpecInitProviderBackendBucketRefPolicy
 {
@@ -301,7 +301,7 @@ public partial class V1beta1BackendBucketSignedURLKeySpecInitProviderBackendBuck
 }
 
 /// <summary>Reference to a BackendBucket in compute to populate backendBucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendBucketSignedURLKeySpecInitProviderBackendBucketRef
 {
@@ -324,7 +324,7 @@ public partial class V1beta1BackendBucketSignedURLKeySpecInitProviderBackendBuck
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendBucketSignedURLKeySpecInitProviderBackendBucketSelectorPolicyResolutionEnum>))]
 public enum V1beta1BackendBucketSignedURLKeySpecInitProviderBackendBucketSelectorPolicyResolutionEnum
 {
@@ -340,7 +340,7 @@ public enum V1beta1BackendBucketSignedURLKeySpecInitProviderBackendBucketSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendBucketSignedURLKeySpecInitProviderBackendBucketSelectorPolicyResolveEnum>))]
 public enum V1beta1BackendBucketSignedURLKeySpecInitProviderBackendBucketSelectorPolicyResolveEnum
 {
@@ -351,7 +351,7 @@ public enum V1beta1BackendBucketSignedURLKeySpecInitProviderBackendBucketSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendBucketSignedURLKeySpecInitProviderBackendBucketSelectorPolicy
 {
@@ -375,7 +375,7 @@ public partial class V1beta1BackendBucketSignedURLKeySpecInitProviderBackendBuck
 }
 
 /// <summary>Selector for a BackendBucket in compute to populate backendBucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendBucketSignedURLKeySpecInitProviderBackendBucketSelector
 {
@@ -404,7 +404,7 @@ public partial class V1beta1BackendBucketSignedURLKeySpecInitProviderBackendBuck
 /// valid RFC 4648 Section 5 base64url encoded string.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendBucketSignedURLKeySpecInitProviderKeyValueSecretRef
 {
@@ -428,7 +428,7 @@ public partial class V1beta1BackendBucketSignedURLKeySpecInitProviderKeyValueSec
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendBucketSignedURLKeySpecInitProvider
 {
@@ -468,7 +468,7 @@ public partial class V1beta1BackendBucketSignedURLKeySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendBucketSignedURLKeySpecManagementPoliciesEnum>))]
 public enum V1beta1BackendBucketSignedURLKeySpecManagementPoliciesEnum
 {
@@ -491,7 +491,7 @@ public enum V1beta1BackendBucketSignedURLKeySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendBucketSignedURLKeySpecProviderConfigRef
 {
@@ -510,7 +510,7 @@ public partial class V1beta1BackendBucketSignedURLKeySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendBucketSignedURLKeySpecWriteConnectionSecretToRef
 {
@@ -520,7 +520,7 @@ public partial class V1beta1BackendBucketSignedURLKeySpecWriteConnectionSecretTo
 }
 
 /// <summary>BackendBucketSignedURLKeySpec defines the desired state of BackendBucketSignedURLKey</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendBucketSignedURLKeySpec
 {
@@ -571,7 +571,7 @@ public partial class V1beta1BackendBucketSignedURLKeySpec
     public V1beta1BackendBucketSignedURLKeySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendBucketSignedURLKeyStatusAtProvider
 {
@@ -596,7 +596,7 @@ public partial class V1beta1BackendBucketSignedURLKeyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendBucketSignedURLKeyStatusConditions
 {
@@ -639,7 +639,7 @@ public partial class V1beta1BackendBucketSignedURLKeyStatusConditions
 }
 
 /// <summary>BackendBucketSignedURLKeyStatus defines the observed state of BackendBucketSignedURLKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendBucketSignedURLKeyStatus
 {
@@ -660,7 +660,7 @@ public partial class V1beta1BackendBucketSignedURLKeyStatus
 }
 
 /// <summary>BackendBucketSignedURLKey is the Schema for the BackendBucketSignedURLKeys API. A key for signing Cloud CDN signed URLs for BackendBuckets.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BackendBucketSignedURLKey : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1BackendBucketSignedURLKeySpec>, IStatus<V1beta1BackendBucketSignedURLKeyStatus?>

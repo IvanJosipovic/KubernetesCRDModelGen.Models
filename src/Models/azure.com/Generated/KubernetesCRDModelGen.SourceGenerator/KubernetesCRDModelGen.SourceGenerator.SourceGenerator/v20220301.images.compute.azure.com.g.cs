@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.compute.azure.com;
 /// - Generated from: /compute/resource-manager/Microsoft.Compute/ComputeRP/stable/2022-03-01/image.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20220301ImageList : IKubernetesObject<V1ListMeta>, IItems<V20220301Image>
@@ -41,7 +41,7 @@ public partial class V20220301ImageList : IKubernetesObject<V1ListMeta>, IItems<
 }
 
 /// <summary>Type: The type of the extended location.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20220301ImageSpecExtendedLocationTypeEnum>))]
 public enum V20220301ImageSpecExtendedLocationTypeEnum
 {
@@ -50,7 +50,7 @@ public enum V20220301ImageSpecExtendedLocationTypeEnum
 }
 
 /// <summary>ExtendedLocation: The extended location of the Image.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageSpecExtendedLocation
 {
@@ -69,7 +69,7 @@ public partial class V20220301ImageSpecExtendedLocation
 /// like disk or snapshot, we may require the user to specify the property if we cannot deduce it from the source managed
 /// resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20220301ImageSpecHyperVGenerationEnum>))]
 public enum V20220301ImageSpecHyperVGenerationEnum
 {
@@ -84,7 +84,7 @@ public enum V20220301ImageSpecHyperVGenerationEnum
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageSpecOperatorSpecConfigMapExpressions
 {
@@ -125,7 +125,7 @@ public partial class V20220301ImageSpecOperatorSpecConfigMapExpressions
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageSpecOperatorSpecSecretExpressions
 {
@@ -165,7 +165,7 @@ public partial class V20220301ImageSpecOperatorSpecSecretExpressions
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageSpecOperatorSpec
 {
@@ -183,7 +183,7 @@ public partial class V20220301ImageSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageSpecOwner
 {
@@ -196,7 +196,7 @@ public partial class V20220301ImageSpecOwner
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageSpecSourceVirtualMachineReference
 {
@@ -222,7 +222,7 @@ public partial class V20220301ImageSpecSourceVirtualMachineReference
 }
 
 /// <summary>SourceVirtualMachine: The source virtual machine from which Image is created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageSpecSourceVirtualMachine
 {
@@ -239,7 +239,7 @@ public partial class V20220301ImageSpecSourceVirtualMachine
 /// ReadWrite
 /// Default: None for Standard storage. ReadOnly for Premium storage
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20220301ImageSpecStorageProfileDataDisksCachingEnum>))]
 public enum V20220301ImageSpecStorageProfileDataDisksCachingEnum
 {
@@ -252,7 +252,7 @@ public enum V20220301ImageSpecStorageProfileDataDisksCachingEnum
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageSpecStorageProfileDataDisksDiskEncryptionSetReference
 {
@@ -278,7 +278,7 @@ public partial class V20220301ImageSpecStorageProfileDataDisksDiskEncryptionSetR
 }
 
 /// <summary>DiskEncryptionSet: Specifies the customer managed disk encryption set resource id for the managed image disk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageSpecStorageProfileDataDisksDiskEncryptionSet
 {
@@ -288,7 +288,7 @@ public partial class V20220301ImageSpecStorageProfileDataDisksDiskEncryptionSet
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageSpecStorageProfileDataDisksManagedDiskReference
 {
@@ -314,7 +314,7 @@ public partial class V20220301ImageSpecStorageProfileDataDisksManagedDiskReferen
 }
 
 /// <summary>ManagedDisk: The managedDisk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageSpecStorageProfileDataDisksManagedDisk
 {
@@ -324,7 +324,7 @@ public partial class V20220301ImageSpecStorageProfileDataDisksManagedDisk
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageSpecStorageProfileDataDisksSnapshotReference
 {
@@ -350,7 +350,7 @@ public partial class V20220301ImageSpecStorageProfileDataDisksSnapshotReference
 }
 
 /// <summary>Snapshot: The snapshot.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageSpecStorageProfileDataDisksSnapshot
 {
@@ -363,7 +363,7 @@ public partial class V20220301ImageSpecStorageProfileDataDisksSnapshot
 /// StorageAccountType: Specifies the storage account type for the managed disk. NOTE: UltraSSD_LRS can only be used with
 /// data disks, it cannot be used with OS Disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20220301ImageSpecStorageProfileDataDisksStorageAccountTypeEnum>))]
 public enum V20220301ImageSpecStorageProfileDataDisksStorageAccountTypeEnum
 {
@@ -384,7 +384,7 @@ public enum V20220301ImageSpecStorageProfileDataDisksStorageAccountTypeEnum
 }
 
 /// <summary>Describes a data disk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageSpecStorageProfileDataDisks
 {
@@ -446,7 +446,7 @@ public partial class V20220301ImageSpecStorageProfileDataDisks
 /// ReadWrite
 /// Default: None for Standard storage. ReadOnly for Premium storage
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20220301ImageSpecStorageProfileOsDiskCachingEnum>))]
 public enum V20220301ImageSpecStorageProfileOsDiskCachingEnum
 {
@@ -459,7 +459,7 @@ public enum V20220301ImageSpecStorageProfileOsDiskCachingEnum
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageSpecStorageProfileOsDiskDiskEncryptionSetReference
 {
@@ -485,7 +485,7 @@ public partial class V20220301ImageSpecStorageProfileOsDiskDiskEncryptionSetRefe
 }
 
 /// <summary>DiskEncryptionSet: Specifies the customer managed disk encryption set resource id for the managed image disk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageSpecStorageProfileOsDiskDiskEncryptionSet
 {
@@ -495,7 +495,7 @@ public partial class V20220301ImageSpecStorageProfileOsDiskDiskEncryptionSet
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageSpecStorageProfileOsDiskManagedDiskReference
 {
@@ -521,7 +521,7 @@ public partial class V20220301ImageSpecStorageProfileOsDiskManagedDiskReference
 }
 
 /// <summary>ManagedDisk: The managedDisk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageSpecStorageProfileOsDiskManagedDisk
 {
@@ -531,7 +531,7 @@ public partial class V20220301ImageSpecStorageProfileOsDiskManagedDisk
 }
 
 /// <summary>OsState: The OS State. For managed images, use Generalized.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20220301ImageSpecStorageProfileOsDiskOsStateEnum>))]
 public enum V20220301ImageSpecStorageProfileOsDiskOsStateEnum
 {
@@ -548,7 +548,7 @@ public enum V20220301ImageSpecStorageProfileOsDiskOsStateEnum
 /// Windows
 /// Linux
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20220301ImageSpecStorageProfileOsDiskOsTypeEnum>))]
 public enum V20220301ImageSpecStorageProfileOsDiskOsTypeEnum
 {
@@ -559,7 +559,7 @@ public enum V20220301ImageSpecStorageProfileOsDiskOsTypeEnum
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageSpecStorageProfileOsDiskSnapshotReference
 {
@@ -585,7 +585,7 @@ public partial class V20220301ImageSpecStorageProfileOsDiskSnapshotReference
 }
 
 /// <summary>Snapshot: The snapshot.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageSpecStorageProfileOsDiskSnapshot
 {
@@ -598,7 +598,7 @@ public partial class V20220301ImageSpecStorageProfileOsDiskSnapshot
 /// StorageAccountType: Specifies the storage account type for the managed disk. NOTE: UltraSSD_LRS can only be used with
 /// data disks, it cannot be used with OS Disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20220301ImageSpecStorageProfileOsDiskStorageAccountTypeEnum>))]
 public enum V20220301ImageSpecStorageProfileOsDiskStorageAccountTypeEnum
 {
@@ -623,7 +623,7 @@ public enum V20220301ImageSpecStorageProfileOsDiskStorageAccountTypeEnum
 /// For more information about disks, see [About disks and VHDs for Azure virtual
 /// machines](https://docs.microsoft.com/azure/virtual-machines/managed-disks-overview).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageSpecStorageProfileOsDisk
 {
@@ -685,7 +685,7 @@ public partial class V20220301ImageSpecStorageProfileOsDisk
 }
 
 /// <summary>StorageProfile: Specifies the storage settings for the virtual machine disks.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageSpecStorageProfile
 {
@@ -713,7 +713,7 @@ public partial class V20220301ImageSpecStorageProfile
     public bool? ZoneResilient { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageSpec
 {
@@ -770,7 +770,7 @@ public partial class V20220301ImageSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageStatusConditions
 {
@@ -816,7 +816,7 @@ public partial class V20220301ImageStatusConditions
 }
 
 /// <summary>ExtendedLocation: The extended location of the Image.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageStatusExtendedLocation
 {
@@ -830,7 +830,7 @@ public partial class V20220301ImageStatusExtendedLocation
 }
 
 /// <summary>SourceVirtualMachine: The source virtual machine from which Image is created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageStatusSourceVirtualMachine
 {
@@ -840,7 +840,7 @@ public partial class V20220301ImageStatusSourceVirtualMachine
 }
 
 /// <summary>DiskEncryptionSet: Specifies the customer managed disk encryption set resource id for the managed image disk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageStatusStorageProfileDataDisksDiskEncryptionSet
 {
@@ -850,7 +850,7 @@ public partial class V20220301ImageStatusStorageProfileDataDisksDiskEncryptionSe
 }
 
 /// <summary>ManagedDisk: The managedDisk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageStatusStorageProfileDataDisksManagedDisk
 {
@@ -860,7 +860,7 @@ public partial class V20220301ImageStatusStorageProfileDataDisksManagedDisk
 }
 
 /// <summary>Snapshot: The snapshot.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageStatusStorageProfileDataDisksSnapshot
 {
@@ -870,7 +870,7 @@ public partial class V20220301ImageStatusStorageProfileDataDisksSnapshot
 }
 
 /// <summary>Describes a data disk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageStatusStorageProfileDataDisks
 {
@@ -925,7 +925,7 @@ public partial class V20220301ImageStatusStorageProfileDataDisks
 }
 
 /// <summary>DiskEncryptionSet: Specifies the customer managed disk encryption set resource id for the managed image disk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageStatusStorageProfileOsDiskDiskEncryptionSet
 {
@@ -935,7 +935,7 @@ public partial class V20220301ImageStatusStorageProfileOsDiskDiskEncryptionSet
 }
 
 /// <summary>ManagedDisk: The managedDisk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageStatusStorageProfileOsDiskManagedDisk
 {
@@ -945,7 +945,7 @@ public partial class V20220301ImageStatusStorageProfileOsDiskManagedDisk
 }
 
 /// <summary>Snapshot: The snapshot.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageStatusStorageProfileOsDiskSnapshot
 {
@@ -959,7 +959,7 @@ public partial class V20220301ImageStatusStorageProfileOsDiskSnapshot
 /// For more information about disks, see [About disks and VHDs for Azure virtual
 /// machines](https://docs.microsoft.com/azure/virtual-machines/managed-disks-overview).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageStatusStorageProfileOsDisk
 {
@@ -1021,7 +1021,7 @@ public partial class V20220301ImageStatusStorageProfileOsDisk
 }
 
 /// <summary>StorageProfile: Specifies the storage settings for the virtual machine disks.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageStatusStorageProfile
 {
@@ -1053,7 +1053,7 @@ public partial class V20220301ImageStatusStorageProfile
 /// The source user image virtual hard disk. The virtual hard disk will be copied before being attached to the virtual
 /// machine. If SourceImage is provided, the destination virtual hard drive must not exist.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301ImageStatus
 {
@@ -1112,7 +1112,7 @@ public partial class V20220301ImageStatus
 /// - Generated from: /compute/resource-manager/Microsoft.Compute/ComputeRP/stable/2022-03-01/image.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20220301Image : IKubernetesObject<V1ObjectMeta>, ISpec<V20220301ImageSpec?>, IStatus<V20220301ImageStatus?>

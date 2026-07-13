@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cache.azure.m.upbound.io;
 /// <summary>RedisCacheAccessPolicy is the Schema for the RedisCacheAccessPolicys API. Manages a Redis Cache Access Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RedisCacheAccessPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1RedisCacheAccessPolicy>
@@ -42,7 +42,7 @@ public partial class V1beta1RedisCacheAccessPolicyList : IKubernetesObject<V1Lis
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RedisCacheAccessPolicySpecForProviderRedisCacheIdRefPolicyResolutionEnum>))]
 public enum V1beta1RedisCacheAccessPolicySpecForProviderRedisCacheIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1RedisCacheAccessPolicySpecForProviderRedisCacheIdRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RedisCacheAccessPolicySpecForProviderRedisCacheIdRefPolicyResolveEnum>))]
 public enum V1beta1RedisCacheAccessPolicySpecForProviderRedisCacheIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1RedisCacheAccessPolicySpecForProviderRedisCacheIdRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RedisCacheAccessPolicySpecForProviderRedisCacheIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1RedisCacheAccessPolicySpecForProviderRedisCacheIdRef
 }
 
 /// <summary>Reference to a RedisCache in cache to populate redisCacheId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RedisCacheAccessPolicySpecForProviderRedisCacheIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1RedisCacheAccessPolicySpecForProviderRedisCacheIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RedisCacheAccessPolicySpecForProviderRedisCacheIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1RedisCacheAccessPolicySpecForProviderRedisCacheIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1RedisCacheAccessPolicySpecForProviderRedisCacheIdSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RedisCacheAccessPolicySpecForProviderRedisCacheIdSelectorPolicyResolveEnum>))]
 public enum V1beta1RedisCacheAccessPolicySpecForProviderRedisCacheIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1RedisCacheAccessPolicySpecForProviderRedisCacheIdSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RedisCacheAccessPolicySpecForProviderRedisCacheIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1RedisCacheAccessPolicySpecForProviderRedisCacheIdSel
 }
 
 /// <summary>Selector for a RedisCache in cache to populate redisCacheId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RedisCacheAccessPolicySpecForProviderRedisCacheIdSelector
 {
@@ -191,7 +191,7 @@ public partial class V1beta1RedisCacheAccessPolicySpecForProviderRedisCacheIdSel
     public V1beta1RedisCacheAccessPolicySpecForProviderRedisCacheIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RedisCacheAccessPolicySpecForProvider
 {
@@ -224,7 +224,7 @@ public partial class V1beta1RedisCacheAccessPolicySpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RedisCacheAccessPolicySpecInitProvider
 {
@@ -237,7 +237,7 @@ public partial class V1beta1RedisCacheAccessPolicySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RedisCacheAccessPolicySpecManagementPoliciesEnum>))]
 public enum V1beta1RedisCacheAccessPolicySpecManagementPoliciesEnum
 {
@@ -260,7 +260,7 @@ public enum V1beta1RedisCacheAccessPolicySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RedisCacheAccessPolicySpecProviderConfigRef
 {
@@ -279,7 +279,7 @@ public partial class V1beta1RedisCacheAccessPolicySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RedisCacheAccessPolicySpecWriteConnectionSecretToRef
 {
@@ -289,7 +289,7 @@ public partial class V1beta1RedisCacheAccessPolicySpecWriteConnectionSecretToRef
 }
 
 /// <summary>RedisCacheAccessPolicySpec defines the desired state of RedisCacheAccessPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RedisCacheAccessPolicySpec
 {
@@ -340,7 +340,7 @@ public partial class V1beta1RedisCacheAccessPolicySpec
     public V1beta1RedisCacheAccessPolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RedisCacheAccessPolicyStatusAtProvider
 {
@@ -358,7 +358,7 @@ public partial class V1beta1RedisCacheAccessPolicyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RedisCacheAccessPolicyStatusConditions
 {
@@ -401,7 +401,7 @@ public partial class V1beta1RedisCacheAccessPolicyStatusConditions
 }
 
 /// <summary>RedisCacheAccessPolicyStatus defines the observed state of RedisCacheAccessPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RedisCacheAccessPolicyStatus
 {
@@ -422,7 +422,7 @@ public partial class V1beta1RedisCacheAccessPolicyStatus
 }
 
 /// <summary>RedisCacheAccessPolicy is the Schema for the RedisCacheAccessPolicys API. Manages a Redis Cache Access Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RedisCacheAccessPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RedisCacheAccessPolicySpec>, IStatus<V1beta1RedisCacheAccessPolicyStatus?>

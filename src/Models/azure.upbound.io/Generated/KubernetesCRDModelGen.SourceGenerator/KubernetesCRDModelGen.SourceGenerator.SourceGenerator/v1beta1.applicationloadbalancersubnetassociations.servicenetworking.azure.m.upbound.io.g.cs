@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.servicenetworking.azure.m.upbound.io;
 /// <summary>ApplicationLoadBalancerSubnetAssociation is the Schema for the ApplicationLoadBalancerSubnetAssociations API. Manages an association between an Application Gateway for Containers and a Subnet.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ApplicationLoadBalancerSubnetAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ApplicationLoadBalancerSubnetAssociation>
@@ -42,7 +42,7 @@ public partial class V1beta1ApplicationLoadBalancerSubnetAssociationList : IKube
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderApplicationLoadBalancerIdRefPolicyResolutionEnum>))]
 public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderApplicationLoadBalancerIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderApplic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderApplicationLoadBalancerIdRefPolicyResolveEnum>))]
 public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderApplicationLoadBalancerIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderApplic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderApplicationLoadBalancerIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProvi
 }
 
 /// <summary>Reference to a ApplicationLoadBalancer in servicenetworking to populate applicationLoadBalancerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderApplicationLoadBalancerIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProvi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderApplicationLoadBalancerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderApplicationLoadBalancerIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderApplic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderApplicationLoadBalancerIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderApplicationLoadBalancerIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderApplic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderApplicationLoadBalancerIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProvi
 }
 
 /// <summary>Selector for a ApplicationLoadBalancer in servicenetworking to populate applicationLoadBalancerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderApplicationLoadBalancerIdSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProvi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderSubnetIdRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderSubnet
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderSubnetIdRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderSubnet
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderSubnetIdRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProvi
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderSubnetIdRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProvi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderSubnetIdSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderSubnet
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderSubnetIdSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderSubnet
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderSubnetIdSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProvi
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderSubnetIdSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProvi
     public V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProviderSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProvider
 {
@@ -385,7 +385,7 @@ public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecForProvi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSubnetAssociationSpecInitProviderSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecInitProviderSubnetIdRefPolicyResolutionEnum
 {
@@ -401,7 +401,7 @@ public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecInitProviderSubne
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSubnetAssociationSpecInitProviderSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecInitProviderSubnetIdRefPolicyResolveEnum
 {
@@ -412,7 +412,7 @@ public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecInitProviderSubne
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecInitProviderSubnetIdRefPolicy
 {
@@ -436,7 +436,7 @@ public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecInitProv
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecInitProviderSubnetIdRef
 {
@@ -459,7 +459,7 @@ public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecInitProv
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSubnetAssociationSpecInitProviderSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecInitProviderSubnetIdSelectorPolicyResolutionEnum
 {
@@ -475,7 +475,7 @@ public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecInitProviderSubne
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSubnetAssociationSpecInitProviderSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecInitProviderSubnetIdSelectorPolicyResolveEnum
 {
@@ -486,7 +486,7 @@ public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecInitProviderSubne
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecInitProviderSubnetIdSelectorPolicy
 {
@@ -510,7 +510,7 @@ public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecInitProv
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecInitProviderSubnetIdSelector
 {
@@ -546,7 +546,7 @@ public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecInitProv
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecInitProvider
 {
@@ -571,7 +571,7 @@ public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecInitProv
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSubnetAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecManagementPoliciesEnum
 {
@@ -594,7 +594,7 @@ public enum V1beta1ApplicationLoadBalancerSubnetAssociationSpecManagementPolicie
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecProviderConfigRef
 {
@@ -613,7 +613,7 @@ public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecProvider
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecWriteConnectionSecretToRef
 {
@@ -623,7 +623,7 @@ public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpecWriteCon
 }
 
 /// <summary>ApplicationLoadBalancerSubnetAssociationSpec defines the desired state of ApplicationLoadBalancerSubnetAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpec
 {
@@ -674,7 +674,7 @@ public partial class V1beta1ApplicationLoadBalancerSubnetAssociationSpec
     public V1beta1ApplicationLoadBalancerSubnetAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSubnetAssociationStatusAtProvider
 {
@@ -696,7 +696,7 @@ public partial class V1beta1ApplicationLoadBalancerSubnetAssociationStatusAtProv
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSubnetAssociationStatusConditions
 {
@@ -739,7 +739,7 @@ public partial class V1beta1ApplicationLoadBalancerSubnetAssociationStatusCondit
 }
 
 /// <summary>ApplicationLoadBalancerSubnetAssociationStatus defines the observed state of ApplicationLoadBalancerSubnetAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSubnetAssociationStatus
 {
@@ -760,7 +760,7 @@ public partial class V1beta1ApplicationLoadBalancerSubnetAssociationStatus
 }
 
 /// <summary>ApplicationLoadBalancerSubnetAssociation is the Schema for the ApplicationLoadBalancerSubnetAssociations API. Manages an association between an Application Gateway for Containers and a Subnet.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ApplicationLoadBalancerSubnetAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ApplicationLoadBalancerSubnetAssociationSpec>, IStatus<V1beta1ApplicationLoadBalancerSubnetAssociationStatus?>

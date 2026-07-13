@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
 /// <summary>PrivateDNSResolverInboundEndpoint is the Schema for the PrivateDNSResolverInboundEndpoints API. Manages a Private DNS Resolver Inbound Endpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PrivateDNSResolverInboundEndpointList : IKubernetesObject<V1ListMeta>, IItems<V1beta1PrivateDNSResolverInboundEndpoint>
@@ -45,7 +45,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointList : IKubernetesO
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverInboundEndpointSpecDeletionPolicyEnum>))]
 public enum V1beta1PrivateDNSResolverInboundEndpointSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1PrivateDNSResolverInboundEndpointSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpConfigurationsSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpConfigurationsSubnetIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpConfigurati
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpConfigurationsSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpConfigurationsSubnetIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpConfigurati
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpConfigurationsSubnetIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpCo
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpConfigurationsSubnetIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpCo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpConfigurationsSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpConfigurationsSubnetIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpConfigurati
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpConfigurationsSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpConfigurationsSubnetIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpConfigurati
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpConfigurationsSubnetIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpCo
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpConfigurationsSubnetIdSelector
 {
@@ -203,7 +203,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpCo
 }
 
 /// <summary>One ip_configurations block as defined below. Changing this forces a new Private DNS Resolver Inbound Endpoint to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpConfigurations
 {
@@ -234,7 +234,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpecForProviderIpCo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverInboundEndpointSpecForProviderPrivateDnsResolverIdRefPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSResolverInboundEndpointSpecForProviderPrivateDnsResolverIdRefPolicyResolutionEnum
 {
@@ -250,7 +250,7 @@ public enum V1beta1PrivateDNSResolverInboundEndpointSpecForProviderPrivateDnsRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverInboundEndpointSpecForProviderPrivateDnsResolverIdRefPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSResolverInboundEndpointSpecForProviderPrivateDnsResolverIdRefPolicyResolveEnum
 {
@@ -261,7 +261,7 @@ public enum V1beta1PrivateDNSResolverInboundEndpointSpecForProviderPrivateDnsRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointSpecForProviderPrivateDnsResolverIdRefPolicy
 {
@@ -285,7 +285,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpecForProviderPriv
 }
 
 /// <summary>Reference to a PrivateDNSResolver in network to populate privateDnsResolverId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointSpecForProviderPrivateDnsResolverIdRef
 {
@@ -304,7 +304,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpecForProviderPriv
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverInboundEndpointSpecForProviderPrivateDnsResolverIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSResolverInboundEndpointSpecForProviderPrivateDnsResolverIdSelectorPolicyResolutionEnum
 {
@@ -320,7 +320,7 @@ public enum V1beta1PrivateDNSResolverInboundEndpointSpecForProviderPrivateDnsRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverInboundEndpointSpecForProviderPrivateDnsResolverIdSelectorPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSResolverInboundEndpointSpecForProviderPrivateDnsResolverIdSelectorPolicyResolveEnum
 {
@@ -331,7 +331,7 @@ public enum V1beta1PrivateDNSResolverInboundEndpointSpecForProviderPrivateDnsRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointSpecForProviderPrivateDnsResolverIdSelectorPolicy
 {
@@ -355,7 +355,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpecForProviderPriv
 }
 
 /// <summary>Selector for a PrivateDNSResolver in network to populate privateDnsResolverId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointSpecForProviderPrivateDnsResolverIdSelector
 {
@@ -375,7 +375,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpecForProviderPriv
     public V1beta1PrivateDNSResolverInboundEndpointSpecForProviderPrivateDnsResolverIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointSpecForProvider
 {
@@ -410,7 +410,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpConfigurationsSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpConfigurationsSubnetIdRefPolicyResolutionEnum
 {
@@ -426,7 +426,7 @@ public enum V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpConfigurat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpConfigurationsSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpConfigurationsSubnetIdRefPolicyResolveEnum
 {
@@ -437,7 +437,7 @@ public enum V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpConfigurat
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpConfigurationsSubnetIdRefPolicy
 {
@@ -461,7 +461,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpC
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpConfigurationsSubnetIdRef
 {
@@ -480,7 +480,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpConfigurationsSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpConfigurationsSubnetIdSelectorPolicyResolutionEnum
 {
@@ -496,7 +496,7 @@ public enum V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpConfigurat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpConfigurationsSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpConfigurationsSubnetIdSelectorPolicyResolveEnum
 {
@@ -507,7 +507,7 @@ public enum V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpConfigurat
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpConfigurationsSubnetIdSelectorPolicy
 {
@@ -531,7 +531,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpC
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpConfigurationsSubnetIdSelector
 {
@@ -552,7 +552,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpC
 }
 
 /// <summary>One ip_configurations block as defined below. Changing this forces a new Private DNS Resolver Inbound Endpoint to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpConfigurations
 {
@@ -589,7 +589,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpecInitProviderIpC
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointSpecInitProvider
 {
@@ -610,7 +610,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverInboundEndpointSpecManagementPoliciesEnum>))]
 public enum V1beta1PrivateDNSResolverInboundEndpointSpecManagementPoliciesEnum
 {
@@ -634,7 +634,7 @@ public enum V1beta1PrivateDNSResolverInboundEndpointSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverInboundEndpointSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSResolverInboundEndpointSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -650,7 +650,7 @@ public enum V1beta1PrivateDNSResolverInboundEndpointSpecProviderConfigRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverInboundEndpointSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSResolverInboundEndpointSpecProviderConfigRefPolicyResolveEnum
 {
@@ -661,7 +661,7 @@ public enum V1beta1PrivateDNSResolverInboundEndpointSpecProviderConfigRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointSpecProviderConfigRefPolicy
 {
@@ -689,7 +689,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpecProviderConfigR
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointSpecProviderConfigRef
 {
@@ -708,7 +708,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpecProviderConfigR
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointSpecWriteConnectionSecretToRef
 {
@@ -722,7 +722,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpecWriteConnection
 }
 
 /// <summary>PrivateDNSResolverInboundEndpointSpec defines the desired state of PrivateDNSResolverInboundEndpoint</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointSpec
 {
@@ -790,7 +790,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointSpec
 }
 
 /// <summary>One ip_configurations block as defined below. Changing this forces a new Private DNS Resolver Inbound Endpoint to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointStatusAtProviderIpConfigurations
 {
@@ -807,7 +807,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointStatusAtProviderIpC
     public string? SubnetId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointStatusAtProvider
 {
@@ -833,7 +833,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointStatusConditions
 {
@@ -876,7 +876,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointStatusConditions
 }
 
 /// <summary>PrivateDNSResolverInboundEndpointStatus defines the observed state of PrivateDNSResolverInboundEndpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverInboundEndpointStatus
 {
@@ -897,7 +897,7 @@ public partial class V1beta1PrivateDNSResolverInboundEndpointStatus
 }
 
 /// <summary>PrivateDNSResolverInboundEndpoint is the Schema for the PrivateDNSResolverInboundEndpoints API. Manages a Private DNS Resolver Inbound Endpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PrivateDNSResolverInboundEndpoint : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PrivateDNSResolverInboundEndpointSpec>, IStatus<V1beta1PrivateDNSResolverInboundEndpointStatus?>

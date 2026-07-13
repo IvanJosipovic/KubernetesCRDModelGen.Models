@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.clouddeploy.cnrm.cloud.google.com;
 /// <summary>CloudDeployTarget is the Schema for the CloudDeployTarget API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1CloudDeployTargetList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1CloudDeployTarget>
@@ -37,7 +37,7 @@ public partial class V1alpha1CloudDeployTargetList : IKubernetesObject<V1ListMet
 }
 
 /// <summary>Optional. Membership of the GKE Hub-registered cluster to which to apply the Skaffold configuration. Format is `projects/{project}/locations/{location}/memberships/{membership_name}`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetSpecAnthosClusterMembershipRef
 {
@@ -55,7 +55,7 @@ public partial class V1alpha1CloudDeployTargetSpecAnthosClusterMembershipRef
 }
 
 /// <summary>Information specifying an Anthos Cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetSpecAnthosCluster
 {
@@ -65,7 +65,7 @@ public partial class V1alpha1CloudDeployTargetSpecAnthosCluster
 }
 
 /// <summary>Optional. Membership of the GKE Hub-registered cluster to which to apply the Skaffold configuration. Format is `projects/{project}/locations/{location}/memberships/{membership_name}`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetSpecAssociatedEntitiesAnthosClustersMembershipRef
 {
@@ -82,7 +82,7 @@ public partial class V1alpha1CloudDeployTargetSpecAssociatedEntitiesAnthosCluste
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetSpecAssociatedEntitiesAnthosClusters
 {
@@ -92,7 +92,7 @@ public partial class V1alpha1CloudDeployTargetSpecAssociatedEntitiesAnthosCluste
 }
 
 /// <summary>Optional. Information specifying a GKE Cluster. Format is `projects/{project_id}/locations/{location_id}/clusters/{cluster_id}`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetSpecAssociatedEntitiesGkeClustersClusterRef
 {
@@ -109,7 +109,7 @@ public partial class V1alpha1CloudDeployTargetSpecAssociatedEntitiesGkeClustersC
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetSpecAssociatedEntitiesGkeClusters
 {
@@ -140,7 +140,7 @@ public partial class V1alpha1CloudDeployTargetSpecAssociatedEntitiesGkeClusters
     public string? ProxyURL { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetSpecAssociatedEntities
 {
@@ -154,7 +154,7 @@ public partial class V1alpha1CloudDeployTargetSpecAssociatedEntities
 }
 
 /// <summary>Required. The name of the CustomTargetType.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetSpecCustomTargetCustomTargetTypeRef
 {
@@ -172,7 +172,7 @@ public partial class V1alpha1CloudDeployTargetSpecCustomTargetCustomTargetTypeRe
 }
 
 /// <summary>Information specifying a custom target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetSpecCustomTarget
 {
@@ -182,7 +182,7 @@ public partial class V1alpha1CloudDeployTargetSpecCustomTarget
 }
 
 /// <summary>Optional. Google service account to use for execution. If unspecified, the project execution service account (&lt;PROJECT_NUMBER&gt;-compute@developer.gserviceaccount.com) will be used.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetSpecExecutionConfigsDefaultPoolServiceAccountRef
 {
@@ -200,7 +200,7 @@ public partial class V1alpha1CloudDeployTargetSpecExecutionConfigsDefaultPoolSer
 }
 
 /// <summary>Optional. Use default Cloud Build pool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetSpecExecutionConfigsDefaultPool
 {
@@ -214,7 +214,7 @@ public partial class V1alpha1CloudDeployTargetSpecExecutionConfigsDefaultPool
 }
 
 /// <summary>Optional. Google service account to use for execution. If unspecified, the project execution service account (&lt;PROJECT_NUMBER&gt;-compute@developer.gserviceaccount.com) will be used.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetSpecExecutionConfigsPrivatePoolServiceAccountRef
 {
@@ -232,7 +232,7 @@ public partial class V1alpha1CloudDeployTargetSpecExecutionConfigsPrivatePoolSer
 }
 
 /// <summary>Required. Resource name of the Cloud Build worker pool to use. The format is `projects/{project}/locations/{location}/workerPools/{pool}`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetSpecExecutionConfigsPrivatePoolWorkerPoolRef
 {
@@ -250,7 +250,7 @@ public partial class V1alpha1CloudDeployTargetSpecExecutionConfigsPrivatePoolWor
 }
 
 /// <summary>Optional. Use private Cloud Build pool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetSpecExecutionConfigsPrivatePool
 {
@@ -268,7 +268,7 @@ public partial class V1alpha1CloudDeployTargetSpecExecutionConfigsPrivatePool
 }
 
 /// <summary>Optional. Google service account to use for execution. If unspecified, the project execution service account (&lt;PROJECT_NUMBER&gt;-compute@developer.gserviceaccount.com) is used.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetSpecExecutionConfigsServiceAccountRef
 {
@@ -286,7 +286,7 @@ public partial class V1alpha1CloudDeployTargetSpecExecutionConfigsServiceAccount
 }
 
 /// <summary>Optional. The resource name of the `WorkerPool`, with the format `projects/{project}/locations/{location}/workerPools/{worker_pool}`. If this optional field is unspecified, the default Cloud Build pool will be used.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetSpecExecutionConfigsWorkerPoolRef
 {
@@ -303,7 +303,7 @@ public partial class V1alpha1CloudDeployTargetSpecExecutionConfigsWorkerPoolRef
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetSpecExecutionConfigs
 {
@@ -341,7 +341,7 @@ public partial class V1alpha1CloudDeployTargetSpecExecutionConfigs
 }
 
 /// <summary>Optional. Information specifying a GKE Cluster. Format is `projects/{project_id}/locations/{location_id}/clusters/{cluster_id}`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetSpecGkeClusterRef
 {
@@ -359,7 +359,7 @@ public partial class V1alpha1CloudDeployTargetSpecGkeClusterRef
 }
 
 /// <summary>Information specifying a GKE Cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetSpecGke
 {
@@ -391,7 +391,7 @@ public partial class V1alpha1CloudDeployTargetSpecGke
 }
 
 /// <summary>A resource reference to CloudDeployTarget, which &quot;External&quot; field holds the GCP identifier for the KRM object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetSpecMultiTargetTargetRefs
 {
@@ -409,7 +409,7 @@ public partial class V1alpha1CloudDeployTargetSpecMultiTargetTargetRefs
 }
 
 /// <summary>Information specifying a multi-target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetSpecMultiTarget
 {
@@ -419,7 +419,7 @@ public partial class V1alpha1CloudDeployTargetSpecMultiTarget
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetSpecProjectRef
 {
@@ -441,7 +441,7 @@ public partial class V1alpha1CloudDeployTargetSpecProjectRef
 }
 
 /// <summary>Information specifying a Cloud Run deployment target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetSpecRun
 {
@@ -451,7 +451,7 @@ public partial class V1alpha1CloudDeployTargetSpecRun
 }
 
 /// <summary>CloudDeployTargetSpec defines the desired state of CloudDeployTarget</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetSpec
 {
@@ -512,7 +512,7 @@ public partial class V1alpha1CloudDeployTargetSpec
     public V1alpha1CloudDeployTargetSpecRun? Run { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetStatusConditions
 {
@@ -538,7 +538,7 @@ public partial class V1alpha1CloudDeployTargetStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetStatusObservedState
 {
@@ -564,7 +564,7 @@ public partial class V1alpha1CloudDeployTargetStatusObservedState
 }
 
 /// <summary>CloudDeployTargetStatus defines the config connector machine state of CloudDeployTarget</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployTargetStatus
 {
@@ -586,7 +586,7 @@ public partial class V1alpha1CloudDeployTargetStatus
 }
 
 /// <summary>CloudDeployTarget is the Schema for the CloudDeployTarget API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1CloudDeployTarget : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1CloudDeployTargetSpec>, IStatus<V1alpha1CloudDeployTargetStatus?>

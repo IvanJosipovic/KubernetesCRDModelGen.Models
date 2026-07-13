@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.networkconnectivity.cnrm.cloud.google.com;
 /// <summary>NetworkConnectivityRegionalEndpoint is the Schema for the NetworkConnectivityRegionalEndpoint API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1NetworkConnectivityRegionalEndpointList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1NetworkConnectivityRegionalEndpoint>
@@ -37,7 +37,7 @@ public partial class V1alpha1NetworkConnectivityRegionalEndpointList : IKubernet
 }
 
 /// <summary>Optional. The IP Address of the Regional Endpoint. When no address is provided, an IP from the subnetwork is allocated.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkConnectivityRegionalEndpointSpecAddressRef
 {
@@ -55,7 +55,7 @@ public partial class V1alpha1NetworkConnectivityRegionalEndpointSpecAddressRef
 }
 
 /// <summary>Optional. The name of the VPC network for this private regional endpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkConnectivityRegionalEndpointSpecNetworkRef
 {
@@ -73,7 +73,7 @@ public partial class V1alpha1NetworkConnectivityRegionalEndpointSpecNetworkRef
 }
 
 /// <summary>The project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkConnectivityRegionalEndpointSpecProjectRef
 {
@@ -95,7 +95,7 @@ public partial class V1alpha1NetworkConnectivityRegionalEndpointSpecProjectRef
 }
 
 /// <summary>Optional. The name of the subnetwork from which the IP address will be allocated.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkConnectivityRegionalEndpointSpecSubnetworkRef
 {
@@ -113,7 +113,7 @@ public partial class V1alpha1NetworkConnectivityRegionalEndpointSpecSubnetworkRe
 }
 
 /// <summary>NetworkConnectivityRegionalEndpointSpec defines the desired state of NetworkConnectivityRegionalEndpoint</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkConnectivityRegionalEndpointSpec
 {
@@ -154,7 +154,7 @@ public partial class V1alpha1NetworkConnectivityRegionalEndpointSpec
     public required string TargetGoogleAPI { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkConnectivityRegionalEndpointStatusConditions
 {
@@ -180,7 +180,7 @@ public partial class V1alpha1NetworkConnectivityRegionalEndpointStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkConnectivityRegionalEndpointStatusObservedState
 {
@@ -202,7 +202,7 @@ public partial class V1alpha1NetworkConnectivityRegionalEndpointStatusObservedSt
 }
 
 /// <summary>NetworkConnectivityRegionalEndpointStatus defines the config connector machine state of NetworkConnectivityRegionalEndpoint</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkConnectivityRegionalEndpointStatus
 {
@@ -224,7 +224,7 @@ public partial class V1alpha1NetworkConnectivityRegionalEndpointStatus
 }
 
 /// <summary>NetworkConnectivityRegionalEndpoint is the Schema for the NetworkConnectivityRegionalEndpoint API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1NetworkConnectivityRegionalEndpoint : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1NetworkConnectivityRegionalEndpointSpec>, IStatus<V1alpha1NetworkConnectivityRegionalEndpointStatus?>

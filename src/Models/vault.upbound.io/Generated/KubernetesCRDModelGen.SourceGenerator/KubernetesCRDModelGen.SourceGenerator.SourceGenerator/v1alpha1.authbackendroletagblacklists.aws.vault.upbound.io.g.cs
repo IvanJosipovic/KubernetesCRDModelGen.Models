@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.aws.vault.upbound.io;
 /// <summary>AuthBackendRoletagBlacklist is the Schema for the AuthBackendRoletagBlacklists API. Configures the periodic tidying operation of the blacklisted role tag entries.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1AuthBackendRoletagBlacklistList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1AuthBackendRoletagBlacklist>
@@ -45,7 +45,7 @@ public partial class V1alpha1AuthBackendRoletagBlacklistList : IKubernetesObject
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoletagBlacklistSpecDeletionPolicyEnum>))]
 public enum V1alpha1AuthBackendRoletagBlacklistSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1alpha1AuthBackendRoletagBlacklistSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoletagBlacklistSpecForProviderBackendRefPolicyResolutionEnum>))]
 public enum V1alpha1AuthBackendRoletagBlacklistSpecForProviderBackendRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1alpha1AuthBackendRoletagBlacklistSpecForProviderBackendRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoletagBlacklistSpecForProviderBackendRefPolicyResolveEnum>))]
 public enum V1alpha1AuthBackendRoletagBlacklistSpecForProviderBackendRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1alpha1AuthBackendRoletagBlacklistSpecForProviderBackendRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoletagBlacklistSpecForProviderBackendRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1alpha1AuthBackendRoletagBlacklistSpecForProviderBackendRe
 }
 
 /// <summary>Reference to a Backend in auth to populate backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoletagBlacklistSpecForProviderBackendRef
 {
@@ -131,7 +131,7 @@ public partial class V1alpha1AuthBackendRoletagBlacklistSpecForProviderBackendRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoletagBlacklistSpecForProviderBackendSelectorPolicyResolutionEnum>))]
 public enum V1alpha1AuthBackendRoletagBlacklistSpecForProviderBackendSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1alpha1AuthBackendRoletagBlacklistSpecForProviderBackendSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoletagBlacklistSpecForProviderBackendSelectorPolicyResolveEnum>))]
 public enum V1alpha1AuthBackendRoletagBlacklistSpecForProviderBackendSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1alpha1AuthBackendRoletagBlacklistSpecForProviderBackendSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoletagBlacklistSpecForProviderBackendSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1alpha1AuthBackendRoletagBlacklistSpecForProviderBackendSe
 }
 
 /// <summary>Selector for a Backend in auth to populate backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoletagBlacklistSpecForProviderBackendSelector
 {
@@ -202,7 +202,7 @@ public partial class V1alpha1AuthBackendRoletagBlacklistSpecForProviderBackendSe
     public V1alpha1AuthBackendRoletagBlacklistSpecForProviderBackendSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoletagBlacklistSpecForProvider
 {
@@ -256,7 +256,7 @@ public partial class V1alpha1AuthBackendRoletagBlacklistSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoletagBlacklistSpecInitProviderBackendRefPolicyResolutionEnum>))]
 public enum V1alpha1AuthBackendRoletagBlacklistSpecInitProviderBackendRefPolicyResolutionEnum
 {
@@ -272,7 +272,7 @@ public enum V1alpha1AuthBackendRoletagBlacklistSpecInitProviderBackendRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoletagBlacklistSpecInitProviderBackendRefPolicyResolveEnum>))]
 public enum V1alpha1AuthBackendRoletagBlacklistSpecInitProviderBackendRefPolicyResolveEnum
 {
@@ -283,7 +283,7 @@ public enum V1alpha1AuthBackendRoletagBlacklistSpecInitProviderBackendRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoletagBlacklistSpecInitProviderBackendRefPolicy
 {
@@ -307,7 +307,7 @@ public partial class V1alpha1AuthBackendRoletagBlacklistSpecInitProviderBackendR
 }
 
 /// <summary>Reference to a Backend in auth to populate backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoletagBlacklistSpecInitProviderBackendRef
 {
@@ -326,7 +326,7 @@ public partial class V1alpha1AuthBackendRoletagBlacklistSpecInitProviderBackendR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoletagBlacklistSpecInitProviderBackendSelectorPolicyResolutionEnum>))]
 public enum V1alpha1AuthBackendRoletagBlacklistSpecInitProviderBackendSelectorPolicyResolutionEnum
 {
@@ -342,7 +342,7 @@ public enum V1alpha1AuthBackendRoletagBlacklistSpecInitProviderBackendSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoletagBlacklistSpecInitProviderBackendSelectorPolicyResolveEnum>))]
 public enum V1alpha1AuthBackendRoletagBlacklistSpecInitProviderBackendSelectorPolicyResolveEnum
 {
@@ -353,7 +353,7 @@ public enum V1alpha1AuthBackendRoletagBlacklistSpecInitProviderBackendSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoletagBlacklistSpecInitProviderBackendSelectorPolicy
 {
@@ -377,7 +377,7 @@ public partial class V1alpha1AuthBackendRoletagBlacklistSpecInitProviderBackendS
 }
 
 /// <summary>Selector for a Backend in auth to populate backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoletagBlacklistSpecInitProviderBackendSelector
 {
@@ -409,7 +409,7 @@ public partial class V1alpha1AuthBackendRoletagBlacklistSpecInitProviderBackendS
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoletagBlacklistSpecInitProvider
 {
@@ -461,7 +461,7 @@ public partial class V1alpha1AuthBackendRoletagBlacklistSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoletagBlacklistSpecManagementPoliciesEnum>))]
 public enum V1alpha1AuthBackendRoletagBlacklistSpecManagementPoliciesEnum
 {
@@ -485,7 +485,7 @@ public enum V1alpha1AuthBackendRoletagBlacklistSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoletagBlacklistSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1alpha1AuthBackendRoletagBlacklistSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -501,7 +501,7 @@ public enum V1alpha1AuthBackendRoletagBlacklistSpecProviderConfigRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoletagBlacklistSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1alpha1AuthBackendRoletagBlacklistSpecProviderConfigRefPolicyResolveEnum
 {
@@ -512,7 +512,7 @@ public enum V1alpha1AuthBackendRoletagBlacklistSpecProviderConfigRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoletagBlacklistSpecProviderConfigRefPolicy
 {
@@ -540,7 +540,7 @@ public partial class V1alpha1AuthBackendRoletagBlacklistSpecProviderConfigRefPol
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoletagBlacklistSpecProviderConfigRef
 {
@@ -559,7 +559,7 @@ public partial class V1alpha1AuthBackendRoletagBlacklistSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoletagBlacklistSpecWriteConnectionSecretToRef
 {
@@ -573,7 +573,7 @@ public partial class V1alpha1AuthBackendRoletagBlacklistSpecWriteConnectionSecre
 }
 
 /// <summary>AuthBackendRoletagBlacklistSpec defines the desired state of AuthBackendRoletagBlacklist</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoletagBlacklistSpec
 {
@@ -640,7 +640,7 @@ public partial class V1alpha1AuthBackendRoletagBlacklistSpec
     public V1alpha1AuthBackendRoletagBlacklistSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoletagBlacklistStatusAtProvider
 {
@@ -684,7 +684,7 @@ public partial class V1alpha1AuthBackendRoletagBlacklistStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoletagBlacklistStatusConditions
 {
@@ -727,7 +727,7 @@ public partial class V1alpha1AuthBackendRoletagBlacklistStatusConditions
 }
 
 /// <summary>AuthBackendRoletagBlacklistStatus defines the observed state of AuthBackendRoletagBlacklist.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoletagBlacklistStatus
 {
@@ -748,7 +748,7 @@ public partial class V1alpha1AuthBackendRoletagBlacklistStatus
 }
 
 /// <summary>AuthBackendRoletagBlacklist is the Schema for the AuthBackendRoletagBlacklists API. Configures the periodic tidying operation of the blacklisted role tag entries.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1AuthBackendRoletagBlacklist : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1AuthBackendRoletagBlacklistSpec>, IStatus<V1alpha1AuthBackendRoletagBlacklistStatus?>

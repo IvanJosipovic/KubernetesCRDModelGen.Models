@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.managedkafka.cnrm.cloud.google.com;
 /// <summary>ManagedKafkaTopic is the Schema for the ManagedKafkaTopic API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ManagedKafkaTopicList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ManagedKafkaTopic>
@@ -37,7 +37,7 @@ public partial class V1beta1ManagedKafkaTopicList : IKubernetesObject<V1ListMeta
 }
 
 /// <summary>Required. Reference to the Kafka cluster to create the topic in.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedKafkaTopicSpecClusterRef
 {
@@ -55,7 +55,7 @@ public partial class V1beta1ManagedKafkaTopicSpecClusterRef
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedKafkaTopicSpecProjectRef
 {
@@ -77,7 +77,7 @@ public partial class V1beta1ManagedKafkaTopicSpecProjectRef
 }
 
 /// <summary>ManagedKafkaTopicSpec defines the desired state of ManagedKafkaTopic</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedKafkaTopicSpec
 {
@@ -110,7 +110,7 @@ public partial class V1beta1ManagedKafkaTopicSpec
     public string? ResourceID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedKafkaTopicStatusConditions
 {
@@ -136,7 +136,7 @@ public partial class V1beta1ManagedKafkaTopicStatusConditions
 }
 
 /// <summary>ManagedKafkaTopicStatus defines the config connector machine state of ManagedKafkaTopic</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedKafkaTopicStatus
 {
@@ -154,7 +154,7 @@ public partial class V1beta1ManagedKafkaTopicStatus
 }
 
 /// <summary>ManagedKafkaTopic is the Schema for the ManagedKafkaTopic API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ManagedKafkaTopic : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ManagedKafkaTopicSpec>, IStatus<V1beta1ManagedKafkaTopicStatus?>

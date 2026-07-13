@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.documentdb.azure.com;
 /// - Generated from: /cosmos-db/resource-manager/Microsoft.DocumentDB/DocumentDB/stable/2023-11-15/cosmos-db.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/sqlDatabases/{databaseName}/containers/{containerName}/storedProcedures/{storedProcedureName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20231115storageSqlDatabaseContainerStoredProcedureList : IKubernetesObject<V1ListMeta>, IItems<V1api20231115storageSqlDatabaseContainerStoredProcedure>
@@ -46,7 +46,7 @@ public partial class V1api20231115storageSqlDatabaseContainerStoredProcedureList
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageSqlDatabaseContainerStoredProcedureSpecOperatorSpecConfigMapExpressions
 {
@@ -87,7 +87,7 @@ public partial class V1api20231115storageSqlDatabaseContainerStoredProcedureSpec
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageSqlDatabaseContainerStoredProcedureSpecOperatorSpecSecretExpressions
 {
@@ -127,7 +127,7 @@ public partial class V1api20231115storageSqlDatabaseContainerStoredProcedureSpec
 /// Storage version of v1api20231115.SqlDatabaseContainerStoredProcedureOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageSqlDatabaseContainerStoredProcedureSpecOperatorSpec
 {
@@ -146,7 +146,7 @@ public partial class V1api20231115storageSqlDatabaseContainerStoredProcedureSpec
 }
 
 /// <summary>Storage version of v1api20231115.AutoscaleSettings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageSqlDatabaseContainerStoredProcedureSpecOptionsAutoscaleSettings
 {
@@ -166,7 +166,7 @@ public partial class V1api20231115storageSqlDatabaseContainerStoredProcedureSpec
 /// CreateUpdateOptions are a list of key-value pairs that describe the resource. Supported keys are &quot;If-Match&quot;,
 /// &quot;If-None-Match&quot;, &quot;Session-Token&quot; and &quot;Throughput&quot;
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageSqlDatabaseContainerStoredProcedureSpecOptions
 {
@@ -190,7 +190,7 @@ public partial class V1api20231115storageSqlDatabaseContainerStoredProcedureSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a documentdb.azure.com/SqlDatabaseContainer resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageSqlDatabaseContainerStoredProcedureSpecOwner
 {
@@ -206,7 +206,7 @@ public partial class V1api20231115storageSqlDatabaseContainerStoredProcedureSpec
 /// Storage version of v1api20231115.SqlStoredProcedureResource
 /// Cosmos DB SQL storedProcedure resource object
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageSqlDatabaseContainerStoredProcedureSpecResource
 {
@@ -225,7 +225,7 @@ public partial class V1api20231115storageSqlDatabaseContainerStoredProcedureSpec
 }
 
 /// <summary>Storage version of v1api20231115.SqlDatabaseContainerStoredProcedure_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageSqlDatabaseContainerStoredProcedureSpec
 {
@@ -284,7 +284,7 @@ public partial class V1api20231115storageSqlDatabaseContainerStoredProcedureSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageSqlDatabaseContainerStoredProcedureStatusConditions
 {
@@ -330,7 +330,7 @@ public partial class V1api20231115storageSqlDatabaseContainerStoredProcedureStat
 }
 
 /// <summary>Storage version of v1api20231115.SqlStoredProcedureGetProperties_Resource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageSqlDatabaseContainerStoredProcedureStatusResource
 {
@@ -358,7 +358,7 @@ public partial class V1api20231115storageSqlDatabaseContainerStoredProcedureStat
 }
 
 /// <summary>Storage version of v1api20231115.SqlDatabaseContainerStoredProcedure_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageSqlDatabaseContainerStoredProcedureStatus
 {
@@ -398,7 +398,7 @@ public partial class V1api20231115storageSqlDatabaseContainerStoredProcedureStat
 /// - Generated from: /cosmos-db/resource-manager/Microsoft.DocumentDB/DocumentDB/stable/2023-11-15/cosmos-db.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/sqlDatabases/{databaseName}/containers/{containerName}/storedProcedures/{storedProcedureName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20231115storageSqlDatabaseContainerStoredProcedure : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20231115storageSqlDatabaseContainerStoredProcedureSpec?>, IStatus<V1api20231115storageSqlDatabaseContainerStoredProcedureStatus?>

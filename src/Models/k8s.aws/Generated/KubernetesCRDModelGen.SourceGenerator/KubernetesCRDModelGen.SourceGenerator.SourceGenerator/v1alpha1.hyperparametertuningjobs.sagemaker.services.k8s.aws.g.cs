@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sagemaker.services.k8s.aws;
 /// <summary>HyperParameterTuningJob is the Schema for the HyperParameterTuningJobs API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1HyperParameterTuningJobList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1HyperParameterTuningJob>
@@ -65,7 +65,7 @@ public partial class V1alpha1HyperParameterTuningJobList : IKubernetesObject<V1L
 ///     A flag to indicate that Automatic model tuning (AMT) has detected model
 ///     convergence.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecAutotune
 {
@@ -81,7 +81,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecAutotune
 /// If you want to define a custom objective metric, see Define metrics and environment
 /// variables (https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning-define-metrics-variables.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecHyperParameterTuningJobConfigHyperParameterTuningJobObjective
 {
@@ -98,7 +98,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecHyperParameterTuningJobC
 /// is eligible for Autotune, an optimal hyperparameter range is selected for
 /// you.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecHyperParameterTuningJobConfigParameterRangesAutoParameters
 {
@@ -110,7 +110,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecHyperParameterTuningJobC
 }
 
 /// <summary>A list of categorical hyperparameters to tune.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecHyperParameterTuningJobConfigParameterRangesCategoricalParameterRanges
 {
@@ -122,7 +122,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecHyperParameterTuningJobC
 }
 
 /// <summary>A list of continuous hyperparameters to tune.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecHyperParameterTuningJobConfigParameterRangesContinuousParameterRanges
 {
@@ -143,7 +143,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecHyperParameterTuningJobC
 /// For a hyperparameter of the integer type, specifies the range that a hyperparameter
 /// tuning job searches.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecHyperParameterTuningJobConfigParameterRangesIntegerParameterRanges
 {
@@ -173,7 +173,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecHyperParameterTuningJobC
 /// tuning job itself. That is, the sum of the number of hyperparameters for
 /// all the ranges can&apos;t exceed the maximum number specified.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecHyperParameterTuningJobConfigParameterRanges
 {
@@ -194,7 +194,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecHyperParameterTuningJobC
 /// Specifies the maximum number of training jobs and parallel training jobs
 /// that a hyperparameter tuning job can launch.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecHyperParameterTuningJobConfigResourceLimits
 {
@@ -206,7 +206,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecHyperParameterTuningJobC
 }
 
 /// <summary>The job completion criteria.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecHyperParameterTuningJobConfigTuningJobCompletionCriteria
 {
@@ -221,7 +221,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecHyperParameterTuningJobC
 /// search, and resource limits for the tuning job. For more information, see
 /// How Hyperparameter Tuning Works (https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning-how-it-works.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecHyperParameterTuningJobConfig
 {
@@ -289,7 +289,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecHyperParameterTuningJobC
 /// tagging, see Tagging Best Practices: Implement an Effective Amazon Web Services
 /// Resource Tagging Strategy (https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTags
 {
@@ -309,7 +309,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTags
 /// parameter in the HyperParameterTrainingJobDefinition API to evaluate job
 /// performance during hyperparameter tuning.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionAlgorithmSpecificationMetricDefinitions
 {
@@ -324,7 +324,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionAlg
 /// Specifies which training algorithm to use for training jobs that a hyperparameter
 /// tuning job launches and the metrics to monitor.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionAlgorithmSpecification
 {
@@ -383,7 +383,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionAlg
 /// Contains information about the output location for managed spot training
 /// checkpoint data.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionCheckpointConfig
 {
@@ -400,7 +400,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionChe
 /// is eligible for Autotune, an optimal hyperparameter range is selected for
 /// you.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionHyperParameterRangesAutoParameters
 {
@@ -412,7 +412,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionHyp
 }
 
 /// <summary>A list of categorical hyperparameters to tune.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionHyperParameterRangesCategoricalParameterRanges
 {
@@ -424,7 +424,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionHyp
 }
 
 /// <summary>A list of continuous hyperparameters to tune.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionHyperParameterRangesContinuousParameterRanges
 {
@@ -445,7 +445,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionHyp
 /// For a hyperparameter of the integer type, specifies the range that a hyperparameter
 /// tuning job searches.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionHyperParameterRangesIntegerParameterRanges
 {
@@ -475,7 +475,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionHyp
 /// tuning job itself. That is, the sum of the number of hyperparameters for
 /// all the ranges can&apos;t exceed the maximum number specified.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionHyperParameterRanges
 {
@@ -493,7 +493,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionHyp
 }
 
 /// <summary>Specifies a file system data source for a channel.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionInputDataConfigDataSourceFileSystemDataSource
 {
@@ -517,7 +517,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionInp
 /// For more information about private hubs, see Private curated hubs for foundation
 /// model access control in JumpStart (https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-curated-hubs.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceHubAccessConfig
 {
@@ -538,7 +538,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionInp
 ///    on How to set the EULA acceptance when fine-tuning a model using the AutoML
 ///    API (https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-create-experiment-finetune-llms.html#autopilot-llms-finetuning-api-optional-params).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionInputDataConfigDataSourceS3DataSourceModelAccessConfig
 {
@@ -552,7 +552,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionInp
 /// Your input bucket must be in the same Amazon Web Services region as your
 /// training job.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionInputDataConfigDataSourceS3DataSource
 {
@@ -599,7 +599,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionInp
 }
 
 /// <summary>Describes the location of the channel data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionInputDataConfigDataSource
 {
@@ -633,7 +633,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionInp
 /// across nodes so that the content sent to a particular node on the first epoch
 /// might be sent to a different node on the second epoch.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionInputDataConfigShuffleConfig
 {
@@ -642,7 +642,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionInp
 }
 
 /// <summary>A channel is a named input source that training algorithms can consume.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionInputDataConfig
 {
@@ -724,7 +724,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionInp
 }
 
 /// <summary>Provides information about how to store model training results (model artifacts).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionOutputDataConfig
 {
@@ -743,7 +743,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionOut
 /// a training job using the CreateTrainingJob (https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html)
 /// API, you can configure multiple instance groups .
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionResourceConfigInstanceGroups
 {
@@ -758,7 +758,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionRes
 }
 
 /// <summary>Specifies how instances should be placed on a specific UltraServer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionResourceConfigInstancePlacementConfigPlacementSpecifications
 {
@@ -773,7 +773,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionRes
 /// Configuration for how instances are placed and allocated within UltraServers.
 /// This is only applicable for UltraServer capacity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionResourceConfigInstancePlacementConfig
 {
@@ -788,7 +788,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionRes
 /// Describes the resources, including machine learning (ML) compute instances
 /// and ML storage volumes, to use for model training.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionResourceConfig
 {
@@ -828,7 +828,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionRes
 /// requests. You can add the StoppingCondition parameter to the request to limit
 /// the training time for the complete job.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionRetryStrategy
 {
@@ -855,7 +855,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionRet
 /// model artifacts. When training NTMs, make sure that the maximum runtime is
 /// sufficient for the training job to complete.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionStoppingCondition
 {
@@ -878,7 +878,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionSto
 /// If you want to define a custom objective metric, see Define metrics and environment
 /// variables (https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning-define-metrics-variables.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionTuningObjective
 {
@@ -895,7 +895,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionTun
 /// to and from your resources by configuring a VPC. For more information, see
 /// Give SageMaker Access to Resources in your Amazon VPC (https://docs.aws.amazon.com/sagemaker/latest/dg/infrastructure-give-access.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionVpcConfig
 {
@@ -912,7 +912,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionVpc
 /// static hyperparameters, input data configuration, output data configuration,
 /// resource configuration, and stopping condition.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinition
 {
@@ -1039,7 +1039,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinition
 /// parameter in the HyperParameterTrainingJobDefinition API to evaluate job
 /// performance during hyperparameter tuning.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsAlgorithmSpecificationMetricDefinitions
 {
@@ -1054,7 +1054,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsAl
 /// Specifies which training algorithm to use for training jobs that a hyperparameter
 /// tuning job launches and the metrics to monitor.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsAlgorithmSpecification
 {
@@ -1113,7 +1113,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsAl
 /// Contains information about the output location for managed spot training
 /// checkpoint data.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsCheckpointConfig
 {
@@ -1130,7 +1130,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsCh
 /// is eligible for Autotune, an optimal hyperparameter range is selected for
 /// you.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsHyperParameterRangesAutoParameters
 {
@@ -1142,7 +1142,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsHy
 }
 
 /// <summary>A list of categorical hyperparameters to tune.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsHyperParameterRangesCategoricalParameterRanges
 {
@@ -1154,7 +1154,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsHy
 }
 
 /// <summary>A list of continuous hyperparameters to tune.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsHyperParameterRangesContinuousParameterRanges
 {
@@ -1175,7 +1175,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsHy
 /// For a hyperparameter of the integer type, specifies the range that a hyperparameter
 /// tuning job searches.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsHyperParameterRangesIntegerParameterRanges
 {
@@ -1205,7 +1205,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsHy
 /// tuning job itself. That is, the sum of the number of hyperparameters for
 /// all the ranges can&apos;t exceed the maximum number specified.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsHyperParameterRanges
 {
@@ -1223,7 +1223,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsHy
 }
 
 /// <summary>Specifies a file system data source for a channel.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsInputDataConfigDataSourceFileSystemDataSource
 {
@@ -1247,7 +1247,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsIn
 /// For more information about private hubs, see Private curated hubs for foundation
 /// model access control in JumpStart (https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-curated-hubs.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsInputDataConfigDataSourceS3DataSourceHubAccessConfig
 {
@@ -1268,7 +1268,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsIn
 ///    on How to set the EULA acceptance when fine-tuning a model using the AutoML
 ///    API (https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-create-experiment-finetune-llms.html#autopilot-llms-finetuning-api-optional-params).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsInputDataConfigDataSourceS3DataSourceModelAccessConfig
 {
@@ -1282,7 +1282,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsIn
 /// Your input bucket must be in the same Amazon Web Services region as your
 /// training job.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsInputDataConfigDataSourceS3DataSource
 {
@@ -1329,7 +1329,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsIn
 }
 
 /// <summary>Describes the location of the channel data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsInputDataConfigDataSource
 {
@@ -1363,7 +1363,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsIn
 /// across nodes so that the content sent to a particular node on the first epoch
 /// might be sent to a different node on the second epoch.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsInputDataConfigShuffleConfig
 {
@@ -1372,7 +1372,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsIn
 }
 
 /// <summary>A channel is a named input source that training algorithms can consume.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsInputDataConfig
 {
@@ -1454,7 +1454,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsIn
 }
 
 /// <summary>Provides information about how to store model training results (model artifacts).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsOutputDataConfig
 {
@@ -1473,7 +1473,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsOu
 /// a training job using the CreateTrainingJob (https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html)
 /// API, you can configure multiple instance groups .
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsResourceConfigInstanceGroups
 {
@@ -1488,7 +1488,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsRe
 }
 
 /// <summary>Specifies how instances should be placed on a specific UltraServer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsResourceConfigInstancePlacementConfigPlacementSpecifications
 {
@@ -1503,7 +1503,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsRe
 /// Configuration for how instances are placed and allocated within UltraServers.
 /// This is only applicable for UltraServer capacity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsResourceConfigInstancePlacementConfig
 {
@@ -1518,7 +1518,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsRe
 /// Describes the resources, including machine learning (ML) compute instances
 /// and ML storage volumes, to use for model training.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsResourceConfig
 {
@@ -1558,7 +1558,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsRe
 /// requests. You can add the StoppingCondition parameter to the request to limit
 /// the training time for the complete job.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsRetryStrategy
 {
@@ -1585,7 +1585,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsRe
 /// model artifacts. When training NTMs, make sure that the maximum runtime is
 /// sufficient for the training job to complete.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsStoppingCondition
 {
@@ -1608,7 +1608,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsSt
 /// If you want to define a custom objective metric, see Define metrics and environment
 /// variables (https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning-define-metrics-variables.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsTuningObjective
 {
@@ -1625,7 +1625,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsTu
 /// to and from your resources by configuring a VPC. For more information, see
 /// Give SageMaker Access to Resources in your Amazon VPC (https://docs.aws.amazon.com/sagemaker/latest/dg/infrastructure-give-access.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsVpcConfig
 {
@@ -1637,7 +1637,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitionsVp
 }
 
 /// <summary>Defines the training jobs launched by a hyperparameter tuning job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitions
 {
@@ -1759,7 +1759,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecTrainingJobDefinitions
 /// A previously completed or stopped hyperparameter tuning job to be used as
 /// a starting point for a new hyperparameter tuning job.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecWarmStartConfigParentHyperParameterTuningJobs
 {
@@ -1785,7 +1785,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecWarmStartConfigParentHyp
 /// hyperparameter tuning jobs count against the limit of training jobs for the
 /// tuning job.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpecWarmStartConfig
 {
@@ -1797,7 +1797,7 @@ public partial class V1alpha1HyperParameterTuningJobSpecWarmStartConfig
 }
 
 /// <summary>HyperParameterTuningJobSpec defines the desired state of HyperParameterTuningJob.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobSpec
 {
@@ -1910,7 +1910,7 @@ public partial class V1alpha1HyperParameterTuningJobSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobStatusAckResourceMetadata
 {
@@ -1947,7 +1947,7 @@ public partial class V1alpha1HyperParameterTuningJobStatusAckResourceMetadata
 /// by a hyperparameter tuning job. You define the objective metric in the HyperParameterTuningJobObjective
 /// parameter of HyperParameterTuningJobConfig (https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HyperParameterTuningJobConfig.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobStatusBestTrainingJobFinalHyperParameterTuningJobObjectiveMetric
 {
@@ -1966,7 +1966,7 @@ public partial class V1alpha1HyperParameterTuningJobStatusBestTrainingJobFinalHy
 /// object that describes the training job that completed with the best current
 /// HyperParameterTuningJobObjective (https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HyperParameterTuningJobObjective.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobStatusBestTrainingJob
 {
@@ -2017,7 +2017,7 @@ public partial class V1alpha1HyperParameterTuningJobStatusBestTrainingJob
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobStatusConditions
 {
@@ -2047,7 +2047,7 @@ public partial class V1alpha1HyperParameterTuningJobStatusConditions
 /// by a hyperparameter tuning job. You define the objective metric in the HyperParameterTuningJobObjective
 /// parameter of HyperParameterTuningJobConfig (https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HyperParameterTuningJobConfig.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobStatusOverallBestTrainingJobFinalHyperParameterTuningJobObjectiveMetric
 {
@@ -2068,7 +2068,7 @@ public partial class V1alpha1HyperParameterTuningJobStatusOverallBestTrainingJob
 /// jobs launched by this tuning job and all parent jobs specified for the warm
 /// start tuning job.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobStatusOverallBestTrainingJob
 {
@@ -2115,7 +2115,7 @@ public partial class V1alpha1HyperParameterTuningJobStatusOverallBestTrainingJob
 }
 
 /// <summary>HyperParameterTuningJobStatus defines the observed state of HyperParameterTuningJob</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1HyperParameterTuningJobStatus
 {
@@ -2164,7 +2164,7 @@ public partial class V1alpha1HyperParameterTuningJobStatus
 }
 
 /// <summary>HyperParameterTuningJob is the Schema for the HyperParameterTuningJobs API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1HyperParameterTuningJob : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1HyperParameterTuningJobSpec?>, IStatus<V1alpha1HyperParameterTuningJobStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
 /// <summary>PrivateDNSTXTRecord is the Schema for the PrivateDNSTXTRecords API. Manages a Private DNS TXT Record.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PrivateDNSTXTRecordList : IKubernetesObject<V1ListMeta>, IItems<V1beta1PrivateDNSTXTRecord>
@@ -45,7 +45,7 @@ public partial class V1beta1PrivateDNSTXTRecordList : IKubernetesObject<V1ListMe
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSTXTRecordSpecDeletionPolicyEnum>))]
 public enum V1beta1PrivateDNSTXTRecordSpecDeletionPolicyEnum
 {
@@ -55,7 +55,7 @@ public enum V1beta1PrivateDNSTXTRecordSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSTXTRecordSpecForProviderRecord
 {
@@ -70,7 +70,7 @@ public partial class V1beta1PrivateDNSTXTRecordSpecForProviderRecord
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSTXTRecordSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSTXTRecordSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -86,7 +86,7 @@ public enum V1beta1PrivateDNSTXTRecordSpecForProviderResourceGroupNameRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSTXTRecordSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSTXTRecordSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -97,7 +97,7 @@ public enum V1beta1PrivateDNSTXTRecordSpecForProviderResourceGroupNameRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSTXTRecordSpecForProviderResourceGroupNameRefPolicy
 {
@@ -121,7 +121,7 @@ public partial class V1beta1PrivateDNSTXTRecordSpecForProviderResourceGroupNameR
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSTXTRecordSpecForProviderResourceGroupNameRef
 {
@@ -140,7 +140,7 @@ public partial class V1beta1PrivateDNSTXTRecordSpecForProviderResourceGroupNameR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSTXTRecordSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSTXTRecordSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -156,7 +156,7 @@ public enum V1beta1PrivateDNSTXTRecordSpecForProviderResourceGroupNameSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSTXTRecordSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSTXTRecordSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -167,7 +167,7 @@ public enum V1beta1PrivateDNSTXTRecordSpecForProviderResourceGroupNameSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSTXTRecordSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -191,7 +191,7 @@ public partial class V1beta1PrivateDNSTXTRecordSpecForProviderResourceGroupNameS
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSTXTRecordSpecForProviderResourceGroupNameSelector
 {
@@ -217,7 +217,7 @@ public partial class V1beta1PrivateDNSTXTRecordSpecForProviderResourceGroupNameS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSTXTRecordSpecForProviderZoneNameRefPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSTXTRecordSpecForProviderZoneNameRefPolicyResolutionEnum
 {
@@ -233,7 +233,7 @@ public enum V1beta1PrivateDNSTXTRecordSpecForProviderZoneNameRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSTXTRecordSpecForProviderZoneNameRefPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSTXTRecordSpecForProviderZoneNameRefPolicyResolveEnum
 {
@@ -244,7 +244,7 @@ public enum V1beta1PrivateDNSTXTRecordSpecForProviderZoneNameRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSTXTRecordSpecForProviderZoneNameRefPolicy
 {
@@ -268,7 +268,7 @@ public partial class V1beta1PrivateDNSTXTRecordSpecForProviderZoneNameRefPolicy
 }
 
 /// <summary>Reference to a PrivateDNSZone in network to populate zoneName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSTXTRecordSpecForProviderZoneNameRef
 {
@@ -287,7 +287,7 @@ public partial class V1beta1PrivateDNSTXTRecordSpecForProviderZoneNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSTXTRecordSpecForProviderZoneNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSTXTRecordSpecForProviderZoneNameSelectorPolicyResolutionEnum
 {
@@ -303,7 +303,7 @@ public enum V1beta1PrivateDNSTXTRecordSpecForProviderZoneNameSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSTXTRecordSpecForProviderZoneNameSelectorPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSTXTRecordSpecForProviderZoneNameSelectorPolicyResolveEnum
 {
@@ -314,7 +314,7 @@ public enum V1beta1PrivateDNSTXTRecordSpecForProviderZoneNameSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSTXTRecordSpecForProviderZoneNameSelectorPolicy
 {
@@ -338,7 +338,7 @@ public partial class V1beta1PrivateDNSTXTRecordSpecForProviderZoneNameSelectorPo
 }
 
 /// <summary>Selector for a PrivateDNSZone in network to populate zoneName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSTXTRecordSpecForProviderZoneNameSelector
 {
@@ -358,7 +358,7 @@ public partial class V1beta1PrivateDNSTXTRecordSpecForProviderZoneNameSelector
     public V1beta1PrivateDNSTXTRecordSpecForProviderZoneNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSTXTRecordSpecForProvider
 {
@@ -399,7 +399,7 @@ public partial class V1beta1PrivateDNSTXTRecordSpecForProvider
     public V1beta1PrivateDNSTXTRecordSpecForProviderZoneNameSelector? ZoneNameSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSTXTRecordSpecInitProviderRecord
 {
@@ -420,7 +420,7 @@ public partial class V1beta1PrivateDNSTXTRecordSpecInitProviderRecord
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSTXTRecordSpecInitProvider
 {
@@ -441,7 +441,7 @@ public partial class V1beta1PrivateDNSTXTRecordSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSTXTRecordSpecManagementPoliciesEnum>))]
 public enum V1beta1PrivateDNSTXTRecordSpecManagementPoliciesEnum
 {
@@ -465,7 +465,7 @@ public enum V1beta1PrivateDNSTXTRecordSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSTXTRecordSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSTXTRecordSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -481,7 +481,7 @@ public enum V1beta1PrivateDNSTXTRecordSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSTXTRecordSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSTXTRecordSpecProviderConfigRefPolicyResolveEnum
 {
@@ -492,7 +492,7 @@ public enum V1beta1PrivateDNSTXTRecordSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSTXTRecordSpecProviderConfigRefPolicy
 {
@@ -520,7 +520,7 @@ public partial class V1beta1PrivateDNSTXTRecordSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSTXTRecordSpecProviderConfigRef
 {
@@ -539,7 +539,7 @@ public partial class V1beta1PrivateDNSTXTRecordSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSTXTRecordSpecWriteConnectionSecretToRef
 {
@@ -553,7 +553,7 @@ public partial class V1beta1PrivateDNSTXTRecordSpecWriteConnectionSecretToRef
 }
 
 /// <summary>PrivateDNSTXTRecordSpec defines the desired state of PrivateDNSTXTRecord</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSTXTRecordSpec
 {
@@ -620,7 +620,7 @@ public partial class V1beta1PrivateDNSTXTRecordSpec
     public V1beta1PrivateDNSTXTRecordSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSTXTRecordStatusAtProviderRecord
 {
@@ -629,7 +629,7 @@ public partial class V1beta1PrivateDNSTXTRecordStatusAtProviderRecord
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSTXTRecordStatusAtProvider
 {
@@ -663,7 +663,7 @@ public partial class V1beta1PrivateDNSTXTRecordStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSTXTRecordStatusConditions
 {
@@ -706,7 +706,7 @@ public partial class V1beta1PrivateDNSTXTRecordStatusConditions
 }
 
 /// <summary>PrivateDNSTXTRecordStatus defines the observed state of PrivateDNSTXTRecord.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSTXTRecordStatus
 {
@@ -727,7 +727,7 @@ public partial class V1beta1PrivateDNSTXTRecordStatus
 }
 
 /// <summary>PrivateDNSTXTRecord is the Schema for the PrivateDNSTXTRecords API. Manages a Private DNS TXT Record.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PrivateDNSTXTRecord : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PrivateDNSTXTRecordSpec>, IStatus<V1beta1PrivateDNSTXTRecordStatus?>

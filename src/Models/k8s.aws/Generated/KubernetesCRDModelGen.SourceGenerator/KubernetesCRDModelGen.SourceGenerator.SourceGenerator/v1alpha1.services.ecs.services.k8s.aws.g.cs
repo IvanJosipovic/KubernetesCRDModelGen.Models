@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ecs.services.k8s.aws;
 /// <summary>Service is the Schema for the Services API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ServiceList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1Service>
@@ -68,7 +68,7 @@ public partial class V1alpha1ServiceList : IKubernetesObject<V1ListMeta>, IItems
 /// 
 /// A capacity provider strategy can contain a maximum of 20 capacity providers.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecCapacityProviderStrategy
 {
@@ -86,7 +86,7 @@ public partial class V1alpha1ServiceSpecCapacityProviderStrategy
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecClusterRefFrom
 {
@@ -106,7 +106,7 @@ public partial class V1alpha1ServiceSpecClusterRefFrom
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecClusterRef
 {
@@ -133,7 +133,7 @@ public partial class V1alpha1ServiceSpecClusterRef
 /// For more information, see Rolling update (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-ecs.html)
 /// in the Amazon Elastic Container Service Developer Guide .
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecDeploymentConfigurationAlarms
 {
@@ -161,7 +161,7 @@ public partial class V1alpha1ServiceSpecDeploymentConfigurationAlarms
 /// For more information about API failure reasons, see API failure reasons (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/api_failures_messages.html)
 /// in the Amazon Elastic Container Service Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecDeploymentConfigurationDeploymentCircuitBreaker
 {
@@ -176,7 +176,7 @@ public partial class V1alpha1ServiceSpecDeploymentConfigurationDeploymentCircuit
 /// Optional deployment parameters that control how many tasks run during the
 /// deployment and the ordering of stopping and starting tasks.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecDeploymentConfiguration
 {
@@ -226,7 +226,7 @@ public partial class V1alpha1ServiceSpecDeploymentConfiguration
 /// The deployment controller to use for the service. If no deployment controller
 /// is specified, the default value of ECS is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecDeploymentController
 {
@@ -238,7 +238,7 @@ public partial class V1alpha1ServiceSpecDeploymentController
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecLoadBalancersLoadBalancerRefFrom
 {
@@ -250,7 +250,7 @@ public partial class V1alpha1ServiceSpecLoadBalancersLoadBalancerRefFrom
 }
 
 /// <summary>Reference field for LoadBalancerName</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecLoadBalancersLoadBalancerRef
 {
@@ -266,7 +266,7 @@ public partial class V1alpha1ServiceSpecLoadBalancersLoadBalancerRef
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecLoadBalancersTargetGroupRefFrom
 {
@@ -278,7 +278,7 @@ public partial class V1alpha1ServiceSpecLoadBalancersTargetGroupRefFrom
 }
 
 /// <summary>Reference field for TargetGroupARN</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecLoadBalancersTargetGroupRef
 {
@@ -304,7 +304,7 @@ public partial class V1alpha1ServiceSpecLoadBalancersTargetGroupRef
 /// For more information, see Using service-linked roles (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using-service-linked-roles.html)
 /// in the Amazon Elastic Container Service Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecLoadBalancers
 {
@@ -333,7 +333,7 @@ public partial class V1alpha1ServiceSpecLoadBalancers
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecNetworkConfigurationAwsVPCConfigurationSecurityGroupRefsFrom
 {
@@ -353,7 +353,7 @@ public partial class V1alpha1ServiceSpecNetworkConfigurationAwsVPCConfigurationS
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecNetworkConfigurationAwsVPCConfigurationSecurityGroupRefs
 {
@@ -369,7 +369,7 @@ public partial class V1alpha1ServiceSpecNetworkConfigurationAwsVPCConfigurationS
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecNetworkConfigurationAwsVPCConfigurationSubnetRefsFrom
 {
@@ -389,7 +389,7 @@ public partial class V1alpha1ServiceSpecNetworkConfigurationAwsVPCConfigurationS
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecNetworkConfigurationAwsVPCConfigurationSubnetRefs
 {
@@ -405,7 +405,7 @@ public partial class V1alpha1ServiceSpecNetworkConfigurationAwsVPCConfigurationS
 /// An object representing the networking details for a task or service. For
 /// example awsVpcConfiguration={subnets=[&quot;subnet-12344321&quot;],securityGroups=[&quot;sg-12344321&quot;]}.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecNetworkConfigurationAwsVPCConfiguration
 {
@@ -434,7 +434,7 @@ public partial class V1alpha1ServiceSpecNetworkConfigurationAwsVPCConfiguration
 /// information, see Task networking (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-networking.html)
 /// in the Amazon Elastic Container Service Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecNetworkConfiguration
 {
@@ -454,7 +454,7 @@ public partial class V1alpha1ServiceSpecNetworkConfiguration
 /// If you&apos;re using the Fargate launch type, task placement constraints aren&apos;t
 /// supported.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecPlacementConstraints
 {
@@ -470,7 +470,7 @@ public partial class V1alpha1ServiceSpecPlacementConstraints
 /// see Task placement strategies (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-placement-strategies.html)
 /// in the Amazon Elastic Container Service Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecPlacementStrategy
 {
@@ -485,7 +485,7 @@ public partial class V1alpha1ServiceSpecPlacementStrategy
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecRoleRefFrom
 {
@@ -505,7 +505,7 @@ public partial class V1alpha1ServiceSpecRoleRefFrom
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecRoleRef
 {
@@ -530,7 +530,7 @@ public partial class V1alpha1ServiceSpecRoleRef
 /// For more information, see Specifying sensitive data (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specifying-sensitive-data.html)
 /// in the Amazon Elastic Container Service Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecServiceConnectConfigurationLogConfigurationSecretOptions
 {
@@ -575,7 +575,7 @@ public partial class V1alpha1ServiceSpecServiceConnectConfigurationLogConfigurat
 ///    output aggregators or a remote host running Logstash to send Gelf logs
 ///    to.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecServiceConnectConfigurationLogConfiguration
 {
@@ -603,7 +603,7 @@ public partial class V1alpha1ServiceSpecServiceConnectConfigurationLogConfigurat
 /// see Service Connect (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect.html)
 /// in the Amazon Elastic Container Service Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecServiceConnectConfigurationServicesClientAliases
 {
@@ -620,7 +620,7 @@ public partial class V1alpha1ServiceSpecServiceConnectConfigurationServicesClien
 /// If idleTimeout is set to a time that is less than perRequestTimeout, the
 /// connection will close when the idleTimeout is reached and not the perRequestTimeout.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecServiceConnectConfigurationServicesTimeout
 {
@@ -632,7 +632,7 @@ public partial class V1alpha1ServiceSpecServiceConnectConfigurationServicesTimeo
 }
 
 /// <summary>The certificate root authority that secures your service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecServiceConnectConfigurationServicesTlsIssuerCertificateAuthority
 {
@@ -641,7 +641,7 @@ public partial class V1alpha1ServiceSpecServiceConnectConfigurationServicesTlsIs
 }
 
 /// <summary>The key that encrypts and decrypts your resources for Service Connect TLS.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecServiceConnectConfigurationServicesTls
 {
@@ -661,7 +661,7 @@ public partial class V1alpha1ServiceSpecServiceConnectConfigurationServicesTls
 /// Service Connect (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect.html)
 /// in the Amazon Elastic Container Service Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecServiceConnectConfigurationServices
 {
@@ -703,7 +703,7 @@ public partial class V1alpha1ServiceSpecServiceConnectConfigurationServices
 /// see Service Connect (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect.html)
 /// in the Amazon Elastic Container Service Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecServiceConnectConfiguration
 {
@@ -764,7 +764,7 @@ public partial class V1alpha1ServiceSpecServiceConnectConfiguration
 /// ECS starts a new deployment. New tasks are registered and deregistered to
 /// the updated service registry configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecServiceRegistries
 {
@@ -808,7 +808,7 @@ public partial class V1alpha1ServiceSpecServiceRegistries
 ///     Services use. You cannot edit or delete tag keys or values with this prefix.
 ///     Tags with this prefix do not count against your tags per resource limit.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecTags
 {
@@ -823,7 +823,7 @@ public partial class V1alpha1ServiceSpecTags
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecTaskDefinitionRefFrom
 {
@@ -843,7 +843,7 @@ public partial class V1alpha1ServiceSpecTaskDefinitionRefFrom
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecTaskDefinitionRef
 {
@@ -882,7 +882,7 @@ public partial class V1alpha1ServiceSpecTaskDefinitionRef
 ///     Services use. You cannot edit or delete tag keys or values with this prefix.
 ///     Tags with this prefix do not count against your tags per resource limit.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecVolumeConfigurationsManagedEBSVolumeTagSpecificationsTags
 {
@@ -894,7 +894,7 @@ public partial class V1alpha1ServiceSpecVolumeConfigurationsManagedEBSVolumeTagS
 }
 
 /// <summary>The tag specifications of an Amazon EBS volume.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecVolumeConfigurationsManagedEBSVolumeTagSpecifications
 {
@@ -919,7 +919,7 @@ public partial class V1alpha1ServiceSpecVolumeConfigurationsManagedEBSVolumeTagS
 /// Many of these parameters map 1:1 with the Amazon EBS CreateVolume API request
 /// parameters.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecVolumeConfigurationsManagedEBSVolume
 {
@@ -959,7 +959,7 @@ public partial class V1alpha1ServiceSpecVolumeConfigurationsManagedEBSVolume
 /// that is configured at launch time. Currently, the only supported volume type
 /// is an Amazon EBS volume.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpecVolumeConfigurations
 {
@@ -986,7 +986,7 @@ public partial class V1alpha1ServiceSpecVolumeConfigurations
 /// 
 /// Details on a service within a cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceSpec
 {
@@ -1383,7 +1383,7 @@ public partial class V1alpha1ServiceSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusAckResourceMetadata
 {
@@ -1420,7 +1420,7 @@ public partial class V1alpha1ServiceStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusConditions
 {
@@ -1477,7 +1477,7 @@ public partial class V1alpha1ServiceStatusConditions
 /// 
 /// A capacity provider strategy can contain a maximum of 20 capacity providers.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusDeploymentsCapacityProviderStrategy
 {
@@ -1495,7 +1495,7 @@ public partial class V1alpha1ServiceStatusDeploymentsCapacityProviderStrategy
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusDeploymentsNetworkConfigurationAwsVPCConfigurationSecurityGroupRefsFrom
 {
@@ -1515,7 +1515,7 @@ public partial class V1alpha1ServiceStatusDeploymentsNetworkConfigurationAwsVPCC
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusDeploymentsNetworkConfigurationAwsVPCConfigurationSecurityGroupRefs
 {
@@ -1531,7 +1531,7 @@ public partial class V1alpha1ServiceStatusDeploymentsNetworkConfigurationAwsVPCC
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusDeploymentsNetworkConfigurationAwsVPCConfigurationSubnetRefsFrom
 {
@@ -1551,7 +1551,7 @@ public partial class V1alpha1ServiceStatusDeploymentsNetworkConfigurationAwsVPCC
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusDeploymentsNetworkConfigurationAwsVPCConfigurationSubnetRefs
 {
@@ -1567,7 +1567,7 @@ public partial class V1alpha1ServiceStatusDeploymentsNetworkConfigurationAwsVPCC
 /// An object representing the networking details for a task or service. For
 /// example awsVpcConfiguration={subnets=[&quot;subnet-12344321&quot;],securityGroups=[&quot;sg-12344321&quot;]}.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusDeploymentsNetworkConfigurationAwsVPCConfiguration
 {
@@ -1590,7 +1590,7 @@ public partial class V1alpha1ServiceStatusDeploymentsNetworkConfigurationAwsVPCC
 }
 
 /// <summary>The network configuration for a task or service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusDeploymentsNetworkConfiguration
 {
@@ -1615,7 +1615,7 @@ public partial class V1alpha1ServiceStatusDeploymentsNetworkConfiguration
 /// For more information, see Specifying sensitive data (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specifying-sensitive-data.html)
 /// in the Amazon Elastic Container Service Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusDeploymentsServiceConnectConfigurationLogConfigurationSecretOptions
 {
@@ -1660,7 +1660,7 @@ public partial class V1alpha1ServiceStatusDeploymentsServiceConnectConfiguration
 ///    output aggregators or a remote host running Logstash to send Gelf logs
 ///    to.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusDeploymentsServiceConnectConfigurationLogConfiguration
 {
@@ -1688,7 +1688,7 @@ public partial class V1alpha1ServiceStatusDeploymentsServiceConnectConfiguration
 /// see Service Connect (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect.html)
 /// in the Amazon Elastic Container Service Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusDeploymentsServiceConnectConfigurationServicesClientAliases
 {
@@ -1705,7 +1705,7 @@ public partial class V1alpha1ServiceStatusDeploymentsServiceConnectConfiguration
 /// If idleTimeout is set to a time that is less than perRequestTimeout, the
 /// connection will close when the idleTimeout is reached and not the perRequestTimeout.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusDeploymentsServiceConnectConfigurationServicesTimeout
 {
@@ -1717,7 +1717,7 @@ public partial class V1alpha1ServiceStatusDeploymentsServiceConnectConfiguration
 }
 
 /// <summary>The certificate root authority that secures your service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusDeploymentsServiceConnectConfigurationServicesTlsIssuerCertificateAuthority
 {
@@ -1726,7 +1726,7 @@ public partial class V1alpha1ServiceStatusDeploymentsServiceConnectConfiguration
 }
 
 /// <summary>The key that encrypts and decrypts your resources for Service Connect TLS.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusDeploymentsServiceConnectConfigurationServicesTls
 {
@@ -1746,7 +1746,7 @@ public partial class V1alpha1ServiceStatusDeploymentsServiceConnectConfiguration
 /// Service Connect (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect.html)
 /// in the Amazon Elastic Container Service Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusDeploymentsServiceConnectConfigurationServices
 {
@@ -1789,7 +1789,7 @@ public partial class V1alpha1ServiceStatusDeploymentsServiceConnectConfiguration
 /// see Service Connect (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect.html)
 /// in the Amazon Elastic Container Service Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusDeploymentsServiceConnectConfiguration
 {
@@ -1851,7 +1851,7 @@ public partial class V1alpha1ServiceStatusDeploymentsServiceConnectConfiguration
 /// to a service, refer to the ServiceConnectConfiguration of that service for
 /// the list of clientAliases that you can use.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusDeploymentsServiceConnectResources
 {
@@ -1889,7 +1889,7 @@ public partial class V1alpha1ServiceStatusDeploymentsServiceConnectResources
 ///     Services use. You cannot edit or delete tag keys or values with this prefix.
 ///     Tags with this prefix do not count against your tags per resource limit.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusDeploymentsVolumeConfigurationsManagedEBSVolumeTagSpecificationsTags
 {
@@ -1901,7 +1901,7 @@ public partial class V1alpha1ServiceStatusDeploymentsVolumeConfigurationsManaged
 }
 
 /// <summary>The tag specifications of an Amazon EBS volume.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusDeploymentsVolumeConfigurationsManagedEBSVolumeTagSpecifications
 {
@@ -1926,7 +1926,7 @@ public partial class V1alpha1ServiceStatusDeploymentsVolumeConfigurationsManaged
 /// Many of these parameters map 1:1 with the Amazon EBS CreateVolume API request
 /// parameters.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusDeploymentsVolumeConfigurationsManagedEBSVolume
 {
@@ -1966,7 +1966,7 @@ public partial class V1alpha1ServiceStatusDeploymentsVolumeConfigurationsManaged
 /// that is configured at launch time. Currently, the only supported volume type
 /// is an Amazon EBS volume.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusDeploymentsVolumeConfigurations
 {
@@ -1992,7 +1992,7 @@ public partial class V1alpha1ServiceStatusDeploymentsVolumeConfigurations
 /// The details of an Amazon ECS service deployment. This is used only when a
 /// service uses the ECS deployment controller type.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusDeployments
 {
@@ -2069,7 +2069,7 @@ public partial class V1alpha1ServiceStatusDeployments
 }
 
 /// <summary>The details for an event that&apos;s associated with a service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusEvents
 {
@@ -2115,7 +2115,7 @@ public partial class V1alpha1ServiceStatusEvents
 /// 
 /// A capacity provider strategy can contain a maximum of 20 capacity providers.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusTaskSetsCapacityProviderStrategy
 {
@@ -2133,7 +2133,7 @@ public partial class V1alpha1ServiceStatusTaskSetsCapacityProviderStrategy
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusTaskSetsLoadBalancersLoadBalancerRefFrom
 {
@@ -2145,7 +2145,7 @@ public partial class V1alpha1ServiceStatusTaskSetsLoadBalancersLoadBalancerRefFr
 }
 
 /// <summary>Reference field for LoadBalancerName</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusTaskSetsLoadBalancersLoadBalancerRef
 {
@@ -2161,7 +2161,7 @@ public partial class V1alpha1ServiceStatusTaskSetsLoadBalancersLoadBalancerRef
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusTaskSetsLoadBalancersTargetGroupRefFrom
 {
@@ -2173,7 +2173,7 @@ public partial class V1alpha1ServiceStatusTaskSetsLoadBalancersTargetGroupRefFro
 }
 
 /// <summary>Reference field for TargetGroupARN</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusTaskSetsLoadBalancersTargetGroupRef
 {
@@ -2199,7 +2199,7 @@ public partial class V1alpha1ServiceStatusTaskSetsLoadBalancersTargetGroupRef
 /// For more information, see Using service-linked roles (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using-service-linked-roles.html)
 /// in the Amazon Elastic Container Service Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusTaskSetsLoadBalancers
 {
@@ -2228,7 +2228,7 @@ public partial class V1alpha1ServiceStatusTaskSetsLoadBalancers
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusTaskSetsNetworkConfigurationAwsVPCConfigurationSecurityGroupRefsFrom
 {
@@ -2248,7 +2248,7 @@ public partial class V1alpha1ServiceStatusTaskSetsNetworkConfigurationAwsVPCConf
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusTaskSetsNetworkConfigurationAwsVPCConfigurationSecurityGroupRefs
 {
@@ -2264,7 +2264,7 @@ public partial class V1alpha1ServiceStatusTaskSetsNetworkConfigurationAwsVPCConf
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusTaskSetsNetworkConfigurationAwsVPCConfigurationSubnetRefsFrom
 {
@@ -2284,7 +2284,7 @@ public partial class V1alpha1ServiceStatusTaskSetsNetworkConfigurationAwsVPCConf
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusTaskSetsNetworkConfigurationAwsVPCConfigurationSubnetRefs
 {
@@ -2300,7 +2300,7 @@ public partial class V1alpha1ServiceStatusTaskSetsNetworkConfigurationAwsVPCConf
 /// An object representing the networking details for a task or service. For
 /// example awsVpcConfiguration={subnets=[&quot;subnet-12344321&quot;],securityGroups=[&quot;sg-12344321&quot;]}.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusTaskSetsNetworkConfigurationAwsVPCConfiguration
 {
@@ -2323,7 +2323,7 @@ public partial class V1alpha1ServiceStatusTaskSetsNetworkConfigurationAwsVPCConf
 }
 
 /// <summary>The network configuration for a task or service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusTaskSetsNetworkConfiguration
 {
@@ -2339,7 +2339,7 @@ public partial class V1alpha1ServiceStatusTaskSetsNetworkConfiguration
 /// A floating-point percentage of the desired number of tasks to place and keep
 /// running in the task set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusTaskSetsScale
 {
@@ -2360,7 +2360,7 @@ public partial class V1alpha1ServiceStatusTaskSetsScale
 /// ECS starts a new deployment. New tasks are registered and deregistered to
 /// the updated service registry configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusTaskSetsServiceRegistries
 {
@@ -2404,7 +2404,7 @@ public partial class V1alpha1ServiceStatusTaskSetsServiceRegistries
 ///     Services use. You cannot edit or delete tag keys or values with this prefix.
 ///     Tags with this prefix do not count against your tags per resource limit.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusTaskSetsTags
 {
@@ -2421,7 +2421,7 @@ public partial class V1alpha1ServiceStatusTaskSetsTags
 /// desired number of tasks, how many tasks are running, and whether the task
 /// set serves production traffic.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatusTaskSets
 {
@@ -2504,7 +2504,7 @@ public partial class V1alpha1ServiceStatusTaskSets
 }
 
 /// <summary>ServiceStatus defines the observed state of Service</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServiceStatus
 {
@@ -2589,7 +2589,7 @@ public partial class V1alpha1ServiceStatus
 }
 
 /// <summary>Service is the Schema for the Services API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1Service : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ServiceSpec?>, IStatus<V1alpha1ServiceStatus?>

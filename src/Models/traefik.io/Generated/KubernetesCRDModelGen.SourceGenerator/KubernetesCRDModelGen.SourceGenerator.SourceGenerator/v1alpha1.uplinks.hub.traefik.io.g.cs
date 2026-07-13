@@ -13,7 +13,7 @@ namespace KubernetesCRDModelGen.Models.hub.traefik.io;
 /// Uplink is an inter-cluster service advertisement: a child cluster declares an Uplink to advertise
 /// to a parent cluster that it can handle a particular workload.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1UplinkList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1Uplink>
@@ -40,7 +40,7 @@ public partial class V1alpha1UplinkList : IKubernetesObject<V1ListMeta>, IItems<
 }
 
 /// <summary>HealthCheck configures the active health check on the parent cluster for this uplink&apos;s load balancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1UplinkSpecHealthCheck
 {
@@ -111,7 +111,7 @@ public partial class V1alpha1UplinkSpecHealthCheck
 }
 
 /// <summary>PassiveHealthCheck configures the passive health check on the parent cluster for this uplink&apos;s load balancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1UplinkSpecPassiveHealthCheck
 {
@@ -125,7 +125,7 @@ public partial class V1alpha1UplinkSpecPassiveHealthCheck
 }
 
 /// <summary>UplinkSpec describes the Uplink.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1UplinkSpec
 {
@@ -154,7 +154,7 @@ public partial class V1alpha1UplinkSpec
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1UplinkStatusConditionsStatusEnum>))]
 public enum V1alpha1UplinkStatusConditionsStatusEnum
 {
@@ -167,7 +167,7 @@ public enum V1alpha1UplinkStatusConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1UplinkStatusConditions
 {
@@ -213,7 +213,7 @@ public partial class V1alpha1UplinkStatusConditions
 }
 
 /// <summary>The current status of this Uplink.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1UplinkStatus
 {
@@ -225,7 +225,7 @@ public partial class V1alpha1UplinkStatus
 /// Uplink is an inter-cluster service advertisement: a child cluster declares an Uplink to advertise
 /// to a parent cluster that it can handle a particular workload.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1Uplink : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1UplinkSpec?>, IStatus<V1alpha1UplinkStatus?>

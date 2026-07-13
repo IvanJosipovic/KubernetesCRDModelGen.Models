@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.devices.azure.m.upbound.io;
 /// <summary>IOTHubEndpointEventHub is the Schema for the IOTHubEndpointEventHubs API. Manages an IotHub EventHub Endpoint</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IOTHubEndpointEventHubList : IKubernetesObject<V1ListMeta>, IItems<V1beta1IOTHubEndpointEventHub>
@@ -37,7 +37,7 @@ public partial class V1beta1IOTHubEndpointEventHubList : IKubernetesObject<V1Lis
 }
 
 /// <summary>The connection string for the endpoint. This attribute can only be specified and is mandatory when authentication_type is keyBased.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointEventHubSpecForProviderConnectionStringSecretRef
 {
@@ -55,7 +55,7 @@ public partial class V1beta1IOTHubEndpointEventHubSpecForProviderConnectionStrin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointEventHubSpecForProviderIothubIdRefPolicyResolutionEnum>))]
 public enum V1beta1IOTHubEndpointEventHubSpecForProviderIothubIdRefPolicyResolutionEnum
 {
@@ -71,7 +71,7 @@ public enum V1beta1IOTHubEndpointEventHubSpecForProviderIothubIdRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointEventHubSpecForProviderIothubIdRefPolicyResolveEnum>))]
 public enum V1beta1IOTHubEndpointEventHubSpecForProviderIothubIdRefPolicyResolveEnum
 {
@@ -82,7 +82,7 @@ public enum V1beta1IOTHubEndpointEventHubSpecForProviderIothubIdRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointEventHubSpecForProviderIothubIdRefPolicy
 {
@@ -106,7 +106,7 @@ public partial class V1beta1IOTHubEndpointEventHubSpecForProviderIothubIdRefPoli
 }
 
 /// <summary>Reference to a IOTHub in devices to populate iothubId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointEventHubSpecForProviderIothubIdRef
 {
@@ -129,7 +129,7 @@ public partial class V1beta1IOTHubEndpointEventHubSpecForProviderIothubIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointEventHubSpecForProviderIothubIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1IOTHubEndpointEventHubSpecForProviderIothubIdSelectorPolicyResolutionEnum
 {
@@ -145,7 +145,7 @@ public enum V1beta1IOTHubEndpointEventHubSpecForProviderIothubIdSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointEventHubSpecForProviderIothubIdSelectorPolicyResolveEnum>))]
 public enum V1beta1IOTHubEndpointEventHubSpecForProviderIothubIdSelectorPolicyResolveEnum
 {
@@ -156,7 +156,7 @@ public enum V1beta1IOTHubEndpointEventHubSpecForProviderIothubIdSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointEventHubSpecForProviderIothubIdSelectorPolicy
 {
@@ -180,7 +180,7 @@ public partial class V1beta1IOTHubEndpointEventHubSpecForProviderIothubIdSelecto
 }
 
 /// <summary>Selector for a IOTHub in devices to populate iothubId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointEventHubSpecForProviderIothubIdSelector
 {
@@ -210,7 +210,7 @@ public partial class V1beta1IOTHubEndpointEventHubSpecForProviderIothubIdSelecto
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointEventHubSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1IOTHubEndpointEventHubSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -226,7 +226,7 @@ public enum V1beta1IOTHubEndpointEventHubSpecForProviderResourceGroupNameRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointEventHubSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1IOTHubEndpointEventHubSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -237,7 +237,7 @@ public enum V1beta1IOTHubEndpointEventHubSpecForProviderResourceGroupNameRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointEventHubSpecForProviderResourceGroupNameRefPolicy
 {
@@ -261,7 +261,7 @@ public partial class V1beta1IOTHubEndpointEventHubSpecForProviderResourceGroupNa
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointEventHubSpecForProviderResourceGroupNameRef
 {
@@ -284,7 +284,7 @@ public partial class V1beta1IOTHubEndpointEventHubSpecForProviderResourceGroupNa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointEventHubSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1IOTHubEndpointEventHubSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -300,7 +300,7 @@ public enum V1beta1IOTHubEndpointEventHubSpecForProviderResourceGroupNameSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointEventHubSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1IOTHubEndpointEventHubSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -311,7 +311,7 @@ public enum V1beta1IOTHubEndpointEventHubSpecForProviderResourceGroupNameSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointEventHubSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -335,7 +335,7 @@ public partial class V1beta1IOTHubEndpointEventHubSpecForProviderResourceGroupNa
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointEventHubSpecForProviderResourceGroupNameSelector
 {
@@ -359,7 +359,7 @@ public partial class V1beta1IOTHubEndpointEventHubSpecForProviderResourceGroupNa
     public V1beta1IOTHubEndpointEventHubSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointEventHubSpecForProvider
 {
@@ -413,7 +413,7 @@ public partial class V1beta1IOTHubEndpointEventHubSpecForProvider
 }
 
 /// <summary>The connection string for the endpoint. This attribute can only be specified and is mandatory when authentication_type is keyBased.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointEventHubSpecInitProviderConnectionStringSecretRef
 {
@@ -431,7 +431,7 @@ public partial class V1beta1IOTHubEndpointEventHubSpecInitProviderConnectionStri
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointEventHubSpecInitProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1IOTHubEndpointEventHubSpecInitProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -447,7 +447,7 @@ public enum V1beta1IOTHubEndpointEventHubSpecInitProviderResourceGroupNameRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointEventHubSpecInitProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1IOTHubEndpointEventHubSpecInitProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -458,7 +458,7 @@ public enum V1beta1IOTHubEndpointEventHubSpecInitProviderResourceGroupNameRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointEventHubSpecInitProviderResourceGroupNameRefPolicy
 {
@@ -482,7 +482,7 @@ public partial class V1beta1IOTHubEndpointEventHubSpecInitProviderResourceGroupN
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointEventHubSpecInitProviderResourceGroupNameRef
 {
@@ -505,7 +505,7 @@ public partial class V1beta1IOTHubEndpointEventHubSpecInitProviderResourceGroupN
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointEventHubSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1IOTHubEndpointEventHubSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -521,7 +521,7 @@ public enum V1beta1IOTHubEndpointEventHubSpecInitProviderResourceGroupNameSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointEventHubSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1IOTHubEndpointEventHubSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -532,7 +532,7 @@ public enum V1beta1IOTHubEndpointEventHubSpecInitProviderResourceGroupNameSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointEventHubSpecInitProviderResourceGroupNameSelectorPolicy
 {
@@ -556,7 +556,7 @@ public partial class V1beta1IOTHubEndpointEventHubSpecInitProviderResourceGroupN
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointEventHubSpecInitProviderResourceGroupNameSelector
 {
@@ -592,7 +592,7 @@ public partial class V1beta1IOTHubEndpointEventHubSpecInitProviderResourceGroupN
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointEventHubSpecInitProvider
 {
@@ -637,7 +637,7 @@ public partial class V1beta1IOTHubEndpointEventHubSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointEventHubSpecManagementPoliciesEnum>))]
 public enum V1beta1IOTHubEndpointEventHubSpecManagementPoliciesEnum
 {
@@ -660,7 +660,7 @@ public enum V1beta1IOTHubEndpointEventHubSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointEventHubSpecProviderConfigRef
 {
@@ -679,7 +679,7 @@ public partial class V1beta1IOTHubEndpointEventHubSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointEventHubSpecWriteConnectionSecretToRef
 {
@@ -689,7 +689,7 @@ public partial class V1beta1IOTHubEndpointEventHubSpecWriteConnectionSecretToRef
 }
 
 /// <summary>IOTHubEndpointEventHubSpec defines the desired state of IOTHubEndpointEventHub</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointEventHubSpec
 {
@@ -740,7 +740,7 @@ public partial class V1beta1IOTHubEndpointEventHubSpec
     public V1beta1IOTHubEndpointEventHubSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointEventHubStatusAtProvider
 {
@@ -778,7 +778,7 @@ public partial class V1beta1IOTHubEndpointEventHubStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointEventHubStatusConditions
 {
@@ -821,7 +821,7 @@ public partial class V1beta1IOTHubEndpointEventHubStatusConditions
 }
 
 /// <summary>IOTHubEndpointEventHubStatus defines the observed state of IOTHubEndpointEventHub.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointEventHubStatus
 {
@@ -842,7 +842,7 @@ public partial class V1beta1IOTHubEndpointEventHubStatus
 }
 
 /// <summary>IOTHubEndpointEventHub is the Schema for the IOTHubEndpointEventHubs API. Manages an IotHub EventHub Endpoint</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IOTHubEndpointEventHub : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1IOTHubEndpointEventHubSpec>, IStatus<V1beta1IOTHubEndpointEventHubStatus?>

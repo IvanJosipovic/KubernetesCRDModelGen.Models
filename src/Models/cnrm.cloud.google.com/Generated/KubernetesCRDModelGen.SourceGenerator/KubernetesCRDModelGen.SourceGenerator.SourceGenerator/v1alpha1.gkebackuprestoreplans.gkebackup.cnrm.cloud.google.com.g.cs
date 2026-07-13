@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.gkebackup.cnrm.cloud.google.com;
 /// <summary>GKEBackupRestorePlan is the Schema for the GKEBackupRestorePlan API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1GKEBackupRestorePlanList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1GKEBackupRestorePlan>
@@ -37,7 +37,7 @@ public partial class V1alpha1GKEBackupRestorePlanList : IKubernetesObject<V1List
 }
 
 /// <summary>Required. Immutable. A reference to the [BackupPlan][google.cloud.gkebackup.v1.BackupPlan] from which Backups may be used as the source for Restores created via this RestorePlan.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanSpecBackupPlanRef
 {
@@ -55,7 +55,7 @@ public partial class V1alpha1GKEBackupRestorePlanSpecBackupPlanRef
 }
 
 /// <summary>Required. Immutable. The target cluster into which Restores created via this RestorePlan will restore data. NOTE: the cluster&apos;s region must be the same as the RestorePlan.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanSpecClusterRef
 {
@@ -73,7 +73,7 @@ public partial class V1alpha1GKEBackupRestorePlanSpecClusterRef
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanSpecProjectRef
 {
@@ -94,7 +94,7 @@ public partial class V1alpha1GKEBackupRestorePlanSpecProjectRef
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds
 {
@@ -107,7 +107,7 @@ public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigClusterResourc
     public string? ResourceKind { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds
 {
@@ -121,7 +121,7 @@ public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigClusterResourc
 }
 
 /// <summary>Optional. Identifies the cluster-scoped resources to restore from the Backup. Not specifying it means NO cluster resource will be restored.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigClusterResourceRestoreScope
 {
@@ -143,7 +143,7 @@ public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigClusterResourc
 }
 
 /// <summary>A list of selected namespaces excluded from restoration. All namespaces except those in this list will be restored.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigExcludedNamespaces
 {
@@ -153,7 +153,7 @@ public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigExcludedNamesp
 }
 
 /// <summary>Required. The requiring group kind requires that the other group kind be restored first.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigRestoreOrderGroupKindDependenciesRequiring
 {
@@ -167,7 +167,7 @@ public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigRestoreOrderGr
 }
 
 /// <summary>Required. The satisfying group kind must be restored first in order to satisfy the dependency.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigRestoreOrderGroupKindDependenciesSatisfying
 {
@@ -180,7 +180,7 @@ public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigRestoreOrderGr
     public string? ResourceKind { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigRestoreOrderGroupKindDependencies
 {
@@ -194,7 +194,7 @@ public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigRestoreOrderGr
 }
 
 /// <summary>Optional. RestoreOrder contains custom ordering to use on a Restore.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigRestoreOrder
 {
@@ -203,7 +203,7 @@ public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigRestoreOrder
     public IList<V1alpha1GKEBackupRestorePlanSpecRestoreConfigRestoreOrderGroupKindDependencies>? GroupKindDependencies { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigSelectedApplicationsNamespacedNames
 {
@@ -217,7 +217,7 @@ public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigSelectedApplic
 }
 
 /// <summary>A list of selected ProtectedApplications to restore. The listed ProtectedApplications and all the resources to which they refer will be restored.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigSelectedApplications
 {
@@ -227,7 +227,7 @@ public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigSelectedApplic
 }
 
 /// <summary>A list of selected Namespaces to restore from the Backup. The listed Namespaces and all resources contained in them will be restored.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigSelectedNamespaces
 {
@@ -236,7 +236,7 @@ public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigSelectedNamesp
     public IList<string>? Namespaces { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigSubstitutionRulesTargetGroupKinds
 {
@@ -249,7 +249,7 @@ public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigSubstitutionRu
     public string? ResourceKind { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigSubstitutionRules
 {
@@ -274,7 +274,7 @@ public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigSubstitutionRu
     public IList<string>? TargetNamespaces { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigTransformationRulesFieldActions
 {
@@ -295,7 +295,7 @@ public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigTransformation
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigTransformationRulesResourceFilterGroupKinds
 {
@@ -309,7 +309,7 @@ public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigTransformation
 }
 
 /// <summary>Optional. This field is used to specify a set of fields that should be used to determine which resources in backup should be acted upon by the supplied transformation rule actions, and this will ensure that only specific resources are affected by transformation rule actions.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigTransformationRulesResourceFilter
 {
@@ -326,7 +326,7 @@ public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigTransformation
     public IList<string>? Namespaces { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigTransformationRules
 {
@@ -343,7 +343,7 @@ public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigTransformation
     public V1alpha1GKEBackupRestorePlanSpecRestoreConfigTransformationRulesResourceFilter? ResourceFilter { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigVolumeDataRestorePolicyBindings
 {
@@ -357,7 +357,7 @@ public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfigVolumeDataRest
 }
 
 /// <summary>Required. Configuration of Restores created via this RestorePlan.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfig
 {
@@ -415,7 +415,7 @@ public partial class V1alpha1GKEBackupRestorePlanSpecRestoreConfig
 }
 
 /// <summary>GKEBackupRestorePlanSpec defines the desired state of GKEBackupRestorePlan</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanSpec
 {
@@ -452,7 +452,7 @@ public partial class V1alpha1GKEBackupRestorePlanSpec
     public required V1alpha1GKEBackupRestorePlanSpecRestoreConfig RestoreConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanStatusConditions
 {
@@ -478,7 +478,7 @@ public partial class V1alpha1GKEBackupRestorePlanStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanStatusObservedState
 {
@@ -508,7 +508,7 @@ public partial class V1alpha1GKEBackupRestorePlanStatusObservedState
 }
 
 /// <summary>GKEBackupRestorePlanStatus defines the config connector machine state of GKEBackupRestorePlan</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1GKEBackupRestorePlanStatus
 {
@@ -530,7 +530,7 @@ public partial class V1alpha1GKEBackupRestorePlanStatus
 }
 
 /// <summary>GKEBackupRestorePlan is the Schema for the GKEBackupRestorePlan API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1GKEBackupRestorePlan : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1GKEBackupRestorePlanSpec>, IStatus<V1alpha1GKEBackupRestorePlanStatus?>

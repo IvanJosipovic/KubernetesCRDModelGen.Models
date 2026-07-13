@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
 /// <summary>VPNGatewayConnection is the Schema for the VPNGatewayConnections API. Manages a VPN Gateway Connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2VPNGatewayConnectionList : IKubernetesObject<V1ListMeta>, IItems<V1beta2VPNGatewayConnection>
@@ -45,7 +45,7 @@ public partial class V1beta2VPNGatewayConnectionList : IKubernetesObject<V1ListM
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VPNGatewayConnectionSpecDeletionPolicyEnum>))]
 public enum V1beta2VPNGatewayConnectionSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2VPNGatewayConnectionSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VPNGatewayConnectionSpecForProviderRemoteVpnSiteIdRefPolicyResolutionEnum>))]
 public enum V1beta2VPNGatewayConnectionSpecForProviderRemoteVpnSiteIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2VPNGatewayConnectionSpecForProviderRemoteVpnSiteIdRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VPNGatewayConnectionSpecForProviderRemoteVpnSiteIdRefPolicyResolveEnum>))]
 public enum V1beta2VPNGatewayConnectionSpecForProviderRemoteVpnSiteIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2VPNGatewayConnectionSpecForProviderRemoteVpnSiteIdRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecForProviderRemoteVpnSiteIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2VPNGatewayConnectionSpecForProviderRemoteVpnSiteIdRe
 }
 
 /// <summary>Reference to a VPNSite in network to populate remoteVpnSiteId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecForProviderRemoteVpnSiteIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta2VPNGatewayConnectionSpecForProviderRemoteVpnSiteIdRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VPNGatewayConnectionSpecForProviderRemoteVpnSiteIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2VPNGatewayConnectionSpecForProviderRemoteVpnSiteIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2VPNGatewayConnectionSpecForProviderRemoteVpnSiteIdSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VPNGatewayConnectionSpecForProviderRemoteVpnSiteIdSelectorPolicyResolveEnum>))]
 public enum V1beta2VPNGatewayConnectionSpecForProviderRemoteVpnSiteIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2VPNGatewayConnectionSpecForProviderRemoteVpnSiteIdSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecForProviderRemoteVpnSiteIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2VPNGatewayConnectionSpecForProviderRemoteVpnSiteIdSe
 }
 
 /// <summary>Selector for a VPNSite in network to populate remoteVpnSiteId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecForProviderRemoteVpnSiteIdSelector
 {
@@ -203,7 +203,7 @@ public partial class V1beta2VPNGatewayConnectionSpecForProviderRemoteVpnSiteIdSe
 }
 
 /// <summary>A propagated_route_table block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecForProviderRoutingPropagatedRouteTable
 {
@@ -217,7 +217,7 @@ public partial class V1beta2VPNGatewayConnectionSpecForProviderRoutingPropagated
 }
 
 /// <summary>A routing block as defined below. If this is not specified, there will be a default route table created implicitly.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecForProviderRouting
 {
@@ -238,7 +238,7 @@ public partial class V1beta2VPNGatewayConnectionSpecForProviderRouting
     public V1beta2VPNGatewayConnectionSpecForProviderRoutingPropagatedRouteTable? PropagatedRouteTable { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecForProviderTrafficSelectorPolicy
 {
@@ -257,7 +257,7 @@ public partial class V1beta2VPNGatewayConnectionSpecForProviderTrafficSelectorPo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VPNGatewayConnectionSpecForProviderVpnGatewayIdRefPolicyResolutionEnum>))]
 public enum V1beta2VPNGatewayConnectionSpecForProviderVpnGatewayIdRefPolicyResolutionEnum
 {
@@ -273,7 +273,7 @@ public enum V1beta2VPNGatewayConnectionSpecForProviderVpnGatewayIdRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VPNGatewayConnectionSpecForProviderVpnGatewayIdRefPolicyResolveEnum>))]
 public enum V1beta2VPNGatewayConnectionSpecForProviderVpnGatewayIdRefPolicyResolveEnum
 {
@@ -284,7 +284,7 @@ public enum V1beta2VPNGatewayConnectionSpecForProviderVpnGatewayIdRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecForProviderVpnGatewayIdRefPolicy
 {
@@ -308,7 +308,7 @@ public partial class V1beta2VPNGatewayConnectionSpecForProviderVpnGatewayIdRefPo
 }
 
 /// <summary>Reference to a VPNGateway in network to populate vpnGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecForProviderVpnGatewayIdRef
 {
@@ -327,7 +327,7 @@ public partial class V1beta2VPNGatewayConnectionSpecForProviderVpnGatewayIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VPNGatewayConnectionSpecForProviderVpnGatewayIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2VPNGatewayConnectionSpecForProviderVpnGatewayIdSelectorPolicyResolutionEnum
 {
@@ -343,7 +343,7 @@ public enum V1beta2VPNGatewayConnectionSpecForProviderVpnGatewayIdSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VPNGatewayConnectionSpecForProviderVpnGatewayIdSelectorPolicyResolveEnum>))]
 public enum V1beta2VPNGatewayConnectionSpecForProviderVpnGatewayIdSelectorPolicyResolveEnum
 {
@@ -354,7 +354,7 @@ public enum V1beta2VPNGatewayConnectionSpecForProviderVpnGatewayIdSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecForProviderVpnGatewayIdSelectorPolicy
 {
@@ -378,7 +378,7 @@ public partial class V1beta2VPNGatewayConnectionSpecForProviderVpnGatewayIdSelec
 }
 
 /// <summary>Selector for a VPNGateway in network to populate vpnGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecForProviderVpnGatewayIdSelector
 {
@@ -398,7 +398,7 @@ public partial class V1beta2VPNGatewayConnectionSpecForProviderVpnGatewayIdSelec
     public V1beta2VPNGatewayConnectionSpecForProviderVpnGatewayIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecForProviderVpnLinkCustomBgpAddress
 {
@@ -411,7 +411,7 @@ public partial class V1beta2VPNGatewayConnectionSpecForProviderVpnLinkCustomBgpA
     public string? IpConfigurationId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecForProviderVpnLinkIpsecPolicy
 {
@@ -448,7 +448,7 @@ public partial class V1beta2VPNGatewayConnectionSpecForProviderVpnLinkIpsecPolic
     public double? SaLifetimeSec { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecForProviderVpnLink
 {
@@ -517,7 +517,7 @@ public partial class V1beta2VPNGatewayConnectionSpecForProviderVpnLink
     public string? VpnSiteLinkId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecForProvider
 {
@@ -568,7 +568,7 @@ public partial class V1beta2VPNGatewayConnectionSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VPNGatewayConnectionSpecInitProviderRemoteVpnSiteIdRefPolicyResolutionEnum>))]
 public enum V1beta2VPNGatewayConnectionSpecInitProviderRemoteVpnSiteIdRefPolicyResolutionEnum
 {
@@ -584,7 +584,7 @@ public enum V1beta2VPNGatewayConnectionSpecInitProviderRemoteVpnSiteIdRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VPNGatewayConnectionSpecInitProviderRemoteVpnSiteIdRefPolicyResolveEnum>))]
 public enum V1beta2VPNGatewayConnectionSpecInitProviderRemoteVpnSiteIdRefPolicyResolveEnum
 {
@@ -595,7 +595,7 @@ public enum V1beta2VPNGatewayConnectionSpecInitProviderRemoteVpnSiteIdRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecInitProviderRemoteVpnSiteIdRefPolicy
 {
@@ -619,7 +619,7 @@ public partial class V1beta2VPNGatewayConnectionSpecInitProviderRemoteVpnSiteIdR
 }
 
 /// <summary>Reference to a VPNSite in network to populate remoteVpnSiteId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecInitProviderRemoteVpnSiteIdRef
 {
@@ -638,7 +638,7 @@ public partial class V1beta2VPNGatewayConnectionSpecInitProviderRemoteVpnSiteIdR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VPNGatewayConnectionSpecInitProviderRemoteVpnSiteIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2VPNGatewayConnectionSpecInitProviderRemoteVpnSiteIdSelectorPolicyResolutionEnum
 {
@@ -654,7 +654,7 @@ public enum V1beta2VPNGatewayConnectionSpecInitProviderRemoteVpnSiteIdSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VPNGatewayConnectionSpecInitProviderRemoteVpnSiteIdSelectorPolicyResolveEnum>))]
 public enum V1beta2VPNGatewayConnectionSpecInitProviderRemoteVpnSiteIdSelectorPolicyResolveEnum
 {
@@ -665,7 +665,7 @@ public enum V1beta2VPNGatewayConnectionSpecInitProviderRemoteVpnSiteIdSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecInitProviderRemoteVpnSiteIdSelectorPolicy
 {
@@ -689,7 +689,7 @@ public partial class V1beta2VPNGatewayConnectionSpecInitProviderRemoteVpnSiteIdS
 }
 
 /// <summary>Selector for a VPNSite in network to populate remoteVpnSiteId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecInitProviderRemoteVpnSiteIdSelector
 {
@@ -710,7 +710,7 @@ public partial class V1beta2VPNGatewayConnectionSpecInitProviderRemoteVpnSiteIdS
 }
 
 /// <summary>A propagated_route_table block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecInitProviderRoutingPropagatedRouteTable
 {
@@ -724,7 +724,7 @@ public partial class V1beta2VPNGatewayConnectionSpecInitProviderRoutingPropagate
 }
 
 /// <summary>A routing block as defined below. If this is not specified, there will be a default route table created implicitly.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecInitProviderRouting
 {
@@ -745,7 +745,7 @@ public partial class V1beta2VPNGatewayConnectionSpecInitProviderRouting
     public V1beta2VPNGatewayConnectionSpecInitProviderRoutingPropagatedRouteTable? PropagatedRouteTable { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecInitProviderTrafficSelectorPolicy
 {
@@ -758,7 +758,7 @@ public partial class V1beta2VPNGatewayConnectionSpecInitProviderTrafficSelectorP
     public IList<string>? RemoteAddressRanges { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecInitProviderVpnLinkCustomBgpAddress
 {
@@ -771,7 +771,7 @@ public partial class V1beta2VPNGatewayConnectionSpecInitProviderVpnLinkCustomBgp
     public string? IpConfigurationId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecInitProviderVpnLinkIpsecPolicy
 {
@@ -808,7 +808,7 @@ public partial class V1beta2VPNGatewayConnectionSpecInitProviderVpnLinkIpsecPoli
     public double? SaLifetimeSec { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecInitProviderVpnLink
 {
@@ -889,7 +889,7 @@ public partial class V1beta2VPNGatewayConnectionSpecInitProviderVpnLink
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecInitProvider
 {
@@ -926,7 +926,7 @@ public partial class V1beta2VPNGatewayConnectionSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VPNGatewayConnectionSpecManagementPoliciesEnum>))]
 public enum V1beta2VPNGatewayConnectionSpecManagementPoliciesEnum
 {
@@ -950,7 +950,7 @@ public enum V1beta2VPNGatewayConnectionSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VPNGatewayConnectionSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2VPNGatewayConnectionSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -966,7 +966,7 @@ public enum V1beta2VPNGatewayConnectionSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VPNGatewayConnectionSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2VPNGatewayConnectionSpecProviderConfigRefPolicyResolveEnum
 {
@@ -977,7 +977,7 @@ public enum V1beta2VPNGatewayConnectionSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecProviderConfigRefPolicy
 {
@@ -1005,7 +1005,7 @@ public partial class V1beta2VPNGatewayConnectionSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecProviderConfigRef
 {
@@ -1024,7 +1024,7 @@ public partial class V1beta2VPNGatewayConnectionSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpecWriteConnectionSecretToRef
 {
@@ -1038,7 +1038,7 @@ public partial class V1beta2VPNGatewayConnectionSpecWriteConnectionSecretToRef
 }
 
 /// <summary>VPNGatewayConnectionSpec defines the desired state of VPNGatewayConnection</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionSpec
 {
@@ -1106,7 +1106,7 @@ public partial class V1beta2VPNGatewayConnectionSpec
 }
 
 /// <summary>A propagated_route_table block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionStatusAtProviderRoutingPropagatedRouteTable
 {
@@ -1120,7 +1120,7 @@ public partial class V1beta2VPNGatewayConnectionStatusAtProviderRoutingPropagate
 }
 
 /// <summary>A routing block as defined below. If this is not specified, there will be a default route table created implicitly.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionStatusAtProviderRouting
 {
@@ -1141,7 +1141,7 @@ public partial class V1beta2VPNGatewayConnectionStatusAtProviderRouting
     public V1beta2VPNGatewayConnectionStatusAtProviderRoutingPropagatedRouteTable? PropagatedRouteTable { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionStatusAtProviderTrafficSelectorPolicy
 {
@@ -1154,7 +1154,7 @@ public partial class V1beta2VPNGatewayConnectionStatusAtProviderTrafficSelectorP
     public IList<string>? RemoteAddressRanges { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionStatusAtProviderVpnLinkCustomBgpAddress
 {
@@ -1167,7 +1167,7 @@ public partial class V1beta2VPNGatewayConnectionStatusAtProviderVpnLinkCustomBgp
     public string? IpConfigurationId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionStatusAtProviderVpnLinkIpsecPolicy
 {
@@ -1204,7 +1204,7 @@ public partial class V1beta2VPNGatewayConnectionStatusAtProviderVpnLinkIpsecPoli
     public double? SaLifetimeSec { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionStatusAtProviderVpnLink
 {
@@ -1273,7 +1273,7 @@ public partial class V1beta2VPNGatewayConnectionStatusAtProviderVpnLink
     public string? VpnSiteLinkId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionStatusAtProvider
 {
@@ -1307,7 +1307,7 @@ public partial class V1beta2VPNGatewayConnectionStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionStatusConditions
 {
@@ -1350,7 +1350,7 @@ public partial class V1beta2VPNGatewayConnectionStatusConditions
 }
 
 /// <summary>VPNGatewayConnectionStatus defines the observed state of VPNGatewayConnection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNGatewayConnectionStatus
 {
@@ -1371,7 +1371,7 @@ public partial class V1beta2VPNGatewayConnectionStatus
 }
 
 /// <summary>VPNGatewayConnection is the Schema for the VPNGatewayConnections API. Manages a VPN Gateway Connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2VPNGatewayConnection : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2VPNGatewayConnectionSpec>, IStatus<V1beta2VPNGatewayConnectionStatus?>

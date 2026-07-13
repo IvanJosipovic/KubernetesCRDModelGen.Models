@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.batch.aws.upbound.io;
 /// <summary>JobDefinition is the Schema for the JobDefinitions API. Provides a Batch Job Definition resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2JobDefinitionList : IKubernetesObject<V1ListMeta>, IItems<V1beta2JobDefinition>
@@ -45,7 +45,7 @@ public partial class V1beta2JobDefinitionList : IKubernetesObject<V1ListMeta>, I
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2JobDefinitionSpecDeletionPolicyEnum>))]
 public enum V1beta2JobDefinitionSpecDeletionPolicyEnum
 {
@@ -55,7 +55,7 @@ public enum V1beta2JobDefinitionSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodPropertiesContainersEnv
 {
@@ -69,7 +69,7 @@ public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodProperti
 }
 
 /// <summary>Type and amount of resources to assign to a container. The supported resources include memory, cpu, and nvidia.com/gpu.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodPropertiesContainersResources
 {
@@ -81,7 +81,7 @@ public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodProperti
 }
 
 /// <summary>Security context for a job. See security_context below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodPropertiesContainersSecurityContext
 {
@@ -109,7 +109,7 @@ public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodProperti
     public double? RunAsUser { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodPropertiesContainersVolumeMounts
 {
@@ -125,7 +125,7 @@ public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodProperti
     public bool? ReadOnly { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodPropertiesContainers
 {
@@ -166,7 +166,7 @@ public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodProperti
     public IList<V1beta2JobDefinitionSpecForProviderEksPropertiesPodPropertiesContainersVolumeMounts>? VolumeMounts { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodPropertiesImagePullSecret
 {
@@ -175,7 +175,7 @@ public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodProperti
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodPropertiesInitContainersEnv
 {
@@ -189,7 +189,7 @@ public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodProperti
 }
 
 /// <summary>Type and amount of resources to assign to a container. The supported resources include memory, cpu, and nvidia.com/gpu.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodPropertiesInitContainersResources
 {
@@ -201,7 +201,7 @@ public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodProperti
 }
 
 /// <summary>Security context for a job. See security_context below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodPropertiesInitContainersSecurityContext
 {
@@ -229,7 +229,7 @@ public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodProperti
     public double? RunAsUser { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodPropertiesInitContainersVolumeMounts
 {
@@ -245,7 +245,7 @@ public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodProperti
     public bool? ReadOnly { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodPropertiesInitContainers
 {
@@ -287,7 +287,7 @@ public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodProperti
 }
 
 /// <summary>Metadata about the Kubernetes pod.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodPropertiesMetadata
 {
@@ -296,7 +296,7 @@ public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodProperti
     public IDictionary<string, string>? Labels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodPropertiesVolumesEmptyDir
 {
@@ -310,7 +310,7 @@ public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodProperti
 }
 
 /// <summary>Path of the file or directory on the host to mount into containers on the pod.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodPropertiesVolumesHostPath
 {
@@ -319,7 +319,7 @@ public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodProperti
     public string? Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodPropertiesVolumesSecret
 {
@@ -332,7 +332,7 @@ public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodProperti
     public string? SecretName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodPropertiesVolumes
 {
@@ -352,7 +352,7 @@ public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodProperti
 }
 
 /// <summary>Properties for the Kubernetes pod resources of a job. See pod_properties below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodProperties
 {
@@ -394,7 +394,7 @@ public partial class V1beta2JobDefinitionSpecForProviderEksPropertiesPodProperti
 }
 
 /// <summary>Valid eks properties. This parameter is only valid if the type parameter is container.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecForProviderEksProperties
 {
@@ -403,7 +403,7 @@ public partial class V1beta2JobDefinitionSpecForProviderEksProperties
     public V1beta2JobDefinitionSpecForProviderEksPropertiesPodProperties? PodProperties { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecForProviderRetryStrategyEvaluateOnExit
 {
@@ -425,7 +425,7 @@ public partial class V1beta2JobDefinitionSpecForProviderRetryStrategyEvaluateOnE
 }
 
 /// <summary>Retry strategy to use for failed jobs that are submitted with this job definition. Maximum number of retry_strategy is 1.  Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecForProviderRetryStrategy
 {
@@ -439,7 +439,7 @@ public partial class V1beta2JobDefinitionSpecForProviderRetryStrategy
 }
 
 /// <summary>Timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of timeout is 1. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecForProviderTimeout
 {
@@ -448,7 +448,7 @@ public partial class V1beta2JobDefinitionSpecForProviderTimeout
     public double? AttemptDurationSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecForProvider
 {
@@ -516,7 +516,7 @@ public partial class V1beta2JobDefinitionSpecForProvider
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropertiesContainersEnv
 {
@@ -530,7 +530,7 @@ public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropert
 }
 
 /// <summary>Type and amount of resources to assign to a container. The supported resources include memory, cpu, and nvidia.com/gpu.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropertiesContainersResources
 {
@@ -542,7 +542,7 @@ public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropert
 }
 
 /// <summary>Security context for a job. See security_context below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropertiesContainersSecurityContext
 {
@@ -570,7 +570,7 @@ public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropert
     public double? RunAsUser { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropertiesContainersVolumeMounts
 {
@@ -586,7 +586,7 @@ public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropert
     public bool? ReadOnly { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropertiesContainers
 {
@@ -627,7 +627,7 @@ public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropert
     public IList<V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropertiesContainersVolumeMounts>? VolumeMounts { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropertiesImagePullSecret
 {
@@ -636,7 +636,7 @@ public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropert
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropertiesInitContainersEnv
 {
@@ -650,7 +650,7 @@ public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropert
 }
 
 /// <summary>Type and amount of resources to assign to a container. The supported resources include memory, cpu, and nvidia.com/gpu.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropertiesInitContainersResources
 {
@@ -662,7 +662,7 @@ public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropert
 }
 
 /// <summary>Security context for a job. See security_context below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropertiesInitContainersSecurityContext
 {
@@ -690,7 +690,7 @@ public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropert
     public double? RunAsUser { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropertiesInitContainersVolumeMounts
 {
@@ -706,7 +706,7 @@ public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropert
     public bool? ReadOnly { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropertiesInitContainers
 {
@@ -748,7 +748,7 @@ public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropert
 }
 
 /// <summary>Metadata about the Kubernetes pod.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropertiesMetadata
 {
@@ -757,7 +757,7 @@ public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropert
     public IDictionary<string, string>? Labels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropertiesVolumesEmptyDir
 {
@@ -771,7 +771,7 @@ public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropert
 }
 
 /// <summary>Path of the file or directory on the host to mount into containers on the pod.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropertiesVolumesHostPath
 {
@@ -780,7 +780,7 @@ public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropert
     public string? Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropertiesVolumesSecret
 {
@@ -793,7 +793,7 @@ public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropert
     public string? SecretName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropertiesVolumes
 {
@@ -813,7 +813,7 @@ public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropert
 }
 
 /// <summary>Properties for the Kubernetes pod resources of a job. See pod_properties below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodProperties
 {
@@ -855,7 +855,7 @@ public partial class V1beta2JobDefinitionSpecInitProviderEksPropertiesPodPropert
 }
 
 /// <summary>Valid eks properties. This parameter is only valid if the type parameter is container.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecInitProviderEksProperties
 {
@@ -864,7 +864,7 @@ public partial class V1beta2JobDefinitionSpecInitProviderEksProperties
     public V1beta2JobDefinitionSpecInitProviderEksPropertiesPodProperties? PodProperties { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecInitProviderRetryStrategyEvaluateOnExit
 {
@@ -886,7 +886,7 @@ public partial class V1beta2JobDefinitionSpecInitProviderRetryStrategyEvaluateOn
 }
 
 /// <summary>Retry strategy to use for failed jobs that are submitted with this job definition. Maximum number of retry_strategy is 1.  Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecInitProviderRetryStrategy
 {
@@ -900,7 +900,7 @@ public partial class V1beta2JobDefinitionSpecInitProviderRetryStrategy
 }
 
 /// <summary>Timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of timeout is 1. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecInitProviderTimeout
 {
@@ -921,7 +921,7 @@ public partial class V1beta2JobDefinitionSpecInitProviderTimeout
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecInitProvider
 {
@@ -986,7 +986,7 @@ public partial class V1beta2JobDefinitionSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2JobDefinitionSpecManagementPoliciesEnum>))]
 public enum V1beta2JobDefinitionSpecManagementPoliciesEnum
 {
@@ -1010,7 +1010,7 @@ public enum V1beta2JobDefinitionSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2JobDefinitionSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2JobDefinitionSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1026,7 +1026,7 @@ public enum V1beta2JobDefinitionSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2JobDefinitionSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2JobDefinitionSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1037,7 +1037,7 @@ public enum V1beta2JobDefinitionSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecProviderConfigRefPolicy
 {
@@ -1065,7 +1065,7 @@ public partial class V1beta2JobDefinitionSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecProviderConfigRef
 {
@@ -1084,7 +1084,7 @@ public partial class V1beta2JobDefinitionSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpecWriteConnectionSecretToRef
 {
@@ -1098,7 +1098,7 @@ public partial class V1beta2JobDefinitionSpecWriteConnectionSecretToRef
 }
 
 /// <summary>JobDefinitionSpec defines the desired state of JobDefinition</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionSpec
 {
@@ -1165,7 +1165,7 @@ public partial class V1beta2JobDefinitionSpec
     public V1beta2JobDefinitionSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropertiesContainersEnv
 {
@@ -1179,7 +1179,7 @@ public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropert
 }
 
 /// <summary>Type and amount of resources to assign to a container. The supported resources include memory, cpu, and nvidia.com/gpu.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropertiesContainersResources
 {
@@ -1191,7 +1191,7 @@ public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropert
 }
 
 /// <summary>Security context for a job. See security_context below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropertiesContainersSecurityContext
 {
@@ -1219,7 +1219,7 @@ public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropert
     public double? RunAsUser { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropertiesContainersVolumeMounts
 {
@@ -1235,7 +1235,7 @@ public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropert
     public bool? ReadOnly { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropertiesContainers
 {
@@ -1276,7 +1276,7 @@ public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropert
     public IList<V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropertiesContainersVolumeMounts>? VolumeMounts { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropertiesImagePullSecret
 {
@@ -1285,7 +1285,7 @@ public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropert
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropertiesInitContainersEnv
 {
@@ -1299,7 +1299,7 @@ public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropert
 }
 
 /// <summary>Type and amount of resources to assign to a container. The supported resources include memory, cpu, and nvidia.com/gpu.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropertiesInitContainersResources
 {
@@ -1311,7 +1311,7 @@ public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropert
 }
 
 /// <summary>Security context for a job. See security_context below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropertiesInitContainersSecurityContext
 {
@@ -1339,7 +1339,7 @@ public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropert
     public double? RunAsUser { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropertiesInitContainersVolumeMounts
 {
@@ -1355,7 +1355,7 @@ public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropert
     public bool? ReadOnly { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropertiesInitContainers
 {
@@ -1397,7 +1397,7 @@ public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropert
 }
 
 /// <summary>Metadata about the Kubernetes pod.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropertiesMetadata
 {
@@ -1406,7 +1406,7 @@ public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropert
     public IDictionary<string, string>? Labels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropertiesVolumesEmptyDir
 {
@@ -1420,7 +1420,7 @@ public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropert
 }
 
 /// <summary>Path of the file or directory on the host to mount into containers on the pod.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropertiesVolumesHostPath
 {
@@ -1429,7 +1429,7 @@ public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropert
     public string? Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropertiesVolumesSecret
 {
@@ -1442,7 +1442,7 @@ public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropert
     public string? SecretName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropertiesVolumes
 {
@@ -1462,7 +1462,7 @@ public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropert
 }
 
 /// <summary>Properties for the Kubernetes pod resources of a job. See pod_properties below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodProperties
 {
@@ -1504,7 +1504,7 @@ public partial class V1beta2JobDefinitionStatusAtProviderEksPropertiesPodPropert
 }
 
 /// <summary>Valid eks properties. This parameter is only valid if the type parameter is container.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionStatusAtProviderEksProperties
 {
@@ -1513,7 +1513,7 @@ public partial class V1beta2JobDefinitionStatusAtProviderEksProperties
     public V1beta2JobDefinitionStatusAtProviderEksPropertiesPodProperties? PodProperties { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionStatusAtProviderRetryStrategyEvaluateOnExit
 {
@@ -1535,7 +1535,7 @@ public partial class V1beta2JobDefinitionStatusAtProviderRetryStrategyEvaluateOn
 }
 
 /// <summary>Retry strategy to use for failed jobs that are submitted with this job definition. Maximum number of retry_strategy is 1.  Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionStatusAtProviderRetryStrategy
 {
@@ -1549,7 +1549,7 @@ public partial class V1beta2JobDefinitionStatusAtProviderRetryStrategy
 }
 
 /// <summary>Timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of timeout is 1. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionStatusAtProviderTimeout
 {
@@ -1558,7 +1558,7 @@ public partial class V1beta2JobDefinitionStatusAtProviderTimeout
     public double? AttemptDurationSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionStatusAtProvider
 {
@@ -1646,7 +1646,7 @@ public partial class V1beta2JobDefinitionStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionStatusConditions
 {
@@ -1689,7 +1689,7 @@ public partial class V1beta2JobDefinitionStatusConditions
 }
 
 /// <summary>JobDefinitionStatus defines the observed state of JobDefinition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobDefinitionStatus
 {
@@ -1710,7 +1710,7 @@ public partial class V1beta2JobDefinitionStatus
 }
 
 /// <summary>JobDefinition is the Schema for the JobDefinitions API. Provides a Batch Job Definition resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2JobDefinition : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2JobDefinitionSpec>, IStatus<V1beta2JobDefinitionStatus?>

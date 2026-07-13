@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.waf.aws.upbound.io;
 /// <summary>SQLInjectionMatchSet is the Schema for the SQLInjectionMatchSets API. Provides a AWS WAF SQL Injection Match Set resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2SQLInjectionMatchSetList : IKubernetesObject<V1ListMeta>, IItems<V1beta2SQLInjectionMatchSet>
@@ -45,7 +45,7 @@ public partial class V1beta2SQLInjectionMatchSetList : IKubernetesObject<V1ListM
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SQLInjectionMatchSetSpecDeletionPolicyEnum>))]
 public enum V1beta2SQLInjectionMatchSetSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2SQLInjectionMatchSetSpecDeletionPolicyEnum
 }
 
 /// <summary>Specifies where in a web request to look for snippets of malicious SQL code.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SQLInjectionMatchSetSpecForProviderSqlInjectionMatchTuplesFieldToMatch
 {
@@ -77,7 +77,7 @@ public partial class V1beta2SQLInjectionMatchSetSpecForProviderSqlInjectionMatch
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SQLInjectionMatchSetSpecForProviderSqlInjectionMatchTuples
 {
@@ -96,7 +96,7 @@ public partial class V1beta2SQLInjectionMatchSetSpecForProviderSqlInjectionMatch
     public string? TextTransformation { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SQLInjectionMatchSetSpecForProvider
 {
@@ -110,7 +110,7 @@ public partial class V1beta2SQLInjectionMatchSetSpecForProvider
 }
 
 /// <summary>Specifies where in a web request to look for snippets of malicious SQL code.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SQLInjectionMatchSetSpecInitProviderSqlInjectionMatchTuplesFieldToMatch
 {
@@ -131,7 +131,7 @@ public partial class V1beta2SQLInjectionMatchSetSpecInitProviderSqlInjectionMatc
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SQLInjectionMatchSetSpecInitProviderSqlInjectionMatchTuples
 {
@@ -162,7 +162,7 @@ public partial class V1beta2SQLInjectionMatchSetSpecInitProviderSqlInjectionMatc
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SQLInjectionMatchSetSpecInitProvider
 {
@@ -179,7 +179,7 @@ public partial class V1beta2SQLInjectionMatchSetSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SQLInjectionMatchSetSpecManagementPoliciesEnum>))]
 public enum V1beta2SQLInjectionMatchSetSpecManagementPoliciesEnum
 {
@@ -203,7 +203,7 @@ public enum V1beta2SQLInjectionMatchSetSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SQLInjectionMatchSetSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2SQLInjectionMatchSetSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -219,7 +219,7 @@ public enum V1beta2SQLInjectionMatchSetSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SQLInjectionMatchSetSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2SQLInjectionMatchSetSpecProviderConfigRefPolicyResolveEnum
 {
@@ -230,7 +230,7 @@ public enum V1beta2SQLInjectionMatchSetSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SQLInjectionMatchSetSpecProviderConfigRefPolicy
 {
@@ -258,7 +258,7 @@ public partial class V1beta2SQLInjectionMatchSetSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SQLInjectionMatchSetSpecProviderConfigRef
 {
@@ -277,7 +277,7 @@ public partial class V1beta2SQLInjectionMatchSetSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SQLInjectionMatchSetSpecWriteConnectionSecretToRef
 {
@@ -291,7 +291,7 @@ public partial class V1beta2SQLInjectionMatchSetSpecWriteConnectionSecretToRef
 }
 
 /// <summary>SQLInjectionMatchSetSpec defines the desired state of SQLInjectionMatchSet</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SQLInjectionMatchSetSpec
 {
@@ -359,7 +359,7 @@ public partial class V1beta2SQLInjectionMatchSetSpec
 }
 
 /// <summary>Specifies where in a web request to look for snippets of malicious SQL code.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SQLInjectionMatchSetStatusAtProviderSqlInjectionMatchTuplesFieldToMatch
 {
@@ -380,7 +380,7 @@ public partial class V1beta2SQLInjectionMatchSetStatusAtProviderSqlInjectionMatc
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SQLInjectionMatchSetStatusAtProviderSqlInjectionMatchTuples
 {
@@ -399,7 +399,7 @@ public partial class V1beta2SQLInjectionMatchSetStatusAtProviderSqlInjectionMatc
     public string? TextTransformation { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SQLInjectionMatchSetStatusAtProvider
 {
@@ -421,7 +421,7 @@ public partial class V1beta2SQLInjectionMatchSetStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SQLInjectionMatchSetStatusConditions
 {
@@ -464,7 +464,7 @@ public partial class V1beta2SQLInjectionMatchSetStatusConditions
 }
 
 /// <summary>SQLInjectionMatchSetStatus defines the observed state of SQLInjectionMatchSet.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SQLInjectionMatchSetStatus
 {
@@ -485,7 +485,7 @@ public partial class V1beta2SQLInjectionMatchSetStatus
 }
 
 /// <summary>SQLInjectionMatchSet is the Schema for the SQLInjectionMatchSets API. Provides a AWS WAF SQL Injection Match Set resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2SQLInjectionMatchSet : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2SQLInjectionMatchSetSpec>, IStatus<V1beta2SQLInjectionMatchSetStatus?>

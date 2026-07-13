@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.mosaic.databricks.m.crossplane.io;
 /// <summary>VectorSearchIndex is the Schema for the VectorSearchIndexs API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VectorSearchIndexList : IKubernetesObject<V1ListMeta>, IItems<V1beta1VectorSearchIndex>
@@ -42,7 +42,7 @@ public partial class V1beta1VectorSearchIndexList : IKubernetesObject<V1ListMeta
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameRefPolicyResolutionEnum>))]
 public enum V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEmbeddingSo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameRefPolicyResolveEnum>))]
 public enum V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEmbeddingSo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEm
 }
 
 /// <summary>Reference to a ModelServing in serving to populate embeddingModelEndpointName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEm
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEmbeddingSo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameSelectorPolicyResolveEnum>))]
 public enum V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEmbeddingSo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEm
 }
 
 /// <summary>Selector for a ModelServing in serving to populate embeddingModelEndpointName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameSelector
 {
@@ -191,7 +191,7 @@ public partial class V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEm
     public V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEmbeddingSourceColumns
 {
@@ -216,7 +216,7 @@ public partial class V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEm
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEmbeddingVectorColumns
 {
@@ -230,7 +230,7 @@ public partial class V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEm
 }
 
 /// <summary>(object) Specification for Delta Sync Index. Required if index_type is DELTA_SYNC. This field is a block and is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpec
 {
@@ -255,7 +255,7 @@ public partial class V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpec
     public string? SourceTable { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecForProviderDirectAccessIndexSpecEmbeddingSourceColumns
 {
@@ -272,7 +272,7 @@ public partial class V1beta1VectorSearchIndexSpecForProviderDirectAccessIndexSpe
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecForProviderDirectAccessIndexSpecEmbeddingVectorColumns
 {
@@ -286,7 +286,7 @@ public partial class V1beta1VectorSearchIndexSpecForProviderDirectAccessIndexSpe
 }
 
 /// <summary>(object) Specification for Direct Vector Access Index. Required if index_type is DIRECT_ACCESS. This field is a block and is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecForProviderDirectAccessIndexSpec
 {
@@ -309,7 +309,7 @@ public partial class V1beta1VectorSearchIndexSpecForProviderDirectAccessIndexSpe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VectorSearchIndexSpecForProviderEndpointNameRefPolicyResolutionEnum>))]
 public enum V1beta1VectorSearchIndexSpecForProviderEndpointNameRefPolicyResolutionEnum
 {
@@ -325,7 +325,7 @@ public enum V1beta1VectorSearchIndexSpecForProviderEndpointNameRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VectorSearchIndexSpecForProviderEndpointNameRefPolicyResolveEnum>))]
 public enum V1beta1VectorSearchIndexSpecForProviderEndpointNameRefPolicyResolveEnum
 {
@@ -336,7 +336,7 @@ public enum V1beta1VectorSearchIndexSpecForProviderEndpointNameRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecForProviderEndpointNameRefPolicy
 {
@@ -360,7 +360,7 @@ public partial class V1beta1VectorSearchIndexSpecForProviderEndpointNameRefPolic
 }
 
 /// <summary>Reference to a VectorSearchEndpoint in mosaic to populate endpointName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecForProviderEndpointNameRef
 {
@@ -383,7 +383,7 @@ public partial class V1beta1VectorSearchIndexSpecForProviderEndpointNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VectorSearchIndexSpecForProviderEndpointNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1VectorSearchIndexSpecForProviderEndpointNameSelectorPolicyResolutionEnum
 {
@@ -399,7 +399,7 @@ public enum V1beta1VectorSearchIndexSpecForProviderEndpointNameSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VectorSearchIndexSpecForProviderEndpointNameSelectorPolicyResolveEnum>))]
 public enum V1beta1VectorSearchIndexSpecForProviderEndpointNameSelectorPolicyResolveEnum
 {
@@ -410,7 +410,7 @@ public enum V1beta1VectorSearchIndexSpecForProviderEndpointNameSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecForProviderEndpointNameSelectorPolicy
 {
@@ -434,7 +434,7 @@ public partial class V1beta1VectorSearchIndexSpecForProviderEndpointNameSelector
 }
 
 /// <summary>Selector for a VectorSearchEndpoint in mosaic to populate endpointName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecForProviderEndpointNameSelector
 {
@@ -459,7 +459,7 @@ public partial class V1beta1VectorSearchIndexSpecForProviderEndpointNameSelector
 }
 
 /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecForProviderProviderConfig
 {
@@ -468,7 +468,7 @@ public partial class V1beta1VectorSearchIndexSpecForProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecForProvider
 {
@@ -515,7 +515,7 @@ public partial class V1beta1VectorSearchIndexSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameRefPolicyResolutionEnum>))]
 public enum V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameRefPolicyResolutionEnum
 {
@@ -531,7 +531,7 @@ public enum V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecEmbeddingS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameRefPolicyResolveEnum>))]
 public enum V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameRefPolicyResolveEnum
 {
@@ -542,7 +542,7 @@ public enum V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecEmbeddingS
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameRefPolicy
 {
@@ -566,7 +566,7 @@ public partial class V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecE
 }
 
 /// <summary>Reference to a ModelServing in serving to populate embeddingModelEndpointName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameRef
 {
@@ -589,7 +589,7 @@ public partial class V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecE
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameSelectorPolicyResolutionEnum
 {
@@ -605,7 +605,7 @@ public enum V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecEmbeddingS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameSelectorPolicyResolveEnum>))]
 public enum V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameSelectorPolicyResolveEnum
 {
@@ -616,7 +616,7 @@ public enum V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecEmbeddingS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameSelectorPolicy
 {
@@ -640,7 +640,7 @@ public partial class V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecE
 }
 
 /// <summary>Selector for a ModelServing in serving to populate embeddingModelEndpointName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameSelector
 {
@@ -664,7 +664,7 @@ public partial class V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecE
     public V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecEmbeddingSourceColumnsEmbeddingModelEndpointNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecEmbeddingSourceColumns
 {
@@ -689,7 +689,7 @@ public partial class V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecE
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecEmbeddingVectorColumns
 {
@@ -703,7 +703,7 @@ public partial class V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecE
 }
 
 /// <summary>(object) Specification for Delta Sync Index. Required if index_type is DELTA_SYNC. This field is a block and is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpec
 {
@@ -728,7 +728,7 @@ public partial class V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpec
     public string? SourceTable { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecInitProviderDirectAccessIndexSpecEmbeddingSourceColumns
 {
@@ -745,7 +745,7 @@ public partial class V1beta1VectorSearchIndexSpecInitProviderDirectAccessIndexSp
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecInitProviderDirectAccessIndexSpecEmbeddingVectorColumns
 {
@@ -759,7 +759,7 @@ public partial class V1beta1VectorSearchIndexSpecInitProviderDirectAccessIndexSp
 }
 
 /// <summary>(object) Specification for Direct Vector Access Index. Required if index_type is DIRECT_ACCESS. This field is a block and is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecInitProviderDirectAccessIndexSpec
 {
@@ -782,7 +782,7 @@ public partial class V1beta1VectorSearchIndexSpecInitProviderDirectAccessIndexSp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VectorSearchIndexSpecInitProviderEndpointNameRefPolicyResolutionEnum>))]
 public enum V1beta1VectorSearchIndexSpecInitProviderEndpointNameRefPolicyResolutionEnum
 {
@@ -798,7 +798,7 @@ public enum V1beta1VectorSearchIndexSpecInitProviderEndpointNameRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VectorSearchIndexSpecInitProviderEndpointNameRefPolicyResolveEnum>))]
 public enum V1beta1VectorSearchIndexSpecInitProviderEndpointNameRefPolicyResolveEnum
 {
@@ -809,7 +809,7 @@ public enum V1beta1VectorSearchIndexSpecInitProviderEndpointNameRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecInitProviderEndpointNameRefPolicy
 {
@@ -833,7 +833,7 @@ public partial class V1beta1VectorSearchIndexSpecInitProviderEndpointNameRefPoli
 }
 
 /// <summary>Reference to a VectorSearchEndpoint in mosaic to populate endpointName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecInitProviderEndpointNameRef
 {
@@ -856,7 +856,7 @@ public partial class V1beta1VectorSearchIndexSpecInitProviderEndpointNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VectorSearchIndexSpecInitProviderEndpointNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1VectorSearchIndexSpecInitProviderEndpointNameSelectorPolicyResolutionEnum
 {
@@ -872,7 +872,7 @@ public enum V1beta1VectorSearchIndexSpecInitProviderEndpointNameSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VectorSearchIndexSpecInitProviderEndpointNameSelectorPolicyResolveEnum>))]
 public enum V1beta1VectorSearchIndexSpecInitProviderEndpointNameSelectorPolicyResolveEnum
 {
@@ -883,7 +883,7 @@ public enum V1beta1VectorSearchIndexSpecInitProviderEndpointNameSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecInitProviderEndpointNameSelectorPolicy
 {
@@ -907,7 +907,7 @@ public partial class V1beta1VectorSearchIndexSpecInitProviderEndpointNameSelecto
 }
 
 /// <summary>Selector for a VectorSearchEndpoint in mosaic to populate endpointName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecInitProviderEndpointNameSelector
 {
@@ -932,7 +932,7 @@ public partial class V1beta1VectorSearchIndexSpecInitProviderEndpointNameSelecto
 }
 
 /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecInitProviderProviderConfig
 {
@@ -953,7 +953,7 @@ public partial class V1beta1VectorSearchIndexSpecInitProviderProviderConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecInitProvider
 {
@@ -998,7 +998,7 @@ public partial class V1beta1VectorSearchIndexSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VectorSearchIndexSpecManagementPoliciesEnum>))]
 public enum V1beta1VectorSearchIndexSpecManagementPoliciesEnum
 {
@@ -1021,7 +1021,7 @@ public enum V1beta1VectorSearchIndexSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecProviderConfigRef
 {
@@ -1040,7 +1040,7 @@ public partial class V1beta1VectorSearchIndexSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecWriteConnectionSecretToRef
 {
@@ -1050,7 +1050,7 @@ public partial class V1beta1VectorSearchIndexSpecWriteConnectionSecretToRef
 }
 
 /// <summary>VectorSearchIndexSpec defines the desired state of VectorSearchIndex</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpec
 {
@@ -1101,7 +1101,7 @@ public partial class V1beta1VectorSearchIndexSpec
     public V1beta1VectorSearchIndexSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexStatusAtProviderDeltaSyncIndexSpecEmbeddingSourceColumns
 {
@@ -1118,7 +1118,7 @@ public partial class V1beta1VectorSearchIndexStatusAtProviderDeltaSyncIndexSpecE
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexStatusAtProviderDeltaSyncIndexSpecEmbeddingVectorColumns
 {
@@ -1132,7 +1132,7 @@ public partial class V1beta1VectorSearchIndexStatusAtProviderDeltaSyncIndexSpecE
 }
 
 /// <summary>(object) Specification for Delta Sync Index. Required if index_type is DELTA_SYNC. This field is a block and is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexStatusAtProviderDeltaSyncIndexSpec
 {
@@ -1161,7 +1161,7 @@ public partial class V1beta1VectorSearchIndexStatusAtProviderDeltaSyncIndexSpec
     public string? SourceTable { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexStatusAtProviderDirectAccessIndexSpecEmbeddingSourceColumns
 {
@@ -1178,7 +1178,7 @@ public partial class V1beta1VectorSearchIndexStatusAtProviderDirectAccessIndexSp
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexStatusAtProviderDirectAccessIndexSpecEmbeddingVectorColumns
 {
@@ -1192,7 +1192,7 @@ public partial class V1beta1VectorSearchIndexStatusAtProviderDirectAccessIndexSp
 }
 
 /// <summary>(object) Specification for Direct Vector Access Index. Required if index_type is DIRECT_ACCESS. This field is a block and is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexStatusAtProviderDirectAccessIndexSpec
 {
@@ -1210,7 +1210,7 @@ public partial class V1beta1VectorSearchIndexStatusAtProviderDirectAccessIndexSp
 }
 
 /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexStatusAtProviderProviderConfig
 {
@@ -1219,7 +1219,7 @@ public partial class V1beta1VectorSearchIndexStatusAtProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexStatusAtProviderStatus
 {
@@ -1240,7 +1240,7 @@ public partial class V1beta1VectorSearchIndexStatusAtProviderStatus
     public bool? Ready { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexStatusAtProvider
 {
@@ -1286,7 +1286,7 @@ public partial class V1beta1VectorSearchIndexStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexStatusConditions
 {
@@ -1329,7 +1329,7 @@ public partial class V1beta1VectorSearchIndexStatusConditions
 }
 
 /// <summary>VectorSearchIndexStatus defines the observed state of VectorSearchIndex.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexStatus
 {
@@ -1350,7 +1350,7 @@ public partial class V1beta1VectorSearchIndexStatus
 }
 
 /// <summary>VectorSearchIndex is the Schema for the VectorSearchIndexs API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VectorSearchIndex : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VectorSearchIndexSpec>, IStatus<V1beta1VectorSearchIndexStatus?>

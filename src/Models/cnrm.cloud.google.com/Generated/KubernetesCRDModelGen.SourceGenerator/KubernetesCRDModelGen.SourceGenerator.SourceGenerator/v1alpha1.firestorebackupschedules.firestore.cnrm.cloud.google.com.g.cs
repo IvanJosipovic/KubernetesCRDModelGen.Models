@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.firestore.cnrm.cloud.google.com;
 /// <summary>FirestoreBackupSchedule is the Schema for the FirestoreBackupSchedule API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1FirestoreBackupScheduleList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1FirestoreBackupSchedule>
@@ -37,14 +37,14 @@ public partial class V1alpha1FirestoreBackupScheduleList : IKubernetesObject<V1L
 }
 
 /// <summary>For a schedule that runs daily.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirestoreBackupScheduleSpecDailyRecurrence
 {
 }
 
 /// <summary>The database that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirestoreBackupScheduleSpecDatabaseRef
 {
@@ -62,7 +62,7 @@ public partial class V1alpha1FirestoreBackupScheduleSpecDatabaseRef
 }
 
 /// <summary>For a schedule that runs weekly on a specific day.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirestoreBackupScheduleSpecWeeklyRecurrence
 {
@@ -76,7 +76,7 @@ public partial class V1alpha1FirestoreBackupScheduleSpecWeeklyRecurrence
 }
 
 /// <summary>FirestoreBackupScheduleSpec defines the desired state of FirestoreBackupSchedule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirestoreBackupScheduleSpec
 {
@@ -102,7 +102,7 @@ public partial class V1alpha1FirestoreBackupScheduleSpec
     public V1alpha1FirestoreBackupScheduleSpecWeeklyRecurrence? WeeklyRecurrence { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirestoreBackupScheduleStatusConditions
 {
@@ -128,7 +128,7 @@ public partial class V1alpha1FirestoreBackupScheduleStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirestoreBackupScheduleStatusObservedState
 {
@@ -159,7 +159,7 @@ public partial class V1alpha1FirestoreBackupScheduleStatusObservedState
 }
 
 /// <summary>FirestoreBackupScheduleStatus defines the config connector machine state of FirestoreBackupSchedule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirestoreBackupScheduleStatus
 {
@@ -181,7 +181,7 @@ public partial class V1alpha1FirestoreBackupScheduleStatus
 }
 
 /// <summary>FirestoreBackupSchedule is the Schema for the FirestoreBackupSchedule API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1FirestoreBackupSchedule : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1FirestoreBackupScheduleSpec>, IStatus<V1alpha1FirestoreBackupScheduleStatus?>

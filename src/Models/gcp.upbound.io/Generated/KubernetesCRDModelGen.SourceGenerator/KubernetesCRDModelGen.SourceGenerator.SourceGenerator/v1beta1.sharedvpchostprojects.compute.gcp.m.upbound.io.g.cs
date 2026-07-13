@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.m.upbound.io;
 /// <summary>SharedVPCHostProject is the Schema for the SharedVPCHostProjects API. Enables the Google Compute Engine Shared VPC feature for a project, assigning it as a host project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SharedVPCHostProjectList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SharedVPCHostProject>
@@ -42,7 +42,7 @@ public partial class V1beta1SharedVPCHostProjectList : IKubernetesObject<V1ListM
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCHostProjectSpecForProviderProjectRefPolicyResolutionEnum>))]
 public enum V1beta1SharedVPCHostProjectSpecForProviderProjectRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1SharedVPCHostProjectSpecForProviderProjectRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCHostProjectSpecForProviderProjectRefPolicyResolveEnum>))]
 public enum V1beta1SharedVPCHostProjectSpecForProviderProjectRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1SharedVPCHostProjectSpecForProviderProjectRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCHostProjectSpecForProviderProjectRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1SharedVPCHostProjectSpecForProviderProjectRefPolicy
 }
 
 /// <summary>Reference to a Project in cloudplatform to populate project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCHostProjectSpecForProviderProjectRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1SharedVPCHostProjectSpecForProviderProjectRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCHostProjectSpecForProviderProjectSelectorPolicyResolutionEnum>))]
 public enum V1beta1SharedVPCHostProjectSpecForProviderProjectSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1SharedVPCHostProjectSpecForProviderProjectSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCHostProjectSpecForProviderProjectSelectorPolicyResolveEnum>))]
 public enum V1beta1SharedVPCHostProjectSpecForProviderProjectSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1SharedVPCHostProjectSpecForProviderProjectSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCHostProjectSpecForProviderProjectSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1SharedVPCHostProjectSpecForProviderProjectSelectorPo
 }
 
 /// <summary>Selector for a Project in cloudplatform to populate project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCHostProjectSpecForProviderProjectSelector
 {
@@ -191,7 +191,7 @@ public partial class V1beta1SharedVPCHostProjectSpecForProviderProjectSelector
     public V1beta1SharedVPCHostProjectSpecForProviderProjectSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCHostProjectSpecForProvider
 {
@@ -214,7 +214,7 @@ public partial class V1beta1SharedVPCHostProjectSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCHostProjectSpecInitProviderProjectRefPolicyResolutionEnum>))]
 public enum V1beta1SharedVPCHostProjectSpecInitProviderProjectRefPolicyResolutionEnum
 {
@@ -230,7 +230,7 @@ public enum V1beta1SharedVPCHostProjectSpecInitProviderProjectRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCHostProjectSpecInitProviderProjectRefPolicyResolveEnum>))]
 public enum V1beta1SharedVPCHostProjectSpecInitProviderProjectRefPolicyResolveEnum
 {
@@ -241,7 +241,7 @@ public enum V1beta1SharedVPCHostProjectSpecInitProviderProjectRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCHostProjectSpecInitProviderProjectRefPolicy
 {
@@ -265,7 +265,7 @@ public partial class V1beta1SharedVPCHostProjectSpecInitProviderProjectRefPolicy
 }
 
 /// <summary>Reference to a Project in cloudplatform to populate project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCHostProjectSpecInitProviderProjectRef
 {
@@ -288,7 +288,7 @@ public partial class V1beta1SharedVPCHostProjectSpecInitProviderProjectRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCHostProjectSpecInitProviderProjectSelectorPolicyResolutionEnum>))]
 public enum V1beta1SharedVPCHostProjectSpecInitProviderProjectSelectorPolicyResolutionEnum
 {
@@ -304,7 +304,7 @@ public enum V1beta1SharedVPCHostProjectSpecInitProviderProjectSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCHostProjectSpecInitProviderProjectSelectorPolicyResolveEnum>))]
 public enum V1beta1SharedVPCHostProjectSpecInitProviderProjectSelectorPolicyResolveEnum
 {
@@ -315,7 +315,7 @@ public enum V1beta1SharedVPCHostProjectSpecInitProviderProjectSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCHostProjectSpecInitProviderProjectSelectorPolicy
 {
@@ -339,7 +339,7 @@ public partial class V1beta1SharedVPCHostProjectSpecInitProviderProjectSelectorP
 }
 
 /// <summary>Selector for a Project in cloudplatform to populate project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCHostProjectSpecInitProviderProjectSelector
 {
@@ -375,7 +375,7 @@ public partial class V1beta1SharedVPCHostProjectSpecInitProviderProjectSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCHostProjectSpecInitProvider
 {
@@ -396,7 +396,7 @@ public partial class V1beta1SharedVPCHostProjectSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedVPCHostProjectSpecManagementPoliciesEnum>))]
 public enum V1beta1SharedVPCHostProjectSpecManagementPoliciesEnum
 {
@@ -419,7 +419,7 @@ public enum V1beta1SharedVPCHostProjectSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCHostProjectSpecProviderConfigRef
 {
@@ -438,7 +438,7 @@ public partial class V1beta1SharedVPCHostProjectSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCHostProjectSpecWriteConnectionSecretToRef
 {
@@ -448,7 +448,7 @@ public partial class V1beta1SharedVPCHostProjectSpecWriteConnectionSecretToRef
 }
 
 /// <summary>SharedVPCHostProjectSpec defines the desired state of SharedVPCHostProject</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCHostProjectSpec
 {
@@ -499,7 +499,7 @@ public partial class V1beta1SharedVPCHostProjectSpec
     public V1beta1SharedVPCHostProjectSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCHostProjectStatusAtProvider
 {
@@ -513,7 +513,7 @@ public partial class V1beta1SharedVPCHostProjectStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCHostProjectStatusConditions
 {
@@ -556,7 +556,7 @@ public partial class V1beta1SharedVPCHostProjectStatusConditions
 }
 
 /// <summary>SharedVPCHostProjectStatus defines the observed state of SharedVPCHostProject.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedVPCHostProjectStatus
 {
@@ -577,7 +577,7 @@ public partial class V1beta1SharedVPCHostProjectStatus
 }
 
 /// <summary>SharedVPCHostProject is the Schema for the SharedVPCHostProjects API. Enables the Google Compute Engine Shared VPC feature for a project, assigning it as a host project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SharedVPCHostProject : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SharedVPCHostProjectSpec>, IStatus<V1beta1SharedVPCHostProjectStatus?>

@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.network.azure.com;
 /// - Generated from: /network/resource-manager/Microsoft.Network/Network/stable/2025-03-01/privateLinkService.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/privateLinkServices/{serviceName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20250301PrivateLinkServiceList : IKubernetesObject<V1ListMeta>, IItems<V20250301PrivateLinkService>
@@ -41,7 +41,7 @@ public partial class V20250301PrivateLinkServiceList : IKubernetesObject<V1ListM
 }
 
 /// <summary>AccessMode: The access mode of the private link service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250301PrivateLinkServiceSpecAccessModeEnum>))]
 public enum V20250301PrivateLinkServiceSpecAccessModeEnum
 {
@@ -52,7 +52,7 @@ public enum V20250301PrivateLinkServiceSpecAccessModeEnum
 }
 
 /// <summary>AutoApproval: The auto-approval list of the private link service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceSpecAutoApproval
 {
@@ -62,7 +62,7 @@ public partial class V20250301PrivateLinkServiceSpecAutoApproval
 }
 
 /// <summary>Type: The type of the extended location.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250301PrivateLinkServiceSpecExtendedLocationTypeEnum>))]
 public enum V20250301PrivateLinkServiceSpecExtendedLocationTypeEnum
 {
@@ -71,7 +71,7 @@ public enum V20250301PrivateLinkServiceSpecExtendedLocationTypeEnum
 }
 
 /// <summary>ExtendedLocation: The extended location of the load balancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceSpecExtendedLocation
 {
@@ -85,7 +85,7 @@ public partial class V20250301PrivateLinkServiceSpecExtendedLocation
 }
 
 /// <summary>PrivateIPAddressVersion: Whether the specific IP configuration is IPv4 or IPv6. Default is IPv4.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250301PrivateLinkServiceSpecIpConfigurationsPrivateIPAddressVersionEnum>))]
 public enum V20250301PrivateLinkServiceSpecIpConfigurationsPrivateIPAddressVersionEnum
 {
@@ -96,7 +96,7 @@ public enum V20250301PrivateLinkServiceSpecIpConfigurationsPrivateIPAddressVersi
 }
 
 /// <summary>PrivateIPAllocationMethod: The private IP address allocation method.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250301PrivateLinkServiceSpecIpConfigurationsPrivateIPAllocationMethodEnum>))]
 public enum V20250301PrivateLinkServiceSpecIpConfigurationsPrivateIPAllocationMethodEnum
 {
@@ -107,7 +107,7 @@ public enum V20250301PrivateLinkServiceSpecIpConfigurationsPrivateIPAllocationMe
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceSpecIpConfigurationsSubnetReference
 {
@@ -133,7 +133,7 @@ public partial class V20250301PrivateLinkServiceSpecIpConfigurationsSubnetRefere
 }
 
 /// <summary>Subnet: The reference to the subnet resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceSpecIpConfigurationsSubnet
 {
@@ -143,7 +143,7 @@ public partial class V20250301PrivateLinkServiceSpecIpConfigurationsSubnet
 }
 
 /// <summary>The private link service ip configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceSpecIpConfigurations
 {
@@ -173,7 +173,7 @@ public partial class V20250301PrivateLinkServiceSpecIpConfigurations
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceSpecLoadBalancerFrontendIpConfigurationsReference
 {
@@ -199,7 +199,7 @@ public partial class V20250301PrivateLinkServiceSpecLoadBalancerFrontendIpConfig
 }
 
 /// <summary>Frontend IP address of the load balancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceSpecLoadBalancerFrontendIpConfigurations
 {
@@ -213,7 +213,7 @@ public partial class V20250301PrivateLinkServiceSpecLoadBalancerFrontendIpConfig
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceSpecOperatorSpecConfigMapExpressions
 {
@@ -250,7 +250,7 @@ public partial class V20250301PrivateLinkServiceSpecOperatorSpecConfigMapExpress
 }
 
 /// <summary>Alias: indicates where the Alias config map should be placed. If omitted, no config map will be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceSpecOperatorSpecConfigMapsAlias
 {
@@ -275,7 +275,7 @@ public partial class V20250301PrivateLinkServiceSpecOperatorSpecConfigMapsAlias
 }
 
 /// <summary>ConfigMaps: configures where to place operator written ConfigMaps.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceSpecOperatorSpecConfigMaps
 {
@@ -289,7 +289,7 @@ public partial class V20250301PrivateLinkServiceSpecOperatorSpecConfigMaps
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceSpecOperatorSpecSecretExpressions
 {
@@ -329,7 +329,7 @@ public partial class V20250301PrivateLinkServiceSpecOperatorSpecSecretExpression
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceSpecOperatorSpec
 {
@@ -351,7 +351,7 @@ public partial class V20250301PrivateLinkServiceSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceSpecOwner
 {
@@ -364,7 +364,7 @@ public partial class V20250301PrivateLinkServiceSpecOwner
 }
 
 /// <summary>Visibility: The visibility list of the private link service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceSpecVisibility
 {
@@ -373,7 +373,7 @@ public partial class V20250301PrivateLinkServiceSpecVisibility
     public IList<string>? Subscriptions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceSpec
 {
@@ -445,7 +445,7 @@ public partial class V20250301PrivateLinkServiceSpec
 }
 
 /// <summary>AutoApproval: The auto-approval list of the private link service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceStatusAutoApproval
 {
@@ -455,7 +455,7 @@ public partial class V20250301PrivateLinkServiceStatusAutoApproval
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceStatusConditions
 {
@@ -501,7 +501,7 @@ public partial class V20250301PrivateLinkServiceStatusConditions
 }
 
 /// <summary>ExtendedLocation: The extended location of the load balancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceStatusExtendedLocation
 {
@@ -515,7 +515,7 @@ public partial class V20250301PrivateLinkServiceStatusExtendedLocation
 }
 
 /// <summary>Subnet: The reference to the subnet resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceStatusIpConfigurationsSubnet
 {
@@ -525,7 +525,7 @@ public partial class V20250301PrivateLinkServiceStatusIpConfigurationsSubnet
 }
 
 /// <summary>The private link service ip configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceStatusIpConfigurations
 {
@@ -571,7 +571,7 @@ public partial class V20250301PrivateLinkServiceStatusIpConfigurations
 }
 
 /// <summary>Frontend IP address of the load balancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceStatusLoadBalancerFrontendIpConfigurations
 {
@@ -581,7 +581,7 @@ public partial class V20250301PrivateLinkServiceStatusLoadBalancerFrontendIpConf
 }
 
 /// <summary>A network interface in a resource group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceStatusNetworkInterfaces
 {
@@ -591,7 +591,7 @@ public partial class V20250301PrivateLinkServiceStatusNetworkInterfaces
 }
 
 /// <summary>PrivateEndpointConnection resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceStatusPrivateEndpointConnections
 {
@@ -601,7 +601,7 @@ public partial class V20250301PrivateLinkServiceStatusPrivateEndpointConnections
 }
 
 /// <summary>Visibility: The visibility list of the private link service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceStatusVisibility
 {
@@ -611,7 +611,7 @@ public partial class V20250301PrivateLinkServiceStatusVisibility
 }
 
 /// <summary>Private link service resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301PrivateLinkServiceStatus
 {
@@ -701,7 +701,7 @@ public partial class V20250301PrivateLinkServiceStatus
 /// - Generated from: /network/resource-manager/Microsoft.Network/Network/stable/2025-03-01/privateLinkService.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/privateLinkServices/{serviceName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20250301PrivateLinkService : IKubernetesObject<V1ObjectMeta>, ISpec<V20250301PrivateLinkServiceSpec?>, IStatus<V20250301PrivateLinkServiceStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appplatform.azure.upbound.io;
 /// <summary>SpringCloudGateway is the Schema for the SpringCloudGateways API. Manages a Spring Cloud Gateway.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2SpringCloudGatewayList : IKubernetesObject<V1ListMeta>, IItems<V1beta2SpringCloudGateway>
@@ -45,7 +45,7 @@ public partial class V1beta2SpringCloudGatewayList : IKubernetesObject<V1ListMet
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudGatewaySpecDeletionPolicyEnum>))]
 public enum V1beta2SpringCloudGatewaySpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2SpringCloudGatewaySpecDeletionPolicyEnum
 }
 
 /// <summary>A api_metadata block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpecForProviderApiMetadata
 {
@@ -82,7 +82,7 @@ public partial class V1beta2SpringCloudGatewaySpecForProviderApiMetadata
 }
 
 /// <summary>A client_authorization block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpecForProviderClientAuthorization
 {
@@ -96,7 +96,7 @@ public partial class V1beta2SpringCloudGatewaySpecForProviderClientAuthorization
 }
 
 /// <summary>A cors block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpecForProviderCors
 {
@@ -130,7 +130,7 @@ public partial class V1beta2SpringCloudGatewaySpecForProviderCors
 }
 
 /// <summary>A local_response_cache_per_instance block as defined below. Only one of local_response_cache_per_instance or local_response_cache_per_route can be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpecForProviderLocalResponseCachePerInstance
 {
@@ -144,7 +144,7 @@ public partial class V1beta2SpringCloudGatewaySpecForProviderLocalResponseCacheP
 }
 
 /// <summary>A local_response_cache_per_route block as defined below. Only one of local_response_cache_per_instance or local_response_cache_per_route can be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpecForProviderLocalResponseCachePerRoute
 {
@@ -158,7 +158,7 @@ public partial class V1beta2SpringCloudGatewaySpecForProviderLocalResponseCacheP
 }
 
 /// <summary>A quota block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpecForProviderQuota
 {
@@ -172,7 +172,7 @@ public partial class V1beta2SpringCloudGatewaySpecForProviderQuota
 }
 
 /// <summary>Specifies the sensitive environment variables of the Spring Cloud Gateway as a map of key-value pairs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpecForProviderSensitiveEnvironmentVariablesSecretRef
 {
@@ -191,7 +191,7 @@ public partial class V1beta2SpringCloudGatewaySpecForProviderSensitiveEnvironmen
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudGatewaySpecForProviderSpringCloudServiceIdRefPolicyResolutionEnum>))]
 public enum V1beta2SpringCloudGatewaySpecForProviderSpringCloudServiceIdRefPolicyResolutionEnum
 {
@@ -207,7 +207,7 @@ public enum V1beta2SpringCloudGatewaySpecForProviderSpringCloudServiceIdRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudGatewaySpecForProviderSpringCloudServiceIdRefPolicyResolveEnum>))]
 public enum V1beta2SpringCloudGatewaySpecForProviderSpringCloudServiceIdRefPolicyResolveEnum
 {
@@ -218,7 +218,7 @@ public enum V1beta2SpringCloudGatewaySpecForProviderSpringCloudServiceIdRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpecForProviderSpringCloudServiceIdRefPolicy
 {
@@ -242,7 +242,7 @@ public partial class V1beta2SpringCloudGatewaySpecForProviderSpringCloudServiceI
 }
 
 /// <summary>Reference to a SpringCloudService in appplatform to populate springCloudServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpecForProviderSpringCloudServiceIdRef
 {
@@ -261,7 +261,7 @@ public partial class V1beta2SpringCloudGatewaySpecForProviderSpringCloudServiceI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudGatewaySpecForProviderSpringCloudServiceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2SpringCloudGatewaySpecForProviderSpringCloudServiceIdSelectorPolicyResolutionEnum
 {
@@ -277,7 +277,7 @@ public enum V1beta2SpringCloudGatewaySpecForProviderSpringCloudServiceIdSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudGatewaySpecForProviderSpringCloudServiceIdSelectorPolicyResolveEnum>))]
 public enum V1beta2SpringCloudGatewaySpecForProviderSpringCloudServiceIdSelectorPolicyResolveEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta2SpringCloudGatewaySpecForProviderSpringCloudServiceIdSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpecForProviderSpringCloudServiceIdSelectorPolicy
 {
@@ -312,7 +312,7 @@ public partial class V1beta2SpringCloudGatewaySpecForProviderSpringCloudServiceI
 }
 
 /// <summary>Selector for a SpringCloudService in appplatform to populate springCloudServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpecForProviderSpringCloudServiceIdSelector
 {
@@ -333,7 +333,7 @@ public partial class V1beta2SpringCloudGatewaySpecForProviderSpringCloudServiceI
 }
 
 /// <summary>A sso block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpecForProviderSso
 {
@@ -354,7 +354,7 @@ public partial class V1beta2SpringCloudGatewaySpecForProviderSso
     public IList<string>? Scope { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpecForProvider
 {
@@ -428,7 +428,7 @@ public partial class V1beta2SpringCloudGatewaySpecForProvider
 }
 
 /// <summary>A api_metadata block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpecInitProviderApiMetadata
 {
@@ -454,7 +454,7 @@ public partial class V1beta2SpringCloudGatewaySpecInitProviderApiMetadata
 }
 
 /// <summary>A client_authorization block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpecInitProviderClientAuthorization
 {
@@ -468,7 +468,7 @@ public partial class V1beta2SpringCloudGatewaySpecInitProviderClientAuthorizatio
 }
 
 /// <summary>A cors block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpecInitProviderCors
 {
@@ -502,7 +502,7 @@ public partial class V1beta2SpringCloudGatewaySpecInitProviderCors
 }
 
 /// <summary>A local_response_cache_per_instance block as defined below. Only one of local_response_cache_per_instance or local_response_cache_per_route can be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpecInitProviderLocalResponseCachePerInstance
 {
@@ -516,7 +516,7 @@ public partial class V1beta2SpringCloudGatewaySpecInitProviderLocalResponseCache
 }
 
 /// <summary>A local_response_cache_per_route block as defined below. Only one of local_response_cache_per_instance or local_response_cache_per_route can be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpecInitProviderLocalResponseCachePerRoute
 {
@@ -530,7 +530,7 @@ public partial class V1beta2SpringCloudGatewaySpecInitProviderLocalResponseCache
 }
 
 /// <summary>A quota block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpecInitProviderQuota
 {
@@ -544,7 +544,7 @@ public partial class V1beta2SpringCloudGatewaySpecInitProviderQuota
 }
 
 /// <summary>A sso block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpecInitProviderSso
 {
@@ -577,7 +577,7 @@ public partial class V1beta2SpringCloudGatewaySpecInitProviderSso
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpecInitProvider
 {
@@ -641,7 +641,7 @@ public partial class V1beta2SpringCloudGatewaySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudGatewaySpecManagementPoliciesEnum>))]
 public enum V1beta2SpringCloudGatewaySpecManagementPoliciesEnum
 {
@@ -665,7 +665,7 @@ public enum V1beta2SpringCloudGatewaySpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudGatewaySpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2SpringCloudGatewaySpecProviderConfigRefPolicyResolutionEnum
 {
@@ -681,7 +681,7 @@ public enum V1beta2SpringCloudGatewaySpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudGatewaySpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2SpringCloudGatewaySpecProviderConfigRefPolicyResolveEnum
 {
@@ -692,7 +692,7 @@ public enum V1beta2SpringCloudGatewaySpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpecProviderConfigRefPolicy
 {
@@ -720,7 +720,7 @@ public partial class V1beta2SpringCloudGatewaySpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpecProviderConfigRef
 {
@@ -739,7 +739,7 @@ public partial class V1beta2SpringCloudGatewaySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpecWriteConnectionSecretToRef
 {
@@ -753,7 +753,7 @@ public partial class V1beta2SpringCloudGatewaySpecWriteConnectionSecretToRef
 }
 
 /// <summary>SpringCloudGatewaySpec defines the desired state of SpringCloudGateway</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewaySpec
 {
@@ -821,7 +821,7 @@ public partial class V1beta2SpringCloudGatewaySpec
 }
 
 /// <summary>A api_metadata block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewayStatusAtProviderApiMetadata
 {
@@ -847,7 +847,7 @@ public partial class V1beta2SpringCloudGatewayStatusAtProviderApiMetadata
 }
 
 /// <summary>A client_authorization block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewayStatusAtProviderClientAuthorization
 {
@@ -861,7 +861,7 @@ public partial class V1beta2SpringCloudGatewayStatusAtProviderClientAuthorizatio
 }
 
 /// <summary>A cors block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewayStatusAtProviderCors
 {
@@ -895,7 +895,7 @@ public partial class V1beta2SpringCloudGatewayStatusAtProviderCors
 }
 
 /// <summary>A local_response_cache_per_instance block as defined below. Only one of local_response_cache_per_instance or local_response_cache_per_route can be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewayStatusAtProviderLocalResponseCachePerInstance
 {
@@ -909,7 +909,7 @@ public partial class V1beta2SpringCloudGatewayStatusAtProviderLocalResponseCache
 }
 
 /// <summary>A local_response_cache_per_route block as defined below. Only one of local_response_cache_per_instance or local_response_cache_per_route can be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewayStatusAtProviderLocalResponseCachePerRoute
 {
@@ -923,7 +923,7 @@ public partial class V1beta2SpringCloudGatewayStatusAtProviderLocalResponseCache
 }
 
 /// <summary>A quota block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewayStatusAtProviderQuota
 {
@@ -937,7 +937,7 @@ public partial class V1beta2SpringCloudGatewayStatusAtProviderQuota
 }
 
 /// <summary>A sso block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewayStatusAtProviderSso
 {
@@ -958,7 +958,7 @@ public partial class V1beta2SpringCloudGatewayStatusAtProviderSso
     public IList<string>? Scope { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewayStatusAtProvider
 {
@@ -1028,7 +1028,7 @@ public partial class V1beta2SpringCloudGatewayStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewayStatusConditions
 {
@@ -1071,7 +1071,7 @@ public partial class V1beta2SpringCloudGatewayStatusConditions
 }
 
 /// <summary>SpringCloudGatewayStatus defines the observed state of SpringCloudGateway.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudGatewayStatus
 {
@@ -1092,7 +1092,7 @@ public partial class V1beta2SpringCloudGatewayStatus
 }
 
 /// <summary>SpringCloudGateway is the Schema for the SpringCloudGateways API. Manages a Spring Cloud Gateway.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2SpringCloudGateway : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2SpringCloudGatewaySpec>, IStatus<V1beta2SpringCloudGatewayStatus?>

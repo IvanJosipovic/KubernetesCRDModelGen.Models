@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.storage.cnrm.cloud.google.com;
 /// <summary>StorageAnywhereCache is the Schema for the StorageAnywhereCache API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1StorageAnywhereCacheList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1StorageAnywhereCache>
@@ -37,7 +37,7 @@ public partial class V1alpha1StorageAnywhereCacheList : IKubernetesObject<V1List
 }
 
 /// <summary>Cache admission policy. Valid values include: `admit-on-first-miss` and `admit-on-second-miss`. Defaults to `admit-on-first-miss`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1StorageAnywhereCacheSpecAdmissionPolicyEnum>))]
 public enum V1alpha1StorageAnywhereCacheSpecAdmissionPolicyEnum
 {
@@ -48,7 +48,7 @@ public enum V1alpha1StorageAnywhereCacheSpecAdmissionPolicyEnum
 }
 
 /// <summary>Immutable. The reference to bucket where cache needs to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1StorageAnywhereCacheSpecBucketRef
 {
@@ -66,7 +66,7 @@ public partial class V1alpha1StorageAnywhereCacheSpecBucketRef
 }
 
 /// <summary>The desired state of the cache. Possible values include &quot;running&quot;, &quot;disabled&quot;, and &quot;paused&quot;. If not specified, the default value is &quot;running&quot;. This field controls the runtime behavior of the cache. Please note that changes to the `desiredState` are prioritized over any other updates. For instance, if both the `desiredState` and `ttl` are updated simultaneously, the state would be updated first, followed by `ttl`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1StorageAnywhereCacheSpecDesiredStateEnum>))]
 public enum V1alpha1StorageAnywhereCacheSpecDesiredStateEnum
 {
@@ -79,7 +79,7 @@ public enum V1alpha1StorageAnywhereCacheSpecDesiredStateEnum
 }
 
 /// <summary>StorageAnywhereCacheSpec defines the desired state of StorageAnywhereCache</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1StorageAnywhereCacheSpec
 {
@@ -108,7 +108,7 @@ public partial class V1alpha1StorageAnywhereCacheSpec
     public required string Zone { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1StorageAnywhereCacheStatusConditions
 {
@@ -134,7 +134,7 @@ public partial class V1alpha1StorageAnywhereCacheStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1StorageAnywhereCacheStatusObservedState
 {
@@ -156,7 +156,7 @@ public partial class V1alpha1StorageAnywhereCacheStatusObservedState
 }
 
 /// <summary>StorageAnywhereCacheStatus defines the config connector machine state of StorageAnywhereCache</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1StorageAnywhereCacheStatus
 {
@@ -178,7 +178,7 @@ public partial class V1alpha1StorageAnywhereCacheStatus
 }
 
 /// <summary>StorageAnywhereCache is the Schema for the StorageAnywhereCache API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1StorageAnywhereCache : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1StorageAnywhereCacheSpec>, IStatus<V1alpha1StorageAnywhereCacheStatus?>

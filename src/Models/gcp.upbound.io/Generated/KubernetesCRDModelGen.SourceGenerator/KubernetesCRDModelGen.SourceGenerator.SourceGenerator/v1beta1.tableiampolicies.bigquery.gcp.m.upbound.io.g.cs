@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bigquery.gcp.m.upbound.io;
 /// <summary>TableIAMPolicy is the Schema for the TableIAMPolicys API. Collection of resources to manage IAM policy for BigQuery Table</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TableIAMPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1TableIAMPolicy>
@@ -42,7 +42,7 @@ public partial class V1beta1TableIAMPolicyList : IKubernetesObject<V1ListMeta>, 
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableIAMPolicySpecForProviderDatasetIdRefPolicyResolutionEnum>))]
 public enum V1beta1TableIAMPolicySpecForProviderDatasetIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1TableIAMPolicySpecForProviderDatasetIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableIAMPolicySpecForProviderDatasetIdRefPolicyResolveEnum>))]
 public enum V1beta1TableIAMPolicySpecForProviderDatasetIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1TableIAMPolicySpecForProviderDatasetIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableIAMPolicySpecForProviderDatasetIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1TableIAMPolicySpecForProviderDatasetIdRefPolicy
 }
 
 /// <summary>Reference to a Dataset in bigquery to populate datasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableIAMPolicySpecForProviderDatasetIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1TableIAMPolicySpecForProviderDatasetIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableIAMPolicySpecForProviderDatasetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1TableIAMPolicySpecForProviderDatasetIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1TableIAMPolicySpecForProviderDatasetIdSelectorPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableIAMPolicySpecForProviderDatasetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1TableIAMPolicySpecForProviderDatasetIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1TableIAMPolicySpecForProviderDatasetIdSelectorPolicyResolveEn
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableIAMPolicySpecForProviderDatasetIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1TableIAMPolicySpecForProviderDatasetIdSelectorPolicy
 }
 
 /// <summary>Selector for a Dataset in bigquery to populate datasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableIAMPolicySpecForProviderDatasetIdSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1TableIAMPolicySpecForProviderDatasetIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableIAMPolicySpecForProviderTableIdRefPolicyResolutionEnum>))]
 public enum V1beta1TableIAMPolicySpecForProviderTableIdRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1TableIAMPolicySpecForProviderTableIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableIAMPolicySpecForProviderTableIdRefPolicyResolveEnum>))]
 public enum V1beta1TableIAMPolicySpecForProviderTableIdRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1TableIAMPolicySpecForProviderTableIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableIAMPolicySpecForProviderTableIdRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1TableIAMPolicySpecForProviderTableIdRefPolicy
 }
 
 /// <summary>Reference to a Table in bigquery to populate tableId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableIAMPolicySpecForProviderTableIdRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1TableIAMPolicySpecForProviderTableIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableIAMPolicySpecForProviderTableIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1TableIAMPolicySpecForProviderTableIdSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1TableIAMPolicySpecForProviderTableIdSelectorPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableIAMPolicySpecForProviderTableIdSelectorPolicyResolveEnum>))]
 public enum V1beta1TableIAMPolicySpecForProviderTableIdSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1TableIAMPolicySpecForProviderTableIdSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableIAMPolicySpecForProviderTableIdSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1TableIAMPolicySpecForProviderTableIdSelectorPolicy
 }
 
 /// <summary>Selector for a Table in bigquery to populate tableId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableIAMPolicySpecForProviderTableIdSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1TableIAMPolicySpecForProviderTableIdSelector
     public V1beta1TableIAMPolicySpecForProviderTableIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableIAMPolicySpecForProvider
 {
@@ -395,7 +395,7 @@ public partial class V1beta1TableIAMPolicySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableIAMPolicySpecInitProviderDatasetIdRefPolicyResolutionEnum>))]
 public enum V1beta1TableIAMPolicySpecInitProviderDatasetIdRefPolicyResolutionEnum
 {
@@ -411,7 +411,7 @@ public enum V1beta1TableIAMPolicySpecInitProviderDatasetIdRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableIAMPolicySpecInitProviderDatasetIdRefPolicyResolveEnum>))]
 public enum V1beta1TableIAMPolicySpecInitProviderDatasetIdRefPolicyResolveEnum
 {
@@ -422,7 +422,7 @@ public enum V1beta1TableIAMPolicySpecInitProviderDatasetIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableIAMPolicySpecInitProviderDatasetIdRefPolicy
 {
@@ -446,7 +446,7 @@ public partial class V1beta1TableIAMPolicySpecInitProviderDatasetIdRefPolicy
 }
 
 /// <summary>Reference to a Dataset in bigquery to populate datasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableIAMPolicySpecInitProviderDatasetIdRef
 {
@@ -469,7 +469,7 @@ public partial class V1beta1TableIAMPolicySpecInitProviderDatasetIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableIAMPolicySpecInitProviderDatasetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1TableIAMPolicySpecInitProviderDatasetIdSelectorPolicyResolutionEnum
 {
@@ -485,7 +485,7 @@ public enum V1beta1TableIAMPolicySpecInitProviderDatasetIdSelectorPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableIAMPolicySpecInitProviderDatasetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1TableIAMPolicySpecInitProviderDatasetIdSelectorPolicyResolveEnum
 {
@@ -496,7 +496,7 @@ public enum V1beta1TableIAMPolicySpecInitProviderDatasetIdSelectorPolicyResolveE
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableIAMPolicySpecInitProviderDatasetIdSelectorPolicy
 {
@@ -520,7 +520,7 @@ public partial class V1beta1TableIAMPolicySpecInitProviderDatasetIdSelectorPolic
 }
 
 /// <summary>Selector for a Dataset in bigquery to populate datasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableIAMPolicySpecInitProviderDatasetIdSelector
 {
@@ -550,7 +550,7 @@ public partial class V1beta1TableIAMPolicySpecInitProviderDatasetIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableIAMPolicySpecInitProviderTableIdRefPolicyResolutionEnum>))]
 public enum V1beta1TableIAMPolicySpecInitProviderTableIdRefPolicyResolutionEnum
 {
@@ -566,7 +566,7 @@ public enum V1beta1TableIAMPolicySpecInitProviderTableIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableIAMPolicySpecInitProviderTableIdRefPolicyResolveEnum>))]
 public enum V1beta1TableIAMPolicySpecInitProviderTableIdRefPolicyResolveEnum
 {
@@ -577,7 +577,7 @@ public enum V1beta1TableIAMPolicySpecInitProviderTableIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableIAMPolicySpecInitProviderTableIdRefPolicy
 {
@@ -601,7 +601,7 @@ public partial class V1beta1TableIAMPolicySpecInitProviderTableIdRefPolicy
 }
 
 /// <summary>Reference to a Table in bigquery to populate tableId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableIAMPolicySpecInitProviderTableIdRef
 {
@@ -624,7 +624,7 @@ public partial class V1beta1TableIAMPolicySpecInitProviderTableIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableIAMPolicySpecInitProviderTableIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1TableIAMPolicySpecInitProviderTableIdSelectorPolicyResolutionEnum
 {
@@ -640,7 +640,7 @@ public enum V1beta1TableIAMPolicySpecInitProviderTableIdSelectorPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableIAMPolicySpecInitProviderTableIdSelectorPolicyResolveEnum>))]
 public enum V1beta1TableIAMPolicySpecInitProviderTableIdSelectorPolicyResolveEnum
 {
@@ -651,7 +651,7 @@ public enum V1beta1TableIAMPolicySpecInitProviderTableIdSelectorPolicyResolveEnu
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableIAMPolicySpecInitProviderTableIdSelectorPolicy
 {
@@ -675,7 +675,7 @@ public partial class V1beta1TableIAMPolicySpecInitProviderTableIdSelectorPolicy
 }
 
 /// <summary>Selector for a Table in bigquery to populate tableId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableIAMPolicySpecInitProviderTableIdSelector
 {
@@ -711,7 +711,7 @@ public partial class V1beta1TableIAMPolicySpecInitProviderTableIdSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableIAMPolicySpecInitProvider
 {
@@ -758,7 +758,7 @@ public partial class V1beta1TableIAMPolicySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableIAMPolicySpecManagementPoliciesEnum>))]
 public enum V1beta1TableIAMPolicySpecManagementPoliciesEnum
 {
@@ -781,7 +781,7 @@ public enum V1beta1TableIAMPolicySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableIAMPolicySpecProviderConfigRef
 {
@@ -800,7 +800,7 @@ public partial class V1beta1TableIAMPolicySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableIAMPolicySpecWriteConnectionSecretToRef
 {
@@ -810,7 +810,7 @@ public partial class V1beta1TableIAMPolicySpecWriteConnectionSecretToRef
 }
 
 /// <summary>TableIAMPolicySpec defines the desired state of TableIAMPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableIAMPolicySpec
 {
@@ -861,7 +861,7 @@ public partial class V1beta1TableIAMPolicySpec
     public V1beta1TableIAMPolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableIAMPolicyStatusAtProvider
 {
@@ -896,7 +896,7 @@ public partial class V1beta1TableIAMPolicyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableIAMPolicyStatusConditions
 {
@@ -939,7 +939,7 @@ public partial class V1beta1TableIAMPolicyStatusConditions
 }
 
 /// <summary>TableIAMPolicyStatus defines the observed state of TableIAMPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableIAMPolicyStatus
 {
@@ -960,7 +960,7 @@ public partial class V1beta1TableIAMPolicyStatus
 }
 
 /// <summary>TableIAMPolicy is the Schema for the TableIAMPolicys API. Collection of resources to manage IAM policy for BigQuery Table</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TableIAMPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1TableIAMPolicySpec>, IStatus<V1beta1TableIAMPolicyStatus?>

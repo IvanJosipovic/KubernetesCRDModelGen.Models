@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrockagentcore.aws.upbound.io;
 /// <summary>AgentRuntime is the Schema for the AgentRuntimes API. Manages an AWS Bedrock AgentCore Agent Runtime.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AgentRuntimeList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AgentRuntime>
@@ -45,7 +45,7 @@ public partial class V1beta1AgentRuntimeList : IKubernetesObject<V1ListMeta>, II
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecDeletionPolicyEnum>))]
 public enum V1beta1AgentRuntimeSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta1AgentRuntimeSpecDeletionPolicyEnum
 }
 
 /// <summary>Configuration block for the Amazon S3 object that contains the source code for the agent runtime. See s3 below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifactCodeConfigurationCodeS3
 {
@@ -74,7 +74,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifactCodeC
 }
 
 /// <summary>Configuration block for the source code location and configuration details. See code below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifactCodeConfigurationCode
 {
@@ -84,7 +84,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifactCodeC
 }
 
 /// <summary>Code configuration block for the agent runtime artifact, including the source code location and execution settings. Exactly one of code_configuration or container_configuration must be specified. See code_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifactCodeConfiguration
 {
@@ -102,7 +102,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifactCodeC
 }
 
 /// <summary>Container configuration block for the agent artifact. Exactly one of code_configuration or container_configuration must be specified. See container_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifactContainerConfiguration
 {
@@ -112,7 +112,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifactConta
 }
 
 /// <summary>Container artifact configuration. See agent_runtime_artifact below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifact
 {
@@ -126,7 +126,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifact
 }
 
 /// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizer
 {
@@ -144,7 +144,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCu
 }
 
 /// <summary>Authorization configuration for authenticating incoming requests. See authorizer_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfiguration
 {
@@ -154,7 +154,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfiguration
 }
 
 /// <summary>Runtime session and resource lifecycle configuration for the agent runtime. See lifecycle_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderLifecycleConfiguration
 {
@@ -168,7 +168,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderLifecycleConfiguration
 }
 
 /// <summary>Network mode configuration. See network_mode_config below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderNetworkConfigurationNetworkModeConfig
 {
@@ -182,7 +182,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderNetworkConfigurationNetwo
 }
 
 /// <summary>Network configuration for the agent runtime. See network_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderNetworkConfiguration
 {
@@ -196,7 +196,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderNetworkConfiguration
 }
 
 /// <summary>Protocol configuration for the agent runtime. See protocol_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderProtocolConfiguration
 {
@@ -206,7 +206,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderProtocolConfiguration
 }
 
 /// <summary>Configuration for HTTP request headers that will be passed through to the runtime. See request_header_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderRequestHeaderConfiguration
 {
@@ -221,7 +221,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderRequestHeaderConfiguratio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecForProviderRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1AgentRuntimeSpecForProviderRoleArnRefPolicyResolutionEnum
 {
@@ -237,7 +237,7 @@ public enum V1beta1AgentRuntimeSpecForProviderRoleArnRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecForProviderRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1AgentRuntimeSpecForProviderRoleArnRefPolicyResolveEnum
 {
@@ -248,7 +248,7 @@ public enum V1beta1AgentRuntimeSpecForProviderRoleArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderRoleArnRefPolicy
 {
@@ -272,7 +272,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderRoleArnRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderRoleArnRef
 {
@@ -291,7 +291,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecForProviderRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1AgentRuntimeSpecForProviderRoleArnSelectorPolicyResolutionEnum
 {
@@ -307,7 +307,7 @@ public enum V1beta1AgentRuntimeSpecForProviderRoleArnSelectorPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecForProviderRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1AgentRuntimeSpecForProviderRoleArnSelectorPolicyResolveEnum
 {
@@ -318,7 +318,7 @@ public enum V1beta1AgentRuntimeSpecForProviderRoleArnSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderRoleArnSelectorPolicy
 {
@@ -342,7 +342,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderRoleArnSelectorPolicy
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderRoleArnSelector
 {
@@ -362,7 +362,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderRoleArnSelector
     public V1beta1AgentRuntimeSpecForProviderRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProvider
 {
@@ -427,7 +427,7 @@ public partial class V1beta1AgentRuntimeSpecForProvider
 }
 
 /// <summary>Configuration block for the Amazon S3 object that contains the source code for the agent runtime. See s3 below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifactCodeConfigurationCodeS3
 {
@@ -445,7 +445,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifactCode
 }
 
 /// <summary>Configuration block for the source code location and configuration details. See code below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifactCodeConfigurationCode
 {
@@ -455,7 +455,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifactCode
 }
 
 /// <summary>Code configuration block for the agent runtime artifact, including the source code location and execution settings. Exactly one of code_configuration or container_configuration must be specified. See code_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifactCodeConfiguration
 {
@@ -473,7 +473,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifactCode
 }
 
 /// <summary>Container configuration block for the agent artifact. Exactly one of code_configuration or container_configuration must be specified. See container_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifactContainerConfiguration
 {
@@ -483,7 +483,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifactCont
 }
 
 /// <summary>Container artifact configuration. See agent_runtime_artifact below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifact
 {
@@ -497,7 +497,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifact
 }
 
 /// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizer
 {
@@ -515,7 +515,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationC
 }
 
 /// <summary>Authorization configuration for authenticating incoming requests. See authorizer_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfiguration
 {
@@ -525,7 +525,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfiguration
 }
 
 /// <summary>Runtime session and resource lifecycle configuration for the agent runtime. See lifecycle_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderLifecycleConfiguration
 {
@@ -539,7 +539,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderLifecycleConfiguration
 }
 
 /// <summary>Network mode configuration. See network_mode_config below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderNetworkConfigurationNetworkModeConfig
 {
@@ -553,7 +553,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderNetworkConfigurationNetw
 }
 
 /// <summary>Network configuration for the agent runtime. See network_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderNetworkConfiguration
 {
@@ -567,7 +567,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderNetworkConfiguration
 }
 
 /// <summary>Protocol configuration for the agent runtime. See protocol_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderProtocolConfiguration
 {
@@ -577,7 +577,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderProtocolConfiguration
 }
 
 /// <summary>Configuration for HTTP request headers that will be passed through to the runtime. See request_header_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderRequestHeaderConfiguration
 {
@@ -592,7 +592,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderRequestHeaderConfigurati
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecInitProviderRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1AgentRuntimeSpecInitProviderRoleArnRefPolicyResolutionEnum
 {
@@ -608,7 +608,7 @@ public enum V1beta1AgentRuntimeSpecInitProviderRoleArnRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecInitProviderRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1AgentRuntimeSpecInitProviderRoleArnRefPolicyResolveEnum
 {
@@ -619,7 +619,7 @@ public enum V1beta1AgentRuntimeSpecInitProviderRoleArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderRoleArnRefPolicy
 {
@@ -643,7 +643,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderRoleArnRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderRoleArnRef
 {
@@ -662,7 +662,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecInitProviderRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1AgentRuntimeSpecInitProviderRoleArnSelectorPolicyResolutionEnum
 {
@@ -678,7 +678,7 @@ public enum V1beta1AgentRuntimeSpecInitProviderRoleArnSelectorPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecInitProviderRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1AgentRuntimeSpecInitProviderRoleArnSelectorPolicyResolveEnum
 {
@@ -689,7 +689,7 @@ public enum V1beta1AgentRuntimeSpecInitProviderRoleArnSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderRoleArnSelectorPolicy
 {
@@ -713,7 +713,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderRoleArnSelectorPolicy
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderRoleArnSelector
 {
@@ -745,7 +745,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderRoleArnSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProvider
 {
@@ -806,7 +806,7 @@ public partial class V1beta1AgentRuntimeSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecManagementPoliciesEnum>))]
 public enum V1beta1AgentRuntimeSpecManagementPoliciesEnum
 {
@@ -830,7 +830,7 @@ public enum V1beta1AgentRuntimeSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1AgentRuntimeSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -846,7 +846,7 @@ public enum V1beta1AgentRuntimeSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1AgentRuntimeSpecProviderConfigRefPolicyResolveEnum
 {
@@ -857,7 +857,7 @@ public enum V1beta1AgentRuntimeSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecProviderConfigRefPolicy
 {
@@ -885,7 +885,7 @@ public partial class V1beta1AgentRuntimeSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecProviderConfigRef
 {
@@ -904,7 +904,7 @@ public partial class V1beta1AgentRuntimeSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecWriteConnectionSecretToRef
 {
@@ -918,7 +918,7 @@ public partial class V1beta1AgentRuntimeSpecWriteConnectionSecretToRef
 }
 
 /// <summary>AgentRuntimeSpec defines the desired state of AgentRuntime</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpec
 {
@@ -986,7 +986,7 @@ public partial class V1beta1AgentRuntimeSpec
 }
 
 /// <summary>Configuration block for the Amazon S3 object that contains the source code for the agent runtime. See s3 below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifactCodeConfigurationCodeS3
 {
@@ -1004,7 +1004,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifactCode
 }
 
 /// <summary>Configuration block for the source code location and configuration details. See code below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifactCodeConfigurationCode
 {
@@ -1014,7 +1014,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifactCode
 }
 
 /// <summary>Code configuration block for the agent runtime artifact, including the source code location and execution settings. Exactly one of code_configuration or container_configuration must be specified. See code_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifactCodeConfiguration
 {
@@ -1032,7 +1032,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifactCode
 }
 
 /// <summary>Container configuration block for the agent artifact. Exactly one of code_configuration or container_configuration must be specified. See container_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifactContainerConfiguration
 {
@@ -1042,7 +1042,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifactCont
 }
 
 /// <summary>Container artifact configuration. See agent_runtime_artifact below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifact
 {
@@ -1056,7 +1056,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifact
 }
 
 /// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizer
 {
@@ -1074,7 +1074,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationC
 }
 
 /// <summary>Authorization configuration for authenticating incoming requests. See authorizer_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfiguration
 {
@@ -1084,7 +1084,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfiguration
 }
 
 /// <summary>Runtime session and resource lifecycle configuration for the agent runtime. See lifecycle_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderLifecycleConfiguration
 {
@@ -1098,7 +1098,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderLifecycleConfiguration
 }
 
 /// <summary>Network mode configuration. See network_mode_config below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderNetworkConfigurationNetworkModeConfig
 {
@@ -1112,7 +1112,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderNetworkConfigurationNetw
 }
 
 /// <summary>Network configuration for the agent runtime. See network_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderNetworkConfiguration
 {
@@ -1126,7 +1126,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderNetworkConfiguration
 }
 
 /// <summary>Protocol configuration for the agent runtime. See protocol_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderProtocolConfiguration
 {
@@ -1136,7 +1136,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderProtocolConfiguration
 }
 
 /// <summary>Configuration for HTTP request headers that will be passed through to the runtime. See request_header_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderRequestHeaderConfiguration
 {
@@ -1145,7 +1145,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderRequestHeaderConfigurati
     public IList<string>? RequestHeaderAllowlist { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderWorkloadIdentityDetails
 {
@@ -1154,7 +1154,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderWorkloadIdentityDetails
     public string? WorkloadIdentityArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProvider
 {
@@ -1234,7 +1234,7 @@ public partial class V1beta1AgentRuntimeStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusConditions
 {
@@ -1277,7 +1277,7 @@ public partial class V1beta1AgentRuntimeStatusConditions
 }
 
 /// <summary>AgentRuntimeStatus defines the observed state of AgentRuntime.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatus
 {
@@ -1298,7 +1298,7 @@ public partial class V1beta1AgentRuntimeStatus
 }
 
 /// <summary>AgentRuntime is the Schema for the AgentRuntimes API. Manages an AWS Bedrock AgentCore Agent Runtime.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AgentRuntime : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AgentRuntimeSpec>, IStatus<V1beta1AgentRuntimeStatus?>

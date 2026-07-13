@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datafactory.azure.upbound.io;
 /// <summary>DataFlow is the Schema for the DataFlows API. Manages a Data Flow inside an Azure Data Factory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2DataFlowList : IKubernetesObject<V1ListMeta>, IItems<V1beta2DataFlow>
@@ -45,7 +45,7 @@ public partial class V1beta2DataFlowList : IKubernetesObject<V1ListMeta>, IItems
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataFlowSpecDeletionPolicyEnum>))]
 public enum V1beta2DataFlowSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2DataFlowSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataFlowSpecForProviderDataFactoryIdRefPolicyResolutionEnum>))]
 public enum V1beta2DataFlowSpecForProviderDataFactoryIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2DataFlowSpecForProviderDataFactoryIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataFlowSpecForProviderDataFactoryIdRefPolicyResolveEnum>))]
 public enum V1beta2DataFlowSpecForProviderDataFactoryIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2DataFlowSpecForProviderDataFactoryIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderDataFactoryIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2DataFlowSpecForProviderDataFactoryIdRefPolicy
 }
 
 /// <summary>Reference to a Factory in datafactory to populate dataFactoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderDataFactoryIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta2DataFlowSpecForProviderDataFactoryIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataFlowSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2DataFlowSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2DataFlowSpecForProviderDataFactoryIdSelectorPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataFlowSpecForProviderDataFactoryIdSelectorPolicyResolveEnum>))]
 public enum V1beta2DataFlowSpecForProviderDataFactoryIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2DataFlowSpecForProviderDataFactoryIdSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderDataFactoryIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2DataFlowSpecForProviderDataFactoryIdSelectorPolicy
 }
 
 /// <summary>Selector for a Factory in datafactory to populate dataFactoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderDataFactoryIdSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta2DataFlowSpecForProviderDataFactoryIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataFlowSpecForProviderSinkDatasetNameRefPolicyResolutionEnum>))]
 public enum V1beta2DataFlowSpecForProviderSinkDatasetNameRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta2DataFlowSpecForProviderSinkDatasetNameRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataFlowSpecForProviderSinkDatasetNameRefPolicyResolveEnum>))]
 public enum V1beta2DataFlowSpecForProviderSinkDatasetNameRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta2DataFlowSpecForProviderSinkDatasetNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderSinkDatasetNameRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta2DataFlowSpecForProviderSinkDatasetNameRefPolicy
 }
 
 /// <summary>Reference to a DataSetJSON in datafactory to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderSinkDatasetNameRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta2DataFlowSpecForProviderSinkDatasetNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataFlowSpecForProviderSinkDatasetNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2DataFlowSpecForProviderSinkDatasetNameSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta2DataFlowSpecForProviderSinkDatasetNameSelectorPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataFlowSpecForProviderSinkDatasetNameSelectorPolicyResolveEnum>))]
 public enum V1beta2DataFlowSpecForProviderSinkDatasetNameSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta2DataFlowSpecForProviderSinkDatasetNameSelectorPolicyResolveEn
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderSinkDatasetNameSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta2DataFlowSpecForProviderSinkDatasetNameSelectorPolicy
 }
 
 /// <summary>Selector for a DataSetJSON in datafactory to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderSinkDatasetNameSelector
 {
@@ -350,7 +350,7 @@ public partial class V1beta2DataFlowSpecForProviderSinkDatasetNameSelector
 }
 
 /// <summary>A dataset block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderSinkDataset
 {
@@ -372,7 +372,7 @@ public partial class V1beta2DataFlowSpecForProviderSinkDataset
 }
 
 /// <summary>A flowlet block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderSinkFlowlet
 {
@@ -390,7 +390,7 @@ public partial class V1beta2DataFlowSpecForProviderSinkFlowlet
 }
 
 /// <summary>A linked_service block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderSinkLinkedService
 {
@@ -404,7 +404,7 @@ public partial class V1beta2DataFlowSpecForProviderSinkLinkedService
 }
 
 /// <summary>A rejected_linked_service block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderSinkRejectedLinkedService
 {
@@ -418,7 +418,7 @@ public partial class V1beta2DataFlowSpecForProviderSinkRejectedLinkedService
 }
 
 /// <summary>A schema_linked_service block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderSinkSchemaLinkedService
 {
@@ -431,7 +431,7 @@ public partial class V1beta2DataFlowSpecForProviderSinkSchemaLinkedService
     public IDictionary<string, string>? Parameters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderSink
 {
@@ -470,7 +470,7 @@ public partial class V1beta2DataFlowSpecForProviderSink
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataFlowSpecForProviderSourceDatasetNameRefPolicyResolutionEnum>))]
 public enum V1beta2DataFlowSpecForProviderSourceDatasetNameRefPolicyResolutionEnum
 {
@@ -486,7 +486,7 @@ public enum V1beta2DataFlowSpecForProviderSourceDatasetNameRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataFlowSpecForProviderSourceDatasetNameRefPolicyResolveEnum>))]
 public enum V1beta2DataFlowSpecForProviderSourceDatasetNameRefPolicyResolveEnum
 {
@@ -497,7 +497,7 @@ public enum V1beta2DataFlowSpecForProviderSourceDatasetNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderSourceDatasetNameRefPolicy
 {
@@ -521,7 +521,7 @@ public partial class V1beta2DataFlowSpecForProviderSourceDatasetNameRefPolicy
 }
 
 /// <summary>Reference to a DataSetJSON in datafactory to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderSourceDatasetNameRef
 {
@@ -540,7 +540,7 @@ public partial class V1beta2DataFlowSpecForProviderSourceDatasetNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataFlowSpecForProviderSourceDatasetNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2DataFlowSpecForProviderSourceDatasetNameSelectorPolicyResolutionEnum
 {
@@ -556,7 +556,7 @@ public enum V1beta2DataFlowSpecForProviderSourceDatasetNameSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataFlowSpecForProviderSourceDatasetNameSelectorPolicyResolveEnum>))]
 public enum V1beta2DataFlowSpecForProviderSourceDatasetNameSelectorPolicyResolveEnum
 {
@@ -567,7 +567,7 @@ public enum V1beta2DataFlowSpecForProviderSourceDatasetNameSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderSourceDatasetNameSelectorPolicy
 {
@@ -591,7 +591,7 @@ public partial class V1beta2DataFlowSpecForProviderSourceDatasetNameSelectorPoli
 }
 
 /// <summary>Selector for a DataSetJSON in datafactory to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderSourceDatasetNameSelector
 {
@@ -612,7 +612,7 @@ public partial class V1beta2DataFlowSpecForProviderSourceDatasetNameSelector
 }
 
 /// <summary>A dataset block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderSourceDataset
 {
@@ -634,7 +634,7 @@ public partial class V1beta2DataFlowSpecForProviderSourceDataset
 }
 
 /// <summary>A flowlet block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderSourceFlowlet
 {
@@ -652,7 +652,7 @@ public partial class V1beta2DataFlowSpecForProviderSourceFlowlet
 }
 
 /// <summary>A linked_service block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderSourceLinkedService
 {
@@ -666,7 +666,7 @@ public partial class V1beta2DataFlowSpecForProviderSourceLinkedService
 }
 
 /// <summary>A rejected_linked_service block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderSourceRejectedLinkedService
 {
@@ -680,7 +680,7 @@ public partial class V1beta2DataFlowSpecForProviderSourceRejectedLinkedService
 }
 
 /// <summary>A schema_linked_service block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderSourceSchemaLinkedService
 {
@@ -693,7 +693,7 @@ public partial class V1beta2DataFlowSpecForProviderSourceSchemaLinkedService
     public IDictionary<string, string>? Parameters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderSource
 {
@@ -727,7 +727,7 @@ public partial class V1beta2DataFlowSpecForProviderSource
 }
 
 /// <summary>A dataset block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderTransformationDataset
 {
@@ -741,7 +741,7 @@ public partial class V1beta2DataFlowSpecForProviderTransformationDataset
 }
 
 /// <summary>A flowlet block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderTransformationFlowlet
 {
@@ -759,7 +759,7 @@ public partial class V1beta2DataFlowSpecForProviderTransformationFlowlet
 }
 
 /// <summary>A linked_service block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderTransformationLinkedService
 {
@@ -772,7 +772,7 @@ public partial class V1beta2DataFlowSpecForProviderTransformationLinkedService
     public IDictionary<string, string>? Parameters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProviderTransformation
 {
@@ -797,7 +797,7 @@ public partial class V1beta2DataFlowSpecForProviderTransformation
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecForProvider
 {
@@ -852,7 +852,7 @@ public partial class V1beta2DataFlowSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataFlowSpecInitProviderSinkDatasetNameRefPolicyResolutionEnum>))]
 public enum V1beta2DataFlowSpecInitProviderSinkDatasetNameRefPolicyResolutionEnum
 {
@@ -868,7 +868,7 @@ public enum V1beta2DataFlowSpecInitProviderSinkDatasetNameRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataFlowSpecInitProviderSinkDatasetNameRefPolicyResolveEnum>))]
 public enum V1beta2DataFlowSpecInitProviderSinkDatasetNameRefPolicyResolveEnum
 {
@@ -879,7 +879,7 @@ public enum V1beta2DataFlowSpecInitProviderSinkDatasetNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProviderSinkDatasetNameRefPolicy
 {
@@ -903,7 +903,7 @@ public partial class V1beta2DataFlowSpecInitProviderSinkDatasetNameRefPolicy
 }
 
 /// <summary>Reference to a DataSetJSON in datafactory to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProviderSinkDatasetNameRef
 {
@@ -922,7 +922,7 @@ public partial class V1beta2DataFlowSpecInitProviderSinkDatasetNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataFlowSpecInitProviderSinkDatasetNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2DataFlowSpecInitProviderSinkDatasetNameSelectorPolicyResolutionEnum
 {
@@ -938,7 +938,7 @@ public enum V1beta2DataFlowSpecInitProviderSinkDatasetNameSelectorPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataFlowSpecInitProviderSinkDatasetNameSelectorPolicyResolveEnum>))]
 public enum V1beta2DataFlowSpecInitProviderSinkDatasetNameSelectorPolicyResolveEnum
 {
@@ -949,7 +949,7 @@ public enum V1beta2DataFlowSpecInitProviderSinkDatasetNameSelectorPolicyResolveE
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProviderSinkDatasetNameSelectorPolicy
 {
@@ -973,7 +973,7 @@ public partial class V1beta2DataFlowSpecInitProviderSinkDatasetNameSelectorPolic
 }
 
 /// <summary>Selector for a DataSetJSON in datafactory to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProviderSinkDatasetNameSelector
 {
@@ -994,7 +994,7 @@ public partial class V1beta2DataFlowSpecInitProviderSinkDatasetNameSelector
 }
 
 /// <summary>A dataset block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProviderSinkDataset
 {
@@ -1016,7 +1016,7 @@ public partial class V1beta2DataFlowSpecInitProviderSinkDataset
 }
 
 /// <summary>A flowlet block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProviderSinkFlowlet
 {
@@ -1034,7 +1034,7 @@ public partial class V1beta2DataFlowSpecInitProviderSinkFlowlet
 }
 
 /// <summary>A linked_service block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProviderSinkLinkedService
 {
@@ -1048,7 +1048,7 @@ public partial class V1beta2DataFlowSpecInitProviderSinkLinkedService
 }
 
 /// <summary>A rejected_linked_service block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProviderSinkRejectedLinkedService
 {
@@ -1062,7 +1062,7 @@ public partial class V1beta2DataFlowSpecInitProviderSinkRejectedLinkedService
 }
 
 /// <summary>A schema_linked_service block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProviderSinkSchemaLinkedService
 {
@@ -1075,7 +1075,7 @@ public partial class V1beta2DataFlowSpecInitProviderSinkSchemaLinkedService
     public IDictionary<string, string>? Parameters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProviderSink
 {
@@ -1114,7 +1114,7 @@ public partial class V1beta2DataFlowSpecInitProviderSink
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataFlowSpecInitProviderSourceDatasetNameRefPolicyResolutionEnum>))]
 public enum V1beta2DataFlowSpecInitProviderSourceDatasetNameRefPolicyResolutionEnum
 {
@@ -1130,7 +1130,7 @@ public enum V1beta2DataFlowSpecInitProviderSourceDatasetNameRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataFlowSpecInitProviderSourceDatasetNameRefPolicyResolveEnum>))]
 public enum V1beta2DataFlowSpecInitProviderSourceDatasetNameRefPolicyResolveEnum
 {
@@ -1141,7 +1141,7 @@ public enum V1beta2DataFlowSpecInitProviderSourceDatasetNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProviderSourceDatasetNameRefPolicy
 {
@@ -1165,7 +1165,7 @@ public partial class V1beta2DataFlowSpecInitProviderSourceDatasetNameRefPolicy
 }
 
 /// <summary>Reference to a DataSetJSON in datafactory to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProviderSourceDatasetNameRef
 {
@@ -1184,7 +1184,7 @@ public partial class V1beta2DataFlowSpecInitProviderSourceDatasetNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataFlowSpecInitProviderSourceDatasetNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2DataFlowSpecInitProviderSourceDatasetNameSelectorPolicyResolutionEnum
 {
@@ -1200,7 +1200,7 @@ public enum V1beta2DataFlowSpecInitProviderSourceDatasetNameSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataFlowSpecInitProviderSourceDatasetNameSelectorPolicyResolveEnum>))]
 public enum V1beta2DataFlowSpecInitProviderSourceDatasetNameSelectorPolicyResolveEnum
 {
@@ -1211,7 +1211,7 @@ public enum V1beta2DataFlowSpecInitProviderSourceDatasetNameSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProviderSourceDatasetNameSelectorPolicy
 {
@@ -1235,7 +1235,7 @@ public partial class V1beta2DataFlowSpecInitProviderSourceDatasetNameSelectorPol
 }
 
 /// <summary>Selector for a DataSetJSON in datafactory to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProviderSourceDatasetNameSelector
 {
@@ -1256,7 +1256,7 @@ public partial class V1beta2DataFlowSpecInitProviderSourceDatasetNameSelector
 }
 
 /// <summary>A dataset block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProviderSourceDataset
 {
@@ -1278,7 +1278,7 @@ public partial class V1beta2DataFlowSpecInitProviderSourceDataset
 }
 
 /// <summary>A flowlet block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProviderSourceFlowlet
 {
@@ -1296,7 +1296,7 @@ public partial class V1beta2DataFlowSpecInitProviderSourceFlowlet
 }
 
 /// <summary>A linked_service block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProviderSourceLinkedService
 {
@@ -1310,7 +1310,7 @@ public partial class V1beta2DataFlowSpecInitProviderSourceLinkedService
 }
 
 /// <summary>A rejected_linked_service block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProviderSourceRejectedLinkedService
 {
@@ -1324,7 +1324,7 @@ public partial class V1beta2DataFlowSpecInitProviderSourceRejectedLinkedService
 }
 
 /// <summary>A schema_linked_service block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProviderSourceSchemaLinkedService
 {
@@ -1337,7 +1337,7 @@ public partial class V1beta2DataFlowSpecInitProviderSourceSchemaLinkedService
     public IDictionary<string, string>? Parameters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProviderSource
 {
@@ -1371,7 +1371,7 @@ public partial class V1beta2DataFlowSpecInitProviderSource
 }
 
 /// <summary>A dataset block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProviderTransformationDataset
 {
@@ -1385,7 +1385,7 @@ public partial class V1beta2DataFlowSpecInitProviderTransformationDataset
 }
 
 /// <summary>A flowlet block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProviderTransformationFlowlet
 {
@@ -1403,7 +1403,7 @@ public partial class V1beta2DataFlowSpecInitProviderTransformationFlowlet
 }
 
 /// <summary>A linked_service block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProviderTransformationLinkedService
 {
@@ -1416,7 +1416,7 @@ public partial class V1beta2DataFlowSpecInitProviderTransformationLinkedService
     public IDictionary<string, string>? Parameters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProviderTransformation
 {
@@ -1453,7 +1453,7 @@ public partial class V1beta2DataFlowSpecInitProviderTransformation
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecInitProvider
 {
@@ -1494,7 +1494,7 @@ public partial class V1beta2DataFlowSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataFlowSpecManagementPoliciesEnum>))]
 public enum V1beta2DataFlowSpecManagementPoliciesEnum
 {
@@ -1518,7 +1518,7 @@ public enum V1beta2DataFlowSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataFlowSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2DataFlowSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1534,7 +1534,7 @@ public enum V1beta2DataFlowSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DataFlowSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2DataFlowSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1545,7 +1545,7 @@ public enum V1beta2DataFlowSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecProviderConfigRefPolicy
 {
@@ -1573,7 +1573,7 @@ public partial class V1beta2DataFlowSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecProviderConfigRef
 {
@@ -1592,7 +1592,7 @@ public partial class V1beta2DataFlowSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpecWriteConnectionSecretToRef
 {
@@ -1606,7 +1606,7 @@ public partial class V1beta2DataFlowSpecWriteConnectionSecretToRef
 }
 
 /// <summary>DataFlowSpec defines the desired state of DataFlow</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowSpec
 {
@@ -1674,7 +1674,7 @@ public partial class V1beta2DataFlowSpec
 }
 
 /// <summary>A dataset block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowStatusAtProviderSinkDataset
 {
@@ -1688,7 +1688,7 @@ public partial class V1beta2DataFlowStatusAtProviderSinkDataset
 }
 
 /// <summary>A flowlet block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowStatusAtProviderSinkFlowlet
 {
@@ -1706,7 +1706,7 @@ public partial class V1beta2DataFlowStatusAtProviderSinkFlowlet
 }
 
 /// <summary>A linked_service block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowStatusAtProviderSinkLinkedService
 {
@@ -1720,7 +1720,7 @@ public partial class V1beta2DataFlowStatusAtProviderSinkLinkedService
 }
 
 /// <summary>A rejected_linked_service block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowStatusAtProviderSinkRejectedLinkedService
 {
@@ -1734,7 +1734,7 @@ public partial class V1beta2DataFlowStatusAtProviderSinkRejectedLinkedService
 }
 
 /// <summary>A schema_linked_service block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowStatusAtProviderSinkSchemaLinkedService
 {
@@ -1747,7 +1747,7 @@ public partial class V1beta2DataFlowStatusAtProviderSinkSchemaLinkedService
     public IDictionary<string, string>? Parameters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowStatusAtProviderSink
 {
@@ -1781,7 +1781,7 @@ public partial class V1beta2DataFlowStatusAtProviderSink
 }
 
 /// <summary>A dataset block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowStatusAtProviderSourceDataset
 {
@@ -1795,7 +1795,7 @@ public partial class V1beta2DataFlowStatusAtProviderSourceDataset
 }
 
 /// <summary>A flowlet block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowStatusAtProviderSourceFlowlet
 {
@@ -1813,7 +1813,7 @@ public partial class V1beta2DataFlowStatusAtProviderSourceFlowlet
 }
 
 /// <summary>A linked_service block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowStatusAtProviderSourceLinkedService
 {
@@ -1827,7 +1827,7 @@ public partial class V1beta2DataFlowStatusAtProviderSourceLinkedService
 }
 
 /// <summary>A rejected_linked_service block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowStatusAtProviderSourceRejectedLinkedService
 {
@@ -1841,7 +1841,7 @@ public partial class V1beta2DataFlowStatusAtProviderSourceRejectedLinkedService
 }
 
 /// <summary>A schema_linked_service block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowStatusAtProviderSourceSchemaLinkedService
 {
@@ -1854,7 +1854,7 @@ public partial class V1beta2DataFlowStatusAtProviderSourceSchemaLinkedService
     public IDictionary<string, string>? Parameters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowStatusAtProviderSource
 {
@@ -1888,7 +1888,7 @@ public partial class V1beta2DataFlowStatusAtProviderSource
 }
 
 /// <summary>A dataset block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowStatusAtProviderTransformationDataset
 {
@@ -1902,7 +1902,7 @@ public partial class V1beta2DataFlowStatusAtProviderTransformationDataset
 }
 
 /// <summary>A flowlet block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowStatusAtProviderTransformationFlowlet
 {
@@ -1920,7 +1920,7 @@ public partial class V1beta2DataFlowStatusAtProviderTransformationFlowlet
 }
 
 /// <summary>A linked_service block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowStatusAtProviderTransformationLinkedService
 {
@@ -1933,7 +1933,7 @@ public partial class V1beta2DataFlowStatusAtProviderTransformationLinkedService
     public IDictionary<string, string>? Parameters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowStatusAtProviderTransformation
 {
@@ -1958,7 +1958,7 @@ public partial class V1beta2DataFlowStatusAtProviderTransformation
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowStatusAtProvider
 {
@@ -2004,7 +2004,7 @@ public partial class V1beta2DataFlowStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowStatusConditions
 {
@@ -2047,7 +2047,7 @@ public partial class V1beta2DataFlowStatusConditions
 }
 
 /// <summary>DataFlowStatus defines the observed state of DataFlow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataFlowStatus
 {
@@ -2068,7 +2068,7 @@ public partial class V1beta2DataFlowStatus
 }
 
 /// <summary>DataFlow is the Schema for the DataFlows API. Manages a Data Flow inside an Azure Data Factory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2DataFlow : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2DataFlowSpec>, IStatus<V1beta2DataFlowStatus?>

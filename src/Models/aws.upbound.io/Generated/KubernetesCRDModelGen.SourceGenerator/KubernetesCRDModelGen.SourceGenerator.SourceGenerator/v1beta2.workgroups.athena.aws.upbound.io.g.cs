@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.athena.aws.upbound.io;
 /// <summary>Workgroup is the Schema for the Workgroups API. Manages an Athena Workgroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2WorkgroupList : IKubernetesObject<V1ListMeta>, IItems<V1beta2Workgroup>
@@ -45,7 +45,7 @@ public partial class V1beta2WorkgroupList : IKubernetesObject<V1ListMeta>, IItem
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkgroupSpecDeletionPolicyEnum>))]
 public enum V1beta2WorkgroupSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2WorkgroupSpecDeletionPolicyEnum
 }
 
 /// <summary>Configuration block to specify the KMS key that is used to encrypt the user&apos;s data stores in Athena. This setting applies to the PySpark engine for Athena notebooks. See Customer Content Encryption Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecForProviderConfigurationCustomerContentEncryptionConfiguration
 {
@@ -66,7 +66,7 @@ public partial class V1beta2WorkgroupSpecForProviderConfigurationCustomerContent
 }
 
 /// <summary>Configuration block for the Athena Engine Versioning. For more information, see Athena Engine Versioning. See Engine Version below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecForProviderConfigurationEngineVersion
 {
@@ -76,7 +76,7 @@ public partial class V1beta2WorkgroupSpecForProviderConfigurationEngineVersion
 }
 
 /// <summary>Configuration block to set up an IAM Identity Center enabled workgroup. See Identity Center Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecForProviderConfigurationIdentityCenterConfiguration
 {
@@ -90,7 +90,7 @@ public partial class V1beta2WorkgroupSpecForProviderConfigurationIdentityCenterC
 }
 
 /// <summary>Configuration block with encryption settings. See Encryption Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecForProviderConfigurationManagedQueryResultsConfigurationEncryptionConfiguration
 {
@@ -100,7 +100,7 @@ public partial class V1beta2WorkgroupSpecForProviderConfigurationManagedQueryRes
 }
 
 /// <summary>Configuration block for storing results in Athena owned storage. See Managed Query Results Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecForProviderConfigurationManagedQueryResultsConfiguration
 {
@@ -113,7 +113,7 @@ public partial class V1beta2WorkgroupSpecForProviderConfigurationManagedQueryRes
     public V1beta2WorkgroupSpecForProviderConfigurationManagedQueryResultsConfigurationEncryptionConfiguration? EncryptionConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecForProviderConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogType
 {
@@ -127,7 +127,7 @@ public partial class V1beta2WorkgroupSpecForProviderConfigurationMonitoringConfi
 }
 
 /// <summary>Configuration block for delivering logs to Amazon CloudWatch log groups. See CloudWatch Logging Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecForProviderConfigurationMonitoringConfigurationCloudWatchLoggingConfiguration
 {
@@ -149,7 +149,7 @@ public partial class V1beta2WorkgroupSpecForProviderConfigurationMonitoringConfi
 }
 
 /// <summary>Configuration block for managed log persistence. See Managed Logging Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecForProviderConfigurationMonitoringConfigurationManagedLoggingConfiguration
 {
@@ -163,7 +163,7 @@ public partial class V1beta2WorkgroupSpecForProviderConfigurationMonitoringConfi
 }
 
 /// <summary>Configuration block for delivering logs to Amazon S3 buckets. See S3 Logging Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecForProviderConfigurationMonitoringConfigurationS3LoggingConfiguration
 {
@@ -181,7 +181,7 @@ public partial class V1beta2WorkgroupSpecForProviderConfigurationMonitoringConfi
 }
 
 /// <summary>Configuration block for managed log persistence, delivering logs to Amazon S3 buckets, Amazon CloudWatch log groups etc. Only applicable to Apache Spark engine. See Monitoring Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecForProviderConfigurationMonitoringConfiguration
 {
@@ -199,7 +199,7 @@ public partial class V1beta2WorkgroupSpecForProviderConfigurationMonitoringConfi
 }
 
 /// <summary>Configuration block for S3 access grants. See Query Results S3 Access Grants Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecForProviderConfigurationQueryResultsS3AccessGrantsConfiguration
 {
@@ -217,7 +217,7 @@ public partial class V1beta2WorkgroupSpecForProviderConfigurationQueryResultsS3A
 }
 
 /// <summary>That an Amazon S3 canned ACL should be set to control ownership of stored query results. See ACL Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecForProviderConfigurationResultConfigurationAclConfiguration
 {
@@ -232,7 +232,7 @@ public partial class V1beta2WorkgroupSpecForProviderConfigurationResultConfigura
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnRefPolicyResolutionEnum>))]
 public enum V1beta2WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnRefPolicyResolutionEnum
 {
@@ -248,7 +248,7 @@ public enum V1beta2WorkgroupSpecForProviderConfigurationResultConfigurationEncry
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnRefPolicyResolveEnum>))]
 public enum V1beta2WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnRefPolicyResolveEnum
 {
@@ -259,7 +259,7 @@ public enum V1beta2WorkgroupSpecForProviderConfigurationResultConfigurationEncry
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnRefPolicy
 {
@@ -283,7 +283,7 @@ public partial class V1beta2WorkgroupSpecForProviderConfigurationResultConfigura
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnRef
 {
@@ -302,7 +302,7 @@ public partial class V1beta2WorkgroupSpecForProviderConfigurationResultConfigura
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnSelectorPolicyResolutionEnum
 {
@@ -318,7 +318,7 @@ public enum V1beta2WorkgroupSpecForProviderConfigurationResultConfigurationEncry
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnSelectorPolicyResolveEnum>))]
 public enum V1beta2WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnSelectorPolicyResolveEnum
 {
@@ -329,7 +329,7 @@ public enum V1beta2WorkgroupSpecForProviderConfigurationResultConfigurationEncry
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnSelectorPolicy
 {
@@ -353,7 +353,7 @@ public partial class V1beta2WorkgroupSpecForProviderConfigurationResultConfigura
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnSelector
 {
@@ -374,7 +374,7 @@ public partial class V1beta2WorkgroupSpecForProviderConfigurationResultConfigura
 }
 
 /// <summary>Configuration block with encryption settings. See Encryption Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfiguration
 {
@@ -396,7 +396,7 @@ public partial class V1beta2WorkgroupSpecForProviderConfigurationResultConfigura
 }
 
 /// <summary>Configuration block with result settings. See Result Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecForProviderConfigurationResultConfiguration
 {
@@ -418,7 +418,7 @@ public partial class V1beta2WorkgroupSpecForProviderConfigurationResultConfigura
 }
 
 /// <summary>Configuration block with various settings for the workgroup. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecForProviderConfiguration
 {
@@ -475,7 +475,7 @@ public partial class V1beta2WorkgroupSpecForProviderConfiguration
     public V1beta2WorkgroupSpecForProviderConfigurationResultConfiguration? ResultConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecForProvider
 {
@@ -508,7 +508,7 @@ public partial class V1beta2WorkgroupSpecForProvider
 }
 
 /// <summary>Configuration block to specify the KMS key that is used to encrypt the user&apos;s data stores in Athena. This setting applies to the PySpark engine for Athena notebooks. See Customer Content Encryption Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecInitProviderConfigurationCustomerContentEncryptionConfiguration
 {
@@ -518,7 +518,7 @@ public partial class V1beta2WorkgroupSpecInitProviderConfigurationCustomerConten
 }
 
 /// <summary>Configuration block for the Athena Engine Versioning. For more information, see Athena Engine Versioning. See Engine Version below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecInitProviderConfigurationEngineVersion
 {
@@ -528,7 +528,7 @@ public partial class V1beta2WorkgroupSpecInitProviderConfigurationEngineVersion
 }
 
 /// <summary>Configuration block to set up an IAM Identity Center enabled workgroup. See Identity Center Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecInitProviderConfigurationIdentityCenterConfiguration
 {
@@ -542,7 +542,7 @@ public partial class V1beta2WorkgroupSpecInitProviderConfigurationIdentityCenter
 }
 
 /// <summary>Configuration block with encryption settings. See Encryption Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecInitProviderConfigurationManagedQueryResultsConfigurationEncryptionConfiguration
 {
@@ -552,7 +552,7 @@ public partial class V1beta2WorkgroupSpecInitProviderConfigurationManagedQueryRe
 }
 
 /// <summary>Configuration block for storing results in Athena owned storage. See Managed Query Results Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecInitProviderConfigurationManagedQueryResultsConfiguration
 {
@@ -565,7 +565,7 @@ public partial class V1beta2WorkgroupSpecInitProviderConfigurationManagedQueryRe
     public V1beta2WorkgroupSpecInitProviderConfigurationManagedQueryResultsConfigurationEncryptionConfiguration? EncryptionConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecInitProviderConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogType
 {
@@ -579,7 +579,7 @@ public partial class V1beta2WorkgroupSpecInitProviderConfigurationMonitoringConf
 }
 
 /// <summary>Configuration block for delivering logs to Amazon CloudWatch log groups. See CloudWatch Logging Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecInitProviderConfigurationMonitoringConfigurationCloudWatchLoggingConfiguration
 {
@@ -601,7 +601,7 @@ public partial class V1beta2WorkgroupSpecInitProviderConfigurationMonitoringConf
 }
 
 /// <summary>Configuration block for managed log persistence. See Managed Logging Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecInitProviderConfigurationMonitoringConfigurationManagedLoggingConfiguration
 {
@@ -615,7 +615,7 @@ public partial class V1beta2WorkgroupSpecInitProviderConfigurationMonitoringConf
 }
 
 /// <summary>Configuration block for delivering logs to Amazon S3 buckets. See S3 Logging Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecInitProviderConfigurationMonitoringConfigurationS3LoggingConfiguration
 {
@@ -633,7 +633,7 @@ public partial class V1beta2WorkgroupSpecInitProviderConfigurationMonitoringConf
 }
 
 /// <summary>Configuration block for managed log persistence, delivering logs to Amazon S3 buckets, Amazon CloudWatch log groups etc. Only applicable to Apache Spark engine. See Monitoring Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecInitProviderConfigurationMonitoringConfiguration
 {
@@ -651,7 +651,7 @@ public partial class V1beta2WorkgroupSpecInitProviderConfigurationMonitoringConf
 }
 
 /// <summary>Configuration block for S3 access grants. See Query Results S3 Access Grants Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecInitProviderConfigurationQueryResultsS3AccessGrantsConfiguration
 {
@@ -669,7 +669,7 @@ public partial class V1beta2WorkgroupSpecInitProviderConfigurationQueryResultsS3
 }
 
 /// <summary>That an Amazon S3 canned ACL should be set to control ownership of stored query results. See ACL Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecInitProviderConfigurationResultConfigurationAclConfiguration
 {
@@ -684,7 +684,7 @@ public partial class V1beta2WorkgroupSpecInitProviderConfigurationResultConfigur
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnRefPolicyResolutionEnum>))]
 public enum V1beta2WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnRefPolicyResolutionEnum
 {
@@ -700,7 +700,7 @@ public enum V1beta2WorkgroupSpecInitProviderConfigurationResultConfigurationEncr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnRefPolicyResolveEnum>))]
 public enum V1beta2WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnRefPolicyResolveEnum
 {
@@ -711,7 +711,7 @@ public enum V1beta2WorkgroupSpecInitProviderConfigurationResultConfigurationEncr
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnRefPolicy
 {
@@ -735,7 +735,7 @@ public partial class V1beta2WorkgroupSpecInitProviderConfigurationResultConfigur
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnRef
 {
@@ -754,7 +754,7 @@ public partial class V1beta2WorkgroupSpecInitProviderConfigurationResultConfigur
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnSelectorPolicyResolutionEnum
 {
@@ -770,7 +770,7 @@ public enum V1beta2WorkgroupSpecInitProviderConfigurationResultConfigurationEncr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnSelectorPolicyResolveEnum>))]
 public enum V1beta2WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnSelectorPolicyResolveEnum
 {
@@ -781,7 +781,7 @@ public enum V1beta2WorkgroupSpecInitProviderConfigurationResultConfigurationEncr
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnSelectorPolicy
 {
@@ -805,7 +805,7 @@ public partial class V1beta2WorkgroupSpecInitProviderConfigurationResultConfigur
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnSelector
 {
@@ -826,7 +826,7 @@ public partial class V1beta2WorkgroupSpecInitProviderConfigurationResultConfigur
 }
 
 /// <summary>Configuration block with encryption settings. See Encryption Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfiguration
 {
@@ -848,7 +848,7 @@ public partial class V1beta2WorkgroupSpecInitProviderConfigurationResultConfigur
 }
 
 /// <summary>Configuration block with result settings. See Result Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecInitProviderConfigurationResultConfiguration
 {
@@ -870,7 +870,7 @@ public partial class V1beta2WorkgroupSpecInitProviderConfigurationResultConfigur
 }
 
 /// <summary>Configuration block with various settings for the workgroup. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecInitProviderConfiguration
 {
@@ -939,7 +939,7 @@ public partial class V1beta2WorkgroupSpecInitProviderConfiguration
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecInitProvider
 {
@@ -968,7 +968,7 @@ public partial class V1beta2WorkgroupSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkgroupSpecManagementPoliciesEnum>))]
 public enum V1beta2WorkgroupSpecManagementPoliciesEnum
 {
@@ -992,7 +992,7 @@ public enum V1beta2WorkgroupSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkgroupSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2WorkgroupSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1008,7 +1008,7 @@ public enum V1beta2WorkgroupSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkgroupSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2WorkgroupSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1019,7 +1019,7 @@ public enum V1beta2WorkgroupSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecProviderConfigRefPolicy
 {
@@ -1047,7 +1047,7 @@ public partial class V1beta2WorkgroupSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecProviderConfigRef
 {
@@ -1066,7 +1066,7 @@ public partial class V1beta2WorkgroupSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpecWriteConnectionSecretToRef
 {
@@ -1080,7 +1080,7 @@ public partial class V1beta2WorkgroupSpecWriteConnectionSecretToRef
 }
 
 /// <summary>WorkgroupSpec defines the desired state of Workgroup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupSpec
 {
@@ -1148,7 +1148,7 @@ public partial class V1beta2WorkgroupSpec
 }
 
 /// <summary>Configuration block to specify the KMS key that is used to encrypt the user&apos;s data stores in Athena. This setting applies to the PySpark engine for Athena notebooks. See Customer Content Encryption Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupStatusAtProviderConfigurationCustomerContentEncryptionConfiguration
 {
@@ -1158,7 +1158,7 @@ public partial class V1beta2WorkgroupStatusAtProviderConfigurationCustomerConten
 }
 
 /// <summary>Configuration block for the Athena Engine Versioning. For more information, see Athena Engine Versioning. See Engine Version below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupStatusAtProviderConfigurationEngineVersion
 {
@@ -1172,7 +1172,7 @@ public partial class V1beta2WorkgroupStatusAtProviderConfigurationEngineVersion
 }
 
 /// <summary>Configuration block to set up an IAM Identity Center enabled workgroup. See Identity Center Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupStatusAtProviderConfigurationIdentityCenterConfiguration
 {
@@ -1186,7 +1186,7 @@ public partial class V1beta2WorkgroupStatusAtProviderConfigurationIdentityCenter
 }
 
 /// <summary>Configuration block with encryption settings. See Encryption Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupStatusAtProviderConfigurationManagedQueryResultsConfigurationEncryptionConfiguration
 {
@@ -1196,7 +1196,7 @@ public partial class V1beta2WorkgroupStatusAtProviderConfigurationManagedQueryRe
 }
 
 /// <summary>Configuration block for storing results in Athena owned storage. See Managed Query Results Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupStatusAtProviderConfigurationManagedQueryResultsConfiguration
 {
@@ -1209,7 +1209,7 @@ public partial class V1beta2WorkgroupStatusAtProviderConfigurationManagedQueryRe
     public V1beta2WorkgroupStatusAtProviderConfigurationManagedQueryResultsConfigurationEncryptionConfiguration? EncryptionConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupStatusAtProviderConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogType
 {
@@ -1223,7 +1223,7 @@ public partial class V1beta2WorkgroupStatusAtProviderConfigurationMonitoringConf
 }
 
 /// <summary>Configuration block for delivering logs to Amazon CloudWatch log groups. See CloudWatch Logging Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupStatusAtProviderConfigurationMonitoringConfigurationCloudWatchLoggingConfiguration
 {
@@ -1245,7 +1245,7 @@ public partial class V1beta2WorkgroupStatusAtProviderConfigurationMonitoringConf
 }
 
 /// <summary>Configuration block for managed log persistence. See Managed Logging Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupStatusAtProviderConfigurationMonitoringConfigurationManagedLoggingConfiguration
 {
@@ -1259,7 +1259,7 @@ public partial class V1beta2WorkgroupStatusAtProviderConfigurationMonitoringConf
 }
 
 /// <summary>Configuration block for delivering logs to Amazon S3 buckets. See S3 Logging Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupStatusAtProviderConfigurationMonitoringConfigurationS3LoggingConfiguration
 {
@@ -1277,7 +1277,7 @@ public partial class V1beta2WorkgroupStatusAtProviderConfigurationMonitoringConf
 }
 
 /// <summary>Configuration block for managed log persistence, delivering logs to Amazon S3 buckets, Amazon CloudWatch log groups etc. Only applicable to Apache Spark engine. See Monitoring Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupStatusAtProviderConfigurationMonitoringConfiguration
 {
@@ -1295,7 +1295,7 @@ public partial class V1beta2WorkgroupStatusAtProviderConfigurationMonitoringConf
 }
 
 /// <summary>Configuration block for S3 access grants. See Query Results S3 Access Grants Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupStatusAtProviderConfigurationQueryResultsS3AccessGrantsConfiguration
 {
@@ -1313,7 +1313,7 @@ public partial class V1beta2WorkgroupStatusAtProviderConfigurationQueryResultsS3
 }
 
 /// <summary>That an Amazon S3 canned ACL should be set to control ownership of stored query results. See ACL Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupStatusAtProviderConfigurationResultConfigurationAclConfiguration
 {
@@ -1323,7 +1323,7 @@ public partial class V1beta2WorkgroupStatusAtProviderConfigurationResultConfigur
 }
 
 /// <summary>Configuration block with encryption settings. See Encryption Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupStatusAtProviderConfigurationResultConfigurationEncryptionConfiguration
 {
@@ -1337,7 +1337,7 @@ public partial class V1beta2WorkgroupStatusAtProviderConfigurationResultConfigur
 }
 
 /// <summary>Configuration block with result settings. See Result Configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupStatusAtProviderConfigurationResultConfiguration
 {
@@ -1359,7 +1359,7 @@ public partial class V1beta2WorkgroupStatusAtProviderConfigurationResultConfigur
 }
 
 /// <summary>Configuration block with various settings for the workgroup. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupStatusAtProviderConfiguration
 {
@@ -1416,7 +1416,7 @@ public partial class V1beta2WorkgroupStatusAtProviderConfiguration
     public V1beta2WorkgroupStatusAtProviderConfigurationResultConfiguration? ResultConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupStatusAtProvider
 {
@@ -1461,7 +1461,7 @@ public partial class V1beta2WorkgroupStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupStatusConditions
 {
@@ -1504,7 +1504,7 @@ public partial class V1beta2WorkgroupStatusConditions
 }
 
 /// <summary>WorkgroupStatus defines the observed state of Workgroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkgroupStatus
 {
@@ -1525,7 +1525,7 @@ public partial class V1beta2WorkgroupStatus
 }
 
 /// <summary>Workgroup is the Schema for the Workgroups API. Manages an Athena Workgroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2Workgroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2WorkgroupSpec>, IStatus<V1beta2WorkgroupStatus?>

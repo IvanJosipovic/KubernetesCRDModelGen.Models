@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.upbound.io;
 /// <summary>FirewallPolicyAssociation is the Schema for the FirewallPolicyAssociations API. Allows associating hierarchical firewall policies with the target where they are applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FirewallPolicyAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1FirewallPolicyAssociation>
@@ -45,7 +45,7 @@ public partial class V1beta1FirewallPolicyAssociationList : IKubernetesObject<V1
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyAssociationSpecDeletionPolicyEnum>))]
 public enum V1beta1FirewallPolicyAssociationSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1FirewallPolicyAssociationSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyAssociationSpecForProviderAttachmentTargetRefPolicyResolutionEnum>))]
 public enum V1beta1FirewallPolicyAssociationSpecForProviderAttachmentTargetRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1FirewallPolicyAssociationSpecForProviderAttachmentTargetRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyAssociationSpecForProviderAttachmentTargetRefPolicyResolveEnum>))]
 public enum V1beta1FirewallPolicyAssociationSpecForProviderAttachmentTargetRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1FirewallPolicyAssociationSpecForProviderAttachmentTargetRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationSpecForProviderAttachmentTargetRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1FirewallPolicyAssociationSpecForProviderAttachmentTa
 }
 
 /// <summary>Reference to a Folder in cloudplatform to populate attachmentTarget.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationSpecForProviderAttachmentTargetRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1FirewallPolicyAssociationSpecForProviderAttachmentTa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyAssociationSpecForProviderAttachmentTargetSelectorPolicyResolutionEnum>))]
 public enum V1beta1FirewallPolicyAssociationSpecForProviderAttachmentTargetSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1FirewallPolicyAssociationSpecForProviderAttachmentTargetSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyAssociationSpecForProviderAttachmentTargetSelectorPolicyResolveEnum>))]
 public enum V1beta1FirewallPolicyAssociationSpecForProviderAttachmentTargetSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1FirewallPolicyAssociationSpecForProviderAttachmentTargetSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationSpecForProviderAttachmentTargetSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1FirewallPolicyAssociationSpecForProviderAttachmentTa
 }
 
 /// <summary>Selector for a Folder in cloudplatform to populate attachmentTarget.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationSpecForProviderAttachmentTargetSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1FirewallPolicyAssociationSpecForProviderAttachmentTa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyAssociationSpecForProviderFirewallPolicyRefPolicyResolutionEnum>))]
 public enum V1beta1FirewallPolicyAssociationSpecForProviderFirewallPolicyRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1FirewallPolicyAssociationSpecForProviderFirewallPolicyRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyAssociationSpecForProviderFirewallPolicyRefPolicyResolveEnum>))]
 public enum V1beta1FirewallPolicyAssociationSpecForProviderFirewallPolicyRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1FirewallPolicyAssociationSpecForProviderFirewallPolicyRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationSpecForProviderFirewallPolicyRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1FirewallPolicyAssociationSpecForProviderFirewallPoli
 }
 
 /// <summary>Reference to a FirewallPolicy in compute to populate firewallPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationSpecForProviderFirewallPolicyRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1FirewallPolicyAssociationSpecForProviderFirewallPoli
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyAssociationSpecForProviderFirewallPolicySelectorPolicyResolutionEnum>))]
 public enum V1beta1FirewallPolicyAssociationSpecForProviderFirewallPolicySelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1FirewallPolicyAssociationSpecForProviderFirewallPolicySelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyAssociationSpecForProviderFirewallPolicySelectorPolicyResolveEnum>))]
 public enum V1beta1FirewallPolicyAssociationSpecForProviderFirewallPolicySelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1FirewallPolicyAssociationSpecForProviderFirewallPolicySelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationSpecForProviderFirewallPolicySelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1FirewallPolicyAssociationSpecForProviderFirewallPoli
 }
 
 /// <summary>Selector for a FirewallPolicy in compute to populate firewallPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationSpecForProviderFirewallPolicySelector
 {
@@ -349,7 +349,7 @@ public partial class V1beta1FirewallPolicyAssociationSpecForProviderFirewallPoli
     public V1beta1FirewallPolicyAssociationSpecForProviderFirewallPolicySelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationSpecForProvider
 {
@@ -394,7 +394,7 @@ public partial class V1beta1FirewallPolicyAssociationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyAssociationSpecInitProviderAttachmentTargetRefPolicyResolutionEnum>))]
 public enum V1beta1FirewallPolicyAssociationSpecInitProviderAttachmentTargetRefPolicyResolutionEnum
 {
@@ -410,7 +410,7 @@ public enum V1beta1FirewallPolicyAssociationSpecInitProviderAttachmentTargetRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyAssociationSpecInitProviderAttachmentTargetRefPolicyResolveEnum>))]
 public enum V1beta1FirewallPolicyAssociationSpecInitProviderAttachmentTargetRefPolicyResolveEnum
 {
@@ -421,7 +421,7 @@ public enum V1beta1FirewallPolicyAssociationSpecInitProviderAttachmentTargetRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationSpecInitProviderAttachmentTargetRefPolicy
 {
@@ -445,7 +445,7 @@ public partial class V1beta1FirewallPolicyAssociationSpecInitProviderAttachmentT
 }
 
 /// <summary>Reference to a Folder in cloudplatform to populate attachmentTarget.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationSpecInitProviderAttachmentTargetRef
 {
@@ -464,7 +464,7 @@ public partial class V1beta1FirewallPolicyAssociationSpecInitProviderAttachmentT
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyAssociationSpecInitProviderAttachmentTargetSelectorPolicyResolutionEnum>))]
 public enum V1beta1FirewallPolicyAssociationSpecInitProviderAttachmentTargetSelectorPolicyResolutionEnum
 {
@@ -480,7 +480,7 @@ public enum V1beta1FirewallPolicyAssociationSpecInitProviderAttachmentTargetSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyAssociationSpecInitProviderAttachmentTargetSelectorPolicyResolveEnum>))]
 public enum V1beta1FirewallPolicyAssociationSpecInitProviderAttachmentTargetSelectorPolicyResolveEnum
 {
@@ -491,7 +491,7 @@ public enum V1beta1FirewallPolicyAssociationSpecInitProviderAttachmentTargetSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationSpecInitProviderAttachmentTargetSelectorPolicy
 {
@@ -515,7 +515,7 @@ public partial class V1beta1FirewallPolicyAssociationSpecInitProviderAttachmentT
 }
 
 /// <summary>Selector for a Folder in cloudplatform to populate attachmentTarget.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationSpecInitProviderAttachmentTargetSelector
 {
@@ -541,7 +541,7 @@ public partial class V1beta1FirewallPolicyAssociationSpecInitProviderAttachmentT
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyAssociationSpecInitProviderFirewallPolicyRefPolicyResolutionEnum>))]
 public enum V1beta1FirewallPolicyAssociationSpecInitProviderFirewallPolicyRefPolicyResolutionEnum
 {
@@ -557,7 +557,7 @@ public enum V1beta1FirewallPolicyAssociationSpecInitProviderFirewallPolicyRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyAssociationSpecInitProviderFirewallPolicyRefPolicyResolveEnum>))]
 public enum V1beta1FirewallPolicyAssociationSpecInitProviderFirewallPolicyRefPolicyResolveEnum
 {
@@ -568,7 +568,7 @@ public enum V1beta1FirewallPolicyAssociationSpecInitProviderFirewallPolicyRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationSpecInitProviderFirewallPolicyRefPolicy
 {
@@ -592,7 +592,7 @@ public partial class V1beta1FirewallPolicyAssociationSpecInitProviderFirewallPol
 }
 
 /// <summary>Reference to a FirewallPolicy in compute to populate firewallPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationSpecInitProviderFirewallPolicyRef
 {
@@ -611,7 +611,7 @@ public partial class V1beta1FirewallPolicyAssociationSpecInitProviderFirewallPol
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyAssociationSpecInitProviderFirewallPolicySelectorPolicyResolutionEnum>))]
 public enum V1beta1FirewallPolicyAssociationSpecInitProviderFirewallPolicySelectorPolicyResolutionEnum
 {
@@ -627,7 +627,7 @@ public enum V1beta1FirewallPolicyAssociationSpecInitProviderFirewallPolicySelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyAssociationSpecInitProviderFirewallPolicySelectorPolicyResolveEnum>))]
 public enum V1beta1FirewallPolicyAssociationSpecInitProviderFirewallPolicySelectorPolicyResolveEnum
 {
@@ -638,7 +638,7 @@ public enum V1beta1FirewallPolicyAssociationSpecInitProviderFirewallPolicySelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationSpecInitProviderFirewallPolicySelectorPolicy
 {
@@ -662,7 +662,7 @@ public partial class V1beta1FirewallPolicyAssociationSpecInitProviderFirewallPol
 }
 
 /// <summary>Selector for a FirewallPolicy in compute to populate firewallPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationSpecInitProviderFirewallPolicySelector
 {
@@ -694,7 +694,7 @@ public partial class V1beta1FirewallPolicyAssociationSpecInitProviderFirewallPol
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationSpecInitProvider
 {
@@ -737,7 +737,7 @@ public partial class V1beta1FirewallPolicyAssociationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1FirewallPolicyAssociationSpecManagementPoliciesEnum
 {
@@ -761,7 +761,7 @@ public enum V1beta1FirewallPolicyAssociationSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyAssociationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1FirewallPolicyAssociationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -777,7 +777,7 @@ public enum V1beta1FirewallPolicyAssociationSpecProviderConfigRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyAssociationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1FirewallPolicyAssociationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -788,7 +788,7 @@ public enum V1beta1FirewallPolicyAssociationSpecProviderConfigRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationSpecProviderConfigRefPolicy
 {
@@ -816,7 +816,7 @@ public partial class V1beta1FirewallPolicyAssociationSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationSpecProviderConfigRef
 {
@@ -835,7 +835,7 @@ public partial class V1beta1FirewallPolicyAssociationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationSpecWriteConnectionSecretToRef
 {
@@ -849,7 +849,7 @@ public partial class V1beta1FirewallPolicyAssociationSpecWriteConnectionSecretTo
 }
 
 /// <summary>FirewallPolicyAssociationSpec defines the desired state of FirewallPolicyAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationSpec
 {
@@ -916,7 +916,7 @@ public partial class V1beta1FirewallPolicyAssociationSpec
     public V1beta1FirewallPolicyAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationStatusAtProvider
 {
@@ -948,7 +948,7 @@ public partial class V1beta1FirewallPolicyAssociationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationStatusConditions
 {
@@ -991,7 +991,7 @@ public partial class V1beta1FirewallPolicyAssociationStatusConditions
 }
 
 /// <summary>FirewallPolicyAssociationStatus defines the observed state of FirewallPolicyAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyAssociationStatus
 {
@@ -1012,7 +1012,7 @@ public partial class V1beta1FirewallPolicyAssociationStatus
 }
 
 /// <summary>FirewallPolicyAssociation is the Schema for the FirewallPolicyAssociations API. Allows associating hierarchical firewall policies with the target where they are applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FirewallPolicyAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1FirewallPolicyAssociationSpec>, IStatus<V1beta1FirewallPolicyAssociationStatus?>

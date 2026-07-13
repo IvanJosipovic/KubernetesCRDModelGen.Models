@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.devtestlab.azure.upbound.io;
 /// <summary>GlobalVMShutdownSchedule is the Schema for the GlobalVMShutdownSchedules API. Manages automated shutdown schedules for Azure Resource Manager VMs outside of Dev Test Labs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2GlobalVMShutdownScheduleList : IKubernetesObject<V1ListMeta>, IItems<V1beta2GlobalVMShutdownSchedule>
@@ -45,7 +45,7 @@ public partial class V1beta2GlobalVMShutdownScheduleList : IKubernetesObject<V1L
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalVMShutdownScheduleSpecDeletionPolicyEnum>))]
 public enum V1beta2GlobalVMShutdownScheduleSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2GlobalVMShutdownScheduleSpecDeletionPolicyEnum
 }
 
 /// <summary>The notification setting of a schedule. A notification_settings block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalVMShutdownScheduleSpecForProviderNotificationSettings
 {
@@ -83,7 +83,7 @@ public partial class V1beta2GlobalVMShutdownScheduleSpecForProviderNotificationS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalVMShutdownScheduleSpecForProviderVirtualMachineIdRefPolicyResolutionEnum>))]
 public enum V1beta2GlobalVMShutdownScheduleSpecForProviderVirtualMachineIdRefPolicyResolutionEnum
 {
@@ -99,7 +99,7 @@ public enum V1beta2GlobalVMShutdownScheduleSpecForProviderVirtualMachineIdRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalVMShutdownScheduleSpecForProviderVirtualMachineIdRefPolicyResolveEnum>))]
 public enum V1beta2GlobalVMShutdownScheduleSpecForProviderVirtualMachineIdRefPolicyResolveEnum
 {
@@ -110,7 +110,7 @@ public enum V1beta2GlobalVMShutdownScheduleSpecForProviderVirtualMachineIdRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalVMShutdownScheduleSpecForProviderVirtualMachineIdRefPolicy
 {
@@ -134,7 +134,7 @@ public partial class V1beta2GlobalVMShutdownScheduleSpecForProviderVirtualMachin
 }
 
 /// <summary>Reference to a LinuxVirtualMachine in compute to populate virtualMachineId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalVMShutdownScheduleSpecForProviderVirtualMachineIdRef
 {
@@ -153,7 +153,7 @@ public partial class V1beta2GlobalVMShutdownScheduleSpecForProviderVirtualMachin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalVMShutdownScheduleSpecForProviderVirtualMachineIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2GlobalVMShutdownScheduleSpecForProviderVirtualMachineIdSelectorPolicyResolutionEnum
 {
@@ -169,7 +169,7 @@ public enum V1beta2GlobalVMShutdownScheduleSpecForProviderVirtualMachineIdSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalVMShutdownScheduleSpecForProviderVirtualMachineIdSelectorPolicyResolveEnum>))]
 public enum V1beta2GlobalVMShutdownScheduleSpecForProviderVirtualMachineIdSelectorPolicyResolveEnum
 {
@@ -180,7 +180,7 @@ public enum V1beta2GlobalVMShutdownScheduleSpecForProviderVirtualMachineIdSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalVMShutdownScheduleSpecForProviderVirtualMachineIdSelectorPolicy
 {
@@ -204,7 +204,7 @@ public partial class V1beta2GlobalVMShutdownScheduleSpecForProviderVirtualMachin
 }
 
 /// <summary>Selector for a LinuxVirtualMachine in compute to populate virtualMachineId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalVMShutdownScheduleSpecForProviderVirtualMachineIdSelector
 {
@@ -224,7 +224,7 @@ public partial class V1beta2GlobalVMShutdownScheduleSpecForProviderVirtualMachin
     public V1beta2GlobalVMShutdownScheduleSpecForProviderVirtualMachineIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalVMShutdownScheduleSpecForProvider
 {
@@ -266,7 +266,7 @@ public partial class V1beta2GlobalVMShutdownScheduleSpecForProvider
 }
 
 /// <summary>The notification setting of a schedule. A notification_settings block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalVMShutdownScheduleSpecInitProviderNotificationSettings
 {
@@ -293,7 +293,7 @@ public partial class V1beta2GlobalVMShutdownScheduleSpecInitProviderNotification
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalVMShutdownScheduleSpecInitProviderVirtualMachineIdRefPolicyResolutionEnum>))]
 public enum V1beta2GlobalVMShutdownScheduleSpecInitProviderVirtualMachineIdRefPolicyResolutionEnum
 {
@@ -309,7 +309,7 @@ public enum V1beta2GlobalVMShutdownScheduleSpecInitProviderVirtualMachineIdRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalVMShutdownScheduleSpecInitProviderVirtualMachineIdRefPolicyResolveEnum>))]
 public enum V1beta2GlobalVMShutdownScheduleSpecInitProviderVirtualMachineIdRefPolicyResolveEnum
 {
@@ -320,7 +320,7 @@ public enum V1beta2GlobalVMShutdownScheduleSpecInitProviderVirtualMachineIdRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalVMShutdownScheduleSpecInitProviderVirtualMachineIdRefPolicy
 {
@@ -344,7 +344,7 @@ public partial class V1beta2GlobalVMShutdownScheduleSpecInitProviderVirtualMachi
 }
 
 /// <summary>Reference to a LinuxVirtualMachine in compute to populate virtualMachineId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalVMShutdownScheduleSpecInitProviderVirtualMachineIdRef
 {
@@ -363,7 +363,7 @@ public partial class V1beta2GlobalVMShutdownScheduleSpecInitProviderVirtualMachi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalVMShutdownScheduleSpecInitProviderVirtualMachineIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2GlobalVMShutdownScheduleSpecInitProviderVirtualMachineIdSelectorPolicyResolutionEnum
 {
@@ -379,7 +379,7 @@ public enum V1beta2GlobalVMShutdownScheduleSpecInitProviderVirtualMachineIdSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalVMShutdownScheduleSpecInitProviderVirtualMachineIdSelectorPolicyResolveEnum>))]
 public enum V1beta2GlobalVMShutdownScheduleSpecInitProviderVirtualMachineIdSelectorPolicyResolveEnum
 {
@@ -390,7 +390,7 @@ public enum V1beta2GlobalVMShutdownScheduleSpecInitProviderVirtualMachineIdSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalVMShutdownScheduleSpecInitProviderVirtualMachineIdSelectorPolicy
 {
@@ -414,7 +414,7 @@ public partial class V1beta2GlobalVMShutdownScheduleSpecInitProviderVirtualMachi
 }
 
 /// <summary>Selector for a LinuxVirtualMachine in compute to populate virtualMachineId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalVMShutdownScheduleSpecInitProviderVirtualMachineIdSelector
 {
@@ -446,7 +446,7 @@ public partial class V1beta2GlobalVMShutdownScheduleSpecInitProviderVirtualMachi
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalVMShutdownScheduleSpecInitProvider
 {
@@ -491,7 +491,7 @@ public partial class V1beta2GlobalVMShutdownScheduleSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalVMShutdownScheduleSpecManagementPoliciesEnum>))]
 public enum V1beta2GlobalVMShutdownScheduleSpecManagementPoliciesEnum
 {
@@ -515,7 +515,7 @@ public enum V1beta2GlobalVMShutdownScheduleSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalVMShutdownScheduleSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2GlobalVMShutdownScheduleSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -531,7 +531,7 @@ public enum V1beta2GlobalVMShutdownScheduleSpecProviderConfigRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalVMShutdownScheduleSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2GlobalVMShutdownScheduleSpecProviderConfigRefPolicyResolveEnum
 {
@@ -542,7 +542,7 @@ public enum V1beta2GlobalVMShutdownScheduleSpecProviderConfigRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalVMShutdownScheduleSpecProviderConfigRefPolicy
 {
@@ -570,7 +570,7 @@ public partial class V1beta2GlobalVMShutdownScheduleSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalVMShutdownScheduleSpecProviderConfigRef
 {
@@ -589,7 +589,7 @@ public partial class V1beta2GlobalVMShutdownScheduleSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalVMShutdownScheduleSpecWriteConnectionSecretToRef
 {
@@ -603,7 +603,7 @@ public partial class V1beta2GlobalVMShutdownScheduleSpecWriteConnectionSecretToR
 }
 
 /// <summary>GlobalVMShutdownScheduleSpec defines the desired state of GlobalVMShutdownSchedule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalVMShutdownScheduleSpec
 {
@@ -671,7 +671,7 @@ public partial class V1beta2GlobalVMShutdownScheduleSpec
 }
 
 /// <summary>The notification setting of a schedule. A notification_settings block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalVMShutdownScheduleStatusAtProviderNotificationSettings
 {
@@ -692,7 +692,7 @@ public partial class V1beta2GlobalVMShutdownScheduleStatusAtProviderNotification
     public string? WebhookUrl { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalVMShutdownScheduleStatusAtProvider
 {
@@ -730,7 +730,7 @@ public partial class V1beta2GlobalVMShutdownScheduleStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalVMShutdownScheduleStatusConditions
 {
@@ -773,7 +773,7 @@ public partial class V1beta2GlobalVMShutdownScheduleStatusConditions
 }
 
 /// <summary>GlobalVMShutdownScheduleStatus defines the observed state of GlobalVMShutdownSchedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalVMShutdownScheduleStatus
 {
@@ -794,7 +794,7 @@ public partial class V1beta2GlobalVMShutdownScheduleStatus
 }
 
 /// <summary>GlobalVMShutdownSchedule is the Schema for the GlobalVMShutdownSchedules API. Manages automated shutdown schedules for Azure Resource Manager VMs outside of Dev Test Labs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2GlobalVMShutdownSchedule : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2GlobalVMShutdownScheduleSpec>, IStatus<V1beta2GlobalVMShutdownScheduleStatus?>

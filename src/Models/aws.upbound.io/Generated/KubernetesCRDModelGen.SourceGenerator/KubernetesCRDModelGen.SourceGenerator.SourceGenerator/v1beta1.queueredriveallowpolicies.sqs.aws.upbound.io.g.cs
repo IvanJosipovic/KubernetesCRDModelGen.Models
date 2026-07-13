@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sqs.aws.upbound.io;
 /// <summary>QueueRedriveAllowPolicy is the Schema for the QueueRedriveAllowPolicys API. Provides a SQS Queue Redrive Allow Policy resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1QueueRedriveAllowPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1QueueRedriveAllowPolicy>
@@ -45,7 +45,7 @@ public partial class V1beta1QueueRedriveAllowPolicyList : IKubernetesObject<V1Li
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1QueueRedriveAllowPolicySpecDeletionPolicyEnum>))]
 public enum V1beta1QueueRedriveAllowPolicySpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1QueueRedriveAllowPolicySpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1QueueRedriveAllowPolicySpecForProviderQueueUrlRefPolicyResolutionEnum>))]
 public enum V1beta1QueueRedriveAllowPolicySpecForProviderQueueUrlRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1QueueRedriveAllowPolicySpecForProviderQueueUrlRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1QueueRedriveAllowPolicySpecForProviderQueueUrlRefPolicyResolveEnum>))]
 public enum V1beta1QueueRedriveAllowPolicySpecForProviderQueueUrlRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1QueueRedriveAllowPolicySpecForProviderQueueUrlRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueueRedriveAllowPolicySpecForProviderQueueUrlRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1QueueRedriveAllowPolicySpecForProviderQueueUrlRefPol
 }
 
 /// <summary>Reference to a Queue in sqs to populate queueUrl.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueueRedriveAllowPolicySpecForProviderQueueUrlRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1QueueRedriveAllowPolicySpecForProviderQueueUrlRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1QueueRedriveAllowPolicySpecForProviderQueueUrlSelectorPolicyResolutionEnum>))]
 public enum V1beta1QueueRedriveAllowPolicySpecForProviderQueueUrlSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1QueueRedriveAllowPolicySpecForProviderQueueUrlSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1QueueRedriveAllowPolicySpecForProviderQueueUrlSelectorPolicyResolveEnum>))]
 public enum V1beta1QueueRedriveAllowPolicySpecForProviderQueueUrlSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1QueueRedriveAllowPolicySpecForProviderQueueUrlSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueueRedriveAllowPolicySpecForProviderQueueUrlSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1QueueRedriveAllowPolicySpecForProviderQueueUrlSelect
 }
 
 /// <summary>Selector for a Queue in sqs to populate queueUrl.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueueRedriveAllowPolicySpecForProviderQueueUrlSelector
 {
@@ -202,7 +202,7 @@ public partial class V1beta1QueueRedriveAllowPolicySpecForProviderQueueUrlSelect
     public V1beta1QueueRedriveAllowPolicySpecForProviderQueueUrlSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueueRedriveAllowPolicySpecForProvider
 {
@@ -236,7 +236,7 @@ public partial class V1beta1QueueRedriveAllowPolicySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1QueueRedriveAllowPolicySpecInitProviderQueueUrlRefPolicyResolutionEnum>))]
 public enum V1beta1QueueRedriveAllowPolicySpecInitProviderQueueUrlRefPolicyResolutionEnum
 {
@@ -252,7 +252,7 @@ public enum V1beta1QueueRedriveAllowPolicySpecInitProviderQueueUrlRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1QueueRedriveAllowPolicySpecInitProviderQueueUrlRefPolicyResolveEnum>))]
 public enum V1beta1QueueRedriveAllowPolicySpecInitProviderQueueUrlRefPolicyResolveEnum
 {
@@ -263,7 +263,7 @@ public enum V1beta1QueueRedriveAllowPolicySpecInitProviderQueueUrlRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueueRedriveAllowPolicySpecInitProviderQueueUrlRefPolicy
 {
@@ -287,7 +287,7 @@ public partial class V1beta1QueueRedriveAllowPolicySpecInitProviderQueueUrlRefPo
 }
 
 /// <summary>Reference to a Queue in sqs to populate queueUrl.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueueRedriveAllowPolicySpecInitProviderQueueUrlRef
 {
@@ -306,7 +306,7 @@ public partial class V1beta1QueueRedriveAllowPolicySpecInitProviderQueueUrlRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1QueueRedriveAllowPolicySpecInitProviderQueueUrlSelectorPolicyResolutionEnum>))]
 public enum V1beta1QueueRedriveAllowPolicySpecInitProviderQueueUrlSelectorPolicyResolutionEnum
 {
@@ -322,7 +322,7 @@ public enum V1beta1QueueRedriveAllowPolicySpecInitProviderQueueUrlSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1QueueRedriveAllowPolicySpecInitProviderQueueUrlSelectorPolicyResolveEnum>))]
 public enum V1beta1QueueRedriveAllowPolicySpecInitProviderQueueUrlSelectorPolicyResolveEnum
 {
@@ -333,7 +333,7 @@ public enum V1beta1QueueRedriveAllowPolicySpecInitProviderQueueUrlSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueueRedriveAllowPolicySpecInitProviderQueueUrlSelectorPolicy
 {
@@ -357,7 +357,7 @@ public partial class V1beta1QueueRedriveAllowPolicySpecInitProviderQueueUrlSelec
 }
 
 /// <summary>Selector for a Queue in sqs to populate queueUrl.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueueRedriveAllowPolicySpecInitProviderQueueUrlSelector
 {
@@ -389,7 +389,7 @@ public partial class V1beta1QueueRedriveAllowPolicySpecInitProviderQueueUrlSelec
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueueRedriveAllowPolicySpecInitProvider
 {
@@ -414,7 +414,7 @@ public partial class V1beta1QueueRedriveAllowPolicySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1QueueRedriveAllowPolicySpecManagementPoliciesEnum>))]
 public enum V1beta1QueueRedriveAllowPolicySpecManagementPoliciesEnum
 {
@@ -438,7 +438,7 @@ public enum V1beta1QueueRedriveAllowPolicySpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1QueueRedriveAllowPolicySpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1QueueRedriveAllowPolicySpecProviderConfigRefPolicyResolutionEnum
 {
@@ -454,7 +454,7 @@ public enum V1beta1QueueRedriveAllowPolicySpecProviderConfigRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1QueueRedriveAllowPolicySpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1QueueRedriveAllowPolicySpecProviderConfigRefPolicyResolveEnum
 {
@@ -465,7 +465,7 @@ public enum V1beta1QueueRedriveAllowPolicySpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueueRedriveAllowPolicySpecProviderConfigRefPolicy
 {
@@ -493,7 +493,7 @@ public partial class V1beta1QueueRedriveAllowPolicySpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueueRedriveAllowPolicySpecProviderConfigRef
 {
@@ -512,7 +512,7 @@ public partial class V1beta1QueueRedriveAllowPolicySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueueRedriveAllowPolicySpecWriteConnectionSecretToRef
 {
@@ -526,7 +526,7 @@ public partial class V1beta1QueueRedriveAllowPolicySpecWriteConnectionSecretToRe
 }
 
 /// <summary>QueueRedriveAllowPolicySpec defines the desired state of QueueRedriveAllowPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueueRedriveAllowPolicySpec
 {
@@ -593,7 +593,7 @@ public partial class V1beta1QueueRedriveAllowPolicySpec
     public V1beta1QueueRedriveAllowPolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueueRedriveAllowPolicyStatusAtProvider
 {
@@ -617,7 +617,7 @@ public partial class V1beta1QueueRedriveAllowPolicyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueueRedriveAllowPolicyStatusConditions
 {
@@ -660,7 +660,7 @@ public partial class V1beta1QueueRedriveAllowPolicyStatusConditions
 }
 
 /// <summary>QueueRedriveAllowPolicyStatus defines the observed state of QueueRedriveAllowPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueueRedriveAllowPolicyStatus
 {
@@ -681,7 +681,7 @@ public partial class V1beta1QueueRedriveAllowPolicyStatus
 }
 
 /// <summary>QueueRedriveAllowPolicy is the Schema for the QueueRedriveAllowPolicys API. Provides a SQS Queue Redrive Allow Policy resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1QueueRedriveAllowPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1QueueRedriveAllowPolicySpec>, IStatus<V1beta1QueueRedriveAllowPolicyStatus?>

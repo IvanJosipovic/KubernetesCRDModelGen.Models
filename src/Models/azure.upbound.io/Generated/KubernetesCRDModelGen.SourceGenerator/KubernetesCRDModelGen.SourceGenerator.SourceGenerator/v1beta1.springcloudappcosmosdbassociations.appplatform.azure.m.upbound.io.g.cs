@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appplatform.azure.m.upbound.io;
 /// <summary>SpringCloudAppCosmosDBAssociation is the Schema for the SpringCloudAppCosmosDBAssociations API. Associates a</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SpringCloudAppCosmosDBAssociation>
@@ -42,7 +42,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationList : IKubernetesO
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccessKeyRefPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccessKeyRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAcces
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccessKeyRefPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccessKeyRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAcces
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccessKeyRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosm
 }
 
 /// <summary>Reference to a Account in cosmosdb to populate cosmosdbAccessKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccessKeyRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosm
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccessKeySelectorPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccessKeySelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAcces
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccessKeySelectorPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccessKeySelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAcces
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccessKeySelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosm
 }
 
 /// <summary>Selector for a Account in cosmosdb to populate cosmosdbAccessKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccessKeySelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosm
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccountIdRefPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccountIdRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccou
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccountIdRefPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccountIdRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccou
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccountIdRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosm
 }
 
 /// <summary>Reference to a Account in cosmosdb to populate cosmosdbAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccountIdRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosm
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccountIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccountIdSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccou
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccountIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccountIdSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccou
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccountIdSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosm
 }
 
 /// <summary>Selector for a Account in cosmosdb to populate cosmosdbAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosmosdbAccountIdSelector
 {
@@ -352,7 +352,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderCosm
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderSpringCloudAppIdRefPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderSpringCloudAppIdRefPolicyResolutionEnum
 {
@@ -368,7 +368,7 @@ public enum V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderSpringCloudAp
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderSpringCloudAppIdRefPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderSpringCloudAppIdRefPolicyResolveEnum
 {
@@ -379,7 +379,7 @@ public enum V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderSpringCloudAp
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderSpringCloudAppIdRefPolicy
 {
@@ -403,7 +403,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderSpri
 }
 
 /// <summary>Reference to a SpringCloudApp in appplatform to populate springCloudAppId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderSpringCloudAppIdRef
 {
@@ -426,7 +426,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderSpri
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderSpringCloudAppIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderSpringCloudAppIdSelectorPolicyResolutionEnum
 {
@@ -442,7 +442,7 @@ public enum V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderSpringCloudAp
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderSpringCloudAppIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderSpringCloudAppIdSelectorPolicyResolveEnum
 {
@@ -453,7 +453,7 @@ public enum V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderSpringCloudAp
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderSpringCloudAppIdSelectorPolicy
 {
@@ -477,7 +477,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderSpri
 }
 
 /// <summary>Selector for a SpringCloudApp in appplatform to populate springCloudAppId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderSpringCloudAppIdSelector
 {
@@ -501,7 +501,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderSpri
     public V1beta1SpringCloudAppCosmosDBAssociationSpecForProviderSpringCloudAppIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProvider
 {
@@ -572,7 +572,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAccessKeyRefPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAccessKeyRefPolicyResolutionEnum
 {
@@ -588,7 +588,7 @@ public enum V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAcce
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAccessKeyRefPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAccessKeyRefPolicyResolveEnum
 {
@@ -599,7 +599,7 @@ public enum V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAcce
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAccessKeyRefPolicy
 {
@@ -623,7 +623,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCos
 }
 
 /// <summary>Reference to a Account in cosmosdb to populate cosmosdbAccessKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAccessKeyRef
 {
@@ -646,7 +646,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCos
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAccessKeySelectorPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAccessKeySelectorPolicyResolutionEnum
 {
@@ -662,7 +662,7 @@ public enum V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAcce
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAccessKeySelectorPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAccessKeySelectorPolicyResolveEnum
 {
@@ -673,7 +673,7 @@ public enum V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAcce
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAccessKeySelectorPolicy
 {
@@ -697,7 +697,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCos
 }
 
 /// <summary>Selector for a Account in cosmosdb to populate cosmosdbAccessKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAccessKeySelector
 {
@@ -727,7 +727,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCos
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAccountIdRefPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAccountIdRefPolicyResolutionEnum
 {
@@ -743,7 +743,7 @@ public enum V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAcco
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAccountIdRefPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAccountIdRefPolicyResolveEnum
 {
@@ -754,7 +754,7 @@ public enum V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAcco
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAccountIdRefPolicy
 {
@@ -778,7 +778,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCos
 }
 
 /// <summary>Reference to a Account in cosmosdb to populate cosmosdbAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAccountIdRef
 {
@@ -801,7 +801,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCos
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAccountIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAccountIdSelectorPolicyResolutionEnum
 {
@@ -817,7 +817,7 @@ public enum V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAcco
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAccountIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAccountIdSelectorPolicyResolveEnum
 {
@@ -828,7 +828,7 @@ public enum V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAcco
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAccountIdSelectorPolicy
 {
@@ -852,7 +852,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCos
 }
 
 /// <summary>Selector for a Account in cosmosdb to populate cosmosdbAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCosmosdbAccountIdSelector
 {
@@ -888,7 +888,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecInitProviderCos
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecInitProvider
 {
@@ -945,7 +945,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppCosmosDBAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1SpringCloudAppCosmosDBAssociationSpecManagementPoliciesEnum
 {
@@ -968,7 +968,7 @@ public enum V1beta1SpringCloudAppCosmosDBAssociationSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecProviderConfigRef
 {
@@ -987,7 +987,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecProviderConfigR
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecWriteConnectionSecretToRef
 {
@@ -997,7 +997,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpecWriteConnection
 }
 
 /// <summary>SpringCloudAppCosmosDBAssociationSpec defines the desired state of SpringCloudAppCosmosDBAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationSpec
 {
@@ -1048,7 +1048,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationSpec
     public V1beta1SpringCloudAppCosmosDBAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationStatusAtProvider
 {
@@ -1094,7 +1094,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationStatusConditions
 {
@@ -1137,7 +1137,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationStatusConditions
 }
 
 /// <summary>SpringCloudAppCosmosDBAssociationStatus defines the observed state of SpringCloudAppCosmosDBAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppCosmosDBAssociationStatus
 {
@@ -1158,7 +1158,7 @@ public partial class V1beta1SpringCloudAppCosmosDBAssociationStatus
 }
 
 /// <summary>SpringCloudAppCosmosDBAssociation is the Schema for the SpringCloudAppCosmosDBAssociations API. Associates a</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SpringCloudAppCosmosDBAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SpringCloudAppCosmosDBAssociationSpec>, IStatus<V1beta1SpringCloudAppCosmosDBAssociationStatus?>

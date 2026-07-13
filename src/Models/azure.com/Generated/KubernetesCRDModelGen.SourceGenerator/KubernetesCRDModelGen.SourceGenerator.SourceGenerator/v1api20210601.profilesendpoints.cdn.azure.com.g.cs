@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.cdn.azure.com;
 /// - Generated from: /cdn/resource-manager/Microsoft.Cdn/Cdn/stable/2021-06-01/cdn.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20210601ProfilesEndpointList : IKubernetesObject<V1ListMeta>, IItems<V1api20210601ProfilesEndpoint>
@@ -41,7 +41,7 @@ public partial class V1api20210601ProfilesEndpointList : IKubernetesObject<V1Lis
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDefaultOriginGroupReference
 {
@@ -67,7 +67,7 @@ public partial class V1api20210601ProfilesEndpointSpecDefaultOriginGroupReferenc
 }
 
 /// <summary>DefaultOriginGroup: A reference to the origin group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDefaultOriginGroup
 {
@@ -77,7 +77,7 @@ public partial class V1api20210601ProfilesEndpointSpecDefaultOriginGroup
 }
 
 /// <summary>Name: The name of the action for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheExpirationNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheExpirationNameEnum
 {
@@ -86,7 +86,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheExpi
 }
 
 /// <summary>CacheBehavior: Caching behavior for the requests</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheExpirationParametersCacheBehaviorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheExpirationParametersCacheBehaviorEnum
 {
@@ -99,7 +99,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheExpi
 }
 
 /// <summary>CacheType: The level at which the content needs to be cached.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheExpirationParametersCacheTypeEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheExpirationParametersCacheTypeEnum
 {
@@ -107,7 +107,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheExpi
     All
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheExpirationParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheExpirationParametersTypeNameEnum
 {
@@ -116,7 +116,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheExpi
 }
 
 /// <summary>Parameters: Defines the parameters for the action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheExpirationParameters
 {
@@ -137,7 +137,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
 }
 
 /// <summary>CacheExpiration: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheExpiration
 {
@@ -151,7 +151,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
 }
 
 /// <summary>Name: The name of the action for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheKeyQueryStringNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheKeyQueryStringNameEnum
 {
@@ -160,7 +160,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheKeyQ
 }
 
 /// <summary>QueryStringBehavior: Caching behavior for the requests</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheKeyQueryStringParametersQueryStringBehaviorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheKeyQueryStringParametersQueryStringBehaviorEnum
 {
@@ -174,7 +174,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheKeyQ
     IncludeAll
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheKeyQueryStringParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheKeyQueryStringParametersTypeNameEnum
 {
@@ -183,7 +183,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheKeyQ
 }
 
 /// <summary>Parameters: Defines the parameters for the action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheKeyQueryStringParameters
 {
@@ -200,7 +200,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
 }
 
 /// <summary>CacheKeyQueryString: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsCacheKeyQueryString
 {
@@ -214,7 +214,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
 }
 
 /// <summary>Name: The name of the action for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsModifyRequestHeaderNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsModifyRequestHeaderNameEnum
 {
@@ -223,7 +223,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsModifyReq
 }
 
 /// <summary>HeaderAction: Action to perform</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsModifyRequestHeaderParametersHeaderActionEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsModifyRequestHeaderParametersHeaderActionEnum
 {
@@ -235,7 +235,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsModifyReq
     Overwrite
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsModifyRequestHeaderParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsModifyRequestHeaderParametersTypeNameEnum
 {
@@ -244,7 +244,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsModifyReq
 }
 
 /// <summary>Parameters: Defines the parameters for the action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsModifyRequestHeaderParameters
 {
@@ -265,7 +265,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
 }
 
 /// <summary>ModifyRequestHeader: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsModifyRequestHeader
 {
@@ -279,7 +279,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
 }
 
 /// <summary>Name: The name of the action for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsModifyResponseHeaderNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsModifyResponseHeaderNameEnum
 {
@@ -288,7 +288,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsModifyRes
 }
 
 /// <summary>HeaderAction: Action to perform</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsModifyResponseHeaderParametersHeaderActionEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsModifyResponseHeaderParametersHeaderActionEnum
 {
@@ -300,7 +300,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsModifyRes
     Overwrite
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsModifyResponseHeaderParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsModifyResponseHeaderParametersTypeNameEnum
 {
@@ -309,7 +309,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsModifyRes
 }
 
 /// <summary>Parameters: Defines the parameters for the action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsModifyResponseHeaderParameters
 {
@@ -330,7 +330,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
 }
 
 /// <summary>ModifyResponseHeader: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsModifyResponseHeader
 {
@@ -344,7 +344,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
 }
 
 /// <summary>Name: The name of the action for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsOriginGroupOverrideNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsOriginGroupOverrideNameEnum
 {
@@ -353,7 +353,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsOriginGro
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsOriginGroupOverrideParametersOriginGroupReference
 {
@@ -379,7 +379,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
 }
 
 /// <summary>OriginGroup: defines the OriginGroup that would override the DefaultOriginGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsOriginGroupOverrideParametersOriginGroup
 {
@@ -388,7 +388,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
     public V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsOriginGroupOverrideParametersOriginGroupReference? Reference { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsOriginGroupOverrideParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsOriginGroupOverrideParametersTypeNameEnum
 {
@@ -397,7 +397,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsOriginGro
 }
 
 /// <summary>Parameters: Defines the parameters for the action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsOriginGroupOverrideParameters
 {
@@ -410,7 +410,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
 }
 
 /// <summary>OriginGroupOverride: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsOriginGroupOverride
 {
@@ -424,7 +424,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
 }
 
 /// <summary>Name: The name of the action for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConfigurationOverrideNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConfigurationOverrideNameEnum
 {
@@ -433,7 +433,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConf
 }
 
 /// <summary>CacheBehavior: Caching behavior for the requests</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConfigurationOverrideParametersCacheConfigurationCacheBehaviorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConfigurationOverrideParametersCacheConfigurationCacheBehaviorEnum
 {
@@ -450,7 +450,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConf
 /// served as compressed if user requests for a compressed version. Content won&apos;t be compressed on AzureFrontDoor when
 /// requested content is smaller than 1 byte or larger than 1 MB.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConfigurationOverrideParametersCacheConfigurationIsCompressionEnabledEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConfigurationOverrideParametersCacheConfigurationIsCompressionEnabledEnum
 {
@@ -465,7 +465,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConf
 /// strings when caching, ignore specific query strings, cache every request with a unique URL, or cache specific query
 /// strings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConfigurationOverrideParametersCacheConfigurationQueryStringCachingBehaviorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConfigurationOverrideParametersCacheConfigurationQueryStringCachingBehaviorEnum
 {
@@ -483,7 +483,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConf
 /// CacheConfiguration: The caching configuration associated with this rule. To disable caching, do not provide a
 /// cacheConfiguration object.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConfigurationOverrideParametersCacheConfiguration
 {
@@ -517,7 +517,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
 }
 
 /// <summary>ForwardingProtocol: Protocol this rule will use when forwarding traffic to backends.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConfigurationOverrideParametersOriginGroupOverrideForwardingProtocolEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConfigurationOverrideParametersOriginGroupOverrideForwardingProtocolEnum
 {
@@ -530,7 +530,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConf
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConfigurationOverrideParametersOriginGroupOverrideOriginGroupReference
 {
@@ -556,7 +556,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
 }
 
 /// <summary>OriginGroup: defines the OriginGroup that would override the DefaultOriginGroup on route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConfigurationOverrideParametersOriginGroupOverrideOriginGroup
 {
@@ -569,7 +569,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
 /// OriginGroupOverride: A reference to the origin group override configuration. Leave empty to use the default origin group
 /// on route.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConfigurationOverrideParametersOriginGroupOverride
 {
@@ -582,7 +582,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
     public V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConfigurationOverrideParametersOriginGroupOverrideOriginGroup? OriginGroup { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConfigurationOverrideParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConfigurationOverrideParametersTypeNameEnum
 {
@@ -591,7 +591,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConf
 }
 
 /// <summary>Parameters: Defines the parameters for the action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConfigurationOverrideParameters
 {
@@ -614,7 +614,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
 }
 
 /// <summary>RouteConfigurationOverride: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsRouteConfigurationOverride
 {
@@ -628,7 +628,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
 }
 
 /// <summary>Name: The name of the action for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlRedirectNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlRedirectNameEnum
 {
@@ -637,7 +637,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlRedire
 }
 
 /// <summary>DestinationProtocol: Protocol to use for the redirect. The default value is MatchRequest</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlRedirectParametersDestinationProtocolEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlRedirectParametersDestinationProtocolEnum
 {
@@ -650,7 +650,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlRedire
 }
 
 /// <summary>RedirectType: The redirect type the rule will use when redirecting traffic.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlRedirectParametersRedirectTypeEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlRedirectParametersRedirectTypeEnum
 {
@@ -664,7 +664,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlRedire
     TemporaryRedirect
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlRedirectParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlRedirectParametersTypeNameEnum
 {
@@ -673,7 +673,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlRedire
 }
 
 /// <summary>Parameters: Defines the parameters for the action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlRedirectParameters
 {
@@ -716,7 +716,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
 }
 
 /// <summary>UrlRedirect: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlRedirect
 {
@@ -730,7 +730,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
 }
 
 /// <summary>Name: The name of the action for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlRewriteNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlRewriteNameEnum
 {
@@ -738,7 +738,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlRewrit
     UrlRewrite
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlRewriteParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlRewriteParametersTypeNameEnum
 {
@@ -747,7 +747,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlRewrit
 }
 
 /// <summary>Parameters: Defines the parameters for the action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlRewriteParameters
 {
@@ -771,7 +771,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
 }
 
 /// <summary>UrlRewrite: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlRewrite
 {
@@ -785,7 +785,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
 }
 
 /// <summary>Name: The name of the action for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlSigningNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlSigningNameEnum
 {
@@ -794,7 +794,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlSignin
 }
 
 /// <summary>Algorithm: Algorithm to use for URL signing</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlSigningParametersAlgorithmEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlSigningParametersAlgorithmEnum
 {
@@ -803,7 +803,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlSignin
 }
 
 /// <summary>ParamIndicator: Indicates the purpose of the parameter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlSigningParametersParameterNameOverrideParamIndicatorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlSigningParametersParameterNameOverrideParamIndicatorEnum
 {
@@ -816,7 +816,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlSignin
 }
 
 /// <summary>Defines how to identify a parameter for a specific purpose e.g. expires</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlSigningParametersParameterNameOverride
 {
@@ -829,7 +829,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
     public required string ParamName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlSigningParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlSigningParametersTypeNameEnum
 {
@@ -838,7 +838,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlSignin
 }
 
 /// <summary>Parameters: Defines the parameters for the action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlSigningParameters
 {
@@ -855,7 +855,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
 }
 
 /// <summary>UrlSigning: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActionsUrlSigning
 {
@@ -869,7 +869,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
 }
 
 /// <summary>An action for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
 {
@@ -911,7 +911,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesActions
 }
 
 /// <summary>Name: The name of the condition for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsClientPortNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsClientPortNameEnum
 {
@@ -920,7 +920,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsClient
 }
 
 /// <summary>Operator: Describes operator to be matched</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsClientPortParametersOperatorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsClientPortParametersOperatorEnum
 {
@@ -947,7 +947,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsClient
 }
 
 /// <summary>Describes what transforms are applied before matching</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsClientPortParametersTransformsEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsClientPortParametersTransformsEnum
 {
@@ -965,7 +965,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsClient
     UrlEncode
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsClientPortParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsClientPortParametersTypeNameEnum
 {
@@ -974,7 +974,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsClient
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsClientPortParameters
 {
@@ -999,7 +999,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>ClientPort: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsClientPort
 {
@@ -1013,7 +1013,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>Name: The name of the condition for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsCookiesNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsCookiesNameEnum
 {
@@ -1022,7 +1022,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsCookie
 }
 
 /// <summary>Operator: Describes operator to be matched</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsCookiesParametersOperatorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsCookiesParametersOperatorEnum
 {
@@ -1049,7 +1049,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsCookie
 }
 
 /// <summary>Describes what transforms are applied before matching</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsCookiesParametersTransformsEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsCookiesParametersTransformsEnum
 {
@@ -1067,7 +1067,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsCookie
     UrlEncode
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsCookiesParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsCookiesParametersTypeNameEnum
 {
@@ -1076,7 +1076,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsCookie
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsCookiesParameters
 {
@@ -1105,7 +1105,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>Cookies: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsCookies
 {
@@ -1119,7 +1119,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>Name: The name of the condition for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHostNameNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHostNameNameEnum
 {
@@ -1128,7 +1128,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHostNa
 }
 
 /// <summary>Operator: Describes operator to be matched</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHostNameParametersOperatorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHostNameParametersOperatorEnum
 {
@@ -1155,7 +1155,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHostNa
 }
 
 /// <summary>Describes what transforms are applied before matching</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHostNameParametersTransformsEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHostNameParametersTransformsEnum
 {
@@ -1173,7 +1173,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHostNa
     UrlEncode
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHostNameParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHostNameParametersTypeNameEnum
 {
@@ -1182,7 +1182,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHostNa
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHostNameParameters
 {
@@ -1207,7 +1207,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>HostName: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHostName
 {
@@ -1221,7 +1221,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>Name: The name of the condition for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHttpVersionNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHttpVersionNameEnum
 {
@@ -1230,7 +1230,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHttpVe
 }
 
 /// <summary>Operator: Describes operator to be matched</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHttpVersionParametersOperatorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHttpVersionParametersOperatorEnum
 {
@@ -1239,7 +1239,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHttpVe
 }
 
 /// <summary>Describes what transforms are applied before matching</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHttpVersionParametersTransformsEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHttpVersionParametersTransformsEnum
 {
@@ -1257,7 +1257,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHttpVe
     UrlEncode
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHttpVersionParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHttpVersionParametersTypeNameEnum
 {
@@ -1266,7 +1266,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHttpVe
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHttpVersionParameters
 {
@@ -1291,7 +1291,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>HttpVersion: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsHttpVersion
 {
@@ -1305,7 +1305,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>Name: The name of the condition for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsIsDeviceNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsIsDeviceNameEnum
 {
@@ -1313,7 +1313,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsIsDevi
     IsDevice
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsIsDeviceParametersMatchValuesEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsIsDeviceParametersMatchValuesEnum
 {
@@ -1324,7 +1324,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsIsDevi
 }
 
 /// <summary>Operator: Describes operator to be matched</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsIsDeviceParametersOperatorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsIsDeviceParametersOperatorEnum
 {
@@ -1333,7 +1333,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsIsDevi
 }
 
 /// <summary>Describes what transforms are applied before matching</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsIsDeviceParametersTransformsEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsIsDeviceParametersTransformsEnum
 {
@@ -1351,7 +1351,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsIsDevi
     UrlEncode
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsIsDeviceParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsIsDeviceParametersTypeNameEnum
 {
@@ -1360,7 +1360,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsIsDevi
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsIsDeviceParameters
 {
@@ -1385,7 +1385,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>IsDevice: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsIsDevice
 {
@@ -1399,7 +1399,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>Name: The name of the condition for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsPostArgsNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsPostArgsNameEnum
 {
@@ -1408,7 +1408,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsPostAr
 }
 
 /// <summary>Operator: Describes operator to be matched</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsPostArgsParametersOperatorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsPostArgsParametersOperatorEnum
 {
@@ -1435,7 +1435,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsPostAr
 }
 
 /// <summary>Describes what transforms are applied before matching</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsPostArgsParametersTransformsEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsPostArgsParametersTransformsEnum
 {
@@ -1453,7 +1453,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsPostAr
     UrlEncode
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsPostArgsParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsPostArgsParametersTypeNameEnum
 {
@@ -1462,7 +1462,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsPostAr
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsPostArgsParameters
 {
@@ -1491,7 +1491,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>PostArgs: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsPostArgs
 {
@@ -1505,7 +1505,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>Name: The name of the condition for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsQueryStringNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsQueryStringNameEnum
 {
@@ -1514,7 +1514,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsQueryS
 }
 
 /// <summary>Operator: Describes operator to be matched</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsQueryStringParametersOperatorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsQueryStringParametersOperatorEnum
 {
@@ -1541,7 +1541,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsQueryS
 }
 
 /// <summary>Describes what transforms are applied before matching</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsQueryStringParametersTransformsEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsQueryStringParametersTransformsEnum
 {
@@ -1559,7 +1559,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsQueryS
     UrlEncode
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsQueryStringParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsQueryStringParametersTypeNameEnum
 {
@@ -1568,7 +1568,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsQueryS
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsQueryStringParameters
 {
@@ -1593,7 +1593,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>QueryString: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsQueryString
 {
@@ -1607,7 +1607,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>Name: The name of the condition for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRemoteAddressNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRemoteAddressNameEnum
 {
@@ -1616,7 +1616,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRemote
 }
 
 /// <summary>Operator: Describes operator to be matched</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRemoteAddressParametersOperatorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRemoteAddressParametersOperatorEnum
 {
@@ -1629,7 +1629,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRemote
 }
 
 /// <summary>Describes what transforms are applied before matching</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRemoteAddressParametersTransformsEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRemoteAddressParametersTransformsEnum
 {
@@ -1647,7 +1647,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRemote
     UrlEncode
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRemoteAddressParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRemoteAddressParametersTypeNameEnum
 {
@@ -1656,7 +1656,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRemote
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRemoteAddressParameters
 {
@@ -1684,7 +1684,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>RemoteAddress: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRemoteAddress
 {
@@ -1698,7 +1698,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>Name: The name of the condition for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestBodyNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestBodyNameEnum
 {
@@ -1707,7 +1707,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsReques
 }
 
 /// <summary>Operator: Describes operator to be matched</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestBodyParametersOperatorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestBodyParametersOperatorEnum
 {
@@ -1734,7 +1734,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsReques
 }
 
 /// <summary>Describes what transforms are applied before matching</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestBodyParametersTransformsEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestBodyParametersTransformsEnum
 {
@@ -1752,7 +1752,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsReques
     UrlEncode
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestBodyParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestBodyParametersTypeNameEnum
 {
@@ -1761,7 +1761,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsReques
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestBodyParameters
 {
@@ -1786,7 +1786,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>RequestBody: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestBody
 {
@@ -1800,7 +1800,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>Name: The name of the condition for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestHeaderNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestHeaderNameEnum
 {
@@ -1809,7 +1809,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsReques
 }
 
 /// <summary>Operator: Describes operator to be matched</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestHeaderParametersOperatorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestHeaderParametersOperatorEnum
 {
@@ -1836,7 +1836,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsReques
 }
 
 /// <summary>Describes what transforms are applied before matching</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestHeaderParametersTransformsEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestHeaderParametersTransformsEnum
 {
@@ -1854,7 +1854,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsReques
     UrlEncode
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestHeaderParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestHeaderParametersTypeNameEnum
 {
@@ -1863,7 +1863,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsReques
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestHeaderParameters
 {
@@ -1892,7 +1892,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>RequestHeader: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestHeader
 {
@@ -1906,7 +1906,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>Name: The name of the condition for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestMethodNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestMethodNameEnum
 {
@@ -1914,7 +1914,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsReques
     RequestMethod
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestMethodParametersMatchValuesEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestMethodParametersMatchValuesEnum
 {
@@ -1935,7 +1935,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsReques
 }
 
 /// <summary>Operator: Describes operator to be matched</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestMethodParametersOperatorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestMethodParametersOperatorEnum
 {
@@ -1944,7 +1944,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsReques
 }
 
 /// <summary>Describes what transforms are applied before matching</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestMethodParametersTransformsEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestMethodParametersTransformsEnum
 {
@@ -1962,7 +1962,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsReques
     UrlEncode
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestMethodParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestMethodParametersTypeNameEnum
 {
@@ -1971,7 +1971,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsReques
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestMethodParameters
 {
@@ -1996,7 +1996,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>RequestMethod: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestMethod
 {
@@ -2010,7 +2010,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>Name: The name of the condition for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestSchemeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestSchemeNameEnum
 {
@@ -2018,7 +2018,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsReques
     RequestScheme
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestSchemeParametersMatchValuesEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestSchemeParametersMatchValuesEnum
 {
@@ -2029,7 +2029,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsReques
 }
 
 /// <summary>Operator: Describes operator to be matched</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestSchemeParametersOperatorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestSchemeParametersOperatorEnum
 {
@@ -2038,7 +2038,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsReques
 }
 
 /// <summary>Describes what transforms are applied before matching</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestSchemeParametersTransformsEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestSchemeParametersTransformsEnum
 {
@@ -2056,7 +2056,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsReques
     UrlEncode
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestSchemeParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestSchemeParametersTypeNameEnum
 {
@@ -2065,7 +2065,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsReques
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestSchemeParameters
 {
@@ -2090,7 +2090,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>RequestScheme: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestScheme
 {
@@ -2104,7 +2104,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>Name: The name of the condition for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestUriNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestUriNameEnum
 {
@@ -2113,7 +2113,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsReques
 }
 
 /// <summary>Operator: Describes operator to be matched</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestUriParametersOperatorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestUriParametersOperatorEnum
 {
@@ -2140,7 +2140,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsReques
 }
 
 /// <summary>Describes what transforms are applied before matching</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestUriParametersTransformsEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestUriParametersTransformsEnum
 {
@@ -2158,7 +2158,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsReques
     UrlEncode
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestUriParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestUriParametersTypeNameEnum
 {
@@ -2167,7 +2167,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsReques
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestUriParameters
 {
@@ -2192,7 +2192,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>RequestUri: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsRequestUri
 {
@@ -2206,7 +2206,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>Name: The name of the condition for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsServerPortNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsServerPortNameEnum
 {
@@ -2215,7 +2215,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsServer
 }
 
 /// <summary>Operator: Describes operator to be matched</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsServerPortParametersOperatorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsServerPortParametersOperatorEnum
 {
@@ -2242,7 +2242,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsServer
 }
 
 /// <summary>Describes what transforms are applied before matching</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsServerPortParametersTransformsEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsServerPortParametersTransformsEnum
 {
@@ -2260,7 +2260,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsServer
     UrlEncode
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsServerPortParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsServerPortParametersTypeNameEnum
 {
@@ -2269,7 +2269,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsServer
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsServerPortParameters
 {
@@ -2294,7 +2294,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>ServerPort: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsServerPort
 {
@@ -2308,7 +2308,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>Name: The name of the condition for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSocketAddrNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSocketAddrNameEnum
 {
@@ -2317,7 +2317,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSocket
 }
 
 /// <summary>Operator: Describes operator to be matched</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSocketAddrParametersOperatorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSocketAddrParametersOperatorEnum
 {
@@ -2328,7 +2328,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSocket
 }
 
 /// <summary>Describes what transforms are applied before matching</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSocketAddrParametersTransformsEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSocketAddrParametersTransformsEnum
 {
@@ -2346,7 +2346,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSocket
     UrlEncode
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSocketAddrParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSocketAddrParametersTypeNameEnum
 {
@@ -2355,7 +2355,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSocket
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSocketAddrParameters
 {
@@ -2380,7 +2380,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>SocketAddr: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSocketAddr
 {
@@ -2394,7 +2394,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>Name: The name of the condition for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSslProtocolNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSslProtocolNameEnum
 {
@@ -2403,7 +2403,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSslPro
 }
 
 /// <summary>The protocol of an established TLS connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSslProtocolParametersMatchValuesEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSslProtocolParametersMatchValuesEnum
 {
@@ -2416,7 +2416,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSslPro
 }
 
 /// <summary>Operator: Describes operator to be matched</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSslProtocolParametersOperatorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSslProtocolParametersOperatorEnum
 {
@@ -2425,7 +2425,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSslPro
 }
 
 /// <summary>Describes what transforms are applied before matching</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSslProtocolParametersTransformsEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSslProtocolParametersTransformsEnum
 {
@@ -2443,7 +2443,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSslPro
     UrlEncode
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSslProtocolParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSslProtocolParametersTypeNameEnum
 {
@@ -2452,7 +2452,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSslPro
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSslProtocolParameters
 {
@@ -2477,7 +2477,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>SslProtocol: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsSslProtocol
 {
@@ -2491,7 +2491,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>Name: The name of the condition for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFileExtensionNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFileExtensionNameEnum
 {
@@ -2500,7 +2500,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFil
 }
 
 /// <summary>Operator: Describes operator to be matched</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFileExtensionParametersOperatorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFileExtensionParametersOperatorEnum
 {
@@ -2527,7 +2527,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFil
 }
 
 /// <summary>Describes what transforms are applied before matching</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFileExtensionParametersTransformsEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFileExtensionParametersTransformsEnum
 {
@@ -2545,7 +2545,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFil
     UrlEncode
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFileExtensionParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFileExtensionParametersTypeNameEnum
 {
@@ -2554,7 +2554,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFil
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFileExtensionParameters
 {
@@ -2579,7 +2579,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>UrlFileExtension: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFileExtension
 {
@@ -2593,7 +2593,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>Name: The name of the condition for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFileNameNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFileNameNameEnum
 {
@@ -2602,7 +2602,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFil
 }
 
 /// <summary>Operator: Describes operator to be matched</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFileNameParametersOperatorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFileNameParametersOperatorEnum
 {
@@ -2629,7 +2629,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFil
 }
 
 /// <summary>Describes what transforms are applied before matching</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFileNameParametersTransformsEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFileNameParametersTransformsEnum
 {
@@ -2647,7 +2647,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFil
     UrlEncode
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFileNameParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFileNameParametersTypeNameEnum
 {
@@ -2656,7 +2656,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFil
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFileNameParameters
 {
@@ -2681,7 +2681,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>UrlFileName: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlFileName
 {
@@ -2695,7 +2695,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>Name: The name of the condition for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlPathNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlPathNameEnum
 {
@@ -2704,7 +2704,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlPat
 }
 
 /// <summary>Operator: Describes operator to be matched</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlPathParametersOperatorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlPathParametersOperatorEnum
 {
@@ -2733,7 +2733,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlPat
 }
 
 /// <summary>Describes what transforms are applied before matching</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlPathParametersTransformsEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlPathParametersTransformsEnum
 {
@@ -2751,7 +2751,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlPat
     UrlEncode
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlPathParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlPathParametersTypeNameEnum
 {
@@ -2760,7 +2760,7 @@ public enum V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlPat
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlPathParameters
 {
@@ -2785,7 +2785,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>UrlPath: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditionsUrlPath
 {
@@ -2799,7 +2799,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>A condition for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditions
 {
@@ -2881,7 +2881,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRulesConditi
 }
 
 /// <summary>A rule that specifies a set of actions and conditions</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRules
 {
@@ -2907,7 +2907,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicyRules
 }
 
 /// <summary>DeliveryPolicy: A policy that specifies the delivery rules to be used for an endpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicy
 {
@@ -2921,7 +2921,7 @@ public partial class V1api20210601ProfilesEndpointSpecDeliveryPolicy
 }
 
 /// <summary>Action: Action of the geo filter, i.e. allow or block access.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecGeoFiltersActionEnum>))]
 public enum V1api20210601ProfilesEndpointSpecGeoFiltersActionEnum
 {
@@ -2932,7 +2932,7 @@ public enum V1api20210601ProfilesEndpointSpecGeoFiltersActionEnum
 }
 
 /// <summary>Rules defining user&apos;s geo access within a CDN endpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecGeoFilters
 {
@@ -2954,7 +2954,7 @@ public partial class V1api20210601ProfilesEndpointSpecGeoFilters
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecOperatorSpecConfigMapExpressions
 {
@@ -2995,7 +2995,7 @@ public partial class V1api20210601ProfilesEndpointSpecOperatorSpecConfigMapExpre
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecOperatorSpecSecretExpressions
 {
@@ -3035,7 +3035,7 @@ public partial class V1api20210601ProfilesEndpointSpecOperatorSpecSecretExpressi
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecOperatorSpec
 {
@@ -3052,7 +3052,7 @@ public partial class V1api20210601ProfilesEndpointSpecOperatorSpec
 /// OptimizationType: Specifies what scenario the customer wants this CDN endpoint to optimize for, e.g. Download, Media
 /// services. With this information, CDN can apply scenario driven optimization.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecOptimizationTypeEnum>))]
 public enum V1api20210601ProfilesEndpointSpecOptimizationTypeEnum
 {
@@ -3069,7 +3069,7 @@ public enum V1api20210601ProfilesEndpointSpecOptimizationTypeEnum
 }
 
 /// <summary>ProbeProtocol: Protocol to use for health probe.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecOriginGroupsHealthProbeSettingsProbeProtocolEnum>))]
 public enum V1api20210601ProfilesEndpointSpecOriginGroupsHealthProbeSettingsProbeProtocolEnum
 {
@@ -3082,7 +3082,7 @@ public enum V1api20210601ProfilesEndpointSpecOriginGroupsHealthProbeSettingsProb
 }
 
 /// <summary>ProbeRequestType: The type of health probe request that is made.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecOriginGroupsHealthProbeSettingsProbeRequestTypeEnum>))]
 public enum V1api20210601ProfilesEndpointSpecOriginGroupsHealthProbeSettingsProbeRequestTypeEnum
 {
@@ -3095,7 +3095,7 @@ public enum V1api20210601ProfilesEndpointSpecOriginGroupsHealthProbeSettingsProb
 }
 
 /// <summary>HealthProbeSettings: Health probe settings to the origin that is used to determine the health of the origin.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecOriginGroupsHealthProbeSettings
 {
@@ -3117,7 +3117,7 @@ public partial class V1api20210601ProfilesEndpointSpecOriginGroupsHealthProbeSet
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecOriginGroupsOriginsReference
 {
@@ -3143,7 +3143,7 @@ public partial class V1api20210601ProfilesEndpointSpecOriginGroupsOriginsReferen
 }
 
 /// <summary>Reference to another resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecOriginGroupsOrigins
 {
@@ -3153,7 +3153,7 @@ public partial class V1api20210601ProfilesEndpointSpecOriginGroupsOrigins
 }
 
 /// <summary>The JSON object that represents the range for http status codes</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecOriginGroupsResponseBasedOriginErrorDetectionSettingsHttpErrorRanges
 {
@@ -3167,7 +3167,7 @@ public partial class V1api20210601ProfilesEndpointSpecOriginGroupsResponseBasedO
 }
 
 /// <summary>ResponseBasedDetectedErrorTypes: Type of response errors for real user requests for which origin will be deemed unhealthy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecOriginGroupsResponseBasedOriginErrorDetectionSettingsResponseBasedDetectedErrorTypesEnum>))]
 public enum V1api20210601ProfilesEndpointSpecOriginGroupsResponseBasedOriginErrorDetectionSettingsResponseBasedDetectedErrorTypesEnum
 {
@@ -3183,7 +3183,7 @@ public enum V1api20210601ProfilesEndpointSpecOriginGroupsResponseBasedOriginErro
 /// ResponseBasedOriginErrorDetectionSettings: The JSON object that contains the properties to determine origin health using
 /// real requests/responses.This property is currently not supported.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecOriginGroupsResponseBasedOriginErrorDetectionSettings
 {
@@ -3207,7 +3207,7 @@ public partial class V1api20210601ProfilesEndpointSpecOriginGroupsResponseBasedO
 /// The origin group for CDN content which is added when creating a CDN endpoint. Traffic is sent to the origins within the
 /// origin group based on origin health.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecOriginGroups
 {
@@ -3243,7 +3243,7 @@ public partial class V1api20210601ProfilesEndpointSpecOriginGroups
 /// PrivateLinkLocationReference: The location of the Private Link resource. Required only if &apos;privateLinkResourceId&apos; is
 /// populated
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecOriginsPrivateLinkLocationReference
 {
@@ -3272,7 +3272,7 @@ public partial class V1api20210601ProfilesEndpointSpecOriginsPrivateLinkLocation
 /// PrivateLinkResourceReference: The Resource Id of the Private Link resource. Populating this optional field indicates
 /// that this backend is &apos;Private&apos;
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecOriginsPrivateLinkResourceReference
 {
@@ -3298,7 +3298,7 @@ public partial class V1api20210601ProfilesEndpointSpecOriginsPrivateLinkResource
 }
 
 /// <summary>The main origin of CDN content which is added when creating a CDN endpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecOrigins
 {
@@ -3375,7 +3375,7 @@ public partial class V1api20210601ProfilesEndpointSpecOrigins
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a cdn.azure.com/Profile resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecOwner
 {
@@ -3392,7 +3392,7 @@ public partial class V1api20210601ProfilesEndpointSpecOwner
 /// when caching, bypass caching to prevent requests that contain query strings from being cached, or cache every request
 /// with a unique URL.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecQueryStringCachingBehaviorEnum>))]
 public enum V1api20210601ProfilesEndpointSpecQueryStringCachingBehaviorEnum
 {
@@ -3406,7 +3406,7 @@ public enum V1api20210601ProfilesEndpointSpecQueryStringCachingBehaviorEnum
     UseQueryString
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210601ProfilesEndpointSpecUrlSigningKeysKeySourceParametersTypeNameEnum>))]
 public enum V1api20210601ProfilesEndpointSpecUrlSigningKeysKeySourceParametersTypeNameEnum
 {
@@ -3415,7 +3415,7 @@ public enum V1api20210601ProfilesEndpointSpecUrlSigningKeysKeySourceParametersTy
 }
 
 /// <summary>KeySourceParameters: Defines the parameters for using customer key vault for Url Signing Key.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecUrlSigningKeysKeySourceParameters
 {
@@ -3444,7 +3444,7 @@ public partial class V1api20210601ProfilesEndpointSpecUrlSigningKeysKeySourcePar
 }
 
 /// <summary>Url signing key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecUrlSigningKeys
 {
@@ -3461,7 +3461,7 @@ public partial class V1api20210601ProfilesEndpointSpecUrlSigningKeys
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecWebApplicationFirewallPolicyLinkReference
 {
@@ -3487,7 +3487,7 @@ public partial class V1api20210601ProfilesEndpointSpecWebApplicationFirewallPoli
 }
 
 /// <summary>WebApplicationFirewallPolicyLink: Defines the Web Application Firewall policy for the endpoint (if applicable)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpecWebApplicationFirewallPolicyLink
 {
@@ -3496,7 +3496,7 @@ public partial class V1api20210601ProfilesEndpointSpecWebApplicationFirewallPoli
     public V1api20210601ProfilesEndpointSpecWebApplicationFirewallPolicyLinkReference? Reference { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointSpec
 {
@@ -3628,7 +3628,7 @@ public partial class V1api20210601ProfilesEndpointSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusConditions
 {
@@ -3674,7 +3674,7 @@ public partial class V1api20210601ProfilesEndpointStatusConditions
 }
 
 /// <summary>Custom domains created on the CDN endpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusCustomDomains
 {
@@ -3695,7 +3695,7 @@ public partial class V1api20210601ProfilesEndpointStatusCustomDomains
 }
 
 /// <summary>DefaultOriginGroup: A reference to the origin group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDefaultOriginGroup
 {
@@ -3705,7 +3705,7 @@ public partial class V1api20210601ProfilesEndpointStatusDefaultOriginGroup
 }
 
 /// <summary>Parameters: Defines the parameters for the action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActionsCacheExpirationParameters
 {
@@ -3726,7 +3726,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActio
 }
 
 /// <summary>CacheExpiration: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActionsCacheExpiration
 {
@@ -3740,7 +3740,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActio
 }
 
 /// <summary>Parameters: Defines the parameters for the action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActionsCacheKeyQueryStringParameters
 {
@@ -3757,7 +3757,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActio
 }
 
 /// <summary>CacheKeyQueryString: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActionsCacheKeyQueryString
 {
@@ -3771,7 +3771,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActio
 }
 
 /// <summary>Parameters: Defines the parameters for the action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActionsModifyRequestHeaderParameters
 {
@@ -3792,7 +3792,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActio
 }
 
 /// <summary>ModifyRequestHeader: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActionsModifyRequestHeader
 {
@@ -3806,7 +3806,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActio
 }
 
 /// <summary>Parameters: Defines the parameters for the action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActionsModifyResponseHeaderParameters
 {
@@ -3827,7 +3827,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActio
 }
 
 /// <summary>ModifyResponseHeader: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActionsModifyResponseHeader
 {
@@ -3841,7 +3841,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActio
 }
 
 /// <summary>OriginGroup: defines the OriginGroup that would override the DefaultOriginGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActionsOriginGroupOverrideParametersOriginGroup
 {
@@ -3851,7 +3851,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActio
 }
 
 /// <summary>Parameters: Defines the parameters for the action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActionsOriginGroupOverrideParameters
 {
@@ -3864,7 +3864,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActio
 }
 
 /// <summary>OriginGroupOverride: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActionsOriginGroupOverride
 {
@@ -3881,7 +3881,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActio
 /// CacheConfiguration: The caching configuration associated with this rule. To disable caching, do not provide a
 /// cacheConfiguration object.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActionsRouteConfigurationOverrideParametersCacheConfiguration
 {
@@ -3915,7 +3915,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActio
 }
 
 /// <summary>OriginGroup: defines the OriginGroup that would override the DefaultOriginGroup on route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActionsRouteConfigurationOverrideParametersOriginGroupOverrideOriginGroup
 {
@@ -3928,7 +3928,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActio
 /// OriginGroupOverride: A reference to the origin group override configuration. Leave empty to use the default origin group
 /// on route.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActionsRouteConfigurationOverrideParametersOriginGroupOverride
 {
@@ -3942,7 +3942,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActio
 }
 
 /// <summary>Parameters: Defines the parameters for the action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActionsRouteConfigurationOverrideParameters
 {
@@ -3965,7 +3965,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActio
 }
 
 /// <summary>RouteConfigurationOverride: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActionsRouteConfigurationOverride
 {
@@ -3979,7 +3979,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActio
 }
 
 /// <summary>Parameters: Defines the parameters for the action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActionsUrlRedirectParameters
 {
@@ -4022,7 +4022,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActio
 }
 
 /// <summary>UrlRedirect: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActionsUrlRedirect
 {
@@ -4036,7 +4036,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActio
 }
 
 /// <summary>Parameters: Defines the parameters for the action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActionsUrlRewriteParameters
 {
@@ -4060,7 +4060,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActio
 }
 
 /// <summary>UrlRewrite: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActionsUrlRewrite
 {
@@ -4074,7 +4074,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActio
 }
 
 /// <summary>Defines how to identify a parameter for a specific purpose e.g. expires</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActionsUrlSigningParametersParameterNameOverride
 {
@@ -4088,7 +4088,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActio
 }
 
 /// <summary>Parameters: Defines the parameters for the action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActionsUrlSigningParameters
 {
@@ -4105,7 +4105,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActio
 }
 
 /// <summary>UrlSigning: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActionsUrlSigning
 {
@@ -4119,7 +4119,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActio
 }
 
 /// <summary>An action for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActions
 {
@@ -4161,7 +4161,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesActio
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsClientPortParameters
 {
@@ -4186,7 +4186,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>ClientPort: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsClientPort
 {
@@ -4200,7 +4200,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsCookiesParameters
 {
@@ -4229,7 +4229,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>Cookies: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsCookies
 {
@@ -4243,7 +4243,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsHostNameParameters
 {
@@ -4268,7 +4268,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>HostName: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsHostName
 {
@@ -4282,7 +4282,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsHttpVersionParameters
 {
@@ -4307,7 +4307,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>HttpVersion: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsHttpVersion
 {
@@ -4321,7 +4321,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsIsDeviceParameters
 {
@@ -4346,7 +4346,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>IsDevice: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsIsDevice
 {
@@ -4360,7 +4360,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsPostArgsParameters
 {
@@ -4389,7 +4389,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>PostArgs: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsPostArgs
 {
@@ -4403,7 +4403,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsQueryStringParameters
 {
@@ -4428,7 +4428,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>QueryString: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsQueryString
 {
@@ -4442,7 +4442,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsRemoteAddressParameters
 {
@@ -4470,7 +4470,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>RemoteAddress: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsRemoteAddress
 {
@@ -4484,7 +4484,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsRequestBodyParameters
 {
@@ -4509,7 +4509,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>RequestBody: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsRequestBody
 {
@@ -4523,7 +4523,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsRequestHeaderParameters
 {
@@ -4552,7 +4552,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>RequestHeader: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsRequestHeader
 {
@@ -4566,7 +4566,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsRequestMethodParameters
 {
@@ -4591,7 +4591,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>RequestMethod: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsRequestMethod
 {
@@ -4605,7 +4605,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsRequestSchemeParameters
 {
@@ -4630,7 +4630,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>RequestScheme: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsRequestScheme
 {
@@ -4644,7 +4644,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsRequestUriParameters
 {
@@ -4669,7 +4669,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>RequestUri: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsRequestUri
 {
@@ -4683,7 +4683,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsServerPortParameters
 {
@@ -4708,7 +4708,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>ServerPort: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsServerPort
 {
@@ -4722,7 +4722,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsSocketAddrParameters
 {
@@ -4747,7 +4747,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>SocketAddr: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsSocketAddr
 {
@@ -4761,7 +4761,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsSslProtocolParameters
 {
@@ -4786,7 +4786,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>SslProtocol: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsSslProtocol
 {
@@ -4800,7 +4800,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsUrlFileExtensionParameters
 {
@@ -4825,7 +4825,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>UrlFileExtension: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsUrlFileExtension
 {
@@ -4839,7 +4839,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsUrlFileNameParameters
 {
@@ -4864,7 +4864,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>UrlFileName: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsUrlFileName
 {
@@ -4878,7 +4878,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>Parameters: Defines the parameters for the condition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsUrlPathParameters
 {
@@ -4903,7 +4903,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>UrlPath: Mutually exclusive with all other properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditionsUrlPath
 {
@@ -4917,7 +4917,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>A condition for the delivery rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesConditions
 {
@@ -4999,7 +4999,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRulesCondi
 }
 
 /// <summary>A rule that specifies a set of actions and conditions</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRules
 {
@@ -5025,7 +5025,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicyRules
 }
 
 /// <summary>DeliveryPolicy: A policy that specifies the delivery rules to be used for an endpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicy
 {
@@ -5039,7 +5039,7 @@ public partial class V1api20210601ProfilesEndpointStatusDeliveryPolicy
 }
 
 /// <summary>Rules defining user&apos;s geo access within a CDN endpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusGeoFilters
 {
@@ -5057,7 +5057,7 @@ public partial class V1api20210601ProfilesEndpointStatusGeoFilters
 }
 
 /// <summary>HealthProbeSettings: Health probe settings to the origin that is used to determine the health of the origin.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusOriginGroupsHealthProbeSettings
 {
@@ -5079,7 +5079,7 @@ public partial class V1api20210601ProfilesEndpointStatusOriginGroupsHealthProbeS
 }
 
 /// <summary>Reference to another resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusOriginGroupsOrigins
 {
@@ -5089,7 +5089,7 @@ public partial class V1api20210601ProfilesEndpointStatusOriginGroupsOrigins
 }
 
 /// <summary>The JSON object that represents the range for http status codes</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusOriginGroupsResponseBasedOriginErrorDetectionSettingsHttpErrorRanges
 {
@@ -5106,7 +5106,7 @@ public partial class V1api20210601ProfilesEndpointStatusOriginGroupsResponseBase
 /// ResponseBasedOriginErrorDetectionSettings: The JSON object that contains the properties to determine origin health using
 /// real requests/responses.This property is currently not supported.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusOriginGroupsResponseBasedOriginErrorDetectionSettings
 {
@@ -5130,7 +5130,7 @@ public partial class V1api20210601ProfilesEndpointStatusOriginGroupsResponseBase
 /// The origin group for CDN content which is added when creating a CDN endpoint. Traffic is sent to the origins within the
 /// origin group based on origin health.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusOriginGroups
 {
@@ -5163,7 +5163,7 @@ public partial class V1api20210601ProfilesEndpointStatusOriginGroups
 }
 
 /// <summary>The main origin of CDN content which is added when creating a CDN endpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusOrigins
 {
@@ -5237,7 +5237,7 @@ public partial class V1api20210601ProfilesEndpointStatusOrigins
 }
 
 /// <summary>SystemData: Read only system data</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusSystemData
 {
@@ -5267,7 +5267,7 @@ public partial class V1api20210601ProfilesEndpointStatusSystemData
 }
 
 /// <summary>KeySourceParameters: Defines the parameters for using customer key vault for Url Signing Key.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusUrlSigningKeysKeySourceParameters
 {
@@ -5296,7 +5296,7 @@ public partial class V1api20210601ProfilesEndpointStatusUrlSigningKeysKeySourceP
 }
 
 /// <summary>Url signing key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusUrlSigningKeys
 {
@@ -5313,7 +5313,7 @@ public partial class V1api20210601ProfilesEndpointStatusUrlSigningKeys
 }
 
 /// <summary>WebApplicationFirewallPolicyLink: Defines the Web Application Firewall policy for the endpoint (if applicable)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatusWebApplicationFirewallPolicyLink
 {
@@ -5322,7 +5322,7 @@ public partial class V1api20210601ProfilesEndpointStatusWebApplicationFirewallPo
     public string? Id { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210601ProfilesEndpointStatus
 {
@@ -5472,7 +5472,7 @@ public partial class V1api20210601ProfilesEndpointStatus
 /// - Generated from: /cdn/resource-manager/Microsoft.Cdn/Cdn/stable/2021-06-01/cdn.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20210601ProfilesEndpoint : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20210601ProfilesEndpointSpec?>, IStatus<V1api20210601ProfilesEndpointStatus?>

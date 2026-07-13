@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.servicenetworking.azure.m.upbound.io;
 /// <summary>ApplicationLoadBalancerSecurityPolicy is the Schema for the ApplicationLoadBalancerSecurityPolicys API. Manages an Application Load Balancer Security Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ApplicationLoadBalancerSecurityPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ApplicationLoadBalancerSecurityPolicy>
@@ -42,7 +42,7 @@ public partial class V1beta1ApplicationLoadBalancerSecurityPolicyList : IKuberne
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderApplicationLoadBalancerIdRefPolicyResolutionEnum>))]
 public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderApplicationLoadBalancerIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderApplicati
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderApplicationLoadBalancerIdRefPolicyResolveEnum>))]
 public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderApplicationLoadBalancerIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderApplicati
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderApplicationLoadBalancerIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecForProvider
 }
 
 /// <summary>Reference to a ApplicationLoadBalancer in servicenetworking to populate applicationLoadBalancerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderApplicationLoadBalancerIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderApplicationLoadBalancerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderApplicationLoadBalancerIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderApplicati
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderApplicationLoadBalancerIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderApplicationLoadBalancerIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderApplicati
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderApplicationLoadBalancerIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecForProvider
 }
 
 /// <summary>Selector for a ApplicationLoadBalancer in servicenetworking to populate applicationLoadBalancerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderApplicationLoadBalancerIdSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderWebApplicationFirewallPolicyIdRefPolicyResolutionEnum>))]
 public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderWebApplicationFirewallPolicyIdRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderWebApplic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderWebApplicationFirewallPolicyIdRefPolicyResolveEnum>))]
 public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderWebApplicationFirewallPolicyIdRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderWebApplic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderWebApplicationFirewallPolicyIdRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecForProvider
 }
 
 /// <summary>Reference to a WebApplicationFirewallPolicy in network to populate webApplicationFirewallPolicyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderWebApplicationFirewallPolicyIdRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderWebApplicationFirewallPolicyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderWebApplicationFirewallPolicyIdSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderWebApplic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderWebApplicationFirewallPolicyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderWebApplicationFirewallPolicyIdSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderWebApplic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderWebApplicationFirewallPolicyIdSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecForProvider
 }
 
 /// <summary>Selector for a WebApplicationFirewallPolicy in network to populate webApplicationFirewallPolicyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderWebApplicationFirewallPolicyIdSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecForProvider
     public V1beta1ApplicationLoadBalancerSecurityPolicySpecForProviderWebApplicationFirewallPolicyIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecForProvider
 {
@@ -389,7 +389,7 @@ public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSecurityPolicySpecInitProviderWebApplicationFirewallPolicyIdRefPolicyResolutionEnum>))]
 public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecInitProviderWebApplicationFirewallPolicyIdRefPolicyResolutionEnum
 {
@@ -405,7 +405,7 @@ public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecInitProviderWebAppli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSecurityPolicySpecInitProviderWebApplicationFirewallPolicyIdRefPolicyResolveEnum>))]
 public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecInitProviderWebApplicationFirewallPolicyIdRefPolicyResolveEnum
 {
@@ -416,7 +416,7 @@ public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecInitProviderWebAppli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecInitProviderWebApplicationFirewallPolicyIdRefPolicy
 {
@@ -440,7 +440,7 @@ public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecInitProvide
 }
 
 /// <summary>Reference to a WebApplicationFirewallPolicy in network to populate webApplicationFirewallPolicyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecInitProviderWebApplicationFirewallPolicyIdRef
 {
@@ -463,7 +463,7 @@ public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecInitProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSecurityPolicySpecInitProviderWebApplicationFirewallPolicyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecInitProviderWebApplicationFirewallPolicyIdSelectorPolicyResolutionEnum
 {
@@ -479,7 +479,7 @@ public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecInitProviderWebAppli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSecurityPolicySpecInitProviderWebApplicationFirewallPolicyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecInitProviderWebApplicationFirewallPolicyIdSelectorPolicyResolveEnum
 {
@@ -490,7 +490,7 @@ public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecInitProviderWebAppli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecInitProviderWebApplicationFirewallPolicyIdSelectorPolicy
 {
@@ -514,7 +514,7 @@ public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecInitProvide
 }
 
 /// <summary>Selector for a WebApplicationFirewallPolicy in network to populate webApplicationFirewallPolicyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecInitProviderWebApplicationFirewallPolicyIdSelector
 {
@@ -550,7 +550,7 @@ public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecInitProvide
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecInitProvider
 {
@@ -579,7 +579,7 @@ public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecInitProvide
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerSecurityPolicySpecManagementPoliciesEnum>))]
 public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecManagementPoliciesEnum
 {
@@ -602,7 +602,7 @@ public enum V1beta1ApplicationLoadBalancerSecurityPolicySpecManagementPoliciesEn
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecProviderConfigRef
 {
@@ -621,7 +621,7 @@ public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecProviderCon
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecWriteConnectionSecretToRef
 {
@@ -631,7 +631,7 @@ public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpecWriteConnec
 }
 
 /// <summary>ApplicationLoadBalancerSecurityPolicySpec defines the desired state of ApplicationLoadBalancerSecurityPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpec
 {
@@ -682,7 +682,7 @@ public partial class V1beta1ApplicationLoadBalancerSecurityPolicySpec
     public V1beta1ApplicationLoadBalancerSecurityPolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSecurityPolicyStatusAtProvider
 {
@@ -708,7 +708,7 @@ public partial class V1beta1ApplicationLoadBalancerSecurityPolicyStatusAtProvide
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSecurityPolicyStatusConditions
 {
@@ -751,7 +751,7 @@ public partial class V1beta1ApplicationLoadBalancerSecurityPolicyStatusCondition
 }
 
 /// <summary>ApplicationLoadBalancerSecurityPolicyStatus defines the observed state of ApplicationLoadBalancerSecurityPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerSecurityPolicyStatus
 {
@@ -772,7 +772,7 @@ public partial class V1beta1ApplicationLoadBalancerSecurityPolicyStatus
 }
 
 /// <summary>ApplicationLoadBalancerSecurityPolicy is the Schema for the ApplicationLoadBalancerSecurityPolicys API. Manages an Application Load Balancer Security Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ApplicationLoadBalancerSecurityPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ApplicationLoadBalancerSecurityPolicySpec>, IStatus<V1beta1ApplicationLoadBalancerSecurityPolicyStatus?>

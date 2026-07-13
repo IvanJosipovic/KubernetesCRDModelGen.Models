@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.developerconnect.gcp.m.upbound.io;
 /// <summary>ConnectGitRepositoryLink is the Schema for the ConnectGitRepositoryLinks API. A git repository link to a parent connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ConnectGitRepositoryLinkList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ConnectGitRepositoryLink>
@@ -42,7 +42,7 @@ public partial class V1beta1ConnectGitRepositoryLinkList : IKubernetesObject<V1L
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectGitRepositoryLinkSpecForProviderParentConnectionRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectGitRepositoryLinkSpecForProviderParentConnectionRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1ConnectGitRepositoryLinkSpecForProviderParentConnectionRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectGitRepositoryLinkSpecForProviderParentConnectionRefPolicyResolveEnum>))]
 public enum V1beta1ConnectGitRepositoryLinkSpecForProviderParentConnectionRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1ConnectGitRepositoryLinkSpecForProviderParentConnectionRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectGitRepositoryLinkSpecForProviderParentConnectionRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1ConnectGitRepositoryLinkSpecForProviderParentConnect
 }
 
 /// <summary>Reference to a ConnectConnection in developerconnect to populate parentConnection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectGitRepositoryLinkSpecForProviderParentConnectionRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1ConnectGitRepositoryLinkSpecForProviderParentConnect
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectGitRepositoryLinkSpecForProviderParentConnectionSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectGitRepositoryLinkSpecForProviderParentConnectionSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1ConnectGitRepositoryLinkSpecForProviderParentConnectionSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectGitRepositoryLinkSpecForProviderParentConnectionSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectGitRepositoryLinkSpecForProviderParentConnectionSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1ConnectGitRepositoryLinkSpecForProviderParentConnectionSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectGitRepositoryLinkSpecForProviderParentConnectionSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1ConnectGitRepositoryLinkSpecForProviderParentConnect
 }
 
 /// <summary>Selector for a ConnectConnection in developerconnect to populate parentConnection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectGitRepositoryLinkSpecForProviderParentConnectionSelector
 {
@@ -191,7 +191,7 @@ public partial class V1beta1ConnectGitRepositoryLinkSpecForProviderParentConnect
     public V1beta1ConnectGitRepositoryLinkSpecForProviderParentConnectionSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectGitRepositoryLinkSpecForProvider
 {
@@ -259,7 +259,7 @@ public partial class V1beta1ConnectGitRepositoryLinkSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectGitRepositoryLinkSpecInitProvider
 {
@@ -303,7 +303,7 @@ public partial class V1beta1ConnectGitRepositoryLinkSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectGitRepositoryLinkSpecManagementPoliciesEnum>))]
 public enum V1beta1ConnectGitRepositoryLinkSpecManagementPoliciesEnum
 {
@@ -326,7 +326,7 @@ public enum V1beta1ConnectGitRepositoryLinkSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectGitRepositoryLinkSpecProviderConfigRef
 {
@@ -345,7 +345,7 @@ public partial class V1beta1ConnectGitRepositoryLinkSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectGitRepositoryLinkSpecWriteConnectionSecretToRef
 {
@@ -355,7 +355,7 @@ public partial class V1beta1ConnectGitRepositoryLinkSpecWriteConnectionSecretToR
 }
 
 /// <summary>ConnectGitRepositoryLinkSpec defines the desired state of ConnectGitRepositoryLink</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectGitRepositoryLinkSpec
 {
@@ -406,7 +406,7 @@ public partial class V1beta1ConnectGitRepositoryLinkSpec
     public V1beta1ConnectGitRepositoryLinkSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectGitRepositoryLinkStatusAtProvider
 {
@@ -502,7 +502,7 @@ public partial class V1beta1ConnectGitRepositoryLinkStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectGitRepositoryLinkStatusConditions
 {
@@ -545,7 +545,7 @@ public partial class V1beta1ConnectGitRepositoryLinkStatusConditions
 }
 
 /// <summary>ConnectGitRepositoryLinkStatus defines the observed state of ConnectGitRepositoryLink.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectGitRepositoryLinkStatus
 {
@@ -566,7 +566,7 @@ public partial class V1beta1ConnectGitRepositoryLinkStatus
 }
 
 /// <summary>ConnectGitRepositoryLink is the Schema for the ConnectGitRepositoryLinks API. A git repository link to a parent connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ConnectGitRepositoryLink : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ConnectGitRepositoryLinkSpec>, IStatus<V1beta1ConnectGitRepositoryLinkStatus?>

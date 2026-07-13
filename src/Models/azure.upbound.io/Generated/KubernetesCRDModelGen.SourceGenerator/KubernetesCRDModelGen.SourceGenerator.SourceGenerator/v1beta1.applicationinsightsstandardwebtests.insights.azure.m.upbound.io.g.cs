@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.insights.azure.m.upbound.io;
 /// <summary>ApplicationInsightsStandardWebTest is the Schema for the ApplicationInsightsStandardWebTests API. Manages a Application Insights Standard WebTest.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ApplicationInsightsStandardWebTestList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ApplicationInsightsStandardWebTest>
@@ -42,7 +42,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestList : IKubernetes
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsStandardWebTestSpecForProviderApplicationInsightsIdRefPolicyResolutionEnum>))]
 public enum V1beta1ApplicationInsightsStandardWebTestSpecForProviderApplicationInsightsIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1ApplicationInsightsStandardWebTestSpecForProviderApplicationI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsStandardWebTestSpecForProviderApplicationInsightsIdRefPolicyResolveEnum>))]
 public enum V1beta1ApplicationInsightsStandardWebTestSpecForProviderApplicationInsightsIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1ApplicationInsightsStandardWebTestSpecForProviderApplicationI
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProviderApplicationInsightsIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProviderApp
 }
 
 /// <summary>Reference to a ApplicationInsights in insights to populate applicationInsightsId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProviderApplicationInsightsIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProviderApp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsStandardWebTestSpecForProviderApplicationInsightsIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ApplicationInsightsStandardWebTestSpecForProviderApplicationInsightsIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1ApplicationInsightsStandardWebTestSpecForProviderApplicationI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsStandardWebTestSpecForProviderApplicationInsightsIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ApplicationInsightsStandardWebTestSpecForProviderApplicationInsightsIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1ApplicationInsightsStandardWebTestSpecForProviderApplicationI
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProviderApplicationInsightsIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProviderApp
 }
 
 /// <summary>Selector for a ApplicationInsights in insights to populate applicationInsightsId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProviderApplicationInsightsIdSelector
 {
@@ -191,7 +191,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProviderApp
     public V1beta1ApplicationInsightsStandardWebTestSpecForProviderApplicationInsightsIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProviderRequestHeader
 {
@@ -205,7 +205,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProviderReq
 }
 
 /// <summary>A request block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProviderRequest
 {
@@ -240,7 +240,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProviderReq
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsStandardWebTestSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1ApplicationInsightsStandardWebTestSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -256,7 +256,7 @@ public enum V1beta1ApplicationInsightsStandardWebTestSpecForProviderResourceGrou
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsStandardWebTestSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1ApplicationInsightsStandardWebTestSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -267,7 +267,7 @@ public enum V1beta1ApplicationInsightsStandardWebTestSpecForProviderResourceGrou
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProviderResourceGroupNameRefPolicy
 {
@@ -291,7 +291,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProviderRes
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProviderResourceGroupNameRef
 {
@@ -314,7 +314,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProviderRes
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsStandardWebTestSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ApplicationInsightsStandardWebTestSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -330,7 +330,7 @@ public enum V1beta1ApplicationInsightsStandardWebTestSpecForProviderResourceGrou
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsStandardWebTestSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ApplicationInsightsStandardWebTestSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -341,7 +341,7 @@ public enum V1beta1ApplicationInsightsStandardWebTestSpecForProviderResourceGrou
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -365,7 +365,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProviderRes
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProviderResourceGroupNameSelector
 {
@@ -390,7 +390,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProviderRes
 }
 
 /// <summary>A content block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProviderValidationRulesContent
 {
@@ -408,7 +408,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProviderVal
 }
 
 /// <summary>A validation_rules block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProviderValidationRules
 {
@@ -429,7 +429,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProviderVal
     public bool? SslCheckEnabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProvider
 {
@@ -504,7 +504,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsStandardWebTestSpecInitProviderApplicationInsightsIdRefPolicyResolutionEnum>))]
 public enum V1beta1ApplicationInsightsStandardWebTestSpecInitProviderApplicationInsightsIdRefPolicyResolutionEnum
 {
@@ -520,7 +520,7 @@ public enum V1beta1ApplicationInsightsStandardWebTestSpecInitProviderApplication
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsStandardWebTestSpecInitProviderApplicationInsightsIdRefPolicyResolveEnum>))]
 public enum V1beta1ApplicationInsightsStandardWebTestSpecInitProviderApplicationInsightsIdRefPolicyResolveEnum
 {
@@ -531,7 +531,7 @@ public enum V1beta1ApplicationInsightsStandardWebTestSpecInitProviderApplication
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpecInitProviderApplicationInsightsIdRefPolicy
 {
@@ -555,7 +555,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpecInitProviderAp
 }
 
 /// <summary>Reference to a ApplicationInsights in insights to populate applicationInsightsId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpecInitProviderApplicationInsightsIdRef
 {
@@ -578,7 +578,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpecInitProviderAp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsStandardWebTestSpecInitProviderApplicationInsightsIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ApplicationInsightsStandardWebTestSpecInitProviderApplicationInsightsIdSelectorPolicyResolutionEnum
 {
@@ -594,7 +594,7 @@ public enum V1beta1ApplicationInsightsStandardWebTestSpecInitProviderApplication
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsStandardWebTestSpecInitProviderApplicationInsightsIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ApplicationInsightsStandardWebTestSpecInitProviderApplicationInsightsIdSelectorPolicyResolveEnum
 {
@@ -605,7 +605,7 @@ public enum V1beta1ApplicationInsightsStandardWebTestSpecInitProviderApplication
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpecInitProviderApplicationInsightsIdSelectorPolicy
 {
@@ -629,7 +629,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpecInitProviderAp
 }
 
 /// <summary>Selector for a ApplicationInsights in insights to populate applicationInsightsId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpecInitProviderApplicationInsightsIdSelector
 {
@@ -653,7 +653,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpecInitProviderAp
     public V1beta1ApplicationInsightsStandardWebTestSpecInitProviderApplicationInsightsIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpecInitProviderRequestHeader
 {
@@ -667,7 +667,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpecInitProviderRe
 }
 
 /// <summary>A request block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpecInitProviderRequest
 {
@@ -697,7 +697,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpecInitProviderRe
 }
 
 /// <summary>A content block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpecInitProviderValidationRulesContent
 {
@@ -715,7 +715,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpecInitProviderVa
 }
 
 /// <summary>A validation_rules block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpecInitProviderValidationRules
 {
@@ -748,7 +748,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpecInitProviderVa
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpecInitProvider
 {
@@ -809,7 +809,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsStandardWebTestSpecManagementPoliciesEnum>))]
 public enum V1beta1ApplicationInsightsStandardWebTestSpecManagementPoliciesEnum
 {
@@ -832,7 +832,7 @@ public enum V1beta1ApplicationInsightsStandardWebTestSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpecProviderConfigRef
 {
@@ -851,7 +851,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpecProviderConfig
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpecWriteConnectionSecretToRef
 {
@@ -861,7 +861,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpecWriteConnectio
 }
 
 /// <summary>ApplicationInsightsStandardWebTestSpec defines the desired state of ApplicationInsightsStandardWebTest</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestSpec
 {
@@ -912,7 +912,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestSpec
     public V1beta1ApplicationInsightsStandardWebTestSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestStatusAtProviderRequestHeader
 {
@@ -926,7 +926,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestStatusAtProviderRe
 }
 
 /// <summary>A request block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestStatusAtProviderRequest
 {
@@ -956,7 +956,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestStatusAtProviderRe
 }
 
 /// <summary>A content block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestStatusAtProviderValidationRulesContent
 {
@@ -974,7 +974,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestStatusAtProviderVa
 }
 
 /// <summary>A validation_rules block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestStatusAtProviderValidationRules
 {
@@ -995,7 +995,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestStatusAtProviderVa
     public bool? SslCheckEnabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestStatusAtProvider
 {
@@ -1057,7 +1057,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestStatusConditions
 {
@@ -1100,7 +1100,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestStatusConditions
 }
 
 /// <summary>ApplicationInsightsStandardWebTestStatus defines the observed state of ApplicationInsightsStandardWebTest.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsStandardWebTestStatus
 {
@@ -1121,7 +1121,7 @@ public partial class V1beta1ApplicationInsightsStandardWebTestStatus
 }
 
 /// <summary>ApplicationInsightsStandardWebTest is the Schema for the ApplicationInsightsStandardWebTests API. Manages a Application Insights Standard WebTest.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ApplicationInsightsStandardWebTest : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ApplicationInsightsStandardWebTestSpec>, IStatus<V1beta1ApplicationInsightsStandardWebTestStatus?>

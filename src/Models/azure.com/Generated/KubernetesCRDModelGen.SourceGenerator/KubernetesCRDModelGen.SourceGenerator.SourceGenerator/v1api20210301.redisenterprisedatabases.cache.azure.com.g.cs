@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.cache.azure.com;
 /// - Generated from: /redisenterprise/resource-manager/Microsoft.Cache/RedisEnterprise/stable/2021-03-01/redisenterprise.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cache/redisEnterprise/{clusterName}/databases/{databaseName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20210301RedisEnterpriseDatabaseList : IKubernetesObject<V1ListMeta>, IItems<V1api20210301RedisEnterpriseDatabase>
@@ -44,7 +44,7 @@ public partial class V1api20210301RedisEnterpriseDatabaseList : IKubernetesObjec
 /// ClientProtocol: Specifies whether redis clients can connect using TLS-encrypted or plaintext redis protocols. Default is
 /// TLS-encrypted.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210301RedisEnterpriseDatabaseSpecClientProtocolEnum>))]
 public enum V1api20210301RedisEnterpriseDatabaseSpecClientProtocolEnum
 {
@@ -55,7 +55,7 @@ public enum V1api20210301RedisEnterpriseDatabaseSpecClientProtocolEnum
 }
 
 /// <summary>ClusteringPolicy: Clustering policy - default is OSSCluster. Specified at create time.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210301RedisEnterpriseDatabaseSpecClusteringPolicyEnum>))]
 public enum V1api20210301RedisEnterpriseDatabaseSpecClusteringPolicyEnum
 {
@@ -66,7 +66,7 @@ public enum V1api20210301RedisEnterpriseDatabaseSpecClusteringPolicyEnum
 }
 
 /// <summary>EvictionPolicy: Redis eviction policy - default is VolatileLRU</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210301RedisEnterpriseDatabaseSpecEvictionPolicyEnum>))]
 public enum V1api20210301RedisEnterpriseDatabaseSpecEvictionPolicyEnum
 {
@@ -89,7 +89,7 @@ public enum V1api20210301RedisEnterpriseDatabaseSpecEvictionPolicyEnum
 }
 
 /// <summary>Specifies configuration of a redis module</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210301RedisEnterpriseDatabaseSpecModules
 {
@@ -107,7 +107,7 @@ public partial class V1api20210301RedisEnterpriseDatabaseSpecModules
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210301RedisEnterpriseDatabaseSpecOperatorSpecConfigMapExpressions
 {
@@ -148,7 +148,7 @@ public partial class V1api20210301RedisEnterpriseDatabaseSpecOperatorSpecConfigM
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210301RedisEnterpriseDatabaseSpecOperatorSpecSecretExpressions
 {
@@ -188,7 +188,7 @@ public partial class V1api20210301RedisEnterpriseDatabaseSpecOperatorSpecSecretE
 /// PrimaryKey: indicates where the PrimaryKey secret should be placed. If omitted, the secret will not be retrieved from
 /// Azure.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210301RedisEnterpriseDatabaseSpecOperatorSpecSecretsPrimaryKey
 {
@@ -216,7 +216,7 @@ public partial class V1api20210301RedisEnterpriseDatabaseSpecOperatorSpecSecrets
 /// SecondaryKey: indicates where the SecondaryKey secret should be placed. If omitted, the secret will not be retrieved
 /// from Azure.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210301RedisEnterpriseDatabaseSpecOperatorSpecSecretsSecondaryKey
 {
@@ -241,7 +241,7 @@ public partial class V1api20210301RedisEnterpriseDatabaseSpecOperatorSpecSecrets
 }
 
 /// <summary>Secrets: configures where to place Azure generated secrets.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210301RedisEnterpriseDatabaseSpecOperatorSpecSecrets
 {
@@ -264,7 +264,7 @@ public partial class V1api20210301RedisEnterpriseDatabaseSpecOperatorSpecSecrets
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210301RedisEnterpriseDatabaseSpecOperatorSpec
 {
@@ -286,7 +286,7 @@ public partial class V1api20210301RedisEnterpriseDatabaseSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a cache.azure.com/RedisEnterprise resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210301RedisEnterpriseDatabaseSpecOwner
 {
@@ -299,7 +299,7 @@ public partial class V1api20210301RedisEnterpriseDatabaseSpecOwner
 }
 
 /// <summary>AofFrequency: Sets the frequency at which data is written to disk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210301RedisEnterpriseDatabaseSpecPersistenceAofFrequencyEnum>))]
 public enum V1api20210301RedisEnterpriseDatabaseSpecPersistenceAofFrequencyEnum
 {
@@ -310,7 +310,7 @@ public enum V1api20210301RedisEnterpriseDatabaseSpecPersistenceAofFrequencyEnum
 }
 
 /// <summary>RdbFrequency: Sets the frequency at which a snapshot of the database is created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20210301RedisEnterpriseDatabaseSpecPersistenceRdbFrequencyEnum>))]
 public enum V1api20210301RedisEnterpriseDatabaseSpecPersistenceRdbFrequencyEnum
 {
@@ -323,7 +323,7 @@ public enum V1api20210301RedisEnterpriseDatabaseSpecPersistenceRdbFrequencyEnum
 }
 
 /// <summary>Persistence: Persistence settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210301RedisEnterpriseDatabaseSpecPersistence
 {
@@ -344,7 +344,7 @@ public partial class V1api20210301RedisEnterpriseDatabaseSpecPersistence
     public V1api20210301RedisEnterpriseDatabaseSpecPersistenceRdbFrequencyEnum? RdbFrequency { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210301RedisEnterpriseDatabaseSpec
 {
@@ -399,7 +399,7 @@ public partial class V1api20210301RedisEnterpriseDatabaseSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210301RedisEnterpriseDatabaseStatusConditions
 {
@@ -445,7 +445,7 @@ public partial class V1api20210301RedisEnterpriseDatabaseStatusConditions
 }
 
 /// <summary>Specifies configuration of a redis module</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210301RedisEnterpriseDatabaseStatusModules
 {
@@ -463,7 +463,7 @@ public partial class V1api20210301RedisEnterpriseDatabaseStatusModules
 }
 
 /// <summary>Persistence: Persistence settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210301RedisEnterpriseDatabaseStatusPersistence
 {
@@ -484,7 +484,7 @@ public partial class V1api20210301RedisEnterpriseDatabaseStatusPersistence
     public string? RdbFrequency { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210301RedisEnterpriseDatabaseStatus
 {
@@ -548,7 +548,7 @@ public partial class V1api20210301RedisEnterpriseDatabaseStatus
 /// - Generated from: /redisenterprise/resource-manager/Microsoft.Cache/RedisEnterprise/stable/2021-03-01/redisenterprise.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cache/redisEnterprise/{clusterName}/databases/{databaseName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20210301RedisEnterpriseDatabase : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20210301RedisEnterpriseDatabaseSpec?>, IStatus<V1api20210301RedisEnterpriseDatabaseStatus?>

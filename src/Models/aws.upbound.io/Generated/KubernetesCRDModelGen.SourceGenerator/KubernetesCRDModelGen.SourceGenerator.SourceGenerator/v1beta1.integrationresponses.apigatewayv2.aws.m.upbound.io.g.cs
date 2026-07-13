@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.apigatewayv2.aws.m.upbound.io;
 /// <summary>IntegrationResponse is the Schema for the IntegrationResponses API. Manages an Amazon API Gateway Version 2 integration response.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IntegrationResponseList : IKubernetesObject<V1ListMeta>, IItems<V1beta1IntegrationResponse>
@@ -42,7 +42,7 @@ public partial class V1beta1IntegrationResponseList : IKubernetesObject<V1ListMe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationResponseSpecForProviderApiIdRefPolicyResolutionEnum>))]
 public enum V1beta1IntegrationResponseSpecForProviderApiIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1IntegrationResponseSpecForProviderApiIdRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationResponseSpecForProviderApiIdRefPolicyResolveEnum>))]
 public enum V1beta1IntegrationResponseSpecForProviderApiIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1IntegrationResponseSpecForProviderApiIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationResponseSpecForProviderApiIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1IntegrationResponseSpecForProviderApiIdRefPolicy
 }
 
 /// <summary>Reference to a API in apigatewayv2 to populate apiId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationResponseSpecForProviderApiIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1IntegrationResponseSpecForProviderApiIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationResponseSpecForProviderApiIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1IntegrationResponseSpecForProviderApiIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1IntegrationResponseSpecForProviderApiIdSelectorPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationResponseSpecForProviderApiIdSelectorPolicyResolveEnum>))]
 public enum V1beta1IntegrationResponseSpecForProviderApiIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1IntegrationResponseSpecForProviderApiIdSelectorPolicyResolveE
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationResponseSpecForProviderApiIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1IntegrationResponseSpecForProviderApiIdSelectorPolic
 }
 
 /// <summary>Selector for a API in apigatewayv2 to populate apiId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationResponseSpecForProviderApiIdSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1IntegrationResponseSpecForProviderApiIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationResponseSpecForProviderIntegrationIdRefPolicyResolutionEnum>))]
 public enum V1beta1IntegrationResponseSpecForProviderIntegrationIdRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1IntegrationResponseSpecForProviderIntegrationIdRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationResponseSpecForProviderIntegrationIdRefPolicyResolveEnum>))]
 public enum V1beta1IntegrationResponseSpecForProviderIntegrationIdRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1IntegrationResponseSpecForProviderIntegrationIdRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationResponseSpecForProviderIntegrationIdRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1IntegrationResponseSpecForProviderIntegrationIdRefPo
 }
 
 /// <summary>Reference to a Integration in apigatewayv2 to populate integrationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationResponseSpecForProviderIntegrationIdRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1IntegrationResponseSpecForProviderIntegrationIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationResponseSpecForProviderIntegrationIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1IntegrationResponseSpecForProviderIntegrationIdSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1IntegrationResponseSpecForProviderIntegrationIdSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationResponseSpecForProviderIntegrationIdSelectorPolicyResolveEnum>))]
 public enum V1beta1IntegrationResponseSpecForProviderIntegrationIdSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1IntegrationResponseSpecForProviderIntegrationIdSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationResponseSpecForProviderIntegrationIdSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1IntegrationResponseSpecForProviderIntegrationIdSelec
 }
 
 /// <summary>Selector for a Integration in apigatewayv2 to populate integrationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationResponseSpecForProviderIntegrationIdSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1IntegrationResponseSpecForProviderIntegrationIdSelec
     public V1beta1IntegrationResponseSpecForProviderIntegrationIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationResponseSpecForProvider
 {
@@ -404,7 +404,7 @@ public partial class V1beta1IntegrationResponseSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationResponseSpecInitProviderApiIdRefPolicyResolutionEnum>))]
 public enum V1beta1IntegrationResponseSpecInitProviderApiIdRefPolicyResolutionEnum
 {
@@ -420,7 +420,7 @@ public enum V1beta1IntegrationResponseSpecInitProviderApiIdRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationResponseSpecInitProviderApiIdRefPolicyResolveEnum>))]
 public enum V1beta1IntegrationResponseSpecInitProviderApiIdRefPolicyResolveEnum
 {
@@ -431,7 +431,7 @@ public enum V1beta1IntegrationResponseSpecInitProviderApiIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationResponseSpecInitProviderApiIdRefPolicy
 {
@@ -455,7 +455,7 @@ public partial class V1beta1IntegrationResponseSpecInitProviderApiIdRefPolicy
 }
 
 /// <summary>Reference to a API in apigatewayv2 to populate apiId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationResponseSpecInitProviderApiIdRef
 {
@@ -478,7 +478,7 @@ public partial class V1beta1IntegrationResponseSpecInitProviderApiIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationResponseSpecInitProviderApiIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1IntegrationResponseSpecInitProviderApiIdSelectorPolicyResolutionEnum
 {
@@ -494,7 +494,7 @@ public enum V1beta1IntegrationResponseSpecInitProviderApiIdSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationResponseSpecInitProviderApiIdSelectorPolicyResolveEnum>))]
 public enum V1beta1IntegrationResponseSpecInitProviderApiIdSelectorPolicyResolveEnum
 {
@@ -505,7 +505,7 @@ public enum V1beta1IntegrationResponseSpecInitProviderApiIdSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationResponseSpecInitProviderApiIdSelectorPolicy
 {
@@ -529,7 +529,7 @@ public partial class V1beta1IntegrationResponseSpecInitProviderApiIdSelectorPoli
 }
 
 /// <summary>Selector for a API in apigatewayv2 to populate apiId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationResponseSpecInitProviderApiIdSelector
 {
@@ -559,7 +559,7 @@ public partial class V1beta1IntegrationResponseSpecInitProviderApiIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationResponseSpecInitProviderIntegrationIdRefPolicyResolutionEnum>))]
 public enum V1beta1IntegrationResponseSpecInitProviderIntegrationIdRefPolicyResolutionEnum
 {
@@ -575,7 +575,7 @@ public enum V1beta1IntegrationResponseSpecInitProviderIntegrationIdRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationResponseSpecInitProviderIntegrationIdRefPolicyResolveEnum>))]
 public enum V1beta1IntegrationResponseSpecInitProviderIntegrationIdRefPolicyResolveEnum
 {
@@ -586,7 +586,7 @@ public enum V1beta1IntegrationResponseSpecInitProviderIntegrationIdRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationResponseSpecInitProviderIntegrationIdRefPolicy
 {
@@ -610,7 +610,7 @@ public partial class V1beta1IntegrationResponseSpecInitProviderIntegrationIdRefP
 }
 
 /// <summary>Reference to a Integration in apigatewayv2 to populate integrationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationResponseSpecInitProviderIntegrationIdRef
 {
@@ -633,7 +633,7 @@ public partial class V1beta1IntegrationResponseSpecInitProviderIntegrationIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationResponseSpecInitProviderIntegrationIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1IntegrationResponseSpecInitProviderIntegrationIdSelectorPolicyResolutionEnum
 {
@@ -649,7 +649,7 @@ public enum V1beta1IntegrationResponseSpecInitProviderIntegrationIdSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationResponseSpecInitProviderIntegrationIdSelectorPolicyResolveEnum>))]
 public enum V1beta1IntegrationResponseSpecInitProviderIntegrationIdSelectorPolicyResolveEnum
 {
@@ -660,7 +660,7 @@ public enum V1beta1IntegrationResponseSpecInitProviderIntegrationIdSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationResponseSpecInitProviderIntegrationIdSelectorPolicy
 {
@@ -684,7 +684,7 @@ public partial class V1beta1IntegrationResponseSpecInitProviderIntegrationIdSele
 }
 
 /// <summary>Selector for a Integration in apigatewayv2 to populate integrationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationResponseSpecInitProviderIntegrationIdSelector
 {
@@ -720,7 +720,7 @@ public partial class V1beta1IntegrationResponseSpecInitProviderIntegrationIdSele
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationResponseSpecInitProvider
 {
@@ -769,7 +769,7 @@ public partial class V1beta1IntegrationResponseSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationResponseSpecManagementPoliciesEnum>))]
 public enum V1beta1IntegrationResponseSpecManagementPoliciesEnum
 {
@@ -792,7 +792,7 @@ public enum V1beta1IntegrationResponseSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationResponseSpecProviderConfigRef
 {
@@ -811,7 +811,7 @@ public partial class V1beta1IntegrationResponseSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationResponseSpecWriteConnectionSecretToRef
 {
@@ -821,7 +821,7 @@ public partial class V1beta1IntegrationResponseSpecWriteConnectionSecretToRef
 }
 
 /// <summary>IntegrationResponseSpec defines the desired state of IntegrationResponse</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationResponseSpec
 {
@@ -872,7 +872,7 @@ public partial class V1beta1IntegrationResponseSpec
     public V1beta1IntegrationResponseSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationResponseStatusAtProvider
 {
@@ -913,7 +913,7 @@ public partial class V1beta1IntegrationResponseStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationResponseStatusConditions
 {
@@ -956,7 +956,7 @@ public partial class V1beta1IntegrationResponseStatusConditions
 }
 
 /// <summary>IntegrationResponseStatus defines the observed state of IntegrationResponse.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationResponseStatus
 {
@@ -977,7 +977,7 @@ public partial class V1beta1IntegrationResponseStatus
 }
 
 /// <summary>IntegrationResponse is the Schema for the IntegrationResponses API. Manages an Amazon API Gateway Version 2 integration response.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IntegrationResponse : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1IntegrationResponseSpec>, IStatus<V1beta1IntegrationResponseStatus?>

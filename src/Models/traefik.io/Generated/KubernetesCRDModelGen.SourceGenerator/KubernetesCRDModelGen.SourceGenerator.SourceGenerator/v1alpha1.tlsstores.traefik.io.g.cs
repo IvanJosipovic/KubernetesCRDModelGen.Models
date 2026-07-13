@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.traefik.io;
 /// This means that you cannot have two stores that are named default in different Kubernetes namespaces.
 /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/http/tls/tls-certificates/#certificates-stores#certificates-stores
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1TLSStoreList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1TLSStore>
@@ -42,7 +42,7 @@ public partial class V1alpha1TLSStoreList : IKubernetesObject<V1ListMeta>, IItem
 }
 
 /// <summary>Certificate holds a secret name for the TLSStore resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TLSStoreSpecCertificates
 {
@@ -52,7 +52,7 @@ public partial class V1alpha1TLSStoreSpecCertificates
 }
 
 /// <summary>DefaultCertificate defines the default certificate configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TLSStoreSpecDefaultCertificate
 {
@@ -62,7 +62,7 @@ public partial class V1alpha1TLSStoreSpecDefaultCertificate
 }
 
 /// <summary>Domain is the domain definition for the DefaultCertificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TLSStoreSpecDefaultGeneratedCertDomain
 {
@@ -76,7 +76,7 @@ public partial class V1alpha1TLSStoreSpecDefaultGeneratedCertDomain
 }
 
 /// <summary>DefaultGeneratedCert defines the default generated certificate configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TLSStoreSpecDefaultGeneratedCert
 {
@@ -90,7 +90,7 @@ public partial class V1alpha1TLSStoreSpecDefaultGeneratedCert
 }
 
 /// <summary>TLSStoreSpec defines the desired state of a TLSStore.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TLSStoreSpec
 {
@@ -113,7 +113,7 @@ public partial class V1alpha1TLSStoreSpec
 /// This means that you cannot have two stores that are named default in different Kubernetes namespaces.
 /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/http/tls/tls-certificates/#certificates-stores#certificates-stores
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1TLSStore : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1TLSStoreSpec>

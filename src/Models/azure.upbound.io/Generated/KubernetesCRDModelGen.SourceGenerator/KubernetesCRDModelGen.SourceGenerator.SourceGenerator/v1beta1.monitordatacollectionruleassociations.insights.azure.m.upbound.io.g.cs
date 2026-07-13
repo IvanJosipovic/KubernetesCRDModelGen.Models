@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.insights.azure.m.upbound.io;
 /// <summary>MonitorDataCollectionRuleAssociation is the Schema for the MonitorDataCollectionRuleAssociations API. Manages a Data Collection Rule Association.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MonitorDataCollectionRuleAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MonitorDataCollectionRuleAssociation>
@@ -42,7 +42,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationList : IKubernet
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollectionEndpointIdRefPolicyResolutionEnum>))]
 public enum V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollectionEndpointIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollectionEndpointIdRefPolicyResolveEnum>))]
 public enum V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollectionEndpointIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollec
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollectionEndpointIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProviderD
 }
 
 /// <summary>Reference to a MonitorDataCollectionEndpoint in insights to populate dataCollectionEndpointId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollectionEndpointIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProviderD
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollectionEndpointIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollectionEndpointIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollectionEndpointIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollectionEndpointIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollectionEndpointIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProviderD
 }
 
 /// <summary>Selector for a MonitorDataCollectionEndpoint in insights to populate dataCollectionEndpointId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollectionEndpointIdSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProviderD
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollectionRuleIdRefPolicyResolutionEnum>))]
 public enum V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollectionRuleIdRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollectionRuleIdRefPolicyResolveEnum>))]
 public enum V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollectionRuleIdRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollec
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollectionRuleIdRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProviderD
 }
 
 /// <summary>Reference to a MonitorDataCollectionRule in insights to populate dataCollectionRuleId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollectionRuleIdRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProviderD
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollectionRuleIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollectionRuleIdSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollectionRuleIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollectionRuleIdSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollectionRuleIdSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProviderD
 }
 
 /// <summary>Selector for a MonitorDataCollectionRule in insights to populate dataCollectionRuleId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProviderDataCollectionRuleIdSelector
 {
@@ -352,7 +352,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProviderD
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleAssociationSpecForProviderTargetResourceIdRefPolicyResolutionEnum>))]
 public enum V1beta1MonitorDataCollectionRuleAssociationSpecForProviderTargetResourceIdRefPolicyResolutionEnum
 {
@@ -368,7 +368,7 @@ public enum V1beta1MonitorDataCollectionRuleAssociationSpecForProviderTargetReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleAssociationSpecForProviderTargetResourceIdRefPolicyResolveEnum>))]
 public enum V1beta1MonitorDataCollectionRuleAssociationSpecForProviderTargetResourceIdRefPolicyResolveEnum
 {
@@ -379,7 +379,7 @@ public enum V1beta1MonitorDataCollectionRuleAssociationSpecForProviderTargetReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProviderTargetResourceIdRefPolicy
 {
@@ -403,7 +403,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProviderT
 }
 
 /// <summary>Reference to a LinuxVirtualMachine in compute to populate targetResourceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProviderTargetResourceIdRef
 {
@@ -426,7 +426,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProviderT
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleAssociationSpecForProviderTargetResourceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MonitorDataCollectionRuleAssociationSpecForProviderTargetResourceIdSelectorPolicyResolutionEnum
 {
@@ -442,7 +442,7 @@ public enum V1beta1MonitorDataCollectionRuleAssociationSpecForProviderTargetReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleAssociationSpecForProviderTargetResourceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MonitorDataCollectionRuleAssociationSpecForProviderTargetResourceIdSelectorPolicyResolveEnum
 {
@@ -453,7 +453,7 @@ public enum V1beta1MonitorDataCollectionRuleAssociationSpecForProviderTargetReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProviderTargetResourceIdSelectorPolicy
 {
@@ -477,7 +477,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProviderT
 }
 
 /// <summary>Selector for a LinuxVirtualMachine in compute to populate targetResourceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProviderTargetResourceIdSelector
 {
@@ -501,7 +501,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProviderT
     public V1beta1MonitorDataCollectionRuleAssociationSpecForProviderTargetResourceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProvider
 {
@@ -552,7 +552,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataCollectionEndpointIdRefPolicyResolutionEnum>))]
 public enum V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataCollectionEndpointIdRefPolicyResolutionEnum
 {
@@ -568,7 +568,7 @@ public enum V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataColle
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataCollectionEndpointIdRefPolicyResolveEnum>))]
 public enum V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataCollectionEndpointIdRefPolicyResolveEnum
 {
@@ -579,7 +579,7 @@ public enum V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataColle
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataCollectionEndpointIdRefPolicy
 {
@@ -603,7 +603,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpecInitProvider
 }
 
 /// <summary>Reference to a MonitorDataCollectionEndpoint in insights to populate dataCollectionEndpointId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataCollectionEndpointIdRef
 {
@@ -626,7 +626,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpecInitProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataCollectionEndpointIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataCollectionEndpointIdSelectorPolicyResolutionEnum
 {
@@ -642,7 +642,7 @@ public enum V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataColle
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataCollectionEndpointIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataCollectionEndpointIdSelectorPolicyResolveEnum
 {
@@ -653,7 +653,7 @@ public enum V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataColle
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataCollectionEndpointIdSelectorPolicy
 {
@@ -677,7 +677,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpecInitProvider
 }
 
 /// <summary>Selector for a MonitorDataCollectionEndpoint in insights to populate dataCollectionEndpointId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataCollectionEndpointIdSelector
 {
@@ -707,7 +707,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpecInitProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataCollectionRuleIdRefPolicyResolutionEnum>))]
 public enum V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataCollectionRuleIdRefPolicyResolutionEnum
 {
@@ -723,7 +723,7 @@ public enum V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataColle
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataCollectionRuleIdRefPolicyResolveEnum>))]
 public enum V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataCollectionRuleIdRefPolicyResolveEnum
 {
@@ -734,7 +734,7 @@ public enum V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataColle
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataCollectionRuleIdRefPolicy
 {
@@ -758,7 +758,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpecInitProvider
 }
 
 /// <summary>Reference to a MonitorDataCollectionRule in insights to populate dataCollectionRuleId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataCollectionRuleIdRef
 {
@@ -781,7 +781,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpecInitProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataCollectionRuleIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataCollectionRuleIdSelectorPolicyResolutionEnum
 {
@@ -797,7 +797,7 @@ public enum V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataColle
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataCollectionRuleIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataCollectionRuleIdSelectorPolicyResolveEnum
 {
@@ -808,7 +808,7 @@ public enum V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataColle
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataCollectionRuleIdSelectorPolicy
 {
@@ -832,7 +832,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpecInitProvider
 }
 
 /// <summary>Selector for a MonitorDataCollectionRule in insights to populate dataCollectionRuleId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpecInitProviderDataCollectionRuleIdSelector
 {
@@ -868,7 +868,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpecInitProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpecInitProvider
 {
@@ -905,7 +905,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1MonitorDataCollectionRuleAssociationSpecManagementPoliciesEnum
 {
@@ -928,7 +928,7 @@ public enum V1beta1MonitorDataCollectionRuleAssociationSpecManagementPoliciesEnu
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpecProviderConfigRef
 {
@@ -947,7 +947,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpecProviderConf
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpecWriteConnectionSecretToRef
 {
@@ -957,7 +957,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpecWriteConnect
 }
 
 /// <summary>MonitorDataCollectionRuleAssociationSpec defines the desired state of MonitorDataCollectionRuleAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationSpec
 {
@@ -1008,7 +1008,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationSpec
     public V1beta1MonitorDataCollectionRuleAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationStatusAtProvider
 {
@@ -1034,7 +1034,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationStatusConditions
 {
@@ -1077,7 +1077,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationStatusConditions
 }
 
 /// <summary>MonitorDataCollectionRuleAssociationStatus defines the observed state of MonitorDataCollectionRuleAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitorDataCollectionRuleAssociationStatus
 {
@@ -1098,7 +1098,7 @@ public partial class V1beta1MonitorDataCollectionRuleAssociationStatus
 }
 
 /// <summary>MonitorDataCollectionRuleAssociation is the Schema for the MonitorDataCollectionRuleAssociations API. Manages a Data Collection Rule Association.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MonitorDataCollectionRuleAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MonitorDataCollectionRuleAssociationSpec>, IStatus<V1beta1MonitorDataCollectionRuleAssociationStatus?>

@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.kafka.strimzi.io;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1KafkaBridgeList : IKubernetesObject<V1ListMeta>, IItems<V1KafkaBridge>
@@ -35,7 +35,7 @@ public partial class V1KafkaBridgeList : IKubernetesObject<V1ListMeta>, IItems<V
     public required IList<V1KafkaBridge> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTlsTrustedCertificates
 {
@@ -53,7 +53,7 @@ public partial class V1KafkaBridgeSpecTlsTrustedCertificates
 }
 
 /// <summary>TLS configuration for connecting HTTP Bridge to the cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTls
 {
@@ -63,7 +63,7 @@ public partial class V1KafkaBridgeSpecTls
 }
 
 /// <summary>Reference to the `Secret` which holds the certificate and private key pair.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecAuthenticationCertificateAndKey
 {
@@ -81,7 +81,7 @@ public partial class V1KafkaBridgeSpecAuthenticationCertificateAndKey
 }
 
 /// <summary>Reference to the `Secret` which holds the password.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecAuthenticationPasswordSecret
 {
@@ -95,7 +95,7 @@ public partial class V1KafkaBridgeSpecAuthenticationPasswordSecret
 }
 
 /// <summary>Specifies the authentication type. Supported types are `tls`, `scram-sha-256`, `scram-sha-512`, `plain`, and `custom`. `tls` uses TLS client authentication and is supported only over TLS connections. `scram-sha-256` and `scram-sha-512` use SASL SCRAM-SHA-256 and SASL SCRAM-SHA-512 authentication, respectively. `plain` uses SASL PLAIN authentication. `custom` allows you to configure a custom authentication mechanism.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KafkaBridgeSpecAuthenticationTypeEnum>))]
 public enum V1KafkaBridgeSpecAuthenticationTypeEnum
 {
@@ -112,7 +112,7 @@ public enum V1KafkaBridgeSpecAuthenticationTypeEnum
 }
 
 /// <summary>Authentication configuration for connecting to the cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecAuthentication
 {
@@ -142,7 +142,7 @@ public partial class V1KafkaBridgeSpecAuthentication
 }
 
 /// <summary>Reference to the `Secret` which holds the certificate and private key pair.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecHttpTlsCertificateAndKey
 {
@@ -160,7 +160,7 @@ public partial class V1KafkaBridgeSpecHttpTlsCertificateAndKey
 }
 
 /// <summary>TLS configuration for clients connections to the HTTP Bridge.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecHttpTls
 {
@@ -174,7 +174,7 @@ public partial class V1KafkaBridgeSpecHttpTls
 }
 
 /// <summary>CORS configuration for the HTTP Bridge.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecHttpCors
 {
@@ -188,7 +188,7 @@ public partial class V1KafkaBridgeSpecHttpCors
 }
 
 /// <summary>The HTTP related configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecHttp
 {
@@ -206,7 +206,7 @@ public partial class V1KafkaBridgeSpecHttp
 }
 
 /// <summary>Kafka AdminClient related configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecAdminClient
 {
@@ -216,7 +216,7 @@ public partial class V1KafkaBridgeSpecAdminClient
 }
 
 /// <summary>Kafka consumer related configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecConsumer
 {
@@ -234,7 +234,7 @@ public partial class V1KafkaBridgeSpecConsumer
 }
 
 /// <summary>Kafka producer related configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecProducer
 {
@@ -247,7 +247,7 @@ public partial class V1KafkaBridgeSpecProducer
     public JsonNode? Config { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecResourcesClaims
 {
@@ -259,7 +259,7 @@ public partial class V1KafkaBridgeSpecResourcesClaims
 }
 
 /// <summary>CPU and memory resources to reserve.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecResources
 {
@@ -273,7 +273,7 @@ public partial class V1KafkaBridgeSpecResources
     public IDictionary<string, IntOrString>? Requests { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecJvmOptionsJavaSystemProperties
 {
@@ -287,7 +287,7 @@ public partial class V1KafkaBridgeSpecJvmOptionsJavaSystemProperties
 }
 
 /// <summary>JVM Options for pods.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecJvmOptions
 {
@@ -313,7 +313,7 @@ public partial class V1KafkaBridgeSpecJvmOptions
 }
 
 /// <summary>Logging type, must be either &apos;inline&apos; or &apos;external&apos;.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KafkaBridgeSpecLoggingTypeEnum>))]
 public enum V1KafkaBridgeSpecLoggingTypeEnum
 {
@@ -324,7 +324,7 @@ public enum V1KafkaBridgeSpecLoggingTypeEnum
 }
 
 /// <summary>Reference to the key in the ConfigMap containing the configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecLoggingValueFromConfigMapKeyRef
 {
@@ -339,7 +339,7 @@ public partial class V1KafkaBridgeSpecLoggingValueFromConfigMapKeyRef
 }
 
 /// <summary>`ConfigMap` entry where the logging configuration is stored. </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecLoggingValueFrom
 {
@@ -349,7 +349,7 @@ public partial class V1KafkaBridgeSpecLoggingValueFrom
 }
 
 /// <summary>Logging configuration for HTTP Bridge.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecLogging
 {
@@ -367,7 +367,7 @@ public partial class V1KafkaBridgeSpecLogging
 }
 
 /// <summary>Specifies the rack awareness type. Supported types are `topology-label` and `environment-variable`. `topology-label` uses a Kubernetes worker node label to set the `broker.rack` configuration for Kafka brokers and the `client.rack` configuration for Kafka Connect and MirrorMaker 2. `environment-variable` uses an environment variable to set the `broker.rack` configuration for Kafka brokers and the `client.rack` configuration for Kafka Connect and MirrorMaker 2. When not specified, `topology-label` type is used by default.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KafkaBridgeSpecRackTypeEnum>))]
 public enum V1KafkaBridgeSpecRackTypeEnum
 {
@@ -378,7 +378,7 @@ public enum V1KafkaBridgeSpecRackTypeEnum
 }
 
 /// <summary>Configuration of the node label which will be used as the client.rack consumer configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecRack
 {
@@ -396,7 +396,7 @@ public partial class V1KafkaBridgeSpecRack
 }
 
 /// <summary>Metrics type. The supported types are `jmxPrometheusExporter` and `strimziMetricsReporter`. Type `jmxPrometheusExporter` uses the Prometheus JMX Exporter to expose Kafka JMX metrics in Prometheus format through an HTTP endpoint. Type `strimziMetricsReporter` uses the Strimzi Metrics Reporter to directly expose Kafka metrics in Prometheus format through an HTTP endpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KafkaBridgeSpecMetricsConfigTypeEnum>))]
 public enum V1KafkaBridgeSpecMetricsConfigTypeEnum
 {
@@ -407,7 +407,7 @@ public enum V1KafkaBridgeSpecMetricsConfigTypeEnum
 }
 
 /// <summary>Reference to the key in the ConfigMap containing the configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecMetricsConfigValueFromConfigMapKeyRef
 {
@@ -422,7 +422,7 @@ public partial class V1KafkaBridgeSpecMetricsConfigValueFromConfigMapKeyRef
 }
 
 /// <summary>ConfigMap entry where the Prometheus JMX Exporter configuration is stored.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecMetricsConfigValueFrom
 {
@@ -432,7 +432,7 @@ public partial class V1KafkaBridgeSpecMetricsConfigValueFrom
 }
 
 /// <summary>Configuration values for the Strimzi Metrics Reporter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecMetricsConfigValues
 {
@@ -442,7 +442,7 @@ public partial class V1KafkaBridgeSpecMetricsConfigValues
 }
 
 /// <summary>Metrics configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecMetricsConfig
 {
@@ -460,7 +460,7 @@ public partial class V1KafkaBridgeSpecMetricsConfig
 }
 
 /// <summary>Pod liveness checking.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecLivenessProbe
 {
@@ -486,7 +486,7 @@ public partial class V1KafkaBridgeSpecLivenessProbe
 }
 
 /// <summary>Pod readiness checking.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecReadinessProbe
 {
@@ -512,7 +512,7 @@ public partial class V1KafkaBridgeSpecReadinessProbe
 }
 
 /// <summary>Metadata applied to the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateDeploymentMetadata
 {
@@ -526,7 +526,7 @@ public partial class V1KafkaBridgeSpecTemplateDeploymentMetadata
 }
 
 /// <summary>Pod replacement strategy for deployment configuration changes. Valid values are `RollingUpdate` and `Recreate`. Defaults to `RollingUpdate`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KafkaBridgeSpecTemplateDeploymentDeploymentStrategyEnum>))]
 public enum V1KafkaBridgeSpecTemplateDeploymentDeploymentStrategyEnum
 {
@@ -537,7 +537,7 @@ public enum V1KafkaBridgeSpecTemplateDeploymentDeploymentStrategyEnum
 }
 
 /// <summary>Template for HTTP Bridge `Deployment`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateDeployment
 {
@@ -551,7 +551,7 @@ public partial class V1KafkaBridgeSpecTemplateDeployment
 }
 
 /// <summary>Metadata applied to the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodMetadata
 {
@@ -564,7 +564,7 @@ public partial class V1KafkaBridgeSpecTemplatePodMetadata
     public IDictionary<string, string>? Annotations { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodImagePullSecrets
 {
@@ -572,7 +572,7 @@ public partial class V1KafkaBridgeSpecTemplatePodImagePullSecrets
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodSecurityContextAppArmorProfile
 {
@@ -583,7 +583,7 @@ public partial class V1KafkaBridgeSpecTemplatePodSecurityContextAppArmorProfile
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodSecurityContextSeLinuxOptions
 {
@@ -600,7 +600,7 @@ public partial class V1KafkaBridgeSpecTemplatePodSecurityContextSeLinuxOptions
     public string? User { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodSecurityContextSeccompProfile
 {
@@ -611,7 +611,7 @@ public partial class V1KafkaBridgeSpecTemplatePodSecurityContextSeccompProfile
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodSecurityContextSysctls
 {
@@ -622,7 +622,7 @@ public partial class V1KafkaBridgeSpecTemplatePodSecurityContextSysctls
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodSecurityContextWindowsOptions
 {
@@ -640,7 +640,7 @@ public partial class V1KafkaBridgeSpecTemplatePodSecurityContextWindowsOptions
 }
 
 /// <summary>Configures pod-level security attributes and common container settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodSecurityContext
 {
@@ -684,7 +684,7 @@ public partial class V1KafkaBridgeSpecTemplatePodSecurityContext
     public V1KafkaBridgeSpecTemplatePodSecurityContextWindowsOptions? WindowsOptions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions
 {
@@ -698,7 +698,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityNodeAffinityPreferredDu
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields
 {
@@ -712,7 +712,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityNodeAffinityPreferredDu
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference
 {
@@ -723,7 +723,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityNodeAffinityPreferredDu
     public IList<V1KafkaBridgeSpecTemplatePodAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields>? MatchFields { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution
 {
@@ -734,7 +734,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityNodeAffinityPreferredDu
     public int? Weight { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions
 {
@@ -748,7 +748,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityNodeAffinityRequiredDur
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields
 {
@@ -762,7 +762,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityNodeAffinityRequiredDur
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms
 {
@@ -773,7 +773,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityNodeAffinityRequiredDur
     public IList<V1KafkaBridgeSpecTemplatePodAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields>? MatchFields { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution
 {
@@ -781,7 +781,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityNodeAffinityRequiredDur
     public IList<V1KafkaBridgeSpecTemplatePodAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms>? NodeSelectorTerms { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityNodeAffinity
 {
@@ -792,7 +792,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityNodeAffinity
     public V1KafkaBridgeSpecTemplatePodAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution? RequiredDuringSchedulingIgnoredDuringExecution { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
 {
@@ -806,7 +806,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAffinityPreferredDur
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
 {
@@ -817,7 +817,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAffinityPreferredDur
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
 {
@@ -831,7 +831,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAffinityPreferredDur
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
 {
@@ -842,7 +842,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAffinityPreferredDur
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
 {
@@ -865,7 +865,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAffinityPreferredDur
     public string? TopologyKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution
 {
@@ -876,7 +876,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAffinityPreferredDur
     public int? Weight { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
 {
@@ -890,7 +890,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAffinityRequiredDuri
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
 {
@@ -901,7 +901,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAffinityRequiredDuri
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
 {
@@ -915,7 +915,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAffinityRequiredDuri
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
 {
@@ -926,7 +926,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAffinityRequiredDuri
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution
 {
@@ -949,7 +949,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAffinityRequiredDuri
     public string? TopologyKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAffinity
 {
@@ -960,7 +960,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAffinity
     public IList<V1KafkaBridgeSpecTemplatePodAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution>? RequiredDuringSchedulingIgnoredDuringExecution { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
 {
@@ -974,7 +974,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinityPreferre
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
 {
@@ -985,7 +985,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinityPreferre
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
 {
@@ -999,7 +999,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinityPreferre
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
 {
@@ -1010,7 +1010,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinityPreferre
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
 {
@@ -1033,7 +1033,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinityPreferre
     public string? TopologyKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution
 {
@@ -1044,7 +1044,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinityPreferre
     public int? Weight { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
 {
@@ -1058,7 +1058,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinityRequired
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
 {
@@ -1069,7 +1069,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinityRequired
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
 {
@@ -1083,7 +1083,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinityRequired
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
 {
@@ -1094,7 +1094,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinityRequired
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution
 {
@@ -1117,7 +1117,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinityRequired
     public string? TopologyKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinity
 {
@@ -1129,7 +1129,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinity
 }
 
 /// <summary>The pod&apos;s affinity rules.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodAffinity
 {
@@ -1143,7 +1143,7 @@ public partial class V1KafkaBridgeSpecTemplatePodAffinity
     public V1KafkaBridgeSpecTemplatePodAffinityPodAntiAffinity? PodAntiAffinity { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodTolerations
 {
@@ -1163,7 +1163,7 @@ public partial class V1KafkaBridgeSpecTemplatePodTolerations
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodTopologySpreadConstraintsLabelSelectorMatchExpressions
 {
@@ -1177,7 +1177,7 @@ public partial class V1KafkaBridgeSpecTemplatePodTopologySpreadConstraintsLabelS
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodTopologySpreadConstraintsLabelSelector
 {
@@ -1188,7 +1188,7 @@ public partial class V1KafkaBridgeSpecTemplatePodTopologySpreadConstraintsLabelS
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodTopologySpreadConstraints
 {
@@ -1217,7 +1217,7 @@ public partial class V1KafkaBridgeSpecTemplatePodTopologySpreadConstraints
     public string? WhenUnsatisfiable { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodHostAliases
 {
@@ -1229,7 +1229,7 @@ public partial class V1KafkaBridgeSpecTemplatePodHostAliases
 }
 
 /// <summary>The pod&apos;s DNSPolicy. Defaults to `ClusterFirst`. Valid values are `ClusterFirstWithHostNet`, `ClusterFirst`, `Default` or `None`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KafkaBridgeSpecTemplatePodDnsPolicyEnum>))]
 public enum V1KafkaBridgeSpecTemplatePodDnsPolicyEnum
 {
@@ -1243,7 +1243,7 @@ public enum V1KafkaBridgeSpecTemplatePodDnsPolicyEnum
     None
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodDnsConfigOptions
 {
@@ -1255,7 +1255,7 @@ public partial class V1KafkaBridgeSpecTemplatePodDnsConfigOptions
 }
 
 /// <summary>The pod&apos;s DNSConfig. If specified, it will be merged to the generated DNS configuration based on the DNSPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodDnsConfig
 {
@@ -1269,7 +1269,7 @@ public partial class V1KafkaBridgeSpecTemplatePodDnsConfig
     public IList<string>? Searches { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodVolumesSecretItems
 {
@@ -1284,7 +1284,7 @@ public partial class V1KafkaBridgeSpecTemplatePodVolumesSecretItems
 }
 
 /// <summary>`Secret` to use to populate the volume.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodVolumesSecret
 {
@@ -1301,7 +1301,7 @@ public partial class V1KafkaBridgeSpecTemplatePodVolumesSecret
     public string? SecretName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodVolumesConfigMapItems
 {
@@ -1316,7 +1316,7 @@ public partial class V1KafkaBridgeSpecTemplatePodVolumesConfigMapItems
 }
 
 /// <summary>`ConfigMap` to use to populate the volume.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodVolumesConfigMap
 {
@@ -1334,7 +1334,7 @@ public partial class V1KafkaBridgeSpecTemplatePodVolumesConfigMap
 }
 
 /// <summary>Medium represents the type of storage medium should back this volume. Valid values are unset or `Memory`. When not set, it will use the node&apos;s default medium.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KafkaBridgeSpecTemplatePodVolumesEmptyDirMediumEnum>))]
 public enum V1KafkaBridgeSpecTemplatePodVolumesEmptyDirMediumEnum
 {
@@ -1343,7 +1343,7 @@ public enum V1KafkaBridgeSpecTemplatePodVolumesEmptyDirMediumEnum
 }
 
 /// <summary>`EmptyDir` to use to populate the volume.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodVolumesEmptyDir
 {
@@ -1357,7 +1357,7 @@ public partial class V1KafkaBridgeSpecTemplatePodVolumesEmptyDir
 }
 
 /// <summary>`PersistentVolumeClaim` object to use to populate the volume.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodVolumesPersistentVolumeClaim
 {
@@ -1368,7 +1368,7 @@ public partial class V1KafkaBridgeSpecTemplatePodVolumesPersistentVolumeClaim
     public bool? ReadOnly { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodVolumesCsiNodePublishSecretRef
 {
@@ -1377,7 +1377,7 @@ public partial class V1KafkaBridgeSpecTemplatePodVolumesCsiNodePublishSecretRef
 }
 
 /// <summary>`CSIVolumeSource` object to use to populate the volume.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodVolumesCsi
 {
@@ -1398,7 +1398,7 @@ public partial class V1KafkaBridgeSpecTemplatePodVolumesCsi
 }
 
 /// <summary>`ImageVolumeSource` object to use to populate the volume.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodVolumesImage
 {
@@ -1409,7 +1409,7 @@ public partial class V1KafkaBridgeSpecTemplatePodVolumesImage
     public string? Reference { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodVolumes
 {
@@ -1443,7 +1443,7 @@ public partial class V1KafkaBridgeSpecTemplatePodVolumes
 }
 
 /// <summary>Template for HTTP Bridge `Pods`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePod
 {
@@ -1513,7 +1513,7 @@ public partial class V1KafkaBridgeSpecTemplatePod
 }
 
 /// <summary>Metadata applied to the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateApiServiceMetadata
 {
@@ -1527,7 +1527,7 @@ public partial class V1KafkaBridgeSpecTemplateApiServiceMetadata
 }
 
 /// <summary>Specifies the IP Family Policy used by the service. Available options are `SingleStack`, `PreferDualStack` and `RequireDualStack`. `SingleStack` is for a single IP family. `PreferDualStack` is for two IP families on dual-stack configured clusters or a single IP family on single-stack clusters. `RequireDualStack` fails unless there are two IP families on dual-stack configured clusters. If unspecified, Kubernetes will choose the default value based on the service type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KafkaBridgeSpecTemplateApiServiceIpFamilyPolicyEnum>))]
 public enum V1KafkaBridgeSpecTemplateApiServiceIpFamilyPolicyEnum
 {
@@ -1539,7 +1539,7 @@ public enum V1KafkaBridgeSpecTemplateApiServiceIpFamilyPolicyEnum
     RequireDualStack
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KafkaBridgeSpecTemplateApiServiceIpFamiliesEnum>))]
 public enum V1KafkaBridgeSpecTemplateApiServiceIpFamiliesEnum
 {
@@ -1550,7 +1550,7 @@ public enum V1KafkaBridgeSpecTemplateApiServiceIpFamiliesEnum
 }
 
 /// <summary>Template for HTTP Bridge API `Service`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateApiService
 {
@@ -1568,7 +1568,7 @@ public partial class V1KafkaBridgeSpecTemplateApiService
 }
 
 /// <summary>Metadata to apply to the `PodDisruptionBudgetTemplate` resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodDisruptionBudgetMetadata
 {
@@ -1582,7 +1582,7 @@ public partial class V1KafkaBridgeSpecTemplatePodDisruptionBudgetMetadata
 }
 
 /// <summary>Template for HTTP Bridge `PodDisruptionBudget`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodDisruptionBudget
 {
@@ -1596,7 +1596,7 @@ public partial class V1KafkaBridgeSpecTemplatePodDisruptionBudget
 }
 
 /// <summary>Reference to a key in a secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateBridgeContainerEnvValueFromSecretKeyRef
 {
@@ -1611,7 +1611,7 @@ public partial class V1KafkaBridgeSpecTemplateBridgeContainerEnvValueFromSecretK
 }
 
 /// <summary>Reference to a key in a config map.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateBridgeContainerEnvValueFromConfigMapKeyRef
 {
@@ -1626,7 +1626,7 @@ public partial class V1KafkaBridgeSpecTemplateBridgeContainerEnvValueFromConfigM
 }
 
 /// <summary>Reference to the secret or config map property to which the environment variable is set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateBridgeContainerEnvValueFrom
 {
@@ -1639,7 +1639,7 @@ public partial class V1KafkaBridgeSpecTemplateBridgeContainerEnvValueFrom
     public V1KafkaBridgeSpecTemplateBridgeContainerEnvValueFromConfigMapKeyRef? ConfigMapKeyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateBridgeContainerEnv
 {
@@ -1656,7 +1656,7 @@ public partial class V1KafkaBridgeSpecTemplateBridgeContainerEnv
     public V1KafkaBridgeSpecTemplateBridgeContainerEnvValueFrom? ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateBridgeContainerSecurityContextAppArmorProfile
 {
@@ -1667,7 +1667,7 @@ public partial class V1KafkaBridgeSpecTemplateBridgeContainerSecurityContextAppA
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateBridgeContainerSecurityContextCapabilities
 {
@@ -1678,7 +1678,7 @@ public partial class V1KafkaBridgeSpecTemplateBridgeContainerSecurityContextCapa
     public IList<string>? Drop { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateBridgeContainerSecurityContextSeLinuxOptions
 {
@@ -1695,7 +1695,7 @@ public partial class V1KafkaBridgeSpecTemplateBridgeContainerSecurityContextSeLi
     public string? User { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateBridgeContainerSecurityContextSeccompProfile
 {
@@ -1706,7 +1706,7 @@ public partial class V1KafkaBridgeSpecTemplateBridgeContainerSecurityContextSecc
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateBridgeContainerSecurityContextWindowsOptions
 {
@@ -1724,7 +1724,7 @@ public partial class V1KafkaBridgeSpecTemplateBridgeContainerSecurityContextWind
 }
 
 /// <summary>Security context for the container.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateBridgeContainerSecurityContext
 {
@@ -1765,7 +1765,7 @@ public partial class V1KafkaBridgeSpecTemplateBridgeContainerSecurityContext
     public V1KafkaBridgeSpecTemplateBridgeContainerSecurityContextWindowsOptions? WindowsOptions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateBridgeContainerVolumeMounts
 {
@@ -1792,7 +1792,7 @@ public partial class V1KafkaBridgeSpecTemplateBridgeContainerVolumeMounts
 }
 
 /// <summary>Template for the HTTP Bridge container.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateBridgeContainer
 {
@@ -1810,7 +1810,7 @@ public partial class V1KafkaBridgeSpecTemplateBridgeContainer
 }
 
 /// <summary>Metadata applied to the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateClusterRoleBindingMetadata
 {
@@ -1824,7 +1824,7 @@ public partial class V1KafkaBridgeSpecTemplateClusterRoleBindingMetadata
 }
 
 /// <summary>Template for the HTTP Bridge ClusterRoleBinding.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateClusterRoleBinding
 {
@@ -1834,7 +1834,7 @@ public partial class V1KafkaBridgeSpecTemplateClusterRoleBinding
 }
 
 /// <summary>Metadata applied to the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateServiceAccountMetadata
 {
@@ -1848,7 +1848,7 @@ public partial class V1KafkaBridgeSpecTemplateServiceAccountMetadata
 }
 
 /// <summary>Template for the HTTP Bridge service account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateServiceAccount
 {
@@ -1858,7 +1858,7 @@ public partial class V1KafkaBridgeSpecTemplateServiceAccount
 }
 
 /// <summary>Reference to a key in a secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateInitContainerEnvValueFromSecretKeyRef
 {
@@ -1873,7 +1873,7 @@ public partial class V1KafkaBridgeSpecTemplateInitContainerEnvValueFromSecretKey
 }
 
 /// <summary>Reference to a key in a config map.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateInitContainerEnvValueFromConfigMapKeyRef
 {
@@ -1888,7 +1888,7 @@ public partial class V1KafkaBridgeSpecTemplateInitContainerEnvValueFromConfigMap
 }
 
 /// <summary>Reference to the secret or config map property to which the environment variable is set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateInitContainerEnvValueFrom
 {
@@ -1901,7 +1901,7 @@ public partial class V1KafkaBridgeSpecTemplateInitContainerEnvValueFrom
     public V1KafkaBridgeSpecTemplateInitContainerEnvValueFromConfigMapKeyRef? ConfigMapKeyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateInitContainerEnv
 {
@@ -1918,7 +1918,7 @@ public partial class V1KafkaBridgeSpecTemplateInitContainerEnv
     public V1KafkaBridgeSpecTemplateInitContainerEnvValueFrom? ValueFrom { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateInitContainerSecurityContextAppArmorProfile
 {
@@ -1929,7 +1929,7 @@ public partial class V1KafkaBridgeSpecTemplateInitContainerSecurityContextAppArm
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateInitContainerSecurityContextCapabilities
 {
@@ -1940,7 +1940,7 @@ public partial class V1KafkaBridgeSpecTemplateInitContainerSecurityContextCapabi
     public IList<string>? Drop { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateInitContainerSecurityContextSeLinuxOptions
 {
@@ -1957,7 +1957,7 @@ public partial class V1KafkaBridgeSpecTemplateInitContainerSecurityContextSeLinu
     public string? User { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateInitContainerSecurityContextSeccompProfile
 {
@@ -1968,7 +1968,7 @@ public partial class V1KafkaBridgeSpecTemplateInitContainerSecurityContextSeccom
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateInitContainerSecurityContextWindowsOptions
 {
@@ -1986,7 +1986,7 @@ public partial class V1KafkaBridgeSpecTemplateInitContainerSecurityContextWindow
 }
 
 /// <summary>Security context for the container.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateInitContainerSecurityContext
 {
@@ -2027,7 +2027,7 @@ public partial class V1KafkaBridgeSpecTemplateInitContainerSecurityContext
     public V1KafkaBridgeSpecTemplateInitContainerSecurityContextWindowsOptions? WindowsOptions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateInitContainerVolumeMounts
 {
@@ -2054,7 +2054,7 @@ public partial class V1KafkaBridgeSpecTemplateInitContainerVolumeMounts
 }
 
 /// <summary>Template for the HTTP Bridge init container.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateInitContainer
 {
@@ -2072,7 +2072,7 @@ public partial class V1KafkaBridgeSpecTemplateInitContainer
 }
 
 /// <summary>Template for HTTP Bridge resources. The template allows users to specify how a `Deployment` and `Pod` is generated.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplate
 {
@@ -2110,7 +2110,7 @@ public partial class V1KafkaBridgeSpecTemplate
 }
 
 /// <summary>Type of the tracing used. Currently the only supported type is `opentelemetry` for OpenTelemetry tracing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KafkaBridgeSpecTracingTypeEnum>))]
 public enum V1KafkaBridgeSpecTracingTypeEnum
 {
@@ -2119,7 +2119,7 @@ public enum V1KafkaBridgeSpecTracingTypeEnum
 }
 
 /// <summary>The configuration of tracing in HTTP Bridge.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTracing
 {
@@ -2129,7 +2129,7 @@ public partial class V1KafkaBridgeSpecTracing
 }
 
 /// <summary>The specification of the HTTP Bridge.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpec
 {
@@ -2214,7 +2214,7 @@ public partial class V1KafkaBridgeSpec
     public JsonNode? Config { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeStatusConditions
 {
@@ -2240,7 +2240,7 @@ public partial class V1KafkaBridgeStatusConditions
 }
 
 /// <summary>The status of the HTTP Bridge.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeStatus
 {
@@ -2265,7 +2265,7 @@ public partial class V1KafkaBridgeStatus
     public string? LabelSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1KafkaBridge : IKubernetesObject<V1ObjectMeta>, ISpec<V1KafkaBridgeSpec>, IStatus<V1KafkaBridgeStatus?>

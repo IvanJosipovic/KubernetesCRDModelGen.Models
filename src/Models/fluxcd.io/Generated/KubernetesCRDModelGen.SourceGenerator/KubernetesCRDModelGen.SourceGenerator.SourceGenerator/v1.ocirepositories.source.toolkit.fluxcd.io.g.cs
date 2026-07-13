@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.source.toolkit.fluxcd.io;
 /// <summary>OCIRepository is the Schema for the ocirepositories API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1OCIRepositoryList : IKubernetesObject<V1ListMeta>, IItems<V1OCIRepository>
@@ -50,7 +50,7 @@ public partial class V1OCIRepositoryList : IKubernetesObject<V1ListMeta>, IItems
 /// you are using a self-signed server certificate. The Secret must
 /// be of type `Opaque` or `kubernetes.io/tls`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1OCIRepositorySpecCertSecretRef
 {
@@ -65,7 +65,7 @@ public partial class V1OCIRepositorySpecCertSecretRef
 /// When the operation is set to &apos;copy&apos;, the layer compressed content
 /// is persisted to storage as it is.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1OCIRepositorySpecLayerSelectorOperationEnum>))]
 public enum V1OCIRepositorySpecLayerSelectorOperationEnum
 {
@@ -79,7 +79,7 @@ public enum V1OCIRepositorySpecLayerSelectorOperationEnum
 /// LayerSelector specifies which layer should be extracted from the OCI artifact.
 /// When not specified, the first layer found in the artifact is selected.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1OCIRepositorySpecLayerSelector
 {
@@ -105,7 +105,7 @@ public partial class V1OCIRepositorySpecLayerSelector
 /// The provider used for authentication, can be &apos;aws&apos;, &apos;azure&apos;, &apos;gcp&apos; or &apos;generic&apos;.
 /// When not specified, defaults to &apos;generic&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1OCIRepositorySpecProviderEnum>))]
 public enum V1OCIRepositorySpecProviderEnum
 {
@@ -123,7 +123,7 @@ public enum V1OCIRepositorySpecProviderEnum
 /// ProxySecretRef specifies the Secret containing the proxy configuration
 /// to use while communicating with the container registry.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1OCIRepositorySpecProxySecretRef
 {
@@ -136,7 +136,7 @@ public partial class V1OCIRepositorySpecProxySecretRef
 /// The OCI reference to pull and monitor for changes,
 /// defaults to the latest tag.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1OCIRepositorySpecRef
 {
@@ -168,7 +168,7 @@ public partial class V1OCIRepositorySpecRef
 /// credentials to resolve image metadata.
 /// The secret must be of type kubernetes.io/dockerconfigjson.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1OCIRepositorySpecSecretRef
 {
@@ -181,7 +181,7 @@ public partial class V1OCIRepositorySpecSecretRef
 /// OIDCIdentityMatch specifies options for verifying the certificate identity,
 /// i.e. the issuer and the subject of the certificate.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1OCIRepositorySpecVerifyMatchOIDCIdentity
 {
@@ -203,7 +203,7 @@ public partial class V1OCIRepositorySpecVerifyMatchOIDCIdentity
 }
 
 /// <summary>Provider specifies the technology used to sign the OCI Artifact.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1OCIRepositorySpecVerifyProviderEnum>))]
 public enum V1OCIRepositorySpecVerifyProviderEnum
 {
@@ -217,7 +217,7 @@ public enum V1OCIRepositorySpecVerifyProviderEnum
 /// SecretRef specifies the Kubernetes Secret containing the
 /// trusted public keys.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1OCIRepositorySpecVerifySecretRef
 {
@@ -232,7 +232,7 @@ public partial class V1OCIRepositorySpecVerifySecretRef
 /// self-hosted Sigstore infrastructure (custom Fulcio CA, self-hosted
 /// Rekor instance). The Secret must contain a key named &quot;trusted_root.json&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1OCIRepositorySpecVerifyTrustedRootSecretRef
 {
@@ -246,7 +246,7 @@ public partial class V1OCIRepositorySpecVerifyTrustedRootSecretRef
 /// used to verify the signature and specifies which provider to use to check
 /// whether OCI image is authentic.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1OCIRepositorySpecVerify
 {
@@ -281,7 +281,7 @@ public partial class V1OCIRepositorySpecVerify
 }
 
 /// <summary>OCIRepositorySpec defines the desired state of OCIRepository</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1OCIRepositorySpec
 {
@@ -391,7 +391,7 @@ public partial class V1OCIRepositorySpec
 }
 
 /// <summary>Artifact represents the output of the last successful OCI Repository sync.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1OCIRepositoryStatusArtifact
 {
@@ -439,7 +439,7 @@ public partial class V1OCIRepositoryStatusArtifact
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1OCIRepositoryStatusConditionsStatusEnum>))]
 public enum V1OCIRepositoryStatusConditionsStatusEnum
 {
@@ -452,7 +452,7 @@ public enum V1OCIRepositoryStatusConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1OCIRepositoryStatusConditions
 {
@@ -503,7 +503,7 @@ public partial class V1OCIRepositoryStatusConditions
 /// When the operation is set to &apos;copy&apos;, the layer compressed content
 /// is persisted to storage as it is.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1OCIRepositoryStatusObservedLayerSelectorOperationEnum>))]
 public enum V1OCIRepositoryStatusObservedLayerSelectorOperationEnum
 {
@@ -517,7 +517,7 @@ public enum V1OCIRepositoryStatusObservedLayerSelectorOperationEnum
 /// ObservedLayerSelector is the observed layer selector used for constructing
 /// the source artifact.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1OCIRepositoryStatusObservedLayerSelector
 {
@@ -540,7 +540,7 @@ public partial class V1OCIRepositoryStatusObservedLayerSelector
 }
 
 /// <summary>OCIRepositoryStatus defines the observed state of OCIRepository</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1OCIRepositoryStatus
 {
@@ -584,7 +584,7 @@ public partial class V1OCIRepositoryStatus
 }
 
 /// <summary>OCIRepository is the Schema for the ocirepositories API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1OCIRepository : IKubernetesObject<V1ObjectMeta>, ISpec<V1OCIRepositorySpec?>, IStatus<V1OCIRepositoryStatus?>

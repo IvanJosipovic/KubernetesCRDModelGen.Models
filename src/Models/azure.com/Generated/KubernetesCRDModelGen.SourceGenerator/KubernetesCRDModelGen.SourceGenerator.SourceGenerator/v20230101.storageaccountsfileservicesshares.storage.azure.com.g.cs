@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.storage.azure.com;
 /// - Generated from: /storage/resource-manager/Microsoft.Storage/stable/2023-01-01/file.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/fileServices/default/shares/{shareName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20230101StorageAccountsFileServicesShareList : IKubernetesObject<V1ListMeta>, IItems<V20230101StorageAccountsFileServicesShare>
@@ -44,7 +44,7 @@ public partial class V20230101StorageAccountsFileServicesShareList : IKubernetes
 /// AccessTier: Access tier for specific share. GpV2 account can choose between TransactionOptimized (default), Hot, and
 /// Cool. FileStorage account can choose Premium.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20230101StorageAccountsFileServicesShareSpecAccessTierEnum>))]
 public enum V20230101StorageAccountsFileServicesShareSpecAccessTierEnum
 {
@@ -62,7 +62,7 @@ public enum V20230101StorageAccountsFileServicesShareSpecAccessTierEnum
 /// EnabledProtocols: The authentication protocol that is used for the file share. Can only be specified when creating a
 /// share.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20230101StorageAccountsFileServicesShareSpecEnabledProtocolsEnum>))]
 public enum V20230101StorageAccountsFileServicesShareSpecEnabledProtocolsEnum
 {
@@ -77,7 +77,7 @@ public enum V20230101StorageAccountsFileServicesShareSpecEnabledProtocolsEnum
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101StorageAccountsFileServicesShareSpecOperatorSpecConfigMapExpressions
 {
@@ -118,7 +118,7 @@ public partial class V20230101StorageAccountsFileServicesShareSpecOperatorSpecCo
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101StorageAccountsFileServicesShareSpecOperatorSpecSecretExpressions
 {
@@ -158,7 +158,7 @@ public partial class V20230101StorageAccountsFileServicesShareSpecOperatorSpecSe
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101StorageAccountsFileServicesShareSpecOperatorSpec
 {
@@ -176,7 +176,7 @@ public partial class V20230101StorageAccountsFileServicesShareSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a storage.azure.com/StorageAccountsFileService resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101StorageAccountsFileServicesShareSpecOwner
 {
@@ -189,7 +189,7 @@ public partial class V20230101StorageAccountsFileServicesShareSpecOwner
 }
 
 /// <summary>RootSquash: The property is for NFS share only. The default is NoRootSquash.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20230101StorageAccountsFileServicesShareSpecRootSquashEnum>))]
 public enum V20230101StorageAccountsFileServicesShareSpecRootSquashEnum
 {
@@ -202,7 +202,7 @@ public enum V20230101StorageAccountsFileServicesShareSpecRootSquashEnum
 }
 
 /// <summary>AccessPolicy: Access policy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101StorageAccountsFileServicesShareSpecSignedIdentifiersAccessPolicy
 {
@@ -220,7 +220,7 @@ public partial class V20230101StorageAccountsFileServicesShareSpecSignedIdentifi
 }
 
 /// <summary>Reference: An unique identifier of the stored access policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101StorageAccountsFileServicesShareSpecSignedIdentifiersReference
 {
@@ -245,7 +245,7 @@ public partial class V20230101StorageAccountsFileServicesShareSpecSignedIdentifi
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101StorageAccountsFileServicesShareSpecSignedIdentifiers
 {
@@ -258,7 +258,7 @@ public partial class V20230101StorageAccountsFileServicesShareSpecSignedIdentifi
     public V20230101StorageAccountsFileServicesShareSpecSignedIdentifiersReference? Reference { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101StorageAccountsFileServicesShareSpec
 {
@@ -319,7 +319,7 @@ public partial class V20230101StorageAccountsFileServicesShareSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101StorageAccountsFileServicesShareStatusConditions
 {
@@ -365,7 +365,7 @@ public partial class V20230101StorageAccountsFileServicesShareStatusConditions
 }
 
 /// <summary>AccessPolicy: Access policy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101StorageAccountsFileServicesShareStatusSignedIdentifiersAccessPolicy
 {
@@ -382,7 +382,7 @@ public partial class V20230101StorageAccountsFileServicesShareStatusSignedIdenti
     public string? StartTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101StorageAccountsFileServicesShareStatusSignedIdentifiers
 {
@@ -395,7 +395,7 @@ public partial class V20230101StorageAccountsFileServicesShareStatusSignedIdenti
     public string? Id { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101StorageAccountsFileServicesShareStatus
 {
@@ -512,7 +512,7 @@ public partial class V20230101StorageAccountsFileServicesShareStatus
 /// - Generated from: /storage/resource-manager/Microsoft.Storage/stable/2023-01-01/file.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/fileServices/default/shares/{shareName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20230101StorageAccountsFileServicesShare : IKubernetesObject<V1ObjectMeta>, ISpec<V20230101StorageAccountsFileServicesShareSpec?>, IStatus<V20230101StorageAccountsFileServicesShareStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.securityinsights.azure.upbound.io;
 /// <summary>SentinelAlertRuleMachineLearningBehaviorAnalytics is the Schema for the SentinelAlertRuleMachineLearningBehaviorAnalyticss API. Manages a Sentinel Machine Learning Behavior Analytics Rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SentinelAlertRuleMachineLearningBehaviorAnalytics>
@@ -45,7 +45,7 @@ public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsLis
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecDeletionPolicyEnum>))]
 public enum V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecDeletion
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecForProviderLogAnalyticsWorkspaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecForProviderLogAnalyticsWorkspaceIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecForProvi
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecForProviderLogAnalyticsWorkspaceIdRefPolicyResolveEnum>))]
 public enum V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecForProviderLogAnalyticsWorkspaceIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecForProvi
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecForProviderLogAnalyticsWorkspaceIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpe
 }
 
 /// <summary>Reference to a Workspace in operationalinsights to populate logAnalyticsWorkspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecForProviderLogAnalyticsWorkspaceIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecForProviderLogAnalyticsWorkspaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecForProviderLogAnalyticsWorkspaceIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecForProvi
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecForProviderLogAnalyticsWorkspaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecForProviderLogAnalyticsWorkspaceIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecForProvi
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecForProviderLogAnalyticsWorkspaceIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpe
 }
 
 /// <summary>Selector for a Workspace in operationalinsights to populate logAnalyticsWorkspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecForProviderLogAnalyticsWorkspaceIdSelector
 {
@@ -202,7 +202,7 @@ public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpe
     public V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecForProviderLogAnalyticsWorkspaceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecForProvider
 {
@@ -237,7 +237,7 @@ public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecInitProviderLogAnalyticsWorkspaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecInitProviderLogAnalyticsWorkspaceIdRefPolicyResolutionEnum
 {
@@ -253,7 +253,7 @@ public enum V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecInitProv
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecInitProviderLogAnalyticsWorkspaceIdRefPolicyResolveEnum>))]
 public enum V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecInitProviderLogAnalyticsWorkspaceIdRefPolicyResolveEnum
 {
@@ -264,7 +264,7 @@ public enum V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecInitProv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecInitProviderLogAnalyticsWorkspaceIdRefPolicy
 {
@@ -288,7 +288,7 @@ public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpe
 }
 
 /// <summary>Reference to a Workspace in operationalinsights to populate logAnalyticsWorkspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecInitProviderLogAnalyticsWorkspaceIdRef
 {
@@ -307,7 +307,7 @@ public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecInitProviderLogAnalyticsWorkspaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecInitProviderLogAnalyticsWorkspaceIdSelectorPolicyResolutionEnum
 {
@@ -323,7 +323,7 @@ public enum V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecInitProv
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecInitProviderLogAnalyticsWorkspaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecInitProviderLogAnalyticsWorkspaceIdSelectorPolicyResolveEnum
 {
@@ -334,7 +334,7 @@ public enum V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecInitProv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecInitProviderLogAnalyticsWorkspaceIdSelectorPolicy
 {
@@ -358,7 +358,7 @@ public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpe
 }
 
 /// <summary>Selector for a Workspace in operationalinsights to populate logAnalyticsWorkspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecInitProviderLogAnalyticsWorkspaceIdSelector
 {
@@ -390,7 +390,7 @@ public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpe
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecInitProvider
 {
@@ -423,7 +423,7 @@ public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpe
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecManagementPoliciesEnum>))]
 public enum V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecManagementPoliciesEnum
 {
@@ -447,7 +447,7 @@ public enum V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecManageme
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -463,7 +463,7 @@ public enum V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecProvider
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecProviderConfigRefPolicyResolveEnum
 {
@@ -474,7 +474,7 @@ public enum V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecProvider
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecProviderConfigRefPolicy
 {
@@ -502,7 +502,7 @@ public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpe
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecProviderConfigRef
 {
@@ -521,7 +521,7 @@ public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpe
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecWriteConnectionSecretToRef
 {
@@ -535,7 +535,7 @@ public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpe
 }
 
 /// <summary>SentinelAlertRuleMachineLearningBehaviorAnalyticsSpec defines the desired state of SentinelAlertRuleMachineLearningBehaviorAnalytics</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpec
 {
@@ -602,7 +602,7 @@ public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpe
     public V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsStatusAtProvider
 {
@@ -628,7 +628,7 @@ public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSta
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsStatusConditions
 {
@@ -671,7 +671,7 @@ public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSta
 }
 
 /// <summary>SentinelAlertRuleMachineLearningBehaviorAnalyticsStatus defines the observed state of SentinelAlertRuleMachineLearningBehaviorAnalytics.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsStatus
 {
@@ -692,7 +692,7 @@ public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSta
 }
 
 /// <summary>SentinelAlertRuleMachineLearningBehaviorAnalytics is the Schema for the SentinelAlertRuleMachineLearningBehaviorAnalyticss API. Manages a Sentinel Machine Learning Behavior Analytics Rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SentinelAlertRuleMachineLearningBehaviorAnalytics : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsSpec>, IStatus<V1beta1SentinelAlertRuleMachineLearningBehaviorAnalyticsStatus?>

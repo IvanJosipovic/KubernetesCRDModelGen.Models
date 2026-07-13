@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.insights.azure.com;
 /// - Generated from: /monitor/resource-manager/Microsoft.Insights/stable/2024-03-11/dataCollectionRules_API.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/dataCollectionRules/{dataCollectionRuleName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20240311DataCollectionRuleList : IKubernetesObject<V1ListMeta>, IItems<V1api20240311DataCollectionRule>
@@ -44,7 +44,7 @@ public partial class V1api20240311DataCollectionRuleList : IKubernetesObject<V1L
 /// Name: The name of the setting.
 /// Must be part of the list of supported settings
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240311DataCollectionRuleSpecAgentSettingsLogsNameEnum>))]
 public enum V1api20240311DataCollectionRuleSpecAgentSettingsLogsNameEnum
 {
@@ -57,7 +57,7 @@ public enum V1api20240311DataCollectionRuleSpecAgentSettingsLogsNameEnum
 }
 
 /// <summary>A setting used to control an agent behavior on a host machine</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecAgentSettingsLogs
 {
@@ -74,7 +74,7 @@ public partial class V1api20240311DataCollectionRuleSpecAgentSettingsLogs
 }
 
 /// <summary>AgentSettings: Agent settings used to modify agent behavior on a given host</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecAgentSettings
 {
@@ -84,7 +84,7 @@ public partial class V1api20240311DataCollectionRuleSpecAgentSettings
 }
 
 /// <summary>DataCollectionEndpointReference: The resource ID of the data collection endpoint that this rule can be used with.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDataCollectionEndpointReference
 {
@@ -110,7 +110,7 @@ public partial class V1api20240311DataCollectionRuleSpecDataCollectionEndpointRe
 }
 
 /// <summary>Definition of which streams are sent to which destinations.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDataFlows
 {
@@ -140,7 +140,7 @@ public partial class V1api20240311DataCollectionRuleSpecDataFlows
 }
 
 /// <summary>EventHub: Definition of Event Hub configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDataSourcesDataImportsEventHub
 {
@@ -161,7 +161,7 @@ public partial class V1api20240311DataCollectionRuleSpecDataSourcesDataImportsEv
 }
 
 /// <summary>DataImports: Specifications of pull based data sources</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDataSourcesDataImports
 {
@@ -171,7 +171,7 @@ public partial class V1api20240311DataCollectionRuleSpecDataSourcesDataImports
 }
 
 /// <summary>LogLevel: Minimal level of detail to be logged</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240311DataCollectionRuleSpecDataSourcesEtwProvidersLogLevelEnum>))]
 public enum V1api20240311DataCollectionRuleSpecDataSourcesEtwProvidersLogLevelEnum
 {
@@ -188,7 +188,7 @@ public enum V1api20240311DataCollectionRuleSpecDataSourcesEtwProvidersLogLevelEn
 }
 
 /// <summary>ProviderType: Provider type specification: By Manifest GUID or by Event Source name</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240311DataCollectionRuleSpecDataSourcesEtwProvidersProviderTypeEnum>))]
 public enum V1api20240311DataCollectionRuleSpecDataSourcesEtwProvidersProviderTypeEnum
 {
@@ -199,7 +199,7 @@ public enum V1api20240311DataCollectionRuleSpecDataSourcesEtwProvidersProviderTy
 }
 
 /// <summary>Enables an ETW provider logs to be collected by this data collection rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDataSourcesEtwProviders
 {
@@ -240,7 +240,7 @@ public partial class V1api20240311DataCollectionRuleSpecDataSourcesEtwProviders
 /// Agent.
 /// Collected from either Windows and Linux machines, depending on which extension is defined.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDataSourcesExtensions
 {
@@ -273,7 +273,7 @@ public partial class V1api20240311DataCollectionRuleSpecDataSourcesExtensions
 }
 
 /// <summary>Enables IIS logs to be collected by this data collection rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDataSourcesIisLogs
 {
@@ -301,7 +301,7 @@ public partial class V1api20240311DataCollectionRuleSpecDataSourcesIisLogs
 }
 
 /// <summary>Format: The data format of the log files</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240311DataCollectionRuleSpecDataSourcesLogFilesFormatEnum>))]
 public enum V1api20240311DataCollectionRuleSpecDataSourcesLogFilesFormatEnum
 {
@@ -312,7 +312,7 @@ public enum V1api20240311DataCollectionRuleSpecDataSourcesLogFilesFormatEnum
 }
 
 /// <summary>RecordStartTimestampFormat: One of the supported timestamp formats</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240311DataCollectionRuleSpecDataSourcesLogFilesSettingsTextRecordStartTimestampFormatEnum>))]
 public enum V1api20240311DataCollectionRuleSpecDataSourcesLogFilesSettingsTextRecordStartTimestampFormatEnum
 {
@@ -337,7 +337,7 @@ public enum V1api20240311DataCollectionRuleSpecDataSourcesLogFilesSettingsTextRe
 }
 
 /// <summary>Text: Text settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDataSourcesLogFilesSettingsText
 {
@@ -347,7 +347,7 @@ public partial class V1api20240311DataCollectionRuleSpecDataSourcesLogFilesSetti
 }
 
 /// <summary>Settings: The log files specific settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDataSourcesLogFilesSettings
 {
@@ -357,7 +357,7 @@ public partial class V1api20240311DataCollectionRuleSpecDataSourcesLogFilesSetti
 }
 
 /// <summary>Definition of which custom log files will be collected by this data collection rule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDataSourcesLogFiles
 {
@@ -399,7 +399,7 @@ public partial class V1api20240311DataCollectionRuleSpecDataSourcesLogFiles
 /// ResourceAttributeRouting: Specifies the routing policy based on OTLP payload resource attributes to route subset of the
 /// payload according to matching resource attribute.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDataSourcesOtelLogsResourceAttributeRouting
 {
@@ -412,7 +412,7 @@ public partial class V1api20240311DataCollectionRuleSpecDataSourcesOtelLogsResou
     public string? AttributeValue { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240311DataCollectionRuleSpecDataSourcesOtelLogsStreamsEnum>))]
 public enum V1api20240311DataCollectionRuleSpecDataSourcesOtelLogsStreamsEnum
 {
@@ -421,7 +421,7 @@ public enum V1api20240311DataCollectionRuleSpecDataSourcesOtelLogsStreamsEnum
 }
 
 /// <summary>Enables Otel logs to be collected by this data collection rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDataSourcesOtelLogs
 {
@@ -462,7 +462,7 @@ public partial class V1api20240311DataCollectionRuleSpecDataSourcesOtelLogs
 /// ResourceAttributeRouting: Specifies the routing policy based on OTLP payload resource attributes to route subset of the
 /// payload according to matching resource attribute.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDataSourcesOtelMetricsResourceAttributeRouting
 {
@@ -476,7 +476,7 @@ public partial class V1api20240311DataCollectionRuleSpecDataSourcesOtelMetricsRe
 }
 
 /// <summary>Definition of OTel metrics configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDataSourcesOtelMetrics
 {
@@ -510,7 +510,7 @@ public partial class V1api20240311DataCollectionRuleSpecDataSourcesOtelMetrics
 /// ResourceAttributeRouting: Specifies the routing policy based on OTLP payload resource attributes to route subset of the
 /// payload according to matching resource attribute.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDataSourcesOtelTracesResourceAttributeRouting
 {
@@ -523,7 +523,7 @@ public partial class V1api20240311DataCollectionRuleSpecDataSourcesOtelTracesRes
     public string? AttributeValue { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240311DataCollectionRuleSpecDataSourcesOtelTracesStreamsEnum>))]
 public enum V1api20240311DataCollectionRuleSpecDataSourcesOtelTracesStreamsEnum
 {
@@ -536,7 +536,7 @@ public enum V1api20240311DataCollectionRuleSpecDataSourcesOtelTracesStreamsEnum
 }
 
 /// <summary>Enables Otel Traces to be collected by this data collection rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDataSourcesOtelTraces
 {
@@ -582,7 +582,7 @@ public partial class V1api20240311DataCollectionRuleSpecDataSourcesOtelTraces
 /// rule.
 /// Collected from both Windows and Linux machines where the counter is present.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDataSourcesPerformanceCounters
 {
@@ -621,7 +621,7 @@ public partial class V1api20240311DataCollectionRuleSpecDataSourcesPerformanceCo
     public string? TransformKql { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240311DataCollectionRuleSpecDataSourcesPerformanceCountersOTelStreamsEnum>))]
 public enum V1api20240311DataCollectionRuleSpecDataSourcesPerformanceCountersOTelStreamsEnum
 {
@@ -634,7 +634,7 @@ public enum V1api20240311DataCollectionRuleSpecDataSourcesPerformanceCountersOTe
 /// collection rule.
 /// Collected from both Windows and Linux machines where the counter is present.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDataSourcesPerformanceCountersOTel
 {
@@ -663,7 +663,7 @@ public partial class V1api20240311DataCollectionRuleSpecDataSourcesPerformanceCo
 }
 
 /// <summary>Definition of platform telemetry data source configuration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDataSourcesPlatformTelemetry
 {
@@ -680,7 +680,7 @@ public partial class V1api20240311DataCollectionRuleSpecDataSourcesPlatformTelem
 }
 
 /// <summary>Definition of Prometheus metrics forwarding configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDataSourcesPrometheusForwarder
 {
@@ -708,7 +708,7 @@ public partial class V1api20240311DataCollectionRuleSpecDataSourcesPrometheusFor
     public IList<string>? Streams { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240311DataCollectionRuleSpecDataSourcesSyslogFacilityNamesEnum>))]
 public enum V1api20240311DataCollectionRuleSpecDataSourcesSyslogFacilityNamesEnum
 {
@@ -768,7 +768,7 @@ public enum V1api20240311DataCollectionRuleSpecDataSourcesSyslogFacilityNamesEnu
     Uucp
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240311DataCollectionRuleSpecDataSourcesSyslogLogLevelsEnum>))]
 public enum V1api20240311DataCollectionRuleSpecDataSourcesSyslogLogLevelsEnum
 {
@@ -796,7 +796,7 @@ public enum V1api20240311DataCollectionRuleSpecDataSourcesSyslogLogLevelsEnum
 /// Definition of which syslog data will be collected and how it will be collected.
 /// Only collected from Linux machines.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDataSourcesSyslog
 {
@@ -836,7 +836,7 @@ public partial class V1api20240311DataCollectionRuleSpecDataSourcesSyslog
 /// Only collected from
 /// Windows machines.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDataSourcesWindowsEventLogs
 {
@@ -867,7 +867,7 @@ public partial class V1api20240311DataCollectionRuleSpecDataSourcesWindowsEventL
     public IList<string>? XPathQueries { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240311DataCollectionRuleSpecDataSourcesWindowsFirewallLogsProfileFilterEnum>))]
 public enum V1api20240311DataCollectionRuleSpecDataSourcesWindowsFirewallLogsProfileFilterEnum
 {
@@ -880,7 +880,7 @@ public enum V1api20240311DataCollectionRuleSpecDataSourcesWindowsFirewallLogsPro
 }
 
 /// <summary>Enables Firewall logs to be collected by this data collection rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDataSourcesWindowsFirewallLogs
 {
@@ -905,7 +905,7 @@ public partial class V1api20240311DataCollectionRuleSpecDataSourcesWindowsFirewa
 /// This property is optional and can be omitted if the rule is meant to be used via direct calls to the provisioned
 /// endpoint.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDataSources
 {
@@ -971,7 +971,7 @@ public partial class V1api20240311DataCollectionRuleSpecDataSources
 }
 
 /// <summary>ResourceReference: The ARM resource id of the Adx resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDestinationsAzureDataExplorerResourceReference
 {
@@ -997,7 +997,7 @@ public partial class V1api20240311DataCollectionRuleSpecDestinationsAzureDataExp
 }
 
 /// <summary>Azure Data Explorer (Adx) destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDestinationsAzureDataExplorer
 {
@@ -1018,7 +1018,7 @@ public partial class V1api20240311DataCollectionRuleSpecDestinationsAzureDataExp
 }
 
 /// <summary>AzureMonitorMetrics: Azure Monitor Metrics destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDestinationsAzureMonitorMetrics
 {
@@ -1031,7 +1031,7 @@ public partial class V1api20240311DataCollectionRuleSpecDestinationsAzureMonitor
 }
 
 /// <summary>EventHubResourceReference: The resource ID of the event hub.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDestinationsEventHubsEventHubResourceReference
 {
@@ -1056,7 +1056,7 @@ public partial class V1api20240311DataCollectionRuleSpecDestinationsEventHubsEve
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDestinationsEventHubs
 {
@@ -1073,7 +1073,7 @@ public partial class V1api20240311DataCollectionRuleSpecDestinationsEventHubs
 }
 
 /// <summary>EventHubResourceReference: The resource ID of the event hub.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDestinationsEventHubsDirectEventHubResourceReference
 {
@@ -1098,7 +1098,7 @@ public partial class V1api20240311DataCollectionRuleSpecDestinationsEventHubsDir
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDestinationsEventHubsDirect
 {
@@ -1115,7 +1115,7 @@ public partial class V1api20240311DataCollectionRuleSpecDestinationsEventHubsDir
 }
 
 /// <summary>WorkspaceResourceReference: The resource ID of the Log Analytics workspace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDestinationsLogAnalyticsWorkspaceResourceReference
 {
@@ -1141,7 +1141,7 @@ public partial class V1api20240311DataCollectionRuleSpecDestinationsLogAnalytics
 }
 
 /// <summary>Log Analytics destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDestinationsLogAnalytics
 {
@@ -1158,7 +1158,7 @@ public partial class V1api20240311DataCollectionRuleSpecDestinationsLogAnalytics
 }
 
 /// <summary>Microsoft Fabric destination (non-Azure).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDestinationsMicrosoftFabric
 {
@@ -1187,7 +1187,7 @@ public partial class V1api20240311DataCollectionRuleSpecDestinationsMicrosoftFab
 }
 
 /// <summary>AccountResourceReference: The resource ID of the monitoring account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDestinationsMonitoringAccountsAccountResourceReference
 {
@@ -1213,7 +1213,7 @@ public partial class V1api20240311DataCollectionRuleSpecDestinationsMonitoringAc
 }
 
 /// <summary>Monitoring account destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDestinationsMonitoringAccounts
 {
@@ -1230,7 +1230,7 @@ public partial class V1api20240311DataCollectionRuleSpecDestinationsMonitoringAc
 }
 
 /// <summary>StorageAccountResourceReference: The resource ID of the storage account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDestinationsStorageAccountsStorageAccountResourceReference
 {
@@ -1255,7 +1255,7 @@ public partial class V1api20240311DataCollectionRuleSpecDestinationsStorageAccou
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDestinationsStorageAccounts
 {
@@ -1276,7 +1276,7 @@ public partial class V1api20240311DataCollectionRuleSpecDestinationsStorageAccou
 }
 
 /// <summary>StorageAccountResourceReference: The resource ID of the storage account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDestinationsStorageBlobsDirectStorageAccountResourceReference
 {
@@ -1301,7 +1301,7 @@ public partial class V1api20240311DataCollectionRuleSpecDestinationsStorageBlobs
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDestinationsStorageBlobsDirect
 {
@@ -1322,7 +1322,7 @@ public partial class V1api20240311DataCollectionRuleSpecDestinationsStorageBlobs
 }
 
 /// <summary>StorageAccountResourceReference: The resource ID of the storage account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDestinationsStorageTablesDirectStorageAccountResourceReference
 {
@@ -1347,7 +1347,7 @@ public partial class V1api20240311DataCollectionRuleSpecDestinationsStorageTable
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDestinationsStorageTablesDirect
 {
@@ -1368,7 +1368,7 @@ public partial class V1api20240311DataCollectionRuleSpecDestinationsStorageTable
 }
 
 /// <summary>Destinations: The specification of destinations.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDestinations
 {
@@ -1416,7 +1416,7 @@ public partial class V1api20240311DataCollectionRuleSpecDestinations
     public IList<V1api20240311DataCollectionRuleSpecDestinationsStorageTablesDirect>? StorageTablesDirect { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240311DataCollectionRuleSpecDirectDataSourcesOtelLogsStreamsEnum>))]
 public enum V1api20240311DataCollectionRuleSpecDirectDataSourcesOtelLogsStreamsEnum
 {
@@ -1424,7 +1424,7 @@ public enum V1api20240311DataCollectionRuleSpecDirectDataSourcesOtelLogsStreamsE
     MicrosoftOTelLogs
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDirectDataSourcesOtelLogs
 {
@@ -1455,7 +1455,7 @@ public partial class V1api20240311DataCollectionRuleSpecDirectDataSourcesOtelLog
 }
 
 /// <summary>Definition of OTel metrics configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDirectDataSourcesOtelMetrics
 {
@@ -1478,7 +1478,7 @@ public partial class V1api20240311DataCollectionRuleSpecDirectDataSourcesOtelMet
     public required IList<string> Streams { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240311DataCollectionRuleSpecDirectDataSourcesOtelTracesStreamsEnum>))]
 public enum V1api20240311DataCollectionRuleSpecDirectDataSourcesOtelTracesStreamsEnum
 {
@@ -1491,7 +1491,7 @@ public enum V1api20240311DataCollectionRuleSpecDirectDataSourcesOtelTracesStream
 }
 
 /// <summary>Enables Otel Traces to be collected by this data collection rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDirectDataSourcesOtelTraces
 {
@@ -1529,7 +1529,7 @@ public partial class V1api20240311DataCollectionRuleSpecDirectDataSourcesOtelTra
 /// DirectDataSources: The specification of direct data sources.
 /// This property is optional and can be omitted.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecDirectDataSources
 {
@@ -1547,7 +1547,7 @@ public partial class V1api20240311DataCollectionRuleSpecDirectDataSources
 }
 
 /// <summary>Type: Type of managed service identity (where both SystemAssigned and UserAssigned types are allowed).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240311DataCollectionRuleSpecIdentityTypeEnum>))]
 public enum V1api20240311DataCollectionRuleSpecIdentityTypeEnum
 {
@@ -1562,7 +1562,7 @@ public enum V1api20240311DataCollectionRuleSpecIdentityTypeEnum
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecIdentityUserAssignedIdentitiesReference
 {
@@ -1588,7 +1588,7 @@ public partial class V1api20240311DataCollectionRuleSpecIdentityUserAssignedIden
 }
 
 /// <summary>Information about the user assigned identity for the resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecIdentityUserAssignedIdentities
 {
@@ -1598,7 +1598,7 @@ public partial class V1api20240311DataCollectionRuleSpecIdentityUserAssignedIden
 }
 
 /// <summary>Identity: Managed service identity of the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecIdentity
 {
@@ -1611,7 +1611,7 @@ public partial class V1api20240311DataCollectionRuleSpecIdentity
 }
 
 /// <summary>Kind: The kind of the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240311DataCollectionRuleSpecKindEnum>))]
 public enum V1api20240311DataCollectionRuleSpecKindEnum
 {
@@ -1626,7 +1626,7 @@ public enum V1api20240311DataCollectionRuleSpecKindEnum
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecOperatorSpecConfigMapExpressions
 {
@@ -1667,7 +1667,7 @@ public partial class V1api20240311DataCollectionRuleSpecOperatorSpecConfigMapExp
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecOperatorSpecSecretExpressions
 {
@@ -1707,7 +1707,7 @@ public partial class V1api20240311DataCollectionRuleSpecOperatorSpecSecretExpres
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecOperatorSpec
 {
@@ -1725,7 +1725,7 @@ public partial class V1api20240311DataCollectionRuleSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecOwner
 {
@@ -1738,7 +1738,7 @@ public partial class V1api20240311DataCollectionRuleSpecOwner
 }
 
 /// <summary>ResourceReference: Id of the application insights resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecReferencesApplicationInsightsResourceReference
 {
@@ -1763,7 +1763,7 @@ public partial class V1api20240311DataCollectionRuleSpecReferencesApplicationIns
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecReferencesApplicationInsights
 {
@@ -1777,7 +1777,7 @@ public partial class V1api20240311DataCollectionRuleSpecReferencesApplicationIns
 }
 
 /// <summary>LookupType: The type of lookup to perform on the blob</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240311DataCollectionRuleSpecReferencesEnrichmentDataStorageBlobsLookupTypeEnum>))]
 public enum V1api20240311DataCollectionRuleSpecReferencesEnrichmentDataStorageBlobsLookupTypeEnum
 {
@@ -1788,7 +1788,7 @@ public enum V1api20240311DataCollectionRuleSpecReferencesEnrichmentDataStorageBl
 }
 
 /// <summary>ResourceReference: Resource Id of the storage account that hosts the blob</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecReferencesEnrichmentDataStorageBlobsResourceReference
 {
@@ -1813,7 +1813,7 @@ public partial class V1api20240311DataCollectionRuleSpecReferencesEnrichmentData
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecReferencesEnrichmentDataStorageBlobs
 {
@@ -1835,7 +1835,7 @@ public partial class V1api20240311DataCollectionRuleSpecReferencesEnrichmentData
 }
 
 /// <summary>EnrichmentData: All the enrichment data sources referenced in data flows</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecReferencesEnrichmentData
 {
@@ -1845,7 +1845,7 @@ public partial class V1api20240311DataCollectionRuleSpecReferencesEnrichmentData
 }
 
 /// <summary>References: Defines all the references that may be used in other sections of the DCR</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecReferences
 {
@@ -1862,7 +1862,7 @@ public partial class V1api20240311DataCollectionRuleSpecReferences
 /// Tier: This field is required to be implemented by the Resource Provider if the service has more than one tier, but is
 /// not  required on a PUT.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240311DataCollectionRuleSpecSkuTierEnum>))]
 public enum V1api20240311DataCollectionRuleSpecSkuTierEnum
 {
@@ -1877,7 +1877,7 @@ public enum V1api20240311DataCollectionRuleSpecSkuTierEnum
 }
 
 /// <summary>Sku: The SKU of the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecSku
 {
@@ -1912,7 +1912,7 @@ public partial class V1api20240311DataCollectionRuleSpecSku
 }
 
 /// <summary>Type: The type of the column data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240311DataCollectionRuleSpecStreamDeclarationsColumnsTypeEnum>))]
 public enum V1api20240311DataCollectionRuleSpecStreamDeclarationsColumnsTypeEnum
 {
@@ -1933,7 +1933,7 @@ public enum V1api20240311DataCollectionRuleSpecStreamDeclarationsColumnsTypeEnum
 }
 
 /// <summary>Definition of custom data column.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecStreamDeclarationsColumns
 {
@@ -1947,7 +1947,7 @@ public partial class V1api20240311DataCollectionRuleSpecStreamDeclarationsColumn
 }
 
 /// <summary>Declaration of a custom stream.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpecStreamDeclarations
 {
@@ -1956,7 +1956,7 @@ public partial class V1api20240311DataCollectionRuleSpecStreamDeclarations
     public IList<V1api20240311DataCollectionRuleSpecStreamDeclarationsColumns>? Columns { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleSpec
 {
@@ -2047,7 +2047,7 @@ public partial class V1api20240311DataCollectionRuleSpec
 }
 
 /// <summary>A setting used to control an agent behavior on a host machine</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusAgentSettingsLogs
 {
@@ -2064,7 +2064,7 @@ public partial class V1api20240311DataCollectionRuleStatusAgentSettingsLogs
 }
 
 /// <summary>AgentSettings: Agent settings used to modify agent behavior on a given host</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusAgentSettings
 {
@@ -2074,7 +2074,7 @@ public partial class V1api20240311DataCollectionRuleStatusAgentSettings
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusConditions
 {
@@ -2120,7 +2120,7 @@ public partial class V1api20240311DataCollectionRuleStatusConditions
 }
 
 /// <summary>Definition of which streams are sent to which destinations.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDataFlows
 {
@@ -2150,7 +2150,7 @@ public partial class V1api20240311DataCollectionRuleStatusDataFlows
 }
 
 /// <summary>EventHub: Definition of Event Hub configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDataSourcesDataImportsEventHub
 {
@@ -2171,7 +2171,7 @@ public partial class V1api20240311DataCollectionRuleStatusDataSourcesDataImports
 }
 
 /// <summary>DataImports: Specifications of pull based data sources</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDataSourcesDataImports
 {
@@ -2181,7 +2181,7 @@ public partial class V1api20240311DataCollectionRuleStatusDataSourcesDataImports
 }
 
 /// <summary>Enables an ETW provider logs to be collected by this data collection rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDataSourcesEtwProviders
 {
@@ -2222,7 +2222,7 @@ public partial class V1api20240311DataCollectionRuleStatusDataSourcesEtwProvider
 /// Agent.
 /// Collected from either Windows and Linux machines, depending on which extension is defined.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDataSourcesExtensions
 {
@@ -2255,7 +2255,7 @@ public partial class V1api20240311DataCollectionRuleStatusDataSourcesExtensions
 }
 
 /// <summary>Enables IIS logs to be collected by this data collection rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDataSourcesIisLogs
 {
@@ -2283,7 +2283,7 @@ public partial class V1api20240311DataCollectionRuleStatusDataSourcesIisLogs
 }
 
 /// <summary>Text: Text settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDataSourcesLogFilesSettingsText
 {
@@ -2293,7 +2293,7 @@ public partial class V1api20240311DataCollectionRuleStatusDataSourcesLogFilesSet
 }
 
 /// <summary>Settings: The log files specific settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDataSourcesLogFilesSettings
 {
@@ -2303,7 +2303,7 @@ public partial class V1api20240311DataCollectionRuleStatusDataSourcesLogFilesSet
 }
 
 /// <summary>Definition of which custom log files will be collected by this data collection rule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDataSourcesLogFiles
 {
@@ -2345,7 +2345,7 @@ public partial class V1api20240311DataCollectionRuleStatusDataSourcesLogFiles
 /// ResourceAttributeRouting: Specifies the routing policy based on OTLP payload resource attributes to route subset of the
 /// payload according to matching resource attribute.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDataSourcesOtelLogsResourceAttributeRouting
 {
@@ -2359,7 +2359,7 @@ public partial class V1api20240311DataCollectionRuleStatusDataSourcesOtelLogsRes
 }
 
 /// <summary>Enables Otel logs to be collected by this data collection rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDataSourcesOtelLogs
 {
@@ -2400,7 +2400,7 @@ public partial class V1api20240311DataCollectionRuleStatusDataSourcesOtelLogs
 /// ResourceAttributeRouting: Specifies the routing policy based on OTLP payload resource attributes to route subset of the
 /// payload according to matching resource attribute.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDataSourcesOtelMetricsResourceAttributeRouting
 {
@@ -2414,7 +2414,7 @@ public partial class V1api20240311DataCollectionRuleStatusDataSourcesOtelMetrics
 }
 
 /// <summary>Definition of OTel metrics configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDataSourcesOtelMetrics
 {
@@ -2448,7 +2448,7 @@ public partial class V1api20240311DataCollectionRuleStatusDataSourcesOtelMetrics
 /// ResourceAttributeRouting: Specifies the routing policy based on OTLP payload resource attributes to route subset of the
 /// payload according to matching resource attribute.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDataSourcesOtelTracesResourceAttributeRouting
 {
@@ -2462,7 +2462,7 @@ public partial class V1api20240311DataCollectionRuleStatusDataSourcesOtelTracesR
 }
 
 /// <summary>Enables Otel Traces to be collected by this data collection rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDataSourcesOtelTraces
 {
@@ -2508,7 +2508,7 @@ public partial class V1api20240311DataCollectionRuleStatusDataSourcesOtelTraces
 /// rule.
 /// Collected from both Windows and Linux machines where the counter is present.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDataSourcesPerformanceCounters
 {
@@ -2552,7 +2552,7 @@ public partial class V1api20240311DataCollectionRuleStatusDataSourcesPerformance
 /// collection rule.
 /// Collected from both Windows and Linux machines where the counter is present.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDataSourcesPerformanceCountersOTel
 {
@@ -2581,7 +2581,7 @@ public partial class V1api20240311DataCollectionRuleStatusDataSourcesPerformance
 }
 
 /// <summary>Definition of platform telemetry data source configuration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDataSourcesPlatformTelemetry
 {
@@ -2598,7 +2598,7 @@ public partial class V1api20240311DataCollectionRuleStatusDataSourcesPlatformTel
 }
 
 /// <summary>Definition of Prometheus metrics forwarding configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDataSourcesPrometheusForwarder
 {
@@ -2630,7 +2630,7 @@ public partial class V1api20240311DataCollectionRuleStatusDataSourcesPrometheusF
 /// Definition of which syslog data will be collected and how it will be collected.
 /// Only collected from Linux machines.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDataSourcesSyslog
 {
@@ -2670,7 +2670,7 @@ public partial class V1api20240311DataCollectionRuleStatusDataSourcesSyslog
 /// Only collected from
 /// Windows machines.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDataSourcesWindowsEventLogs
 {
@@ -2702,7 +2702,7 @@ public partial class V1api20240311DataCollectionRuleStatusDataSourcesWindowsEven
 }
 
 /// <summary>Enables Firewall logs to be collected by this data collection rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDataSourcesWindowsFirewallLogs
 {
@@ -2727,7 +2727,7 @@ public partial class V1api20240311DataCollectionRuleStatusDataSourcesWindowsFire
 /// This property is optional and can be omitted if the rule is meant to be used via direct calls to the provisioned
 /// endpoint.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDataSources
 {
@@ -2793,7 +2793,7 @@ public partial class V1api20240311DataCollectionRuleStatusDataSources
 }
 
 /// <summary>Azure Data Explorer (Adx) destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDestinationsAzureDataExplorer
 {
@@ -2818,7 +2818,7 @@ public partial class V1api20240311DataCollectionRuleStatusDestinationsAzureDataE
 }
 
 /// <summary>AzureMonitorMetrics: Azure Monitor Metrics destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDestinationsAzureMonitorMetrics
 {
@@ -2830,7 +2830,7 @@ public partial class V1api20240311DataCollectionRuleStatusDestinationsAzureMonit
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDestinationsEventHubs
 {
@@ -2846,7 +2846,7 @@ public partial class V1api20240311DataCollectionRuleStatusDestinationsEventHubs
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDestinationsEventHubsDirect
 {
@@ -2863,7 +2863,7 @@ public partial class V1api20240311DataCollectionRuleStatusDestinationsEventHubsD
 }
 
 /// <summary>Log Analytics destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDestinationsLogAnalytics
 {
@@ -2884,7 +2884,7 @@ public partial class V1api20240311DataCollectionRuleStatusDestinationsLogAnalyti
 }
 
 /// <summary>Microsoft Fabric destination (non-Azure).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDestinationsMicrosoftFabric
 {
@@ -2913,7 +2913,7 @@ public partial class V1api20240311DataCollectionRuleStatusDestinationsMicrosoftF
 }
 
 /// <summary>Monitoring account destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDestinationsMonitoringAccounts
 {
@@ -2933,7 +2933,7 @@ public partial class V1api20240311DataCollectionRuleStatusDestinationsMonitoring
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDestinationsStorageAccounts
 {
@@ -2953,7 +2953,7 @@ public partial class V1api20240311DataCollectionRuleStatusDestinationsStorageAcc
     public string? StorageAccountResourceId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDestinationsStorageBlobsDirect
 {
@@ -2973,7 +2973,7 @@ public partial class V1api20240311DataCollectionRuleStatusDestinationsStorageBlo
     public string? StorageAccountResourceId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDestinationsStorageTablesDirect
 {
@@ -2994,7 +2994,7 @@ public partial class V1api20240311DataCollectionRuleStatusDestinationsStorageTab
 }
 
 /// <summary>Destinations: The specification of destinations.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDestinations
 {
@@ -3042,7 +3042,7 @@ public partial class V1api20240311DataCollectionRuleStatusDestinations
     public IList<V1api20240311DataCollectionRuleStatusDestinationsStorageTablesDirect>? StorageTablesDirect { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDirectDataSourcesOtelLogs
 {
@@ -3073,7 +3073,7 @@ public partial class V1api20240311DataCollectionRuleStatusDirectDataSourcesOtelL
 }
 
 /// <summary>Definition of OTel metrics configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDirectDataSourcesOtelMetrics
 {
@@ -3097,7 +3097,7 @@ public partial class V1api20240311DataCollectionRuleStatusDirectDataSourcesOtelM
 }
 
 /// <summary>Enables Otel Traces to be collected by this data collection rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDirectDataSourcesOtelTraces
 {
@@ -3135,7 +3135,7 @@ public partial class V1api20240311DataCollectionRuleStatusDirectDataSourcesOtelT
 /// DirectDataSources: The specification of direct data sources.
 /// This property is optional and can be omitted.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusDirectDataSources
 {
@@ -3153,7 +3153,7 @@ public partial class V1api20240311DataCollectionRuleStatusDirectDataSources
 }
 
 /// <summary>Endpoints: Defines the ingestion endpoints to send data to via this rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusEndpoints
 {
@@ -3167,7 +3167,7 @@ public partial class V1api20240311DataCollectionRuleStatusEndpoints
 }
 
 /// <summary>User assigned identity properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusIdentityUserAssignedIdentities
 {
@@ -3181,7 +3181,7 @@ public partial class V1api20240311DataCollectionRuleStatusIdentityUserAssignedId
 }
 
 /// <summary>Identity: Managed service identity of the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusIdentity
 {
@@ -3207,7 +3207,7 @@ public partial class V1api20240311DataCollectionRuleStatusIdentity
     public IDictionary<string, V1api20240311DataCollectionRuleStatusIdentityUserAssignedIdentities>? UserAssignedIdentities { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusIngestionQuotasLogs
 {
@@ -3219,7 +3219,7 @@ public partial class V1api20240311DataCollectionRuleStatusIngestionQuotasLogs
 }
 
 /// <summary>IngestionQuotas: The specification for ingestion limits</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusIngestionQuotas
 {
@@ -3228,7 +3228,7 @@ public partial class V1api20240311DataCollectionRuleStatusIngestionQuotas
 }
 
 /// <summary>Metadata: Metadata about the resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusMetadata
 {
@@ -3245,7 +3245,7 @@ public partial class V1api20240311DataCollectionRuleStatusMetadata
     public string? ProvisionedByResourceId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusReferencesApplicationInsights
 {
@@ -3258,7 +3258,7 @@ public partial class V1api20240311DataCollectionRuleStatusReferencesApplicationI
     public string? ResourceId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusReferencesEnrichmentDataStorageBlobs
 {
@@ -3280,7 +3280,7 @@ public partial class V1api20240311DataCollectionRuleStatusReferencesEnrichmentDa
 }
 
 /// <summary>EnrichmentData: All the enrichment data sources referenced in data flows</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusReferencesEnrichmentData
 {
@@ -3290,7 +3290,7 @@ public partial class V1api20240311DataCollectionRuleStatusReferencesEnrichmentDa
 }
 
 /// <summary>References: Defines all the references that may be used in other sections of the DCR</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusReferences
 {
@@ -3304,7 +3304,7 @@ public partial class V1api20240311DataCollectionRuleStatusReferences
 }
 
 /// <summary>Sku: The SKU of the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusSku
 {
@@ -3339,7 +3339,7 @@ public partial class V1api20240311DataCollectionRuleStatusSku
 }
 
 /// <summary>Definition of custom data column.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusStreamDeclarationsColumns
 {
@@ -3353,7 +3353,7 @@ public partial class V1api20240311DataCollectionRuleStatusStreamDeclarationsColu
 }
 
 /// <summary>Declaration of a custom stream.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusStreamDeclarations
 {
@@ -3363,7 +3363,7 @@ public partial class V1api20240311DataCollectionRuleStatusStreamDeclarations
 }
 
 /// <summary>SystemData: Metadata pertaining to creation and last modification of the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatusSystemData
 {
@@ -3393,7 +3393,7 @@ public partial class V1api20240311DataCollectionRuleStatusSystemData
 }
 
 /// <summary>Definition of ARM tracked top level resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionRuleStatus
 {
@@ -3510,7 +3510,7 @@ public partial class V1api20240311DataCollectionRuleStatus
 /// - Generated from: /monitor/resource-manager/Microsoft.Insights/stable/2024-03-11/dataCollectionRules_API.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/dataCollectionRules/{dataCollectionRuleName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20240311DataCollectionRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20240311DataCollectionRuleSpec?>, IStatus<V1api20240311DataCollectionRuleStatus?>

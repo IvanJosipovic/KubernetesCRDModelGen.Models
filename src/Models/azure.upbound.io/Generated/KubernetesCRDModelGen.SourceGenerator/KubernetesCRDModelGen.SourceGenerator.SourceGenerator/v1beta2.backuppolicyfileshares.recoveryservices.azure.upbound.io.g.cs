@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.recoveryservices.azure.upbound.io;
 /// <summary>BackupPolicyFileShare is the Schema for the BackupPolicyFileShares API. Manages an Azure File Share Backup Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2BackupPolicyFileShareList : IKubernetesObject<V1ListMeta>, IItems<V1beta2BackupPolicyFileShare>
@@ -45,7 +45,7 @@ public partial class V1beta2BackupPolicyFileShareList : IKubernetesObject<V1List
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupPolicyFileShareSpecDeletionPolicyEnum>))]
 public enum V1beta2BackupPolicyFileShareSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2BackupPolicyFileShareSpecDeletionPolicyEnum
 }
 
 /// <summary>A hourly block defined as below. This is required when frequency is set to Hourly.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecForProviderBackupHourly
 {
@@ -74,7 +74,7 @@ public partial class V1beta2BackupPolicyFileShareSpecForProviderBackupHourly
 }
 
 /// <summary>Configures the Policy backup frequency and times as documented in the backup block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecForProviderBackup
 {
@@ -97,7 +97,7 @@ public partial class V1beta2BackupPolicyFileShareSpecForProviderBackup
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupPolicyFileShareSpecForProviderRecoveryVaultNameRefPolicyResolutionEnum>))]
 public enum V1beta2BackupPolicyFileShareSpecForProviderRecoveryVaultNameRefPolicyResolutionEnum
 {
@@ -113,7 +113,7 @@ public enum V1beta2BackupPolicyFileShareSpecForProviderRecoveryVaultNameRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupPolicyFileShareSpecForProviderRecoveryVaultNameRefPolicyResolveEnum>))]
 public enum V1beta2BackupPolicyFileShareSpecForProviderRecoveryVaultNameRefPolicyResolveEnum
 {
@@ -124,7 +124,7 @@ public enum V1beta2BackupPolicyFileShareSpecForProviderRecoveryVaultNameRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecForProviderRecoveryVaultNameRefPolicy
 {
@@ -148,7 +148,7 @@ public partial class V1beta2BackupPolicyFileShareSpecForProviderRecoveryVaultNam
 }
 
 /// <summary>Reference to a Vault in recoveryservices to populate recoveryVaultName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecForProviderRecoveryVaultNameRef
 {
@@ -167,7 +167,7 @@ public partial class V1beta2BackupPolicyFileShareSpecForProviderRecoveryVaultNam
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupPolicyFileShareSpecForProviderRecoveryVaultNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2BackupPolicyFileShareSpecForProviderRecoveryVaultNameSelectorPolicyResolutionEnum
 {
@@ -183,7 +183,7 @@ public enum V1beta2BackupPolicyFileShareSpecForProviderRecoveryVaultNameSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupPolicyFileShareSpecForProviderRecoveryVaultNameSelectorPolicyResolveEnum>))]
 public enum V1beta2BackupPolicyFileShareSpecForProviderRecoveryVaultNameSelectorPolicyResolveEnum
 {
@@ -194,7 +194,7 @@ public enum V1beta2BackupPolicyFileShareSpecForProviderRecoveryVaultNameSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecForProviderRecoveryVaultNameSelectorPolicy
 {
@@ -218,7 +218,7 @@ public partial class V1beta2BackupPolicyFileShareSpecForProviderRecoveryVaultNam
 }
 
 /// <summary>Selector for a Vault in recoveryservices to populate recoveryVaultName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecForProviderRecoveryVaultNameSelector
 {
@@ -244,7 +244,7 @@ public partial class V1beta2BackupPolicyFileShareSpecForProviderRecoveryVaultNam
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupPolicyFileShareSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta2BackupPolicyFileShareSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -260,7 +260,7 @@ public enum V1beta2BackupPolicyFileShareSpecForProviderResourceGroupNameRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupPolicyFileShareSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta2BackupPolicyFileShareSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -271,7 +271,7 @@ public enum V1beta2BackupPolicyFileShareSpecForProviderResourceGroupNameRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecForProviderResourceGroupNameRefPolicy
 {
@@ -295,7 +295,7 @@ public partial class V1beta2BackupPolicyFileShareSpecForProviderResourceGroupNam
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecForProviderResourceGroupNameRef
 {
@@ -314,7 +314,7 @@ public partial class V1beta2BackupPolicyFileShareSpecForProviderResourceGroupNam
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupPolicyFileShareSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2BackupPolicyFileShareSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -330,7 +330,7 @@ public enum V1beta2BackupPolicyFileShareSpecForProviderResourceGroupNameSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupPolicyFileShareSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta2BackupPolicyFileShareSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -341,7 +341,7 @@ public enum V1beta2BackupPolicyFileShareSpecForProviderResourceGroupNameSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -365,7 +365,7 @@ public partial class V1beta2BackupPolicyFileShareSpecForProviderResourceGroupNam
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecForProviderResourceGroupNameSelector
 {
@@ -386,7 +386,7 @@ public partial class V1beta2BackupPolicyFileShareSpecForProviderResourceGroupNam
 }
 
 /// <summary>Configures the policy daily retention as documented in the retention_daily block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecForProviderRetentionDaily
 {
@@ -396,7 +396,7 @@ public partial class V1beta2BackupPolicyFileShareSpecForProviderRetentionDaily
 }
 
 /// <summary>Configures the policy monthly retention as documented in the retention_monthly block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecForProviderRetentionMonthly
 {
@@ -422,7 +422,7 @@ public partial class V1beta2BackupPolicyFileShareSpecForProviderRetentionMonthly
 }
 
 /// <summary>Configures the policy weekly retention as documented in the retention_weekly block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecForProviderRetentionWeekly
 {
@@ -436,7 +436,7 @@ public partial class V1beta2BackupPolicyFileShareSpecForProviderRetentionWeekly
 }
 
 /// <summary>Configures the policy yearly retention as documented in the retention_yearly block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecForProviderRetentionYearly
 {
@@ -465,7 +465,7 @@ public partial class V1beta2BackupPolicyFileShareSpecForProviderRetentionYearly
     public IList<string>? Weeks { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecForProvider
 {
@@ -519,7 +519,7 @@ public partial class V1beta2BackupPolicyFileShareSpecForProvider
 }
 
 /// <summary>A hourly block defined as below. This is required when frequency is set to Hourly.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecInitProviderBackupHourly
 {
@@ -537,7 +537,7 @@ public partial class V1beta2BackupPolicyFileShareSpecInitProviderBackupHourly
 }
 
 /// <summary>Configures the Policy backup frequency and times as documented in the backup block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecInitProviderBackup
 {
@@ -555,7 +555,7 @@ public partial class V1beta2BackupPolicyFileShareSpecInitProviderBackup
 }
 
 /// <summary>Configures the policy daily retention as documented in the retention_daily block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecInitProviderRetentionDaily
 {
@@ -565,7 +565,7 @@ public partial class V1beta2BackupPolicyFileShareSpecInitProviderRetentionDaily
 }
 
 /// <summary>Configures the policy monthly retention as documented in the retention_monthly block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecInitProviderRetentionMonthly
 {
@@ -591,7 +591,7 @@ public partial class V1beta2BackupPolicyFileShareSpecInitProviderRetentionMonthl
 }
 
 /// <summary>Configures the policy weekly retention as documented in the retention_weekly block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecInitProviderRetentionWeekly
 {
@@ -605,7 +605,7 @@ public partial class V1beta2BackupPolicyFileShareSpecInitProviderRetentionWeekly
 }
 
 /// <summary>Configures the policy yearly retention as documented in the retention_yearly block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecInitProviderRetentionYearly
 {
@@ -646,7 +646,7 @@ public partial class V1beta2BackupPolicyFileShareSpecInitProviderRetentionYearly
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecInitProvider
 {
@@ -679,7 +679,7 @@ public partial class V1beta2BackupPolicyFileShareSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupPolicyFileShareSpecManagementPoliciesEnum>))]
 public enum V1beta2BackupPolicyFileShareSpecManagementPoliciesEnum
 {
@@ -703,7 +703,7 @@ public enum V1beta2BackupPolicyFileShareSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupPolicyFileShareSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2BackupPolicyFileShareSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -719,7 +719,7 @@ public enum V1beta2BackupPolicyFileShareSpecProviderConfigRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupPolicyFileShareSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2BackupPolicyFileShareSpecProviderConfigRefPolicyResolveEnum
 {
@@ -730,7 +730,7 @@ public enum V1beta2BackupPolicyFileShareSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecProviderConfigRefPolicy
 {
@@ -758,7 +758,7 @@ public partial class V1beta2BackupPolicyFileShareSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecProviderConfigRef
 {
@@ -777,7 +777,7 @@ public partial class V1beta2BackupPolicyFileShareSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpecWriteConnectionSecretToRef
 {
@@ -791,7 +791,7 @@ public partial class V1beta2BackupPolicyFileShareSpecWriteConnectionSecretToRef
 }
 
 /// <summary>BackupPolicyFileShareSpec defines the desired state of BackupPolicyFileShare</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareSpec
 {
@@ -859,7 +859,7 @@ public partial class V1beta2BackupPolicyFileShareSpec
 }
 
 /// <summary>A hourly block defined as below. This is required when frequency is set to Hourly.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareStatusAtProviderBackupHourly
 {
@@ -877,7 +877,7 @@ public partial class V1beta2BackupPolicyFileShareStatusAtProviderBackupHourly
 }
 
 /// <summary>Configures the Policy backup frequency and times as documented in the backup block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareStatusAtProviderBackup
 {
@@ -895,7 +895,7 @@ public partial class V1beta2BackupPolicyFileShareStatusAtProviderBackup
 }
 
 /// <summary>Configures the policy daily retention as documented in the retention_daily block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareStatusAtProviderRetentionDaily
 {
@@ -905,7 +905,7 @@ public partial class V1beta2BackupPolicyFileShareStatusAtProviderRetentionDaily
 }
 
 /// <summary>Configures the policy monthly retention as documented in the retention_monthly block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareStatusAtProviderRetentionMonthly
 {
@@ -931,7 +931,7 @@ public partial class V1beta2BackupPolicyFileShareStatusAtProviderRetentionMonthl
 }
 
 /// <summary>Configures the policy weekly retention as documented in the retention_weekly block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareStatusAtProviderRetentionWeekly
 {
@@ -945,7 +945,7 @@ public partial class V1beta2BackupPolicyFileShareStatusAtProviderRetentionWeekly
 }
 
 /// <summary>Configures the policy yearly retention as documented in the retention_yearly block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareStatusAtProviderRetentionYearly
 {
@@ -974,7 +974,7 @@ public partial class V1beta2BackupPolicyFileShareStatusAtProviderRetentionYearly
     public IList<string>? Weeks { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareStatusAtProvider
 {
@@ -1016,7 +1016,7 @@ public partial class V1beta2BackupPolicyFileShareStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareStatusConditions
 {
@@ -1059,7 +1059,7 @@ public partial class V1beta2BackupPolicyFileShareStatusConditions
 }
 
 /// <summary>BackupPolicyFileShareStatus defines the observed state of BackupPolicyFileShare.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyFileShareStatus
 {
@@ -1080,7 +1080,7 @@ public partial class V1beta2BackupPolicyFileShareStatus
 }
 
 /// <summary>BackupPolicyFileShare is the Schema for the BackupPolicyFileShares API. Manages an Azure File Share Backup Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2BackupPolicyFileShare : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2BackupPolicyFileShareSpec>, IStatus<V1beta2BackupPolicyFileShareStatus?>

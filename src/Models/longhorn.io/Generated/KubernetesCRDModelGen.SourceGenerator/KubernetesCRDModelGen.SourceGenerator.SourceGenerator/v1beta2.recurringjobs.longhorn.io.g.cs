@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.longhorn.io;
 /// <summary>RecurringJob is where Longhorn stores recurring job object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2RecurringJobList : IKubernetesObject<V1ListMeta>, IItems<V1beta2RecurringJob>
@@ -40,7 +40,7 @@ public partial class V1beta2RecurringJobList : IKubernetesObject<V1ListMeta>, II
 /// The recurring job task.
 /// Can be &quot;snapshot&quot;, &quot;snapshot-force-create&quot;, &quot;snapshot-cleanup&quot;, &quot;snapshot-delete&quot;, &quot;backup&quot;, &quot;backup-force-create&quot;, &quot;filesystem-trim&quot; or &quot;system-backup&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RecurringJobSpecTaskEnum>))]
 public enum V1beta2RecurringJobSpecTaskEnum
 {
@@ -63,7 +63,7 @@ public enum V1beta2RecurringJobSpecTaskEnum
 }
 
 /// <summary>RecurringJobSpec defines the desired state of the Longhorn recurring job</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RecurringJobSpec
 {
@@ -107,7 +107,7 @@ public partial class V1beta2RecurringJobSpec
 }
 
 /// <summary>RecurringJobStatus defines the observed state of the Longhorn recurring job</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RecurringJobStatus
 {
@@ -121,7 +121,7 @@ public partial class V1beta2RecurringJobStatus
 }
 
 /// <summary>RecurringJob is where Longhorn stores recurring job object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2RecurringJob : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2RecurringJobSpec?>, IStatus<V1beta2RecurringJobStatus?>

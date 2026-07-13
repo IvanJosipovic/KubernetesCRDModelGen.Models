@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appsync.aws.upbound.io;
 /// <summary>GraphQLAPI is the Schema for the GraphQLAPIs API. Provides an AppSync GraphQL API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2GraphQLAPIList : IKubernetesObject<V1ListMeta>, IItems<V1beta2GraphQLAPI>
@@ -45,7 +45,7 @@ public partial class V1beta2GraphQLAPIList : IKubernetesObject<V1ListMeta>, IIte
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecDeletionPolicyEnum>))]
 public enum V1beta2GraphQLAPISpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2GraphQLAPISpecDeletionPolicyEnum
 }
 
 /// <summary>Nested argument containing Lambda authorizer configuration. See lambda_authorizer_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecForProviderAdditionalAuthenticationProviderLambdaAuthorizerConfig
 {
@@ -74,7 +74,7 @@ public partial class V1beta2GraphQLAPISpecForProviderAdditionalAuthenticationPro
 }
 
 /// <summary>Nested argument containing OpenID Connect configuration. See openid_connect_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecForProviderAdditionalAuthenticationProviderOpenidConnectConfig
 {
@@ -96,7 +96,7 @@ public partial class V1beta2GraphQLAPISpecForProviderAdditionalAuthenticationPro
 }
 
 /// <summary>Amazon Cognito User Pool configuration. See user_pool_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecForProviderAdditionalAuthenticationProviderUserPoolConfig
 {
@@ -113,7 +113,7 @@ public partial class V1beta2GraphQLAPISpecForProviderAdditionalAuthenticationPro
     public string? UserPoolId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecForProviderAdditionalAuthenticationProvider
 {
@@ -135,7 +135,7 @@ public partial class V1beta2GraphQLAPISpecForProviderAdditionalAuthenticationPro
 }
 
 /// <summary>Enables and controls the enhanced metrics feature. See enhanced_metrics_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecForProviderEnhancedMetricsConfig
 {
@@ -153,7 +153,7 @@ public partial class V1beta2GraphQLAPISpecForProviderEnhancedMetricsConfig
 }
 
 /// <summary>Nested argument containing Lambda authorizer configuration. See lambda_authorizer_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecForProviderLambdaAuthorizerConfig
 {
@@ -176,7 +176,7 @@ public partial class V1beta2GraphQLAPISpecForProviderLambdaAuthorizerConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta2GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnRefPolicyResolutionEnum
 {
@@ -192,7 +192,7 @@ public enum V1beta2GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnRefPolicyResolveEnum>))]
 public enum V1beta2GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnRefPolicyResolveEnum
 {
@@ -203,7 +203,7 @@ public enum V1beta2GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnRefPolicy
 {
@@ -227,7 +227,7 @@ public partial class V1beta2GraphQLAPISpecForProviderLogConfigCloudwatchLogsRole
 }
 
 /// <summary>Reference to a Role in iam to populate cloudwatchLogsRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnRef
 {
@@ -246,7 +246,7 @@ public partial class V1beta2GraphQLAPISpecForProviderLogConfigCloudwatchLogsRole
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnSelectorPolicyResolutionEnum
 {
@@ -262,7 +262,7 @@ public enum V1beta2GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta2GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnSelectorPolicyResolveEnum
 {
@@ -273,7 +273,7 @@ public enum V1beta2GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnSelectorPolicy
 {
@@ -297,7 +297,7 @@ public partial class V1beta2GraphQLAPISpecForProviderLogConfigCloudwatchLogsRole
 }
 
 /// <summary>Selector for a Role in iam to populate cloudwatchLogsRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnSelector
 {
@@ -318,7 +318,7 @@ public partial class V1beta2GraphQLAPISpecForProviderLogConfigCloudwatchLogsRole
 }
 
 /// <summary>Nested argument containing logging configuration. See log_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecForProviderLogConfig
 {
@@ -349,7 +349,7 @@ public partial class V1beta2GraphQLAPISpecForProviderLogConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecForProviderMergedApiExecutionRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta2GraphQLAPISpecForProviderMergedApiExecutionRoleArnRefPolicyResolutionEnum
 {
@@ -365,7 +365,7 @@ public enum V1beta2GraphQLAPISpecForProviderMergedApiExecutionRoleArnRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecForProviderMergedApiExecutionRoleArnRefPolicyResolveEnum>))]
 public enum V1beta2GraphQLAPISpecForProviderMergedApiExecutionRoleArnRefPolicyResolveEnum
 {
@@ -376,7 +376,7 @@ public enum V1beta2GraphQLAPISpecForProviderMergedApiExecutionRoleArnRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecForProviderMergedApiExecutionRoleArnRefPolicy
 {
@@ -400,7 +400,7 @@ public partial class V1beta2GraphQLAPISpecForProviderMergedApiExecutionRoleArnRe
 }
 
 /// <summary>Reference to a Role in iam to populate mergedApiExecutionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecForProviderMergedApiExecutionRoleArnRef
 {
@@ -419,7 +419,7 @@ public partial class V1beta2GraphQLAPISpecForProviderMergedApiExecutionRoleArnRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecForProviderMergedApiExecutionRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2GraphQLAPISpecForProviderMergedApiExecutionRoleArnSelectorPolicyResolutionEnum
 {
@@ -435,7 +435,7 @@ public enum V1beta2GraphQLAPISpecForProviderMergedApiExecutionRoleArnSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecForProviderMergedApiExecutionRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta2GraphQLAPISpecForProviderMergedApiExecutionRoleArnSelectorPolicyResolveEnum
 {
@@ -446,7 +446,7 @@ public enum V1beta2GraphQLAPISpecForProviderMergedApiExecutionRoleArnSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecForProviderMergedApiExecutionRoleArnSelectorPolicy
 {
@@ -470,7 +470,7 @@ public partial class V1beta2GraphQLAPISpecForProviderMergedApiExecutionRoleArnSe
 }
 
 /// <summary>Selector for a Role in iam to populate mergedApiExecutionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecForProviderMergedApiExecutionRoleArnSelector
 {
@@ -491,7 +491,7 @@ public partial class V1beta2GraphQLAPISpecForProviderMergedApiExecutionRoleArnSe
 }
 
 /// <summary>Nested argument containing OpenID Connect configuration. See openid_connect_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecForProviderOpenidConnectConfig
 {
@@ -518,7 +518,7 @@ public partial class V1beta2GraphQLAPISpecForProviderOpenidConnectConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecForProviderUserPoolConfigUserPoolIdRefPolicyResolutionEnum>))]
 public enum V1beta2GraphQLAPISpecForProviderUserPoolConfigUserPoolIdRefPolicyResolutionEnum
 {
@@ -534,7 +534,7 @@ public enum V1beta2GraphQLAPISpecForProviderUserPoolConfigUserPoolIdRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecForProviderUserPoolConfigUserPoolIdRefPolicyResolveEnum>))]
 public enum V1beta2GraphQLAPISpecForProviderUserPoolConfigUserPoolIdRefPolicyResolveEnum
 {
@@ -545,7 +545,7 @@ public enum V1beta2GraphQLAPISpecForProviderUserPoolConfigUserPoolIdRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecForProviderUserPoolConfigUserPoolIdRefPolicy
 {
@@ -569,7 +569,7 @@ public partial class V1beta2GraphQLAPISpecForProviderUserPoolConfigUserPoolIdRef
 }
 
 /// <summary>Reference to a UserPool in cognitoidp to populate userPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecForProviderUserPoolConfigUserPoolIdRef
 {
@@ -588,7 +588,7 @@ public partial class V1beta2GraphQLAPISpecForProviderUserPoolConfigUserPoolIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecForProviderUserPoolConfigUserPoolIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2GraphQLAPISpecForProviderUserPoolConfigUserPoolIdSelectorPolicyResolutionEnum
 {
@@ -604,7 +604,7 @@ public enum V1beta2GraphQLAPISpecForProviderUserPoolConfigUserPoolIdSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecForProviderUserPoolConfigUserPoolIdSelectorPolicyResolveEnum>))]
 public enum V1beta2GraphQLAPISpecForProviderUserPoolConfigUserPoolIdSelectorPolicyResolveEnum
 {
@@ -615,7 +615,7 @@ public enum V1beta2GraphQLAPISpecForProviderUserPoolConfigUserPoolIdSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecForProviderUserPoolConfigUserPoolIdSelectorPolicy
 {
@@ -639,7 +639,7 @@ public partial class V1beta2GraphQLAPISpecForProviderUserPoolConfigUserPoolIdSel
 }
 
 /// <summary>Selector for a UserPool in cognitoidp to populate userPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecForProviderUserPoolConfigUserPoolIdSelector
 {
@@ -660,7 +660,7 @@ public partial class V1beta2GraphQLAPISpecForProviderUserPoolConfigUserPoolIdSel
 }
 
 /// <summary>Amazon Cognito User Pool configuration. See user_pool_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecForProviderUserPoolConfig
 {
@@ -689,7 +689,7 @@ public partial class V1beta2GraphQLAPISpecForProviderUserPoolConfig
     public V1beta2GraphQLAPISpecForProviderUserPoolConfigUserPoolIdSelector? UserPoolIdSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecForProvider
 {
@@ -778,7 +778,7 @@ public partial class V1beta2GraphQLAPISpecForProvider
 }
 
 /// <summary>Nested argument containing Lambda authorizer configuration. See lambda_authorizer_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecInitProviderAdditionalAuthenticationProviderLambdaAuthorizerConfig
 {
@@ -796,7 +796,7 @@ public partial class V1beta2GraphQLAPISpecInitProviderAdditionalAuthenticationPr
 }
 
 /// <summary>Nested argument containing OpenID Connect configuration. See openid_connect_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecInitProviderAdditionalAuthenticationProviderOpenidConnectConfig
 {
@@ -818,7 +818,7 @@ public partial class V1beta2GraphQLAPISpecInitProviderAdditionalAuthenticationPr
 }
 
 /// <summary>Amazon Cognito User Pool configuration. See user_pool_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecInitProviderAdditionalAuthenticationProviderUserPoolConfig
 {
@@ -835,7 +835,7 @@ public partial class V1beta2GraphQLAPISpecInitProviderAdditionalAuthenticationPr
     public string? UserPoolId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecInitProviderAdditionalAuthenticationProvider
 {
@@ -857,7 +857,7 @@ public partial class V1beta2GraphQLAPISpecInitProviderAdditionalAuthenticationPr
 }
 
 /// <summary>Enables and controls the enhanced metrics feature. See enhanced_metrics_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecInitProviderEnhancedMetricsConfig
 {
@@ -875,7 +875,7 @@ public partial class V1beta2GraphQLAPISpecInitProviderEnhancedMetricsConfig
 }
 
 /// <summary>Nested argument containing Lambda authorizer configuration. See lambda_authorizer_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecInitProviderLambdaAuthorizerConfig
 {
@@ -898,7 +898,7 @@ public partial class V1beta2GraphQLAPISpecInitProviderLambdaAuthorizerConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta2GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnRefPolicyResolutionEnum
 {
@@ -914,7 +914,7 @@ public enum V1beta2GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnRefPolicyResolveEnum>))]
 public enum V1beta2GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnRefPolicyResolveEnum
 {
@@ -925,7 +925,7 @@ public enum V1beta2GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnRefPolicy
 {
@@ -949,7 +949,7 @@ public partial class V1beta2GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRol
 }
 
 /// <summary>Reference to a Role in iam to populate cloudwatchLogsRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnRef
 {
@@ -968,7 +968,7 @@ public partial class V1beta2GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRol
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnSelectorPolicyResolutionEnum
 {
@@ -984,7 +984,7 @@ public enum V1beta2GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta2GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnSelectorPolicyResolveEnum
 {
@@ -995,7 +995,7 @@ public enum V1beta2GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnSelectorPolicy
 {
@@ -1019,7 +1019,7 @@ public partial class V1beta2GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRol
 }
 
 /// <summary>Selector for a Role in iam to populate cloudwatchLogsRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnSelector
 {
@@ -1040,7 +1040,7 @@ public partial class V1beta2GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRol
 }
 
 /// <summary>Nested argument containing logging configuration. See log_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecInitProviderLogConfig
 {
@@ -1071,7 +1071,7 @@ public partial class V1beta2GraphQLAPISpecInitProviderLogConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecInitProviderMergedApiExecutionRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta2GraphQLAPISpecInitProviderMergedApiExecutionRoleArnRefPolicyResolutionEnum
 {
@@ -1087,7 +1087,7 @@ public enum V1beta2GraphQLAPISpecInitProviderMergedApiExecutionRoleArnRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecInitProviderMergedApiExecutionRoleArnRefPolicyResolveEnum>))]
 public enum V1beta2GraphQLAPISpecInitProviderMergedApiExecutionRoleArnRefPolicyResolveEnum
 {
@@ -1098,7 +1098,7 @@ public enum V1beta2GraphQLAPISpecInitProviderMergedApiExecutionRoleArnRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecInitProviderMergedApiExecutionRoleArnRefPolicy
 {
@@ -1122,7 +1122,7 @@ public partial class V1beta2GraphQLAPISpecInitProviderMergedApiExecutionRoleArnR
 }
 
 /// <summary>Reference to a Role in iam to populate mergedApiExecutionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecInitProviderMergedApiExecutionRoleArnRef
 {
@@ -1141,7 +1141,7 @@ public partial class V1beta2GraphQLAPISpecInitProviderMergedApiExecutionRoleArnR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecInitProviderMergedApiExecutionRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2GraphQLAPISpecInitProviderMergedApiExecutionRoleArnSelectorPolicyResolutionEnum
 {
@@ -1157,7 +1157,7 @@ public enum V1beta2GraphQLAPISpecInitProviderMergedApiExecutionRoleArnSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecInitProviderMergedApiExecutionRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta2GraphQLAPISpecInitProviderMergedApiExecutionRoleArnSelectorPolicyResolveEnum
 {
@@ -1168,7 +1168,7 @@ public enum V1beta2GraphQLAPISpecInitProviderMergedApiExecutionRoleArnSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecInitProviderMergedApiExecutionRoleArnSelectorPolicy
 {
@@ -1192,7 +1192,7 @@ public partial class V1beta2GraphQLAPISpecInitProviderMergedApiExecutionRoleArnS
 }
 
 /// <summary>Selector for a Role in iam to populate mergedApiExecutionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecInitProviderMergedApiExecutionRoleArnSelector
 {
@@ -1213,7 +1213,7 @@ public partial class V1beta2GraphQLAPISpecInitProviderMergedApiExecutionRoleArnS
 }
 
 /// <summary>Nested argument containing OpenID Connect configuration. See openid_connect_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecInitProviderOpenidConnectConfig
 {
@@ -1240,7 +1240,7 @@ public partial class V1beta2GraphQLAPISpecInitProviderOpenidConnectConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdRefPolicyResolutionEnum>))]
 public enum V1beta2GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdRefPolicyResolutionEnum
 {
@@ -1256,7 +1256,7 @@ public enum V1beta2GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdRefPolicyResolveEnum>))]
 public enum V1beta2GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdRefPolicyResolveEnum
 {
@@ -1267,7 +1267,7 @@ public enum V1beta2GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdRefPolicy
 {
@@ -1291,7 +1291,7 @@ public partial class V1beta2GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdRe
 }
 
 /// <summary>Reference to a UserPool in cognitoidp to populate userPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdRef
 {
@@ -1310,7 +1310,7 @@ public partial class V1beta2GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdSelectorPolicyResolutionEnum
 {
@@ -1326,7 +1326,7 @@ public enum V1beta2GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdSelectorPolicyResolveEnum>))]
 public enum V1beta2GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdSelectorPolicyResolveEnum
 {
@@ -1337,7 +1337,7 @@ public enum V1beta2GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdSelectorPolicy
 {
@@ -1361,7 +1361,7 @@ public partial class V1beta2GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdSe
 }
 
 /// <summary>Selector for a UserPool in cognitoidp to populate userPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdSelector
 {
@@ -1382,7 +1382,7 @@ public partial class V1beta2GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdSe
 }
 
 /// <summary>Amazon Cognito User Pool configuration. See user_pool_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecInitProviderUserPoolConfig
 {
@@ -1423,7 +1423,7 @@ public partial class V1beta2GraphQLAPISpecInitProviderUserPoolConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecInitProvider
 {
@@ -1508,7 +1508,7 @@ public partial class V1beta2GraphQLAPISpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecManagementPoliciesEnum>))]
 public enum V1beta2GraphQLAPISpecManagementPoliciesEnum
 {
@@ -1532,7 +1532,7 @@ public enum V1beta2GraphQLAPISpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2GraphQLAPISpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1548,7 +1548,7 @@ public enum V1beta2GraphQLAPISpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GraphQLAPISpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2GraphQLAPISpecProviderConfigRefPolicyResolveEnum
 {
@@ -1559,7 +1559,7 @@ public enum V1beta2GraphQLAPISpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecProviderConfigRefPolicy
 {
@@ -1587,7 +1587,7 @@ public partial class V1beta2GraphQLAPISpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecProviderConfigRef
 {
@@ -1606,7 +1606,7 @@ public partial class V1beta2GraphQLAPISpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpecWriteConnectionSecretToRef
 {
@@ -1620,7 +1620,7 @@ public partial class V1beta2GraphQLAPISpecWriteConnectionSecretToRef
 }
 
 /// <summary>GraphQLAPISpec defines the desired state of GraphQLAPI</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPISpec
 {
@@ -1688,7 +1688,7 @@ public partial class V1beta2GraphQLAPISpec
 }
 
 /// <summary>Nested argument containing Lambda authorizer configuration. See lambda_authorizer_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPIStatusAtProviderAdditionalAuthenticationProviderLambdaAuthorizerConfig
 {
@@ -1706,7 +1706,7 @@ public partial class V1beta2GraphQLAPIStatusAtProviderAdditionalAuthenticationPr
 }
 
 /// <summary>Nested argument containing OpenID Connect configuration. See openid_connect_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPIStatusAtProviderAdditionalAuthenticationProviderOpenidConnectConfig
 {
@@ -1728,7 +1728,7 @@ public partial class V1beta2GraphQLAPIStatusAtProviderAdditionalAuthenticationPr
 }
 
 /// <summary>Amazon Cognito User Pool configuration. See user_pool_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPIStatusAtProviderAdditionalAuthenticationProviderUserPoolConfig
 {
@@ -1745,7 +1745,7 @@ public partial class V1beta2GraphQLAPIStatusAtProviderAdditionalAuthenticationPr
     public string? UserPoolId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPIStatusAtProviderAdditionalAuthenticationProvider
 {
@@ -1767,7 +1767,7 @@ public partial class V1beta2GraphQLAPIStatusAtProviderAdditionalAuthenticationPr
 }
 
 /// <summary>Enables and controls the enhanced metrics feature. See enhanced_metrics_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPIStatusAtProviderEnhancedMetricsConfig
 {
@@ -1785,7 +1785,7 @@ public partial class V1beta2GraphQLAPIStatusAtProviderEnhancedMetricsConfig
 }
 
 /// <summary>Nested argument containing Lambda authorizer configuration. See lambda_authorizer_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPIStatusAtProviderLambdaAuthorizerConfig
 {
@@ -1803,7 +1803,7 @@ public partial class V1beta2GraphQLAPIStatusAtProviderLambdaAuthorizerConfig
 }
 
 /// <summary>Nested argument containing logging configuration. See log_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPIStatusAtProviderLogConfig
 {
@@ -1821,7 +1821,7 @@ public partial class V1beta2GraphQLAPIStatusAtProviderLogConfig
 }
 
 /// <summary>Nested argument containing OpenID Connect configuration. See openid_connect_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPIStatusAtProviderOpenidConnectConfig
 {
@@ -1843,7 +1843,7 @@ public partial class V1beta2GraphQLAPIStatusAtProviderOpenidConnectConfig
 }
 
 /// <summary>Amazon Cognito User Pool configuration. See user_pool_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPIStatusAtProviderUserPoolConfig
 {
@@ -1864,7 +1864,7 @@ public partial class V1beta2GraphQLAPIStatusAtProviderUserPoolConfig
     public string? UserPoolId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPIStatusAtProvider
 {
@@ -1961,7 +1961,7 @@ public partial class V1beta2GraphQLAPIStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPIStatusConditions
 {
@@ -2004,7 +2004,7 @@ public partial class V1beta2GraphQLAPIStatusConditions
 }
 
 /// <summary>GraphQLAPIStatus defines the observed state of GraphQLAPI.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GraphQLAPIStatus
 {
@@ -2025,7 +2025,7 @@ public partial class V1beta2GraphQLAPIStatus
 }
 
 /// <summary>GraphQLAPI is the Schema for the GraphQLAPIs API. Provides an AppSync GraphQL API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2GraphQLAPI : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2GraphQLAPISpec>, IStatus<V1beta2GraphQLAPIStatus?>

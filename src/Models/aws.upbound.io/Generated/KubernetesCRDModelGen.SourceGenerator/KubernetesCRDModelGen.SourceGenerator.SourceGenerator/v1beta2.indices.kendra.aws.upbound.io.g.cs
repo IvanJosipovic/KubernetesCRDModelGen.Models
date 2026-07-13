@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.kendra.aws.upbound.io;
 /// <summary>Index is the Schema for the Indexs API. Provides an Amazon Kendra Index resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2IndexList : IKubernetesObject<V1ListMeta>, IItems<V1beta2Index>
@@ -45,7 +45,7 @@ public partial class V1beta2IndexList : IKubernetesObject<V1ListMeta>, IItems<V1
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2IndexSpecDeletionPolicyEnum>))]
 public enum V1beta2IndexSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2IndexSpecDeletionPolicyEnum
 }
 
 /// <summary>A block that sets the number of additional document storage and query capacity units that should be used by the index. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecForProviderCapacityUnits
 {
@@ -70,7 +70,7 @@ public partial class V1beta2IndexSpecForProviderCapacityUnits
 }
 
 /// <summary>A block that provides manual tuning parameters to determine how the field affects the search results. Detailed below</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecForProviderDocumentMetadataConfigurationUpdatesRelevance
 {
@@ -96,7 +96,7 @@ public partial class V1beta2IndexSpecForProviderDocumentMetadataConfigurationUpd
 }
 
 /// <summary>A block that provides information about how the field is used during a search. Documented below. Detailed below</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecForProviderDocumentMetadataConfigurationUpdatesSearch
 {
@@ -117,7 +117,7 @@ public partial class V1beta2IndexSpecForProviderDocumentMetadataConfigurationUpd
     public bool? Sortable { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecForProviderDocumentMetadataConfigurationUpdates
 {
@@ -144,7 +144,7 @@ public partial class V1beta2IndexSpecForProviderDocumentMetadataConfigurationUpd
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2IndexSpecForProviderRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta2IndexSpecForProviderRoleArnRefPolicyResolutionEnum
 {
@@ -160,7 +160,7 @@ public enum V1beta2IndexSpecForProviderRoleArnRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2IndexSpecForProviderRoleArnRefPolicyResolveEnum>))]
 public enum V1beta2IndexSpecForProviderRoleArnRefPolicyResolveEnum
 {
@@ -171,7 +171,7 @@ public enum V1beta2IndexSpecForProviderRoleArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecForProviderRoleArnRefPolicy
 {
@@ -195,7 +195,7 @@ public partial class V1beta2IndexSpecForProviderRoleArnRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecForProviderRoleArnRef
 {
@@ -214,7 +214,7 @@ public partial class V1beta2IndexSpecForProviderRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2IndexSpecForProviderRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2IndexSpecForProviderRoleArnSelectorPolicyResolutionEnum
 {
@@ -230,7 +230,7 @@ public enum V1beta2IndexSpecForProviderRoleArnSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2IndexSpecForProviderRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta2IndexSpecForProviderRoleArnSelectorPolicyResolveEnum
 {
@@ -241,7 +241,7 @@ public enum V1beta2IndexSpecForProviderRoleArnSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecForProviderRoleArnSelectorPolicy
 {
@@ -265,7 +265,7 @@ public partial class V1beta2IndexSpecForProviderRoleArnSelectorPolicy
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecForProviderRoleArnSelector
 {
@@ -286,7 +286,7 @@ public partial class V1beta2IndexSpecForProviderRoleArnSelector
 }
 
 /// <summary>A block that specifies the identifier of the AWS KMS customer managed key (CMK) that&apos;s used to encrypt data indexed by Amazon Kendra. Amazon Kendra doesn&apos;t support asymmetric CMKs. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecForProviderServerSideEncryptionConfiguration
 {
@@ -296,7 +296,7 @@ public partial class V1beta2IndexSpecForProviderServerSideEncryptionConfiguratio
 }
 
 /// <summary>A block that enables fetching access levels of groups and users from an AWS Single Sign-On identity source. To configure this, see UserGroupResolutionConfiguration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecForProviderUserGroupResolutionConfiguration
 {
@@ -306,7 +306,7 @@ public partial class V1beta2IndexSpecForProviderUserGroupResolutionConfiguration
 }
 
 /// <summary>A block that specifies the information about the JSON token type configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecForProviderUserTokenConfigurationsJsonTokenTypeConfiguration
 {
@@ -320,7 +320,7 @@ public partial class V1beta2IndexSpecForProviderUserTokenConfigurationsJsonToken
 }
 
 /// <summary>A block that specifies the information about the JWT token type configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecForProviderUserTokenConfigurationsJwtTokenTypeConfiguration
 {
@@ -354,7 +354,7 @@ public partial class V1beta2IndexSpecForProviderUserTokenConfigurationsJwtTokenT
 }
 
 /// <summary>A block that specifies the user token configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecForProviderUserTokenConfigurations
 {
@@ -367,7 +367,7 @@ public partial class V1beta2IndexSpecForProviderUserTokenConfigurations
     public V1beta2IndexSpecForProviderUserTokenConfigurationsJwtTokenTypeConfiguration? JwtTokenTypeConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecForProvider
 {
@@ -432,7 +432,7 @@ public partial class V1beta2IndexSpecForProvider
 }
 
 /// <summary>A block that sets the number of additional document storage and query capacity units that should be used by the index. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecInitProviderCapacityUnits
 {
@@ -446,7 +446,7 @@ public partial class V1beta2IndexSpecInitProviderCapacityUnits
 }
 
 /// <summary>A block that provides manual tuning parameters to determine how the field affects the search results. Detailed below</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecInitProviderDocumentMetadataConfigurationUpdatesRelevance
 {
@@ -472,7 +472,7 @@ public partial class V1beta2IndexSpecInitProviderDocumentMetadataConfigurationUp
 }
 
 /// <summary>A block that provides information about how the field is used during a search. Documented below. Detailed below</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecInitProviderDocumentMetadataConfigurationUpdatesSearch
 {
@@ -493,7 +493,7 @@ public partial class V1beta2IndexSpecInitProviderDocumentMetadataConfigurationUp
     public bool? Sortable { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecInitProviderDocumentMetadataConfigurationUpdates
 {
@@ -520,7 +520,7 @@ public partial class V1beta2IndexSpecInitProviderDocumentMetadataConfigurationUp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2IndexSpecInitProviderRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta2IndexSpecInitProviderRoleArnRefPolicyResolutionEnum
 {
@@ -536,7 +536,7 @@ public enum V1beta2IndexSpecInitProviderRoleArnRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2IndexSpecInitProviderRoleArnRefPolicyResolveEnum>))]
 public enum V1beta2IndexSpecInitProviderRoleArnRefPolicyResolveEnum
 {
@@ -547,7 +547,7 @@ public enum V1beta2IndexSpecInitProviderRoleArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecInitProviderRoleArnRefPolicy
 {
@@ -571,7 +571,7 @@ public partial class V1beta2IndexSpecInitProviderRoleArnRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecInitProviderRoleArnRef
 {
@@ -590,7 +590,7 @@ public partial class V1beta2IndexSpecInitProviderRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2IndexSpecInitProviderRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2IndexSpecInitProviderRoleArnSelectorPolicyResolutionEnum
 {
@@ -606,7 +606,7 @@ public enum V1beta2IndexSpecInitProviderRoleArnSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2IndexSpecInitProviderRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta2IndexSpecInitProviderRoleArnSelectorPolicyResolveEnum
 {
@@ -617,7 +617,7 @@ public enum V1beta2IndexSpecInitProviderRoleArnSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecInitProviderRoleArnSelectorPolicy
 {
@@ -641,7 +641,7 @@ public partial class V1beta2IndexSpecInitProviderRoleArnSelectorPolicy
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecInitProviderRoleArnSelector
 {
@@ -662,7 +662,7 @@ public partial class V1beta2IndexSpecInitProviderRoleArnSelector
 }
 
 /// <summary>A block that specifies the identifier of the AWS KMS customer managed key (CMK) that&apos;s used to encrypt data indexed by Amazon Kendra. Amazon Kendra doesn&apos;t support asymmetric CMKs. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecInitProviderServerSideEncryptionConfiguration
 {
@@ -672,7 +672,7 @@ public partial class V1beta2IndexSpecInitProviderServerSideEncryptionConfigurati
 }
 
 /// <summary>A block that enables fetching access levels of groups and users from an AWS Single Sign-On identity source. To configure this, see UserGroupResolutionConfiguration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecInitProviderUserGroupResolutionConfiguration
 {
@@ -682,7 +682,7 @@ public partial class V1beta2IndexSpecInitProviderUserGroupResolutionConfiguratio
 }
 
 /// <summary>A block that specifies the information about the JSON token type configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecInitProviderUserTokenConfigurationsJsonTokenTypeConfiguration
 {
@@ -696,7 +696,7 @@ public partial class V1beta2IndexSpecInitProviderUserTokenConfigurationsJsonToke
 }
 
 /// <summary>A block that specifies the information about the JWT token type configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecInitProviderUserTokenConfigurationsJwtTokenTypeConfiguration
 {
@@ -730,7 +730,7 @@ public partial class V1beta2IndexSpecInitProviderUserTokenConfigurationsJwtToken
 }
 
 /// <summary>A block that specifies the user token configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecInitProviderUserTokenConfigurations
 {
@@ -755,7 +755,7 @@ public partial class V1beta2IndexSpecInitProviderUserTokenConfigurations
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecInitProvider
 {
@@ -816,7 +816,7 @@ public partial class V1beta2IndexSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2IndexSpecManagementPoliciesEnum>))]
 public enum V1beta2IndexSpecManagementPoliciesEnum
 {
@@ -840,7 +840,7 @@ public enum V1beta2IndexSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2IndexSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2IndexSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -856,7 +856,7 @@ public enum V1beta2IndexSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2IndexSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2IndexSpecProviderConfigRefPolicyResolveEnum
 {
@@ -867,7 +867,7 @@ public enum V1beta2IndexSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecProviderConfigRefPolicy
 {
@@ -895,7 +895,7 @@ public partial class V1beta2IndexSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecProviderConfigRef
 {
@@ -914,7 +914,7 @@ public partial class V1beta2IndexSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpecWriteConnectionSecretToRef
 {
@@ -928,7 +928,7 @@ public partial class V1beta2IndexSpecWriteConnectionSecretToRef
 }
 
 /// <summary>IndexSpec defines the desired state of Index</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexSpec
 {
@@ -996,7 +996,7 @@ public partial class V1beta2IndexSpec
 }
 
 /// <summary>A block that sets the number of additional document storage and query capacity units that should be used by the index. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexStatusAtProviderCapacityUnits
 {
@@ -1010,7 +1010,7 @@ public partial class V1beta2IndexStatusAtProviderCapacityUnits
 }
 
 /// <summary>A block that provides manual tuning parameters to determine how the field affects the search results. Detailed below</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexStatusAtProviderDocumentMetadataConfigurationUpdatesRelevance
 {
@@ -1036,7 +1036,7 @@ public partial class V1beta2IndexStatusAtProviderDocumentMetadataConfigurationUp
 }
 
 /// <summary>A block that provides information about how the field is used during a search. Documented below. Detailed below</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexStatusAtProviderDocumentMetadataConfigurationUpdatesSearch
 {
@@ -1057,7 +1057,7 @@ public partial class V1beta2IndexStatusAtProviderDocumentMetadataConfigurationUp
     public bool? Sortable { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexStatusAtProviderDocumentMetadataConfigurationUpdates
 {
@@ -1078,7 +1078,7 @@ public partial class V1beta2IndexStatusAtProviderDocumentMetadataConfigurationUp
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexStatusAtProviderIndexStatisticsFaqStatistics
 {
@@ -1087,7 +1087,7 @@ public partial class V1beta2IndexStatusAtProviderIndexStatisticsFaqStatistics
     public double? IndexedQuestionAnswersCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexStatusAtProviderIndexStatisticsTextDocumentStatistics
 {
@@ -1100,7 +1100,7 @@ public partial class V1beta2IndexStatusAtProviderIndexStatisticsTextDocumentStat
     public double? IndexedTextDocumentsCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexStatusAtProviderIndexStatistics
 {
@@ -1114,7 +1114,7 @@ public partial class V1beta2IndexStatusAtProviderIndexStatistics
 }
 
 /// <summary>A block that specifies the identifier of the AWS KMS customer managed key (CMK) that&apos;s used to encrypt data indexed by Amazon Kendra. Amazon Kendra doesn&apos;t support asymmetric CMKs. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexStatusAtProviderServerSideEncryptionConfiguration
 {
@@ -1124,7 +1124,7 @@ public partial class V1beta2IndexStatusAtProviderServerSideEncryptionConfigurati
 }
 
 /// <summary>A block that enables fetching access levels of groups and users from an AWS Single Sign-On identity source. To configure this, see UserGroupResolutionConfiguration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexStatusAtProviderUserGroupResolutionConfiguration
 {
@@ -1134,7 +1134,7 @@ public partial class V1beta2IndexStatusAtProviderUserGroupResolutionConfiguratio
 }
 
 /// <summary>A block that specifies the information about the JSON token type configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexStatusAtProviderUserTokenConfigurationsJsonTokenTypeConfiguration
 {
@@ -1148,7 +1148,7 @@ public partial class V1beta2IndexStatusAtProviderUserTokenConfigurationsJsonToke
 }
 
 /// <summary>A block that specifies the information about the JWT token type configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexStatusAtProviderUserTokenConfigurationsJwtTokenTypeConfiguration
 {
@@ -1182,7 +1182,7 @@ public partial class V1beta2IndexStatusAtProviderUserTokenConfigurationsJwtToken
 }
 
 /// <summary>A block that specifies the user token configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexStatusAtProviderUserTokenConfigurations
 {
@@ -1195,7 +1195,7 @@ public partial class V1beta2IndexStatusAtProviderUserTokenConfigurations
     public V1beta2IndexStatusAtProviderUserTokenConfigurationsJwtTokenTypeConfiguration? JwtTokenTypeConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexStatusAtProvider
 {
@@ -1284,7 +1284,7 @@ public partial class V1beta2IndexStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexStatusConditions
 {
@@ -1327,7 +1327,7 @@ public partial class V1beta2IndexStatusConditions
 }
 
 /// <summary>IndexStatus defines the observed state of Index.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexStatus
 {
@@ -1348,7 +1348,7 @@ public partial class V1beta2IndexStatus
 }
 
 /// <summary>Index is the Schema for the Indexs API. Provides an Amazon Kendra Index resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2Index : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2IndexSpec>, IStatus<V1beta2IndexStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.devtestlab.azure.upbound.io;
 /// <summary>LinuxVirtualMachine is the Schema for the LinuxVirtualMachines API. Manages a Linux Virtual Machine within a Dev Test Lab.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2LinuxVirtualMachineList : IKubernetesObject<V1ListMeta>, IItems<V1beta2LinuxVirtualMachine>
@@ -45,7 +45,7 @@ public partial class V1beta2LinuxVirtualMachineList : IKubernetesObject<V1ListMe
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecDeletionPolicyEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2LinuxVirtualMachineSpecDeletionPolicyEnum
 }
 
 /// <summary>A gallery_image_reference block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecForProviderGalleryImageReference
 {
@@ -77,7 +77,7 @@ public partial class V1beta2LinuxVirtualMachineSpecForProviderGalleryImageRefere
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecForProviderInboundNatRule
 {
@@ -96,7 +96,7 @@ public partial class V1beta2LinuxVirtualMachineSpecForProviderInboundNatRule
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecForProviderLabNameRefPolicyResolutionEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecForProviderLabNameRefPolicyResolutionEnum
 {
@@ -112,7 +112,7 @@ public enum V1beta2LinuxVirtualMachineSpecForProviderLabNameRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecForProviderLabNameRefPolicyResolveEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecForProviderLabNameRefPolicyResolveEnum
 {
@@ -123,7 +123,7 @@ public enum V1beta2LinuxVirtualMachineSpecForProviderLabNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecForProviderLabNameRefPolicy
 {
@@ -147,7 +147,7 @@ public partial class V1beta2LinuxVirtualMachineSpecForProviderLabNameRefPolicy
 }
 
 /// <summary>Reference to a Lab in devtestlab to populate labName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecForProviderLabNameRef
 {
@@ -166,7 +166,7 @@ public partial class V1beta2LinuxVirtualMachineSpecForProviderLabNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecForProviderLabNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecForProviderLabNameSelectorPolicyResolutionEnum
 {
@@ -182,7 +182,7 @@ public enum V1beta2LinuxVirtualMachineSpecForProviderLabNameSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecForProviderLabNameSelectorPolicyResolveEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecForProviderLabNameSelectorPolicyResolveEnum
 {
@@ -193,7 +193,7 @@ public enum V1beta2LinuxVirtualMachineSpecForProviderLabNameSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecForProviderLabNameSelectorPolicy
 {
@@ -217,7 +217,7 @@ public partial class V1beta2LinuxVirtualMachineSpecForProviderLabNameSelectorPol
 }
 
 /// <summary>Selector for a Lab in devtestlab to populate labName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecForProviderLabNameSelector
 {
@@ -243,7 +243,7 @@ public partial class V1beta2LinuxVirtualMachineSpecForProviderLabNameSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecForProviderLabSubnetNameRefPolicyResolutionEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecForProviderLabSubnetNameRefPolicyResolutionEnum
 {
@@ -259,7 +259,7 @@ public enum V1beta2LinuxVirtualMachineSpecForProviderLabSubnetNameRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecForProviderLabSubnetNameRefPolicyResolveEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecForProviderLabSubnetNameRefPolicyResolveEnum
 {
@@ -270,7 +270,7 @@ public enum V1beta2LinuxVirtualMachineSpecForProviderLabSubnetNameRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecForProviderLabSubnetNameRefPolicy
 {
@@ -294,7 +294,7 @@ public partial class V1beta2LinuxVirtualMachineSpecForProviderLabSubnetNameRefPo
 }
 
 /// <summary>Reference to a Subnet in network to populate labSubnetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecForProviderLabSubnetNameRef
 {
@@ -313,7 +313,7 @@ public partial class V1beta2LinuxVirtualMachineSpecForProviderLabSubnetNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecForProviderLabSubnetNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecForProviderLabSubnetNameSelectorPolicyResolutionEnum
 {
@@ -329,7 +329,7 @@ public enum V1beta2LinuxVirtualMachineSpecForProviderLabSubnetNameSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecForProviderLabSubnetNameSelectorPolicyResolveEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecForProviderLabSubnetNameSelectorPolicyResolveEnum
 {
@@ -340,7 +340,7 @@ public enum V1beta2LinuxVirtualMachineSpecForProviderLabSubnetNameSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecForProviderLabSubnetNameSelectorPolicy
 {
@@ -364,7 +364,7 @@ public partial class V1beta2LinuxVirtualMachineSpecForProviderLabSubnetNameSelec
 }
 
 /// <summary>Selector for a Subnet in network to populate labSubnetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecForProviderLabSubnetNameSelector
 {
@@ -390,7 +390,7 @@ public partial class V1beta2LinuxVirtualMachineSpecForProviderLabSubnetNameSelec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdRefPolicyResolutionEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdRefPolicyResolutionEnum
 {
@@ -406,7 +406,7 @@ public enum V1beta2LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdRefPolicyResolveEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdRefPolicyResolveEnum
 {
@@ -417,7 +417,7 @@ public enum V1beta2LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdRefPolicy
 {
@@ -441,7 +441,7 @@ public partial class V1beta2LinuxVirtualMachineSpecForProviderLabVirtualNetworkI
 }
 
 /// <summary>Reference to a VirtualNetwork in devtestlab to populate labVirtualNetworkId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdRef
 {
@@ -460,7 +460,7 @@ public partial class V1beta2LinuxVirtualMachineSpecForProviderLabVirtualNetworkI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdSelectorPolicyResolutionEnum
 {
@@ -476,7 +476,7 @@ public enum V1beta2LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdSelectorPolicyResolveEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdSelectorPolicyResolveEnum
 {
@@ -487,7 +487,7 @@ public enum V1beta2LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdSelectorPolicy
 {
@@ -511,7 +511,7 @@ public partial class V1beta2LinuxVirtualMachineSpecForProviderLabVirtualNetworkI
 }
 
 /// <summary>Selector for a VirtualNetwork in devtestlab to populate labVirtualNetworkId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdSelector
 {
@@ -532,7 +532,7 @@ public partial class V1beta2LinuxVirtualMachineSpecForProviderLabVirtualNetworkI
 }
 
 /// <summary>The Password associated with the username used to login to this Virtual Machine. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecForProviderPasswordSecretRef
 {
@@ -555,7 +555,7 @@ public partial class V1beta2LinuxVirtualMachineSpecForProviderPasswordSecretRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -571,7 +571,7 @@ public enum V1beta2LinuxVirtualMachineSpecForProviderResourceGroupNameRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -582,7 +582,7 @@ public enum V1beta2LinuxVirtualMachineSpecForProviderResourceGroupNameRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecForProviderResourceGroupNameRefPolicy
 {
@@ -606,7 +606,7 @@ public partial class V1beta2LinuxVirtualMachineSpecForProviderResourceGroupNameR
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecForProviderResourceGroupNameRef
 {
@@ -625,7 +625,7 @@ public partial class V1beta2LinuxVirtualMachineSpecForProviderResourceGroupNameR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -641,7 +641,7 @@ public enum V1beta2LinuxVirtualMachineSpecForProviderResourceGroupNameSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -652,7 +652,7 @@ public enum V1beta2LinuxVirtualMachineSpecForProviderResourceGroupNameSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -676,7 +676,7 @@ public partial class V1beta2LinuxVirtualMachineSpecForProviderResourceGroupNameS
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecForProviderResourceGroupNameSelector
 {
@@ -696,7 +696,7 @@ public partial class V1beta2LinuxVirtualMachineSpecForProviderResourceGroupNameS
     public V1beta2LinuxVirtualMachineSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecForProvider
 {
@@ -802,7 +802,7 @@ public partial class V1beta2LinuxVirtualMachineSpecForProvider
 }
 
 /// <summary>A gallery_image_reference block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecInitProviderGalleryImageReference
 {
@@ -823,7 +823,7 @@ public partial class V1beta2LinuxVirtualMachineSpecInitProviderGalleryImageRefer
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecInitProviderInboundNatRule
 {
@@ -842,7 +842,7 @@ public partial class V1beta2LinuxVirtualMachineSpecInitProviderInboundNatRule
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecInitProviderLabNameRefPolicyResolutionEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecInitProviderLabNameRefPolicyResolutionEnum
 {
@@ -858,7 +858,7 @@ public enum V1beta2LinuxVirtualMachineSpecInitProviderLabNameRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecInitProviderLabNameRefPolicyResolveEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecInitProviderLabNameRefPolicyResolveEnum
 {
@@ -869,7 +869,7 @@ public enum V1beta2LinuxVirtualMachineSpecInitProviderLabNameRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecInitProviderLabNameRefPolicy
 {
@@ -893,7 +893,7 @@ public partial class V1beta2LinuxVirtualMachineSpecInitProviderLabNameRefPolicy
 }
 
 /// <summary>Reference to a Lab in devtestlab to populate labName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecInitProviderLabNameRef
 {
@@ -912,7 +912,7 @@ public partial class V1beta2LinuxVirtualMachineSpecInitProviderLabNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecInitProviderLabNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecInitProviderLabNameSelectorPolicyResolutionEnum
 {
@@ -928,7 +928,7 @@ public enum V1beta2LinuxVirtualMachineSpecInitProviderLabNameSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecInitProviderLabNameSelectorPolicyResolveEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecInitProviderLabNameSelectorPolicyResolveEnum
 {
@@ -939,7 +939,7 @@ public enum V1beta2LinuxVirtualMachineSpecInitProviderLabNameSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecInitProviderLabNameSelectorPolicy
 {
@@ -963,7 +963,7 @@ public partial class V1beta2LinuxVirtualMachineSpecInitProviderLabNameSelectorPo
 }
 
 /// <summary>Selector for a Lab in devtestlab to populate labName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecInitProviderLabNameSelector
 {
@@ -989,7 +989,7 @@ public partial class V1beta2LinuxVirtualMachineSpecInitProviderLabNameSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecInitProviderLabSubnetNameRefPolicyResolutionEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecInitProviderLabSubnetNameRefPolicyResolutionEnum
 {
@@ -1005,7 +1005,7 @@ public enum V1beta2LinuxVirtualMachineSpecInitProviderLabSubnetNameRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecInitProviderLabSubnetNameRefPolicyResolveEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecInitProviderLabSubnetNameRefPolicyResolveEnum
 {
@@ -1016,7 +1016,7 @@ public enum V1beta2LinuxVirtualMachineSpecInitProviderLabSubnetNameRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecInitProviderLabSubnetNameRefPolicy
 {
@@ -1040,7 +1040,7 @@ public partial class V1beta2LinuxVirtualMachineSpecInitProviderLabSubnetNameRefP
 }
 
 /// <summary>Reference to a Subnet in network to populate labSubnetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecInitProviderLabSubnetNameRef
 {
@@ -1059,7 +1059,7 @@ public partial class V1beta2LinuxVirtualMachineSpecInitProviderLabSubnetNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecInitProviderLabSubnetNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecInitProviderLabSubnetNameSelectorPolicyResolutionEnum
 {
@@ -1075,7 +1075,7 @@ public enum V1beta2LinuxVirtualMachineSpecInitProviderLabSubnetNameSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecInitProviderLabSubnetNameSelectorPolicyResolveEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecInitProviderLabSubnetNameSelectorPolicyResolveEnum
 {
@@ -1086,7 +1086,7 @@ public enum V1beta2LinuxVirtualMachineSpecInitProviderLabSubnetNameSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecInitProviderLabSubnetNameSelectorPolicy
 {
@@ -1110,7 +1110,7 @@ public partial class V1beta2LinuxVirtualMachineSpecInitProviderLabSubnetNameSele
 }
 
 /// <summary>Selector for a Subnet in network to populate labSubnetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecInitProviderLabSubnetNameSelector
 {
@@ -1136,7 +1136,7 @@ public partial class V1beta2LinuxVirtualMachineSpecInitProviderLabSubnetNameSele
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdRefPolicyResolutionEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdRefPolicyResolutionEnum
 {
@@ -1152,7 +1152,7 @@ public enum V1beta2LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdRefPolicyResolveEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdRefPolicyResolveEnum
 {
@@ -1163,7 +1163,7 @@ public enum V1beta2LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdRefPolicy
 {
@@ -1187,7 +1187,7 @@ public partial class V1beta2LinuxVirtualMachineSpecInitProviderLabVirtualNetwork
 }
 
 /// <summary>Reference to a VirtualNetwork in devtestlab to populate labVirtualNetworkId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdRef
 {
@@ -1206,7 +1206,7 @@ public partial class V1beta2LinuxVirtualMachineSpecInitProviderLabVirtualNetwork
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdSelectorPolicyResolutionEnum
 {
@@ -1222,7 +1222,7 @@ public enum V1beta2LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdSelectorPolicyResolveEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdSelectorPolicyResolveEnum
 {
@@ -1233,7 +1233,7 @@ public enum V1beta2LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdSelectorPolicy
 {
@@ -1257,7 +1257,7 @@ public partial class V1beta2LinuxVirtualMachineSpecInitProviderLabVirtualNetwork
 }
 
 /// <summary>Selector for a VirtualNetwork in devtestlab to populate labVirtualNetworkId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdSelector
 {
@@ -1278,7 +1278,7 @@ public partial class V1beta2LinuxVirtualMachineSpecInitProviderLabVirtualNetwork
 }
 
 /// <summary>The Password associated with the username used to login to this Virtual Machine. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecInitProviderPasswordSecretRef
 {
@@ -1301,7 +1301,7 @@ public partial class V1beta2LinuxVirtualMachineSpecInitProviderPasswordSecretRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecInitProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecInitProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -1317,7 +1317,7 @@ public enum V1beta2LinuxVirtualMachineSpecInitProviderResourceGroupNameRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecInitProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecInitProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -1328,7 +1328,7 @@ public enum V1beta2LinuxVirtualMachineSpecInitProviderResourceGroupNameRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecInitProviderResourceGroupNameRefPolicy
 {
@@ -1352,7 +1352,7 @@ public partial class V1beta2LinuxVirtualMachineSpecInitProviderResourceGroupName
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecInitProviderResourceGroupNameRef
 {
@@ -1371,7 +1371,7 @@ public partial class V1beta2LinuxVirtualMachineSpecInitProviderResourceGroupName
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -1387,7 +1387,7 @@ public enum V1beta2LinuxVirtualMachineSpecInitProviderResourceGroupNameSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -1398,7 +1398,7 @@ public enum V1beta2LinuxVirtualMachineSpecInitProviderResourceGroupNameSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecInitProviderResourceGroupNameSelectorPolicy
 {
@@ -1422,7 +1422,7 @@ public partial class V1beta2LinuxVirtualMachineSpecInitProviderResourceGroupName
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecInitProviderResourceGroupNameSelector
 {
@@ -1454,7 +1454,7 @@ public partial class V1beta2LinuxVirtualMachineSpecInitProviderResourceGroupName
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecInitProvider
 {
@@ -1563,7 +1563,7 @@ public partial class V1beta2LinuxVirtualMachineSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecManagementPoliciesEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecManagementPoliciesEnum
 {
@@ -1587,7 +1587,7 @@ public enum V1beta2LinuxVirtualMachineSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1603,7 +1603,7 @@ public enum V1beta2LinuxVirtualMachineSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinuxVirtualMachineSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2LinuxVirtualMachineSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1614,7 +1614,7 @@ public enum V1beta2LinuxVirtualMachineSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecProviderConfigRefPolicy
 {
@@ -1642,7 +1642,7 @@ public partial class V1beta2LinuxVirtualMachineSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecProviderConfigRef
 {
@@ -1661,7 +1661,7 @@ public partial class V1beta2LinuxVirtualMachineSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpecWriteConnectionSecretToRef
 {
@@ -1675,7 +1675,7 @@ public partial class V1beta2LinuxVirtualMachineSpecWriteConnectionSecretToRef
 }
 
 /// <summary>LinuxVirtualMachineSpec defines the desired state of LinuxVirtualMachine</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineSpec
 {
@@ -1743,7 +1743,7 @@ public partial class V1beta2LinuxVirtualMachineSpec
 }
 
 /// <summary>A gallery_image_reference block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineStatusAtProviderGalleryImageReference
 {
@@ -1764,7 +1764,7 @@ public partial class V1beta2LinuxVirtualMachineStatusAtProviderGalleryImageRefer
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineStatusAtProviderInboundNatRule
 {
@@ -1781,7 +1781,7 @@ public partial class V1beta2LinuxVirtualMachineStatusAtProviderInboundNatRule
     public string? Protocol { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineStatusAtProvider
 {
@@ -1863,7 +1863,7 @@ public partial class V1beta2LinuxVirtualMachineStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineStatusConditions
 {
@@ -1906,7 +1906,7 @@ public partial class V1beta2LinuxVirtualMachineStatusConditions
 }
 
 /// <summary>LinuxVirtualMachineStatus defines the observed state of LinuxVirtualMachine.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinuxVirtualMachineStatus
 {
@@ -1927,7 +1927,7 @@ public partial class V1beta2LinuxVirtualMachineStatus
 }
 
 /// <summary>LinuxVirtualMachine is the Schema for the LinuxVirtualMachines API. Manages a Linux Virtual Machine within a Dev Test Lab.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2LinuxVirtualMachine : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2LinuxVirtualMachineSpec>, IStatus<V1beta2LinuxVirtualMachineStatus?>

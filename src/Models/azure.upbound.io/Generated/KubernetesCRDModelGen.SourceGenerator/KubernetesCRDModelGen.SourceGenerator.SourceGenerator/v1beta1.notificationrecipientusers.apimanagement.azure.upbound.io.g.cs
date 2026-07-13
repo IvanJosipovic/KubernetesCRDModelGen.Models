@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.apimanagement.azure.upbound.io;
 /// <summary>NotificationRecipientUser is the Schema for the NotificationRecipientUsers API. Manages a API Management Notification Recipient User.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1NotificationRecipientUserList : IKubernetesObject<V1ListMeta>, IItems<V1beta1NotificationRecipientUser>
@@ -45,7 +45,7 @@ public partial class V1beta1NotificationRecipientUserList : IKubernetesObject<V1
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationRecipientUserSpecDeletionPolicyEnum>))]
 public enum V1beta1NotificationRecipientUserSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1NotificationRecipientUserSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationRecipientUserSpecForProviderApiManagementIdRefPolicyResolutionEnum>))]
 public enum V1beta1NotificationRecipientUserSpecForProviderApiManagementIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1NotificationRecipientUserSpecForProviderApiManagementIdRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationRecipientUserSpecForProviderApiManagementIdRefPolicyResolveEnum>))]
 public enum V1beta1NotificationRecipientUserSpecForProviderApiManagementIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1NotificationRecipientUserSpecForProviderApiManagementIdRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserSpecForProviderApiManagementIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1NotificationRecipientUserSpecForProviderApiManagemen
 }
 
 /// <summary>Reference to a Management in apimanagement to populate apiManagementId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserSpecForProviderApiManagementIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1NotificationRecipientUserSpecForProviderApiManagemen
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationRecipientUserSpecForProviderApiManagementIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1NotificationRecipientUserSpecForProviderApiManagementIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1NotificationRecipientUserSpecForProviderApiManagementIdSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationRecipientUserSpecForProviderApiManagementIdSelectorPolicyResolveEnum>))]
 public enum V1beta1NotificationRecipientUserSpecForProviderApiManagementIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1NotificationRecipientUserSpecForProviderApiManagementIdSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserSpecForProviderApiManagementIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1NotificationRecipientUserSpecForProviderApiManagemen
 }
 
 /// <summary>Selector for a Management in apimanagement to populate apiManagementId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserSpecForProviderApiManagementIdSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1NotificationRecipientUserSpecForProviderApiManagemen
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationRecipientUserSpecForProviderUserIdRefPolicyResolutionEnum>))]
 public enum V1beta1NotificationRecipientUserSpecForProviderUserIdRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1NotificationRecipientUserSpecForProviderUserIdRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationRecipientUserSpecForProviderUserIdRefPolicyResolveEnum>))]
 public enum V1beta1NotificationRecipientUserSpecForProviderUserIdRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1NotificationRecipientUserSpecForProviderUserIdRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserSpecForProviderUserIdRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1NotificationRecipientUserSpecForProviderUserIdRefPol
 }
 
 /// <summary>Reference to a User in apimanagement to populate userId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserSpecForProviderUserIdRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1NotificationRecipientUserSpecForProviderUserIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationRecipientUserSpecForProviderUserIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1NotificationRecipientUserSpecForProviderUserIdSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1NotificationRecipientUserSpecForProviderUserIdSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationRecipientUserSpecForProviderUserIdSelectorPolicyResolveEnum>))]
 public enum V1beta1NotificationRecipientUserSpecForProviderUserIdSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1NotificationRecipientUserSpecForProviderUserIdSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserSpecForProviderUserIdSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1NotificationRecipientUserSpecForProviderUserIdSelect
 }
 
 /// <summary>Selector for a User in apimanagement to populate userId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserSpecForProviderUserIdSelector
 {
@@ -349,7 +349,7 @@ public partial class V1beta1NotificationRecipientUserSpecForProviderUserIdSelect
     public V1beta1NotificationRecipientUserSpecForProviderUserIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserSpecForProvider
 {
@@ -388,7 +388,7 @@ public partial class V1beta1NotificationRecipientUserSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationRecipientUserSpecInitProviderApiManagementIdRefPolicyResolutionEnum>))]
 public enum V1beta1NotificationRecipientUserSpecInitProviderApiManagementIdRefPolicyResolutionEnum
 {
@@ -404,7 +404,7 @@ public enum V1beta1NotificationRecipientUserSpecInitProviderApiManagementIdRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationRecipientUserSpecInitProviderApiManagementIdRefPolicyResolveEnum>))]
 public enum V1beta1NotificationRecipientUserSpecInitProviderApiManagementIdRefPolicyResolveEnum
 {
@@ -415,7 +415,7 @@ public enum V1beta1NotificationRecipientUserSpecInitProviderApiManagementIdRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserSpecInitProviderApiManagementIdRefPolicy
 {
@@ -439,7 +439,7 @@ public partial class V1beta1NotificationRecipientUserSpecInitProviderApiManageme
 }
 
 /// <summary>Reference to a Management in apimanagement to populate apiManagementId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserSpecInitProviderApiManagementIdRef
 {
@@ -458,7 +458,7 @@ public partial class V1beta1NotificationRecipientUserSpecInitProviderApiManageme
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationRecipientUserSpecInitProviderApiManagementIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1NotificationRecipientUserSpecInitProviderApiManagementIdSelectorPolicyResolutionEnum
 {
@@ -474,7 +474,7 @@ public enum V1beta1NotificationRecipientUserSpecInitProviderApiManagementIdSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationRecipientUserSpecInitProviderApiManagementIdSelectorPolicyResolveEnum>))]
 public enum V1beta1NotificationRecipientUserSpecInitProviderApiManagementIdSelectorPolicyResolveEnum
 {
@@ -485,7 +485,7 @@ public enum V1beta1NotificationRecipientUserSpecInitProviderApiManagementIdSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserSpecInitProviderApiManagementIdSelectorPolicy
 {
@@ -509,7 +509,7 @@ public partial class V1beta1NotificationRecipientUserSpecInitProviderApiManageme
 }
 
 /// <summary>Selector for a Management in apimanagement to populate apiManagementId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserSpecInitProviderApiManagementIdSelector
 {
@@ -535,7 +535,7 @@ public partial class V1beta1NotificationRecipientUserSpecInitProviderApiManageme
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationRecipientUserSpecInitProviderUserIdRefPolicyResolutionEnum>))]
 public enum V1beta1NotificationRecipientUserSpecInitProviderUserIdRefPolicyResolutionEnum
 {
@@ -551,7 +551,7 @@ public enum V1beta1NotificationRecipientUserSpecInitProviderUserIdRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationRecipientUserSpecInitProviderUserIdRefPolicyResolveEnum>))]
 public enum V1beta1NotificationRecipientUserSpecInitProviderUserIdRefPolicyResolveEnum
 {
@@ -562,7 +562,7 @@ public enum V1beta1NotificationRecipientUserSpecInitProviderUserIdRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserSpecInitProviderUserIdRefPolicy
 {
@@ -586,7 +586,7 @@ public partial class V1beta1NotificationRecipientUserSpecInitProviderUserIdRefPo
 }
 
 /// <summary>Reference to a User in apimanagement to populate userId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserSpecInitProviderUserIdRef
 {
@@ -605,7 +605,7 @@ public partial class V1beta1NotificationRecipientUserSpecInitProviderUserIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationRecipientUserSpecInitProviderUserIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1NotificationRecipientUserSpecInitProviderUserIdSelectorPolicyResolutionEnum
 {
@@ -621,7 +621,7 @@ public enum V1beta1NotificationRecipientUserSpecInitProviderUserIdSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationRecipientUserSpecInitProviderUserIdSelectorPolicyResolveEnum>))]
 public enum V1beta1NotificationRecipientUserSpecInitProviderUserIdSelectorPolicyResolveEnum
 {
@@ -632,7 +632,7 @@ public enum V1beta1NotificationRecipientUserSpecInitProviderUserIdSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserSpecInitProviderUserIdSelectorPolicy
 {
@@ -656,7 +656,7 @@ public partial class V1beta1NotificationRecipientUserSpecInitProviderUserIdSelec
 }
 
 /// <summary>Selector for a User in apimanagement to populate userId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserSpecInitProviderUserIdSelector
 {
@@ -688,7 +688,7 @@ public partial class V1beta1NotificationRecipientUserSpecInitProviderUserIdSelec
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserSpecInitProvider
 {
@@ -725,7 +725,7 @@ public partial class V1beta1NotificationRecipientUserSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationRecipientUserSpecManagementPoliciesEnum>))]
 public enum V1beta1NotificationRecipientUserSpecManagementPoliciesEnum
 {
@@ -749,7 +749,7 @@ public enum V1beta1NotificationRecipientUserSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationRecipientUserSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1NotificationRecipientUserSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -765,7 +765,7 @@ public enum V1beta1NotificationRecipientUserSpecProviderConfigRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationRecipientUserSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1NotificationRecipientUserSpecProviderConfigRefPolicyResolveEnum
 {
@@ -776,7 +776,7 @@ public enum V1beta1NotificationRecipientUserSpecProviderConfigRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserSpecProviderConfigRefPolicy
 {
@@ -804,7 +804,7 @@ public partial class V1beta1NotificationRecipientUserSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserSpecProviderConfigRef
 {
@@ -823,7 +823,7 @@ public partial class V1beta1NotificationRecipientUserSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserSpecWriteConnectionSecretToRef
 {
@@ -837,7 +837,7 @@ public partial class V1beta1NotificationRecipientUserSpecWriteConnectionSecretTo
 }
 
 /// <summary>NotificationRecipientUserSpec defines the desired state of NotificationRecipientUser</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserSpec
 {
@@ -904,7 +904,7 @@ public partial class V1beta1NotificationRecipientUserSpec
     public V1beta1NotificationRecipientUserSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserStatusAtProvider
 {
@@ -926,7 +926,7 @@ public partial class V1beta1NotificationRecipientUserStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserStatusConditions
 {
@@ -969,7 +969,7 @@ public partial class V1beta1NotificationRecipientUserStatusConditions
 }
 
 /// <summary>NotificationRecipientUserStatus defines the observed state of NotificationRecipientUser.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationRecipientUserStatus
 {
@@ -990,7 +990,7 @@ public partial class V1beta1NotificationRecipientUserStatus
 }
 
 /// <summary>NotificationRecipientUser is the Schema for the NotificationRecipientUsers API. Manages a API Management Notification Recipient User.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1NotificationRecipientUser : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1NotificationRecipientUserSpec>, IStatus<V1beta1NotificationRecipientUserStatus?>

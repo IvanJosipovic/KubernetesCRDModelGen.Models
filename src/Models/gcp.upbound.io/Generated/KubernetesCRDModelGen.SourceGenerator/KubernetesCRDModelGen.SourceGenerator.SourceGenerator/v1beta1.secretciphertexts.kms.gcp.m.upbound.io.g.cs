@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.kms.gcp.m.upbound.io;
 /// <summary>SecretCiphertext is the Schema for the SecretCiphertexts API. Encrypts secret data with Google Cloud KMS and provides access to the ciphertext.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SecretCiphertextList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SecretCiphertext>
@@ -40,7 +40,7 @@ public partial class V1beta1SecretCiphertextList : IKubernetesObject<V1ListMeta>
 /// The additional authenticated data used for integrity checks during encryption and decryption.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretCiphertextSpecForProviderAdditionalAuthenticatedDataSecretRef
 {
@@ -58,7 +58,7 @@ public partial class V1beta1SecretCiphertextSpecForProviderAdditionalAuthenticat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretCiphertextSpecForProviderCryptoKeyRefPolicyResolutionEnum>))]
 public enum V1beta1SecretCiphertextSpecForProviderCryptoKeyRefPolicyResolutionEnum
 {
@@ -74,7 +74,7 @@ public enum V1beta1SecretCiphertextSpecForProviderCryptoKeyRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretCiphertextSpecForProviderCryptoKeyRefPolicyResolveEnum>))]
 public enum V1beta1SecretCiphertextSpecForProviderCryptoKeyRefPolicyResolveEnum
 {
@@ -85,7 +85,7 @@ public enum V1beta1SecretCiphertextSpecForProviderCryptoKeyRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretCiphertextSpecForProviderCryptoKeyRefPolicy
 {
@@ -109,7 +109,7 @@ public partial class V1beta1SecretCiphertextSpecForProviderCryptoKeyRefPolicy
 }
 
 /// <summary>Reference to a CryptoKey in kms to populate cryptoKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretCiphertextSpecForProviderCryptoKeyRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1SecretCiphertextSpecForProviderCryptoKeyRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretCiphertextSpecForProviderCryptoKeySelectorPolicyResolutionEnum>))]
 public enum V1beta1SecretCiphertextSpecForProviderCryptoKeySelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1SecretCiphertextSpecForProviderCryptoKeySelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretCiphertextSpecForProviderCryptoKeySelectorPolicyResolveEnum>))]
 public enum V1beta1SecretCiphertextSpecForProviderCryptoKeySelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1SecretCiphertextSpecForProviderCryptoKeySelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretCiphertextSpecForProviderCryptoKeySelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1SecretCiphertextSpecForProviderCryptoKeySelectorPoli
 }
 
 /// <summary>Selector for a CryptoKey in kms to populate cryptoKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretCiphertextSpecForProviderCryptoKeySelector
 {
@@ -207,7 +207,7 @@ public partial class V1beta1SecretCiphertextSpecForProviderCryptoKeySelector
     public V1beta1SecretCiphertextSpecForProviderCryptoKeySelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretCiphertextSpecForProvider
 {
@@ -245,7 +245,7 @@ public partial class V1beta1SecretCiphertextSpecForProvider
 /// The additional authenticated data used for integrity checks during encryption and decryption.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretCiphertextSpecInitProviderAdditionalAuthenticatedDataSecretRef
 {
@@ -263,7 +263,7 @@ public partial class V1beta1SecretCiphertextSpecInitProviderAdditionalAuthentica
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretCiphertextSpecInitProviderCryptoKeyRefPolicyResolutionEnum>))]
 public enum V1beta1SecretCiphertextSpecInitProviderCryptoKeyRefPolicyResolutionEnum
 {
@@ -279,7 +279,7 @@ public enum V1beta1SecretCiphertextSpecInitProviderCryptoKeyRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretCiphertextSpecInitProviderCryptoKeyRefPolicyResolveEnum>))]
 public enum V1beta1SecretCiphertextSpecInitProviderCryptoKeyRefPolicyResolveEnum
 {
@@ -290,7 +290,7 @@ public enum V1beta1SecretCiphertextSpecInitProviderCryptoKeyRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretCiphertextSpecInitProviderCryptoKeyRefPolicy
 {
@@ -314,7 +314,7 @@ public partial class V1beta1SecretCiphertextSpecInitProviderCryptoKeyRefPolicy
 }
 
 /// <summary>Reference to a CryptoKey in kms to populate cryptoKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretCiphertextSpecInitProviderCryptoKeyRef
 {
@@ -337,7 +337,7 @@ public partial class V1beta1SecretCiphertextSpecInitProviderCryptoKeyRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretCiphertextSpecInitProviderCryptoKeySelectorPolicyResolutionEnum>))]
 public enum V1beta1SecretCiphertextSpecInitProviderCryptoKeySelectorPolicyResolutionEnum
 {
@@ -353,7 +353,7 @@ public enum V1beta1SecretCiphertextSpecInitProviderCryptoKeySelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretCiphertextSpecInitProviderCryptoKeySelectorPolicyResolveEnum>))]
 public enum V1beta1SecretCiphertextSpecInitProviderCryptoKeySelectorPolicyResolveEnum
 {
@@ -364,7 +364,7 @@ public enum V1beta1SecretCiphertextSpecInitProviderCryptoKeySelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretCiphertextSpecInitProviderCryptoKeySelectorPolicy
 {
@@ -388,7 +388,7 @@ public partial class V1beta1SecretCiphertextSpecInitProviderCryptoKeySelectorPol
 }
 
 /// <summary>Selector for a CryptoKey in kms to populate cryptoKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretCiphertextSpecInitProviderCryptoKeySelector
 {
@@ -424,7 +424,7 @@ public partial class V1beta1SecretCiphertextSpecInitProviderCryptoKeySelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretCiphertextSpecInitProvider
 {
@@ -462,7 +462,7 @@ public partial class V1beta1SecretCiphertextSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretCiphertextSpecManagementPoliciesEnum>))]
 public enum V1beta1SecretCiphertextSpecManagementPoliciesEnum
 {
@@ -485,7 +485,7 @@ public enum V1beta1SecretCiphertextSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretCiphertextSpecProviderConfigRef
 {
@@ -504,7 +504,7 @@ public partial class V1beta1SecretCiphertextSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretCiphertextSpecWriteConnectionSecretToRef
 {
@@ -514,7 +514,7 @@ public partial class V1beta1SecretCiphertextSpecWriteConnectionSecretToRef
 }
 
 /// <summary>SecretCiphertextSpec defines the desired state of SecretCiphertext</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretCiphertextSpec
 {
@@ -565,7 +565,7 @@ public partial class V1beta1SecretCiphertextSpec
     public V1beta1SecretCiphertextSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretCiphertextStatusAtProvider
 {
@@ -593,7 +593,7 @@ public partial class V1beta1SecretCiphertextStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretCiphertextStatusConditions
 {
@@ -636,7 +636,7 @@ public partial class V1beta1SecretCiphertextStatusConditions
 }
 
 /// <summary>SecretCiphertextStatus defines the observed state of SecretCiphertext.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretCiphertextStatus
 {
@@ -657,7 +657,7 @@ public partial class V1beta1SecretCiphertextStatus
 }
 
 /// <summary>SecretCiphertext is the Schema for the SecretCiphertexts API. Encrypts secret data with Google Cloud KMS and provides access to the ciphertext.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SecretCiphertext : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SecretCiphertextSpec>, IStatus<V1beta1SecretCiphertextStatus?>

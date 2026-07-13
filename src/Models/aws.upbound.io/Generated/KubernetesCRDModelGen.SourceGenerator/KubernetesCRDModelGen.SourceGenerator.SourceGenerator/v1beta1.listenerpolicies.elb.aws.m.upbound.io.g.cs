@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.elb.aws.m.upbound.io;
 /// <summary>ListenerPolicy is the Schema for the ListenerPolicys API. Attaches a load balancer policy to an ELB Listener.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ListenerPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ListenerPolicy>
@@ -42,7 +42,7 @@ public partial class V1beta1ListenerPolicyList : IKubernetesObject<V1ListMeta>, 
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ListenerPolicySpecForProviderLoadBalancerNameRefPolicyResolutionEnum>))]
 public enum V1beta1ListenerPolicySpecForProviderLoadBalancerNameRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1ListenerPolicySpecForProviderLoadBalancerNameRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ListenerPolicySpecForProviderLoadBalancerNameRefPolicyResolveEnum>))]
 public enum V1beta1ListenerPolicySpecForProviderLoadBalancerNameRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1ListenerPolicySpecForProviderLoadBalancerNameRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerPolicySpecForProviderLoadBalancerNameRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1ListenerPolicySpecForProviderLoadBalancerNameRefPoli
 }
 
 /// <summary>Reference to a ELB in elb to populate loadBalancerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerPolicySpecForProviderLoadBalancerNameRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1ListenerPolicySpecForProviderLoadBalancerNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ListenerPolicySpecForProviderLoadBalancerNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ListenerPolicySpecForProviderLoadBalancerNameSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1ListenerPolicySpecForProviderLoadBalancerNameSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ListenerPolicySpecForProviderLoadBalancerNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ListenerPolicySpecForProviderLoadBalancerNameSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1ListenerPolicySpecForProviderLoadBalancerNameSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerPolicySpecForProviderLoadBalancerNameSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1ListenerPolicySpecForProviderLoadBalancerNameSelecto
 }
 
 /// <summary>Selector for a ELB in elb to populate loadBalancerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerPolicySpecForProviderLoadBalancerNameSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1ListenerPolicySpecForProviderLoadBalancerNameSelecto
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ListenerPolicySpecForProviderPolicyNamesRefsPolicyResolutionEnum>))]
 public enum V1beta1ListenerPolicySpecForProviderPolicyNamesRefsPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1ListenerPolicySpecForProviderPolicyNamesRefsPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ListenerPolicySpecForProviderPolicyNamesRefsPolicyResolveEnum>))]
 public enum V1beta1ListenerPolicySpecForProviderPolicyNamesRefsPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1ListenerPolicySpecForProviderPolicyNamesRefsPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerPolicySpecForProviderPolicyNamesRefsPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1ListenerPolicySpecForProviderPolicyNamesRefsPolicy
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerPolicySpecForProviderPolicyNamesRefs
 {
@@ -271,7 +271,7 @@ public partial class V1beta1ListenerPolicySpecForProviderPolicyNamesRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ListenerPolicySpecForProviderPolicyNamesSelectorPolicyResolutionEnum>))]
 public enum V1beta1ListenerPolicySpecForProviderPolicyNamesSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1ListenerPolicySpecForProviderPolicyNamesSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ListenerPolicySpecForProviderPolicyNamesSelectorPolicyResolveEnum>))]
 public enum V1beta1ListenerPolicySpecForProviderPolicyNamesSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1ListenerPolicySpecForProviderPolicyNamesSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerPolicySpecForProviderPolicyNamesSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1ListenerPolicySpecForProviderPolicyNamesSelectorPoli
 }
 
 /// <summary>Selector for a list of Policy in elb to populate policyNames.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerPolicySpecForProviderPolicyNamesSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1ListenerPolicySpecForProviderPolicyNamesSelector
     public V1beta1ListenerPolicySpecForProviderPolicyNamesSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerPolicySpecForProvider
 {
@@ -396,7 +396,7 @@ public partial class V1beta1ListenerPolicySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ListenerPolicySpecInitProviderLoadBalancerNameRefPolicyResolutionEnum>))]
 public enum V1beta1ListenerPolicySpecInitProviderLoadBalancerNameRefPolicyResolutionEnum
 {
@@ -412,7 +412,7 @@ public enum V1beta1ListenerPolicySpecInitProviderLoadBalancerNameRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ListenerPolicySpecInitProviderLoadBalancerNameRefPolicyResolveEnum>))]
 public enum V1beta1ListenerPolicySpecInitProviderLoadBalancerNameRefPolicyResolveEnum
 {
@@ -423,7 +423,7 @@ public enum V1beta1ListenerPolicySpecInitProviderLoadBalancerNameRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerPolicySpecInitProviderLoadBalancerNameRefPolicy
 {
@@ -447,7 +447,7 @@ public partial class V1beta1ListenerPolicySpecInitProviderLoadBalancerNameRefPol
 }
 
 /// <summary>Reference to a ELB in elb to populate loadBalancerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerPolicySpecInitProviderLoadBalancerNameRef
 {
@@ -470,7 +470,7 @@ public partial class V1beta1ListenerPolicySpecInitProviderLoadBalancerNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ListenerPolicySpecInitProviderLoadBalancerNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ListenerPolicySpecInitProviderLoadBalancerNameSelectorPolicyResolutionEnum
 {
@@ -486,7 +486,7 @@ public enum V1beta1ListenerPolicySpecInitProviderLoadBalancerNameSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ListenerPolicySpecInitProviderLoadBalancerNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ListenerPolicySpecInitProviderLoadBalancerNameSelectorPolicyResolveEnum
 {
@@ -497,7 +497,7 @@ public enum V1beta1ListenerPolicySpecInitProviderLoadBalancerNameSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerPolicySpecInitProviderLoadBalancerNameSelectorPolicy
 {
@@ -521,7 +521,7 @@ public partial class V1beta1ListenerPolicySpecInitProviderLoadBalancerNameSelect
 }
 
 /// <summary>Selector for a ELB in elb to populate loadBalancerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerPolicySpecInitProviderLoadBalancerNameSelector
 {
@@ -551,7 +551,7 @@ public partial class V1beta1ListenerPolicySpecInitProviderLoadBalancerNameSelect
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ListenerPolicySpecInitProviderPolicyNamesRefsPolicyResolutionEnum>))]
 public enum V1beta1ListenerPolicySpecInitProviderPolicyNamesRefsPolicyResolutionEnum
 {
@@ -567,7 +567,7 @@ public enum V1beta1ListenerPolicySpecInitProviderPolicyNamesRefsPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ListenerPolicySpecInitProviderPolicyNamesRefsPolicyResolveEnum>))]
 public enum V1beta1ListenerPolicySpecInitProviderPolicyNamesRefsPolicyResolveEnum
 {
@@ -578,7 +578,7 @@ public enum V1beta1ListenerPolicySpecInitProviderPolicyNamesRefsPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerPolicySpecInitProviderPolicyNamesRefsPolicy
 {
@@ -602,7 +602,7 @@ public partial class V1beta1ListenerPolicySpecInitProviderPolicyNamesRefsPolicy
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerPolicySpecInitProviderPolicyNamesRefs
 {
@@ -625,7 +625,7 @@ public partial class V1beta1ListenerPolicySpecInitProviderPolicyNamesRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ListenerPolicySpecInitProviderPolicyNamesSelectorPolicyResolutionEnum>))]
 public enum V1beta1ListenerPolicySpecInitProviderPolicyNamesSelectorPolicyResolutionEnum
 {
@@ -641,7 +641,7 @@ public enum V1beta1ListenerPolicySpecInitProviderPolicyNamesSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ListenerPolicySpecInitProviderPolicyNamesSelectorPolicyResolveEnum>))]
 public enum V1beta1ListenerPolicySpecInitProviderPolicyNamesSelectorPolicyResolveEnum
 {
@@ -652,7 +652,7 @@ public enum V1beta1ListenerPolicySpecInitProviderPolicyNamesSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerPolicySpecInitProviderPolicyNamesSelectorPolicy
 {
@@ -676,7 +676,7 @@ public partial class V1beta1ListenerPolicySpecInitProviderPolicyNamesSelectorPol
 }
 
 /// <summary>Selector for a list of Policy in elb to populate policyNames.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerPolicySpecInitProviderPolicyNamesSelector
 {
@@ -712,7 +712,7 @@ public partial class V1beta1ListenerPolicySpecInitProviderPolicyNamesSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerPolicySpecInitProvider
 {
@@ -753,7 +753,7 @@ public partial class V1beta1ListenerPolicySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ListenerPolicySpecManagementPoliciesEnum>))]
 public enum V1beta1ListenerPolicySpecManagementPoliciesEnum
 {
@@ -776,7 +776,7 @@ public enum V1beta1ListenerPolicySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerPolicySpecProviderConfigRef
 {
@@ -795,7 +795,7 @@ public partial class V1beta1ListenerPolicySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerPolicySpecWriteConnectionSecretToRef
 {
@@ -805,7 +805,7 @@ public partial class V1beta1ListenerPolicySpecWriteConnectionSecretToRef
 }
 
 /// <summary>ListenerPolicySpec defines the desired state of ListenerPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerPolicySpec
 {
@@ -856,7 +856,7 @@ public partial class V1beta1ListenerPolicySpec
     public V1beta1ListenerPolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerPolicyStatusAtProvider
 {
@@ -889,7 +889,7 @@ public partial class V1beta1ListenerPolicyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerPolicyStatusConditions
 {
@@ -932,7 +932,7 @@ public partial class V1beta1ListenerPolicyStatusConditions
 }
 
 /// <summary>ListenerPolicyStatus defines the observed state of ListenerPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerPolicyStatus
 {
@@ -953,7 +953,7 @@ public partial class V1beta1ListenerPolicyStatus
 }
 
 /// <summary>ListenerPolicy is the Schema for the ListenerPolicys API. Attaches a load balancer policy to an ELB Listener.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ListenerPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ListenerPolicySpec>, IStatus<V1beta1ListenerPolicyStatus?>

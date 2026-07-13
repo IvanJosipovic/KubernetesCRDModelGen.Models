@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.cache.azure.com;
 /// - Generated from: /redisenterprise/resource-manager/Microsoft.Cache/RedisEnterprise/stable/2025-04-01/redisenterprise.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cache/redisEnterprise/{clusterName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20250401RedisEnterpriseList : IKubernetesObject<V1ListMeta>, IItems<V1api20250401RedisEnterprise>
@@ -41,7 +41,7 @@ public partial class V1api20250401RedisEnterpriseList : IKubernetesObject<V1List
 }
 
 /// <summary>IdentityType: Only userAssignedIdentity is supported in this API version; other types may be supported in the future</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20250401RedisEnterpriseSpecEncryptionCustomerManagedKeyEncryptionKeyEncryptionKeyIdentityIdentityTypeEnum>))]
 public enum V1api20250401RedisEnterpriseSpecEncryptionCustomerManagedKeyEncryptionKeyEncryptionKeyIdentityIdentityTypeEnum
 {
@@ -56,7 +56,7 @@ public enum V1api20250401RedisEnterpriseSpecEncryptionCustomerManagedKeyEncrypti
 /// /subscriptions/&lt;sub uuid&gt;/resourceGroups/&lt;resource
 /// group&gt;/providers/Microsoft.ManagedIdentity/userAssignedIdentities/myId.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250401RedisEnterpriseSpecEncryptionCustomerManagedKeyEncryptionKeyEncryptionKeyIdentityUserAssignedIdentityResourceReference
 {
@@ -85,7 +85,7 @@ public partial class V1api20250401RedisEnterpriseSpecEncryptionCustomerManagedKe
 /// KeyEncryptionKeyIdentity: All identity configuration for Customer-managed key settings defining which identity should be
 /// used to auth to Key Vault.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250401RedisEnterpriseSpecEncryptionCustomerManagedKeyEncryptionKeyEncryptionKeyIdentity
 {
@@ -106,7 +106,7 @@ public partial class V1api20250401RedisEnterpriseSpecEncryptionCustomerManagedKe
 /// CustomerManagedKeyEncryption: All Customer-managed key encryption properties for the resource. Set this to an empty
 /// object to use Microsoft-managed key encryption.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250401RedisEnterpriseSpecEncryptionCustomerManagedKeyEncryption
 {
@@ -126,7 +126,7 @@ public partial class V1api20250401RedisEnterpriseSpecEncryptionCustomerManagedKe
 }
 
 /// <summary>Encryption: Encryption-at-rest configuration for the cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250401RedisEnterpriseSpecEncryption
 {
@@ -142,7 +142,7 @@ public partial class V1api20250401RedisEnterpriseSpecEncryption
 /// HighAvailability: Enabled by default. If highAvailability is disabled, the data set is not replicated. This affects the
 /// availability SLA, and increases the risk of data loss.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20250401RedisEnterpriseSpecHighAvailabilityEnum>))]
 public enum V1api20250401RedisEnterpriseSpecHighAvailabilityEnum
 {
@@ -153,7 +153,7 @@ public enum V1api20250401RedisEnterpriseSpecHighAvailabilityEnum
 }
 
 /// <summary>Type: Type of managed service identity (where both SystemAssigned and UserAssigned types are allowed).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20250401RedisEnterpriseSpecIdentityTypeEnum>))]
 public enum V1api20250401RedisEnterpriseSpecIdentityTypeEnum
 {
@@ -168,7 +168,7 @@ public enum V1api20250401RedisEnterpriseSpecIdentityTypeEnum
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250401RedisEnterpriseSpecIdentityUserAssignedIdentitiesReference
 {
@@ -194,7 +194,7 @@ public partial class V1api20250401RedisEnterpriseSpecIdentityUserAssignedIdentit
 }
 
 /// <summary>Information about the user assigned identity for the resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250401RedisEnterpriseSpecIdentityUserAssignedIdentities
 {
@@ -204,7 +204,7 @@ public partial class V1api20250401RedisEnterpriseSpecIdentityUserAssignedIdentit
 }
 
 /// <summary>Identity: The identity of the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250401RedisEnterpriseSpecIdentity
 {
@@ -217,7 +217,7 @@ public partial class V1api20250401RedisEnterpriseSpecIdentity
 }
 
 /// <summary>Kind: Distinguishes the kind of cluster. Read-only.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20250401RedisEnterpriseSpecKindEnum>))]
 public enum V1api20250401RedisEnterpriseSpecKindEnum
 {
@@ -232,7 +232,7 @@ public enum V1api20250401RedisEnterpriseSpecKindEnum
 /// future. Note that TLS 1.0 and TLS 1.1 are now completely obsolete -- you cannot use them. They are mentioned only for
 /// the sake of consistency with old API versions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20250401RedisEnterpriseSpecMinimumTlsVersionEnum>))]
 public enum V1api20250401RedisEnterpriseSpecMinimumTlsVersionEnum
 {
@@ -249,7 +249,7 @@ public enum V1api20250401RedisEnterpriseSpecMinimumTlsVersionEnum
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250401RedisEnterpriseSpecOperatorSpecConfigMapExpressions
 {
@@ -290,7 +290,7 @@ public partial class V1api20250401RedisEnterpriseSpecOperatorSpecConfigMapExpres
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250401RedisEnterpriseSpecOperatorSpecSecretExpressions
 {
@@ -330,7 +330,7 @@ public partial class V1api20250401RedisEnterpriseSpecOperatorSpecSecretExpressio
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250401RedisEnterpriseSpecOperatorSpec
 {
@@ -348,7 +348,7 @@ public partial class V1api20250401RedisEnterpriseSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250401RedisEnterpriseSpecOwner
 {
@@ -365,7 +365,7 @@ public partial class V1api20250401RedisEnterpriseSpecOwner
 /// &apos;ComputeOptimized_X5&apos;, etc.). For more information on SKUs see the latest pricing documentation. Note that additional
 /// SKUs may become supported in the future.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20250401RedisEnterpriseSpecSkuNameEnum>))]
 public enum V1api20250401RedisEnterpriseSpecSkuNameEnum
 {
@@ -482,7 +482,7 @@ public enum V1api20250401RedisEnterpriseSpecSkuNameEnum
 }
 
 /// <summary>Sku: The SKU to create, which affects price, performance, and features.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250401RedisEnterpriseSpecSku
 {
@@ -502,7 +502,7 @@ public partial class V1api20250401RedisEnterpriseSpecSku
     public required V1api20250401RedisEnterpriseSpecSkuNameEnum Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250401RedisEnterpriseSpec
 {
@@ -573,7 +573,7 @@ public partial class V1api20250401RedisEnterpriseSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250401RedisEnterpriseStatusConditions
 {
@@ -622,7 +622,7 @@ public partial class V1api20250401RedisEnterpriseStatusConditions
 /// KeyEncryptionKeyIdentity: All identity configuration for Customer-managed key settings defining which identity should be
 /// used to auth to Key Vault.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250401RedisEnterpriseStatusEncryptionCustomerManagedKeyEncryptionKeyEncryptionKeyIdentity
 {
@@ -643,7 +643,7 @@ public partial class V1api20250401RedisEnterpriseStatusEncryptionCustomerManaged
 /// CustomerManagedKeyEncryption: All Customer-managed key encryption properties for the resource. Set this to an empty
 /// object to use Microsoft-managed key encryption.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250401RedisEnterpriseStatusEncryptionCustomerManagedKeyEncryption
 {
@@ -663,7 +663,7 @@ public partial class V1api20250401RedisEnterpriseStatusEncryptionCustomerManaged
 }
 
 /// <summary>Encryption: Encryption-at-rest configuration for the cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250401RedisEnterpriseStatusEncryption
 {
@@ -676,7 +676,7 @@ public partial class V1api20250401RedisEnterpriseStatusEncryption
 }
 
 /// <summary>User assigned identity properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250401RedisEnterpriseStatusIdentityUserAssignedIdentities
 {
@@ -690,7 +690,7 @@ public partial class V1api20250401RedisEnterpriseStatusIdentityUserAssignedIdent
 }
 
 /// <summary>Identity: The identity of the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250401RedisEnterpriseStatusIdentity
 {
@@ -717,7 +717,7 @@ public partial class V1api20250401RedisEnterpriseStatusIdentity
 }
 
 /// <summary>The Private Endpoint Connection resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250401RedisEnterpriseStatusPrivateEndpointConnections
 {
@@ -730,7 +730,7 @@ public partial class V1api20250401RedisEnterpriseStatusPrivateEndpointConnection
 }
 
 /// <summary>Sku: The SKU to create, which affects price, performance, and features.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250401RedisEnterpriseStatusSku
 {
@@ -750,7 +750,7 @@ public partial class V1api20250401RedisEnterpriseStatusSku
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250401RedisEnterpriseStatus
 {
@@ -846,7 +846,7 @@ public partial class V1api20250401RedisEnterpriseStatus
 /// - Generated from: /redisenterprise/resource-manager/Microsoft.Cache/RedisEnterprise/stable/2025-04-01/redisenterprise.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cache/redisEnterprise/{clusterName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20250401RedisEnterprise : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20250401RedisEnterpriseSpec?>, IStatus<V1api20250401RedisEnterpriseStatus?>

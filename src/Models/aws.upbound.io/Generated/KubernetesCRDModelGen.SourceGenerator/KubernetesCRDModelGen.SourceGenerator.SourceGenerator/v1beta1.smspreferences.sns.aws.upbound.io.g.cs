@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sns.aws.upbound.io;
 /// <summary>SMSPreferences is the Schema for the SMSPreferencess API. Provides a way to set SNS SMS preferences.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SMSPreferencesList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SMSPreferences>
@@ -45,7 +45,7 @@ public partial class V1beta1SMSPreferencesList : IKubernetesObject<V1ListMeta>, 
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SMSPreferencesSpecDeletionPolicyEnum>))]
 public enum V1beta1SMSPreferencesSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1SMSPreferencesSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SMSPreferencesSpecForProviderDeliveryStatusIamRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1SMSPreferencesSpecForProviderDeliveryStatusIamRoleArnRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1SMSPreferencesSpecForProviderDeliveryStatusIamRoleArnRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SMSPreferencesSpecForProviderDeliveryStatusIamRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1SMSPreferencesSpecForProviderDeliveryStatusIamRoleArnRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1SMSPreferencesSpecForProviderDeliveryStatusIamRoleArnRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SMSPreferencesSpecForProviderDeliveryStatusIamRoleArnRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1SMSPreferencesSpecForProviderDeliveryStatusIamRoleAr
 }
 
 /// <summary>Reference to a Role in iam to populate deliveryStatusIamRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SMSPreferencesSpecForProviderDeliveryStatusIamRoleArnRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1SMSPreferencesSpecForProviderDeliveryStatusIamRoleAr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SMSPreferencesSpecForProviderDeliveryStatusIamRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1SMSPreferencesSpecForProviderDeliveryStatusIamRoleArnSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1SMSPreferencesSpecForProviderDeliveryStatusIamRoleArnSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SMSPreferencesSpecForProviderDeliveryStatusIamRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1SMSPreferencesSpecForProviderDeliveryStatusIamRoleArnSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1SMSPreferencesSpecForProviderDeliveryStatusIamRoleArnSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SMSPreferencesSpecForProviderDeliveryStatusIamRoleArnSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1SMSPreferencesSpecForProviderDeliveryStatusIamRoleAr
 }
 
 /// <summary>Selector for a Role in iam to populate deliveryStatusIamRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SMSPreferencesSpecForProviderDeliveryStatusIamRoleArnSelector
 {
@@ -202,7 +202,7 @@ public partial class V1beta1SMSPreferencesSpecForProviderDeliveryStatusIamRoleAr
     public V1beta1SMSPreferencesSpecForProviderDeliveryStatusIamRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SMSPreferencesSpecForProvider
 {
@@ -252,7 +252,7 @@ public partial class V1beta1SMSPreferencesSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SMSPreferencesSpecInitProviderDeliveryStatusIamRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1SMSPreferencesSpecInitProviderDeliveryStatusIamRoleArnRefPolicyResolutionEnum
 {
@@ -268,7 +268,7 @@ public enum V1beta1SMSPreferencesSpecInitProviderDeliveryStatusIamRoleArnRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SMSPreferencesSpecInitProviderDeliveryStatusIamRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1SMSPreferencesSpecInitProviderDeliveryStatusIamRoleArnRefPolicyResolveEnum
 {
@@ -279,7 +279,7 @@ public enum V1beta1SMSPreferencesSpecInitProviderDeliveryStatusIamRoleArnRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SMSPreferencesSpecInitProviderDeliveryStatusIamRoleArnRefPolicy
 {
@@ -303,7 +303,7 @@ public partial class V1beta1SMSPreferencesSpecInitProviderDeliveryStatusIamRoleA
 }
 
 /// <summary>Reference to a Role in iam to populate deliveryStatusIamRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SMSPreferencesSpecInitProviderDeliveryStatusIamRoleArnRef
 {
@@ -322,7 +322,7 @@ public partial class V1beta1SMSPreferencesSpecInitProviderDeliveryStatusIamRoleA
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SMSPreferencesSpecInitProviderDeliveryStatusIamRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1SMSPreferencesSpecInitProviderDeliveryStatusIamRoleArnSelectorPolicyResolutionEnum
 {
@@ -338,7 +338,7 @@ public enum V1beta1SMSPreferencesSpecInitProviderDeliveryStatusIamRoleArnSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SMSPreferencesSpecInitProviderDeliveryStatusIamRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1SMSPreferencesSpecInitProviderDeliveryStatusIamRoleArnSelectorPolicyResolveEnum
 {
@@ -349,7 +349,7 @@ public enum V1beta1SMSPreferencesSpecInitProviderDeliveryStatusIamRoleArnSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SMSPreferencesSpecInitProviderDeliveryStatusIamRoleArnSelectorPolicy
 {
@@ -373,7 +373,7 @@ public partial class V1beta1SMSPreferencesSpecInitProviderDeliveryStatusIamRoleA
 }
 
 /// <summary>Selector for a Role in iam to populate deliveryStatusIamRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SMSPreferencesSpecInitProviderDeliveryStatusIamRoleArnSelector
 {
@@ -405,7 +405,7 @@ public partial class V1beta1SMSPreferencesSpecInitProviderDeliveryStatusIamRoleA
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SMSPreferencesSpecInitProvider
 {
@@ -446,7 +446,7 @@ public partial class V1beta1SMSPreferencesSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SMSPreferencesSpecManagementPoliciesEnum>))]
 public enum V1beta1SMSPreferencesSpecManagementPoliciesEnum
 {
@@ -470,7 +470,7 @@ public enum V1beta1SMSPreferencesSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SMSPreferencesSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1SMSPreferencesSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -486,7 +486,7 @@ public enum V1beta1SMSPreferencesSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SMSPreferencesSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1SMSPreferencesSpecProviderConfigRefPolicyResolveEnum
 {
@@ -497,7 +497,7 @@ public enum V1beta1SMSPreferencesSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SMSPreferencesSpecProviderConfigRefPolicy
 {
@@ -525,7 +525,7 @@ public partial class V1beta1SMSPreferencesSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SMSPreferencesSpecProviderConfigRef
 {
@@ -544,7 +544,7 @@ public partial class V1beta1SMSPreferencesSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SMSPreferencesSpecWriteConnectionSecretToRef
 {
@@ -558,7 +558,7 @@ public partial class V1beta1SMSPreferencesSpecWriteConnectionSecretToRef
 }
 
 /// <summary>SMSPreferencesSpec defines the desired state of SMSPreferences</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SMSPreferencesSpec
 {
@@ -625,7 +625,7 @@ public partial class V1beta1SMSPreferencesSpec
     public V1beta1SMSPreferencesSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SMSPreferencesStatusAtProvider
 {
@@ -665,7 +665,7 @@ public partial class V1beta1SMSPreferencesStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SMSPreferencesStatusConditions
 {
@@ -708,7 +708,7 @@ public partial class V1beta1SMSPreferencesStatusConditions
 }
 
 /// <summary>SMSPreferencesStatus defines the observed state of SMSPreferences.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SMSPreferencesStatus
 {
@@ -729,7 +729,7 @@ public partial class V1beta1SMSPreferencesStatus
 }
 
 /// <summary>SMSPreferences is the Schema for the SMSPreferencess API. Provides a way to set SNS SMS preferences.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SMSPreferences : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SMSPreferencesSpec>, IStatus<V1beta1SMSPreferencesStatus?>

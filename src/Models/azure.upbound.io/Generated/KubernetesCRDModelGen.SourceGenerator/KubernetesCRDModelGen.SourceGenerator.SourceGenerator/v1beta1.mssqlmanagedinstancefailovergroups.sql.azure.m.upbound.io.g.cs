@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sql.azure.m.upbound.io;
 /// <summary>MSSQLManagedInstanceFailoverGroup is the Schema for the MSSQLManagedInstanceFailoverGroups API. Manages an Azure SQL Managed Instance Failover Group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MSSQLManagedInstanceFailoverGroup>
@@ -42,7 +42,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupList : IKubernetesO
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstanceIdRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstanceIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstan
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstanceIdRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstanceIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstan
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstanceIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderMana
 }
 
 /// <summary>Reference to a MSSQLManagedInstance in sql to populate managedInstanceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstanceIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderMana
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstanceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstanceIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstan
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstanceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstanceIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstan
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstanceIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderMana
 }
 
 /// <summary>Selector for a MSSQLManagedInstance in sql to populate managedInstanceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstanceIdSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderMana
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManagedInstanceIdRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManagedInstanceIdRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManage
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManagedInstanceIdRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManagedInstanceIdRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManage
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManagedInstanceIdRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPart
 }
 
 /// <summary>Reference to a MSSQLManagedInstance in sql to populate partnerManagedInstanceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManagedInstanceIdRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPart
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManagedInstanceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManagedInstanceIdSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManage
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManagedInstanceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManagedInstanceIdSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManage
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManagedInstanceIdSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPart
 }
 
 /// <summary>Selector for a MSSQLManagedInstance in sql to populate partnerManagedInstanceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManagedInstanceIdSelector
 {
@@ -347,7 +347,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPart
 }
 
 /// <summary>A read_write_endpoint_failover_policy block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderReadWriteEndpointFailoverPolicy
 {
@@ -360,7 +360,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderRead
     public string? Mode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProvider
 {
@@ -411,7 +411,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInstanceIdRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInstanceIdRefPolicyResolutionEnum
 {
@@ -427,7 +427,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInsta
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInstanceIdRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInstanceIdRefPolicyResolveEnum
 {
@@ -438,7 +438,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInsta
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInstanceIdRefPolicy
 {
@@ -462,7 +462,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderMan
 }
 
 /// <summary>Reference to a MSSQLManagedInstance in sql to populate managedInstanceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInstanceIdRef
 {
@@ -485,7 +485,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderMan
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInstanceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInstanceIdSelectorPolicyResolutionEnum
 {
@@ -501,7 +501,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInsta
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInstanceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInstanceIdSelectorPolicyResolveEnum
 {
@@ -512,7 +512,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInsta
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInstanceIdSelectorPolicy
 {
@@ -536,7 +536,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderMan
 }
 
 /// <summary>Selector for a MSSQLManagedInstance in sql to populate managedInstanceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInstanceIdSelector
 {
@@ -566,7 +566,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderMan
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManagedInstanceIdRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManagedInstanceIdRefPolicyResolutionEnum
 {
@@ -582,7 +582,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManag
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManagedInstanceIdRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManagedInstanceIdRefPolicyResolveEnum
 {
@@ -593,7 +593,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManag
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManagedInstanceIdRefPolicy
 {
@@ -617,7 +617,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPar
 }
 
 /// <summary>Reference to a MSSQLManagedInstance in sql to populate partnerManagedInstanceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManagedInstanceIdRef
 {
@@ -640,7 +640,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPar
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManagedInstanceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManagedInstanceIdSelectorPolicyResolutionEnum
 {
@@ -656,7 +656,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManag
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManagedInstanceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManagedInstanceIdSelectorPolicyResolveEnum
 {
@@ -667,7 +667,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManag
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManagedInstanceIdSelectorPolicy
 {
@@ -691,7 +691,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPar
 }
 
 /// <summary>Selector for a MSSQLManagedInstance in sql to populate partnerManagedInstanceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManagedInstanceIdSelector
 {
@@ -716,7 +716,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPar
 }
 
 /// <summary>A read_write_endpoint_failover_policy block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderReadWriteEndpointFailoverPolicy
 {
@@ -741,7 +741,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderRea
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProvider
 {
@@ -786,7 +786,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecManagementPoliciesEnum>))]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecManagementPoliciesEnum
 {
@@ -809,7 +809,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecProviderConfigRef
 {
@@ -828,7 +828,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecProviderConfigR
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecWriteConnectionSecretToRef
 {
@@ -838,7 +838,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecWriteConnection
 }
 
 /// <summary>MSSQLManagedInstanceFailoverGroupSpec defines the desired state of MSSQLManagedInstanceFailoverGroup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpec
 {
@@ -889,7 +889,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpec
     public V1beta1MSSQLManagedInstanceFailoverGroupSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupStatusAtProviderPartnerRegion
 {
@@ -903,7 +903,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupStatusAtProviderPar
 }
 
 /// <summary>A read_write_endpoint_failover_policy block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupStatusAtProviderReadWriteEndpointFailoverPolicy
 {
@@ -916,7 +916,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupStatusAtProviderRea
     public string? Mode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupStatusAtProvider
 {
@@ -958,7 +958,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupStatusConditions
 {
@@ -1001,7 +1001,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupStatusConditions
 }
 
 /// <summary>MSSQLManagedInstanceFailoverGroupStatus defines the observed state of MSSQLManagedInstanceFailoverGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupStatus
 {
@@ -1022,7 +1022,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupStatus
 }
 
 /// <summary>MSSQLManagedInstanceFailoverGroup is the Schema for the MSSQLManagedInstanceFailoverGroups API. Manages an Azure SQL Managed Instance Failover Group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MSSQLManagedInstanceFailoverGroupSpec>, IStatus<V1beta1MSSQLManagedInstanceFailoverGroupStatus?>

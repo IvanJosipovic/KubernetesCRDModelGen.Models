@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.authorization.azure.com;
 /// - Generated from: /authorization/resource-manager/Microsoft.Authorization/preview/2020-08-01-preview/authorization-RoleAssignmentsCalls.json
 /// - ARM URI: /{scope}/providers/Microsoft.Authorization/roleAssignments/{roleAssignmentName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20200801previewRoleAssignmentList : IKubernetesObject<V1ListMeta>, IItems<V1api20200801previewRoleAssignment>
@@ -41,7 +41,7 @@ public partial class V1api20200801previewRoleAssignmentList : IKubernetesObject<
 }
 
 /// <summary>DelegatedManagedIdentityResourceReference: Id of the delegated managed identity resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20200801previewRoleAssignmentSpecDelegatedManagedIdentityResourceReference
 {
@@ -71,7 +71,7 @@ public partial class V1api20200801previewRoleAssignmentSpecDelegatedManagedIdent
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20200801previewRoleAssignmentSpecOperatorSpecConfigMapExpressions
 {
@@ -111,7 +111,7 @@ public partial class V1api20200801previewRoleAssignmentSpecOperatorSpecConfigMap
 /// NamingConvention: The uuid generation technique to use for any role without an explicit AzureName. One of &apos;stable&apos; or
 /// &apos;random&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20200801previewRoleAssignmentSpecOperatorSpecNamingConventionEnum>))]
 public enum V1api20200801previewRoleAssignmentSpecOperatorSpecNamingConventionEnum
 {
@@ -126,7 +126,7 @@ public enum V1api20200801previewRoleAssignmentSpecOperatorSpecNamingConventionEn
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20200801previewRoleAssignmentSpecOperatorSpecSecretExpressions
 {
@@ -166,7 +166,7 @@ public partial class V1api20200801previewRoleAssignmentSpecOperatorSpecSecretExp
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20200801previewRoleAssignmentSpecOperatorSpec
 {
@@ -191,7 +191,7 @@ public partial class V1api20200801previewRoleAssignmentSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. This resource is an
 /// extension resource, which means that any other Azure resource can be its owner.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20200801previewRoleAssignmentSpecOwner
 {
@@ -213,7 +213,7 @@ public partial class V1api20200801previewRoleAssignmentSpecOwner
 }
 
 /// <summary>PrincipalIdFromConfig: The principal ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20200801previewRoleAssignmentSpecPrincipalIdFromConfig
 {
@@ -230,7 +230,7 @@ public partial class V1api20200801previewRoleAssignmentSpecPrincipalIdFromConfig
 }
 
 /// <summary>PrincipalType: The principal type of the assigned principal ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20200801previewRoleAssignmentSpecPrincipalTypeEnum>))]
 public enum V1api20200801previewRoleAssignmentSpecPrincipalTypeEnum
 {
@@ -245,7 +245,7 @@ public enum V1api20200801previewRoleAssignmentSpecPrincipalTypeEnum
 }
 
 /// <summary>RoleDefinitionReference: The role definition ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20200801previewRoleAssignmentSpecRoleDefinitionReference
 {
@@ -273,7 +273,7 @@ public partial class V1api20200801previewRoleAssignmentSpecRoleDefinitionReferen
     public string? WellKnownName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20200801previewRoleAssignmentSpec
 {
@@ -337,7 +337,7 @@ public partial class V1api20200801previewRoleAssignmentSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20200801previewRoleAssignmentStatusConditions
 {
@@ -383,7 +383,7 @@ public partial class V1api20200801previewRoleAssignmentStatusConditions
 }
 
 /// <summary>Role Assignments</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20200801previewRoleAssignmentStatus
 {
@@ -461,7 +461,7 @@ public partial class V1api20200801previewRoleAssignmentStatus
 /// - Generated from: /authorization/resource-manager/Microsoft.Authorization/preview/2020-08-01-preview/authorization-RoleAssignmentsCalls.json
 /// - ARM URI: /{scope}/providers/Microsoft.Authorization/roleAssignments/{roleAssignmentName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20200801previewRoleAssignment : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20200801previewRoleAssignmentSpec?>, IStatus<V1api20200801previewRoleAssignmentStatus?>

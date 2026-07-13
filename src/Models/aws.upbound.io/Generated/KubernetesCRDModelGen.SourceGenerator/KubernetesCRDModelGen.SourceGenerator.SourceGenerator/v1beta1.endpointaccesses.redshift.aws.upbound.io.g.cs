@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.redshift.aws.upbound.io;
 /// <summary>EndpointAccess is the Schema for the EndpointAccesss API. Provides a Redshift Endpoint Access resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EndpointAccessList : IKubernetesObject<V1ListMeta>, IItems<V1beta1EndpointAccess>
@@ -45,7 +45,7 @@ public partial class V1beta1EndpointAccessList : IKubernetesObject<V1ListMeta>, 
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecDeletionPolicyEnum>))]
 public enum V1beta1EndpointAccessSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1EndpointAccessSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecForProviderClusterIdentifierRefPolicyResolutionEnum>))]
 public enum V1beta1EndpointAccessSpecForProviderClusterIdentifierRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1EndpointAccessSpecForProviderClusterIdentifierRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecForProviderClusterIdentifierRefPolicyResolveEnum>))]
 public enum V1beta1EndpointAccessSpecForProviderClusterIdentifierRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1EndpointAccessSpecForProviderClusterIdentifierRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecForProviderClusterIdentifierRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1EndpointAccessSpecForProviderClusterIdentifierRefPol
 }
 
 /// <summary>Reference to a Cluster in redshift to populate clusterIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecForProviderClusterIdentifierRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1EndpointAccessSpecForProviderClusterIdentifierRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecForProviderClusterIdentifierSelectorPolicyResolutionEnum>))]
 public enum V1beta1EndpointAccessSpecForProviderClusterIdentifierSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1EndpointAccessSpecForProviderClusterIdentifierSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecForProviderClusterIdentifierSelectorPolicyResolveEnum>))]
 public enum V1beta1EndpointAccessSpecForProviderClusterIdentifierSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1EndpointAccessSpecForProviderClusterIdentifierSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecForProviderClusterIdentifierSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1EndpointAccessSpecForProviderClusterIdentifierSelect
 }
 
 /// <summary>Selector for a Cluster in redshift to populate clusterIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecForProviderClusterIdentifierSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1EndpointAccessSpecForProviderClusterIdentifierSelect
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecForProviderSubnetGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1EndpointAccessSpecForProviderSubnetGroupNameRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1EndpointAccessSpecForProviderSubnetGroupNameRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecForProviderSubnetGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1EndpointAccessSpecForProviderSubnetGroupNameRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1EndpointAccessSpecForProviderSubnetGroupNameRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecForProviderSubnetGroupNameRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1EndpointAccessSpecForProviderSubnetGroupNameRefPolic
 }
 
 /// <summary>Reference to a SubnetGroup in redshift to populate subnetGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecForProviderSubnetGroupNameRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1EndpointAccessSpecForProviderSubnetGroupNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecForProviderSubnetGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1EndpointAccessSpecForProviderSubnetGroupNameSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1EndpointAccessSpecForProviderSubnetGroupNameSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecForProviderSubnetGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1EndpointAccessSpecForProviderSubnetGroupNameSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1EndpointAccessSpecForProviderSubnetGroupNameSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecForProviderSubnetGroupNameSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1EndpointAccessSpecForProviderSubnetGroupNameSelector
 }
 
 /// <summary>Selector for a SubnetGroup in redshift to populate subnetGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecForProviderSubnetGroupNameSelector
 {
@@ -355,7 +355,7 @@ public partial class V1beta1EndpointAccessSpecForProviderSubnetGroupNameSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecForProviderVpcSecurityGroupIdRefsPolicyResolutionEnum>))]
 public enum V1beta1EndpointAccessSpecForProviderVpcSecurityGroupIdRefsPolicyResolutionEnum
 {
@@ -371,7 +371,7 @@ public enum V1beta1EndpointAccessSpecForProviderVpcSecurityGroupIdRefsPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecForProviderVpcSecurityGroupIdRefsPolicyResolveEnum>))]
 public enum V1beta1EndpointAccessSpecForProviderVpcSecurityGroupIdRefsPolicyResolveEnum
 {
@@ -382,7 +382,7 @@ public enum V1beta1EndpointAccessSpecForProviderVpcSecurityGroupIdRefsPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecForProviderVpcSecurityGroupIdRefsPolicy
 {
@@ -406,7 +406,7 @@ public partial class V1beta1EndpointAccessSpecForProviderVpcSecurityGroupIdRefsP
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecForProviderVpcSecurityGroupIdRefs
 {
@@ -425,7 +425,7 @@ public partial class V1beta1EndpointAccessSpecForProviderVpcSecurityGroupIdRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecForProviderVpcSecurityGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1EndpointAccessSpecForProviderVpcSecurityGroupIdSelectorPolicyResolutionEnum
 {
@@ -441,7 +441,7 @@ public enum V1beta1EndpointAccessSpecForProviderVpcSecurityGroupIdSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecForProviderVpcSecurityGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta1EndpointAccessSpecForProviderVpcSecurityGroupIdSelectorPolicyResolveEnum
 {
@@ -452,7 +452,7 @@ public enum V1beta1EndpointAccessSpecForProviderVpcSecurityGroupIdSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecForProviderVpcSecurityGroupIdSelectorPolicy
 {
@@ -476,7 +476,7 @@ public partial class V1beta1EndpointAccessSpecForProviderVpcSecurityGroupIdSelec
 }
 
 /// <summary>Selector for a list of SecurityGroup in ec2 to populate vpcSecurityGroupIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecForProviderVpcSecurityGroupIdSelector
 {
@@ -496,7 +496,7 @@ public partial class V1beta1EndpointAccessSpecForProviderVpcSecurityGroupIdSelec
     public V1beta1EndpointAccessSpecForProviderVpcSecurityGroupIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecForProvider
 {
@@ -554,7 +554,7 @@ public partial class V1beta1EndpointAccessSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecInitProviderClusterIdentifierRefPolicyResolutionEnum>))]
 public enum V1beta1EndpointAccessSpecInitProviderClusterIdentifierRefPolicyResolutionEnum
 {
@@ -570,7 +570,7 @@ public enum V1beta1EndpointAccessSpecInitProviderClusterIdentifierRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecInitProviderClusterIdentifierRefPolicyResolveEnum>))]
 public enum V1beta1EndpointAccessSpecInitProviderClusterIdentifierRefPolicyResolveEnum
 {
@@ -581,7 +581,7 @@ public enum V1beta1EndpointAccessSpecInitProviderClusterIdentifierRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecInitProviderClusterIdentifierRefPolicy
 {
@@ -605,7 +605,7 @@ public partial class V1beta1EndpointAccessSpecInitProviderClusterIdentifierRefPo
 }
 
 /// <summary>Reference to a Cluster in redshift to populate clusterIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecInitProviderClusterIdentifierRef
 {
@@ -624,7 +624,7 @@ public partial class V1beta1EndpointAccessSpecInitProviderClusterIdentifierRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecInitProviderClusterIdentifierSelectorPolicyResolutionEnum>))]
 public enum V1beta1EndpointAccessSpecInitProviderClusterIdentifierSelectorPolicyResolutionEnum
 {
@@ -640,7 +640,7 @@ public enum V1beta1EndpointAccessSpecInitProviderClusterIdentifierSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecInitProviderClusterIdentifierSelectorPolicyResolveEnum>))]
 public enum V1beta1EndpointAccessSpecInitProviderClusterIdentifierSelectorPolicyResolveEnum
 {
@@ -651,7 +651,7 @@ public enum V1beta1EndpointAccessSpecInitProviderClusterIdentifierSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecInitProviderClusterIdentifierSelectorPolicy
 {
@@ -675,7 +675,7 @@ public partial class V1beta1EndpointAccessSpecInitProviderClusterIdentifierSelec
 }
 
 /// <summary>Selector for a Cluster in redshift to populate clusterIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecInitProviderClusterIdentifierSelector
 {
@@ -701,7 +701,7 @@ public partial class V1beta1EndpointAccessSpecInitProviderClusterIdentifierSelec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecInitProviderSubnetGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1EndpointAccessSpecInitProviderSubnetGroupNameRefPolicyResolutionEnum
 {
@@ -717,7 +717,7 @@ public enum V1beta1EndpointAccessSpecInitProviderSubnetGroupNameRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecInitProviderSubnetGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1EndpointAccessSpecInitProviderSubnetGroupNameRefPolicyResolveEnum
 {
@@ -728,7 +728,7 @@ public enum V1beta1EndpointAccessSpecInitProviderSubnetGroupNameRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecInitProviderSubnetGroupNameRefPolicy
 {
@@ -752,7 +752,7 @@ public partial class V1beta1EndpointAccessSpecInitProviderSubnetGroupNameRefPoli
 }
 
 /// <summary>Reference to a SubnetGroup in redshift to populate subnetGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecInitProviderSubnetGroupNameRef
 {
@@ -771,7 +771,7 @@ public partial class V1beta1EndpointAccessSpecInitProviderSubnetGroupNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecInitProviderSubnetGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1EndpointAccessSpecInitProviderSubnetGroupNameSelectorPolicyResolutionEnum
 {
@@ -787,7 +787,7 @@ public enum V1beta1EndpointAccessSpecInitProviderSubnetGroupNameSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecInitProviderSubnetGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1EndpointAccessSpecInitProviderSubnetGroupNameSelectorPolicyResolveEnum
 {
@@ -798,7 +798,7 @@ public enum V1beta1EndpointAccessSpecInitProviderSubnetGroupNameSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecInitProviderSubnetGroupNameSelectorPolicy
 {
@@ -822,7 +822,7 @@ public partial class V1beta1EndpointAccessSpecInitProviderSubnetGroupNameSelecto
 }
 
 /// <summary>Selector for a SubnetGroup in redshift to populate subnetGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecInitProviderSubnetGroupNameSelector
 {
@@ -848,7 +848,7 @@ public partial class V1beta1EndpointAccessSpecInitProviderSubnetGroupNameSelecto
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecInitProviderVpcSecurityGroupIdRefsPolicyResolutionEnum>))]
 public enum V1beta1EndpointAccessSpecInitProviderVpcSecurityGroupIdRefsPolicyResolutionEnum
 {
@@ -864,7 +864,7 @@ public enum V1beta1EndpointAccessSpecInitProviderVpcSecurityGroupIdRefsPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecInitProviderVpcSecurityGroupIdRefsPolicyResolveEnum>))]
 public enum V1beta1EndpointAccessSpecInitProviderVpcSecurityGroupIdRefsPolicyResolveEnum
 {
@@ -875,7 +875,7 @@ public enum V1beta1EndpointAccessSpecInitProviderVpcSecurityGroupIdRefsPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecInitProviderVpcSecurityGroupIdRefsPolicy
 {
@@ -899,7 +899,7 @@ public partial class V1beta1EndpointAccessSpecInitProviderVpcSecurityGroupIdRefs
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecInitProviderVpcSecurityGroupIdRefs
 {
@@ -918,7 +918,7 @@ public partial class V1beta1EndpointAccessSpecInitProviderVpcSecurityGroupIdRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecInitProviderVpcSecurityGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1EndpointAccessSpecInitProviderVpcSecurityGroupIdSelectorPolicyResolutionEnum
 {
@@ -934,7 +934,7 @@ public enum V1beta1EndpointAccessSpecInitProviderVpcSecurityGroupIdSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecInitProviderVpcSecurityGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta1EndpointAccessSpecInitProviderVpcSecurityGroupIdSelectorPolicyResolveEnum
 {
@@ -945,7 +945,7 @@ public enum V1beta1EndpointAccessSpecInitProviderVpcSecurityGroupIdSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecInitProviderVpcSecurityGroupIdSelectorPolicy
 {
@@ -969,7 +969,7 @@ public partial class V1beta1EndpointAccessSpecInitProviderVpcSecurityGroupIdSele
 }
 
 /// <summary>Selector for a list of SecurityGroup in ec2 to populate vpcSecurityGroupIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecInitProviderVpcSecurityGroupIdSelector
 {
@@ -1001,7 +1001,7 @@ public partial class V1beta1EndpointAccessSpecInitProviderVpcSecurityGroupIdSele
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecInitProvider
 {
@@ -1050,7 +1050,7 @@ public partial class V1beta1EndpointAccessSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecManagementPoliciesEnum>))]
 public enum V1beta1EndpointAccessSpecManagementPoliciesEnum
 {
@@ -1074,7 +1074,7 @@ public enum V1beta1EndpointAccessSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1EndpointAccessSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1090,7 +1090,7 @@ public enum V1beta1EndpointAccessSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointAccessSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1EndpointAccessSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1101,7 +1101,7 @@ public enum V1beta1EndpointAccessSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecProviderConfigRefPolicy
 {
@@ -1129,7 +1129,7 @@ public partial class V1beta1EndpointAccessSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecProviderConfigRef
 {
@@ -1148,7 +1148,7 @@ public partial class V1beta1EndpointAccessSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpecWriteConnectionSecretToRef
 {
@@ -1162,7 +1162,7 @@ public partial class V1beta1EndpointAccessSpecWriteConnectionSecretToRef
 }
 
 /// <summary>EndpointAccessSpec defines the desired state of EndpointAccess</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessSpec
 {
@@ -1229,7 +1229,7 @@ public partial class V1beta1EndpointAccessSpec
     public V1beta1EndpointAccessSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessStatusAtProviderVpcEndpointNetworkInterface
 {
@@ -1250,7 +1250,7 @@ public partial class V1beta1EndpointAccessStatusAtProviderVpcEndpointNetworkInte
     public string? SubnetId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessStatusAtProviderVpcEndpoint
 {
@@ -1267,7 +1267,7 @@ public partial class V1beta1EndpointAccessStatusAtProviderVpcEndpoint
     public string? VpcId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessStatusAtProvider
 {
@@ -1312,7 +1312,7 @@ public partial class V1beta1EndpointAccessStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessStatusConditions
 {
@@ -1355,7 +1355,7 @@ public partial class V1beta1EndpointAccessStatusConditions
 }
 
 /// <summary>EndpointAccessStatus defines the observed state of EndpointAccess.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointAccessStatus
 {
@@ -1376,7 +1376,7 @@ public partial class V1beta1EndpointAccessStatus
 }
 
 /// <summary>EndpointAccess is the Schema for the EndpointAccesss API. Provides a Redshift Endpoint Access resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EndpointAccess : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1EndpointAccessSpec>, IStatus<V1beta1EndpointAccessStatus?>

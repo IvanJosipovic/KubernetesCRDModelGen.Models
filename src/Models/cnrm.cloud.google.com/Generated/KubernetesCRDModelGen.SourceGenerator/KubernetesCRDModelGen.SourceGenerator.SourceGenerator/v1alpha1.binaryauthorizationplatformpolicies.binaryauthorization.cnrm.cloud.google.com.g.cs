@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.binaryauthorization.cnrm.cloud.google.com;
 /// <summary>BinaryAuthorizationPlatformPolicy is the Schema for the BinaryAuthorizationPlatformPolicy API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1BinaryAuthorizationPlatformPolicy>
@@ -36,7 +36,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicyList : IKubernetes
     public required IList<V1alpha1BinaryAuthorizationPlatformPolicy> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsChecksImageAllowlist
 {
@@ -44,7 +44,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheck
     public IList<string>? AllowPattern { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsChecksImageFreshnessCheck
 {
@@ -52,7 +52,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheck
     public int? MaxUploadAgeDays { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsChecksSigstoreSignatureCheckSigstoreAuthoritiesPublicKeySetPublicKeys
 {
@@ -60,7 +60,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheck
     public string? PublicKeyPem { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsChecksSigstoreSignatureCheckSigstoreAuthoritiesPublicKeySet
 {
@@ -68,7 +68,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheck
     public IList<V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsChecksSigstoreSignatureCheckSigstoreAuthoritiesPublicKeySetPublicKeys>? PublicKeys { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsChecksSigstoreSignatureCheckSigstoreAuthorities
 {
@@ -79,7 +79,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheck
     public V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsChecksSigstoreSignatureCheckSigstoreAuthoritiesPublicKeySet? PublicKeySet { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsChecksSigstoreSignatureCheck
 {
@@ -87,7 +87,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheck
     public IList<V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsChecksSigstoreSignatureCheckSigstoreAuthorities>? SigstoreAuthorities { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsChecksSimpleSigningAttestationCheckAttestationAuthenticatorsPkixPublicKeySetPkixPublicKeys
 {
@@ -100,7 +100,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheck
     public string? SignatureAlgorithm { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsChecksSimpleSigningAttestationCheckAttestationAuthenticatorsPkixPublicKeySet
 {
@@ -108,7 +108,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheck
     public IList<V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsChecksSimpleSigningAttestationCheckAttestationAuthenticatorsPkixPublicKeySetPkixPublicKeys>? PkixPublicKeys { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsChecksSimpleSigningAttestationCheckAttestationAuthenticators
 {
@@ -119,7 +119,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheck
     public V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsChecksSimpleSigningAttestationCheckAttestationAuthenticatorsPkixPublicKeySet? PkixPublicKeySet { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsChecksSimpleSigningAttestationCheck
 {
@@ -130,7 +130,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheck
     public IList<string>? ContainerAnalysisAttestationProjects { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsChecksSlsaCheckRules
 {
@@ -141,7 +141,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheck
     public IList<string>? TrustedSourceRepoPatterns { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsChecksSlsaCheck
 {
@@ -149,7 +149,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheck
     public IList<V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsChecksSlsaCheckRules>? Rules { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsChecksTrustedDirectoryCheck
 {
@@ -157,7 +157,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheck
     public IList<string>? TrustedDirPatterns { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsChecksVulnerabilityCheck
 {
@@ -177,7 +177,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheck
     public string? MaximumUnfixableSeverity { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsChecks
 {
@@ -209,7 +209,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheck
     public V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsChecksVulnerabilityCheck? VulnerabilityCheck { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsImageAllowlist
 {
@@ -218,7 +218,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheck
 }
 
 /// <summary>ObjectReference contains enough information to let you inspect or modify the referred object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsScopeKubernetesServiceAccountRef
 {
@@ -251,7 +251,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheck
     public string? Uid { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsScope
 {
@@ -263,7 +263,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheck
     public V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsScopeKubernetesServiceAccountRef? KubernetesServiceAccountRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSets
 {
@@ -280,7 +280,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheck
     public V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyCheckSetsScope? Scope { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyImageAllowlist
 {
@@ -289,7 +289,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicyImage
 }
 
 /// <summary>Optional. GKE platform-specific policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicy
 {
@@ -301,7 +301,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecGkePolicy
 }
 
 /// <summary>The project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecProjectRef
 {
@@ -323,7 +323,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicySpecProjectRef
 }
 
 /// <summary>BinaryAuthorizationPlatformPolicySpec defines the desired state of BinaryAuthorizationPlatformPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicySpec
 {
@@ -348,7 +348,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicySpec
     public string? ResourceID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicyStatusConditions
 {
@@ -374,7 +374,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicyStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicyStatusObservedState
 {
@@ -386,7 +386,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicyStatusObservedStat
 }
 
 /// <summary>BinaryAuthorizationPlatformPolicyStatus defines the config connector machine state of BinaryAuthorizationPlatformPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicyStatus
 {
@@ -408,7 +408,7 @@ public partial class V1alpha1BinaryAuthorizationPlatformPolicyStatus
 }
 
 /// <summary>BinaryAuthorizationPlatformPolicy is the Schema for the BinaryAuthorizationPlatformPolicy API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1BinaryAuthorizationPlatformPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1BinaryAuthorizationPlatformPolicySpec>, IStatus<V1alpha1BinaryAuthorizationPlatformPolicyStatus?>

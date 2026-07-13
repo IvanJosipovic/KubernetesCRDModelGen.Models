@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.machinelearningservices.azure.upbound.io;
 /// <summary>WorkspaceOutboundRuleServiceTag is the Schema for the WorkspaceOutboundRuleServiceTags API. Manages an Azure Machine Learning Workspace Network Outbound Rule Service Tag.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WorkspaceOutboundRuleServiceTagList : IKubernetesObject<V1ListMeta>, IItems<V1beta1WorkspaceOutboundRuleServiceTag>
@@ -45,7 +45,7 @@ public partial class V1beta1WorkspaceOutboundRuleServiceTagList : IKubernetesObj
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceOutboundRuleServiceTagSpecDeletionPolicyEnum>))]
 public enum V1beta1WorkspaceOutboundRuleServiceTagSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1WorkspaceOutboundRuleServiceTagSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceOutboundRuleServiceTagSpecForProviderWorkspaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1WorkspaceOutboundRuleServiceTagSpecForProviderWorkspaceIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1WorkspaceOutboundRuleServiceTagSpecForProviderWorkspaceIdRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceOutboundRuleServiceTagSpecForProviderWorkspaceIdRefPolicyResolveEnum>))]
 public enum V1beta1WorkspaceOutboundRuleServiceTagSpecForProviderWorkspaceIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1WorkspaceOutboundRuleServiceTagSpecForProviderWorkspaceIdRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceOutboundRuleServiceTagSpecForProviderWorkspaceIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1WorkspaceOutboundRuleServiceTagSpecForProviderWorksp
 }
 
 /// <summary>Reference to a Workspace in machinelearningservices to populate workspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceOutboundRuleServiceTagSpecForProviderWorkspaceIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1WorkspaceOutboundRuleServiceTagSpecForProviderWorksp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceOutboundRuleServiceTagSpecForProviderWorkspaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1WorkspaceOutboundRuleServiceTagSpecForProviderWorkspaceIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1WorkspaceOutboundRuleServiceTagSpecForProviderWorkspaceIdSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceOutboundRuleServiceTagSpecForProviderWorkspaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1WorkspaceOutboundRuleServiceTagSpecForProviderWorkspaceIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1WorkspaceOutboundRuleServiceTagSpecForProviderWorkspaceIdSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceOutboundRuleServiceTagSpecForProviderWorkspaceIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1WorkspaceOutboundRuleServiceTagSpecForProviderWorksp
 }
 
 /// <summary>Selector for a Workspace in machinelearningservices to populate workspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceOutboundRuleServiceTagSpecForProviderWorkspaceIdSelector
 {
@@ -202,7 +202,7 @@ public partial class V1beta1WorkspaceOutboundRuleServiceTagSpecForProviderWorksp
     public V1beta1WorkspaceOutboundRuleServiceTagSpecForProviderWorkspaceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceOutboundRuleServiceTagSpecForProvider
 {
@@ -243,7 +243,7 @@ public partial class V1beta1WorkspaceOutboundRuleServiceTagSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceOutboundRuleServiceTagSpecInitProvider
 {
@@ -264,7 +264,7 @@ public partial class V1beta1WorkspaceOutboundRuleServiceTagSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceOutboundRuleServiceTagSpecManagementPoliciesEnum>))]
 public enum V1beta1WorkspaceOutboundRuleServiceTagSpecManagementPoliciesEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1WorkspaceOutboundRuleServiceTagSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceOutboundRuleServiceTagSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1WorkspaceOutboundRuleServiceTagSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -304,7 +304,7 @@ public enum V1beta1WorkspaceOutboundRuleServiceTagSpecProviderConfigRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkspaceOutboundRuleServiceTagSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1WorkspaceOutboundRuleServiceTagSpecProviderConfigRefPolicyResolveEnum
 {
@@ -315,7 +315,7 @@ public enum V1beta1WorkspaceOutboundRuleServiceTagSpecProviderConfigRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceOutboundRuleServiceTagSpecProviderConfigRefPolicy
 {
@@ -343,7 +343,7 @@ public partial class V1beta1WorkspaceOutboundRuleServiceTagSpecProviderConfigRef
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceOutboundRuleServiceTagSpecProviderConfigRef
 {
@@ -362,7 +362,7 @@ public partial class V1beta1WorkspaceOutboundRuleServiceTagSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceOutboundRuleServiceTagSpecWriteConnectionSecretToRef
 {
@@ -376,7 +376,7 @@ public partial class V1beta1WorkspaceOutboundRuleServiceTagSpecWriteConnectionSe
 }
 
 /// <summary>WorkspaceOutboundRuleServiceTagSpec defines the desired state of WorkspaceOutboundRuleServiceTag</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceOutboundRuleServiceTagSpec
 {
@@ -443,7 +443,7 @@ public partial class V1beta1WorkspaceOutboundRuleServiceTagSpec
     public V1beta1WorkspaceOutboundRuleServiceTagSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceOutboundRuleServiceTagStatusAtProvider
 {
@@ -469,7 +469,7 @@ public partial class V1beta1WorkspaceOutboundRuleServiceTagStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceOutboundRuleServiceTagStatusConditions
 {
@@ -512,7 +512,7 @@ public partial class V1beta1WorkspaceOutboundRuleServiceTagStatusConditions
 }
 
 /// <summary>WorkspaceOutboundRuleServiceTagStatus defines the observed state of WorkspaceOutboundRuleServiceTag.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceOutboundRuleServiceTagStatus
 {
@@ -533,7 +533,7 @@ public partial class V1beta1WorkspaceOutboundRuleServiceTagStatus
 }
 
 /// <summary>WorkspaceOutboundRuleServiceTag is the Schema for the WorkspaceOutboundRuleServiceTags API. Manages an Azure Machine Learning Workspace Network Outbound Rule Service Tag.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WorkspaceOutboundRuleServiceTag : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1WorkspaceOutboundRuleServiceTagSpec>, IStatus<V1beta1WorkspaceOutboundRuleServiceTagStatus?>

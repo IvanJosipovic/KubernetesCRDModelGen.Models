@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dataprotection.azure.m.upbound.io;
 /// <summary>BackupInstanceDisk is the Schema for the BackupInstanceDisks API. Manages a Backup Instance to back up Disk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BackupInstanceDiskList : IKubernetesObject<V1ListMeta>, IItems<V1beta1BackupInstanceDisk>
@@ -42,7 +42,7 @@ public partial class V1beta1BackupInstanceDiskList : IKubernetesObject<V1ListMet
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecForProviderBackupPolicyIdRefPolicyResolutionEnum>))]
 public enum V1beta1BackupInstanceDiskSpecForProviderBackupPolicyIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1BackupInstanceDiskSpecForProviderBackupPolicyIdRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecForProviderBackupPolicyIdRefPolicyResolveEnum>))]
 public enum V1beta1BackupInstanceDiskSpecForProviderBackupPolicyIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1BackupInstanceDiskSpecForProviderBackupPolicyIdRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecForProviderBackupPolicyIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1BackupInstanceDiskSpecForProviderBackupPolicyIdRefPo
 }
 
 /// <summary>Reference to a BackupPolicyDisk in dataprotection to populate backupPolicyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecForProviderBackupPolicyIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1BackupInstanceDiskSpecForProviderBackupPolicyIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecForProviderBackupPolicyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1BackupInstanceDiskSpecForProviderBackupPolicyIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1BackupInstanceDiskSpecForProviderBackupPolicyIdSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecForProviderBackupPolicyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1BackupInstanceDiskSpecForProviderBackupPolicyIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1BackupInstanceDiskSpecForProviderBackupPolicyIdSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecForProviderBackupPolicyIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1BackupInstanceDiskSpecForProviderBackupPolicyIdSelec
 }
 
 /// <summary>Selector for a BackupPolicyDisk in dataprotection to populate backupPolicyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecForProviderBackupPolicyIdSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1BackupInstanceDiskSpecForProviderBackupPolicyIdSelec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecForProviderDiskIdRefPolicyResolutionEnum>))]
 public enum V1beta1BackupInstanceDiskSpecForProviderDiskIdRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1BackupInstanceDiskSpecForProviderDiskIdRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecForProviderDiskIdRefPolicyResolveEnum>))]
 public enum V1beta1BackupInstanceDiskSpecForProviderDiskIdRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1BackupInstanceDiskSpecForProviderDiskIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecForProviderDiskIdRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1BackupInstanceDiskSpecForProviderDiskIdRefPolicy
 }
 
 /// <summary>Reference to a ManagedDisk in compute to populate diskId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecForProviderDiskIdRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1BackupInstanceDiskSpecForProviderDiskIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecForProviderDiskIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1BackupInstanceDiskSpecForProviderDiskIdSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1BackupInstanceDiskSpecForProviderDiskIdSelectorPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecForProviderDiskIdSelectorPolicyResolveEnum>))]
 public enum V1beta1BackupInstanceDiskSpecForProviderDiskIdSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1BackupInstanceDiskSpecForProviderDiskIdSelectorPolicyResolveE
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecForProviderDiskIdSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1BackupInstanceDiskSpecForProviderDiskIdSelectorPolic
 }
 
 /// <summary>Selector for a ManagedDisk in compute to populate diskId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecForProviderDiskIdSelector
 {
@@ -352,7 +352,7 @@ public partial class V1beta1BackupInstanceDiskSpecForProviderDiskIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecForProviderSnapshotResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1BackupInstanceDiskSpecForProviderSnapshotResourceGroupNameRefPolicyResolutionEnum
 {
@@ -368,7 +368,7 @@ public enum V1beta1BackupInstanceDiskSpecForProviderSnapshotResourceGroupNameRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecForProviderSnapshotResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1BackupInstanceDiskSpecForProviderSnapshotResourceGroupNameRefPolicyResolveEnum
 {
@@ -379,7 +379,7 @@ public enum V1beta1BackupInstanceDiskSpecForProviderSnapshotResourceGroupNameRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecForProviderSnapshotResourceGroupNameRefPolicy
 {
@@ -403,7 +403,7 @@ public partial class V1beta1BackupInstanceDiskSpecForProviderSnapshotResourceGro
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate snapshotResourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecForProviderSnapshotResourceGroupNameRef
 {
@@ -426,7 +426,7 @@ public partial class V1beta1BackupInstanceDiskSpecForProviderSnapshotResourceGro
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecForProviderSnapshotResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1BackupInstanceDiskSpecForProviderSnapshotResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -442,7 +442,7 @@ public enum V1beta1BackupInstanceDiskSpecForProviderSnapshotResourceGroupNameSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecForProviderSnapshotResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1BackupInstanceDiskSpecForProviderSnapshotResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -453,7 +453,7 @@ public enum V1beta1BackupInstanceDiskSpecForProviderSnapshotResourceGroupNameSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecForProviderSnapshotResourceGroupNameSelectorPolicy
 {
@@ -477,7 +477,7 @@ public partial class V1beta1BackupInstanceDiskSpecForProviderSnapshotResourceGro
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate snapshotResourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecForProviderSnapshotResourceGroupNameSelector
 {
@@ -507,7 +507,7 @@ public partial class V1beta1BackupInstanceDiskSpecForProviderSnapshotResourceGro
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecForProviderVaultIdRefPolicyResolutionEnum>))]
 public enum V1beta1BackupInstanceDiskSpecForProviderVaultIdRefPolicyResolutionEnum
 {
@@ -523,7 +523,7 @@ public enum V1beta1BackupInstanceDiskSpecForProviderVaultIdRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecForProviderVaultIdRefPolicyResolveEnum>))]
 public enum V1beta1BackupInstanceDiskSpecForProviderVaultIdRefPolicyResolveEnum
 {
@@ -534,7 +534,7 @@ public enum V1beta1BackupInstanceDiskSpecForProviderVaultIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecForProviderVaultIdRefPolicy
 {
@@ -558,7 +558,7 @@ public partial class V1beta1BackupInstanceDiskSpecForProviderVaultIdRefPolicy
 }
 
 /// <summary>Reference to a BackupVault in dataprotection to populate vaultId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecForProviderVaultIdRef
 {
@@ -581,7 +581,7 @@ public partial class V1beta1BackupInstanceDiskSpecForProviderVaultIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecForProviderVaultIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1BackupInstanceDiskSpecForProviderVaultIdSelectorPolicyResolutionEnum
 {
@@ -597,7 +597,7 @@ public enum V1beta1BackupInstanceDiskSpecForProviderVaultIdSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecForProviderVaultIdSelectorPolicyResolveEnum>))]
 public enum V1beta1BackupInstanceDiskSpecForProviderVaultIdSelectorPolicyResolveEnum
 {
@@ -608,7 +608,7 @@ public enum V1beta1BackupInstanceDiskSpecForProviderVaultIdSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecForProviderVaultIdSelectorPolicy
 {
@@ -632,7 +632,7 @@ public partial class V1beta1BackupInstanceDiskSpecForProviderVaultIdSelectorPoli
 }
 
 /// <summary>Selector for a BackupVault in dataprotection to populate vaultId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecForProviderVaultIdSelector
 {
@@ -656,7 +656,7 @@ public partial class V1beta1BackupInstanceDiskSpecForProviderVaultIdSelector
     public V1beta1BackupInstanceDiskSpecForProviderVaultIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecForProvider
 {
@@ -723,7 +723,7 @@ public partial class V1beta1BackupInstanceDiskSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecInitProviderBackupPolicyIdRefPolicyResolutionEnum>))]
 public enum V1beta1BackupInstanceDiskSpecInitProviderBackupPolicyIdRefPolicyResolutionEnum
 {
@@ -739,7 +739,7 @@ public enum V1beta1BackupInstanceDiskSpecInitProviderBackupPolicyIdRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecInitProviderBackupPolicyIdRefPolicyResolveEnum>))]
 public enum V1beta1BackupInstanceDiskSpecInitProviderBackupPolicyIdRefPolicyResolveEnum
 {
@@ -750,7 +750,7 @@ public enum V1beta1BackupInstanceDiskSpecInitProviderBackupPolicyIdRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecInitProviderBackupPolicyIdRefPolicy
 {
@@ -774,7 +774,7 @@ public partial class V1beta1BackupInstanceDiskSpecInitProviderBackupPolicyIdRefP
 }
 
 /// <summary>Reference to a BackupPolicyDisk in dataprotection to populate backupPolicyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecInitProviderBackupPolicyIdRef
 {
@@ -797,7 +797,7 @@ public partial class V1beta1BackupInstanceDiskSpecInitProviderBackupPolicyIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecInitProviderBackupPolicyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1BackupInstanceDiskSpecInitProviderBackupPolicyIdSelectorPolicyResolutionEnum
 {
@@ -813,7 +813,7 @@ public enum V1beta1BackupInstanceDiskSpecInitProviderBackupPolicyIdSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecInitProviderBackupPolicyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1BackupInstanceDiskSpecInitProviderBackupPolicyIdSelectorPolicyResolveEnum
 {
@@ -824,7 +824,7 @@ public enum V1beta1BackupInstanceDiskSpecInitProviderBackupPolicyIdSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecInitProviderBackupPolicyIdSelectorPolicy
 {
@@ -848,7 +848,7 @@ public partial class V1beta1BackupInstanceDiskSpecInitProviderBackupPolicyIdSele
 }
 
 /// <summary>Selector for a BackupPolicyDisk in dataprotection to populate backupPolicyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecInitProviderBackupPolicyIdSelector
 {
@@ -878,7 +878,7 @@ public partial class V1beta1BackupInstanceDiskSpecInitProviderBackupPolicyIdSele
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecInitProviderDiskIdRefPolicyResolutionEnum>))]
 public enum V1beta1BackupInstanceDiskSpecInitProviderDiskIdRefPolicyResolutionEnum
 {
@@ -894,7 +894,7 @@ public enum V1beta1BackupInstanceDiskSpecInitProviderDiskIdRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecInitProviderDiskIdRefPolicyResolveEnum>))]
 public enum V1beta1BackupInstanceDiskSpecInitProviderDiskIdRefPolicyResolveEnum
 {
@@ -905,7 +905,7 @@ public enum V1beta1BackupInstanceDiskSpecInitProviderDiskIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecInitProviderDiskIdRefPolicy
 {
@@ -929,7 +929,7 @@ public partial class V1beta1BackupInstanceDiskSpecInitProviderDiskIdRefPolicy
 }
 
 /// <summary>Reference to a ManagedDisk in compute to populate diskId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecInitProviderDiskIdRef
 {
@@ -952,7 +952,7 @@ public partial class V1beta1BackupInstanceDiskSpecInitProviderDiskIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecInitProviderDiskIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1BackupInstanceDiskSpecInitProviderDiskIdSelectorPolicyResolutionEnum
 {
@@ -968,7 +968,7 @@ public enum V1beta1BackupInstanceDiskSpecInitProviderDiskIdSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecInitProviderDiskIdSelectorPolicyResolveEnum>))]
 public enum V1beta1BackupInstanceDiskSpecInitProviderDiskIdSelectorPolicyResolveEnum
 {
@@ -979,7 +979,7 @@ public enum V1beta1BackupInstanceDiskSpecInitProviderDiskIdSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecInitProviderDiskIdSelectorPolicy
 {
@@ -1003,7 +1003,7 @@ public partial class V1beta1BackupInstanceDiskSpecInitProviderDiskIdSelectorPoli
 }
 
 /// <summary>Selector for a ManagedDisk in compute to populate diskId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecInitProviderDiskIdSelector
 {
@@ -1033,7 +1033,7 @@ public partial class V1beta1BackupInstanceDiskSpecInitProviderDiskIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecInitProviderSnapshotResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1BackupInstanceDiskSpecInitProviderSnapshotResourceGroupNameRefPolicyResolutionEnum
 {
@@ -1049,7 +1049,7 @@ public enum V1beta1BackupInstanceDiskSpecInitProviderSnapshotResourceGroupNameRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecInitProviderSnapshotResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1BackupInstanceDiskSpecInitProviderSnapshotResourceGroupNameRefPolicyResolveEnum
 {
@@ -1060,7 +1060,7 @@ public enum V1beta1BackupInstanceDiskSpecInitProviderSnapshotResourceGroupNameRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecInitProviderSnapshotResourceGroupNameRefPolicy
 {
@@ -1084,7 +1084,7 @@ public partial class V1beta1BackupInstanceDiskSpecInitProviderSnapshotResourceGr
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate snapshotResourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecInitProviderSnapshotResourceGroupNameRef
 {
@@ -1107,7 +1107,7 @@ public partial class V1beta1BackupInstanceDiskSpecInitProviderSnapshotResourceGr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecInitProviderSnapshotResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1BackupInstanceDiskSpecInitProviderSnapshotResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -1123,7 +1123,7 @@ public enum V1beta1BackupInstanceDiskSpecInitProviderSnapshotResourceGroupNameSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecInitProviderSnapshotResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1BackupInstanceDiskSpecInitProviderSnapshotResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -1134,7 +1134,7 @@ public enum V1beta1BackupInstanceDiskSpecInitProviderSnapshotResourceGroupNameSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecInitProviderSnapshotResourceGroupNameSelectorPolicy
 {
@@ -1158,7 +1158,7 @@ public partial class V1beta1BackupInstanceDiskSpecInitProviderSnapshotResourceGr
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate snapshotResourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecInitProviderSnapshotResourceGroupNameSelector
 {
@@ -1194,7 +1194,7 @@ public partial class V1beta1BackupInstanceDiskSpecInitProviderSnapshotResourceGr
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecInitProvider
 {
@@ -1247,7 +1247,7 @@ public partial class V1beta1BackupInstanceDiskSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceDiskSpecManagementPoliciesEnum>))]
 public enum V1beta1BackupInstanceDiskSpecManagementPoliciesEnum
 {
@@ -1270,7 +1270,7 @@ public enum V1beta1BackupInstanceDiskSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecProviderConfigRef
 {
@@ -1289,7 +1289,7 @@ public partial class V1beta1BackupInstanceDiskSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpecWriteConnectionSecretToRef
 {
@@ -1299,7 +1299,7 @@ public partial class V1beta1BackupInstanceDiskSpecWriteConnectionSecretToRef
 }
 
 /// <summary>BackupInstanceDiskSpec defines the desired state of BackupInstanceDisk</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskSpec
 {
@@ -1350,7 +1350,7 @@ public partial class V1beta1BackupInstanceDiskSpec
     public V1beta1BackupInstanceDiskSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskStatusAtProvider
 {
@@ -1388,7 +1388,7 @@ public partial class V1beta1BackupInstanceDiskStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskStatusConditions
 {
@@ -1431,7 +1431,7 @@ public partial class V1beta1BackupInstanceDiskStatusConditions
 }
 
 /// <summary>BackupInstanceDiskStatus defines the observed state of BackupInstanceDisk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceDiskStatus
 {
@@ -1452,7 +1452,7 @@ public partial class V1beta1BackupInstanceDiskStatus
 }
 
 /// <summary>BackupInstanceDisk is the Schema for the BackupInstanceDisks API. Manages a Backup Instance to back up Disk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BackupInstanceDisk : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1BackupInstanceDiskSpec>, IStatus<V1beta1BackupInstanceDiskStatus?>

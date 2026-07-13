@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.transfer.aws.upbound.io;
 /// <summary>Workflow is the Schema for the Workflows API. Provides a AWS Transfer Workflow resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2WorkflowList : IKubernetesObject<V1ListMeta>, IItems<V1beta2Workflow>
@@ -45,7 +45,7 @@ public partial class V1beta2WorkflowList : IKubernetesObject<V1ListMeta>, IItems
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkflowSpecDeletionPolicyEnum>))]
 public enum V1beta2WorkflowSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2WorkflowSpecDeletionPolicyEnum
 }
 
 /// <summary>Specifies the details for the EFS file being copied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocation
 {
@@ -70,7 +70,7 @@ public partial class V1beta2WorkflowSpecForProviderOnExceptionStepsCopyStepDetai
 }
 
 /// <summary>Specifies the details for the S3 file being copied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocation
 {
@@ -84,7 +84,7 @@ public partial class V1beta2WorkflowSpecForProviderOnExceptionStepsCopyStepDetai
 }
 
 /// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderOnExceptionStepsCopyStepDetailsDestinationFileLocation
 {
@@ -98,7 +98,7 @@ public partial class V1beta2WorkflowSpecForProviderOnExceptionStepsCopyStepDetai
 }
 
 /// <summary>Details for a step that performs a file copy. See Copy Step Details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderOnExceptionStepsCopyStepDetails
 {
@@ -120,7 +120,7 @@ public partial class V1beta2WorkflowSpecForProviderOnExceptionStepsCopyStepDetai
 }
 
 /// <summary>Details for a step that invokes a lambda function.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderOnExceptionStepsCustomStepDetails
 {
@@ -142,7 +142,7 @@ public partial class V1beta2WorkflowSpecForProviderOnExceptionStepsCustomStepDet
 }
 
 /// <summary>Specifies the details for the EFS file being copied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation
 {
@@ -156,7 +156,7 @@ public partial class V1beta2WorkflowSpecForProviderOnExceptionStepsDecryptStepDe
 }
 
 /// <summary>Specifies the details for the S3 file being copied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocation
 {
@@ -170,7 +170,7 @@ public partial class V1beta2WorkflowSpecForProviderOnExceptionStepsDecryptStepDe
 }
 
 /// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocation
 {
@@ -184,7 +184,7 @@ public partial class V1beta2WorkflowSpecForProviderOnExceptionStepsDecryptStepDe
 }
 
 /// <summary>Details for a step that decrypts the file.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderOnExceptionStepsDecryptStepDetails
 {
@@ -210,7 +210,7 @@ public partial class V1beta2WorkflowSpecForProviderOnExceptionStepsDecryptStepDe
 }
 
 /// <summary>Details for a step that deletes the file.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderOnExceptionStepsDeleteStepDetails
 {
@@ -223,7 +223,7 @@ public partial class V1beta2WorkflowSpecForProviderOnExceptionStepsDeleteStepDet
     public string? SourceFileLocation { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderOnExceptionStepsTagStepDetailsTags
 {
@@ -237,7 +237,7 @@ public partial class V1beta2WorkflowSpecForProviderOnExceptionStepsTagStepDetail
 }
 
 /// <summary>Details for a step that creates one or more tags.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderOnExceptionStepsTagStepDetails
 {
@@ -254,7 +254,7 @@ public partial class V1beta2WorkflowSpecForProviderOnExceptionStepsTagStepDetail
     public IList<V1beta2WorkflowSpecForProviderOnExceptionStepsTagStepDetailsTags>? Tags { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderOnExceptionSteps
 {
@@ -284,7 +284,7 @@ public partial class V1beta2WorkflowSpecForProviderOnExceptionSteps
 }
 
 /// <summary>Specifies the details for the EFS file being copied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderStepsCopyStepDetailsDestinationFileLocationEfsFileLocation
 {
@@ -298,7 +298,7 @@ public partial class V1beta2WorkflowSpecForProviderStepsCopyStepDetailsDestinati
 }
 
 /// <summary>Specifies the details for the S3 file being copied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderStepsCopyStepDetailsDestinationFileLocationS3FileLocation
 {
@@ -312,7 +312,7 @@ public partial class V1beta2WorkflowSpecForProviderStepsCopyStepDetailsDestinati
 }
 
 /// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderStepsCopyStepDetailsDestinationFileLocation
 {
@@ -326,7 +326,7 @@ public partial class V1beta2WorkflowSpecForProviderStepsCopyStepDetailsDestinati
 }
 
 /// <summary>Details for a step that performs a file copy. See Copy Step Details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderStepsCopyStepDetails
 {
@@ -353,7 +353,7 @@ public partial class V1beta2WorkflowSpecForProviderStepsCopyStepDetails
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkflowSpecForProviderStepsCustomStepDetailsTargetRefPolicyResolutionEnum>))]
 public enum V1beta2WorkflowSpecForProviderStepsCustomStepDetailsTargetRefPolicyResolutionEnum
 {
@@ -369,7 +369,7 @@ public enum V1beta2WorkflowSpecForProviderStepsCustomStepDetailsTargetRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkflowSpecForProviderStepsCustomStepDetailsTargetRefPolicyResolveEnum>))]
 public enum V1beta2WorkflowSpecForProviderStepsCustomStepDetailsTargetRefPolicyResolveEnum
 {
@@ -380,7 +380,7 @@ public enum V1beta2WorkflowSpecForProviderStepsCustomStepDetailsTargetRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderStepsCustomStepDetailsTargetRefPolicy
 {
@@ -404,7 +404,7 @@ public partial class V1beta2WorkflowSpecForProviderStepsCustomStepDetailsTargetR
 }
 
 /// <summary>Reference to a Function in lambda to populate target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderStepsCustomStepDetailsTargetRef
 {
@@ -423,7 +423,7 @@ public partial class V1beta2WorkflowSpecForProviderStepsCustomStepDetailsTargetR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkflowSpecForProviderStepsCustomStepDetailsTargetSelectorPolicyResolutionEnum>))]
 public enum V1beta2WorkflowSpecForProviderStepsCustomStepDetailsTargetSelectorPolicyResolutionEnum
 {
@@ -439,7 +439,7 @@ public enum V1beta2WorkflowSpecForProviderStepsCustomStepDetailsTargetSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkflowSpecForProviderStepsCustomStepDetailsTargetSelectorPolicyResolveEnum>))]
 public enum V1beta2WorkflowSpecForProviderStepsCustomStepDetailsTargetSelectorPolicyResolveEnum
 {
@@ -450,7 +450,7 @@ public enum V1beta2WorkflowSpecForProviderStepsCustomStepDetailsTargetSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderStepsCustomStepDetailsTargetSelectorPolicy
 {
@@ -474,7 +474,7 @@ public partial class V1beta2WorkflowSpecForProviderStepsCustomStepDetailsTargetS
 }
 
 /// <summary>Selector for a Function in lambda to populate target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderStepsCustomStepDetailsTargetSelector
 {
@@ -495,7 +495,7 @@ public partial class V1beta2WorkflowSpecForProviderStepsCustomStepDetailsTargetS
 }
 
 /// <summary>Details for a step that invokes a lambda function.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderStepsCustomStepDetails
 {
@@ -525,7 +525,7 @@ public partial class V1beta2WorkflowSpecForProviderStepsCustomStepDetails
 }
 
 /// <summary>Specifies the details for the EFS file being copied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation
 {
@@ -539,7 +539,7 @@ public partial class V1beta2WorkflowSpecForProviderStepsDecryptStepDetailsDestin
 }
 
 /// <summary>Specifies the details for the S3 file being copied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderStepsDecryptStepDetailsDestinationFileLocationS3FileLocation
 {
@@ -553,7 +553,7 @@ public partial class V1beta2WorkflowSpecForProviderStepsDecryptStepDetailsDestin
 }
 
 /// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderStepsDecryptStepDetailsDestinationFileLocation
 {
@@ -567,7 +567,7 @@ public partial class V1beta2WorkflowSpecForProviderStepsDecryptStepDetailsDestin
 }
 
 /// <summary>Details for a step that decrypts the file.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderStepsDecryptStepDetails
 {
@@ -593,7 +593,7 @@ public partial class V1beta2WorkflowSpecForProviderStepsDecryptStepDetails
 }
 
 /// <summary>Details for a step that deletes the file.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderStepsDeleteStepDetails
 {
@@ -606,7 +606,7 @@ public partial class V1beta2WorkflowSpecForProviderStepsDeleteStepDetails
     public string? SourceFileLocation { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderStepsTagStepDetailsTags
 {
@@ -620,7 +620,7 @@ public partial class V1beta2WorkflowSpecForProviderStepsTagStepDetailsTags
 }
 
 /// <summary>Details for a step that creates one or more tags.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderStepsTagStepDetails
 {
@@ -637,7 +637,7 @@ public partial class V1beta2WorkflowSpecForProviderStepsTagStepDetails
     public IList<V1beta2WorkflowSpecForProviderStepsTagStepDetailsTags>? Tags { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProviderSteps
 {
@@ -666,7 +666,7 @@ public partial class V1beta2WorkflowSpecForProviderSteps
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecForProvider
 {
@@ -695,7 +695,7 @@ public partial class V1beta2WorkflowSpecForProvider
 }
 
 /// <summary>Specifies the details for the EFS file being copied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocation
 {
@@ -709,7 +709,7 @@ public partial class V1beta2WorkflowSpecInitProviderOnExceptionStepsCopyStepDeta
 }
 
 /// <summary>Specifies the details for the S3 file being copied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocation
 {
@@ -723,7 +723,7 @@ public partial class V1beta2WorkflowSpecInitProviderOnExceptionStepsCopyStepDeta
 }
 
 /// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderOnExceptionStepsCopyStepDetailsDestinationFileLocation
 {
@@ -737,7 +737,7 @@ public partial class V1beta2WorkflowSpecInitProviderOnExceptionStepsCopyStepDeta
 }
 
 /// <summary>Details for a step that performs a file copy. See Copy Step Details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderOnExceptionStepsCopyStepDetails
 {
@@ -759,7 +759,7 @@ public partial class V1beta2WorkflowSpecInitProviderOnExceptionStepsCopyStepDeta
 }
 
 /// <summary>Details for a step that invokes a lambda function.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderOnExceptionStepsCustomStepDetails
 {
@@ -781,7 +781,7 @@ public partial class V1beta2WorkflowSpecInitProviderOnExceptionStepsCustomStepDe
 }
 
 /// <summary>Specifies the details for the EFS file being copied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation
 {
@@ -795,7 +795,7 @@ public partial class V1beta2WorkflowSpecInitProviderOnExceptionStepsDecryptStepD
 }
 
 /// <summary>Specifies the details for the S3 file being copied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocation
 {
@@ -809,7 +809,7 @@ public partial class V1beta2WorkflowSpecInitProviderOnExceptionStepsDecryptStepD
 }
 
 /// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocation
 {
@@ -823,7 +823,7 @@ public partial class V1beta2WorkflowSpecInitProviderOnExceptionStepsDecryptStepD
 }
 
 /// <summary>Details for a step that decrypts the file.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderOnExceptionStepsDecryptStepDetails
 {
@@ -849,7 +849,7 @@ public partial class V1beta2WorkflowSpecInitProviderOnExceptionStepsDecryptStepD
 }
 
 /// <summary>Details for a step that deletes the file.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderOnExceptionStepsDeleteStepDetails
 {
@@ -862,7 +862,7 @@ public partial class V1beta2WorkflowSpecInitProviderOnExceptionStepsDeleteStepDe
     public string? SourceFileLocation { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderOnExceptionStepsTagStepDetailsTags
 {
@@ -876,7 +876,7 @@ public partial class V1beta2WorkflowSpecInitProviderOnExceptionStepsTagStepDetai
 }
 
 /// <summary>Details for a step that creates one or more tags.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderOnExceptionStepsTagStepDetails
 {
@@ -893,7 +893,7 @@ public partial class V1beta2WorkflowSpecInitProviderOnExceptionStepsTagStepDetai
     public IList<V1beta2WorkflowSpecInitProviderOnExceptionStepsTagStepDetailsTags>? Tags { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderOnExceptionSteps
 {
@@ -923,7 +923,7 @@ public partial class V1beta2WorkflowSpecInitProviderOnExceptionSteps
 }
 
 /// <summary>Specifies the details for the EFS file being copied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderStepsCopyStepDetailsDestinationFileLocationEfsFileLocation
 {
@@ -937,7 +937,7 @@ public partial class V1beta2WorkflowSpecInitProviderStepsCopyStepDetailsDestinat
 }
 
 /// <summary>Specifies the details for the S3 file being copied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderStepsCopyStepDetailsDestinationFileLocationS3FileLocation
 {
@@ -951,7 +951,7 @@ public partial class V1beta2WorkflowSpecInitProviderStepsCopyStepDetailsDestinat
 }
 
 /// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderStepsCopyStepDetailsDestinationFileLocation
 {
@@ -965,7 +965,7 @@ public partial class V1beta2WorkflowSpecInitProviderStepsCopyStepDetailsDestinat
 }
 
 /// <summary>Details for a step that performs a file copy. See Copy Step Details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderStepsCopyStepDetails
 {
@@ -992,7 +992,7 @@ public partial class V1beta2WorkflowSpecInitProviderStepsCopyStepDetails
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkflowSpecInitProviderStepsCustomStepDetailsTargetRefPolicyResolutionEnum>))]
 public enum V1beta2WorkflowSpecInitProviderStepsCustomStepDetailsTargetRefPolicyResolutionEnum
 {
@@ -1008,7 +1008,7 @@ public enum V1beta2WorkflowSpecInitProviderStepsCustomStepDetailsTargetRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkflowSpecInitProviderStepsCustomStepDetailsTargetRefPolicyResolveEnum>))]
 public enum V1beta2WorkflowSpecInitProviderStepsCustomStepDetailsTargetRefPolicyResolveEnum
 {
@@ -1019,7 +1019,7 @@ public enum V1beta2WorkflowSpecInitProviderStepsCustomStepDetailsTargetRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderStepsCustomStepDetailsTargetRefPolicy
 {
@@ -1043,7 +1043,7 @@ public partial class V1beta2WorkflowSpecInitProviderStepsCustomStepDetailsTarget
 }
 
 /// <summary>Reference to a Function in lambda to populate target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderStepsCustomStepDetailsTargetRef
 {
@@ -1062,7 +1062,7 @@ public partial class V1beta2WorkflowSpecInitProviderStepsCustomStepDetailsTarget
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkflowSpecInitProviderStepsCustomStepDetailsTargetSelectorPolicyResolutionEnum>))]
 public enum V1beta2WorkflowSpecInitProviderStepsCustomStepDetailsTargetSelectorPolicyResolutionEnum
 {
@@ -1078,7 +1078,7 @@ public enum V1beta2WorkflowSpecInitProviderStepsCustomStepDetailsTargetSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkflowSpecInitProviderStepsCustomStepDetailsTargetSelectorPolicyResolveEnum>))]
 public enum V1beta2WorkflowSpecInitProviderStepsCustomStepDetailsTargetSelectorPolicyResolveEnum
 {
@@ -1089,7 +1089,7 @@ public enum V1beta2WorkflowSpecInitProviderStepsCustomStepDetailsTargetSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderStepsCustomStepDetailsTargetSelectorPolicy
 {
@@ -1113,7 +1113,7 @@ public partial class V1beta2WorkflowSpecInitProviderStepsCustomStepDetailsTarget
 }
 
 /// <summary>Selector for a Function in lambda to populate target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderStepsCustomStepDetailsTargetSelector
 {
@@ -1134,7 +1134,7 @@ public partial class V1beta2WorkflowSpecInitProviderStepsCustomStepDetailsTarget
 }
 
 /// <summary>Details for a step that invokes a lambda function.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderStepsCustomStepDetails
 {
@@ -1164,7 +1164,7 @@ public partial class V1beta2WorkflowSpecInitProviderStepsCustomStepDetails
 }
 
 /// <summary>Specifies the details for the EFS file being copied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation
 {
@@ -1178,7 +1178,7 @@ public partial class V1beta2WorkflowSpecInitProviderStepsDecryptStepDetailsDesti
 }
 
 /// <summary>Specifies the details for the S3 file being copied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderStepsDecryptStepDetailsDestinationFileLocationS3FileLocation
 {
@@ -1192,7 +1192,7 @@ public partial class V1beta2WorkflowSpecInitProviderStepsDecryptStepDetailsDesti
 }
 
 /// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderStepsDecryptStepDetailsDestinationFileLocation
 {
@@ -1206,7 +1206,7 @@ public partial class V1beta2WorkflowSpecInitProviderStepsDecryptStepDetailsDesti
 }
 
 /// <summary>Details for a step that decrypts the file.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderStepsDecryptStepDetails
 {
@@ -1232,7 +1232,7 @@ public partial class V1beta2WorkflowSpecInitProviderStepsDecryptStepDetails
 }
 
 /// <summary>Details for a step that deletes the file.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderStepsDeleteStepDetails
 {
@@ -1245,7 +1245,7 @@ public partial class V1beta2WorkflowSpecInitProviderStepsDeleteStepDetails
     public string? SourceFileLocation { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderStepsTagStepDetailsTags
 {
@@ -1259,7 +1259,7 @@ public partial class V1beta2WorkflowSpecInitProviderStepsTagStepDetailsTags
 }
 
 /// <summary>Details for a step that creates one or more tags.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderStepsTagStepDetails
 {
@@ -1276,7 +1276,7 @@ public partial class V1beta2WorkflowSpecInitProviderStepsTagStepDetails
     public IList<V1beta2WorkflowSpecInitProviderStepsTagStepDetailsTags>? Tags { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProviderSteps
 {
@@ -1317,7 +1317,7 @@ public partial class V1beta2WorkflowSpecInitProviderSteps
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecInitProvider
 {
@@ -1342,7 +1342,7 @@ public partial class V1beta2WorkflowSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkflowSpecManagementPoliciesEnum>))]
 public enum V1beta2WorkflowSpecManagementPoliciesEnum
 {
@@ -1366,7 +1366,7 @@ public enum V1beta2WorkflowSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkflowSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2WorkflowSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1382,7 +1382,7 @@ public enum V1beta2WorkflowSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkflowSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2WorkflowSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1393,7 +1393,7 @@ public enum V1beta2WorkflowSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecProviderConfigRefPolicy
 {
@@ -1421,7 +1421,7 @@ public partial class V1beta2WorkflowSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecProviderConfigRef
 {
@@ -1440,7 +1440,7 @@ public partial class V1beta2WorkflowSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpecWriteConnectionSecretToRef
 {
@@ -1454,7 +1454,7 @@ public partial class V1beta2WorkflowSpecWriteConnectionSecretToRef
 }
 
 /// <summary>WorkflowSpec defines the desired state of Workflow</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowSpec
 {
@@ -1522,7 +1522,7 @@ public partial class V1beta2WorkflowSpec
 }
 
 /// <summary>Specifies the details for the EFS file being copied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocation
 {
@@ -1536,7 +1536,7 @@ public partial class V1beta2WorkflowStatusAtProviderOnExceptionStepsCopyStepDeta
 }
 
 /// <summary>Specifies the details for the S3 file being copied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocation
 {
@@ -1550,7 +1550,7 @@ public partial class V1beta2WorkflowStatusAtProviderOnExceptionStepsCopyStepDeta
 }
 
 /// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderOnExceptionStepsCopyStepDetailsDestinationFileLocation
 {
@@ -1564,7 +1564,7 @@ public partial class V1beta2WorkflowStatusAtProviderOnExceptionStepsCopyStepDeta
 }
 
 /// <summary>Details for a step that performs a file copy. See Copy Step Details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderOnExceptionStepsCopyStepDetails
 {
@@ -1586,7 +1586,7 @@ public partial class V1beta2WorkflowStatusAtProviderOnExceptionStepsCopyStepDeta
 }
 
 /// <summary>Details for a step that invokes a lambda function.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderOnExceptionStepsCustomStepDetails
 {
@@ -1608,7 +1608,7 @@ public partial class V1beta2WorkflowStatusAtProviderOnExceptionStepsCustomStepDe
 }
 
 /// <summary>Specifies the details for the EFS file being copied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation
 {
@@ -1622,7 +1622,7 @@ public partial class V1beta2WorkflowStatusAtProviderOnExceptionStepsDecryptStepD
 }
 
 /// <summary>Specifies the details for the S3 file being copied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocation
 {
@@ -1636,7 +1636,7 @@ public partial class V1beta2WorkflowStatusAtProviderOnExceptionStepsDecryptStepD
 }
 
 /// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocation
 {
@@ -1650,7 +1650,7 @@ public partial class V1beta2WorkflowStatusAtProviderOnExceptionStepsDecryptStepD
 }
 
 /// <summary>Details for a step that decrypts the file.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderOnExceptionStepsDecryptStepDetails
 {
@@ -1676,7 +1676,7 @@ public partial class V1beta2WorkflowStatusAtProviderOnExceptionStepsDecryptStepD
 }
 
 /// <summary>Details for a step that deletes the file.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderOnExceptionStepsDeleteStepDetails
 {
@@ -1689,7 +1689,7 @@ public partial class V1beta2WorkflowStatusAtProviderOnExceptionStepsDeleteStepDe
     public string? SourceFileLocation { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderOnExceptionStepsTagStepDetailsTags
 {
@@ -1703,7 +1703,7 @@ public partial class V1beta2WorkflowStatusAtProviderOnExceptionStepsTagStepDetai
 }
 
 /// <summary>Details for a step that creates one or more tags.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderOnExceptionStepsTagStepDetails
 {
@@ -1720,7 +1720,7 @@ public partial class V1beta2WorkflowStatusAtProviderOnExceptionStepsTagStepDetai
     public IList<V1beta2WorkflowStatusAtProviderOnExceptionStepsTagStepDetailsTags>? Tags { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderOnExceptionSteps
 {
@@ -1750,7 +1750,7 @@ public partial class V1beta2WorkflowStatusAtProviderOnExceptionSteps
 }
 
 /// <summary>Specifies the details for the EFS file being copied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderStepsCopyStepDetailsDestinationFileLocationEfsFileLocation
 {
@@ -1764,7 +1764,7 @@ public partial class V1beta2WorkflowStatusAtProviderStepsCopyStepDetailsDestinat
 }
 
 /// <summary>Specifies the details for the S3 file being copied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderStepsCopyStepDetailsDestinationFileLocationS3FileLocation
 {
@@ -1778,7 +1778,7 @@ public partial class V1beta2WorkflowStatusAtProviderStepsCopyStepDetailsDestinat
 }
 
 /// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderStepsCopyStepDetailsDestinationFileLocation
 {
@@ -1792,7 +1792,7 @@ public partial class V1beta2WorkflowStatusAtProviderStepsCopyStepDetailsDestinat
 }
 
 /// <summary>Details for a step that performs a file copy. See Copy Step Details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderStepsCopyStepDetails
 {
@@ -1814,7 +1814,7 @@ public partial class V1beta2WorkflowStatusAtProviderStepsCopyStepDetails
 }
 
 /// <summary>Details for a step that invokes a lambda function.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderStepsCustomStepDetails
 {
@@ -1836,7 +1836,7 @@ public partial class V1beta2WorkflowStatusAtProviderStepsCustomStepDetails
 }
 
 /// <summary>Specifies the details for the EFS file being copied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation
 {
@@ -1850,7 +1850,7 @@ public partial class V1beta2WorkflowStatusAtProviderStepsDecryptStepDetailsDesti
 }
 
 /// <summary>Specifies the details for the S3 file being copied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderStepsDecryptStepDetailsDestinationFileLocationS3FileLocation
 {
@@ -1864,7 +1864,7 @@ public partial class V1beta2WorkflowStatusAtProviderStepsDecryptStepDetailsDesti
 }
 
 /// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderStepsDecryptStepDetailsDestinationFileLocation
 {
@@ -1878,7 +1878,7 @@ public partial class V1beta2WorkflowStatusAtProviderStepsDecryptStepDetailsDesti
 }
 
 /// <summary>Details for a step that decrypts the file.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderStepsDecryptStepDetails
 {
@@ -1904,7 +1904,7 @@ public partial class V1beta2WorkflowStatusAtProviderStepsDecryptStepDetails
 }
 
 /// <summary>Details for a step that deletes the file.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderStepsDeleteStepDetails
 {
@@ -1917,7 +1917,7 @@ public partial class V1beta2WorkflowStatusAtProviderStepsDeleteStepDetails
     public string? SourceFileLocation { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderStepsTagStepDetailsTags
 {
@@ -1931,7 +1931,7 @@ public partial class V1beta2WorkflowStatusAtProviderStepsTagStepDetailsTags
 }
 
 /// <summary>Details for a step that creates one or more tags.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderStepsTagStepDetails
 {
@@ -1948,7 +1948,7 @@ public partial class V1beta2WorkflowStatusAtProviderStepsTagStepDetails
     public IList<V1beta2WorkflowStatusAtProviderStepsTagStepDetailsTags>? Tags { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProviderSteps
 {
@@ -1977,7 +1977,7 @@ public partial class V1beta2WorkflowStatusAtProviderSteps
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusAtProvider
 {
@@ -2018,7 +2018,7 @@ public partial class V1beta2WorkflowStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatusConditions
 {
@@ -2061,7 +2061,7 @@ public partial class V1beta2WorkflowStatusConditions
 }
 
 /// <summary>WorkflowStatus defines the observed state of Workflow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkflowStatus
 {
@@ -2082,7 +2082,7 @@ public partial class V1beta2WorkflowStatus
 }
 
 /// <summary>Workflow is the Schema for the Workflows API. Provides a AWS Transfer Workflow resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2Workflow : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2WorkflowSpec>, IStatus<V1beta2WorkflowStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cloudplatform.gcp.m.upbound.io;
 /// <summary>ProjectDefaultServiceAccounts is the Schema for the ProjectDefaultServiceAccountss API. Allows management of Google Cloud Platform project default service accounts.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ProjectDefaultServiceAccountsList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ProjectDefaultServiceAccounts>
@@ -42,7 +42,7 @@ public partial class V1beta1ProjectDefaultServiceAccountsList : IKubernetesObjec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectDefaultServiceAccountsSpecForProviderProjectRefPolicyResolutionEnum>))]
 public enum V1beta1ProjectDefaultServiceAccountsSpecForProviderProjectRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1ProjectDefaultServiceAccountsSpecForProviderProjectRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectDefaultServiceAccountsSpecForProviderProjectRefPolicyResolveEnum>))]
 public enum V1beta1ProjectDefaultServiceAccountsSpecForProviderProjectRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1ProjectDefaultServiceAccountsSpecForProviderProjectRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProjectDefaultServiceAccountsSpecForProviderProjectRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1ProjectDefaultServiceAccountsSpecForProviderProjectR
 }
 
 /// <summary>Reference to a Project in cloudplatform to populate project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProjectDefaultServiceAccountsSpecForProviderProjectRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1ProjectDefaultServiceAccountsSpecForProviderProjectR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectDefaultServiceAccountsSpecForProviderProjectSelectorPolicyResolutionEnum>))]
 public enum V1beta1ProjectDefaultServiceAccountsSpecForProviderProjectSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1ProjectDefaultServiceAccountsSpecForProviderProjectSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectDefaultServiceAccountsSpecForProviderProjectSelectorPolicyResolveEnum>))]
 public enum V1beta1ProjectDefaultServiceAccountsSpecForProviderProjectSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1ProjectDefaultServiceAccountsSpecForProviderProjectSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProjectDefaultServiceAccountsSpecForProviderProjectSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1ProjectDefaultServiceAccountsSpecForProviderProjectS
 }
 
 /// <summary>Selector for a Project in cloudplatform to populate project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProjectDefaultServiceAccountsSpecForProviderProjectSelector
 {
@@ -191,7 +191,7 @@ public partial class V1beta1ProjectDefaultServiceAccountsSpecForProviderProjectS
     public V1beta1ProjectDefaultServiceAccountsSpecForProviderProjectSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProjectDefaultServiceAccountsSpecForProvider
 {
@@ -227,7 +227,7 @@ public partial class V1beta1ProjectDefaultServiceAccountsSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectDefaultServiceAccountsSpecInitProviderProjectRefPolicyResolutionEnum>))]
 public enum V1beta1ProjectDefaultServiceAccountsSpecInitProviderProjectRefPolicyResolutionEnum
 {
@@ -243,7 +243,7 @@ public enum V1beta1ProjectDefaultServiceAccountsSpecInitProviderProjectRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectDefaultServiceAccountsSpecInitProviderProjectRefPolicyResolveEnum>))]
 public enum V1beta1ProjectDefaultServiceAccountsSpecInitProviderProjectRefPolicyResolveEnum
 {
@@ -254,7 +254,7 @@ public enum V1beta1ProjectDefaultServiceAccountsSpecInitProviderProjectRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProjectDefaultServiceAccountsSpecInitProviderProjectRefPolicy
 {
@@ -278,7 +278,7 @@ public partial class V1beta1ProjectDefaultServiceAccountsSpecInitProviderProject
 }
 
 /// <summary>Reference to a Project in cloudplatform to populate project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProjectDefaultServiceAccountsSpecInitProviderProjectRef
 {
@@ -301,7 +301,7 @@ public partial class V1beta1ProjectDefaultServiceAccountsSpecInitProviderProject
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectDefaultServiceAccountsSpecInitProviderProjectSelectorPolicyResolutionEnum>))]
 public enum V1beta1ProjectDefaultServiceAccountsSpecInitProviderProjectSelectorPolicyResolutionEnum
 {
@@ -317,7 +317,7 @@ public enum V1beta1ProjectDefaultServiceAccountsSpecInitProviderProjectSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectDefaultServiceAccountsSpecInitProviderProjectSelectorPolicyResolveEnum>))]
 public enum V1beta1ProjectDefaultServiceAccountsSpecInitProviderProjectSelectorPolicyResolveEnum
 {
@@ -328,7 +328,7 @@ public enum V1beta1ProjectDefaultServiceAccountsSpecInitProviderProjectSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProjectDefaultServiceAccountsSpecInitProviderProjectSelectorPolicy
 {
@@ -352,7 +352,7 @@ public partial class V1beta1ProjectDefaultServiceAccountsSpecInitProviderProject
 }
 
 /// <summary>Selector for a Project in cloudplatform to populate project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProjectDefaultServiceAccountsSpecInitProviderProjectSelector
 {
@@ -388,7 +388,7 @@ public partial class V1beta1ProjectDefaultServiceAccountsSpecInitProviderProject
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProjectDefaultServiceAccountsSpecInitProvider
 {
@@ -422,7 +422,7 @@ public partial class V1beta1ProjectDefaultServiceAccountsSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectDefaultServiceAccountsSpecManagementPoliciesEnum>))]
 public enum V1beta1ProjectDefaultServiceAccountsSpecManagementPoliciesEnum
 {
@@ -445,7 +445,7 @@ public enum V1beta1ProjectDefaultServiceAccountsSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProjectDefaultServiceAccountsSpecProviderConfigRef
 {
@@ -464,7 +464,7 @@ public partial class V1beta1ProjectDefaultServiceAccountsSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProjectDefaultServiceAccountsSpecWriteConnectionSecretToRef
 {
@@ -474,7 +474,7 @@ public partial class V1beta1ProjectDefaultServiceAccountsSpecWriteConnectionSecr
 }
 
 /// <summary>ProjectDefaultServiceAccountsSpec defines the desired state of ProjectDefaultServiceAccounts</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProjectDefaultServiceAccountsSpec
 {
@@ -525,7 +525,7 @@ public partial class V1beta1ProjectDefaultServiceAccountsSpec
     public V1beta1ProjectDefaultServiceAccountsSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProjectDefaultServiceAccountsStatusAtProvider
 {
@@ -556,7 +556,7 @@ public partial class V1beta1ProjectDefaultServiceAccountsStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProjectDefaultServiceAccountsStatusConditions
 {
@@ -599,7 +599,7 @@ public partial class V1beta1ProjectDefaultServiceAccountsStatusConditions
 }
 
 /// <summary>ProjectDefaultServiceAccountsStatus defines the observed state of ProjectDefaultServiceAccounts.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProjectDefaultServiceAccountsStatus
 {
@@ -620,7 +620,7 @@ public partial class V1beta1ProjectDefaultServiceAccountsStatus
 }
 
 /// <summary>ProjectDefaultServiceAccounts is the Schema for the ProjectDefaultServiceAccountss API. Allows management of Google Cloud Platform project default service accounts.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ProjectDefaultServiceAccounts : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ProjectDefaultServiceAccountsSpec>, IStatus<V1beta1ProjectDefaultServiceAccountsStatus?>

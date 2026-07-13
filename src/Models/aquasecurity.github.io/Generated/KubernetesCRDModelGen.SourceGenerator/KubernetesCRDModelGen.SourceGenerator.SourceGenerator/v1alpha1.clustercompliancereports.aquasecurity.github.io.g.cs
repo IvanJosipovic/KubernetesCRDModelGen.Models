@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.aquasecurity.github.io;
 /// <summary>ClusterComplianceReport is a specification for the ClusterComplianceReport resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ClusterComplianceReportList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ClusterComplianceReport>
@@ -37,7 +37,7 @@ public partial class V1alpha1ClusterComplianceReportList : IKubernetesObject<V1L
 }
 
 /// <summary>SpecCheck represent the scanner who perform the control check</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ClusterComplianceReportSpecComplianceControlsChecks
 {
@@ -47,7 +47,7 @@ public partial class V1alpha1ClusterComplianceReportSpecComplianceControlsChecks
 }
 
 /// <summary>Commands represent the commands to be executed by the node-collector</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ClusterComplianceReportSpecComplianceControlsCommands
 {
@@ -57,7 +57,7 @@ public partial class V1alpha1ClusterComplianceReportSpecComplianceControlsComman
 }
 
 /// <summary>define the default value for check status in case resource not found</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ClusterComplianceReportSpecComplianceControlsDefaultStatusEnum>))]
 public enum V1alpha1ClusterComplianceReportSpecComplianceControlsDefaultStatusEnum
 {
@@ -70,7 +70,7 @@ public enum V1alpha1ClusterComplianceReportSpecComplianceControlsDefaultStatusEn
 }
 
 /// <summary>define the severity of the control</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ClusterComplianceReportSpecComplianceControlsSeverityEnum>))]
 public enum V1alpha1ClusterComplianceReportSpecComplianceControlsSeverityEnum
 {
@@ -87,7 +87,7 @@ public enum V1alpha1ClusterComplianceReportSpecComplianceControlsSeverityEnum
 }
 
 /// <summary>Control represent the cps controls data and mapping checks</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ClusterComplianceReportSpecComplianceControls
 {
@@ -116,7 +116,7 @@ public partial class V1alpha1ClusterComplianceReportSpecComplianceControls
     public required V1alpha1ClusterComplianceReportSpecComplianceControlsSeverityEnum Severity { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ClusterComplianceReportSpecCompliance
 {
@@ -146,7 +146,7 @@ public partial class V1alpha1ClusterComplianceReportSpecCompliance
     public required string Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ClusterComplianceReportSpecReportTypeEnum>))]
 public enum V1alpha1ClusterComplianceReportSpecReportTypeEnum
 {
@@ -157,7 +157,7 @@ public enum V1alpha1ClusterComplianceReportSpecReportTypeEnum
 }
 
 /// <summary>ReportSpec represent the compliance specification</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ClusterComplianceReportSpec
 {
@@ -172,7 +172,7 @@ public partial class V1alpha1ClusterComplianceReportSpec
     public required V1alpha1ClusterComplianceReportSpecReportTypeEnum ReportType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ClusterComplianceReportStatusSummary
 {
@@ -183,7 +183,7 @@ public partial class V1alpha1ClusterComplianceReportStatusSummary
     public int? PassCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ClusterComplianceReportStatus
 {
@@ -203,7 +203,7 @@ public partial class V1alpha1ClusterComplianceReportStatus
 }
 
 /// <summary>ClusterComplianceReport is a specification for the ClusterComplianceReport resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ClusterComplianceReport : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ClusterComplianceReportSpec?>, IStatus<V1alpha1ClusterComplianceReportStatus?>

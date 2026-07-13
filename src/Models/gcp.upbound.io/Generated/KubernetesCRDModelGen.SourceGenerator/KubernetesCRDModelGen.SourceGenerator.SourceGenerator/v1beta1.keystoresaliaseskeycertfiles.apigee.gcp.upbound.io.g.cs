@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.apigee.gcp.upbound.io;
 /// <summary>KeystoresAliasesKeyCertFile is the Schema for the KeystoresAliasesKeyCertFiles API. &lt;no value&gt;</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1KeystoresAliasesKeyCertFileList : IKubernetesObject<V1ListMeta>, IItems<V1beta1KeystoresAliasesKeyCertFile>
@@ -45,7 +45,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileList : IKubernetesObject<
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KeystoresAliasesKeyCertFileSpecDeletionPolicyEnum>))]
 public enum V1beta1KeystoresAliasesKeyCertFileSpecDeletionPolicyEnum
 {
@@ -55,7 +55,7 @@ public enum V1beta1KeystoresAliasesKeyCertFileSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileSpecForProviderCertsInfoCertInfo
 {
@@ -93,7 +93,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpecForProviderCertsInfoC
     public double? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileSpecForProviderCertsInfo
 {
@@ -102,7 +102,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpecForProviderCertsInfo
 }
 
 /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileSpecForProviderKeySecretRef
 {
@@ -125,7 +125,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpecForProviderKeySecretR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KeystoresAliasesKeyCertFileSpecForProviderOrgIdRefPolicyResolutionEnum>))]
 public enum V1beta1KeystoresAliasesKeyCertFileSpecForProviderOrgIdRefPolicyResolutionEnum
 {
@@ -141,7 +141,7 @@ public enum V1beta1KeystoresAliasesKeyCertFileSpecForProviderOrgIdRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KeystoresAliasesKeyCertFileSpecForProviderOrgIdRefPolicyResolveEnum>))]
 public enum V1beta1KeystoresAliasesKeyCertFileSpecForProviderOrgIdRefPolicyResolveEnum
 {
@@ -152,7 +152,7 @@ public enum V1beta1KeystoresAliasesKeyCertFileSpecForProviderOrgIdRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileSpecForProviderOrgIdRefPolicy
 {
@@ -176,7 +176,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpecForProviderOrgIdRefPo
 }
 
 /// <summary>Reference to a Organization in apigee to populate orgId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileSpecForProviderOrgIdRef
 {
@@ -195,7 +195,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpecForProviderOrgIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KeystoresAliasesKeyCertFileSpecForProviderOrgIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1KeystoresAliasesKeyCertFileSpecForProviderOrgIdSelectorPolicyResolutionEnum
 {
@@ -211,7 +211,7 @@ public enum V1beta1KeystoresAliasesKeyCertFileSpecForProviderOrgIdSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KeystoresAliasesKeyCertFileSpecForProviderOrgIdSelectorPolicyResolveEnum>))]
 public enum V1beta1KeystoresAliasesKeyCertFileSpecForProviderOrgIdSelectorPolicyResolveEnum
 {
@@ -222,7 +222,7 @@ public enum V1beta1KeystoresAliasesKeyCertFileSpecForProviderOrgIdSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileSpecForProviderOrgIdSelectorPolicy
 {
@@ -246,7 +246,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpecForProviderOrgIdSelec
 }
 
 /// <summary>Selector for a Organization in apigee to populate orgId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileSpecForProviderOrgIdSelector
 {
@@ -267,7 +267,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpecForProviderOrgIdSelec
 }
 
 /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileSpecForProviderPasswordSecretRef
 {
@@ -284,7 +284,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpecForProviderPasswordSe
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileSpecForProvider
 {
@@ -320,7 +320,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpecForProvider
     public V1beta1KeystoresAliasesKeyCertFileSpecForProviderPasswordSecretRef? PasswordSecretRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileSpecInitProviderCertsInfoCertInfo
 {
@@ -358,7 +358,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpecInitProviderCertsInfo
     public double? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileSpecInitProviderCertsInfo
 {
@@ -367,7 +367,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpecInitProviderCertsInfo
 }
 
 /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileSpecInitProviderKeySecretRef
 {
@@ -385,7 +385,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpecInitProviderKeySecret
 }
 
 /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileSpecInitProviderPasswordSecretRef
 {
@@ -414,7 +414,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpecInitProviderPasswordS
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileSpecInitProvider
 {
@@ -437,7 +437,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KeystoresAliasesKeyCertFileSpecManagementPoliciesEnum>))]
 public enum V1beta1KeystoresAliasesKeyCertFileSpecManagementPoliciesEnum
 {
@@ -461,7 +461,7 @@ public enum V1beta1KeystoresAliasesKeyCertFileSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KeystoresAliasesKeyCertFileSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1KeystoresAliasesKeyCertFileSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -477,7 +477,7 @@ public enum V1beta1KeystoresAliasesKeyCertFileSpecProviderConfigRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KeystoresAliasesKeyCertFileSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1KeystoresAliasesKeyCertFileSpecProviderConfigRefPolicyResolveEnum
 {
@@ -488,7 +488,7 @@ public enum V1beta1KeystoresAliasesKeyCertFileSpecProviderConfigRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileSpecProviderConfigRefPolicy
 {
@@ -516,7 +516,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpecProviderConfigRefPoli
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileSpecProviderConfigRef
 {
@@ -535,7 +535,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileSpecWriteConnectionSecretToRef
 {
@@ -549,7 +549,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpecWriteConnectionSecret
 }
 
 /// <summary>KeystoresAliasesKeyCertFileSpec defines the desired state of KeystoresAliasesKeyCertFile</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileSpec
 {
@@ -616,7 +616,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileSpec
     public V1beta1KeystoresAliasesKeyCertFileSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileStatusAtProviderCertsInfoCertInfo
 {
@@ -654,7 +654,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileStatusAtProviderCertsInfo
     public double? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileStatusAtProviderCertsInfo
 {
@@ -662,7 +662,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileStatusAtProviderCertsInfo
     public IList<V1beta1KeystoresAliasesKeyCertFileStatusAtProviderCertsInfoCertInfo>? CertInfo { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileStatusAtProvider
 {
@@ -689,7 +689,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileStatusConditions
 {
@@ -732,7 +732,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileStatusConditions
 }
 
 /// <summary>KeystoresAliasesKeyCertFileStatus defines the observed state of KeystoresAliasesKeyCertFile.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KeystoresAliasesKeyCertFileStatus
 {
@@ -753,7 +753,7 @@ public partial class V1beta1KeystoresAliasesKeyCertFileStatus
 }
 
 /// <summary>KeystoresAliasesKeyCertFile is the Schema for the KeystoresAliasesKeyCertFiles API. &lt;no value&gt;</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1KeystoresAliasesKeyCertFile : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1KeystoresAliasesKeyCertFileSpec>, IStatus<V1beta1KeystoresAliasesKeyCertFileStatus?>

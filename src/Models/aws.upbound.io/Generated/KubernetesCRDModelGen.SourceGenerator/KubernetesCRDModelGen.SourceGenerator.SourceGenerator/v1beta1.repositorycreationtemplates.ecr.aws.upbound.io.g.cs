@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ecr.aws.upbound.io;
 /// <summary>RepositoryCreationTemplate is the Schema for the RepositoryCreationTemplates API. Provides an Elastic Container Registry Repository Creation Template.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RepositoryCreationTemplateList : IKubernetesObject<V1ListMeta>, IItems<V1beta1RepositoryCreationTemplate>
@@ -45,7 +45,7 @@ public partial class V1beta1RepositoryCreationTemplateList : IKubernetesObject<V
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RepositoryCreationTemplateSpecDeletionPolicyEnum>))]
 public enum V1beta1RepositoryCreationTemplateSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1RepositoryCreationTemplateSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RepositoryCreationTemplateSpecForProviderEncryptionConfigurationKmsKeyRefPolicyResolutionEnum>))]
 public enum V1beta1RepositoryCreationTemplateSpecForProviderEncryptionConfigurationKmsKeyRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1RepositoryCreationTemplateSpecForProviderEncryptionConfigurat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RepositoryCreationTemplateSpecForProviderEncryptionConfigurationKmsKeyRefPolicyResolveEnum>))]
 public enum V1beta1RepositoryCreationTemplateSpecForProviderEncryptionConfigurationKmsKeyRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1RepositoryCreationTemplateSpecForProviderEncryptionConfigurat
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RepositoryCreationTemplateSpecForProviderEncryptionConfigurationKmsKeyRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1RepositoryCreationTemplateSpecForProviderEncryptionC
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RepositoryCreationTemplateSpecForProviderEncryptionConfigurationKmsKeyRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1RepositoryCreationTemplateSpecForProviderEncryptionC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RepositoryCreationTemplateSpecForProviderEncryptionConfigurationKmsKeySelectorPolicyResolutionEnum>))]
 public enum V1beta1RepositoryCreationTemplateSpecForProviderEncryptionConfigurationKmsKeySelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1RepositoryCreationTemplateSpecForProviderEncryptionConfigurat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RepositoryCreationTemplateSpecForProviderEncryptionConfigurationKmsKeySelectorPolicyResolveEnum>))]
 public enum V1beta1RepositoryCreationTemplateSpecForProviderEncryptionConfigurationKmsKeySelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1RepositoryCreationTemplateSpecForProviderEncryptionConfigurat
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RepositoryCreationTemplateSpecForProviderEncryptionConfigurationKmsKeySelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1RepositoryCreationTemplateSpecForProviderEncryptionC
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RepositoryCreationTemplateSpecForProviderEncryptionConfigurationKmsKeySelector
 {
@@ -202,7 +202,7 @@ public partial class V1beta1RepositoryCreationTemplateSpecForProviderEncryptionC
     public V1beta1RepositoryCreationTemplateSpecForProviderEncryptionConfigurationKmsKeySelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RepositoryCreationTemplateSpecForProviderEncryptionConfiguration
 {
@@ -223,7 +223,7 @@ public partial class V1beta1RepositoryCreationTemplateSpecForProviderEncryptionC
     public V1beta1RepositoryCreationTemplateSpecForProviderEncryptionConfigurationKmsKeySelector? KmsKeySelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RepositoryCreationTemplateSpecForProviderImageTagMutabilityExclusionFilter
 {
@@ -236,7 +236,7 @@ public partial class V1beta1RepositoryCreationTemplateSpecForProviderImageTagMut
     public string? FilterType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RepositoryCreationTemplateSpecForProvider
 {
@@ -294,7 +294,7 @@ public partial class V1beta1RepositoryCreationTemplateSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RepositoryCreationTemplateSpecInitProviderEncryptionConfigurationKmsKeyRefPolicyResolutionEnum>))]
 public enum V1beta1RepositoryCreationTemplateSpecInitProviderEncryptionConfigurationKmsKeyRefPolicyResolutionEnum
 {
@@ -310,7 +310,7 @@ public enum V1beta1RepositoryCreationTemplateSpecInitProviderEncryptionConfigura
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RepositoryCreationTemplateSpecInitProviderEncryptionConfigurationKmsKeyRefPolicyResolveEnum>))]
 public enum V1beta1RepositoryCreationTemplateSpecInitProviderEncryptionConfigurationKmsKeyRefPolicyResolveEnum
 {
@@ -321,7 +321,7 @@ public enum V1beta1RepositoryCreationTemplateSpecInitProviderEncryptionConfigura
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RepositoryCreationTemplateSpecInitProviderEncryptionConfigurationKmsKeyRefPolicy
 {
@@ -345,7 +345,7 @@ public partial class V1beta1RepositoryCreationTemplateSpecInitProviderEncryption
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RepositoryCreationTemplateSpecInitProviderEncryptionConfigurationKmsKeyRef
 {
@@ -364,7 +364,7 @@ public partial class V1beta1RepositoryCreationTemplateSpecInitProviderEncryption
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RepositoryCreationTemplateSpecInitProviderEncryptionConfigurationKmsKeySelectorPolicyResolutionEnum>))]
 public enum V1beta1RepositoryCreationTemplateSpecInitProviderEncryptionConfigurationKmsKeySelectorPolicyResolutionEnum
 {
@@ -380,7 +380,7 @@ public enum V1beta1RepositoryCreationTemplateSpecInitProviderEncryptionConfigura
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RepositoryCreationTemplateSpecInitProviderEncryptionConfigurationKmsKeySelectorPolicyResolveEnum>))]
 public enum V1beta1RepositoryCreationTemplateSpecInitProviderEncryptionConfigurationKmsKeySelectorPolicyResolveEnum
 {
@@ -391,7 +391,7 @@ public enum V1beta1RepositoryCreationTemplateSpecInitProviderEncryptionConfigura
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RepositoryCreationTemplateSpecInitProviderEncryptionConfigurationKmsKeySelectorPolicy
 {
@@ -415,7 +415,7 @@ public partial class V1beta1RepositoryCreationTemplateSpecInitProviderEncryption
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RepositoryCreationTemplateSpecInitProviderEncryptionConfigurationKmsKeySelector
 {
@@ -435,7 +435,7 @@ public partial class V1beta1RepositoryCreationTemplateSpecInitProviderEncryption
     public V1beta1RepositoryCreationTemplateSpecInitProviderEncryptionConfigurationKmsKeySelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RepositoryCreationTemplateSpecInitProviderEncryptionConfiguration
 {
@@ -456,7 +456,7 @@ public partial class V1beta1RepositoryCreationTemplateSpecInitProviderEncryption
     public V1beta1RepositoryCreationTemplateSpecInitProviderEncryptionConfigurationKmsKeySelector? KmsKeySelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RepositoryCreationTemplateSpecInitProviderImageTagMutabilityExclusionFilter
 {
@@ -481,7 +481,7 @@ public partial class V1beta1RepositoryCreationTemplateSpecInitProviderImageTagMu
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RepositoryCreationTemplateSpecInitProvider
 {
@@ -526,7 +526,7 @@ public partial class V1beta1RepositoryCreationTemplateSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RepositoryCreationTemplateSpecManagementPoliciesEnum>))]
 public enum V1beta1RepositoryCreationTemplateSpecManagementPoliciesEnum
 {
@@ -550,7 +550,7 @@ public enum V1beta1RepositoryCreationTemplateSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RepositoryCreationTemplateSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1RepositoryCreationTemplateSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -566,7 +566,7 @@ public enum V1beta1RepositoryCreationTemplateSpecProviderConfigRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RepositoryCreationTemplateSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1RepositoryCreationTemplateSpecProviderConfigRefPolicyResolveEnum
 {
@@ -577,7 +577,7 @@ public enum V1beta1RepositoryCreationTemplateSpecProviderConfigRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RepositoryCreationTemplateSpecProviderConfigRefPolicy
 {
@@ -605,7 +605,7 @@ public partial class V1beta1RepositoryCreationTemplateSpecProviderConfigRefPolic
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RepositoryCreationTemplateSpecProviderConfigRef
 {
@@ -624,7 +624,7 @@ public partial class V1beta1RepositoryCreationTemplateSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RepositoryCreationTemplateSpecWriteConnectionSecretToRef
 {
@@ -638,7 +638,7 @@ public partial class V1beta1RepositoryCreationTemplateSpecWriteConnectionSecretT
 }
 
 /// <summary>RepositoryCreationTemplateSpec defines the desired state of RepositoryCreationTemplate</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RepositoryCreationTemplateSpec
 {
@@ -705,7 +705,7 @@ public partial class V1beta1RepositoryCreationTemplateSpec
     public V1beta1RepositoryCreationTemplateSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RepositoryCreationTemplateStatusAtProviderEncryptionConfiguration
 {
@@ -718,7 +718,7 @@ public partial class V1beta1RepositoryCreationTemplateStatusAtProviderEncryption
     public string? KmsKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RepositoryCreationTemplateStatusAtProviderImageTagMutabilityExclusionFilter
 {
@@ -731,7 +731,7 @@ public partial class V1beta1RepositoryCreationTemplateStatusAtProviderImageTagMu
     public string? FilterType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RepositoryCreationTemplateStatusAtProvider
 {
@@ -791,7 +791,7 @@ public partial class V1beta1RepositoryCreationTemplateStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RepositoryCreationTemplateStatusConditions
 {
@@ -834,7 +834,7 @@ public partial class V1beta1RepositoryCreationTemplateStatusConditions
 }
 
 /// <summary>RepositoryCreationTemplateStatus defines the observed state of RepositoryCreationTemplate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RepositoryCreationTemplateStatus
 {
@@ -855,7 +855,7 @@ public partial class V1beta1RepositoryCreationTemplateStatus
 }
 
 /// <summary>RepositoryCreationTemplate is the Schema for the RepositoryCreationTemplates API. Provides an Elastic Container Registry Repository Creation Template.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RepositoryCreationTemplate : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RepositoryCreationTemplateSpec>, IStatus<V1beta1RepositoryCreationTemplateStatus?>

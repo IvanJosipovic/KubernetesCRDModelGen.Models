@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cosmosdb.azure.m.upbound.io;
 /// <summary>MongoCluster is the Schema for the MongoClusters API. Manages a MongoDB Cluster using vCore Architecture.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MongoClusterList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MongoCluster>
@@ -37,7 +37,7 @@ public partial class V1beta1MongoClusterList : IKubernetesObject<V1ListMeta>, II
 }
 
 /// <summary>The Password associated with the administrator_username for the MongoDB Cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecForProviderAdministratorPasswordSecretRef
 {
@@ -55,7 +55,7 @@ public partial class V1beta1MongoClusterSpecForProviderAdministratorPasswordSecr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoClusterSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1MongoClusterSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -71,7 +71,7 @@ public enum V1beta1MongoClusterSpecForProviderResourceGroupNameRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoClusterSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1MongoClusterSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -82,7 +82,7 @@ public enum V1beta1MongoClusterSpecForProviderResourceGroupNameRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecForProviderResourceGroupNameRefPolicy
 {
@@ -106,7 +106,7 @@ public partial class V1beta1MongoClusterSpecForProviderResourceGroupNameRefPolic
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecForProviderResourceGroupNameRef
 {
@@ -129,7 +129,7 @@ public partial class V1beta1MongoClusterSpecForProviderResourceGroupNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoClusterSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1MongoClusterSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -145,7 +145,7 @@ public enum V1beta1MongoClusterSpecForProviderResourceGroupNameSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoClusterSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1MongoClusterSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -156,7 +156,7 @@ public enum V1beta1MongoClusterSpecForProviderResourceGroupNameSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -180,7 +180,7 @@ public partial class V1beta1MongoClusterSpecForProviderResourceGroupNameSelector
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecForProviderResourceGroupNameSelector
 {
@@ -210,7 +210,7 @@ public partial class V1beta1MongoClusterSpecForProviderResourceGroupNameSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoClusterSpecForProviderSourceLocationRefPolicyResolutionEnum>))]
 public enum V1beta1MongoClusterSpecForProviderSourceLocationRefPolicyResolutionEnum
 {
@@ -226,7 +226,7 @@ public enum V1beta1MongoClusterSpecForProviderSourceLocationRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoClusterSpecForProviderSourceLocationRefPolicyResolveEnum>))]
 public enum V1beta1MongoClusterSpecForProviderSourceLocationRefPolicyResolveEnum
 {
@@ -237,7 +237,7 @@ public enum V1beta1MongoClusterSpecForProviderSourceLocationRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecForProviderSourceLocationRefPolicy
 {
@@ -261,7 +261,7 @@ public partial class V1beta1MongoClusterSpecForProviderSourceLocationRefPolicy
 }
 
 /// <summary>Reference to a MongoCluster in cosmosdb to populate sourceLocation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecForProviderSourceLocationRef
 {
@@ -284,7 +284,7 @@ public partial class V1beta1MongoClusterSpecForProviderSourceLocationRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoClusterSpecForProviderSourceLocationSelectorPolicyResolutionEnum>))]
 public enum V1beta1MongoClusterSpecForProviderSourceLocationSelectorPolicyResolutionEnum
 {
@@ -300,7 +300,7 @@ public enum V1beta1MongoClusterSpecForProviderSourceLocationSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoClusterSpecForProviderSourceLocationSelectorPolicyResolveEnum>))]
 public enum V1beta1MongoClusterSpecForProviderSourceLocationSelectorPolicyResolveEnum
 {
@@ -311,7 +311,7 @@ public enum V1beta1MongoClusterSpecForProviderSourceLocationSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecForProviderSourceLocationSelectorPolicy
 {
@@ -335,7 +335,7 @@ public partial class V1beta1MongoClusterSpecForProviderSourceLocationSelectorPol
 }
 
 /// <summary>Selector for a MongoCluster in cosmosdb to populate sourceLocation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecForProviderSourceLocationSelector
 {
@@ -365,7 +365,7 @@ public partial class V1beta1MongoClusterSpecForProviderSourceLocationSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoClusterSpecForProviderSourceServerIdRefPolicyResolutionEnum>))]
 public enum V1beta1MongoClusterSpecForProviderSourceServerIdRefPolicyResolutionEnum
 {
@@ -381,7 +381,7 @@ public enum V1beta1MongoClusterSpecForProviderSourceServerIdRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoClusterSpecForProviderSourceServerIdRefPolicyResolveEnum>))]
 public enum V1beta1MongoClusterSpecForProviderSourceServerIdRefPolicyResolveEnum
 {
@@ -392,7 +392,7 @@ public enum V1beta1MongoClusterSpecForProviderSourceServerIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecForProviderSourceServerIdRefPolicy
 {
@@ -416,7 +416,7 @@ public partial class V1beta1MongoClusterSpecForProviderSourceServerIdRefPolicy
 }
 
 /// <summary>Reference to a MongoCluster in cosmosdb to populate sourceServerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecForProviderSourceServerIdRef
 {
@@ -439,7 +439,7 @@ public partial class V1beta1MongoClusterSpecForProviderSourceServerIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoClusterSpecForProviderSourceServerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MongoClusterSpecForProviderSourceServerIdSelectorPolicyResolutionEnum
 {
@@ -455,7 +455,7 @@ public enum V1beta1MongoClusterSpecForProviderSourceServerIdSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoClusterSpecForProviderSourceServerIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MongoClusterSpecForProviderSourceServerIdSelectorPolicyResolveEnum
 {
@@ -466,7 +466,7 @@ public enum V1beta1MongoClusterSpecForProviderSourceServerIdSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecForProviderSourceServerIdSelectorPolicy
 {
@@ -490,7 +490,7 @@ public partial class V1beta1MongoClusterSpecForProviderSourceServerIdSelectorPol
 }
 
 /// <summary>Selector for a MongoCluster in cosmosdb to populate sourceServerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecForProviderSourceServerIdSelector
 {
@@ -514,7 +514,7 @@ public partial class V1beta1MongoClusterSpecForProviderSourceServerIdSelector
     public V1beta1MongoClusterSpecForProviderSourceServerIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecForProvider
 {
@@ -604,7 +604,7 @@ public partial class V1beta1MongoClusterSpecForProvider
 }
 
 /// <summary>The Password associated with the administrator_username for the MongoDB Cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecInitProviderAdministratorPasswordSecretRef
 {
@@ -622,7 +622,7 @@ public partial class V1beta1MongoClusterSpecInitProviderAdministratorPasswordSec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoClusterSpecInitProviderSourceLocationRefPolicyResolutionEnum>))]
 public enum V1beta1MongoClusterSpecInitProviderSourceLocationRefPolicyResolutionEnum
 {
@@ -638,7 +638,7 @@ public enum V1beta1MongoClusterSpecInitProviderSourceLocationRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoClusterSpecInitProviderSourceLocationRefPolicyResolveEnum>))]
 public enum V1beta1MongoClusterSpecInitProviderSourceLocationRefPolicyResolveEnum
 {
@@ -649,7 +649,7 @@ public enum V1beta1MongoClusterSpecInitProviderSourceLocationRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecInitProviderSourceLocationRefPolicy
 {
@@ -673,7 +673,7 @@ public partial class V1beta1MongoClusterSpecInitProviderSourceLocationRefPolicy
 }
 
 /// <summary>Reference to a MongoCluster in cosmosdb to populate sourceLocation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecInitProviderSourceLocationRef
 {
@@ -696,7 +696,7 @@ public partial class V1beta1MongoClusterSpecInitProviderSourceLocationRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoClusterSpecInitProviderSourceLocationSelectorPolicyResolutionEnum>))]
 public enum V1beta1MongoClusterSpecInitProviderSourceLocationSelectorPolicyResolutionEnum
 {
@@ -712,7 +712,7 @@ public enum V1beta1MongoClusterSpecInitProviderSourceLocationSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoClusterSpecInitProviderSourceLocationSelectorPolicyResolveEnum>))]
 public enum V1beta1MongoClusterSpecInitProviderSourceLocationSelectorPolicyResolveEnum
 {
@@ -723,7 +723,7 @@ public enum V1beta1MongoClusterSpecInitProviderSourceLocationSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecInitProviderSourceLocationSelectorPolicy
 {
@@ -747,7 +747,7 @@ public partial class V1beta1MongoClusterSpecInitProviderSourceLocationSelectorPo
 }
 
 /// <summary>Selector for a MongoCluster in cosmosdb to populate sourceLocation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecInitProviderSourceLocationSelector
 {
@@ -777,7 +777,7 @@ public partial class V1beta1MongoClusterSpecInitProviderSourceLocationSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoClusterSpecInitProviderSourceServerIdRefPolicyResolutionEnum>))]
 public enum V1beta1MongoClusterSpecInitProviderSourceServerIdRefPolicyResolutionEnum
 {
@@ -793,7 +793,7 @@ public enum V1beta1MongoClusterSpecInitProviderSourceServerIdRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoClusterSpecInitProviderSourceServerIdRefPolicyResolveEnum>))]
 public enum V1beta1MongoClusterSpecInitProviderSourceServerIdRefPolicyResolveEnum
 {
@@ -804,7 +804,7 @@ public enum V1beta1MongoClusterSpecInitProviderSourceServerIdRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecInitProviderSourceServerIdRefPolicy
 {
@@ -828,7 +828,7 @@ public partial class V1beta1MongoClusterSpecInitProviderSourceServerIdRefPolicy
 }
 
 /// <summary>Reference to a MongoCluster in cosmosdb to populate sourceServerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecInitProviderSourceServerIdRef
 {
@@ -851,7 +851,7 @@ public partial class V1beta1MongoClusterSpecInitProviderSourceServerIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoClusterSpecInitProviderSourceServerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MongoClusterSpecInitProviderSourceServerIdSelectorPolicyResolutionEnum
 {
@@ -867,7 +867,7 @@ public enum V1beta1MongoClusterSpecInitProviderSourceServerIdSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoClusterSpecInitProviderSourceServerIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MongoClusterSpecInitProviderSourceServerIdSelectorPolicyResolveEnum
 {
@@ -878,7 +878,7 @@ public enum V1beta1MongoClusterSpecInitProviderSourceServerIdSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecInitProviderSourceServerIdSelectorPolicy
 {
@@ -902,7 +902,7 @@ public partial class V1beta1MongoClusterSpecInitProviderSourceServerIdSelectorPo
 }
 
 /// <summary>Selector for a MongoCluster in cosmosdb to populate sourceServerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecInitProviderSourceServerIdSelector
 {
@@ -938,7 +938,7 @@ public partial class V1beta1MongoClusterSpecInitProviderSourceServerIdSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecInitProvider
 {
@@ -1019,7 +1019,7 @@ public partial class V1beta1MongoClusterSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MongoClusterSpecManagementPoliciesEnum>))]
 public enum V1beta1MongoClusterSpecManagementPoliciesEnum
 {
@@ -1042,7 +1042,7 @@ public enum V1beta1MongoClusterSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecProviderConfigRef
 {
@@ -1061,7 +1061,7 @@ public partial class V1beta1MongoClusterSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpecWriteConnectionSecretToRef
 {
@@ -1071,7 +1071,7 @@ public partial class V1beta1MongoClusterSpecWriteConnectionSecretToRef
 }
 
 /// <summary>MongoClusterSpec defines the desired state of MongoCluster</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterSpec
 {
@@ -1122,7 +1122,7 @@ public partial class V1beta1MongoClusterSpec
     public V1beta1MongoClusterSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterStatusAtProvider
 {
@@ -1188,7 +1188,7 @@ public partial class V1beta1MongoClusterStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterStatusConditions
 {
@@ -1231,7 +1231,7 @@ public partial class V1beta1MongoClusterStatusConditions
 }
 
 /// <summary>MongoClusterStatus defines the observed state of MongoCluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MongoClusterStatus
 {
@@ -1252,7 +1252,7 @@ public partial class V1beta1MongoClusterStatus
 }
 
 /// <summary>MongoCluster is the Schema for the MongoClusters API. Manages a MongoDB Cluster using vCore Architecture.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MongoCluster : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MongoClusterSpec>, IStatus<V1beta1MongoClusterStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.imagebuilder.aws.m.upbound.io;
 /// <summary>DistributionConfiguration is the Schema for the DistributionConfigurations API. Manage an Image Builder Distribution Configuration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DistributionConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DistributionConfiguration>
@@ -37,7 +37,7 @@ public partial class V1beta1DistributionConfigurationList : IKubernetesObject<V1
 }
 
 /// <summary>Configuration block of EC2 launch permissions to apply to the distributed AMI. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecForProviderDistributionAmiDistributionConfigurationLaunchPermission
 {
@@ -59,7 +59,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
 }
 
 /// <summary>Configuration block with Amazon Machine Image (AMI) distribution settings. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecForProviderDistributionAmiDistributionConfiguration
 {
@@ -89,7 +89,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
 }
 
 /// <summary>Configuration block with the destination repository for the container distribution configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecForProviderDistributionContainerDistributionConfigurationTargetRepository
 {
@@ -103,7 +103,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
 }
 
 /// <summary>Configuration block with container distribution settings. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecForProviderDistributionContainerDistributionConfiguration
 {
@@ -121,7 +121,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
 }
 
 /// <summary>Configuration block for the launch template that the fast-launch enabled Windows AMI uses when it launches Windows instances to create pre-provisioned snapshots. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecForProviderDistributionFastLaunchConfigurationLaunchTemplate
 {
@@ -139,7 +139,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
 }
 
 /// <summary>Configuration block for managing the number of snapshots that are created from pre-provisioned instances for the Windows AMI when faster launching is enabled. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecForProviderDistributionFastLaunchConfigurationSnapshotConfiguration
 {
@@ -148,7 +148,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
     public double? TargetResourceCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecForProviderDistributionFastLaunchConfiguration
 {
@@ -173,7 +173,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
     public V1beta1DistributionConfigurationSpecForProviderDistributionFastLaunchConfigurationSnapshotConfiguration? SnapshotConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecForProviderDistributionLaunchTemplateConfiguration
 {
@@ -191,7 +191,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
 }
 
 /// <summary>Configuration block with S3 export settings. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecForProviderDistributionS3ExportConfiguration
 {
@@ -212,7 +212,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
     public string? S3Prefix { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecForProviderDistributionSsmParameterConfiguration
 {
@@ -229,7 +229,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
     public string? ParameterName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
 {
@@ -266,7 +266,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
     public IList<V1beta1DistributionConfigurationSpecForProviderDistributionSsmParameterConfiguration>? SsmParameterConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecForProvider
 {
@@ -295,7 +295,7 @@ public partial class V1beta1DistributionConfigurationSpecForProvider
 }
 
 /// <summary>Configuration block of EC2 launch permissions to apply to the distributed AMI. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecInitProviderDistributionAmiDistributionConfigurationLaunchPermission
 {
@@ -317,7 +317,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
 }
 
 /// <summary>Configuration block with Amazon Machine Image (AMI) distribution settings. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecInitProviderDistributionAmiDistributionConfiguration
 {
@@ -347,7 +347,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
 }
 
 /// <summary>Configuration block with the destination repository for the container distribution configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecInitProviderDistributionContainerDistributionConfigurationTargetRepository
 {
@@ -361,7 +361,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
 }
 
 /// <summary>Configuration block with container distribution settings. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecInitProviderDistributionContainerDistributionConfiguration
 {
@@ -379,7 +379,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
 }
 
 /// <summary>Configuration block for the launch template that the fast-launch enabled Windows AMI uses when it launches Windows instances to create pre-provisioned snapshots. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecInitProviderDistributionFastLaunchConfigurationLaunchTemplate
 {
@@ -397,7 +397,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
 }
 
 /// <summary>Configuration block for managing the number of snapshots that are created from pre-provisioned instances for the Windows AMI when faster launching is enabled. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecInitProviderDistributionFastLaunchConfigurationSnapshotConfiguration
 {
@@ -406,7 +406,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
     public double? TargetResourceCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecInitProviderDistributionFastLaunchConfiguration
 {
@@ -431,7 +431,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
     public V1beta1DistributionConfigurationSpecInitProviderDistributionFastLaunchConfigurationSnapshotConfiguration? SnapshotConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecInitProviderDistributionLaunchTemplateConfiguration
 {
@@ -449,7 +449,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
 }
 
 /// <summary>Configuration block with S3 export settings. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecInitProviderDistributionS3ExportConfiguration
 {
@@ -470,7 +470,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
     public string? S3Prefix { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecInitProviderDistributionSsmParameterConfiguration
 {
@@ -487,7 +487,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
     public string? ParameterName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecInitProviderDistribution
 {
@@ -532,7 +532,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecInitProvider
 {
@@ -557,7 +557,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionConfigurationSpecManagementPoliciesEnum>))]
 public enum V1beta1DistributionConfigurationSpecManagementPoliciesEnum
 {
@@ -580,7 +580,7 @@ public enum V1beta1DistributionConfigurationSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecProviderConfigRef
 {
@@ -599,7 +599,7 @@ public partial class V1beta1DistributionConfigurationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecWriteConnectionSecretToRef
 {
@@ -609,7 +609,7 @@ public partial class V1beta1DistributionConfigurationSpecWriteConnectionSecretTo
 }
 
 /// <summary>DistributionConfigurationSpec defines the desired state of DistributionConfiguration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpec
 {
@@ -661,7 +661,7 @@ public partial class V1beta1DistributionConfigurationSpec
 }
 
 /// <summary>Configuration block of EC2 launch permissions to apply to the distributed AMI. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationStatusAtProviderDistributionAmiDistributionConfigurationLaunchPermission
 {
@@ -683,7 +683,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
 }
 
 /// <summary>Configuration block with Amazon Machine Image (AMI) distribution settings. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationStatusAtProviderDistributionAmiDistributionConfiguration
 {
@@ -713,7 +713,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
 }
 
 /// <summary>Configuration block with the destination repository for the container distribution configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationStatusAtProviderDistributionContainerDistributionConfigurationTargetRepository
 {
@@ -727,7 +727,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
 }
 
 /// <summary>Configuration block with container distribution settings. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationStatusAtProviderDistributionContainerDistributionConfiguration
 {
@@ -745,7 +745,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
 }
 
 /// <summary>Configuration block for the launch template that the fast-launch enabled Windows AMI uses when it launches Windows instances to create pre-provisioned snapshots. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationStatusAtProviderDistributionFastLaunchConfigurationLaunchTemplate
 {
@@ -763,7 +763,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
 }
 
 /// <summary>Configuration block for managing the number of snapshots that are created from pre-provisioned instances for the Windows AMI when faster launching is enabled. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationStatusAtProviderDistributionFastLaunchConfigurationSnapshotConfiguration
 {
@@ -772,7 +772,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
     public double? TargetResourceCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationStatusAtProviderDistributionFastLaunchConfiguration
 {
@@ -797,7 +797,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
     public V1beta1DistributionConfigurationStatusAtProviderDistributionFastLaunchConfigurationSnapshotConfiguration? SnapshotConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationStatusAtProviderDistributionLaunchTemplateConfiguration
 {
@@ -815,7 +815,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
 }
 
 /// <summary>Configuration block with S3 export settings. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationStatusAtProviderDistributionS3ExportConfiguration
 {
@@ -836,7 +836,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
     public string? S3Prefix { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationStatusAtProviderDistributionSsmParameterConfiguration
 {
@@ -853,7 +853,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
     public string? ParameterName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationStatusAtProviderDistribution
 {
@@ -890,7 +890,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
     public IList<V1beta1DistributionConfigurationStatusAtProviderDistributionSsmParameterConfiguration>? SsmParameterConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationStatusAtProvider
 {
@@ -939,7 +939,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationStatusConditions
 {
@@ -982,7 +982,7 @@ public partial class V1beta1DistributionConfigurationStatusConditions
 }
 
 /// <summary>DistributionConfigurationStatus defines the observed state of DistributionConfiguration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationStatus
 {
@@ -1003,7 +1003,7 @@ public partial class V1beta1DistributionConfigurationStatus
 }
 
 /// <summary>DistributionConfiguration is the Schema for the DistributionConfigurations API. Manage an Image Builder Distribution Configuration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DistributionConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DistributionConfigurationSpec>, IStatus<V1beta1DistributionConfigurationStatus?>

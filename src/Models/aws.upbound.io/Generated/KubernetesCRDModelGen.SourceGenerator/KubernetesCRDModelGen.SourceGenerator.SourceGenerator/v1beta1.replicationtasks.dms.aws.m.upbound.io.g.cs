@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dms.aws.m.upbound.io;
 /// <summary>ReplicationTask is the Schema for the ReplicationTasks API. Provides a DMS (Data Migration Service) replication task resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ReplicationTaskList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ReplicationTask>
@@ -42,7 +42,7 @@ public partial class V1beta1ReplicationTaskList : IKubernetesObject<V1ListMeta>,
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecForProviderReplicationInstanceArnRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicationTaskSpecForProviderReplicationInstanceArnRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1ReplicationTaskSpecForProviderReplicationInstanceArnRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecForProviderReplicationInstanceArnRefPolicyResolveEnum>))]
 public enum V1beta1ReplicationTaskSpecForProviderReplicationInstanceArnRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1ReplicationTaskSpecForProviderReplicationInstanceArnRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecForProviderReplicationInstanceArnRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1ReplicationTaskSpecForProviderReplicationInstanceArn
 }
 
 /// <summary>Reference to a ReplicationInstance in dms to populate replicationInstanceArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecForProviderReplicationInstanceArnRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1ReplicationTaskSpecForProviderReplicationInstanceArn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecForProviderReplicationInstanceArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicationTaskSpecForProviderReplicationInstanceArnSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1ReplicationTaskSpecForProviderReplicationInstanceArnSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecForProviderReplicationInstanceArnSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicationTaskSpecForProviderReplicationInstanceArnSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1ReplicationTaskSpecForProviderReplicationInstanceArnSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecForProviderReplicationInstanceArnSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1ReplicationTaskSpecForProviderReplicationInstanceArn
 }
 
 /// <summary>Selector for a ReplicationInstance in dms to populate replicationInstanceArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecForProviderReplicationInstanceArnSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1ReplicationTaskSpecForProviderReplicationInstanceArn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecForProviderSourceEndpointArnRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicationTaskSpecForProviderSourceEndpointArnRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1ReplicationTaskSpecForProviderSourceEndpointArnRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecForProviderSourceEndpointArnRefPolicyResolveEnum>))]
 public enum V1beta1ReplicationTaskSpecForProviderSourceEndpointArnRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1ReplicationTaskSpecForProviderSourceEndpointArnRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecForProviderSourceEndpointArnRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1ReplicationTaskSpecForProviderSourceEndpointArnRefPo
 }
 
 /// <summary>Reference to a Endpoint in dms to populate sourceEndpointArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecForProviderSourceEndpointArnRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1ReplicationTaskSpecForProviderSourceEndpointArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecForProviderSourceEndpointArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicationTaskSpecForProviderSourceEndpointArnSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1ReplicationTaskSpecForProviderSourceEndpointArnSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecForProviderSourceEndpointArnSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicationTaskSpecForProviderSourceEndpointArnSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1ReplicationTaskSpecForProviderSourceEndpointArnSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecForProviderSourceEndpointArnSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1ReplicationTaskSpecForProviderSourceEndpointArnSelec
 }
 
 /// <summary>Selector for a Endpoint in dms to populate sourceEndpointArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecForProviderSourceEndpointArnSelector
 {
@@ -352,7 +352,7 @@ public partial class V1beta1ReplicationTaskSpecForProviderSourceEndpointArnSelec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecForProviderTargetEndpointArnRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicationTaskSpecForProviderTargetEndpointArnRefPolicyResolutionEnum
 {
@@ -368,7 +368,7 @@ public enum V1beta1ReplicationTaskSpecForProviderTargetEndpointArnRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecForProviderTargetEndpointArnRefPolicyResolveEnum>))]
 public enum V1beta1ReplicationTaskSpecForProviderTargetEndpointArnRefPolicyResolveEnum
 {
@@ -379,7 +379,7 @@ public enum V1beta1ReplicationTaskSpecForProviderTargetEndpointArnRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecForProviderTargetEndpointArnRefPolicy
 {
@@ -403,7 +403,7 @@ public partial class V1beta1ReplicationTaskSpecForProviderTargetEndpointArnRefPo
 }
 
 /// <summary>Reference to a Endpoint in dms to populate targetEndpointArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecForProviderTargetEndpointArnRef
 {
@@ -426,7 +426,7 @@ public partial class V1beta1ReplicationTaskSpecForProviderTargetEndpointArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecForProviderTargetEndpointArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicationTaskSpecForProviderTargetEndpointArnSelectorPolicyResolutionEnum
 {
@@ -442,7 +442,7 @@ public enum V1beta1ReplicationTaskSpecForProviderTargetEndpointArnSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecForProviderTargetEndpointArnSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicationTaskSpecForProviderTargetEndpointArnSelectorPolicyResolveEnum
 {
@@ -453,7 +453,7 @@ public enum V1beta1ReplicationTaskSpecForProviderTargetEndpointArnSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecForProviderTargetEndpointArnSelectorPolicy
 {
@@ -477,7 +477,7 @@ public partial class V1beta1ReplicationTaskSpecForProviderTargetEndpointArnSelec
 }
 
 /// <summary>Selector for a Endpoint in dms to populate targetEndpointArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecForProviderTargetEndpointArnSelector
 {
@@ -501,7 +501,7 @@ public partial class V1beta1ReplicationTaskSpecForProviderTargetEndpointArnSelec
     public V1beta1ReplicationTaskSpecForProviderTargetEndpointArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecForProvider
 {
@@ -587,7 +587,7 @@ public partial class V1beta1ReplicationTaskSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecInitProviderReplicationInstanceArnRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicationTaskSpecInitProviderReplicationInstanceArnRefPolicyResolutionEnum
 {
@@ -603,7 +603,7 @@ public enum V1beta1ReplicationTaskSpecInitProviderReplicationInstanceArnRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecInitProviderReplicationInstanceArnRefPolicyResolveEnum>))]
 public enum V1beta1ReplicationTaskSpecInitProviderReplicationInstanceArnRefPolicyResolveEnum
 {
@@ -614,7 +614,7 @@ public enum V1beta1ReplicationTaskSpecInitProviderReplicationInstanceArnRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecInitProviderReplicationInstanceArnRefPolicy
 {
@@ -638,7 +638,7 @@ public partial class V1beta1ReplicationTaskSpecInitProviderReplicationInstanceAr
 }
 
 /// <summary>Reference to a ReplicationInstance in dms to populate replicationInstanceArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecInitProviderReplicationInstanceArnRef
 {
@@ -661,7 +661,7 @@ public partial class V1beta1ReplicationTaskSpecInitProviderReplicationInstanceAr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecInitProviderReplicationInstanceArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicationTaskSpecInitProviderReplicationInstanceArnSelectorPolicyResolutionEnum
 {
@@ -677,7 +677,7 @@ public enum V1beta1ReplicationTaskSpecInitProviderReplicationInstanceArnSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecInitProviderReplicationInstanceArnSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicationTaskSpecInitProviderReplicationInstanceArnSelectorPolicyResolveEnum
 {
@@ -688,7 +688,7 @@ public enum V1beta1ReplicationTaskSpecInitProviderReplicationInstanceArnSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecInitProviderReplicationInstanceArnSelectorPolicy
 {
@@ -712,7 +712,7 @@ public partial class V1beta1ReplicationTaskSpecInitProviderReplicationInstanceAr
 }
 
 /// <summary>Selector for a ReplicationInstance in dms to populate replicationInstanceArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecInitProviderReplicationInstanceArnSelector
 {
@@ -742,7 +742,7 @@ public partial class V1beta1ReplicationTaskSpecInitProviderReplicationInstanceAr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecInitProviderSourceEndpointArnRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicationTaskSpecInitProviderSourceEndpointArnRefPolicyResolutionEnum
 {
@@ -758,7 +758,7 @@ public enum V1beta1ReplicationTaskSpecInitProviderSourceEndpointArnRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecInitProviderSourceEndpointArnRefPolicyResolveEnum>))]
 public enum V1beta1ReplicationTaskSpecInitProviderSourceEndpointArnRefPolicyResolveEnum
 {
@@ -769,7 +769,7 @@ public enum V1beta1ReplicationTaskSpecInitProviderSourceEndpointArnRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecInitProviderSourceEndpointArnRefPolicy
 {
@@ -793,7 +793,7 @@ public partial class V1beta1ReplicationTaskSpecInitProviderSourceEndpointArnRefP
 }
 
 /// <summary>Reference to a Endpoint in dms to populate sourceEndpointArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecInitProviderSourceEndpointArnRef
 {
@@ -816,7 +816,7 @@ public partial class V1beta1ReplicationTaskSpecInitProviderSourceEndpointArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecInitProviderSourceEndpointArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicationTaskSpecInitProviderSourceEndpointArnSelectorPolicyResolutionEnum
 {
@@ -832,7 +832,7 @@ public enum V1beta1ReplicationTaskSpecInitProviderSourceEndpointArnSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecInitProviderSourceEndpointArnSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicationTaskSpecInitProviderSourceEndpointArnSelectorPolicyResolveEnum
 {
@@ -843,7 +843,7 @@ public enum V1beta1ReplicationTaskSpecInitProviderSourceEndpointArnSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecInitProviderSourceEndpointArnSelectorPolicy
 {
@@ -867,7 +867,7 @@ public partial class V1beta1ReplicationTaskSpecInitProviderSourceEndpointArnSele
 }
 
 /// <summary>Selector for a Endpoint in dms to populate sourceEndpointArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecInitProviderSourceEndpointArnSelector
 {
@@ -897,7 +897,7 @@ public partial class V1beta1ReplicationTaskSpecInitProviderSourceEndpointArnSele
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecInitProviderTargetEndpointArnRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicationTaskSpecInitProviderTargetEndpointArnRefPolicyResolutionEnum
 {
@@ -913,7 +913,7 @@ public enum V1beta1ReplicationTaskSpecInitProviderTargetEndpointArnRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecInitProviderTargetEndpointArnRefPolicyResolveEnum>))]
 public enum V1beta1ReplicationTaskSpecInitProviderTargetEndpointArnRefPolicyResolveEnum
 {
@@ -924,7 +924,7 @@ public enum V1beta1ReplicationTaskSpecInitProviderTargetEndpointArnRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecInitProviderTargetEndpointArnRefPolicy
 {
@@ -948,7 +948,7 @@ public partial class V1beta1ReplicationTaskSpecInitProviderTargetEndpointArnRefP
 }
 
 /// <summary>Reference to a Endpoint in dms to populate targetEndpointArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecInitProviderTargetEndpointArnRef
 {
@@ -971,7 +971,7 @@ public partial class V1beta1ReplicationTaskSpecInitProviderTargetEndpointArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecInitProviderTargetEndpointArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicationTaskSpecInitProviderTargetEndpointArnSelectorPolicyResolutionEnum
 {
@@ -987,7 +987,7 @@ public enum V1beta1ReplicationTaskSpecInitProviderTargetEndpointArnSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecInitProviderTargetEndpointArnSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicationTaskSpecInitProviderTargetEndpointArnSelectorPolicyResolveEnum
 {
@@ -998,7 +998,7 @@ public enum V1beta1ReplicationTaskSpecInitProviderTargetEndpointArnSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecInitProviderTargetEndpointArnSelectorPolicy
 {
@@ -1022,7 +1022,7 @@ public partial class V1beta1ReplicationTaskSpecInitProviderTargetEndpointArnSele
 }
 
 /// <summary>Selector for a Endpoint in dms to populate targetEndpointArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecInitProviderTargetEndpointArnSelector
 {
@@ -1058,7 +1058,7 @@ public partial class V1beta1ReplicationTaskSpecInitProviderTargetEndpointArnSele
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecInitProvider
 {
@@ -1135,7 +1135,7 @@ public partial class V1beta1ReplicationTaskSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationTaskSpecManagementPoliciesEnum>))]
 public enum V1beta1ReplicationTaskSpecManagementPoliciesEnum
 {
@@ -1158,7 +1158,7 @@ public enum V1beta1ReplicationTaskSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecProviderConfigRef
 {
@@ -1177,7 +1177,7 @@ public partial class V1beta1ReplicationTaskSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpecWriteConnectionSecretToRef
 {
@@ -1187,7 +1187,7 @@ public partial class V1beta1ReplicationTaskSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ReplicationTaskSpec defines the desired state of ReplicationTask</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskSpec
 {
@@ -1238,7 +1238,7 @@ public partial class V1beta1ReplicationTaskSpec
     public V1beta1ReplicationTaskSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskStatusAtProvider
 {
@@ -1310,7 +1310,7 @@ public partial class V1beta1ReplicationTaskStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskStatusConditions
 {
@@ -1353,7 +1353,7 @@ public partial class V1beta1ReplicationTaskStatusConditions
 }
 
 /// <summary>ReplicationTaskStatus defines the observed state of ReplicationTask.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationTaskStatus
 {
@@ -1374,7 +1374,7 @@ public partial class V1beta1ReplicationTaskStatus
 }
 
 /// <summary>ReplicationTask is the Schema for the ReplicationTasks API. Provides a DMS (Data Migration Service) replication task resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ReplicationTask : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ReplicationTaskSpec>, IStatus<V1beta1ReplicationTaskStatus?>

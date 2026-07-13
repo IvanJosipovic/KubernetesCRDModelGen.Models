@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.certificatemanager.cnrm.cloud.google.com;
 /// <summary>CertificateManagerDNSAuthorization is the Schema for the CertificateManagerDNSAuthorization API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1CertificateManagerDNSAuthorizationList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1CertificateManagerDNSAuthorization>
@@ -37,7 +37,7 @@ public partial class V1alpha1CertificateManagerDNSAuthorizationList : IKubernete
 }
 
 /// <summary>The project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CertificateManagerDNSAuthorizationSpecProjectRef
 {
@@ -59,7 +59,7 @@ public partial class V1alpha1CertificateManagerDNSAuthorizationSpecProjectRef
 }
 
 /// <summary>CertificateManagerDNSAuthorizationSpec defines the desired state of CertificateManagerDNSAuthorization</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CertificateManagerDNSAuthorizationSpec
 {
@@ -84,7 +84,7 @@ public partial class V1alpha1CertificateManagerDNSAuthorizationSpec
     public string? ResourceID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CertificateManagerDNSAuthorizationStatusConditions
 {
@@ -109,7 +109,7 @@ public partial class V1alpha1CertificateManagerDNSAuthorizationStatusConditions
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CertificateManagerDNSAuthorizationStatusDnsResourceRecord
 {
@@ -127,7 +127,7 @@ public partial class V1alpha1CertificateManagerDNSAuthorizationStatusDnsResource
 }
 
 /// <summary>CertificateManagerDNSAuthorizationStatus defines the config connector machine state of CertificateManagerDNSAuthorization</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CertificateManagerDNSAuthorizationStatus
 {
@@ -149,7 +149,7 @@ public partial class V1alpha1CertificateManagerDNSAuthorizationStatus
 }
 
 /// <summary>CertificateManagerDNSAuthorization is the Schema for the CertificateManagerDNSAuthorization API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1CertificateManagerDNSAuthorization : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1CertificateManagerDNSAuthorizationSpec>, IStatus<V1alpha1CertificateManagerDNSAuthorizationStatus?>

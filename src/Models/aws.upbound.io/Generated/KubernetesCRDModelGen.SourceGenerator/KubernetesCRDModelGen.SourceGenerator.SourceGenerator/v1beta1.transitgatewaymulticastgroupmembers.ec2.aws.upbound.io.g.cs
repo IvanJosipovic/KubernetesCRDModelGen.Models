@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ec2.aws.upbound.io;
 /// <summary>TransitGatewayMulticastGroupMember is the Schema for the TransitGatewayMulticastGroupMembers API. Manages an EC2 Transit Gateway Multicast Group Member</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TransitGatewayMulticastGroupMemberList : IKubernetesObject<V1ListMeta>, IItems<V1beta1TransitGatewayMulticastGroupMember>
@@ -45,7 +45,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberList : IKubernetes
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayMulticastGroupMemberSpecDeletionPolicyEnum>))]
 public enum V1beta1TransitGatewayMulticastGroupMemberSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1TransitGatewayMulticastGroupMemberSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayMulticastGroupMemberSpecForProviderNetworkInterfaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1TransitGatewayMulticastGroupMemberSpecForProviderNetworkInterfaceIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1TransitGatewayMulticastGroupMemberSpecForProviderNetworkInter
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayMulticastGroupMemberSpecForProviderNetworkInterfaceIdRefPolicyResolveEnum>))]
 public enum V1beta1TransitGatewayMulticastGroupMemberSpecForProviderNetworkInterfaceIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1TransitGatewayMulticastGroupMemberSpecForProviderNetworkInter
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberSpecForProviderNetworkInterfaceIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberSpecForProviderNet
 }
 
 /// <summary>Reference to a NetworkInterface in ec2 to populate networkInterfaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberSpecForProviderNetworkInterfaceIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberSpecForProviderNet
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayMulticastGroupMemberSpecForProviderNetworkInterfaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1TransitGatewayMulticastGroupMemberSpecForProviderNetworkInterfaceIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1TransitGatewayMulticastGroupMemberSpecForProviderNetworkInter
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayMulticastGroupMemberSpecForProviderNetworkInterfaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1TransitGatewayMulticastGroupMemberSpecForProviderNetworkInterfaceIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1TransitGatewayMulticastGroupMemberSpecForProviderNetworkInter
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberSpecForProviderNetworkInterfaceIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberSpecForProviderNet
 }
 
 /// <summary>Selector for a NetworkInterface in ec2 to populate networkInterfaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberSpecForProviderNetworkInterfaceIdSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberSpecForProviderNet
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayMulticastGroupMemberSpecForProviderTransitGatewayMulticastDomainIdRefPolicyResolutionEnum>))]
 public enum V1beta1TransitGatewayMulticastGroupMemberSpecForProviderTransitGatewayMulticastDomainIdRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1TransitGatewayMulticastGroupMemberSpecForProviderTransitGatew
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayMulticastGroupMemberSpecForProviderTransitGatewayMulticastDomainIdRefPolicyResolveEnum>))]
 public enum V1beta1TransitGatewayMulticastGroupMemberSpecForProviderTransitGatewayMulticastDomainIdRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1TransitGatewayMulticastGroupMemberSpecForProviderTransitGatew
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberSpecForProviderTransitGatewayMulticastDomainIdRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberSpecForProviderTra
 }
 
 /// <summary>Reference to a TransitGatewayMulticastDomain in ec2 to populate transitGatewayMulticastDomainId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberSpecForProviderTransitGatewayMulticastDomainIdRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberSpecForProviderTra
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayMulticastGroupMemberSpecForProviderTransitGatewayMulticastDomainIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1TransitGatewayMulticastGroupMemberSpecForProviderTransitGatewayMulticastDomainIdSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1TransitGatewayMulticastGroupMemberSpecForProviderTransitGatew
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayMulticastGroupMemberSpecForProviderTransitGatewayMulticastDomainIdSelectorPolicyResolveEnum>))]
 public enum V1beta1TransitGatewayMulticastGroupMemberSpecForProviderTransitGatewayMulticastDomainIdSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1TransitGatewayMulticastGroupMemberSpecForProviderTransitGatew
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberSpecForProviderTransitGatewayMulticastDomainIdSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberSpecForProviderTra
 }
 
 /// <summary>Selector for a TransitGatewayMulticastDomain in ec2 to populate transitGatewayMulticastDomainId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberSpecForProviderTransitGatewayMulticastDomainIdSelector
 {
@@ -349,7 +349,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberSpecForProviderTra
     public V1beta1TransitGatewayMulticastGroupMemberSpecForProviderTransitGatewayMulticastDomainIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberSpecForProvider
 {
@@ -395,7 +395,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderNetworkInterfaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderNetworkInterfaceIdRefPolicyResolutionEnum
 {
@@ -411,7 +411,7 @@ public enum V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderNetworkInte
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderNetworkInterfaceIdRefPolicyResolveEnum>))]
 public enum V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderNetworkInterfaceIdRefPolicyResolveEnum
 {
@@ -422,7 +422,7 @@ public enum V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderNetworkInte
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderNetworkInterfaceIdRefPolicy
 {
@@ -446,7 +446,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderNe
 }
 
 /// <summary>Reference to a NetworkInterface in ec2 to populate networkInterfaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderNetworkInterfaceIdRef
 {
@@ -465,7 +465,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderNe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderNetworkInterfaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderNetworkInterfaceIdSelectorPolicyResolutionEnum
 {
@@ -481,7 +481,7 @@ public enum V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderNetworkInte
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderNetworkInterfaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderNetworkInterfaceIdSelectorPolicyResolveEnum
 {
@@ -492,7 +492,7 @@ public enum V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderNetworkInte
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderNetworkInterfaceIdSelectorPolicy
 {
@@ -516,7 +516,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderNe
 }
 
 /// <summary>Selector for a NetworkInterface in ec2 to populate networkInterfaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderNetworkInterfaceIdSelector
 {
@@ -542,7 +542,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderNe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderTransitGatewayMulticastDomainIdRefPolicyResolutionEnum>))]
 public enum V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderTransitGatewayMulticastDomainIdRefPolicyResolutionEnum
 {
@@ -558,7 +558,7 @@ public enum V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderTransitGate
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderTransitGatewayMulticastDomainIdRefPolicyResolveEnum>))]
 public enum V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderTransitGatewayMulticastDomainIdRefPolicyResolveEnum
 {
@@ -569,7 +569,7 @@ public enum V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderTransitGate
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderTransitGatewayMulticastDomainIdRefPolicy
 {
@@ -593,7 +593,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderTr
 }
 
 /// <summary>Reference to a TransitGatewayMulticastDomain in ec2 to populate transitGatewayMulticastDomainId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderTransitGatewayMulticastDomainIdRef
 {
@@ -612,7 +612,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderTr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderTransitGatewayMulticastDomainIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderTransitGatewayMulticastDomainIdSelectorPolicyResolutionEnum
 {
@@ -628,7 +628,7 @@ public enum V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderTransitGate
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderTransitGatewayMulticastDomainIdSelectorPolicyResolveEnum>))]
 public enum V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderTransitGatewayMulticastDomainIdSelectorPolicyResolveEnum
 {
@@ -639,7 +639,7 @@ public enum V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderTransitGate
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderTransitGatewayMulticastDomainIdSelectorPolicy
 {
@@ -663,7 +663,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderTr
 }
 
 /// <summary>Selector for a TransitGatewayMulticastDomain in ec2 to populate transitGatewayMulticastDomainId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderTransitGatewayMulticastDomainIdSelector
 {
@@ -695,7 +695,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberSpecInitProviderTr
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberSpecInitProvider
 {
@@ -732,7 +732,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayMulticastGroupMemberSpecManagementPoliciesEnum>))]
 public enum V1beta1TransitGatewayMulticastGroupMemberSpecManagementPoliciesEnum
 {
@@ -756,7 +756,7 @@ public enum V1beta1TransitGatewayMulticastGroupMemberSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayMulticastGroupMemberSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1TransitGatewayMulticastGroupMemberSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -772,7 +772,7 @@ public enum V1beta1TransitGatewayMulticastGroupMemberSpecProviderConfigRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TransitGatewayMulticastGroupMemberSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1TransitGatewayMulticastGroupMemberSpecProviderConfigRefPolicyResolveEnum
 {
@@ -783,7 +783,7 @@ public enum V1beta1TransitGatewayMulticastGroupMemberSpecProviderConfigRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberSpecProviderConfigRefPolicy
 {
@@ -811,7 +811,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberSpecProviderConfig
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberSpecProviderConfigRef
 {
@@ -830,7 +830,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberSpecProviderConfig
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberSpecWriteConnectionSecretToRef
 {
@@ -844,7 +844,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberSpecWriteConnectio
 }
 
 /// <summary>TransitGatewayMulticastGroupMemberSpec defines the desired state of TransitGatewayMulticastGroupMember</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberSpec
 {
@@ -911,7 +911,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberSpec
     public V1beta1TransitGatewayMulticastGroupMemberSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberStatusAtProvider
 {
@@ -940,7 +940,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberStatusConditions
 {
@@ -983,7 +983,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberStatusConditions
 }
 
 /// <summary>TransitGatewayMulticastGroupMemberStatus defines the observed state of TransitGatewayMulticastGroupMember.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastGroupMemberStatus
 {
@@ -1004,7 +1004,7 @@ public partial class V1beta1TransitGatewayMulticastGroupMemberStatus
 }
 
 /// <summary>TransitGatewayMulticastGroupMember is the Schema for the TransitGatewayMulticastGroupMembers API. Manages an EC2 Transit Gateway Multicast Group Member</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TransitGatewayMulticastGroupMember : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1TransitGatewayMulticastGroupMemberSpec>, IStatus<V1beta1TransitGatewayMulticastGroupMemberStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.m.upbound.io;
 /// <summary>VPNServerConfigurationPolicyGroup is the Schema for the VPNServerConfigurationPolicyGroups API. Manages a VPN Server Configuration Policy Group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VPNServerConfigurationPolicyGroupList : IKubernetesObject<V1ListMeta>, IItems<V1beta1VPNServerConfigurationPolicyGroup>
@@ -36,7 +36,7 @@ public partial class V1beta1VPNServerConfigurationPolicyGroupList : IKubernetesO
     public required IList<V1beta1VPNServerConfigurationPolicyGroup> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNServerConfigurationPolicyGroupSpecForProviderPolicy
 {
@@ -59,7 +59,7 @@ public partial class V1beta1VPNServerConfigurationPolicyGroupSpecForProviderPoli
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPNServerConfigurationPolicyGroupSpecForProviderVpnServerConfigurationIdRefPolicyResolutionEnum>))]
 public enum V1beta1VPNServerConfigurationPolicyGroupSpecForProviderVpnServerConfigurationIdRefPolicyResolutionEnum
 {
@@ -75,7 +75,7 @@ public enum V1beta1VPNServerConfigurationPolicyGroupSpecForProviderVpnServerConf
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPNServerConfigurationPolicyGroupSpecForProviderVpnServerConfigurationIdRefPolicyResolveEnum>))]
 public enum V1beta1VPNServerConfigurationPolicyGroupSpecForProviderVpnServerConfigurationIdRefPolicyResolveEnum
 {
@@ -86,7 +86,7 @@ public enum V1beta1VPNServerConfigurationPolicyGroupSpecForProviderVpnServerConf
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNServerConfigurationPolicyGroupSpecForProviderVpnServerConfigurationIdRefPolicy
 {
@@ -110,7 +110,7 @@ public partial class V1beta1VPNServerConfigurationPolicyGroupSpecForProviderVpnS
 }
 
 /// <summary>Reference to a VPNServerConfiguration in network to populate vpnServerConfigurationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNServerConfigurationPolicyGroupSpecForProviderVpnServerConfigurationIdRef
 {
@@ -133,7 +133,7 @@ public partial class V1beta1VPNServerConfigurationPolicyGroupSpecForProviderVpnS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPNServerConfigurationPolicyGroupSpecForProviderVpnServerConfigurationIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPNServerConfigurationPolicyGroupSpecForProviderVpnServerConfigurationIdSelectorPolicyResolutionEnum
 {
@@ -149,7 +149,7 @@ public enum V1beta1VPNServerConfigurationPolicyGroupSpecForProviderVpnServerConf
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPNServerConfigurationPolicyGroupSpecForProviderVpnServerConfigurationIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VPNServerConfigurationPolicyGroupSpecForProviderVpnServerConfigurationIdSelectorPolicyResolveEnum
 {
@@ -160,7 +160,7 @@ public enum V1beta1VPNServerConfigurationPolicyGroupSpecForProviderVpnServerConf
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNServerConfigurationPolicyGroupSpecForProviderVpnServerConfigurationIdSelectorPolicy
 {
@@ -184,7 +184,7 @@ public partial class V1beta1VPNServerConfigurationPolicyGroupSpecForProviderVpnS
 }
 
 /// <summary>Selector for a VPNServerConfiguration in network to populate vpnServerConfigurationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNServerConfigurationPolicyGroupSpecForProviderVpnServerConfigurationIdSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1VPNServerConfigurationPolicyGroupSpecForProviderVpnS
     public V1beta1VPNServerConfigurationPolicyGroupSpecForProviderVpnServerConfigurationIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNServerConfigurationPolicyGroupSpecForProvider
 {
@@ -237,7 +237,7 @@ public partial class V1beta1VPNServerConfigurationPolicyGroupSpecForProvider
     public V1beta1VPNServerConfigurationPolicyGroupSpecForProviderVpnServerConfigurationIdSelector? VpnServerConfigurationIdSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNServerConfigurationPolicyGroupSpecInitProviderPolicy
 {
@@ -266,7 +266,7 @@ public partial class V1beta1VPNServerConfigurationPolicyGroupSpecInitProviderPol
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNServerConfigurationPolicyGroupSpecInitProvider
 {
@@ -287,7 +287,7 @@ public partial class V1beta1VPNServerConfigurationPolicyGroupSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPNServerConfigurationPolicyGroupSpecManagementPoliciesEnum>))]
 public enum V1beta1VPNServerConfigurationPolicyGroupSpecManagementPoliciesEnum
 {
@@ -310,7 +310,7 @@ public enum V1beta1VPNServerConfigurationPolicyGroupSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNServerConfigurationPolicyGroupSpecProviderConfigRef
 {
@@ -329,7 +329,7 @@ public partial class V1beta1VPNServerConfigurationPolicyGroupSpecProviderConfigR
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNServerConfigurationPolicyGroupSpecWriteConnectionSecretToRef
 {
@@ -339,7 +339,7 @@ public partial class V1beta1VPNServerConfigurationPolicyGroupSpecWriteConnection
 }
 
 /// <summary>VPNServerConfigurationPolicyGroupSpec defines the desired state of VPNServerConfigurationPolicyGroup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNServerConfigurationPolicyGroupSpec
 {
@@ -390,7 +390,7 @@ public partial class V1beta1VPNServerConfigurationPolicyGroupSpec
     public V1beta1VPNServerConfigurationPolicyGroupSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNServerConfigurationPolicyGroupStatusAtProviderPolicy
 {
@@ -407,7 +407,7 @@ public partial class V1beta1VPNServerConfigurationPolicyGroupStatusAtProviderPol
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNServerConfigurationPolicyGroupStatusAtProvider
 {
@@ -433,7 +433,7 @@ public partial class V1beta1VPNServerConfigurationPolicyGroupStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNServerConfigurationPolicyGroupStatusConditions
 {
@@ -476,7 +476,7 @@ public partial class V1beta1VPNServerConfigurationPolicyGroupStatusConditions
 }
 
 /// <summary>VPNServerConfigurationPolicyGroupStatus defines the observed state of VPNServerConfigurationPolicyGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPNServerConfigurationPolicyGroupStatus
 {
@@ -497,7 +497,7 @@ public partial class V1beta1VPNServerConfigurationPolicyGroupStatus
 }
 
 /// <summary>VPNServerConfigurationPolicyGroup is the Schema for the VPNServerConfigurationPolicyGroups API. Manages a VPN Server Configuration Policy Group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VPNServerConfigurationPolicyGroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VPNServerConfigurationPolicyGroupSpec>, IStatus<V1beta1VPNServerConfigurationPolicyGroupStatus?>

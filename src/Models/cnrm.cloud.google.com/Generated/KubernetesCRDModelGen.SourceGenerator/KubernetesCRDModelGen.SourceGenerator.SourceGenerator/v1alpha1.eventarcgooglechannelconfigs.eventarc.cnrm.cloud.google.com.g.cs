@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.eventarc.cnrm.cloud.google.com;
 /// <summary>EventarcGoogleChannelConfig is the Schema for the EventarcGoogleChannelConfig API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1EventarcGoogleChannelConfigList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1EventarcGoogleChannelConfig>
@@ -37,7 +37,7 @@ public partial class V1alpha1EventarcGoogleChannelConfigList : IKubernetesObject
 }
 
 /// <summary>Optional. Resource name of a KMS crypto key (managed by the user) used to encrypt/decrypt their event data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventarcGoogleChannelConfigSpecCryptoKeyRef
 {
@@ -55,7 +55,7 @@ public partial class V1alpha1EventarcGoogleChannelConfigSpecCryptoKeyRef
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventarcGoogleChannelConfigSpecProjectRef
 {
@@ -77,7 +77,7 @@ public partial class V1alpha1EventarcGoogleChannelConfigSpecProjectRef
 }
 
 /// <summary>EventarcGoogleChannelConfigSpec defines the desired state of EventarcGoogleChannelConfig</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventarcGoogleChannelConfigSpec
 {
@@ -97,7 +97,7 @@ public partial class V1alpha1EventarcGoogleChannelConfigSpec
     public string? ResourceID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventarcGoogleChannelConfigStatusConditions
 {
@@ -123,7 +123,7 @@ public partial class V1alpha1EventarcGoogleChannelConfigStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventarcGoogleChannelConfigStatusObservedState
 {
@@ -133,7 +133,7 @@ public partial class V1alpha1EventarcGoogleChannelConfigStatusObservedState
 }
 
 /// <summary>EventarcGoogleChannelConfigStatus defines the config connector machine state of EventarcGoogleChannelConfig</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventarcGoogleChannelConfigStatus
 {
@@ -155,7 +155,7 @@ public partial class V1alpha1EventarcGoogleChannelConfigStatus
 }
 
 /// <summary>EventarcGoogleChannelConfig is the Schema for the EventarcGoogleChannelConfig API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1EventarcGoogleChannelConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1EventarcGoogleChannelConfigSpec>, IStatus<V1alpha1EventarcGoogleChannelConfigStatus?>

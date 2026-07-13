@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.lexmodels.aws.m.upbound.io;
 /// <summary>Intent is the Schema for the Intents API. Provides an Amazon Lex intent resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IntentList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Intent>
@@ -36,7 +36,7 @@ public partial class V1beta1IntentList : IKubernetesObject<V1ListMeta>, IItems<V
     public required IList<V1beta1Intent> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecForProviderConclusionStatementMessage
 {
@@ -63,7 +63,7 @@ public partial class V1beta1IntentSpecForProviderConclusionStatementMessage
 /// application, you can&apos;t specify this element. The follow_up_prompt and conclusion_statement are
 /// mutually exclusive. You can specify only one. Attributes are documented under statement.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecForProviderConclusionStatement
 {
@@ -84,7 +84,7 @@ public partial class V1beta1IntentSpecForProviderConclusionStatement
     public string? ResponseCard { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecForProviderConfirmationPromptMessage
 {
@@ -109,7 +109,7 @@ public partial class V1beta1IntentSpecForProviderConfirmationPromptMessage
 /// have a yes or no answer. You you must provide both the rejection_statement and confirmation_prompt,
 /// or neither. Attributes are documented under prompt.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecForProviderConfirmationPrompt
 {
@@ -138,7 +138,7 @@ public partial class V1beta1IntentSpecForProviderConfirmationPrompt
 /// Specifies a Lambda function to invoke for each user input. You can
 /// invoke this Lambda function to personalize user interaction. Attributes are documented under code_hook.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecForProviderDialogCodeHook
 {
@@ -155,7 +155,7 @@ public partial class V1beta1IntentSpecForProviderDialogCodeHook
     public string? Uri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecForProviderFollowUpPromptPromptMessage
 {
@@ -176,7 +176,7 @@ public partial class V1beta1IntentSpecForProviderFollowUpPromptPromptMessage
 }
 
 /// <summary>Prompts for information from the user. Attributes are documented under prompt.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecForProviderFollowUpPromptPrompt
 {
@@ -201,7 +201,7 @@ public partial class V1beta1IntentSpecForProviderFollowUpPromptPrompt
     public string? ResponseCard { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecForProviderFollowUpPromptRejectionStatementMessage
 {
@@ -226,7 +226,7 @@ public partial class V1beta1IntentSpecForProviderFollowUpPromptRejectionStatemen
 /// Amazon Lex responds with this statement to acknowledge that the intent was canceled. Attributes are
 /// documented below under statement.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecForProviderFollowUpPromptRejectionStatement
 {
@@ -253,7 +253,7 @@ public partial class V1beta1IntentSpecForProviderFollowUpPromptRejectionStatemen
 /// user to order a drink. The follow_up_prompt field and the conclusion_statement field are mutually
 /// exclusive. You can specify only one. Attributes are documented under follow_up_prompt.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecForProviderFollowUpPrompt
 {
@@ -274,7 +274,7 @@ public partial class V1beta1IntentSpecForProviderFollowUpPrompt
 /// A description of the Lambda function that is run to fulfill the intent.
 /// Required if type is CodeHook. Attributes are documented under code_hook.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecForProviderFulfillmentActivityCodeHook
 {
@@ -296,7 +296,7 @@ public partial class V1beta1IntentSpecForProviderFulfillmentActivityCodeHook
 /// user provides all of the information for a pizza order, fulfillment_activity defines how the bot
 /// places an order with a local pizza store. Attributes are documented under fulfillment_activity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecForProviderFulfillmentActivity
 {
@@ -315,7 +315,7 @@ public partial class V1beta1IntentSpecForProviderFulfillmentActivity
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecForProviderRejectionStatementMessage
 {
@@ -341,7 +341,7 @@ public partial class V1beta1IntentSpecForProviderRejectionStatementMessage
 /// canceled. You must provide both the rejection_statement and the confirmation_prompt, or neither.
 /// Attributes are documented under statement.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecForProviderRejectionStatement
 {
@@ -362,7 +362,7 @@ public partial class V1beta1IntentSpecForProviderRejectionStatement
     public string? ResponseCard { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecForProviderSlotValueElicitationPromptMessage
 {
@@ -386,7 +386,7 @@ public partial class V1beta1IntentSpecForProviderSlotValueElicitationPromptMessa
 /// The prompt that Amazon Lex uses to elicit the slot value
 /// from the user. Attributes are documented under prompt.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecForProviderSlotValueElicitationPrompt
 {
@@ -411,7 +411,7 @@ public partial class V1beta1IntentSpecForProviderSlotValueElicitationPrompt
     public string? ResponseCard { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecForProviderSlot
 {
@@ -471,7 +471,7 @@ public partial class V1beta1IntentSpecForProviderSlot
     public V1beta1IntentSpecForProviderSlotValueElicitationPrompt? ValueElicitationPrompt { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecForProvider
 {
@@ -569,7 +569,7 @@ public partial class V1beta1IntentSpecForProvider
     public IList<V1beta1IntentSpecForProviderSlot>? Slot { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecInitProviderConclusionStatementMessage
 {
@@ -596,7 +596,7 @@ public partial class V1beta1IntentSpecInitProviderConclusionStatementMessage
 /// application, you can&apos;t specify this element. The follow_up_prompt and conclusion_statement are
 /// mutually exclusive. You can specify only one. Attributes are documented under statement.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecInitProviderConclusionStatement
 {
@@ -617,7 +617,7 @@ public partial class V1beta1IntentSpecInitProviderConclusionStatement
     public string? ResponseCard { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecInitProviderConfirmationPromptMessage
 {
@@ -642,7 +642,7 @@ public partial class V1beta1IntentSpecInitProviderConfirmationPromptMessage
 /// have a yes or no answer. You you must provide both the rejection_statement and confirmation_prompt,
 /// or neither. Attributes are documented under prompt.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecInitProviderConfirmationPrompt
 {
@@ -671,7 +671,7 @@ public partial class V1beta1IntentSpecInitProviderConfirmationPrompt
 /// Specifies a Lambda function to invoke for each user input. You can
 /// invoke this Lambda function to personalize user interaction. Attributes are documented under code_hook.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecInitProviderDialogCodeHook
 {
@@ -688,7 +688,7 @@ public partial class V1beta1IntentSpecInitProviderDialogCodeHook
     public string? Uri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecInitProviderFollowUpPromptPromptMessage
 {
@@ -709,7 +709,7 @@ public partial class V1beta1IntentSpecInitProviderFollowUpPromptPromptMessage
 }
 
 /// <summary>Prompts for information from the user. Attributes are documented under prompt.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecInitProviderFollowUpPromptPrompt
 {
@@ -734,7 +734,7 @@ public partial class V1beta1IntentSpecInitProviderFollowUpPromptPrompt
     public string? ResponseCard { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecInitProviderFollowUpPromptRejectionStatementMessage
 {
@@ -759,7 +759,7 @@ public partial class V1beta1IntentSpecInitProviderFollowUpPromptRejectionStateme
 /// Amazon Lex responds with this statement to acknowledge that the intent was canceled. Attributes are
 /// documented below under statement.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecInitProviderFollowUpPromptRejectionStatement
 {
@@ -786,7 +786,7 @@ public partial class V1beta1IntentSpecInitProviderFollowUpPromptRejectionStateme
 /// user to order a drink. The follow_up_prompt field and the conclusion_statement field are mutually
 /// exclusive. You can specify only one. Attributes are documented under follow_up_prompt.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecInitProviderFollowUpPrompt
 {
@@ -807,7 +807,7 @@ public partial class V1beta1IntentSpecInitProviderFollowUpPrompt
 /// A description of the Lambda function that is run to fulfill the intent.
 /// Required if type is CodeHook. Attributes are documented under code_hook.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecInitProviderFulfillmentActivityCodeHook
 {
@@ -829,7 +829,7 @@ public partial class V1beta1IntentSpecInitProviderFulfillmentActivityCodeHook
 /// user provides all of the information for a pizza order, fulfillment_activity defines how the bot
 /// places an order with a local pizza store. Attributes are documented under fulfillment_activity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecInitProviderFulfillmentActivity
 {
@@ -848,7 +848,7 @@ public partial class V1beta1IntentSpecInitProviderFulfillmentActivity
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecInitProviderRejectionStatementMessage
 {
@@ -874,7 +874,7 @@ public partial class V1beta1IntentSpecInitProviderRejectionStatementMessage
 /// canceled. You must provide both the rejection_statement and the confirmation_prompt, or neither.
 /// Attributes are documented under statement.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecInitProviderRejectionStatement
 {
@@ -895,7 +895,7 @@ public partial class V1beta1IntentSpecInitProviderRejectionStatement
     public string? ResponseCard { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecInitProviderSlotValueElicitationPromptMessage
 {
@@ -919,7 +919,7 @@ public partial class V1beta1IntentSpecInitProviderSlotValueElicitationPromptMess
 /// The prompt that Amazon Lex uses to elicit the slot value
 /// from the user. Attributes are documented under prompt.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecInitProviderSlotValueElicitationPrompt
 {
@@ -944,7 +944,7 @@ public partial class V1beta1IntentSpecInitProviderSlotValueElicitationPrompt
     public string? ResponseCard { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecInitProviderSlot
 {
@@ -1016,7 +1016,7 @@ public partial class V1beta1IntentSpecInitProviderSlot
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecInitProvider
 {
@@ -1111,7 +1111,7 @@ public partial class V1beta1IntentSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntentSpecManagementPoliciesEnum>))]
 public enum V1beta1IntentSpecManagementPoliciesEnum
 {
@@ -1134,7 +1134,7 @@ public enum V1beta1IntentSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecProviderConfigRef
 {
@@ -1153,7 +1153,7 @@ public partial class V1beta1IntentSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpecWriteConnectionSecretToRef
 {
@@ -1163,7 +1163,7 @@ public partial class V1beta1IntentSpecWriteConnectionSecretToRef
 }
 
 /// <summary>IntentSpec defines the desired state of Intent</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentSpec
 {
@@ -1214,7 +1214,7 @@ public partial class V1beta1IntentSpec
     public V1beta1IntentSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentStatusAtProviderConclusionStatementMessage
 {
@@ -1241,7 +1241,7 @@ public partial class V1beta1IntentStatusAtProviderConclusionStatementMessage
 /// application, you can&apos;t specify this element. The follow_up_prompt and conclusion_statement are
 /// mutually exclusive. You can specify only one. Attributes are documented under statement.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentStatusAtProviderConclusionStatement
 {
@@ -1262,7 +1262,7 @@ public partial class V1beta1IntentStatusAtProviderConclusionStatement
     public string? ResponseCard { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentStatusAtProviderConfirmationPromptMessage
 {
@@ -1287,7 +1287,7 @@ public partial class V1beta1IntentStatusAtProviderConfirmationPromptMessage
 /// have a yes or no answer. You you must provide both the rejection_statement and confirmation_prompt,
 /// or neither. Attributes are documented under prompt.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentStatusAtProviderConfirmationPrompt
 {
@@ -1316,7 +1316,7 @@ public partial class V1beta1IntentStatusAtProviderConfirmationPrompt
 /// Specifies a Lambda function to invoke for each user input. You can
 /// invoke this Lambda function to personalize user interaction. Attributes are documented under code_hook.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentStatusAtProviderDialogCodeHook
 {
@@ -1333,7 +1333,7 @@ public partial class V1beta1IntentStatusAtProviderDialogCodeHook
     public string? Uri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentStatusAtProviderFollowUpPromptPromptMessage
 {
@@ -1354,7 +1354,7 @@ public partial class V1beta1IntentStatusAtProviderFollowUpPromptPromptMessage
 }
 
 /// <summary>Prompts for information from the user. Attributes are documented under prompt.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentStatusAtProviderFollowUpPromptPrompt
 {
@@ -1379,7 +1379,7 @@ public partial class V1beta1IntentStatusAtProviderFollowUpPromptPrompt
     public string? ResponseCard { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentStatusAtProviderFollowUpPromptRejectionStatementMessage
 {
@@ -1404,7 +1404,7 @@ public partial class V1beta1IntentStatusAtProviderFollowUpPromptRejectionStateme
 /// Amazon Lex responds with this statement to acknowledge that the intent was canceled. Attributes are
 /// documented below under statement.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentStatusAtProviderFollowUpPromptRejectionStatement
 {
@@ -1431,7 +1431,7 @@ public partial class V1beta1IntentStatusAtProviderFollowUpPromptRejectionStateme
 /// user to order a drink. The follow_up_prompt field and the conclusion_statement field are mutually
 /// exclusive. You can specify only one. Attributes are documented under follow_up_prompt.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentStatusAtProviderFollowUpPrompt
 {
@@ -1452,7 +1452,7 @@ public partial class V1beta1IntentStatusAtProviderFollowUpPrompt
 /// A description of the Lambda function that is run to fulfill the intent.
 /// Required if type is CodeHook. Attributes are documented under code_hook.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentStatusAtProviderFulfillmentActivityCodeHook
 {
@@ -1474,7 +1474,7 @@ public partial class V1beta1IntentStatusAtProviderFulfillmentActivityCodeHook
 /// user provides all of the information for a pizza order, fulfillment_activity defines how the bot
 /// places an order with a local pizza store. Attributes are documented under fulfillment_activity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentStatusAtProviderFulfillmentActivity
 {
@@ -1493,7 +1493,7 @@ public partial class V1beta1IntentStatusAtProviderFulfillmentActivity
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentStatusAtProviderRejectionStatementMessage
 {
@@ -1519,7 +1519,7 @@ public partial class V1beta1IntentStatusAtProviderRejectionStatementMessage
 /// canceled. You must provide both the rejection_statement and the confirmation_prompt, or neither.
 /// Attributes are documented under statement.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentStatusAtProviderRejectionStatement
 {
@@ -1540,7 +1540,7 @@ public partial class V1beta1IntentStatusAtProviderRejectionStatement
     public string? ResponseCard { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentStatusAtProviderSlotValueElicitationPromptMessage
 {
@@ -1564,7 +1564,7 @@ public partial class V1beta1IntentStatusAtProviderSlotValueElicitationPromptMess
 /// The prompt that Amazon Lex uses to elicit the slot value
 /// from the user. Attributes are documented under prompt.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentStatusAtProviderSlotValueElicitationPrompt
 {
@@ -1589,7 +1589,7 @@ public partial class V1beta1IntentStatusAtProviderSlotValueElicitationPrompt
     public string? ResponseCard { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentStatusAtProviderSlot
 {
@@ -1649,7 +1649,7 @@ public partial class V1beta1IntentStatusAtProviderSlot
     public V1beta1IntentStatusAtProviderSlotValueElicitationPrompt? ValueElicitationPrompt { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentStatusAtProvider
 {
@@ -1774,7 +1774,7 @@ public partial class V1beta1IntentStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentStatusConditions
 {
@@ -1817,7 +1817,7 @@ public partial class V1beta1IntentStatusConditions
 }
 
 /// <summary>IntentStatus defines the observed state of Intent.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntentStatus
 {
@@ -1838,7 +1838,7 @@ public partial class V1beta1IntentStatus
 }
 
 /// <summary>Intent is the Schema for the Intents API. Provides an Amazon Lex intent resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Intent : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1IntentSpec>, IStatus<V1beta1IntentStatus?>

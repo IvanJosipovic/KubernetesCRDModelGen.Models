@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sql.azure.upbound.io;
 /// <summary>MSSQLOutboundFirewallRule is the Schema for the MSSQLOutboundFirewallRules API. Manages an Azure SQL Outbound Firewall Rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MSSQLOutboundFirewallRuleList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MSSQLOutboundFirewallRule>
@@ -45,7 +45,7 @@ public partial class V1beta1MSSQLOutboundFirewallRuleList : IKubernetesObject<V1
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLOutboundFirewallRuleSpecDeletionPolicyEnum>))]
 public enum V1beta1MSSQLOutboundFirewallRuleSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1MSSQLOutboundFirewallRuleSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLOutboundFirewallRuleSpecForProviderServerIdRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLOutboundFirewallRuleSpecForProviderServerIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1MSSQLOutboundFirewallRuleSpecForProviderServerIdRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLOutboundFirewallRuleSpecForProviderServerIdRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLOutboundFirewallRuleSpecForProviderServerIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1MSSQLOutboundFirewallRuleSpecForProviderServerIdRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLOutboundFirewallRuleSpecForProviderServerIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1MSSQLOutboundFirewallRuleSpecForProviderServerIdRefP
 }
 
 /// <summary>Reference to a MSSQLServer in sql to populate serverId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLOutboundFirewallRuleSpecForProviderServerIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1MSSQLOutboundFirewallRuleSpecForProviderServerIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLOutboundFirewallRuleSpecForProviderServerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLOutboundFirewallRuleSpecForProviderServerIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1MSSQLOutboundFirewallRuleSpecForProviderServerIdSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLOutboundFirewallRuleSpecForProviderServerIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLOutboundFirewallRuleSpecForProviderServerIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1MSSQLOutboundFirewallRuleSpecForProviderServerIdSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLOutboundFirewallRuleSpecForProviderServerIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1MSSQLOutboundFirewallRuleSpecForProviderServerIdSele
 }
 
 /// <summary>Selector for a MSSQLServer in sql to populate serverId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLOutboundFirewallRuleSpecForProviderServerIdSelector
 {
@@ -202,7 +202,7 @@ public partial class V1beta1MSSQLOutboundFirewallRuleSpecForProviderServerIdSele
     public V1beta1MSSQLOutboundFirewallRuleSpecForProviderServerIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLOutboundFirewallRuleSpecForProvider
 {
@@ -231,7 +231,7 @@ public partial class V1beta1MSSQLOutboundFirewallRuleSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLOutboundFirewallRuleSpecInitProvider
 {
@@ -241,7 +241,7 @@ public partial class V1beta1MSSQLOutboundFirewallRuleSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLOutboundFirewallRuleSpecManagementPoliciesEnum>))]
 public enum V1beta1MSSQLOutboundFirewallRuleSpecManagementPoliciesEnum
 {
@@ -265,7 +265,7 @@ public enum V1beta1MSSQLOutboundFirewallRuleSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLOutboundFirewallRuleSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLOutboundFirewallRuleSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -281,7 +281,7 @@ public enum V1beta1MSSQLOutboundFirewallRuleSpecProviderConfigRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLOutboundFirewallRuleSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLOutboundFirewallRuleSpecProviderConfigRefPolicyResolveEnum
 {
@@ -292,7 +292,7 @@ public enum V1beta1MSSQLOutboundFirewallRuleSpecProviderConfigRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLOutboundFirewallRuleSpecProviderConfigRefPolicy
 {
@@ -320,7 +320,7 @@ public partial class V1beta1MSSQLOutboundFirewallRuleSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLOutboundFirewallRuleSpecProviderConfigRef
 {
@@ -339,7 +339,7 @@ public partial class V1beta1MSSQLOutboundFirewallRuleSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLOutboundFirewallRuleSpecWriteConnectionSecretToRef
 {
@@ -353,7 +353,7 @@ public partial class V1beta1MSSQLOutboundFirewallRuleSpecWriteConnectionSecretTo
 }
 
 /// <summary>MSSQLOutboundFirewallRuleSpec defines the desired state of MSSQLOutboundFirewallRule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLOutboundFirewallRuleSpec
 {
@@ -420,7 +420,7 @@ public partial class V1beta1MSSQLOutboundFirewallRuleSpec
     public V1beta1MSSQLOutboundFirewallRuleSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLOutboundFirewallRuleStatusAtProvider
 {
@@ -434,7 +434,7 @@ public partial class V1beta1MSSQLOutboundFirewallRuleStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLOutboundFirewallRuleStatusConditions
 {
@@ -477,7 +477,7 @@ public partial class V1beta1MSSQLOutboundFirewallRuleStatusConditions
 }
 
 /// <summary>MSSQLOutboundFirewallRuleStatus defines the observed state of MSSQLOutboundFirewallRule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLOutboundFirewallRuleStatus
 {
@@ -498,7 +498,7 @@ public partial class V1beta1MSSQLOutboundFirewallRuleStatus
 }
 
 /// <summary>MSSQLOutboundFirewallRule is the Schema for the MSSQLOutboundFirewallRules API. Manages an Azure SQL Outbound Firewall Rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MSSQLOutboundFirewallRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MSSQLOutboundFirewallRuleSpec>, IStatus<V1beta1MSSQLOutboundFirewallRuleStatus?>

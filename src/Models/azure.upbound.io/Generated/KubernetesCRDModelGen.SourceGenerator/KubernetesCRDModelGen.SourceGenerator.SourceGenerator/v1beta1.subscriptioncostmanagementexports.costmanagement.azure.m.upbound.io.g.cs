@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.costmanagement.azure.m.upbound.io;
 /// <summary>SubscriptionCostManagementExport is the Schema for the SubscriptionCostManagementExports API. Manages an Azure Cost Management Export for a Subscription.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SubscriptionCostManagementExportList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SubscriptionCostManagementExport>
@@ -37,7 +37,7 @@ public partial class V1beta1SubscriptionCostManagementExportList : IKubernetesOb
 }
 
 /// <summary>A export_data_options block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpecForProviderExportDataOptions
 {
@@ -56,7 +56,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpecForProviderExpor
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionCostManagementExportSpecForProviderExportDataStorageLocationContainerIdRefPolicyResolutionEnum>))]
 public enum V1beta1SubscriptionCostManagementExportSpecForProviderExportDataStorageLocationContainerIdRefPolicyResolutionEnum
 {
@@ -72,7 +72,7 @@ public enum V1beta1SubscriptionCostManagementExportSpecForProviderExportDataStor
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionCostManagementExportSpecForProviderExportDataStorageLocationContainerIdRefPolicyResolveEnum>))]
 public enum V1beta1SubscriptionCostManagementExportSpecForProviderExportDataStorageLocationContainerIdRefPolicyResolveEnum
 {
@@ -83,7 +83,7 @@ public enum V1beta1SubscriptionCostManagementExportSpecForProviderExportDataStor
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpecForProviderExportDataStorageLocationContainerIdRefPolicy
 {
@@ -107,7 +107,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpecForProviderExpor
 }
 
 /// <summary>Reference to a Container in storage to populate containerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpecForProviderExportDataStorageLocationContainerIdRef
 {
@@ -130,7 +130,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpecForProviderExpor
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionCostManagementExportSpecForProviderExportDataStorageLocationContainerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SubscriptionCostManagementExportSpecForProviderExportDataStorageLocationContainerIdSelectorPolicyResolutionEnum
 {
@@ -146,7 +146,7 @@ public enum V1beta1SubscriptionCostManagementExportSpecForProviderExportDataStor
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionCostManagementExportSpecForProviderExportDataStorageLocationContainerIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SubscriptionCostManagementExportSpecForProviderExportDataStorageLocationContainerIdSelectorPolicyResolveEnum
 {
@@ -157,7 +157,7 @@ public enum V1beta1SubscriptionCostManagementExportSpecForProviderExportDataStor
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpecForProviderExportDataStorageLocationContainerIdSelectorPolicy
 {
@@ -181,7 +181,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpecForProviderExpor
 }
 
 /// <summary>Selector for a Container in storage to populate containerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpecForProviderExportDataStorageLocationContainerIdSelector
 {
@@ -206,7 +206,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpecForProviderExpor
 }
 
 /// <summary>A export_data_storage_location block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpecForProviderExportDataStorageLocation
 {
@@ -233,7 +233,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpecForProviderExpor
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionCostManagementExportSpecForProviderSubscriptionIdRefPolicyResolutionEnum>))]
 public enum V1beta1SubscriptionCostManagementExportSpecForProviderSubscriptionIdRefPolicyResolutionEnum
 {
@@ -249,7 +249,7 @@ public enum V1beta1SubscriptionCostManagementExportSpecForProviderSubscriptionId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionCostManagementExportSpecForProviderSubscriptionIdRefPolicyResolveEnum>))]
 public enum V1beta1SubscriptionCostManagementExportSpecForProviderSubscriptionIdRefPolicyResolveEnum
 {
@@ -260,7 +260,7 @@ public enum V1beta1SubscriptionCostManagementExportSpecForProviderSubscriptionId
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpecForProviderSubscriptionIdRefPolicy
 {
@@ -284,7 +284,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpecForProviderSubsc
 }
 
 /// <summary>Reference to a Subscription in azure to populate subscriptionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpecForProviderSubscriptionIdRef
 {
@@ -307,7 +307,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpecForProviderSubsc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionCostManagementExportSpecForProviderSubscriptionIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SubscriptionCostManagementExportSpecForProviderSubscriptionIdSelectorPolicyResolutionEnum
 {
@@ -323,7 +323,7 @@ public enum V1beta1SubscriptionCostManagementExportSpecForProviderSubscriptionId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionCostManagementExportSpecForProviderSubscriptionIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SubscriptionCostManagementExportSpecForProviderSubscriptionIdSelectorPolicyResolveEnum
 {
@@ -334,7 +334,7 @@ public enum V1beta1SubscriptionCostManagementExportSpecForProviderSubscriptionId
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpecForProviderSubscriptionIdSelectorPolicy
 {
@@ -358,7 +358,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpecForProviderSubsc
 }
 
 /// <summary>Selector for a Subscription in azure to populate subscriptionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpecForProviderSubscriptionIdSelector
 {
@@ -382,7 +382,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpecForProviderSubsc
     public V1beta1SubscriptionCostManagementExportSpecForProviderSubscriptionIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpecForProvider
 {
@@ -432,7 +432,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpecForProvider
 }
 
 /// <summary>A export_data_options block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpecInitProviderExportDataOptions
 {
@@ -451,7 +451,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpecInitProviderExpo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionCostManagementExportSpecInitProviderExportDataStorageLocationContainerIdRefPolicyResolutionEnum>))]
 public enum V1beta1SubscriptionCostManagementExportSpecInitProviderExportDataStorageLocationContainerIdRefPolicyResolutionEnum
 {
@@ -467,7 +467,7 @@ public enum V1beta1SubscriptionCostManagementExportSpecInitProviderExportDataSto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionCostManagementExportSpecInitProviderExportDataStorageLocationContainerIdRefPolicyResolveEnum>))]
 public enum V1beta1SubscriptionCostManagementExportSpecInitProviderExportDataStorageLocationContainerIdRefPolicyResolveEnum
 {
@@ -478,7 +478,7 @@ public enum V1beta1SubscriptionCostManagementExportSpecInitProviderExportDataSto
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpecInitProviderExportDataStorageLocationContainerIdRefPolicy
 {
@@ -502,7 +502,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpecInitProviderExpo
 }
 
 /// <summary>Reference to a Container in storage to populate containerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpecInitProviderExportDataStorageLocationContainerIdRef
 {
@@ -525,7 +525,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpecInitProviderExpo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionCostManagementExportSpecInitProviderExportDataStorageLocationContainerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SubscriptionCostManagementExportSpecInitProviderExportDataStorageLocationContainerIdSelectorPolicyResolutionEnum
 {
@@ -541,7 +541,7 @@ public enum V1beta1SubscriptionCostManagementExportSpecInitProviderExportDataSto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionCostManagementExportSpecInitProviderExportDataStorageLocationContainerIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SubscriptionCostManagementExportSpecInitProviderExportDataStorageLocationContainerIdSelectorPolicyResolveEnum
 {
@@ -552,7 +552,7 @@ public enum V1beta1SubscriptionCostManagementExportSpecInitProviderExportDataSto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpecInitProviderExportDataStorageLocationContainerIdSelectorPolicy
 {
@@ -576,7 +576,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpecInitProviderExpo
 }
 
 /// <summary>Selector for a Container in storage to populate containerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpecInitProviderExportDataStorageLocationContainerIdSelector
 {
@@ -601,7 +601,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpecInitProviderExpo
 }
 
 /// <summary>A export_data_storage_location block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpecInitProviderExportDataStorageLocation
 {
@@ -628,7 +628,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpecInitProviderExpo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionCostManagementExportSpecInitProviderSubscriptionIdRefPolicyResolutionEnum>))]
 public enum V1beta1SubscriptionCostManagementExportSpecInitProviderSubscriptionIdRefPolicyResolutionEnum
 {
@@ -644,7 +644,7 @@ public enum V1beta1SubscriptionCostManagementExportSpecInitProviderSubscriptionI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionCostManagementExportSpecInitProviderSubscriptionIdRefPolicyResolveEnum>))]
 public enum V1beta1SubscriptionCostManagementExportSpecInitProviderSubscriptionIdRefPolicyResolveEnum
 {
@@ -655,7 +655,7 @@ public enum V1beta1SubscriptionCostManagementExportSpecInitProviderSubscriptionI
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpecInitProviderSubscriptionIdRefPolicy
 {
@@ -679,7 +679,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpecInitProviderSubs
 }
 
 /// <summary>Reference to a Subscription in azure to populate subscriptionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpecInitProviderSubscriptionIdRef
 {
@@ -702,7 +702,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpecInitProviderSubs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionCostManagementExportSpecInitProviderSubscriptionIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SubscriptionCostManagementExportSpecInitProviderSubscriptionIdSelectorPolicyResolutionEnum
 {
@@ -718,7 +718,7 @@ public enum V1beta1SubscriptionCostManagementExportSpecInitProviderSubscriptionI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionCostManagementExportSpecInitProviderSubscriptionIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SubscriptionCostManagementExportSpecInitProviderSubscriptionIdSelectorPolicyResolveEnum
 {
@@ -729,7 +729,7 @@ public enum V1beta1SubscriptionCostManagementExportSpecInitProviderSubscriptionI
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpecInitProviderSubscriptionIdSelectorPolicy
 {
@@ -753,7 +753,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpecInitProviderSubs
 }
 
 /// <summary>Selector for a Subscription in azure to populate subscriptionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpecInitProviderSubscriptionIdSelector
 {
@@ -789,7 +789,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpecInitProviderSubs
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpecInitProvider
 {
@@ -842,7 +842,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionCostManagementExportSpecManagementPoliciesEnum>))]
 public enum V1beta1SubscriptionCostManagementExportSpecManagementPoliciesEnum
 {
@@ -865,7 +865,7 @@ public enum V1beta1SubscriptionCostManagementExportSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpecProviderConfigRef
 {
@@ -884,7 +884,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpecProviderConfigRe
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpecWriteConnectionSecretToRef
 {
@@ -894,7 +894,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpecWriteConnectionS
 }
 
 /// <summary>SubscriptionCostManagementExportSpec defines the desired state of SubscriptionCostManagementExport</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportSpec
 {
@@ -946,7 +946,7 @@ public partial class V1beta1SubscriptionCostManagementExportSpec
 }
 
 /// <summary>A export_data_options block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportStatusAtProviderExportDataOptions
 {
@@ -960,7 +960,7 @@ public partial class V1beta1SubscriptionCostManagementExportStatusAtProviderExpo
 }
 
 /// <summary>A export_data_storage_location block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportStatusAtProviderExportDataStorageLocation
 {
@@ -973,7 +973,7 @@ public partial class V1beta1SubscriptionCostManagementExportStatusAtProviderExpo
     public string? RootFolderPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportStatusAtProvider
 {
@@ -1019,7 +1019,7 @@ public partial class V1beta1SubscriptionCostManagementExportStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportStatusConditions
 {
@@ -1062,7 +1062,7 @@ public partial class V1beta1SubscriptionCostManagementExportStatusConditions
 }
 
 /// <summary>SubscriptionCostManagementExportStatus defines the observed state of SubscriptionCostManagementExport.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionCostManagementExportStatus
 {
@@ -1083,7 +1083,7 @@ public partial class V1beta1SubscriptionCostManagementExportStatus
 }
 
 /// <summary>SubscriptionCostManagementExport is the Schema for the SubscriptionCostManagementExports API. Manages an Azure Cost Management Export for a Subscription.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SubscriptionCostManagementExport : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SubscriptionCostManagementExportSpec>, IStatus<V1beta1SubscriptionCostManagementExportStatus?>

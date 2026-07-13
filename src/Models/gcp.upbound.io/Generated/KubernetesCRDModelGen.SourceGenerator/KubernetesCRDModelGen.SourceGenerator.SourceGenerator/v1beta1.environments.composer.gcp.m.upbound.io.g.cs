@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.composer.gcp.m.upbound.io;
 /// <summary>Environment is the Schema for the Environments API. An environment for running orchestration tasks.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EnvironmentList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Environment>
@@ -36,7 +36,7 @@ public partial class V1beta1EnvironmentList : IKubernetesObject<V1ListMeta>, IIt
     public required IList<V1beta1Environment> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigDataRetentionConfigAirflowMetadataRetentionConfig
 {
@@ -53,7 +53,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigDataRetentionConfigA
     public string? RetentionMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigDataRetentionConfigTaskLogsRetentionConfig
 {
@@ -70,7 +70,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigDataRetentionConfigT
 /// Configuration setting for airflow data rentention mechanism. Structure is
 /// documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigDataRetentionConfig
 {
@@ -93,7 +93,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigDataRetentionConfig
 /// The configuration settings for Cloud SQL instance used internally
 /// by Apache Airflow software.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigDatabaseConfig
 {
@@ -120,7 +120,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigDatabaseConfig
 /// The encryption options for the Cloud Composer environment and its
 /// dependencies.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigEncryptionConfig
 {
@@ -134,7 +134,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigEncryptionConfig
 }
 
 /// <summary>The configuration settings for Cloud Composer maintenance windows.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigMaintenanceWindow
 {
@@ -158,7 +158,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigMaintenanceWindow
     public string? StartTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigMasterAuthorizedNetworksConfigCidrBlocks
 {
@@ -178,7 +178,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigMasterAuthorizedNetw
 /// Google Compute Engine Public IPs and Google Prod IPs. Structure is
 /// documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigMasterAuthorizedNetworksConfig
 {
@@ -196,7 +196,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigMasterAuthorizedNetw
 /// Structure is documented below.
 /// Cannot be updated.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigIpAllocationPolicy
 {
@@ -254,7 +254,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigIpAllocati
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecForProviderConfigNodeConfigNetworkRefPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentSpecForProviderConfigNodeConfigNetworkRefPolicyResolutionEnum
 {
@@ -270,7 +270,7 @@ public enum V1beta1EnvironmentSpecForProviderConfigNodeConfigNetworkRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecForProviderConfigNodeConfigNetworkRefPolicyResolveEnum>))]
 public enum V1beta1EnvironmentSpecForProviderConfigNodeConfigNetworkRefPolicyResolveEnum
 {
@@ -281,7 +281,7 @@ public enum V1beta1EnvironmentSpecForProviderConfigNodeConfigNetworkRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigNetworkRefPolicy
 {
@@ -305,7 +305,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigNetworkRef
 }
 
 /// <summary>Reference to a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigNetworkRef
 {
@@ -328,7 +328,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigNetworkRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecForProviderConfigNodeConfigNetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentSpecForProviderConfigNodeConfigNetworkSelectorPolicyResolutionEnum
 {
@@ -344,7 +344,7 @@ public enum V1beta1EnvironmentSpecForProviderConfigNodeConfigNetworkSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecForProviderConfigNodeConfigNetworkSelectorPolicyResolveEnum>))]
 public enum V1beta1EnvironmentSpecForProviderConfigNodeConfigNetworkSelectorPolicyResolveEnum
 {
@@ -355,7 +355,7 @@ public enum V1beta1EnvironmentSpecForProviderConfigNodeConfigNetworkSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigNetworkSelectorPolicy
 {
@@ -379,7 +379,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigNetworkSel
 }
 
 /// <summary>Selector for a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigNetworkSelector
 {
@@ -409,7 +409,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigNetworkSel
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecForProviderConfigNodeConfigServiceAccountRefPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentSpecForProviderConfigNodeConfigServiceAccountRefPolicyResolutionEnum
 {
@@ -425,7 +425,7 @@ public enum V1beta1EnvironmentSpecForProviderConfigNodeConfigServiceAccountRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecForProviderConfigNodeConfigServiceAccountRefPolicyResolveEnum>))]
 public enum V1beta1EnvironmentSpecForProviderConfigNodeConfigServiceAccountRefPolicyResolveEnum
 {
@@ -436,7 +436,7 @@ public enum V1beta1EnvironmentSpecForProviderConfigNodeConfigServiceAccountRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigServiceAccountRefPolicy
 {
@@ -460,7 +460,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigServiceAcc
 }
 
 /// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigServiceAccountRef
 {
@@ -483,7 +483,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigServiceAcc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecForProviderConfigNodeConfigServiceAccountSelectorPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentSpecForProviderConfigNodeConfigServiceAccountSelectorPolicyResolutionEnum
 {
@@ -499,7 +499,7 @@ public enum V1beta1EnvironmentSpecForProviderConfigNodeConfigServiceAccountSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecForProviderConfigNodeConfigServiceAccountSelectorPolicyResolveEnum>))]
 public enum V1beta1EnvironmentSpecForProviderConfigNodeConfigServiceAccountSelectorPolicyResolveEnum
 {
@@ -510,7 +510,7 @@ public enum V1beta1EnvironmentSpecForProviderConfigNodeConfigServiceAccountSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigServiceAccountSelectorPolicy
 {
@@ -534,7 +534,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigServiceAcc
 }
 
 /// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigServiceAccountSelector
 {
@@ -564,7 +564,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigServiceAcc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecForProviderConfigNodeConfigSubnetworkRefPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentSpecForProviderConfigNodeConfigSubnetworkRefPolicyResolutionEnum
 {
@@ -580,7 +580,7 @@ public enum V1beta1EnvironmentSpecForProviderConfigNodeConfigSubnetworkRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecForProviderConfigNodeConfigSubnetworkRefPolicyResolveEnum>))]
 public enum V1beta1EnvironmentSpecForProviderConfigNodeConfigSubnetworkRefPolicyResolveEnum
 {
@@ -591,7 +591,7 @@ public enum V1beta1EnvironmentSpecForProviderConfigNodeConfigSubnetworkRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigSubnetworkRefPolicy
 {
@@ -615,7 +615,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigSubnetwork
 }
 
 /// <summary>Reference to a Subnetwork in compute to populate subnetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigSubnetworkRef
 {
@@ -638,7 +638,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigSubnetwork
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecForProviderConfigNodeConfigSubnetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentSpecForProviderConfigNodeConfigSubnetworkSelectorPolicyResolutionEnum
 {
@@ -654,7 +654,7 @@ public enum V1beta1EnvironmentSpecForProviderConfigNodeConfigSubnetworkSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecForProviderConfigNodeConfigSubnetworkSelectorPolicyResolveEnum>))]
 public enum V1beta1EnvironmentSpecForProviderConfigNodeConfigSubnetworkSelectorPolicyResolveEnum
 {
@@ -665,7 +665,7 @@ public enum V1beta1EnvironmentSpecForProviderConfigNodeConfigSubnetworkSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigSubnetworkSelectorPolicy
 {
@@ -689,7 +689,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigSubnetwork
 }
 
 /// <summary>Selector for a Subnetwork in compute to populate subnetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigSubnetworkSelector
 {
@@ -714,7 +714,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfigSubnetwork
 }
 
 /// <summary>The configuration used for the Kubernetes Engine cluster.  Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfig
 {
@@ -845,7 +845,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigNodeConfig
 }
 
 /// <summary>The configuration used for the Private IP Cloud Composer environment. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigPrivateEnvironmentConfig
 {
@@ -903,7 +903,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigPrivateEnvironmentCo
 }
 
 /// <summary>The recovery configuration settings for the Cloud Composer environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigRecoveryConfigScheduledSnapshotsConfig
 {
@@ -925,7 +925,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigRecoveryConfigSchedu
 }
 
 /// <summary>The configuration settings for recovery. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigRecoveryConfig
 {
@@ -938,7 +938,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigRecoveryConfig
 /// The configuration for Cloud Data Lineage integration. Structure is
 /// documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigSoftwareConfigCloudDataLineageIntegration
 {
@@ -948,7 +948,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigSoftwareConfigCloudD
 }
 
 /// <summary>The configuration settings for software inside the environment.  Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigSoftwareConfig
 {
@@ -1005,7 +1005,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigSoftwareConfig
 }
 
 /// <summary>The configuration settings for the Airflow web server App Engine instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigWebServerConfig
 {
@@ -1019,7 +1019,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigWebServerConfig
     public string? MachineType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigWebServerNetworkAccessControlAllowedIpRange
 {
@@ -1041,7 +1041,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigWebServerNetworkAcce
 /// The network-level access control policy for the Airflow web server.
 /// If unspecified, no network-level access restrictions are applied.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigWebServerNetworkAccessControl
 {
@@ -1051,7 +1051,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigWebServerNetworkAcce
 }
 
 /// <summary>Configuration for resources used by DAG processor.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigWorkloadsConfigDagProcessor
 {
@@ -1073,7 +1073,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigWorkloadsConfigDagPr
 }
 
 /// <summary>Configuration for resources used by Airflow schedulers.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigWorkloadsConfigScheduler
 {
@@ -1095,7 +1095,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigWorkloadsConfigSched
 }
 
 /// <summary>Configuration for resources used by Airflow triggerer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigWorkloadsConfigTriggerer
 {
@@ -1113,7 +1113,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigWorkloadsConfigTrigg
 }
 
 /// <summary>Configuration for resources used by Airflow web server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigWorkloadsConfigWebServer
 {
@@ -1131,7 +1131,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigWorkloadsConfigWebSe
 }
 
 /// <summary>Configuration for resources used by Airflow workers.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigWorkloadsConfigWorker
 {
@@ -1167,7 +1167,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigWorkloadsConfigWorke
 /// The Kubernetes workloads configuration for GKE cluster associated with the
 /// Cloud Composer environment.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfigWorkloadsConfig
 {
@@ -1193,7 +1193,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfigWorkloadsConfig
 }
 
 /// <summary>Configuration parameters for this environment  Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderConfig
 {
@@ -1306,7 +1306,7 @@ public partial class V1beta1EnvironmentSpecForProviderConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecForProviderProjectRefPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentSpecForProviderProjectRefPolicyResolutionEnum
 {
@@ -1322,7 +1322,7 @@ public enum V1beta1EnvironmentSpecForProviderProjectRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecForProviderProjectRefPolicyResolveEnum>))]
 public enum V1beta1EnvironmentSpecForProviderProjectRefPolicyResolveEnum
 {
@@ -1333,7 +1333,7 @@ public enum V1beta1EnvironmentSpecForProviderProjectRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderProjectRefPolicy
 {
@@ -1357,7 +1357,7 @@ public partial class V1beta1EnvironmentSpecForProviderProjectRefPolicy
 }
 
 /// <summary>Reference to a Project in cloudplatform to populate project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderProjectRef
 {
@@ -1380,7 +1380,7 @@ public partial class V1beta1EnvironmentSpecForProviderProjectRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecForProviderProjectSelectorPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentSpecForProviderProjectSelectorPolicyResolutionEnum
 {
@@ -1396,7 +1396,7 @@ public enum V1beta1EnvironmentSpecForProviderProjectSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecForProviderProjectSelectorPolicyResolveEnum>))]
 public enum V1beta1EnvironmentSpecForProviderProjectSelectorPolicyResolveEnum
 {
@@ -1407,7 +1407,7 @@ public enum V1beta1EnvironmentSpecForProviderProjectSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderProjectSelectorPolicy
 {
@@ -1431,7 +1431,7 @@ public partial class V1beta1EnvironmentSpecForProviderProjectSelectorPolicy
 }
 
 /// <summary>Selector for a Project in cloudplatform to populate project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderProjectSelector
 {
@@ -1456,7 +1456,7 @@ public partial class V1beta1EnvironmentSpecForProviderProjectSelector
 }
 
 /// <summary>Configuration options for storage used by Composer environment. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProviderStorageConfig
 {
@@ -1465,7 +1465,7 @@ public partial class V1beta1EnvironmentSpecForProviderStorageConfig
     public string? Bucket { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecForProvider
 {
@@ -1511,7 +1511,7 @@ public partial class V1beta1EnvironmentSpecForProvider
     public V1beta1EnvironmentSpecForProviderStorageConfig? StorageConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigDataRetentionConfigAirflowMetadataRetentionConfig
 {
@@ -1528,7 +1528,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigDataRetentionConfig
     public string? RetentionMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigDataRetentionConfigTaskLogsRetentionConfig
 {
@@ -1545,7 +1545,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigDataRetentionConfig
 /// Configuration setting for airflow data rentention mechanism. Structure is
 /// documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigDataRetentionConfig
 {
@@ -1568,7 +1568,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigDataRetentionConfig
 /// The configuration settings for Cloud SQL instance used internally
 /// by Apache Airflow software.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigDatabaseConfig
 {
@@ -1595,7 +1595,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigDatabaseConfig
 /// The encryption options for the Cloud Composer environment and its
 /// dependencies.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigEncryptionConfig
 {
@@ -1609,7 +1609,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigEncryptionConfig
 }
 
 /// <summary>The configuration settings for Cloud Composer maintenance windows.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigMaintenanceWindow
 {
@@ -1633,7 +1633,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigMaintenanceWindow
     public string? StartTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigMasterAuthorizedNetworksConfigCidrBlocks
 {
@@ -1653,7 +1653,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigMasterAuthorizedNet
 /// Google Compute Engine Public IPs and Google Prod IPs. Structure is
 /// documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigMasterAuthorizedNetworksConfig
 {
@@ -1671,7 +1671,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigMasterAuthorizedNet
 /// Structure is documented below.
 /// Cannot be updated.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigIpAllocationPolicy
 {
@@ -1729,7 +1729,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigIpAllocat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecInitProviderConfigNodeConfigNetworkRefPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentSpecInitProviderConfigNodeConfigNetworkRefPolicyResolutionEnum
 {
@@ -1745,7 +1745,7 @@ public enum V1beta1EnvironmentSpecInitProviderConfigNodeConfigNetworkRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecInitProviderConfigNodeConfigNetworkRefPolicyResolveEnum>))]
 public enum V1beta1EnvironmentSpecInitProviderConfigNodeConfigNetworkRefPolicyResolveEnum
 {
@@ -1756,7 +1756,7 @@ public enum V1beta1EnvironmentSpecInitProviderConfigNodeConfigNetworkRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigNetworkRefPolicy
 {
@@ -1780,7 +1780,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigNetworkRe
 }
 
 /// <summary>Reference to a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigNetworkRef
 {
@@ -1803,7 +1803,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigNetworkRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecInitProviderConfigNodeConfigNetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentSpecInitProviderConfigNodeConfigNetworkSelectorPolicyResolutionEnum
 {
@@ -1819,7 +1819,7 @@ public enum V1beta1EnvironmentSpecInitProviderConfigNodeConfigNetworkSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecInitProviderConfigNodeConfigNetworkSelectorPolicyResolveEnum>))]
 public enum V1beta1EnvironmentSpecInitProviderConfigNodeConfigNetworkSelectorPolicyResolveEnum
 {
@@ -1830,7 +1830,7 @@ public enum V1beta1EnvironmentSpecInitProviderConfigNodeConfigNetworkSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigNetworkSelectorPolicy
 {
@@ -1854,7 +1854,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigNetworkSe
 }
 
 /// <summary>Selector for a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigNetworkSelector
 {
@@ -1884,7 +1884,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigNetworkSe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecInitProviderConfigNodeConfigServiceAccountRefPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentSpecInitProviderConfigNodeConfigServiceAccountRefPolicyResolutionEnum
 {
@@ -1900,7 +1900,7 @@ public enum V1beta1EnvironmentSpecInitProviderConfigNodeConfigServiceAccountRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecInitProviderConfigNodeConfigServiceAccountRefPolicyResolveEnum>))]
 public enum V1beta1EnvironmentSpecInitProviderConfigNodeConfigServiceAccountRefPolicyResolveEnum
 {
@@ -1911,7 +1911,7 @@ public enum V1beta1EnvironmentSpecInitProviderConfigNodeConfigServiceAccountRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigServiceAccountRefPolicy
 {
@@ -1935,7 +1935,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigServiceAc
 }
 
 /// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigServiceAccountRef
 {
@@ -1958,7 +1958,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigServiceAc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecInitProviderConfigNodeConfigServiceAccountSelectorPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentSpecInitProviderConfigNodeConfigServiceAccountSelectorPolicyResolutionEnum
 {
@@ -1974,7 +1974,7 @@ public enum V1beta1EnvironmentSpecInitProviderConfigNodeConfigServiceAccountSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecInitProviderConfigNodeConfigServiceAccountSelectorPolicyResolveEnum>))]
 public enum V1beta1EnvironmentSpecInitProviderConfigNodeConfigServiceAccountSelectorPolicyResolveEnum
 {
@@ -1985,7 +1985,7 @@ public enum V1beta1EnvironmentSpecInitProviderConfigNodeConfigServiceAccountSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigServiceAccountSelectorPolicy
 {
@@ -2009,7 +2009,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigServiceAc
 }
 
 /// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigServiceAccountSelector
 {
@@ -2039,7 +2039,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigServiceAc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecInitProviderConfigNodeConfigSubnetworkRefPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentSpecInitProviderConfigNodeConfigSubnetworkRefPolicyResolutionEnum
 {
@@ -2055,7 +2055,7 @@ public enum V1beta1EnvironmentSpecInitProviderConfigNodeConfigSubnetworkRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecInitProviderConfigNodeConfigSubnetworkRefPolicyResolveEnum>))]
 public enum V1beta1EnvironmentSpecInitProviderConfigNodeConfigSubnetworkRefPolicyResolveEnum
 {
@@ -2066,7 +2066,7 @@ public enum V1beta1EnvironmentSpecInitProviderConfigNodeConfigSubnetworkRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigSubnetworkRefPolicy
 {
@@ -2090,7 +2090,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigSubnetwor
 }
 
 /// <summary>Reference to a Subnetwork in compute to populate subnetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigSubnetworkRef
 {
@@ -2113,7 +2113,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigSubnetwor
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecInitProviderConfigNodeConfigSubnetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentSpecInitProviderConfigNodeConfigSubnetworkSelectorPolicyResolutionEnum
 {
@@ -2129,7 +2129,7 @@ public enum V1beta1EnvironmentSpecInitProviderConfigNodeConfigSubnetworkSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecInitProviderConfigNodeConfigSubnetworkSelectorPolicyResolveEnum>))]
 public enum V1beta1EnvironmentSpecInitProviderConfigNodeConfigSubnetworkSelectorPolicyResolveEnum
 {
@@ -2140,7 +2140,7 @@ public enum V1beta1EnvironmentSpecInitProviderConfigNodeConfigSubnetworkSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigSubnetworkSelectorPolicy
 {
@@ -2164,7 +2164,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigSubnetwor
 }
 
 /// <summary>Selector for a Subnetwork in compute to populate subnetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigSubnetworkSelector
 {
@@ -2189,7 +2189,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfigSubnetwor
 }
 
 /// <summary>The configuration used for the Kubernetes Engine cluster.  Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfig
 {
@@ -2320,7 +2320,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigNodeConfig
 }
 
 /// <summary>The configuration used for the Private IP Cloud Composer environment. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigPrivateEnvironmentConfig
 {
@@ -2378,7 +2378,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigPrivateEnvironmentC
 }
 
 /// <summary>The recovery configuration settings for the Cloud Composer environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigRecoveryConfigScheduledSnapshotsConfig
 {
@@ -2400,7 +2400,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigRecoveryConfigSched
 }
 
 /// <summary>The configuration settings for recovery. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigRecoveryConfig
 {
@@ -2413,7 +2413,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigRecoveryConfig
 /// The configuration for Cloud Data Lineage integration. Structure is
 /// documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigSoftwareConfigCloudDataLineageIntegration
 {
@@ -2423,7 +2423,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigSoftwareConfigCloud
 }
 
 /// <summary>The configuration settings for software inside the environment.  Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigSoftwareConfig
 {
@@ -2480,7 +2480,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigSoftwareConfig
 }
 
 /// <summary>The configuration settings for the Airflow web server App Engine instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigWebServerConfig
 {
@@ -2494,7 +2494,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigWebServerConfig
     public string? MachineType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigWebServerNetworkAccessControlAllowedIpRange
 {
@@ -2516,7 +2516,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigWebServerNetworkAcc
 /// The network-level access control policy for the Airflow web server.
 /// If unspecified, no network-level access restrictions are applied.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigWebServerNetworkAccessControl
 {
@@ -2526,7 +2526,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigWebServerNetworkAcc
 }
 
 /// <summary>Configuration for resources used by DAG processor.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfigDagProcessor
 {
@@ -2548,7 +2548,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfigDagP
 }
 
 /// <summary>Configuration for resources used by Airflow schedulers.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfigScheduler
 {
@@ -2570,7 +2570,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfigSche
 }
 
 /// <summary>Configuration for resources used by Airflow triggerer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfigTriggerer
 {
@@ -2588,7 +2588,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfigTrig
 }
 
 /// <summary>Configuration for resources used by Airflow web server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfigWebServer
 {
@@ -2606,7 +2606,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfigWebS
 }
 
 /// <summary>Configuration for resources used by Airflow workers.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfigWorker
 {
@@ -2642,7 +2642,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfigWork
 /// The Kubernetes workloads configuration for GKE cluster associated with the
 /// Cloud Composer environment.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfig
 {
@@ -2668,7 +2668,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfigWorkloadsConfig
 }
 
 /// <summary>Configuration parameters for this environment  Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderConfig
 {
@@ -2781,7 +2781,7 @@ public partial class V1beta1EnvironmentSpecInitProviderConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecInitProviderProjectRefPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentSpecInitProviderProjectRefPolicyResolutionEnum
 {
@@ -2797,7 +2797,7 @@ public enum V1beta1EnvironmentSpecInitProviderProjectRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecInitProviderProjectRefPolicyResolveEnum>))]
 public enum V1beta1EnvironmentSpecInitProviderProjectRefPolicyResolveEnum
 {
@@ -2808,7 +2808,7 @@ public enum V1beta1EnvironmentSpecInitProviderProjectRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderProjectRefPolicy
 {
@@ -2832,7 +2832,7 @@ public partial class V1beta1EnvironmentSpecInitProviderProjectRefPolicy
 }
 
 /// <summary>Reference to a Project in cloudplatform to populate project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderProjectRef
 {
@@ -2855,7 +2855,7 @@ public partial class V1beta1EnvironmentSpecInitProviderProjectRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecInitProviderProjectSelectorPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentSpecInitProviderProjectSelectorPolicyResolutionEnum
 {
@@ -2871,7 +2871,7 @@ public enum V1beta1EnvironmentSpecInitProviderProjectSelectorPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecInitProviderProjectSelectorPolicyResolveEnum>))]
 public enum V1beta1EnvironmentSpecInitProviderProjectSelectorPolicyResolveEnum
 {
@@ -2882,7 +2882,7 @@ public enum V1beta1EnvironmentSpecInitProviderProjectSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderProjectSelectorPolicy
 {
@@ -2906,7 +2906,7 @@ public partial class V1beta1EnvironmentSpecInitProviderProjectSelectorPolicy
 }
 
 /// <summary>Selector for a Project in cloudplatform to populate project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderProjectSelector
 {
@@ -2931,7 +2931,7 @@ public partial class V1beta1EnvironmentSpecInitProviderProjectSelector
 }
 
 /// <summary>Configuration options for storage used by Composer environment. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProviderStorageConfig
 {
@@ -2952,7 +2952,7 @@ public partial class V1beta1EnvironmentSpecInitProviderStorageConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecInitProvider
 {
@@ -2998,7 +2998,7 @@ public partial class V1beta1EnvironmentSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentSpecManagementPoliciesEnum>))]
 public enum V1beta1EnvironmentSpecManagementPoliciesEnum
 {
@@ -3021,7 +3021,7 @@ public enum V1beta1EnvironmentSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecProviderConfigRef
 {
@@ -3040,7 +3040,7 @@ public partial class V1beta1EnvironmentSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpecWriteConnectionSecretToRef
 {
@@ -3050,7 +3050,7 @@ public partial class V1beta1EnvironmentSpecWriteConnectionSecretToRef
 }
 
 /// <summary>EnvironmentSpec defines the desired state of Environment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentSpec
 {
@@ -3101,7 +3101,7 @@ public partial class V1beta1EnvironmentSpec
     public V1beta1EnvironmentSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigDataRetentionConfigAirflowMetadataRetentionConfig
 {
@@ -3118,7 +3118,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigDataRetentionConfig
     public string? RetentionMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigDataRetentionConfigTaskLogsRetentionConfig
 {
@@ -3135,7 +3135,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigDataRetentionConfig
 /// Configuration setting for airflow data rentention mechanism. Structure is
 /// documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigDataRetentionConfig
 {
@@ -3158,7 +3158,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigDataRetentionConfig
 /// The configuration settings for Cloud SQL instance used internally
 /// by Apache Airflow software.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigDatabaseConfig
 {
@@ -3185,7 +3185,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigDatabaseConfig
 /// The encryption options for the Cloud Composer environment and its
 /// dependencies.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigEncryptionConfig
 {
@@ -3199,7 +3199,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigEncryptionConfig
 }
 
 /// <summary>The configuration settings for Cloud Composer maintenance windows.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigMaintenanceWindow
 {
@@ -3223,7 +3223,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigMaintenanceWindow
     public string? StartTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigMasterAuthorizedNetworksConfigCidrBlocks
 {
@@ -3243,7 +3243,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigMasterAuthorizedNet
 /// Google Compute Engine Public IPs and Google Prod IPs. Structure is
 /// documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigMasterAuthorizedNetworksConfig
 {
@@ -3261,7 +3261,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigMasterAuthorizedNet
 /// Structure is documented below.
 /// Cannot be updated.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigNodeConfigIpAllocationPolicy
 {
@@ -3314,7 +3314,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigNodeConfigIpAllocat
 }
 
 /// <summary>The configuration used for the Kubernetes Engine cluster.  Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigNodeConfig
 {
@@ -3421,7 +3421,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigNodeConfig
 }
 
 /// <summary>The configuration used for the Private IP Cloud Composer environment. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigPrivateEnvironmentConfig
 {
@@ -3479,7 +3479,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigPrivateEnvironmentC
 }
 
 /// <summary>The recovery configuration settings for the Cloud Composer environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigRecoveryConfigScheduledSnapshotsConfig
 {
@@ -3501,7 +3501,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigRecoveryConfigSched
 }
 
 /// <summary>The configuration settings for recovery. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigRecoveryConfig
 {
@@ -3514,7 +3514,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigRecoveryConfig
 /// The configuration for Cloud Data Lineage integration. Structure is
 /// documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigSoftwareConfigCloudDataLineageIntegration
 {
@@ -3524,7 +3524,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigSoftwareConfigCloud
 }
 
 /// <summary>The configuration settings for software inside the environment.  Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigSoftwareConfig
 {
@@ -3581,7 +3581,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigSoftwareConfig
 }
 
 /// <summary>The configuration settings for the Airflow web server App Engine instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigWebServerConfig
 {
@@ -3595,7 +3595,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigWebServerConfig
     public string? MachineType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigWebServerNetworkAccessControlAllowedIpRange
 {
@@ -3617,7 +3617,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigWebServerNetworkAcc
 /// The network-level access control policy for the Airflow web server.
 /// If unspecified, no network-level access restrictions are applied.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigWebServerNetworkAccessControl
 {
@@ -3627,7 +3627,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigWebServerNetworkAcc
 }
 
 /// <summary>Configuration for resources used by DAG processor.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfigDagProcessor
 {
@@ -3649,7 +3649,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfigDagP
 }
 
 /// <summary>Configuration for resources used by Airflow schedulers.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfigScheduler
 {
@@ -3671,7 +3671,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfigSche
 }
 
 /// <summary>Configuration for resources used by Airflow triggerer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfigTriggerer
 {
@@ -3689,7 +3689,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfigTrig
 }
 
 /// <summary>Configuration for resources used by Airflow web server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfigWebServer
 {
@@ -3707,7 +3707,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfigWebS
 }
 
 /// <summary>Configuration for resources used by Airflow workers.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfigWorker
 {
@@ -3743,7 +3743,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfigWork
 /// The Kubernetes workloads configuration for GKE cluster associated with the
 /// Cloud Composer environment.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfig
 {
@@ -3769,7 +3769,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfigWorkloadsConfig
 }
 
 /// <summary>Configuration parameters for this environment  Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderConfig
 {
@@ -3898,7 +3898,7 @@ public partial class V1beta1EnvironmentStatusAtProviderConfig
 }
 
 /// <summary>Configuration options for storage used by Composer environment. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProviderStorageConfig
 {
@@ -3907,7 +3907,7 @@ public partial class V1beta1EnvironmentStatusAtProviderStorageConfig
     public string? Bucket { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusAtProvider
 {
@@ -3957,7 +3957,7 @@ public partial class V1beta1EnvironmentStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatusConditions
 {
@@ -4000,7 +4000,7 @@ public partial class V1beta1EnvironmentStatusConditions
 }
 
 /// <summary>EnvironmentStatus defines the observed state of Environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentStatus
 {
@@ -4021,7 +4021,7 @@ public partial class V1beta1EnvironmentStatus
 }
 
 /// <summary>Environment is the Schema for the Environments API. An environment for running orchestration tasks.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Environment : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1EnvironmentSpec>, IStatus<V1beta1EnvironmentStatus?>

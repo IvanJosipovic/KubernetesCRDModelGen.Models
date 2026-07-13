@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.neptune.aws.upbound.io;
 /// <summary>ClusterInstance is the Schema for the ClusterInstances API. Provides an Neptune Cluster Resource Instance</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ClusterInstanceList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ClusterInstance>
@@ -45,7 +45,7 @@ public partial class V1beta1ClusterInstanceList : IKubernetesObject<V1ListMeta>,
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecDeletionPolicyEnum>))]
 public enum V1beta1ClusterInstanceSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1ClusterInstanceSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecForProviderClusterIdentifierRefPolicyResolutionEnum>))]
 public enum V1beta1ClusterInstanceSpecForProviderClusterIdentifierRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1ClusterInstanceSpecForProviderClusterIdentifierRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecForProviderClusterIdentifierRefPolicyResolveEnum>))]
 public enum V1beta1ClusterInstanceSpecForProviderClusterIdentifierRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1ClusterInstanceSpecForProviderClusterIdentifierRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecForProviderClusterIdentifierRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1ClusterInstanceSpecForProviderClusterIdentifierRefPo
 }
 
 /// <summary>Reference to a Cluster in neptune to populate clusterIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecForProviderClusterIdentifierRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1ClusterInstanceSpecForProviderClusterIdentifierRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecForProviderClusterIdentifierSelectorPolicyResolutionEnum>))]
 public enum V1beta1ClusterInstanceSpecForProviderClusterIdentifierSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1ClusterInstanceSpecForProviderClusterIdentifierSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecForProviderClusterIdentifierSelectorPolicyResolveEnum>))]
 public enum V1beta1ClusterInstanceSpecForProviderClusterIdentifierSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1ClusterInstanceSpecForProviderClusterIdentifierSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecForProviderClusterIdentifierSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1ClusterInstanceSpecForProviderClusterIdentifierSelec
 }
 
 /// <summary>Selector for a Cluster in neptune to populate clusterIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecForProviderClusterIdentifierSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1ClusterInstanceSpecForProviderClusterIdentifierSelec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecForProviderNeptuneParameterGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1ClusterInstanceSpecForProviderNeptuneParameterGroupNameRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1ClusterInstanceSpecForProviderNeptuneParameterGroupNameRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecForProviderNeptuneParameterGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1ClusterInstanceSpecForProviderNeptuneParameterGroupNameRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1ClusterInstanceSpecForProviderNeptuneParameterGroupNameRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecForProviderNeptuneParameterGroupNameRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1ClusterInstanceSpecForProviderNeptuneParameterGroupN
 }
 
 /// <summary>Reference to a ParameterGroup in neptune to populate neptuneParameterGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecForProviderNeptuneParameterGroupNameRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1ClusterInstanceSpecForProviderNeptuneParameterGroupN
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecForProviderNeptuneParameterGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ClusterInstanceSpecForProviderNeptuneParameterGroupNameSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1ClusterInstanceSpecForProviderNeptuneParameterGroupNameSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecForProviderNeptuneParameterGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ClusterInstanceSpecForProviderNeptuneParameterGroupNameSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1ClusterInstanceSpecForProviderNeptuneParameterGroupNameSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecForProviderNeptuneParameterGroupNameSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1ClusterInstanceSpecForProviderNeptuneParameterGroupN
 }
 
 /// <summary>Selector for a ParameterGroup in neptune to populate neptuneParameterGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecForProviderNeptuneParameterGroupNameSelector
 {
@@ -355,7 +355,7 @@ public partial class V1beta1ClusterInstanceSpecForProviderNeptuneParameterGroupN
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecForProviderNeptuneSubnetGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1ClusterInstanceSpecForProviderNeptuneSubnetGroupNameRefPolicyResolutionEnum
 {
@@ -371,7 +371,7 @@ public enum V1beta1ClusterInstanceSpecForProviderNeptuneSubnetGroupNameRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecForProviderNeptuneSubnetGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1ClusterInstanceSpecForProviderNeptuneSubnetGroupNameRefPolicyResolveEnum
 {
@@ -382,7 +382,7 @@ public enum V1beta1ClusterInstanceSpecForProviderNeptuneSubnetGroupNameRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecForProviderNeptuneSubnetGroupNameRefPolicy
 {
@@ -406,7 +406,7 @@ public partial class V1beta1ClusterInstanceSpecForProviderNeptuneSubnetGroupName
 }
 
 /// <summary>Reference to a SubnetGroup in neptune to populate neptuneSubnetGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecForProviderNeptuneSubnetGroupNameRef
 {
@@ -425,7 +425,7 @@ public partial class V1beta1ClusterInstanceSpecForProviderNeptuneSubnetGroupName
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecForProviderNeptuneSubnetGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ClusterInstanceSpecForProviderNeptuneSubnetGroupNameSelectorPolicyResolutionEnum
 {
@@ -441,7 +441,7 @@ public enum V1beta1ClusterInstanceSpecForProviderNeptuneSubnetGroupNameSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecForProviderNeptuneSubnetGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ClusterInstanceSpecForProviderNeptuneSubnetGroupNameSelectorPolicyResolveEnum
 {
@@ -452,7 +452,7 @@ public enum V1beta1ClusterInstanceSpecForProviderNeptuneSubnetGroupNameSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecForProviderNeptuneSubnetGroupNameSelectorPolicy
 {
@@ -476,7 +476,7 @@ public partial class V1beta1ClusterInstanceSpecForProviderNeptuneSubnetGroupName
 }
 
 /// <summary>Selector for a SubnetGroup in neptune to populate neptuneSubnetGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecForProviderNeptuneSubnetGroupNameSelector
 {
@@ -496,7 +496,7 @@ public partial class V1beta1ClusterInstanceSpecForProviderNeptuneSubnetGroupName
     public V1beta1ClusterInstanceSpecForProviderNeptuneSubnetGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecForProvider
 {
@@ -608,7 +608,7 @@ public partial class V1beta1ClusterInstanceSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecInitProviderClusterIdentifierRefPolicyResolutionEnum>))]
 public enum V1beta1ClusterInstanceSpecInitProviderClusterIdentifierRefPolicyResolutionEnum
 {
@@ -624,7 +624,7 @@ public enum V1beta1ClusterInstanceSpecInitProviderClusterIdentifierRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecInitProviderClusterIdentifierRefPolicyResolveEnum>))]
 public enum V1beta1ClusterInstanceSpecInitProviderClusterIdentifierRefPolicyResolveEnum
 {
@@ -635,7 +635,7 @@ public enum V1beta1ClusterInstanceSpecInitProviderClusterIdentifierRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecInitProviderClusterIdentifierRefPolicy
 {
@@ -659,7 +659,7 @@ public partial class V1beta1ClusterInstanceSpecInitProviderClusterIdentifierRefP
 }
 
 /// <summary>Reference to a Cluster in neptune to populate clusterIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecInitProviderClusterIdentifierRef
 {
@@ -678,7 +678,7 @@ public partial class V1beta1ClusterInstanceSpecInitProviderClusterIdentifierRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecInitProviderClusterIdentifierSelectorPolicyResolutionEnum>))]
 public enum V1beta1ClusterInstanceSpecInitProviderClusterIdentifierSelectorPolicyResolutionEnum
 {
@@ -694,7 +694,7 @@ public enum V1beta1ClusterInstanceSpecInitProviderClusterIdentifierSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecInitProviderClusterIdentifierSelectorPolicyResolveEnum>))]
 public enum V1beta1ClusterInstanceSpecInitProviderClusterIdentifierSelectorPolicyResolveEnum
 {
@@ -705,7 +705,7 @@ public enum V1beta1ClusterInstanceSpecInitProviderClusterIdentifierSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecInitProviderClusterIdentifierSelectorPolicy
 {
@@ -729,7 +729,7 @@ public partial class V1beta1ClusterInstanceSpecInitProviderClusterIdentifierSele
 }
 
 /// <summary>Selector for a Cluster in neptune to populate clusterIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecInitProviderClusterIdentifierSelector
 {
@@ -755,7 +755,7 @@ public partial class V1beta1ClusterInstanceSpecInitProviderClusterIdentifierSele
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecInitProviderNeptuneParameterGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1ClusterInstanceSpecInitProviderNeptuneParameterGroupNameRefPolicyResolutionEnum
 {
@@ -771,7 +771,7 @@ public enum V1beta1ClusterInstanceSpecInitProviderNeptuneParameterGroupNameRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecInitProviderNeptuneParameterGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1ClusterInstanceSpecInitProviderNeptuneParameterGroupNameRefPolicyResolveEnum
 {
@@ -782,7 +782,7 @@ public enum V1beta1ClusterInstanceSpecInitProviderNeptuneParameterGroupNameRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecInitProviderNeptuneParameterGroupNameRefPolicy
 {
@@ -806,7 +806,7 @@ public partial class V1beta1ClusterInstanceSpecInitProviderNeptuneParameterGroup
 }
 
 /// <summary>Reference to a ParameterGroup in neptune to populate neptuneParameterGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecInitProviderNeptuneParameterGroupNameRef
 {
@@ -825,7 +825,7 @@ public partial class V1beta1ClusterInstanceSpecInitProviderNeptuneParameterGroup
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecInitProviderNeptuneParameterGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ClusterInstanceSpecInitProviderNeptuneParameterGroupNameSelectorPolicyResolutionEnum
 {
@@ -841,7 +841,7 @@ public enum V1beta1ClusterInstanceSpecInitProviderNeptuneParameterGroupNameSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecInitProviderNeptuneParameterGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ClusterInstanceSpecInitProviderNeptuneParameterGroupNameSelectorPolicyResolveEnum
 {
@@ -852,7 +852,7 @@ public enum V1beta1ClusterInstanceSpecInitProviderNeptuneParameterGroupNameSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecInitProviderNeptuneParameterGroupNameSelectorPolicy
 {
@@ -876,7 +876,7 @@ public partial class V1beta1ClusterInstanceSpecInitProviderNeptuneParameterGroup
 }
 
 /// <summary>Selector for a ParameterGroup in neptune to populate neptuneParameterGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecInitProviderNeptuneParameterGroupNameSelector
 {
@@ -902,7 +902,7 @@ public partial class V1beta1ClusterInstanceSpecInitProviderNeptuneParameterGroup
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecInitProviderNeptuneSubnetGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1ClusterInstanceSpecInitProviderNeptuneSubnetGroupNameRefPolicyResolutionEnum
 {
@@ -918,7 +918,7 @@ public enum V1beta1ClusterInstanceSpecInitProviderNeptuneSubnetGroupNameRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecInitProviderNeptuneSubnetGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1ClusterInstanceSpecInitProviderNeptuneSubnetGroupNameRefPolicyResolveEnum
 {
@@ -929,7 +929,7 @@ public enum V1beta1ClusterInstanceSpecInitProviderNeptuneSubnetGroupNameRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecInitProviderNeptuneSubnetGroupNameRefPolicy
 {
@@ -953,7 +953,7 @@ public partial class V1beta1ClusterInstanceSpecInitProviderNeptuneSubnetGroupNam
 }
 
 /// <summary>Reference to a SubnetGroup in neptune to populate neptuneSubnetGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecInitProviderNeptuneSubnetGroupNameRef
 {
@@ -972,7 +972,7 @@ public partial class V1beta1ClusterInstanceSpecInitProviderNeptuneSubnetGroupNam
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecInitProviderNeptuneSubnetGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ClusterInstanceSpecInitProviderNeptuneSubnetGroupNameSelectorPolicyResolutionEnum
 {
@@ -988,7 +988,7 @@ public enum V1beta1ClusterInstanceSpecInitProviderNeptuneSubnetGroupNameSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecInitProviderNeptuneSubnetGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ClusterInstanceSpecInitProviderNeptuneSubnetGroupNameSelectorPolicyResolveEnum
 {
@@ -999,7 +999,7 @@ public enum V1beta1ClusterInstanceSpecInitProviderNeptuneSubnetGroupNameSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecInitProviderNeptuneSubnetGroupNameSelectorPolicy
 {
@@ -1023,7 +1023,7 @@ public partial class V1beta1ClusterInstanceSpecInitProviderNeptuneSubnetGroupNam
 }
 
 /// <summary>Selector for a SubnetGroup in neptune to populate neptuneSubnetGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecInitProviderNeptuneSubnetGroupNameSelector
 {
@@ -1055,7 +1055,7 @@ public partial class V1beta1ClusterInstanceSpecInitProviderNeptuneSubnetGroupNam
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecInitProvider
 {
@@ -1158,7 +1158,7 @@ public partial class V1beta1ClusterInstanceSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecManagementPoliciesEnum>))]
 public enum V1beta1ClusterInstanceSpecManagementPoliciesEnum
 {
@@ -1182,7 +1182,7 @@ public enum V1beta1ClusterInstanceSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1ClusterInstanceSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1198,7 +1198,7 @@ public enum V1beta1ClusterInstanceSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterInstanceSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1ClusterInstanceSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1209,7 +1209,7 @@ public enum V1beta1ClusterInstanceSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecProviderConfigRefPolicy
 {
@@ -1237,7 +1237,7 @@ public partial class V1beta1ClusterInstanceSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecProviderConfigRef
 {
@@ -1256,7 +1256,7 @@ public partial class V1beta1ClusterInstanceSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecWriteConnectionSecretToRef
 {
@@ -1270,7 +1270,7 @@ public partial class V1beta1ClusterInstanceSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ClusterInstanceSpec defines the desired state of ClusterInstance</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpec
 {
@@ -1337,7 +1337,7 @@ public partial class V1beta1ClusterInstanceSpec
     public V1beta1ClusterInstanceSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceStatusAtProvider
 {
@@ -1460,7 +1460,7 @@ public partial class V1beta1ClusterInstanceStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceStatusConditions
 {
@@ -1503,7 +1503,7 @@ public partial class V1beta1ClusterInstanceStatusConditions
 }
 
 /// <summary>ClusterInstanceStatus defines the observed state of ClusterInstance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceStatus
 {
@@ -1524,7 +1524,7 @@ public partial class V1beta1ClusterInstanceStatus
 }
 
 /// <summary>ClusterInstance is the Schema for the ClusterInstances API. Provides an Neptune Cluster Resource Instance</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ClusterInstance : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ClusterInstanceSpec>, IStatus<V1beta1ClusterInstanceStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ssoadmin.aws.m.upbound.io;
 /// <summary>AccountAssignment is the Schema for the AccountAssignments API. Manages a Single Sign-On (SSO) Account Assignment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AccountAssignmentList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AccountAssignment>
@@ -42,7 +42,7 @@ public partial class V1beta1AccountAssignmentList : IKubernetesObject<V1ListMeta
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountAssignmentSpecForProviderPermissionSetArnRefPolicyResolutionEnum>))]
 public enum V1beta1AccountAssignmentSpecForProviderPermissionSetArnRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1AccountAssignmentSpecForProviderPermissionSetArnRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountAssignmentSpecForProviderPermissionSetArnRefPolicyResolveEnum>))]
 public enum V1beta1AccountAssignmentSpecForProviderPermissionSetArnRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1AccountAssignmentSpecForProviderPermissionSetArnRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountAssignmentSpecForProviderPermissionSetArnRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1AccountAssignmentSpecForProviderPermissionSetArnRefP
 }
 
 /// <summary>Reference to a PermissionSet in ssoadmin to populate permissionSetArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountAssignmentSpecForProviderPermissionSetArnRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1AccountAssignmentSpecForProviderPermissionSetArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountAssignmentSpecForProviderPermissionSetArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1AccountAssignmentSpecForProviderPermissionSetArnSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1AccountAssignmentSpecForProviderPermissionSetArnSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountAssignmentSpecForProviderPermissionSetArnSelectorPolicyResolveEnum>))]
 public enum V1beta1AccountAssignmentSpecForProviderPermissionSetArnSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1AccountAssignmentSpecForProviderPermissionSetArnSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountAssignmentSpecForProviderPermissionSetArnSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1AccountAssignmentSpecForProviderPermissionSetArnSele
 }
 
 /// <summary>Selector for a PermissionSet in ssoadmin to populate permissionSetArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountAssignmentSpecForProviderPermissionSetArnSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1AccountAssignmentSpecForProviderPermissionSetArnSele
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountAssignmentSpecForProviderPrincipalIdFromGroupRefPolicyResolutionEnum>))]
 public enum V1beta1AccountAssignmentSpecForProviderPrincipalIdFromGroupRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1AccountAssignmentSpecForProviderPrincipalIdFromGroupRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountAssignmentSpecForProviderPrincipalIdFromGroupRefPolicyResolveEnum>))]
 public enum V1beta1AccountAssignmentSpecForProviderPrincipalIdFromGroupRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1AccountAssignmentSpecForProviderPrincipalIdFromGroupRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountAssignmentSpecForProviderPrincipalIdFromGroupRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1AccountAssignmentSpecForProviderPrincipalIdFromGroup
 }
 
 /// <summary>Reference to a Group in identitystore to populate principalId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountAssignmentSpecForProviderPrincipalIdFromGroupRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1AccountAssignmentSpecForProviderPrincipalIdFromGroup
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountAssignmentSpecForProviderPrincipalIdFromGroupSelectorPolicyResolutionEnum>))]
 public enum V1beta1AccountAssignmentSpecForProviderPrincipalIdFromGroupSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1AccountAssignmentSpecForProviderPrincipalIdFromGroupSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountAssignmentSpecForProviderPrincipalIdFromGroupSelectorPolicyResolveEnum>))]
 public enum V1beta1AccountAssignmentSpecForProviderPrincipalIdFromGroupSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1AccountAssignmentSpecForProviderPrincipalIdFromGroupSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountAssignmentSpecForProviderPrincipalIdFromGroupSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1AccountAssignmentSpecForProviderPrincipalIdFromGroup
 }
 
 /// <summary>Selector for a Group in identitystore to populate principalId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountAssignmentSpecForProviderPrincipalIdFromGroupSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1AccountAssignmentSpecForProviderPrincipalIdFromGroup
     public V1beta1AccountAssignmentSpecForProviderPrincipalIdFromGroupSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountAssignmentSpecForProvider
 {
@@ -410,7 +410,7 @@ public partial class V1beta1AccountAssignmentSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountAssignmentSpecInitProvider
 {
@@ -420,7 +420,7 @@ public partial class V1beta1AccountAssignmentSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountAssignmentSpecManagementPoliciesEnum>))]
 public enum V1beta1AccountAssignmentSpecManagementPoliciesEnum
 {
@@ -443,7 +443,7 @@ public enum V1beta1AccountAssignmentSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountAssignmentSpecProviderConfigRef
 {
@@ -462,7 +462,7 @@ public partial class V1beta1AccountAssignmentSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountAssignmentSpecWriteConnectionSecretToRef
 {
@@ -472,7 +472,7 @@ public partial class V1beta1AccountAssignmentSpecWriteConnectionSecretToRef
 }
 
 /// <summary>AccountAssignmentSpec defines the desired state of AccountAssignment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountAssignmentSpec
 {
@@ -523,7 +523,7 @@ public partial class V1beta1AccountAssignmentSpec
     public V1beta1AccountAssignmentSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountAssignmentStatusAtProvider
 {
@@ -564,7 +564,7 @@ public partial class V1beta1AccountAssignmentStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountAssignmentStatusConditions
 {
@@ -607,7 +607,7 @@ public partial class V1beta1AccountAssignmentStatusConditions
 }
 
 /// <summary>AccountAssignmentStatus defines the observed state of AccountAssignment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountAssignmentStatus
 {
@@ -628,7 +628,7 @@ public partial class V1beta1AccountAssignmentStatus
 }
 
 /// <summary>AccountAssignment is the Schema for the AccountAssignments API. Manages a Single Sign-On (SSO) Account Assignment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AccountAssignment : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AccountAssignmentSpec>, IStatus<V1beta1AccountAssignmentStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.repo.github.m.upbound.io;
 /// <summary>BranchProtectionv3 is the Schema for the BranchProtectionv3s API. Protects a GitHub branch using the v3 / REST implementation.  The</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1BranchProtectionv3List : IKubernetesObject<V1ListMeta>, IItems<V1alpha1BranchProtectionv3>
@@ -42,7 +42,7 @@ public partial class V1alpha1BranchProtectionv3List : IKubernetesObject<V1ListMe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecForProviderRepositoryRefPolicyResolutionEnum>))]
 public enum V1alpha1BranchProtectionv3SpecForProviderRepositoryRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1alpha1BranchProtectionv3SpecForProviderRepositoryRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecForProviderRepositoryRefPolicyResolveEnum>))]
 public enum V1alpha1BranchProtectionv3SpecForProviderRepositoryRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1alpha1BranchProtectionv3SpecForProviderRepositoryRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecForProviderRepositoryRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRepositoryRefPolic
 }
 
 /// <summary>Reference to a Repository in repo to populate repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecForProviderRepositoryRef
 {
@@ -116,7 +116,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRepositoryRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecForProviderRepositorySelectorPolicyResolutionEnum>))]
 public enum V1alpha1BranchProtectionv3SpecForProviderRepositorySelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1alpha1BranchProtectionv3SpecForProviderRepositorySelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecForProviderRepositorySelectorPolicyResolveEnum>))]
 public enum V1alpha1BranchProtectionv3SpecForProviderRepositorySelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1alpha1BranchProtectionv3SpecForProviderRepositorySelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecForProviderRepositorySelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRepositorySelector
 }
 
 /// <summary>Selector for a Repository in repo to populate repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecForProviderRepositorySelector
 {
@@ -197,7 +197,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRepositorySelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsRefsPolicyResolutionEnum>))]
 public enum V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsRefsPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsB
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsRefsPolicyResolveEnum>))]
 public enum V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsRefsPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsB
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsRefsPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredPullReques
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsRefs
 {
@@ -271,7 +271,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredPullReques
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsSelectorPolicyResolutionEnum>))]
 public enum V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsB
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsSelectorPolicyResolveEnum>))]
 public enum V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsB
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredPullReques
 }
 
 /// <summary>Selector for a list of Team in team to populate teams.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsSelector
 {
@@ -346,7 +346,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredPullReques
     public V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsBypassPullRequestAllowances
 {
@@ -380,7 +380,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredPullReques
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsDismissalTeamsRefsPolicyResolutionEnum>))]
 public enum V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsDismissalTeamsRefsPolicyResolutionEnum
 {
@@ -396,7 +396,7 @@ public enum V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsD
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsDismissalTeamsRefsPolicyResolveEnum>))]
 public enum V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsDismissalTeamsRefsPolicyResolveEnum
 {
@@ -407,7 +407,7 @@ public enum V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsD
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsDismissalTeamsRefsPolicy
 {
@@ -431,7 +431,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredPullReques
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsDismissalTeamsRefs
 {
@@ -454,7 +454,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredPullReques
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsDismissalTeamsSelectorPolicyResolutionEnum>))]
 public enum V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsDismissalTeamsSelectorPolicyResolutionEnum
 {
@@ -470,7 +470,7 @@ public enum V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsD
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsDismissalTeamsSelectorPolicyResolveEnum>))]
 public enum V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsDismissalTeamsSelectorPolicyResolveEnum
 {
@@ -481,7 +481,7 @@ public enum V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsD
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsDismissalTeamsSelectorPolicy
 {
@@ -505,7 +505,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredPullReques
 }
 
 /// <summary>Selector for a list of Team in team to populate dismissalTeams.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsDismissalTeamsSelector
 {
@@ -529,7 +529,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredPullReques
     public V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviewsDismissalTeamsSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredPullRequestReviews
 {
@@ -599,7 +599,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredPullReques
     public long? RequiredApprovingReviewCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredStatusChecks
 {
@@ -631,7 +631,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredStatusChec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecForProviderRestrictionsTeamsRefsPolicyResolutionEnum>))]
 public enum V1alpha1BranchProtectionv3SpecForProviderRestrictionsTeamsRefsPolicyResolutionEnum
 {
@@ -647,7 +647,7 @@ public enum V1alpha1BranchProtectionv3SpecForProviderRestrictionsTeamsRefsPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecForProviderRestrictionsTeamsRefsPolicyResolveEnum>))]
 public enum V1alpha1BranchProtectionv3SpecForProviderRestrictionsTeamsRefsPolicyResolveEnum
 {
@@ -658,7 +658,7 @@ public enum V1alpha1BranchProtectionv3SpecForProviderRestrictionsTeamsRefsPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecForProviderRestrictionsTeamsRefsPolicy
 {
@@ -682,7 +682,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRestrictionsTeamsR
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecForProviderRestrictionsTeamsRefs
 {
@@ -705,7 +705,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRestrictionsTeamsR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecForProviderRestrictionsTeamsSelectorPolicyResolutionEnum>))]
 public enum V1alpha1BranchProtectionv3SpecForProviderRestrictionsTeamsSelectorPolicyResolutionEnum
 {
@@ -721,7 +721,7 @@ public enum V1alpha1BranchProtectionv3SpecForProviderRestrictionsTeamsSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecForProviderRestrictionsTeamsSelectorPolicyResolveEnum>))]
 public enum V1alpha1BranchProtectionv3SpecForProviderRestrictionsTeamsSelectorPolicyResolveEnum
 {
@@ -732,7 +732,7 @@ public enum V1alpha1BranchProtectionv3SpecForProviderRestrictionsTeamsSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecForProviderRestrictionsTeamsSelectorPolicy
 {
@@ -756,7 +756,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRestrictionsTeamsS
 }
 
 /// <summary>Selector for a list of Team in team to populate teams.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecForProviderRestrictionsTeamsSelector
 {
@@ -780,7 +780,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRestrictionsTeamsS
     public V1alpha1BranchProtectionv3SpecForProviderRestrictionsTeamsSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecForProviderRestrictions
 {
@@ -815,7 +815,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRestrictions
     public IList<string>? Users { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecForProvider
 {
@@ -890,7 +890,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecInitProviderRepositoryRefPolicyResolutionEnum>))]
 public enum V1alpha1BranchProtectionv3SpecInitProviderRepositoryRefPolicyResolutionEnum
 {
@@ -906,7 +906,7 @@ public enum V1alpha1BranchProtectionv3SpecInitProviderRepositoryRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecInitProviderRepositoryRefPolicyResolveEnum>))]
 public enum V1alpha1BranchProtectionv3SpecInitProviderRepositoryRefPolicyResolveEnum
 {
@@ -917,7 +917,7 @@ public enum V1alpha1BranchProtectionv3SpecInitProviderRepositoryRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecInitProviderRepositoryRefPolicy
 {
@@ -941,7 +941,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRepositoryRefPoli
 }
 
 /// <summary>Reference to a Repository in repo to populate repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecInitProviderRepositoryRef
 {
@@ -964,7 +964,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRepositoryRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecInitProviderRepositorySelectorPolicyResolutionEnum>))]
 public enum V1alpha1BranchProtectionv3SpecInitProviderRepositorySelectorPolicyResolutionEnum
 {
@@ -980,7 +980,7 @@ public enum V1alpha1BranchProtectionv3SpecInitProviderRepositorySelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecInitProviderRepositorySelectorPolicyResolveEnum>))]
 public enum V1alpha1BranchProtectionv3SpecInitProviderRepositorySelectorPolicyResolveEnum
 {
@@ -991,7 +991,7 @@ public enum V1alpha1BranchProtectionv3SpecInitProviderRepositorySelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecInitProviderRepositorySelectorPolicy
 {
@@ -1015,7 +1015,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRepositorySelecto
 }
 
 /// <summary>Selector for a Repository in repo to populate repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecInitProviderRepositorySelector
 {
@@ -1045,7 +1045,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRepositorySelecto
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsRefsPolicyResolutionEnum>))]
 public enum V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsRefsPolicyResolutionEnum
 {
@@ -1061,7 +1061,7 @@ public enum V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviews
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsRefsPolicyResolveEnum>))]
 public enum V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsRefsPolicyResolveEnum
 {
@@ -1072,7 +1072,7 @@ public enum V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviews
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsRefsPolicy
 {
@@ -1096,7 +1096,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredPullReque
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsRefs
 {
@@ -1119,7 +1119,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredPullReque
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsSelectorPolicyResolutionEnum>))]
 public enum V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsSelectorPolicyResolutionEnum
 {
@@ -1135,7 +1135,7 @@ public enum V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviews
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsSelectorPolicyResolveEnum>))]
 public enum V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsSelectorPolicyResolveEnum
 {
@@ -1146,7 +1146,7 @@ public enum V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviews
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsSelectorPolicy
 {
@@ -1170,7 +1170,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredPullReque
 }
 
 /// <summary>Selector for a list of Team in team to populate teams.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsSelector
 {
@@ -1194,7 +1194,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredPullReque
     public V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsBypassPullRequestAllowancesTeamsSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsBypassPullRequestAllowances
 {
@@ -1228,7 +1228,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredPullReque
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsDismissalTeamsRefsPolicyResolutionEnum>))]
 public enum V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsDismissalTeamsRefsPolicyResolutionEnum
 {
@@ -1244,7 +1244,7 @@ public enum V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviews
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsDismissalTeamsRefsPolicyResolveEnum>))]
 public enum V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsDismissalTeamsRefsPolicyResolveEnum
 {
@@ -1255,7 +1255,7 @@ public enum V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviews
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsDismissalTeamsRefsPolicy
 {
@@ -1279,7 +1279,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredPullReque
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsDismissalTeamsRefs
 {
@@ -1302,7 +1302,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredPullReque
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsDismissalTeamsSelectorPolicyResolutionEnum>))]
 public enum V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsDismissalTeamsSelectorPolicyResolutionEnum
 {
@@ -1318,7 +1318,7 @@ public enum V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviews
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsDismissalTeamsSelectorPolicyResolveEnum>))]
 public enum V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsDismissalTeamsSelectorPolicyResolveEnum
 {
@@ -1329,7 +1329,7 @@ public enum V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviews
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsDismissalTeamsSelectorPolicy
 {
@@ -1353,7 +1353,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredPullReque
 }
 
 /// <summary>Selector for a list of Team in team to populate dismissalTeams.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsDismissalTeamsSelector
 {
@@ -1377,7 +1377,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredPullReque
     public V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviewsDismissalTeamsSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredPullRequestReviews
 {
@@ -1447,7 +1447,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredPullReque
     public long? RequiredApprovingReviewCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredStatusChecks
 {
@@ -1479,7 +1479,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredStatusChe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecInitProviderRestrictionsTeamsRefsPolicyResolutionEnum>))]
 public enum V1alpha1BranchProtectionv3SpecInitProviderRestrictionsTeamsRefsPolicyResolutionEnum
 {
@@ -1495,7 +1495,7 @@ public enum V1alpha1BranchProtectionv3SpecInitProviderRestrictionsTeamsRefsPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecInitProviderRestrictionsTeamsRefsPolicyResolveEnum>))]
 public enum V1alpha1BranchProtectionv3SpecInitProviderRestrictionsTeamsRefsPolicyResolveEnum
 {
@@ -1506,7 +1506,7 @@ public enum V1alpha1BranchProtectionv3SpecInitProviderRestrictionsTeamsRefsPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecInitProviderRestrictionsTeamsRefsPolicy
 {
@@ -1530,7 +1530,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRestrictionsTeams
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecInitProviderRestrictionsTeamsRefs
 {
@@ -1553,7 +1553,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRestrictionsTeams
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecInitProviderRestrictionsTeamsSelectorPolicyResolutionEnum>))]
 public enum V1alpha1BranchProtectionv3SpecInitProviderRestrictionsTeamsSelectorPolicyResolutionEnum
 {
@@ -1569,7 +1569,7 @@ public enum V1alpha1BranchProtectionv3SpecInitProviderRestrictionsTeamsSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecInitProviderRestrictionsTeamsSelectorPolicyResolveEnum>))]
 public enum V1alpha1BranchProtectionv3SpecInitProviderRestrictionsTeamsSelectorPolicyResolveEnum
 {
@@ -1580,7 +1580,7 @@ public enum V1alpha1BranchProtectionv3SpecInitProviderRestrictionsTeamsSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecInitProviderRestrictionsTeamsSelectorPolicy
 {
@@ -1604,7 +1604,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRestrictionsTeams
 }
 
 /// <summary>Selector for a list of Team in team to populate teams.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecInitProviderRestrictionsTeamsSelector
 {
@@ -1628,7 +1628,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRestrictionsTeams
     public V1alpha1BranchProtectionv3SpecInitProviderRestrictionsTeamsSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecInitProviderRestrictions
 {
@@ -1675,7 +1675,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRestrictions
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecInitProvider
 {
@@ -1748,7 +1748,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1BranchProtectionv3SpecManagementPoliciesEnum>))]
 public enum V1alpha1BranchProtectionv3SpecManagementPoliciesEnum
 {
@@ -1771,7 +1771,7 @@ public enum V1alpha1BranchProtectionv3SpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecProviderConfigRef
 {
@@ -1790,7 +1790,7 @@ public partial class V1alpha1BranchProtectionv3SpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3SpecWriteConnectionSecretToRef
 {
@@ -1800,7 +1800,7 @@ public partial class V1alpha1BranchProtectionv3SpecWriteConnectionSecretToRef
 }
 
 /// <summary>BranchProtectionv3Spec defines the desired state of BranchProtectionv3</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3Spec
 {
@@ -1851,7 +1851,7 @@ public partial class V1alpha1BranchProtectionv3Spec
     public V1alpha1BranchProtectionv3SpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3StatusAtProviderRequiredPullRequestReviewsBypassPullRequestAllowances
 {
@@ -1871,7 +1871,7 @@ public partial class V1alpha1BranchProtectionv3StatusAtProviderRequiredPullReque
     public IList<string>? Users { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3StatusAtProviderRequiredPullRequestReviews
 {
@@ -1933,7 +1933,7 @@ public partial class V1alpha1BranchProtectionv3StatusAtProviderRequiredPullReque
     public long? RequiredApprovingReviewCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3StatusAtProviderRequiredStatusChecks
 {
@@ -1959,7 +1959,7 @@ public partial class V1alpha1BranchProtectionv3StatusAtProviderRequiredStatusChe
     public bool? Strict { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3StatusAtProviderRestrictions
 {
@@ -1986,7 +1986,7 @@ public partial class V1alpha1BranchProtectionv3StatusAtProviderRestrictions
     public IList<string>? Users { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3StatusAtProvider
 {
@@ -2054,7 +2054,7 @@ public partial class V1alpha1BranchProtectionv3StatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3StatusConditions
 {
@@ -2097,7 +2097,7 @@ public partial class V1alpha1BranchProtectionv3StatusConditions
 }
 
 /// <summary>BranchProtectionv3Status defines the observed state of BranchProtectionv3.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BranchProtectionv3Status
 {
@@ -2118,7 +2118,7 @@ public partial class V1alpha1BranchProtectionv3Status
 }
 
 /// <summary>BranchProtectionv3 is the Schema for the BranchProtectionv3s API. Protects a GitHub branch using the v3 / REST implementation.  The</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1BranchProtectionv3 : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1BranchProtectionv3Spec>, IStatus<V1alpha1BranchProtectionv3Status?>

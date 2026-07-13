@@ -27,7 +27,7 @@ namespace KubernetesCRDModelGen.Models.gateway.networking.k8s.io;
 /// no grant, and MUST respond to the removal of a grant by revoking the access
 /// that the grant allowed.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ReferenceGrantList : IKubernetesObject<V1ListMeta>, IItems<V1ReferenceGrant>
@@ -54,7 +54,7 @@ public partial class V1ReferenceGrantList : IKubernetesObject<V1ListMeta>, IItem
 }
 
 /// <summary>ReferenceGrantFrom describes trusted namespaces and kinds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ReferenceGrantSpecFrom
 {
@@ -100,7 +100,7 @@ public partial class V1ReferenceGrantSpecFrom
 /// ReferenceGrantTo describes what Kinds are allowed as targets of the
 /// references.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ReferenceGrantSpecTo
 {
@@ -134,7 +134,7 @@ public partial class V1ReferenceGrantSpecTo
 }
 
 /// <summary>Spec defines the desired state of ReferenceGrant.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ReferenceGrantSpec
 {
@@ -179,7 +179,7 @@ public partial class V1ReferenceGrantSpec
 /// no grant, and MUST respond to the removal of a grant by revoking the access
 /// that the grant allowed.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ReferenceGrant : IKubernetesObject<V1ObjectMeta>, ISpec<V1ReferenceGrantSpec>

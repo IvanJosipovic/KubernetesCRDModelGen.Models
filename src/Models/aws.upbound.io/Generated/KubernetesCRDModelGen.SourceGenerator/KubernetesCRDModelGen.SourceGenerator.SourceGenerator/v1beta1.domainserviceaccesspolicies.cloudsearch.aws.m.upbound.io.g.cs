@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cloudsearch.aws.m.upbound.io;
 /// <summary>DomainServiceAccessPolicy is the Schema for the DomainServiceAccessPolicys API. Provides an CloudSearch domain service access policy resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DomainServiceAccessPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DomainServiceAccessPolicy>
@@ -42,7 +42,7 @@ public partial class V1beta1DomainServiceAccessPolicyList : IKubernetesObject<V1
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainServiceAccessPolicySpecForProviderDomainNameRefPolicyResolutionEnum>))]
 public enum V1beta1DomainServiceAccessPolicySpecForProviderDomainNameRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1DomainServiceAccessPolicySpecForProviderDomainNameRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainServiceAccessPolicySpecForProviderDomainNameRefPolicyResolveEnum>))]
 public enum V1beta1DomainServiceAccessPolicySpecForProviderDomainNameRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1DomainServiceAccessPolicySpecForProviderDomainNameRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainServiceAccessPolicySpecForProviderDomainNameRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1DomainServiceAccessPolicySpecForProviderDomainNameRe
 }
 
 /// <summary>Reference to a Domain in cloudsearch to populate domainName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainServiceAccessPolicySpecForProviderDomainNameRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1DomainServiceAccessPolicySpecForProviderDomainNameRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainServiceAccessPolicySpecForProviderDomainNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1DomainServiceAccessPolicySpecForProviderDomainNameSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1DomainServiceAccessPolicySpecForProviderDomainNameSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainServiceAccessPolicySpecForProviderDomainNameSelectorPolicyResolveEnum>))]
 public enum V1beta1DomainServiceAccessPolicySpecForProviderDomainNameSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1DomainServiceAccessPolicySpecForProviderDomainNameSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainServiceAccessPolicySpecForProviderDomainNameSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1DomainServiceAccessPolicySpecForProviderDomainNameSe
 }
 
 /// <summary>Selector for a Domain in cloudsearch to populate domainName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainServiceAccessPolicySpecForProviderDomainNameSelector
 {
@@ -191,7 +191,7 @@ public partial class V1beta1DomainServiceAccessPolicySpecForProviderDomainNameSe
     public V1beta1DomainServiceAccessPolicySpecForProviderDomainNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainServiceAccessPolicySpecForProvider
 {
@@ -225,7 +225,7 @@ public partial class V1beta1DomainServiceAccessPolicySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainServiceAccessPolicySpecInitProviderDomainNameRefPolicyResolutionEnum>))]
 public enum V1beta1DomainServiceAccessPolicySpecInitProviderDomainNameRefPolicyResolutionEnum
 {
@@ -241,7 +241,7 @@ public enum V1beta1DomainServiceAccessPolicySpecInitProviderDomainNameRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainServiceAccessPolicySpecInitProviderDomainNameRefPolicyResolveEnum>))]
 public enum V1beta1DomainServiceAccessPolicySpecInitProviderDomainNameRefPolicyResolveEnum
 {
@@ -252,7 +252,7 @@ public enum V1beta1DomainServiceAccessPolicySpecInitProviderDomainNameRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainServiceAccessPolicySpecInitProviderDomainNameRefPolicy
 {
@@ -276,7 +276,7 @@ public partial class V1beta1DomainServiceAccessPolicySpecInitProviderDomainNameR
 }
 
 /// <summary>Reference to a Domain in cloudsearch to populate domainName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainServiceAccessPolicySpecInitProviderDomainNameRef
 {
@@ -299,7 +299,7 @@ public partial class V1beta1DomainServiceAccessPolicySpecInitProviderDomainNameR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainServiceAccessPolicySpecInitProviderDomainNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1DomainServiceAccessPolicySpecInitProviderDomainNameSelectorPolicyResolutionEnum
 {
@@ -315,7 +315,7 @@ public enum V1beta1DomainServiceAccessPolicySpecInitProviderDomainNameSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainServiceAccessPolicySpecInitProviderDomainNameSelectorPolicyResolveEnum>))]
 public enum V1beta1DomainServiceAccessPolicySpecInitProviderDomainNameSelectorPolicyResolveEnum
 {
@@ -326,7 +326,7 @@ public enum V1beta1DomainServiceAccessPolicySpecInitProviderDomainNameSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainServiceAccessPolicySpecInitProviderDomainNameSelectorPolicy
 {
@@ -350,7 +350,7 @@ public partial class V1beta1DomainServiceAccessPolicySpecInitProviderDomainNameS
 }
 
 /// <summary>Selector for a Domain in cloudsearch to populate domainName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainServiceAccessPolicySpecInitProviderDomainNameSelector
 {
@@ -386,7 +386,7 @@ public partial class V1beta1DomainServiceAccessPolicySpecInitProviderDomainNameS
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainServiceAccessPolicySpecInitProvider
 {
@@ -411,7 +411,7 @@ public partial class V1beta1DomainServiceAccessPolicySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainServiceAccessPolicySpecManagementPoliciesEnum>))]
 public enum V1beta1DomainServiceAccessPolicySpecManagementPoliciesEnum
 {
@@ -434,7 +434,7 @@ public enum V1beta1DomainServiceAccessPolicySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainServiceAccessPolicySpecProviderConfigRef
 {
@@ -453,7 +453,7 @@ public partial class V1beta1DomainServiceAccessPolicySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainServiceAccessPolicySpecWriteConnectionSecretToRef
 {
@@ -463,7 +463,7 @@ public partial class V1beta1DomainServiceAccessPolicySpecWriteConnectionSecretTo
 }
 
 /// <summary>DomainServiceAccessPolicySpec defines the desired state of DomainServiceAccessPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainServiceAccessPolicySpec
 {
@@ -514,7 +514,7 @@ public partial class V1beta1DomainServiceAccessPolicySpec
     public V1beta1DomainServiceAccessPolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainServiceAccessPolicyStatusAtProvider
 {
@@ -538,7 +538,7 @@ public partial class V1beta1DomainServiceAccessPolicyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainServiceAccessPolicyStatusConditions
 {
@@ -581,7 +581,7 @@ public partial class V1beta1DomainServiceAccessPolicyStatusConditions
 }
 
 /// <summary>DomainServiceAccessPolicyStatus defines the observed state of DomainServiceAccessPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainServiceAccessPolicyStatus
 {
@@ -602,7 +602,7 @@ public partial class V1beta1DomainServiceAccessPolicyStatus
 }
 
 /// <summary>DomainServiceAccessPolicy is the Schema for the DomainServiceAccessPolicys API. Provides an CloudSearch domain service access policy resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DomainServiceAccessPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DomainServiceAccessPolicySpec>, IStatus<V1beta1DomainServiceAccessPolicyStatus?>

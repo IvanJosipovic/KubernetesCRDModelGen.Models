@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.kafka.aws.m.upbound.io;
 /// <summary>SingleScramSecretAssociation is the Schema for the SingleScramSecretAssociations API. Associates a single SCRAM secret with a Managed Streaming for Kafka (MSK) cluster. Warning: If this AWS MSK cluster has a ScramSecretAssociation managed resource that does not reference, select, or list this secret, the secret will be repeatedly attached and detached each time one of the resources enters its reconciliation loop. To avoid this, choose either ScramSecretAssociation or SingleScramSecretAssociation to manage credentials, not both.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SingleScramSecretAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SingleScramSecretAssociation>
@@ -42,7 +42,7 @@ public partial class V1beta1SingleScramSecretAssociationList : IKubernetesObject
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleScramSecretAssociationSpecForProviderClusterArnRefPolicyResolutionEnum>))]
 public enum V1beta1SingleScramSecretAssociationSpecForProviderClusterArnRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1SingleScramSecretAssociationSpecForProviderClusterArnRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleScramSecretAssociationSpecForProviderClusterArnRefPolicyResolveEnum>))]
 public enum V1beta1SingleScramSecretAssociationSpecForProviderClusterArnRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1SingleScramSecretAssociationSpecForProviderClusterArnRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleScramSecretAssociationSpecForProviderClusterArnRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1SingleScramSecretAssociationSpecForProviderClusterAr
 }
 
 /// <summary>Reference to a Cluster in kafka to populate clusterArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleScramSecretAssociationSpecForProviderClusterArnRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1SingleScramSecretAssociationSpecForProviderClusterAr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleScramSecretAssociationSpecForProviderClusterArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1SingleScramSecretAssociationSpecForProviderClusterArnSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1SingleScramSecretAssociationSpecForProviderClusterArnSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleScramSecretAssociationSpecForProviderClusterArnSelectorPolicyResolveEnum>))]
 public enum V1beta1SingleScramSecretAssociationSpecForProviderClusterArnSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1SingleScramSecretAssociationSpecForProviderClusterArnSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleScramSecretAssociationSpecForProviderClusterArnSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1SingleScramSecretAssociationSpecForProviderClusterAr
 }
 
 /// <summary>Selector for a Cluster in kafka to populate clusterArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleScramSecretAssociationSpecForProviderClusterArnSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1SingleScramSecretAssociationSpecForProviderClusterAr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleScramSecretAssociationSpecForProviderSecretArnRefPolicyResolutionEnum>))]
 public enum V1beta1SingleScramSecretAssociationSpecForProviderSecretArnRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1SingleScramSecretAssociationSpecForProviderSecretArnRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleScramSecretAssociationSpecForProviderSecretArnRefPolicyResolveEnum>))]
 public enum V1beta1SingleScramSecretAssociationSpecForProviderSecretArnRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1SingleScramSecretAssociationSpecForProviderSecretArnRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleScramSecretAssociationSpecForProviderSecretArnRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1SingleScramSecretAssociationSpecForProviderSecretArn
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate secretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleScramSecretAssociationSpecForProviderSecretArnRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1SingleScramSecretAssociationSpecForProviderSecretArn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleScramSecretAssociationSpecForProviderSecretArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1SingleScramSecretAssociationSpecForProviderSecretArnSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1SingleScramSecretAssociationSpecForProviderSecretArnSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleScramSecretAssociationSpecForProviderSecretArnSelectorPolicyResolveEnum>))]
 public enum V1beta1SingleScramSecretAssociationSpecForProviderSecretArnSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1SingleScramSecretAssociationSpecForProviderSecretArnSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleScramSecretAssociationSpecForProviderSecretArnSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1SingleScramSecretAssociationSpecForProviderSecretArn
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate secretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleScramSecretAssociationSpecForProviderSecretArnSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1SingleScramSecretAssociationSpecForProviderSecretArn
     public V1beta1SingleScramSecretAssociationSpecForProviderSecretArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleScramSecretAssociationSpecForProvider
 {
@@ -394,7 +394,7 @@ public partial class V1beta1SingleScramSecretAssociationSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleScramSecretAssociationSpecInitProvider
 {
@@ -404,7 +404,7 @@ public partial class V1beta1SingleScramSecretAssociationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleScramSecretAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1SingleScramSecretAssociationSpecManagementPoliciesEnum
 {
@@ -427,7 +427,7 @@ public enum V1beta1SingleScramSecretAssociationSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleScramSecretAssociationSpecProviderConfigRef
 {
@@ -446,7 +446,7 @@ public partial class V1beta1SingleScramSecretAssociationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleScramSecretAssociationSpecWriteConnectionSecretToRef
 {
@@ -456,7 +456,7 @@ public partial class V1beta1SingleScramSecretAssociationSpecWriteConnectionSecre
 }
 
 /// <summary>SingleScramSecretAssociationSpec defines the desired state of SingleScramSecretAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleScramSecretAssociationSpec
 {
@@ -507,7 +507,7 @@ public partial class V1beta1SingleScramSecretAssociationSpec
     public V1beta1SingleScramSecretAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleScramSecretAssociationStatusAtProvider
 {
@@ -531,7 +531,7 @@ public partial class V1beta1SingleScramSecretAssociationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleScramSecretAssociationStatusConditions
 {
@@ -574,7 +574,7 @@ public partial class V1beta1SingleScramSecretAssociationStatusConditions
 }
 
 /// <summary>SingleScramSecretAssociationStatus defines the observed state of SingleScramSecretAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleScramSecretAssociationStatus
 {
@@ -595,7 +595,7 @@ public partial class V1beta1SingleScramSecretAssociationStatus
 }
 
 /// <summary>SingleScramSecretAssociation is the Schema for the SingleScramSecretAssociations API. Associates a single SCRAM secret with a Managed Streaming for Kafka (MSK) cluster. Warning: If this AWS MSK cluster has a ScramSecretAssociation managed resource that does not reference, select, or list this secret, the secret will be repeatedly attached and detached each time one of the resources enters its reconciliation loop. To avoid this, choose either ScramSecretAssociation or SingleScramSecretAssociation to manage credentials, not both.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SingleScramSecretAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SingleScramSecretAssociationSpec>, IStatus<V1beta1SingleScramSecretAssociationStatus?>

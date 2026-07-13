@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.storage.azure.m.upbound.io;
 /// <summary>AccountLocalUser is the Schema for the AccountLocalUsers API. Manages a Storage Account Local User.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AccountLocalUserList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AccountLocalUser>
@@ -37,7 +37,7 @@ public partial class V1beta1AccountLocalUserList : IKubernetesObject<V1ListMeta>
 }
 
 /// <summary>A permissions block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserSpecForProviderPermissionScopePermissions
 {
@@ -68,7 +68,7 @@ public partial class V1beta1AccountLocalUserSpecForProviderPermissionScopePermis
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameRefPolicyResolutionEnum>))]
 public enum V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameRefPolicyResolutionEnum
 {
@@ -84,7 +84,7 @@ public enum V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameRefPolicyResolveEnum>))]
 public enum V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameRefPolicyResolveEnum
 {
@@ -95,7 +95,7 @@ public enum V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameRefPolicy
 {
@@ -119,7 +119,7 @@ public partial class V1beta1AccountLocalUserSpecForProviderPermissionScopeResour
 }
 
 /// <summary>Reference to a Container in storage to populate resourceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameRef
 {
@@ -142,7 +142,7 @@ public partial class V1beta1AccountLocalUserSpecForProviderPermissionScopeResour
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameSelectorPolicyResolutionEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameSelectorPolicyResolveEnum>))]
 public enum V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameSelectorPolicyResolveEnum
 {
@@ -169,7 +169,7 @@ public enum V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameSelectorPolicy
 {
@@ -193,7 +193,7 @@ public partial class V1beta1AccountLocalUserSpecForProviderPermissionScopeResour
 }
 
 /// <summary>Selector for a Container in storage to populate resourceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameSelector
 {
@@ -217,7 +217,7 @@ public partial class V1beta1AccountLocalUserSpecForProviderPermissionScopeResour
     public V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserSpecForProviderPermissionScope
 {
@@ -242,7 +242,7 @@ public partial class V1beta1AccountLocalUserSpecForProviderPermissionScope
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserSpecForProviderSshAuthorizedKey
 {
@@ -261,7 +261,7 @@ public partial class V1beta1AccountLocalUserSpecForProviderSshAuthorizedKey
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecForProviderStorageAccountIdRefPolicyResolutionEnum>))]
 public enum V1beta1AccountLocalUserSpecForProviderStorageAccountIdRefPolicyResolutionEnum
 {
@@ -277,7 +277,7 @@ public enum V1beta1AccountLocalUserSpecForProviderStorageAccountIdRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecForProviderStorageAccountIdRefPolicyResolveEnum>))]
 public enum V1beta1AccountLocalUserSpecForProviderStorageAccountIdRefPolicyResolveEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1AccountLocalUserSpecForProviderStorageAccountIdRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserSpecForProviderStorageAccountIdRefPolicy
 {
@@ -312,7 +312,7 @@ public partial class V1beta1AccountLocalUserSpecForProviderStorageAccountIdRefPo
 }
 
 /// <summary>Reference to a Account in storage to populate storageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserSpecForProviderStorageAccountIdRef
 {
@@ -335,7 +335,7 @@ public partial class V1beta1AccountLocalUserSpecForProviderStorageAccountIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecForProviderStorageAccountIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AccountLocalUserSpecForProviderStorageAccountIdSelectorPolicyResolutionEnum
 {
@@ -351,7 +351,7 @@ public enum V1beta1AccountLocalUserSpecForProviderStorageAccountIdSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecForProviderStorageAccountIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AccountLocalUserSpecForProviderStorageAccountIdSelectorPolicyResolveEnum
 {
@@ -362,7 +362,7 @@ public enum V1beta1AccountLocalUserSpecForProviderStorageAccountIdSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserSpecForProviderStorageAccountIdSelectorPolicy
 {
@@ -386,7 +386,7 @@ public partial class V1beta1AccountLocalUserSpecForProviderStorageAccountIdSelec
 }
 
 /// <summary>Selector for a Account in storage to populate storageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserSpecForProviderStorageAccountIdSelector
 {
@@ -410,7 +410,7 @@ public partial class V1beta1AccountLocalUserSpecForProviderStorageAccountIdSelec
     public V1beta1AccountLocalUserSpecForProviderStorageAccountIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserSpecForProvider
 {
@@ -448,7 +448,7 @@ public partial class V1beta1AccountLocalUserSpecForProvider
 }
 
 /// <summary>A permissions block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserSpecInitProviderPermissionScopePermissions
 {
@@ -479,7 +479,7 @@ public partial class V1beta1AccountLocalUserSpecInitProviderPermissionScopePermi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameRefPolicyResolutionEnum>))]
 public enum V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameRefPolicyResolutionEnum
 {
@@ -495,7 +495,7 @@ public enum V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameRefPolicyResolveEnum>))]
 public enum V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameRefPolicyResolveEnum
 {
@@ -506,7 +506,7 @@ public enum V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameRefPolicy
 {
@@ -530,7 +530,7 @@ public partial class V1beta1AccountLocalUserSpecInitProviderPermissionScopeResou
 }
 
 /// <summary>Reference to a Container in storage to populate resourceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameRef
 {
@@ -553,7 +553,7 @@ public partial class V1beta1AccountLocalUserSpecInitProviderPermissionScopeResou
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameSelectorPolicyResolutionEnum
 {
@@ -569,7 +569,7 @@ public enum V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameSelectorPolicyResolveEnum>))]
 public enum V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameSelectorPolicyResolveEnum
 {
@@ -580,7 +580,7 @@ public enum V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameSelectorPolicy
 {
@@ -604,7 +604,7 @@ public partial class V1beta1AccountLocalUserSpecInitProviderPermissionScopeResou
 }
 
 /// <summary>Selector for a Container in storage to populate resourceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameSelector
 {
@@ -628,7 +628,7 @@ public partial class V1beta1AccountLocalUserSpecInitProviderPermissionScopeResou
     public V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserSpecInitProviderPermissionScope
 {
@@ -653,7 +653,7 @@ public partial class V1beta1AccountLocalUserSpecInitProviderPermissionScope
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserSpecInitProviderSshAuthorizedKey
 {
@@ -678,7 +678,7 @@ public partial class V1beta1AccountLocalUserSpecInitProviderSshAuthorizedKey
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserSpecInitProvider
 {
@@ -707,7 +707,7 @@ public partial class V1beta1AccountLocalUserSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecManagementPoliciesEnum>))]
 public enum V1beta1AccountLocalUserSpecManagementPoliciesEnum
 {
@@ -730,7 +730,7 @@ public enum V1beta1AccountLocalUserSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserSpecProviderConfigRef
 {
@@ -749,7 +749,7 @@ public partial class V1beta1AccountLocalUserSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserSpecWriteConnectionSecretToRef
 {
@@ -759,7 +759,7 @@ public partial class V1beta1AccountLocalUserSpecWriteConnectionSecretToRef
 }
 
 /// <summary>AccountLocalUserSpec defines the desired state of AccountLocalUser</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserSpec
 {
@@ -811,7 +811,7 @@ public partial class V1beta1AccountLocalUserSpec
 }
 
 /// <summary>A permissions block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserStatusAtProviderPermissionScopePermissions
 {
@@ -836,7 +836,7 @@ public partial class V1beta1AccountLocalUserStatusAtProviderPermissionScopePermi
     public bool? Write { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserStatusAtProviderPermissionScope
 {
@@ -853,7 +853,7 @@ public partial class V1beta1AccountLocalUserStatusAtProviderPermissionScope
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserStatusAtProviderSshAuthorizedKey
 {
@@ -866,7 +866,7 @@ public partial class V1beta1AccountLocalUserStatusAtProviderSshAuthorizedKey
     public string? Key { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserStatusAtProvider
 {
@@ -900,7 +900,7 @@ public partial class V1beta1AccountLocalUserStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserStatusConditions
 {
@@ -943,7 +943,7 @@ public partial class V1beta1AccountLocalUserStatusConditions
 }
 
 /// <summary>AccountLocalUserStatus defines the observed state of AccountLocalUser.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountLocalUserStatus
 {
@@ -964,7 +964,7 @@ public partial class V1beta1AccountLocalUserStatus
 }
 
 /// <summary>AccountLocalUser is the Schema for the AccountLocalUsers API. Manages a Storage Account Local User.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AccountLocalUser : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AccountLocalUserSpec>, IStatus<V1beta1AccountLocalUserStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.kubevirt.io;
 /// <summary>KubeVirt represents the object deploying all KubeVirt resources</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -41,7 +41,7 @@ public partial class V1alpha3KubeVirtList : IKubernetesObject<V1ListMeta>, IItem
 /// CA configuration
 /// CA certs are kept in the CA bundle as long as they are valid
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecCertificateRotateStrategySelfSignedCa
@@ -62,7 +62,7 @@ public partial class V1alpha3KubeVirtSpecCertificateRotateStrategySelfSignedCa
 /// Server configuration
 /// Certs are rotated and discarded
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecCertificateRotateStrategySelfSignedServer
@@ -79,7 +79,7 @@ public partial class V1alpha3KubeVirtSpecCertificateRotateStrategySelfSignedServ
     public string? RenewBefore { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecCertificateRotateStrategySelfSigned
@@ -111,7 +111,7 @@ public partial class V1alpha3KubeVirtSpecCertificateRotateStrategySelfSigned
     public V1alpha3KubeVirtSpecCertificateRotateStrategySelfSignedServer? Server { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecCertificateRotateStrategy
@@ -120,7 +120,7 @@ public partial class V1alpha3KubeVirtSpecCertificateRotateStrategy
     public V1alpha3KubeVirtSpecCertificateRotateStrategySelfSigned? SelfSigned { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationApiConfigurationRestClientRateLimiterTokenBucketRateLimiter
@@ -141,7 +141,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationApiConfigurationRestClient
 }
 
 /// <summary>RateLimiter allows selecting and configuring different rate limiters for the k8s client.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationApiConfigurationRestClientRateLimiter
@@ -151,7 +151,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationApiConfigurationRestClient
 }
 
 /// <summary>RestClient can be used to tune certain aspects of the k8s client in use.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationApiConfigurationRestClient
@@ -165,7 +165,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationApiConfigurationRestClient
 /// ReloadableComponentConfiguration holds all generic k8s configuration options which can
 /// be reloaded by components without requiring a restart.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationApiConfiguration
@@ -175,7 +175,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationApiConfiguration
     public V1alpha3KubeVirtSpecConfigurationApiConfigurationRestClient? RestClient { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationArchitectureConfigurationAmd64
@@ -190,7 +190,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationArchitectureConfigurationA
     public string? OvmfPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationArchitectureConfigurationArm64
@@ -206,7 +206,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationArchitectureConfigurationA
 }
 
 /// <summary>Deprecated: ppc64le architecture is no longer supported.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationArchitectureConfigurationPpc64le
@@ -221,7 +221,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationArchitectureConfigurationP
     public string? OvmfPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationArchitectureConfigurationS390x
@@ -236,7 +236,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationArchitectureConfigurationS
     public string? OvmfPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationArchitectureConfiguration
@@ -262,7 +262,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationArchitectureConfiguration
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationAutoCPULimitNamespaceLabelSelectorMatchExpressions
@@ -294,7 +294,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationAutoCPULimitNamespaceLabel
 /// The CPU limit will equal the number of requested vCPUs.
 /// This setting does not apply to VMIs with dedicated CPUs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationAutoCPULimitNamespaceLabelSelector
@@ -316,7 +316,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationAutoCPULimitNamespaceLabel
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationChangedBlockTrackingLabelSelectorsNamespaceLabelSelectorMatchExpressions
@@ -343,7 +343,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationChangedBlockTrackingLabelS
 }
 
 /// <summary>NamespaceSelector will enable changedBlockTracking on all VMs running inside namespaces that match the label selector.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationChangedBlockTrackingLabelSelectorsNamespaceLabelSelector
@@ -365,7 +365,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationChangedBlockTrackingLabelS
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationChangedBlockTrackingLabelSelectorsVirtualMachineLabelSelectorMatchExpressions
@@ -392,7 +392,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationChangedBlockTrackingLabelS
 }
 
 /// <summary>VirtualMachineSelector will enable changedBlockTracking on all VMs that match the label selector.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationChangedBlockTrackingLabelSelectorsVirtualMachineLabelSelector
@@ -414,7 +414,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationChangedBlockTrackingLabelS
 /// ChangedBlockTrackingLabelSelectors defines label selectors. VMs matching these selectors will have changed block tracking enabled.
 /// Enabling changedBlockTracking is mandatory for performing storage-agnostic backups and incremental backups.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationChangedBlockTrackingLabelSelectors
@@ -429,7 +429,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationChangedBlockTrackingLabelS
 }
 
 /// <summary>CommonInstancetypesDeployment controls the deployment of common-instancetypes resources</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationCommonInstancetypesDeployment
@@ -439,7 +439,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationCommonInstancetypesDeploym
     public bool? Enabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationControllerConfigurationRestClientRateLimiterTokenBucketRateLimiter
@@ -460,7 +460,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationControllerConfigurationRes
 }
 
 /// <summary>RateLimiter allows selecting and configuring different rate limiters for the k8s client.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationControllerConfigurationRestClientRateLimiter
@@ -470,7 +470,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationControllerConfigurationRes
 }
 
 /// <summary>RestClient can be used to tune certain aspects of the k8s client in use.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationControllerConfigurationRestClient
@@ -484,7 +484,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationControllerConfigurationRes
 /// ReloadableComponentConfiguration holds all generic k8s configuration options which can
 /// be reloaded by components without requiring a restart.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationControllerConfiguration
@@ -495,7 +495,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationControllerConfiguration
 }
 
 /// <summary>DiskVerification holds container disks verification limits</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationDeveloperConfigurationDiskVerification
@@ -505,7 +505,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationDeveloperConfigurationDisk
 }
 
 /// <summary>LogVerbosity sets log verbosity level of  various components</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationDeveloperConfigurationLogVerbosity
@@ -534,7 +534,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationDeveloperConfigurationLogV
 }
 
 /// <summary>DeveloperConfiguration holds developer options</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationDeveloperConfiguration
@@ -624,7 +624,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationDeveloperConfiguration
     public bool? UseEmulation { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationHandlerConfigurationRestClientRateLimiterTokenBucketRateLimiter
@@ -645,7 +645,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationHandlerConfigurationRestCl
 }
 
 /// <summary>RateLimiter allows selecting and configuring different rate limiters for the k8s client.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationHandlerConfigurationRestClientRateLimiter
@@ -655,7 +655,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationHandlerConfigurationRestCl
 }
 
 /// <summary>RestClient can be used to tune certain aspects of the k8s client in use.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationHandlerConfigurationRestClient
@@ -669,7 +669,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationHandlerConfigurationRestCl
 /// ReloadableComponentConfiguration holds all generic k8s configuration options which can
 /// be reloaded by components without requiring a restart.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationHandlerConfiguration
@@ -683,7 +683,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationHandlerConfiguration
 /// Name is the name of the hypervisor.
 /// Supported values are: &quot;kvm&quot;, &quot;hyperv-direct&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha3KubeVirtSpecConfigurationHypervisorsNameEnum>))]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public enum V1alpha3KubeVirtSpecConfigurationHypervisorsNameEnum
@@ -695,7 +695,7 @@ public enum V1alpha3KubeVirtSpecConfigurationHypervisorsNameEnum
 }
 
 /// <summary>HypervisorConfiguration holds information regarding the hypervisor present on cluster nodes.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationHypervisors
@@ -714,7 +714,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationHypervisors
 /// expand - Where the instance type or preference are expanded into the VM if no revisionNames have been populated.
 /// expandAll - Where the instance type or preference are expanded into the VM regardless of revisionNames previously being populated.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha3KubeVirtSpecConfigurationInstancetypeReferencePolicyEnum>))]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public enum V1alpha3KubeVirtSpecConfigurationInstancetypeReferencePolicyEnum
@@ -728,7 +728,7 @@ public enum V1alpha3KubeVirtSpecConfigurationInstancetypeReferencePolicyEnum
 }
 
 /// <summary>Instancetype configuration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationInstancetype
@@ -747,7 +747,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationInstancetype
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationKsmConfigurationNodeLabelSelectorMatchExpressions
@@ -777,7 +777,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationKsmConfigurationNodeLabelS
 /// NodeLabelSelector is a selector that filters in which nodes the KSM will be enabled.
 /// Empty NodeLabelSelector will enable ksm for every node.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationKsmConfigurationNodeLabelSelector
@@ -796,7 +796,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationKsmConfigurationNodeLabelS
 }
 
 /// <summary>KSMConfiguration holds the information regarding the enabling the KSM in the nodes (if available).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationKsmConfiguration
@@ -810,7 +810,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationKsmConfiguration
 }
 
 /// <summary>LiveUpdateConfiguration holds defaults for live update features</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationLiveUpdateConfiguration
@@ -842,7 +842,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationLiveUpdateConfiguration
 }
 
 /// <summary>NodeMediatedDeviceTypesConfig holds information about MDEV types to be defined in a specific node that matches the NodeSelector field.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationMediatedDevicesConfigurationNodeMediatedDeviceTypes
@@ -864,7 +864,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationMediatedDevicesConfigurati
 }
 
 /// <summary>MediatedDevicesConfiguration holds information about MDEV types to be defined, if available</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationMediatedDevicesConfiguration
@@ -893,7 +893,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationMediatedDevicesConfigurati
 /// Can be overridden for specific groups of VMs though migration policies.
 /// Visit https://kubevirt.io/user-guide/operations/migration_policies/ for more information.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationMigrations
@@ -1010,7 +1010,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationMigrations
 /// ComputeResourceOverhead specifies the resource overhead that should be added to the compute container when using the binding.
 /// version: v1alphav1
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationNetworkBindingComputeResourceOverhead
@@ -1036,7 +1036,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationNetworkBindingComputeResou
 /// Migration means the VM using the plugin can be safely migrated
 /// version: 1alphav1
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationNetworkBindingMigration
@@ -1049,7 +1049,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationNetworkBindingMigration
     public string? Method { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationNetworkBinding
@@ -1104,7 +1104,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationNetworkBinding
 }
 
 /// <summary>NetworkConfiguration holds network options</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationNetwork
@@ -1127,7 +1127,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationNetwork
 }
 
 /// <summary>MediatedHostDevice represents a host mediated device allowed for passthrough</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationPermittedHostDevicesMediatedDevices
@@ -1143,7 +1143,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationPermittedHostDevicesMediat
 }
 
 /// <summary>PciHostDevice represents a host PCI device allowed for passthrough</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationPermittedHostDevicesPciHostDevices
@@ -1168,7 +1168,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationPermittedHostDevicesPciHos
     public required string ResourceName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationPermittedHostDevicesUsbSelectors
@@ -1180,7 +1180,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationPermittedHostDevicesUsbSel
     public required string Vendor { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationPermittedHostDevicesUsb
@@ -1204,7 +1204,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationPermittedHostDevicesUsb
 }
 
 /// <summary>PermittedHostDevices holds information about devices allowed for passthrough</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationPermittedHostDevices
@@ -1227,7 +1227,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationPermittedHostDevices
 /// Setting this field to &quot;Manual&quot; requires the OptOutRoleAggregation feature gate to be enabled.
 /// This is an Alpha feature and subject to change.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha3KubeVirtSpecConfigurationRoleAggregationStrategyEnum>))]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public enum V1alpha3KubeVirtSpecConfigurationRoleAggregationStrategyEnum
@@ -1239,7 +1239,7 @@ public enum V1alpha3KubeVirtSpecConfigurationRoleAggregationStrategyEnum
 }
 
 /// <summary>CustomProfile allows to request arbitrary profile for virt-launcher</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationSeccompConfigurationVirtualMachineInstanceProfileCustomProfile
@@ -1252,7 +1252,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationSeccompConfigurationVirtua
 }
 
 /// <summary>VirtualMachineInstanceProfile defines what profile should be used with virt-launcher. Defaults to none</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationSeccompConfigurationVirtualMachineInstanceProfile
@@ -1263,7 +1263,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationSeccompConfigurationVirtua
 }
 
 /// <summary>SeccompConfiguration holds Seccomp configuration for Kubevirt components</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationSeccompConfiguration
@@ -1273,7 +1273,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationSeccompConfiguration
     public V1alpha3KubeVirtSpecConfigurationSeccompConfigurationVirtualMachineInstanceProfile? VirtualMachineInstanceProfile { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationSmbios
@@ -1298,7 +1298,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationSmbios
 /// ResourceRequirementsWithoutClaims describes the compute resource requirements.
 /// This struct was taken from the k8s.ResourceRequirements and cleaned up the &apos;Claims&apos; field.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationSupportContainerResourcesResources
@@ -1321,7 +1321,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationSupportContainerResourcesR
 }
 
 /// <summary>SupportContainerResources are used to specify the cpu/memory request and limits for the containers that support various features of Virtual Machines. These containers are usually idle and don&apos;t require a lot of memory or cpu.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationSupportContainerResources
@@ -1346,7 +1346,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationSupportContainerResources
 /// Note that SSLv3.0 is not a supported protocol version due to well known
 /// vulnerabilities such as POODLE: https://en.wikipedia.org/wiki/POODLE
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha3KubeVirtSpecConfigurationTlsConfigurationMinTLSVersionEnum>))]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public enum V1alpha3KubeVirtSpecConfigurationTlsConfigurationMinTLSVersionEnum
@@ -1362,7 +1362,7 @@ public enum V1alpha3KubeVirtSpecConfigurationTlsConfigurationMinTLSVersionEnum
 }
 
 /// <summary>TLSConfiguration holds TLS options</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationTlsConfiguration
@@ -1384,7 +1384,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationTlsConfiguration
 }
 
 /// <summary>VirtTemplateDeployment controls the deployment of virt-template components</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationVirtTemplateDeployment
@@ -1400,7 +1400,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationVirtTemplateDeployment
 /// This will have effect only if AutoattachMemBalloon is not false and the vmi is not
 /// requesting any high performance feature (dedicatedCPU/realtime/hugePages), in which free page reporting is always disabled.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationVirtualMachineOptionsDisableFreePageReporting
@@ -1412,7 +1412,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationVirtualMachineOptionsDisab
 /// If not set, serial console logs will be written to a file and then streamed from a container named &apos;guest-console-log&apos;.
 /// The value can be individually overridden for each VM, not relevant if AutoattachSerialConsole is disabled.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationVirtualMachineOptionsDisableSerialConsoleLog
@@ -1420,7 +1420,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationVirtualMachineOptionsDisab
 }
 
 /// <summary>VirtualMachineOptions holds the cluster level information regarding the virtual machine.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationVirtualMachineOptions
@@ -1447,7 +1447,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationVirtualMachineOptions
 /// VMRolloutStrategy defines how live-updatable fields, like CPU sockets, memory,
 /// tolerations, and affinity, are propagated from a VM to its VMI.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha3KubeVirtSpecConfigurationVmRolloutStrategyEnum>))]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public enum V1alpha3KubeVirtSpecConfigurationVmRolloutStrategyEnum
@@ -1458,7 +1458,7 @@ public enum V1alpha3KubeVirtSpecConfigurationVmRolloutStrategyEnum
     LiveUpdate
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationWebhookConfigurationRestClientRateLimiterTokenBucketRateLimiter
@@ -1479,7 +1479,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationWebhookConfigurationRestCl
 }
 
 /// <summary>RateLimiter allows selecting and configuring different rate limiters for the k8s client.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationWebhookConfigurationRestClientRateLimiter
@@ -1489,7 +1489,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationWebhookConfigurationRestCl
 }
 
 /// <summary>RestClient can be used to tune certain aspects of the k8s client in use.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationWebhookConfigurationRestClient
@@ -1503,7 +1503,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationWebhookConfigurationRestCl
 /// ReloadableComponentConfiguration holds all generic k8s configuration options which can
 /// be reloaded by components without requiring a restart.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfigurationWebhookConfiguration
@@ -1517,7 +1517,7 @@ public partial class V1alpha3KubeVirtSpecConfigurationWebhookConfiguration
 /// holds kubevirt configurations.
 /// same as the virt-configMap
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecConfiguration
@@ -1724,7 +1724,7 @@ public partial class V1alpha3KubeVirtSpecConfiguration
 }
 
 /// <summary>Configure the value used for deployment and daemonset resources</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecCustomizeComponentsFlags
@@ -1739,7 +1739,7 @@ public partial class V1alpha3KubeVirtSpecCustomizeComponentsFlags
     public IDictionary<string, string>? Handler { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecCustomizeComponentsPatches
@@ -1757,7 +1757,7 @@ public partial class V1alpha3KubeVirtSpecCustomizeComponentsPatches
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecCustomizeComponents
@@ -1774,7 +1774,7 @@ public partial class V1alpha3KubeVirtSpecCustomizeComponents
 /// LocalObjectReference contains enough information to let you locate the
 /// referenced object inside the same namespace.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecImagePullSecrets
@@ -1794,7 +1794,7 @@ public partial class V1alpha3KubeVirtSpecImagePullSecrets
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions
@@ -1825,7 +1825,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityNodeAffinityP
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields
@@ -1853,7 +1853,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityNodeAffinityP
 }
 
 /// <summary>A node selector term, associated with the corresponding weight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference
@@ -1871,7 +1871,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityNodeAffinityP
 /// An empty preferred scheduling term matches all objects with implicit weight 0
 /// (i.e. it&apos;s a no-op). A null preferred scheduling term matches no objects (i.e. is also a no-op).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution
@@ -1889,7 +1889,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityNodeAffinityP
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions
@@ -1920,7 +1920,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityNodeAffinityR
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields
@@ -1952,7 +1952,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityNodeAffinityR
 /// them are ANDed.
 /// The TopologySelectorTerm type implements a subset of the NodeSelectorTerm.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms
@@ -1973,7 +1973,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityNodeAffinityR
 /// at some point during pod execution (e.g. due to an update), the system
 /// may or may not try to eventually evict the pod from its node.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution
@@ -1984,7 +1984,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityNodeAffinityR
 }
 
 /// <summary>Describes node affinity scheduling rules for the pod.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityNodeAffinity
@@ -2018,7 +2018,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityNodeAffinity
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
@@ -2048,7 +2048,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAffinityPr
 /// A label query over a set of resources, in this case pods.
 /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
@@ -2070,7 +2070,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAffinityPr
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
@@ -2103,7 +2103,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAffinityPr
 /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
 /// An empty selector ({}) matches all namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
@@ -2122,7 +2122,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAffinityPr
 }
 
 /// <summary>Required. A pod affinity term, associated with the corresponding weight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
@@ -2191,7 +2191,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAffinityPr
 }
 
 /// <summary>The weights of all of the matched WeightedPodAffinityTerm fields are added per-node to find the most preferred node(s)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution
@@ -2212,7 +2212,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAffinityPr
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
@@ -2242,7 +2242,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAffinityRe
 /// A label query over a set of resources, in this case pods.
 /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
@@ -2264,7 +2264,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAffinityRe
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
@@ -2297,7 +2297,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAffinityRe
 /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
 /// An empty selector ({}) matches all namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
@@ -2323,7 +2323,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAffinityRe
 /// the label with key &lt;topologyKey&gt; matches that of any node on which
 /// a pod of the set of pods is running
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution
@@ -2392,7 +2392,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAffinityRe
 }
 
 /// <summary>Describes pod affinity scheduling rules (e.g. co-locate this pod in the same node, zone, etc. as some other pod(s)).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAffinity
@@ -2428,7 +2428,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAffinity
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
@@ -2458,7 +2458,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAntiAffini
 /// A label query over a set of resources, in this case pods.
 /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
@@ -2480,7 +2480,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAntiAffini
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
@@ -2513,7 +2513,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAntiAffini
 /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
 /// An empty selector ({}) matches all namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
@@ -2532,7 +2532,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAntiAffini
 }
 
 /// <summary>Required. A pod affinity term, associated with the corresponding weight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
@@ -2601,7 +2601,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAntiAffini
 }
 
 /// <summary>The weights of all of the matched WeightedPodAffinityTerm fields are added per-node to find the most preferred node(s)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution
@@ -2622,7 +2622,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAntiAffini
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
@@ -2652,7 +2652,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAntiAffini
 /// A label query over a set of resources, in this case pods.
 /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
@@ -2674,7 +2674,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAntiAffini
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
@@ -2707,7 +2707,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAntiAffini
 /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
 /// An empty selector ({}) matches all namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
@@ -2733,7 +2733,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAntiAffini
 /// the label with key &lt;topologyKey&gt; matches that of any node on which
 /// a pod of the set of pods is running
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution
@@ -2802,7 +2802,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAntiAffini
 }
 
 /// <summary>Describes pod anti-affinity scheduling rules (e.g. avoid putting this pod in the same node, zone, etc. as some other pod(s)).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAntiAffinity
@@ -2840,7 +2840,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinityPodAntiAffini
 /// affinity is going to be applied to the relevant kind of pods in parallel with nodeSelector
 /// See https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinity
@@ -2862,7 +2862,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementAffinity
 /// The pod this Toleration is attached to tolerates any taint that matches
 /// the triple &lt;key,value,effect&gt; using the matching operator &lt;operator&gt;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacementTolerations
@@ -2911,7 +2911,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacementTolerations
 /// nodePlacement describes scheduling configuration for specific
 /// KubeVirt components
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfraNodePlacement
@@ -2945,7 +2945,7 @@ public partial class V1alpha3KubeVirtSpecInfraNodePlacement
 }
 
 /// <summary>selectors and tolerations that should apply to KubeVirt infrastructure components</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecInfra
@@ -2970,7 +2970,7 @@ public partial class V1alpha3KubeVirtSpecInfra
 /// WorkloadUpdateStrategy defines at the cluster level how to handle
 /// automated workload updates
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadUpdateStrategy
@@ -3010,7 +3010,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadUpdateStrategy
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions
@@ -3041,7 +3041,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityNodeAffin
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields
@@ -3069,7 +3069,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityNodeAffin
 }
 
 /// <summary>A node selector term, associated with the corresponding weight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference
@@ -3087,7 +3087,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityNodeAffin
 /// An empty preferred scheduling term matches all objects with implicit weight 0
 /// (i.e. it&apos;s a no-op). A null preferred scheduling term matches no objects (i.e. is also a no-op).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution
@@ -3105,7 +3105,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityNodeAffin
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions
@@ -3136,7 +3136,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityNodeAffin
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields
@@ -3168,7 +3168,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityNodeAffin
 /// them are ANDed.
 /// The TopologySelectorTerm type implements a subset of the NodeSelectorTerm.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms
@@ -3189,7 +3189,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityNodeAffin
 /// at some point during pod execution (e.g. due to an update), the system
 /// may or may not try to eventually evict the pod from its node.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution
@@ -3200,7 +3200,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityNodeAffin
 }
 
 /// <summary>Describes node affinity scheduling rules for the pod.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityNodeAffinity
@@ -3234,7 +3234,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityNodeAffin
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
@@ -3264,7 +3264,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAffini
 /// A label query over a set of resources, in this case pods.
 /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
@@ -3286,7 +3286,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAffini
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
@@ -3319,7 +3319,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAffini
 /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
 /// An empty selector ({}) matches all namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
@@ -3338,7 +3338,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAffini
 }
 
 /// <summary>Required. A pod affinity term, associated with the corresponding weight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
@@ -3407,7 +3407,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAffini
 }
 
 /// <summary>The weights of all of the matched WeightedPodAffinityTerm fields are added per-node to find the most preferred node(s)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution
@@ -3428,7 +3428,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAffini
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
@@ -3458,7 +3458,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAffini
 /// A label query over a set of resources, in this case pods.
 /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
@@ -3480,7 +3480,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAffini
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
@@ -3513,7 +3513,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAffini
 /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
 /// An empty selector ({}) matches all namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
@@ -3539,7 +3539,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAffini
 /// the label with key &lt;topologyKey&gt; matches that of any node on which
 /// a pod of the set of pods is running
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution
@@ -3608,7 +3608,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAffini
 }
 
 /// <summary>Describes pod affinity scheduling rules (e.g. co-locate this pod in the same node, zone, etc. as some other pod(s)).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAffinity
@@ -3644,7 +3644,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAffini
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
@@ -3674,7 +3674,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAntiAf
 /// A label query over a set of resources, in this case pods.
 /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
@@ -3696,7 +3696,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAntiAf
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
@@ -3729,7 +3729,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAntiAf
 /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
 /// An empty selector ({}) matches all namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
@@ -3748,7 +3748,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAntiAf
 }
 
 /// <summary>Required. A pod affinity term, associated with the corresponding weight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
@@ -3817,7 +3817,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAntiAf
 }
 
 /// <summary>The weights of all of the matched WeightedPodAffinityTerm fields are added per-node to find the most preferred node(s)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution
@@ -3838,7 +3838,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAntiAf
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
@@ -3868,7 +3868,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAntiAf
 /// A label query over a set of resources, in this case pods.
 /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
@@ -3890,7 +3890,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAntiAf
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
@@ -3923,7 +3923,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAntiAf
 /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
 /// An empty selector ({}) matches all namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
@@ -3949,7 +3949,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAntiAf
 /// the label with key &lt;topologyKey&gt; matches that of any node on which
 /// a pod of the set of pods is running
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution
@@ -4018,7 +4018,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAntiAf
 }
 
 /// <summary>Describes pod anti-affinity scheduling rules (e.g. avoid putting this pod in the same node, zone, etc. as some other pod(s)).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAntiAffinity
@@ -4056,7 +4056,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinityPodAntiAf
 /// affinity is going to be applied to the relevant kind of pods in parallel with nodeSelector
 /// See https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinity
@@ -4078,7 +4078,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementAffinity
 /// The pod this Toleration is attached to tolerates any taint that matches
 /// the triple &lt;key,value,effect&gt; using the matching operator &lt;operator&gt;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementTolerations
@@ -4127,7 +4127,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacementTolerations
 /// nodePlacement describes scheduling configuration for specific
 /// KubeVirt components
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacement
@@ -4161,7 +4161,7 @@ public partial class V1alpha3KubeVirtSpecWorkloadsNodePlacement
 }
 
 /// <summary>selectors and tolerations that should apply to KubeVirt workloads</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpecWorkloads
@@ -4182,7 +4182,7 @@ public partial class V1alpha3KubeVirtSpecWorkloads
     public int? Replicas { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtSpec
@@ -4299,7 +4299,7 @@ public partial class V1alpha3KubeVirtSpec
 }
 
 /// <summary>KubeVirtCondition represents a condition of a KubeVirt deployment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtStatusConditions
@@ -4324,7 +4324,7 @@ public partial class V1alpha3KubeVirtStatusConditions
 }
 
 /// <summary>GenerationStatus keeps track of the generation for a given resource so that decisions about forced updates can be made.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtStatusGenerations
@@ -4355,7 +4355,7 @@ public partial class V1alpha3KubeVirtStatusGenerations
 }
 
 /// <summary>KubeVirtStatus represents information pertaining to a KubeVirt deployment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 public partial class V1alpha3KubeVirtStatus
@@ -4411,7 +4411,7 @@ public partial class V1alpha3KubeVirtStatus
 }
 
 /// <summary>KubeVirt represents the object deploying all KubeVirt resources</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kubevirt.io/v1alpha3 is now deprecated and will be removed in a future release.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

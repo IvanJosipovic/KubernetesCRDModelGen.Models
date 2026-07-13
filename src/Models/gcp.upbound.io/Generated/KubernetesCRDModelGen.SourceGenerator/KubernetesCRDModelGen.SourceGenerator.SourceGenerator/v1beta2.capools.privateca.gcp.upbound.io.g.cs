@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.privateca.gcp.upbound.io;
 /// <summary>CAPool is the Schema for the CAPools API. A CaPool represents a group of CertificateAuthorities that form a trust anchor.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2CAPoolList : IKubernetesObject<V1ListMeta>, IItems<V1beta2CAPool>
@@ -45,7 +45,7 @@ public partial class V1beta2CAPoolList : IKubernetesObject<V1ListMeta>, IItems<V
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CAPoolSpecDeletionPolicyEnum>))]
 public enum V1beta2CAPoolSpecDeletionPolicyEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta2CAPoolSpecDeletionPolicyEnum
 /// IssuanceModes specifies the allowed ways in which Certificates may be requested from this CaPool.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecForProviderIssuancePolicyAllowedIssuanceModes
 {
@@ -76,7 +76,7 @@ public partial class V1beta2CAPoolSpecForProviderIssuancePolicyAllowedIssuanceMo
 /// Represents an allowed Elliptic Curve key type.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecForProviderIssuancePolicyAllowedKeyTypesEllipticCurve
 {
@@ -92,7 +92,7 @@ public partial class V1beta2CAPoolSpecForProviderIssuancePolicyAllowedKeyTypesEl
 /// Describes an RSA key that may be used in a Certificate issued from a CaPool.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecForProviderIssuancePolicyAllowedKeyTypesRsa
 {
@@ -111,7 +111,7 @@ public partial class V1beta2CAPoolSpecForProviderIssuancePolicyAllowedKeyTypesRs
     public string? MinModulusSize { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecForProviderIssuancePolicyAllowedKeyTypes
 {
@@ -134,7 +134,7 @@ public partial class V1beta2CAPoolSpecForProviderIssuancePolicyAllowedKeyTypes
 /// Describes values that are relevant in a CA certificate.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecForProviderIssuancePolicyBaselineValuesAdditionalExtensionsObjectId
 {
@@ -143,7 +143,7 @@ public partial class V1beta2CAPoolSpecForProviderIssuancePolicyBaselineValuesAdd
     public IList<double>? ObjectIdPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecForProviderIssuancePolicyBaselineValuesAdditionalExtensions
 {
@@ -167,7 +167,7 @@ public partial class V1beta2CAPoolSpecForProviderIssuancePolicyBaselineValuesAdd
 /// Describes values that are relevant in a CA certificate.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecForProviderIssuancePolicyBaselineValuesCaOptions
 {
@@ -202,7 +202,7 @@ public partial class V1beta2CAPoolSpecForProviderIssuancePolicyBaselineValuesCaO
 /// Describes high-level ways in which a key may be used.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecForProviderIssuancePolicyBaselineValuesKeyUsageBaseKeyUsage
 {
@@ -247,7 +247,7 @@ public partial class V1beta2CAPoolSpecForProviderIssuancePolicyBaselineValuesKey
 /// Describes high-level ways in which a key may be used.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecForProviderIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsage
 {
@@ -276,7 +276,7 @@ public partial class V1beta2CAPoolSpecForProviderIssuancePolicyBaselineValuesKey
     public bool? TimeStamping { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecForProviderIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages
 {
@@ -289,7 +289,7 @@ public partial class V1beta2CAPoolSpecForProviderIssuancePolicyBaselineValuesKey
 /// Indicates the intended use for keys that correspond to a certificate.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecForProviderIssuancePolicyBaselineValuesKeyUsage
 {
@@ -319,7 +319,7 @@ public partial class V1beta2CAPoolSpecForProviderIssuancePolicyBaselineValuesKey
 /// Describes the X.509 name constraints extension.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecForProviderIssuancePolicyBaselineValuesNameConstraints
 {
@@ -400,7 +400,7 @@ public partial class V1beta2CAPoolSpecForProviderIssuancePolicyBaselineValuesNam
     public IList<string>? PermittedUris { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecForProviderIssuancePolicyBaselineValuesPolicyIds
 {
@@ -416,7 +416,7 @@ public partial class V1beta2CAPoolSpecForProviderIssuancePolicyBaselineValuesPol
 /// issuance request will fail.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecForProviderIssuancePolicyBaselineValues
 {
@@ -469,7 +469,7 @@ public partial class V1beta2CAPoolSpecForProviderIssuancePolicyBaselineValues
 /// see https://cloud.google.com/certificate-authority-service/docs/cel-guide
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecForProviderIssuancePolicyIdentityConstraintsCelExpression
 {
@@ -498,7 +498,7 @@ public partial class V1beta2CAPoolSpecForProviderIssuancePolicyIdentityConstrain
 /// If this is omitted, then this CaPool will not add restrictions on a certificate&apos;s identity.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecForProviderIssuancePolicyIdentityConstraints
 {
@@ -530,7 +530,7 @@ public partial class V1beta2CAPoolSpecForProviderIssuancePolicyIdentityConstrain
 /// The IssuancePolicy to control how Certificates will be issued from this CaPool.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecForProviderIssuancePolicy
 {
@@ -589,7 +589,7 @@ public partial class V1beta2CAPoolSpecForProviderIssuancePolicy
 /// The PublishingOptions to follow when issuing Certificates from any CertificateAuthority in this CaPool.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecForProviderPublishingOptions
 {
@@ -620,7 +620,7 @@ public partial class V1beta2CAPoolSpecForProviderPublishingOptions
     public bool? PublishCrl { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecForProvider
 {
@@ -672,7 +672,7 @@ public partial class V1beta2CAPoolSpecForProvider
 /// IssuanceModes specifies the allowed ways in which Certificates may be requested from this CaPool.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyAllowedIssuanceModes
 {
@@ -689,7 +689,7 @@ public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyAllowedIssuanceM
 /// Represents an allowed Elliptic Curve key type.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyAllowedKeyTypesEllipticCurve
 {
@@ -705,7 +705,7 @@ public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyAllowedKeyTypesE
 /// Describes an RSA key that may be used in a Certificate issued from a CaPool.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyAllowedKeyTypesRsa
 {
@@ -724,7 +724,7 @@ public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyAllowedKeyTypesR
     public string? MinModulusSize { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyAllowedKeyTypes
 {
@@ -747,7 +747,7 @@ public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyAllowedKeyTypes
 /// Describes values that are relevant in a CA certificate.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyBaselineValuesAdditionalExtensionsObjectId
 {
@@ -756,7 +756,7 @@ public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyBaselineValuesAd
     public IList<double>? ObjectIdPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyBaselineValuesAdditionalExtensions
 {
@@ -780,7 +780,7 @@ public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyBaselineValuesAd
 /// Describes values that are relevant in a CA certificate.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyBaselineValuesCaOptions
 {
@@ -815,7 +815,7 @@ public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyBaselineValuesCa
 /// Describes high-level ways in which a key may be used.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyBaselineValuesKeyUsageBaseKeyUsage
 {
@@ -860,7 +860,7 @@ public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyBaselineValuesKe
 /// Describes high-level ways in which a key may be used.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsage
 {
@@ -889,7 +889,7 @@ public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyBaselineValuesKe
     public bool? TimeStamping { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages
 {
@@ -902,7 +902,7 @@ public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyBaselineValuesKe
 /// Indicates the intended use for keys that correspond to a certificate.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyBaselineValuesKeyUsage
 {
@@ -932,7 +932,7 @@ public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyBaselineValuesKe
 /// Describes the X.509 name constraints extension.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyBaselineValuesNameConstraints
 {
@@ -1013,7 +1013,7 @@ public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyBaselineValuesNa
     public IList<string>? PermittedUris { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyBaselineValuesPolicyIds
 {
@@ -1029,7 +1029,7 @@ public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyBaselineValuesPo
 /// issuance request will fail.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyBaselineValues
 {
@@ -1082,7 +1082,7 @@ public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyBaselineValues
 /// see https://cloud.google.com/certificate-authority-service/docs/cel-guide
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyIdentityConstraintsCelExpression
 {
@@ -1104,7 +1104,7 @@ public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyIdentityConstrai
 /// If this is omitted, then this CaPool will not add restrictions on a certificate&apos;s identity.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyIdentityConstraints
 {
@@ -1136,7 +1136,7 @@ public partial class V1beta2CAPoolSpecInitProviderIssuancePolicyIdentityConstrai
 /// The IssuancePolicy to control how Certificates will be issued from this CaPool.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecInitProviderIssuancePolicy
 {
@@ -1195,7 +1195,7 @@ public partial class V1beta2CAPoolSpecInitProviderIssuancePolicy
 /// The PublishingOptions to follow when issuing Certificates from any CertificateAuthority in this CaPool.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecInitProviderPublishingOptions
 {
@@ -1238,7 +1238,7 @@ public partial class V1beta2CAPoolSpecInitProviderPublishingOptions
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecInitProvider
 {
@@ -1283,7 +1283,7 @@ public partial class V1beta2CAPoolSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CAPoolSpecManagementPoliciesEnum>))]
 public enum V1beta2CAPoolSpecManagementPoliciesEnum
 {
@@ -1307,7 +1307,7 @@ public enum V1beta2CAPoolSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CAPoolSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2CAPoolSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1323,7 +1323,7 @@ public enum V1beta2CAPoolSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CAPoolSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2CAPoolSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1334,7 +1334,7 @@ public enum V1beta2CAPoolSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecProviderConfigRefPolicy
 {
@@ -1362,7 +1362,7 @@ public partial class V1beta2CAPoolSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecProviderConfigRef
 {
@@ -1381,7 +1381,7 @@ public partial class V1beta2CAPoolSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpecWriteConnectionSecretToRef
 {
@@ -1395,7 +1395,7 @@ public partial class V1beta2CAPoolSpecWriteConnectionSecretToRef
 }
 
 /// <summary>CAPoolSpec defines the desired state of CAPool</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolSpec
 {
@@ -1466,7 +1466,7 @@ public partial class V1beta2CAPoolSpec
 /// IssuanceModes specifies the allowed ways in which Certificates may be requested from this CaPool.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyAllowedIssuanceModes
 {
@@ -1483,7 +1483,7 @@ public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyAllowedIssuanceM
 /// Represents an allowed Elliptic Curve key type.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyAllowedKeyTypesEllipticCurve
 {
@@ -1499,7 +1499,7 @@ public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyAllowedKeyTypesE
 /// Describes an RSA key that may be used in a Certificate issued from a CaPool.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyAllowedKeyTypesRsa
 {
@@ -1518,7 +1518,7 @@ public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyAllowedKeyTypesR
     public string? MinModulusSize { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyAllowedKeyTypes
 {
@@ -1541,7 +1541,7 @@ public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyAllowedKeyTypes
 /// Describes values that are relevant in a CA certificate.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyBaselineValuesAdditionalExtensionsObjectId
 {
@@ -1550,7 +1550,7 @@ public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyBaselineValuesAd
     public IList<double>? ObjectIdPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyBaselineValuesAdditionalExtensions
 {
@@ -1574,7 +1574,7 @@ public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyBaselineValuesAd
 /// Describes values that are relevant in a CA certificate.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyBaselineValuesCaOptions
 {
@@ -1609,7 +1609,7 @@ public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyBaselineValuesCa
 /// Describes high-level ways in which a key may be used.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyBaselineValuesKeyUsageBaseKeyUsage
 {
@@ -1654,7 +1654,7 @@ public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyBaselineValuesKe
 /// Describes high-level ways in which a key may be used.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsage
 {
@@ -1683,7 +1683,7 @@ public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyBaselineValuesKe
     public bool? TimeStamping { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages
 {
@@ -1696,7 +1696,7 @@ public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyBaselineValuesKe
 /// Indicates the intended use for keys that correspond to a certificate.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyBaselineValuesKeyUsage
 {
@@ -1726,7 +1726,7 @@ public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyBaselineValuesKe
 /// Describes the X.509 name constraints extension.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyBaselineValuesNameConstraints
 {
@@ -1807,7 +1807,7 @@ public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyBaselineValuesNa
     public IList<string>? PermittedUris { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyBaselineValuesPolicyIds
 {
@@ -1823,7 +1823,7 @@ public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyBaselineValuesPo
 /// issuance request will fail.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyBaselineValues
 {
@@ -1876,7 +1876,7 @@ public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyBaselineValues
 /// see https://cloud.google.com/certificate-authority-service/docs/cel-guide
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyIdentityConstraintsCelExpression
 {
@@ -1905,7 +1905,7 @@ public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyIdentityConstrai
 /// If this is omitted, then this CaPool will not add restrictions on a certificate&apos;s identity.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyIdentityConstraints
 {
@@ -1937,7 +1937,7 @@ public partial class V1beta2CAPoolStatusAtProviderIssuancePolicyIdentityConstrai
 /// The IssuancePolicy to control how Certificates will be issued from this CaPool.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolStatusAtProviderIssuancePolicy
 {
@@ -1996,7 +1996,7 @@ public partial class V1beta2CAPoolStatusAtProviderIssuancePolicy
 /// The PublishingOptions to follow when issuing Certificates from any CertificateAuthority in this CaPool.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolStatusAtProviderPublishingOptions
 {
@@ -2027,7 +2027,7 @@ public partial class V1beta2CAPoolStatusAtProviderPublishingOptions
     public bool? PublishCrl { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolStatusAtProvider
 {
@@ -2091,7 +2091,7 @@ public partial class V1beta2CAPoolStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolStatusConditions
 {
@@ -2134,7 +2134,7 @@ public partial class V1beta2CAPoolStatusConditions
 }
 
 /// <summary>CAPoolStatus defines the observed state of CAPool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CAPoolStatus
 {
@@ -2155,7 +2155,7 @@ public partial class V1beta2CAPoolStatus
 }
 
 /// <summary>CAPool is the Schema for the CAPools API. A CaPool represents a group of CertificateAuthorities that form a trust anchor.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2CAPool : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2CAPoolSpec>, IStatus<V1beta2CAPoolStatus?>

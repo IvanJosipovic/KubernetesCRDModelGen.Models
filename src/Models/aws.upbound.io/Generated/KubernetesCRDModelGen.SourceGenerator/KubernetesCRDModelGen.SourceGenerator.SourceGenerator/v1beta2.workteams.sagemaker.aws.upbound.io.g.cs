@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sagemaker.aws.upbound.io;
 /// <summary>Workteam is the Schema for the Workteams API. Provides a SageMaker AI Workteam resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2WorkteamList : IKubernetesObject<V1ListMeta>, IItems<V1beta2Workteam>
@@ -45,7 +45,7 @@ public partial class V1beta2WorkteamList : IKubernetesObject<V1ListMeta>, IItems
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecDeletionPolicyEnum>))]
 public enum V1beta2WorkteamSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2WorkteamSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionClientIdRefPolicyResolutionEnum>))]
 public enum V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionClientIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionClientIdRefPolicyResolveEnum>))]
 public enum V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionClientIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitio
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionClientIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMember
 }
 
 /// <summary>Reference to a UserPoolClient in cognitoidp to populate clientId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionClientIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMember
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionClientIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionClientIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionClientIdSelectorPolicyResolveEnum>))]
 public enum V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionClientIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitio
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionClientIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMember
 }
 
 /// <summary>Selector for a UserPoolClient in cognitoidp to populate clientId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionClientIdSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMember
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserGroupRefPolicyResolutionEnum>))]
 public enum V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserGroupRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserGroupRefPolicyResolveEnum>))]
 public enum V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserGroupRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitio
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserGroupRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMember
 }
 
 /// <summary>Reference to a UserGroup in cognitoidp to populate userGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserGroupRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMember
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserGroupSelectorPolicyResolutionEnum>))]
 public enum V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserGroupSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserGroupSelectorPolicyResolveEnum>))]
 public enum V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserGroupSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitio
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserGroupSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMember
 }
 
 /// <summary>Selector for a UserGroup in cognitoidp to populate userGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserGroupSelector
 {
@@ -355,7 +355,7 @@ public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMember
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserPoolRefPolicyResolutionEnum>))]
 public enum V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserPoolRefPolicyResolutionEnum
 {
@@ -371,7 +371,7 @@ public enum V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserPoolRefPolicyResolveEnum>))]
 public enum V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserPoolRefPolicyResolveEnum
 {
@@ -382,7 +382,7 @@ public enum V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitio
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserPoolRefPolicy
 {
@@ -406,7 +406,7 @@ public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMember
 }
 
 /// <summary>Reference to a UserPoolDomain in cognitoidp to populate userPool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserPoolRef
 {
@@ -425,7 +425,7 @@ public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMember
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserPoolSelectorPolicyResolutionEnum>))]
 public enum V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserPoolSelectorPolicyResolutionEnum
 {
@@ -441,7 +441,7 @@ public enum V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserPoolSelectorPolicyResolveEnum>))]
 public enum V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserPoolSelectorPolicyResolveEnum
 {
@@ -452,7 +452,7 @@ public enum V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitio
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserPoolSelectorPolicy
 {
@@ -476,7 +476,7 @@ public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMember
 }
 
 /// <summary>Selector for a UserPoolDomain in cognitoidp to populate userPool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserPoolSelector
 {
@@ -497,7 +497,7 @@ public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMember
 }
 
 /// <summary>The Amazon Cognito user group that is part of the work team. See Cognito Member Definition details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinition
 {
@@ -539,7 +539,7 @@ public partial class V1beta2WorkteamSpecForProviderMemberDefinitionCognitoMember
 }
 
 /// <summary>A list user groups that exist in your OIDC Identity Provider (IdP). One to ten groups can be used to create a single private work team. See Cognito Member Definition details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecForProviderMemberDefinitionOidcMemberDefinition
 {
@@ -548,7 +548,7 @@ public partial class V1beta2WorkteamSpecForProviderMemberDefinitionOidcMemberDef
     public IList<string>? Groups { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecForProviderMemberDefinition
 {
@@ -562,7 +562,7 @@ public partial class V1beta2WorkteamSpecForProviderMemberDefinition
 }
 
 /// <summary>Configures notification of workers regarding available or expiring work items. see Notification Configuration details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecForProviderNotificationConfiguration
 {
@@ -572,7 +572,7 @@ public partial class V1beta2WorkteamSpecForProviderNotificationConfiguration
 }
 
 /// <summary>Use this parameter to specify the allowed request source. Possible sources are either SourceIp or VpcSourceIp. see IAM Policy Constraints details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecForProviderWorkerAccessConfigurationS3PresignIamPolicyConstraints
 {
@@ -586,7 +586,7 @@ public partial class V1beta2WorkteamSpecForProviderWorkerAccessConfigurationS3Pr
 }
 
 /// <summary>Defines any Amazon S3 resource constraints. see S3 Presign details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecForProviderWorkerAccessConfigurationS3Presign
 {
@@ -596,7 +596,7 @@ public partial class V1beta2WorkteamSpecForProviderWorkerAccessConfigurationS3Pr
 }
 
 /// <summary>Use this optional parameter to constrain access to an Amazon S3 resource based on the IP address using supported IAM global condition keys. The Amazon S3 resource is accessed in the worker portal using a Amazon S3 presigned URL. see Worker Access Configuration details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecForProviderWorkerAccessConfiguration
 {
@@ -611,7 +611,7 @@ public partial class V1beta2WorkteamSpecForProviderWorkerAccessConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecForProviderWorkforceNameRefPolicyResolutionEnum>))]
 public enum V1beta2WorkteamSpecForProviderWorkforceNameRefPolicyResolutionEnum
 {
@@ -627,7 +627,7 @@ public enum V1beta2WorkteamSpecForProviderWorkforceNameRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecForProviderWorkforceNameRefPolicyResolveEnum>))]
 public enum V1beta2WorkteamSpecForProviderWorkforceNameRefPolicyResolveEnum
 {
@@ -638,7 +638,7 @@ public enum V1beta2WorkteamSpecForProviderWorkforceNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecForProviderWorkforceNameRefPolicy
 {
@@ -662,7 +662,7 @@ public partial class V1beta2WorkteamSpecForProviderWorkforceNameRefPolicy
 }
 
 /// <summary>Reference to a Workforce in sagemaker to populate workforceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecForProviderWorkforceNameRef
 {
@@ -681,7 +681,7 @@ public partial class V1beta2WorkteamSpecForProviderWorkforceNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecForProviderWorkforceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2WorkteamSpecForProviderWorkforceNameSelectorPolicyResolutionEnum
 {
@@ -697,7 +697,7 @@ public enum V1beta2WorkteamSpecForProviderWorkforceNameSelectorPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecForProviderWorkforceNameSelectorPolicyResolveEnum>))]
 public enum V1beta2WorkteamSpecForProviderWorkforceNameSelectorPolicyResolveEnum
 {
@@ -708,7 +708,7 @@ public enum V1beta2WorkteamSpecForProviderWorkforceNameSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecForProviderWorkforceNameSelectorPolicy
 {
@@ -732,7 +732,7 @@ public partial class V1beta2WorkteamSpecForProviderWorkforceNameSelectorPolicy
 }
 
 /// <summary>Selector for a Workforce in sagemaker to populate workforceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecForProviderWorkforceNameSelector
 {
@@ -752,7 +752,7 @@ public partial class V1beta2WorkteamSpecForProviderWorkforceNameSelector
     public V1beta2WorkteamSpecForProviderWorkforceNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecForProvider
 {
@@ -802,7 +802,7 @@ public partial class V1beta2WorkteamSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionClientIdRefPolicyResolutionEnum>))]
 public enum V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionClientIdRefPolicyResolutionEnum
 {
@@ -818,7 +818,7 @@ public enum V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefiniti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionClientIdRefPolicyResolveEnum>))]
 public enum V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionClientIdRefPolicyResolveEnum
 {
@@ -829,7 +829,7 @@ public enum V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefiniti
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionClientIdRefPolicy
 {
@@ -853,7 +853,7 @@ public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 }
 
 /// <summary>Reference to a UserPoolClient in cognitoidp to populate clientId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionClientIdRef
 {
@@ -872,7 +872,7 @@ public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionClientIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionClientIdSelectorPolicyResolutionEnum
 {
@@ -888,7 +888,7 @@ public enum V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefiniti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionClientIdSelectorPolicyResolveEnum>))]
 public enum V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionClientIdSelectorPolicyResolveEnum
 {
@@ -899,7 +899,7 @@ public enum V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefiniti
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionClientIdSelectorPolicy
 {
@@ -923,7 +923,7 @@ public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 }
 
 /// <summary>Selector for a UserPoolClient in cognitoidp to populate clientId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionClientIdSelector
 {
@@ -949,7 +949,7 @@ public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserGroupRefPolicyResolutionEnum>))]
 public enum V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserGroupRefPolicyResolutionEnum
 {
@@ -965,7 +965,7 @@ public enum V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefiniti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserGroupRefPolicyResolveEnum>))]
 public enum V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserGroupRefPolicyResolveEnum
 {
@@ -976,7 +976,7 @@ public enum V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefiniti
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserGroupRefPolicy
 {
@@ -1000,7 +1000,7 @@ public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 }
 
 /// <summary>Reference to a UserGroup in cognitoidp to populate userGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserGroupRef
 {
@@ -1019,7 +1019,7 @@ public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserGroupSelectorPolicyResolutionEnum>))]
 public enum V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserGroupSelectorPolicyResolutionEnum
 {
@@ -1035,7 +1035,7 @@ public enum V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefiniti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserGroupSelectorPolicyResolveEnum>))]
 public enum V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserGroupSelectorPolicyResolveEnum
 {
@@ -1046,7 +1046,7 @@ public enum V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefiniti
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserGroupSelectorPolicy
 {
@@ -1070,7 +1070,7 @@ public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 }
 
 /// <summary>Selector for a UserGroup in cognitoidp to populate userGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserGroupSelector
 {
@@ -1096,7 +1096,7 @@ public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserPoolRefPolicyResolutionEnum>))]
 public enum V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserPoolRefPolicyResolutionEnum
 {
@@ -1112,7 +1112,7 @@ public enum V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefiniti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserPoolRefPolicyResolveEnum>))]
 public enum V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserPoolRefPolicyResolveEnum
 {
@@ -1123,7 +1123,7 @@ public enum V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefiniti
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserPoolRefPolicy
 {
@@ -1147,7 +1147,7 @@ public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 }
 
 /// <summary>Reference to a UserPoolDomain in cognitoidp to populate userPool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserPoolRef
 {
@@ -1166,7 +1166,7 @@ public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserPoolSelectorPolicyResolutionEnum>))]
 public enum V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserPoolSelectorPolicyResolutionEnum
 {
@@ -1182,7 +1182,7 @@ public enum V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefiniti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserPoolSelectorPolicyResolveEnum>))]
 public enum V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserPoolSelectorPolicyResolveEnum
 {
@@ -1193,7 +1193,7 @@ public enum V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefiniti
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserPoolSelectorPolicy
 {
@@ -1217,7 +1217,7 @@ public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 }
 
 /// <summary>Selector for a UserPoolDomain in cognitoidp to populate userPool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserPoolSelector
 {
@@ -1238,7 +1238,7 @@ public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 }
 
 /// <summary>The Amazon Cognito user group that is part of the work team. See Cognito Member Definition details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinition
 {
@@ -1280,7 +1280,7 @@ public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 }
 
 /// <summary>A list user groups that exist in your OIDC Identity Provider (IdP). One to ten groups can be used to create a single private work team. See Cognito Member Definition details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionOidcMemberDefinition
 {
@@ -1289,7 +1289,7 @@ public partial class V1beta2WorkteamSpecInitProviderMemberDefinitionOidcMemberDe
     public IList<string>? Groups { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecInitProviderMemberDefinition
 {
@@ -1303,7 +1303,7 @@ public partial class V1beta2WorkteamSpecInitProviderMemberDefinition
 }
 
 /// <summary>Configures notification of workers regarding available or expiring work items. see Notification Configuration details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecInitProviderNotificationConfiguration
 {
@@ -1313,7 +1313,7 @@ public partial class V1beta2WorkteamSpecInitProviderNotificationConfiguration
 }
 
 /// <summary>Use this parameter to specify the allowed request source. Possible sources are either SourceIp or VpcSourceIp. see IAM Policy Constraints details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecInitProviderWorkerAccessConfigurationS3PresignIamPolicyConstraints
 {
@@ -1327,7 +1327,7 @@ public partial class V1beta2WorkteamSpecInitProviderWorkerAccessConfigurationS3P
 }
 
 /// <summary>Defines any Amazon S3 resource constraints. see S3 Presign details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecInitProviderWorkerAccessConfigurationS3Presign
 {
@@ -1337,7 +1337,7 @@ public partial class V1beta2WorkteamSpecInitProviderWorkerAccessConfigurationS3P
 }
 
 /// <summary>Use this optional parameter to constrain access to an Amazon S3 resource based on the IP address using supported IAM global condition keys. The Amazon S3 resource is accessed in the worker portal using a Amazon S3 presigned URL. see Worker Access Configuration details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecInitProviderWorkerAccessConfiguration
 {
@@ -1352,7 +1352,7 @@ public partial class V1beta2WorkteamSpecInitProviderWorkerAccessConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecInitProviderWorkforceNameRefPolicyResolutionEnum>))]
 public enum V1beta2WorkteamSpecInitProviderWorkforceNameRefPolicyResolutionEnum
 {
@@ -1368,7 +1368,7 @@ public enum V1beta2WorkteamSpecInitProviderWorkforceNameRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecInitProviderWorkforceNameRefPolicyResolveEnum>))]
 public enum V1beta2WorkteamSpecInitProviderWorkforceNameRefPolicyResolveEnum
 {
@@ -1379,7 +1379,7 @@ public enum V1beta2WorkteamSpecInitProviderWorkforceNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecInitProviderWorkforceNameRefPolicy
 {
@@ -1403,7 +1403,7 @@ public partial class V1beta2WorkteamSpecInitProviderWorkforceNameRefPolicy
 }
 
 /// <summary>Reference to a Workforce in sagemaker to populate workforceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecInitProviderWorkforceNameRef
 {
@@ -1422,7 +1422,7 @@ public partial class V1beta2WorkteamSpecInitProviderWorkforceNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecInitProviderWorkforceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2WorkteamSpecInitProviderWorkforceNameSelectorPolicyResolutionEnum
 {
@@ -1438,7 +1438,7 @@ public enum V1beta2WorkteamSpecInitProviderWorkforceNameSelectorPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecInitProviderWorkforceNameSelectorPolicyResolveEnum>))]
 public enum V1beta2WorkteamSpecInitProviderWorkforceNameSelectorPolicyResolveEnum
 {
@@ -1449,7 +1449,7 @@ public enum V1beta2WorkteamSpecInitProviderWorkforceNameSelectorPolicyResolveEnu
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecInitProviderWorkforceNameSelectorPolicy
 {
@@ -1473,7 +1473,7 @@ public partial class V1beta2WorkteamSpecInitProviderWorkforceNameSelectorPolicy
 }
 
 /// <summary>Selector for a Workforce in sagemaker to populate workforceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecInitProviderWorkforceNameSelector
 {
@@ -1505,7 +1505,7 @@ public partial class V1beta2WorkteamSpecInitProviderWorkforceNameSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecInitProvider
 {
@@ -1546,7 +1546,7 @@ public partial class V1beta2WorkteamSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecManagementPoliciesEnum>))]
 public enum V1beta2WorkteamSpecManagementPoliciesEnum
 {
@@ -1570,7 +1570,7 @@ public enum V1beta2WorkteamSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2WorkteamSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1586,7 +1586,7 @@ public enum V1beta2WorkteamSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WorkteamSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2WorkteamSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1597,7 +1597,7 @@ public enum V1beta2WorkteamSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecProviderConfigRefPolicy
 {
@@ -1625,7 +1625,7 @@ public partial class V1beta2WorkteamSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecProviderConfigRef
 {
@@ -1644,7 +1644,7 @@ public partial class V1beta2WorkteamSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpecWriteConnectionSecretToRef
 {
@@ -1658,7 +1658,7 @@ public partial class V1beta2WorkteamSpecWriteConnectionSecretToRef
 }
 
 /// <summary>WorkteamSpec defines the desired state of Workteam</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamSpec
 {
@@ -1726,7 +1726,7 @@ public partial class V1beta2WorkteamSpec
 }
 
 /// <summary>The Amazon Cognito user group that is part of the work team. See Cognito Member Definition details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamStatusAtProviderMemberDefinitionCognitoMemberDefinition
 {
@@ -1744,7 +1744,7 @@ public partial class V1beta2WorkteamStatusAtProviderMemberDefinitionCognitoMembe
 }
 
 /// <summary>A list user groups that exist in your OIDC Identity Provider (IdP). One to ten groups can be used to create a single private work team. See Cognito Member Definition details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamStatusAtProviderMemberDefinitionOidcMemberDefinition
 {
@@ -1753,7 +1753,7 @@ public partial class V1beta2WorkteamStatusAtProviderMemberDefinitionOidcMemberDe
     public IList<string>? Groups { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamStatusAtProviderMemberDefinition
 {
@@ -1767,7 +1767,7 @@ public partial class V1beta2WorkteamStatusAtProviderMemberDefinition
 }
 
 /// <summary>Configures notification of workers regarding available or expiring work items. see Notification Configuration details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamStatusAtProviderNotificationConfiguration
 {
@@ -1777,7 +1777,7 @@ public partial class V1beta2WorkteamStatusAtProviderNotificationConfiguration
 }
 
 /// <summary>Use this parameter to specify the allowed request source. Possible sources are either SourceIp or VpcSourceIp. see IAM Policy Constraints details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamStatusAtProviderWorkerAccessConfigurationS3PresignIamPolicyConstraints
 {
@@ -1791,7 +1791,7 @@ public partial class V1beta2WorkteamStatusAtProviderWorkerAccessConfigurationS3P
 }
 
 /// <summary>Defines any Amazon S3 resource constraints. see S3 Presign details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamStatusAtProviderWorkerAccessConfigurationS3Presign
 {
@@ -1801,7 +1801,7 @@ public partial class V1beta2WorkteamStatusAtProviderWorkerAccessConfigurationS3P
 }
 
 /// <summary>Use this optional parameter to constrain access to an Amazon S3 resource based on the IP address using supported IAM global condition keys. The Amazon S3 resource is accessed in the worker portal using a Amazon S3 presigned URL. see Worker Access Configuration details below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamStatusAtProviderWorkerAccessConfiguration
 {
@@ -1810,7 +1810,7 @@ public partial class V1beta2WorkteamStatusAtProviderWorkerAccessConfiguration
     public V1beta2WorkteamStatusAtProviderWorkerAccessConfigurationS3Presign? S3Presign { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamStatusAtProvider
 {
@@ -1863,7 +1863,7 @@ public partial class V1beta2WorkteamStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamStatusConditions
 {
@@ -1906,7 +1906,7 @@ public partial class V1beta2WorkteamStatusConditions
 }
 
 /// <summary>WorkteamStatus defines the observed state of Workteam.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WorkteamStatus
 {
@@ -1927,7 +1927,7 @@ public partial class V1beta2WorkteamStatus
 }
 
 /// <summary>Workteam is the Schema for the Workteams API. Provides a SageMaker AI Workteam resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2Workteam : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2WorkteamSpec>, IStatus<V1beta2WorkteamStatus?>

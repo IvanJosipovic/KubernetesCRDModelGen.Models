@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
 /// <summary>NetworkInterfaceNatRuleAssociation is the Schema for the NetworkInterfaceNatRuleAssociations API. Manages the association between a Network Interface and a Load Balancer&apos;s NAT Rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1NetworkInterfaceNatRuleAssociation>
@@ -45,7 +45,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationList : IKubernetes
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceNatRuleAssociationSpecDeletionPolicyEnum>))]
 public enum V1beta1NetworkInterfaceNatRuleAssociationSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1NetworkInterfaceNatRuleAssociationSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNatRuleIdRefPolicyResolutionEnum>))]
 public enum V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNatRuleIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNatRuleIdRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNatRuleIdRefPolicyResolveEnum>))]
 public enum V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNatRuleIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNatRuleIdRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNatRuleIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNat
 }
 
 /// <summary>Reference to a LoadBalancerNatRule in network to populate natRuleId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNatRuleIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNatRuleIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNatRuleIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNatRuleIdSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNatRuleIdSelectorPolicyResolveEnum>))]
 public enum V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNatRuleIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNatRuleIdSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNatRuleIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNat
 }
 
 /// <summary>Selector for a LoadBalancerNatRule in network to populate natRuleId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNatRuleIdSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNetworkInterfaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNetworkInterfaceIdRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNetworkInter
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNetworkInterfaceIdRefPolicyResolveEnum>))]
 public enum V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNetworkInterfaceIdRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNetworkInter
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNetworkInterfaceIdRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNet
 }
 
 /// <summary>Reference to a NetworkInterface in network to populate networkInterfaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNetworkInterfaceIdRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNet
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNetworkInterfaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNetworkInterfaceIdSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNetworkInter
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNetworkInterfaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNetworkInterfaceIdSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNetworkInter
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNetworkInterfaceIdSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNet
 }
 
 /// <summary>Selector for a NetworkInterface in network to populate networkInterfaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNetworkInterfaceIdSelector
 {
@@ -349,7 +349,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNet
     public V1beta1NetworkInterfaceNatRuleAssociationSpecForProviderNetworkInterfaceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecForProvider
 {
@@ -388,7 +388,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNatRuleIdRefPolicyResolutionEnum>))]
 public enum V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNatRuleIdRefPolicyResolutionEnum
 {
@@ -404,7 +404,7 @@ public enum V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNatRuleIdRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNatRuleIdRefPolicyResolveEnum>))]
 public enum V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNatRuleIdRefPolicyResolveEnum
 {
@@ -415,7 +415,7 @@ public enum V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNatRuleIdRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNatRuleIdRefPolicy
 {
@@ -439,7 +439,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNa
 }
 
 /// <summary>Reference to a LoadBalancerNatRule in network to populate natRuleId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNatRuleIdRef
 {
@@ -458,7 +458,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNatRuleIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNatRuleIdSelectorPolicyResolutionEnum
 {
@@ -474,7 +474,7 @@ public enum V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNatRuleIdSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNatRuleIdSelectorPolicyResolveEnum>))]
 public enum V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNatRuleIdSelectorPolicyResolveEnum
 {
@@ -485,7 +485,7 @@ public enum V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNatRuleIdSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNatRuleIdSelectorPolicy
 {
@@ -509,7 +509,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNa
 }
 
 /// <summary>Selector for a LoadBalancerNatRule in network to populate natRuleId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNatRuleIdSelector
 {
@@ -535,7 +535,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNetworkInterfaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNetworkInterfaceIdRefPolicyResolutionEnum
 {
@@ -551,7 +551,7 @@ public enum V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNetworkInte
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNetworkInterfaceIdRefPolicyResolveEnum>))]
 public enum V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNetworkInterfaceIdRefPolicyResolveEnum
 {
@@ -562,7 +562,7 @@ public enum V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNetworkInte
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNetworkInterfaceIdRefPolicy
 {
@@ -586,7 +586,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNe
 }
 
 /// <summary>Reference to a NetworkInterface in network to populate networkInterfaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNetworkInterfaceIdRef
 {
@@ -605,7 +605,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNetworkInterfaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNetworkInterfaceIdSelectorPolicyResolutionEnum
 {
@@ -621,7 +621,7 @@ public enum V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNetworkInte
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNetworkInterfaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNetworkInterfaceIdSelectorPolicyResolveEnum
 {
@@ -632,7 +632,7 @@ public enum V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNetworkInte
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNetworkInterfaceIdSelectorPolicy
 {
@@ -656,7 +656,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNe
 }
 
 /// <summary>Selector for a NetworkInterface in network to populate networkInterfaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNetworkInterfaceIdSelector
 {
@@ -688,7 +688,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecInitProviderNe
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecInitProvider
 {
@@ -725,7 +725,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceNatRuleAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1NetworkInterfaceNatRuleAssociationSpecManagementPoliciesEnum
 {
@@ -749,7 +749,7 @@ public enum V1beta1NetworkInterfaceNatRuleAssociationSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceNatRuleAssociationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1NetworkInterfaceNatRuleAssociationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -765,7 +765,7 @@ public enum V1beta1NetworkInterfaceNatRuleAssociationSpecProviderConfigRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceNatRuleAssociationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1NetworkInterfaceNatRuleAssociationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -776,7 +776,7 @@ public enum V1beta1NetworkInterfaceNatRuleAssociationSpecProviderConfigRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecProviderConfigRefPolicy
 {
@@ -804,7 +804,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecProviderConfig
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecProviderConfigRef
 {
@@ -823,7 +823,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecProviderConfig
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecWriteConnectionSecretToRef
 {
@@ -837,7 +837,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationSpecWriteConnectio
 }
 
 /// <summary>NetworkInterfaceNatRuleAssociationSpec defines the desired state of NetworkInterfaceNatRuleAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationSpec
 {
@@ -904,7 +904,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationSpec
     public V1beta1NetworkInterfaceNatRuleAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationStatusAtProvider
 {
@@ -925,7 +925,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationStatusConditions
 {
@@ -968,7 +968,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationStatusConditions
 }
 
 /// <summary>NetworkInterfaceNatRuleAssociationStatus defines the observed state of NetworkInterfaceNatRuleAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceNatRuleAssociationStatus
 {
@@ -989,7 +989,7 @@ public partial class V1beta1NetworkInterfaceNatRuleAssociationStatus
 }
 
 /// <summary>NetworkInterfaceNatRuleAssociation is the Schema for the NetworkInterfaceNatRuleAssociations API. Manages the association between a Network Interface and a Load Balancer&apos;s NAT Rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1NetworkInterfaceNatRuleAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1NetworkInterfaceNatRuleAssociationSpec>, IStatus<V1beta1NetworkInterfaceNatRuleAssociationStatus?>

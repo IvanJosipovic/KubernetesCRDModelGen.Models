@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.sql.azure.com;
 /// - Generated from: /sql/resource-manager/Microsoft.Sql/stable/2021-11-01/Servers.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20211101ServerList : IKubernetesObject<V1ListMeta>, IItems<V1api20211101Server>
@@ -41,7 +41,7 @@ public partial class V1api20211101ServerList : IKubernetesObject<V1ListMeta>, II
 }
 
 /// <summary>AdministratorLoginPassword: The administrator login password (required for server creation).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20211101ServerSpecAdministratorLoginPassword
 {
@@ -58,7 +58,7 @@ public partial class V1api20211101ServerSpecAdministratorLoginPassword
 }
 
 /// <summary>AdministratorType: Type of the sever administrator.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20211101ServerSpecAdministratorsAdministratorTypeEnum>))]
 public enum V1api20211101ServerSpecAdministratorsAdministratorTypeEnum
 {
@@ -67,7 +67,7 @@ public enum V1api20211101ServerSpecAdministratorsAdministratorTypeEnum
 }
 
 /// <summary>PrincipalType: Principal Type of the sever administrator.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20211101ServerSpecAdministratorsPrincipalTypeEnum>))]
 public enum V1api20211101ServerSpecAdministratorsPrincipalTypeEnum
 {
@@ -80,7 +80,7 @@ public enum V1api20211101ServerSpecAdministratorsPrincipalTypeEnum
 }
 
 /// <summary>Administrators: The Azure Active Directory administrator of the server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20211101ServerSpecAdministrators
 {
@@ -113,7 +113,7 @@ public partial class V1api20211101ServerSpecAdministrators
 /// Type: The identity type. Set this to &apos;SystemAssigned&apos; in order to automatically create and assign an Azure Active
 /// Directory principal for the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20211101ServerSpecIdentityTypeEnum>))]
 public enum V1api20211101ServerSpecIdentityTypeEnum
 {
@@ -128,7 +128,7 @@ public enum V1api20211101ServerSpecIdentityTypeEnum
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20211101ServerSpecIdentityUserAssignedIdentitiesReference
 {
@@ -154,7 +154,7 @@ public partial class V1api20211101ServerSpecIdentityUserAssignedIdentitiesRefere
 }
 
 /// <summary>Information about the user assigned identity for the resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20211101ServerSpecIdentityUserAssignedIdentities
 {
@@ -164,7 +164,7 @@ public partial class V1api20211101ServerSpecIdentityUserAssignedIdentities
 }
 
 /// <summary>Identity: The Azure Active Directory identity of the server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20211101ServerSpecIdentity
 {
@@ -185,7 +185,7 @@ public partial class V1api20211101ServerSpecIdentity
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20211101ServerSpecOperatorSpecConfigMapExpressions
 {
@@ -225,7 +225,7 @@ public partial class V1api20211101ServerSpecOperatorSpecConfigMapExpressions
 /// FullyQualifiedDomainName: indicates where the FullyQualifiedDomainName config map should be placed. If omitted, no
 /// config map will be created.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20211101ServerSpecOperatorSpecConfigMapsFullyQualifiedDomainName
 {
@@ -250,7 +250,7 @@ public partial class V1api20211101ServerSpecOperatorSpecConfigMapsFullyQualified
 }
 
 /// <summary>ConfigMaps: configures where to place operator written ConfigMaps.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20211101ServerSpecOperatorSpecConfigMaps
 {
@@ -267,7 +267,7 @@ public partial class V1api20211101ServerSpecOperatorSpecConfigMaps
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20211101ServerSpecOperatorSpecSecretExpressions
 {
@@ -307,7 +307,7 @@ public partial class V1api20211101ServerSpecOperatorSpecSecretExpressions
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20211101ServerSpecOperatorSpec
 {
@@ -329,7 +329,7 @@ public partial class V1api20211101ServerSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20211101ServerSpecOwner
 {
@@ -342,7 +342,7 @@ public partial class V1api20211101ServerSpecOwner
 }
 
 /// <summary>PrimaryUserAssignedIdentityReference: The resource id of a user assigned identity to be used by default.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20211101ServerSpecPrimaryUserAssignedIdentityReference
 {
@@ -371,7 +371,7 @@ public partial class V1api20211101ServerSpecPrimaryUserAssignedIdentityReference
 /// PublicNetworkAccess: Whether or not public endpoint access is allowed for this server.  Value is optional but if passed
 /// in, must be &apos;Enabled&apos; or &apos;Disabled&apos;
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20211101ServerSpecPublicNetworkAccessEnum>))]
 public enum V1api20211101ServerSpecPublicNetworkAccessEnum
 {
@@ -385,7 +385,7 @@ public enum V1api20211101ServerSpecPublicNetworkAccessEnum
 /// RestrictOutboundNetworkAccess: Whether or not to restrict outbound network access for this server.  Value is optional
 /// but if passed in, must be &apos;Enabled&apos; or &apos;Disabled&apos;
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20211101ServerSpecRestrictOutboundNetworkAccessEnum>))]
 public enum V1api20211101ServerSpecRestrictOutboundNetworkAccessEnum
 {
@@ -395,7 +395,7 @@ public enum V1api20211101ServerSpecRestrictOutboundNetworkAccessEnum
     Enabled
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20211101ServerSpec
 {
@@ -481,7 +481,7 @@ public partial class V1api20211101ServerSpec
 }
 
 /// <summary>Administrators: The Azure Active Directory administrator of the server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20211101ServerStatusAdministrators
 {
@@ -511,7 +511,7 @@ public partial class V1api20211101ServerStatusAdministrators
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20211101ServerStatusConditions
 {
@@ -557,7 +557,7 @@ public partial class V1api20211101ServerStatusConditions
 }
 
 /// <summary>Azure Active Directory identity configuration for a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20211101ServerStatusIdentityUserAssignedIdentities
 {
@@ -571,7 +571,7 @@ public partial class V1api20211101ServerStatusIdentityUserAssignedIdentities
 }
 
 /// <summary>Identity: The Azure Active Directory identity of the server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20211101ServerStatusIdentity
 {
@@ -596,7 +596,7 @@ public partial class V1api20211101ServerStatusIdentity
 }
 
 /// <summary>PrivateEndpoint: Private endpoint which the connection belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20211101ServerStatusPrivateEndpointConnectionsPropertiesPrivateEndpoint
 {
@@ -606,7 +606,7 @@ public partial class V1api20211101ServerStatusPrivateEndpointConnectionsProperti
 }
 
 /// <summary>PrivateLinkServiceConnectionState: Connection state of the private endpoint connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20211101ServerStatusPrivateEndpointConnectionsPropertiesPrivateLinkServiceConnectionState
 {
@@ -624,7 +624,7 @@ public partial class V1api20211101ServerStatusPrivateEndpointConnectionsProperti
 }
 
 /// <summary>Properties: Private endpoint connection properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20211101ServerStatusPrivateEndpointConnectionsProperties
 {
@@ -646,7 +646,7 @@ public partial class V1api20211101ServerStatusPrivateEndpointConnectionsProperti
 }
 
 /// <summary>A private endpoint connection under a server</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20211101ServerStatusPrivateEndpointConnections
 {
@@ -660,7 +660,7 @@ public partial class V1api20211101ServerStatusPrivateEndpointConnections
 }
 
 /// <summary>An Azure SQL Database server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20211101ServerStatus
 {
@@ -760,7 +760,7 @@ public partial class V1api20211101ServerStatus
 /// - Generated from: /sql/resource-manager/Microsoft.Sql/stable/2021-11-01/Servers.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20211101Server : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20211101ServerSpec?>, IStatus<V1api20211101ServerStatus?>

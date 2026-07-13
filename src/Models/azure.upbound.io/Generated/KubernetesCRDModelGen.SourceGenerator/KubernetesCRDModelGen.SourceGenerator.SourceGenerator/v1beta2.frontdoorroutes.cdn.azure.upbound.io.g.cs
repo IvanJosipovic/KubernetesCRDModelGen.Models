@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cdn.azure.upbound.io;
 /// <summary>FrontdoorRoute is the Schema for the FrontdoorRoutes API. Manages a Front Door (standard/premium) Route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2FrontdoorRouteList : IKubernetesObject<V1ListMeta>, IItems<V1beta2FrontdoorRoute>
@@ -45,7 +45,7 @@ public partial class V1beta2FrontdoorRouteList : IKubernetesObject<V1ListMeta>, 
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecDeletionPolicyEnum>))]
 public enum V1beta2FrontdoorRouteSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2FrontdoorRouteSpecDeletionPolicyEnum
 }
 
 /// <summary>A cache block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecForProviderCache
 {
@@ -83,7 +83,7 @@ public partial class V1beta2FrontdoorRouteSpecForProviderCache
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorCustomDomainIdsRefsPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorCustomDomainIdsRefsPolicyResolutionEnum
 {
@@ -99,7 +99,7 @@ public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorCustomDomainIdsRefsP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorCustomDomainIdsRefsPolicyResolveEnum>))]
 public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorCustomDomainIdsRefsPolicyResolveEnum
 {
@@ -110,7 +110,7 @@ public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorCustomDomainIdsRefsP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorCustomDomainIdsRefsPolicy
 {
@@ -134,7 +134,7 @@ public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorCustomDomai
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorCustomDomainIdsRefs
 {
@@ -153,7 +153,7 @@ public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorCustomDomai
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorCustomDomainIdsSelectorPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorCustomDomainIdsSelectorPolicyResolutionEnum
 {
@@ -169,7 +169,7 @@ public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorCustomDomainIdsSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorCustomDomainIdsSelectorPolicyResolveEnum>))]
 public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorCustomDomainIdsSelectorPolicyResolveEnum
 {
@@ -180,7 +180,7 @@ public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorCustomDomainIdsSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorCustomDomainIdsSelectorPolicy
 {
@@ -204,7 +204,7 @@ public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorCustomDomai
 }
 
 /// <summary>Selector for a list of FrontdoorCustomDomain in cdn to populate cdnFrontdoorCustomDomainIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorCustomDomainIdsSelector
 {
@@ -230,7 +230,7 @@ public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorCustomDomai
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorEndpointIdRefPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorEndpointIdRefPolicyResolutionEnum
 {
@@ -246,7 +246,7 @@ public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorEndpointIdRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorEndpointIdRefPolicyResolveEnum>))]
 public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorEndpointIdRefPolicyResolveEnum
 {
@@ -257,7 +257,7 @@ public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorEndpointIdRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorEndpointIdRefPolicy
 {
@@ -281,7 +281,7 @@ public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorEndpointIdR
 }
 
 /// <summary>Reference to a FrontdoorEndpoint in cdn to populate cdnFrontdoorEndpointId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorEndpointIdRef
 {
@@ -300,7 +300,7 @@ public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorEndpointIdR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorEndpointIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorEndpointIdSelectorPolicyResolutionEnum
 {
@@ -316,7 +316,7 @@ public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorEndpointIdSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorEndpointIdSelectorPolicyResolveEnum>))]
 public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorEndpointIdSelectorPolicyResolveEnum
 {
@@ -327,7 +327,7 @@ public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorEndpointIdSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorEndpointIdSelectorPolicy
 {
@@ -351,7 +351,7 @@ public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorEndpointIdS
 }
 
 /// <summary>Selector for a FrontdoorEndpoint in cdn to populate cdnFrontdoorEndpointId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorEndpointIdSelector
 {
@@ -377,7 +377,7 @@ public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorEndpointIdS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginGroupIdRefPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginGroupIdRefPolicyResolutionEnum
 {
@@ -393,7 +393,7 @@ public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginGroupIdRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginGroupIdRefPolicyResolveEnum>))]
 public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginGroupIdRefPolicyResolveEnum
 {
@@ -404,7 +404,7 @@ public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginGroupIdRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginGroupIdRefPolicy
 {
@@ -428,7 +428,7 @@ public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginGroup
 }
 
 /// <summary>Reference to a FrontdoorOriginGroup in cdn to populate cdnFrontdoorOriginGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginGroupIdRef
 {
@@ -447,7 +447,7 @@ public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginGroup
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginGroupIdSelectorPolicyResolutionEnum
 {
@@ -463,7 +463,7 @@ public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginGroupIdSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginGroupIdSelectorPolicyResolveEnum
 {
@@ -474,7 +474,7 @@ public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginGroupIdSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginGroupIdSelectorPolicy
 {
@@ -498,7 +498,7 @@ public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginGroup
 }
 
 /// <summary>Selector for a FrontdoorOriginGroup in cdn to populate cdnFrontdoorOriginGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginGroupIdSelector
 {
@@ -524,7 +524,7 @@ public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginGroup
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginIdsRefsPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginIdsRefsPolicyResolutionEnum
 {
@@ -540,7 +540,7 @@ public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginIdsRefsPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginIdsRefsPolicyResolveEnum>))]
 public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginIdsRefsPolicyResolveEnum
 {
@@ -551,7 +551,7 @@ public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginIdsRefsPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginIdsRefsPolicy
 {
@@ -575,7 +575,7 @@ public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginIdsRe
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginIdsRefs
 {
@@ -594,7 +594,7 @@ public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginIdsRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginIdsSelectorPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginIdsSelectorPolicyResolutionEnum
 {
@@ -610,7 +610,7 @@ public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginIdsSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginIdsSelectorPolicyResolveEnum>))]
 public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginIdsSelectorPolicyResolveEnum
 {
@@ -621,7 +621,7 @@ public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginIdsSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginIdsSelectorPolicy
 {
@@ -645,7 +645,7 @@ public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginIdsSe
 }
 
 /// <summary>Selector for a list of FrontdoorOrigin in cdn to populate cdnFrontdoorOriginIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginIdsSelector
 {
@@ -671,7 +671,7 @@ public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorOriginIdsSe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorRuleSetIdsRefsPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorRuleSetIdsRefsPolicyResolutionEnum
 {
@@ -687,7 +687,7 @@ public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorRuleSetIdsRefsPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorRuleSetIdsRefsPolicyResolveEnum>))]
 public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorRuleSetIdsRefsPolicyResolveEnum
 {
@@ -698,7 +698,7 @@ public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorRuleSetIdsRefsPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorRuleSetIdsRefsPolicy
 {
@@ -722,7 +722,7 @@ public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorRuleSetIdsR
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorRuleSetIdsRefs
 {
@@ -741,7 +741,7 @@ public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorRuleSetIdsR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorRuleSetIdsSelectorPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorRuleSetIdsSelectorPolicyResolutionEnum
 {
@@ -757,7 +757,7 @@ public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorRuleSetIdsSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorRuleSetIdsSelectorPolicyResolveEnum>))]
 public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorRuleSetIdsSelectorPolicyResolveEnum
 {
@@ -768,7 +768,7 @@ public enum V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorRuleSetIdsSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorRuleSetIdsSelectorPolicy
 {
@@ -792,7 +792,7 @@ public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorRuleSetIdsS
 }
 
 /// <summary>Selector for a list of FrontdoorRuleSet in cdn to populate cdnFrontdoorRuleSetIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorRuleSetIdsSelector
 {
@@ -812,7 +812,7 @@ public partial class V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorRuleSetIdsS
     public V1beta2FrontdoorRouteSpecForProviderCdnFrontdoorRuleSetIdsSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecForProvider
 {
@@ -910,7 +910,7 @@ public partial class V1beta2FrontdoorRouteSpecForProvider
 }
 
 /// <summary>A cache block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecInitProviderCache
 {
@@ -937,7 +937,7 @@ public partial class V1beta2FrontdoorRouteSpecInitProviderCache
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorCustomDomainIdsRefsPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorCustomDomainIdsRefsPolicyResolutionEnum
 {
@@ -953,7 +953,7 @@ public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorCustomDomainIdsRefs
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorCustomDomainIdsRefsPolicyResolveEnum>))]
 public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorCustomDomainIdsRefsPolicyResolveEnum
 {
@@ -964,7 +964,7 @@ public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorCustomDomainIdsRefs
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorCustomDomainIdsRefsPolicy
 {
@@ -988,7 +988,7 @@ public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorCustomDoma
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorCustomDomainIdsRefs
 {
@@ -1007,7 +1007,7 @@ public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorCustomDoma
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorCustomDomainIdsSelectorPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorCustomDomainIdsSelectorPolicyResolutionEnum
 {
@@ -1023,7 +1023,7 @@ public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorCustomDomainIdsSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorCustomDomainIdsSelectorPolicyResolveEnum>))]
 public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorCustomDomainIdsSelectorPolicyResolveEnum
 {
@@ -1034,7 +1034,7 @@ public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorCustomDomainIdsSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorCustomDomainIdsSelectorPolicy
 {
@@ -1058,7 +1058,7 @@ public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorCustomDoma
 }
 
 /// <summary>Selector for a list of FrontdoorCustomDomain in cdn to populate cdnFrontdoorCustomDomainIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorCustomDomainIdsSelector
 {
@@ -1084,7 +1084,7 @@ public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorCustomDoma
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginGroupIdRefPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginGroupIdRefPolicyResolutionEnum
 {
@@ -1100,7 +1100,7 @@ public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginGroupIdRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginGroupIdRefPolicyResolveEnum>))]
 public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginGroupIdRefPolicyResolveEnum
 {
@@ -1111,7 +1111,7 @@ public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginGroupIdRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginGroupIdRefPolicy
 {
@@ -1135,7 +1135,7 @@ public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginGrou
 }
 
 /// <summary>Reference to a FrontdoorOriginGroup in cdn to populate cdnFrontdoorOriginGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginGroupIdRef
 {
@@ -1154,7 +1154,7 @@ public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginGrou
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginGroupIdSelectorPolicyResolutionEnum
 {
@@ -1170,7 +1170,7 @@ public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginGroupIdSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginGroupIdSelectorPolicyResolveEnum
 {
@@ -1181,7 +1181,7 @@ public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginGroupIdSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginGroupIdSelectorPolicy
 {
@@ -1205,7 +1205,7 @@ public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginGrou
 }
 
 /// <summary>Selector for a FrontdoorOriginGroup in cdn to populate cdnFrontdoorOriginGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginGroupIdSelector
 {
@@ -1231,7 +1231,7 @@ public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginGrou
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginIdsRefsPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginIdsRefsPolicyResolutionEnum
 {
@@ -1247,7 +1247,7 @@ public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginIdsRefsPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginIdsRefsPolicyResolveEnum>))]
 public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginIdsRefsPolicyResolveEnum
 {
@@ -1258,7 +1258,7 @@ public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginIdsRefsPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginIdsRefsPolicy
 {
@@ -1282,7 +1282,7 @@ public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginIdsR
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginIdsRefs
 {
@@ -1301,7 +1301,7 @@ public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginIdsR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginIdsSelectorPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginIdsSelectorPolicyResolutionEnum
 {
@@ -1317,7 +1317,7 @@ public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginIdsSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginIdsSelectorPolicyResolveEnum>))]
 public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginIdsSelectorPolicyResolveEnum
 {
@@ -1328,7 +1328,7 @@ public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginIdsSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginIdsSelectorPolicy
 {
@@ -1352,7 +1352,7 @@ public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginIdsS
 }
 
 /// <summary>Selector for a list of FrontdoorOrigin in cdn to populate cdnFrontdoorOriginIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginIdsSelector
 {
@@ -1378,7 +1378,7 @@ public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorOriginIdsS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorRuleSetIdsRefsPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorRuleSetIdsRefsPolicyResolutionEnum
 {
@@ -1394,7 +1394,7 @@ public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorRuleSetIdsRefsPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorRuleSetIdsRefsPolicyResolveEnum>))]
 public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorRuleSetIdsRefsPolicyResolveEnum
 {
@@ -1405,7 +1405,7 @@ public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorRuleSetIdsRefsPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorRuleSetIdsRefsPolicy
 {
@@ -1429,7 +1429,7 @@ public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorRuleSetIds
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorRuleSetIdsRefs
 {
@@ -1448,7 +1448,7 @@ public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorRuleSetIds
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorRuleSetIdsSelectorPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorRuleSetIdsSelectorPolicyResolutionEnum
 {
@@ -1464,7 +1464,7 @@ public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorRuleSetIdsSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorRuleSetIdsSelectorPolicyResolveEnum>))]
 public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorRuleSetIdsSelectorPolicyResolveEnum
 {
@@ -1475,7 +1475,7 @@ public enum V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorRuleSetIdsSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorRuleSetIdsSelectorPolicy
 {
@@ -1499,7 +1499,7 @@ public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorRuleSetIds
 }
 
 /// <summary>Selector for a list of FrontdoorRuleSet in cdn to populate cdnFrontdoorRuleSetIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorRuleSetIdsSelector
 {
@@ -1531,7 +1531,7 @@ public partial class V1beta2FrontdoorRouteSpecInitProviderCdnFrontdoorRuleSetIds
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecInitProvider
 {
@@ -1620,7 +1620,7 @@ public partial class V1beta2FrontdoorRouteSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecManagementPoliciesEnum>))]
 public enum V1beta2FrontdoorRouteSpecManagementPoliciesEnum
 {
@@ -1644,7 +1644,7 @@ public enum V1beta2FrontdoorRouteSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorRouteSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1660,7 +1660,7 @@ public enum V1beta2FrontdoorRouteSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorRouteSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2FrontdoorRouteSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1671,7 +1671,7 @@ public enum V1beta2FrontdoorRouteSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecProviderConfigRefPolicy
 {
@@ -1699,7 +1699,7 @@ public partial class V1beta2FrontdoorRouteSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecProviderConfigRef
 {
@@ -1718,7 +1718,7 @@ public partial class V1beta2FrontdoorRouteSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpecWriteConnectionSecretToRef
 {
@@ -1732,7 +1732,7 @@ public partial class V1beta2FrontdoorRouteSpecWriteConnectionSecretToRef
 }
 
 /// <summary>FrontdoorRouteSpec defines the desired state of FrontdoorRoute</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteSpec
 {
@@ -1800,7 +1800,7 @@ public partial class V1beta2FrontdoorRouteSpec
 }
 
 /// <summary>A cache block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteStatusAtProviderCache
 {
@@ -1821,7 +1821,7 @@ public partial class V1beta2FrontdoorRouteStatusAtProviderCache
     public IList<string>? QueryStrings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteStatusAtProvider
 {
@@ -1883,7 +1883,7 @@ public partial class V1beta2FrontdoorRouteStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteStatusConditions
 {
@@ -1926,7 +1926,7 @@ public partial class V1beta2FrontdoorRouteStatusConditions
 }
 
 /// <summary>FrontdoorRouteStatus defines the observed state of FrontdoorRoute.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorRouteStatus
 {
@@ -1947,7 +1947,7 @@ public partial class V1beta2FrontdoorRouteStatus
 }
 
 /// <summary>FrontdoorRoute is the Schema for the FrontdoorRoutes API. Manages a Front Door (standard/premium) Route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2FrontdoorRoute : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2FrontdoorRouteSpec>, IStatus<V1beta2FrontdoorRouteStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.guardduty.aws.m.upbound.io;
 /// <summary>Detector is the Schema for the Detectors API. Provides a resource to manage an Amazon GuardDuty detector</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DetectorList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Detector>
@@ -40,7 +40,7 @@ public partial class V1beta1DetectorList : IKubernetesObject<V1ListMeta>, IItems
 /// Configures Kubernetes audit logs as a data source for Kubernetes protection.
 /// See Kubernetes Audit Logs below for more details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorSpecForProviderDatasourcesKubernetesAuditLogs
 {
@@ -56,7 +56,7 @@ public partial class V1beta1DetectorSpecForProviderDatasourcesKubernetesAuditLog
 /// Configures Kubernetes protection.
 /// See Kubernetes and Kubernetes Audit Logs below for more details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorSpecForProviderDatasourcesKubernetes
 {
@@ -72,7 +72,7 @@ public partial class V1beta1DetectorSpecForProviderDatasourcesKubernetes
 /// Configure whether scanning EBS volumes is enabled as data source for the detector for instances with findings.
 /// See EBS volumes below for more details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorSpecForProviderDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes
 {
@@ -88,7 +88,7 @@ public partial class V1beta1DetectorSpecForProviderDatasourcesMalwareProtectionS
 /// Configure whether Malware Protection is enabled as data source for EC2 instances with findings for the detector.
 /// See Scan EC2 instance with findings below for more details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorSpecForProviderDatasourcesMalwareProtectionScanEc2InstanceWithFindings
 {
@@ -104,7 +104,7 @@ public partial class V1beta1DetectorSpecForProviderDatasourcesMalwareProtectionS
 /// Configures Malware Protection.
 /// See Malware Protection, Scan EC2 instance with findings and EBS volumes below for more details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorSpecForProviderDatasourcesMalwareProtection
 {
@@ -120,7 +120,7 @@ public partial class V1beta1DetectorSpecForProviderDatasourcesMalwareProtection
 /// Configures S3 protection.
 /// See S3 Logs below for more details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorSpecForProviderDatasourcesS3Logs
 {
@@ -133,7 +133,7 @@ public partial class V1beta1DetectorSpecForProviderDatasourcesS3Logs
 }
 
 /// <summary>Describes which data sources will be enabled for the detector. See Data Sources below for more details. Deprecated in favor of aws_guardduty_detector_feature resources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorSpecForProviderDatasources
 {
@@ -159,7 +159,7 @@ public partial class V1beta1DetectorSpecForProviderDatasources
     public V1beta1DetectorSpecForProviderDatasourcesS3Logs? S3Logs { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorSpecForProvider
 {
@@ -191,7 +191,7 @@ public partial class V1beta1DetectorSpecForProvider
 /// Configures Kubernetes audit logs as a data source for Kubernetes protection.
 /// See Kubernetes Audit Logs below for more details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorSpecInitProviderDatasourcesKubernetesAuditLogs
 {
@@ -207,7 +207,7 @@ public partial class V1beta1DetectorSpecInitProviderDatasourcesKubernetesAuditLo
 /// Configures Kubernetes protection.
 /// See Kubernetes and Kubernetes Audit Logs below for more details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorSpecInitProviderDatasourcesKubernetes
 {
@@ -223,7 +223,7 @@ public partial class V1beta1DetectorSpecInitProviderDatasourcesKubernetes
 /// Configure whether scanning EBS volumes is enabled as data source for the detector for instances with findings.
 /// See EBS volumes below for more details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorSpecInitProviderDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes
 {
@@ -239,7 +239,7 @@ public partial class V1beta1DetectorSpecInitProviderDatasourcesMalwareProtection
 /// Configure whether Malware Protection is enabled as data source for EC2 instances with findings for the detector.
 /// See Scan EC2 instance with findings below for more details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorSpecInitProviderDatasourcesMalwareProtectionScanEc2InstanceWithFindings
 {
@@ -255,7 +255,7 @@ public partial class V1beta1DetectorSpecInitProviderDatasourcesMalwareProtection
 /// Configures Malware Protection.
 /// See Malware Protection, Scan EC2 instance with findings and EBS volumes below for more details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorSpecInitProviderDatasourcesMalwareProtection
 {
@@ -271,7 +271,7 @@ public partial class V1beta1DetectorSpecInitProviderDatasourcesMalwareProtection
 /// Configures S3 protection.
 /// See S3 Logs below for more details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorSpecInitProviderDatasourcesS3Logs
 {
@@ -284,7 +284,7 @@ public partial class V1beta1DetectorSpecInitProviderDatasourcesS3Logs
 }
 
 /// <summary>Describes which data sources will be enabled for the detector. See Data Sources below for more details. Deprecated in favor of aws_guardduty_detector_feature resources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorSpecInitProviderDatasources
 {
@@ -322,7 +322,7 @@ public partial class V1beta1DetectorSpecInitProviderDatasources
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorSpecInitProvider
 {
@@ -347,7 +347,7 @@ public partial class V1beta1DetectorSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DetectorSpecManagementPoliciesEnum>))]
 public enum V1beta1DetectorSpecManagementPoliciesEnum
 {
@@ -370,7 +370,7 @@ public enum V1beta1DetectorSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorSpecProviderConfigRef
 {
@@ -389,7 +389,7 @@ public partial class V1beta1DetectorSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorSpecWriteConnectionSecretToRef
 {
@@ -399,7 +399,7 @@ public partial class V1beta1DetectorSpecWriteConnectionSecretToRef
 }
 
 /// <summary>DetectorSpec defines the desired state of Detector</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorSpec
 {
@@ -454,7 +454,7 @@ public partial class V1beta1DetectorSpec
 /// Configures Kubernetes audit logs as a data source for Kubernetes protection.
 /// See Kubernetes Audit Logs below for more details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorStatusAtProviderDatasourcesKubernetesAuditLogs
 {
@@ -470,7 +470,7 @@ public partial class V1beta1DetectorStatusAtProviderDatasourcesKubernetesAuditLo
 /// Configures Kubernetes protection.
 /// See Kubernetes and Kubernetes Audit Logs below for more details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorStatusAtProviderDatasourcesKubernetes
 {
@@ -486,7 +486,7 @@ public partial class V1beta1DetectorStatusAtProviderDatasourcesKubernetes
 /// Configure whether scanning EBS volumes is enabled as data source for the detector for instances with findings.
 /// See EBS volumes below for more details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorStatusAtProviderDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes
 {
@@ -502,7 +502,7 @@ public partial class V1beta1DetectorStatusAtProviderDatasourcesMalwareProtection
 /// Configure whether Malware Protection is enabled as data source for EC2 instances with findings for the detector.
 /// See Scan EC2 instance with findings below for more details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorStatusAtProviderDatasourcesMalwareProtectionScanEc2InstanceWithFindings
 {
@@ -518,7 +518,7 @@ public partial class V1beta1DetectorStatusAtProviderDatasourcesMalwareProtection
 /// Configures Malware Protection.
 /// See Malware Protection, Scan EC2 instance with findings and EBS volumes below for more details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorStatusAtProviderDatasourcesMalwareProtection
 {
@@ -534,7 +534,7 @@ public partial class V1beta1DetectorStatusAtProviderDatasourcesMalwareProtection
 /// Configures S3 protection.
 /// See S3 Logs below for more details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorStatusAtProviderDatasourcesS3Logs
 {
@@ -547,7 +547,7 @@ public partial class V1beta1DetectorStatusAtProviderDatasourcesS3Logs
 }
 
 /// <summary>Describes which data sources will be enabled for the detector. See Data Sources below for more details. Deprecated in favor of aws_guardduty_detector_feature resources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorStatusAtProviderDatasources
 {
@@ -573,7 +573,7 @@ public partial class V1beta1DetectorStatusAtProviderDatasources
     public V1beta1DetectorStatusAtProviderDatasourcesS3Logs? S3Logs { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorStatusAtProvider
 {
@@ -618,7 +618,7 @@ public partial class V1beta1DetectorStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorStatusConditions
 {
@@ -661,7 +661,7 @@ public partial class V1beta1DetectorStatusConditions
 }
 
 /// <summary>DetectorStatus defines the observed state of Detector.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DetectorStatus
 {
@@ -682,7 +682,7 @@ public partial class V1beta1DetectorStatus
 }
 
 /// <summary>Detector is the Schema for the Detectors API. Provides a resource to manage an Amazon GuardDuty detector</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Detector : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DetectorSpec>, IStatus<V1beta1DetectorStatus?>

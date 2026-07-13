@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ec2.aws.upbound.io;
 /// <summary>Route is the Schema for the Routes API. Provides a resource to create a routing entry in a VPC routing table.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2RouteList : IKubernetesObject<V1ListMeta>, IItems<V1beta2Route>
@@ -45,7 +45,7 @@ public partial class V1beta2RouteList : IKubernetesObject<V1ListMeta>, IItems<V1
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecDeletionPolicyEnum>))]
 public enum V1beta2RouteSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2RouteSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderDestinationPrefixListIdRefPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecForProviderDestinationPrefixListIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2RouteSpecForProviderDestinationPrefixListIdRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderDestinationPrefixListIdRefPolicyResolveEnum>))]
 public enum V1beta2RouteSpecForProviderDestinationPrefixListIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2RouteSpecForProviderDestinationPrefixListIdRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderDestinationPrefixListIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2RouteSpecForProviderDestinationPrefixListIdRefPolicy
 }
 
 /// <summary>Reference to a ManagedPrefixList in ec2 to populate destinationPrefixListId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderDestinationPrefixListIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta2RouteSpecForProviderDestinationPrefixListIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderDestinationPrefixListIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecForProviderDestinationPrefixListIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2RouteSpecForProviderDestinationPrefixListIdSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderDestinationPrefixListIdSelectorPolicyResolveEnum>))]
 public enum V1beta2RouteSpecForProviderDestinationPrefixListIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2RouteSpecForProviderDestinationPrefixListIdSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderDestinationPrefixListIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2RouteSpecForProviderDestinationPrefixListIdSelectorP
 }
 
 /// <summary>Selector for a ManagedPrefixList in ec2 to populate destinationPrefixListId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderDestinationPrefixListIdSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta2RouteSpecForProviderDestinationPrefixListIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderEgressOnlyGatewayIdRefPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecForProviderEgressOnlyGatewayIdRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta2RouteSpecForProviderEgressOnlyGatewayIdRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderEgressOnlyGatewayIdRefPolicyResolveEnum>))]
 public enum V1beta2RouteSpecForProviderEgressOnlyGatewayIdRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta2RouteSpecForProviderEgressOnlyGatewayIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderEgressOnlyGatewayIdRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta2RouteSpecForProviderEgressOnlyGatewayIdRefPolicy
 }
 
 /// <summary>Reference to a EgressOnlyInternetGateway in ec2 to populate egressOnlyGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderEgressOnlyGatewayIdRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta2RouteSpecForProviderEgressOnlyGatewayIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderEgressOnlyGatewayIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecForProviderEgressOnlyGatewayIdSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta2RouteSpecForProviderEgressOnlyGatewayIdSelectorPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderEgressOnlyGatewayIdSelectorPolicyResolveEnum>))]
 public enum V1beta2RouteSpecForProviderEgressOnlyGatewayIdSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta2RouteSpecForProviderEgressOnlyGatewayIdSelectorPolicyResolveE
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderEgressOnlyGatewayIdSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta2RouteSpecForProviderEgressOnlyGatewayIdSelectorPolic
 }
 
 /// <summary>Selector for a EgressOnlyInternetGateway in ec2 to populate egressOnlyGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderEgressOnlyGatewayIdSelector
 {
@@ -355,7 +355,7 @@ public partial class V1beta2RouteSpecForProviderEgressOnlyGatewayIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderGatewayIdRefPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecForProviderGatewayIdRefPolicyResolutionEnum
 {
@@ -371,7 +371,7 @@ public enum V1beta2RouteSpecForProviderGatewayIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderGatewayIdRefPolicyResolveEnum>))]
 public enum V1beta2RouteSpecForProviderGatewayIdRefPolicyResolveEnum
 {
@@ -382,7 +382,7 @@ public enum V1beta2RouteSpecForProviderGatewayIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderGatewayIdRefPolicy
 {
@@ -406,7 +406,7 @@ public partial class V1beta2RouteSpecForProviderGatewayIdRefPolicy
 }
 
 /// <summary>Reference to a InternetGateway in ec2 to populate gatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderGatewayIdRef
 {
@@ -425,7 +425,7 @@ public partial class V1beta2RouteSpecForProviderGatewayIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderGatewayIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecForProviderGatewayIdSelectorPolicyResolutionEnum
 {
@@ -441,7 +441,7 @@ public enum V1beta2RouteSpecForProviderGatewayIdSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderGatewayIdSelectorPolicyResolveEnum>))]
 public enum V1beta2RouteSpecForProviderGatewayIdSelectorPolicyResolveEnum
 {
@@ -452,7 +452,7 @@ public enum V1beta2RouteSpecForProviderGatewayIdSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderGatewayIdSelectorPolicy
 {
@@ -476,7 +476,7 @@ public partial class V1beta2RouteSpecForProviderGatewayIdSelectorPolicy
 }
 
 /// <summary>Selector for a InternetGateway in ec2 to populate gatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderGatewayIdSelector
 {
@@ -502,7 +502,7 @@ public partial class V1beta2RouteSpecForProviderGatewayIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderNatGatewayIdRefPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecForProviderNatGatewayIdRefPolicyResolutionEnum
 {
@@ -518,7 +518,7 @@ public enum V1beta2RouteSpecForProviderNatGatewayIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderNatGatewayIdRefPolicyResolveEnum>))]
 public enum V1beta2RouteSpecForProviderNatGatewayIdRefPolicyResolveEnum
 {
@@ -529,7 +529,7 @@ public enum V1beta2RouteSpecForProviderNatGatewayIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderNatGatewayIdRefPolicy
 {
@@ -553,7 +553,7 @@ public partial class V1beta2RouteSpecForProviderNatGatewayIdRefPolicy
 }
 
 /// <summary>Reference to a NATGateway in ec2 to populate natGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderNatGatewayIdRef
 {
@@ -572,7 +572,7 @@ public partial class V1beta2RouteSpecForProviderNatGatewayIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderNatGatewayIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecForProviderNatGatewayIdSelectorPolicyResolutionEnum
 {
@@ -588,7 +588,7 @@ public enum V1beta2RouteSpecForProviderNatGatewayIdSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderNatGatewayIdSelectorPolicyResolveEnum>))]
 public enum V1beta2RouteSpecForProviderNatGatewayIdSelectorPolicyResolveEnum
 {
@@ -599,7 +599,7 @@ public enum V1beta2RouteSpecForProviderNatGatewayIdSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderNatGatewayIdSelectorPolicy
 {
@@ -623,7 +623,7 @@ public partial class V1beta2RouteSpecForProviderNatGatewayIdSelectorPolicy
 }
 
 /// <summary>Selector for a NATGateway in ec2 to populate natGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderNatGatewayIdSelector
 {
@@ -649,7 +649,7 @@ public partial class V1beta2RouteSpecForProviderNatGatewayIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderNetworkInterfaceIdRefPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecForProviderNetworkInterfaceIdRefPolicyResolutionEnum
 {
@@ -665,7 +665,7 @@ public enum V1beta2RouteSpecForProviderNetworkInterfaceIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderNetworkInterfaceIdRefPolicyResolveEnum>))]
 public enum V1beta2RouteSpecForProviderNetworkInterfaceIdRefPolicyResolveEnum
 {
@@ -676,7 +676,7 @@ public enum V1beta2RouteSpecForProviderNetworkInterfaceIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderNetworkInterfaceIdRefPolicy
 {
@@ -700,7 +700,7 @@ public partial class V1beta2RouteSpecForProviderNetworkInterfaceIdRefPolicy
 }
 
 /// <summary>Reference to a NetworkInterface in ec2 to populate networkInterfaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderNetworkInterfaceIdRef
 {
@@ -719,7 +719,7 @@ public partial class V1beta2RouteSpecForProviderNetworkInterfaceIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderNetworkInterfaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecForProviderNetworkInterfaceIdSelectorPolicyResolutionEnum
 {
@@ -735,7 +735,7 @@ public enum V1beta2RouteSpecForProviderNetworkInterfaceIdSelectorPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderNetworkInterfaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta2RouteSpecForProviderNetworkInterfaceIdSelectorPolicyResolveEnum
 {
@@ -746,7 +746,7 @@ public enum V1beta2RouteSpecForProviderNetworkInterfaceIdSelectorPolicyResolveEn
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderNetworkInterfaceIdSelectorPolicy
 {
@@ -770,7 +770,7 @@ public partial class V1beta2RouteSpecForProviderNetworkInterfaceIdSelectorPolicy
 }
 
 /// <summary>Selector for a NetworkInterface in ec2 to populate networkInterfaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderNetworkInterfaceIdSelector
 {
@@ -796,7 +796,7 @@ public partial class V1beta2RouteSpecForProviderNetworkInterfaceIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderRouteTableIdRefPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecForProviderRouteTableIdRefPolicyResolutionEnum
 {
@@ -812,7 +812,7 @@ public enum V1beta2RouteSpecForProviderRouteTableIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderRouteTableIdRefPolicyResolveEnum>))]
 public enum V1beta2RouteSpecForProviderRouteTableIdRefPolicyResolveEnum
 {
@@ -823,7 +823,7 @@ public enum V1beta2RouteSpecForProviderRouteTableIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderRouteTableIdRefPolicy
 {
@@ -847,7 +847,7 @@ public partial class V1beta2RouteSpecForProviderRouteTableIdRefPolicy
 }
 
 /// <summary>Reference to a RouteTable in ec2 to populate routeTableId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderRouteTableIdRef
 {
@@ -866,7 +866,7 @@ public partial class V1beta2RouteSpecForProviderRouteTableIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderRouteTableIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecForProviderRouteTableIdSelectorPolicyResolutionEnum
 {
@@ -882,7 +882,7 @@ public enum V1beta2RouteSpecForProviderRouteTableIdSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderRouteTableIdSelectorPolicyResolveEnum>))]
 public enum V1beta2RouteSpecForProviderRouteTableIdSelectorPolicyResolveEnum
 {
@@ -893,7 +893,7 @@ public enum V1beta2RouteSpecForProviderRouteTableIdSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderRouteTableIdSelectorPolicy
 {
@@ -917,7 +917,7 @@ public partial class V1beta2RouteSpecForProviderRouteTableIdSelectorPolicy
 }
 
 /// <summary>Selector for a RouteTable in ec2 to populate routeTableId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderRouteTableIdSelector
 {
@@ -943,7 +943,7 @@ public partial class V1beta2RouteSpecForProviderRouteTableIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderTransitGatewayIdRefPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecForProviderTransitGatewayIdRefPolicyResolutionEnum
 {
@@ -959,7 +959,7 @@ public enum V1beta2RouteSpecForProviderTransitGatewayIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderTransitGatewayIdRefPolicyResolveEnum>))]
 public enum V1beta2RouteSpecForProviderTransitGatewayIdRefPolicyResolveEnum
 {
@@ -970,7 +970,7 @@ public enum V1beta2RouteSpecForProviderTransitGatewayIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderTransitGatewayIdRefPolicy
 {
@@ -994,7 +994,7 @@ public partial class V1beta2RouteSpecForProviderTransitGatewayIdRefPolicy
 }
 
 /// <summary>Reference to a TransitGateway in ec2 to populate transitGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderTransitGatewayIdRef
 {
@@ -1013,7 +1013,7 @@ public partial class V1beta2RouteSpecForProviderTransitGatewayIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderTransitGatewayIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecForProviderTransitGatewayIdSelectorPolicyResolutionEnum
 {
@@ -1029,7 +1029,7 @@ public enum V1beta2RouteSpecForProviderTransitGatewayIdSelectorPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderTransitGatewayIdSelectorPolicyResolveEnum>))]
 public enum V1beta2RouteSpecForProviderTransitGatewayIdSelectorPolicyResolveEnum
 {
@@ -1040,7 +1040,7 @@ public enum V1beta2RouteSpecForProviderTransitGatewayIdSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderTransitGatewayIdSelectorPolicy
 {
@@ -1064,7 +1064,7 @@ public partial class V1beta2RouteSpecForProviderTransitGatewayIdSelectorPolicy
 }
 
 /// <summary>Selector for a TransitGateway in ec2 to populate transitGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderTransitGatewayIdSelector
 {
@@ -1090,7 +1090,7 @@ public partial class V1beta2RouteSpecForProviderTransitGatewayIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderVpcEndpointIdRefPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecForProviderVpcEndpointIdRefPolicyResolutionEnum
 {
@@ -1106,7 +1106,7 @@ public enum V1beta2RouteSpecForProviderVpcEndpointIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderVpcEndpointIdRefPolicyResolveEnum>))]
 public enum V1beta2RouteSpecForProviderVpcEndpointIdRefPolicyResolveEnum
 {
@@ -1117,7 +1117,7 @@ public enum V1beta2RouteSpecForProviderVpcEndpointIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderVpcEndpointIdRefPolicy
 {
@@ -1141,7 +1141,7 @@ public partial class V1beta2RouteSpecForProviderVpcEndpointIdRefPolicy
 }
 
 /// <summary>Reference to a VPCEndpoint in ec2 to populate vpcEndpointId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderVpcEndpointIdRef
 {
@@ -1160,7 +1160,7 @@ public partial class V1beta2RouteSpecForProviderVpcEndpointIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderVpcEndpointIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecForProviderVpcEndpointIdSelectorPolicyResolutionEnum
 {
@@ -1176,7 +1176,7 @@ public enum V1beta2RouteSpecForProviderVpcEndpointIdSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderVpcEndpointIdSelectorPolicyResolveEnum>))]
 public enum V1beta2RouteSpecForProviderVpcEndpointIdSelectorPolicyResolveEnum
 {
@@ -1187,7 +1187,7 @@ public enum V1beta2RouteSpecForProviderVpcEndpointIdSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderVpcEndpointIdSelectorPolicy
 {
@@ -1211,7 +1211,7 @@ public partial class V1beta2RouteSpecForProviderVpcEndpointIdSelectorPolicy
 }
 
 /// <summary>Selector for a VPCEndpoint in ec2 to populate vpcEndpointId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderVpcEndpointIdSelector
 {
@@ -1237,7 +1237,7 @@ public partial class V1beta2RouteSpecForProviderVpcEndpointIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderVpcPeeringConnectionIdRefPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecForProviderVpcPeeringConnectionIdRefPolicyResolutionEnum
 {
@@ -1253,7 +1253,7 @@ public enum V1beta2RouteSpecForProviderVpcPeeringConnectionIdRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderVpcPeeringConnectionIdRefPolicyResolveEnum>))]
 public enum V1beta2RouteSpecForProviderVpcPeeringConnectionIdRefPolicyResolveEnum
 {
@@ -1264,7 +1264,7 @@ public enum V1beta2RouteSpecForProviderVpcPeeringConnectionIdRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderVpcPeeringConnectionIdRefPolicy
 {
@@ -1288,7 +1288,7 @@ public partial class V1beta2RouteSpecForProviderVpcPeeringConnectionIdRefPolicy
 }
 
 /// <summary>Reference to a VPCPeeringConnection in ec2 to populate vpcPeeringConnectionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderVpcPeeringConnectionIdRef
 {
@@ -1307,7 +1307,7 @@ public partial class V1beta2RouteSpecForProviderVpcPeeringConnectionIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderVpcPeeringConnectionIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecForProviderVpcPeeringConnectionIdSelectorPolicyResolutionEnum
 {
@@ -1323,7 +1323,7 @@ public enum V1beta2RouteSpecForProviderVpcPeeringConnectionIdSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecForProviderVpcPeeringConnectionIdSelectorPolicyResolveEnum>))]
 public enum V1beta2RouteSpecForProviderVpcPeeringConnectionIdSelectorPolicyResolveEnum
 {
@@ -1334,7 +1334,7 @@ public enum V1beta2RouteSpecForProviderVpcPeeringConnectionIdSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderVpcPeeringConnectionIdSelectorPolicy
 {
@@ -1358,7 +1358,7 @@ public partial class V1beta2RouteSpecForProviderVpcPeeringConnectionIdSelectorPo
 }
 
 /// <summary>Selector for a VPCPeeringConnection in ec2 to populate vpcPeeringConnectionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderVpcPeeringConnectionIdSelector
 {
@@ -1378,7 +1378,7 @@ public partial class V1beta2RouteSpecForProviderVpcPeeringConnectionIdSelector
     public V1beta2RouteSpecForProviderVpcPeeringConnectionIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProvider
 {
@@ -1524,7 +1524,7 @@ public partial class V1beta2RouteSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderDestinationPrefixListIdRefPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecInitProviderDestinationPrefixListIdRefPolicyResolutionEnum
 {
@@ -1540,7 +1540,7 @@ public enum V1beta2RouteSpecInitProviderDestinationPrefixListIdRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderDestinationPrefixListIdRefPolicyResolveEnum>))]
 public enum V1beta2RouteSpecInitProviderDestinationPrefixListIdRefPolicyResolveEnum
 {
@@ -1551,7 +1551,7 @@ public enum V1beta2RouteSpecInitProviderDestinationPrefixListIdRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderDestinationPrefixListIdRefPolicy
 {
@@ -1575,7 +1575,7 @@ public partial class V1beta2RouteSpecInitProviderDestinationPrefixListIdRefPolic
 }
 
 /// <summary>Reference to a ManagedPrefixList in ec2 to populate destinationPrefixListId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderDestinationPrefixListIdRef
 {
@@ -1594,7 +1594,7 @@ public partial class V1beta2RouteSpecInitProviderDestinationPrefixListIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderDestinationPrefixListIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecInitProviderDestinationPrefixListIdSelectorPolicyResolutionEnum
 {
@@ -1610,7 +1610,7 @@ public enum V1beta2RouteSpecInitProviderDestinationPrefixListIdSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderDestinationPrefixListIdSelectorPolicyResolveEnum>))]
 public enum V1beta2RouteSpecInitProviderDestinationPrefixListIdSelectorPolicyResolveEnum
 {
@@ -1621,7 +1621,7 @@ public enum V1beta2RouteSpecInitProviderDestinationPrefixListIdSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderDestinationPrefixListIdSelectorPolicy
 {
@@ -1645,7 +1645,7 @@ public partial class V1beta2RouteSpecInitProviderDestinationPrefixListIdSelector
 }
 
 /// <summary>Selector for a ManagedPrefixList in ec2 to populate destinationPrefixListId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderDestinationPrefixListIdSelector
 {
@@ -1671,7 +1671,7 @@ public partial class V1beta2RouteSpecInitProviderDestinationPrefixListIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderEgressOnlyGatewayIdRefPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecInitProviderEgressOnlyGatewayIdRefPolicyResolutionEnum
 {
@@ -1687,7 +1687,7 @@ public enum V1beta2RouteSpecInitProviderEgressOnlyGatewayIdRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderEgressOnlyGatewayIdRefPolicyResolveEnum>))]
 public enum V1beta2RouteSpecInitProviderEgressOnlyGatewayIdRefPolicyResolveEnum
 {
@@ -1698,7 +1698,7 @@ public enum V1beta2RouteSpecInitProviderEgressOnlyGatewayIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderEgressOnlyGatewayIdRefPolicy
 {
@@ -1722,7 +1722,7 @@ public partial class V1beta2RouteSpecInitProviderEgressOnlyGatewayIdRefPolicy
 }
 
 /// <summary>Reference to a EgressOnlyInternetGateway in ec2 to populate egressOnlyGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderEgressOnlyGatewayIdRef
 {
@@ -1741,7 +1741,7 @@ public partial class V1beta2RouteSpecInitProviderEgressOnlyGatewayIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderEgressOnlyGatewayIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecInitProviderEgressOnlyGatewayIdSelectorPolicyResolutionEnum
 {
@@ -1757,7 +1757,7 @@ public enum V1beta2RouteSpecInitProviderEgressOnlyGatewayIdSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderEgressOnlyGatewayIdSelectorPolicyResolveEnum>))]
 public enum V1beta2RouteSpecInitProviderEgressOnlyGatewayIdSelectorPolicyResolveEnum
 {
@@ -1768,7 +1768,7 @@ public enum V1beta2RouteSpecInitProviderEgressOnlyGatewayIdSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderEgressOnlyGatewayIdSelectorPolicy
 {
@@ -1792,7 +1792,7 @@ public partial class V1beta2RouteSpecInitProviderEgressOnlyGatewayIdSelectorPoli
 }
 
 /// <summary>Selector for a EgressOnlyInternetGateway in ec2 to populate egressOnlyGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderEgressOnlyGatewayIdSelector
 {
@@ -1818,7 +1818,7 @@ public partial class V1beta2RouteSpecInitProviderEgressOnlyGatewayIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderGatewayIdRefPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecInitProviderGatewayIdRefPolicyResolutionEnum
 {
@@ -1834,7 +1834,7 @@ public enum V1beta2RouteSpecInitProviderGatewayIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderGatewayIdRefPolicyResolveEnum>))]
 public enum V1beta2RouteSpecInitProviderGatewayIdRefPolicyResolveEnum
 {
@@ -1845,7 +1845,7 @@ public enum V1beta2RouteSpecInitProviderGatewayIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderGatewayIdRefPolicy
 {
@@ -1869,7 +1869,7 @@ public partial class V1beta2RouteSpecInitProviderGatewayIdRefPolicy
 }
 
 /// <summary>Reference to a InternetGateway in ec2 to populate gatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderGatewayIdRef
 {
@@ -1888,7 +1888,7 @@ public partial class V1beta2RouteSpecInitProviderGatewayIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderGatewayIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecInitProviderGatewayIdSelectorPolicyResolutionEnum
 {
@@ -1904,7 +1904,7 @@ public enum V1beta2RouteSpecInitProviderGatewayIdSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderGatewayIdSelectorPolicyResolveEnum>))]
 public enum V1beta2RouteSpecInitProviderGatewayIdSelectorPolicyResolveEnum
 {
@@ -1915,7 +1915,7 @@ public enum V1beta2RouteSpecInitProviderGatewayIdSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderGatewayIdSelectorPolicy
 {
@@ -1939,7 +1939,7 @@ public partial class V1beta2RouteSpecInitProviderGatewayIdSelectorPolicy
 }
 
 /// <summary>Selector for a InternetGateway in ec2 to populate gatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderGatewayIdSelector
 {
@@ -1965,7 +1965,7 @@ public partial class V1beta2RouteSpecInitProviderGatewayIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderNatGatewayIdRefPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecInitProviderNatGatewayIdRefPolicyResolutionEnum
 {
@@ -1981,7 +1981,7 @@ public enum V1beta2RouteSpecInitProviderNatGatewayIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderNatGatewayIdRefPolicyResolveEnum>))]
 public enum V1beta2RouteSpecInitProviderNatGatewayIdRefPolicyResolveEnum
 {
@@ -1992,7 +1992,7 @@ public enum V1beta2RouteSpecInitProviderNatGatewayIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderNatGatewayIdRefPolicy
 {
@@ -2016,7 +2016,7 @@ public partial class V1beta2RouteSpecInitProviderNatGatewayIdRefPolicy
 }
 
 /// <summary>Reference to a NATGateway in ec2 to populate natGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderNatGatewayIdRef
 {
@@ -2035,7 +2035,7 @@ public partial class V1beta2RouteSpecInitProviderNatGatewayIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderNatGatewayIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecInitProviderNatGatewayIdSelectorPolicyResolutionEnum
 {
@@ -2051,7 +2051,7 @@ public enum V1beta2RouteSpecInitProviderNatGatewayIdSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderNatGatewayIdSelectorPolicyResolveEnum>))]
 public enum V1beta2RouteSpecInitProviderNatGatewayIdSelectorPolicyResolveEnum
 {
@@ -2062,7 +2062,7 @@ public enum V1beta2RouteSpecInitProviderNatGatewayIdSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderNatGatewayIdSelectorPolicy
 {
@@ -2086,7 +2086,7 @@ public partial class V1beta2RouteSpecInitProviderNatGatewayIdSelectorPolicy
 }
 
 /// <summary>Selector for a NATGateway in ec2 to populate natGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderNatGatewayIdSelector
 {
@@ -2112,7 +2112,7 @@ public partial class V1beta2RouteSpecInitProviderNatGatewayIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderNetworkInterfaceIdRefPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecInitProviderNetworkInterfaceIdRefPolicyResolutionEnum
 {
@@ -2128,7 +2128,7 @@ public enum V1beta2RouteSpecInitProviderNetworkInterfaceIdRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderNetworkInterfaceIdRefPolicyResolveEnum>))]
 public enum V1beta2RouteSpecInitProviderNetworkInterfaceIdRefPolicyResolveEnum
 {
@@ -2139,7 +2139,7 @@ public enum V1beta2RouteSpecInitProviderNetworkInterfaceIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderNetworkInterfaceIdRefPolicy
 {
@@ -2163,7 +2163,7 @@ public partial class V1beta2RouteSpecInitProviderNetworkInterfaceIdRefPolicy
 }
 
 /// <summary>Reference to a NetworkInterface in ec2 to populate networkInterfaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderNetworkInterfaceIdRef
 {
@@ -2182,7 +2182,7 @@ public partial class V1beta2RouteSpecInitProviderNetworkInterfaceIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderNetworkInterfaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecInitProviderNetworkInterfaceIdSelectorPolicyResolutionEnum
 {
@@ -2198,7 +2198,7 @@ public enum V1beta2RouteSpecInitProviderNetworkInterfaceIdSelectorPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderNetworkInterfaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta2RouteSpecInitProviderNetworkInterfaceIdSelectorPolicyResolveEnum
 {
@@ -2209,7 +2209,7 @@ public enum V1beta2RouteSpecInitProviderNetworkInterfaceIdSelectorPolicyResolveE
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderNetworkInterfaceIdSelectorPolicy
 {
@@ -2233,7 +2233,7 @@ public partial class V1beta2RouteSpecInitProviderNetworkInterfaceIdSelectorPolic
 }
 
 /// <summary>Selector for a NetworkInterface in ec2 to populate networkInterfaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderNetworkInterfaceIdSelector
 {
@@ -2259,7 +2259,7 @@ public partial class V1beta2RouteSpecInitProviderNetworkInterfaceIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderRouteTableIdRefPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecInitProviderRouteTableIdRefPolicyResolutionEnum
 {
@@ -2275,7 +2275,7 @@ public enum V1beta2RouteSpecInitProviderRouteTableIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderRouteTableIdRefPolicyResolveEnum>))]
 public enum V1beta2RouteSpecInitProviderRouteTableIdRefPolicyResolveEnum
 {
@@ -2286,7 +2286,7 @@ public enum V1beta2RouteSpecInitProviderRouteTableIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderRouteTableIdRefPolicy
 {
@@ -2310,7 +2310,7 @@ public partial class V1beta2RouteSpecInitProviderRouteTableIdRefPolicy
 }
 
 /// <summary>Reference to a RouteTable in ec2 to populate routeTableId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderRouteTableIdRef
 {
@@ -2329,7 +2329,7 @@ public partial class V1beta2RouteSpecInitProviderRouteTableIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderRouteTableIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecInitProviderRouteTableIdSelectorPolicyResolutionEnum
 {
@@ -2345,7 +2345,7 @@ public enum V1beta2RouteSpecInitProviderRouteTableIdSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderRouteTableIdSelectorPolicyResolveEnum>))]
 public enum V1beta2RouteSpecInitProviderRouteTableIdSelectorPolicyResolveEnum
 {
@@ -2356,7 +2356,7 @@ public enum V1beta2RouteSpecInitProviderRouteTableIdSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderRouteTableIdSelectorPolicy
 {
@@ -2380,7 +2380,7 @@ public partial class V1beta2RouteSpecInitProviderRouteTableIdSelectorPolicy
 }
 
 /// <summary>Selector for a RouteTable in ec2 to populate routeTableId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderRouteTableIdSelector
 {
@@ -2406,7 +2406,7 @@ public partial class V1beta2RouteSpecInitProviderRouteTableIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderTransitGatewayIdRefPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecInitProviderTransitGatewayIdRefPolicyResolutionEnum
 {
@@ -2422,7 +2422,7 @@ public enum V1beta2RouteSpecInitProviderTransitGatewayIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderTransitGatewayIdRefPolicyResolveEnum>))]
 public enum V1beta2RouteSpecInitProviderTransitGatewayIdRefPolicyResolveEnum
 {
@@ -2433,7 +2433,7 @@ public enum V1beta2RouteSpecInitProviderTransitGatewayIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderTransitGatewayIdRefPolicy
 {
@@ -2457,7 +2457,7 @@ public partial class V1beta2RouteSpecInitProviderTransitGatewayIdRefPolicy
 }
 
 /// <summary>Reference to a TransitGateway in ec2 to populate transitGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderTransitGatewayIdRef
 {
@@ -2476,7 +2476,7 @@ public partial class V1beta2RouteSpecInitProviderTransitGatewayIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderTransitGatewayIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecInitProviderTransitGatewayIdSelectorPolicyResolutionEnum
 {
@@ -2492,7 +2492,7 @@ public enum V1beta2RouteSpecInitProviderTransitGatewayIdSelectorPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderTransitGatewayIdSelectorPolicyResolveEnum>))]
 public enum V1beta2RouteSpecInitProviderTransitGatewayIdSelectorPolicyResolveEnum
 {
@@ -2503,7 +2503,7 @@ public enum V1beta2RouteSpecInitProviderTransitGatewayIdSelectorPolicyResolveEnu
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderTransitGatewayIdSelectorPolicy
 {
@@ -2527,7 +2527,7 @@ public partial class V1beta2RouteSpecInitProviderTransitGatewayIdSelectorPolicy
 }
 
 /// <summary>Selector for a TransitGateway in ec2 to populate transitGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderTransitGatewayIdSelector
 {
@@ -2553,7 +2553,7 @@ public partial class V1beta2RouteSpecInitProviderTransitGatewayIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderVpcEndpointIdRefPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecInitProviderVpcEndpointIdRefPolicyResolutionEnum
 {
@@ -2569,7 +2569,7 @@ public enum V1beta2RouteSpecInitProviderVpcEndpointIdRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderVpcEndpointIdRefPolicyResolveEnum>))]
 public enum V1beta2RouteSpecInitProviderVpcEndpointIdRefPolicyResolveEnum
 {
@@ -2580,7 +2580,7 @@ public enum V1beta2RouteSpecInitProviderVpcEndpointIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderVpcEndpointIdRefPolicy
 {
@@ -2604,7 +2604,7 @@ public partial class V1beta2RouteSpecInitProviderVpcEndpointIdRefPolicy
 }
 
 /// <summary>Reference to a VPCEndpoint in ec2 to populate vpcEndpointId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderVpcEndpointIdRef
 {
@@ -2623,7 +2623,7 @@ public partial class V1beta2RouteSpecInitProviderVpcEndpointIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderVpcEndpointIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecInitProviderVpcEndpointIdSelectorPolicyResolutionEnum
 {
@@ -2639,7 +2639,7 @@ public enum V1beta2RouteSpecInitProviderVpcEndpointIdSelectorPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderVpcEndpointIdSelectorPolicyResolveEnum>))]
 public enum V1beta2RouteSpecInitProviderVpcEndpointIdSelectorPolicyResolveEnum
 {
@@ -2650,7 +2650,7 @@ public enum V1beta2RouteSpecInitProviderVpcEndpointIdSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderVpcEndpointIdSelectorPolicy
 {
@@ -2674,7 +2674,7 @@ public partial class V1beta2RouteSpecInitProviderVpcEndpointIdSelectorPolicy
 }
 
 /// <summary>Selector for a VPCEndpoint in ec2 to populate vpcEndpointId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderVpcEndpointIdSelector
 {
@@ -2700,7 +2700,7 @@ public partial class V1beta2RouteSpecInitProviderVpcEndpointIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderVpcPeeringConnectionIdRefPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecInitProviderVpcPeeringConnectionIdRefPolicyResolutionEnum
 {
@@ -2716,7 +2716,7 @@ public enum V1beta2RouteSpecInitProviderVpcPeeringConnectionIdRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderVpcPeeringConnectionIdRefPolicyResolveEnum>))]
 public enum V1beta2RouteSpecInitProviderVpcPeeringConnectionIdRefPolicyResolveEnum
 {
@@ -2727,7 +2727,7 @@ public enum V1beta2RouteSpecInitProviderVpcPeeringConnectionIdRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderVpcPeeringConnectionIdRefPolicy
 {
@@ -2751,7 +2751,7 @@ public partial class V1beta2RouteSpecInitProviderVpcPeeringConnectionIdRefPolicy
 }
 
 /// <summary>Reference to a VPCPeeringConnection in ec2 to populate vpcPeeringConnectionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderVpcPeeringConnectionIdRef
 {
@@ -2770,7 +2770,7 @@ public partial class V1beta2RouteSpecInitProviderVpcPeeringConnectionIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderVpcPeeringConnectionIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecInitProviderVpcPeeringConnectionIdSelectorPolicyResolutionEnum
 {
@@ -2786,7 +2786,7 @@ public enum V1beta2RouteSpecInitProviderVpcPeeringConnectionIdSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecInitProviderVpcPeeringConnectionIdSelectorPolicyResolveEnum>))]
 public enum V1beta2RouteSpecInitProviderVpcPeeringConnectionIdSelectorPolicyResolveEnum
 {
@@ -2797,7 +2797,7 @@ public enum V1beta2RouteSpecInitProviderVpcPeeringConnectionIdSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderVpcPeeringConnectionIdSelectorPolicy
 {
@@ -2821,7 +2821,7 @@ public partial class V1beta2RouteSpecInitProviderVpcPeeringConnectionIdSelectorP
 }
 
 /// <summary>Selector for a VPCPeeringConnection in ec2 to populate vpcPeeringConnectionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderVpcPeeringConnectionIdSelector
 {
@@ -2853,7 +2853,7 @@ public partial class V1beta2RouteSpecInitProviderVpcPeeringConnectionIdSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProvider
 {
@@ -2990,7 +2990,7 @@ public partial class V1beta2RouteSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecManagementPoliciesEnum>))]
 public enum V1beta2RouteSpecManagementPoliciesEnum
 {
@@ -3014,7 +3014,7 @@ public enum V1beta2RouteSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2RouteSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -3030,7 +3030,7 @@ public enum V1beta2RouteSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouteSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2RouteSpecProviderConfigRefPolicyResolveEnum
 {
@@ -3041,7 +3041,7 @@ public enum V1beta2RouteSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecProviderConfigRefPolicy
 {
@@ -3069,7 +3069,7 @@ public partial class V1beta2RouteSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecProviderConfigRef
 {
@@ -3088,7 +3088,7 @@ public partial class V1beta2RouteSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecWriteConnectionSecretToRef
 {
@@ -3102,7 +3102,7 @@ public partial class V1beta2RouteSpecWriteConnectionSecretToRef
 }
 
 /// <summary>RouteSpec defines the desired state of Route</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpec
 {
@@ -3169,7 +3169,7 @@ public partial class V1beta2RouteSpec
     public V1beta2RouteSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProvider
 {
@@ -3258,7 +3258,7 @@ public partial class V1beta2RouteStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusConditions
 {
@@ -3301,7 +3301,7 @@ public partial class V1beta2RouteStatusConditions
 }
 
 /// <summary>RouteStatus defines the observed state of Route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatus
 {
@@ -3322,7 +3322,7 @@ public partial class V1beta2RouteStatus
 }
 
 /// <summary>Route is the Schema for the Routes API. Provides a resource to create a routing entry in a VPC routing table.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2Route : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2RouteSpec>, IStatus<V1beta2RouteStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dataproc.cnrm.cloud.google.com;
 /// <summary>DataprocAutoscalingPolicy is the Schema for the DataprocAutoscalingPolicy API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DataprocAutoscalingPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DataprocAutoscalingPolicy>
@@ -37,7 +37,7 @@ public partial class V1beta1DataprocAutoscalingPolicyList : IKubernetesObject<V1
 }
 
 /// <summary>Required. YARN autoscaling configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataprocAutoscalingPolicySpecBasicAlgorithmYarnConfig
 {
@@ -108,7 +108,7 @@ public partial class V1beta1DataprocAutoscalingPolicySpecBasicAlgorithmYarnConfi
 }
 
 /// <summary>Immutable. Required. YARN autoscaling configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataprocAutoscalingPolicySpecBasicAlgorithm
 {
@@ -127,7 +127,7 @@ public partial class V1beta1DataprocAutoscalingPolicySpecBasicAlgorithm
 }
 
 /// <summary>Immutable. The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataprocAutoscalingPolicySpecProjectRef
 {
@@ -145,7 +145,7 @@ public partial class V1beta1DataprocAutoscalingPolicySpecProjectRef
 }
 
 /// <summary>Immutable. Optional. Describes how the autoscaler will operate for secondary workers.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataprocAutoscalingPolicySpecSecondaryWorkerConfig
 {
@@ -194,7 +194,7 @@ public partial class V1beta1DataprocAutoscalingPolicySpecSecondaryWorkerConfig
 }
 
 /// <summary>Immutable. Required. Describes how the autoscaler will operate for primary workers.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataprocAutoscalingPolicySpecWorkerConfig
 {
@@ -243,7 +243,7 @@ public partial class V1beta1DataprocAutoscalingPolicySpecWorkerConfig
 }
 
 /// <summary>DataprocAutoscalingPolicySpec defines the desired state of DataprocAutoscalingPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataprocAutoscalingPolicySpec
 {
@@ -272,7 +272,7 @@ public partial class V1beta1DataprocAutoscalingPolicySpec
     public required V1beta1DataprocAutoscalingPolicySpecWorkerConfig WorkerConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataprocAutoscalingPolicyStatusConditions
 {
@@ -298,7 +298,7 @@ public partial class V1beta1DataprocAutoscalingPolicyStatusConditions
 }
 
 /// <summary>DataprocAutoscalingPolicyStatus defines the config connector machine state of DataprocAutoscalingPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataprocAutoscalingPolicyStatus
 {
@@ -316,7 +316,7 @@ public partial class V1beta1DataprocAutoscalingPolicyStatus
 }
 
 /// <summary>DataprocAutoscalingPolicy is the Schema for the DataprocAutoscalingPolicy API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DataprocAutoscalingPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DataprocAutoscalingPolicySpec>, IStatus<V1beta1DataprocAutoscalingPolicyStatus?>

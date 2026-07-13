@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrockagentcore.aws.upbound.io;
 /// <summary>GatewayTarget is the Schema for the GatewayTargets API. Manages an AWS Bedrock AgentCore Gateway Target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1GatewayTargetList : IKubernetesObject<V1ListMeta>, IItems<V1beta1GatewayTarget>
@@ -45,7 +45,7 @@ public partial class V1beta1GatewayTargetList : IKubernetesObject<V1ListMeta>, I
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayTargetSpecDeletionPolicyEnum>))]
 public enum V1beta1GatewayTargetSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta1GatewayTargetSpecDeletionPolicyEnum
 }
 
 /// <summary>API key-based authentication configuration. See api_key below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderCredentialProviderConfigurationApiKey
 {
@@ -78,14 +78,14 @@ public partial class V1beta1GatewayTargetSpecForProviderCredentialProviderConfig
 }
 
 /// <summary>Use the gateway&apos;s IAM role for authentication. This is an empty configuration block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderCredentialProviderConfigurationGatewayIamRole
 {
 }
 
 /// <summary>OAuth-based authentication configuration. See oauth below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderCredentialProviderConfigurationOauth
 {
@@ -117,7 +117,7 @@ public partial class V1beta1GatewayTargetSpecForProviderCredentialProviderConfig
 }
 
 /// <summary>Configuration for authenticating requests to the target. Required when using lambda, open_api_schema and smithy_model in mcp block. If using mcp_server in mcp block with no authorization, it should not be specified. See credential_provider_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderCredentialProviderConfiguration
 {
@@ -140,7 +140,7 @@ public partial class V1beta1GatewayTargetSpecForProviderCredentialProviderConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayTargetSpecForProviderGatewayIdentifierRefPolicyResolutionEnum>))]
 public enum V1beta1GatewayTargetSpecForProviderGatewayIdentifierRefPolicyResolutionEnum
 {
@@ -156,7 +156,7 @@ public enum V1beta1GatewayTargetSpecForProviderGatewayIdentifierRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayTargetSpecForProviderGatewayIdentifierRefPolicyResolveEnum>))]
 public enum V1beta1GatewayTargetSpecForProviderGatewayIdentifierRefPolicyResolveEnum
 {
@@ -167,7 +167,7 @@ public enum V1beta1GatewayTargetSpecForProviderGatewayIdentifierRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderGatewayIdentifierRefPolicy
 {
@@ -191,7 +191,7 @@ public partial class V1beta1GatewayTargetSpecForProviderGatewayIdentifierRefPoli
 }
 
 /// <summary>Reference to a Gateway in bedrockagentcore to populate gatewayIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderGatewayIdentifierRef
 {
@@ -210,7 +210,7 @@ public partial class V1beta1GatewayTargetSpecForProviderGatewayIdentifierRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayTargetSpecForProviderGatewayIdentifierSelectorPolicyResolutionEnum>))]
 public enum V1beta1GatewayTargetSpecForProviderGatewayIdentifierSelectorPolicyResolutionEnum
 {
@@ -226,7 +226,7 @@ public enum V1beta1GatewayTargetSpecForProviderGatewayIdentifierSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayTargetSpecForProviderGatewayIdentifierSelectorPolicyResolveEnum>))]
 public enum V1beta1GatewayTargetSpecForProviderGatewayIdentifierSelectorPolicyResolveEnum
 {
@@ -237,7 +237,7 @@ public enum V1beta1GatewayTargetSpecForProviderGatewayIdentifierSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderGatewayIdentifierSelectorPolicy
 {
@@ -261,7 +261,7 @@ public partial class V1beta1GatewayTargetSpecForProviderGatewayIdentifierSelecto
 }
 
 /// <summary>Selector for a Gateway in bedrockagentcore to populate gatewayIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderGatewayIdentifierSelector
 {
@@ -282,7 +282,7 @@ public partial class V1beta1GatewayTargetSpecForProviderGatewayIdentifierSelecto
 }
 
 /// <summary>Configuration for HTTP header and query parameter propagation between the gateway and target servers. See metadata_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderMetadataConfiguration
 {
@@ -314,7 +314,7 @@ public partial class V1beta1GatewayTargetSpecForProviderMetadataConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaLambdaArnRefPolicyResolutionEnum>))]
 public enum V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaLambdaArnRefPolicyResolutionEnum
 {
@@ -330,7 +330,7 @@ public enum V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaLambd
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaLambdaArnRefPolicyResolveEnum>))]
 public enum V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaLambdaArnRefPolicyResolveEnum
 {
@@ -341,7 +341,7 @@ public enum V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaLambd
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaLambdaArnRefPolicy
 {
@@ -365,7 +365,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
 }
 
 /// <summary>Reference to a Function in lambda to populate lambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaLambdaArnRef
 {
@@ -384,7 +384,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaLambdaArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaLambdaArnSelectorPolicyResolutionEnum
 {
@@ -400,7 +400,7 @@ public enum V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaLambd
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaLambdaArnSelectorPolicyResolveEnum>))]
 public enum V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaLambdaArnSelectorPolicyResolveEnum
 {
@@ -411,7 +411,7 @@ public enum V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaLambd
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaLambdaArnSelectorPolicy
 {
@@ -435,7 +435,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
 }
 
 /// <summary>Selector for a Function in lambda to populate lambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaLambdaArnSelector
 {
@@ -456,7 +456,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
 }
 
 /// <summary>Items definition for array properties. See items above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems
 {
@@ -477,7 +477,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsProperty
 {
@@ -507,7 +507,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
 }
 
 /// <summary>Items definition for array properties. See items above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems
 {
@@ -529,7 +529,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
 }
 
 /// <summary>Items definition for array properties. See items above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems
 {
@@ -550,7 +550,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsProperty
 {
@@ -580,7 +580,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
 }
 
 /// <summary>Items definition for array properties. See items above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems
 {
@@ -601,7 +601,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyProperty
 {
@@ -630,7 +630,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaProperty
 {
@@ -660,7 +660,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
 }
 
 /// <summary>Schema for the tool&apos;s input. See schema_definition below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema
 {
@@ -682,7 +682,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
 }
 
 /// <summary>Items definition for array properties. See items above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems
 {
@@ -703,7 +703,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsProperty
 {
@@ -733,7 +733,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
 }
 
 /// <summary>Items definition for array properties. See items above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems
 {
@@ -755,7 +755,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
 }
 
 /// <summary>Items definition for array properties. See items above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems
 {
@@ -776,7 +776,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsProperty
 {
@@ -806,7 +806,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
 }
 
 /// <summary>Items definition for array properties. See items above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems
 {
@@ -827,7 +827,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyProperty
 {
@@ -856,7 +856,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaProperty
 {
@@ -886,7 +886,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
 }
 
 /// <summary>Schema for the tool&apos;s output. See schema_definition below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema
 {
@@ -907,7 +907,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaInlinePayload
 {
@@ -929,7 +929,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
 }
 
 /// <summary>S3-based tool definition. See s3 below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchemaS3
 {
@@ -943,7 +943,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
 }
 
 /// <summary>Schema definition for the tool. See tool_schema below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambdaToolSchema
 {
@@ -957,7 +957,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
 }
 
 /// <summary>Lambda function target configuration. See lambda below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLambda
 {
@@ -979,7 +979,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpLa
 }
 
 /// <summary>MCP server target configuration. See mcp_server below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpMcpServer
 {
@@ -989,7 +989,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpMc
 }
 
 /// <summary>Inline tool definition. See inline_payload below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpOpenApiSchemaInlinePayload
 {
@@ -999,7 +999,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpOp
 }
 
 /// <summary>S3-based tool definition. See s3 below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpOpenApiSchemaS3
 {
@@ -1013,7 +1013,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpOp
 }
 
 /// <summary>OpenAPI schema-based target configuration. See api_schema_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpOpenApiSchema
 {
@@ -1027,7 +1027,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpOp
 }
 
 /// <summary>Inline tool definition. See inline_payload below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpSmithyModelInlinePayload
 {
@@ -1037,7 +1037,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpSm
 }
 
 /// <summary>S3-based tool definition. See s3 below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpSmithyModelS3
 {
@@ -1051,7 +1051,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpSm
 }
 
 /// <summary>Smithy model-based target configuration. See api_schema_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpSmithyModel
 {
@@ -1065,7 +1065,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcpSm
 }
 
 /// <summary>Model Context Protocol (MCP) configuration. See mcp below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcp
 {
@@ -1087,7 +1087,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfigurationMcp
 }
 
 /// <summary>Configuration for the target endpoint. See target_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProviderTargetConfiguration
 {
@@ -1096,7 +1096,7 @@ public partial class V1beta1GatewayTargetSpecForProviderTargetConfiguration
     public V1beta1GatewayTargetSpecForProviderTargetConfigurationMcp? Mcp { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecForProvider
 {
@@ -1141,7 +1141,7 @@ public partial class V1beta1GatewayTargetSpecForProvider
 }
 
 /// <summary>API key-based authentication configuration. See api_key below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderCredentialProviderConfigurationApiKey
 {
@@ -1163,14 +1163,14 @@ public partial class V1beta1GatewayTargetSpecInitProviderCredentialProviderConfi
 }
 
 /// <summary>Use the gateway&apos;s IAM role for authentication. This is an empty configuration block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderCredentialProviderConfigurationGatewayIamRole
 {
 }
 
 /// <summary>OAuth-based authentication configuration. See oauth below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderCredentialProviderConfigurationOauth
 {
@@ -1202,7 +1202,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderCredentialProviderConfi
 }
 
 /// <summary>Configuration for authenticating requests to the target. Required when using lambda, open_api_schema and smithy_model in mcp block. If using mcp_server in mcp block with no authorization, it should not be specified. See credential_provider_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderCredentialProviderConfiguration
 {
@@ -1225,7 +1225,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderCredentialProviderConfi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayTargetSpecInitProviderGatewayIdentifierRefPolicyResolutionEnum>))]
 public enum V1beta1GatewayTargetSpecInitProviderGatewayIdentifierRefPolicyResolutionEnum
 {
@@ -1241,7 +1241,7 @@ public enum V1beta1GatewayTargetSpecInitProviderGatewayIdentifierRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayTargetSpecInitProviderGatewayIdentifierRefPolicyResolveEnum>))]
 public enum V1beta1GatewayTargetSpecInitProviderGatewayIdentifierRefPolicyResolveEnum
 {
@@ -1252,7 +1252,7 @@ public enum V1beta1GatewayTargetSpecInitProviderGatewayIdentifierRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderGatewayIdentifierRefPolicy
 {
@@ -1276,7 +1276,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderGatewayIdentifierRefPol
 }
 
 /// <summary>Reference to a Gateway in bedrockagentcore to populate gatewayIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderGatewayIdentifierRef
 {
@@ -1295,7 +1295,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderGatewayIdentifierRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayTargetSpecInitProviderGatewayIdentifierSelectorPolicyResolutionEnum>))]
 public enum V1beta1GatewayTargetSpecInitProviderGatewayIdentifierSelectorPolicyResolutionEnum
 {
@@ -1311,7 +1311,7 @@ public enum V1beta1GatewayTargetSpecInitProviderGatewayIdentifierSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayTargetSpecInitProviderGatewayIdentifierSelectorPolicyResolveEnum>))]
 public enum V1beta1GatewayTargetSpecInitProviderGatewayIdentifierSelectorPolicyResolveEnum
 {
@@ -1322,7 +1322,7 @@ public enum V1beta1GatewayTargetSpecInitProviderGatewayIdentifierSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderGatewayIdentifierSelectorPolicy
 {
@@ -1346,7 +1346,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderGatewayIdentifierSelect
 }
 
 /// <summary>Selector for a Gateway in bedrockagentcore to populate gatewayIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderGatewayIdentifierSelector
 {
@@ -1367,7 +1367,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderGatewayIdentifierSelect
 }
 
 /// <summary>Configuration for HTTP header and query parameter propagation between the gateway and target servers. See metadata_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderMetadataConfiguration
 {
@@ -1399,7 +1399,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderMetadataConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaLambdaArnRefPolicyResolutionEnum>))]
 public enum V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaLambdaArnRefPolicyResolutionEnum
 {
@@ -1415,7 +1415,7 @@ public enum V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaLamb
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaLambdaArnRefPolicyResolveEnum>))]
 public enum V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaLambdaArnRefPolicyResolveEnum
 {
@@ -1426,7 +1426,7 @@ public enum V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaLamb
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaLambdaArnRefPolicy
 {
@@ -1450,7 +1450,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
 }
 
 /// <summary>Reference to a Function in lambda to populate lambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaLambdaArnRef
 {
@@ -1469,7 +1469,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaLambdaArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaLambdaArnSelectorPolicyResolutionEnum
 {
@@ -1485,7 +1485,7 @@ public enum V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaLamb
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaLambdaArnSelectorPolicyResolveEnum>))]
 public enum V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaLambdaArnSelectorPolicyResolveEnum
 {
@@ -1496,7 +1496,7 @@ public enum V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaLamb
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaLambdaArnSelectorPolicy
 {
@@ -1520,7 +1520,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
 }
 
 /// <summary>Selector for a Function in lambda to populate lambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaLambdaArnSelector
 {
@@ -1541,7 +1541,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
 }
 
 /// <summary>Items definition for array properties. See items above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems
 {
@@ -1562,7 +1562,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsProperty
 {
@@ -1592,7 +1592,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
 }
 
 /// <summary>Items definition for array properties. See items above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems
 {
@@ -1614,7 +1614,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
 }
 
 /// <summary>Items definition for array properties. See items above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems
 {
@@ -1635,7 +1635,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsProperty
 {
@@ -1665,7 +1665,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
 }
 
 /// <summary>Items definition for array properties. See items above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems
 {
@@ -1686,7 +1686,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyProperty
 {
@@ -1715,7 +1715,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaProperty
 {
@@ -1745,7 +1745,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
 }
 
 /// <summary>Schema for the tool&apos;s input. See schema_definition below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema
 {
@@ -1767,7 +1767,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
 }
 
 /// <summary>Items definition for array properties. See items above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems
 {
@@ -1788,7 +1788,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsProperty
 {
@@ -1818,7 +1818,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
 }
 
 /// <summary>Items definition for array properties. See items above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems
 {
@@ -1840,7 +1840,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
 }
 
 /// <summary>Items definition for array properties. See items above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems
 {
@@ -1861,7 +1861,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsProperty
 {
@@ -1891,7 +1891,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
 }
 
 /// <summary>Items definition for array properties. See items above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems
 {
@@ -1912,7 +1912,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyProperty
 {
@@ -1941,7 +1941,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaProperty
 {
@@ -1971,7 +1971,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
 }
 
 /// <summary>Schema for the tool&apos;s output. See schema_definition below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema
 {
@@ -1992,7 +1992,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaInlinePayload
 {
@@ -2014,7 +2014,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
 }
 
 /// <summary>S3-based tool definition. See s3 below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchemaS3
 {
@@ -2028,7 +2028,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
 }
 
 /// <summary>Schema definition for the tool. See tool_schema below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambdaToolSchema
 {
@@ -2042,7 +2042,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
 }
 
 /// <summary>Lambda function target configuration. See lambda below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpLambda
 {
@@ -2064,7 +2064,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpL
 }
 
 /// <summary>MCP server target configuration. See mcp_server below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpMcpServer
 {
@@ -2074,7 +2074,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpM
 }
 
 /// <summary>Inline tool definition. See inline_payload below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpOpenApiSchemaInlinePayload
 {
@@ -2084,7 +2084,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpO
 }
 
 /// <summary>S3-based tool definition. See s3 below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpOpenApiSchemaS3
 {
@@ -2098,7 +2098,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpO
 }
 
 /// <summary>OpenAPI schema-based target configuration. See api_schema_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpOpenApiSchema
 {
@@ -2112,7 +2112,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpO
 }
 
 /// <summary>Inline tool definition. See inline_payload below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpSmithyModelInlinePayload
 {
@@ -2122,7 +2122,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpS
 }
 
 /// <summary>S3-based tool definition. See s3 below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpSmithyModelS3
 {
@@ -2136,7 +2136,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpS
 }
 
 /// <summary>Smithy model-based target configuration. See api_schema_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpSmithyModel
 {
@@ -2150,7 +2150,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcpS
 }
 
 /// <summary>Model Context Protocol (MCP) configuration. See mcp below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcp
 {
@@ -2172,7 +2172,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfigurationMcp
 }
 
 /// <summary>Configuration for the target endpoint. See target_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProviderTargetConfiguration
 {
@@ -2193,7 +2193,7 @@ public partial class V1beta1GatewayTargetSpecInitProviderTargetConfiguration
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecInitProvider
 {
@@ -2234,7 +2234,7 @@ public partial class V1beta1GatewayTargetSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayTargetSpecManagementPoliciesEnum>))]
 public enum V1beta1GatewayTargetSpecManagementPoliciesEnum
 {
@@ -2258,7 +2258,7 @@ public enum V1beta1GatewayTargetSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayTargetSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1GatewayTargetSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -2274,7 +2274,7 @@ public enum V1beta1GatewayTargetSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewayTargetSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1GatewayTargetSpecProviderConfigRefPolicyResolveEnum
 {
@@ -2285,7 +2285,7 @@ public enum V1beta1GatewayTargetSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecProviderConfigRefPolicy
 {
@@ -2313,7 +2313,7 @@ public partial class V1beta1GatewayTargetSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecProviderConfigRef
 {
@@ -2332,7 +2332,7 @@ public partial class V1beta1GatewayTargetSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpecWriteConnectionSecretToRef
 {
@@ -2346,7 +2346,7 @@ public partial class V1beta1GatewayTargetSpecWriteConnectionSecretToRef
 }
 
 /// <summary>GatewayTargetSpec defines the desired state of GatewayTarget</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetSpec
 {
@@ -2414,7 +2414,7 @@ public partial class V1beta1GatewayTargetSpec
 }
 
 /// <summary>API key-based authentication configuration. See api_key below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderCredentialProviderConfigurationApiKey
 {
@@ -2436,14 +2436,14 @@ public partial class V1beta1GatewayTargetStatusAtProviderCredentialProviderConfi
 }
 
 /// <summary>Use the gateway&apos;s IAM role for authentication. This is an empty configuration block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderCredentialProviderConfigurationGatewayIamRole
 {
 }
 
 /// <summary>OAuth-based authentication configuration. See oauth below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderCredentialProviderConfigurationOauth
 {
@@ -2475,7 +2475,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderCredentialProviderConfi
 }
 
 /// <summary>Configuration for authenticating requests to the target. Required when using lambda, open_api_schema and smithy_model in mcp block. If using mcp_server in mcp block with no authorization, it should not be specified. See credential_provider_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderCredentialProviderConfiguration
 {
@@ -2493,7 +2493,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderCredentialProviderConfi
 }
 
 /// <summary>Configuration for HTTP header and query parameter propagation between the gateway and target servers. See metadata_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderMetadataConfiguration
 {
@@ -2520,7 +2520,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderMetadataConfiguration
 }
 
 /// <summary>Items definition for array properties. See items above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems
 {
@@ -2541,7 +2541,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsProperty
 {
@@ -2571,7 +2571,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
 }
 
 /// <summary>Items definition for array properties. See items above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems
 {
@@ -2593,7 +2593,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
 }
 
 /// <summary>Items definition for array properties. See items above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems
 {
@@ -2614,7 +2614,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsProperty
 {
@@ -2644,7 +2644,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
 }
 
 /// <summary>Items definition for array properties. See items above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems
 {
@@ -2665,7 +2665,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyProperty
 {
@@ -2694,7 +2694,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaProperty
 {
@@ -2724,7 +2724,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
 }
 
 /// <summary>Schema for the tool&apos;s input. See schema_definition below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema
 {
@@ -2746,7 +2746,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
 }
 
 /// <summary>Items definition for array properties. See items above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems
 {
@@ -2767,7 +2767,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsProperty
 {
@@ -2797,7 +2797,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
 }
 
 /// <summary>Items definition for array properties. See items above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems
 {
@@ -2819,7 +2819,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
 }
 
 /// <summary>Items definition for array properties. See items above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems
 {
@@ -2840,7 +2840,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsProperty
 {
@@ -2870,7 +2870,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
 }
 
 /// <summary>Items definition for array properties. See items above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems
 {
@@ -2891,7 +2891,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyProperty
 {
@@ -2920,7 +2920,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaProperty
 {
@@ -2950,7 +2950,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
 }
 
 /// <summary>Schema for the tool&apos;s output. See schema_definition below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema
 {
@@ -2971,7 +2971,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaInlinePayload
 {
@@ -2993,7 +2993,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
 }
 
 /// <summary>S3-based tool definition. See s3 below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchemaS3
 {
@@ -3007,7 +3007,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
 }
 
 /// <summary>Schema definition for the tool. See tool_schema below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambdaToolSchema
 {
@@ -3021,7 +3021,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
 }
 
 /// <summary>Lambda function target configuration. See lambda below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpLambda
 {
@@ -3035,7 +3035,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpL
 }
 
 /// <summary>MCP server target configuration. See mcp_server below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpMcpServer
 {
@@ -3045,7 +3045,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpM
 }
 
 /// <summary>Inline tool definition. See inline_payload below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpOpenApiSchemaInlinePayload
 {
@@ -3055,7 +3055,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpO
 }
 
 /// <summary>S3-based tool definition. See s3 below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpOpenApiSchemaS3
 {
@@ -3069,7 +3069,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpO
 }
 
 /// <summary>OpenAPI schema-based target configuration. See api_schema_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpOpenApiSchema
 {
@@ -3083,7 +3083,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpO
 }
 
 /// <summary>Inline tool definition. See inline_payload below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpSmithyModelInlinePayload
 {
@@ -3093,7 +3093,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpS
 }
 
 /// <summary>S3-based tool definition. See s3 below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpSmithyModelS3
 {
@@ -3107,7 +3107,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpS
 }
 
 /// <summary>Smithy model-based target configuration. See api_schema_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpSmithyModel
 {
@@ -3121,7 +3121,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcpS
 }
 
 /// <summary>Model Context Protocol (MCP) configuration. See mcp below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcp
 {
@@ -3143,7 +3143,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcp
 }
 
 /// <summary>Configuration for the target endpoint. See target_configuration below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProviderTargetConfiguration
 {
@@ -3152,7 +3152,7 @@ public partial class V1beta1GatewayTargetStatusAtProviderTargetConfiguration
     public V1beta1GatewayTargetStatusAtProviderTargetConfigurationMcp? Mcp { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusAtProvider
 {
@@ -3196,7 +3196,7 @@ public partial class V1beta1GatewayTargetStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatusConditions
 {
@@ -3239,7 +3239,7 @@ public partial class V1beta1GatewayTargetStatusConditions
 }
 
 /// <summary>GatewayTargetStatus defines the observed state of GatewayTarget.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayTargetStatus
 {
@@ -3260,7 +3260,7 @@ public partial class V1beta1GatewayTargetStatus
 }
 
 /// <summary>GatewayTarget is the Schema for the GatewayTargets API. Manages an AWS Bedrock AgentCore Gateway Target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1GatewayTarget : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1GatewayTargetSpec>, IStatus<V1beta1GatewayTargetStatus?>

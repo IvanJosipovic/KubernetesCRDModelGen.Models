@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.networkmanagement.cnrm.cloud.google.com;
 /// <summary>NetworkManagementConnectivityTest is the Schema for the NetworkManagementConnectivityTest API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1NetworkManagementConnectivityTestList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1NetworkManagementConnectivityTest>
@@ -37,7 +37,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestList : IKubernetes
 }
 
 /// <summary>An [App Engine](https://cloud.google.com/appengine) [service version](https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1/apps.services.versions).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestSpecDestinationAppEngineVersion
 {
@@ -47,7 +47,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestSpecDestinationApp
 }
 
 /// <summary>A [Cloud Function](https://cloud.google.com/functions).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestSpecDestinationCloudFunction
 {
@@ -57,7 +57,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestSpecDestinationClo
 }
 
 /// <summary>A [Cloud Run](https://cloud.google.com/run) [revision](https://cloud.google.com/run/docs/reference/rest/v1/namespaces.revisions/get) URI. The format is: projects/{project}/locations/{location}/revisions/{revision}</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestSpecDestinationCloudRunRevisionRunRevisionRef
 {
@@ -67,7 +67,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestSpecDestinationClo
 }
 
 /// <summary>A [Cloud Run](https://cloud.google.com/run) [revision](https://cloud.google.com/run/docs/reference/rest/v1/namespaces.revisions/get)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestSpecDestinationCloudRunRevision
 {
@@ -77,7 +77,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestSpecDestinationClo
 }
 
 /// <summary>A Compute Engine instance URI.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestSpecDestinationComputeInstanceRef
 {
@@ -95,7 +95,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestSpecDestinationCom
 }
 
 /// <summary>A Compute Engine network URI.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestSpecDestinationComputeNetworkRef
 {
@@ -113,7 +113,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestSpecDestinationCom
 }
 
 /// <summary>A cluster URI for [Google Kubernetes Engine cluster control plane](https://cloud.google.com/kubernetes-engine/docs/concepts/cluster-architecture).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestSpecDestinationContainerClusterRef
 {
@@ -131,7 +131,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestSpecDestinationCon
 }
 
 /// <summary>Project ID where the endpoint is located. The Project ID can be derived from the URI if you provide a VM instance or network URI. The following are two cases where you must provide the project ID: 1. Only the IP address is specified, and the IP address is within a Google Cloud project. 2. When you are using Shared VPC and the IP address that you provide is from the service project. In this case, the network that the IP address resides in is defined in the host project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestSpecDestinationProjectRef
 {
@@ -153,7 +153,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestSpecDestinationPro
 }
 
 /// <summary>A [Cloud SQL](https://cloud.google.com/sql) instance URI.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestSpecDestinationSqlInstance
 {
@@ -190,7 +190,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestSpecDestinationSql
 ///  ambiguous. However, the result can include endpoints that you don&apos;t
 ///  intend to test.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestSpecDestination
 {
@@ -256,7 +256,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestSpecDestination
 }
 
 /// <summary>Immutable. The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestSpecProjectRef
 {
@@ -278,7 +278,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestSpecProjectRef
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestSpecRelatedProjects
 {
@@ -300,7 +300,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestSpecRelatedProject
 }
 
 /// <summary>An [App Engine](https://cloud.google.com/appengine) [service version](https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1/apps.services.versions).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestSpecSourceAppEngineVersion
 {
@@ -310,7 +310,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestSpecSourceAppEngin
 }
 
 /// <summary>A [Cloud Function](https://cloud.google.com/functions).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestSpecSourceCloudFunction
 {
@@ -320,7 +320,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestSpecSourceCloudFun
 }
 
 /// <summary>A [Cloud Run](https://cloud.google.com/run) [revision](https://cloud.google.com/run/docs/reference/rest/v1/namespaces.revisions/get) URI. The format is: projects/{project}/locations/{location}/revisions/{revision}</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestSpecSourceCloudRunRevisionRunRevisionRef
 {
@@ -330,7 +330,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestSpecSourceCloudRun
 }
 
 /// <summary>A [Cloud Run](https://cloud.google.com/run) [revision](https://cloud.google.com/run/docs/reference/rest/v1/namespaces.revisions/get)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestSpecSourceCloudRunRevision
 {
@@ -340,7 +340,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestSpecSourceCloudRun
 }
 
 /// <summary>A Compute Engine instance URI.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestSpecSourceComputeInstanceRef
 {
@@ -358,7 +358,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestSpecSourceComputeI
 }
 
 /// <summary>A Compute Engine network URI.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestSpecSourceComputeNetworkRef
 {
@@ -376,7 +376,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestSpecSourceComputeN
 }
 
 /// <summary>A cluster URI for [Google Kubernetes Engine cluster control plane](https://cloud.google.com/kubernetes-engine/docs/concepts/cluster-architecture).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestSpecSourceContainerClusterRef
 {
@@ -394,7 +394,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestSpecSourceContaine
 }
 
 /// <summary>Project ID where the endpoint is located. The Project ID can be derived from the URI if you provide a VM instance or network URI. The following are two cases where you must provide the project ID: 1. Only the IP address is specified, and the IP address is within a Google Cloud project. 2. When you are using Shared VPC and the IP address that you provide is from the service project. In this case, the network that the IP address resides in is defined in the host project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestSpecSourceProjectRef
 {
@@ -416,7 +416,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestSpecSourceProjectR
 }
 
 /// <summary>A [Cloud SQL](https://cloud.google.com/sql) instance URI.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestSpecSourceSqlInstance
 {
@@ -457,7 +457,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestSpecSourceSqlInsta
 ///  ambiguous. However, the test result may include endpoints that you don&apos;t
 ///  intend to test.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestSpecSource
 {
@@ -523,7 +523,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestSpecSource
 }
 
 /// <summary>NetworkManagementConnectivityTestSpec defines the desired state of NetworkManagementConnectivityTest</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestSpec
 {
@@ -614,7 +614,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestSpec
     public required V1alpha1NetworkManagementConnectivityTestSpecSource Source { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusConditions
 {
@@ -659,7 +659,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusConditions
 ///  ambiguous. However, the result can include endpoints that you don&apos;t
 ///  intend to test.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateDestination
 {
@@ -677,7 +677,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>The EdgeLocation from which a packet destined for/originating from the internet will egress/ingress the Google network. This will only be populated for a connectivity test which has an internet destination/source address. The absence of this field *must not* be used as an indication that the destination/source is part of the Google network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateProbingDetailsDestinationEgressLocation
 {
@@ -687,7 +687,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>The source and destination endpoints derived from the test input and used for active probing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateProbingDetailsEndpointInfo
 {
@@ -724,7 +724,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
     public int? SourcePort { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateProbingDetailsErrorDetails
 {
@@ -766,7 +766,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Details about an internal failure or the cancellation of active probing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateProbingDetailsError
 {
@@ -783,7 +783,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
     public string? Message { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateProbingDetailsProbingLatencyLatencyPercentiles
 {
@@ -797,7 +797,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Latency as measured by active probing in one direction: from the source to the destination endpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateProbingDetailsProbingLatency
 {
@@ -807,7 +807,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Output only. The probing details of this test from the latest run, present for applicable tests only. The details are updated when creating a new test, updating an existing test, or triggering a one-time rerun of an existing test.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateProbingDetails
 {
@@ -848,7 +848,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
     public string? VerifyTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsErrorDetails
 {
@@ -890,7 +890,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>The details of a failure or a cancellation of reachability analysis.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsError
 {
@@ -908,7 +908,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Derived from the source and destination endpoints definition specified by user request, and validated by the data plane model. If there are multiple traces starting from different source locations, then the endpoint_info may be different between traces.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesEndpointInfo
 {
@@ -946,7 +946,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of the final state &quot;abort&quot; and reason.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsAbort
 {
@@ -968,7 +968,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of an App Engine service version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsAppEngineVersion
 {
@@ -990,7 +990,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Cloud Function.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsCloudFunction
 {
@@ -1012,7 +1012,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Cloud Run revision.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsCloudRunRevision
 {
@@ -1034,7 +1034,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Cloud SQL instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsCloudSQLInstance
 {
@@ -1064,7 +1064,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of the final state &quot;deliver&quot; and reason.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsDeliver
 {
@@ -1090,7 +1090,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of the final state &quot;drop&quot; and reason.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsDrop
 {
@@ -1116,7 +1116,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of the source and destination under analysis. The endpoint information in an intermediate state may differ with the initial input, as it might be modified by state like NAT, or Connection Proxy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsEndpoint
 {
@@ -1154,7 +1154,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Compute Engine firewall rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsFirewall
 {
@@ -1204,7 +1204,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of the final state &quot;forward&quot; and reason.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsForward
 {
@@ -1222,7 +1222,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Compute Engine forwarding rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsForwardingRule
 {
@@ -1272,7 +1272,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Google Kubernetes Engine cluster master.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsGkeMaster
 {
@@ -1298,7 +1298,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Google service</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsGoogleService
 {
@@ -1312,7 +1312,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Compute Engine instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsInstance
 {
@@ -1353,7 +1353,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
     public string? Uri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsLoadBalancerBackends
 {
@@ -1379,7 +1379,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of the load balancers. Deprecated in favor of the `load_balancer_backend_info` field, not used in new tests.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsLoadBalancer
 {
@@ -1405,7 +1405,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a specific load balancer backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsLoadBalancerBackendInfo
 {
@@ -1451,7 +1451,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a NAT.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsNat
 {
@@ -1509,7 +1509,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Google Cloud network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsNetwork
 {
@@ -1535,7 +1535,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a ProxyConnection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsProxyConnection
 {
@@ -1585,7 +1585,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Redis Cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsRedisCluster
 {
@@ -1615,7 +1615,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Redis Instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsRedisInstance
 {
@@ -1645,7 +1645,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Compute Engine route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsRoute
 {
@@ -1727,7 +1727,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Serverless network endpoint group backend. Used only for return traces.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsServerlessNeg
 {
@@ -1737,7 +1737,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Storage Bucket. Used only for return traces.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsStorageBucket
 {
@@ -1747,7 +1747,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a VPC connector.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsVpcConnector
 {
@@ -1765,7 +1765,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Compute Engine VPN gateway.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsVpnGateway
 {
@@ -1795,7 +1795,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Compute Engine VPN tunnel.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsVpnTunnel
 {
@@ -1836,7 +1836,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
     public string? Uri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesSteps
 {
@@ -1965,7 +1965,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
     public V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTracesStepsVpnTunnel? VpnTunnel { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetailsTraces
 {
@@ -1990,7 +1990,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Output only. The reachability details of this test from the latest run. The details are updated when creating a new test, updating an existing test, or triggering a one-time rerun of an existing test.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReachabilityDetails
 {
@@ -2011,7 +2011,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
     public string? VerifyTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsErrorDetails
 {
@@ -2053,7 +2053,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>The details of a failure or a cancellation of reachability analysis.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsError
 {
@@ -2071,7 +2071,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Derived from the source and destination endpoints definition specified by user request, and validated by the data plane model. If there are multiple traces starting from different source locations, then the endpoint_info may be different between traces.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesEndpointInfo
 {
@@ -2109,7 +2109,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of the final state &quot;abort&quot; and reason.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsAbort
 {
@@ -2131,7 +2131,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of an App Engine service version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsAppEngineVersion
 {
@@ -2153,7 +2153,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Cloud Function.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsCloudFunction
 {
@@ -2175,7 +2175,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Cloud Run revision.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsCloudRunRevision
 {
@@ -2197,7 +2197,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Cloud SQL instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsCloudSQLInstance
 {
@@ -2227,7 +2227,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of the final state &quot;deliver&quot; and reason.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsDeliver
 {
@@ -2253,7 +2253,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of the final state &quot;drop&quot; and reason.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsDrop
 {
@@ -2279,7 +2279,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of the source and destination under analysis. The endpoint information in an intermediate state may differ with the initial input, as it might be modified by state like NAT, or Connection Proxy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsEndpoint
 {
@@ -2317,7 +2317,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Compute Engine firewall rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsFirewall
 {
@@ -2367,7 +2367,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of the final state &quot;forward&quot; and reason.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsForward
 {
@@ -2385,7 +2385,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Compute Engine forwarding rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsForwardingRule
 {
@@ -2435,7 +2435,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Google Kubernetes Engine cluster master.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsGkeMaster
 {
@@ -2461,7 +2461,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Google service</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsGoogleService
 {
@@ -2475,7 +2475,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Compute Engine instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsInstance
 {
@@ -2516,7 +2516,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
     public string? Uri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsLoadBalancerBackends
 {
@@ -2542,7 +2542,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of the load balancers. Deprecated in favor of the `load_balancer_backend_info` field, not used in new tests.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsLoadBalancer
 {
@@ -2568,7 +2568,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a specific load balancer backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsLoadBalancerBackendInfo
 {
@@ -2614,7 +2614,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a NAT.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsNat
 {
@@ -2672,7 +2672,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Google Cloud network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsNetwork
 {
@@ -2698,7 +2698,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a ProxyConnection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsProxyConnection
 {
@@ -2748,7 +2748,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Redis Cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsRedisCluster
 {
@@ -2778,7 +2778,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Redis Instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsRedisInstance
 {
@@ -2808,7 +2808,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Compute Engine route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsRoute
 {
@@ -2890,7 +2890,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Serverless network endpoint group backend. Used only for return traces.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsServerlessNeg
 {
@@ -2900,7 +2900,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Storage Bucket. Used only for return traces.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsStorageBucket
 {
@@ -2910,7 +2910,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a VPC connector.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsVpcConnector
 {
@@ -2928,7 +2928,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Compute Engine VPN gateway.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsVpnGateway
 {
@@ -2958,7 +2958,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Display information of a Compute Engine VPN tunnel.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsVpnTunnel
 {
@@ -2999,7 +2999,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
     public string? Uri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesSteps
 {
@@ -3128,7 +3128,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
     public V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTracesStepsVpnTunnel? VpnTunnel { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetailsTraces
 {
@@ -3153,7 +3153,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>Output only. The reachability details of this test from the latest run for the return path. The details are updated when creating a new test, updating an existing test, or triggering a one-time rerun of an existing test.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateReturnReachabilityDetails
 {
@@ -3198,7 +3198,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 ///  ambiguous. However, the test result may include endpoints that you don&apos;t
 ///  intend to test.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStateSource
 {
@@ -3216,7 +3216,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedState
 {
@@ -3296,7 +3296,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatusObservedStat
 }
 
 /// <summary>NetworkManagementConnectivityTestStatus defines the config connector machine state of NetworkManagementConnectivityTest</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkManagementConnectivityTestStatus
 {
@@ -3318,7 +3318,7 @@ public partial class V1alpha1NetworkManagementConnectivityTestStatus
 }
 
 /// <summary>NetworkManagementConnectivityTest is the Schema for the NetworkManagementConnectivityTest API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1NetworkManagementConnectivityTest : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1NetworkManagementConnectivityTestSpec>, IStatus<V1alpha1NetworkManagementConnectivityTestStatus?>

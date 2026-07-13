@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.monitoring.gcp.m.upbound.io;
 /// <summary>NotificationChannel is the Schema for the NotificationChannels API. A NotificationChannel is a medium through which an alert is delivered when a policy violation is detected.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1NotificationChannelList : IKubernetesObject<V1ListMeta>, IItems<V1beta1NotificationChannel>
@@ -40,7 +40,7 @@ public partial class V1beta1NotificationChannelList : IKubernetesObject<V1ListMe
 /// An authorization token for a notification channel. Channel types that support this field include: slack
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationChannelSpecForProviderSensitiveLabelsAuthTokenSecretRef
 {
@@ -56,7 +56,7 @@ public partial class V1beta1NotificationChannelSpecForProviderSensitiveLabelsAut
 /// An password for a notification channel. Channel types that support this field include: webhook_basicauth
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationChannelSpecForProviderSensitiveLabelsPasswordSecretRef
 {
@@ -72,7 +72,7 @@ public partial class V1beta1NotificationChannelSpecForProviderSensitiveLabelsPas
 /// An servicekey token for a notification channel. Channel types that support this field include: pagerduty
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationChannelSpecForProviderSensitiveLabelsServiceKeySecretRef
 {
@@ -93,7 +93,7 @@ public partial class V1beta1NotificationChannelSpecForProviderSensitiveLabelsSer
 /// to a different credential configuration in the config will require an apply to update state.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationChannelSpecForProviderSensitiveLabels
 {
@@ -119,7 +119,7 @@ public partial class V1beta1NotificationChannelSpecForProviderSensitiveLabels
     public V1beta1NotificationChannelSpecForProviderSensitiveLabelsServiceKeySecretRef? ServiceKeySecretRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationChannelSpecForProvider
 {
@@ -186,7 +186,7 @@ public partial class V1beta1NotificationChannelSpecForProvider
 /// An authorization token for a notification channel. Channel types that support this field include: slack
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationChannelSpecInitProviderSensitiveLabelsAuthTokenSecretRef
 {
@@ -202,7 +202,7 @@ public partial class V1beta1NotificationChannelSpecInitProviderSensitiveLabelsAu
 /// An password for a notification channel. Channel types that support this field include: webhook_basicauth
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationChannelSpecInitProviderSensitiveLabelsPasswordSecretRef
 {
@@ -218,7 +218,7 @@ public partial class V1beta1NotificationChannelSpecInitProviderSensitiveLabelsPa
 /// An servicekey token for a notification channel. Channel types that support this field include: pagerduty
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationChannelSpecInitProviderSensitiveLabelsServiceKeySecretRef
 {
@@ -239,7 +239,7 @@ public partial class V1beta1NotificationChannelSpecInitProviderSensitiveLabelsSe
 /// to a different credential configuration in the config will require an apply to update state.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationChannelSpecInitProviderSensitiveLabels
 {
@@ -277,7 +277,7 @@ public partial class V1beta1NotificationChannelSpecInitProviderSensitiveLabels
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationChannelSpecInitProvider
 {
@@ -344,7 +344,7 @@ public partial class V1beta1NotificationChannelSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NotificationChannelSpecManagementPoliciesEnum>))]
 public enum V1beta1NotificationChannelSpecManagementPoliciesEnum
 {
@@ -367,7 +367,7 @@ public enum V1beta1NotificationChannelSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationChannelSpecProviderConfigRef
 {
@@ -386,7 +386,7 @@ public partial class V1beta1NotificationChannelSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationChannelSpecWriteConnectionSecretToRef
 {
@@ -396,7 +396,7 @@ public partial class V1beta1NotificationChannelSpecWriteConnectionSecretToRef
 }
 
 /// <summary>NotificationChannelSpec defines the desired state of NotificationChannel</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationChannelSpec
 {
@@ -451,7 +451,7 @@ public partial class V1beta1NotificationChannelSpec
 /// An authorization token for a notification channel. Channel types that support this field include: slack
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationChannelStatusAtProviderSensitiveLabelsAuthTokenSecretRef
 {
@@ -467,7 +467,7 @@ public partial class V1beta1NotificationChannelStatusAtProviderSensitiveLabelsAu
 /// An password for a notification channel. Channel types that support this field include: webhook_basicauth
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationChannelStatusAtProviderSensitiveLabelsPasswordSecretRef
 {
@@ -483,7 +483,7 @@ public partial class V1beta1NotificationChannelStatusAtProviderSensitiveLabelsPa
 /// An servicekey token for a notification channel. Channel types that support this field include: pagerduty
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationChannelStatusAtProviderSensitiveLabelsServiceKeySecretRef
 {
@@ -504,7 +504,7 @@ public partial class V1beta1NotificationChannelStatusAtProviderSensitiveLabelsSe
 /// to a different credential configuration in the config will require an apply to update state.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationChannelStatusAtProviderSensitiveLabels
 {
@@ -530,7 +530,7 @@ public partial class V1beta1NotificationChannelStatusAtProviderSensitiveLabels
     public V1beta1NotificationChannelStatusAtProviderSensitiveLabelsServiceKeySecretRef? ServiceKeySecretRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationChannelStatusAtProvider
 {
@@ -610,7 +610,7 @@ public partial class V1beta1NotificationChannelStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationChannelStatusConditions
 {
@@ -653,7 +653,7 @@ public partial class V1beta1NotificationChannelStatusConditions
 }
 
 /// <summary>NotificationChannelStatus defines the observed state of NotificationChannel.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationChannelStatus
 {
@@ -674,7 +674,7 @@ public partial class V1beta1NotificationChannelStatus
 }
 
 /// <summary>NotificationChannel is the Schema for the NotificationChannels API. A NotificationChannel is a medium through which an alert is delivered when a policy violation is detected.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1NotificationChannel : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1NotificationChannelSpec>, IStatus<V1beta1NotificationChannelStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dbformysql.azure.m.upbound.io;
 /// <summary>FlexibleServerConfiguration is the Schema for the FlexibleServerConfigurations API. Sets a MySQL Flexible Server Configuration value on a MySQL Flexible Server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FlexibleServerConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1FlexibleServerConfiguration>
@@ -42,7 +42,7 @@ public partial class V1beta1FlexibleServerConfigurationList : IKubernetesObject<
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleServerConfigurationSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1FlexibleServerConfigurationSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1FlexibleServerConfigurationSpecForProviderResourceGroupNameRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleServerConfigurationSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1FlexibleServerConfigurationSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1FlexibleServerConfigurationSpecForProviderResourceGroupNameRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerConfigurationSpecForProviderResourceGroupNameRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1FlexibleServerConfigurationSpecForProviderResourceGr
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerConfigurationSpecForProviderResourceGroupNameRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1FlexibleServerConfigurationSpecForProviderResourceGr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleServerConfigurationSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1FlexibleServerConfigurationSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1FlexibleServerConfigurationSpecForProviderResourceGroupNameSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleServerConfigurationSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1FlexibleServerConfigurationSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1FlexibleServerConfigurationSpecForProviderResourceGroupNameSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerConfigurationSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1FlexibleServerConfigurationSpecForProviderResourceGr
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerConfigurationSpecForProviderResourceGroupNameSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1FlexibleServerConfigurationSpecForProviderResourceGr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleServerConfigurationSpecForProviderServerNameRefPolicyResolutionEnum>))]
 public enum V1beta1FlexibleServerConfigurationSpecForProviderServerNameRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1FlexibleServerConfigurationSpecForProviderServerNameRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleServerConfigurationSpecForProviderServerNameRefPolicyResolveEnum>))]
 public enum V1beta1FlexibleServerConfigurationSpecForProviderServerNameRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1FlexibleServerConfigurationSpecForProviderServerNameRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerConfigurationSpecForProviderServerNameRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1FlexibleServerConfigurationSpecForProviderServerName
 }
 
 /// <summary>Reference to a FlexibleServer in dbformysql to populate serverName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerConfigurationSpecForProviderServerNameRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1FlexibleServerConfigurationSpecForProviderServerName
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleServerConfigurationSpecForProviderServerNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1FlexibleServerConfigurationSpecForProviderServerNameSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1FlexibleServerConfigurationSpecForProviderServerNameSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleServerConfigurationSpecForProviderServerNameSelectorPolicyResolveEnum>))]
 public enum V1beta1FlexibleServerConfigurationSpecForProviderServerNameSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1FlexibleServerConfigurationSpecForProviderServerNameSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerConfigurationSpecForProviderServerNameSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1FlexibleServerConfigurationSpecForProviderServerName
 }
 
 /// <summary>Selector for a FlexibleServer in dbformysql to populate serverName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerConfigurationSpecForProviderServerNameSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1FlexibleServerConfigurationSpecForProviderServerName
     public V1beta1FlexibleServerConfigurationSpecForProviderServerNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerConfigurationSpecForProvider
 {
@@ -391,7 +391,7 @@ public partial class V1beta1FlexibleServerConfigurationSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerConfigurationSpecInitProvider
 {
@@ -404,7 +404,7 @@ public partial class V1beta1FlexibleServerConfigurationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleServerConfigurationSpecManagementPoliciesEnum>))]
 public enum V1beta1FlexibleServerConfigurationSpecManagementPoliciesEnum
 {
@@ -427,7 +427,7 @@ public enum V1beta1FlexibleServerConfigurationSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerConfigurationSpecProviderConfigRef
 {
@@ -446,7 +446,7 @@ public partial class V1beta1FlexibleServerConfigurationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerConfigurationSpecWriteConnectionSecretToRef
 {
@@ -456,7 +456,7 @@ public partial class V1beta1FlexibleServerConfigurationSpecWriteConnectionSecret
 }
 
 /// <summary>FlexibleServerConfigurationSpec defines the desired state of FlexibleServerConfiguration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerConfigurationSpec
 {
@@ -507,7 +507,7 @@ public partial class V1beta1FlexibleServerConfigurationSpec
     public V1beta1FlexibleServerConfigurationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerConfigurationStatusAtProvider
 {
@@ -529,7 +529,7 @@ public partial class V1beta1FlexibleServerConfigurationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerConfigurationStatusConditions
 {
@@ -572,7 +572,7 @@ public partial class V1beta1FlexibleServerConfigurationStatusConditions
 }
 
 /// <summary>FlexibleServerConfigurationStatus defines the observed state of FlexibleServerConfiguration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleServerConfigurationStatus
 {
@@ -593,7 +593,7 @@ public partial class V1beta1FlexibleServerConfigurationStatus
 }
 
 /// <summary>FlexibleServerConfiguration is the Schema for the FlexibleServerConfigurations API. Sets a MySQL Flexible Server Configuration value on a MySQL Flexible Server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FlexibleServerConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1FlexibleServerConfigurationSpec>, IStatus<V1beta1FlexibleServerConfigurationStatus?>

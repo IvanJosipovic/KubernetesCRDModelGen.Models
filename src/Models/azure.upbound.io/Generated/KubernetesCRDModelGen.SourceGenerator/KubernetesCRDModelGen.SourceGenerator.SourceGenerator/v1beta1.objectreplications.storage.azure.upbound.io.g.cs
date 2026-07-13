@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.storage.azure.upbound.io;
 /// <summary>ObjectReplication is the Schema for the ObjectReplications API. Copy Block Blobs between a source storage account and a destination account</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ObjectReplicationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ObjectReplication>
@@ -45,7 +45,7 @@ public partial class V1beta1ObjectReplicationList : IKubernetesObject<V1ListMeta
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecDeletionPolicyEnum>))]
 public enum V1beta1ObjectReplicationSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1ObjectReplicationSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecForProviderDestinationStorageAccountIdRefPolicyResolutionEnum>))]
 public enum V1beta1ObjectReplicationSpecForProviderDestinationStorageAccountIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1ObjectReplicationSpecForProviderDestinationStorageAccountIdRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecForProviderDestinationStorageAccountIdRefPolicyResolveEnum>))]
 public enum V1beta1ObjectReplicationSpecForProviderDestinationStorageAccountIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1ObjectReplicationSpecForProviderDestinationStorageAccountIdRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecForProviderDestinationStorageAccountIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1ObjectReplicationSpecForProviderDestinationStorageAc
 }
 
 /// <summary>Reference to a Account in storage to populate destinationStorageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecForProviderDestinationStorageAccountIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1ObjectReplicationSpecForProviderDestinationStorageAc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecForProviderDestinationStorageAccountIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ObjectReplicationSpecForProviderDestinationStorageAccountIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1ObjectReplicationSpecForProviderDestinationStorageAccountIdSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecForProviderDestinationStorageAccountIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ObjectReplicationSpecForProviderDestinationStorageAccountIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1ObjectReplicationSpecForProviderDestinationStorageAccountIdSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecForProviderDestinationStorageAccountIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1ObjectReplicationSpecForProviderDestinationStorageAc
 }
 
 /// <summary>Selector for a Account in storage to populate destinationStorageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecForProviderDestinationStorageAccountIdSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1ObjectReplicationSpecForProviderDestinationStorageAc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecForProviderRulesDestinationContainerNameRefPolicyResolutionEnum>))]
 public enum V1beta1ObjectReplicationSpecForProviderRulesDestinationContainerNameRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1ObjectReplicationSpecForProviderRulesDestinationContainerName
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecForProviderRulesDestinationContainerNameRefPolicyResolveEnum>))]
 public enum V1beta1ObjectReplicationSpecForProviderRulesDestinationContainerNameRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1ObjectReplicationSpecForProviderRulesDestinationContainerName
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecForProviderRulesDestinationContainerNameRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1ObjectReplicationSpecForProviderRulesDestinationCont
 }
 
 /// <summary>Reference to a Container in storage to populate destinationContainerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecForProviderRulesDestinationContainerNameRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1ObjectReplicationSpecForProviderRulesDestinationCont
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecForProviderRulesDestinationContainerNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ObjectReplicationSpecForProviderRulesDestinationContainerNameSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1ObjectReplicationSpecForProviderRulesDestinationContainerName
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecForProviderRulesDestinationContainerNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ObjectReplicationSpecForProviderRulesDestinationContainerNameSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1ObjectReplicationSpecForProviderRulesDestinationContainerName
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecForProviderRulesDestinationContainerNameSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1ObjectReplicationSpecForProviderRulesDestinationCont
 }
 
 /// <summary>Selector for a Container in storage to populate destinationContainerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecForProviderRulesDestinationContainerNameSelector
 {
@@ -355,7 +355,7 @@ public partial class V1beta1ObjectReplicationSpecForProviderRulesDestinationCont
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecForProviderRulesSourceContainerNameRefPolicyResolutionEnum>))]
 public enum V1beta1ObjectReplicationSpecForProviderRulesSourceContainerNameRefPolicyResolutionEnum
 {
@@ -371,7 +371,7 @@ public enum V1beta1ObjectReplicationSpecForProviderRulesSourceContainerNameRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecForProviderRulesSourceContainerNameRefPolicyResolveEnum>))]
 public enum V1beta1ObjectReplicationSpecForProviderRulesSourceContainerNameRefPolicyResolveEnum
 {
@@ -382,7 +382,7 @@ public enum V1beta1ObjectReplicationSpecForProviderRulesSourceContainerNameRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecForProviderRulesSourceContainerNameRefPolicy
 {
@@ -406,7 +406,7 @@ public partial class V1beta1ObjectReplicationSpecForProviderRulesSourceContainer
 }
 
 /// <summary>Reference to a Container in storage to populate sourceContainerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecForProviderRulesSourceContainerNameRef
 {
@@ -425,7 +425,7 @@ public partial class V1beta1ObjectReplicationSpecForProviderRulesSourceContainer
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecForProviderRulesSourceContainerNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ObjectReplicationSpecForProviderRulesSourceContainerNameSelectorPolicyResolutionEnum
 {
@@ -441,7 +441,7 @@ public enum V1beta1ObjectReplicationSpecForProviderRulesSourceContainerNameSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecForProviderRulesSourceContainerNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ObjectReplicationSpecForProviderRulesSourceContainerNameSelectorPolicyResolveEnum
 {
@@ -452,7 +452,7 @@ public enum V1beta1ObjectReplicationSpecForProviderRulesSourceContainerNameSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecForProviderRulesSourceContainerNameSelectorPolicy
 {
@@ -476,7 +476,7 @@ public partial class V1beta1ObjectReplicationSpecForProviderRulesSourceContainer
 }
 
 /// <summary>Selector for a Container in storage to populate sourceContainerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecForProviderRulesSourceContainerNameSelector
 {
@@ -496,7 +496,7 @@ public partial class V1beta1ObjectReplicationSpecForProviderRulesSourceContainer
     public V1beta1ObjectReplicationSpecForProviderRulesSourceContainerNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecForProviderRules
 {
@@ -539,7 +539,7 @@ public partial class V1beta1ObjectReplicationSpecForProviderRules
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecForProviderSourceStorageAccountIdRefPolicyResolutionEnum>))]
 public enum V1beta1ObjectReplicationSpecForProviderSourceStorageAccountIdRefPolicyResolutionEnum
 {
@@ -555,7 +555,7 @@ public enum V1beta1ObjectReplicationSpecForProviderSourceStorageAccountIdRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecForProviderSourceStorageAccountIdRefPolicyResolveEnum>))]
 public enum V1beta1ObjectReplicationSpecForProviderSourceStorageAccountIdRefPolicyResolveEnum
 {
@@ -566,7 +566,7 @@ public enum V1beta1ObjectReplicationSpecForProviderSourceStorageAccountIdRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecForProviderSourceStorageAccountIdRefPolicy
 {
@@ -590,7 +590,7 @@ public partial class V1beta1ObjectReplicationSpecForProviderSourceStorageAccount
 }
 
 /// <summary>Reference to a Account in storage to populate sourceStorageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecForProviderSourceStorageAccountIdRef
 {
@@ -609,7 +609,7 @@ public partial class V1beta1ObjectReplicationSpecForProviderSourceStorageAccount
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecForProviderSourceStorageAccountIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ObjectReplicationSpecForProviderSourceStorageAccountIdSelectorPolicyResolutionEnum
 {
@@ -625,7 +625,7 @@ public enum V1beta1ObjectReplicationSpecForProviderSourceStorageAccountIdSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecForProviderSourceStorageAccountIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ObjectReplicationSpecForProviderSourceStorageAccountIdSelectorPolicyResolveEnum
 {
@@ -636,7 +636,7 @@ public enum V1beta1ObjectReplicationSpecForProviderSourceStorageAccountIdSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecForProviderSourceStorageAccountIdSelectorPolicy
 {
@@ -660,7 +660,7 @@ public partial class V1beta1ObjectReplicationSpecForProviderSourceStorageAccount
 }
 
 /// <summary>Selector for a Account in storage to populate sourceStorageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecForProviderSourceStorageAccountIdSelector
 {
@@ -680,7 +680,7 @@ public partial class V1beta1ObjectReplicationSpecForProviderSourceStorageAccount
     public V1beta1ObjectReplicationSpecForProviderSourceStorageAccountIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecForProvider
 {
@@ -719,7 +719,7 @@ public partial class V1beta1ObjectReplicationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecInitProviderDestinationStorageAccountIdRefPolicyResolutionEnum>))]
 public enum V1beta1ObjectReplicationSpecInitProviderDestinationStorageAccountIdRefPolicyResolutionEnum
 {
@@ -735,7 +735,7 @@ public enum V1beta1ObjectReplicationSpecInitProviderDestinationStorageAccountIdR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecInitProviderDestinationStorageAccountIdRefPolicyResolveEnum>))]
 public enum V1beta1ObjectReplicationSpecInitProviderDestinationStorageAccountIdRefPolicyResolveEnum
 {
@@ -746,7 +746,7 @@ public enum V1beta1ObjectReplicationSpecInitProviderDestinationStorageAccountIdR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecInitProviderDestinationStorageAccountIdRefPolicy
 {
@@ -770,7 +770,7 @@ public partial class V1beta1ObjectReplicationSpecInitProviderDestinationStorageA
 }
 
 /// <summary>Reference to a Account in storage to populate destinationStorageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecInitProviderDestinationStorageAccountIdRef
 {
@@ -789,7 +789,7 @@ public partial class V1beta1ObjectReplicationSpecInitProviderDestinationStorageA
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecInitProviderDestinationStorageAccountIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ObjectReplicationSpecInitProviderDestinationStorageAccountIdSelectorPolicyResolutionEnum
 {
@@ -805,7 +805,7 @@ public enum V1beta1ObjectReplicationSpecInitProviderDestinationStorageAccountIdS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecInitProviderDestinationStorageAccountIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ObjectReplicationSpecInitProviderDestinationStorageAccountIdSelectorPolicyResolveEnum
 {
@@ -816,7 +816,7 @@ public enum V1beta1ObjectReplicationSpecInitProviderDestinationStorageAccountIdS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecInitProviderDestinationStorageAccountIdSelectorPolicy
 {
@@ -840,7 +840,7 @@ public partial class V1beta1ObjectReplicationSpecInitProviderDestinationStorageA
 }
 
 /// <summary>Selector for a Account in storage to populate destinationStorageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecInitProviderDestinationStorageAccountIdSelector
 {
@@ -866,7 +866,7 @@ public partial class V1beta1ObjectReplicationSpecInitProviderDestinationStorageA
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecInitProviderRulesDestinationContainerNameRefPolicyResolutionEnum>))]
 public enum V1beta1ObjectReplicationSpecInitProviderRulesDestinationContainerNameRefPolicyResolutionEnum
 {
@@ -882,7 +882,7 @@ public enum V1beta1ObjectReplicationSpecInitProviderRulesDestinationContainerNam
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecInitProviderRulesDestinationContainerNameRefPolicyResolveEnum>))]
 public enum V1beta1ObjectReplicationSpecInitProviderRulesDestinationContainerNameRefPolicyResolveEnum
 {
@@ -893,7 +893,7 @@ public enum V1beta1ObjectReplicationSpecInitProviderRulesDestinationContainerNam
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecInitProviderRulesDestinationContainerNameRefPolicy
 {
@@ -917,7 +917,7 @@ public partial class V1beta1ObjectReplicationSpecInitProviderRulesDestinationCon
 }
 
 /// <summary>Reference to a Container in storage to populate destinationContainerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecInitProviderRulesDestinationContainerNameRef
 {
@@ -936,7 +936,7 @@ public partial class V1beta1ObjectReplicationSpecInitProviderRulesDestinationCon
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecInitProviderRulesDestinationContainerNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ObjectReplicationSpecInitProviderRulesDestinationContainerNameSelectorPolicyResolutionEnum
 {
@@ -952,7 +952,7 @@ public enum V1beta1ObjectReplicationSpecInitProviderRulesDestinationContainerNam
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecInitProviderRulesDestinationContainerNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ObjectReplicationSpecInitProviderRulesDestinationContainerNameSelectorPolicyResolveEnum
 {
@@ -963,7 +963,7 @@ public enum V1beta1ObjectReplicationSpecInitProviderRulesDestinationContainerNam
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecInitProviderRulesDestinationContainerNameSelectorPolicy
 {
@@ -987,7 +987,7 @@ public partial class V1beta1ObjectReplicationSpecInitProviderRulesDestinationCon
 }
 
 /// <summary>Selector for a Container in storage to populate destinationContainerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecInitProviderRulesDestinationContainerNameSelector
 {
@@ -1013,7 +1013,7 @@ public partial class V1beta1ObjectReplicationSpecInitProviderRulesDestinationCon
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecInitProviderRulesSourceContainerNameRefPolicyResolutionEnum>))]
 public enum V1beta1ObjectReplicationSpecInitProviderRulesSourceContainerNameRefPolicyResolutionEnum
 {
@@ -1029,7 +1029,7 @@ public enum V1beta1ObjectReplicationSpecInitProviderRulesSourceContainerNameRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecInitProviderRulesSourceContainerNameRefPolicyResolveEnum>))]
 public enum V1beta1ObjectReplicationSpecInitProviderRulesSourceContainerNameRefPolicyResolveEnum
 {
@@ -1040,7 +1040,7 @@ public enum V1beta1ObjectReplicationSpecInitProviderRulesSourceContainerNameRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecInitProviderRulesSourceContainerNameRefPolicy
 {
@@ -1064,7 +1064,7 @@ public partial class V1beta1ObjectReplicationSpecInitProviderRulesSourceContaine
 }
 
 /// <summary>Reference to a Container in storage to populate sourceContainerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecInitProviderRulesSourceContainerNameRef
 {
@@ -1083,7 +1083,7 @@ public partial class V1beta1ObjectReplicationSpecInitProviderRulesSourceContaine
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecInitProviderRulesSourceContainerNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ObjectReplicationSpecInitProviderRulesSourceContainerNameSelectorPolicyResolutionEnum
 {
@@ -1099,7 +1099,7 @@ public enum V1beta1ObjectReplicationSpecInitProviderRulesSourceContainerNameSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecInitProviderRulesSourceContainerNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ObjectReplicationSpecInitProviderRulesSourceContainerNameSelectorPolicyResolveEnum
 {
@@ -1110,7 +1110,7 @@ public enum V1beta1ObjectReplicationSpecInitProviderRulesSourceContainerNameSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecInitProviderRulesSourceContainerNameSelectorPolicy
 {
@@ -1134,7 +1134,7 @@ public partial class V1beta1ObjectReplicationSpecInitProviderRulesSourceContaine
 }
 
 /// <summary>Selector for a Container in storage to populate sourceContainerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecInitProviderRulesSourceContainerNameSelector
 {
@@ -1154,7 +1154,7 @@ public partial class V1beta1ObjectReplicationSpecInitProviderRulesSourceContaine
     public V1beta1ObjectReplicationSpecInitProviderRulesSourceContainerNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecInitProviderRules
 {
@@ -1197,7 +1197,7 @@ public partial class V1beta1ObjectReplicationSpecInitProviderRules
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecInitProviderSourceStorageAccountIdRefPolicyResolutionEnum>))]
 public enum V1beta1ObjectReplicationSpecInitProviderSourceStorageAccountIdRefPolicyResolutionEnum
 {
@@ -1213,7 +1213,7 @@ public enum V1beta1ObjectReplicationSpecInitProviderSourceStorageAccountIdRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecInitProviderSourceStorageAccountIdRefPolicyResolveEnum>))]
 public enum V1beta1ObjectReplicationSpecInitProviderSourceStorageAccountIdRefPolicyResolveEnum
 {
@@ -1224,7 +1224,7 @@ public enum V1beta1ObjectReplicationSpecInitProviderSourceStorageAccountIdRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecInitProviderSourceStorageAccountIdRefPolicy
 {
@@ -1248,7 +1248,7 @@ public partial class V1beta1ObjectReplicationSpecInitProviderSourceStorageAccoun
 }
 
 /// <summary>Reference to a Account in storage to populate sourceStorageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecInitProviderSourceStorageAccountIdRef
 {
@@ -1267,7 +1267,7 @@ public partial class V1beta1ObjectReplicationSpecInitProviderSourceStorageAccoun
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecInitProviderSourceStorageAccountIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ObjectReplicationSpecInitProviderSourceStorageAccountIdSelectorPolicyResolutionEnum
 {
@@ -1283,7 +1283,7 @@ public enum V1beta1ObjectReplicationSpecInitProviderSourceStorageAccountIdSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecInitProviderSourceStorageAccountIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ObjectReplicationSpecInitProviderSourceStorageAccountIdSelectorPolicyResolveEnum
 {
@@ -1294,7 +1294,7 @@ public enum V1beta1ObjectReplicationSpecInitProviderSourceStorageAccountIdSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecInitProviderSourceStorageAccountIdSelectorPolicy
 {
@@ -1318,7 +1318,7 @@ public partial class V1beta1ObjectReplicationSpecInitProviderSourceStorageAccoun
 }
 
 /// <summary>Selector for a Account in storage to populate sourceStorageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecInitProviderSourceStorageAccountIdSelector
 {
@@ -1350,7 +1350,7 @@ public partial class V1beta1ObjectReplicationSpecInitProviderSourceStorageAccoun
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecInitProvider
 {
@@ -1387,7 +1387,7 @@ public partial class V1beta1ObjectReplicationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecManagementPoliciesEnum>))]
 public enum V1beta1ObjectReplicationSpecManagementPoliciesEnum
 {
@@ -1411,7 +1411,7 @@ public enum V1beta1ObjectReplicationSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1ObjectReplicationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1427,7 +1427,7 @@ public enum V1beta1ObjectReplicationSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectReplicationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1ObjectReplicationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1438,7 +1438,7 @@ public enum V1beta1ObjectReplicationSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecProviderConfigRefPolicy
 {
@@ -1466,7 +1466,7 @@ public partial class V1beta1ObjectReplicationSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecProviderConfigRef
 {
@@ -1485,7 +1485,7 @@ public partial class V1beta1ObjectReplicationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpecWriteConnectionSecretToRef
 {
@@ -1499,7 +1499,7 @@ public partial class V1beta1ObjectReplicationSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ObjectReplicationSpec defines the desired state of ObjectReplication</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationSpec
 {
@@ -1566,7 +1566,7 @@ public partial class V1beta1ObjectReplicationSpec
     public V1beta1ObjectReplicationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationStatusAtProviderRules
 {
@@ -1590,7 +1590,7 @@ public partial class V1beta1ObjectReplicationStatusAtProviderRules
     public string? SourceContainerName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationStatusAtProvider
 {
@@ -1620,7 +1620,7 @@ public partial class V1beta1ObjectReplicationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationStatusConditions
 {
@@ -1663,7 +1663,7 @@ public partial class V1beta1ObjectReplicationStatusConditions
 }
 
 /// <summary>ObjectReplicationStatus defines the observed state of ObjectReplication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectReplicationStatus
 {
@@ -1684,7 +1684,7 @@ public partial class V1beta1ObjectReplicationStatus
 }
 
 /// <summary>ObjectReplication is the Schema for the ObjectReplications API. Copy Block Blobs between a source storage account and a destination account</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ObjectReplication : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ObjectReplicationSpec>, IStatus<V1beta1ObjectReplicationStatus?>

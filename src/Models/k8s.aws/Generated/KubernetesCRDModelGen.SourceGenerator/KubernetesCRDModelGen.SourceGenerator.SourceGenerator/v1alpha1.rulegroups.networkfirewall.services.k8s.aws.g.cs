@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.networkfirewall.services.k8s.aws;
 /// <summary>RuleGroup is the Schema for the RuleGroups API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1RuleGroupList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1RuleGroup>
@@ -37,7 +37,7 @@ public partial class V1alpha1RuleGroupList : IKubernetesObject<V1ListMeta>, IIte
 }
 
 /// <summary>A complex type that contains settings for encryption of your rule group resources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecEncryptionConfiguration
 {
@@ -64,7 +64,7 @@ public partial class V1alpha1RuleGroupSpecEncryptionConfiguration
 /// and resource groups (https://docs.aws.amazon.com/network-firewall/latest/developerguide/rule-groups-ip-set-references.html#rule-groups-referencing-resource-groups)
 /// in IP set references.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroupReferenceSetsIpSetReferences
 {
@@ -73,7 +73,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroupReferenceSetsIpSetReferences
 }
 
 /// <summary>Contains a set of IP set references.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroupReferenceSets
 {
@@ -85,7 +85,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroupReferenceSets
 /// A list of IP addresses and address ranges, in CIDR notation. This is part
 /// of a RuleVariables.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroupRuleVariablesIpSets
 {
@@ -94,7 +94,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroupRuleVariablesIpSets
 }
 
 /// <summary>A set of port ranges for use in the rules in a rule group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroupRuleVariablesPortSets
 {
@@ -106,7 +106,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroupRuleVariablesPortSets
 /// Settings that are available for use in the rules in the RuleGroup where this
 /// is defined.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroupRuleVariables
 {
@@ -131,7 +131,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroupRuleVariables
 /// list rule groups in Network Firewall (https://docs.aws.amazon.com/network-firewall/latest/developerguide/stateful-rule-groups-domain-names.html)
 /// in the Network Firewall Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceRulesSourceList
 {
@@ -150,7 +150,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceRulesSourceList
 /// in stateful traffic flow inspection. Traffic flows that match the criteria
 /// are a match for the corresponding StatefulRule.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatefulRulesHeader
 {
@@ -177,7 +177,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatefulRulesHeade
 /// Additional settings for a stateful rule. This is part of the StatefulRule
 /// configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatefulRulesRuleOptions
 {
@@ -194,7 +194,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatefulRulesRuleO
 /// destination, ports, direction, and rule options. For information about the
 /// Suricata Rules format, see Rules Format (https://suricata.readthedocs.io/en/suricata-6.0.9/rules/intro.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatefulRules
 {
@@ -225,7 +225,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatefulRules
 /// Custom Metrics (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/publishingMetrics.html#usingDimensions)
 /// in the Amazon CloudWatch User Guide (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionsActionDefinitionPublishMetricActionDimensions
 {
@@ -238,7 +238,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndC
 /// CloudWatch for the matching packet. This setting defines a CloudWatch dimension
 /// value to be published.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionsActionDefinitionPublishMetricAction
 {
@@ -250,7 +250,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndC
 /// A custom action to use in stateless rule actions settings. This is used in
 /// CustomAction.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionsActionDefinition
 {
@@ -283,7 +283,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndC
 ///     specify what to do with packets that don&apos;t match any of the policy&apos;s stateless
 ///     rules.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActions
 {
@@ -303,7 +303,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndC
 /// port ranges in the stateless rule MatchAttributes, SourcePorts, and DestinationPorts
 /// settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRulesRuleDefinitionMatchAttributesDestinationPorts
 {
@@ -318,7 +318,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndC
 /// A single IP address specification. This is used in the MatchAttributes source
 /// and destination specifications.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRulesRuleDefinitionMatchAttributesDestinations
 {
@@ -331,7 +331,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndC
 /// port ranges in the stateless rule MatchAttributes, SourcePorts, and DestinationPorts
 /// settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRulesRuleDefinitionMatchAttributesSourcePorts
 {
@@ -346,7 +346,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndC
 /// A single IP address specification. This is used in the MatchAttributes source
 /// and destination specifications.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRulesRuleDefinitionMatchAttributesSources
 {
@@ -358,7 +358,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndC
 /// TCP flags and masks to inspect packets for, used in stateless rules MatchAttributes
 /// settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRulesRuleDefinitionMatchAttributesTcpFlags
 {
@@ -374,7 +374,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndC
 /// rule inspection. Each match attributes set can include one or more items
 /// such as IP address, CIDR range, port number, protocol, and TCP flags.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRulesRuleDefinitionMatchAttributes
 {
@@ -402,7 +402,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndC
 /// inspects each packet for the specified matching criteria. When a packet matches
 /// the criteria, Network Firewall performs the rule&apos;s actions on the packet.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRulesRuleDefinition
 {
@@ -419,7 +419,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndC
 }
 
 /// <summary>A single stateless rule. This is used in StatelessRulesAndCustomActions.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRules
 {
@@ -439,7 +439,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndC
 /// Stateless inspection criteria. Each stateless rule group uses exactly one
 /// of these data types to define its stateless rules.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndCustomActions
 {
@@ -455,7 +455,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroupRulesSourceStatelessRulesAndC
 /// Each rule group requires a single RulesSource. You can use an instance of
 /// this for either stateless rules or stateful rules.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroupRulesSource
 {
@@ -494,7 +494,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroupRulesSource
 /// Additional options governing how Network Firewall handles the rule group.
 /// You can only use these for stateful rule groups.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroupStatefulRuleOptions
 {
@@ -508,7 +508,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroupStatefulRuleOptions
 /// You must provide either this rule group setting or a Rules setting, but not
 /// both.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRuleGroup
 {
@@ -544,7 +544,7 @@ public partial class V1alpha1RuleGroupSpecRuleGroup
 /// rule group is copied from. You can use the metadata to keep track of updates
 /// made to the originating rule group.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecSourceMetadata
 {
@@ -562,7 +562,7 @@ public partial class V1alpha1RuleGroupSpecSourceMetadata
 /// that category (such as &quot;test,&quot; &quot;development,&quot; or &quot;production&quot;). You can add
 /// up to 50 tags to each Amazon Web Services resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecTags
 {
@@ -589,7 +589,7 @@ public partial class V1alpha1RuleGroupSpecTags
 /// from more than one firewall policy, and you can use a firewall policy in
 /// more than one firewall.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpec
 {
@@ -736,7 +736,7 @@ public partial class V1alpha1RuleGroupSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupStatusAckResourceMetadata
 {
@@ -773,7 +773,7 @@ public partial class V1alpha1RuleGroupStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupStatusConditions
 {
@@ -808,7 +808,7 @@ public partial class V1alpha1RuleGroupStatusConditions
 /// to properly process traffic, the service includes the rule in a list of analysis
 /// results.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupStatusRuleGroupResponseAnalysisResults
 {
@@ -832,7 +832,7 @@ public partial class V1alpha1RuleGroupStatusRuleGroupResponseAnalysisResults
 /// rest with Amazon Web Services Key Managment Service (https://docs.aws.amazon.com/kms/latest/developerguide/kms-encryption-at-rest.html)
 /// in the Network Firewall Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupStatusRuleGroupResponseEncryptionConfiguration
 {
@@ -849,7 +849,7 @@ public partial class V1alpha1RuleGroupStatusRuleGroupResponseEncryptionConfigura
 /// to the originating rule group. You can retrieve all objects for a rule group
 /// by calling DescribeRuleGroup (https://docs.aws.amazon.com/network-firewall/latest/APIReference/API_DescribeRuleGroup.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupStatusRuleGroupResponseSourceMetadata
 {
@@ -867,7 +867,7 @@ public partial class V1alpha1RuleGroupStatusRuleGroupResponseSourceMetadata
 /// that category (such as &quot;test,&quot; &quot;development,&quot; or &quot;production&quot;). You can add
 /// up to 50 tags to each Amazon Web Services resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupStatusRuleGroupResponseTags
 {
@@ -883,7 +883,7 @@ public partial class V1alpha1RuleGroupStatusRuleGroupResponseTags
 /// define the rule group. You can retrieve all objects for a rule group by calling
 /// DescribeRuleGroup.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupStatusRuleGroupResponse
 {
@@ -950,7 +950,7 @@ public partial class V1alpha1RuleGroupStatusRuleGroupResponse
 }
 
 /// <summary>RuleGroupStatus defines the observed state of RuleGroup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupStatus
 {
@@ -998,7 +998,7 @@ public partial class V1alpha1RuleGroupStatus
 }
 
 /// <summary>RuleGroup is the Schema for the RuleGroups API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1RuleGroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1RuleGroupSpec?>, IStatus<V1alpha1RuleGroupStatus?>

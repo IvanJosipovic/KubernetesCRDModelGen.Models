@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cloudplatform.gcp.m.upbound.io;
 /// <summary>ServiceAccountKey is the Schema for the ServiceAccountKeys API. Allows management of a Google Cloud Platform service account Key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ServiceAccountKeyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ServiceAccountKey>
@@ -42,7 +42,7 @@ public partial class V1beta1ServiceAccountKeyList : IKubernetesObject<V1ListMeta
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAccountKeySpecForProviderServiceAccountIdRefPolicyResolutionEnum>))]
 public enum V1beta1ServiceAccountKeySpecForProviderServiceAccountIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1ServiceAccountKeySpecForProviderServiceAccountIdRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAccountKeySpecForProviderServiceAccountIdRefPolicyResolveEnum>))]
 public enum V1beta1ServiceAccountKeySpecForProviderServiceAccountIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1ServiceAccountKeySpecForProviderServiceAccountIdRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAccountKeySpecForProviderServiceAccountIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1ServiceAccountKeySpecForProviderServiceAccountIdRefP
 }
 
 /// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAccountKeySpecForProviderServiceAccountIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1ServiceAccountKeySpecForProviderServiceAccountIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAccountKeySpecForProviderServiceAccountIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ServiceAccountKeySpecForProviderServiceAccountIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1ServiceAccountKeySpecForProviderServiceAccountIdSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAccountKeySpecForProviderServiceAccountIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ServiceAccountKeySpecForProviderServiceAccountIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1ServiceAccountKeySpecForProviderServiceAccountIdSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAccountKeySpecForProviderServiceAccountIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1ServiceAccountKeySpecForProviderServiceAccountIdSele
 }
 
 /// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAccountKeySpecForProviderServiceAccountIdSelector
 {
@@ -191,7 +191,7 @@ public partial class V1beta1ServiceAccountKeySpecForProviderServiceAccountIdSele
     public V1beta1ServiceAccountKeySpecForProviderServiceAccountIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAccountKeySpecForProvider
 {
@@ -246,7 +246,7 @@ public partial class V1beta1ServiceAccountKeySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAccountKeySpecInitProviderServiceAccountIdRefPolicyResolutionEnum>))]
 public enum V1beta1ServiceAccountKeySpecInitProviderServiceAccountIdRefPolicyResolutionEnum
 {
@@ -262,7 +262,7 @@ public enum V1beta1ServiceAccountKeySpecInitProviderServiceAccountIdRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAccountKeySpecInitProviderServiceAccountIdRefPolicyResolveEnum>))]
 public enum V1beta1ServiceAccountKeySpecInitProviderServiceAccountIdRefPolicyResolveEnum
 {
@@ -273,7 +273,7 @@ public enum V1beta1ServiceAccountKeySpecInitProviderServiceAccountIdRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAccountKeySpecInitProviderServiceAccountIdRefPolicy
 {
@@ -297,7 +297,7 @@ public partial class V1beta1ServiceAccountKeySpecInitProviderServiceAccountIdRef
 }
 
 /// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAccountKeySpecInitProviderServiceAccountIdRef
 {
@@ -320,7 +320,7 @@ public partial class V1beta1ServiceAccountKeySpecInitProviderServiceAccountIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAccountKeySpecInitProviderServiceAccountIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ServiceAccountKeySpecInitProviderServiceAccountIdSelectorPolicyResolutionEnum
 {
@@ -336,7 +336,7 @@ public enum V1beta1ServiceAccountKeySpecInitProviderServiceAccountIdSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAccountKeySpecInitProviderServiceAccountIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ServiceAccountKeySpecInitProviderServiceAccountIdSelectorPolicyResolveEnum
 {
@@ -347,7 +347,7 @@ public enum V1beta1ServiceAccountKeySpecInitProviderServiceAccountIdSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAccountKeySpecInitProviderServiceAccountIdSelectorPolicy
 {
@@ -371,7 +371,7 @@ public partial class V1beta1ServiceAccountKeySpecInitProviderServiceAccountIdSel
 }
 
 /// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAccountKeySpecInitProviderServiceAccountIdSelector
 {
@@ -407,7 +407,7 @@ public partial class V1beta1ServiceAccountKeySpecInitProviderServiceAccountIdSel
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAccountKeySpecInitProvider
 {
@@ -460,7 +460,7 @@ public partial class V1beta1ServiceAccountKeySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServiceAccountKeySpecManagementPoliciesEnum>))]
 public enum V1beta1ServiceAccountKeySpecManagementPoliciesEnum
 {
@@ -483,7 +483,7 @@ public enum V1beta1ServiceAccountKeySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAccountKeySpecProviderConfigRef
 {
@@ -502,7 +502,7 @@ public partial class V1beta1ServiceAccountKeySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAccountKeySpecWriteConnectionSecretToRef
 {
@@ -512,7 +512,7 @@ public partial class V1beta1ServiceAccountKeySpecWriteConnectionSecretToRef
 }
 
 /// <summary>ServiceAccountKeySpec defines the desired state of ServiceAccountKey</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAccountKeySpec
 {
@@ -563,7 +563,7 @@ public partial class V1beta1ServiceAccountKeySpec
     public V1beta1ServiceAccountKeySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAccountKeyStatusAtProvider
 {
@@ -628,7 +628,7 @@ public partial class V1beta1ServiceAccountKeyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAccountKeyStatusConditions
 {
@@ -671,7 +671,7 @@ public partial class V1beta1ServiceAccountKeyStatusConditions
 }
 
 /// <summary>ServiceAccountKeyStatus defines the observed state of ServiceAccountKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceAccountKeyStatus
 {
@@ -692,7 +692,7 @@ public partial class V1beta1ServiceAccountKeyStatus
 }
 
 /// <summary>ServiceAccountKey is the Schema for the ServiceAccountKeys API. Allows management of a Google Cloud Platform service account Key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ServiceAccountKey : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ServiceAccountKeySpec>, IStatus<V1beta1ServiceAccountKeyStatus?>

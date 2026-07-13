@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.actions.github.upbound.io;
 /// <summary>RepositoryPermissions is the Schema for the RepositoryPermissionss API. Enables and manages Actions permissions for a GitHub repository</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1RepositoryPermissionsList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1RepositoryPermissions>
@@ -45,7 +45,7 @@ public partial class V1alpha1RepositoryPermissionsList : IKubernetesObject<V1Lis
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryPermissionsSpecDeletionPolicyEnum>))]
 public enum V1alpha1RepositoryPermissionsSpecDeletionPolicyEnum
 {
@@ -55,7 +55,7 @@ public enum V1alpha1RepositoryPermissionsSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryPermissionsSpecForProviderAllowedActionsConfig
 {
@@ -87,7 +87,7 @@ public partial class V1alpha1RepositoryPermissionsSpecForProviderAllowedActionsC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryPermissionsSpecForProviderRepositoryRefPolicyResolutionEnum>))]
 public enum V1alpha1RepositoryPermissionsSpecForProviderRepositoryRefPolicyResolutionEnum
 {
@@ -103,7 +103,7 @@ public enum V1alpha1RepositoryPermissionsSpecForProviderRepositoryRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryPermissionsSpecForProviderRepositoryRefPolicyResolveEnum>))]
 public enum V1alpha1RepositoryPermissionsSpecForProviderRepositoryRefPolicyResolveEnum
 {
@@ -114,7 +114,7 @@ public enum V1alpha1RepositoryPermissionsSpecForProviderRepositoryRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryPermissionsSpecForProviderRepositoryRefPolicy
 {
@@ -138,7 +138,7 @@ public partial class V1alpha1RepositoryPermissionsSpecForProviderRepositoryRefPo
 }
 
 /// <summary>Reference to a Repository in repo to populate repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryPermissionsSpecForProviderRepositoryRef
 {
@@ -157,7 +157,7 @@ public partial class V1alpha1RepositoryPermissionsSpecForProviderRepositoryRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryPermissionsSpecForProviderRepositorySelectorPolicyResolutionEnum>))]
 public enum V1alpha1RepositoryPermissionsSpecForProviderRepositorySelectorPolicyResolutionEnum
 {
@@ -173,7 +173,7 @@ public enum V1alpha1RepositoryPermissionsSpecForProviderRepositorySelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryPermissionsSpecForProviderRepositorySelectorPolicyResolveEnum>))]
 public enum V1alpha1RepositoryPermissionsSpecForProviderRepositorySelectorPolicyResolveEnum
 {
@@ -184,7 +184,7 @@ public enum V1alpha1RepositoryPermissionsSpecForProviderRepositorySelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryPermissionsSpecForProviderRepositorySelectorPolicy
 {
@@ -208,7 +208,7 @@ public partial class V1alpha1RepositoryPermissionsSpecForProviderRepositorySelec
 }
 
 /// <summary>Selector for a Repository in repo to populate repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryPermissionsSpecForProviderRepositorySelector
 {
@@ -228,7 +228,7 @@ public partial class V1alpha1RepositoryPermissionsSpecForProviderRepositorySelec
     public V1alpha1RepositoryPermissionsSpecForProviderRepositorySelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryPermissionsSpecForProvider
 {
@@ -269,7 +269,7 @@ public partial class V1alpha1RepositoryPermissionsSpecForProvider
     public V1alpha1RepositoryPermissionsSpecForProviderRepositorySelector? RepositorySelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryPermissionsSpecInitProviderAllowedActionsConfig
 {
@@ -301,7 +301,7 @@ public partial class V1alpha1RepositoryPermissionsSpecInitProviderAllowedActions
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryPermissionsSpecInitProviderRepositoryRefPolicyResolutionEnum>))]
 public enum V1alpha1RepositoryPermissionsSpecInitProviderRepositoryRefPolicyResolutionEnum
 {
@@ -317,7 +317,7 @@ public enum V1alpha1RepositoryPermissionsSpecInitProviderRepositoryRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryPermissionsSpecInitProviderRepositoryRefPolicyResolveEnum>))]
 public enum V1alpha1RepositoryPermissionsSpecInitProviderRepositoryRefPolicyResolveEnum
 {
@@ -328,7 +328,7 @@ public enum V1alpha1RepositoryPermissionsSpecInitProviderRepositoryRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryPermissionsSpecInitProviderRepositoryRefPolicy
 {
@@ -352,7 +352,7 @@ public partial class V1alpha1RepositoryPermissionsSpecInitProviderRepositoryRefP
 }
 
 /// <summary>Reference to a Repository in repo to populate repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryPermissionsSpecInitProviderRepositoryRef
 {
@@ -371,7 +371,7 @@ public partial class V1alpha1RepositoryPermissionsSpecInitProviderRepositoryRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryPermissionsSpecInitProviderRepositorySelectorPolicyResolutionEnum>))]
 public enum V1alpha1RepositoryPermissionsSpecInitProviderRepositorySelectorPolicyResolutionEnum
 {
@@ -387,7 +387,7 @@ public enum V1alpha1RepositoryPermissionsSpecInitProviderRepositorySelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryPermissionsSpecInitProviderRepositorySelectorPolicyResolveEnum>))]
 public enum V1alpha1RepositoryPermissionsSpecInitProviderRepositorySelectorPolicyResolveEnum
 {
@@ -398,7 +398,7 @@ public enum V1alpha1RepositoryPermissionsSpecInitProviderRepositorySelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryPermissionsSpecInitProviderRepositorySelectorPolicy
 {
@@ -422,7 +422,7 @@ public partial class V1alpha1RepositoryPermissionsSpecInitProviderRepositorySele
 }
 
 /// <summary>Selector for a Repository in repo to populate repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryPermissionsSpecInitProviderRepositorySelector
 {
@@ -454,7 +454,7 @@ public partial class V1alpha1RepositoryPermissionsSpecInitProviderRepositorySele
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryPermissionsSpecInitProvider
 {
@@ -499,7 +499,7 @@ public partial class V1alpha1RepositoryPermissionsSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryPermissionsSpecManagementPoliciesEnum>))]
 public enum V1alpha1RepositoryPermissionsSpecManagementPoliciesEnum
 {
@@ -523,7 +523,7 @@ public enum V1alpha1RepositoryPermissionsSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryPermissionsSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1alpha1RepositoryPermissionsSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -539,7 +539,7 @@ public enum V1alpha1RepositoryPermissionsSpecProviderConfigRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryPermissionsSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1alpha1RepositoryPermissionsSpecProviderConfigRefPolicyResolveEnum
 {
@@ -550,7 +550,7 @@ public enum V1alpha1RepositoryPermissionsSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryPermissionsSpecProviderConfigRefPolicy
 {
@@ -578,7 +578,7 @@ public partial class V1alpha1RepositoryPermissionsSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryPermissionsSpecProviderConfigRef
 {
@@ -597,7 +597,7 @@ public partial class V1alpha1RepositoryPermissionsSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryPermissionsSpecWriteConnectionSecretToRef
 {
@@ -611,7 +611,7 @@ public partial class V1alpha1RepositoryPermissionsSpecWriteConnectionSecretToRef
 }
 
 /// <summary>RepositoryPermissionsSpec defines the desired state of RepositoryPermissions</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryPermissionsSpec
 {
@@ -678,7 +678,7 @@ public partial class V1alpha1RepositoryPermissionsSpec
     public V1alpha1RepositoryPermissionsSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryPermissionsStatusAtProviderAllowedActionsConfig
 {
@@ -704,7 +704,7 @@ public partial class V1alpha1RepositoryPermissionsStatusAtProviderAllowedActions
     public bool? VerifiedAllowed { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryPermissionsStatusAtProvider
 {
@@ -741,7 +741,7 @@ public partial class V1alpha1RepositoryPermissionsStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryPermissionsStatusConditions
 {
@@ -784,7 +784,7 @@ public partial class V1alpha1RepositoryPermissionsStatusConditions
 }
 
 /// <summary>RepositoryPermissionsStatus defines the observed state of RepositoryPermissions.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryPermissionsStatus
 {
@@ -805,7 +805,7 @@ public partial class V1alpha1RepositoryPermissionsStatus
 }
 
 /// <summary>RepositoryPermissions is the Schema for the RepositoryPermissionss API. Enables and manages Actions permissions for a GitHub repository</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1RepositoryPermissions : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1RepositoryPermissionsSpec>, IStatus<V1alpha1RepositoryPermissionsStatus?>

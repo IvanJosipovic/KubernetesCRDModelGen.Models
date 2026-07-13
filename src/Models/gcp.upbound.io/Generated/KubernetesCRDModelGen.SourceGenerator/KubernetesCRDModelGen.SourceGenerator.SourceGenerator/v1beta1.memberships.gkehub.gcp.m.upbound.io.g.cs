@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.gkehub.gcp.m.upbound.io;
 /// <summary>Membership is the Schema for the Memberships API. Membership contains information about a member cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MembershipList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Membership>
@@ -42,7 +42,7 @@ public partial class V1beta1MembershipList : IKubernetesObject<V1ListMeta>, IIte
 /// https://cloud.google.com/kubernetes-engine/docs/how-to/workload-identity
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipSpecForProviderAuthority
 {
@@ -60,7 +60,7 @@ public partial class V1beta1MembershipSpecForProviderAuthority
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MembershipSpecForProviderEndpointGkeClusterResourceLinkRefPolicyResolutionEnum>))]
 public enum V1beta1MembershipSpecForProviderEndpointGkeClusterResourceLinkRefPolicyResolutionEnum
 {
@@ -76,7 +76,7 @@ public enum V1beta1MembershipSpecForProviderEndpointGkeClusterResourceLinkRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MembershipSpecForProviderEndpointGkeClusterResourceLinkRefPolicyResolveEnum>))]
 public enum V1beta1MembershipSpecForProviderEndpointGkeClusterResourceLinkRefPolicyResolveEnum
 {
@@ -87,7 +87,7 @@ public enum V1beta1MembershipSpecForProviderEndpointGkeClusterResourceLinkRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipSpecForProviderEndpointGkeClusterResourceLinkRefPolicy
 {
@@ -111,7 +111,7 @@ public partial class V1beta1MembershipSpecForProviderEndpointGkeClusterResourceL
 }
 
 /// <summary>Reference to a Cluster in container to populate resourceLink.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipSpecForProviderEndpointGkeClusterResourceLinkRef
 {
@@ -134,7 +134,7 @@ public partial class V1beta1MembershipSpecForProviderEndpointGkeClusterResourceL
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MembershipSpecForProviderEndpointGkeClusterResourceLinkSelectorPolicyResolutionEnum>))]
 public enum V1beta1MembershipSpecForProviderEndpointGkeClusterResourceLinkSelectorPolicyResolutionEnum
 {
@@ -150,7 +150,7 @@ public enum V1beta1MembershipSpecForProviderEndpointGkeClusterResourceLinkSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MembershipSpecForProviderEndpointGkeClusterResourceLinkSelectorPolicyResolveEnum>))]
 public enum V1beta1MembershipSpecForProviderEndpointGkeClusterResourceLinkSelectorPolicyResolveEnum
 {
@@ -161,7 +161,7 @@ public enum V1beta1MembershipSpecForProviderEndpointGkeClusterResourceLinkSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipSpecForProviderEndpointGkeClusterResourceLinkSelectorPolicy
 {
@@ -185,7 +185,7 @@ public partial class V1beta1MembershipSpecForProviderEndpointGkeClusterResourceL
 }
 
 /// <summary>Selector for a Cluster in container to populate resourceLink.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipSpecForProviderEndpointGkeClusterResourceLinkSelector
 {
@@ -213,7 +213,7 @@ public partial class V1beta1MembershipSpecForProviderEndpointGkeClusterResourceL
 /// If this Membership is a Kubernetes API server hosted on GKE, this is a self link to its GCP resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipSpecForProviderEndpointGkeCluster
 {
@@ -239,7 +239,7 @@ public partial class V1beta1MembershipSpecForProviderEndpointGkeCluster
 /// If this Membership is a Kubernetes API server hosted on GKE, this is a self link to its GCP resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipSpecForProviderEndpoint
 {
@@ -251,7 +251,7 @@ public partial class V1beta1MembershipSpecForProviderEndpoint
     public V1beta1MembershipSpecForProviderEndpointGkeCluster? GkeCluster { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipSpecForProvider
 {
@@ -296,7 +296,7 @@ public partial class V1beta1MembershipSpecForProvider
 /// https://cloud.google.com/kubernetes-engine/docs/how-to/workload-identity
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipSpecInitProviderAuthority
 {
@@ -314,7 +314,7 @@ public partial class V1beta1MembershipSpecInitProviderAuthority
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MembershipSpecInitProviderEndpointGkeClusterResourceLinkRefPolicyResolutionEnum>))]
 public enum V1beta1MembershipSpecInitProviderEndpointGkeClusterResourceLinkRefPolicyResolutionEnum
 {
@@ -330,7 +330,7 @@ public enum V1beta1MembershipSpecInitProviderEndpointGkeClusterResourceLinkRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MembershipSpecInitProviderEndpointGkeClusterResourceLinkRefPolicyResolveEnum>))]
 public enum V1beta1MembershipSpecInitProviderEndpointGkeClusterResourceLinkRefPolicyResolveEnum
 {
@@ -341,7 +341,7 @@ public enum V1beta1MembershipSpecInitProviderEndpointGkeClusterResourceLinkRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipSpecInitProviderEndpointGkeClusterResourceLinkRefPolicy
 {
@@ -365,7 +365,7 @@ public partial class V1beta1MembershipSpecInitProviderEndpointGkeClusterResource
 }
 
 /// <summary>Reference to a Cluster in container to populate resourceLink.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipSpecInitProviderEndpointGkeClusterResourceLinkRef
 {
@@ -388,7 +388,7 @@ public partial class V1beta1MembershipSpecInitProviderEndpointGkeClusterResource
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MembershipSpecInitProviderEndpointGkeClusterResourceLinkSelectorPolicyResolutionEnum>))]
 public enum V1beta1MembershipSpecInitProviderEndpointGkeClusterResourceLinkSelectorPolicyResolutionEnum
 {
@@ -404,7 +404,7 @@ public enum V1beta1MembershipSpecInitProviderEndpointGkeClusterResourceLinkSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MembershipSpecInitProviderEndpointGkeClusterResourceLinkSelectorPolicyResolveEnum>))]
 public enum V1beta1MembershipSpecInitProviderEndpointGkeClusterResourceLinkSelectorPolicyResolveEnum
 {
@@ -415,7 +415,7 @@ public enum V1beta1MembershipSpecInitProviderEndpointGkeClusterResourceLinkSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipSpecInitProviderEndpointGkeClusterResourceLinkSelectorPolicy
 {
@@ -439,7 +439,7 @@ public partial class V1beta1MembershipSpecInitProviderEndpointGkeClusterResource
 }
 
 /// <summary>Selector for a Cluster in container to populate resourceLink.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipSpecInitProviderEndpointGkeClusterResourceLinkSelector
 {
@@ -467,7 +467,7 @@ public partial class V1beta1MembershipSpecInitProviderEndpointGkeClusterResource
 /// If this Membership is a Kubernetes API server hosted on GKE, this is a self link to its GCP resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipSpecInitProviderEndpointGkeCluster
 {
@@ -493,7 +493,7 @@ public partial class V1beta1MembershipSpecInitProviderEndpointGkeCluster
 /// If this Membership is a Kubernetes API server hosted on GKE, this is a self link to its GCP resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipSpecInitProviderEndpoint
 {
@@ -517,7 +517,7 @@ public partial class V1beta1MembershipSpecInitProviderEndpoint
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipSpecInitProvider
 {
@@ -553,7 +553,7 @@ public partial class V1beta1MembershipSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MembershipSpecManagementPoliciesEnum>))]
 public enum V1beta1MembershipSpecManagementPoliciesEnum
 {
@@ -576,7 +576,7 @@ public enum V1beta1MembershipSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipSpecProviderConfigRef
 {
@@ -595,7 +595,7 @@ public partial class V1beta1MembershipSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipSpecWriteConnectionSecretToRef
 {
@@ -605,7 +605,7 @@ public partial class V1beta1MembershipSpecWriteConnectionSecretToRef
 }
 
 /// <summary>MembershipSpec defines the desired state of Membership</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipSpec
 {
@@ -662,7 +662,7 @@ public partial class V1beta1MembershipSpec
 /// https://cloud.google.com/kubernetes-engine/docs/how-to/workload-identity
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipStatusAtProviderAuthority
 {
@@ -678,7 +678,7 @@ public partial class V1beta1MembershipStatusAtProviderAuthority
 /// If this Membership is a Kubernetes API server hosted on GKE, this is a self link to its GCP resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipStatusAtProviderEndpointGkeCluster
 {
@@ -696,7 +696,7 @@ public partial class V1beta1MembershipStatusAtProviderEndpointGkeCluster
 /// If this Membership is a Kubernetes API server hosted on GKE, this is a self link to its GCP resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipStatusAtProviderEndpoint
 {
@@ -708,7 +708,7 @@ public partial class V1beta1MembershipStatusAtProviderEndpoint
     public V1beta1MembershipStatusAtProviderEndpointGkeCluster? GkeCluster { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipStatusAtProvider
 {
@@ -767,7 +767,7 @@ public partial class V1beta1MembershipStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipStatusConditions
 {
@@ -810,7 +810,7 @@ public partial class V1beta1MembershipStatusConditions
 }
 
 /// <summary>MembershipStatus defines the observed state of Membership.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MembershipStatus
 {
@@ -831,7 +831,7 @@ public partial class V1beta1MembershipStatus
 }
 
 /// <summary>Membership is the Schema for the Memberships API. Membership contains information about a member cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Membership : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MembershipSpec>, IStatus<V1beta1MembershipStatus?>

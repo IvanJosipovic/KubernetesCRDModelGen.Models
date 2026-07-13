@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datafactory.azure.upbound.io;
 /// <summary>TriggerCustomEvent is the Schema for the TriggerCustomEvents API. Manages a Custom Event Trigger inside an Azure Data Factory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TriggerCustomEventList : IKubernetesObject<V1ListMeta>, IItems<V1beta1TriggerCustomEvent>
@@ -45,7 +45,7 @@ public partial class V1beta1TriggerCustomEventList : IKubernetesObject<V1ListMet
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerCustomEventSpecDeletionPolicyEnum>))]
 public enum V1beta1TriggerCustomEventSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1TriggerCustomEventSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerCustomEventSpecForProviderDataFactoryIdRefPolicyResolutionEnum>))]
 public enum V1beta1TriggerCustomEventSpecForProviderDataFactoryIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1TriggerCustomEventSpecForProviderDataFactoryIdRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerCustomEventSpecForProviderDataFactoryIdRefPolicyResolveEnum>))]
 public enum V1beta1TriggerCustomEventSpecForProviderDataFactoryIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1TriggerCustomEventSpecForProviderDataFactoryIdRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecForProviderDataFactoryIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1TriggerCustomEventSpecForProviderDataFactoryIdRefPol
 }
 
 /// <summary>Reference to a Factory in datafactory to populate dataFactoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecForProviderDataFactoryIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1TriggerCustomEventSpecForProviderDataFactoryIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerCustomEventSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1TriggerCustomEventSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1TriggerCustomEventSpecForProviderDataFactoryIdSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerCustomEventSpecForProviderDataFactoryIdSelectorPolicyResolveEnum>))]
 public enum V1beta1TriggerCustomEventSpecForProviderDataFactoryIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1TriggerCustomEventSpecForProviderDataFactoryIdSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecForProviderDataFactoryIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1TriggerCustomEventSpecForProviderDataFactoryIdSelect
 }
 
 /// <summary>Selector for a Factory in datafactory to populate dataFactoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecForProviderDataFactoryIdSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1TriggerCustomEventSpecForProviderDataFactoryIdSelect
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerCustomEventSpecForProviderEventgridTopicIdRefPolicyResolutionEnum>))]
 public enum V1beta1TriggerCustomEventSpecForProviderEventgridTopicIdRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1TriggerCustomEventSpecForProviderEventgridTopicIdRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerCustomEventSpecForProviderEventgridTopicIdRefPolicyResolveEnum>))]
 public enum V1beta1TriggerCustomEventSpecForProviderEventgridTopicIdRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1TriggerCustomEventSpecForProviderEventgridTopicIdRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecForProviderEventgridTopicIdRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1TriggerCustomEventSpecForProviderEventgridTopicIdRef
 }
 
 /// <summary>Reference to a Topic in eventgrid to populate eventgridTopicId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecForProviderEventgridTopicIdRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1TriggerCustomEventSpecForProviderEventgridTopicIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerCustomEventSpecForProviderEventgridTopicIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1TriggerCustomEventSpecForProviderEventgridTopicIdSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1TriggerCustomEventSpecForProviderEventgridTopicIdSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerCustomEventSpecForProviderEventgridTopicIdSelectorPolicyResolveEnum>))]
 public enum V1beta1TriggerCustomEventSpecForProviderEventgridTopicIdSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1TriggerCustomEventSpecForProviderEventgridTopicIdSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecForProviderEventgridTopicIdSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1TriggerCustomEventSpecForProviderEventgridTopicIdSel
 }
 
 /// <summary>Selector for a Topic in eventgrid to populate eventgridTopicId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecForProviderEventgridTopicIdSelector
 {
@@ -355,7 +355,7 @@ public partial class V1beta1TriggerCustomEventSpecForProviderEventgridTopicIdSel
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerCustomEventSpecForProviderPipelineNameRefPolicyResolutionEnum>))]
 public enum V1beta1TriggerCustomEventSpecForProviderPipelineNameRefPolicyResolutionEnum
 {
@@ -371,7 +371,7 @@ public enum V1beta1TriggerCustomEventSpecForProviderPipelineNameRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerCustomEventSpecForProviderPipelineNameRefPolicyResolveEnum>))]
 public enum V1beta1TriggerCustomEventSpecForProviderPipelineNameRefPolicyResolveEnum
 {
@@ -382,7 +382,7 @@ public enum V1beta1TriggerCustomEventSpecForProviderPipelineNameRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecForProviderPipelineNameRefPolicy
 {
@@ -406,7 +406,7 @@ public partial class V1beta1TriggerCustomEventSpecForProviderPipelineNameRefPoli
 }
 
 /// <summary>Reference to a Pipeline in datafactory to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecForProviderPipelineNameRef
 {
@@ -425,7 +425,7 @@ public partial class V1beta1TriggerCustomEventSpecForProviderPipelineNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerCustomEventSpecForProviderPipelineNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1TriggerCustomEventSpecForProviderPipelineNameSelectorPolicyResolutionEnum
 {
@@ -441,7 +441,7 @@ public enum V1beta1TriggerCustomEventSpecForProviderPipelineNameSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerCustomEventSpecForProviderPipelineNameSelectorPolicyResolveEnum>))]
 public enum V1beta1TriggerCustomEventSpecForProviderPipelineNameSelectorPolicyResolveEnum
 {
@@ -452,7 +452,7 @@ public enum V1beta1TriggerCustomEventSpecForProviderPipelineNameSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecForProviderPipelineNameSelectorPolicy
 {
@@ -476,7 +476,7 @@ public partial class V1beta1TriggerCustomEventSpecForProviderPipelineNameSelecto
 }
 
 /// <summary>Selector for a Pipeline in datafactory to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecForProviderPipelineNameSelector
 {
@@ -496,7 +496,7 @@ public partial class V1beta1TriggerCustomEventSpecForProviderPipelineNameSelecto
     public V1beta1TriggerCustomEventSpecForProviderPipelineNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecForProviderPipeline
 {
@@ -517,7 +517,7 @@ public partial class V1beta1TriggerCustomEventSpecForProviderPipeline
     public IDictionary<string, string>? Parameters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecForProvider
 {
@@ -584,7 +584,7 @@ public partial class V1beta1TriggerCustomEventSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerCustomEventSpecInitProviderEventgridTopicIdRefPolicyResolutionEnum>))]
 public enum V1beta1TriggerCustomEventSpecInitProviderEventgridTopicIdRefPolicyResolutionEnum
 {
@@ -600,7 +600,7 @@ public enum V1beta1TriggerCustomEventSpecInitProviderEventgridTopicIdRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerCustomEventSpecInitProviderEventgridTopicIdRefPolicyResolveEnum>))]
 public enum V1beta1TriggerCustomEventSpecInitProviderEventgridTopicIdRefPolicyResolveEnum
 {
@@ -611,7 +611,7 @@ public enum V1beta1TriggerCustomEventSpecInitProviderEventgridTopicIdRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecInitProviderEventgridTopicIdRefPolicy
 {
@@ -635,7 +635,7 @@ public partial class V1beta1TriggerCustomEventSpecInitProviderEventgridTopicIdRe
 }
 
 /// <summary>Reference to a Topic in eventgrid to populate eventgridTopicId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecInitProviderEventgridTopicIdRef
 {
@@ -654,7 +654,7 @@ public partial class V1beta1TriggerCustomEventSpecInitProviderEventgridTopicIdRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerCustomEventSpecInitProviderEventgridTopicIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1TriggerCustomEventSpecInitProviderEventgridTopicIdSelectorPolicyResolutionEnum
 {
@@ -670,7 +670,7 @@ public enum V1beta1TriggerCustomEventSpecInitProviderEventgridTopicIdSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerCustomEventSpecInitProviderEventgridTopicIdSelectorPolicyResolveEnum>))]
 public enum V1beta1TriggerCustomEventSpecInitProviderEventgridTopicIdSelectorPolicyResolveEnum
 {
@@ -681,7 +681,7 @@ public enum V1beta1TriggerCustomEventSpecInitProviderEventgridTopicIdSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecInitProviderEventgridTopicIdSelectorPolicy
 {
@@ -705,7 +705,7 @@ public partial class V1beta1TriggerCustomEventSpecInitProviderEventgridTopicIdSe
 }
 
 /// <summary>Selector for a Topic in eventgrid to populate eventgridTopicId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecInitProviderEventgridTopicIdSelector
 {
@@ -731,7 +731,7 @@ public partial class V1beta1TriggerCustomEventSpecInitProviderEventgridTopicIdSe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerCustomEventSpecInitProviderPipelineNameRefPolicyResolutionEnum>))]
 public enum V1beta1TriggerCustomEventSpecInitProviderPipelineNameRefPolicyResolutionEnum
 {
@@ -747,7 +747,7 @@ public enum V1beta1TriggerCustomEventSpecInitProviderPipelineNameRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerCustomEventSpecInitProviderPipelineNameRefPolicyResolveEnum>))]
 public enum V1beta1TriggerCustomEventSpecInitProviderPipelineNameRefPolicyResolveEnum
 {
@@ -758,7 +758,7 @@ public enum V1beta1TriggerCustomEventSpecInitProviderPipelineNameRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecInitProviderPipelineNameRefPolicy
 {
@@ -782,7 +782,7 @@ public partial class V1beta1TriggerCustomEventSpecInitProviderPipelineNameRefPol
 }
 
 /// <summary>Reference to a Pipeline in datafactory to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecInitProviderPipelineNameRef
 {
@@ -801,7 +801,7 @@ public partial class V1beta1TriggerCustomEventSpecInitProviderPipelineNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerCustomEventSpecInitProviderPipelineNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1TriggerCustomEventSpecInitProviderPipelineNameSelectorPolicyResolutionEnum
 {
@@ -817,7 +817,7 @@ public enum V1beta1TriggerCustomEventSpecInitProviderPipelineNameSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerCustomEventSpecInitProviderPipelineNameSelectorPolicyResolveEnum>))]
 public enum V1beta1TriggerCustomEventSpecInitProviderPipelineNameSelectorPolicyResolveEnum
 {
@@ -828,7 +828,7 @@ public enum V1beta1TriggerCustomEventSpecInitProviderPipelineNameSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecInitProviderPipelineNameSelectorPolicy
 {
@@ -852,7 +852,7 @@ public partial class V1beta1TriggerCustomEventSpecInitProviderPipelineNameSelect
 }
 
 /// <summary>Selector for a Pipeline in datafactory to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecInitProviderPipelineNameSelector
 {
@@ -872,7 +872,7 @@ public partial class V1beta1TriggerCustomEventSpecInitProviderPipelineNameSelect
     public V1beta1TriggerCustomEventSpecInitProviderPipelineNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecInitProviderPipeline
 {
@@ -905,7 +905,7 @@ public partial class V1beta1TriggerCustomEventSpecInitProviderPipeline
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecInitProvider
 {
@@ -958,7 +958,7 @@ public partial class V1beta1TriggerCustomEventSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerCustomEventSpecManagementPoliciesEnum>))]
 public enum V1beta1TriggerCustomEventSpecManagementPoliciesEnum
 {
@@ -982,7 +982,7 @@ public enum V1beta1TriggerCustomEventSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerCustomEventSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1TriggerCustomEventSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -998,7 +998,7 @@ public enum V1beta1TriggerCustomEventSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerCustomEventSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1TriggerCustomEventSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1009,7 +1009,7 @@ public enum V1beta1TriggerCustomEventSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecProviderConfigRefPolicy
 {
@@ -1037,7 +1037,7 @@ public partial class V1beta1TriggerCustomEventSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecProviderConfigRef
 {
@@ -1056,7 +1056,7 @@ public partial class V1beta1TriggerCustomEventSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpecWriteConnectionSecretToRef
 {
@@ -1070,7 +1070,7 @@ public partial class V1beta1TriggerCustomEventSpecWriteConnectionSecretToRef
 }
 
 /// <summary>TriggerCustomEventSpec defines the desired state of TriggerCustomEvent</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventSpec
 {
@@ -1137,7 +1137,7 @@ public partial class V1beta1TriggerCustomEventSpec
     public V1beta1TriggerCustomEventSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventStatusAtProviderPipeline
 {
@@ -1150,7 +1150,7 @@ public partial class V1beta1TriggerCustomEventStatusAtProviderPipeline
     public IDictionary<string, string>? Parameters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventStatusAtProvider
 {
@@ -1200,7 +1200,7 @@ public partial class V1beta1TriggerCustomEventStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventStatusConditions
 {
@@ -1243,7 +1243,7 @@ public partial class V1beta1TriggerCustomEventStatusConditions
 }
 
 /// <summary>TriggerCustomEventStatus defines the observed state of TriggerCustomEvent.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerCustomEventStatus
 {
@@ -1264,7 +1264,7 @@ public partial class V1beta1TriggerCustomEventStatus
 }
 
 /// <summary>TriggerCustomEvent is the Schema for the TriggerCustomEvents API. Manages a Custom Event Trigger inside an Azure Data Factory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TriggerCustomEvent : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1TriggerCustomEventSpec>, IStatus<V1beta1TriggerCustomEventStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.s3.aws.upbound.io;
 /// <summary>BucketInventory is the Schema for the BucketInventorys API. Provides a S3 bucket inventory configuration resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2BucketInventoryList : IKubernetesObject<V1ListMeta>, IItems<V1beta2BucketInventory>
@@ -45,7 +45,7 @@ public partial class V1beta2BucketInventoryList : IKubernetesObject<V1ListMeta>,
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketInventorySpecDeletionPolicyEnum>))]
 public enum V1beta2BucketInventorySpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2BucketInventorySpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketInventorySpecForProviderBucketRefPolicyResolutionEnum>))]
 public enum V1beta2BucketInventorySpecForProviderBucketRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2BucketInventorySpecForProviderBucketRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketInventorySpecForProviderBucketRefPolicyResolveEnum>))]
 public enum V1beta2BucketInventorySpecForProviderBucketRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2BucketInventorySpecForProviderBucketRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecForProviderBucketRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2BucketInventorySpecForProviderBucketRefPolicy
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecForProviderBucketRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta2BucketInventorySpecForProviderBucketRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketInventorySpecForProviderBucketSelectorPolicyResolutionEnum>))]
 public enum V1beta2BucketInventorySpecForProviderBucketSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2BucketInventorySpecForProviderBucketSelectorPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketInventorySpecForProviderBucketSelectorPolicyResolveEnum>))]
 public enum V1beta2BucketInventorySpecForProviderBucketSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2BucketInventorySpecForProviderBucketSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecForProviderBucketSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2BucketInventorySpecForProviderBucketSelectorPolicy
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecForProviderBucketSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta2BucketInventorySpecForProviderBucketSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketInventorySpecForProviderDestinationBucketBucketArnRefPolicyResolutionEnum>))]
 public enum V1beta2BucketInventorySpecForProviderDestinationBucketBucketArnRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta2BucketInventorySpecForProviderDestinationBucketBucketArnRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketInventorySpecForProviderDestinationBucketBucketArnRefPolicyResolveEnum>))]
 public enum V1beta2BucketInventorySpecForProviderDestinationBucketBucketArnRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta2BucketInventorySpecForProviderDestinationBucketBucketArnRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecForProviderDestinationBucketBucketArnRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta2BucketInventorySpecForProviderDestinationBucketBucke
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecForProviderDestinationBucketBucketArnRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta2BucketInventorySpecForProviderDestinationBucketBucke
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketInventorySpecForProviderDestinationBucketBucketArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2BucketInventorySpecForProviderDestinationBucketBucketArnSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta2BucketInventorySpecForProviderDestinationBucketBucketArnSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketInventorySpecForProviderDestinationBucketBucketArnSelectorPolicyResolveEnum>))]
 public enum V1beta2BucketInventorySpecForProviderDestinationBucketBucketArnSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta2BucketInventorySpecForProviderDestinationBucketBucketArnSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecForProviderDestinationBucketBucketArnSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta2BucketInventorySpecForProviderDestinationBucketBucke
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecForProviderDestinationBucketBucketArnSelector
 {
@@ -350,7 +350,7 @@ public partial class V1beta2BucketInventorySpecForProviderDestinationBucketBucke
 }
 
 /// <summary>Specifies to use server-side encryption with AWS KMS-managed keys to encrypt the inventory file (documented below).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecForProviderDestinationBucketEncryptionSseKms
 {
@@ -360,14 +360,14 @@ public partial class V1beta2BucketInventorySpecForProviderDestinationBucketEncry
 }
 
 /// <summary>Specifies to use server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecForProviderDestinationBucketEncryptionSseS3
 {
 }
 
 /// <summary>Contains the type of server-side encryption to use to encrypt the inventory (documented below).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecForProviderDestinationBucketEncryption
 {
@@ -381,7 +381,7 @@ public partial class V1beta2BucketInventorySpecForProviderDestinationBucketEncry
 }
 
 /// <summary>Name of the source bucket that inventory lists the objects for.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecForProviderDestinationBucket
 {
@@ -415,7 +415,7 @@ public partial class V1beta2BucketInventorySpecForProviderDestinationBucket
 }
 
 /// <summary>Contains information about where to publish the inventory results (documented below).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecForProviderDestination
 {
@@ -425,7 +425,7 @@ public partial class V1beta2BucketInventorySpecForProviderDestination
 }
 
 /// <summary>Specifies an inventory filter. The inventory only includes objects that meet the filter&apos;s criteria (documented below).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecForProviderFilter
 {
@@ -435,7 +435,7 @@ public partial class V1beta2BucketInventorySpecForProviderFilter
 }
 
 /// <summary>Specifies the schedule for generating inventory results (documented below).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecForProviderSchedule
 {
@@ -444,7 +444,7 @@ public partial class V1beta2BucketInventorySpecForProviderSchedule
     public string? Frequency { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecForProvider
 {
@@ -502,7 +502,7 @@ public partial class V1beta2BucketInventorySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketInventorySpecInitProviderBucketRefPolicyResolutionEnum>))]
 public enum V1beta2BucketInventorySpecInitProviderBucketRefPolicyResolutionEnum
 {
@@ -518,7 +518,7 @@ public enum V1beta2BucketInventorySpecInitProviderBucketRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketInventorySpecInitProviderBucketRefPolicyResolveEnum>))]
 public enum V1beta2BucketInventorySpecInitProviderBucketRefPolicyResolveEnum
 {
@@ -529,7 +529,7 @@ public enum V1beta2BucketInventorySpecInitProviderBucketRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecInitProviderBucketRefPolicy
 {
@@ -553,7 +553,7 @@ public partial class V1beta2BucketInventorySpecInitProviderBucketRefPolicy
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecInitProviderBucketRef
 {
@@ -572,7 +572,7 @@ public partial class V1beta2BucketInventorySpecInitProviderBucketRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketInventorySpecInitProviderBucketSelectorPolicyResolutionEnum>))]
 public enum V1beta2BucketInventorySpecInitProviderBucketSelectorPolicyResolutionEnum
 {
@@ -588,7 +588,7 @@ public enum V1beta2BucketInventorySpecInitProviderBucketSelectorPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketInventorySpecInitProviderBucketSelectorPolicyResolveEnum>))]
 public enum V1beta2BucketInventorySpecInitProviderBucketSelectorPolicyResolveEnum
 {
@@ -599,7 +599,7 @@ public enum V1beta2BucketInventorySpecInitProviderBucketSelectorPolicyResolveEnu
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecInitProviderBucketSelectorPolicy
 {
@@ -623,7 +623,7 @@ public partial class V1beta2BucketInventorySpecInitProviderBucketSelectorPolicy
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecInitProviderBucketSelector
 {
@@ -649,7 +649,7 @@ public partial class V1beta2BucketInventorySpecInitProviderBucketSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketInventorySpecInitProviderDestinationBucketBucketArnRefPolicyResolutionEnum>))]
 public enum V1beta2BucketInventorySpecInitProviderDestinationBucketBucketArnRefPolicyResolutionEnum
 {
@@ -665,7 +665,7 @@ public enum V1beta2BucketInventorySpecInitProviderDestinationBucketBucketArnRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketInventorySpecInitProviderDestinationBucketBucketArnRefPolicyResolveEnum>))]
 public enum V1beta2BucketInventorySpecInitProviderDestinationBucketBucketArnRefPolicyResolveEnum
 {
@@ -676,7 +676,7 @@ public enum V1beta2BucketInventorySpecInitProviderDestinationBucketBucketArnRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecInitProviderDestinationBucketBucketArnRefPolicy
 {
@@ -700,7 +700,7 @@ public partial class V1beta2BucketInventorySpecInitProviderDestinationBucketBuck
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecInitProviderDestinationBucketBucketArnRef
 {
@@ -719,7 +719,7 @@ public partial class V1beta2BucketInventorySpecInitProviderDestinationBucketBuck
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketInventorySpecInitProviderDestinationBucketBucketArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2BucketInventorySpecInitProviderDestinationBucketBucketArnSelectorPolicyResolutionEnum
 {
@@ -735,7 +735,7 @@ public enum V1beta2BucketInventorySpecInitProviderDestinationBucketBucketArnSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketInventorySpecInitProviderDestinationBucketBucketArnSelectorPolicyResolveEnum>))]
 public enum V1beta2BucketInventorySpecInitProviderDestinationBucketBucketArnSelectorPolicyResolveEnum
 {
@@ -746,7 +746,7 @@ public enum V1beta2BucketInventorySpecInitProviderDestinationBucketBucketArnSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecInitProviderDestinationBucketBucketArnSelectorPolicy
 {
@@ -770,7 +770,7 @@ public partial class V1beta2BucketInventorySpecInitProviderDestinationBucketBuck
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecInitProviderDestinationBucketBucketArnSelector
 {
@@ -791,7 +791,7 @@ public partial class V1beta2BucketInventorySpecInitProviderDestinationBucketBuck
 }
 
 /// <summary>Specifies to use server-side encryption with AWS KMS-managed keys to encrypt the inventory file (documented below).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecInitProviderDestinationBucketEncryptionSseKms
 {
@@ -801,14 +801,14 @@ public partial class V1beta2BucketInventorySpecInitProviderDestinationBucketEncr
 }
 
 /// <summary>Specifies to use server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecInitProviderDestinationBucketEncryptionSseS3
 {
 }
 
 /// <summary>Contains the type of server-side encryption to use to encrypt the inventory (documented below).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecInitProviderDestinationBucketEncryption
 {
@@ -822,7 +822,7 @@ public partial class V1beta2BucketInventorySpecInitProviderDestinationBucketEncr
 }
 
 /// <summary>Name of the source bucket that inventory lists the objects for.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecInitProviderDestinationBucket
 {
@@ -856,7 +856,7 @@ public partial class V1beta2BucketInventorySpecInitProviderDestinationBucket
 }
 
 /// <summary>Contains information about where to publish the inventory results (documented below).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecInitProviderDestination
 {
@@ -866,7 +866,7 @@ public partial class V1beta2BucketInventorySpecInitProviderDestination
 }
 
 /// <summary>Specifies an inventory filter. The inventory only includes objects that meet the filter&apos;s criteria (documented below).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecInitProviderFilter
 {
@@ -876,7 +876,7 @@ public partial class V1beta2BucketInventorySpecInitProviderFilter
 }
 
 /// <summary>Specifies the schedule for generating inventory results (documented below).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecInitProviderSchedule
 {
@@ -897,7 +897,7 @@ public partial class V1beta2BucketInventorySpecInitProviderSchedule
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecInitProvider
 {
@@ -946,7 +946,7 @@ public partial class V1beta2BucketInventorySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketInventorySpecManagementPoliciesEnum>))]
 public enum V1beta2BucketInventorySpecManagementPoliciesEnum
 {
@@ -970,7 +970,7 @@ public enum V1beta2BucketInventorySpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketInventorySpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2BucketInventorySpecProviderConfigRefPolicyResolutionEnum
 {
@@ -986,7 +986,7 @@ public enum V1beta2BucketInventorySpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketInventorySpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2BucketInventorySpecProviderConfigRefPolicyResolveEnum
 {
@@ -997,7 +997,7 @@ public enum V1beta2BucketInventorySpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecProviderConfigRefPolicy
 {
@@ -1025,7 +1025,7 @@ public partial class V1beta2BucketInventorySpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecProviderConfigRef
 {
@@ -1044,7 +1044,7 @@ public partial class V1beta2BucketInventorySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecWriteConnectionSecretToRef
 {
@@ -1058,7 +1058,7 @@ public partial class V1beta2BucketInventorySpecWriteConnectionSecretToRef
 }
 
 /// <summary>BucketInventorySpec defines the desired state of BucketInventory</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpec
 {
@@ -1126,7 +1126,7 @@ public partial class V1beta2BucketInventorySpec
 }
 
 /// <summary>Specifies to use server-side encryption with AWS KMS-managed keys to encrypt the inventory file (documented below).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventoryStatusAtProviderDestinationBucketEncryptionSseKms
 {
@@ -1136,14 +1136,14 @@ public partial class V1beta2BucketInventoryStatusAtProviderDestinationBucketEncr
 }
 
 /// <summary>Specifies to use server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventoryStatusAtProviderDestinationBucketEncryptionSseS3
 {
 }
 
 /// <summary>Contains the type of server-side encryption to use to encrypt the inventory (documented below).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventoryStatusAtProviderDestinationBucketEncryption
 {
@@ -1157,7 +1157,7 @@ public partial class V1beta2BucketInventoryStatusAtProviderDestinationBucketEncr
 }
 
 /// <summary>Name of the source bucket that inventory lists the objects for.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventoryStatusAtProviderDestinationBucket
 {
@@ -1183,7 +1183,7 @@ public partial class V1beta2BucketInventoryStatusAtProviderDestinationBucket
 }
 
 /// <summary>Contains information about where to publish the inventory results (documented below).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventoryStatusAtProviderDestination
 {
@@ -1193,7 +1193,7 @@ public partial class V1beta2BucketInventoryStatusAtProviderDestination
 }
 
 /// <summary>Specifies an inventory filter. The inventory only includes objects that meet the filter&apos;s criteria (documented below).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventoryStatusAtProviderFilter
 {
@@ -1203,7 +1203,7 @@ public partial class V1beta2BucketInventoryStatusAtProviderFilter
 }
 
 /// <summary>Specifies the schedule for generating inventory results (documented below).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventoryStatusAtProviderSchedule
 {
@@ -1212,7 +1212,7 @@ public partial class V1beta2BucketInventoryStatusAtProviderSchedule
     public string? Frequency { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventoryStatusAtProvider
 {
@@ -1260,7 +1260,7 @@ public partial class V1beta2BucketInventoryStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventoryStatusConditions
 {
@@ -1303,7 +1303,7 @@ public partial class V1beta2BucketInventoryStatusConditions
 }
 
 /// <summary>BucketInventoryStatus defines the observed state of BucketInventory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventoryStatus
 {
@@ -1324,7 +1324,7 @@ public partial class V1beta2BucketInventoryStatus
 }
 
 /// <summary>BucketInventory is the Schema for the BucketInventorys API. Provides a S3 bucket inventory configuration resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2BucketInventory : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2BucketInventorySpec>, IStatus<V1beta2BucketInventoryStatus?>

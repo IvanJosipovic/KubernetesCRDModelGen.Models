@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.apigateway.aws.upbound.io;
 /// <summary>DomainName is the Schema for the DomainNames API. Registers a custom domain name for use with AWS API Gateway.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2DomainNameList : IKubernetesObject<V1ListMeta>, IItems<V1beta2DomainName>
@@ -45,7 +45,7 @@ public partial class V1beta2DomainNameList : IKubernetesObject<V1ListMeta>, IIte
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DomainNameSpecDeletionPolicyEnum>))]
 public enum V1beta2DomainNameSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2DomainNameSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DomainNameSpecForProviderCertificateArnRefPolicyResolutionEnum>))]
 public enum V1beta2DomainNameSpecForProviderCertificateArnRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2DomainNameSpecForProviderCertificateArnRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DomainNameSpecForProviderCertificateArnRefPolicyResolveEnum>))]
 public enum V1beta2DomainNameSpecForProviderCertificateArnRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2DomainNameSpecForProviderCertificateArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecForProviderCertificateArnRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2DomainNameSpecForProviderCertificateArnRefPolicy
 }
 
 /// <summary>Reference to a CertificateValidation in acm to populate certificateArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecForProviderCertificateArnRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta2DomainNameSpecForProviderCertificateArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DomainNameSpecForProviderCertificateArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2DomainNameSpecForProviderCertificateArnSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2DomainNameSpecForProviderCertificateArnSelectorPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DomainNameSpecForProviderCertificateArnSelectorPolicyResolveEnum>))]
 public enum V1beta2DomainNameSpecForProviderCertificateArnSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2DomainNameSpecForProviderCertificateArnSelectorPolicyResolveE
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecForProviderCertificateArnSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2DomainNameSpecForProviderCertificateArnSelectorPolic
 }
 
 /// <summary>Selector for a CertificateValidation in acm to populate certificateArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecForProviderCertificateArnSelector
 {
@@ -203,7 +203,7 @@ public partial class V1beta2DomainNameSpecForProviderCertificateArnSelector
 }
 
 /// <summary>Private key associated with the domain certificate given in certificate_body. Only valid for EDGE endpoint configuration type. Conflicts with certificate_arn, regional_certificate_arn, and regional_certificate_name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecForProviderCertificatePrivateKeySecretRef
 {
@@ -221,7 +221,7 @@ public partial class V1beta2DomainNameSpecForProviderCertificatePrivateKeySecret
 }
 
 /// <summary>Configuration block defining API endpoint information including type. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecForProviderEndpointConfiguration
 {
@@ -235,7 +235,7 @@ public partial class V1beta2DomainNameSpecForProviderEndpointConfiguration
 }
 
 /// <summary>Mutual TLS authentication configuration for the domain name. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecForProviderMutualTlsAuthentication
 {
@@ -254,7 +254,7 @@ public partial class V1beta2DomainNameSpecForProviderMutualTlsAuthentication
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DomainNameSpecForProviderRegionalCertificateArnRefPolicyResolutionEnum>))]
 public enum V1beta2DomainNameSpecForProviderRegionalCertificateArnRefPolicyResolutionEnum
 {
@@ -270,7 +270,7 @@ public enum V1beta2DomainNameSpecForProviderRegionalCertificateArnRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DomainNameSpecForProviderRegionalCertificateArnRefPolicyResolveEnum>))]
 public enum V1beta2DomainNameSpecForProviderRegionalCertificateArnRefPolicyResolveEnum
 {
@@ -281,7 +281,7 @@ public enum V1beta2DomainNameSpecForProviderRegionalCertificateArnRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecForProviderRegionalCertificateArnRefPolicy
 {
@@ -305,7 +305,7 @@ public partial class V1beta2DomainNameSpecForProviderRegionalCertificateArnRefPo
 }
 
 /// <summary>Reference to a CertificateValidation in acm to populate regionalCertificateArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecForProviderRegionalCertificateArnRef
 {
@@ -324,7 +324,7 @@ public partial class V1beta2DomainNameSpecForProviderRegionalCertificateArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DomainNameSpecForProviderRegionalCertificateArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2DomainNameSpecForProviderRegionalCertificateArnSelectorPolicyResolutionEnum
 {
@@ -340,7 +340,7 @@ public enum V1beta2DomainNameSpecForProviderRegionalCertificateArnSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DomainNameSpecForProviderRegionalCertificateArnSelectorPolicyResolveEnum>))]
 public enum V1beta2DomainNameSpecForProviderRegionalCertificateArnSelectorPolicyResolveEnum
 {
@@ -351,7 +351,7 @@ public enum V1beta2DomainNameSpecForProviderRegionalCertificateArnSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecForProviderRegionalCertificateArnSelectorPolicy
 {
@@ -375,7 +375,7 @@ public partial class V1beta2DomainNameSpecForProviderRegionalCertificateArnSelec
 }
 
 /// <summary>Selector for a CertificateValidation in acm to populate regionalCertificateArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecForProviderRegionalCertificateArnSelector
 {
@@ -395,7 +395,7 @@ public partial class V1beta2DomainNameSpecForProviderRegionalCertificateArnSelec
     public V1beta2DomainNameSpecForProviderRegionalCertificateArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecForProvider
 {
@@ -493,7 +493,7 @@ public partial class V1beta2DomainNameSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DomainNameSpecInitProviderCertificateArnRefPolicyResolutionEnum>))]
 public enum V1beta2DomainNameSpecInitProviderCertificateArnRefPolicyResolutionEnum
 {
@@ -509,7 +509,7 @@ public enum V1beta2DomainNameSpecInitProviderCertificateArnRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DomainNameSpecInitProviderCertificateArnRefPolicyResolveEnum>))]
 public enum V1beta2DomainNameSpecInitProviderCertificateArnRefPolicyResolveEnum
 {
@@ -520,7 +520,7 @@ public enum V1beta2DomainNameSpecInitProviderCertificateArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecInitProviderCertificateArnRefPolicy
 {
@@ -544,7 +544,7 @@ public partial class V1beta2DomainNameSpecInitProviderCertificateArnRefPolicy
 }
 
 /// <summary>Reference to a CertificateValidation in acm to populate certificateArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecInitProviderCertificateArnRef
 {
@@ -563,7 +563,7 @@ public partial class V1beta2DomainNameSpecInitProviderCertificateArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DomainNameSpecInitProviderCertificateArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2DomainNameSpecInitProviderCertificateArnSelectorPolicyResolutionEnum
 {
@@ -579,7 +579,7 @@ public enum V1beta2DomainNameSpecInitProviderCertificateArnSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DomainNameSpecInitProviderCertificateArnSelectorPolicyResolveEnum>))]
 public enum V1beta2DomainNameSpecInitProviderCertificateArnSelectorPolicyResolveEnum
 {
@@ -590,7 +590,7 @@ public enum V1beta2DomainNameSpecInitProviderCertificateArnSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecInitProviderCertificateArnSelectorPolicy
 {
@@ -614,7 +614,7 @@ public partial class V1beta2DomainNameSpecInitProviderCertificateArnSelectorPoli
 }
 
 /// <summary>Selector for a CertificateValidation in acm to populate certificateArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecInitProviderCertificateArnSelector
 {
@@ -635,7 +635,7 @@ public partial class V1beta2DomainNameSpecInitProviderCertificateArnSelector
 }
 
 /// <summary>Private key associated with the domain certificate given in certificate_body. Only valid for EDGE endpoint configuration type. Conflicts with certificate_arn, regional_certificate_arn, and regional_certificate_name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecInitProviderCertificatePrivateKeySecretRef
 {
@@ -653,7 +653,7 @@ public partial class V1beta2DomainNameSpecInitProviderCertificatePrivateKeySecre
 }
 
 /// <summary>Configuration block defining API endpoint information including type. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecInitProviderEndpointConfiguration
 {
@@ -667,7 +667,7 @@ public partial class V1beta2DomainNameSpecInitProviderEndpointConfiguration
 }
 
 /// <summary>Mutual TLS authentication configuration for the domain name. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecInitProviderMutualTlsAuthentication
 {
@@ -686,7 +686,7 @@ public partial class V1beta2DomainNameSpecInitProviderMutualTlsAuthentication
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DomainNameSpecInitProviderRegionalCertificateArnRefPolicyResolutionEnum>))]
 public enum V1beta2DomainNameSpecInitProviderRegionalCertificateArnRefPolicyResolutionEnum
 {
@@ -702,7 +702,7 @@ public enum V1beta2DomainNameSpecInitProviderRegionalCertificateArnRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DomainNameSpecInitProviderRegionalCertificateArnRefPolicyResolveEnum>))]
 public enum V1beta2DomainNameSpecInitProviderRegionalCertificateArnRefPolicyResolveEnum
 {
@@ -713,7 +713,7 @@ public enum V1beta2DomainNameSpecInitProviderRegionalCertificateArnRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecInitProviderRegionalCertificateArnRefPolicy
 {
@@ -737,7 +737,7 @@ public partial class V1beta2DomainNameSpecInitProviderRegionalCertificateArnRefP
 }
 
 /// <summary>Reference to a CertificateValidation in acm to populate regionalCertificateArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecInitProviderRegionalCertificateArnRef
 {
@@ -756,7 +756,7 @@ public partial class V1beta2DomainNameSpecInitProviderRegionalCertificateArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DomainNameSpecInitProviderRegionalCertificateArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2DomainNameSpecInitProviderRegionalCertificateArnSelectorPolicyResolutionEnum
 {
@@ -772,7 +772,7 @@ public enum V1beta2DomainNameSpecInitProviderRegionalCertificateArnSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DomainNameSpecInitProviderRegionalCertificateArnSelectorPolicyResolveEnum>))]
 public enum V1beta2DomainNameSpecInitProviderRegionalCertificateArnSelectorPolicyResolveEnum
 {
@@ -783,7 +783,7 @@ public enum V1beta2DomainNameSpecInitProviderRegionalCertificateArnSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecInitProviderRegionalCertificateArnSelectorPolicy
 {
@@ -807,7 +807,7 @@ public partial class V1beta2DomainNameSpecInitProviderRegionalCertificateArnSele
 }
 
 /// <summary>Selector for a CertificateValidation in acm to populate regionalCertificateArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecInitProviderRegionalCertificateArnSelector
 {
@@ -839,7 +839,7 @@ public partial class V1beta2DomainNameSpecInitProviderRegionalCertificateArnSele
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecInitProvider
 {
@@ -928,7 +928,7 @@ public partial class V1beta2DomainNameSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DomainNameSpecManagementPoliciesEnum>))]
 public enum V1beta2DomainNameSpecManagementPoliciesEnum
 {
@@ -952,7 +952,7 @@ public enum V1beta2DomainNameSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DomainNameSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2DomainNameSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -968,7 +968,7 @@ public enum V1beta2DomainNameSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2DomainNameSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2DomainNameSpecProviderConfigRefPolicyResolveEnum
 {
@@ -979,7 +979,7 @@ public enum V1beta2DomainNameSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecProviderConfigRefPolicy
 {
@@ -1007,7 +1007,7 @@ public partial class V1beta2DomainNameSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecProviderConfigRef
 {
@@ -1026,7 +1026,7 @@ public partial class V1beta2DomainNameSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecWriteConnectionSecretToRef
 {
@@ -1040,7 +1040,7 @@ public partial class V1beta2DomainNameSpecWriteConnectionSecretToRef
 }
 
 /// <summary>DomainNameSpec defines the desired state of DomainName</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpec
 {
@@ -1108,7 +1108,7 @@ public partial class V1beta2DomainNameSpec
 }
 
 /// <summary>Configuration block defining API endpoint information including type. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameStatusAtProviderEndpointConfiguration
 {
@@ -1122,7 +1122,7 @@ public partial class V1beta2DomainNameStatusAtProviderEndpointConfiguration
 }
 
 /// <summary>Mutual TLS authentication configuration for the domain name. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameStatusAtProviderMutualTlsAuthentication
 {
@@ -1135,7 +1135,7 @@ public partial class V1beta2DomainNameStatusAtProviderMutualTlsAuthentication
     public string? TruststoreVersion { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameStatusAtProvider
 {
@@ -1244,7 +1244,7 @@ public partial class V1beta2DomainNameStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameStatusConditions
 {
@@ -1287,7 +1287,7 @@ public partial class V1beta2DomainNameStatusConditions
 }
 
 /// <summary>DomainNameStatus defines the observed state of DomainName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameStatus
 {
@@ -1308,7 +1308,7 @@ public partial class V1beta2DomainNameStatus
 }
 
 /// <summary>DomainName is the Schema for the DomainNames API. Registers a custom domain name for use with AWS API Gateway.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2DomainName : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2DomainNameSpec>, IStatus<V1beta2DomainNameStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.m.upbound.io;
 /// <summary>RegionNetworkEndpointGroup is the Schema for the RegionNetworkEndpointGroups API. A regional NEG that can support Serverless Products, proxying traffic to external backends and providing traffic to the PSC port mapping endpoints.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RegionNetworkEndpointGroupList : IKubernetesObject<V1ListMeta>, IItems<V1beta1RegionNetworkEndpointGroup>
@@ -41,7 +41,7 @@ public partial class V1beta1RegionNetworkEndpointGroupList : IKubernetesObject<V
 /// Only one of cloud_run, app_engine, cloud_function or serverless_deployment may be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderAppEngine
 {
@@ -80,7 +80,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderAppEngine
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecForProviderCloudFunctionFunctionRefPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecForProviderCloudFunctionFunctionRefPolicyResolutionEnum
 {
@@ -96,7 +96,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecForProviderCloudFunctionFunctio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecForProviderCloudFunctionFunctionRefPolicyResolveEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecForProviderCloudFunctionFunctionRefPolicyResolveEnum
 {
@@ -107,7 +107,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecForProviderCloudFunctionFunctio
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderCloudFunctionFunctionRefPolicy
 {
@@ -131,7 +131,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderCloudFuncti
 }
 
 /// <summary>Reference to a Function in cloudfunctions to populate function.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderCloudFunctionFunctionRef
 {
@@ -154,7 +154,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderCloudFuncti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecForProviderCloudFunctionFunctionSelectorPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecForProviderCloudFunctionFunctionSelectorPolicyResolutionEnum
 {
@@ -170,7 +170,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecForProviderCloudFunctionFunctio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecForProviderCloudFunctionFunctionSelectorPolicyResolveEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecForProviderCloudFunctionFunctionSelectorPolicyResolveEnum
 {
@@ -181,7 +181,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecForProviderCloudFunctionFunctio
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderCloudFunctionFunctionSelectorPolicy
 {
@@ -205,7 +205,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderCloudFuncti
 }
 
 /// <summary>Selector for a Function in cloudfunctions to populate function.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderCloudFunctionFunctionSelector
 {
@@ -234,7 +234,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderCloudFuncti
 /// Only one of cloud_run, app_engine, cloud_function or serverless_deployment may be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderCloudFunction
 {
@@ -272,7 +272,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderCloudFuncti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecForProviderCloudRunServiceRefPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecForProviderCloudRunServiceRefPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecForProviderCloudRunServiceRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecForProviderCloudRunServiceRefPolicyResolveEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecForProviderCloudRunServiceRefPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecForProviderCloudRunServiceRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderCloudRunServiceRefPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderCloudRunSer
 }
 
 /// <summary>Reference to a Service in cloudrun to populate service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderCloudRunServiceRef
 {
@@ -346,7 +346,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderCloudRunSer
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecForProviderCloudRunServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecForProviderCloudRunServiceSelectorPolicyResolutionEnum
 {
@@ -362,7 +362,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecForProviderCloudRunServiceSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecForProviderCloudRunServiceSelectorPolicyResolveEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecForProviderCloudRunServiceSelectorPolicyResolveEnum
 {
@@ -373,7 +373,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecForProviderCloudRunServiceSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderCloudRunServiceSelectorPolicy
 {
@@ -397,7 +397,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderCloudRunSer
 }
 
 /// <summary>Selector for a Service in cloudrun to populate service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderCloudRunServiceSelector
 {
@@ -426,7 +426,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderCloudRunSer
 /// Only one of cloud_run, app_engine, cloud_function or serverless_deployment may be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderCloudRun
 {
@@ -474,7 +474,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderCloudRun
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecForProviderNetworkRefPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecForProviderNetworkRefPolicyResolutionEnum
 {
@@ -490,7 +490,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecForProviderNetworkRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecForProviderNetworkRefPolicyResolveEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecForProviderNetworkRefPolicyResolveEnum
 {
@@ -501,7 +501,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecForProviderNetworkRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderNetworkRefPolicy
 {
@@ -525,7 +525,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderNetworkRefP
 }
 
 /// <summary>Reference to a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderNetworkRef
 {
@@ -548,7 +548,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderNetworkRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecForProviderNetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecForProviderNetworkSelectorPolicyResolutionEnum
 {
@@ -564,7 +564,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecForProviderNetworkSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecForProviderNetworkSelectorPolicyResolveEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecForProviderNetworkSelectorPolicyResolveEnum
 {
@@ -575,7 +575,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecForProviderNetworkSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderNetworkSelectorPolicy
 {
@@ -599,7 +599,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderNetworkSele
 }
 
 /// <summary>Selector for a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderNetworkSelector
 {
@@ -627,7 +627,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderNetworkSele
 /// This field is only used for PSC NEGs.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderPscData
 {
@@ -647,7 +647,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderPscData
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecForProviderPscTargetServiceRefPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecForProviderPscTargetServiceRefPolicyResolutionEnum
 {
@@ -663,7 +663,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecForProviderPscTargetServiceRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecForProviderPscTargetServiceRefPolicyResolveEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecForProviderPscTargetServiceRefPolicyResolveEnum
 {
@@ -674,7 +674,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecForProviderPscTargetServiceRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderPscTargetServiceRefPolicy
 {
@@ -698,7 +698,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderPscTargetSe
 }
 
 /// <summary>Reference to a ServiceAttachment in compute to populate pscTargetService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderPscTargetServiceRef
 {
@@ -721,7 +721,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderPscTargetSe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecForProviderPscTargetServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecForProviderPscTargetServiceSelectorPolicyResolutionEnum
 {
@@ -737,7 +737,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecForProviderPscTargetServiceSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecForProviderPscTargetServiceSelectorPolicyResolveEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecForProviderPscTargetServiceSelectorPolicyResolveEnum
 {
@@ -748,7 +748,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecForProviderPscTargetServiceSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderPscTargetServiceSelectorPolicy
 {
@@ -772,7 +772,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderPscTargetSe
 }
 
 /// <summary>Selector for a ServiceAttachment in compute to populate pscTargetService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderPscTargetServiceSelector
 {
@@ -802,7 +802,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderPscTargetSe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecForProviderSubnetworkRefPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecForProviderSubnetworkRefPolicyResolutionEnum
 {
@@ -818,7 +818,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecForProviderSubnetworkRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecForProviderSubnetworkRefPolicyResolveEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecForProviderSubnetworkRefPolicyResolveEnum
 {
@@ -829,7 +829,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecForProviderSubnetworkRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderSubnetworkRefPolicy
 {
@@ -853,7 +853,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderSubnetworkR
 }
 
 /// <summary>Reference to a Subnetwork in compute to populate subnetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderSubnetworkRef
 {
@@ -876,7 +876,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderSubnetworkR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecForProviderSubnetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecForProviderSubnetworkSelectorPolicyResolutionEnum
 {
@@ -892,7 +892,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecForProviderSubnetworkSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecForProviderSubnetworkSelectorPolicyResolveEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecForProviderSubnetworkSelectorPolicyResolveEnum
 {
@@ -903,7 +903,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecForProviderSubnetworkSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderSubnetworkSelectorPolicy
 {
@@ -927,7 +927,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderSubnetworkS
 }
 
 /// <summary>Selector for a Subnetwork in compute to populate subnetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderSubnetworkSelector
 {
@@ -951,7 +951,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProviderSubnetworkS
     public V1beta1RegionNetworkEndpointGroupSpecForProviderSubnetworkSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecForProvider
 {
@@ -1065,7 +1065,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecForProvider
 /// Only one of cloud_run, app_engine, cloud_function or serverless_deployment may be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderAppEngine
 {
@@ -1104,7 +1104,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderAppEngine
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudFunctionFunctionRefPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudFunctionFunctionRefPolicyResolutionEnum
 {
@@ -1120,7 +1120,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudFunctionFuncti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudFunctionFunctionRefPolicyResolveEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudFunctionFunctionRefPolicyResolveEnum
 {
@@ -1131,7 +1131,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudFunctionFuncti
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudFunctionFunctionRefPolicy
 {
@@ -1155,7 +1155,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudFunct
 }
 
 /// <summary>Reference to a Function in cloudfunctions to populate function.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudFunctionFunctionRef
 {
@@ -1178,7 +1178,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudFunct
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudFunctionFunctionSelectorPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudFunctionFunctionSelectorPolicyResolutionEnum
 {
@@ -1194,7 +1194,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudFunctionFuncti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudFunctionFunctionSelectorPolicyResolveEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudFunctionFunctionSelectorPolicyResolveEnum
 {
@@ -1205,7 +1205,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudFunctionFuncti
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudFunctionFunctionSelectorPolicy
 {
@@ -1229,7 +1229,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudFunct
 }
 
 /// <summary>Selector for a Function in cloudfunctions to populate function.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudFunctionFunctionSelector
 {
@@ -1258,7 +1258,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudFunct
 /// Only one of cloud_run, app_engine, cloud_function or serverless_deployment may be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudFunction
 {
@@ -1296,7 +1296,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudFunct
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudRunServiceRefPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudRunServiceRefPolicyResolutionEnum
 {
@@ -1312,7 +1312,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudRunServiceRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudRunServiceRefPolicyResolveEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudRunServiceRefPolicyResolveEnum
 {
@@ -1323,7 +1323,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudRunServiceRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudRunServiceRefPolicy
 {
@@ -1347,7 +1347,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudRunSe
 }
 
 /// <summary>Reference to a Service in cloudrun to populate service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudRunServiceRef
 {
@@ -1370,7 +1370,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudRunSe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudRunServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudRunServiceSelectorPolicyResolutionEnum
 {
@@ -1386,7 +1386,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudRunServiceSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudRunServiceSelectorPolicyResolveEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudRunServiceSelectorPolicyResolveEnum
 {
@@ -1397,7 +1397,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudRunServiceSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudRunServiceSelectorPolicy
 {
@@ -1421,7 +1421,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudRunSe
 }
 
 /// <summary>Selector for a Service in cloudrun to populate service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudRunServiceSelector
 {
@@ -1450,7 +1450,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudRunSe
 /// Only one of cloud_run, app_engine, cloud_function or serverless_deployment may be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudRun
 {
@@ -1498,7 +1498,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderCloudRun
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecInitProviderNetworkRefPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderNetworkRefPolicyResolutionEnum
 {
@@ -1514,7 +1514,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderNetworkRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecInitProviderNetworkRefPolicyResolveEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderNetworkRefPolicyResolveEnum
 {
@@ -1525,7 +1525,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderNetworkRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderNetworkRefPolicy
 {
@@ -1549,7 +1549,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderNetworkRef
 }
 
 /// <summary>Reference to a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderNetworkRef
 {
@@ -1572,7 +1572,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderNetworkRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecInitProviderNetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderNetworkSelectorPolicyResolutionEnum
 {
@@ -1588,7 +1588,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderNetworkSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecInitProviderNetworkSelectorPolicyResolveEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderNetworkSelectorPolicyResolveEnum
 {
@@ -1599,7 +1599,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderNetworkSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderNetworkSelectorPolicy
 {
@@ -1623,7 +1623,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderNetworkSel
 }
 
 /// <summary>Selector for a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderNetworkSelector
 {
@@ -1651,7 +1651,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderNetworkSel
 /// This field is only used for PSC NEGs.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderPscData
 {
@@ -1671,7 +1671,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderPscData
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecInitProviderPscTargetServiceRefPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderPscTargetServiceRefPolicyResolutionEnum
 {
@@ -1687,7 +1687,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderPscTargetServiceRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecInitProviderPscTargetServiceRefPolicyResolveEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderPscTargetServiceRefPolicyResolveEnum
 {
@@ -1698,7 +1698,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderPscTargetServiceRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderPscTargetServiceRefPolicy
 {
@@ -1722,7 +1722,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderPscTargetS
 }
 
 /// <summary>Reference to a ServiceAttachment in compute to populate pscTargetService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderPscTargetServiceRef
 {
@@ -1745,7 +1745,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderPscTargetS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecInitProviderPscTargetServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderPscTargetServiceSelectorPolicyResolutionEnum
 {
@@ -1761,7 +1761,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderPscTargetServiceSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecInitProviderPscTargetServiceSelectorPolicyResolveEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderPscTargetServiceSelectorPolicyResolveEnum
 {
@@ -1772,7 +1772,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderPscTargetServiceSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderPscTargetServiceSelectorPolicy
 {
@@ -1796,7 +1796,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderPscTargetS
 }
 
 /// <summary>Selector for a ServiceAttachment in compute to populate pscTargetService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderPscTargetServiceSelector
 {
@@ -1826,7 +1826,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderPscTargetS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecInitProviderSubnetworkRefPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderSubnetworkRefPolicyResolutionEnum
 {
@@ -1842,7 +1842,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderSubnetworkRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecInitProviderSubnetworkRefPolicyResolveEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderSubnetworkRefPolicyResolveEnum
 {
@@ -1853,7 +1853,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderSubnetworkRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderSubnetworkRefPolicy
 {
@@ -1877,7 +1877,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderSubnetwork
 }
 
 /// <summary>Reference to a Subnetwork in compute to populate subnetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderSubnetworkRef
 {
@@ -1900,7 +1900,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderSubnetwork
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecInitProviderSubnetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderSubnetworkSelectorPolicyResolutionEnum
 {
@@ -1916,7 +1916,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderSubnetworkSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecInitProviderSubnetworkSelectorPolicyResolveEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderSubnetworkSelectorPolicyResolveEnum
 {
@@ -1927,7 +1927,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecInitProviderSubnetworkSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderSubnetworkSelectorPolicy
 {
@@ -1951,7 +1951,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderSubnetwork
 }
 
 /// <summary>Selector for a Subnetwork in compute to populate subnetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderSubnetworkSelector
 {
@@ -1987,7 +1987,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProviderSubnetwork
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecInitProvider
 {
@@ -2096,7 +2096,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionNetworkEndpointGroupSpecManagementPoliciesEnum>))]
 public enum V1beta1RegionNetworkEndpointGroupSpecManagementPoliciesEnum
 {
@@ -2119,7 +2119,7 @@ public enum V1beta1RegionNetworkEndpointGroupSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecProviderConfigRef
 {
@@ -2138,7 +2138,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpecWriteConnectionSecretToRef
 {
@@ -2148,7 +2148,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpecWriteConnectionSecretT
 }
 
 /// <summary>RegionNetworkEndpointGroupSpec defines the desired state of RegionNetworkEndpointGroup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupSpec
 {
@@ -2204,7 +2204,7 @@ public partial class V1beta1RegionNetworkEndpointGroupSpec
 /// Only one of cloud_run, app_engine, cloud_function or serverless_deployment may be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupStatusAtProviderAppEngine
 {
@@ -2242,7 +2242,7 @@ public partial class V1beta1RegionNetworkEndpointGroupStatusAtProviderAppEngine
 /// Only one of cloud_run, app_engine, cloud_function or serverless_deployment may be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupStatusAtProviderCloudFunction
 {
@@ -2271,7 +2271,7 @@ public partial class V1beta1RegionNetworkEndpointGroupStatusAtProviderCloudFunct
 /// Only one of cloud_run, app_engine, cloud_function or serverless_deployment may be set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupStatusAtProviderCloudRun
 {
@@ -2309,7 +2309,7 @@ public partial class V1beta1RegionNetworkEndpointGroupStatusAtProviderCloudRun
 /// This field is only used for PSC NEGs.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupStatusAtProviderPscData
 {
@@ -2323,7 +2323,7 @@ public partial class V1beta1RegionNetworkEndpointGroupStatusAtProviderPscData
     public string? ProducerPort { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupStatusAtProvider
 {
@@ -2417,7 +2417,7 @@ public partial class V1beta1RegionNetworkEndpointGroupStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupStatusConditions
 {
@@ -2460,7 +2460,7 @@ public partial class V1beta1RegionNetworkEndpointGroupStatusConditions
 }
 
 /// <summary>RegionNetworkEndpointGroupStatus defines the observed state of RegionNetworkEndpointGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionNetworkEndpointGroupStatus
 {
@@ -2481,7 +2481,7 @@ public partial class V1beta1RegionNetworkEndpointGroupStatus
 }
 
 /// <summary>RegionNetworkEndpointGroup is the Schema for the RegionNetworkEndpointGroups API. A regional NEG that can support Serverless Products, proxying traffic to external backends and providing traffic to the PSC port mapping endpoints.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RegionNetworkEndpointGroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RegionNetworkEndpointGroupSpec>, IStatus<V1beta1RegionNetworkEndpointGroupStatus?>

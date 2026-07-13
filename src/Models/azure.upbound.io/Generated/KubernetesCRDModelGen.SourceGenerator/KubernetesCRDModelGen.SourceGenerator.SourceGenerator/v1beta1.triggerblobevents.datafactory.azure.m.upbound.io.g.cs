@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datafactory.azure.m.upbound.io;
 /// <summary>TriggerBlobEvent is the Schema for the TriggerBlobEvents API. Manages a Blob Event Trigger inside an Azure Data Factory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TriggerBlobEventList : IKubernetesObject<V1ListMeta>, IItems<V1beta1TriggerBlobEvent>
@@ -42,7 +42,7 @@ public partial class V1beta1TriggerBlobEventList : IKubernetesObject<V1ListMeta>
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerBlobEventSpecForProviderDataFactoryIdRefPolicyResolutionEnum>))]
 public enum V1beta1TriggerBlobEventSpecForProviderDataFactoryIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1TriggerBlobEventSpecForProviderDataFactoryIdRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerBlobEventSpecForProviderDataFactoryIdRefPolicyResolveEnum>))]
 public enum V1beta1TriggerBlobEventSpecForProviderDataFactoryIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1TriggerBlobEventSpecForProviderDataFactoryIdRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecForProviderDataFactoryIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1TriggerBlobEventSpecForProviderDataFactoryIdRefPolic
 }
 
 /// <summary>Reference to a Factory in datafactory to populate dataFactoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecForProviderDataFactoryIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1TriggerBlobEventSpecForProviderDataFactoryIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerBlobEventSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1TriggerBlobEventSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1TriggerBlobEventSpecForProviderDataFactoryIdSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerBlobEventSpecForProviderDataFactoryIdSelectorPolicyResolveEnum>))]
 public enum V1beta1TriggerBlobEventSpecForProviderDataFactoryIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1TriggerBlobEventSpecForProviderDataFactoryIdSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecForProviderDataFactoryIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1TriggerBlobEventSpecForProviderDataFactoryIdSelector
 }
 
 /// <summary>Selector for a Factory in datafactory to populate dataFactoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecForProviderDataFactoryIdSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1TriggerBlobEventSpecForProviderDataFactoryIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerBlobEventSpecForProviderPipelineNameRefPolicyResolutionEnum>))]
 public enum V1beta1TriggerBlobEventSpecForProviderPipelineNameRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1TriggerBlobEventSpecForProviderPipelineNameRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerBlobEventSpecForProviderPipelineNameRefPolicyResolveEnum>))]
 public enum V1beta1TriggerBlobEventSpecForProviderPipelineNameRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1TriggerBlobEventSpecForProviderPipelineNameRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecForProviderPipelineNameRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1TriggerBlobEventSpecForProviderPipelineNameRefPolicy
 }
 
 /// <summary>Reference to a Pipeline in datafactory to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecForProviderPipelineNameRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1TriggerBlobEventSpecForProviderPipelineNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerBlobEventSpecForProviderPipelineNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1TriggerBlobEventSpecForProviderPipelineNameSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1TriggerBlobEventSpecForProviderPipelineNameSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerBlobEventSpecForProviderPipelineNameSelectorPolicyResolveEnum>))]
 public enum V1beta1TriggerBlobEventSpecForProviderPipelineNameSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1TriggerBlobEventSpecForProviderPipelineNameSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecForProviderPipelineNameSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1TriggerBlobEventSpecForProviderPipelineNameSelectorP
 }
 
 /// <summary>Selector for a Pipeline in datafactory to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecForProviderPipelineNameSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1TriggerBlobEventSpecForProviderPipelineNameSelector
     public V1beta1TriggerBlobEventSpecForProviderPipelineNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecForProviderPipeline
 {
@@ -373,7 +373,7 @@ public partial class V1beta1TriggerBlobEventSpecForProviderPipeline
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerBlobEventSpecForProviderStorageAccountIdRefPolicyResolutionEnum>))]
 public enum V1beta1TriggerBlobEventSpecForProviderStorageAccountIdRefPolicyResolutionEnum
 {
@@ -389,7 +389,7 @@ public enum V1beta1TriggerBlobEventSpecForProviderStorageAccountIdRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerBlobEventSpecForProviderStorageAccountIdRefPolicyResolveEnum>))]
 public enum V1beta1TriggerBlobEventSpecForProviderStorageAccountIdRefPolicyResolveEnum
 {
@@ -400,7 +400,7 @@ public enum V1beta1TriggerBlobEventSpecForProviderStorageAccountIdRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecForProviderStorageAccountIdRefPolicy
 {
@@ -424,7 +424,7 @@ public partial class V1beta1TriggerBlobEventSpecForProviderStorageAccountIdRefPo
 }
 
 /// <summary>Reference to a Account in storage to populate storageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecForProviderStorageAccountIdRef
 {
@@ -447,7 +447,7 @@ public partial class V1beta1TriggerBlobEventSpecForProviderStorageAccountIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerBlobEventSpecForProviderStorageAccountIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1TriggerBlobEventSpecForProviderStorageAccountIdSelectorPolicyResolutionEnum
 {
@@ -463,7 +463,7 @@ public enum V1beta1TriggerBlobEventSpecForProviderStorageAccountIdSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerBlobEventSpecForProviderStorageAccountIdSelectorPolicyResolveEnum>))]
 public enum V1beta1TriggerBlobEventSpecForProviderStorageAccountIdSelectorPolicyResolveEnum
 {
@@ -474,7 +474,7 @@ public enum V1beta1TriggerBlobEventSpecForProviderStorageAccountIdSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecForProviderStorageAccountIdSelectorPolicy
 {
@@ -498,7 +498,7 @@ public partial class V1beta1TriggerBlobEventSpecForProviderStorageAccountIdSelec
 }
 
 /// <summary>Selector for a Account in storage to populate storageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecForProviderStorageAccountIdSelector
 {
@@ -522,7 +522,7 @@ public partial class V1beta1TriggerBlobEventSpecForProviderStorageAccountIdSelec
     public V1beta1TriggerBlobEventSpecForProviderStorageAccountIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecForProvider
 {
@@ -593,7 +593,7 @@ public partial class V1beta1TriggerBlobEventSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerBlobEventSpecInitProviderPipelineNameRefPolicyResolutionEnum>))]
 public enum V1beta1TriggerBlobEventSpecInitProviderPipelineNameRefPolicyResolutionEnum
 {
@@ -609,7 +609,7 @@ public enum V1beta1TriggerBlobEventSpecInitProviderPipelineNameRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerBlobEventSpecInitProviderPipelineNameRefPolicyResolveEnum>))]
 public enum V1beta1TriggerBlobEventSpecInitProviderPipelineNameRefPolicyResolveEnum
 {
@@ -620,7 +620,7 @@ public enum V1beta1TriggerBlobEventSpecInitProviderPipelineNameRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecInitProviderPipelineNameRefPolicy
 {
@@ -644,7 +644,7 @@ public partial class V1beta1TriggerBlobEventSpecInitProviderPipelineNameRefPolic
 }
 
 /// <summary>Reference to a Pipeline in datafactory to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecInitProviderPipelineNameRef
 {
@@ -667,7 +667,7 @@ public partial class V1beta1TriggerBlobEventSpecInitProviderPipelineNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerBlobEventSpecInitProviderPipelineNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1TriggerBlobEventSpecInitProviderPipelineNameSelectorPolicyResolutionEnum
 {
@@ -683,7 +683,7 @@ public enum V1beta1TriggerBlobEventSpecInitProviderPipelineNameSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerBlobEventSpecInitProviderPipelineNameSelectorPolicyResolveEnum>))]
 public enum V1beta1TriggerBlobEventSpecInitProviderPipelineNameSelectorPolicyResolveEnum
 {
@@ -694,7 +694,7 @@ public enum V1beta1TriggerBlobEventSpecInitProviderPipelineNameSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecInitProviderPipelineNameSelectorPolicy
 {
@@ -718,7 +718,7 @@ public partial class V1beta1TriggerBlobEventSpecInitProviderPipelineNameSelector
 }
 
 /// <summary>Selector for a Pipeline in datafactory to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecInitProviderPipelineNameSelector
 {
@@ -742,7 +742,7 @@ public partial class V1beta1TriggerBlobEventSpecInitProviderPipelineNameSelector
     public V1beta1TriggerBlobEventSpecInitProviderPipelineNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecInitProviderPipeline
 {
@@ -769,7 +769,7 @@ public partial class V1beta1TriggerBlobEventSpecInitProviderPipeline
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerBlobEventSpecInitProviderStorageAccountIdRefPolicyResolutionEnum>))]
 public enum V1beta1TriggerBlobEventSpecInitProviderStorageAccountIdRefPolicyResolutionEnum
 {
@@ -785,7 +785,7 @@ public enum V1beta1TriggerBlobEventSpecInitProviderStorageAccountIdRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerBlobEventSpecInitProviderStorageAccountIdRefPolicyResolveEnum>))]
 public enum V1beta1TriggerBlobEventSpecInitProviderStorageAccountIdRefPolicyResolveEnum
 {
@@ -796,7 +796,7 @@ public enum V1beta1TriggerBlobEventSpecInitProviderStorageAccountIdRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecInitProviderStorageAccountIdRefPolicy
 {
@@ -820,7 +820,7 @@ public partial class V1beta1TriggerBlobEventSpecInitProviderStorageAccountIdRefP
 }
 
 /// <summary>Reference to a Account in storage to populate storageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecInitProviderStorageAccountIdRef
 {
@@ -843,7 +843,7 @@ public partial class V1beta1TriggerBlobEventSpecInitProviderStorageAccountIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerBlobEventSpecInitProviderStorageAccountIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1TriggerBlobEventSpecInitProviderStorageAccountIdSelectorPolicyResolutionEnum
 {
@@ -859,7 +859,7 @@ public enum V1beta1TriggerBlobEventSpecInitProviderStorageAccountIdSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerBlobEventSpecInitProviderStorageAccountIdSelectorPolicyResolveEnum>))]
 public enum V1beta1TriggerBlobEventSpecInitProviderStorageAccountIdSelectorPolicyResolveEnum
 {
@@ -870,7 +870,7 @@ public enum V1beta1TriggerBlobEventSpecInitProviderStorageAccountIdSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecInitProviderStorageAccountIdSelectorPolicy
 {
@@ -894,7 +894,7 @@ public partial class V1beta1TriggerBlobEventSpecInitProviderStorageAccountIdSele
 }
 
 /// <summary>Selector for a Account in storage to populate storageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecInitProviderStorageAccountIdSelector
 {
@@ -930,7 +930,7 @@ public partial class V1beta1TriggerBlobEventSpecInitProviderStorageAccountIdSele
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecInitProvider
 {
@@ -987,7 +987,7 @@ public partial class V1beta1TriggerBlobEventSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerBlobEventSpecManagementPoliciesEnum>))]
 public enum V1beta1TriggerBlobEventSpecManagementPoliciesEnum
 {
@@ -1010,7 +1010,7 @@ public enum V1beta1TriggerBlobEventSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecProviderConfigRef
 {
@@ -1029,7 +1029,7 @@ public partial class V1beta1TriggerBlobEventSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpecWriteConnectionSecretToRef
 {
@@ -1039,7 +1039,7 @@ public partial class V1beta1TriggerBlobEventSpecWriteConnectionSecretToRef
 }
 
 /// <summary>TriggerBlobEventSpec defines the desired state of TriggerBlobEvent</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventSpec
 {
@@ -1090,7 +1090,7 @@ public partial class V1beta1TriggerBlobEventSpec
     public V1beta1TriggerBlobEventSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventStatusAtProviderPipeline
 {
@@ -1103,7 +1103,7 @@ public partial class V1beta1TriggerBlobEventStatusAtProviderPipeline
     public IDictionary<string, string>? Parameters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventStatusAtProvider
 {
@@ -1157,7 +1157,7 @@ public partial class V1beta1TriggerBlobEventStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventStatusConditions
 {
@@ -1200,7 +1200,7 @@ public partial class V1beta1TriggerBlobEventStatusConditions
 }
 
 /// <summary>TriggerBlobEventStatus defines the observed state of TriggerBlobEvent.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TriggerBlobEventStatus
 {
@@ -1221,7 +1221,7 @@ public partial class V1beta1TriggerBlobEventStatus
 }
 
 /// <summary>TriggerBlobEvent is the Schema for the TriggerBlobEvents API. Manages a Blob Event Trigger inside an Azure Data Factory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TriggerBlobEvent : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1TriggerBlobEventSpec>, IStatus<V1beta1TriggerBlobEventStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cdn.azure.upbound.io;
 /// <summary>FrontdoorCustomDomain is the Schema for the FrontdoorCustomDomains API. Manages a Front Door (standard/premium) Custom Domain.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2FrontdoorCustomDomainList : IKubernetesObject<V1ListMeta>, IItems<V1beta2FrontdoorCustomDomain>
@@ -45,7 +45,7 @@ public partial class V1beta2FrontdoorCustomDomainList : IKubernetesObject<V1List
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorCustomDomainSpecDeletionPolicyEnum>))]
 public enum V1beta2FrontdoorCustomDomainSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2FrontdoorCustomDomainSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorCustomDomainSpecForProviderCdnFrontdoorProfileIdRefPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorCustomDomainSpecForProviderCdnFrontdoorProfileIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2FrontdoorCustomDomainSpecForProviderCdnFrontdoorProfileIdRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorCustomDomainSpecForProviderCdnFrontdoorProfileIdRefPolicyResolveEnum>))]
 public enum V1beta2FrontdoorCustomDomainSpecForProviderCdnFrontdoorProfileIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2FrontdoorCustomDomainSpecForProviderCdnFrontdoorProfileIdRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainSpecForProviderCdnFrontdoorProfileIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2FrontdoorCustomDomainSpecForProviderCdnFrontdoorProf
 }
 
 /// <summary>Reference to a FrontdoorProfile in cdn to populate cdnFrontdoorProfileId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainSpecForProviderCdnFrontdoorProfileIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta2FrontdoorCustomDomainSpecForProviderCdnFrontdoorProf
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorCustomDomainSpecForProviderCdnFrontdoorProfileIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorCustomDomainSpecForProviderCdnFrontdoorProfileIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2FrontdoorCustomDomainSpecForProviderCdnFrontdoorProfileIdSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorCustomDomainSpecForProviderCdnFrontdoorProfileIdSelectorPolicyResolveEnum>))]
 public enum V1beta2FrontdoorCustomDomainSpecForProviderCdnFrontdoorProfileIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2FrontdoorCustomDomainSpecForProviderCdnFrontdoorProfileIdSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainSpecForProviderCdnFrontdoorProfileIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2FrontdoorCustomDomainSpecForProviderCdnFrontdoorProf
 }
 
 /// <summary>Selector for a FrontdoorProfile in cdn to populate cdnFrontdoorProfileId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainSpecForProviderCdnFrontdoorProfileIdSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta2FrontdoorCustomDomainSpecForProviderCdnFrontdoorProf
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorCustomDomainSpecForProviderDnsZoneIdRefPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorCustomDomainSpecForProviderDnsZoneIdRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta2FrontdoorCustomDomainSpecForProviderDnsZoneIdRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorCustomDomainSpecForProviderDnsZoneIdRefPolicyResolveEnum>))]
 public enum V1beta2FrontdoorCustomDomainSpecForProviderDnsZoneIdRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta2FrontdoorCustomDomainSpecForProviderDnsZoneIdRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainSpecForProviderDnsZoneIdRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta2FrontdoorCustomDomainSpecForProviderDnsZoneIdRefPoli
 }
 
 /// <summary>Reference to a DNSZone in network to populate dnsZoneId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainSpecForProviderDnsZoneIdRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta2FrontdoorCustomDomainSpecForProviderDnsZoneIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorCustomDomainSpecForProviderDnsZoneIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorCustomDomainSpecForProviderDnsZoneIdSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta2FrontdoorCustomDomainSpecForProviderDnsZoneIdSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorCustomDomainSpecForProviderDnsZoneIdSelectorPolicyResolveEnum>))]
 public enum V1beta2FrontdoorCustomDomainSpecForProviderDnsZoneIdSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta2FrontdoorCustomDomainSpecForProviderDnsZoneIdSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainSpecForProviderDnsZoneIdSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta2FrontdoorCustomDomainSpecForProviderDnsZoneIdSelecto
 }
 
 /// <summary>Selector for a DNSZone in network to populate dnsZoneId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainSpecForProviderDnsZoneIdSelector
 {
@@ -350,7 +350,7 @@ public partial class V1beta2FrontdoorCustomDomainSpecForProviderDnsZoneIdSelecto
 }
 
 /// <summary>A tls block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainSpecForProviderTls
 {
@@ -367,7 +367,7 @@ public partial class V1beta2FrontdoorCustomDomainSpecForProviderTls
     public string? MinimumTlsVersion { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainSpecForProvider
 {
@@ -410,7 +410,7 @@ public partial class V1beta2FrontdoorCustomDomainSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorCustomDomainSpecInitProviderDnsZoneIdRefPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorCustomDomainSpecInitProviderDnsZoneIdRefPolicyResolutionEnum
 {
@@ -426,7 +426,7 @@ public enum V1beta2FrontdoorCustomDomainSpecInitProviderDnsZoneIdRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorCustomDomainSpecInitProviderDnsZoneIdRefPolicyResolveEnum>))]
 public enum V1beta2FrontdoorCustomDomainSpecInitProviderDnsZoneIdRefPolicyResolveEnum
 {
@@ -437,7 +437,7 @@ public enum V1beta2FrontdoorCustomDomainSpecInitProviderDnsZoneIdRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainSpecInitProviderDnsZoneIdRefPolicy
 {
@@ -461,7 +461,7 @@ public partial class V1beta2FrontdoorCustomDomainSpecInitProviderDnsZoneIdRefPol
 }
 
 /// <summary>Reference to a DNSZone in network to populate dnsZoneId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainSpecInitProviderDnsZoneIdRef
 {
@@ -480,7 +480,7 @@ public partial class V1beta2FrontdoorCustomDomainSpecInitProviderDnsZoneIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorCustomDomainSpecInitProviderDnsZoneIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorCustomDomainSpecInitProviderDnsZoneIdSelectorPolicyResolutionEnum
 {
@@ -496,7 +496,7 @@ public enum V1beta2FrontdoorCustomDomainSpecInitProviderDnsZoneIdSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorCustomDomainSpecInitProviderDnsZoneIdSelectorPolicyResolveEnum>))]
 public enum V1beta2FrontdoorCustomDomainSpecInitProviderDnsZoneIdSelectorPolicyResolveEnum
 {
@@ -507,7 +507,7 @@ public enum V1beta2FrontdoorCustomDomainSpecInitProviderDnsZoneIdSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainSpecInitProviderDnsZoneIdSelectorPolicy
 {
@@ -531,7 +531,7 @@ public partial class V1beta2FrontdoorCustomDomainSpecInitProviderDnsZoneIdSelect
 }
 
 /// <summary>Selector for a DNSZone in network to populate dnsZoneId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainSpecInitProviderDnsZoneIdSelector
 {
@@ -552,7 +552,7 @@ public partial class V1beta2FrontdoorCustomDomainSpecInitProviderDnsZoneIdSelect
 }
 
 /// <summary>A tls block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainSpecInitProviderTls
 {
@@ -581,7 +581,7 @@ public partial class V1beta2FrontdoorCustomDomainSpecInitProviderTls
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainSpecInitProvider
 {
@@ -610,7 +610,7 @@ public partial class V1beta2FrontdoorCustomDomainSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorCustomDomainSpecManagementPoliciesEnum>))]
 public enum V1beta2FrontdoorCustomDomainSpecManagementPoliciesEnum
 {
@@ -634,7 +634,7 @@ public enum V1beta2FrontdoorCustomDomainSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorCustomDomainSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2FrontdoorCustomDomainSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -650,7 +650,7 @@ public enum V1beta2FrontdoorCustomDomainSpecProviderConfigRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FrontdoorCustomDomainSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2FrontdoorCustomDomainSpecProviderConfigRefPolicyResolveEnum
 {
@@ -661,7 +661,7 @@ public enum V1beta2FrontdoorCustomDomainSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainSpecProviderConfigRefPolicy
 {
@@ -689,7 +689,7 @@ public partial class V1beta2FrontdoorCustomDomainSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainSpecProviderConfigRef
 {
@@ -708,7 +708,7 @@ public partial class V1beta2FrontdoorCustomDomainSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainSpecWriteConnectionSecretToRef
 {
@@ -722,7 +722,7 @@ public partial class V1beta2FrontdoorCustomDomainSpecWriteConnectionSecretToRef
 }
 
 /// <summary>FrontdoorCustomDomainSpec defines the desired state of FrontdoorCustomDomain</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainSpec
 {
@@ -790,7 +790,7 @@ public partial class V1beta2FrontdoorCustomDomainSpec
 }
 
 /// <summary>A tls block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainStatusAtProviderTls
 {
@@ -807,7 +807,7 @@ public partial class V1beta2FrontdoorCustomDomainStatusAtProviderTls
     public string? MinimumTlsVersion { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainStatusAtProvider
 {
@@ -841,7 +841,7 @@ public partial class V1beta2FrontdoorCustomDomainStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainStatusConditions
 {
@@ -884,7 +884,7 @@ public partial class V1beta2FrontdoorCustomDomainStatusConditions
 }
 
 /// <summary>FrontdoorCustomDomainStatus defines the observed state of FrontdoorCustomDomain.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FrontdoorCustomDomainStatus
 {
@@ -905,7 +905,7 @@ public partial class V1beta2FrontdoorCustomDomainStatus
 }
 
 /// <summary>FrontdoorCustomDomain is the Schema for the FrontdoorCustomDomains API. Manages a Front Door (standard/premium) Custom Domain.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2FrontdoorCustomDomain : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2FrontdoorCustomDomainSpec>, IStatus<V1beta2FrontdoorCustomDomainStatus?>

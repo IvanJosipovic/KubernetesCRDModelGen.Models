@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.streamanalytics.azure.upbound.io;
 /// <summary>OutputServiceBusQueue is the Schema for the OutputServiceBusQueues API. Manages a Stream Analytics Output to a ServiceBus Queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2OutputServiceBusQueueList : IKubernetesObject<V1ListMeta>, IItems<V1beta2OutputServiceBusQueue>
@@ -45,7 +45,7 @@ public partial class V1beta2OutputServiceBusQueueList : IKubernetesObject<V1List
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecDeletionPolicyEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2OutputServiceBusQueueSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecForProviderQueueNameRefPolicyResolutionEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecForProviderQueueNameRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2OutputServiceBusQueueSpecForProviderQueueNameRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecForProviderQueueNameRefPolicyResolveEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecForProviderQueueNameRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2OutputServiceBusQueueSpecForProviderQueueNameRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecForProviderQueueNameRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2OutputServiceBusQueueSpecForProviderQueueNameRefPoli
 }
 
 /// <summary>Reference to a Queue in servicebus to populate queueName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecForProviderQueueNameRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta2OutputServiceBusQueueSpecForProviderQueueNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecForProviderQueueNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecForProviderQueueNameSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2OutputServiceBusQueueSpecForProviderQueueNameSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecForProviderQueueNameSelectorPolicyResolveEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecForProviderQueueNameSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2OutputServiceBusQueueSpecForProviderQueueNameSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecForProviderQueueNameSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2OutputServiceBusQueueSpecForProviderQueueNameSelecto
 }
 
 /// <summary>Selector for a Queue in servicebus to populate queueName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecForProviderQueueNameSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta2OutputServiceBusQueueSpecForProviderQueueNameSelecto
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta2OutputServiceBusQueueSpecForProviderResourceGroupNameRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta2OutputServiceBusQueueSpecForProviderResourceGroupNameRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecForProviderResourceGroupNameRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta2OutputServiceBusQueueSpecForProviderResourceGroupNam
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecForProviderResourceGroupNameRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta2OutputServiceBusQueueSpecForProviderResourceGroupNam
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta2OutputServiceBusQueueSpecForProviderResourceGroupNameSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta2OutputServiceBusQueueSpecForProviderResourceGroupNameSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta2OutputServiceBusQueueSpecForProviderResourceGroupNam
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecForProviderResourceGroupNameSelector
 {
@@ -350,7 +350,7 @@ public partial class V1beta2OutputServiceBusQueueSpecForProviderResourceGroupNam
 }
 
 /// <summary>A serialization block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecForProviderSerialization
 {
@@ -377,7 +377,7 @@ public partial class V1beta2OutputServiceBusQueueSpecForProviderSerialization
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecForProviderServicebusNamespaceRefPolicyResolutionEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecForProviderServicebusNamespaceRefPolicyResolutionEnum
 {
@@ -393,7 +393,7 @@ public enum V1beta2OutputServiceBusQueueSpecForProviderServicebusNamespaceRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecForProviderServicebusNamespaceRefPolicyResolveEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecForProviderServicebusNamespaceRefPolicyResolveEnum
 {
@@ -404,7 +404,7 @@ public enum V1beta2OutputServiceBusQueueSpecForProviderServicebusNamespaceRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecForProviderServicebusNamespaceRefPolicy
 {
@@ -428,7 +428,7 @@ public partial class V1beta2OutputServiceBusQueueSpecForProviderServicebusNamesp
 }
 
 /// <summary>Reference to a ServiceBusNamespace in servicebus to populate servicebusNamespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecForProviderServicebusNamespaceRef
 {
@@ -447,7 +447,7 @@ public partial class V1beta2OutputServiceBusQueueSpecForProviderServicebusNamesp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecForProviderServicebusNamespaceSelectorPolicyResolutionEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecForProviderServicebusNamespaceSelectorPolicyResolutionEnum
 {
@@ -463,7 +463,7 @@ public enum V1beta2OutputServiceBusQueueSpecForProviderServicebusNamespaceSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecForProviderServicebusNamespaceSelectorPolicyResolveEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecForProviderServicebusNamespaceSelectorPolicyResolveEnum
 {
@@ -474,7 +474,7 @@ public enum V1beta2OutputServiceBusQueueSpecForProviderServicebusNamespaceSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecForProviderServicebusNamespaceSelectorPolicy
 {
@@ -498,7 +498,7 @@ public partial class V1beta2OutputServiceBusQueueSpecForProviderServicebusNamesp
 }
 
 /// <summary>Selector for a ServiceBusNamespace in servicebus to populate servicebusNamespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecForProviderServicebusNamespaceSelector
 {
@@ -519,7 +519,7 @@ public partial class V1beta2OutputServiceBusQueueSpecForProviderServicebusNamesp
 }
 
 /// <summary>The shared access policy key for the specified shared access policy. Required if authentication_mode is ConnectionString.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecForProviderSharedAccessPolicyKeySecretRef
 {
@@ -542,7 +542,7 @@ public partial class V1beta2OutputServiceBusQueueSpecForProviderSharedAccessPoli
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecForProviderStreamAnalyticsJobNameRefPolicyResolutionEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecForProviderStreamAnalyticsJobNameRefPolicyResolutionEnum
 {
@@ -558,7 +558,7 @@ public enum V1beta2OutputServiceBusQueueSpecForProviderStreamAnalyticsJobNameRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecForProviderStreamAnalyticsJobNameRefPolicyResolveEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecForProviderStreamAnalyticsJobNameRefPolicyResolveEnum
 {
@@ -569,7 +569,7 @@ public enum V1beta2OutputServiceBusQueueSpecForProviderStreamAnalyticsJobNameRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecForProviderStreamAnalyticsJobNameRefPolicy
 {
@@ -593,7 +593,7 @@ public partial class V1beta2OutputServiceBusQueueSpecForProviderStreamAnalyticsJ
 }
 
 /// <summary>Reference to a Job in streamanalytics to populate streamAnalyticsJobName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecForProviderStreamAnalyticsJobNameRef
 {
@@ -612,7 +612,7 @@ public partial class V1beta2OutputServiceBusQueueSpecForProviderStreamAnalyticsJ
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecForProviderStreamAnalyticsJobNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecForProviderStreamAnalyticsJobNameSelectorPolicyResolutionEnum
 {
@@ -628,7 +628,7 @@ public enum V1beta2OutputServiceBusQueueSpecForProviderStreamAnalyticsJobNameSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecForProviderStreamAnalyticsJobNameSelectorPolicyResolveEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecForProviderStreamAnalyticsJobNameSelectorPolicyResolveEnum
 {
@@ -639,7 +639,7 @@ public enum V1beta2OutputServiceBusQueueSpecForProviderStreamAnalyticsJobNameSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecForProviderStreamAnalyticsJobNameSelectorPolicy
 {
@@ -663,7 +663,7 @@ public partial class V1beta2OutputServiceBusQueueSpecForProviderStreamAnalyticsJ
 }
 
 /// <summary>Selector for a Job in streamanalytics to populate streamAnalyticsJobName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecForProviderStreamAnalyticsJobNameSelector
 {
@@ -683,7 +683,7 @@ public partial class V1beta2OutputServiceBusQueueSpecForProviderStreamAnalyticsJ
     public V1beta2OutputServiceBusQueueSpecForProviderStreamAnalyticsJobNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecForProvider
 {
@@ -770,7 +770,7 @@ public partial class V1beta2OutputServiceBusQueueSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecInitProviderQueueNameRefPolicyResolutionEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecInitProviderQueueNameRefPolicyResolutionEnum
 {
@@ -786,7 +786,7 @@ public enum V1beta2OutputServiceBusQueueSpecInitProviderQueueNameRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecInitProviderQueueNameRefPolicyResolveEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecInitProviderQueueNameRefPolicyResolveEnum
 {
@@ -797,7 +797,7 @@ public enum V1beta2OutputServiceBusQueueSpecInitProviderQueueNameRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecInitProviderQueueNameRefPolicy
 {
@@ -821,7 +821,7 @@ public partial class V1beta2OutputServiceBusQueueSpecInitProviderQueueNameRefPol
 }
 
 /// <summary>Reference to a Queue in servicebus to populate queueName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecInitProviderQueueNameRef
 {
@@ -840,7 +840,7 @@ public partial class V1beta2OutputServiceBusQueueSpecInitProviderQueueNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecInitProviderQueueNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecInitProviderQueueNameSelectorPolicyResolutionEnum
 {
@@ -856,7 +856,7 @@ public enum V1beta2OutputServiceBusQueueSpecInitProviderQueueNameSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecInitProviderQueueNameSelectorPolicyResolveEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecInitProviderQueueNameSelectorPolicyResolveEnum
 {
@@ -867,7 +867,7 @@ public enum V1beta2OutputServiceBusQueueSpecInitProviderQueueNameSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecInitProviderQueueNameSelectorPolicy
 {
@@ -891,7 +891,7 @@ public partial class V1beta2OutputServiceBusQueueSpecInitProviderQueueNameSelect
 }
 
 /// <summary>Selector for a Queue in servicebus to populate queueName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecInitProviderQueueNameSelector
 {
@@ -917,7 +917,7 @@ public partial class V1beta2OutputServiceBusQueueSpecInitProviderQueueNameSelect
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecInitProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecInitProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -933,7 +933,7 @@ public enum V1beta2OutputServiceBusQueueSpecInitProviderResourceGroupNameRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecInitProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecInitProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -944,7 +944,7 @@ public enum V1beta2OutputServiceBusQueueSpecInitProviderResourceGroupNameRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecInitProviderResourceGroupNameRefPolicy
 {
@@ -968,7 +968,7 @@ public partial class V1beta2OutputServiceBusQueueSpecInitProviderResourceGroupNa
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecInitProviderResourceGroupNameRef
 {
@@ -987,7 +987,7 @@ public partial class V1beta2OutputServiceBusQueueSpecInitProviderResourceGroupNa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -1003,7 +1003,7 @@ public enum V1beta2OutputServiceBusQueueSpecInitProviderResourceGroupNameSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -1014,7 +1014,7 @@ public enum V1beta2OutputServiceBusQueueSpecInitProviderResourceGroupNameSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecInitProviderResourceGroupNameSelectorPolicy
 {
@@ -1038,7 +1038,7 @@ public partial class V1beta2OutputServiceBusQueueSpecInitProviderResourceGroupNa
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecInitProviderResourceGroupNameSelector
 {
@@ -1059,7 +1059,7 @@ public partial class V1beta2OutputServiceBusQueueSpecInitProviderResourceGroupNa
 }
 
 /// <summary>A serialization block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecInitProviderSerialization
 {
@@ -1086,7 +1086,7 @@ public partial class V1beta2OutputServiceBusQueueSpecInitProviderSerialization
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecInitProviderServicebusNamespaceRefPolicyResolutionEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecInitProviderServicebusNamespaceRefPolicyResolutionEnum
 {
@@ -1102,7 +1102,7 @@ public enum V1beta2OutputServiceBusQueueSpecInitProviderServicebusNamespaceRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecInitProviderServicebusNamespaceRefPolicyResolveEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecInitProviderServicebusNamespaceRefPolicyResolveEnum
 {
@@ -1113,7 +1113,7 @@ public enum V1beta2OutputServiceBusQueueSpecInitProviderServicebusNamespaceRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecInitProviderServicebusNamespaceRefPolicy
 {
@@ -1137,7 +1137,7 @@ public partial class V1beta2OutputServiceBusQueueSpecInitProviderServicebusNames
 }
 
 /// <summary>Reference to a ServiceBusNamespace in servicebus to populate servicebusNamespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecInitProviderServicebusNamespaceRef
 {
@@ -1156,7 +1156,7 @@ public partial class V1beta2OutputServiceBusQueueSpecInitProviderServicebusNames
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecInitProviderServicebusNamespaceSelectorPolicyResolutionEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecInitProviderServicebusNamespaceSelectorPolicyResolutionEnum
 {
@@ -1172,7 +1172,7 @@ public enum V1beta2OutputServiceBusQueueSpecInitProviderServicebusNamespaceSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecInitProviderServicebusNamespaceSelectorPolicyResolveEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecInitProviderServicebusNamespaceSelectorPolicyResolveEnum
 {
@@ -1183,7 +1183,7 @@ public enum V1beta2OutputServiceBusQueueSpecInitProviderServicebusNamespaceSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecInitProviderServicebusNamespaceSelectorPolicy
 {
@@ -1207,7 +1207,7 @@ public partial class V1beta2OutputServiceBusQueueSpecInitProviderServicebusNames
 }
 
 /// <summary>Selector for a ServiceBusNamespace in servicebus to populate servicebusNamespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecInitProviderServicebusNamespaceSelector
 {
@@ -1228,7 +1228,7 @@ public partial class V1beta2OutputServiceBusQueueSpecInitProviderServicebusNames
 }
 
 /// <summary>The shared access policy key for the specified shared access policy. Required if authentication_mode is ConnectionString.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecInitProviderSharedAccessPolicyKeySecretRef
 {
@@ -1251,7 +1251,7 @@ public partial class V1beta2OutputServiceBusQueueSpecInitProviderSharedAccessPol
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecInitProviderStreamAnalyticsJobNameRefPolicyResolutionEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecInitProviderStreamAnalyticsJobNameRefPolicyResolutionEnum
 {
@@ -1267,7 +1267,7 @@ public enum V1beta2OutputServiceBusQueueSpecInitProviderStreamAnalyticsJobNameRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecInitProviderStreamAnalyticsJobNameRefPolicyResolveEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecInitProviderStreamAnalyticsJobNameRefPolicyResolveEnum
 {
@@ -1278,7 +1278,7 @@ public enum V1beta2OutputServiceBusQueueSpecInitProviderStreamAnalyticsJobNameRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecInitProviderStreamAnalyticsJobNameRefPolicy
 {
@@ -1302,7 +1302,7 @@ public partial class V1beta2OutputServiceBusQueueSpecInitProviderStreamAnalytics
 }
 
 /// <summary>Reference to a Job in streamanalytics to populate streamAnalyticsJobName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecInitProviderStreamAnalyticsJobNameRef
 {
@@ -1321,7 +1321,7 @@ public partial class V1beta2OutputServiceBusQueueSpecInitProviderStreamAnalytics
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecInitProviderStreamAnalyticsJobNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecInitProviderStreamAnalyticsJobNameSelectorPolicyResolutionEnum
 {
@@ -1337,7 +1337,7 @@ public enum V1beta2OutputServiceBusQueueSpecInitProviderStreamAnalyticsJobNameSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecInitProviderStreamAnalyticsJobNameSelectorPolicyResolveEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecInitProviderStreamAnalyticsJobNameSelectorPolicyResolveEnum
 {
@@ -1348,7 +1348,7 @@ public enum V1beta2OutputServiceBusQueueSpecInitProviderStreamAnalyticsJobNameSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecInitProviderStreamAnalyticsJobNameSelectorPolicy
 {
@@ -1372,7 +1372,7 @@ public partial class V1beta2OutputServiceBusQueueSpecInitProviderStreamAnalytics
 }
 
 /// <summary>Selector for a Job in streamanalytics to populate streamAnalyticsJobName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecInitProviderStreamAnalyticsJobNameSelector
 {
@@ -1404,7 +1404,7 @@ public partial class V1beta2OutputServiceBusQueueSpecInitProviderStreamAnalytics
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecInitProvider
 {
@@ -1489,7 +1489,7 @@ public partial class V1beta2OutputServiceBusQueueSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecManagementPoliciesEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecManagementPoliciesEnum
 {
@@ -1513,7 +1513,7 @@ public enum V1beta2OutputServiceBusQueueSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1529,7 +1529,7 @@ public enum V1beta2OutputServiceBusQueueSpecProviderConfigRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2OutputServiceBusQueueSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2OutputServiceBusQueueSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1540,7 +1540,7 @@ public enum V1beta2OutputServiceBusQueueSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecProviderConfigRefPolicy
 {
@@ -1568,7 +1568,7 @@ public partial class V1beta2OutputServiceBusQueueSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecProviderConfigRef
 {
@@ -1587,7 +1587,7 @@ public partial class V1beta2OutputServiceBusQueueSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpecWriteConnectionSecretToRef
 {
@@ -1601,7 +1601,7 @@ public partial class V1beta2OutputServiceBusQueueSpecWriteConnectionSecretToRef
 }
 
 /// <summary>OutputServiceBusQueueSpec defines the desired state of OutputServiceBusQueue</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueSpec
 {
@@ -1669,7 +1669,7 @@ public partial class V1beta2OutputServiceBusQueueSpec
 }
 
 /// <summary>A serialization block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueStatusAtProviderSerialization
 {
@@ -1690,7 +1690,7 @@ public partial class V1beta2OutputServiceBusQueueStatusAtProviderSerialization
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueStatusAtProvider
 {
@@ -1740,7 +1740,7 @@ public partial class V1beta2OutputServiceBusQueueStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueStatusConditions
 {
@@ -1783,7 +1783,7 @@ public partial class V1beta2OutputServiceBusQueueStatusConditions
 }
 
 /// <summary>OutputServiceBusQueueStatus defines the observed state of OutputServiceBusQueue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2OutputServiceBusQueueStatus
 {
@@ -1804,7 +1804,7 @@ public partial class V1beta2OutputServiceBusQueueStatus
 }
 
 /// <summary>OutputServiceBusQueue is the Schema for the OutputServiceBusQueues API. Manages a Stream Analytics Output to a ServiceBus Queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2OutputServiceBusQueue : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2OutputServiceBusQueueSpec>, IStatus<V1beta2OutputServiceBusQueueStatus?>

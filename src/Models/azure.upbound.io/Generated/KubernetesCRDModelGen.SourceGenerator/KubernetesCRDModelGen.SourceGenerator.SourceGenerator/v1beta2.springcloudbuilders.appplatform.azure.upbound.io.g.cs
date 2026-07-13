@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appplatform.azure.upbound.io;
 /// <summary>SpringCloudBuilder is the Schema for the SpringCloudBuilders API. Manages a Spring Cloud Builder.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2SpringCloudBuilderList : IKubernetesObject<V1ListMeta>, IItems<V1beta2SpringCloudBuilder>
@@ -45,7 +45,7 @@ public partial class V1beta2SpringCloudBuilderList : IKubernetesObject<V1ListMet
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudBuilderSpecDeletionPolicyEnum>))]
 public enum V1beta2SpringCloudBuilderSpecDeletionPolicyEnum
 {
@@ -55,7 +55,7 @@ public enum V1beta2SpringCloudBuilderSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudBuilderSpecForProviderBuildPackGroup
 {
@@ -74,7 +74,7 @@ public partial class V1beta2SpringCloudBuilderSpecForProviderBuildPackGroup
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudBuilderSpecForProviderSpringCloudServiceIdRefPolicyResolutionEnum>))]
 public enum V1beta2SpringCloudBuilderSpecForProviderSpringCloudServiceIdRefPolicyResolutionEnum
 {
@@ -90,7 +90,7 @@ public enum V1beta2SpringCloudBuilderSpecForProviderSpringCloudServiceIdRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudBuilderSpecForProviderSpringCloudServiceIdRefPolicyResolveEnum>))]
 public enum V1beta2SpringCloudBuilderSpecForProviderSpringCloudServiceIdRefPolicyResolveEnum
 {
@@ -101,7 +101,7 @@ public enum V1beta2SpringCloudBuilderSpecForProviderSpringCloudServiceIdRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudBuilderSpecForProviderSpringCloudServiceIdRefPolicy
 {
@@ -125,7 +125,7 @@ public partial class V1beta2SpringCloudBuilderSpecForProviderSpringCloudServiceI
 }
 
 /// <summary>Reference to a SpringCloudService in appplatform to populate springCloudServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudBuilderSpecForProviderSpringCloudServiceIdRef
 {
@@ -144,7 +144,7 @@ public partial class V1beta2SpringCloudBuilderSpecForProviderSpringCloudServiceI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudBuilderSpecForProviderSpringCloudServiceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2SpringCloudBuilderSpecForProviderSpringCloudServiceIdSelectorPolicyResolutionEnum
 {
@@ -160,7 +160,7 @@ public enum V1beta2SpringCloudBuilderSpecForProviderSpringCloudServiceIdSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudBuilderSpecForProviderSpringCloudServiceIdSelectorPolicyResolveEnum>))]
 public enum V1beta2SpringCloudBuilderSpecForProviderSpringCloudServiceIdSelectorPolicyResolveEnum
 {
@@ -171,7 +171,7 @@ public enum V1beta2SpringCloudBuilderSpecForProviderSpringCloudServiceIdSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudBuilderSpecForProviderSpringCloudServiceIdSelectorPolicy
 {
@@ -195,7 +195,7 @@ public partial class V1beta2SpringCloudBuilderSpecForProviderSpringCloudServiceI
 }
 
 /// <summary>Selector for a SpringCloudService in appplatform to populate springCloudServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudBuilderSpecForProviderSpringCloudServiceIdSelector
 {
@@ -216,7 +216,7 @@ public partial class V1beta2SpringCloudBuilderSpecForProviderSpringCloudServiceI
 }
 
 /// <summary>A stack block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudBuilderSpecForProviderStack
 {
@@ -229,7 +229,7 @@ public partial class V1beta2SpringCloudBuilderSpecForProviderStack
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudBuilderSpecForProvider
 {
@@ -258,7 +258,7 @@ public partial class V1beta2SpringCloudBuilderSpecForProvider
     public V1beta2SpringCloudBuilderSpecForProviderStack? Stack { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudBuilderSpecInitProviderBuildPackGroup
 {
@@ -277,7 +277,7 @@ public partial class V1beta2SpringCloudBuilderSpecInitProviderBuildPackGroup
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudBuilderSpecInitProviderSpringCloudServiceIdRefPolicyResolutionEnum>))]
 public enum V1beta2SpringCloudBuilderSpecInitProviderSpringCloudServiceIdRefPolicyResolutionEnum
 {
@@ -293,7 +293,7 @@ public enum V1beta2SpringCloudBuilderSpecInitProviderSpringCloudServiceIdRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudBuilderSpecInitProviderSpringCloudServiceIdRefPolicyResolveEnum>))]
 public enum V1beta2SpringCloudBuilderSpecInitProviderSpringCloudServiceIdRefPolicyResolveEnum
 {
@@ -304,7 +304,7 @@ public enum V1beta2SpringCloudBuilderSpecInitProviderSpringCloudServiceIdRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudBuilderSpecInitProviderSpringCloudServiceIdRefPolicy
 {
@@ -328,7 +328,7 @@ public partial class V1beta2SpringCloudBuilderSpecInitProviderSpringCloudService
 }
 
 /// <summary>Reference to a SpringCloudService in appplatform to populate springCloudServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudBuilderSpecInitProviderSpringCloudServiceIdRef
 {
@@ -347,7 +347,7 @@ public partial class V1beta2SpringCloudBuilderSpecInitProviderSpringCloudService
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudBuilderSpecInitProviderSpringCloudServiceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2SpringCloudBuilderSpecInitProviderSpringCloudServiceIdSelectorPolicyResolutionEnum
 {
@@ -363,7 +363,7 @@ public enum V1beta2SpringCloudBuilderSpecInitProviderSpringCloudServiceIdSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudBuilderSpecInitProviderSpringCloudServiceIdSelectorPolicyResolveEnum>))]
 public enum V1beta2SpringCloudBuilderSpecInitProviderSpringCloudServiceIdSelectorPolicyResolveEnum
 {
@@ -374,7 +374,7 @@ public enum V1beta2SpringCloudBuilderSpecInitProviderSpringCloudServiceIdSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudBuilderSpecInitProviderSpringCloudServiceIdSelectorPolicy
 {
@@ -398,7 +398,7 @@ public partial class V1beta2SpringCloudBuilderSpecInitProviderSpringCloudService
 }
 
 /// <summary>Selector for a SpringCloudService in appplatform to populate springCloudServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudBuilderSpecInitProviderSpringCloudServiceIdSelector
 {
@@ -419,7 +419,7 @@ public partial class V1beta2SpringCloudBuilderSpecInitProviderSpringCloudService
 }
 
 /// <summary>A stack block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudBuilderSpecInitProviderStack
 {
@@ -444,7 +444,7 @@ public partial class V1beta2SpringCloudBuilderSpecInitProviderStack
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudBuilderSpecInitProvider
 {
@@ -477,7 +477,7 @@ public partial class V1beta2SpringCloudBuilderSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudBuilderSpecManagementPoliciesEnum>))]
 public enum V1beta2SpringCloudBuilderSpecManagementPoliciesEnum
 {
@@ -501,7 +501,7 @@ public enum V1beta2SpringCloudBuilderSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudBuilderSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2SpringCloudBuilderSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -517,7 +517,7 @@ public enum V1beta2SpringCloudBuilderSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudBuilderSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2SpringCloudBuilderSpecProviderConfigRefPolicyResolveEnum
 {
@@ -528,7 +528,7 @@ public enum V1beta2SpringCloudBuilderSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudBuilderSpecProviderConfigRefPolicy
 {
@@ -556,7 +556,7 @@ public partial class V1beta2SpringCloudBuilderSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudBuilderSpecProviderConfigRef
 {
@@ -575,7 +575,7 @@ public partial class V1beta2SpringCloudBuilderSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudBuilderSpecWriteConnectionSecretToRef
 {
@@ -589,7 +589,7 @@ public partial class V1beta2SpringCloudBuilderSpecWriteConnectionSecretToRef
 }
 
 /// <summary>SpringCloudBuilderSpec defines the desired state of SpringCloudBuilder</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudBuilderSpec
 {
@@ -656,7 +656,7 @@ public partial class V1beta2SpringCloudBuilderSpec
     public V1beta2SpringCloudBuilderSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudBuilderStatusAtProviderBuildPackGroup
 {
@@ -670,7 +670,7 @@ public partial class V1beta2SpringCloudBuilderStatusAtProviderBuildPackGroup
 }
 
 /// <summary>A stack block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudBuilderStatusAtProviderStack
 {
@@ -683,7 +683,7 @@ public partial class V1beta2SpringCloudBuilderStatusAtProviderStack
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudBuilderStatusAtProvider
 {
@@ -709,7 +709,7 @@ public partial class V1beta2SpringCloudBuilderStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudBuilderStatusConditions
 {
@@ -752,7 +752,7 @@ public partial class V1beta2SpringCloudBuilderStatusConditions
 }
 
 /// <summary>SpringCloudBuilderStatus defines the observed state of SpringCloudBuilder.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudBuilderStatus
 {
@@ -773,7 +773,7 @@ public partial class V1beta2SpringCloudBuilderStatus
 }
 
 /// <summary>SpringCloudBuilder is the Schema for the SpringCloudBuilders API. Manages a Spring Cloud Builder.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2SpringCloudBuilder : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2SpringCloudBuilderSpec>, IStatus<V1beta2SpringCloudBuilderStatus?>

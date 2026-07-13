@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.hdinsight.azure.upbound.io;
 /// <summary>SparkCluster is the Schema for the SparkClusters API. Manages a HDInsight Spark Cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2SparkClusterList : IKubernetesObject<V1ListMeta>, IItems<V1beta2SparkCluster>
@@ -45,7 +45,7 @@ public partial class V1beta2SparkClusterList : IKubernetesObject<V1ListMeta>, II
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecDeletionPolicyEnum>))]
 public enum V1beta2SparkClusterSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2SparkClusterSpecDeletionPolicyEnum
 }
 
 /// <summary>A component_version block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderComponentVersion
 {
@@ -66,7 +66,7 @@ public partial class V1beta2SparkClusterSpecForProviderComponentVersion
 }
 
 /// <summary>A compute_isolation block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderComputeIsolation
 {
@@ -79,7 +79,7 @@ public partial class V1beta2SparkClusterSpecForProviderComputeIsolation
     public string? HostSku { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderDiskEncryption
 {
@@ -101,7 +101,7 @@ public partial class V1beta2SparkClusterSpecForProviderDiskEncryption
 }
 
 /// <summary>The workspace key of the log analytics extension.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderExtensionPrimaryKeySecretRef
 {
@@ -119,7 +119,7 @@ public partial class V1beta2SparkClusterSpecForProviderExtensionPrimaryKeySecret
 }
 
 /// <summary>An extension block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderExtension
 {
@@ -133,7 +133,7 @@ public partial class V1beta2SparkClusterSpecForProviderExtension
 }
 
 /// <summary>The password used for the Ambari Portal.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderGatewayPasswordSecretRef
 {
@@ -151,7 +151,7 @@ public partial class V1beta2SparkClusterSpecForProviderGatewayPasswordSecretRef
 }
 
 /// <summary>A gateway block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderGateway
 {
@@ -165,7 +165,7 @@ public partial class V1beta2SparkClusterSpecForProviderGateway
 }
 
 /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderMetastoresAmbariPasswordSecretRef
 {
@@ -183,7 +183,7 @@ public partial class V1beta2SparkClusterSpecForProviderMetastoresAmbariPasswordS
 }
 
 /// <summary>An ambari block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderMetastoresAmbari
 {
@@ -205,7 +205,7 @@ public partial class V1beta2SparkClusterSpecForProviderMetastoresAmbari
 }
 
 /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderMetastoresHivePasswordSecretRef
 {
@@ -223,7 +223,7 @@ public partial class V1beta2SparkClusterSpecForProviderMetastoresHivePasswordSec
 }
 
 /// <summary>A hive block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderMetastoresHive
 {
@@ -245,7 +245,7 @@ public partial class V1beta2SparkClusterSpecForProviderMetastoresHive
 }
 
 /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderMetastoresOoziePasswordSecretRef
 {
@@ -263,7 +263,7 @@ public partial class V1beta2SparkClusterSpecForProviderMetastoresOoziePasswordSe
 }
 
 /// <summary>An oozie block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderMetastoresOozie
 {
@@ -285,7 +285,7 @@ public partial class V1beta2SparkClusterSpecForProviderMetastoresOozie
 }
 
 /// <summary>A metastores block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderMetastores
 {
@@ -303,7 +303,7 @@ public partial class V1beta2SparkClusterSpecForProviderMetastores
 }
 
 /// <summary>The Operations Management Suite (OMS) workspace key.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderMonitorPrimaryKeySecretRef
 {
@@ -321,7 +321,7 @@ public partial class V1beta2SparkClusterSpecForProviderMonitorPrimaryKeySecretRe
 }
 
 /// <summary>A monitor block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderMonitor
 {
@@ -335,7 +335,7 @@ public partial class V1beta2SparkClusterSpecForProviderMonitor
 }
 
 /// <summary>A network block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderNetwork
 {
@@ -354,7 +354,7 @@ public partial class V1beta2SparkClusterSpecForProviderNetwork
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecForProviderPrivateLinkConfigurationIpConfigurationSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2SparkClusterSpecForProviderPrivateLinkConfigurationIpConfigurationSubnetIdRefPolicyResolutionEnum
 {
@@ -370,7 +370,7 @@ public enum V1beta2SparkClusterSpecForProviderPrivateLinkConfigurationIpConfigur
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecForProviderPrivateLinkConfigurationIpConfigurationSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2SparkClusterSpecForProviderPrivateLinkConfigurationIpConfigurationSubnetIdRefPolicyResolveEnum
 {
@@ -381,7 +381,7 @@ public enum V1beta2SparkClusterSpecForProviderPrivateLinkConfigurationIpConfigur
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderPrivateLinkConfigurationIpConfigurationSubnetIdRefPolicy
 {
@@ -405,7 +405,7 @@ public partial class V1beta2SparkClusterSpecForProviderPrivateLinkConfigurationI
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderPrivateLinkConfigurationIpConfigurationSubnetIdRef
 {
@@ -424,7 +424,7 @@ public partial class V1beta2SparkClusterSpecForProviderPrivateLinkConfigurationI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecForProviderPrivateLinkConfigurationIpConfigurationSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2SparkClusterSpecForProviderPrivateLinkConfigurationIpConfigurationSubnetIdSelectorPolicyResolutionEnum
 {
@@ -440,7 +440,7 @@ public enum V1beta2SparkClusterSpecForProviderPrivateLinkConfigurationIpConfigur
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecForProviderPrivateLinkConfigurationIpConfigurationSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2SparkClusterSpecForProviderPrivateLinkConfigurationIpConfigurationSubnetIdSelectorPolicyResolveEnum
 {
@@ -451,7 +451,7 @@ public enum V1beta2SparkClusterSpecForProviderPrivateLinkConfigurationIpConfigur
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderPrivateLinkConfigurationIpConfigurationSubnetIdSelectorPolicy
 {
@@ -475,7 +475,7 @@ public partial class V1beta2SparkClusterSpecForProviderPrivateLinkConfigurationI
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderPrivateLinkConfigurationIpConfigurationSubnetIdSelector
 {
@@ -496,7 +496,7 @@ public partial class V1beta2SparkClusterSpecForProviderPrivateLinkConfigurationI
 }
 
 /// <summary>An ip_configuration block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderPrivateLinkConfigurationIpConfiguration
 {
@@ -530,7 +530,7 @@ public partial class V1beta2SparkClusterSpecForProviderPrivateLinkConfigurationI
 }
 
 /// <summary>A private_link_configuration block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderPrivateLinkConfiguration
 {
@@ -553,7 +553,7 @@ public partial class V1beta2SparkClusterSpecForProviderPrivateLinkConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta2SparkClusterSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -569,7 +569,7 @@ public enum V1beta2SparkClusterSpecForProviderResourceGroupNameRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta2SparkClusterSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -580,7 +580,7 @@ public enum V1beta2SparkClusterSpecForProviderResourceGroupNameRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderResourceGroupNameRefPolicy
 {
@@ -604,7 +604,7 @@ public partial class V1beta2SparkClusterSpecForProviderResourceGroupNameRefPolic
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderResourceGroupNameRef
 {
@@ -623,7 +623,7 @@ public partial class V1beta2SparkClusterSpecForProviderResourceGroupNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2SparkClusterSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -639,7 +639,7 @@ public enum V1beta2SparkClusterSpecForProviderResourceGroupNameSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta2SparkClusterSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -650,7 +650,7 @@ public enum V1beta2SparkClusterSpecForProviderResourceGroupNameSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -674,7 +674,7 @@ public partial class V1beta2SparkClusterSpecForProviderResourceGroupNameSelector
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderResourceGroupNameSelector
 {
@@ -695,7 +695,7 @@ public partial class V1beta2SparkClusterSpecForProviderResourceGroupNameSelector
 }
 
 /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesHeadNodePasswordSecretRef
 {
@@ -712,7 +712,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesHeadNodePasswordSecr
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesHeadNodeScriptActions
 {
@@ -735,7 +735,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesHeadNodeScriptAction
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecForProviderRolesHeadNodeSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2SparkClusterSpecForProviderRolesHeadNodeSubnetIdRefPolicyResolutionEnum
 {
@@ -751,7 +751,7 @@ public enum V1beta2SparkClusterSpecForProviderRolesHeadNodeSubnetIdRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecForProviderRolesHeadNodeSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2SparkClusterSpecForProviderRolesHeadNodeSubnetIdRefPolicyResolveEnum
 {
@@ -762,7 +762,7 @@ public enum V1beta2SparkClusterSpecForProviderRolesHeadNodeSubnetIdRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesHeadNodeSubnetIdRefPolicy
 {
@@ -786,7 +786,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesHeadNodeSubnetIdRefP
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesHeadNodeSubnetIdRef
 {
@@ -805,7 +805,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesHeadNodeSubnetIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecForProviderRolesHeadNodeSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2SparkClusterSpecForProviderRolesHeadNodeSubnetIdSelectorPolicyResolutionEnum
 {
@@ -821,7 +821,7 @@ public enum V1beta2SparkClusterSpecForProviderRolesHeadNodeSubnetIdSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecForProviderRolesHeadNodeSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2SparkClusterSpecForProviderRolesHeadNodeSubnetIdSelectorPolicyResolveEnum
 {
@@ -832,7 +832,7 @@ public enum V1beta2SparkClusterSpecForProviderRolesHeadNodeSubnetIdSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesHeadNodeSubnetIdSelectorPolicy
 {
@@ -856,7 +856,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesHeadNodeSubnetIdSele
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesHeadNodeSubnetIdSelector
 {
@@ -877,7 +877,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesHeadNodeSubnetIdSele
 }
 
 /// <summary>A head_node block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesHeadNode
 {
@@ -919,7 +919,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesHeadNode
 }
 
 /// <summary>A capacity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesWorkerNodeAutoscaleCapacity
 {
@@ -932,7 +932,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesWorkerNodeAutoscaleC
     public double? MinInstanceCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesWorkerNodeAutoscaleRecurrenceSchedule
 {
@@ -950,7 +950,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesWorkerNodeAutoscaleR
 }
 
 /// <summary>A recurrence block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesWorkerNodeAutoscaleRecurrence
 {
@@ -964,7 +964,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesWorkerNodeAutoscaleR
 }
 
 /// <summary>A autoscale block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesWorkerNodeAutoscale
 {
@@ -978,7 +978,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesWorkerNodeAutoscale
 }
 
 /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesWorkerNodePasswordSecretRef
 {
@@ -995,7 +995,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesWorkerNodePasswordSe
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesWorkerNodeScriptActions
 {
@@ -1018,7 +1018,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesWorkerNodeScriptActi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecForProviderRolesWorkerNodeSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2SparkClusterSpecForProviderRolesWorkerNodeSubnetIdRefPolicyResolutionEnum
 {
@@ -1034,7 +1034,7 @@ public enum V1beta2SparkClusterSpecForProviderRolesWorkerNodeSubnetIdRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecForProviderRolesWorkerNodeSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2SparkClusterSpecForProviderRolesWorkerNodeSubnetIdRefPolicyResolveEnum
 {
@@ -1045,7 +1045,7 @@ public enum V1beta2SparkClusterSpecForProviderRolesWorkerNodeSubnetIdRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesWorkerNodeSubnetIdRefPolicy
 {
@@ -1069,7 +1069,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesWorkerNodeSubnetIdRe
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesWorkerNodeSubnetIdRef
 {
@@ -1088,7 +1088,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesWorkerNodeSubnetIdRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecForProviderRolesWorkerNodeSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2SparkClusterSpecForProviderRolesWorkerNodeSubnetIdSelectorPolicyResolutionEnum
 {
@@ -1104,7 +1104,7 @@ public enum V1beta2SparkClusterSpecForProviderRolesWorkerNodeSubnetIdSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecForProviderRolesWorkerNodeSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2SparkClusterSpecForProviderRolesWorkerNodeSubnetIdSelectorPolicyResolveEnum
 {
@@ -1115,7 +1115,7 @@ public enum V1beta2SparkClusterSpecForProviderRolesWorkerNodeSubnetIdSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesWorkerNodeSubnetIdSelectorPolicy
 {
@@ -1139,7 +1139,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesWorkerNodeSubnetIdSe
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesWorkerNodeSubnetIdSelector
 {
@@ -1160,7 +1160,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesWorkerNodeSubnetIdSe
 }
 
 /// <summary>A worker_node block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesWorkerNode
 {
@@ -1210,7 +1210,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesWorkerNode
 }
 
 /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesZookeeperNodePasswordSecretRef
 {
@@ -1227,7 +1227,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesZookeeperNodePasswor
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesZookeeperNodeScriptActions
 {
@@ -1250,7 +1250,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesZookeeperNodeScriptA
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecForProviderRolesZookeeperNodeSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2SparkClusterSpecForProviderRolesZookeeperNodeSubnetIdRefPolicyResolutionEnum
 {
@@ -1266,7 +1266,7 @@ public enum V1beta2SparkClusterSpecForProviderRolesZookeeperNodeSubnetIdRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecForProviderRolesZookeeperNodeSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2SparkClusterSpecForProviderRolesZookeeperNodeSubnetIdRefPolicyResolveEnum
 {
@@ -1277,7 +1277,7 @@ public enum V1beta2SparkClusterSpecForProviderRolesZookeeperNodeSubnetIdRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesZookeeperNodeSubnetIdRefPolicy
 {
@@ -1301,7 +1301,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesZookeeperNodeSubnetI
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesZookeeperNodeSubnetIdRef
 {
@@ -1320,7 +1320,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesZookeeperNodeSubnetI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecForProviderRolesZookeeperNodeSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2SparkClusterSpecForProviderRolesZookeeperNodeSubnetIdSelectorPolicyResolutionEnum
 {
@@ -1336,7 +1336,7 @@ public enum V1beta2SparkClusterSpecForProviderRolesZookeeperNodeSubnetIdSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecForProviderRolesZookeeperNodeSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2SparkClusterSpecForProviderRolesZookeeperNodeSubnetIdSelectorPolicyResolveEnum
 {
@@ -1347,7 +1347,7 @@ public enum V1beta2SparkClusterSpecForProviderRolesZookeeperNodeSubnetIdSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesZookeeperNodeSubnetIdSelectorPolicy
 {
@@ -1371,7 +1371,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesZookeeperNodeSubnetI
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesZookeeperNodeSubnetIdSelector
 {
@@ -1392,7 +1392,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesZookeeperNodeSubnetI
 }
 
 /// <summary>A zookeeper_node block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRolesZookeeperNode
 {
@@ -1434,7 +1434,7 @@ public partial class V1beta2SparkClusterSpecForProviderRolesZookeeperNode
 }
 
 /// <summary>A roles block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderRoles
 {
@@ -1452,7 +1452,7 @@ public partial class V1beta2SparkClusterSpecForProviderRoles
 }
 
 /// <summary>The user password of the Azure Active Directory Domain. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderSecurityProfileDomainUserPasswordSecretRef
 {
@@ -1470,7 +1470,7 @@ public partial class V1beta2SparkClusterSpecForProviderSecurityProfileDomainUser
 }
 
 /// <summary>A security_profile block as defined below. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderSecurityProfile
 {
@@ -1504,7 +1504,7 @@ public partial class V1beta2SparkClusterSpecForProviderSecurityProfile
 }
 
 /// <summary>The Access Key which should be used to connect to the Storage Account. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderStorageAccountStorageAccountKeySecretRef
 {
@@ -1527,7 +1527,7 @@ public partial class V1beta2SparkClusterSpecForProviderStorageAccountStorageAcco
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecForProviderStorageAccountStorageContainerIdRefPolicyResolutionEnum>))]
 public enum V1beta2SparkClusterSpecForProviderStorageAccountStorageContainerIdRefPolicyResolutionEnum
 {
@@ -1543,7 +1543,7 @@ public enum V1beta2SparkClusterSpecForProviderStorageAccountStorageContainerIdRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecForProviderStorageAccountStorageContainerIdRefPolicyResolveEnum>))]
 public enum V1beta2SparkClusterSpecForProviderStorageAccountStorageContainerIdRefPolicyResolveEnum
 {
@@ -1554,7 +1554,7 @@ public enum V1beta2SparkClusterSpecForProviderStorageAccountStorageContainerIdRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderStorageAccountStorageContainerIdRefPolicy
 {
@@ -1578,7 +1578,7 @@ public partial class V1beta2SparkClusterSpecForProviderStorageAccountStorageCont
 }
 
 /// <summary>Reference to a Container in storage to populate storageContainerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderStorageAccountStorageContainerIdRef
 {
@@ -1597,7 +1597,7 @@ public partial class V1beta2SparkClusterSpecForProviderStorageAccountStorageCont
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecForProviderStorageAccountStorageContainerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2SparkClusterSpecForProviderStorageAccountStorageContainerIdSelectorPolicyResolutionEnum
 {
@@ -1613,7 +1613,7 @@ public enum V1beta2SparkClusterSpecForProviderStorageAccountStorageContainerIdSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecForProviderStorageAccountStorageContainerIdSelectorPolicyResolveEnum>))]
 public enum V1beta2SparkClusterSpecForProviderStorageAccountStorageContainerIdSelectorPolicyResolveEnum
 {
@@ -1624,7 +1624,7 @@ public enum V1beta2SparkClusterSpecForProviderStorageAccountStorageContainerIdSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderStorageAccountStorageContainerIdSelectorPolicy
 {
@@ -1648,7 +1648,7 @@ public partial class V1beta2SparkClusterSpecForProviderStorageAccountStorageCont
 }
 
 /// <summary>Selector for a Container in storage to populate storageContainerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderStorageAccountStorageContainerIdSelector
 {
@@ -1668,7 +1668,7 @@ public partial class V1beta2SparkClusterSpecForProviderStorageAccountStorageCont
     public V1beta2SparkClusterSpecForProviderStorageAccountStorageContainerIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderStorageAccount
 {
@@ -1698,7 +1698,7 @@ public partial class V1beta2SparkClusterSpecForProviderStorageAccount
 }
 
 /// <summary>A storage_account_gen2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProviderStorageAccountGen2
 {
@@ -1719,7 +1719,7 @@ public partial class V1beta2SparkClusterSpecForProviderStorageAccountGen2
     public string? StorageResourceId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecForProvider
 {
@@ -1817,7 +1817,7 @@ public partial class V1beta2SparkClusterSpecForProvider
 }
 
 /// <summary>A component_version block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderComponentVersion
 {
@@ -1827,7 +1827,7 @@ public partial class V1beta2SparkClusterSpecInitProviderComponentVersion
 }
 
 /// <summary>A compute_isolation block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderComputeIsolation
 {
@@ -1840,7 +1840,7 @@ public partial class V1beta2SparkClusterSpecInitProviderComputeIsolation
     public string? HostSku { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderDiskEncryption
 {
@@ -1862,7 +1862,7 @@ public partial class V1beta2SparkClusterSpecInitProviderDiskEncryption
 }
 
 /// <summary>The workspace key of the log analytics extension.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderExtensionPrimaryKeySecretRef
 {
@@ -1880,7 +1880,7 @@ public partial class V1beta2SparkClusterSpecInitProviderExtensionPrimaryKeySecre
 }
 
 /// <summary>An extension block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderExtension
 {
@@ -1894,7 +1894,7 @@ public partial class V1beta2SparkClusterSpecInitProviderExtension
 }
 
 /// <summary>The password used for the Ambari Portal.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderGatewayPasswordSecretRef
 {
@@ -1912,7 +1912,7 @@ public partial class V1beta2SparkClusterSpecInitProviderGatewayPasswordSecretRef
 }
 
 /// <summary>A gateway block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderGateway
 {
@@ -1926,7 +1926,7 @@ public partial class V1beta2SparkClusterSpecInitProviderGateway
 }
 
 /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderMetastoresAmbariPasswordSecretRef
 {
@@ -1944,7 +1944,7 @@ public partial class V1beta2SparkClusterSpecInitProviderMetastoresAmbariPassword
 }
 
 /// <summary>An ambari block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderMetastoresAmbari
 {
@@ -1966,7 +1966,7 @@ public partial class V1beta2SparkClusterSpecInitProviderMetastoresAmbari
 }
 
 /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderMetastoresHivePasswordSecretRef
 {
@@ -1984,7 +1984,7 @@ public partial class V1beta2SparkClusterSpecInitProviderMetastoresHivePasswordSe
 }
 
 /// <summary>A hive block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderMetastoresHive
 {
@@ -2006,7 +2006,7 @@ public partial class V1beta2SparkClusterSpecInitProviderMetastoresHive
 }
 
 /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderMetastoresOoziePasswordSecretRef
 {
@@ -2024,7 +2024,7 @@ public partial class V1beta2SparkClusterSpecInitProviderMetastoresOoziePasswordS
 }
 
 /// <summary>An oozie block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderMetastoresOozie
 {
@@ -2046,7 +2046,7 @@ public partial class V1beta2SparkClusterSpecInitProviderMetastoresOozie
 }
 
 /// <summary>A metastores block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderMetastores
 {
@@ -2064,7 +2064,7 @@ public partial class V1beta2SparkClusterSpecInitProviderMetastores
 }
 
 /// <summary>The Operations Management Suite (OMS) workspace key.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderMonitorPrimaryKeySecretRef
 {
@@ -2082,7 +2082,7 @@ public partial class V1beta2SparkClusterSpecInitProviderMonitorPrimaryKeySecretR
 }
 
 /// <summary>A monitor block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderMonitor
 {
@@ -2096,7 +2096,7 @@ public partial class V1beta2SparkClusterSpecInitProviderMonitor
 }
 
 /// <summary>A network block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderNetwork
 {
@@ -2115,7 +2115,7 @@ public partial class V1beta2SparkClusterSpecInitProviderNetwork
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecInitProviderPrivateLinkConfigurationIpConfigurationSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2SparkClusterSpecInitProviderPrivateLinkConfigurationIpConfigurationSubnetIdRefPolicyResolutionEnum
 {
@@ -2131,7 +2131,7 @@ public enum V1beta2SparkClusterSpecInitProviderPrivateLinkConfigurationIpConfigu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecInitProviderPrivateLinkConfigurationIpConfigurationSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2SparkClusterSpecInitProviderPrivateLinkConfigurationIpConfigurationSubnetIdRefPolicyResolveEnum
 {
@@ -2142,7 +2142,7 @@ public enum V1beta2SparkClusterSpecInitProviderPrivateLinkConfigurationIpConfigu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderPrivateLinkConfigurationIpConfigurationSubnetIdRefPolicy
 {
@@ -2166,7 +2166,7 @@ public partial class V1beta2SparkClusterSpecInitProviderPrivateLinkConfiguration
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderPrivateLinkConfigurationIpConfigurationSubnetIdRef
 {
@@ -2185,7 +2185,7 @@ public partial class V1beta2SparkClusterSpecInitProviderPrivateLinkConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecInitProviderPrivateLinkConfigurationIpConfigurationSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2SparkClusterSpecInitProviderPrivateLinkConfigurationIpConfigurationSubnetIdSelectorPolicyResolutionEnum
 {
@@ -2201,7 +2201,7 @@ public enum V1beta2SparkClusterSpecInitProviderPrivateLinkConfigurationIpConfigu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecInitProviderPrivateLinkConfigurationIpConfigurationSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2SparkClusterSpecInitProviderPrivateLinkConfigurationIpConfigurationSubnetIdSelectorPolicyResolveEnum
 {
@@ -2212,7 +2212,7 @@ public enum V1beta2SparkClusterSpecInitProviderPrivateLinkConfigurationIpConfigu
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderPrivateLinkConfigurationIpConfigurationSubnetIdSelectorPolicy
 {
@@ -2236,7 +2236,7 @@ public partial class V1beta2SparkClusterSpecInitProviderPrivateLinkConfiguration
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderPrivateLinkConfigurationIpConfigurationSubnetIdSelector
 {
@@ -2257,7 +2257,7 @@ public partial class V1beta2SparkClusterSpecInitProviderPrivateLinkConfiguration
 }
 
 /// <summary>An ip_configuration block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderPrivateLinkConfigurationIpConfiguration
 {
@@ -2291,7 +2291,7 @@ public partial class V1beta2SparkClusterSpecInitProviderPrivateLinkConfiguration
 }
 
 /// <summary>A private_link_configuration block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderPrivateLinkConfiguration
 {
@@ -2309,7 +2309,7 @@ public partial class V1beta2SparkClusterSpecInitProviderPrivateLinkConfiguration
 }
 
 /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesHeadNodePasswordSecretRef
 {
@@ -2326,7 +2326,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesHeadNodePasswordSec
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesHeadNodeScriptActions
 {
@@ -2349,7 +2349,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesHeadNodeScriptActio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecInitProviderRolesHeadNodeSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2SparkClusterSpecInitProviderRolesHeadNodeSubnetIdRefPolicyResolutionEnum
 {
@@ -2365,7 +2365,7 @@ public enum V1beta2SparkClusterSpecInitProviderRolesHeadNodeSubnetIdRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecInitProviderRolesHeadNodeSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2SparkClusterSpecInitProviderRolesHeadNodeSubnetIdRefPolicyResolveEnum
 {
@@ -2376,7 +2376,7 @@ public enum V1beta2SparkClusterSpecInitProviderRolesHeadNodeSubnetIdRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesHeadNodeSubnetIdRefPolicy
 {
@@ -2400,7 +2400,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesHeadNodeSubnetIdRef
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesHeadNodeSubnetIdRef
 {
@@ -2419,7 +2419,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesHeadNodeSubnetIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecInitProviderRolesHeadNodeSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2SparkClusterSpecInitProviderRolesHeadNodeSubnetIdSelectorPolicyResolutionEnum
 {
@@ -2435,7 +2435,7 @@ public enum V1beta2SparkClusterSpecInitProviderRolesHeadNodeSubnetIdSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecInitProviderRolesHeadNodeSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2SparkClusterSpecInitProviderRolesHeadNodeSubnetIdSelectorPolicyResolveEnum
 {
@@ -2446,7 +2446,7 @@ public enum V1beta2SparkClusterSpecInitProviderRolesHeadNodeSubnetIdSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesHeadNodeSubnetIdSelectorPolicy
 {
@@ -2470,7 +2470,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesHeadNodeSubnetIdSel
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesHeadNodeSubnetIdSelector
 {
@@ -2491,7 +2491,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesHeadNodeSubnetIdSel
 }
 
 /// <summary>A head_node block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesHeadNode
 {
@@ -2533,7 +2533,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesHeadNode
 }
 
 /// <summary>A capacity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesWorkerNodeAutoscaleCapacity
 {
@@ -2546,7 +2546,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesWorkerNodeAutoscale
     public double? MinInstanceCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesWorkerNodeAutoscaleRecurrenceSchedule
 {
@@ -2564,7 +2564,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesWorkerNodeAutoscale
 }
 
 /// <summary>A recurrence block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesWorkerNodeAutoscaleRecurrence
 {
@@ -2578,7 +2578,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesWorkerNodeAutoscale
 }
 
 /// <summary>A autoscale block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesWorkerNodeAutoscale
 {
@@ -2592,7 +2592,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesWorkerNodeAutoscale
 }
 
 /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesWorkerNodePasswordSecretRef
 {
@@ -2609,7 +2609,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesWorkerNodePasswordS
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesWorkerNodeScriptActions
 {
@@ -2632,7 +2632,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesWorkerNodeScriptAct
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecInitProviderRolesWorkerNodeSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2SparkClusterSpecInitProviderRolesWorkerNodeSubnetIdRefPolicyResolutionEnum
 {
@@ -2648,7 +2648,7 @@ public enum V1beta2SparkClusterSpecInitProviderRolesWorkerNodeSubnetIdRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecInitProviderRolesWorkerNodeSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2SparkClusterSpecInitProviderRolesWorkerNodeSubnetIdRefPolicyResolveEnum
 {
@@ -2659,7 +2659,7 @@ public enum V1beta2SparkClusterSpecInitProviderRolesWorkerNodeSubnetIdRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesWorkerNodeSubnetIdRefPolicy
 {
@@ -2683,7 +2683,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesWorkerNodeSubnetIdR
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesWorkerNodeSubnetIdRef
 {
@@ -2702,7 +2702,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesWorkerNodeSubnetIdR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecInitProviderRolesWorkerNodeSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2SparkClusterSpecInitProviderRolesWorkerNodeSubnetIdSelectorPolicyResolutionEnum
 {
@@ -2718,7 +2718,7 @@ public enum V1beta2SparkClusterSpecInitProviderRolesWorkerNodeSubnetIdSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecInitProviderRolesWorkerNodeSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2SparkClusterSpecInitProviderRolesWorkerNodeSubnetIdSelectorPolicyResolveEnum
 {
@@ -2729,7 +2729,7 @@ public enum V1beta2SparkClusterSpecInitProviderRolesWorkerNodeSubnetIdSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesWorkerNodeSubnetIdSelectorPolicy
 {
@@ -2753,7 +2753,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesWorkerNodeSubnetIdS
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesWorkerNodeSubnetIdSelector
 {
@@ -2774,7 +2774,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesWorkerNodeSubnetIdS
 }
 
 /// <summary>A worker_node block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesWorkerNode
 {
@@ -2824,7 +2824,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesWorkerNode
 }
 
 /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesZookeeperNodePasswordSecretRef
 {
@@ -2841,7 +2841,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesZookeeperNodePasswo
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesZookeeperNodeScriptActions
 {
@@ -2864,7 +2864,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesZookeeperNodeScript
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecInitProviderRolesZookeeperNodeSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2SparkClusterSpecInitProviderRolesZookeeperNodeSubnetIdRefPolicyResolutionEnum
 {
@@ -2880,7 +2880,7 @@ public enum V1beta2SparkClusterSpecInitProviderRolesZookeeperNodeSubnetIdRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecInitProviderRolesZookeeperNodeSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2SparkClusterSpecInitProviderRolesZookeeperNodeSubnetIdRefPolicyResolveEnum
 {
@@ -2891,7 +2891,7 @@ public enum V1beta2SparkClusterSpecInitProviderRolesZookeeperNodeSubnetIdRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesZookeeperNodeSubnetIdRefPolicy
 {
@@ -2915,7 +2915,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesZookeeperNodeSubnet
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesZookeeperNodeSubnetIdRef
 {
@@ -2934,7 +2934,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesZookeeperNodeSubnet
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecInitProviderRolesZookeeperNodeSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2SparkClusterSpecInitProviderRolesZookeeperNodeSubnetIdSelectorPolicyResolutionEnum
 {
@@ -2950,7 +2950,7 @@ public enum V1beta2SparkClusterSpecInitProviderRolesZookeeperNodeSubnetIdSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecInitProviderRolesZookeeperNodeSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2SparkClusterSpecInitProviderRolesZookeeperNodeSubnetIdSelectorPolicyResolveEnum
 {
@@ -2961,7 +2961,7 @@ public enum V1beta2SparkClusterSpecInitProviderRolesZookeeperNodeSubnetIdSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesZookeeperNodeSubnetIdSelectorPolicy
 {
@@ -2985,7 +2985,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesZookeeperNodeSubnet
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesZookeeperNodeSubnetIdSelector
 {
@@ -3006,7 +3006,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesZookeeperNodeSubnet
 }
 
 /// <summary>A zookeeper_node block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRolesZookeeperNode
 {
@@ -3048,7 +3048,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRolesZookeeperNode
 }
 
 /// <summary>A roles block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderRoles
 {
@@ -3066,7 +3066,7 @@ public partial class V1beta2SparkClusterSpecInitProviderRoles
 }
 
 /// <summary>The user password of the Azure Active Directory Domain. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderSecurityProfileDomainUserPasswordSecretRef
 {
@@ -3084,7 +3084,7 @@ public partial class V1beta2SparkClusterSpecInitProviderSecurityProfileDomainUse
 }
 
 /// <summary>A security_profile block as defined below. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderSecurityProfile
 {
@@ -3118,7 +3118,7 @@ public partial class V1beta2SparkClusterSpecInitProviderSecurityProfile
 }
 
 /// <summary>The Access Key which should be used to connect to the Storage Account. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderStorageAccountStorageAccountKeySecretRef
 {
@@ -3141,7 +3141,7 @@ public partial class V1beta2SparkClusterSpecInitProviderStorageAccountStorageAcc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecInitProviderStorageAccountStorageContainerIdRefPolicyResolutionEnum>))]
 public enum V1beta2SparkClusterSpecInitProviderStorageAccountStorageContainerIdRefPolicyResolutionEnum
 {
@@ -3157,7 +3157,7 @@ public enum V1beta2SparkClusterSpecInitProviderStorageAccountStorageContainerIdR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecInitProviderStorageAccountStorageContainerIdRefPolicyResolveEnum>))]
 public enum V1beta2SparkClusterSpecInitProviderStorageAccountStorageContainerIdRefPolicyResolveEnum
 {
@@ -3168,7 +3168,7 @@ public enum V1beta2SparkClusterSpecInitProviderStorageAccountStorageContainerIdR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderStorageAccountStorageContainerIdRefPolicy
 {
@@ -3192,7 +3192,7 @@ public partial class V1beta2SparkClusterSpecInitProviderStorageAccountStorageCon
 }
 
 /// <summary>Reference to a Container in storage to populate storageContainerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderStorageAccountStorageContainerIdRef
 {
@@ -3211,7 +3211,7 @@ public partial class V1beta2SparkClusterSpecInitProviderStorageAccountStorageCon
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecInitProviderStorageAccountStorageContainerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2SparkClusterSpecInitProviderStorageAccountStorageContainerIdSelectorPolicyResolutionEnum
 {
@@ -3227,7 +3227,7 @@ public enum V1beta2SparkClusterSpecInitProviderStorageAccountStorageContainerIdS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecInitProviderStorageAccountStorageContainerIdSelectorPolicyResolveEnum>))]
 public enum V1beta2SparkClusterSpecInitProviderStorageAccountStorageContainerIdSelectorPolicyResolveEnum
 {
@@ -3238,7 +3238,7 @@ public enum V1beta2SparkClusterSpecInitProviderStorageAccountStorageContainerIdS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderStorageAccountStorageContainerIdSelectorPolicy
 {
@@ -3262,7 +3262,7 @@ public partial class V1beta2SparkClusterSpecInitProviderStorageAccountStorageCon
 }
 
 /// <summary>Selector for a Container in storage to populate storageContainerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderStorageAccountStorageContainerIdSelector
 {
@@ -3282,7 +3282,7 @@ public partial class V1beta2SparkClusterSpecInitProviderStorageAccountStorageCon
     public V1beta2SparkClusterSpecInitProviderStorageAccountStorageContainerIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderStorageAccount
 {
@@ -3312,7 +3312,7 @@ public partial class V1beta2SparkClusterSpecInitProviderStorageAccount
 }
 
 /// <summary>A storage_account_gen2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProviderStorageAccountGen2
 {
@@ -3345,7 +3345,7 @@ public partial class V1beta2SparkClusterSpecInitProviderStorageAccountGen2
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecInitProvider
 {
@@ -3434,7 +3434,7 @@ public partial class V1beta2SparkClusterSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecManagementPoliciesEnum>))]
 public enum V1beta2SparkClusterSpecManagementPoliciesEnum
 {
@@ -3458,7 +3458,7 @@ public enum V1beta2SparkClusterSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2SparkClusterSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -3474,7 +3474,7 @@ public enum V1beta2SparkClusterSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SparkClusterSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2SparkClusterSpecProviderConfigRefPolicyResolveEnum
 {
@@ -3485,7 +3485,7 @@ public enum V1beta2SparkClusterSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecProviderConfigRefPolicy
 {
@@ -3513,7 +3513,7 @@ public partial class V1beta2SparkClusterSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecProviderConfigRef
 {
@@ -3532,7 +3532,7 @@ public partial class V1beta2SparkClusterSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpecWriteConnectionSecretToRef
 {
@@ -3546,7 +3546,7 @@ public partial class V1beta2SparkClusterSpecWriteConnectionSecretToRef
 }
 
 /// <summary>SparkClusterSpec defines the desired state of SparkCluster</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterSpec
 {
@@ -3614,7 +3614,7 @@ public partial class V1beta2SparkClusterSpec
 }
 
 /// <summary>A component_version block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderComponentVersion
 {
@@ -3624,7 +3624,7 @@ public partial class V1beta2SparkClusterStatusAtProviderComponentVersion
 }
 
 /// <summary>A compute_isolation block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderComputeIsolation
 {
@@ -3637,7 +3637,7 @@ public partial class V1beta2SparkClusterStatusAtProviderComputeIsolation
     public string? HostSku { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderDiskEncryption
 {
@@ -3659,7 +3659,7 @@ public partial class V1beta2SparkClusterStatusAtProviderDiskEncryption
 }
 
 /// <summary>An extension block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderExtension
 {
@@ -3669,7 +3669,7 @@ public partial class V1beta2SparkClusterStatusAtProviderExtension
 }
 
 /// <summary>A gateway block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderGateway
 {
@@ -3679,7 +3679,7 @@ public partial class V1beta2SparkClusterStatusAtProviderGateway
 }
 
 /// <summary>An ambari block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderMetastoresAmbari
 {
@@ -3697,7 +3697,7 @@ public partial class V1beta2SparkClusterStatusAtProviderMetastoresAmbari
 }
 
 /// <summary>A hive block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderMetastoresHive
 {
@@ -3715,7 +3715,7 @@ public partial class V1beta2SparkClusterStatusAtProviderMetastoresHive
 }
 
 /// <summary>An oozie block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderMetastoresOozie
 {
@@ -3733,7 +3733,7 @@ public partial class V1beta2SparkClusterStatusAtProviderMetastoresOozie
 }
 
 /// <summary>A metastores block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderMetastores
 {
@@ -3751,7 +3751,7 @@ public partial class V1beta2SparkClusterStatusAtProviderMetastores
 }
 
 /// <summary>A monitor block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderMonitor
 {
@@ -3761,7 +3761,7 @@ public partial class V1beta2SparkClusterStatusAtProviderMonitor
 }
 
 /// <summary>A network block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderNetwork
 {
@@ -3775,7 +3775,7 @@ public partial class V1beta2SparkClusterStatusAtProviderNetwork
 }
 
 /// <summary>An ip_configuration block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderPrivateLinkConfigurationIpConfiguration
 {
@@ -3801,7 +3801,7 @@ public partial class V1beta2SparkClusterStatusAtProviderPrivateLinkConfiguration
 }
 
 /// <summary>A private_link_configuration block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderPrivateLinkConfiguration
 {
@@ -3818,7 +3818,7 @@ public partial class V1beta2SparkClusterStatusAtProviderPrivateLinkConfiguration
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderRolesHeadNodeScriptActions
 {
@@ -3836,7 +3836,7 @@ public partial class V1beta2SparkClusterStatusAtProviderRolesHeadNodeScriptActio
 }
 
 /// <summary>A head_node block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderRolesHeadNode
 {
@@ -3866,7 +3866,7 @@ public partial class V1beta2SparkClusterStatusAtProviderRolesHeadNode
 }
 
 /// <summary>A capacity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderRolesWorkerNodeAutoscaleCapacity
 {
@@ -3879,7 +3879,7 @@ public partial class V1beta2SparkClusterStatusAtProviderRolesWorkerNodeAutoscale
     public double? MinInstanceCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderRolesWorkerNodeAutoscaleRecurrenceSchedule
 {
@@ -3897,7 +3897,7 @@ public partial class V1beta2SparkClusterStatusAtProviderRolesWorkerNodeAutoscale
 }
 
 /// <summary>A recurrence block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderRolesWorkerNodeAutoscaleRecurrence
 {
@@ -3911,7 +3911,7 @@ public partial class V1beta2SparkClusterStatusAtProviderRolesWorkerNodeAutoscale
 }
 
 /// <summary>A autoscale block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderRolesWorkerNodeAutoscale
 {
@@ -3924,7 +3924,7 @@ public partial class V1beta2SparkClusterStatusAtProviderRolesWorkerNodeAutoscale
     public V1beta2SparkClusterStatusAtProviderRolesWorkerNodeAutoscaleRecurrence? Recurrence { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderRolesWorkerNodeScriptActions
 {
@@ -3942,7 +3942,7 @@ public partial class V1beta2SparkClusterStatusAtProviderRolesWorkerNodeScriptAct
 }
 
 /// <summary>A worker_node block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderRolesWorkerNode
 {
@@ -3979,7 +3979,7 @@ public partial class V1beta2SparkClusterStatusAtProviderRolesWorkerNode
     public string? VmSize { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderRolesZookeeperNodeScriptActions
 {
@@ -3997,7 +3997,7 @@ public partial class V1beta2SparkClusterStatusAtProviderRolesZookeeperNodeScript
 }
 
 /// <summary>A zookeeper_node block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderRolesZookeeperNode
 {
@@ -4027,7 +4027,7 @@ public partial class V1beta2SparkClusterStatusAtProviderRolesZookeeperNode
 }
 
 /// <summary>A roles block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderRoles
 {
@@ -4045,7 +4045,7 @@ public partial class V1beta2SparkClusterStatusAtProviderRoles
 }
 
 /// <summary>A security_profile block as defined below. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderSecurityProfile
 {
@@ -4074,7 +4074,7 @@ public partial class V1beta2SparkClusterStatusAtProviderSecurityProfile
     public string? MsiResourceId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderStorageAccount
 {
@@ -4092,7 +4092,7 @@ public partial class V1beta2SparkClusterStatusAtProviderStorageAccount
 }
 
 /// <summary>A storage_account_gen2 block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProviderStorageAccountGen2
 {
@@ -4113,7 +4113,7 @@ public partial class V1beta2SparkClusterStatusAtProviderStorageAccountGen2
     public string? StorageResourceId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusAtProvider
 {
@@ -4215,7 +4215,7 @@ public partial class V1beta2SparkClusterStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatusConditions
 {
@@ -4258,7 +4258,7 @@ public partial class V1beta2SparkClusterStatusConditions
 }
 
 /// <summary>SparkClusterStatus defines the observed state of SparkCluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SparkClusterStatus
 {
@@ -4279,7 +4279,7 @@ public partial class V1beta2SparkClusterStatus
 }
 
 /// <summary>SparkCluster is the Schema for the SparkClusters API. Manages a HDInsight Spark Cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2SparkCluster : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2SparkClusterSpec>, IStatus<V1beta2SparkClusterStatus?>

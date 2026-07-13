@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.recoveryservices.azure.m.upbound.io;
 /// <summary>SiteRecoveryFabric is the Schema for the SiteRecoveryFabrics API. Manages a Site Recovery Replication Fabric on Azure.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SiteRecoveryFabricList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SiteRecoveryFabric>
@@ -42,7 +42,7 @@ public partial class V1beta1SiteRecoveryFabricList : IKubernetesObject<V1ListMet
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryFabricSpecForProviderRecoveryVaultNameRefPolicyResolutionEnum>))]
 public enum V1beta1SiteRecoveryFabricSpecForProviderRecoveryVaultNameRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1SiteRecoveryFabricSpecForProviderRecoveryVaultNameRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryFabricSpecForProviderRecoveryVaultNameRefPolicyResolveEnum>))]
 public enum V1beta1SiteRecoveryFabricSpecForProviderRecoveryVaultNameRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1SiteRecoveryFabricSpecForProviderRecoveryVaultNameRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SiteRecoveryFabricSpecForProviderRecoveryVaultNameRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1SiteRecoveryFabricSpecForProviderRecoveryVaultNameRe
 }
 
 /// <summary>Reference to a Vault in recoveryservices to populate recoveryVaultName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SiteRecoveryFabricSpecForProviderRecoveryVaultNameRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1SiteRecoveryFabricSpecForProviderRecoveryVaultNameRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryFabricSpecForProviderRecoveryVaultNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1SiteRecoveryFabricSpecForProviderRecoveryVaultNameSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1SiteRecoveryFabricSpecForProviderRecoveryVaultNameSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryFabricSpecForProviderRecoveryVaultNameSelectorPolicyResolveEnum>))]
 public enum V1beta1SiteRecoveryFabricSpecForProviderRecoveryVaultNameSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1SiteRecoveryFabricSpecForProviderRecoveryVaultNameSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SiteRecoveryFabricSpecForProviderRecoveryVaultNameSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1SiteRecoveryFabricSpecForProviderRecoveryVaultNameSe
 }
 
 /// <summary>Selector for a Vault in recoveryservices to populate recoveryVaultName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SiteRecoveryFabricSpecForProviderRecoveryVaultNameSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1SiteRecoveryFabricSpecForProviderRecoveryVaultNameSe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryFabricSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1SiteRecoveryFabricSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1SiteRecoveryFabricSpecForProviderResourceGroupNameRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryFabricSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1SiteRecoveryFabricSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1SiteRecoveryFabricSpecForProviderResourceGroupNameRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SiteRecoveryFabricSpecForProviderResourceGroupNameRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1SiteRecoveryFabricSpecForProviderResourceGroupNameRe
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SiteRecoveryFabricSpecForProviderResourceGroupNameRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1SiteRecoveryFabricSpecForProviderResourceGroupNameRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryFabricSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1SiteRecoveryFabricSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1SiteRecoveryFabricSpecForProviderResourceGroupNameSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryFabricSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1SiteRecoveryFabricSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1SiteRecoveryFabricSpecForProviderResourceGroupNameSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SiteRecoveryFabricSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1SiteRecoveryFabricSpecForProviderResourceGroupNameSe
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SiteRecoveryFabricSpecForProviderResourceGroupNameSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1SiteRecoveryFabricSpecForProviderResourceGroupNameSe
     public V1beta1SiteRecoveryFabricSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SiteRecoveryFabricSpecForProvider
 {
@@ -391,7 +391,7 @@ public partial class V1beta1SiteRecoveryFabricSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SiteRecoveryFabricSpecInitProvider
 {
@@ -404,7 +404,7 @@ public partial class V1beta1SiteRecoveryFabricSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryFabricSpecManagementPoliciesEnum>))]
 public enum V1beta1SiteRecoveryFabricSpecManagementPoliciesEnum
 {
@@ -427,7 +427,7 @@ public enum V1beta1SiteRecoveryFabricSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SiteRecoveryFabricSpecProviderConfigRef
 {
@@ -446,7 +446,7 @@ public partial class V1beta1SiteRecoveryFabricSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SiteRecoveryFabricSpecWriteConnectionSecretToRef
 {
@@ -456,7 +456,7 @@ public partial class V1beta1SiteRecoveryFabricSpecWriteConnectionSecretToRef
 }
 
 /// <summary>SiteRecoveryFabricSpec defines the desired state of SiteRecoveryFabric</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SiteRecoveryFabricSpec
 {
@@ -507,7 +507,7 @@ public partial class V1beta1SiteRecoveryFabricSpec
     public V1beta1SiteRecoveryFabricSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SiteRecoveryFabricStatusAtProvider
 {
@@ -529,7 +529,7 @@ public partial class V1beta1SiteRecoveryFabricStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SiteRecoveryFabricStatusConditions
 {
@@ -572,7 +572,7 @@ public partial class V1beta1SiteRecoveryFabricStatusConditions
 }
 
 /// <summary>SiteRecoveryFabricStatus defines the observed state of SiteRecoveryFabric.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SiteRecoveryFabricStatus
 {
@@ -593,7 +593,7 @@ public partial class V1beta1SiteRecoveryFabricStatus
 }
 
 /// <summary>SiteRecoveryFabric is the Schema for the SiteRecoveryFabrics API. Manages a Site Recovery Replication Fabric on Azure.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SiteRecoveryFabric : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SiteRecoveryFabricSpec>, IStatus<V1beta1SiteRecoveryFabricStatus?>

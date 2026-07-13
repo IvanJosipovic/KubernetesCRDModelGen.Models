@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.athena.services.k8s.aws;
 /// <summary>WorkGroup is the Schema for the WorkGroups API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1WorkGroupList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1WorkGroup>
@@ -40,7 +40,7 @@ public partial class V1alpha1WorkGroupList : IKubernetesObject<V1ListMeta>, IIte
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkGroupSpecConfigurationCustomerContentEncryptionConfigurationKmsKeyRefFrom
 {
@@ -52,7 +52,7 @@ public partial class V1alpha1WorkGroupSpecConfigurationCustomerContentEncryption
 }
 
 /// <summary>Reference field for KMSKey</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkGroupSpecConfigurationCustomerContentEncryptionConfigurationKmsKeyRef
 {
@@ -69,7 +69,7 @@ public partial class V1alpha1WorkGroupSpecConfigurationCustomerContentEncryption
 /// data stores in Athena. When an Amazon Web Services managed key is used, this
 /// value is null. This setting does not apply to Athena SQL workgroups.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkGroupSpecConfigurationCustomerContentEncryptionConfiguration
 {
@@ -85,7 +85,7 @@ public partial class V1alpha1WorkGroupSpecConfigurationCustomerContentEncryption
 /// The Athena engine version for running queries, or the PySpark engine version
 /// for running sessions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkGroupSpecConfigurationEngineVersion
 {
@@ -100,7 +100,7 @@ public partial class V1alpha1WorkGroupSpecConfigurationEngineVersion
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkGroupSpecConfigurationExecutionRoleRefFrom
 {
@@ -112,7 +112,7 @@ public partial class V1alpha1WorkGroupSpecConfigurationExecutionRoleRefFrom
 }
 
 /// <summary>Reference field for ExecutionRole</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkGroupSpecConfigurationExecutionRoleRef
 {
@@ -125,7 +125,7 @@ public partial class V1alpha1WorkGroupSpecConfigurationExecutionRoleRef
 }
 
 /// <summary>Specifies whether the workgroup is IAM Identity Center supported.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkGroupSpecConfigurationIdentityCenterConfiguration
 {
@@ -137,7 +137,7 @@ public partial class V1alpha1WorkGroupSpecConfigurationIdentityCenterConfigurati
 }
 
 /// <summary>Specifies whether Amazon S3 access grants are enabled for query results.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkGroupSpecConfigurationQueryResultsS3AccessGrantsConfiguration
 {
@@ -160,7 +160,7 @@ public partial class V1alpha1WorkGroupSpecConfigurationQueryResultsS3AccessGrant
 /// (https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html#object-ownership-overview)
 /// in the Amazon S3 User Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkGroupSpecConfigurationResultConfigurationAclConfiguration
 {
@@ -172,7 +172,7 @@ public partial class V1alpha1WorkGroupSpecConfigurationResultConfigurationAclCon
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkGroupSpecConfigurationResultConfigurationEncryptionConfigurationKmsKeyRefFrom
 {
@@ -184,7 +184,7 @@ public partial class V1alpha1WorkGroupSpecConfigurationResultConfigurationEncryp
 }
 
 /// <summary>Reference field for KMSKey</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkGroupSpecConfigurationResultConfigurationEncryptionConfigurationKmsKeyRef
 {
@@ -200,7 +200,7 @@ public partial class V1alpha1WorkGroupSpecConfigurationResultConfigurationEncryp
 /// If query and calculation results are encrypted in Amazon S3, indicates the
 /// encryption option used (for example, SSE_KMS or CSE_KMS) and key information.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkGroupSpecConfigurationResultConfigurationEncryptionConfiguration
 {
@@ -221,7 +221,7 @@ public partial class V1alpha1WorkGroupSpecConfigurationResultConfigurationEncryp
 /// These are known as &quot;client-side settings&quot;. If workgroup settings override
 /// client-side settings, then the query uses the workgroup settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkGroupSpecConfigurationResultConfiguration
 {
@@ -261,7 +261,7 @@ public partial class V1alpha1WorkGroupSpecConfigurationResultConfiguration
 /// and whether workgroup&apos;s settings (specified with EnforceWorkGroupConfiguration)
 /// in the WorkGroupConfiguration override client-side settings. See WorkGroupConfiguration$EnforceWorkGroupConfiguration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkGroupSpecConfiguration
 {
@@ -336,7 +336,7 @@ public partial class V1alpha1WorkGroupSpecConfiguration
 /// keys and values are case-sensitive. Tag keys must be unique per resource.
 /// If you specify more than one tag, separate them by commas.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkGroupSpecTags
 {
@@ -360,7 +360,7 @@ public partial class V1alpha1WorkGroupSpecTags
 /// is specified in EnforceWorkGroupConfiguration (true/false) in the WorkGroupConfiguration.
 /// See WorkGroupConfiguration$EnforceWorkGroupConfiguration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkGroupSpec
 {
@@ -399,7 +399,7 @@ public partial class V1alpha1WorkGroupSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkGroupStatusAckResourceMetadata
 {
@@ -436,7 +436,7 @@ public partial class V1alpha1WorkGroupStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkGroupStatusConditions
 {
@@ -462,7 +462,7 @@ public partial class V1alpha1WorkGroupStatusConditions
 }
 
 /// <summary>WorkGroupStatus defines the observed state of WorkGroup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkGroupStatus
 {
@@ -485,7 +485,7 @@ public partial class V1alpha1WorkGroupStatus
 }
 
 /// <summary>WorkGroup is the Schema for the WorkGroups API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1WorkGroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1WorkGroupSpec?>, IStatus<V1alpha1WorkGroupStatus?>

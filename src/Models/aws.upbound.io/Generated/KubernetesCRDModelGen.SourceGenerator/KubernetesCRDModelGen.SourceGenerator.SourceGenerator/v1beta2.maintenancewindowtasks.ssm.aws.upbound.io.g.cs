@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ssm.aws.upbound.io;
 /// <summary>MaintenanceWindowTask is the Schema for the MaintenanceWindowTasks API. Provides an SSM Maintenance Window Task resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2MaintenanceWindowTaskList : IKubernetesObject<V1ListMeta>, IItems<V1beta2MaintenanceWindowTask>
@@ -45,7 +45,7 @@ public partial class V1beta2MaintenanceWindowTaskList : IKubernetesObject<V1List
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecDeletionPolicyEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2MaintenanceWindowTaskSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderServiceRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderServiceRoleArnRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderServiceRoleArnRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderServiceRoleArnRefPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderServiceRoleArnRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderServiceRoleArnRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderServiceRoleArnRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderServiceRoleArnRe
 }
 
 /// <summary>Reference to a Role in iam to populate serviceRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderServiceRoleArnRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderServiceRoleArnRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderServiceRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderServiceRoleArnSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderServiceRoleArnSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderServiceRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderServiceRoleArnSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderServiceRoleArnSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderServiceRoleArnSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderServiceRoleArnSe
 }
 
 /// <summary>Selector for a Role in iam to populate serviceRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderServiceRoleArnSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderServiceRoleArnSe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderTargetsValuesRefsPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderTargetsValuesRefsPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderTargetsValuesRefsPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderTargetsValuesRefsPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderTargetsValuesRefsPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderTargetsValuesRefsPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTargetsValuesRefsPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTargetsValuesRef
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTargetsValuesRefs
 {
@@ -278,7 +278,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTargetsValuesRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderTargetsValuesSelectorPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderTargetsValuesSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderTargetsValuesSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderTargetsValuesSelectorPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderTargetsValuesSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderTargetsValuesSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTargetsValuesSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTargetsValuesSel
 }
 
 /// <summary>Selector for a list of Instance in ec2 to populate values.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTargetsValuesSelector
 {
@@ -349,7 +349,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTargetsValuesSel
     public V1beta2MaintenanceWindowTaskSpecForProviderTargetsValuesSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTargets
 {
@@ -375,7 +375,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTargets
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderTaskArnRefPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskArnRefPolicyResolutionEnum
 {
@@ -391,7 +391,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskArnRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderTaskArnRefPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskArnRefPolicyResolveEnum
 {
@@ -402,7 +402,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskArnRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskArnRefPolicy
 {
@@ -426,7 +426,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskArnRefPolicy
 }
 
 /// <summary>Reference to a Function in lambda to populate taskArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskArnRef
 {
@@ -445,7 +445,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderTaskArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskArnSelectorPolicyResolutionEnum
 {
@@ -461,7 +461,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskArnSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderTaskArnSelectorPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskArnSelectorPolicyResolveEnum
 {
@@ -472,7 +472,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskArnSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskArnSelectorPolicy
 {
@@ -496,7 +496,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskArnSelectorP
 }
 
 /// <summary>Selector for a Function in lambda to populate taskArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskArnSelector
 {
@@ -522,7 +522,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskArnSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesRefsPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesRefsPolicyResolutionEnum
 {
@@ -538,7 +538,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersA
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesRefsPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesRefsPolicyResolveEnum
 {
@@ -549,7 +549,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersA
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesRefsPolicy
 {
@@ -573,7 +573,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesRefs
 {
@@ -592,7 +592,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesSelectorPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesSelectorPolicyResolutionEnum
 {
@@ -608,7 +608,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersA
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesSelectorPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesSelectorPolicyResolveEnum
 {
@@ -619,7 +619,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersA
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesSelectorPolicy
 {
@@ -643,7 +643,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>Selector for a list of Instance in ec2 to populate values.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesSelector
 {
@@ -663,7 +663,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
     public V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameterValuesSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParametersParameter
 {
@@ -685,7 +685,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>The parameters for an AUTOMATION task type. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersAutomationParameters
 {
@@ -699,7 +699,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>JSON to provide to your Lambda function as input.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersLambdaParametersPayloadSecretRef
 {
@@ -717,7 +717,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>The parameters for a LAMBDA task type. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersLambdaParameters
 {
@@ -735,7 +735,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>Configuration options for sending command output to CloudWatch Logs. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersCloudwatchConfig
 {
@@ -754,7 +754,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnRefPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnRefPolicyResolutionEnum
 {
@@ -770,7 +770,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnRefPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnRefPolicyResolveEnum
 {
@@ -781,7 +781,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnRefPolicy
 {
@@ -805,7 +805,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>Reference to a Topic in sns to populate notificationArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnRef
 {
@@ -824,7 +824,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelectorPolicyResolutionEnum
 {
@@ -840,7 +840,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelectorPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelectorPolicyResolveEnum
 {
@@ -851,7 +851,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelectorPolicy
 {
@@ -875,7 +875,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>Selector for a Topic in sns to populate notificationArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelector
 {
@@ -896,7 +896,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>Configurations for sending notifications about command status changes on a per-instance basis. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfig
 {
@@ -927,7 +927,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketRefPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketRefPolicyResolutionEnum
 {
@@ -943,7 +943,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketRefPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketRefPolicyResolveEnum
 {
@@ -954,7 +954,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketRefPolicy
 {
@@ -978,7 +978,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>Reference to a Bucket in s3 to populate outputS3Bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketRef
 {
@@ -997,7 +997,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelectorPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelectorPolicyResolutionEnum
 {
@@ -1013,7 +1013,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelectorPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelectorPolicyResolveEnum
 {
@@ -1024,7 +1024,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelectorPolicy
 {
@@ -1048,7 +1048,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>Selector for a Bucket in s3 to populate outputS3Bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelector
 {
@@ -1068,7 +1068,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
     public V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersParameter
 {
@@ -1087,7 +1087,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnRefPolicyResolutionEnum
 {
@@ -1103,7 +1103,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnRefPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnRefPolicyResolveEnum
 {
@@ -1114,7 +1114,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnRefPolicy
 {
@@ -1138,7 +1138,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>Reference to a Role in iam to populate serviceRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnRef
 {
@@ -1157,7 +1157,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelectorPolicyResolutionEnum
 {
@@ -1173,7 +1173,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelectorPolicyResolveEnum
 {
@@ -1184,7 +1184,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelectorPolicy
 {
@@ -1208,7 +1208,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>Selector for a Role in iam to populate serviceRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelector
 {
@@ -1229,7 +1229,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>The parameters for a RUN_COMMAND task type. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParameters
 {
@@ -1295,7 +1295,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>The inputs for the STEP_FUNCTION task.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersStepFunctionsParametersInputSecretRef
 {
@@ -1313,7 +1313,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>The parameters for a STEP_FUNCTIONS task type. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersStepFunctionsParameters
 {
@@ -1327,7 +1327,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 }
 
 /// <summary>Configuration block with parameters for task execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParameters
 {
@@ -1354,7 +1354,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderWindowIdRefPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderWindowIdRefPolicyResolutionEnum
 {
@@ -1370,7 +1370,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderWindowIdRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderWindowIdRefPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderWindowIdRefPolicyResolveEnum
 {
@@ -1381,7 +1381,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderWindowIdRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderWindowIdRefPolicy
 {
@@ -1405,7 +1405,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderWindowIdRefPolic
 }
 
 /// <summary>Reference to a MaintenanceWindow in ssm to populate windowId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderWindowIdRef
 {
@@ -1424,7 +1424,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderWindowIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderWindowIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderWindowIdSelectorPolicyResolutionEnum
 {
@@ -1440,7 +1440,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderWindowIdSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecForProviderWindowIdSelectorPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecForProviderWindowIdSelectorPolicyResolveEnum
 {
@@ -1451,7 +1451,7 @@ public enum V1beta2MaintenanceWindowTaskSpecForProviderWindowIdSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderWindowIdSelectorPolicy
 {
@@ -1475,7 +1475,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderWindowIdSelector
 }
 
 /// <summary>Selector for a MaintenanceWindow in ssm to populate windowId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderWindowIdSelector
 {
@@ -1495,7 +1495,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderWindowIdSelector
     public V1beta2MaintenanceWindowTaskSpecForProviderWindowIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProvider
 {
@@ -1585,7 +1585,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderServiceRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderServiceRoleArnRefPolicyResolutionEnum
 {
@@ -1601,7 +1601,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderServiceRoleArnRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderServiceRoleArnRefPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderServiceRoleArnRefPolicyResolveEnum
 {
@@ -1612,7 +1612,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderServiceRoleArnRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderServiceRoleArnRefPolicy
 {
@@ -1636,7 +1636,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderServiceRoleArnR
 }
 
 /// <summary>Reference to a Role in iam to populate serviceRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderServiceRoleArnRef
 {
@@ -1655,7 +1655,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderServiceRoleArnR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderServiceRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderServiceRoleArnSelectorPolicyResolutionEnum
 {
@@ -1671,7 +1671,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderServiceRoleArnSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderServiceRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderServiceRoleArnSelectorPolicyResolveEnum
 {
@@ -1682,7 +1682,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderServiceRoleArnSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderServiceRoleArnSelectorPolicy
 {
@@ -1706,7 +1706,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderServiceRoleArnS
 }
 
 /// <summary>Selector for a Role in iam to populate serviceRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderServiceRoleArnSelector
 {
@@ -1732,7 +1732,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderServiceRoleArnS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderTargetsValuesRefsPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderTargetsValuesRefsPolicyResolutionEnum
 {
@@ -1748,7 +1748,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderTargetsValuesRefsPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderTargetsValuesRefsPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderTargetsValuesRefsPolicyResolveEnum
 {
@@ -1759,7 +1759,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderTargetsValuesRefsPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTargetsValuesRefsPolicy
 {
@@ -1783,7 +1783,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTargetsValuesRe
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTargetsValuesRefs
 {
@@ -1802,7 +1802,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTargetsValuesRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderTargetsValuesSelectorPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderTargetsValuesSelectorPolicyResolutionEnum
 {
@@ -1818,7 +1818,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderTargetsValuesSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderTargetsValuesSelectorPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderTargetsValuesSelectorPolicyResolveEnum
 {
@@ -1829,7 +1829,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderTargetsValuesSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTargetsValuesSelectorPolicy
 {
@@ -1853,7 +1853,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTargetsValuesSe
 }
 
 /// <summary>Selector for a list of Instance in ec2 to populate values.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTargetsValuesSelector
 {
@@ -1873,7 +1873,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTargetsValuesSe
     public V1beta2MaintenanceWindowTaskSpecInitProviderTargetsValuesSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTargets
 {
@@ -1899,7 +1899,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTargets
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderTaskArnRefPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskArnRefPolicyResolutionEnum
 {
@@ -1915,7 +1915,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskArnRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderTaskArnRefPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskArnRefPolicyResolveEnum
 {
@@ -1926,7 +1926,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskArnRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskArnRefPolicy
 {
@@ -1950,7 +1950,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskArnRefPolic
 }
 
 /// <summary>Reference to a Function in lambda to populate taskArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskArnRef
 {
@@ -1969,7 +1969,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderTaskArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskArnSelectorPolicyResolutionEnum
 {
@@ -1985,7 +1985,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskArnSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderTaskArnSelectorPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskArnSelectorPolicyResolveEnum
 {
@@ -1996,7 +1996,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskArnSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskArnSelectorPolicy
 {
@@ -2020,7 +2020,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskArnSelector
 }
 
 /// <summary>Selector for a Function in lambda to populate taskArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskArnSelector
 {
@@ -2046,7 +2046,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskArnSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesRefsPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesRefsPolicyResolutionEnum
 {
@@ -2062,7 +2062,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesRefsPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesRefsPolicyResolveEnum
 {
@@ -2073,7 +2073,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesRefsPolicy
 {
@@ -2097,7 +2097,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesRefs
 {
@@ -2116,7 +2116,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesSelectorPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesSelectorPolicyResolutionEnum
 {
@@ -2132,7 +2132,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesSelectorPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesSelectorPolicyResolveEnum
 {
@@ -2143,7 +2143,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesSelectorPolicy
 {
@@ -2167,7 +2167,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>Selector for a list of Instance in ec2 to populate values.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesSelector
 {
@@ -2187,7 +2187,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
     public V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameterValuesSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParametersParameter
 {
@@ -2209,7 +2209,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>The parameters for an AUTOMATION task type. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersAutomationParameters
 {
@@ -2223,7 +2223,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>JSON to provide to your Lambda function as input.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersLambdaParametersPayloadSecretRef
 {
@@ -2241,7 +2241,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>The parameters for a LAMBDA task type. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersLambdaParameters
 {
@@ -2259,7 +2259,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>Configuration options for sending command output to CloudWatch Logs. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersCloudwatchConfig
 {
@@ -2278,7 +2278,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnRefPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnRefPolicyResolutionEnum
 {
@@ -2294,7 +2294,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnRefPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnRefPolicyResolveEnum
 {
@@ -2305,7 +2305,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnRefPolicy
 {
@@ -2329,7 +2329,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>Reference to a Topic in sns to populate notificationArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnRef
 {
@@ -2348,7 +2348,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelectorPolicyResolutionEnum
 {
@@ -2364,7 +2364,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelectorPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelectorPolicyResolveEnum
 {
@@ -2375,7 +2375,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelectorPolicy
 {
@@ -2399,7 +2399,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>Selector for a Topic in sns to populate notificationArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfigNotificationArnSelector
 {
@@ -2420,7 +2420,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>Configurations for sending notifications about command status changes on a per-instance basis. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfig
 {
@@ -2451,7 +2451,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketRefPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketRefPolicyResolutionEnum
 {
@@ -2467,7 +2467,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketRefPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketRefPolicyResolveEnum
 {
@@ -2478,7 +2478,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketRefPolicy
 {
@@ -2502,7 +2502,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>Reference to a Bucket in s3 to populate outputS3Bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketRef
 {
@@ -2521,7 +2521,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelectorPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelectorPolicyResolutionEnum
 {
@@ -2537,7 +2537,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelectorPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelectorPolicyResolveEnum
 {
@@ -2548,7 +2548,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelectorPolicy
 {
@@ -2572,7 +2572,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>Selector for a Bucket in s3 to populate outputS3Bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelector
 {
@@ -2592,7 +2592,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
     public V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersOutputS3BucketSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersParameter
 {
@@ -2611,7 +2611,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnRefPolicyResolutionEnum
 {
@@ -2627,7 +2627,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnRefPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnRefPolicyResolveEnum
 {
@@ -2638,7 +2638,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnRefPolicy
 {
@@ -2662,7 +2662,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>Reference to a Role in iam to populate serviceRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnRef
 {
@@ -2681,7 +2681,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelectorPolicyResolutionEnum
 {
@@ -2697,7 +2697,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelectorPolicyResolveEnum
 {
@@ -2708,7 +2708,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelectorPolicy
 {
@@ -2732,7 +2732,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>Selector for a Role in iam to populate serviceRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersServiceRoleArnSelector
 {
@@ -2753,7 +2753,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>The parameters for a RUN_COMMAND task type. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParameters
 {
@@ -2819,7 +2819,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>The inputs for the STEP_FUNCTION task.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersStepFunctionsParametersInputSecretRef
 {
@@ -2837,7 +2837,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>The parameters for a STEP_FUNCTIONS task type. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersStepFunctionsParameters
 {
@@ -2851,7 +2851,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 }
 
 /// <summary>Configuration block with parameters for task execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParameters
 {
@@ -2878,7 +2878,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderWindowIdRefPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderWindowIdRefPolicyResolutionEnum
 {
@@ -2894,7 +2894,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderWindowIdRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderWindowIdRefPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderWindowIdRefPolicyResolveEnum
 {
@@ -2905,7 +2905,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderWindowIdRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderWindowIdRefPolicy
 {
@@ -2929,7 +2929,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderWindowIdRefPoli
 }
 
 /// <summary>Reference to a MaintenanceWindow in ssm to populate windowId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderWindowIdRef
 {
@@ -2948,7 +2948,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderWindowIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderWindowIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderWindowIdSelectorPolicyResolutionEnum
 {
@@ -2964,7 +2964,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderWindowIdSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecInitProviderWindowIdSelectorPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecInitProviderWindowIdSelectorPolicyResolveEnum
 {
@@ -2975,7 +2975,7 @@ public enum V1beta2MaintenanceWindowTaskSpecInitProviderWindowIdSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderWindowIdSelectorPolicy
 {
@@ -2999,7 +2999,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderWindowIdSelecto
 }
 
 /// <summary>Selector for a MaintenanceWindow in ssm to populate windowId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderWindowIdSelector
 {
@@ -3031,7 +3031,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderWindowIdSelecto
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProvider
 {
@@ -3112,7 +3112,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecManagementPoliciesEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecManagementPoliciesEnum
 {
@@ -3136,7 +3136,7 @@ public enum V1beta2MaintenanceWindowTaskSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -3152,7 +3152,7 @@ public enum V1beta2MaintenanceWindowTaskSpecProviderConfigRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MaintenanceWindowTaskSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2MaintenanceWindowTaskSpecProviderConfigRefPolicyResolveEnum
 {
@@ -3163,7 +3163,7 @@ public enum V1beta2MaintenanceWindowTaskSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecProviderConfigRefPolicy
 {
@@ -3191,7 +3191,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecProviderConfigRef
 {
@@ -3210,7 +3210,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecWriteConnectionSecretToRef
 {
@@ -3224,7 +3224,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecWriteConnectionSecretToRef
 }
 
 /// <summary>MaintenanceWindowTaskSpec defines the desired state of MaintenanceWindowTask</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpec
 {
@@ -3291,7 +3291,7 @@ public partial class V1beta2MaintenanceWindowTaskSpec
     public V1beta2MaintenanceWindowTaskSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskStatusAtProviderTargets
 {
@@ -3303,7 +3303,7 @@ public partial class V1beta2MaintenanceWindowTaskStatusAtProviderTargets
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskStatusAtProviderTaskInvocationParametersAutomationParametersParameter
 {
@@ -3317,7 +3317,7 @@ public partial class V1beta2MaintenanceWindowTaskStatusAtProviderTaskInvocationP
 }
 
 /// <summary>The parameters for an AUTOMATION task type. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskStatusAtProviderTaskInvocationParametersAutomationParameters
 {
@@ -3331,7 +3331,7 @@ public partial class V1beta2MaintenanceWindowTaskStatusAtProviderTaskInvocationP
 }
 
 /// <summary>The parameters for a LAMBDA task type. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskStatusAtProviderTaskInvocationParametersLambdaParameters
 {
@@ -3345,7 +3345,7 @@ public partial class V1beta2MaintenanceWindowTaskStatusAtProviderTaskInvocationP
 }
 
 /// <summary>Configuration options for sending command output to CloudWatch Logs. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskStatusAtProviderTaskInvocationParametersRunCommandParametersCloudwatchConfig
 {
@@ -3359,7 +3359,7 @@ public partial class V1beta2MaintenanceWindowTaskStatusAtProviderTaskInvocationP
 }
 
 /// <summary>Configurations for sending notifications about command status changes on a per-instance basis. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskStatusAtProviderTaskInvocationParametersRunCommandParametersNotificationConfig
 {
@@ -3376,7 +3376,7 @@ public partial class V1beta2MaintenanceWindowTaskStatusAtProviderTaskInvocationP
     public string? NotificationType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskStatusAtProviderTaskInvocationParametersRunCommandParametersParameter
 {
@@ -3390,7 +3390,7 @@ public partial class V1beta2MaintenanceWindowTaskStatusAtProviderTaskInvocationP
 }
 
 /// <summary>The parameters for a RUN_COMMAND task type. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskStatusAtProviderTaskInvocationParametersRunCommandParameters
 {
@@ -3440,7 +3440,7 @@ public partial class V1beta2MaintenanceWindowTaskStatusAtProviderTaskInvocationP
 }
 
 /// <summary>The parameters for a STEP_FUNCTIONS task type. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskStatusAtProviderTaskInvocationParametersStepFunctionsParameters
 {
@@ -3450,7 +3450,7 @@ public partial class V1beta2MaintenanceWindowTaskStatusAtProviderTaskInvocationP
 }
 
 /// <summary>Configuration block with parameters for task execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskStatusAtProviderTaskInvocationParameters
 {
@@ -3471,7 +3471,7 @@ public partial class V1beta2MaintenanceWindowTaskStatusAtProviderTaskInvocationP
     public V1beta2MaintenanceWindowTaskStatusAtProviderTaskInvocationParametersStepFunctionsParameters? StepFunctionsParameters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskStatusAtProvider
 {
@@ -3544,7 +3544,7 @@ public partial class V1beta2MaintenanceWindowTaskStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskStatusConditions
 {
@@ -3587,7 +3587,7 @@ public partial class V1beta2MaintenanceWindowTaskStatusConditions
 }
 
 /// <summary>MaintenanceWindowTaskStatus defines the observed state of MaintenanceWindowTask.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskStatus
 {
@@ -3608,7 +3608,7 @@ public partial class V1beta2MaintenanceWindowTaskStatus
 }
 
 /// <summary>MaintenanceWindowTask is the Schema for the MaintenanceWindowTasks API. Provides an SSM Maintenance Window Task resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2MaintenanceWindowTask : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2MaintenanceWindowTaskSpec>, IStatus<V1beta2MaintenanceWindowTaskStatus?>

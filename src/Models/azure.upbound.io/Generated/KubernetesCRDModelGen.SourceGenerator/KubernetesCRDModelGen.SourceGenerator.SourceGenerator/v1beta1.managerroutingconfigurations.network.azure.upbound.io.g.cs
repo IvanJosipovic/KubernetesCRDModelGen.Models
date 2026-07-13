@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
 /// <summary>ManagerRoutingConfiguration is the Schema for the ManagerRoutingConfigurations API. Manages a Network Manager Routing Configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ManagerRoutingConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ManagerRoutingConfiguration>
@@ -45,7 +45,7 @@ public partial class V1beta1ManagerRoutingConfigurationList : IKubernetesObject<
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerRoutingConfigurationSpecDeletionPolicyEnum>))]
 public enum V1beta1ManagerRoutingConfigurationSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1ManagerRoutingConfigurationSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerRoutingConfigurationSpecForProviderNetworkManagerIdRefPolicyResolutionEnum>))]
 public enum V1beta1ManagerRoutingConfigurationSpecForProviderNetworkManagerIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1ManagerRoutingConfigurationSpecForProviderNetworkManagerIdRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerRoutingConfigurationSpecForProviderNetworkManagerIdRefPolicyResolveEnum>))]
 public enum V1beta1ManagerRoutingConfigurationSpecForProviderNetworkManagerIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1ManagerRoutingConfigurationSpecForProviderNetworkManagerIdRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerRoutingConfigurationSpecForProviderNetworkManagerIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1ManagerRoutingConfigurationSpecForProviderNetworkMan
 }
 
 /// <summary>Reference to a Manager in network to populate networkManagerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerRoutingConfigurationSpecForProviderNetworkManagerIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1ManagerRoutingConfigurationSpecForProviderNetworkMan
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerRoutingConfigurationSpecForProviderNetworkManagerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ManagerRoutingConfigurationSpecForProviderNetworkManagerIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1ManagerRoutingConfigurationSpecForProviderNetworkManagerIdSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerRoutingConfigurationSpecForProviderNetworkManagerIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ManagerRoutingConfigurationSpecForProviderNetworkManagerIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1ManagerRoutingConfigurationSpecForProviderNetworkManagerIdSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerRoutingConfigurationSpecForProviderNetworkManagerIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1ManagerRoutingConfigurationSpecForProviderNetworkMan
 }
 
 /// <summary>Selector for a Manager in network to populate networkManagerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerRoutingConfigurationSpecForProviderNetworkManagerIdSelector
 {
@@ -202,7 +202,7 @@ public partial class V1beta1ManagerRoutingConfigurationSpecForProviderNetworkMan
     public V1beta1ManagerRoutingConfigurationSpecForProviderNetworkManagerIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerRoutingConfigurationSpecForProvider
 {
@@ -235,7 +235,7 @@ public partial class V1beta1ManagerRoutingConfigurationSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerRoutingConfigurationSpecInitProvider
 {
@@ -248,7 +248,7 @@ public partial class V1beta1ManagerRoutingConfigurationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerRoutingConfigurationSpecManagementPoliciesEnum>))]
 public enum V1beta1ManagerRoutingConfigurationSpecManagementPoliciesEnum
 {
@@ -272,7 +272,7 @@ public enum V1beta1ManagerRoutingConfigurationSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerRoutingConfigurationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1ManagerRoutingConfigurationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1ManagerRoutingConfigurationSpecProviderConfigRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagerRoutingConfigurationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1ManagerRoutingConfigurationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1ManagerRoutingConfigurationSpecProviderConfigRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerRoutingConfigurationSpecProviderConfigRefPolicy
 {
@@ -327,7 +327,7 @@ public partial class V1beta1ManagerRoutingConfigurationSpecProviderConfigRefPoli
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerRoutingConfigurationSpecProviderConfigRef
 {
@@ -346,7 +346,7 @@ public partial class V1beta1ManagerRoutingConfigurationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerRoutingConfigurationSpecWriteConnectionSecretToRef
 {
@@ -360,7 +360,7 @@ public partial class V1beta1ManagerRoutingConfigurationSpecWriteConnectionSecret
 }
 
 /// <summary>ManagerRoutingConfigurationSpec defines the desired state of ManagerRoutingConfiguration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerRoutingConfigurationSpec
 {
@@ -427,7 +427,7 @@ public partial class V1beta1ManagerRoutingConfigurationSpec
     public V1beta1ManagerRoutingConfigurationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerRoutingConfigurationStatusAtProvider
 {
@@ -445,7 +445,7 @@ public partial class V1beta1ManagerRoutingConfigurationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerRoutingConfigurationStatusConditions
 {
@@ -488,7 +488,7 @@ public partial class V1beta1ManagerRoutingConfigurationStatusConditions
 }
 
 /// <summary>ManagerRoutingConfigurationStatus defines the observed state of ManagerRoutingConfiguration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagerRoutingConfigurationStatus
 {
@@ -509,7 +509,7 @@ public partial class V1beta1ManagerRoutingConfigurationStatus
 }
 
 /// <summary>ManagerRoutingConfiguration is the Schema for the ManagerRoutingConfigurations API. Manages a Network Manager Routing Configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ManagerRoutingConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ManagerRoutingConfigurationSpec>, IStatus<V1beta1ManagerRoutingConfigurationStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.networkservices.cnrm.cloud.google.com;
 /// <summary>NetworkServicesServiceBinding is the Schema for the NetworkServicesServiceBinding API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1NetworkServicesServiceBindingList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1NetworkServicesServiceBinding>
@@ -37,7 +37,7 @@ public partial class V1alpha1NetworkServicesServiceBindingList : IKubernetesObje
 }
 
 /// <summary>Required. The host project of the application.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesServiceBindingSpecProjectRef
 {
@@ -59,7 +59,7 @@ public partial class V1alpha1NetworkServicesServiceBindingSpecProjectRef
 }
 
 /// <summary>Required. The full service directory service name of the format /projects/*/locations/*/namespaces/*/services/*</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesServiceBindingSpecServiceRef
 {
@@ -77,7 +77,7 @@ public partial class V1alpha1NetworkServicesServiceBindingSpecServiceRef
 }
 
 /// <summary>NetworkServicesServiceBindingSpec defines the desired state of NetworkServicesServiceBinding</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesServiceBindingSpec
 {
@@ -106,7 +106,7 @@ public partial class V1alpha1NetworkServicesServiceBindingSpec
     public V1alpha1NetworkServicesServiceBindingSpecServiceRef? ServiceRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesServiceBindingStatusConditions
 {
@@ -132,7 +132,7 @@ public partial class V1alpha1NetworkServicesServiceBindingStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesServiceBindingStatusObservedState
 {
@@ -146,7 +146,7 @@ public partial class V1alpha1NetworkServicesServiceBindingStatusObservedState
 }
 
 /// <summary>NetworkServicesServiceBindingStatus defines the config connector machine state of NetworkServicesServiceBinding</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesServiceBindingStatus
 {
@@ -168,7 +168,7 @@ public partial class V1alpha1NetworkServicesServiceBindingStatus
 }
 
 /// <summary>NetworkServicesServiceBinding is the Schema for the NetworkServicesServiceBinding API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1NetworkServicesServiceBinding : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1NetworkServicesServiceBindingSpec>, IStatus<V1alpha1NetworkServicesServiceBindingStatus?>

@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.gateway.networking.k8s.io;
 /// A Gateway name SHOULD be compliant with RFC 1035, consisting of a maximum of 63 lower case alphanumeric
 /// characters or hyphens (&apos;-&apos;), and MUST start and end with an alphanumeric character.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1GatewayList : IKubernetesObject<V1ListMeta>, IItems<V1Gateway>
@@ -42,7 +42,7 @@ public partial class V1GatewayList : IKubernetesObject<V1ListMeta>, IItems<V1Gat
 }
 
 /// <summary>GatewaySpecAddress describes an address that can be bound to a Gateway.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecAddresses
 {
@@ -74,7 +74,7 @@ public partial class V1GatewaySpecAddresses
 /// 
 /// The default value None
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1GatewaySpecAllowedListenersNamespacesFromEnum>))]
 public enum V1GatewaySpecAllowedListenersNamespacesFromEnum
 {
@@ -92,7 +92,7 @@ public enum V1GatewaySpecAllowedListenersNamespacesFromEnum
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecAllowedListenersNamespacesSelectorMatchExpressions
 {
@@ -122,7 +122,7 @@ public partial class V1GatewaySpecAllowedListenersNamespacesSelectorMatchExpress
 /// only ListenerSets in Namespaces matching this Selector will be selected by this
 /// Gateway. This field is ignored for other values of &quot;From&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecAllowedListenersNamespacesSelector
 {
@@ -143,7 +143,7 @@ public partial class V1GatewaySpecAllowedListenersNamespacesSelector
 /// Namespaces defines which namespaces ListenerSets can be attached to this Gateway.
 /// The default value is to allow no ListenerSets.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecAllowedListenersNamespaces
 {
@@ -174,7 +174,7 @@ public partial class V1GatewaySpecAllowedListenersNamespaces
 /// AllowedListeners defines which ListenerSets can be attached to this Gateway.
 /// The default value is to allow no ListenerSets.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecAllowedListeners
 {
@@ -204,7 +204,7 @@ public partial class V1GatewaySpecAllowedListeners
 /// 
 /// Support: Implementation-specific
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecInfrastructureParametersRef
 {
@@ -226,7 +226,7 @@ public partial class V1GatewaySpecInfrastructureParametersRef
 /// 
 /// Support: Extended
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecInfrastructure
 {
@@ -282,7 +282,7 @@ public partial class V1GatewaySpecInfrastructure
 }
 
 /// <summary>RouteGroupKind indicates the group and kind of a Route resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecListenersAllowedRoutesKinds
 {
@@ -306,7 +306,7 @@ public partial class V1GatewaySpecListenersAllowedRoutesKinds
 /// 
 /// Support: Core
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1GatewaySpecListenersAllowedRoutesNamespacesFromEnum>))]
 public enum V1GatewaySpecListenersAllowedRoutesNamespacesFromEnum
 {
@@ -322,7 +322,7 @@ public enum V1GatewaySpecListenersAllowedRoutesNamespacesFromEnum
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecListenersAllowedRoutesNamespacesSelectorMatchExpressions
 {
@@ -354,7 +354,7 @@ public partial class V1GatewaySpecListenersAllowedRoutesNamespacesSelectorMatchE
 /// 
 /// Support: Core
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecListenersAllowedRoutesNamespacesSelector
 {
@@ -377,7 +377,7 @@ public partial class V1GatewaySpecListenersAllowedRoutesNamespacesSelector
 /// 
 /// Support: Core
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecListenersAllowedRoutesNamespaces
 {
@@ -432,7 +432,7 @@ public partial class V1GatewaySpecListenersAllowedRoutesNamespaces
 /// 
 /// Support: Core
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecListenersAllowedRoutes
 {
@@ -473,7 +473,7 @@ public partial class V1GatewaySpecListenersAllowedRoutes
 /// be rejected by the implementation, with appropriate Conditions set
 /// on the containing object.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecListenersTlsCertificateRefs
 {
@@ -522,7 +522,7 @@ public partial class V1GatewaySpecListenersTlsCertificateRefs
 /// 
 /// Support: Core
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1GatewaySpecListenersTlsModeEnum>))]
 public enum V1GatewaySpecListenersTlsModeEnum
 {
@@ -545,7 +545,7 @@ public enum V1GatewaySpecListenersTlsModeEnum
 /// 
 /// Support: Core
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecListenersTls
 {
@@ -616,7 +616,7 @@ public partial class V1GatewaySpecListenersTls
 /// Listener embodies the concept of a logical endpoint where a Gateway accepts
 /// network connections.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecListeners
 {
@@ -770,7 +770,7 @@ public partial class V1GatewaySpecListeners
 /// Support: Implementation-specific - Other resource kinds or Secrets with a
 /// different type (e.g., `Opaque`).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecTlsBackendClientCertificateRef
 {
@@ -814,7 +814,7 @@ public partial class V1GatewaySpecTlsBackendClientCertificateRef
 /// 
 /// Support: Core
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecTlsBackend
 {
@@ -858,7 +858,7 @@ public partial class V1GatewaySpecTlsBackend
 /// be rejected by the implementation, with appropriate Conditions set
 /// on the containing object.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecTlsFrontendDefaultValidationCaCertificateRefs
 {
@@ -910,7 +910,7 @@ public partial class V1GatewaySpecTlsFrontendDefaultValidationCaCertificateRefs
 /// 
 /// Support: Core
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1GatewaySpecTlsFrontendDefaultValidationModeEnum>))]
 public enum V1GatewaySpecTlsFrontendDefaultValidationModeEnum
 {
@@ -929,7 +929,7 @@ public enum V1GatewaySpecTlsFrontendDefaultValidationModeEnum
 /// 
 /// Support: Core
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecTlsFrontendDefaultValidation
 {
@@ -1010,7 +1010,7 @@ public partial class V1GatewaySpecTlsFrontendDefaultValidation
 /// 
 /// support: Core
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecTlsFrontendDefault
 {
@@ -1037,7 +1037,7 @@ public partial class V1GatewaySpecTlsFrontendDefault
 /// be rejected by the implementation, with appropriate Conditions set
 /// on the containing object.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecTlsFrontendPerPortTlsValidationCaCertificateRefs
 {
@@ -1089,7 +1089,7 @@ public partial class V1GatewaySpecTlsFrontendPerPortTlsValidationCaCertificateRe
 /// 
 /// Support: Core
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1GatewaySpecTlsFrontendPerPortTlsValidationModeEnum>))]
 public enum V1GatewaySpecTlsFrontendPerPortTlsValidationModeEnum
 {
@@ -1108,7 +1108,7 @@ public enum V1GatewaySpecTlsFrontendPerPortTlsValidationModeEnum
 /// 
 /// Support: Core
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecTlsFrontendPerPortTlsValidation
 {
@@ -1188,7 +1188,7 @@ public partial class V1GatewaySpecTlsFrontendPerPortTlsValidation
 /// 
 /// Support: Core
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecTlsFrontendPerPortTls
 {
@@ -1205,7 +1205,7 @@ public partial class V1GatewaySpecTlsFrontendPerPortTls
     public V1GatewaySpecTlsFrontendPerPortTlsValidation? Validation { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecTlsFrontendPerPort
 {
@@ -1233,7 +1233,7 @@ public partial class V1GatewaySpecTlsFrontendPerPort
 /// Frontend describes TLS config when client connects to Gateway.
 /// Support: Core
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecTlsFrontend
 {
@@ -1265,7 +1265,7 @@ public partial class V1GatewaySpecTlsFrontend
 /// 
 /// Support: Extended
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpecTls
 {
@@ -1291,7 +1291,7 @@ public partial class V1GatewaySpecTls
 }
 
 /// <summary>Spec defines the desired state of Gateway.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewaySpec
 {
@@ -1524,7 +1524,7 @@ public partial class V1GatewaySpec
 }
 
 /// <summary>GatewayStatusAddress describes a network address that is bound to a Gateway.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewayStatusAddresses
 {
@@ -1543,7 +1543,7 @@ public partial class V1GatewayStatusAddresses
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1GatewayStatusConditionsStatusEnum>))]
 public enum V1GatewayStatusConditionsStatusEnum
 {
@@ -1556,7 +1556,7 @@ public enum V1GatewayStatusConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewayStatusConditions
 {
@@ -1602,7 +1602,7 @@ public partial class V1GatewayStatusConditions
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1GatewayStatusListenersConditionsStatusEnum>))]
 public enum V1GatewayStatusListenersConditionsStatusEnum
 {
@@ -1615,7 +1615,7 @@ public enum V1GatewayStatusListenersConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewayStatusListenersConditions
 {
@@ -1661,7 +1661,7 @@ public partial class V1GatewayStatusListenersConditions
 }
 
 /// <summary>RouteGroupKind indicates the group and kind of a Route resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewayStatusListenersSupportedKinds
 {
@@ -1675,7 +1675,7 @@ public partial class V1GatewayStatusListenersSupportedKinds
 }
 
 /// <summary>ListenerStatus is the status associated with a Listener.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewayStatusListeners
 {
@@ -1728,7 +1728,7 @@ public partial class V1GatewayStatusListeners
 }
 
 /// <summary>Status defines the current state of Gateway.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewayStatus
 {
@@ -1789,7 +1789,7 @@ public partial class V1GatewayStatus
 /// A Gateway name SHOULD be compliant with RFC 1035, consisting of a maximum of 63 lower case alphanumeric
 /// characters or hyphens (&apos;-&apos;), and MUST start and end with an alphanumeric character.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1Gateway : IKubernetesObject<V1ObjectMeta>, ISpec<V1GatewaySpec>, IStatus<V1GatewayStatus?>

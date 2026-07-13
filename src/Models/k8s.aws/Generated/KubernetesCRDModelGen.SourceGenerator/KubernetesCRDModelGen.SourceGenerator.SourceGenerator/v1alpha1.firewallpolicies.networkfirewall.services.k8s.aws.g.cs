@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.networkfirewall.services.k8s.aws;
 /// <summary>FirewallPolicy is the Schema for the FirewallPolicies API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1FirewallPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1FirewallPolicy>
@@ -40,7 +40,7 @@ public partial class V1alpha1FirewallPolicyList : IKubernetesObject<V1ListMeta>,
 /// A complex type that contains settings for encryption of your firewall policy
 /// resources.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallPolicySpecEncryptionConfiguration
 {
@@ -55,7 +55,7 @@ public partial class V1alpha1FirewallPolicySpecEncryptionConfiguration
 /// A list of IP addresses and address ranges, in CIDR notation. This is part
 /// of a RuleVariables.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallPolicySpecFirewallPolicyPolicyVariablesRuleVariables
 {
@@ -67,7 +67,7 @@ public partial class V1alpha1FirewallPolicySpecFirewallPolicyPolicyVariablesRule
 /// Contains variables that you can use to override default Suricata settings
 /// in your firewall policy.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallPolicySpecFirewallPolicyPolicyVariables
 {
@@ -79,7 +79,7 @@ public partial class V1alpha1FirewallPolicySpecFirewallPolicyPolicyVariables
 /// Configuration settings for the handling of the stateful rule groups in a
 /// firewall policy.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallPolicySpecFirewallPolicyStatefulEngineOptions
 {
@@ -94,7 +94,7 @@ public partial class V1alpha1FirewallPolicySpecFirewallPolicyStatefulEngineOptio
 /// The setting that allows the policy owner to change the behavior of the rule
 /// group within a policy.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallPolicySpecFirewallPolicyStatefulRuleGroupReferencesOverride
 {
@@ -106,7 +106,7 @@ public partial class V1alpha1FirewallPolicySpecFirewallPolicyStatefulRuleGroupRe
 /// Identifier for a single stateful rule group, used in a firewall policy to
 /// refer to a rule group.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallPolicySpecFirewallPolicyStatefulRuleGroupReferences
 {
@@ -136,7 +136,7 @@ public partial class V1alpha1FirewallPolicySpecFirewallPolicyStatefulRuleGroupRe
 /// Custom Metrics (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/publishingMetrics.html#usingDimensions)
 /// in the Amazon CloudWatch User Guide (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallPolicySpecFirewallPolicyStatelessCustomActionsActionDefinitionPublishMetricActionDimensions
 {
@@ -149,7 +149,7 @@ public partial class V1alpha1FirewallPolicySpecFirewallPolicyStatelessCustomActi
 /// CloudWatch for the matching packet. This setting defines a CloudWatch dimension
 /// value to be published.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallPolicySpecFirewallPolicyStatelessCustomActionsActionDefinitionPublishMetricAction
 {
@@ -161,7 +161,7 @@ public partial class V1alpha1FirewallPolicySpecFirewallPolicyStatelessCustomActi
 /// A custom action to use in stateless rule actions settings. This is used in
 /// CustomAction.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallPolicySpecFirewallPolicyStatelessCustomActionsActionDefinition
 {
@@ -194,7 +194,7 @@ public partial class V1alpha1FirewallPolicySpecFirewallPolicyStatelessCustomActi
 ///     specify what to do with packets that don&apos;t match any of the policy&apos;s stateless
 ///     rules.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallPolicySpecFirewallPolicyStatelessCustomActions
 {
@@ -213,7 +213,7 @@ public partial class V1alpha1FirewallPolicySpecFirewallPolicyStatelessCustomActi
 /// Identifier for a single stateless rule group, used in a firewall policy to
 /// refer to the rule group.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallPolicySpecFirewallPolicyStatelessRuleGroupReferences
 {
@@ -225,7 +225,7 @@ public partial class V1alpha1FirewallPolicySpecFirewallPolicyStatelessRuleGroupR
 }
 
 /// <summary>The rule groups and policy actions to use in the firewall policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallPolicySpecFirewallPolicy
 {
@@ -272,7 +272,7 @@ public partial class V1alpha1FirewallPolicySpecFirewallPolicy
 /// that category (such as &quot;test,&quot; &quot;development,&quot; or &quot;production&quot;). You can add
 /// up to 50 tags to each Amazon Web Services resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallPolicySpecTags
 {
@@ -293,7 +293,7 @@ public partial class V1alpha1FirewallPolicySpecTags
 /// This, along with FirewallPolicyResponse, define the policy. You can retrieve
 /// all objects for a firewall policy by calling DescribeFirewallPolicy.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallPolicySpec
 {
@@ -335,7 +335,7 @@ public partial class V1alpha1FirewallPolicySpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallPolicyStatusAckResourceMetadata
 {
@@ -372,7 +372,7 @@ public partial class V1alpha1FirewallPolicyStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallPolicyStatusConditions
 {
@@ -407,7 +407,7 @@ public partial class V1alpha1FirewallPolicyStatusConditions
 /// rest with Amazon Web Services Key Managment Service (https://docs.aws.amazon.com/kms/latest/developerguide/kms-encryption-at-rest.html)
 /// in the Network Firewall Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallPolicyStatusFirewallPolicyResponseEncryptionConfiguration
 {
@@ -425,7 +425,7 @@ public partial class V1alpha1FirewallPolicyStatusFirewallPolicyResponseEncryptio
 /// that category (such as &quot;test,&quot; &quot;development,&quot; or &quot;production&quot;). You can add
 /// up to 50 tags to each Amazon Web Services resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallPolicyStatusFirewallPolicyResponseTags
 {
@@ -441,7 +441,7 @@ public partial class V1alpha1FirewallPolicyStatusFirewallPolicyResponseTags
 /// define the policy. You can retrieve all objects for a firewall policy by
 /// calling DescribeFirewallPolicy.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallPolicyStatusFirewallPolicyResponse
 {
@@ -490,7 +490,7 @@ public partial class V1alpha1FirewallPolicyStatusFirewallPolicyResponse
 }
 
 /// <summary>FirewallPolicyStatus defines the observed state of FirewallPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallPolicyStatus
 {
@@ -538,7 +538,7 @@ public partial class V1alpha1FirewallPolicyStatus
 }
 
 /// <summary>FirewallPolicy is the Schema for the FirewallPolicies API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1FirewallPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1FirewallPolicySpec?>, IStatus<V1alpha1FirewallPolicyStatus?>

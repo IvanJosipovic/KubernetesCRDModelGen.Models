@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.batch.cnrm.cloud.google.com;
 /// <summary>CloudBatchResourceAllowance is the Schema for the CloudBatchResourceAllowance API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1CloudBatchResourceAllowanceList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1CloudBatchResourceAllowance>
@@ -36,7 +36,7 @@ public partial class V1alpha1CloudBatchResourceAllowanceList : IKubernetesObject
     public required IList<V1alpha1CloudBatchResourceAllowance> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBatchResourceAllowanceSpecNotifications
 {
@@ -46,7 +46,7 @@ public partial class V1alpha1CloudBatchResourceAllowanceSpecNotifications
 }
 
 /// <summary>The project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBatchResourceAllowanceSpecProjectRef
 {
@@ -68,7 +68,7 @@ public partial class V1alpha1CloudBatchResourceAllowanceSpecProjectRef
 }
 
 /// <summary>Required. Threshold of a UsageResourceAllowance limiting how many resources can be consumed for each type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBatchResourceAllowanceSpecUsageResourceAllowanceSpecLimit
 {
@@ -82,7 +82,7 @@ public partial class V1alpha1CloudBatchResourceAllowanceSpecUsageResourceAllowan
 }
 
 /// <summary>Required. Spec of a usage ResourceAllowance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBatchResourceAllowanceSpecUsageResourceAllowanceSpec
 {
@@ -96,7 +96,7 @@ public partial class V1alpha1CloudBatchResourceAllowanceSpecUsageResourceAllowan
 }
 
 /// <summary>The detail of usage resource allowance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBatchResourceAllowanceSpecUsageResourceAllowance
 {
@@ -106,7 +106,7 @@ public partial class V1alpha1CloudBatchResourceAllowanceSpecUsageResourceAllowan
 }
 
 /// <summary>CloudBatchResourceAllowanceSpec defines the desired state of CloudBatchResourceAllowance</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBatchResourceAllowanceSpec
 {
@@ -135,7 +135,7 @@ public partial class V1alpha1CloudBatchResourceAllowanceSpec
     public V1alpha1CloudBatchResourceAllowanceSpecUsageResourceAllowance? UsageResourceAllowance { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBatchResourceAllowanceStatusConditions
 {
@@ -161,7 +161,7 @@ public partial class V1alpha1CloudBatchResourceAllowanceStatusConditions
 }
 
 /// <summary>Output only. The consumption interval.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBatchResourceAllowanceStatusObservedStateUsageResourceAllowanceStatusLimitStatusConsumptionInterval
 {
@@ -175,7 +175,7 @@ public partial class V1alpha1CloudBatchResourceAllowanceStatusObservedStateUsage
 }
 
 /// <summary>Output only. ResourceAllowance consumption status for usage resources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBatchResourceAllowanceStatusObservedStateUsageResourceAllowanceStatusLimitStatus
 {
@@ -193,7 +193,7 @@ public partial class V1alpha1CloudBatchResourceAllowanceStatusObservedStateUsage
 }
 
 /// <summary>Output only. The consumption interval.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBatchResourceAllowanceStatusObservedStateUsageResourceAllowanceStatusReportLatestPeriodConsumptionsConsumptionInterval
 {
@@ -206,7 +206,7 @@ public partial class V1alpha1CloudBatchResourceAllowanceStatusObservedStateUsage
     public string? StartTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBatchResourceAllowanceStatusObservedStateUsageResourceAllowanceStatusReportLatestPeriodConsumptions
 {
@@ -220,7 +220,7 @@ public partial class V1alpha1CloudBatchResourceAllowanceStatusObservedStateUsage
 }
 
 /// <summary>Output only. The report of ResourceAllowance consumptions in a time period.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBatchResourceAllowanceStatusObservedStateUsageResourceAllowanceStatusReport
 {
@@ -230,7 +230,7 @@ public partial class V1alpha1CloudBatchResourceAllowanceStatusObservedStateUsage
 }
 
 /// <summary>Output only. Status of a usage ResourceAllowance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBatchResourceAllowanceStatusObservedStateUsageResourceAllowanceStatus
 {
@@ -248,7 +248,7 @@ public partial class V1alpha1CloudBatchResourceAllowanceStatusObservedStateUsage
 }
 
 /// <summary>The detail of usage resource allowance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBatchResourceAllowanceStatusObservedStateUsageResourceAllowance
 {
@@ -258,7 +258,7 @@ public partial class V1alpha1CloudBatchResourceAllowanceStatusObservedStateUsage
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBatchResourceAllowanceStatusObservedState
 {
@@ -276,7 +276,7 @@ public partial class V1alpha1CloudBatchResourceAllowanceStatusObservedState
 }
 
 /// <summary>CloudBatchResourceAllowanceStatus defines the config connector machine state of CloudBatchResourceAllowance</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBatchResourceAllowanceStatus
 {
@@ -298,7 +298,7 @@ public partial class V1alpha1CloudBatchResourceAllowanceStatus
 }
 
 /// <summary>CloudBatchResourceAllowance is the Schema for the CloudBatchResourceAllowance API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1CloudBatchResourceAllowance : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1CloudBatchResourceAllowanceSpec>, IStatus<V1alpha1CloudBatchResourceAllowanceStatus?>

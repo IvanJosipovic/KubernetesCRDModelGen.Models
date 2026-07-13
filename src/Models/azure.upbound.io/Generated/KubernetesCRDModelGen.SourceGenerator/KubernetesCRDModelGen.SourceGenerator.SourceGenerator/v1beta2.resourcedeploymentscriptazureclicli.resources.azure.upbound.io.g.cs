@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.resources.azure.upbound.io;
 /// <summary>ResourceDeploymentScriptAzureCli is the Schema for the ResourceDeploymentScriptAzureClis API. Manages a Resource Deployment Script of Azure Cli.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ResourceDeploymentScriptAzureCliList : IKubernetesObject<V1ListMeta>, IItems<V1beta2ResourceDeploymentScriptAzureCli>
@@ -45,7 +45,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliList : IKubernetesOb
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDeploymentScriptAzureCliSpecDeletionPolicyEnum>))]
 public enum V1beta2ResourceDeploymentScriptAzureCliSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2ResourceDeploymentScriptAzureCliSpecDeletionPolicyEnum
 }
 
 /// <summary>A container block as defined below. Changing this forces a new Resource Deployment Script to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderContainer
 {
@@ -66,7 +66,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderConta
 }
 
 /// <summary>Specifies the value of the secure environment variable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderEnvironmentVariableSecureValueSecretRef
 {
@@ -83,7 +83,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderEnvir
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderEnvironmentVariable
 {
@@ -106,7 +106,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderEnvir
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdentityIdsRefsPolicyResolutionEnum>))]
 public enum V1beta2ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdentityIdsRefsPolicyResolutionEnum
 {
@@ -122,7 +122,7 @@ public enum V1beta2ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdenti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdentityIdsRefsPolicyResolveEnum>))]
 public enum V1beta2ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdentityIdsRefsPolicyResolveEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta2ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdenti
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdentityIdsRefsPolicy
 {
@@ -157,7 +157,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderIdent
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdentityIdsRefs
 {
@@ -176,7 +176,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderIdent
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdentityIdsSelectorPolicyResolutionEnum>))]
 public enum V1beta2ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdentityIdsSelectorPolicyResolutionEnum
 {
@@ -192,7 +192,7 @@ public enum V1beta2ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdenti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdentityIdsSelectorPolicyResolveEnum>))]
 public enum V1beta2ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdentityIdsSelectorPolicyResolveEnum
 {
@@ -203,7 +203,7 @@ public enum V1beta2ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdenti
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdentityIdsSelectorPolicy
 {
@@ -227,7 +227,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderIdent
 }
 
 /// <summary>Selector for a list of UserAssignedIdentity in managedidentity to populate identityIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdentityIdsSelector
 {
@@ -248,7 +248,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderIdent
 }
 
 /// <summary>An identity block as defined below. Changing this forces a new Resource Deployment Script to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderIdentity
 {
@@ -275,7 +275,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderIdent
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta2ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -291,7 +291,7 @@ public enum V1beta2ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupN
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta2ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -302,7 +302,7 @@ public enum V1beta2ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupN
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupNameRefPolicy
 {
@@ -326,7 +326,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderResou
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupNameRef
 {
@@ -345,7 +345,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderResou
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -361,7 +361,7 @@ public enum V1beta2ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupN
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta2ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -372,7 +372,7 @@ public enum V1beta2ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupN
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -396,7 +396,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderResou
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupNameSelector
 {
@@ -417,7 +417,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderResou
 }
 
 /// <summary>Specifies the storage account access key.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderStorageAccountKeySecretRef
 {
@@ -435,7 +435,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderStora
 }
 
 /// <summary>A storage_account block as defined below. Changing this forces a new Resource Deployment Script to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderStorageAccount
 {
@@ -448,7 +448,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProviderStora
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProvider
 {
@@ -530,7 +530,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecForProvider
 }
 
 /// <summary>A container block as defined below. Changing this forces a new Resource Deployment Script to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderContainer
 {
@@ -540,7 +540,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderCont
 }
 
 /// <summary>Specifies the value of the secure environment variable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderEnvironmentVariableSecureValueSecretRef
 {
@@ -557,7 +557,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderEnvi
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderEnvironmentVariable
 {
@@ -580,7 +580,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderEnvi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdentityIdsRefsPolicyResolutionEnum>))]
 public enum V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdentityIdsRefsPolicyResolutionEnum
 {
@@ -596,7 +596,7 @@ public enum V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdent
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdentityIdsRefsPolicyResolveEnum>))]
 public enum V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdentityIdsRefsPolicyResolveEnum
 {
@@ -607,7 +607,7 @@ public enum V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdent
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdentityIdsRefsPolicy
 {
@@ -631,7 +631,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderIden
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdentityIdsRefs
 {
@@ -650,7 +650,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderIden
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdentityIdsSelectorPolicyResolutionEnum>))]
 public enum V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdentityIdsSelectorPolicyResolutionEnum
 {
@@ -666,7 +666,7 @@ public enum V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdent
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdentityIdsSelectorPolicyResolveEnum>))]
 public enum V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdentityIdsSelectorPolicyResolveEnum
 {
@@ -677,7 +677,7 @@ public enum V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdent
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdentityIdsSelectorPolicy
 {
@@ -701,7 +701,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderIden
 }
 
 /// <summary>Selector for a list of UserAssignedIdentity in managedidentity to populate identityIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdentityIdsSelector
 {
@@ -722,7 +722,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderIden
 }
 
 /// <summary>An identity block as defined below. Changing this forces a new Resource Deployment Script to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderIdentity
 {
@@ -749,7 +749,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderIden
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -765,7 +765,7 @@ public enum V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroup
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -776,7 +776,7 @@ public enum V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroup
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameRefPolicy
 {
@@ -800,7 +800,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderReso
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameRef
 {
@@ -819,7 +819,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderReso
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -835,7 +835,7 @@ public enum V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroup
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -846,7 +846,7 @@ public enum V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroup
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameSelectorPolicy
 {
@@ -870,7 +870,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderReso
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameSelector
 {
@@ -891,7 +891,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderReso
 }
 
 /// <summary>Specifies the storage account access key.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderStorageAccountKeySecretRef
 {
@@ -909,7 +909,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderStor
 }
 
 /// <summary>A storage_account block as defined below. Changing this forces a new Resource Deployment Script to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderStorageAccount
 {
@@ -934,7 +934,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProviderStor
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProvider
 {
@@ -1019,7 +1019,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDeploymentScriptAzureCliSpecManagementPoliciesEnum>))]
 public enum V1beta2ResourceDeploymentScriptAzureCliSpecManagementPoliciesEnum
 {
@@ -1043,7 +1043,7 @@ public enum V1beta2ResourceDeploymentScriptAzureCliSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDeploymentScriptAzureCliSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2ResourceDeploymentScriptAzureCliSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1059,7 +1059,7 @@ public enum V1beta2ResourceDeploymentScriptAzureCliSpecProviderConfigRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDeploymentScriptAzureCliSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2ResourceDeploymentScriptAzureCliSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1070,7 +1070,7 @@ public enum V1beta2ResourceDeploymentScriptAzureCliSpecProviderConfigRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecProviderConfigRefPolicy
 {
@@ -1098,7 +1098,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecProviderConfigRe
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecProviderConfigRef
 {
@@ -1117,7 +1117,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecProviderConfigRe
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpecWriteConnectionSecretToRef
 {
@@ -1131,7 +1131,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpecWriteConnectionS
 }
 
 /// <summary>ResourceDeploymentScriptAzureCliSpec defines the desired state of ResourceDeploymentScriptAzureCli</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliSpec
 {
@@ -1199,7 +1199,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliSpec
 }
 
 /// <summary>A container block as defined below. Changing this forces a new Resource Deployment Script to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliStatusAtProviderContainer
 {
@@ -1208,7 +1208,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliStatusAtProviderCont
     public string? ContainerGroupName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliStatusAtProviderEnvironmentVariable
 {
@@ -1222,7 +1222,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliStatusAtProviderEnvi
 }
 
 /// <summary>An identity block as defined below. Changing this forces a new Resource Deployment Script to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliStatusAtProviderIdentity
 {
@@ -1236,7 +1236,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliStatusAtProviderIden
 }
 
 /// <summary>A storage_account block as defined below. Changing this forces a new Resource Deployment Script to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliStatusAtProviderStorageAccount
 {
@@ -1245,7 +1245,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliStatusAtProviderStor
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliStatusAtProvider
 {
@@ -1327,7 +1327,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliStatusConditions
 {
@@ -1370,7 +1370,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliStatusConditions
 }
 
 /// <summary>ResourceDeploymentScriptAzureCliStatus defines the observed state of ResourceDeploymentScriptAzureCli.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDeploymentScriptAzureCliStatus
 {
@@ -1391,7 +1391,7 @@ public partial class V1beta2ResourceDeploymentScriptAzureCliStatus
 }
 
 /// <summary>ResourceDeploymentScriptAzureCli is the Schema for the ResourceDeploymentScriptAzureClis API. Manages a Resource Deployment Script of Azure Cli.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ResourceDeploymentScriptAzureCli : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2ResourceDeploymentScriptAzureCliSpec>, IStatus<V1beta2ResourceDeploymentScriptAzureCliStatus?>

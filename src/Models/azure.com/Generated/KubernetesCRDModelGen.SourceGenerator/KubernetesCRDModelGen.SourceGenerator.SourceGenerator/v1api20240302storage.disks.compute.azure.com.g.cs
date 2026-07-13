@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.compute.azure.com;
 /// - Generated from: /compute/resource-manager/Microsoft.Compute/DiskRP/stable/2024-03-02/DiskRP.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/disks/{diskName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20240302storageDiskList : IKubernetesObject<V1ListMeta>, IItems<V1api20240302storageDisk>
@@ -45,7 +45,7 @@ public partial class V1api20240302storageDiskList : IKubernetesObject<V1ListMeta
 /// ElasticSanResourceReference: Required if createOption is CopyFromSanSnapshot. This is the ARM id of the source elastic
 /// san volume snapshot.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecCreationDataElasticSanResourceReference
 {
@@ -74,7 +74,7 @@ public partial class V1api20240302storageDiskSpecCreationDataElasticSanResourceR
 /// Reference: A relative uri containing either a Platform Image Repository, user image, or Azure Compute Gallery image
 /// reference.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecCreationDataGalleryImageReferenceReference
 {
@@ -103,7 +103,7 @@ public partial class V1api20240302storageDiskSpecCreationDataGalleryImageReferen
 /// Storage version of v1api20240302.ImageDiskReference
 /// The source image used for creating the disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecCreationDataGalleryImageReference
 {
@@ -135,7 +135,7 @@ public partial class V1api20240302storageDiskSpecCreationDataGalleryImageReferen
 /// Reference: A relative uri containing either a Platform Image Repository, user image, or Azure Compute Gallery image
 /// reference.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecCreationDataImageReferenceReference
 {
@@ -164,7 +164,7 @@ public partial class V1api20240302storageDiskSpecCreationDataImageReferenceRefer
 /// Storage version of v1api20240302.ImageDiskReference
 /// The source image used for creating the disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecCreationDataImageReference
 {
@@ -193,7 +193,7 @@ public partial class V1api20240302storageDiskSpecCreationDataImageReference
 }
 
 /// <summary>SourceResourceReference: If createOption is Copy, this is the ARM id of the source snapshot or disk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecCreationDataSourceResourceReference
 {
@@ -222,7 +222,7 @@ public partial class V1api20240302storageDiskSpecCreationDataSourceResourceRefer
 /// Storage version of v1api20240302.CreationData
 /// Data used when creating a disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecCreationData
 {
@@ -284,7 +284,7 @@ public partial class V1api20240302storageDiskSpecCreationData
 }
 
 /// <summary>DiskAccessReference: ARM id of the DiskAccess resource for using private endpoints on disks.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecDiskAccessReference
 {
@@ -310,7 +310,7 @@ public partial class V1api20240302storageDiskSpecDiskAccessReference
 }
 
 /// <summary>DiskEncryptionSetReference: ResourceId of the disk encryption set to use for enabling encryption at rest.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecEncryptionDiskEncryptionSetReference
 {
@@ -339,7 +339,7 @@ public partial class V1api20240302storageDiskSpecEncryptionDiskEncryptionSetRefe
 /// Storage version of v1api20240302.Encryption
 /// Encryption at rest settings for disk or snapshot
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecEncryption
 {
@@ -359,7 +359,7 @@ public partial class V1api20240302storageDiskSpecEncryption
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecEncryptionSettingsCollectionEncryptionSettingsDiskEncryptionKeySourceVaultReference
 {
@@ -389,7 +389,7 @@ public partial class V1api20240302storageDiskSpecEncryptionSettingsCollectionEnc
 /// The vault id is an Azure Resource Manager Resource id in the form
 /// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecEncryptionSettingsCollectionEncryptionSettingsDiskEncryptionKeySourceVault
 {
@@ -409,7 +409,7 @@ public partial class V1api20240302storageDiskSpecEncryptionSettingsCollectionEnc
 /// Storage version of v1api20240302.KeyVaultAndSecretReference
 /// Key Vault Secret Url and vault id of the encryption key
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecEncryptionSettingsCollectionEncryptionSettingsDiskEncryptionKey
 {
@@ -433,7 +433,7 @@ public partial class V1api20240302storageDiskSpecEncryptionSettingsCollectionEnc
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecEncryptionSettingsCollectionEncryptionSettingsKeyEncryptionKeySourceVaultReference
 {
@@ -463,7 +463,7 @@ public partial class V1api20240302storageDiskSpecEncryptionSettingsCollectionEnc
 /// The vault id is an Azure Resource Manager Resource id in the form
 /// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecEncryptionSettingsCollectionEncryptionSettingsKeyEncryptionKeySourceVault
 {
@@ -483,7 +483,7 @@ public partial class V1api20240302storageDiskSpecEncryptionSettingsCollectionEnc
 /// Storage version of v1api20240302.KeyVaultAndKeyReference
 /// Key Vault Key Url and vault id of KeK, KeK is optional and when provided is used to unwrap the encryptionKey
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecEncryptionSettingsCollectionEncryptionSettingsKeyEncryptionKey
 {
@@ -510,7 +510,7 @@ public partial class V1api20240302storageDiskSpecEncryptionSettingsCollectionEnc
 /// Storage version of v1api20240302.EncryptionSettingsElement
 /// Encryption settings for one disk volume.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecEncryptionSettingsCollectionEncryptionSettings
 {
@@ -540,7 +540,7 @@ public partial class V1api20240302storageDiskSpecEncryptionSettingsCollectionEnc
 /// Storage version of v1api20240302.EncryptionSettingsCollection
 /// Encryption settings for disk or snapshot
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecEncryptionSettingsCollection
 {
@@ -565,7 +565,7 @@ public partial class V1api20240302storageDiskSpecEncryptionSettingsCollection
 /// Storage version of v1api20240302.ExtendedLocation
 /// The complex type of the extended location.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecExtendedLocation
 {
@@ -588,7 +588,7 @@ public partial class V1api20240302storageDiskSpecExtendedLocation
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecOperatorSpecConfigMapExpressions
 {
@@ -629,7 +629,7 @@ public partial class V1api20240302storageDiskSpecOperatorSpecConfigMapExpression
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecOperatorSpecSecretExpressions
 {
@@ -669,7 +669,7 @@ public partial class V1api20240302storageDiskSpecOperatorSpecSecretExpressions
 /// Storage version of v1api20240302.DiskOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecOperatorSpec
 {
@@ -692,7 +692,7 @@ public partial class V1api20240302storageDiskSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecOwner
 {
@@ -708,7 +708,7 @@ public partial class V1api20240302storageDiskSpecOwner
 /// Storage version of v1api20240302.DiskPurchasePlan
 /// Used for establishing the purchase context of any 3rd Party artifact through MarketPlace.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecPurchasePlan
 {
@@ -736,7 +736,7 @@ public partial class V1api20240302storageDiskSpecPurchasePlan
 /// SecureVMDiskEncryptionSetReference: ResourceId of the disk encryption set associated to Confidential VM supported disk
 /// encrypted with customer managed key
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecSecurityProfileSecureVMDiskEncryptionSetReference
 {
@@ -765,7 +765,7 @@ public partial class V1api20240302storageDiskSpecSecurityProfileSecureVMDiskEncr
 /// Storage version of v1api20240302.DiskSecurityProfile
 /// Contains the security related information for the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecSecurityProfile
 {
@@ -792,7 +792,7 @@ public partial class V1api20240302storageDiskSpecSecurityProfile
 /// The disks sku name. Can be Standard_LRS, Premium_LRS, StandardSSD_LRS, UltraSSD_LRS, Premium_ZRS, StandardSSD_ZRS, or
 /// PremiumV2_LRS.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecSku
 {
@@ -811,7 +811,7 @@ public partial class V1api20240302storageDiskSpecSku
 /// Storage version of v1api20240302.SupportedCapabilities
 /// List of supported capabilities persisted on the disk resource for VM use.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpecSupportedCapabilities
 {
@@ -833,7 +833,7 @@ public partial class V1api20240302storageDiskSpecSupportedCapabilities
 }
 
 /// <summary>Storage version of v1api20240302.Disk_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskSpec
 {
@@ -989,7 +989,7 @@ public partial class V1api20240302storageDiskSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskStatusConditions
 {
@@ -1038,7 +1038,7 @@ public partial class V1api20240302storageDiskStatusConditions
 /// Storage version of v1api20240302.ImageDiskReference_STATUS
 /// The source image used for creating the disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskStatusCreationDataGalleryImageReference
 {
@@ -1066,7 +1066,7 @@ public partial class V1api20240302storageDiskStatusCreationDataGalleryImageRefer
 /// Storage version of v1api20240302.ImageDiskReference_STATUS
 /// The source image used for creating the disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskStatusCreationDataImageReference
 {
@@ -1094,7 +1094,7 @@ public partial class V1api20240302storageDiskStatusCreationDataImageReference
 /// Storage version of v1api20240302.CreationData_STATUS
 /// Data used when creating a disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskStatusCreationData
 {
@@ -1157,7 +1157,7 @@ public partial class V1api20240302storageDiskStatusCreationData
 /// Storage version of v1api20240302.Encryption_STATUS
 /// Encryption at rest settings for disk or snapshot
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskStatusEncryption
 {
@@ -1180,7 +1180,7 @@ public partial class V1api20240302storageDiskStatusEncryption
 /// The vault id is an Azure Resource Manager Resource id in the form
 /// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskStatusEncryptionSettingsCollectionEncryptionSettingsDiskEncryptionKeySourceVault
 {
@@ -1199,7 +1199,7 @@ public partial class V1api20240302storageDiskStatusEncryptionSettingsCollectionE
 /// Storage version of v1api20240302.KeyVaultAndSecretReference_STATUS
 /// Key Vault Secret Url and vault id of the encryption key
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskStatusEncryptionSettingsCollectionEncryptionSettingsDiskEncryptionKey
 {
@@ -1227,7 +1227,7 @@ public partial class V1api20240302storageDiskStatusEncryptionSettingsCollectionE
 /// The vault id is an Azure Resource Manager Resource id in the form
 /// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskStatusEncryptionSettingsCollectionEncryptionSettingsKeyEncryptionKeySourceVault
 {
@@ -1246,7 +1246,7 @@ public partial class V1api20240302storageDiskStatusEncryptionSettingsCollectionE
 /// Storage version of v1api20240302.KeyVaultAndKeyReference_STATUS
 /// Key Vault Key Url and vault id of KeK, KeK is optional and when provided is used to unwrap the encryptionKey
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskStatusEncryptionSettingsCollectionEncryptionSettingsKeyEncryptionKey
 {
@@ -1273,7 +1273,7 @@ public partial class V1api20240302storageDiskStatusEncryptionSettingsCollectionE
 /// Storage version of v1api20240302.EncryptionSettingsElement_STATUS
 /// Encryption settings for one disk volume.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskStatusEncryptionSettingsCollectionEncryptionSettings
 {
@@ -1303,7 +1303,7 @@ public partial class V1api20240302storageDiskStatusEncryptionSettingsCollectionE
 /// Storage version of v1api20240302.EncryptionSettingsCollection_STATUS
 /// Encryption settings for disk or snapshot
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskStatusEncryptionSettingsCollection
 {
@@ -1328,7 +1328,7 @@ public partial class V1api20240302storageDiskStatusEncryptionSettingsCollection
 /// Storage version of v1api20240302.ExtendedLocation_STATUS
 /// The complex type of the extended location.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskStatusExtendedLocation
 {
@@ -1350,7 +1350,7 @@ public partial class V1api20240302storageDiskStatusExtendedLocation
 /// Storage version of v1api20240302.PropertyUpdatesInProgress_STATUS
 /// Properties of the disk for which update is pending.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskStatusPropertyUpdatesInProgress
 {
@@ -1369,7 +1369,7 @@ public partial class V1api20240302storageDiskStatusPropertyUpdatesInProgress
 /// Storage version of v1api20240302.DiskPurchasePlan_STATUS
 /// Used for establishing the purchase context of any 3rd Party artifact through MarketPlace.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskStatusPurchasePlan
 {
@@ -1397,7 +1397,7 @@ public partial class V1api20240302storageDiskStatusPurchasePlan
 /// Storage version of v1api20240302.DiskSecurityProfile_STATUS
 /// Contains the security related information for the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskStatusSecurityProfile
 {
@@ -1416,7 +1416,7 @@ public partial class V1api20240302storageDiskStatusSecurityProfile
 }
 
 /// <summary>Storage version of v1api20240302.ShareInfoElement_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskStatusShareInfo
 {
@@ -1436,7 +1436,7 @@ public partial class V1api20240302storageDiskStatusShareInfo
 /// The disks sku name. Can be Standard_LRS, Premium_LRS, StandardSSD_LRS, UltraSSD_LRS, Premium_ZRS, StandardSSD_ZRS, or
 /// PremiumV2_LRS.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskStatusSku
 {
@@ -1458,7 +1458,7 @@ public partial class V1api20240302storageDiskStatusSku
 /// Storage version of v1api20240302.SupportedCapabilities_STATUS
 /// List of supported capabilities persisted on the disk resource for VM use.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskStatusSupportedCapabilities
 {
@@ -1483,7 +1483,7 @@ public partial class V1api20240302storageDiskStatusSupportedCapabilities
 /// Storage version of v1api20240302.SystemData_STATUS
 /// Metadata pertaining to creation and last modification of the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskStatusSystemData
 {
@@ -1517,7 +1517,7 @@ public partial class V1api20240302storageDiskStatusSystemData
 /// Storage version of v1api20240302.Disk_STATUS
 /// Disk resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240302storageDiskStatus
 {
@@ -1708,7 +1708,7 @@ public partial class V1api20240302storageDiskStatus
 /// - Generated from: /compute/resource-manager/Microsoft.Compute/DiskRP/stable/2024-03-02/DiskRP.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/disks/{diskName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20240302storageDisk : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20240302storageDiskSpec?>, IStatus<V1api20240302storageDiskStatus?>

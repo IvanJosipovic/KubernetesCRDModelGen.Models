@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
 /// <summary>SubnetNetworkSecurityGroupAssociation is the Schema for the SubnetNetworkSecurityGroupAssociations API. Associates a</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SubnetNetworkSecurityGroupAssociation>
@@ -45,7 +45,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationList : IKuberne
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNetworkSecurityGroupAssociationSpecDeletionPolicyEnum>))]
 public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderNetworkSecurityGroupIdRefPolicyResolutionEnum>))]
 public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderNetworkSecurityGroupIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderNetworkSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderNetworkSecurityGroupIdRefPolicyResolveEnum>))]
 public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderNetworkSecurityGroupIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderNetworkSe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderNetworkSecurityGroupIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecForProvider
 }
 
 /// <summary>Reference to a SecurityGroup in network to populate networkSecurityGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderNetworkSecurityGroupIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderNetworkSecurityGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderNetworkSecurityGroupIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderNetworkSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderNetworkSecurityGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderNetworkSecurityGroupIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderNetworkSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderNetworkSecurityGroupIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecForProvider
 }
 
 /// <summary>Selector for a SecurityGroup in network to populate networkSecurityGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderNetworkSecurityGroupIdSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderSubnetIdRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderSubnetIdR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderSubnetIdRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderSubnetIdR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderSubnetIdRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecForProvider
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderSubnetIdRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderSubnetIdSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderSubnetIdS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderSubnetIdSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderSubnetIdS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderSubnetIdSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecForProvider
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderSubnetIdSelector
 {
@@ -349,7 +349,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecForProvider
     public V1beta1SubnetNetworkSecurityGroupAssociationSpecForProviderSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecForProvider
 {
@@ -384,7 +384,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderNetworkSecurityGroupIdRefPolicyResolutionEnum>))]
 public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderNetworkSecurityGroupIdRefPolicyResolutionEnum
 {
@@ -400,7 +400,7 @@ public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderNetworkS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderNetworkSecurityGroupIdRefPolicyResolveEnum>))]
 public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderNetworkSecurityGroupIdRefPolicyResolveEnum
 {
@@ -411,7 +411,7 @@ public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderNetworkS
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderNetworkSecurityGroupIdRefPolicy
 {
@@ -435,7 +435,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProvide
 }
 
 /// <summary>Reference to a SecurityGroup in network to populate networkSecurityGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderNetworkSecurityGroupIdRef
 {
@@ -454,7 +454,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderNetworkSecurityGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderNetworkSecurityGroupIdSelectorPolicyResolutionEnum
 {
@@ -470,7 +470,7 @@ public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderNetworkS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderNetworkSecurityGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderNetworkSecurityGroupIdSelectorPolicyResolveEnum
 {
@@ -481,7 +481,7 @@ public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderNetworkS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderNetworkSecurityGroupIdSelectorPolicy
 {
@@ -505,7 +505,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProvide
 }
 
 /// <summary>Selector for a SecurityGroup in network to populate networkSecurityGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderNetworkSecurityGroupIdSelector
 {
@@ -531,7 +531,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderSubnetIdRefPolicyResolutionEnum
 {
@@ -547,7 +547,7 @@ public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderSubnetId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderSubnetIdRefPolicyResolveEnum
 {
@@ -558,7 +558,7 @@ public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderSubnetId
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderSubnetIdRefPolicy
 {
@@ -582,7 +582,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProvide
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderSubnetIdRef
 {
@@ -601,7 +601,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderSubnetIdSelectorPolicyResolutionEnum
 {
@@ -617,7 +617,7 @@ public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderSubnetId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderSubnetIdSelectorPolicyResolveEnum
 {
@@ -628,7 +628,7 @@ public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderSubnetId
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderSubnetIdSelectorPolicy
 {
@@ -652,7 +652,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProvide
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProviderSubnetIdSelector
 {
@@ -684,7 +684,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProvide
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProvider
 {
@@ -717,7 +717,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecInitProvide
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNetworkSecurityGroupAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecManagementPoliciesEnum
 {
@@ -741,7 +741,7 @@ public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecManagementPoliciesEn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNetworkSecurityGroupAssociationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -757,7 +757,7 @@ public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecProviderConfigRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNetworkSecurityGroupAssociationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -768,7 +768,7 @@ public enum V1beta1SubnetNetworkSecurityGroupAssociationSpecProviderConfigRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecProviderConfigRefPolicy
 {
@@ -796,7 +796,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecProviderCon
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecProviderConfigRef
 {
@@ -815,7 +815,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecProviderCon
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecWriteConnectionSecretToRef
 {
@@ -829,7 +829,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpecWriteConnec
 }
 
 /// <summary>SubnetNetworkSecurityGroupAssociationSpec defines the desired state of SubnetNetworkSecurityGroupAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpec
 {
@@ -896,7 +896,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationSpec
     public V1beta1SubnetNetworkSecurityGroupAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationStatusAtProvider
 {
@@ -914,7 +914,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationStatusAtProvide
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationStatusConditions
 {
@@ -957,7 +957,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationStatusCondition
 }
 
 /// <summary>SubnetNetworkSecurityGroupAssociationStatus defines the observed state of SubnetNetworkSecurityGroupAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociationStatus
 {
@@ -978,7 +978,7 @@ public partial class V1beta1SubnetNetworkSecurityGroupAssociationStatus
 }
 
 /// <summary>SubnetNetworkSecurityGroupAssociation is the Schema for the SubnetNetworkSecurityGroupAssociations API. Associates a</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SubnetNetworkSecurityGroupAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SubnetNetworkSecurityGroupAssociationSpec>, IStatus<V1beta1SubnetNetworkSecurityGroupAssociationStatus?>

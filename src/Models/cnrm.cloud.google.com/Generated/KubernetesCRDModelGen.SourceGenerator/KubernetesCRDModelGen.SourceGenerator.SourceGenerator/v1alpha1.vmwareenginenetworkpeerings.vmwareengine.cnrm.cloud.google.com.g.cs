@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.vmwareengine.cnrm.cloud.google.com;
 /// <summary>VMwareEngineNetworkPeering is the Schema for the VMwareEngineNetworkPeering API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1VMwareEngineNetworkPeeringList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1VMwareEngineNetworkPeering>
@@ -37,7 +37,7 @@ public partial class V1alpha1VMwareEngineNetworkPeeringList : IKubernetesObject<
 }
 
 /// <summary>Reference to a ComputeNetwork. Exactly one of VMwareEngineNetworkRef or ComputeNetworkRef must be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VMwareEngineNetworkPeeringSpecPeerNetworkComputeNetworkRef
 {
@@ -55,7 +55,7 @@ public partial class V1alpha1VMwareEngineNetworkPeeringSpecPeerNetworkComputeNet
 }
 
 /// <summary>Reference to a VmwareEngineNetwork. Exactly one of VMwareEngineNetworkRef or ComputeNetworkRef must be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VMwareEngineNetworkPeeringSpecPeerNetworkVmwareEngineNetworkRef
 {
@@ -73,7 +73,7 @@ public partial class V1alpha1VMwareEngineNetworkPeeringSpecPeerNetworkVmwareEngi
 }
 
 /// <summary>Required. The name of the network to peer with a standard VMware Engine network. The provided network can be a consumer VPC network or another standard VMware Engine network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VMwareEngineNetworkPeeringSpecPeerNetwork
 {
@@ -87,7 +87,7 @@ public partial class V1alpha1VMwareEngineNetworkPeeringSpecPeerNetwork
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VMwareEngineNetworkPeeringSpecProjectRef
 {
@@ -109,7 +109,7 @@ public partial class V1alpha1VMwareEngineNetworkPeeringSpecProjectRef
 }
 
 /// <summary>Required. The relative resource name of the VMware Engine network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VMwareEngineNetworkPeeringSpecVmwareEngineNetworkRef
 {
@@ -127,7 +127,7 @@ public partial class V1alpha1VMwareEngineNetworkPeeringSpecVmwareEngineNetworkRe
 }
 
 /// <summary>VMwareEngineNetworkPeeringSpec defines the desired state of VMwareEngineNetworkPeering</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VMwareEngineNetworkPeeringSpec
 {
@@ -184,7 +184,7 @@ public partial class V1alpha1VMwareEngineNetworkPeeringSpec
     public required V1alpha1VMwareEngineNetworkPeeringSpecVmwareEngineNetworkRef VmwareEngineNetworkRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VMwareEngineNetworkPeeringStatusConditions
 {
@@ -210,7 +210,7 @@ public partial class V1alpha1VMwareEngineNetworkPeeringStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VMwareEngineNetworkPeeringStatusObservedState
 {
@@ -236,7 +236,7 @@ public partial class V1alpha1VMwareEngineNetworkPeeringStatusObservedState
 }
 
 /// <summary>VMwareEngineNetworkPeeringStatus defines the config connector machine state of VMwareEngineNetworkPeering</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VMwareEngineNetworkPeeringStatus
 {
@@ -258,7 +258,7 @@ public partial class V1alpha1VMwareEngineNetworkPeeringStatus
 }
 
 /// <summary>VMwareEngineNetworkPeering is the Schema for the VMwareEngineNetworkPeering API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1VMwareEngineNetworkPeering : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1VMwareEngineNetworkPeeringSpec>, IStatus<V1alpha1VMwareEngineNetworkPeeringStatus?>

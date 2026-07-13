@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dataproc.cnrm.cloud.google.com;
 /// <summary>DataprocNodeGroup is the Schema for the DataprocNodeGroup API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1DataprocNodeGroupList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1DataprocNodeGroup>
@@ -36,7 +36,7 @@ public partial class V1alpha1DataprocNodeGroupList : IKubernetesObject<V1ListMet
     public required IList<V1alpha1DataprocNodeGroup> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocNodeGroupSpecNodeGroupConfigAccelerators
 {
@@ -67,7 +67,7 @@ public partial class V1alpha1DataprocNodeGroupSpecNodeGroupConfigAccelerators
 }
 
 /// <summary>Optional. Disk option config settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocNodeGroupSpecNodeGroupConfigDiskConfig
 {
@@ -106,7 +106,7 @@ public partial class V1alpha1DataprocNodeGroupSpecNodeGroupConfigDiskConfig
     public int? NumLocalSSDs { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocNodeGroupSpecNodeGroupConfigInstanceFlexibilityPolicyInstanceSelectionList
 {
@@ -120,7 +120,7 @@ public partial class V1alpha1DataprocNodeGroupSpecNodeGroupConfigInstanceFlexibi
 }
 
 /// <summary>Optional. Defines how the Group selects the provisioning model to ensure required reliability.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocNodeGroupSpecNodeGroupConfigInstanceFlexibilityPolicyProvisioningModelMix
 {
@@ -134,7 +134,7 @@ public partial class V1alpha1DataprocNodeGroupSpecNodeGroupConfigInstanceFlexibi
 }
 
 /// <summary>Optional. Instance flexibility Policy allowing a mixture of VM shapes and provisioning models.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocNodeGroupSpecNodeGroupConfigInstanceFlexibilityPolicy
 {
@@ -148,7 +148,7 @@ public partial class V1alpha1DataprocNodeGroupSpecNodeGroupConfigInstanceFlexibi
 }
 
 /// <summary>Optional. Configuration to handle the startup of instances during cluster create and update process.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocNodeGroupSpecNodeGroupConfigStartupConfig
 {
@@ -158,7 +158,7 @@ public partial class V1alpha1DataprocNodeGroupSpecNodeGroupConfigStartupConfig
 }
 
 /// <summary>Optional. The node group instance group configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocNodeGroupSpecNodeGroupConfig
 {
@@ -260,7 +260,7 @@ public partial class V1alpha1DataprocNodeGroupSpecNodeGroupConfig
 }
 
 /// <summary>Required.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocNodeGroupSpecProjectRef
 {
@@ -282,7 +282,7 @@ public partial class V1alpha1DataprocNodeGroupSpecProjectRef
 }
 
 /// <summary>DataprocNodeGroupSpec defines the desired state of DataprocNodeGroup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocNodeGroupSpec
 {
@@ -320,7 +320,7 @@ public partial class V1alpha1DataprocNodeGroupSpec
     public IList<string>? Roles { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocNodeGroupStatusConditions
 {
@@ -345,14 +345,14 @@ public partial class V1alpha1DataprocNodeGroupStatusConditions
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocNodeGroupStatusObservedStateNodeGroupConfigInstanceFlexibilityPolicyInstanceSelectionResults
 {
 }
 
 /// <summary>Optional. Instance flexibility Policy allowing a mixture of VM shapes and provisioning models.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocNodeGroupStatusObservedStateNodeGroupConfigInstanceFlexibilityPolicy
 {
@@ -361,7 +361,7 @@ public partial class V1alpha1DataprocNodeGroupStatusObservedStateNodeGroupConfig
     public IList<V1alpha1DataprocNodeGroupStatusObservedStateNodeGroupConfigInstanceFlexibilityPolicyInstanceSelectionResults>? InstanceSelectionResults { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocNodeGroupStatusObservedStateNodeGroupConfigInstanceReferences
 {
@@ -383,14 +383,14 @@ public partial class V1alpha1DataprocNodeGroupStatusObservedStateNodeGroupConfig
 }
 
 /// <summary>Output only. The config for Compute Engine Instance Group Manager that manages this group. This is only used for preemptible instance groups.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocNodeGroupStatusObservedStateNodeGroupConfigManagedGroupConfig
 {
 }
 
 /// <summary>Optional. The node group instance group configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocNodeGroupStatusObservedStateNodeGroupConfig
 {
@@ -416,7 +416,7 @@ public partial class V1alpha1DataprocNodeGroupStatusObservedStateNodeGroupConfig
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocNodeGroupStatusObservedState
 {
@@ -426,7 +426,7 @@ public partial class V1alpha1DataprocNodeGroupStatusObservedState
 }
 
 /// <summary>DataprocNodeGroupStatus defines the config connector machine state of DataprocNodeGroup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocNodeGroupStatus
 {
@@ -448,7 +448,7 @@ public partial class V1alpha1DataprocNodeGroupStatus
 }
 
 /// <summary>DataprocNodeGroup is the Schema for the DataprocNodeGroup API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1DataprocNodeGroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1DataprocNodeGroupSpec>, IStatus<V1alpha1DataprocNodeGroupStatus?>

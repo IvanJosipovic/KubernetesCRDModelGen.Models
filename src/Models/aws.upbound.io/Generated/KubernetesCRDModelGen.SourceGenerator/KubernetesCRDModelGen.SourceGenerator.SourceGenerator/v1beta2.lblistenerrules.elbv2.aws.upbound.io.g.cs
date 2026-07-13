@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.elbv2.aws.upbound.io;
 /// <summary>LBListenerRule is the Schema for the LBListenerRules API. Provides a Load Balancer Listener Rule resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2LBListenerRuleList : IKubernetesObject<V1ListMeta>, IItems<V1beta2LBListenerRule>
@@ -45,7 +45,7 @@ public partial class V1beta2LBListenerRuleList : IKubernetesObject<V1ListMeta>, 
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecDeletionPolicyEnum>))]
 public enum V1beta2LBListenerRuleSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2LBListenerRuleSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolArnRefPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolArnRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolArnRefPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolArnRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolArnRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCogni
 }
 
 /// <summary>Reference to a UserPool in cognitoidp to populate userPoolArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolArnRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCogni
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolArnSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolArnSelectorPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolArnSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolArnSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCogni
 }
 
 /// <summary>Selector for a UserPool in cognitoidp to populate userPoolArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolArnSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCogni
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolClientIdRefPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolClientIdRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolClientIdRefPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolClientIdRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolClientIdRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCogni
 }
 
 /// <summary>Reference to a UserPoolClient in cognitoidp to populate userPoolClientId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolClientIdRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCogni
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolClientIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolClientIdSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolClientIdSelectorPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolClientIdSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolClientIdSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCogni
 }
 
 /// <summary>Selector for a UserPoolClient in cognitoidp to populate userPoolClientId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolClientIdSelector
 {
@@ -355,7 +355,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCogni
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolDomainRefPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolDomainRefPolicyResolutionEnum
 {
@@ -371,7 +371,7 @@ public enum V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolDomainRefPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolDomainRefPolicyResolveEnum
 {
@@ -382,7 +382,7 @@ public enum V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolDomainRefPolicy
 {
@@ -406,7 +406,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCogni
 }
 
 /// <summary>Reference to a UserPoolDomain in cognitoidp to populate userPoolDomain.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolDomainRef
 {
@@ -425,7 +425,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCogni
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolDomainSelectorPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolDomainSelectorPolicyResolutionEnum
 {
@@ -441,7 +441,7 @@ public enum V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolDomainSelectorPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolDomainSelectorPolicyResolveEnum
 {
@@ -452,7 +452,7 @@ public enum V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolDomainSelectorPolicy
 {
@@ -476,7 +476,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCogni
 }
 
 /// <summary>Selector for a UserPoolDomain in cognitoidp to populate userPoolDomain.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolDomainSelector
 {
@@ -497,7 +497,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCogni
 }
 
 /// <summary>Information for creating an authenticate action using Cognito. Required if type is authenticate-cognito.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCognito
 {
@@ -559,7 +559,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateCogni
 }
 
 /// <summary>The OAuth 2.0 client secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateOidcClientSecretSecretRef
 {
@@ -577,7 +577,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateOidcC
 }
 
 /// <summary>Information for creating an authenticate action using OIDC. Required if type is authenticate-oidc.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateOidc
 {
@@ -627,7 +627,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionAuthenticateOidc
 }
 
 /// <summary>Information for creating an action that returns a custom HTTP response. Required if type is fixed-response.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionFixedResponse
 {
@@ -645,7 +645,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionFixedResponse
 }
 
 /// <summary>The target group stickiness for the rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionForwardStickiness
 {
@@ -664,7 +664,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionForwardStickiness
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecForProviderActionForwardTargetGroupArnRefPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecForProviderActionForwardTargetGroupArnRefPolicyResolutionEnum
 {
@@ -680,7 +680,7 @@ public enum V1beta2LBListenerRuleSpecForProviderActionForwardTargetGroupArnRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecForProviderActionForwardTargetGroupArnRefPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecForProviderActionForwardTargetGroupArnRefPolicyResolveEnum
 {
@@ -691,7 +691,7 @@ public enum V1beta2LBListenerRuleSpecForProviderActionForwardTargetGroupArnRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionForwardTargetGroupArnRefPolicy
 {
@@ -715,7 +715,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionForwardTargetGrou
 }
 
 /// <summary>Reference to a LBTargetGroup in elbv2 to populate arn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionForwardTargetGroupArnRef
 {
@@ -734,7 +734,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionForwardTargetGrou
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecForProviderActionForwardTargetGroupArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecForProviderActionForwardTargetGroupArnSelectorPolicyResolutionEnum
 {
@@ -750,7 +750,7 @@ public enum V1beta2LBListenerRuleSpecForProviderActionForwardTargetGroupArnSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecForProviderActionForwardTargetGroupArnSelectorPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecForProviderActionForwardTargetGroupArnSelectorPolicyResolveEnum
 {
@@ -761,7 +761,7 @@ public enum V1beta2LBListenerRuleSpecForProviderActionForwardTargetGroupArnSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionForwardTargetGroupArnSelectorPolicy
 {
@@ -785,7 +785,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionForwardTargetGrou
 }
 
 /// <summary>Selector for a LBTargetGroup in elbv2 to populate arn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionForwardTargetGroupArnSelector
 {
@@ -805,7 +805,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionForwardTargetGrou
     public V1beta2LBListenerRuleSpecForProviderActionForwardTargetGroupArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionForwardTargetGroup
 {
@@ -831,7 +831,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionForwardTargetGrou
 /// Specify only if type is forward.
 /// Cannot be specified with target_group_arn.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionForward
 {
@@ -844,7 +844,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionForward
     public IList<V1beta2LBListenerRuleSpecForProviderActionForwardTargetGroup>? TargetGroup { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionJwtValidationAdditionalClaim
 {
@@ -862,7 +862,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionJwtValidationAddi
 }
 
 /// <summary>Information for creating a JWT validation action. Required if type is jwt-validation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionJwtValidation
 {
@@ -880,7 +880,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionJwtValidation
 }
 
 /// <summary>Information for creating a redirect action. Required if type is redirect.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionRedirect
 {
@@ -915,7 +915,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionRedirect
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecForProviderActionTargetGroupArnRefPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecForProviderActionTargetGroupArnRefPolicyResolutionEnum
 {
@@ -931,7 +931,7 @@ public enum V1beta2LBListenerRuleSpecForProviderActionTargetGroupArnRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecForProviderActionTargetGroupArnRefPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecForProviderActionTargetGroupArnRefPolicyResolveEnum
 {
@@ -942,7 +942,7 @@ public enum V1beta2LBListenerRuleSpecForProviderActionTargetGroupArnRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionTargetGroupArnRefPolicy
 {
@@ -966,7 +966,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionTargetGroupArnRef
 }
 
 /// <summary>Reference to a LBTargetGroup in elbv2 to populate targetGroupArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionTargetGroupArnRef
 {
@@ -985,7 +985,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionTargetGroupArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecForProviderActionTargetGroupArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecForProviderActionTargetGroupArnSelectorPolicyResolutionEnum
 {
@@ -1001,7 +1001,7 @@ public enum V1beta2LBListenerRuleSpecForProviderActionTargetGroupArnSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecForProviderActionTargetGroupArnSelectorPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecForProviderActionTargetGroupArnSelectorPolicyResolveEnum
 {
@@ -1012,7 +1012,7 @@ public enum V1beta2LBListenerRuleSpecForProviderActionTargetGroupArnSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionTargetGroupArnSelectorPolicy
 {
@@ -1036,7 +1036,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionTargetGroupArnSel
 }
 
 /// <summary>Selector for a LBTargetGroup in elbv2 to populate targetGroupArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderActionTargetGroupArnSelector
 {
@@ -1056,7 +1056,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderActionTargetGroupArnSel
     public V1beta2LBListenerRuleSpecForProviderActionTargetGroupArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderAction
 {
@@ -1120,7 +1120,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderAction
 }
 
 /// <summary>Host header patterns to match. Host Header block fields documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderConditionHostHeader
 {
@@ -1134,7 +1134,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderConditionHostHeader
 }
 
 /// <summary>HTTP headers to match. HTTP Header block fields documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderConditionHttpHeader
 {
@@ -1152,7 +1152,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderConditionHttpHeader
 }
 
 /// <summary>Contains a single values item which is a list of HTTP request methods or verbs to match. Maximum size is 40 characters. Only allowed characters are A-Z, hyphen (-) and underscore (_). Comparison is case sensitive. Wildcards are not supported. Only one needs to match for the condition to be satisfied. AWS recommends that GET and HEAD requests are routed in the same way because the response to a HEAD request may be cached.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderConditionHttpRequestMethod
 {
@@ -1162,7 +1162,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderConditionHttpRequestMet
 }
 
 /// <summary>Path patterns to match against the request URL. Path Pattern block fields documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderConditionPathPattern
 {
@@ -1175,7 +1175,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderConditionPathPattern
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderConditionQueryString
 {
@@ -1189,7 +1189,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderConditionQueryString
 }
 
 /// <summary>Contains a single values item which is a list of source IP CIDR notations to match. You can use both IPv4 and IPv6 addresses. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderConditionSourceIp
 {
@@ -1198,7 +1198,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderConditionSourceIp
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderCondition
 {
@@ -1233,7 +1233,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderCondition
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecForProviderListenerArnRefPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecForProviderListenerArnRefPolicyResolutionEnum
 {
@@ -1249,7 +1249,7 @@ public enum V1beta2LBListenerRuleSpecForProviderListenerArnRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecForProviderListenerArnRefPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecForProviderListenerArnRefPolicyResolveEnum
 {
@@ -1260,7 +1260,7 @@ public enum V1beta2LBListenerRuleSpecForProviderListenerArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderListenerArnRefPolicy
 {
@@ -1284,7 +1284,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderListenerArnRefPolicy
 }
 
 /// <summary>Reference to a LBListener in elbv2 to populate listenerArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderListenerArnRef
 {
@@ -1303,7 +1303,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderListenerArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecForProviderListenerArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecForProviderListenerArnSelectorPolicyResolutionEnum
 {
@@ -1319,7 +1319,7 @@ public enum V1beta2LBListenerRuleSpecForProviderListenerArnSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecForProviderListenerArnSelectorPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecForProviderListenerArnSelectorPolicyResolveEnum
 {
@@ -1330,7 +1330,7 @@ public enum V1beta2LBListenerRuleSpecForProviderListenerArnSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderListenerArnSelectorPolicy
 {
@@ -1354,7 +1354,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderListenerArnSelectorPoli
 }
 
 /// <summary>Selector for a LBListener in elbv2 to populate listenerArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderListenerArnSelector
 {
@@ -1375,7 +1375,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderListenerArnSelector
 }
 
 /// <summary>Block for host header rewrite configuration. Only one block is accepted. See Rewrite Blocks below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderTransformHostHeaderRewriteConfigRewrite
 {
@@ -1389,7 +1389,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderTransformHostHeaderRewr
 }
 
 /// <summary>Configuration block for host header rewrite. Required if type is host-header-rewrite. See Host Header Rewrite Config Blocks below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderTransformHostHeaderRewriteConfig
 {
@@ -1399,7 +1399,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderTransformHostHeaderRewr
 }
 
 /// <summary>Block for URL rewrite configuration. Only one block is accepted. See Rewrite Blocks below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderTransformUrlRewriteConfigRewrite
 {
@@ -1413,7 +1413,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderTransformUrlRewriteConf
 }
 
 /// <summary>Configuration block for URL rewrite. Required if type is url-rewrite. See URL Rewrite Config Blocks below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderTransformUrlRewriteConfig
 {
@@ -1422,7 +1422,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderTransformUrlRewriteConf
     public V1beta2LBListenerRuleSpecForProviderTransformUrlRewriteConfigRewrite? Rewrite { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProviderTransform
 {
@@ -1439,7 +1439,7 @@ public partial class V1beta2LBListenerRuleSpecForProviderTransform
     public V1beta2LBListenerRuleSpecForProviderTransformUrlRewriteConfig? UrlRewriteConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecForProvider
 {
@@ -1489,7 +1489,7 @@ public partial class V1beta2LBListenerRuleSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolArnRefPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolArnRefPolicyResolutionEnum
 {
@@ -1505,7 +1505,7 @@ public enum V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolArnRefPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolArnRefPolicyResolveEnum
 {
@@ -1516,7 +1516,7 @@ public enum V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolArnRefPolicy
 {
@@ -1540,7 +1540,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCogn
 }
 
 /// <summary>Reference to a UserPool in cognitoidp to populate userPoolArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolArnRef
 {
@@ -1559,7 +1559,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCogn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolArnSelectorPolicyResolutionEnum
 {
@@ -1575,7 +1575,7 @@ public enum V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolArnSelectorPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolArnSelectorPolicyResolveEnum
 {
@@ -1586,7 +1586,7 @@ public enum V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolArnSelectorPolicy
 {
@@ -1610,7 +1610,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCogn
 }
 
 /// <summary>Selector for a UserPool in cognitoidp to populate userPoolArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolArnSelector
 {
@@ -1636,7 +1636,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCogn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolClientIdRefPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolClientIdRefPolicyResolutionEnum
 {
@@ -1652,7 +1652,7 @@ public enum V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolClientIdRefPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolClientIdRefPolicyResolveEnum
 {
@@ -1663,7 +1663,7 @@ public enum V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolClientIdRefPolicy
 {
@@ -1687,7 +1687,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCogn
 }
 
 /// <summary>Reference to a UserPoolClient in cognitoidp to populate userPoolClientId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolClientIdRef
 {
@@ -1706,7 +1706,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCogn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolClientIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolClientIdSelectorPolicyResolutionEnum
 {
@@ -1722,7 +1722,7 @@ public enum V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolClientIdSelectorPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolClientIdSelectorPolicyResolveEnum
 {
@@ -1733,7 +1733,7 @@ public enum V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolClientIdSelectorPolicy
 {
@@ -1757,7 +1757,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCogn
 }
 
 /// <summary>Selector for a UserPoolClient in cognitoidp to populate userPoolClientId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolClientIdSelector
 {
@@ -1783,7 +1783,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCogn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolDomainRefPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolDomainRefPolicyResolutionEnum
 {
@@ -1799,7 +1799,7 @@ public enum V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolDomainRefPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolDomainRefPolicyResolveEnum
 {
@@ -1810,7 +1810,7 @@ public enum V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolDomainRefPolicy
 {
@@ -1834,7 +1834,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCogn
 }
 
 /// <summary>Reference to a UserPoolDomain in cognitoidp to populate userPoolDomain.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolDomainRef
 {
@@ -1853,7 +1853,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCogn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolDomainSelectorPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolDomainSelectorPolicyResolutionEnum
 {
@@ -1869,7 +1869,7 @@ public enum V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolDomainSelectorPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolDomainSelectorPolicyResolveEnum
 {
@@ -1880,7 +1880,7 @@ public enum V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolDomainSelectorPolicy
 {
@@ -1904,7 +1904,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCogn
 }
 
 /// <summary>Selector for a UserPoolDomain in cognitoidp to populate userPoolDomain.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolDomainSelector
 {
@@ -1925,7 +1925,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCogn
 }
 
 /// <summary>Information for creating an authenticate action using Cognito. Required if type is authenticate-cognito.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCognito
 {
@@ -1987,7 +1987,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateCogn
 }
 
 /// <summary>The OAuth 2.0 client secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateOidcClientSecretSecretRef
 {
@@ -2005,7 +2005,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateOidc
 }
 
 /// <summary>Information for creating an authenticate action using OIDC. Required if type is authenticate-oidc.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateOidc
 {
@@ -2055,7 +2055,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionAuthenticateOidc
 }
 
 /// <summary>Information for creating an action that returns a custom HTTP response. Required if type is fixed-response.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionFixedResponse
 {
@@ -2073,7 +2073,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionFixedResponse
 }
 
 /// <summary>The target group stickiness for the rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionForwardStickiness
 {
@@ -2092,7 +2092,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionForwardStickines
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecInitProviderActionForwardTargetGroupArnRefPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecInitProviderActionForwardTargetGroupArnRefPolicyResolutionEnum
 {
@@ -2108,7 +2108,7 @@ public enum V1beta2LBListenerRuleSpecInitProviderActionForwardTargetGroupArnRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecInitProviderActionForwardTargetGroupArnRefPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecInitProviderActionForwardTargetGroupArnRefPolicyResolveEnum
 {
@@ -2119,7 +2119,7 @@ public enum V1beta2LBListenerRuleSpecInitProviderActionForwardTargetGroupArnRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionForwardTargetGroupArnRefPolicy
 {
@@ -2143,7 +2143,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionForwardTargetGro
 }
 
 /// <summary>Reference to a LBTargetGroup in elbv2 to populate arn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionForwardTargetGroupArnRef
 {
@@ -2162,7 +2162,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionForwardTargetGro
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecInitProviderActionForwardTargetGroupArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecInitProviderActionForwardTargetGroupArnSelectorPolicyResolutionEnum
 {
@@ -2178,7 +2178,7 @@ public enum V1beta2LBListenerRuleSpecInitProviderActionForwardTargetGroupArnSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecInitProviderActionForwardTargetGroupArnSelectorPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecInitProviderActionForwardTargetGroupArnSelectorPolicyResolveEnum
 {
@@ -2189,7 +2189,7 @@ public enum V1beta2LBListenerRuleSpecInitProviderActionForwardTargetGroupArnSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionForwardTargetGroupArnSelectorPolicy
 {
@@ -2213,7 +2213,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionForwardTargetGro
 }
 
 /// <summary>Selector for a LBTargetGroup in elbv2 to populate arn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionForwardTargetGroupArnSelector
 {
@@ -2233,7 +2233,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionForwardTargetGro
     public V1beta2LBListenerRuleSpecInitProviderActionForwardTargetGroupArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionForwardTargetGroup
 {
@@ -2259,7 +2259,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionForwardTargetGro
 /// Specify only if type is forward.
 /// Cannot be specified with target_group_arn.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionForward
 {
@@ -2272,7 +2272,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionForward
     public IList<V1beta2LBListenerRuleSpecInitProviderActionForwardTargetGroup>? TargetGroup { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionJwtValidationAdditionalClaim
 {
@@ -2290,7 +2290,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionJwtValidationAdd
 }
 
 /// <summary>Information for creating a JWT validation action. Required if type is jwt-validation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionJwtValidation
 {
@@ -2308,7 +2308,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionJwtValidation
 }
 
 /// <summary>Information for creating a redirect action. Required if type is redirect.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionRedirect
 {
@@ -2343,7 +2343,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionRedirect
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecInitProviderActionTargetGroupArnRefPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecInitProviderActionTargetGroupArnRefPolicyResolutionEnum
 {
@@ -2359,7 +2359,7 @@ public enum V1beta2LBListenerRuleSpecInitProviderActionTargetGroupArnRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecInitProviderActionTargetGroupArnRefPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecInitProviderActionTargetGroupArnRefPolicyResolveEnum
 {
@@ -2370,7 +2370,7 @@ public enum V1beta2LBListenerRuleSpecInitProviderActionTargetGroupArnRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionTargetGroupArnRefPolicy
 {
@@ -2394,7 +2394,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionTargetGroupArnRe
 }
 
 /// <summary>Reference to a LBTargetGroup in elbv2 to populate targetGroupArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionTargetGroupArnRef
 {
@@ -2413,7 +2413,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionTargetGroupArnRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecInitProviderActionTargetGroupArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecInitProviderActionTargetGroupArnSelectorPolicyResolutionEnum
 {
@@ -2429,7 +2429,7 @@ public enum V1beta2LBListenerRuleSpecInitProviderActionTargetGroupArnSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecInitProviderActionTargetGroupArnSelectorPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecInitProviderActionTargetGroupArnSelectorPolicyResolveEnum
 {
@@ -2440,7 +2440,7 @@ public enum V1beta2LBListenerRuleSpecInitProviderActionTargetGroupArnSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionTargetGroupArnSelectorPolicy
 {
@@ -2464,7 +2464,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionTargetGroupArnSe
 }
 
 /// <summary>Selector for a LBTargetGroup in elbv2 to populate targetGroupArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderActionTargetGroupArnSelector
 {
@@ -2484,7 +2484,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderActionTargetGroupArnSe
     public V1beta2LBListenerRuleSpecInitProviderActionTargetGroupArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderAction
 {
@@ -2548,7 +2548,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderAction
 }
 
 /// <summary>Host header patterns to match. Host Header block fields documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderConditionHostHeader
 {
@@ -2562,7 +2562,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderConditionHostHeader
 }
 
 /// <summary>HTTP headers to match. HTTP Header block fields documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderConditionHttpHeader
 {
@@ -2580,7 +2580,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderConditionHttpHeader
 }
 
 /// <summary>Contains a single values item which is a list of HTTP request methods or verbs to match. Maximum size is 40 characters. Only allowed characters are A-Z, hyphen (-) and underscore (_). Comparison is case sensitive. Wildcards are not supported. Only one needs to match for the condition to be satisfied. AWS recommends that GET and HEAD requests are routed in the same way because the response to a HEAD request may be cached.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderConditionHttpRequestMethod
 {
@@ -2590,7 +2590,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderConditionHttpRequestMe
 }
 
 /// <summary>Path patterns to match against the request URL. Path Pattern block fields documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderConditionPathPattern
 {
@@ -2603,7 +2603,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderConditionPathPattern
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderConditionQueryString
 {
@@ -2617,7 +2617,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderConditionQueryString
 }
 
 /// <summary>Contains a single values item which is a list of source IP CIDR notations to match. You can use both IPv4 and IPv6 addresses. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderConditionSourceIp
 {
@@ -2626,7 +2626,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderConditionSourceIp
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderCondition
 {
@@ -2661,7 +2661,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderCondition
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecInitProviderListenerArnRefPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecInitProviderListenerArnRefPolicyResolutionEnum
 {
@@ -2677,7 +2677,7 @@ public enum V1beta2LBListenerRuleSpecInitProviderListenerArnRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecInitProviderListenerArnRefPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecInitProviderListenerArnRefPolicyResolveEnum
 {
@@ -2688,7 +2688,7 @@ public enum V1beta2LBListenerRuleSpecInitProviderListenerArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderListenerArnRefPolicy
 {
@@ -2712,7 +2712,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderListenerArnRefPolicy
 }
 
 /// <summary>Reference to a LBListener in elbv2 to populate listenerArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderListenerArnRef
 {
@@ -2731,7 +2731,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderListenerArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecInitProviderListenerArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecInitProviderListenerArnSelectorPolicyResolutionEnum
 {
@@ -2747,7 +2747,7 @@ public enum V1beta2LBListenerRuleSpecInitProviderListenerArnSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecInitProviderListenerArnSelectorPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecInitProviderListenerArnSelectorPolicyResolveEnum
 {
@@ -2758,7 +2758,7 @@ public enum V1beta2LBListenerRuleSpecInitProviderListenerArnSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderListenerArnSelectorPolicy
 {
@@ -2782,7 +2782,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderListenerArnSelectorPol
 }
 
 /// <summary>Selector for a LBListener in elbv2 to populate listenerArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderListenerArnSelector
 {
@@ -2803,7 +2803,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderListenerArnSelector
 }
 
 /// <summary>Block for host header rewrite configuration. Only one block is accepted. See Rewrite Blocks below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderTransformHostHeaderRewriteConfigRewrite
 {
@@ -2817,7 +2817,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderTransformHostHeaderRew
 }
 
 /// <summary>Configuration block for host header rewrite. Required if type is host-header-rewrite. See Host Header Rewrite Config Blocks below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderTransformHostHeaderRewriteConfig
 {
@@ -2827,7 +2827,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderTransformHostHeaderRew
 }
 
 /// <summary>Block for URL rewrite configuration. Only one block is accepted. See Rewrite Blocks below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderTransformUrlRewriteConfigRewrite
 {
@@ -2841,7 +2841,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderTransformUrlRewriteCon
 }
 
 /// <summary>Configuration block for URL rewrite. Required if type is url-rewrite. See URL Rewrite Config Blocks below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderTransformUrlRewriteConfig
 {
@@ -2850,7 +2850,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderTransformUrlRewriteCon
     public V1beta2LBListenerRuleSpecInitProviderTransformUrlRewriteConfigRewrite? Rewrite { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProviderTransform
 {
@@ -2879,7 +2879,7 @@ public partial class V1beta2LBListenerRuleSpecInitProviderTransform
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecInitProvider
 {
@@ -2920,7 +2920,7 @@ public partial class V1beta2LBListenerRuleSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecManagementPoliciesEnum>))]
 public enum V1beta2LBListenerRuleSpecManagementPoliciesEnum
 {
@@ -2944,7 +2944,7 @@ public enum V1beta2LBListenerRuleSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2LBListenerRuleSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -2960,7 +2960,7 @@ public enum V1beta2LBListenerRuleSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LBListenerRuleSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2LBListenerRuleSpecProviderConfigRefPolicyResolveEnum
 {
@@ -2971,7 +2971,7 @@ public enum V1beta2LBListenerRuleSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecProviderConfigRefPolicy
 {
@@ -2999,7 +2999,7 @@ public partial class V1beta2LBListenerRuleSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecProviderConfigRef
 {
@@ -3018,7 +3018,7 @@ public partial class V1beta2LBListenerRuleSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpecWriteConnectionSecretToRef
 {
@@ -3032,7 +3032,7 @@ public partial class V1beta2LBListenerRuleSpecWriteConnectionSecretToRef
 }
 
 /// <summary>LBListenerRuleSpec defines the desired state of LBListenerRule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleSpec
 {
@@ -3100,7 +3100,7 @@ public partial class V1beta2LBListenerRuleSpec
 }
 
 /// <summary>Information for creating an authenticate action using Cognito. Required if type is authenticate-cognito.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatusAtProviderActionAuthenticateCognito
 {
@@ -3138,7 +3138,7 @@ public partial class V1beta2LBListenerRuleStatusAtProviderActionAuthenticateCogn
 }
 
 /// <summary>Information for creating an authenticate action using OIDC. Required if type is authenticate-oidc.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatusAtProviderActionAuthenticateOidc
 {
@@ -3184,7 +3184,7 @@ public partial class V1beta2LBListenerRuleStatusAtProviderActionAuthenticateOidc
 }
 
 /// <summary>Information for creating an action that returns a custom HTTP response. Required if type is fixed-response.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatusAtProviderActionFixedResponse
 {
@@ -3202,7 +3202,7 @@ public partial class V1beta2LBListenerRuleStatusAtProviderActionFixedResponse
 }
 
 /// <summary>The target group stickiness for the rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatusAtProviderActionForwardStickiness
 {
@@ -3215,7 +3215,7 @@ public partial class V1beta2LBListenerRuleStatusAtProviderActionForwardStickines
     public bool? Enabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatusAtProviderActionForwardTargetGroup
 {
@@ -3233,7 +3233,7 @@ public partial class V1beta2LBListenerRuleStatusAtProviderActionForwardTargetGro
 /// Specify only if type is forward.
 /// Cannot be specified with target_group_arn.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatusAtProviderActionForward
 {
@@ -3246,7 +3246,7 @@ public partial class V1beta2LBListenerRuleStatusAtProviderActionForward
     public IList<V1beta2LBListenerRuleStatusAtProviderActionForwardTargetGroup>? TargetGroup { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatusAtProviderActionJwtValidationAdditionalClaim
 {
@@ -3264,7 +3264,7 @@ public partial class V1beta2LBListenerRuleStatusAtProviderActionJwtValidationAdd
 }
 
 /// <summary>Information for creating a JWT validation action. Required if type is jwt-validation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatusAtProviderActionJwtValidation
 {
@@ -3282,7 +3282,7 @@ public partial class V1beta2LBListenerRuleStatusAtProviderActionJwtValidation
 }
 
 /// <summary>Information for creating a redirect action. Required if type is redirect.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatusAtProviderActionRedirect
 {
@@ -3311,7 +3311,7 @@ public partial class V1beta2LBListenerRuleStatusAtProviderActionRedirect
     public string? StatusCode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatusAtProviderAction
 {
@@ -3367,7 +3367,7 @@ public partial class V1beta2LBListenerRuleStatusAtProviderAction
 }
 
 /// <summary>Host header patterns to match. Host Header block fields documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatusAtProviderConditionHostHeader
 {
@@ -3381,7 +3381,7 @@ public partial class V1beta2LBListenerRuleStatusAtProviderConditionHostHeader
 }
 
 /// <summary>HTTP headers to match. HTTP Header block fields documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatusAtProviderConditionHttpHeader
 {
@@ -3399,7 +3399,7 @@ public partial class V1beta2LBListenerRuleStatusAtProviderConditionHttpHeader
 }
 
 /// <summary>Contains a single values item which is a list of HTTP request methods or verbs to match. Maximum size is 40 characters. Only allowed characters are A-Z, hyphen (-) and underscore (_). Comparison is case sensitive. Wildcards are not supported. Only one needs to match for the condition to be satisfied. AWS recommends that GET and HEAD requests are routed in the same way because the response to a HEAD request may be cached.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatusAtProviderConditionHttpRequestMethod
 {
@@ -3409,7 +3409,7 @@ public partial class V1beta2LBListenerRuleStatusAtProviderConditionHttpRequestMe
 }
 
 /// <summary>Path patterns to match against the request URL. Path Pattern block fields documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatusAtProviderConditionPathPattern
 {
@@ -3422,7 +3422,7 @@ public partial class V1beta2LBListenerRuleStatusAtProviderConditionPathPattern
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatusAtProviderConditionQueryString
 {
@@ -3436,7 +3436,7 @@ public partial class V1beta2LBListenerRuleStatusAtProviderConditionQueryString
 }
 
 /// <summary>Contains a single values item which is a list of source IP CIDR notations to match. You can use both IPv4 and IPv6 addresses. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatusAtProviderConditionSourceIp
 {
@@ -3445,7 +3445,7 @@ public partial class V1beta2LBListenerRuleStatusAtProviderConditionSourceIp
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatusAtProviderCondition
 {
@@ -3475,7 +3475,7 @@ public partial class V1beta2LBListenerRuleStatusAtProviderCondition
 }
 
 /// <summary>Block for host header rewrite configuration. Only one block is accepted. See Rewrite Blocks below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatusAtProviderTransformHostHeaderRewriteConfigRewrite
 {
@@ -3489,7 +3489,7 @@ public partial class V1beta2LBListenerRuleStatusAtProviderTransformHostHeaderRew
 }
 
 /// <summary>Configuration block for host header rewrite. Required if type is host-header-rewrite. See Host Header Rewrite Config Blocks below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatusAtProviderTransformHostHeaderRewriteConfig
 {
@@ -3499,7 +3499,7 @@ public partial class V1beta2LBListenerRuleStatusAtProviderTransformHostHeaderRew
 }
 
 /// <summary>Block for URL rewrite configuration. Only one block is accepted. See Rewrite Blocks below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatusAtProviderTransformUrlRewriteConfigRewrite
 {
@@ -3513,7 +3513,7 @@ public partial class V1beta2LBListenerRuleStatusAtProviderTransformUrlRewriteCon
 }
 
 /// <summary>Configuration block for URL rewrite. Required if type is url-rewrite. See URL Rewrite Config Blocks below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatusAtProviderTransformUrlRewriteConfig
 {
@@ -3522,7 +3522,7 @@ public partial class V1beta2LBListenerRuleStatusAtProviderTransformUrlRewriteCon
     public V1beta2LBListenerRuleStatusAtProviderTransformUrlRewriteConfigRewrite? Rewrite { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatusAtProviderTransform
 {
@@ -3539,7 +3539,7 @@ public partial class V1beta2LBListenerRuleStatusAtProviderTransform
     public V1beta2LBListenerRuleStatusAtProviderTransformUrlRewriteConfig? UrlRewriteConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatusAtProvider
 {
@@ -3588,7 +3588,7 @@ public partial class V1beta2LBListenerRuleStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatusConditions
 {
@@ -3631,7 +3631,7 @@ public partial class V1beta2LBListenerRuleStatusConditions
 }
 
 /// <summary>LBListenerRuleStatus defines the observed state of LBListenerRule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LBListenerRuleStatus
 {
@@ -3652,7 +3652,7 @@ public partial class V1beta2LBListenerRuleStatus
 }
 
 /// <summary>LBListenerRule is the Schema for the LBListenerRules API. Provides a Load Balancer Listener Rule resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2LBListenerRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2LBListenerRuleSpec>, IStatus<V1beta2LBListenerRuleStatus?>

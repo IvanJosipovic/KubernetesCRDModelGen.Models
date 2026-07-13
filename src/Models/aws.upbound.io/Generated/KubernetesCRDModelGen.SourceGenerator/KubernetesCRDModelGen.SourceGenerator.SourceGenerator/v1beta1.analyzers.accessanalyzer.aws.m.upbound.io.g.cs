@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.accessanalyzer.aws.m.upbound.io;
 /// <summary>Analyzer is the Schema for the Analyzers API. Manages an Access Analyzer Analyzer</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AnalyzerList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Analyzer>
@@ -36,7 +36,7 @@ public partial class V1beta1AnalyzerList : IKubernetesObject<V1ListMeta>, IItems
     public required IList<V1beta1Analyzer> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerSpecForProviderConfigurationInternalAccessAnalysisRuleInclusion
 {
@@ -54,7 +54,7 @@ public partial class V1beta1AnalyzerSpecForProviderConfigurationInternalAccessAn
 }
 
 /// <summary>Information about analysis rules for the internal access analyzer. These rules determine which resources and access patterns will be analyzed. See analysis_rule Block for Internal Access Analyzer for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerSpecForProviderConfigurationInternalAccessAnalysisRule
 {
@@ -64,7 +64,7 @@ public partial class V1beta1AnalyzerSpecForProviderConfigurationInternalAccessAn
 }
 
 /// <summary>Specifies the configuration of an internal access analyzer for an AWS organization or account. This configuration determines how the analyzer evaluates access within your AWS environment. See internal_access Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerSpecForProviderConfigurationInternalAccess
 {
@@ -73,7 +73,7 @@ public partial class V1beta1AnalyzerSpecForProviderConfigurationInternalAccess
     public V1beta1AnalyzerSpecForProviderConfigurationInternalAccessAnalysisRule? AnalysisRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerSpecForProviderConfigurationUnusedAccessAnalysisRuleExclusion
 {
@@ -87,7 +87,7 @@ public partial class V1beta1AnalyzerSpecForProviderConfigurationUnusedAccessAnal
 }
 
 /// <summary>Information about analysis rules for the analyzer. Analysis rules determine which entities will generate findings based on the criteria you define when you create the rule. See analysis_rule Block for Unused Access Analyzer for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerSpecForProviderConfigurationUnusedAccessAnalysisRule
 {
@@ -97,7 +97,7 @@ public partial class V1beta1AnalyzerSpecForProviderConfigurationUnusedAccessAnal
 }
 
 /// <summary>Specifies the configuration of an unused access analyzer for an AWS organization or account. See unused_access Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerSpecForProviderConfigurationUnusedAccess
 {
@@ -111,7 +111,7 @@ public partial class V1beta1AnalyzerSpecForProviderConfigurationUnusedAccess
 }
 
 /// <summary>A block that specifies the configuration of the analyzer. See configuration Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerSpecForProviderConfiguration
 {
@@ -124,7 +124,7 @@ public partial class V1beta1AnalyzerSpecForProviderConfiguration
     public V1beta1AnalyzerSpecForProviderConfigurationUnusedAccess? UnusedAccess { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerSpecForProvider
 {
@@ -148,7 +148,7 @@ public partial class V1beta1AnalyzerSpecForProvider
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerSpecInitProviderConfigurationInternalAccessAnalysisRuleInclusion
 {
@@ -166,7 +166,7 @@ public partial class V1beta1AnalyzerSpecInitProviderConfigurationInternalAccessA
 }
 
 /// <summary>Information about analysis rules for the internal access analyzer. These rules determine which resources and access patterns will be analyzed. See analysis_rule Block for Internal Access Analyzer for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerSpecInitProviderConfigurationInternalAccessAnalysisRule
 {
@@ -176,7 +176,7 @@ public partial class V1beta1AnalyzerSpecInitProviderConfigurationInternalAccessA
 }
 
 /// <summary>Specifies the configuration of an internal access analyzer for an AWS organization or account. This configuration determines how the analyzer evaluates access within your AWS environment. See internal_access Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerSpecInitProviderConfigurationInternalAccess
 {
@@ -185,7 +185,7 @@ public partial class V1beta1AnalyzerSpecInitProviderConfigurationInternalAccess
     public V1beta1AnalyzerSpecInitProviderConfigurationInternalAccessAnalysisRule? AnalysisRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerSpecInitProviderConfigurationUnusedAccessAnalysisRuleExclusion
 {
@@ -199,7 +199,7 @@ public partial class V1beta1AnalyzerSpecInitProviderConfigurationUnusedAccessAna
 }
 
 /// <summary>Information about analysis rules for the analyzer. Analysis rules determine which entities will generate findings based on the criteria you define when you create the rule. See analysis_rule Block for Unused Access Analyzer for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerSpecInitProviderConfigurationUnusedAccessAnalysisRule
 {
@@ -209,7 +209,7 @@ public partial class V1beta1AnalyzerSpecInitProviderConfigurationUnusedAccessAna
 }
 
 /// <summary>Specifies the configuration of an unused access analyzer for an AWS organization or account. See unused_access Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerSpecInitProviderConfigurationUnusedAccess
 {
@@ -223,7 +223,7 @@ public partial class V1beta1AnalyzerSpecInitProviderConfigurationUnusedAccess
 }
 
 /// <summary>A block that specifies the configuration of the analyzer. See configuration Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerSpecInitProviderConfiguration
 {
@@ -248,7 +248,7 @@ public partial class V1beta1AnalyzerSpecInitProviderConfiguration
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerSpecInitProvider
 {
@@ -269,7 +269,7 @@ public partial class V1beta1AnalyzerSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyzerSpecManagementPoliciesEnum>))]
 public enum V1beta1AnalyzerSpecManagementPoliciesEnum
 {
@@ -292,7 +292,7 @@ public enum V1beta1AnalyzerSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerSpecProviderConfigRef
 {
@@ -311,7 +311,7 @@ public partial class V1beta1AnalyzerSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerSpecWriteConnectionSecretToRef
 {
@@ -321,7 +321,7 @@ public partial class V1beta1AnalyzerSpecWriteConnectionSecretToRef
 }
 
 /// <summary>AnalyzerSpec defines the desired state of Analyzer</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerSpec
 {
@@ -372,7 +372,7 @@ public partial class V1beta1AnalyzerSpec
     public V1beta1AnalyzerSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerStatusAtProviderConfigurationInternalAccessAnalysisRuleInclusion
 {
@@ -390,7 +390,7 @@ public partial class V1beta1AnalyzerStatusAtProviderConfigurationInternalAccessA
 }
 
 /// <summary>Information about analysis rules for the internal access analyzer. These rules determine which resources and access patterns will be analyzed. See analysis_rule Block for Internal Access Analyzer for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerStatusAtProviderConfigurationInternalAccessAnalysisRule
 {
@@ -400,7 +400,7 @@ public partial class V1beta1AnalyzerStatusAtProviderConfigurationInternalAccessA
 }
 
 /// <summary>Specifies the configuration of an internal access analyzer for an AWS organization or account. This configuration determines how the analyzer evaluates access within your AWS environment. See internal_access Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerStatusAtProviderConfigurationInternalAccess
 {
@@ -409,7 +409,7 @@ public partial class V1beta1AnalyzerStatusAtProviderConfigurationInternalAccess
     public V1beta1AnalyzerStatusAtProviderConfigurationInternalAccessAnalysisRule? AnalysisRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerStatusAtProviderConfigurationUnusedAccessAnalysisRuleExclusion
 {
@@ -423,7 +423,7 @@ public partial class V1beta1AnalyzerStatusAtProviderConfigurationUnusedAccessAna
 }
 
 /// <summary>Information about analysis rules for the analyzer. Analysis rules determine which entities will generate findings based on the criteria you define when you create the rule. See analysis_rule Block for Unused Access Analyzer for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerStatusAtProviderConfigurationUnusedAccessAnalysisRule
 {
@@ -433,7 +433,7 @@ public partial class V1beta1AnalyzerStatusAtProviderConfigurationUnusedAccessAna
 }
 
 /// <summary>Specifies the configuration of an unused access analyzer for an AWS organization or account. See unused_access Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerStatusAtProviderConfigurationUnusedAccess
 {
@@ -447,7 +447,7 @@ public partial class V1beta1AnalyzerStatusAtProviderConfigurationUnusedAccess
 }
 
 /// <summary>A block that specifies the configuration of the analyzer. See configuration Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerStatusAtProviderConfiguration
 {
@@ -460,7 +460,7 @@ public partial class V1beta1AnalyzerStatusAtProviderConfiguration
     public V1beta1AnalyzerStatusAtProviderConfigurationUnusedAccess? UnusedAccess { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerStatusAtProvider
 {
@@ -497,7 +497,7 @@ public partial class V1beta1AnalyzerStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerStatusConditions
 {
@@ -540,7 +540,7 @@ public partial class V1beta1AnalyzerStatusConditions
 }
 
 /// <summary>AnalyzerStatus defines the observed state of Analyzer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyzerStatus
 {
@@ -561,7 +561,7 @@ public partial class V1beta1AnalyzerStatus
 }
 
 /// <summary>Analyzer is the Schema for the Analyzers API. Manages an Access Analyzer Analyzer</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Analyzer : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AnalyzerSpec>, IStatus<V1beta1AnalyzerStatus?>

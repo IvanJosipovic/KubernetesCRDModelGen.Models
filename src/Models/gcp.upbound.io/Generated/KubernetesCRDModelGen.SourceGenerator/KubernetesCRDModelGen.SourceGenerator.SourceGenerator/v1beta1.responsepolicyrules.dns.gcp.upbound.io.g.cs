@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dns.gcp.upbound.io;
 /// <summary>ResponsePolicyRule is the Schema for the ResponsePolicyRules API. A Response Policy Rule is a selector that applies its behavior to queries that match the selector.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ResponsePolicyRuleList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ResponsePolicyRule>
@@ -45,7 +45,7 @@ public partial class V1beta1ResponsePolicyRuleList : IKubernetesObject<V1ListMet
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResponsePolicyRuleSpecDeletionPolicyEnum>))]
 public enum V1beta1ResponsePolicyRuleSpecDeletionPolicyEnum
 {
@@ -55,7 +55,7 @@ public enum V1beta1ResponsePolicyRuleSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResponsePolicyRuleSpecForProviderLocalDataLocalDatas
 {
@@ -87,7 +87,7 @@ public partial class V1beta1ResponsePolicyRuleSpecForProviderLocalDataLocalDatas
 /// in particular they override private zones, the public internet, and GCP internal DNS. No SOA nor NS types are allowed.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResponsePolicyRuleSpecForProviderLocalData
 {
@@ -105,7 +105,7 @@ public partial class V1beta1ResponsePolicyRuleSpecForProviderLocalData
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResponsePolicyRuleSpecForProviderResponsePolicyRefPolicyResolutionEnum>))]
 public enum V1beta1ResponsePolicyRuleSpecForProviderResponsePolicyRefPolicyResolutionEnum
 {
@@ -121,7 +121,7 @@ public enum V1beta1ResponsePolicyRuleSpecForProviderResponsePolicyRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResponsePolicyRuleSpecForProviderResponsePolicyRefPolicyResolveEnum>))]
 public enum V1beta1ResponsePolicyRuleSpecForProviderResponsePolicyRefPolicyResolveEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1ResponsePolicyRuleSpecForProviderResponsePolicyRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResponsePolicyRuleSpecForProviderResponsePolicyRefPolicy
 {
@@ -156,7 +156,7 @@ public partial class V1beta1ResponsePolicyRuleSpecForProviderResponsePolicyRefPo
 }
 
 /// <summary>Reference to a ResponsePolicy in dns to populate responsePolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResponsePolicyRuleSpecForProviderResponsePolicyRef
 {
@@ -175,7 +175,7 @@ public partial class V1beta1ResponsePolicyRuleSpecForProviderResponsePolicyRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResponsePolicyRuleSpecForProviderResponsePolicySelectorPolicyResolutionEnum>))]
 public enum V1beta1ResponsePolicyRuleSpecForProviderResponsePolicySelectorPolicyResolutionEnum
 {
@@ -191,7 +191,7 @@ public enum V1beta1ResponsePolicyRuleSpecForProviderResponsePolicySelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResponsePolicyRuleSpecForProviderResponsePolicySelectorPolicyResolveEnum>))]
 public enum V1beta1ResponsePolicyRuleSpecForProviderResponsePolicySelectorPolicyResolveEnum
 {
@@ -202,7 +202,7 @@ public enum V1beta1ResponsePolicyRuleSpecForProviderResponsePolicySelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResponsePolicyRuleSpecForProviderResponsePolicySelectorPolicy
 {
@@ -226,7 +226,7 @@ public partial class V1beta1ResponsePolicyRuleSpecForProviderResponsePolicySelec
 }
 
 /// <summary>Selector for a ResponsePolicy in dns to populate responsePolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResponsePolicyRuleSpecForProviderResponsePolicySelector
 {
@@ -246,7 +246,7 @@ public partial class V1beta1ResponsePolicyRuleSpecForProviderResponsePolicySelec
     public V1beta1ResponsePolicyRuleSpecForProviderResponsePolicySelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResponsePolicyRuleSpecForProvider
 {
@@ -282,7 +282,7 @@ public partial class V1beta1ResponsePolicyRuleSpecForProvider
     public V1beta1ResponsePolicyRuleSpecForProviderResponsePolicySelector? ResponsePolicySelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResponsePolicyRuleSpecInitProviderLocalDataLocalDatas
 {
@@ -314,7 +314,7 @@ public partial class V1beta1ResponsePolicyRuleSpecInitProviderLocalDataLocalData
 /// in particular they override private zones, the public internet, and GCP internal DNS. No SOA nor NS types are allowed.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResponsePolicyRuleSpecInitProviderLocalData
 {
@@ -338,7 +338,7 @@ public partial class V1beta1ResponsePolicyRuleSpecInitProviderLocalData
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResponsePolicyRuleSpecInitProvider
 {
@@ -366,7 +366,7 @@ public partial class V1beta1ResponsePolicyRuleSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResponsePolicyRuleSpecManagementPoliciesEnum>))]
 public enum V1beta1ResponsePolicyRuleSpecManagementPoliciesEnum
 {
@@ -390,7 +390,7 @@ public enum V1beta1ResponsePolicyRuleSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResponsePolicyRuleSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1ResponsePolicyRuleSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -406,7 +406,7 @@ public enum V1beta1ResponsePolicyRuleSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResponsePolicyRuleSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1ResponsePolicyRuleSpecProviderConfigRefPolicyResolveEnum
 {
@@ -417,7 +417,7 @@ public enum V1beta1ResponsePolicyRuleSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResponsePolicyRuleSpecProviderConfigRefPolicy
 {
@@ -445,7 +445,7 @@ public partial class V1beta1ResponsePolicyRuleSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResponsePolicyRuleSpecProviderConfigRef
 {
@@ -464,7 +464,7 @@ public partial class V1beta1ResponsePolicyRuleSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResponsePolicyRuleSpecWriteConnectionSecretToRef
 {
@@ -478,7 +478,7 @@ public partial class V1beta1ResponsePolicyRuleSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ResponsePolicyRuleSpec defines the desired state of ResponsePolicyRule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResponsePolicyRuleSpec
 {
@@ -545,7 +545,7 @@ public partial class V1beta1ResponsePolicyRuleSpec
     public V1beta1ResponsePolicyRuleSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResponsePolicyRuleStatusAtProviderLocalDataLocalDatas
 {
@@ -577,7 +577,7 @@ public partial class V1beta1ResponsePolicyRuleStatusAtProviderLocalDataLocalData
 /// in particular they override private zones, the public internet, and GCP internal DNS. No SOA nor NS types are allowed.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResponsePolicyRuleStatusAtProviderLocalData
 {
@@ -589,7 +589,7 @@ public partial class V1beta1ResponsePolicyRuleStatusAtProviderLocalData
     public IList<V1beta1ResponsePolicyRuleStatusAtProviderLocalDataLocalDatas>? LocalDatas { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResponsePolicyRuleStatusAtProvider
 {
@@ -622,7 +622,7 @@ public partial class V1beta1ResponsePolicyRuleStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResponsePolicyRuleStatusConditions
 {
@@ -665,7 +665,7 @@ public partial class V1beta1ResponsePolicyRuleStatusConditions
 }
 
 /// <summary>ResponsePolicyRuleStatus defines the observed state of ResponsePolicyRule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResponsePolicyRuleStatus
 {
@@ -686,7 +686,7 @@ public partial class V1beta1ResponsePolicyRuleStatus
 }
 
 /// <summary>ResponsePolicyRule is the Schema for the ResponsePolicyRules API. A Response Policy Rule is a selector that applies its behavior to queries that match the selector.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ResponsePolicyRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ResponsePolicyRuleSpec>, IStatus<V1beta1ResponsePolicyRuleStatus?>

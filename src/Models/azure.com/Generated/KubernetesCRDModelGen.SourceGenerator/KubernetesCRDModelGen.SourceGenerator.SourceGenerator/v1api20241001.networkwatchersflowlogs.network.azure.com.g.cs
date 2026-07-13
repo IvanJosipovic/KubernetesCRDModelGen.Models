@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.network.azure.com;
 /// - Generated from: /network/resource-manager/Microsoft.Network/Network/stable/2024-10-01/networkWatcher.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/networkWatchers/{networkWatcherName}/flowLogs/{flowLogName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20241001NetworkWatchersFlowLogList : IKubernetesObject<V1ListMeta>, IItems<V1api20241001NetworkWatchersFlowLog>
@@ -41,7 +41,7 @@ public partial class V1api20241001NetworkWatchersFlowLogList : IKubernetesObject
 }
 
 /// <summary>WorkspaceResourceReference: Resource Id of the attached workspace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241001NetworkWatchersFlowLogSpecFlowAnalyticsConfigurationNetworkWatcherFlowAnalyticsConfigurationWorkspaceResourceReference
 {
@@ -67,7 +67,7 @@ public partial class V1api20241001NetworkWatchersFlowLogSpecFlowAnalyticsConfigu
 }
 
 /// <summary>NetworkWatcherFlowAnalyticsConfiguration: Parameters that define the configuration of traffic analytics.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241001NetworkWatchersFlowLogSpecFlowAnalyticsConfigurationNetworkWatcherFlowAnalyticsConfiguration
 {
@@ -89,7 +89,7 @@ public partial class V1api20241001NetworkWatchersFlowLogSpecFlowAnalyticsConfigu
 }
 
 /// <summary>FlowAnalyticsConfiguration: Parameters that define the configuration of traffic analytics.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241001NetworkWatchersFlowLogSpecFlowAnalyticsConfiguration
 {
@@ -99,7 +99,7 @@ public partial class V1api20241001NetworkWatchersFlowLogSpecFlowAnalyticsConfigu
 }
 
 /// <summary>Type: The file type of flow log.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20241001NetworkWatchersFlowLogSpecFormatTypeEnum>))]
 public enum V1api20241001NetworkWatchersFlowLogSpecFormatTypeEnum
 {
@@ -108,7 +108,7 @@ public enum V1api20241001NetworkWatchersFlowLogSpecFormatTypeEnum
 }
 
 /// <summary>Format: Parameters that define the flow log format.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241001NetworkWatchersFlowLogSpecFormat
 {
@@ -126,7 +126,7 @@ public partial class V1api20241001NetworkWatchersFlowLogSpecFormat
 /// created identity and a set of user assigned identities. The type &apos;None&apos; will remove any identities from the virtual
 /// machine.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20241001NetworkWatchersFlowLogSpecIdentityTypeEnum>))]
 public enum V1api20241001NetworkWatchersFlowLogSpecIdentityTypeEnum
 {
@@ -141,7 +141,7 @@ public enum V1api20241001NetworkWatchersFlowLogSpecIdentityTypeEnum
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241001NetworkWatchersFlowLogSpecIdentityUserAssignedIdentitiesReference
 {
@@ -167,7 +167,7 @@ public partial class V1api20241001NetworkWatchersFlowLogSpecIdentityUserAssigned
 }
 
 /// <summary>Information about the user assigned identity for the resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241001NetworkWatchersFlowLogSpecIdentityUserAssignedIdentities
 {
@@ -177,7 +177,7 @@ public partial class V1api20241001NetworkWatchersFlowLogSpecIdentityUserAssigned
 }
 
 /// <summary>Identity: FlowLog resource Managed Identity</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241001NetworkWatchersFlowLogSpecIdentity
 {
@@ -203,7 +203,7 @@ public partial class V1api20241001NetworkWatchersFlowLogSpecIdentity
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241001NetworkWatchersFlowLogSpecOperatorSpecConfigMapExpressions
 {
@@ -244,7 +244,7 @@ public partial class V1api20241001NetworkWatchersFlowLogSpecOperatorSpecConfigMa
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241001NetworkWatchersFlowLogSpecOperatorSpecSecretExpressions
 {
@@ -284,7 +284,7 @@ public partial class V1api20241001NetworkWatchersFlowLogSpecOperatorSpecSecretEx
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241001NetworkWatchersFlowLogSpecOperatorSpec
 {
@@ -302,7 +302,7 @@ public partial class V1api20241001NetworkWatchersFlowLogSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a network.azure.com/NetworkWatcher resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241001NetworkWatchersFlowLogSpecOwner
 {
@@ -315,7 +315,7 @@ public partial class V1api20241001NetworkWatchersFlowLogSpecOwner
 }
 
 /// <summary>RetentionPolicy: Parameters that define the retention policy for flow log.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241001NetworkWatchersFlowLogSpecRetentionPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1api20241001NetworkWatchersFlowLogSpecRetentionPolicy
 }
 
 /// <summary>StorageReference: ID of the storage account which is used to store the flow log.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241001NetworkWatchersFlowLogSpecStorageReference
 {
@@ -355,7 +355,7 @@ public partial class V1api20241001NetworkWatchersFlowLogSpecStorageReference
 }
 
 /// <summary>TargetResourceReference: ID of network security group to which flow log will be applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241001NetworkWatchersFlowLogSpecTargetResourceReference
 {
@@ -380,7 +380,7 @@ public partial class V1api20241001NetworkWatchersFlowLogSpecTargetResourceRefere
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241001NetworkWatchersFlowLogSpec
 {
@@ -451,7 +451,7 @@ public partial class V1api20241001NetworkWatchersFlowLogSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241001NetworkWatchersFlowLogStatusConditions
 {
@@ -497,7 +497,7 @@ public partial class V1api20241001NetworkWatchersFlowLogStatusConditions
 }
 
 /// <summary>NetworkWatcherFlowAnalyticsConfiguration: Parameters that define the configuration of traffic analytics.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241001NetworkWatchersFlowLogStatusFlowAnalyticsConfigurationNetworkWatcherFlowAnalyticsConfiguration
 {
@@ -523,7 +523,7 @@ public partial class V1api20241001NetworkWatchersFlowLogStatusFlowAnalyticsConfi
 }
 
 /// <summary>FlowAnalyticsConfiguration: Parameters that define the configuration of traffic analytics.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241001NetworkWatchersFlowLogStatusFlowAnalyticsConfiguration
 {
@@ -533,7 +533,7 @@ public partial class V1api20241001NetworkWatchersFlowLogStatusFlowAnalyticsConfi
 }
 
 /// <summary>Format: Parameters that define the flow log format.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241001NetworkWatchersFlowLogStatusFormat
 {
@@ -546,7 +546,7 @@ public partial class V1api20241001NetworkWatchersFlowLogStatusFormat
     public int? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241001NetworkWatchersFlowLogStatusIdentityUserAssignedIdentities
 {
@@ -560,7 +560,7 @@ public partial class V1api20241001NetworkWatchersFlowLogStatusIdentityUserAssign
 }
 
 /// <summary>Identity: FlowLog resource Managed Identity</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241001NetworkWatchersFlowLogStatusIdentity
 {
@@ -596,7 +596,7 @@ public partial class V1api20241001NetworkWatchersFlowLogStatusIdentity
 }
 
 /// <summary>RetentionPolicy: Parameters that define the retention policy for flow log.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241001NetworkWatchersFlowLogStatusRetentionPolicy
 {
@@ -609,7 +609,7 @@ public partial class V1api20241001NetworkWatchersFlowLogStatusRetentionPolicy
     public bool? Enabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241001NetworkWatchersFlowLogStatus
 {
@@ -690,7 +690,7 @@ public partial class V1api20241001NetworkWatchersFlowLogStatus
 /// - Generated from: /network/resource-manager/Microsoft.Network/Network/stable/2024-10-01/networkWatcher.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/networkWatchers/{networkWatcherName}/flowLogs/{flowLogName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20241001NetworkWatchersFlowLog : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20241001NetworkWatchersFlowLogSpec?>, IStatus<V1api20241001NetworkWatchersFlowLogStatus?>

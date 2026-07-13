@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cloudformation.aws.upbound.io;
 /// <summary>StackSetInstance is the Schema for the StackSetInstances API. Manages a CloudFormation StackSet Instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2StackSetInstanceList : IKubernetesObject<V1ListMeta>, IItems<V1beta2StackSetInstance>
@@ -45,7 +45,7 @@ public partial class V1beta2StackSetInstanceList : IKubernetesObject<V1ListMeta>
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2StackSetInstanceSpecDeletionPolicyEnum>))]
 public enum V1beta2StackSetInstanceSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2StackSetInstanceSpecDeletionPolicyEnum
 }
 
 /// <summary>AWS Organizations accounts to which StackSets deploys. StackSets doesn&apos;t deploy stack instances to the organization management account, even if the organization management account is in your organization or in an OU in your organization. Drift detection is not possible for this argument. See deployment_targets below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StackSetInstanceSpecForProviderDeploymentTargets
 {
@@ -78,7 +78,7 @@ public partial class V1beta2StackSetInstanceSpecForProviderDeploymentTargets
 }
 
 /// <summary>Preferences for how AWS CloudFormation performs a stack set operation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StackSetInstanceSpecForProviderOperationPreferences
 {
@@ -117,7 +117,7 @@ public partial class V1beta2StackSetInstanceSpecForProviderOperationPreferences
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2StackSetInstanceSpecForProviderStackSetNameRefPolicyResolutionEnum>))]
 public enum V1beta2StackSetInstanceSpecForProviderStackSetNameRefPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta2StackSetInstanceSpecForProviderStackSetNameRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2StackSetInstanceSpecForProviderStackSetNameRefPolicyResolveEnum>))]
 public enum V1beta2StackSetInstanceSpecForProviderStackSetNameRefPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta2StackSetInstanceSpecForProviderStackSetNameRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StackSetInstanceSpecForProviderStackSetNameRefPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta2StackSetInstanceSpecForProviderStackSetNameRefPolicy
 }
 
 /// <summary>Reference to a StackSet in cloudformation to populate stackSetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StackSetInstanceSpecForProviderStackSetNameRef
 {
@@ -187,7 +187,7 @@ public partial class V1beta2StackSetInstanceSpecForProviderStackSetNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2StackSetInstanceSpecForProviderStackSetNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2StackSetInstanceSpecForProviderStackSetNameSelectorPolicyResolutionEnum
 {
@@ -203,7 +203,7 @@ public enum V1beta2StackSetInstanceSpecForProviderStackSetNameSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2StackSetInstanceSpecForProviderStackSetNameSelectorPolicyResolveEnum>))]
 public enum V1beta2StackSetInstanceSpecForProviderStackSetNameSelectorPolicyResolveEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta2StackSetInstanceSpecForProviderStackSetNameSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StackSetInstanceSpecForProviderStackSetNameSelectorPolicy
 {
@@ -238,7 +238,7 @@ public partial class V1beta2StackSetInstanceSpecForProviderStackSetNameSelectorP
 }
 
 /// <summary>Selector for a StackSet in cloudformation to populate stackSetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StackSetInstanceSpecForProviderStackSetNameSelector
 {
@@ -258,7 +258,7 @@ public partial class V1beta2StackSetInstanceSpecForProviderStackSetNameSelector
     public V1beta2StackSetInstanceSpecForProviderStackSetNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StackSetInstanceSpecForProvider
 {
@@ -311,7 +311,7 @@ public partial class V1beta2StackSetInstanceSpecForProvider
 }
 
 /// <summary>AWS Organizations accounts to which StackSets deploys. StackSets doesn&apos;t deploy stack instances to the organization management account, even if the organization management account is in your organization or in an OU in your organization. Drift detection is not possible for this argument. See deployment_targets below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StackSetInstanceSpecInitProviderDeploymentTargets
 {
@@ -333,7 +333,7 @@ public partial class V1beta2StackSetInstanceSpecInitProviderDeploymentTargets
 }
 
 /// <summary>Preferences for how AWS CloudFormation performs a stack set operation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StackSetInstanceSpecInitProviderOperationPreferences
 {
@@ -372,7 +372,7 @@ public partial class V1beta2StackSetInstanceSpecInitProviderOperationPreferences
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2StackSetInstanceSpecInitProviderStackSetNameRefPolicyResolutionEnum>))]
 public enum V1beta2StackSetInstanceSpecInitProviderStackSetNameRefPolicyResolutionEnum
 {
@@ -388,7 +388,7 @@ public enum V1beta2StackSetInstanceSpecInitProviderStackSetNameRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2StackSetInstanceSpecInitProviderStackSetNameRefPolicyResolveEnum>))]
 public enum V1beta2StackSetInstanceSpecInitProviderStackSetNameRefPolicyResolveEnum
 {
@@ -399,7 +399,7 @@ public enum V1beta2StackSetInstanceSpecInitProviderStackSetNameRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StackSetInstanceSpecInitProviderStackSetNameRefPolicy
 {
@@ -423,7 +423,7 @@ public partial class V1beta2StackSetInstanceSpecInitProviderStackSetNameRefPolic
 }
 
 /// <summary>Reference to a StackSet in cloudformation to populate stackSetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StackSetInstanceSpecInitProviderStackSetNameRef
 {
@@ -442,7 +442,7 @@ public partial class V1beta2StackSetInstanceSpecInitProviderStackSetNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2StackSetInstanceSpecInitProviderStackSetNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2StackSetInstanceSpecInitProviderStackSetNameSelectorPolicyResolutionEnum
 {
@@ -458,7 +458,7 @@ public enum V1beta2StackSetInstanceSpecInitProviderStackSetNameSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2StackSetInstanceSpecInitProviderStackSetNameSelectorPolicyResolveEnum>))]
 public enum V1beta2StackSetInstanceSpecInitProviderStackSetNameSelectorPolicyResolveEnum
 {
@@ -469,7 +469,7 @@ public enum V1beta2StackSetInstanceSpecInitProviderStackSetNameSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StackSetInstanceSpecInitProviderStackSetNameSelectorPolicy
 {
@@ -493,7 +493,7 @@ public partial class V1beta2StackSetInstanceSpecInitProviderStackSetNameSelector
 }
 
 /// <summary>Selector for a StackSet in cloudformation to populate stackSetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StackSetInstanceSpecInitProviderStackSetNameSelector
 {
@@ -525,7 +525,7 @@ public partial class V1beta2StackSetInstanceSpecInitProviderStackSetNameSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StackSetInstanceSpecInitProvider
 {
@@ -574,7 +574,7 @@ public partial class V1beta2StackSetInstanceSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2StackSetInstanceSpecManagementPoliciesEnum>))]
 public enum V1beta2StackSetInstanceSpecManagementPoliciesEnum
 {
@@ -598,7 +598,7 @@ public enum V1beta2StackSetInstanceSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2StackSetInstanceSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2StackSetInstanceSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -614,7 +614,7 @@ public enum V1beta2StackSetInstanceSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2StackSetInstanceSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2StackSetInstanceSpecProviderConfigRefPolicyResolveEnum
 {
@@ -625,7 +625,7 @@ public enum V1beta2StackSetInstanceSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StackSetInstanceSpecProviderConfigRefPolicy
 {
@@ -653,7 +653,7 @@ public partial class V1beta2StackSetInstanceSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StackSetInstanceSpecProviderConfigRef
 {
@@ -672,7 +672,7 @@ public partial class V1beta2StackSetInstanceSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StackSetInstanceSpecWriteConnectionSecretToRef
 {
@@ -686,7 +686,7 @@ public partial class V1beta2StackSetInstanceSpecWriteConnectionSecretToRef
 }
 
 /// <summary>StackSetInstanceSpec defines the desired state of StackSetInstance</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StackSetInstanceSpec
 {
@@ -754,7 +754,7 @@ public partial class V1beta2StackSetInstanceSpec
 }
 
 /// <summary>AWS Organizations accounts to which StackSets deploys. StackSets doesn&apos;t deploy stack instances to the organization management account, even if the organization management account is in your organization or in an OU in your organization. Drift detection is not possible for this argument. See deployment_targets below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StackSetInstanceStatusAtProviderDeploymentTargets
 {
@@ -776,7 +776,7 @@ public partial class V1beta2StackSetInstanceStatusAtProviderDeploymentTargets
 }
 
 /// <summary>Preferences for how AWS CloudFormation performs a stack set operation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StackSetInstanceStatusAtProviderOperationPreferences
 {
@@ -809,7 +809,7 @@ public partial class V1beta2StackSetInstanceStatusAtProviderOperationPreferences
     public IList<string>? RegionOrder { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StackSetInstanceStatusAtProviderStackInstanceSummaries
 {
@@ -826,7 +826,7 @@ public partial class V1beta2StackSetInstanceStatusAtProviderStackInstanceSummari
     public string? StackId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StackSetInstanceStatusAtProvider
 {
@@ -890,7 +890,7 @@ public partial class V1beta2StackSetInstanceStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StackSetInstanceStatusConditions
 {
@@ -933,7 +933,7 @@ public partial class V1beta2StackSetInstanceStatusConditions
 }
 
 /// <summary>StackSetInstanceStatus defines the observed state of StackSetInstance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StackSetInstanceStatus
 {
@@ -954,7 +954,7 @@ public partial class V1beta2StackSetInstanceStatus
 }
 
 /// <summary>StackSetInstance is the Schema for the StackSetInstances API. Manages a CloudFormation StackSet Instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2StackSetInstance : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2StackSetInstanceSpec>, IStatus<V1beta2StackSetInstanceStatus?>

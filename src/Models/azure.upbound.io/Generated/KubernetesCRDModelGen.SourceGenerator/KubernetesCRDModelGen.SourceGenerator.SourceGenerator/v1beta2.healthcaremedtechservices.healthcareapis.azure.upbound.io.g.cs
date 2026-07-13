@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.healthcareapis.azure.upbound.io;
 /// <summary>HealthcareMedtechService is the Schema for the HealthcareMedtechServices API. Manages a Healthcare MedTech (Internet of Medical Things) devices Service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2HealthcareMedtechServiceList : IKubernetesObject<V1ListMeta>, IItems<V1beta2HealthcareMedtechService>
@@ -45,7 +45,7 @@ public partial class V1beta2HealthcareMedtechServiceList : IKubernetesObject<V1L
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecDeletionPolicyEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2HealthcareMedtechServiceSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecForProviderEventhubConsumerGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecForProviderEventhubConsumerGroupNameRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2HealthcareMedtechServiceSpecForProviderEventhubConsumerGroupN
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecForProviderEventhubConsumerGroupNameRefPolicyResolveEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecForProviderEventhubConsumerGroupNameRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2HealthcareMedtechServiceSpecForProviderEventhubConsumerGroupN
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecForProviderEventhubConsumerGroupNameRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecForProviderEventhubConsu
 }
 
 /// <summary>Reference to a ConsumerGroup in eventhub to populate eventhubConsumerGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecForProviderEventhubConsumerGroupNameRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecForProviderEventhubConsu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecForProviderEventhubConsumerGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecForProviderEventhubConsumerGroupNameSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2HealthcareMedtechServiceSpecForProviderEventhubConsumerGroupN
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecForProviderEventhubConsumerGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecForProviderEventhubConsumerGroupNameSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2HealthcareMedtechServiceSpecForProviderEventhubConsumerGroupN
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecForProviderEventhubConsumerGroupNameSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecForProviderEventhubConsu
 }
 
 /// <summary>Selector for a ConsumerGroup in eventhub to populate eventhubConsumerGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecForProviderEventhubConsumerGroupNameSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecForProviderEventhubConsu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecForProviderEventhubNameRefPolicyResolutionEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecForProviderEventhubNameRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta2HealthcareMedtechServiceSpecForProviderEventhubNameRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecForProviderEventhubNameRefPolicyResolveEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecForProviderEventhubNameRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta2HealthcareMedtechServiceSpecForProviderEventhubNameRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecForProviderEventhubNameRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecForProviderEventhubNameR
 }
 
 /// <summary>Reference to a EventHub in eventhub to populate eventhubName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecForProviderEventhubNameRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecForProviderEventhubNameR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecForProviderEventhubNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecForProviderEventhubNameSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta2HealthcareMedtechServiceSpecForProviderEventhubNameSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecForProviderEventhubNameSelectorPolicyResolveEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecForProviderEventhubNameSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta2HealthcareMedtechServiceSpecForProviderEventhubNameSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecForProviderEventhubNameSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecForProviderEventhubNameS
 }
 
 /// <summary>Selector for a EventHub in eventhub to populate eventhubName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecForProviderEventhubNameSelector
 {
@@ -355,7 +355,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecForProviderEventhubNameS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecForProviderEventhubNamespaceNameRefPolicyResolutionEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecForProviderEventhubNamespaceNameRefPolicyResolutionEnum
 {
@@ -371,7 +371,7 @@ public enum V1beta2HealthcareMedtechServiceSpecForProviderEventhubNamespaceNameR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecForProviderEventhubNamespaceNameRefPolicyResolveEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecForProviderEventhubNamespaceNameRefPolicyResolveEnum
 {
@@ -382,7 +382,7 @@ public enum V1beta2HealthcareMedtechServiceSpecForProviderEventhubNamespaceNameR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecForProviderEventhubNamespaceNameRefPolicy
 {
@@ -406,7 +406,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecForProviderEventhubNames
 }
 
 /// <summary>Reference to a EventHubNamespace in eventhub to populate eventhubNamespaceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecForProviderEventhubNamespaceNameRef
 {
@@ -425,7 +425,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecForProviderEventhubNames
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecForProviderEventhubNamespaceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecForProviderEventhubNamespaceNameSelectorPolicyResolutionEnum
 {
@@ -441,7 +441,7 @@ public enum V1beta2HealthcareMedtechServiceSpecForProviderEventhubNamespaceNameS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecForProviderEventhubNamespaceNameSelectorPolicyResolveEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecForProviderEventhubNamespaceNameSelectorPolicyResolveEnum
 {
@@ -452,7 +452,7 @@ public enum V1beta2HealthcareMedtechServiceSpecForProviderEventhubNamespaceNameS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecForProviderEventhubNamespaceNameSelectorPolicy
 {
@@ -476,7 +476,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecForProviderEventhubNames
 }
 
 /// <summary>Selector for a EventHubNamespace in eventhub to populate eventhubNamespaceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecForProviderEventhubNamespaceNameSelector
 {
@@ -497,7 +497,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecForProviderEventhubNames
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecForProviderIdentity
 {
@@ -516,7 +516,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecForProviderIdentity
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecForProviderWorkspaceIdRefPolicyResolutionEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecForProviderWorkspaceIdRefPolicyResolutionEnum
 {
@@ -532,7 +532,7 @@ public enum V1beta2HealthcareMedtechServiceSpecForProviderWorkspaceIdRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecForProviderWorkspaceIdRefPolicyResolveEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecForProviderWorkspaceIdRefPolicyResolveEnum
 {
@@ -543,7 +543,7 @@ public enum V1beta2HealthcareMedtechServiceSpecForProviderWorkspaceIdRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecForProviderWorkspaceIdRefPolicy
 {
@@ -567,7 +567,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecForProviderWorkspaceIdRe
 }
 
 /// <summary>Reference to a HealthcareWorkspace in healthcareapis to populate workspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecForProviderWorkspaceIdRef
 {
@@ -586,7 +586,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecForProviderWorkspaceIdRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecForProviderWorkspaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecForProviderWorkspaceIdSelectorPolicyResolutionEnum
 {
@@ -602,7 +602,7 @@ public enum V1beta2HealthcareMedtechServiceSpecForProviderWorkspaceIdSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecForProviderWorkspaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecForProviderWorkspaceIdSelectorPolicyResolveEnum
 {
@@ -613,7 +613,7 @@ public enum V1beta2HealthcareMedtechServiceSpecForProviderWorkspaceIdSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecForProviderWorkspaceIdSelectorPolicy
 {
@@ -637,7 +637,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecForProviderWorkspaceIdSe
 }
 
 /// <summary>Selector for a HealthcareWorkspace in healthcareapis to populate workspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecForProviderWorkspaceIdSelector
 {
@@ -657,7 +657,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecForProviderWorkspaceIdSe
     public V1beta2HealthcareMedtechServiceSpecForProviderWorkspaceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecForProvider
 {
@@ -732,7 +732,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecInitProviderEventhubConsumerGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecInitProviderEventhubConsumerGroupNameRefPolicyResolutionEnum
 {
@@ -748,7 +748,7 @@ public enum V1beta2HealthcareMedtechServiceSpecInitProviderEventhubConsumerGroup
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecInitProviderEventhubConsumerGroupNameRefPolicyResolveEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecInitProviderEventhubConsumerGroupNameRefPolicyResolveEnum
 {
@@ -759,7 +759,7 @@ public enum V1beta2HealthcareMedtechServiceSpecInitProviderEventhubConsumerGroup
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecInitProviderEventhubConsumerGroupNameRefPolicy
 {
@@ -783,7 +783,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecInitProviderEventhubCons
 }
 
 /// <summary>Reference to a ConsumerGroup in eventhub to populate eventhubConsumerGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecInitProviderEventhubConsumerGroupNameRef
 {
@@ -802,7 +802,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecInitProviderEventhubCons
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecInitProviderEventhubConsumerGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecInitProviderEventhubConsumerGroupNameSelectorPolicyResolutionEnum
 {
@@ -818,7 +818,7 @@ public enum V1beta2HealthcareMedtechServiceSpecInitProviderEventhubConsumerGroup
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecInitProviderEventhubConsumerGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecInitProviderEventhubConsumerGroupNameSelectorPolicyResolveEnum
 {
@@ -829,7 +829,7 @@ public enum V1beta2HealthcareMedtechServiceSpecInitProviderEventhubConsumerGroup
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecInitProviderEventhubConsumerGroupNameSelectorPolicy
 {
@@ -853,7 +853,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecInitProviderEventhubCons
 }
 
 /// <summary>Selector for a ConsumerGroup in eventhub to populate eventhubConsumerGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecInitProviderEventhubConsumerGroupNameSelector
 {
@@ -879,7 +879,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecInitProviderEventhubCons
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNameRefPolicyResolutionEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNameRefPolicyResolutionEnum
 {
@@ -895,7 +895,7 @@ public enum V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNameRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNameRefPolicyResolveEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNameRefPolicyResolveEnum
 {
@@ -906,7 +906,7 @@ public enum V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNameRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNameRefPolicy
 {
@@ -930,7 +930,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecInitProviderEventhubName
 }
 
 /// <summary>Reference to a EventHub in eventhub to populate eventhubName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNameRef
 {
@@ -949,7 +949,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecInitProviderEventhubName
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNameSelectorPolicyResolutionEnum
 {
@@ -965,7 +965,7 @@ public enum V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNameSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNameSelectorPolicyResolveEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNameSelectorPolicyResolveEnum
 {
@@ -976,7 +976,7 @@ public enum V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNameSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNameSelectorPolicy
 {
@@ -1000,7 +1000,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecInitProviderEventhubName
 }
 
 /// <summary>Selector for a EventHub in eventhub to populate eventhubName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNameSelector
 {
@@ -1026,7 +1026,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecInitProviderEventhubName
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNamespaceNameRefPolicyResolutionEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNamespaceNameRefPolicyResolutionEnum
 {
@@ -1042,7 +1042,7 @@ public enum V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNamespaceName
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNamespaceNameRefPolicyResolveEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNamespaceNameRefPolicyResolveEnum
 {
@@ -1053,7 +1053,7 @@ public enum V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNamespaceName
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNamespaceNameRefPolicy
 {
@@ -1077,7 +1077,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecInitProviderEventhubName
 }
 
 /// <summary>Reference to a EventHubNamespace in eventhub to populate eventhubNamespaceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNamespaceNameRef
 {
@@ -1096,7 +1096,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecInitProviderEventhubName
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNamespaceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNamespaceNameSelectorPolicyResolutionEnum
 {
@@ -1112,7 +1112,7 @@ public enum V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNamespaceName
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNamespaceNameSelectorPolicyResolveEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNamespaceNameSelectorPolicyResolveEnum
 {
@@ -1123,7 +1123,7 @@ public enum V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNamespaceName
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNamespaceNameSelectorPolicy
 {
@@ -1147,7 +1147,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecInitProviderEventhubName
 }
 
 /// <summary>Selector for a EventHubNamespace in eventhub to populate eventhubNamespaceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecInitProviderEventhubNamespaceNameSelector
 {
@@ -1168,7 +1168,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecInitProviderEventhubName
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecInitProviderIdentity
 {
@@ -1193,7 +1193,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecInitProviderIdentity
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecInitProvider
 {
@@ -1254,7 +1254,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecManagementPoliciesEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecManagementPoliciesEnum
 {
@@ -1278,7 +1278,7 @@ public enum V1beta2HealthcareMedtechServiceSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1294,7 +1294,7 @@ public enum V1beta2HealthcareMedtechServiceSpecProviderConfigRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2HealthcareMedtechServiceSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2HealthcareMedtechServiceSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1305,7 +1305,7 @@ public enum V1beta2HealthcareMedtechServiceSpecProviderConfigRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecProviderConfigRefPolicy
 {
@@ -1333,7 +1333,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecProviderConfigRef
 {
@@ -1352,7 +1352,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpecWriteConnectionSecretToRef
 {
@@ -1366,7 +1366,7 @@ public partial class V1beta2HealthcareMedtechServiceSpecWriteConnectionSecretToR
 }
 
 /// <summary>HealthcareMedtechServiceSpec defines the desired state of HealthcareMedtechService</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceSpec
 {
@@ -1434,7 +1434,7 @@ public partial class V1beta2HealthcareMedtechServiceSpec
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceStatusAtProviderIdentity
 {
@@ -1455,7 +1455,7 @@ public partial class V1beta2HealthcareMedtechServiceStatusAtProviderIdentity
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceStatusAtProvider
 {
@@ -1497,7 +1497,7 @@ public partial class V1beta2HealthcareMedtechServiceStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceStatusConditions
 {
@@ -1540,7 +1540,7 @@ public partial class V1beta2HealthcareMedtechServiceStatusConditions
 }
 
 /// <summary>HealthcareMedtechServiceStatus defines the observed state of HealthcareMedtechService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2HealthcareMedtechServiceStatus
 {
@@ -1561,7 +1561,7 @@ public partial class V1beta2HealthcareMedtechServiceStatus
 }
 
 /// <summary>HealthcareMedtechService is the Schema for the HealthcareMedtechServices API. Manages a Healthcare MedTech (Internet of Medical Things) devices Service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2HealthcareMedtechService : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2HealthcareMedtechServiceSpec>, IStatus<V1beta2HealthcareMedtechServiceStatus?>

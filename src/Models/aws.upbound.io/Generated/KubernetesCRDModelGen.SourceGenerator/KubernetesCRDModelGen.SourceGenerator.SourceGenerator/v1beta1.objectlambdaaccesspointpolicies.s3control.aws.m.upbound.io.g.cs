@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.s3control.aws.m.upbound.io;
 /// <summary>ObjectLambdaAccessPointPolicy is the Schema for the ObjectLambdaAccessPointPolicys API. Provides a resource to manage an S3 Object Lambda Access Point resource policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ObjectLambdaAccessPointPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ObjectLambdaAccessPointPolicy>
@@ -42,7 +42,7 @@ public partial class V1beta1ObjectLambdaAccessPointPolicyList : IKubernetesObjec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectLambdaAccessPointPolicySpecForProviderNameRefPolicyResolutionEnum>))]
 public enum V1beta1ObjectLambdaAccessPointPolicySpecForProviderNameRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1ObjectLambdaAccessPointPolicySpecForProviderNameRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectLambdaAccessPointPolicySpecForProviderNameRefPolicyResolveEnum>))]
 public enum V1beta1ObjectLambdaAccessPointPolicySpecForProviderNameRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1ObjectLambdaAccessPointPolicySpecForProviderNameRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointPolicySpecForProviderNameRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1ObjectLambdaAccessPointPolicySpecForProviderNameRefP
 }
 
 /// <summary>Reference to a ObjectLambdaAccessPoint in s3control to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointPolicySpecForProviderNameRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1ObjectLambdaAccessPointPolicySpecForProviderNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectLambdaAccessPointPolicySpecForProviderNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ObjectLambdaAccessPointPolicySpecForProviderNameSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1ObjectLambdaAccessPointPolicySpecForProviderNameSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectLambdaAccessPointPolicySpecForProviderNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ObjectLambdaAccessPointPolicySpecForProviderNameSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1ObjectLambdaAccessPointPolicySpecForProviderNameSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointPolicySpecForProviderNameSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1ObjectLambdaAccessPointPolicySpecForProviderNameSele
 }
 
 /// <summary>Selector for a ObjectLambdaAccessPoint in s3control to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointPolicySpecForProviderNameSelector
 {
@@ -191,7 +191,7 @@ public partial class V1beta1ObjectLambdaAccessPointPolicySpecForProviderNameSele
     public V1beta1ObjectLambdaAccessPointPolicySpecForProviderNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointPolicySpecForProvider
 {
@@ -229,7 +229,7 @@ public partial class V1beta1ObjectLambdaAccessPointPolicySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectLambdaAccessPointPolicySpecInitProviderNameRefPolicyResolutionEnum>))]
 public enum V1beta1ObjectLambdaAccessPointPolicySpecInitProviderNameRefPolicyResolutionEnum
 {
@@ -245,7 +245,7 @@ public enum V1beta1ObjectLambdaAccessPointPolicySpecInitProviderNameRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectLambdaAccessPointPolicySpecInitProviderNameRefPolicyResolveEnum>))]
 public enum V1beta1ObjectLambdaAccessPointPolicySpecInitProviderNameRefPolicyResolveEnum
 {
@@ -256,7 +256,7 @@ public enum V1beta1ObjectLambdaAccessPointPolicySpecInitProviderNameRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointPolicySpecInitProviderNameRefPolicy
 {
@@ -280,7 +280,7 @@ public partial class V1beta1ObjectLambdaAccessPointPolicySpecInitProviderNameRef
 }
 
 /// <summary>Reference to a ObjectLambdaAccessPoint in s3control to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointPolicySpecInitProviderNameRef
 {
@@ -303,7 +303,7 @@ public partial class V1beta1ObjectLambdaAccessPointPolicySpecInitProviderNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectLambdaAccessPointPolicySpecInitProviderNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ObjectLambdaAccessPointPolicySpecInitProviderNameSelectorPolicyResolutionEnum
 {
@@ -319,7 +319,7 @@ public enum V1beta1ObjectLambdaAccessPointPolicySpecInitProviderNameSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectLambdaAccessPointPolicySpecInitProviderNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ObjectLambdaAccessPointPolicySpecInitProviderNameSelectorPolicyResolveEnum
 {
@@ -330,7 +330,7 @@ public enum V1beta1ObjectLambdaAccessPointPolicySpecInitProviderNameSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointPolicySpecInitProviderNameSelectorPolicy
 {
@@ -354,7 +354,7 @@ public partial class V1beta1ObjectLambdaAccessPointPolicySpecInitProviderNameSel
 }
 
 /// <summary>Selector for a ObjectLambdaAccessPoint in s3control to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointPolicySpecInitProviderNameSelector
 {
@@ -390,7 +390,7 @@ public partial class V1beta1ObjectLambdaAccessPointPolicySpecInitProviderNameSel
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointPolicySpecInitProvider
 {
@@ -419,7 +419,7 @@ public partial class V1beta1ObjectLambdaAccessPointPolicySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObjectLambdaAccessPointPolicySpecManagementPoliciesEnum>))]
 public enum V1beta1ObjectLambdaAccessPointPolicySpecManagementPoliciesEnum
 {
@@ -442,7 +442,7 @@ public enum V1beta1ObjectLambdaAccessPointPolicySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointPolicySpecProviderConfigRef
 {
@@ -461,7 +461,7 @@ public partial class V1beta1ObjectLambdaAccessPointPolicySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointPolicySpecWriteConnectionSecretToRef
 {
@@ -471,7 +471,7 @@ public partial class V1beta1ObjectLambdaAccessPointPolicySpecWriteConnectionSecr
 }
 
 /// <summary>ObjectLambdaAccessPointPolicySpec defines the desired state of ObjectLambdaAccessPointPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointPolicySpec
 {
@@ -522,7 +522,7 @@ public partial class V1beta1ObjectLambdaAccessPointPolicySpec
     public V1beta1ObjectLambdaAccessPointPolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointPolicyStatusAtProvider
 {
@@ -555,7 +555,7 @@ public partial class V1beta1ObjectLambdaAccessPointPolicyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointPolicyStatusConditions
 {
@@ -598,7 +598,7 @@ public partial class V1beta1ObjectLambdaAccessPointPolicyStatusConditions
 }
 
 /// <summary>ObjectLambdaAccessPointPolicyStatus defines the observed state of ObjectLambdaAccessPointPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointPolicyStatus
 {
@@ -619,7 +619,7 @@ public partial class V1beta1ObjectLambdaAccessPointPolicyStatus
 }
 
 /// <summary>ObjectLambdaAccessPointPolicy is the Schema for the ObjectLambdaAccessPointPolicys API. Provides a resource to manage an S3 Object Lambda Access Point resource policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ObjectLambdaAccessPointPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ObjectLambdaAccessPointPolicySpec>, IStatus<V1beta1ObjectLambdaAccessPointPolicyStatus?>

@@ -17,7 +17,7 @@ namespace KubernetesCRDModelGen.Models.networking.@internal.knative.dev;
 /// This is heavily based on K8s Ingress https://godoc.org/k8s.io/api/networking/v1beta1#Ingress
 /// which some highlighted modifications.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1IngressList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1Ingress>
@@ -47,7 +47,7 @@ public partial class V1alpha1IngressList : IKubernetesObject<V1ListMeta>, IItems
 /// HeaderMatch represents a matching value of Headers in HTTPIngressPath.
 /// Currently, only the exact matching is supported.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IngressSpecRulesHttpPathsHeaders
 {
@@ -56,7 +56,7 @@ public partial class V1alpha1IngressSpecRulesHttpPathsHeaders
 }
 
 /// <summary>IngressBackendSplit describes all endpoints for a given service and port.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IngressSpecRulesHttpPathsSplits
 {
@@ -99,7 +99,7 @@ public partial class V1alpha1IngressSpecRulesHttpPathsSplits
 /// HTTPIngressPath associates a path regex with a backend. Incoming URLs matching
 /// the path are forwarded to the backend.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IngressSpecRulesHttpPaths
 {
@@ -153,7 +153,7 @@ public partial class V1alpha1IngressSpecRulesHttpPaths
 /// HTTP represents a rule to apply against incoming requests. If the
 /// rule is satisfied, the request is routed to the specified backend.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IngressSpecRulesHttp
 {
@@ -171,7 +171,7 @@ public partial class V1alpha1IngressSpecRulesHttp
 /// the related backend services. Incoming requests are first evaluated for a host
 /// match, then routed to the backend associated with the matching IngressRuleValue.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IngressSpecRules
 {
@@ -208,7 +208,7 @@ public partial class V1alpha1IngressSpecRules
 }
 
 /// <summary>IngressTLS describes the transport layer security associated with an Ingress.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IngressSpecTls
 {
@@ -239,7 +239,7 @@ public partial class V1alpha1IngressSpecTls
 /// Spec is the desired state of the Ingress.
 /// More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IngressSpec
 {
@@ -269,7 +269,7 @@ public partial class V1alpha1IngressSpec
 /// Condition defines a readiness condition for a Knative resource.
 /// See: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#typical-status-properties
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IngressStatusConditions
 {
@@ -309,7 +309,7 @@ public partial class V1alpha1IngressStatusConditions
 /// LoadBalancerIngressStatus represents the status of a load-balancer ingress point:
 /// traffic intended for the service should be sent to an ingress point.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IngressStatusPrivateLoadBalancerIngress
 {
@@ -342,7 +342,7 @@ public partial class V1alpha1IngressStatusPrivateLoadBalancerIngress
 }
 
 /// <summary>PrivateLoadBalancer contains the current status of the load-balancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IngressStatusPrivateLoadBalancer
 {
@@ -358,7 +358,7 @@ public partial class V1alpha1IngressStatusPrivateLoadBalancer
 /// LoadBalancerIngressStatus represents the status of a load-balancer ingress point:
 /// traffic intended for the service should be sent to an ingress point.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IngressStatusPublicLoadBalancerIngress
 {
@@ -391,7 +391,7 @@ public partial class V1alpha1IngressStatusPublicLoadBalancerIngress
 }
 
 /// <summary>PublicLoadBalancer contains the current status of the load-balancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IngressStatusPublicLoadBalancer
 {
@@ -407,7 +407,7 @@ public partial class V1alpha1IngressStatusPublicLoadBalancer
 /// Status is the current state of the Ingress.
 /// More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IngressStatus
 {
@@ -448,7 +448,7 @@ public partial class V1alpha1IngressStatus
 /// This is heavily based on K8s Ingress https://godoc.org/k8s.io/api/networking/v1beta1#Ingress
 /// which some highlighted modifications.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1Ingress : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1IngressSpec?>, IStatus<V1alpha1IngressStatus?>

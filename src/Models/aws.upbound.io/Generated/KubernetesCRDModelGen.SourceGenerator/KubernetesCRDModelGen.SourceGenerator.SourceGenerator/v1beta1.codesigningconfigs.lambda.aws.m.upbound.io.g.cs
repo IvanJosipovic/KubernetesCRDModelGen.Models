@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.lambda.aws.m.upbound.io;
 /// <summary>CodeSigningConfig is the Schema for the CodeSigningConfigs API. Manages an AWS Lambda Code Signing Config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CodeSigningConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta1CodeSigningConfig>
@@ -42,7 +42,7 @@ public partial class V1beta1CodeSigningConfigList : IKubernetesObject<V1ListMeta
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodeSigningConfigSpecForProviderAllowedPublishersSigningProfileVersionArnsRefsPolicyResolutionEnum>))]
 public enum V1beta1CodeSigningConfigSpecForProviderAllowedPublishersSigningProfileVersionArnsRefsPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1CodeSigningConfigSpecForProviderAllowedPublishersSigningProfi
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodeSigningConfigSpecForProviderAllowedPublishersSigningProfileVersionArnsRefsPolicyResolveEnum>))]
 public enum V1beta1CodeSigningConfigSpecForProviderAllowedPublishersSigningProfileVersionArnsRefsPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1CodeSigningConfigSpecForProviderAllowedPublishersSigningProfi
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeSigningConfigSpecForProviderAllowedPublishersSigningProfileVersionArnsRefsPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1CodeSigningConfigSpecForProviderAllowedPublishersSig
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeSigningConfigSpecForProviderAllowedPublishersSigningProfileVersionArnsRefs
 {
@@ -116,7 +116,7 @@ public partial class V1beta1CodeSigningConfigSpecForProviderAllowedPublishersSig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodeSigningConfigSpecForProviderAllowedPublishersSigningProfileVersionArnsSelectorPolicyResolutionEnum>))]
 public enum V1beta1CodeSigningConfigSpecForProviderAllowedPublishersSigningProfileVersionArnsSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1CodeSigningConfigSpecForProviderAllowedPublishersSigningProfi
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodeSigningConfigSpecForProviderAllowedPublishersSigningProfileVersionArnsSelectorPolicyResolveEnum>))]
 public enum V1beta1CodeSigningConfigSpecForProviderAllowedPublishersSigningProfileVersionArnsSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1CodeSigningConfigSpecForProviderAllowedPublishersSigningProfi
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeSigningConfigSpecForProviderAllowedPublishersSigningProfileVersionArnsSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1CodeSigningConfigSpecForProviderAllowedPublishersSig
 }
 
 /// <summary>Selector for a list of SigningProfile in signer to populate signingProfileVersionArns.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeSigningConfigSpecForProviderAllowedPublishersSigningProfileVersionArnsSelector
 {
@@ -192,7 +192,7 @@ public partial class V1beta1CodeSigningConfigSpecForProviderAllowedPublishersSig
 }
 
 /// <summary>Configuration block of allowed publishers as signing profiles for this code signing configuration. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeSigningConfigSpecForProviderAllowedPublishers
 {
@@ -210,7 +210,7 @@ public partial class V1beta1CodeSigningConfigSpecForProviderAllowedPublishers
 }
 
 /// <summary>Configuration block of code signing policies that define the actions to take if the validation checks fail. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeSigningConfigSpecForProviderPolicies
 {
@@ -219,7 +219,7 @@ public partial class V1beta1CodeSigningConfigSpecForProviderPolicies
     public string? UntrustedArtifactOnDeployment { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeSigningConfigSpecForProvider
 {
@@ -253,7 +253,7 @@ public partial class V1beta1CodeSigningConfigSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodeSigningConfigSpecInitProviderAllowedPublishersSigningProfileVersionArnsRefsPolicyResolutionEnum>))]
 public enum V1beta1CodeSigningConfigSpecInitProviderAllowedPublishersSigningProfileVersionArnsRefsPolicyResolutionEnum
 {
@@ -269,7 +269,7 @@ public enum V1beta1CodeSigningConfigSpecInitProviderAllowedPublishersSigningProf
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodeSigningConfigSpecInitProviderAllowedPublishersSigningProfileVersionArnsRefsPolicyResolveEnum>))]
 public enum V1beta1CodeSigningConfigSpecInitProviderAllowedPublishersSigningProfileVersionArnsRefsPolicyResolveEnum
 {
@@ -280,7 +280,7 @@ public enum V1beta1CodeSigningConfigSpecInitProviderAllowedPublishersSigningProf
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeSigningConfigSpecInitProviderAllowedPublishersSigningProfileVersionArnsRefsPolicy
 {
@@ -304,7 +304,7 @@ public partial class V1beta1CodeSigningConfigSpecInitProviderAllowedPublishersSi
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeSigningConfigSpecInitProviderAllowedPublishersSigningProfileVersionArnsRefs
 {
@@ -327,7 +327,7 @@ public partial class V1beta1CodeSigningConfigSpecInitProviderAllowedPublishersSi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodeSigningConfigSpecInitProviderAllowedPublishersSigningProfileVersionArnsSelectorPolicyResolutionEnum>))]
 public enum V1beta1CodeSigningConfigSpecInitProviderAllowedPublishersSigningProfileVersionArnsSelectorPolicyResolutionEnum
 {
@@ -343,7 +343,7 @@ public enum V1beta1CodeSigningConfigSpecInitProviderAllowedPublishersSigningProf
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodeSigningConfigSpecInitProviderAllowedPublishersSigningProfileVersionArnsSelectorPolicyResolveEnum>))]
 public enum V1beta1CodeSigningConfigSpecInitProviderAllowedPublishersSigningProfileVersionArnsSelectorPolicyResolveEnum
 {
@@ -354,7 +354,7 @@ public enum V1beta1CodeSigningConfigSpecInitProviderAllowedPublishersSigningProf
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeSigningConfigSpecInitProviderAllowedPublishersSigningProfileVersionArnsSelectorPolicy
 {
@@ -378,7 +378,7 @@ public partial class V1beta1CodeSigningConfigSpecInitProviderAllowedPublishersSi
 }
 
 /// <summary>Selector for a list of SigningProfile in signer to populate signingProfileVersionArns.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeSigningConfigSpecInitProviderAllowedPublishersSigningProfileVersionArnsSelector
 {
@@ -403,7 +403,7 @@ public partial class V1beta1CodeSigningConfigSpecInitProviderAllowedPublishersSi
 }
 
 /// <summary>Configuration block of allowed publishers as signing profiles for this code signing configuration. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeSigningConfigSpecInitProviderAllowedPublishers
 {
@@ -421,7 +421,7 @@ public partial class V1beta1CodeSigningConfigSpecInitProviderAllowedPublishers
 }
 
 /// <summary>Configuration block of code signing policies that define the actions to take if the validation checks fail. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeSigningConfigSpecInitProviderPolicies
 {
@@ -442,7 +442,7 @@ public partial class V1beta1CodeSigningConfigSpecInitProviderPolicies
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeSigningConfigSpecInitProvider
 {
@@ -467,7 +467,7 @@ public partial class V1beta1CodeSigningConfigSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodeSigningConfigSpecManagementPoliciesEnum>))]
 public enum V1beta1CodeSigningConfigSpecManagementPoliciesEnum
 {
@@ -490,7 +490,7 @@ public enum V1beta1CodeSigningConfigSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeSigningConfigSpecProviderConfigRef
 {
@@ -509,7 +509,7 @@ public partial class V1beta1CodeSigningConfigSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeSigningConfigSpecWriteConnectionSecretToRef
 {
@@ -519,7 +519,7 @@ public partial class V1beta1CodeSigningConfigSpecWriteConnectionSecretToRef
 }
 
 /// <summary>CodeSigningConfigSpec defines the desired state of CodeSigningConfig</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeSigningConfigSpec
 {
@@ -571,7 +571,7 @@ public partial class V1beta1CodeSigningConfigSpec
 }
 
 /// <summary>Configuration block of allowed publishers as signing profiles for this code signing configuration. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeSigningConfigStatusAtProviderAllowedPublishers
 {
@@ -581,7 +581,7 @@ public partial class V1beta1CodeSigningConfigStatusAtProviderAllowedPublishers
 }
 
 /// <summary>Configuration block of code signing policies that define the actions to take if the validation checks fail. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeSigningConfigStatusAtProviderPolicies
 {
@@ -590,7 +590,7 @@ public partial class V1beta1CodeSigningConfigStatusAtProviderPolicies
     public string? UntrustedArtifactOnDeployment { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeSigningConfigStatusAtProvider
 {
@@ -638,7 +638,7 @@ public partial class V1beta1CodeSigningConfigStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeSigningConfigStatusConditions
 {
@@ -681,7 +681,7 @@ public partial class V1beta1CodeSigningConfigStatusConditions
 }
 
 /// <summary>CodeSigningConfigStatus defines the observed state of CodeSigningConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeSigningConfigStatus
 {
@@ -702,7 +702,7 @@ public partial class V1beta1CodeSigningConfigStatus
 }
 
 /// <summary>CodeSigningConfig is the Schema for the CodeSigningConfigs API. Manages an AWS Lambda Code Signing Config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CodeSigningConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1CodeSigningConfigSpec>, IStatus<V1beta1CodeSigningConfigStatus?>

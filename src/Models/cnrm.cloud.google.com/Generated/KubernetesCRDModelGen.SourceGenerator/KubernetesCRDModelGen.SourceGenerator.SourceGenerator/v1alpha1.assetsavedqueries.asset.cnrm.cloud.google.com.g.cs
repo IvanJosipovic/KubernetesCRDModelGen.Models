@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.asset.cnrm.cloud.google.com;
 /// <summary>AssetSavedQuery is the Schema for the AssetSavedQuery API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1AssetSavedQueryList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1AssetSavedQuery>
@@ -37,7 +37,7 @@ public partial class V1alpha1AssetSavedQueryList : IKubernetesObject<V1ListMeta>
 }
 
 /// <summary>Optional. Specifies roles or permissions for analysis. This is optional.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AssetSavedQuerySpecContentIamPolicyAnalysisQueryAccessSelector
 {
@@ -51,7 +51,7 @@ public partial class V1alpha1AssetSavedQuerySpecContentIamPolicyAnalysisQueryAcc
 }
 
 /// <summary>Optional. The hypothetical context for IAM conditions evaluation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AssetSavedQuerySpecContentIamPolicyAnalysisQueryConditionContext
 {
@@ -61,7 +61,7 @@ public partial class V1alpha1AssetSavedQuerySpecContentIamPolicyAnalysisQueryCon
 }
 
 /// <summary>Optional. Specifies an identity for analysis.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AssetSavedQuerySpecContentIamPolicyAnalysisQueryIdentitySelector
 {
@@ -84,7 +84,7 @@ public partial class V1alpha1AssetSavedQuerySpecContentIamPolicyAnalysisQueryIde
 }
 
 /// <summary>Optional. The query options.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AssetSavedQuerySpecContentIamPolicyAnalysisQueryOptions
 {
@@ -201,7 +201,7 @@ public partial class V1alpha1AssetSavedQuerySpecContentIamPolicyAnalysisQueryOpt
 }
 
 /// <summary>Optional. Specifies a resource for analysis.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AssetSavedQuerySpecContentIamPolicyAnalysisQueryResourceSelector
 {
@@ -211,7 +211,7 @@ public partial class V1alpha1AssetSavedQuerySpecContentIamPolicyAnalysisQueryRes
 }
 
 /// <summary>An IAM Policy Analysis query, which could be used in the [AssetService.AnalyzeIamPolicy][google.cloud.asset.v1.AssetService.AnalyzeIamPolicy] RPC or the [AssetService.AnalyzeIamPolicyLongrunning][google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning] RPC.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AssetSavedQuerySpecContentIamPolicyAnalysisQuery
 {
@@ -254,7 +254,7 @@ public partial class V1alpha1AssetSavedQuerySpecContentIamPolicyAnalysisQuery
 }
 
 /// <summary>The query content.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AssetSavedQuerySpecContent
 {
@@ -264,7 +264,7 @@ public partial class V1alpha1AssetSavedQuerySpecContent
 }
 
 /// <summary>FolderRef represents the Folder that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AssetSavedQuerySpecFolderRef
 {
@@ -282,7 +282,7 @@ public partial class V1alpha1AssetSavedQuerySpecFolderRef
 }
 
 /// <summary>OrganizationRef represents the Organization that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AssetSavedQuerySpecOrganizationRef
 {
@@ -292,7 +292,7 @@ public partial class V1alpha1AssetSavedQuerySpecOrganizationRef
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AssetSavedQuerySpecProjectRef
 {
@@ -314,7 +314,7 @@ public partial class V1alpha1AssetSavedQuerySpecProjectRef
 }
 
 /// <summary>AssetSavedQuerySpec defines the desired state of AssetSavedQuery</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AssetSavedQuerySpec
 {
@@ -347,7 +347,7 @@ public partial class V1alpha1AssetSavedQuerySpec
     public string? ResourceID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AssetSavedQueryStatusConditions
 {
@@ -373,7 +373,7 @@ public partial class V1alpha1AssetSavedQueryStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AssetSavedQueryStatusObservedState
 {
@@ -395,7 +395,7 @@ public partial class V1alpha1AssetSavedQueryStatusObservedState
 }
 
 /// <summary>AssetSavedQueryStatus defines the config connector machine state of AssetSavedQuery</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AssetSavedQueryStatus
 {
@@ -417,7 +417,7 @@ public partial class V1alpha1AssetSavedQueryStatus
 }
 
 /// <summary>AssetSavedQuery is the Schema for the AssetSavedQuery API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1AssetSavedQuery : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1AssetSavedQuerySpec>, IStatus<V1alpha1AssetSavedQueryStatus?>

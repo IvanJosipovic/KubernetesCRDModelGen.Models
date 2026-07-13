@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sagemaker.services.k8s.aws;
 /// <summary>MonitoringSchedule is the Schema for the MonitoringSchedules API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1MonitoringScheduleList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1MonitoringSchedule>
@@ -37,7 +37,7 @@ public partial class V1alpha1MonitoringScheduleList : IKubernetesObject<V1ListMe
 }
 
 /// <summary>The constraints resource for a monitoring job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonitoringJobDefinitionBaselineConfigConstraintsResource
 {
@@ -46,7 +46,7 @@ public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonit
 }
 
 /// <summary>The statistics resource for a monitoring job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonitoringJobDefinitionBaselineConfigStatisticsResource
 {
@@ -59,7 +59,7 @@ public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonit
 /// baseline resources are compared against the results of the current job from
 /// the series of jobs scheduled to collect data periodically.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonitoringJobDefinitionBaselineConfig
 {
@@ -76,7 +76,7 @@ public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonit
 }
 
 /// <summary>Container image configuration object for the monitoring job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonitoringJobDefinitionMonitoringAppSpecification
 {
@@ -97,7 +97,7 @@ public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonit
 }
 
 /// <summary>Input object for the endpoint</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonitoringJobDefinitionMonitoringInputsEndpointInput
 {
@@ -136,7 +136,7 @@ public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonit
 }
 
 /// <summary>The inputs for a monitoring job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonitoringJobDefinitionMonitoringInputs
 {
@@ -149,7 +149,7 @@ public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonit
 /// Information about where and how you want to store the results of a monitoring
 /// job.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonitoringJobDefinitionMonitoringOutputConfigMonitoringOutputsS3Output
 {
@@ -164,7 +164,7 @@ public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonit
 }
 
 /// <summary>The output object for a monitoring job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonitoringJobDefinitionMonitoringOutputConfigMonitoringOutputs
 {
@@ -177,7 +177,7 @@ public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonit
 }
 
 /// <summary>The output configuration for monitoring jobs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonitoringJobDefinitionMonitoringOutputConfig
 {
@@ -189,7 +189,7 @@ public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonit
 }
 
 /// <summary>Configuration for the cluster used to run model monitoring jobs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonitoringJobDefinitionMonitoringResourcesClusterConfig
 {
@@ -207,7 +207,7 @@ public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonit
 }
 
 /// <summary>Identifies the resources to deploy for a monitoring job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonitoringJobDefinitionMonitoringResources
 {
@@ -222,7 +222,7 @@ public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonit
 /// to and from your resources by configuring a VPC. For more information, see
 /// Give SageMaker Access to Resources in your Amazon VPC (https://docs.aws.amazon.com/sagemaker/latest/dg/infrastructure-give-access.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonitoringJobDefinitionNetworkConfigVpcConfig
 {
@@ -239,7 +239,7 @@ public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonit
 /// containers, and the VPC subnets and security groups to use for VPC-enabled
 /// jobs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonitoringJobDefinitionNetworkConfig
 {
@@ -260,7 +260,7 @@ public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonit
 }
 
 /// <summary>A time limit for how long the monitoring job is allowed to run before stopping.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonitoringJobDefinitionStoppingCondition
 {
@@ -269,7 +269,7 @@ public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonit
 }
 
 /// <summary>Defines the monitoring job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonitoringJobDefinition
 {
@@ -317,7 +317,7 @@ public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigMonit
 }
 
 /// <summary>Configuration details about the monitoring schedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigScheduleConfig
 {
@@ -335,7 +335,7 @@ public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfigSched
 /// The configuration object that specifies the monitoring schedule and defines
 /// the monitoring job.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfig
 {
@@ -369,7 +369,7 @@ public partial class V1alpha1MonitoringScheduleSpecMonitoringScheduleConfig
 /// tagging, see Tagging Best Practices: Implement an Effective Amazon Web Services
 /// Resource Tagging Strategy (https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MonitoringScheduleSpecTags
 {
@@ -386,7 +386,7 @@ public partial class V1alpha1MonitoringScheduleSpecTags
 /// A schedule for a model monitoring job. For information about model monitor,
 /// see Amazon SageMaker Model Monitor (https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MonitoringScheduleSpec
 {
@@ -420,7 +420,7 @@ public partial class V1alpha1MonitoringScheduleSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MonitoringScheduleStatusAckResourceMetadata
 {
@@ -457,7 +457,7 @@ public partial class V1alpha1MonitoringScheduleStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MonitoringScheduleStatusConditions
 {
@@ -483,7 +483,7 @@ public partial class V1alpha1MonitoringScheduleStatusConditions
 }
 
 /// <summary>Describes metadata on the last execution to run, if there was one.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MonitoringScheduleStatusLastMonitoringExecutionSummary
 {
@@ -519,7 +519,7 @@ public partial class V1alpha1MonitoringScheduleStatusLastMonitoringExecutionSumm
 }
 
 /// <summary>MonitoringScheduleStatus defines the observed state of MonitoringSchedule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MonitoringScheduleStatus
 {
@@ -565,7 +565,7 @@ public partial class V1alpha1MonitoringScheduleStatus
 }
 
 /// <summary>MonitoringSchedule is the Schema for the MonitoringSchedules API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1MonitoringSchedule : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1MonitoringScheduleSpec?>, IStatus<V1alpha1MonitoringScheduleStatus?>

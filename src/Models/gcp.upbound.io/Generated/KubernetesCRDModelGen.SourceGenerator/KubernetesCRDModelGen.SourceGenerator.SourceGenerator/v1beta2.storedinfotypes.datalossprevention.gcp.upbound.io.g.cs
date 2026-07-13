@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datalossprevention.gcp.upbound.io;
 /// <summary>StoredInfoType is the Schema for the StoredInfoTypes API. Allows creation of custom info types.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2StoredInfoTypeList : IKubernetesObject<V1ListMeta>, IItems<V1beta2StoredInfoType>
@@ -45,7 +45,7 @@ public partial class V1beta2StoredInfoTypeList : IKubernetesObject<V1ListMeta>, 
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2StoredInfoTypeSpecDeletionPolicyEnum>))]
 public enum V1beta2StoredInfoTypeSpecDeletionPolicyEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta2StoredInfoTypeSpecDeletionPolicyEnum
 /// Newline-delimited file of words in Cloud Storage. Only a single file is accepted.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecForProviderDictionaryCloudStoragePath
 {
@@ -72,7 +72,7 @@ public partial class V1beta2StoredInfoTypeSpecForProviderDictionaryCloudStorageP
 /// List of words or phrases to search for.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecForProviderDictionaryWordList
 {
@@ -88,7 +88,7 @@ public partial class V1beta2StoredInfoTypeSpecForProviderDictionaryWordList
 /// Dictionary which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecForProviderDictionary
 {
@@ -111,7 +111,7 @@ public partial class V1beta2StoredInfoTypeSpecForProviderDictionary
 /// Designated field in the BigQuery table.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecForProviderLargeCustomDictionaryBigQueryFieldField
 {
@@ -124,7 +124,7 @@ public partial class V1beta2StoredInfoTypeSpecForProviderLargeCustomDictionaryBi
 /// Field in a BigQuery table where each cell represents a dictionary phrase.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecForProviderLargeCustomDictionaryBigQueryFieldTable
 {
@@ -145,7 +145,7 @@ public partial class V1beta2StoredInfoTypeSpecForProviderLargeCustomDictionaryBi
 /// Field in a BigQuery table where each cell represents a dictionary phrase.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecForProviderLargeCustomDictionaryBigQueryField
 {
@@ -168,7 +168,7 @@ public partial class V1beta2StoredInfoTypeSpecForProviderLargeCustomDictionaryBi
 /// Set of files containing newline-delimited lists of dictionary phrases.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecForProviderLargeCustomDictionaryCloudStorageFileSet
 {
@@ -182,7 +182,7 @@ public partial class V1beta2StoredInfoTypeSpecForProviderLargeCustomDictionaryCl
 /// If any of these artifacts are modified, the dictionary is considered invalid and can no longer be used.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecForProviderLargeCustomDictionaryOutputPath
 {
@@ -195,7 +195,7 @@ public partial class V1beta2StoredInfoTypeSpecForProviderLargeCustomDictionaryOu
 /// Dictionary which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecForProviderLargeCustomDictionary
 {
@@ -226,7 +226,7 @@ public partial class V1beta2StoredInfoTypeSpecForProviderLargeCustomDictionary
 /// Regular expression which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecForProviderRegex
 {
@@ -242,7 +242,7 @@ public partial class V1beta2StoredInfoTypeSpecForProviderRegex
     public string? Pattern { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecForProvider
 {
@@ -292,7 +292,7 @@ public partial class V1beta2StoredInfoTypeSpecForProvider
 /// Newline-delimited file of words in Cloud Storage. Only a single file is accepted.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecInitProviderDictionaryCloudStoragePath
 {
@@ -305,7 +305,7 @@ public partial class V1beta2StoredInfoTypeSpecInitProviderDictionaryCloudStorage
 /// List of words or phrases to search for.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecInitProviderDictionaryWordList
 {
@@ -321,7 +321,7 @@ public partial class V1beta2StoredInfoTypeSpecInitProviderDictionaryWordList
 /// Dictionary which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecInitProviderDictionary
 {
@@ -344,7 +344,7 @@ public partial class V1beta2StoredInfoTypeSpecInitProviderDictionary
 /// Designated field in the BigQuery table.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecInitProviderLargeCustomDictionaryBigQueryFieldField
 {
@@ -357,7 +357,7 @@ public partial class V1beta2StoredInfoTypeSpecInitProviderLargeCustomDictionaryB
 /// Field in a BigQuery table where each cell represents a dictionary phrase.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecInitProviderLargeCustomDictionaryBigQueryFieldTable
 {
@@ -378,7 +378,7 @@ public partial class V1beta2StoredInfoTypeSpecInitProviderLargeCustomDictionaryB
 /// Field in a BigQuery table where each cell represents a dictionary phrase.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecInitProviderLargeCustomDictionaryBigQueryField
 {
@@ -401,7 +401,7 @@ public partial class V1beta2StoredInfoTypeSpecInitProviderLargeCustomDictionaryB
 /// Set of files containing newline-delimited lists of dictionary phrases.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecInitProviderLargeCustomDictionaryCloudStorageFileSet
 {
@@ -415,7 +415,7 @@ public partial class V1beta2StoredInfoTypeSpecInitProviderLargeCustomDictionaryC
 /// If any of these artifacts are modified, the dictionary is considered invalid and can no longer be used.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecInitProviderLargeCustomDictionaryOutputPath
 {
@@ -428,7 +428,7 @@ public partial class V1beta2StoredInfoTypeSpecInitProviderLargeCustomDictionaryO
 /// Dictionary which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecInitProviderLargeCustomDictionary
 {
@@ -459,7 +459,7 @@ public partial class V1beta2StoredInfoTypeSpecInitProviderLargeCustomDictionary
 /// Regular expression which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecInitProviderRegex
 {
@@ -487,7 +487,7 @@ public partial class V1beta2StoredInfoTypeSpecInitProviderRegex
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecInitProvider
 {
@@ -537,7 +537,7 @@ public partial class V1beta2StoredInfoTypeSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2StoredInfoTypeSpecManagementPoliciesEnum>))]
 public enum V1beta2StoredInfoTypeSpecManagementPoliciesEnum
 {
@@ -561,7 +561,7 @@ public enum V1beta2StoredInfoTypeSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2StoredInfoTypeSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2StoredInfoTypeSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -577,7 +577,7 @@ public enum V1beta2StoredInfoTypeSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2StoredInfoTypeSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2StoredInfoTypeSpecProviderConfigRefPolicyResolveEnum
 {
@@ -588,7 +588,7 @@ public enum V1beta2StoredInfoTypeSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecProviderConfigRefPolicy
 {
@@ -616,7 +616,7 @@ public partial class V1beta2StoredInfoTypeSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecProviderConfigRef
 {
@@ -635,7 +635,7 @@ public partial class V1beta2StoredInfoTypeSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpecWriteConnectionSecretToRef
 {
@@ -649,7 +649,7 @@ public partial class V1beta2StoredInfoTypeSpecWriteConnectionSecretToRef
 }
 
 /// <summary>StoredInfoTypeSpec defines the desired state of StoredInfoType</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeSpec
 {
@@ -720,7 +720,7 @@ public partial class V1beta2StoredInfoTypeSpec
 /// Newline-delimited file of words in Cloud Storage. Only a single file is accepted.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeStatusAtProviderDictionaryCloudStoragePath
 {
@@ -733,7 +733,7 @@ public partial class V1beta2StoredInfoTypeStatusAtProviderDictionaryCloudStorage
 /// List of words or phrases to search for.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeStatusAtProviderDictionaryWordList
 {
@@ -749,7 +749,7 @@ public partial class V1beta2StoredInfoTypeStatusAtProviderDictionaryWordList
 /// Dictionary which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeStatusAtProviderDictionary
 {
@@ -772,7 +772,7 @@ public partial class V1beta2StoredInfoTypeStatusAtProviderDictionary
 /// Designated field in the BigQuery table.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeStatusAtProviderLargeCustomDictionaryBigQueryFieldField
 {
@@ -785,7 +785,7 @@ public partial class V1beta2StoredInfoTypeStatusAtProviderLargeCustomDictionaryB
 /// Field in a BigQuery table where each cell represents a dictionary phrase.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeStatusAtProviderLargeCustomDictionaryBigQueryFieldTable
 {
@@ -806,7 +806,7 @@ public partial class V1beta2StoredInfoTypeStatusAtProviderLargeCustomDictionaryB
 /// Field in a BigQuery table where each cell represents a dictionary phrase.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeStatusAtProviderLargeCustomDictionaryBigQueryField
 {
@@ -829,7 +829,7 @@ public partial class V1beta2StoredInfoTypeStatusAtProviderLargeCustomDictionaryB
 /// Set of files containing newline-delimited lists of dictionary phrases.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeStatusAtProviderLargeCustomDictionaryCloudStorageFileSet
 {
@@ -843,7 +843,7 @@ public partial class V1beta2StoredInfoTypeStatusAtProviderLargeCustomDictionaryC
 /// If any of these artifacts are modified, the dictionary is considered invalid and can no longer be used.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeStatusAtProviderLargeCustomDictionaryOutputPath
 {
@@ -856,7 +856,7 @@ public partial class V1beta2StoredInfoTypeStatusAtProviderLargeCustomDictionaryO
 /// Dictionary which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeStatusAtProviderLargeCustomDictionary
 {
@@ -887,7 +887,7 @@ public partial class V1beta2StoredInfoTypeStatusAtProviderLargeCustomDictionary
 /// Regular expression which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeStatusAtProviderRegex
 {
@@ -903,7 +903,7 @@ public partial class V1beta2StoredInfoTypeStatusAtProviderRegex
     public string? Pattern { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeStatusAtProvider
 {
@@ -958,7 +958,7 @@ public partial class V1beta2StoredInfoTypeStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeStatusConditions
 {
@@ -1001,7 +1001,7 @@ public partial class V1beta2StoredInfoTypeStatusConditions
 }
 
 /// <summary>StoredInfoTypeStatus defines the observed state of StoredInfoType.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StoredInfoTypeStatus
 {
@@ -1022,7 +1022,7 @@ public partial class V1beta2StoredInfoTypeStatus
 }
 
 /// <summary>StoredInfoType is the Schema for the StoredInfoTypes API. Allows creation of custom info types.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2StoredInfoType : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2StoredInfoTypeSpec>, IStatus<V1beta2StoredInfoTypeStatus?>

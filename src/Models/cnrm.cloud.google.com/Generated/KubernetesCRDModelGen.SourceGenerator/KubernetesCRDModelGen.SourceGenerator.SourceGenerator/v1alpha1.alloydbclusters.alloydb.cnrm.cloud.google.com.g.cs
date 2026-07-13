@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.alloydb.cnrm.cloud.google.com;
 /// <summary>AlloyDBCluster is the Schema for the AlloyDBCluster API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1AlloyDBClusterList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1AlloyDBCluster>
@@ -37,7 +37,7 @@ public partial class V1alpha1AlloyDBClusterList : IKubernetesObject<V1ListMeta>,
 }
 
 /// <summary>The fully-qualified resource name of the KMS key. Each Cloud KMS key is regionalized and has the following format: projects/[PROJECT]/locations/[REGION]/keyRings/[RING]/cryptoKeys/[KEY_NAME]</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecAutomatedBackupPolicyEncryptionConfigKmsKeyNameRef
 {
@@ -55,7 +55,7 @@ public partial class V1alpha1AlloyDBClusterSpecAutomatedBackupPolicyEncryptionCo
 }
 
 /// <summary>Optional. The encryption config can be specified to encrypt the backups with a customer-managed encryption key (CMEK). When this field is not specified, the backup will use the cluster&apos;s encryption config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecAutomatedBackupPolicyEncryptionConfig
 {
@@ -65,7 +65,7 @@ public partial class V1alpha1AlloyDBClusterSpecAutomatedBackupPolicyEncryptionCo
 }
 
 /// <summary>Quantity-based Backup retention policy to retain recent backups.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecAutomatedBackupPolicyQuantityBasedRetention
 {
@@ -75,7 +75,7 @@ public partial class V1alpha1AlloyDBClusterSpecAutomatedBackupPolicyQuantityBase
 }
 
 /// <summary>Time-based Backup retention policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecAutomatedBackupPolicyTimeBasedRetention
 {
@@ -84,7 +84,7 @@ public partial class V1alpha1AlloyDBClusterSpecAutomatedBackupPolicyTimeBasedRet
     public string? RetentionPeriod { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecAutomatedBackupPolicyWeeklyScheduleStartTimes
 {
@@ -106,7 +106,7 @@ public partial class V1alpha1AlloyDBClusterSpecAutomatedBackupPolicyWeeklySchedu
 }
 
 /// <summary>Weekly schedule for the Backup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecAutomatedBackupPolicyWeeklySchedule
 {
@@ -139,7 +139,7 @@ public partial class V1alpha1AlloyDBClusterSpecAutomatedBackupPolicyWeeklySchedu
 ///  For more information on the defaults, consult the
 ///  documentation for the message type.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecAutomatedBackupPolicy
 {
@@ -189,7 +189,7 @@ public partial class V1alpha1AlloyDBClusterSpecAutomatedBackupPolicy
 }
 
 /// <summary>The fully-qualified resource name of the KMS key. Each Cloud KMS key is regionalized and has the following format: projects/[PROJECT]/locations/[REGION]/keyRings/[RING]/cryptoKeys/[KEY_NAME]</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecContinuousBackupConfigEncryptionConfigKmsKeyNameRef
 {
@@ -207,7 +207,7 @@ public partial class V1alpha1AlloyDBClusterSpecContinuousBackupConfigEncryptionC
 }
 
 /// <summary>The encryption config can be specified to encrypt the backups with a customer-managed encryption key (CMEK). When this field is not specified, the backup will use the cluster&apos;s encryption config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecContinuousBackupConfigEncryptionConfig
 {
@@ -217,7 +217,7 @@ public partial class V1alpha1AlloyDBClusterSpecContinuousBackupConfigEncryptionC
 }
 
 /// <summary>Optional. Continuous backup configuration for this cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecContinuousBackupConfig
 {
@@ -235,7 +235,7 @@ public partial class V1alpha1AlloyDBClusterSpecContinuousBackupConfig
 }
 
 /// <summary>The fully-qualified resource name of the KMS key. Each Cloud KMS key is regionalized and has the following format: projects/[PROJECT]/locations/[REGION]/keyRings/[RING]/cryptoKeys/[KEY_NAME]</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecEncryptionConfigKmsKeyNameRef
 {
@@ -253,7 +253,7 @@ public partial class V1alpha1AlloyDBClusterSpecEncryptionConfigKmsKeyNameRef
 }
 
 /// <summary>Optional. The encryption config can be specified to encrypt the data disks and other persistent data resources of a cluster with a customer-managed encryption key (CMEK). When this field is not specified, the cluster will then use default encryption scheme to protect the user data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecEncryptionConfig
 {
@@ -263,7 +263,7 @@ public partial class V1alpha1AlloyDBClusterSpecEncryptionConfig
 }
 
 /// <summary>Reference to a value with the given key in the given Secret in the resource&apos;s namespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecInitialUserPasswordValueFromSecretKeyRef
 {
@@ -277,7 +277,7 @@ public partial class V1alpha1AlloyDBClusterSpecInitialUserPasswordValueFromSecre
 }
 
 /// <summary>Source for the field&apos;s value. Cannot be used if &apos;value&apos; is specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecInitialUserPasswordValueFrom
 {
@@ -287,7 +287,7 @@ public partial class V1alpha1AlloyDBClusterSpecInitialUserPasswordValueFrom
 }
 
 /// <summary>The initial password for the user.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecInitialUserPassword
 {
@@ -301,7 +301,7 @@ public partial class V1alpha1AlloyDBClusterSpecInitialUserPassword
 }
 
 /// <summary>Input only. Initial user to setup during cluster creation. Required. If used in `RestoreCluster` this is ignored.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecInitialUser
 {
@@ -315,7 +315,7 @@ public partial class V1alpha1AlloyDBClusterSpecInitialUser
 }
 
 /// <summary>Preferred time to start the maintenance operation on the specified day. Maintenance will start within 1 hour of this time.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecMaintenanceUpdatePolicyMaintenanceWindowsStartTime
 {
@@ -336,7 +336,7 @@ public partial class V1alpha1AlloyDBClusterSpecMaintenanceUpdatePolicyMaintenanc
     public int? Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecMaintenanceUpdatePolicyMaintenanceWindows
 {
@@ -350,7 +350,7 @@ public partial class V1alpha1AlloyDBClusterSpecMaintenanceUpdatePolicyMaintenanc
 }
 
 /// <summary>Optional. The maintenance update policy determines when to allow or deny updates.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecMaintenanceUpdatePolicy
 {
@@ -360,7 +360,7 @@ public partial class V1alpha1AlloyDBClusterSpecMaintenanceUpdatePolicy
 }
 
 /// <summary>The resource link for the VPC network in which cluster resources are created and from which they are accessible via Private IP. The network must belong to the same project as the cluster. It is specified in the form: `projects/{project_number}/global/networks/{network_id}`. This is required to create a cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecNetworkConfigNetworkRef
 {
@@ -377,7 +377,7 @@ public partial class V1alpha1AlloyDBClusterSpecNetworkConfigNetworkRef
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecNetworkConfig
 {
@@ -391,7 +391,7 @@ public partial class V1alpha1AlloyDBClusterSpecNetworkConfig
 }
 
 /// <summary>The resource link for the VPC network in which cluster resources are created and from which they are accessible via Private IP. The network must belong to the same project as the cluster. It is specified in the form: `projects/{project}/global/networks/{network_id}`. This is required to create a cluster. Deprecated, use network_config.network instead.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecNetworkRef
 {
@@ -409,7 +409,7 @@ public partial class V1alpha1AlloyDBClusterSpecNetworkRef
 }
 
 /// <summary>The project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecProjectRef
 {
@@ -431,7 +431,7 @@ public partial class V1alpha1AlloyDBClusterSpecProjectRef
 }
 
 /// <summary>Required. The name of the backup resource with the format: * projects/{project}/locations/{region}/backups/{backup_id}</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecRestoreBackupSourceBackupNameRef
 {
@@ -449,7 +449,7 @@ public partial class V1alpha1AlloyDBClusterSpecRestoreBackupSourceBackupNameRef
 }
 
 /// <summary>Immutable. The source when restoring from a backup. Conflicts with &apos;restoreContinuousBackupSource&apos;, both can&apos;t be set together.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecRestoreBackupSource
 {
@@ -459,7 +459,7 @@ public partial class V1alpha1AlloyDBClusterSpecRestoreBackupSource
 }
 
 /// <summary>(Required) The name of the source cluster that this cluster is restored from.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecRestoreContinuousBackupSourceClusterRef
 {
@@ -477,7 +477,7 @@ public partial class V1alpha1AlloyDBClusterSpecRestoreContinuousBackupSourceClus
 }
 
 /// <summary>Immutable. The source when restoring via point in time recovery (PITR). Conflicts with &apos;restoreBackupSource&apos;, both can&apos;t be set together.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecRestoreContinuousBackupSource
 {
@@ -491,7 +491,7 @@ public partial class V1alpha1AlloyDBClusterSpecRestoreContinuousBackupSource
 }
 
 /// <summary>The name of the primary cluster name with the format: * projects/{project}/locations/{region}/clusters/{cluster_id}</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecSecondaryConfigPrimaryClusterNameRef
 {
@@ -509,7 +509,7 @@ public partial class V1alpha1AlloyDBClusterSpecSecondaryConfigPrimaryClusterName
 }
 
 /// <summary>Cross Region replication config specific to SECONDARY cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpecSecondaryConfig
 {
@@ -519,7 +519,7 @@ public partial class V1alpha1AlloyDBClusterSpecSecondaryConfig
 }
 
 /// <summary>AlloyDBClusterSpec defines the desired state of AlloyDBCluster</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterSpec
 {
@@ -599,7 +599,7 @@ public partial class V1alpha1AlloyDBClusterSpec
     public V1alpha1AlloyDBClusterSpecSecondaryConfig? SecondaryConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterStatusBackupSource
 {
@@ -608,7 +608,7 @@ public partial class V1alpha1AlloyDBClusterStatusBackupSource
     public string? BackupName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterStatusConditions
 {
@@ -633,7 +633,7 @@ public partial class V1alpha1AlloyDBClusterStatusConditions
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterStatusContinuousBackupInfoEncryptionInfo
 {
@@ -646,7 +646,7 @@ public partial class V1alpha1AlloyDBClusterStatusContinuousBackupInfoEncryptionI
     public IList<string>? KmsKeyVersions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterStatusContinuousBackupInfo
 {
@@ -667,7 +667,7 @@ public partial class V1alpha1AlloyDBClusterStatusContinuousBackupInfo
     public IList<string>? Schedule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterStatusEncryptionInfo
 {
@@ -680,7 +680,7 @@ public partial class V1alpha1AlloyDBClusterStatusEncryptionInfo
     public IList<string>? KmsKeyVersions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterStatusMigrationSource
 {
@@ -698,7 +698,7 @@ public partial class V1alpha1AlloyDBClusterStatusMigrationSource
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterStatusObservedState
 {
@@ -712,7 +712,7 @@ public partial class V1alpha1AlloyDBClusterStatusObservedState
 }
 
 /// <summary>AlloyDBClusterStatus defines the config connector machine state of AlloyDBCluster</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AlloyDBClusterStatus
 {
@@ -762,7 +762,7 @@ public partial class V1alpha1AlloyDBClusterStatus
 }
 
 /// <summary>AlloyDBCluster is the Schema for the AlloyDBCluster API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1AlloyDBCluster : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1AlloyDBClusterSpec>, IStatus<V1alpha1AlloyDBClusterStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.gkehub.cnrm.cloud.google.com;
 /// <summary>GKEHubFeatureMembership is the Schema for the gkehub API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1GKEHubFeatureMembershipList : IKubernetesObject<V1ListMeta>, IItems<V1beta1GKEHubFeatureMembership>
@@ -37,7 +37,7 @@ public partial class V1beta1GKEHubFeatureMembershipList : IKubernetesObject<V1Li
 }
 
 /// <summary>**DEPRECATED** Binauthz configuration for the cluster. This field will be ignored and should not be set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecConfigmanagementBinauthz
 {
@@ -46,7 +46,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecConfigmanagementBinauthz
     public bool? Enabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecConfigmanagementConfigSyncGitGcpServiceAccountRef
 {
@@ -63,7 +63,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecConfigmanagementConfigSyn
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecConfigmanagementConfigSyncGit
 {
@@ -99,7 +99,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecConfigmanagementConfigSyn
     public string? SyncWaitSecs { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecConfigmanagementConfigSyncMetricsGcpServiceAccountRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecConfigmanagementConfigSyn
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecConfigmanagementConfigSyncOciGcpServiceAccountRef
 {
@@ -133,7 +133,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecConfigmanagementConfigSyn
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecConfigmanagementConfigSyncOci
 {
@@ -158,7 +158,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecConfigmanagementConfigSyn
 }
 
 /// <summary>Config Sync configuration for the cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecConfigmanagementConfigSync
 {
@@ -185,7 +185,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecConfigmanagementConfigSyn
 }
 
 /// <summary>Hierarchy Controller is no longer available. Use https://github.com/kubernetes-sigs/hierarchical-namespaces instead.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecConfigmanagementHierarchyController
 {
@@ -203,7 +203,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecConfigmanagementHierarchy
 }
 
 /// <summary>Specifies the backends Policy Controller should export metrics to. For example, to specify metrics should be exported to Cloud Monitoring and Prometheus, specify backends: [&quot;cloudmonitoring&quot;, &quot;prometheus&quot;]. Default: [&quot;cloudmonitoring&quot;, &quot;prometheus&quot;]</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecConfigmanagementPolicyControllerMonitoring
 {
@@ -213,7 +213,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecConfigmanagementPolicyCon
 }
 
 /// <summary>**DEPRECATED** Configuring Policy Controller through the configmanagement feature is no longer recommended. Use the policycontroller feature instead.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecConfigmanagementPolicyController
 {
@@ -251,7 +251,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecConfigmanagementPolicyCon
 }
 
 /// <summary>Config Management-specific spec.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecConfigmanagement
 {
@@ -281,7 +281,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecConfigmanagement
 }
 
 /// <summary>Immutable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecFeatureRef
 {
@@ -299,7 +299,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecFeatureRef
 }
 
 /// <summary>Immutable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecMembershipRef
 {
@@ -317,7 +317,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecMembershipRef
 }
 
 /// <summary>Manage Mesh Features</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecMesh
 {
@@ -331,7 +331,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecMesh
 }
 
 /// <summary>Limits describes the maximum amount of compute resources allowed for use by the running container.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyControllerHubConfigDeploymentConfigsAdmissionContainerResourcesLimits
 {
@@ -345,7 +345,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyCon
 }
 
 /// <summary>Requests describes the amount of compute resources reserved for the container by the kube-scheduler.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyControllerHubConfigDeploymentConfigsAdmissionContainerResourcesRequests
 {
@@ -359,7 +359,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyCon
 }
 
 /// <summary>Container resource requirements.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyControllerHubConfigDeploymentConfigsAdmissionContainerResources
 {
@@ -372,7 +372,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyCon
     public V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyControllerHubConfigDeploymentConfigsAdmissionContainerResourcesRequests? Requests { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyControllerHubConfigDeploymentConfigsAdmissionPodTolerations
 {
@@ -393,7 +393,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyCon
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyControllerHubConfigDeploymentConfigsAdmission
 {
@@ -415,7 +415,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyCon
 }
 
 /// <summary>Limits describes the maximum amount of compute resources allowed for use by the running container.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyControllerHubConfigDeploymentConfigsAuditContainerResourcesLimits
 {
@@ -429,7 +429,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyCon
 }
 
 /// <summary>Requests describes the amount of compute resources reserved for the container by the kube-scheduler.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyControllerHubConfigDeploymentConfigsAuditContainerResourcesRequests
 {
@@ -443,7 +443,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyCon
 }
 
 /// <summary>Container resource requirements.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyControllerHubConfigDeploymentConfigsAuditContainerResources
 {
@@ -456,7 +456,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyCon
     public V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyControllerHubConfigDeploymentConfigsAuditContainerResourcesRequests? Requests { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyControllerHubConfigDeploymentConfigsAuditPodTolerations
 {
@@ -477,7 +477,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyCon
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyControllerHubConfigDeploymentConfigsAudit
 {
@@ -499,7 +499,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyCon
 }
 
 /// <summary>Limits describes the maximum amount of compute resources allowed for use by the running container.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyControllerHubConfigDeploymentConfigsMutationContainerResourcesLimits
 {
@@ -513,7 +513,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyCon
 }
 
 /// <summary>Requests describes the amount of compute resources reserved for the container by the kube-scheduler.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyControllerHubConfigDeploymentConfigsMutationContainerResourcesRequests
 {
@@ -527,7 +527,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyCon
 }
 
 /// <summary>Container resource requirements.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyControllerHubConfigDeploymentConfigsMutationContainerResources
 {
@@ -540,7 +540,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyCon
     public V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyControllerHubConfigDeploymentConfigsMutationContainerResourcesRequests? Requests { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyControllerHubConfigDeploymentConfigsMutationPodTolerations
 {
@@ -561,7 +561,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyCon
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyControllerHubConfigDeploymentConfigsMutation
 {
@@ -583,7 +583,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyCon
 }
 
 /// <summary>Map of deployment configs to deployments (“admission”, “audit”, “mutation”).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyControllerHubConfigDeploymentConfigs
 {
@@ -598,7 +598,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyCon
 }
 
 /// <summary>Specifies the backends Policy Controller should export metrics to. For example, to specify metrics should be exported to Cloud Monitoring and Prometheus, specify backends: [&quot;cloudmonitoring&quot;, &quot;prometheus&quot;]. Default: [&quot;cloudmonitoring&quot;, &quot;prometheus&quot;]</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyControllerHubConfigMonitoring
 {
@@ -608,7 +608,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyCon
 }
 
 /// <summary>Configures the installation of the Template Library.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibrary
 {
@@ -618,7 +618,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyCon
 }
 
 /// <summary>Specifies the desired policy content on the cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyControllerHubConfigPolicyContent
 {
@@ -628,7 +628,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyCon
 }
 
 /// <summary>Policy Controller configuration for the cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyControllerHubConfig
 {
@@ -674,7 +674,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontrollerPolicyCon
 }
 
 /// <summary>Policy Controller-specific spec.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontroller
 {
@@ -688,7 +688,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecPolicycontroller
 }
 
 /// <summary>Immutable. The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpecProjectRef
 {
@@ -705,7 +705,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpecProjectRef
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipSpec
 {
@@ -742,7 +742,7 @@ public partial class V1beta1GKEHubFeatureMembershipSpec
     public required V1beta1GKEHubFeatureMembershipSpecProjectRef ProjectRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipStatusConditions
 {
@@ -767,7 +767,7 @@ public partial class V1beta1GKEHubFeatureMembershipStatusConditions
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GKEHubFeatureMembershipStatus
 {
@@ -781,7 +781,7 @@ public partial class V1beta1GKEHubFeatureMembershipStatus
 }
 
 /// <summary>GKEHubFeatureMembership is the Schema for the gkehub API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1GKEHubFeatureMembership : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1GKEHubFeatureMembershipSpec>, IStatus<V1beta1GKEHubFeatureMembershipStatus?>

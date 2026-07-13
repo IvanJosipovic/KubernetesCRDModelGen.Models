@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
 /// <summary>SubnetNATGatewayAssociation is the Schema for the SubnetNATGatewayAssociations API. Associates a</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SubnetNATGatewayAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SubnetNATGatewayAssociation>
@@ -45,7 +45,7 @@ public partial class V1beta1SubnetNATGatewayAssociationList : IKubernetesObject<
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNATGatewayAssociationSpecDeletionPolicyEnum>))]
 public enum V1beta1SubnetNATGatewayAssociationSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1SubnetNATGatewayAssociationSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNATGatewayAssociationSpecForProviderNatGatewayIdRefPolicyResolutionEnum>))]
 public enum V1beta1SubnetNATGatewayAssociationSpecForProviderNatGatewayIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1SubnetNATGatewayAssociationSpecForProviderNatGatewayIdRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNATGatewayAssociationSpecForProviderNatGatewayIdRefPolicyResolveEnum>))]
 public enum V1beta1SubnetNATGatewayAssociationSpecForProviderNatGatewayIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1SubnetNATGatewayAssociationSpecForProviderNatGatewayIdRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationSpecForProviderNatGatewayIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1SubnetNATGatewayAssociationSpecForProviderNatGateway
 }
 
 /// <summary>Reference to a NATGateway in network to populate natGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationSpecForProviderNatGatewayIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1SubnetNATGatewayAssociationSpecForProviderNatGateway
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNATGatewayAssociationSpecForProviderNatGatewayIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SubnetNATGatewayAssociationSpecForProviderNatGatewayIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1SubnetNATGatewayAssociationSpecForProviderNatGatewayIdSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNATGatewayAssociationSpecForProviderNatGatewayIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SubnetNATGatewayAssociationSpecForProviderNatGatewayIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1SubnetNATGatewayAssociationSpecForProviderNatGatewayIdSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationSpecForProviderNatGatewayIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1SubnetNATGatewayAssociationSpecForProviderNatGateway
 }
 
 /// <summary>Selector for a NATGateway in network to populate natGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationSpecForProviderNatGatewayIdSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1SubnetNATGatewayAssociationSpecForProviderNatGateway
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNATGatewayAssociationSpecForProviderSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta1SubnetNATGatewayAssociationSpecForProviderSubnetIdRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1SubnetNATGatewayAssociationSpecForProviderSubnetIdRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNATGatewayAssociationSpecForProviderSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta1SubnetNATGatewayAssociationSpecForProviderSubnetIdRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1SubnetNATGatewayAssociationSpecForProviderSubnetIdRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationSpecForProviderSubnetIdRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1SubnetNATGatewayAssociationSpecForProviderSubnetIdRe
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationSpecForProviderSubnetIdRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1SubnetNATGatewayAssociationSpecForProviderSubnetIdRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNATGatewayAssociationSpecForProviderSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SubnetNATGatewayAssociationSpecForProviderSubnetIdSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1SubnetNATGatewayAssociationSpecForProviderSubnetIdSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNATGatewayAssociationSpecForProviderSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SubnetNATGatewayAssociationSpecForProviderSubnetIdSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1SubnetNATGatewayAssociationSpecForProviderSubnetIdSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationSpecForProviderSubnetIdSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1SubnetNATGatewayAssociationSpecForProviderSubnetIdSe
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationSpecForProviderSubnetIdSelector
 {
@@ -349,7 +349,7 @@ public partial class V1beta1SubnetNATGatewayAssociationSpecForProviderSubnetIdSe
     public V1beta1SubnetNATGatewayAssociationSpecForProviderSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationSpecForProvider
 {
@@ -384,7 +384,7 @@ public partial class V1beta1SubnetNATGatewayAssociationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNATGatewayAssociationSpecInitProviderNatGatewayIdRefPolicyResolutionEnum>))]
 public enum V1beta1SubnetNATGatewayAssociationSpecInitProviderNatGatewayIdRefPolicyResolutionEnum
 {
@@ -400,7 +400,7 @@ public enum V1beta1SubnetNATGatewayAssociationSpecInitProviderNatGatewayIdRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNATGatewayAssociationSpecInitProviderNatGatewayIdRefPolicyResolveEnum>))]
 public enum V1beta1SubnetNATGatewayAssociationSpecInitProviderNatGatewayIdRefPolicyResolveEnum
 {
@@ -411,7 +411,7 @@ public enum V1beta1SubnetNATGatewayAssociationSpecInitProviderNatGatewayIdRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationSpecInitProviderNatGatewayIdRefPolicy
 {
@@ -435,7 +435,7 @@ public partial class V1beta1SubnetNATGatewayAssociationSpecInitProviderNatGatewa
 }
 
 /// <summary>Reference to a NATGateway in network to populate natGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationSpecInitProviderNatGatewayIdRef
 {
@@ -454,7 +454,7 @@ public partial class V1beta1SubnetNATGatewayAssociationSpecInitProviderNatGatewa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNATGatewayAssociationSpecInitProviderNatGatewayIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SubnetNATGatewayAssociationSpecInitProviderNatGatewayIdSelectorPolicyResolutionEnum
 {
@@ -470,7 +470,7 @@ public enum V1beta1SubnetNATGatewayAssociationSpecInitProviderNatGatewayIdSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNATGatewayAssociationSpecInitProviderNatGatewayIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SubnetNATGatewayAssociationSpecInitProviderNatGatewayIdSelectorPolicyResolveEnum
 {
@@ -481,7 +481,7 @@ public enum V1beta1SubnetNATGatewayAssociationSpecInitProviderNatGatewayIdSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationSpecInitProviderNatGatewayIdSelectorPolicy
 {
@@ -505,7 +505,7 @@ public partial class V1beta1SubnetNATGatewayAssociationSpecInitProviderNatGatewa
 }
 
 /// <summary>Selector for a NATGateway in network to populate natGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationSpecInitProviderNatGatewayIdSelector
 {
@@ -531,7 +531,7 @@ public partial class V1beta1SubnetNATGatewayAssociationSpecInitProviderNatGatewa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNATGatewayAssociationSpecInitProviderSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta1SubnetNATGatewayAssociationSpecInitProviderSubnetIdRefPolicyResolutionEnum
 {
@@ -547,7 +547,7 @@ public enum V1beta1SubnetNATGatewayAssociationSpecInitProviderSubnetIdRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNATGatewayAssociationSpecInitProviderSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta1SubnetNATGatewayAssociationSpecInitProviderSubnetIdRefPolicyResolveEnum
 {
@@ -558,7 +558,7 @@ public enum V1beta1SubnetNATGatewayAssociationSpecInitProviderSubnetIdRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationSpecInitProviderSubnetIdRefPolicy
 {
@@ -582,7 +582,7 @@ public partial class V1beta1SubnetNATGatewayAssociationSpecInitProviderSubnetIdR
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationSpecInitProviderSubnetIdRef
 {
@@ -601,7 +601,7 @@ public partial class V1beta1SubnetNATGatewayAssociationSpecInitProviderSubnetIdR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNATGatewayAssociationSpecInitProviderSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SubnetNATGatewayAssociationSpecInitProviderSubnetIdSelectorPolicyResolutionEnum
 {
@@ -617,7 +617,7 @@ public enum V1beta1SubnetNATGatewayAssociationSpecInitProviderSubnetIdSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNATGatewayAssociationSpecInitProviderSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SubnetNATGatewayAssociationSpecInitProviderSubnetIdSelectorPolicyResolveEnum
 {
@@ -628,7 +628,7 @@ public enum V1beta1SubnetNATGatewayAssociationSpecInitProviderSubnetIdSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationSpecInitProviderSubnetIdSelectorPolicy
 {
@@ -652,7 +652,7 @@ public partial class V1beta1SubnetNATGatewayAssociationSpecInitProviderSubnetIdS
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationSpecInitProviderSubnetIdSelector
 {
@@ -684,7 +684,7 @@ public partial class V1beta1SubnetNATGatewayAssociationSpecInitProviderSubnetIdS
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationSpecInitProvider
 {
@@ -717,7 +717,7 @@ public partial class V1beta1SubnetNATGatewayAssociationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNATGatewayAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1SubnetNATGatewayAssociationSpecManagementPoliciesEnum
 {
@@ -741,7 +741,7 @@ public enum V1beta1SubnetNATGatewayAssociationSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNATGatewayAssociationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1SubnetNATGatewayAssociationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -757,7 +757,7 @@ public enum V1beta1SubnetNATGatewayAssociationSpecProviderConfigRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubnetNATGatewayAssociationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1SubnetNATGatewayAssociationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -768,7 +768,7 @@ public enum V1beta1SubnetNATGatewayAssociationSpecProviderConfigRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationSpecProviderConfigRefPolicy
 {
@@ -796,7 +796,7 @@ public partial class V1beta1SubnetNATGatewayAssociationSpecProviderConfigRefPoli
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationSpecProviderConfigRef
 {
@@ -815,7 +815,7 @@ public partial class V1beta1SubnetNATGatewayAssociationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationSpecWriteConnectionSecretToRef
 {
@@ -829,7 +829,7 @@ public partial class V1beta1SubnetNATGatewayAssociationSpecWriteConnectionSecret
 }
 
 /// <summary>SubnetNATGatewayAssociationSpec defines the desired state of SubnetNATGatewayAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationSpec
 {
@@ -896,7 +896,7 @@ public partial class V1beta1SubnetNATGatewayAssociationSpec
     public V1beta1SubnetNATGatewayAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationStatusAtProvider
 {
@@ -914,7 +914,7 @@ public partial class V1beta1SubnetNATGatewayAssociationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationStatusConditions
 {
@@ -957,7 +957,7 @@ public partial class V1beta1SubnetNATGatewayAssociationStatusConditions
 }
 
 /// <summary>SubnetNATGatewayAssociationStatus defines the observed state of SubnetNATGatewayAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetNATGatewayAssociationStatus
 {
@@ -978,7 +978,7 @@ public partial class V1beta1SubnetNATGatewayAssociationStatus
 }
 
 /// <summary>SubnetNATGatewayAssociation is the Schema for the SubnetNATGatewayAssociations API. Associates a</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SubnetNATGatewayAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SubnetNATGatewayAssociationSpec>, IStatus<V1beta1SubnetNATGatewayAssociationStatus?>

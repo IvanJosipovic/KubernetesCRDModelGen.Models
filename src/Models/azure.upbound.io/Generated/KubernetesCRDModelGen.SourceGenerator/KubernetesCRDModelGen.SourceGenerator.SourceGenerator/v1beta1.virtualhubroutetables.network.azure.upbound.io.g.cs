@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
 /// <summary>VirtualHubRouteTable is the Schema for the VirtualHubRouteTables API. Manages a Virtual Hub Route Table.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VirtualHubRouteTableList : IKubernetesObject<V1ListMeta>, IItems<V1beta1VirtualHubRouteTable>
@@ -45,7 +45,7 @@ public partial class V1beta1VirtualHubRouteTableList : IKubernetesObject<V1ListM
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubRouteTableSpecDeletionPolicyEnum>))]
 public enum V1beta1VirtualHubRouteTableSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1VirtualHubRouteTableSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubRouteTableSpecForProviderRouteNextHopRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualHubRouteTableSpecForProviderRouteNextHopRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1VirtualHubRouteTableSpecForProviderRouteNextHopRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubRouteTableSpecForProviderRouteNextHopRefPolicyResolveEnum>))]
 public enum V1beta1VirtualHubRouteTableSpecForProviderRouteNextHopRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1VirtualHubRouteTableSpecForProviderRouteNextHopRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualHubRouteTableSpecForProviderRouteNextHopRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1VirtualHubRouteTableSpecForProviderRouteNextHopRefPo
 }
 
 /// <summary>Reference to a VirtualHubConnection in network to populate nextHop.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualHubRouteTableSpecForProviderRouteNextHopRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1VirtualHubRouteTableSpecForProviderRouteNextHopRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubRouteTableSpecForProviderRouteNextHopSelectorPolicyResolutionEnum>))]
 public enum V1beta1VirtualHubRouteTableSpecForProviderRouteNextHopSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1VirtualHubRouteTableSpecForProviderRouteNextHopSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubRouteTableSpecForProviderRouteNextHopSelectorPolicyResolveEnum>))]
 public enum V1beta1VirtualHubRouteTableSpecForProviderRouteNextHopSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1VirtualHubRouteTableSpecForProviderRouteNextHopSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualHubRouteTableSpecForProviderRouteNextHopSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1VirtualHubRouteTableSpecForProviderRouteNextHopSelec
 }
 
 /// <summary>Selector for a VirtualHubConnection in network to populate nextHop.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualHubRouteTableSpecForProviderRouteNextHopSelector
 {
@@ -202,7 +202,7 @@ public partial class V1beta1VirtualHubRouteTableSpecForProviderRouteNextHopSelec
     public V1beta1VirtualHubRouteTableSpecForProviderRouteNextHopSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualHubRouteTableSpecForProviderRoute
 {
@@ -241,7 +241,7 @@ public partial class V1beta1VirtualHubRouteTableSpecForProviderRoute
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubRouteTableSpecForProviderVirtualHubIdRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualHubRouteTableSpecForProviderVirtualHubIdRefPolicyResolutionEnum
 {
@@ -257,7 +257,7 @@ public enum V1beta1VirtualHubRouteTableSpecForProviderVirtualHubIdRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubRouteTableSpecForProviderVirtualHubIdRefPolicyResolveEnum>))]
 public enum V1beta1VirtualHubRouteTableSpecForProviderVirtualHubIdRefPolicyResolveEnum
 {
@@ -268,7 +268,7 @@ public enum V1beta1VirtualHubRouteTableSpecForProviderVirtualHubIdRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualHubRouteTableSpecForProviderVirtualHubIdRefPolicy
 {
@@ -292,7 +292,7 @@ public partial class V1beta1VirtualHubRouteTableSpecForProviderVirtualHubIdRefPo
 }
 
 /// <summary>Reference to a VirtualHub in network to populate virtualHubId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualHubRouteTableSpecForProviderVirtualHubIdRef
 {
@@ -311,7 +311,7 @@ public partial class V1beta1VirtualHubRouteTableSpecForProviderVirtualHubIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubRouteTableSpecForProviderVirtualHubIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VirtualHubRouteTableSpecForProviderVirtualHubIdSelectorPolicyResolutionEnum
 {
@@ -327,7 +327,7 @@ public enum V1beta1VirtualHubRouteTableSpecForProviderVirtualHubIdSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubRouteTableSpecForProviderVirtualHubIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VirtualHubRouteTableSpecForProviderVirtualHubIdSelectorPolicyResolveEnum
 {
@@ -338,7 +338,7 @@ public enum V1beta1VirtualHubRouteTableSpecForProviderVirtualHubIdSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualHubRouteTableSpecForProviderVirtualHubIdSelectorPolicy
 {
@@ -362,7 +362,7 @@ public partial class V1beta1VirtualHubRouteTableSpecForProviderVirtualHubIdSelec
 }
 
 /// <summary>Selector for a VirtualHub in network to populate virtualHubId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualHubRouteTableSpecForProviderVirtualHubIdSelector
 {
@@ -382,7 +382,7 @@ public partial class V1beta1VirtualHubRouteTableSpecForProviderVirtualHubIdSelec
     public V1beta1VirtualHubRouteTableSpecForProviderVirtualHubIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualHubRouteTableSpecForProvider
 {
@@ -413,7 +413,7 @@ public partial class V1beta1VirtualHubRouteTableSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubRouteTableSpecInitProviderRouteNextHopRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualHubRouteTableSpecInitProviderRouteNextHopRefPolicyResolutionEnum
 {
@@ -429,7 +429,7 @@ public enum V1beta1VirtualHubRouteTableSpecInitProviderRouteNextHopRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubRouteTableSpecInitProviderRouteNextHopRefPolicyResolveEnum>))]
 public enum V1beta1VirtualHubRouteTableSpecInitProviderRouteNextHopRefPolicyResolveEnum
 {
@@ -440,7 +440,7 @@ public enum V1beta1VirtualHubRouteTableSpecInitProviderRouteNextHopRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualHubRouteTableSpecInitProviderRouteNextHopRefPolicy
 {
@@ -464,7 +464,7 @@ public partial class V1beta1VirtualHubRouteTableSpecInitProviderRouteNextHopRefP
 }
 
 /// <summary>Reference to a VirtualHubConnection in network to populate nextHop.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualHubRouteTableSpecInitProviderRouteNextHopRef
 {
@@ -483,7 +483,7 @@ public partial class V1beta1VirtualHubRouteTableSpecInitProviderRouteNextHopRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubRouteTableSpecInitProviderRouteNextHopSelectorPolicyResolutionEnum>))]
 public enum V1beta1VirtualHubRouteTableSpecInitProviderRouteNextHopSelectorPolicyResolutionEnum
 {
@@ -499,7 +499,7 @@ public enum V1beta1VirtualHubRouteTableSpecInitProviderRouteNextHopSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubRouteTableSpecInitProviderRouteNextHopSelectorPolicyResolveEnum>))]
 public enum V1beta1VirtualHubRouteTableSpecInitProviderRouteNextHopSelectorPolicyResolveEnum
 {
@@ -510,7 +510,7 @@ public enum V1beta1VirtualHubRouteTableSpecInitProviderRouteNextHopSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualHubRouteTableSpecInitProviderRouteNextHopSelectorPolicy
 {
@@ -534,7 +534,7 @@ public partial class V1beta1VirtualHubRouteTableSpecInitProviderRouteNextHopSele
 }
 
 /// <summary>Selector for a VirtualHubConnection in network to populate nextHop.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualHubRouteTableSpecInitProviderRouteNextHopSelector
 {
@@ -554,7 +554,7 @@ public partial class V1beta1VirtualHubRouteTableSpecInitProviderRouteNextHopSele
     public V1beta1VirtualHubRouteTableSpecInitProviderRouteNextHopSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualHubRouteTableSpecInitProviderRoute
 {
@@ -599,7 +599,7 @@ public partial class V1beta1VirtualHubRouteTableSpecInitProviderRoute
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualHubRouteTableSpecInitProvider
 {
@@ -616,7 +616,7 @@ public partial class V1beta1VirtualHubRouteTableSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubRouteTableSpecManagementPoliciesEnum>))]
 public enum V1beta1VirtualHubRouteTableSpecManagementPoliciesEnum
 {
@@ -640,7 +640,7 @@ public enum V1beta1VirtualHubRouteTableSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubRouteTableSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualHubRouteTableSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -656,7 +656,7 @@ public enum V1beta1VirtualHubRouteTableSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubRouteTableSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1VirtualHubRouteTableSpecProviderConfigRefPolicyResolveEnum
 {
@@ -667,7 +667,7 @@ public enum V1beta1VirtualHubRouteTableSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualHubRouteTableSpecProviderConfigRefPolicy
 {
@@ -695,7 +695,7 @@ public partial class V1beta1VirtualHubRouteTableSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualHubRouteTableSpecProviderConfigRef
 {
@@ -714,7 +714,7 @@ public partial class V1beta1VirtualHubRouteTableSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualHubRouteTableSpecWriteConnectionSecretToRef
 {
@@ -728,7 +728,7 @@ public partial class V1beta1VirtualHubRouteTableSpecWriteConnectionSecretToRef
 }
 
 /// <summary>VirtualHubRouteTableSpec defines the desired state of VirtualHubRouteTable</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualHubRouteTableSpec
 {
@@ -795,7 +795,7 @@ public partial class V1beta1VirtualHubRouteTableSpec
     public V1beta1VirtualHubRouteTableSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualHubRouteTableStatusAtProviderRoute
 {
@@ -820,7 +820,7 @@ public partial class V1beta1VirtualHubRouteTableStatusAtProviderRoute
     public string? NextHopType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualHubRouteTableStatusAtProvider
 {
@@ -842,7 +842,7 @@ public partial class V1beta1VirtualHubRouteTableStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualHubRouteTableStatusConditions
 {
@@ -885,7 +885,7 @@ public partial class V1beta1VirtualHubRouteTableStatusConditions
 }
 
 /// <summary>VirtualHubRouteTableStatus defines the observed state of VirtualHubRouteTable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualHubRouteTableStatus
 {
@@ -906,7 +906,7 @@ public partial class V1beta1VirtualHubRouteTableStatus
 }
 
 /// <summary>VirtualHubRouteTable is the Schema for the VirtualHubRouteTables API. Manages a Virtual Hub Route Table.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VirtualHubRouteTable : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VirtualHubRouteTableSpec>, IStatus<V1beta1VirtualHubRouteTableStatus?>

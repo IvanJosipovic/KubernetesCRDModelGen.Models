@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.securitycenter.cnrm.cloud.google.com;
 /// <summary>SecurityCenterMuteConfig is the Schema for the SecurityCenterMuteConfig API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1SecurityCenterMuteConfigList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1SecurityCenterMuteConfig>
@@ -37,7 +37,7 @@ public partial class V1alpha1SecurityCenterMuteConfigList : IKubernetesObject<V1
 }
 
 /// <summary>The organization that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecurityCenterMuteConfigSpecOrganizationRef
 {
@@ -47,7 +47,7 @@ public partial class V1alpha1SecurityCenterMuteConfigSpecOrganizationRef
 }
 
 /// <summary>Optional. The type of the mute config, which determines what type of mute state the config affects. The static mute state takes precedence over the dynamic mute state. Immutable after creation. STATIC by default if not set during creation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecurityCenterMuteConfigSpecTypeEnum>))]
 public enum V1alpha1SecurityCenterMuteConfigSpecTypeEnum
 {
@@ -60,7 +60,7 @@ public enum V1alpha1SecurityCenterMuteConfigSpecTypeEnum
 }
 
 /// <summary>SecurityCenterMuteConfigSpec defines the desired state of SecurityCenterMuteConfig</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecurityCenterMuteConfigSpec
 {
@@ -89,7 +89,7 @@ public partial class V1alpha1SecurityCenterMuteConfigSpec
     public V1alpha1SecurityCenterMuteConfigSpecTypeEnum? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecurityCenterMuteConfigStatusConditions
 {
@@ -115,7 +115,7 @@ public partial class V1alpha1SecurityCenterMuteConfigStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecurityCenterMuteConfigStatusObservedState
 {
@@ -133,7 +133,7 @@ public partial class V1alpha1SecurityCenterMuteConfigStatusObservedState
 }
 
 /// <summary>SecurityCenterMuteConfigStatus defines the config connector machine state of SecurityCenterMuteConfig</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecurityCenterMuteConfigStatus
 {
@@ -155,7 +155,7 @@ public partial class V1alpha1SecurityCenterMuteConfigStatus
 }
 
 /// <summary>SecurityCenterMuteConfig is the Schema for the SecurityCenterMuteConfig API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1SecurityCenterMuteConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1SecurityCenterMuteConfigSpec>, IStatus<V1alpha1SecurityCenterMuteConfigStatus?>

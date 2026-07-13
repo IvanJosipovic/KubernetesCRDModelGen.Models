@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ssm.aws.upbound.io;
 /// <summary>ResourceDataSync is the Schema for the ResourceDataSyncs API. Provides a SSM resource data sync.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ResourceDataSyncList : IKubernetesObject<V1ListMeta>, IItems<V1beta2ResourceDataSync>
@@ -45,7 +45,7 @@ public partial class V1beta2ResourceDataSyncList : IKubernetesObject<V1ListMeta>
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDataSyncSpecDeletionPolicyEnum>))]
 public enum V1beta2ResourceDataSyncSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2ResourceDataSyncSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDataSyncSpecForProviderS3DestinationBucketNameRefPolicyResolutionEnum>))]
 public enum V1beta2ResourceDataSyncSpecForProviderS3DestinationBucketNameRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2ResourceDataSyncSpecForProviderS3DestinationBucketNameRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDataSyncSpecForProviderS3DestinationBucketNameRefPolicyResolveEnum>))]
 public enum V1beta2ResourceDataSyncSpecForProviderS3DestinationBucketNameRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2ResourceDataSyncSpecForProviderS3DestinationBucketNameRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDataSyncSpecForProviderS3DestinationBucketNameRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2ResourceDataSyncSpecForProviderS3DestinationBucketNa
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDataSyncSpecForProviderS3DestinationBucketNameRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta2ResourceDataSyncSpecForProviderS3DestinationBucketNa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDataSyncSpecForProviderS3DestinationBucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2ResourceDataSyncSpecForProviderS3DestinationBucketNameSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2ResourceDataSyncSpecForProviderS3DestinationBucketNameSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDataSyncSpecForProviderS3DestinationBucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta2ResourceDataSyncSpecForProviderS3DestinationBucketNameSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2ResourceDataSyncSpecForProviderS3DestinationBucketNameSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDataSyncSpecForProviderS3DestinationBucketNameSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2ResourceDataSyncSpecForProviderS3DestinationBucketNa
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDataSyncSpecForProviderS3DestinationBucketNameSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta2ResourceDataSyncSpecForProviderS3DestinationBucketNa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDataSyncSpecForProviderS3DestinationRegionRefPolicyResolutionEnum>))]
 public enum V1beta2ResourceDataSyncSpecForProviderS3DestinationRegionRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta2ResourceDataSyncSpecForProviderS3DestinationRegionRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDataSyncSpecForProviderS3DestinationRegionRefPolicyResolveEnum>))]
 public enum V1beta2ResourceDataSyncSpecForProviderS3DestinationRegionRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta2ResourceDataSyncSpecForProviderS3DestinationRegionRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDataSyncSpecForProviderS3DestinationRegionRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta2ResourceDataSyncSpecForProviderS3DestinationRegionRe
 }
 
 /// <summary>Reference to a Bucket in s3 to populate region.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDataSyncSpecForProviderS3DestinationRegionRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta2ResourceDataSyncSpecForProviderS3DestinationRegionRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDataSyncSpecForProviderS3DestinationRegionSelectorPolicyResolutionEnum>))]
 public enum V1beta2ResourceDataSyncSpecForProviderS3DestinationRegionSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta2ResourceDataSyncSpecForProviderS3DestinationRegionSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDataSyncSpecForProviderS3DestinationRegionSelectorPolicyResolveEnum>))]
 public enum V1beta2ResourceDataSyncSpecForProviderS3DestinationRegionSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta2ResourceDataSyncSpecForProviderS3DestinationRegionSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDataSyncSpecForProviderS3DestinationRegionSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta2ResourceDataSyncSpecForProviderS3DestinationRegionSe
 }
 
 /// <summary>Selector for a Bucket in s3 to populate region.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDataSyncSpecForProviderS3DestinationRegionSelector
 {
@@ -350,7 +350,7 @@ public partial class V1beta2ResourceDataSyncSpecForProviderS3DestinationRegionSe
 }
 
 /// <summary>Amazon S3 configuration details for the sync.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDataSyncSpecForProviderS3Destination
 {
@@ -391,7 +391,7 @@ public partial class V1beta2ResourceDataSyncSpecForProviderS3Destination
     public string? SyncFormat { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDataSyncSpecForProvider
 {
@@ -413,7 +413,7 @@ public partial class V1beta2ResourceDataSyncSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDataSyncSpecInitProviderS3DestinationBucketNameRefPolicyResolutionEnum>))]
 public enum V1beta2ResourceDataSyncSpecInitProviderS3DestinationBucketNameRefPolicyResolutionEnum
 {
@@ -429,7 +429,7 @@ public enum V1beta2ResourceDataSyncSpecInitProviderS3DestinationBucketNameRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDataSyncSpecInitProviderS3DestinationBucketNameRefPolicyResolveEnum>))]
 public enum V1beta2ResourceDataSyncSpecInitProviderS3DestinationBucketNameRefPolicyResolveEnum
 {
@@ -440,7 +440,7 @@ public enum V1beta2ResourceDataSyncSpecInitProviderS3DestinationBucketNameRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDataSyncSpecInitProviderS3DestinationBucketNameRefPolicy
 {
@@ -464,7 +464,7 @@ public partial class V1beta2ResourceDataSyncSpecInitProviderS3DestinationBucketN
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDataSyncSpecInitProviderS3DestinationBucketNameRef
 {
@@ -483,7 +483,7 @@ public partial class V1beta2ResourceDataSyncSpecInitProviderS3DestinationBucketN
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDataSyncSpecInitProviderS3DestinationBucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2ResourceDataSyncSpecInitProviderS3DestinationBucketNameSelectorPolicyResolutionEnum
 {
@@ -499,7 +499,7 @@ public enum V1beta2ResourceDataSyncSpecInitProviderS3DestinationBucketNameSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDataSyncSpecInitProviderS3DestinationBucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta2ResourceDataSyncSpecInitProviderS3DestinationBucketNameSelectorPolicyResolveEnum
 {
@@ -510,7 +510,7 @@ public enum V1beta2ResourceDataSyncSpecInitProviderS3DestinationBucketNameSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDataSyncSpecInitProviderS3DestinationBucketNameSelectorPolicy
 {
@@ -534,7 +534,7 @@ public partial class V1beta2ResourceDataSyncSpecInitProviderS3DestinationBucketN
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDataSyncSpecInitProviderS3DestinationBucketNameSelector
 {
@@ -555,7 +555,7 @@ public partial class V1beta2ResourceDataSyncSpecInitProviderS3DestinationBucketN
 }
 
 /// <summary>Amazon S3 configuration details for the sync.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDataSyncSpecInitProviderS3Destination
 {
@@ -596,7 +596,7 @@ public partial class V1beta2ResourceDataSyncSpecInitProviderS3Destination
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDataSyncSpecInitProvider
 {
@@ -609,7 +609,7 @@ public partial class V1beta2ResourceDataSyncSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDataSyncSpecManagementPoliciesEnum>))]
 public enum V1beta2ResourceDataSyncSpecManagementPoliciesEnum
 {
@@ -633,7 +633,7 @@ public enum V1beta2ResourceDataSyncSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDataSyncSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2ResourceDataSyncSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -649,7 +649,7 @@ public enum V1beta2ResourceDataSyncSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ResourceDataSyncSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2ResourceDataSyncSpecProviderConfigRefPolicyResolveEnum
 {
@@ -660,7 +660,7 @@ public enum V1beta2ResourceDataSyncSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDataSyncSpecProviderConfigRefPolicy
 {
@@ -688,7 +688,7 @@ public partial class V1beta2ResourceDataSyncSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDataSyncSpecProviderConfigRef
 {
@@ -707,7 +707,7 @@ public partial class V1beta2ResourceDataSyncSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDataSyncSpecWriteConnectionSecretToRef
 {
@@ -721,7 +721,7 @@ public partial class V1beta2ResourceDataSyncSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ResourceDataSyncSpec defines the desired state of ResourceDataSync</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDataSyncSpec
 {
@@ -789,7 +789,7 @@ public partial class V1beta2ResourceDataSyncSpec
 }
 
 /// <summary>Amazon S3 configuration details for the sync.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDataSyncStatusAtProviderS3Destination
 {
@@ -814,7 +814,7 @@ public partial class V1beta2ResourceDataSyncStatusAtProviderS3Destination
     public string? SyncFormat { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDataSyncStatusAtProvider
 {
@@ -834,7 +834,7 @@ public partial class V1beta2ResourceDataSyncStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDataSyncStatusConditions
 {
@@ -877,7 +877,7 @@ public partial class V1beta2ResourceDataSyncStatusConditions
 }
 
 /// <summary>ResourceDataSyncStatus defines the observed state of ResourceDataSync.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ResourceDataSyncStatus
 {
@@ -898,7 +898,7 @@ public partial class V1beta2ResourceDataSyncStatus
 }
 
 /// <summary>ResourceDataSync is the Schema for the ResourceDataSyncs API. Provides a SSM resource data sync.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ResourceDataSync : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2ResourceDataSyncSpec>, IStatus<V1beta2ResourceDataSyncStatus?>

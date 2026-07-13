@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.apprunner.aws.upbound.io;
 /// <summary>Service is the Schema for the Services API. Manages an App Runner Service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ServiceList : IKubernetesObject<V1ListMeta>, IItems<V1beta2Service>
@@ -45,7 +45,7 @@ public partial class V1beta2ServiceList : IKubernetesObject<V1ListMeta>, IItems<
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecDeletionPolicyEnum>))]
 public enum V1beta2ServiceSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2ServiceSpecDeletionPolicyEnum
 }
 
 /// <summary>(Forces new resource) An optional custom encryption key that App Runner uses to encrypt the copy of your source repository that it maintains and your service logs. By default, App Runner uses an AWS managed CMK. See Encryption Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderEncryptionConfiguration
 {
@@ -66,7 +66,7 @@ public partial class V1beta2ServiceSpecForProviderEncryptionConfiguration
 }
 
 /// <summary>Settings of the health check that AWS App Runner performs to monitor the health of your service. See Health Check Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderHealthCheckConfiguration
 {
@@ -96,7 +96,7 @@ public partial class V1beta2ServiceSpecForProviderHealthCheckConfiguration
 }
 
 /// <summary>The runtime configuration of instances (scaling units) of the App Runner service. See Instance Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderInstanceConfiguration
 {
@@ -119,7 +119,7 @@ public partial class V1beta2ServiceSpecForProviderInstanceConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecForProviderNetworkConfigurationEgressConfigurationVpcConnectorArnRefPolicyResolutionEnum>))]
 public enum V1beta2ServiceSpecForProviderNetworkConfigurationEgressConfigurationVpcConnectorArnRefPolicyResolutionEnum
 {
@@ -135,7 +135,7 @@ public enum V1beta2ServiceSpecForProviderNetworkConfigurationEgressConfiguration
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecForProviderNetworkConfigurationEgressConfigurationVpcConnectorArnRefPolicyResolveEnum>))]
 public enum V1beta2ServiceSpecForProviderNetworkConfigurationEgressConfigurationVpcConnectorArnRefPolicyResolveEnum
 {
@@ -146,7 +146,7 @@ public enum V1beta2ServiceSpecForProviderNetworkConfigurationEgressConfiguration
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderNetworkConfigurationEgressConfigurationVpcConnectorArnRefPolicy
 {
@@ -170,7 +170,7 @@ public partial class V1beta2ServiceSpecForProviderNetworkConfigurationEgressConf
 }
 
 /// <summary>Reference to a VPCConnector in apprunner to populate vpcConnectorArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderNetworkConfigurationEgressConfigurationVpcConnectorArnRef
 {
@@ -189,7 +189,7 @@ public partial class V1beta2ServiceSpecForProviderNetworkConfigurationEgressConf
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecForProviderNetworkConfigurationEgressConfigurationVpcConnectorArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2ServiceSpecForProviderNetworkConfigurationEgressConfigurationVpcConnectorArnSelectorPolicyResolutionEnum
 {
@@ -205,7 +205,7 @@ public enum V1beta2ServiceSpecForProviderNetworkConfigurationEgressConfiguration
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecForProviderNetworkConfigurationEgressConfigurationVpcConnectorArnSelectorPolicyResolveEnum>))]
 public enum V1beta2ServiceSpecForProviderNetworkConfigurationEgressConfigurationVpcConnectorArnSelectorPolicyResolveEnum
 {
@@ -216,7 +216,7 @@ public enum V1beta2ServiceSpecForProviderNetworkConfigurationEgressConfiguration
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderNetworkConfigurationEgressConfigurationVpcConnectorArnSelectorPolicy
 {
@@ -240,7 +240,7 @@ public partial class V1beta2ServiceSpecForProviderNetworkConfigurationEgressConf
 }
 
 /// <summary>Selector for a VPCConnector in apprunner to populate vpcConnectorArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderNetworkConfigurationEgressConfigurationVpcConnectorArnSelector
 {
@@ -261,7 +261,7 @@ public partial class V1beta2ServiceSpecForProviderNetworkConfigurationEgressConf
 }
 
 /// <summary>Network configuration settings for outbound message traffic. See Egress Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderNetworkConfigurationEgressConfiguration
 {
@@ -283,7 +283,7 @@ public partial class V1beta2ServiceSpecForProviderNetworkConfigurationEgressConf
 }
 
 /// <summary>Network configuration settings for inbound network traffic. See Ingress Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderNetworkConfigurationIngressConfiguration
 {
@@ -293,7 +293,7 @@ public partial class V1beta2ServiceSpecForProviderNetworkConfigurationIngressCon
 }
 
 /// <summary>Configuration settings related to network traffic of the web application that the App Runner service runs. See Network Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderNetworkConfiguration
 {
@@ -316,7 +316,7 @@ public partial class V1beta2ServiceSpecForProviderNetworkConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecForProviderObservabilityConfigurationObservabilityConfigurationArnRefPolicyResolutionEnum>))]
 public enum V1beta2ServiceSpecForProviderObservabilityConfigurationObservabilityConfigurationArnRefPolicyResolutionEnum
 {
@@ -332,7 +332,7 @@ public enum V1beta2ServiceSpecForProviderObservabilityConfigurationObservability
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecForProviderObservabilityConfigurationObservabilityConfigurationArnRefPolicyResolveEnum>))]
 public enum V1beta2ServiceSpecForProviderObservabilityConfigurationObservabilityConfigurationArnRefPolicyResolveEnum
 {
@@ -343,7 +343,7 @@ public enum V1beta2ServiceSpecForProviderObservabilityConfigurationObservability
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderObservabilityConfigurationObservabilityConfigurationArnRefPolicy
 {
@@ -367,7 +367,7 @@ public partial class V1beta2ServiceSpecForProviderObservabilityConfigurationObse
 }
 
 /// <summary>Reference to a ObservabilityConfiguration in apprunner to populate observabilityConfigurationArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderObservabilityConfigurationObservabilityConfigurationArnRef
 {
@@ -386,7 +386,7 @@ public partial class V1beta2ServiceSpecForProviderObservabilityConfigurationObse
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecForProviderObservabilityConfigurationObservabilityConfigurationArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2ServiceSpecForProviderObservabilityConfigurationObservabilityConfigurationArnSelectorPolicyResolutionEnum
 {
@@ -402,7 +402,7 @@ public enum V1beta2ServiceSpecForProviderObservabilityConfigurationObservability
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecForProviderObservabilityConfigurationObservabilityConfigurationArnSelectorPolicyResolveEnum>))]
 public enum V1beta2ServiceSpecForProviderObservabilityConfigurationObservabilityConfigurationArnSelectorPolicyResolveEnum
 {
@@ -413,7 +413,7 @@ public enum V1beta2ServiceSpecForProviderObservabilityConfigurationObservability
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderObservabilityConfigurationObservabilityConfigurationArnSelectorPolicy
 {
@@ -437,7 +437,7 @@ public partial class V1beta2ServiceSpecForProviderObservabilityConfigurationObse
 }
 
 /// <summary>Selector for a ObservabilityConfiguration in apprunner to populate observabilityConfigurationArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderObservabilityConfigurationObservabilityConfigurationArnSelector
 {
@@ -458,7 +458,7 @@ public partial class V1beta2ServiceSpecForProviderObservabilityConfigurationObse
 }
 
 /// <summary>The observability configuration of your service. See Observability Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderObservabilityConfiguration
 {
@@ -485,7 +485,7 @@ public partial class V1beta2ServiceSpecForProviderObservabilityConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecForProviderSourceConfigurationAuthenticationConfigurationConnectionArnRefPolicyResolutionEnum>))]
 public enum V1beta2ServiceSpecForProviderSourceConfigurationAuthenticationConfigurationConnectionArnRefPolicyResolutionEnum
 {
@@ -501,7 +501,7 @@ public enum V1beta2ServiceSpecForProviderSourceConfigurationAuthenticationConfig
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecForProviderSourceConfigurationAuthenticationConfigurationConnectionArnRefPolicyResolveEnum>))]
 public enum V1beta2ServiceSpecForProviderSourceConfigurationAuthenticationConfigurationConnectionArnRefPolicyResolveEnum
 {
@@ -512,7 +512,7 @@ public enum V1beta2ServiceSpecForProviderSourceConfigurationAuthenticationConfig
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderSourceConfigurationAuthenticationConfigurationConnectionArnRefPolicy
 {
@@ -536,7 +536,7 @@ public partial class V1beta2ServiceSpecForProviderSourceConfigurationAuthenticat
 }
 
 /// <summary>Reference to a Connection in apprunner to populate connectionArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderSourceConfigurationAuthenticationConfigurationConnectionArnRef
 {
@@ -555,7 +555,7 @@ public partial class V1beta2ServiceSpecForProviderSourceConfigurationAuthenticat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecForProviderSourceConfigurationAuthenticationConfigurationConnectionArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2ServiceSpecForProviderSourceConfigurationAuthenticationConfigurationConnectionArnSelectorPolicyResolutionEnum
 {
@@ -571,7 +571,7 @@ public enum V1beta2ServiceSpecForProviderSourceConfigurationAuthenticationConfig
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecForProviderSourceConfigurationAuthenticationConfigurationConnectionArnSelectorPolicyResolveEnum>))]
 public enum V1beta2ServiceSpecForProviderSourceConfigurationAuthenticationConfigurationConnectionArnSelectorPolicyResolveEnum
 {
@@ -582,7 +582,7 @@ public enum V1beta2ServiceSpecForProviderSourceConfigurationAuthenticationConfig
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderSourceConfigurationAuthenticationConfigurationConnectionArnSelectorPolicy
 {
@@ -606,7 +606,7 @@ public partial class V1beta2ServiceSpecForProviderSourceConfigurationAuthenticat
 }
 
 /// <summary>Selector for a Connection in apprunner to populate connectionArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderSourceConfigurationAuthenticationConfigurationConnectionArnSelector
 {
@@ -627,7 +627,7 @@ public partial class V1beta2ServiceSpecForProviderSourceConfigurationAuthenticat
 }
 
 /// <summary>Describes resources needed to authenticate access to some source repositories. See Authentication Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderSourceConfigurationAuthenticationConfiguration
 {
@@ -649,7 +649,7 @@ public partial class V1beta2ServiceSpecForProviderSourceConfigurationAuthenticat
 }
 
 /// <summary>Basic configuration for building and running the App Runner service. Use this parameter to quickly launch an App Runner service without providing an apprunner.yaml file in the source code repository (or ignoring the file if it exists). See Code Configuration Values below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues
 {
@@ -679,7 +679,7 @@ public partial class V1beta2ServiceSpecForProviderSourceConfigurationCodeReposit
 }
 
 /// <summary>Configuration for building and running the service from a source code repository. See Code Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderSourceConfigurationCodeRepositoryCodeConfiguration
 {
@@ -693,7 +693,7 @@ public partial class V1beta2ServiceSpecForProviderSourceConfigurationCodeReposit
 }
 
 /// <summary>Version that should be used within the source code repository. See Source Code Version below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderSourceConfigurationCodeRepositorySourceCodeVersion
 {
@@ -707,7 +707,7 @@ public partial class V1beta2ServiceSpecForProviderSourceConfigurationCodeReposit
 }
 
 /// <summary>Description of a source code repository. See Code Repository below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderSourceConfigurationCodeRepository
 {
@@ -729,7 +729,7 @@ public partial class V1beta2ServiceSpecForProviderSourceConfigurationCodeReposit
 }
 
 /// <summary>Configuration for running the identified image. See Image Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderSourceConfigurationImageRepositoryImageConfiguration
 {
@@ -751,7 +751,7 @@ public partial class V1beta2ServiceSpecForProviderSourceConfigurationImageReposi
 }
 
 /// <summary>Description of a source image repository. See Image Repository below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderSourceConfigurationImageRepository
 {
@@ -772,7 +772,7 @@ public partial class V1beta2ServiceSpecForProviderSourceConfigurationImageReposi
 }
 
 /// <summary>The source to deploy to the App Runner service. Can be a code or an image repository. See Source Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderSourceConfiguration
 {
@@ -793,7 +793,7 @@ public partial class V1beta2ServiceSpecForProviderSourceConfiguration
     public V1beta2ServiceSpecForProviderSourceConfigurationImageRepository? ImageRepository { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProvider
 {
@@ -842,7 +842,7 @@ public partial class V1beta2ServiceSpecForProvider
 }
 
 /// <summary>(Forces new resource) An optional custom encryption key that App Runner uses to encrypt the copy of your source repository that it maintains and your service logs. By default, App Runner uses an AWS managed CMK. See Encryption Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderEncryptionConfiguration
 {
@@ -852,7 +852,7 @@ public partial class V1beta2ServiceSpecInitProviderEncryptionConfiguration
 }
 
 /// <summary>Settings of the health check that AWS App Runner performs to monitor the health of your service. See Health Check Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderHealthCheckConfiguration
 {
@@ -882,7 +882,7 @@ public partial class V1beta2ServiceSpecInitProviderHealthCheckConfiguration
 }
 
 /// <summary>The runtime configuration of instances (scaling units) of the App Runner service. See Instance Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderInstanceConfiguration
 {
@@ -905,7 +905,7 @@ public partial class V1beta2ServiceSpecInitProviderInstanceConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecInitProviderNetworkConfigurationEgressConfigurationVpcConnectorArnRefPolicyResolutionEnum>))]
 public enum V1beta2ServiceSpecInitProviderNetworkConfigurationEgressConfigurationVpcConnectorArnRefPolicyResolutionEnum
 {
@@ -921,7 +921,7 @@ public enum V1beta2ServiceSpecInitProviderNetworkConfigurationEgressConfiguratio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecInitProviderNetworkConfigurationEgressConfigurationVpcConnectorArnRefPolicyResolveEnum>))]
 public enum V1beta2ServiceSpecInitProviderNetworkConfigurationEgressConfigurationVpcConnectorArnRefPolicyResolveEnum
 {
@@ -932,7 +932,7 @@ public enum V1beta2ServiceSpecInitProviderNetworkConfigurationEgressConfiguratio
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderNetworkConfigurationEgressConfigurationVpcConnectorArnRefPolicy
 {
@@ -956,7 +956,7 @@ public partial class V1beta2ServiceSpecInitProviderNetworkConfigurationEgressCon
 }
 
 /// <summary>Reference to a VPCConnector in apprunner to populate vpcConnectorArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderNetworkConfigurationEgressConfigurationVpcConnectorArnRef
 {
@@ -975,7 +975,7 @@ public partial class V1beta2ServiceSpecInitProviderNetworkConfigurationEgressCon
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecInitProviderNetworkConfigurationEgressConfigurationVpcConnectorArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2ServiceSpecInitProviderNetworkConfigurationEgressConfigurationVpcConnectorArnSelectorPolicyResolutionEnum
 {
@@ -991,7 +991,7 @@ public enum V1beta2ServiceSpecInitProviderNetworkConfigurationEgressConfiguratio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecInitProviderNetworkConfigurationEgressConfigurationVpcConnectorArnSelectorPolicyResolveEnum>))]
 public enum V1beta2ServiceSpecInitProviderNetworkConfigurationEgressConfigurationVpcConnectorArnSelectorPolicyResolveEnum
 {
@@ -1002,7 +1002,7 @@ public enum V1beta2ServiceSpecInitProviderNetworkConfigurationEgressConfiguratio
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderNetworkConfigurationEgressConfigurationVpcConnectorArnSelectorPolicy
 {
@@ -1026,7 +1026,7 @@ public partial class V1beta2ServiceSpecInitProviderNetworkConfigurationEgressCon
 }
 
 /// <summary>Selector for a VPCConnector in apprunner to populate vpcConnectorArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderNetworkConfigurationEgressConfigurationVpcConnectorArnSelector
 {
@@ -1047,7 +1047,7 @@ public partial class V1beta2ServiceSpecInitProviderNetworkConfigurationEgressCon
 }
 
 /// <summary>Network configuration settings for outbound message traffic. See Egress Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderNetworkConfigurationEgressConfiguration
 {
@@ -1069,7 +1069,7 @@ public partial class V1beta2ServiceSpecInitProviderNetworkConfigurationEgressCon
 }
 
 /// <summary>Network configuration settings for inbound network traffic. See Ingress Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderNetworkConfigurationIngressConfiguration
 {
@@ -1079,7 +1079,7 @@ public partial class V1beta2ServiceSpecInitProviderNetworkConfigurationIngressCo
 }
 
 /// <summary>Configuration settings related to network traffic of the web application that the App Runner service runs. See Network Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderNetworkConfiguration
 {
@@ -1102,7 +1102,7 @@ public partial class V1beta2ServiceSpecInitProviderNetworkConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecInitProviderObservabilityConfigurationObservabilityConfigurationArnRefPolicyResolutionEnum>))]
 public enum V1beta2ServiceSpecInitProviderObservabilityConfigurationObservabilityConfigurationArnRefPolicyResolutionEnum
 {
@@ -1118,7 +1118,7 @@ public enum V1beta2ServiceSpecInitProviderObservabilityConfigurationObservabilit
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecInitProviderObservabilityConfigurationObservabilityConfigurationArnRefPolicyResolveEnum>))]
 public enum V1beta2ServiceSpecInitProviderObservabilityConfigurationObservabilityConfigurationArnRefPolicyResolveEnum
 {
@@ -1129,7 +1129,7 @@ public enum V1beta2ServiceSpecInitProviderObservabilityConfigurationObservabilit
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderObservabilityConfigurationObservabilityConfigurationArnRefPolicy
 {
@@ -1153,7 +1153,7 @@ public partial class V1beta2ServiceSpecInitProviderObservabilityConfigurationObs
 }
 
 /// <summary>Reference to a ObservabilityConfiguration in apprunner to populate observabilityConfigurationArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderObservabilityConfigurationObservabilityConfigurationArnRef
 {
@@ -1172,7 +1172,7 @@ public partial class V1beta2ServiceSpecInitProviderObservabilityConfigurationObs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecInitProviderObservabilityConfigurationObservabilityConfigurationArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2ServiceSpecInitProviderObservabilityConfigurationObservabilityConfigurationArnSelectorPolicyResolutionEnum
 {
@@ -1188,7 +1188,7 @@ public enum V1beta2ServiceSpecInitProviderObservabilityConfigurationObservabilit
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecInitProviderObservabilityConfigurationObservabilityConfigurationArnSelectorPolicyResolveEnum>))]
 public enum V1beta2ServiceSpecInitProviderObservabilityConfigurationObservabilityConfigurationArnSelectorPolicyResolveEnum
 {
@@ -1199,7 +1199,7 @@ public enum V1beta2ServiceSpecInitProviderObservabilityConfigurationObservabilit
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderObservabilityConfigurationObservabilityConfigurationArnSelectorPolicy
 {
@@ -1223,7 +1223,7 @@ public partial class V1beta2ServiceSpecInitProviderObservabilityConfigurationObs
 }
 
 /// <summary>Selector for a ObservabilityConfiguration in apprunner to populate observabilityConfigurationArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderObservabilityConfigurationObservabilityConfigurationArnSelector
 {
@@ -1244,7 +1244,7 @@ public partial class V1beta2ServiceSpecInitProviderObservabilityConfigurationObs
 }
 
 /// <summary>The observability configuration of your service. See Observability Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderObservabilityConfiguration
 {
@@ -1271,7 +1271,7 @@ public partial class V1beta2ServiceSpecInitProviderObservabilityConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecInitProviderSourceConfigurationAuthenticationConfigurationConnectionArnRefPolicyResolutionEnum>))]
 public enum V1beta2ServiceSpecInitProviderSourceConfigurationAuthenticationConfigurationConnectionArnRefPolicyResolutionEnum
 {
@@ -1287,7 +1287,7 @@ public enum V1beta2ServiceSpecInitProviderSourceConfigurationAuthenticationConfi
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecInitProviderSourceConfigurationAuthenticationConfigurationConnectionArnRefPolicyResolveEnum>))]
 public enum V1beta2ServiceSpecInitProviderSourceConfigurationAuthenticationConfigurationConnectionArnRefPolicyResolveEnum
 {
@@ -1298,7 +1298,7 @@ public enum V1beta2ServiceSpecInitProviderSourceConfigurationAuthenticationConfi
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderSourceConfigurationAuthenticationConfigurationConnectionArnRefPolicy
 {
@@ -1322,7 +1322,7 @@ public partial class V1beta2ServiceSpecInitProviderSourceConfigurationAuthentica
 }
 
 /// <summary>Reference to a Connection in apprunner to populate connectionArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderSourceConfigurationAuthenticationConfigurationConnectionArnRef
 {
@@ -1341,7 +1341,7 @@ public partial class V1beta2ServiceSpecInitProviderSourceConfigurationAuthentica
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecInitProviderSourceConfigurationAuthenticationConfigurationConnectionArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2ServiceSpecInitProviderSourceConfigurationAuthenticationConfigurationConnectionArnSelectorPolicyResolutionEnum
 {
@@ -1357,7 +1357,7 @@ public enum V1beta2ServiceSpecInitProviderSourceConfigurationAuthenticationConfi
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecInitProviderSourceConfigurationAuthenticationConfigurationConnectionArnSelectorPolicyResolveEnum>))]
 public enum V1beta2ServiceSpecInitProviderSourceConfigurationAuthenticationConfigurationConnectionArnSelectorPolicyResolveEnum
 {
@@ -1368,7 +1368,7 @@ public enum V1beta2ServiceSpecInitProviderSourceConfigurationAuthenticationConfi
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderSourceConfigurationAuthenticationConfigurationConnectionArnSelectorPolicy
 {
@@ -1392,7 +1392,7 @@ public partial class V1beta2ServiceSpecInitProviderSourceConfigurationAuthentica
 }
 
 /// <summary>Selector for a Connection in apprunner to populate connectionArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderSourceConfigurationAuthenticationConfigurationConnectionArnSelector
 {
@@ -1413,7 +1413,7 @@ public partial class V1beta2ServiceSpecInitProviderSourceConfigurationAuthentica
 }
 
 /// <summary>Describes resources needed to authenticate access to some source repositories. See Authentication Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderSourceConfigurationAuthenticationConfiguration
 {
@@ -1435,7 +1435,7 @@ public partial class V1beta2ServiceSpecInitProviderSourceConfigurationAuthentica
 }
 
 /// <summary>Basic configuration for building and running the App Runner service. Use this parameter to quickly launch an App Runner service without providing an apprunner.yaml file in the source code repository (or ignoring the file if it exists). See Code Configuration Values below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues
 {
@@ -1465,7 +1465,7 @@ public partial class V1beta2ServiceSpecInitProviderSourceConfigurationCodeReposi
 }
 
 /// <summary>Configuration for building and running the service from a source code repository. See Code Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderSourceConfigurationCodeRepositoryCodeConfiguration
 {
@@ -1479,7 +1479,7 @@ public partial class V1beta2ServiceSpecInitProviderSourceConfigurationCodeReposi
 }
 
 /// <summary>Version that should be used within the source code repository. See Source Code Version below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderSourceConfigurationCodeRepositorySourceCodeVersion
 {
@@ -1493,7 +1493,7 @@ public partial class V1beta2ServiceSpecInitProviderSourceConfigurationCodeReposi
 }
 
 /// <summary>Description of a source code repository. See Code Repository below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderSourceConfigurationCodeRepository
 {
@@ -1515,7 +1515,7 @@ public partial class V1beta2ServiceSpecInitProviderSourceConfigurationCodeReposi
 }
 
 /// <summary>Configuration for running the identified image. See Image Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderSourceConfigurationImageRepositoryImageConfiguration
 {
@@ -1537,7 +1537,7 @@ public partial class V1beta2ServiceSpecInitProviderSourceConfigurationImageRepos
 }
 
 /// <summary>Description of a source image repository. See Image Repository below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderSourceConfigurationImageRepository
 {
@@ -1558,7 +1558,7 @@ public partial class V1beta2ServiceSpecInitProviderSourceConfigurationImageRepos
 }
 
 /// <summary>The source to deploy to the App Runner service. Can be a code or an image repository. See Source Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderSourceConfiguration
 {
@@ -1591,7 +1591,7 @@ public partial class V1beta2ServiceSpecInitProviderSourceConfiguration
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProvider
 {
@@ -1636,7 +1636,7 @@ public partial class V1beta2ServiceSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecManagementPoliciesEnum>))]
 public enum V1beta2ServiceSpecManagementPoliciesEnum
 {
@@ -1660,7 +1660,7 @@ public enum V1beta2ServiceSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2ServiceSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1676,7 +1676,7 @@ public enum V1beta2ServiceSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2ServiceSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1687,7 +1687,7 @@ public enum V1beta2ServiceSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecProviderConfigRefPolicy
 {
@@ -1715,7 +1715,7 @@ public partial class V1beta2ServiceSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecProviderConfigRef
 {
@@ -1734,7 +1734,7 @@ public partial class V1beta2ServiceSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecWriteConnectionSecretToRef
 {
@@ -1748,7 +1748,7 @@ public partial class V1beta2ServiceSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ServiceSpec defines the desired state of Service</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpec
 {
@@ -1816,7 +1816,7 @@ public partial class V1beta2ServiceSpec
 }
 
 /// <summary>(Forces new resource) An optional custom encryption key that App Runner uses to encrypt the copy of your source repository that it maintains and your service logs. By default, App Runner uses an AWS managed CMK. See Encryption Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderEncryptionConfiguration
 {
@@ -1826,7 +1826,7 @@ public partial class V1beta2ServiceStatusAtProviderEncryptionConfiguration
 }
 
 /// <summary>Settings of the health check that AWS App Runner performs to monitor the health of your service. See Health Check Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderHealthCheckConfiguration
 {
@@ -1856,7 +1856,7 @@ public partial class V1beta2ServiceStatusAtProviderHealthCheckConfiguration
 }
 
 /// <summary>The runtime configuration of instances (scaling units) of the App Runner service. See Instance Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderInstanceConfiguration
 {
@@ -1874,7 +1874,7 @@ public partial class V1beta2ServiceStatusAtProviderInstanceConfiguration
 }
 
 /// <summary>Network configuration settings for outbound message traffic. See Egress Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderNetworkConfigurationEgressConfiguration
 {
@@ -1888,7 +1888,7 @@ public partial class V1beta2ServiceStatusAtProviderNetworkConfigurationEgressCon
 }
 
 /// <summary>Network configuration settings for inbound network traffic. See Ingress Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderNetworkConfigurationIngressConfiguration
 {
@@ -1898,7 +1898,7 @@ public partial class V1beta2ServiceStatusAtProviderNetworkConfigurationIngressCo
 }
 
 /// <summary>Configuration settings related to network traffic of the web application that the App Runner service runs. See Network Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderNetworkConfiguration
 {
@@ -1916,7 +1916,7 @@ public partial class V1beta2ServiceStatusAtProviderNetworkConfiguration
 }
 
 /// <summary>The observability configuration of your service. See Observability Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderObservabilityConfiguration
 {
@@ -1930,7 +1930,7 @@ public partial class V1beta2ServiceStatusAtProviderObservabilityConfiguration
 }
 
 /// <summary>Describes resources needed to authenticate access to some source repositories. See Authentication Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderSourceConfigurationAuthenticationConfiguration
 {
@@ -1944,7 +1944,7 @@ public partial class V1beta2ServiceStatusAtProviderSourceConfigurationAuthentica
 }
 
 /// <summary>Basic configuration for building and running the App Runner service. Use this parameter to quickly launch an App Runner service without providing an apprunner.yaml file in the source code repository (or ignoring the file if it exists). See Code Configuration Values below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues
 {
@@ -1974,7 +1974,7 @@ public partial class V1beta2ServiceStatusAtProviderSourceConfigurationCodeReposi
 }
 
 /// <summary>Configuration for building and running the service from a source code repository. See Code Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderSourceConfigurationCodeRepositoryCodeConfiguration
 {
@@ -1988,7 +1988,7 @@ public partial class V1beta2ServiceStatusAtProviderSourceConfigurationCodeReposi
 }
 
 /// <summary>Version that should be used within the source code repository. See Source Code Version below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderSourceConfigurationCodeRepositorySourceCodeVersion
 {
@@ -2002,7 +2002,7 @@ public partial class V1beta2ServiceStatusAtProviderSourceConfigurationCodeReposi
 }
 
 /// <summary>Description of a source code repository. See Code Repository below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderSourceConfigurationCodeRepository
 {
@@ -2024,7 +2024,7 @@ public partial class V1beta2ServiceStatusAtProviderSourceConfigurationCodeReposi
 }
 
 /// <summary>Configuration for running the identified image. See Image Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderSourceConfigurationImageRepositoryImageConfiguration
 {
@@ -2046,7 +2046,7 @@ public partial class V1beta2ServiceStatusAtProviderSourceConfigurationImageRepos
 }
 
 /// <summary>Description of a source image repository. See Image Repository below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderSourceConfigurationImageRepository
 {
@@ -2067,7 +2067,7 @@ public partial class V1beta2ServiceStatusAtProviderSourceConfigurationImageRepos
 }
 
 /// <summary>The source to deploy to the App Runner service. Can be a code or an image repository. See Source Configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderSourceConfiguration
 {
@@ -2088,7 +2088,7 @@ public partial class V1beta2ServiceStatusAtProviderSourceConfiguration
     public V1beta2ServiceStatusAtProviderSourceConfigurationImageRepository? ImageRepository { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProvider
 {
@@ -2160,7 +2160,7 @@ public partial class V1beta2ServiceStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusConditions
 {
@@ -2203,7 +2203,7 @@ public partial class V1beta2ServiceStatusConditions
 }
 
 /// <summary>ServiceStatus defines the observed state of Service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatus
 {
@@ -2224,7 +2224,7 @@ public partial class V1beta2ServiceStatus
 }
 
 /// <summary>Service is the Schema for the Services API. Manages an App Runner Service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2Service : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2ServiceSpec>, IStatus<V1beta2ServiceStatus?>

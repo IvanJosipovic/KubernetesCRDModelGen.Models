@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ec2.aws.m.upbound.io;
 /// <summary>VPCIPv6CidrBlockAssociation is the Schema for the VPCIPv6CidrBlockAssociations API. Associate additional IPv6 CIDR blocks with a VPC</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VPCIPv6CidrBlockAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1VPCIPv6CidrBlockAssociation>
@@ -42,7 +42,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationList : IKubernetesObject<
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIPv6CidrBlockAssociationSpecForProviderIpv6IpamPoolIdRefPolicyResolutionEnum>))]
 public enum V1beta1VPCIPv6CidrBlockAssociationSpecForProviderIpv6IpamPoolIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1VPCIPv6CidrBlockAssociationSpecForProviderIpv6IpamPoolIdRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIPv6CidrBlockAssociationSpecForProviderIpv6IpamPoolIdRefPolicyResolveEnum>))]
 public enum V1beta1VPCIPv6CidrBlockAssociationSpecForProviderIpv6IpamPoolIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1VPCIPv6CidrBlockAssociationSpecForProviderIpv6IpamPoolIdRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIPv6CidrBlockAssociationSpecForProviderIpv6IpamPoolIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationSpecForProviderIpv6IpamPo
 }
 
 /// <summary>Reference to a VPCIpamPool in ec2 to populate ipv6IpamPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIPv6CidrBlockAssociationSpecForProviderIpv6IpamPoolIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationSpecForProviderIpv6IpamPo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIPv6CidrBlockAssociationSpecForProviderIpv6IpamPoolIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPCIPv6CidrBlockAssociationSpecForProviderIpv6IpamPoolIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1VPCIPv6CidrBlockAssociationSpecForProviderIpv6IpamPoolIdSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIPv6CidrBlockAssociationSpecForProviderIpv6IpamPoolIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VPCIPv6CidrBlockAssociationSpecForProviderIpv6IpamPoolIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1VPCIPv6CidrBlockAssociationSpecForProviderIpv6IpamPoolIdSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIPv6CidrBlockAssociationSpecForProviderIpv6IpamPoolIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationSpecForProviderIpv6IpamPo
 }
 
 /// <summary>Selector for a VPCIpamPool in ec2 to populate ipv6IpamPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIPv6CidrBlockAssociationSpecForProviderIpv6IpamPoolIdSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationSpecForProviderIpv6IpamPo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIPv6CidrBlockAssociationSpecForProviderVpcIdRefPolicyResolutionEnum>))]
 public enum V1beta1VPCIPv6CidrBlockAssociationSpecForProviderVpcIdRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1VPCIPv6CidrBlockAssociationSpecForProviderVpcIdRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIPv6CidrBlockAssociationSpecForProviderVpcIdRefPolicyResolveEnum>))]
 public enum V1beta1VPCIPv6CidrBlockAssociationSpecForProviderVpcIdRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1VPCIPv6CidrBlockAssociationSpecForProviderVpcIdRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIPv6CidrBlockAssociationSpecForProviderVpcIdRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationSpecForProviderVpcIdRefPo
 }
 
 /// <summary>Reference to a VPC in ec2 to populate vpcId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIPv6CidrBlockAssociationSpecForProviderVpcIdRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationSpecForProviderVpcIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIPv6CidrBlockAssociationSpecForProviderVpcIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPCIPv6CidrBlockAssociationSpecForProviderVpcIdSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1VPCIPv6CidrBlockAssociationSpecForProviderVpcIdSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIPv6CidrBlockAssociationSpecForProviderVpcIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VPCIPv6CidrBlockAssociationSpecForProviderVpcIdSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1VPCIPv6CidrBlockAssociationSpecForProviderVpcIdSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIPv6CidrBlockAssociationSpecForProviderVpcIdSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationSpecForProviderVpcIdSelec
 }
 
 /// <summary>Selector for a VPC in ec2 to populate vpcId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIPv6CidrBlockAssociationSpecForProviderVpcIdSelector
 {
@@ -346,7 +346,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationSpecForProviderVpcIdSelec
     public V1beta1VPCIPv6CidrBlockAssociationSpecForProviderVpcIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIPv6CidrBlockAssociationSpecForProvider
 {
@@ -404,7 +404,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderIpv6IpamPoolIdRefPolicyResolutionEnum>))]
 public enum V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderIpv6IpamPoolIdRefPolicyResolutionEnum
 {
@@ -420,7 +420,7 @@ public enum V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderIpv6IpamPoolIdRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderIpv6IpamPoolIdRefPolicyResolveEnum>))]
 public enum V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderIpv6IpamPoolIdRefPolicyResolveEnum
 {
@@ -431,7 +431,7 @@ public enum V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderIpv6IpamPoolIdRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderIpv6IpamPoolIdRefPolicy
 {
@@ -455,7 +455,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderIpv6IpamP
 }
 
 /// <summary>Reference to a VPCIpamPool in ec2 to populate ipv6IpamPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderIpv6IpamPoolIdRef
 {
@@ -478,7 +478,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderIpv6IpamP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderIpv6IpamPoolIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderIpv6IpamPoolIdSelectorPolicyResolutionEnum
 {
@@ -494,7 +494,7 @@ public enum V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderIpv6IpamPoolIdSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderIpv6IpamPoolIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderIpv6IpamPoolIdSelectorPolicyResolveEnum
 {
@@ -505,7 +505,7 @@ public enum V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderIpv6IpamPoolIdSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderIpv6IpamPoolIdSelectorPolicy
 {
@@ -529,7 +529,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderIpv6IpamP
 }
 
 /// <summary>Selector for a VPCIpamPool in ec2 to populate ipv6IpamPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderIpv6IpamPoolIdSelector
 {
@@ -559,7 +559,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderIpv6IpamP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderVpcIdRefPolicyResolutionEnum>))]
 public enum V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderVpcIdRefPolicyResolutionEnum
 {
@@ -575,7 +575,7 @@ public enum V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderVpcIdRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderVpcIdRefPolicyResolveEnum>))]
 public enum V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderVpcIdRefPolicyResolveEnum
 {
@@ -586,7 +586,7 @@ public enum V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderVpcIdRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderVpcIdRefPolicy
 {
@@ -610,7 +610,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderVpcIdRefP
 }
 
 /// <summary>Reference to a VPC in ec2 to populate vpcId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderVpcIdRef
 {
@@ -633,7 +633,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderVpcIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderVpcIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderVpcIdSelectorPolicyResolutionEnum
 {
@@ -649,7 +649,7 @@ public enum V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderVpcIdSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderVpcIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderVpcIdSelectorPolicyResolveEnum
 {
@@ -660,7 +660,7 @@ public enum V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderVpcIdSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderVpcIdSelectorPolicy
 {
@@ -684,7 +684,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderVpcIdSele
 }
 
 /// <summary>Selector for a VPC in ec2 to populate vpcId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderVpcIdSelector
 {
@@ -720,7 +720,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationSpecInitProviderVpcIdSele
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIPv6CidrBlockAssociationSpecInitProvider
 {
@@ -769,7 +769,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIPv6CidrBlockAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1VPCIPv6CidrBlockAssociationSpecManagementPoliciesEnum
 {
@@ -792,7 +792,7 @@ public enum V1beta1VPCIPv6CidrBlockAssociationSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIPv6CidrBlockAssociationSpecProviderConfigRef
 {
@@ -811,7 +811,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIPv6CidrBlockAssociationSpecWriteConnectionSecretToRef
 {
@@ -821,7 +821,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationSpecWriteConnectionSecret
 }
 
 /// <summary>VPCIPv6CidrBlockAssociationSpec defines the desired state of VPCIPv6CidrBlockAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIPv6CidrBlockAssociationSpec
 {
@@ -872,7 +872,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationSpec
     public V1beta1VPCIPv6CidrBlockAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIPv6CidrBlockAssociationStatusAtProvider
 {
@@ -921,7 +921,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIPv6CidrBlockAssociationStatusConditions
 {
@@ -964,7 +964,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationStatusConditions
 }
 
 /// <summary>VPCIPv6CidrBlockAssociationStatus defines the observed state of VPCIPv6CidrBlockAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIPv6CidrBlockAssociationStatus
 {
@@ -985,7 +985,7 @@ public partial class V1beta1VPCIPv6CidrBlockAssociationStatus
 }
 
 /// <summary>VPCIPv6CidrBlockAssociation is the Schema for the VPCIPv6CidrBlockAssociations API. Associate additional IPv6 CIDR blocks with a VPC</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VPCIPv6CidrBlockAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VPCIPv6CidrBlockAssociationSpec>, IStatus<V1beta1VPCIPv6CidrBlockAssociationStatus?>

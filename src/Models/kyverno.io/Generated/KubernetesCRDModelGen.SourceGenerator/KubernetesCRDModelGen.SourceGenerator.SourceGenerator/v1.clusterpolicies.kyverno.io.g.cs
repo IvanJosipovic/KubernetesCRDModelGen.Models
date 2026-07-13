@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.kyverno.io;
 /// <summary>ClusterPolicy declares validation, mutation, and generation behaviors for matching resources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ClusterPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1ClusterPolicy>
@@ -42,7 +42,7 @@ public partial class V1ClusterPolicyList : IKubernetesObject<V1ListMeta>, IItems
 /// been applied i.e. the rule matches and results in a pass, fail, or error. When
 /// set to `All` all rules in the policy are processed. The default is `All`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecApplyRulesEnum>))]
 public enum V1ClusterPolicySpecApplyRulesEnum
 {
@@ -53,7 +53,7 @@ public enum V1ClusterPolicySpecApplyRulesEnum
 }
 
 /// <summary>Deprecated, use failurePolicy under the webhookConfiguration instead.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecFailurePolicyEnum>))]
 public enum V1ClusterPolicySpecFailurePolicyEnum
 {
@@ -64,7 +64,7 @@ public enum V1ClusterPolicySpecFailurePolicyEnum
 }
 
 /// <summary>MatchCondition represents a condition which must by fulfilled for a request to be sent to a webhook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesCelPreconditions
 {
@@ -102,7 +102,7 @@ public partial class V1ClusterPolicySpecRulesCelPreconditions
 }
 
 /// <summary>RequestData contains the HTTP POST data</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesContextApiCallData
 {
@@ -116,7 +116,7 @@ public partial class V1ClusterPolicySpecRulesContextApiCallData
 }
 
 /// <summary>Method is the HTTP request type (GET or POST). Defaults to GET.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesContextApiCallMethodEnum>))]
 public enum V1ClusterPolicySpecRulesContextApiCallMethodEnum
 {
@@ -126,7 +126,7 @@ public enum V1ClusterPolicySpecRulesContextApiCallMethodEnum
     POST
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesContextApiCallServiceHeaders
 {
@@ -144,7 +144,7 @@ public partial class V1ClusterPolicySpecRulesContextApiCallServiceHeaders
 /// This is used for non-Kubernetes API server calls.
 /// It&apos;s mutually exclusive with the URLPath field.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesContextApiCallService
 {
@@ -171,7 +171,7 @@ public partial class V1ClusterPolicySpecRulesContextApiCallService
 /// APICall is an HTTP request to the Kubernetes API server, or other JSON web service.
 /// The data returned is stored in the context with the name for the context entry.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesContextApiCall
 {
@@ -224,7 +224,7 @@ public partial class V1ClusterPolicySpecRulesContextApiCall
 }
 
 /// <summary>ConfigMap is the ConfigMap reference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesContextConfigMap
 {
@@ -238,7 +238,7 @@ public partial class V1ClusterPolicySpecRulesContextConfigMap
 }
 
 /// <summary>GlobalContextEntryReference is a reference to a cached global context entry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesContextGlobalReference
 {
@@ -258,7 +258,7 @@ public partial class V1ClusterPolicySpecRulesContextGlobalReference
 }
 
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesContextImageRegistryImageRegistryCredentialsProvidersEnum>))]
 public enum V1ClusterPolicySpecRulesContextImageRegistryImageRegistryCredentialsProvidersEnum
 {
@@ -275,7 +275,7 @@ public enum V1ClusterPolicySpecRulesContextImageRegistryImageRegistryCredentials
 }
 
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesContextImageRegistryImageRegistryCredentials
 {
@@ -303,7 +303,7 @@ public partial class V1ClusterPolicySpecRulesContextImageRegistryImageRegistryCr
 /// ImageRegistry defines requests to an OCI/Docker V2 registry to fetch image
 /// details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesContextImageRegistry
 {
@@ -328,7 +328,7 @@ public partial class V1ClusterPolicySpecRulesContextImageRegistry
 }
 
 /// <summary>Variable defines an arbitrary JMESPath context variable that can be defined inline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesContextVariable
 {
@@ -355,7 +355,7 @@ public partial class V1ClusterPolicySpecRulesContextVariable
 /// ContextEntry adds variables and data sources to a rule Context. Either a
 /// ConfigMap reference or a APILookup must be provided.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesContext
 {
@@ -394,7 +394,7 @@ public partial class V1ClusterPolicySpecRulesContext
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesExcludeAllResourcesNamespaceSelectorMatchExpressions
 {
@@ -426,7 +426,7 @@ public partial class V1ClusterPolicySpecRulesExcludeAllResourcesNamespaceSelecto
 /// [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that using [&quot;*&quot; : &quot;*&quot;] matches any key and value but
 /// does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesExcludeAllResourcesNamespaceSelector
 {
@@ -444,7 +444,7 @@ public partial class V1ClusterPolicySpecRulesExcludeAllResourcesNamespaceSelecto
 }
 
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesExcludeAllResourcesOperationsEnum>))]
 public enum V1ClusterPolicySpecRulesExcludeAllResourcesOperationsEnum
 {
@@ -462,7 +462,7 @@ public enum V1ClusterPolicySpecRulesExcludeAllResourcesOperationsEnum
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesExcludeAllResourcesSelectorMatchExpressions
 {
@@ -493,7 +493,7 @@ public partial class V1ClusterPolicySpecRulesExcludeAllResourcesSelectorMatchExp
 /// Wildcards allows writing label selectors like [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that
 /// using [&quot;*&quot; : &quot;*&quot;] matches any key and value but does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesExcludeAllResourcesSelector
 {
@@ -511,7 +511,7 @@ public partial class V1ClusterPolicySpecRulesExcludeAllResourcesSelector
 }
 
 /// <summary>ResourceDescription contains information about the resource being created or modified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesExcludeAllResources
 {
@@ -577,7 +577,7 @@ public partial class V1ClusterPolicySpecRulesExcludeAllResources
 /// Subject contains a reference to the object or user identities a role binding applies to.  This can either hold a direct API object reference,
 /// or a value for non-objects such as user and group names.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesExcludeAllSubjects
 {
@@ -609,7 +609,7 @@ public partial class V1ClusterPolicySpecRulesExcludeAllSubjects
 }
 
 /// <summary>ResourceFilter allow users to &quot;AND&quot; or &quot;OR&quot; between resources</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesExcludeAll
 {
@@ -634,7 +634,7 @@ public partial class V1ClusterPolicySpecRulesExcludeAll
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesExcludeAnyResourcesNamespaceSelectorMatchExpressions
 {
@@ -666,7 +666,7 @@ public partial class V1ClusterPolicySpecRulesExcludeAnyResourcesNamespaceSelecto
 /// [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that using [&quot;*&quot; : &quot;*&quot;] matches any key and value but
 /// does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesExcludeAnyResourcesNamespaceSelector
 {
@@ -684,7 +684,7 @@ public partial class V1ClusterPolicySpecRulesExcludeAnyResourcesNamespaceSelecto
 }
 
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesExcludeAnyResourcesOperationsEnum>))]
 public enum V1ClusterPolicySpecRulesExcludeAnyResourcesOperationsEnum
 {
@@ -702,7 +702,7 @@ public enum V1ClusterPolicySpecRulesExcludeAnyResourcesOperationsEnum
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesExcludeAnyResourcesSelectorMatchExpressions
 {
@@ -733,7 +733,7 @@ public partial class V1ClusterPolicySpecRulesExcludeAnyResourcesSelectorMatchExp
 /// Wildcards allows writing label selectors like [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that
 /// using [&quot;*&quot; : &quot;*&quot;] matches any key and value but does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesExcludeAnyResourcesSelector
 {
@@ -751,7 +751,7 @@ public partial class V1ClusterPolicySpecRulesExcludeAnyResourcesSelector
 }
 
 /// <summary>ResourceDescription contains information about the resource being created or modified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesExcludeAnyResources
 {
@@ -817,7 +817,7 @@ public partial class V1ClusterPolicySpecRulesExcludeAnyResources
 /// Subject contains a reference to the object or user identities a role binding applies to.  This can either hold a direct API object reference,
 /// or a value for non-objects such as user and group names.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesExcludeAnySubjects
 {
@@ -849,7 +849,7 @@ public partial class V1ClusterPolicySpecRulesExcludeAnySubjects
 }
 
 /// <summary>ResourceFilter allow users to &quot;AND&quot; or &quot;OR&quot; between resources</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesExcludeAny
 {
@@ -874,7 +874,7 @@ public partial class V1ClusterPolicySpecRulesExcludeAny
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesExcludeResourcesNamespaceSelectorMatchExpressions
 {
@@ -906,7 +906,7 @@ public partial class V1ClusterPolicySpecRulesExcludeResourcesNamespaceSelectorMa
 /// [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that using [&quot;*&quot; : &quot;*&quot;] matches any key and value but
 /// does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesExcludeResourcesNamespaceSelector
 {
@@ -924,7 +924,7 @@ public partial class V1ClusterPolicySpecRulesExcludeResourcesNamespaceSelector
 }
 
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesExcludeResourcesOperationsEnum>))]
 public enum V1ClusterPolicySpecRulesExcludeResourcesOperationsEnum
 {
@@ -942,7 +942,7 @@ public enum V1ClusterPolicySpecRulesExcludeResourcesOperationsEnum
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesExcludeResourcesSelectorMatchExpressions
 {
@@ -973,7 +973,7 @@ public partial class V1ClusterPolicySpecRulesExcludeResourcesSelectorMatchExpres
 /// Wildcards allows writing label selectors like [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that
 /// using [&quot;*&quot; : &quot;*&quot;] matches any key and value but does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesExcludeResourcesSelector
 {
@@ -996,7 +996,7 @@ public partial class V1ClusterPolicySpecRulesExcludeResourcesSelector
 /// Specifying ResourceDescription directly under match is being deprecated.
 /// Please specify under &quot;any&quot; or &quot;all&quot; instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesExcludeResources
 {
@@ -1062,7 +1062,7 @@ public partial class V1ClusterPolicySpecRulesExcludeResources
 /// Subject contains a reference to the object or user identities a role binding applies to.  This can either hold a direct API object reference,
 /// or a value for non-objects such as user and group names.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesExcludeSubjects
 {
@@ -1098,7 +1098,7 @@ public partial class V1ClusterPolicySpecRulesExcludeSubjects
 /// criteria can include resource information (e.g. kind, name, namespace, labels)
 /// and admission review request information like the name or role.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesExclude
 {
@@ -1137,7 +1137,7 @@ public partial class V1ClusterPolicySpecRulesExclude
 /// At most one of Data or Clone can be specified. If neither are provided, the generated
 /// resource will be created with default data only.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesGenerateClone
 {
@@ -1154,7 +1154,7 @@ public partial class V1ClusterPolicySpecRulesGenerateClone
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesGenerateCloneListSelectorMatchExpressions
 {
@@ -1183,7 +1183,7 @@ public partial class V1ClusterPolicySpecRulesGenerateCloneListSelectorMatchExpre
 /// Selector is a label selector. Label keys and values in `matchLabels`.
 /// wildcard characters are not supported.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesGenerateCloneListSelector
 {
@@ -1201,7 +1201,7 @@ public partial class V1ClusterPolicySpecRulesGenerateCloneListSelector
 }
 
 /// <summary>CloneList specifies the list of source resource used to populate each generated resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesGenerateCloneList
 {
@@ -1226,7 +1226,7 @@ public partial class V1ClusterPolicySpecRulesGenerateCloneList
 /// At most one of Data or Clone can be specified. If neither are provided, the generated
 /// resource will be created with default data only.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesGenerateForeachClone
 {
@@ -1243,7 +1243,7 @@ public partial class V1ClusterPolicySpecRulesGenerateForeachClone
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesGenerateForeachCloneListSelectorMatchExpressions
 {
@@ -1272,7 +1272,7 @@ public partial class V1ClusterPolicySpecRulesGenerateForeachCloneListSelectorMat
 /// Selector is a label selector. Label keys and values in `matchLabels`.
 /// wildcard characters are not supported.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesGenerateForeachCloneListSelector
 {
@@ -1290,7 +1290,7 @@ public partial class V1ClusterPolicySpecRulesGenerateForeachCloneListSelector
 }
 
 /// <summary>CloneList specifies the list of source resource used to populate each generated resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesGenerateForeachCloneList
 {
@@ -1311,7 +1311,7 @@ public partial class V1ClusterPolicySpecRulesGenerateForeachCloneList
 }
 
 /// <summary>RequestData contains the HTTP POST data</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesGenerateForeachContextApiCallData
 {
@@ -1325,7 +1325,7 @@ public partial class V1ClusterPolicySpecRulesGenerateForeachContextApiCallData
 }
 
 /// <summary>Method is the HTTP request type (GET or POST). Defaults to GET.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesGenerateForeachContextApiCallMethodEnum>))]
 public enum V1ClusterPolicySpecRulesGenerateForeachContextApiCallMethodEnum
 {
@@ -1335,7 +1335,7 @@ public enum V1ClusterPolicySpecRulesGenerateForeachContextApiCallMethodEnum
     POST
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesGenerateForeachContextApiCallServiceHeaders
 {
@@ -1353,7 +1353,7 @@ public partial class V1ClusterPolicySpecRulesGenerateForeachContextApiCallServic
 /// This is used for non-Kubernetes API server calls.
 /// It&apos;s mutually exclusive with the URLPath field.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesGenerateForeachContextApiCallService
 {
@@ -1380,7 +1380,7 @@ public partial class V1ClusterPolicySpecRulesGenerateForeachContextApiCallServic
 /// APICall is an HTTP request to the Kubernetes API server, or other JSON web service.
 /// The data returned is stored in the context with the name for the context entry.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesGenerateForeachContextApiCall
 {
@@ -1433,7 +1433,7 @@ public partial class V1ClusterPolicySpecRulesGenerateForeachContextApiCall
 }
 
 /// <summary>ConfigMap is the ConfigMap reference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesGenerateForeachContextConfigMap
 {
@@ -1447,7 +1447,7 @@ public partial class V1ClusterPolicySpecRulesGenerateForeachContextConfigMap
 }
 
 /// <summary>GlobalContextEntryReference is a reference to a cached global context entry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesGenerateForeachContextGlobalReference
 {
@@ -1467,7 +1467,7 @@ public partial class V1ClusterPolicySpecRulesGenerateForeachContextGlobalReferen
 }
 
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesGenerateForeachContextImageRegistryImageRegistryCredentialsProvidersEnum>))]
 public enum V1ClusterPolicySpecRulesGenerateForeachContextImageRegistryImageRegistryCredentialsProvidersEnum
 {
@@ -1484,7 +1484,7 @@ public enum V1ClusterPolicySpecRulesGenerateForeachContextImageRegistryImageRegi
 }
 
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesGenerateForeachContextImageRegistryImageRegistryCredentials
 {
@@ -1512,7 +1512,7 @@ public partial class V1ClusterPolicySpecRulesGenerateForeachContextImageRegistry
 /// ImageRegistry defines requests to an OCI/Docker V2 registry to fetch image
 /// details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesGenerateForeachContextImageRegistry
 {
@@ -1537,7 +1537,7 @@ public partial class V1ClusterPolicySpecRulesGenerateForeachContextImageRegistry
 }
 
 /// <summary>Variable defines an arbitrary JMESPath context variable that can be defined inline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesGenerateForeachContextVariable
 {
@@ -1564,7 +1564,7 @@ public partial class V1ClusterPolicySpecRulesGenerateForeachContextVariable
 /// ContextEntry adds variables and data sources to a rule Context. Either a
 /// ConfigMap reference or a APILookup must be provided.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesGenerateForeachContext
 {
@@ -1599,7 +1599,7 @@ public partial class V1ClusterPolicySpecRulesGenerateForeachContext
     public V1ClusterPolicySpecRulesGenerateForeachContextVariable? Variable { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesGenerateForeach
 {
@@ -1664,7 +1664,7 @@ public partial class V1ClusterPolicySpecRulesGenerateForeach
 }
 
 /// <summary>Generation is used to create new resources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesGenerate
 {
@@ -1738,7 +1738,7 @@ public partial class V1ClusterPolicySpecRulesGenerate
     public string? Uid { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesImageExtractors
 {
@@ -1785,7 +1785,7 @@ public partial class V1ClusterPolicySpecRulesImageExtractors
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMatchAllResourcesNamespaceSelectorMatchExpressions
 {
@@ -1817,7 +1817,7 @@ public partial class V1ClusterPolicySpecRulesMatchAllResourcesNamespaceSelectorM
 /// [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that using [&quot;*&quot; : &quot;*&quot;] matches any key and value but
 /// does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMatchAllResourcesNamespaceSelector
 {
@@ -1835,7 +1835,7 @@ public partial class V1ClusterPolicySpecRulesMatchAllResourcesNamespaceSelector
 }
 
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesMatchAllResourcesOperationsEnum>))]
 public enum V1ClusterPolicySpecRulesMatchAllResourcesOperationsEnum
 {
@@ -1853,7 +1853,7 @@ public enum V1ClusterPolicySpecRulesMatchAllResourcesOperationsEnum
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMatchAllResourcesSelectorMatchExpressions
 {
@@ -1884,7 +1884,7 @@ public partial class V1ClusterPolicySpecRulesMatchAllResourcesSelectorMatchExpre
 /// Wildcards allows writing label selectors like [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that
 /// using [&quot;*&quot; : &quot;*&quot;] matches any key and value but does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMatchAllResourcesSelector
 {
@@ -1902,7 +1902,7 @@ public partial class V1ClusterPolicySpecRulesMatchAllResourcesSelector
 }
 
 /// <summary>ResourceDescription contains information about the resource being created or modified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMatchAllResources
 {
@@ -1968,7 +1968,7 @@ public partial class V1ClusterPolicySpecRulesMatchAllResources
 /// Subject contains a reference to the object or user identities a role binding applies to.  This can either hold a direct API object reference,
 /// or a value for non-objects such as user and group names.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMatchAllSubjects
 {
@@ -2000,7 +2000,7 @@ public partial class V1ClusterPolicySpecRulesMatchAllSubjects
 }
 
 /// <summary>ResourceFilter allow users to &quot;AND&quot; or &quot;OR&quot; between resources</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMatchAll
 {
@@ -2025,7 +2025,7 @@ public partial class V1ClusterPolicySpecRulesMatchAll
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMatchAnyResourcesNamespaceSelectorMatchExpressions
 {
@@ -2057,7 +2057,7 @@ public partial class V1ClusterPolicySpecRulesMatchAnyResourcesNamespaceSelectorM
 /// [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that using [&quot;*&quot; : &quot;*&quot;] matches any key and value but
 /// does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMatchAnyResourcesNamespaceSelector
 {
@@ -2075,7 +2075,7 @@ public partial class V1ClusterPolicySpecRulesMatchAnyResourcesNamespaceSelector
 }
 
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesMatchAnyResourcesOperationsEnum>))]
 public enum V1ClusterPolicySpecRulesMatchAnyResourcesOperationsEnum
 {
@@ -2093,7 +2093,7 @@ public enum V1ClusterPolicySpecRulesMatchAnyResourcesOperationsEnum
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMatchAnyResourcesSelectorMatchExpressions
 {
@@ -2124,7 +2124,7 @@ public partial class V1ClusterPolicySpecRulesMatchAnyResourcesSelectorMatchExpre
 /// Wildcards allows writing label selectors like [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that
 /// using [&quot;*&quot; : &quot;*&quot;] matches any key and value but does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMatchAnyResourcesSelector
 {
@@ -2142,7 +2142,7 @@ public partial class V1ClusterPolicySpecRulesMatchAnyResourcesSelector
 }
 
 /// <summary>ResourceDescription contains information about the resource being created or modified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMatchAnyResources
 {
@@ -2208,7 +2208,7 @@ public partial class V1ClusterPolicySpecRulesMatchAnyResources
 /// Subject contains a reference to the object or user identities a role binding applies to.  This can either hold a direct API object reference,
 /// or a value for non-objects such as user and group names.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMatchAnySubjects
 {
@@ -2240,7 +2240,7 @@ public partial class V1ClusterPolicySpecRulesMatchAnySubjects
 }
 
 /// <summary>ResourceFilter allow users to &quot;AND&quot; or &quot;OR&quot; between resources</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMatchAny
 {
@@ -2265,7 +2265,7 @@ public partial class V1ClusterPolicySpecRulesMatchAny
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMatchResourcesNamespaceSelectorMatchExpressions
 {
@@ -2297,7 +2297,7 @@ public partial class V1ClusterPolicySpecRulesMatchResourcesNamespaceSelectorMatc
 /// [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that using [&quot;*&quot; : &quot;*&quot;] matches any key and value but
 /// does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMatchResourcesNamespaceSelector
 {
@@ -2315,7 +2315,7 @@ public partial class V1ClusterPolicySpecRulesMatchResourcesNamespaceSelector
 }
 
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesMatchResourcesOperationsEnum>))]
 public enum V1ClusterPolicySpecRulesMatchResourcesOperationsEnum
 {
@@ -2333,7 +2333,7 @@ public enum V1ClusterPolicySpecRulesMatchResourcesOperationsEnum
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMatchResourcesSelectorMatchExpressions
 {
@@ -2364,7 +2364,7 @@ public partial class V1ClusterPolicySpecRulesMatchResourcesSelectorMatchExpressi
 /// Wildcards allows writing label selectors like [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that
 /// using [&quot;*&quot; : &quot;*&quot;] matches any key and value but does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMatchResourcesSelector
 {
@@ -2387,7 +2387,7 @@ public partial class V1ClusterPolicySpecRulesMatchResourcesSelector
 /// Specifying ResourceDescription directly under match is being deprecated.
 /// Please specify under &quot;any&quot; or &quot;all&quot; instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMatchResources
 {
@@ -2453,7 +2453,7 @@ public partial class V1ClusterPolicySpecRulesMatchResources
 /// Subject contains a reference to the object or user identities a role binding applies to.  This can either hold a direct API object reference,
 /// or a value for non-objects such as user and group names.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMatchSubjects
 {
@@ -2490,7 +2490,7 @@ public partial class V1ClusterPolicySpecRulesMatchSubjects
 /// and admission review request information like the user name or role.
 /// At least one kind is required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMatch
 {
@@ -2525,7 +2525,7 @@ public partial class V1ClusterPolicySpecRulesMatch
 }
 
 /// <summary>RequestData contains the HTTP POST data</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutateForeachContextApiCallData
 {
@@ -2539,7 +2539,7 @@ public partial class V1ClusterPolicySpecRulesMutateForeachContextApiCallData
 }
 
 /// <summary>Method is the HTTP request type (GET or POST). Defaults to GET.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesMutateForeachContextApiCallMethodEnum>))]
 public enum V1ClusterPolicySpecRulesMutateForeachContextApiCallMethodEnum
 {
@@ -2549,7 +2549,7 @@ public enum V1ClusterPolicySpecRulesMutateForeachContextApiCallMethodEnum
     POST
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutateForeachContextApiCallServiceHeaders
 {
@@ -2567,7 +2567,7 @@ public partial class V1ClusterPolicySpecRulesMutateForeachContextApiCallServiceH
 /// This is used for non-Kubernetes API server calls.
 /// It&apos;s mutually exclusive with the URLPath field.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutateForeachContextApiCallService
 {
@@ -2594,7 +2594,7 @@ public partial class V1ClusterPolicySpecRulesMutateForeachContextApiCallService
 /// APICall is an HTTP request to the Kubernetes API server, or other JSON web service.
 /// The data returned is stored in the context with the name for the context entry.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutateForeachContextApiCall
 {
@@ -2647,7 +2647,7 @@ public partial class V1ClusterPolicySpecRulesMutateForeachContextApiCall
 }
 
 /// <summary>ConfigMap is the ConfigMap reference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutateForeachContextConfigMap
 {
@@ -2661,7 +2661,7 @@ public partial class V1ClusterPolicySpecRulesMutateForeachContextConfigMap
 }
 
 /// <summary>GlobalContextEntryReference is a reference to a cached global context entry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutateForeachContextGlobalReference
 {
@@ -2681,7 +2681,7 @@ public partial class V1ClusterPolicySpecRulesMutateForeachContextGlobalReference
 }
 
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesMutateForeachContextImageRegistryImageRegistryCredentialsProvidersEnum>))]
 public enum V1ClusterPolicySpecRulesMutateForeachContextImageRegistryImageRegistryCredentialsProvidersEnum
 {
@@ -2698,7 +2698,7 @@ public enum V1ClusterPolicySpecRulesMutateForeachContextImageRegistryImageRegist
 }
 
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutateForeachContextImageRegistryImageRegistryCredentials
 {
@@ -2726,7 +2726,7 @@ public partial class V1ClusterPolicySpecRulesMutateForeachContextImageRegistryIm
 /// ImageRegistry defines requests to an OCI/Docker V2 registry to fetch image
 /// details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutateForeachContextImageRegistry
 {
@@ -2751,7 +2751,7 @@ public partial class V1ClusterPolicySpecRulesMutateForeachContextImageRegistry
 }
 
 /// <summary>Variable defines an arbitrary JMESPath context variable that can be defined inline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutateForeachContextVariable
 {
@@ -2778,7 +2778,7 @@ public partial class V1ClusterPolicySpecRulesMutateForeachContextVariable
 /// ContextEntry adds variables and data sources to a rule Context. Either a
 /// ConfigMap reference or a APILookup must be provided.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutateForeachContext
 {
@@ -2817,7 +2817,7 @@ public partial class V1ClusterPolicySpecRulesMutateForeachContext
 /// Order defines the iteration order on the list.
 /// Can be Ascending to iterate from first to last element or Descending to iterate in from last to first element.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesMutateForeachOrderEnum>))]
 public enum V1ClusterPolicySpecRulesMutateForeachOrderEnum
 {
@@ -2828,7 +2828,7 @@ public enum V1ClusterPolicySpecRulesMutateForeachOrderEnum
 }
 
 /// <summary>ForEachMutation applies mutation rules to a list of sub-elements by creating a context for each entry in the list and looping over it to apply the specified logic.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutateForeach
 {
@@ -2879,7 +2879,7 @@ public partial class V1ClusterPolicySpecRulesMutateForeach
 }
 
 /// <summary>RequestData contains the HTTP POST data</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutateTargetsContextApiCallData
 {
@@ -2893,7 +2893,7 @@ public partial class V1ClusterPolicySpecRulesMutateTargetsContextApiCallData
 }
 
 /// <summary>Method is the HTTP request type (GET or POST). Defaults to GET.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesMutateTargetsContextApiCallMethodEnum>))]
 public enum V1ClusterPolicySpecRulesMutateTargetsContextApiCallMethodEnum
 {
@@ -2903,7 +2903,7 @@ public enum V1ClusterPolicySpecRulesMutateTargetsContextApiCallMethodEnum
     POST
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutateTargetsContextApiCallServiceHeaders
 {
@@ -2921,7 +2921,7 @@ public partial class V1ClusterPolicySpecRulesMutateTargetsContextApiCallServiceH
 /// This is used for non-Kubernetes API server calls.
 /// It&apos;s mutually exclusive with the URLPath field.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutateTargetsContextApiCallService
 {
@@ -2948,7 +2948,7 @@ public partial class V1ClusterPolicySpecRulesMutateTargetsContextApiCallService
 /// APICall is an HTTP request to the Kubernetes API server, or other JSON web service.
 /// The data returned is stored in the context with the name for the context entry.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutateTargetsContextApiCall
 {
@@ -3001,7 +3001,7 @@ public partial class V1ClusterPolicySpecRulesMutateTargetsContextApiCall
 }
 
 /// <summary>ConfigMap is the ConfigMap reference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutateTargetsContextConfigMap
 {
@@ -3015,7 +3015,7 @@ public partial class V1ClusterPolicySpecRulesMutateTargetsContextConfigMap
 }
 
 /// <summary>GlobalContextEntryReference is a reference to a cached global context entry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutateTargetsContextGlobalReference
 {
@@ -3035,7 +3035,7 @@ public partial class V1ClusterPolicySpecRulesMutateTargetsContextGlobalReference
 }
 
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesMutateTargetsContextImageRegistryImageRegistryCredentialsProvidersEnum>))]
 public enum V1ClusterPolicySpecRulesMutateTargetsContextImageRegistryImageRegistryCredentialsProvidersEnum
 {
@@ -3052,7 +3052,7 @@ public enum V1ClusterPolicySpecRulesMutateTargetsContextImageRegistryImageRegist
 }
 
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutateTargetsContextImageRegistryImageRegistryCredentials
 {
@@ -3080,7 +3080,7 @@ public partial class V1ClusterPolicySpecRulesMutateTargetsContextImageRegistryIm
 /// ImageRegistry defines requests to an OCI/Docker V2 registry to fetch image
 /// details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutateTargetsContextImageRegistry
 {
@@ -3105,7 +3105,7 @@ public partial class V1ClusterPolicySpecRulesMutateTargetsContextImageRegistry
 }
 
 /// <summary>Variable defines an arbitrary JMESPath context variable that can be defined inline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutateTargetsContextVariable
 {
@@ -3132,7 +3132,7 @@ public partial class V1ClusterPolicySpecRulesMutateTargetsContextVariable
 /// ContextEntry adds variables and data sources to a rule Context. Either a
 /// ConfigMap reference or a APILookup must be provided.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutateTargetsContext
 {
@@ -3171,7 +3171,7 @@ public partial class V1ClusterPolicySpecRulesMutateTargetsContext
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutateTargetsSelectorMatchExpressions
 {
@@ -3197,7 +3197,7 @@ public partial class V1ClusterPolicySpecRulesMutateTargetsSelectorMatchExpressio
 }
 
 /// <summary>Selector allows you to select target resources with their labels.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutateTargetsSelector
 {
@@ -3215,7 +3215,7 @@ public partial class V1ClusterPolicySpecRulesMutateTargetsSelector
 }
 
 /// <summary>TargetResourceSpec defines targets for mutating existing resources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutateTargets
 {
@@ -3259,7 +3259,7 @@ public partial class V1ClusterPolicySpecRulesMutateTargets
 }
 
 /// <summary>Mutation is used to modify matching resources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesMutate
 {
@@ -3292,7 +3292,7 @@ public partial class V1ClusterPolicySpecRulesMutate
 }
 
 /// <summary>AuditAnnotation describes how to produce an audit annotation for an API request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateCelAuditAnnotations
 {
@@ -3338,7 +3338,7 @@ public partial class V1ClusterPolicySpecRulesValidateCelAuditAnnotations
 }
 
 /// <summary>Validation specifies the CEL expression which is used to apply the validation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateCelExpressions
 {
@@ -3428,7 +3428,7 @@ public partial class V1ClusterPolicySpecRulesValidateCelExpressions
 }
 
 /// <summary>ParamKind is a tuple of Group Kind and Version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateCelParamKind
 {
@@ -3452,7 +3452,7 @@ public partial class V1ClusterPolicySpecRulesValidateCelParamKind
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateCelParamRefSelectorMatchExpressions
 {
@@ -3487,7 +3487,7 @@ public partial class V1ClusterPolicySpecRulesValidateCelParamRefSelectorMatchExp
 /// One of `name` or `selector` must be set, but `name` and `selector` are
 /// mutually exclusive properties. If one is set, the other must be unset.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateCelParamRefSelector
 {
@@ -3505,7 +3505,7 @@ public partial class V1ClusterPolicySpecRulesValidateCelParamRefSelector
 }
 
 /// <summary>ParamRef references a parameter resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateCelParamRef
 {
@@ -3571,7 +3571,7 @@ public partial class V1ClusterPolicySpecRulesValidateCelParamRef
 }
 
 /// <summary>Variable is the definition of a variable that is used for composition. A variable is defined as a named expression.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateCelVariables
 {
@@ -3592,7 +3592,7 @@ public partial class V1ClusterPolicySpecRulesValidateCelVariables
 }
 
 /// <summary>CEL allows validation checks using the Common Expression Language (https://kubernetes.io/docs/reference/using-api/cel/).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateCel
 {
@@ -3629,7 +3629,7 @@ public partial class V1ClusterPolicySpecRulesValidateCel
 }
 
 /// <summary>Deny defines conditions used to pass or fail a validation rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateDeny
 {
@@ -3649,7 +3649,7 @@ public partial class V1ClusterPolicySpecRulesValidateDeny
 /// and report an error in a policy report. Optional.
 /// Allowed values are Audit or Enforce.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesValidateFailureActionEnum>))]
 public enum V1ClusterPolicySpecRulesValidateFailureActionEnum
 {
@@ -3660,7 +3660,7 @@ public enum V1ClusterPolicySpecRulesValidateFailureActionEnum
 }
 
 /// <summary>ValidationFailureAction defines the policy validation failure action</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesValidateFailureActionOverridesActionEnum>))]
 public enum V1ClusterPolicySpecRulesValidateFailureActionOverridesActionEnum
 {
@@ -3678,7 +3678,7 @@ public enum V1ClusterPolicySpecRulesValidateFailureActionOverridesActionEnum
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateFailureActionOverridesNamespaceSelectorMatchExpressions
 {
@@ -3708,7 +3708,7 @@ public partial class V1ClusterPolicySpecRulesValidateFailureActionOverridesNames
 /// matchExpressions are ANDed. An empty label selector matches all objects. A null
 /// label selector matches no objects.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateFailureActionOverridesNamespaceSelector
 {
@@ -3725,7 +3725,7 @@ public partial class V1ClusterPolicySpecRulesValidateFailureActionOverridesNames
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateFailureActionOverrides
 {
@@ -3746,7 +3746,7 @@ public partial class V1ClusterPolicySpecRulesValidateFailureActionOverrides
 }
 
 /// <summary>RequestData contains the HTTP POST data</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateForeachContextApiCallData
 {
@@ -3760,7 +3760,7 @@ public partial class V1ClusterPolicySpecRulesValidateForeachContextApiCallData
 }
 
 /// <summary>Method is the HTTP request type (GET or POST). Defaults to GET.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesValidateForeachContextApiCallMethodEnum>))]
 public enum V1ClusterPolicySpecRulesValidateForeachContextApiCallMethodEnum
 {
@@ -3770,7 +3770,7 @@ public enum V1ClusterPolicySpecRulesValidateForeachContextApiCallMethodEnum
     POST
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateForeachContextApiCallServiceHeaders
 {
@@ -3788,7 +3788,7 @@ public partial class V1ClusterPolicySpecRulesValidateForeachContextApiCallServic
 /// This is used for non-Kubernetes API server calls.
 /// It&apos;s mutually exclusive with the URLPath field.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateForeachContextApiCallService
 {
@@ -3815,7 +3815,7 @@ public partial class V1ClusterPolicySpecRulesValidateForeachContextApiCallServic
 /// APICall is an HTTP request to the Kubernetes API server, or other JSON web service.
 /// The data returned is stored in the context with the name for the context entry.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateForeachContextApiCall
 {
@@ -3868,7 +3868,7 @@ public partial class V1ClusterPolicySpecRulesValidateForeachContextApiCall
 }
 
 /// <summary>ConfigMap is the ConfigMap reference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateForeachContextConfigMap
 {
@@ -3882,7 +3882,7 @@ public partial class V1ClusterPolicySpecRulesValidateForeachContextConfigMap
 }
 
 /// <summary>GlobalContextEntryReference is a reference to a cached global context entry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateForeachContextGlobalReference
 {
@@ -3902,7 +3902,7 @@ public partial class V1ClusterPolicySpecRulesValidateForeachContextGlobalReferen
 }
 
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesValidateForeachContextImageRegistryImageRegistryCredentialsProvidersEnum>))]
 public enum V1ClusterPolicySpecRulesValidateForeachContextImageRegistryImageRegistryCredentialsProvidersEnum
 {
@@ -3919,7 +3919,7 @@ public enum V1ClusterPolicySpecRulesValidateForeachContextImageRegistryImageRegi
 }
 
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateForeachContextImageRegistryImageRegistryCredentials
 {
@@ -3947,7 +3947,7 @@ public partial class V1ClusterPolicySpecRulesValidateForeachContextImageRegistry
 /// ImageRegistry defines requests to an OCI/Docker V2 registry to fetch image
 /// details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateForeachContextImageRegistry
 {
@@ -3972,7 +3972,7 @@ public partial class V1ClusterPolicySpecRulesValidateForeachContextImageRegistry
 }
 
 /// <summary>Variable defines an arbitrary JMESPath context variable that can be defined inline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateForeachContextVariable
 {
@@ -3999,7 +3999,7 @@ public partial class V1ClusterPolicySpecRulesValidateForeachContextVariable
 /// ContextEntry adds variables and data sources to a rule Context. Either a
 /// ConfigMap reference or a APILookup must be provided.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateForeachContext
 {
@@ -4035,7 +4035,7 @@ public partial class V1ClusterPolicySpecRulesValidateForeachContext
 }
 
 /// <summary>Deny defines conditions used to pass or fail a validation rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateForeachDeny
 {
@@ -4050,7 +4050,7 @@ public partial class V1ClusterPolicySpecRulesValidateForeachDeny
 }
 
 /// <summary>ForEachValidation applies validate rules to a list of sub-elements by creating a context for each entry in the list and looping over it to apply the specified logic.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateForeach
 {
@@ -4105,7 +4105,7 @@ public partial class V1ClusterPolicySpecRulesValidateForeach
 /// CTLog (certificate timestamp log) provides a configuration for validation of Signed Certificate
 /// Timestamps (SCTs). If the value is unset, the default behavior by Cosign is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateManifestsAttestorsEntriesCertificatesCtlog
 {
@@ -4133,7 +4133,7 @@ public partial class V1ClusterPolicySpecRulesValidateManifestsAttestorsEntriesCe
 /// Rekor provides configuration for the Rekor transparency log service. If an empty object
 /// is provided the public instance of Rekor (https://rekor.sigstore.dev) is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateManifestsAttestorsEntriesCertificatesRekor
 {
@@ -4154,7 +4154,7 @@ public partial class V1ClusterPolicySpecRulesValidateManifestsAttestorsEntriesCe
 }
 
 /// <summary>Certificates specifies one or more certificates.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateManifestsAttestorsEntriesCertificates
 {
@@ -4185,7 +4185,7 @@ public partial class V1ClusterPolicySpecRulesValidateManifestsAttestorsEntriesCe
 /// CTLog (certificate timestamp log) provides a configuration for validation of Signed Certificate
 /// Timestamps (SCTs). If the value is unset, the default behavior by Cosign is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateManifestsAttestorsEntriesKeylessCtlog
 {
@@ -4213,7 +4213,7 @@ public partial class V1ClusterPolicySpecRulesValidateManifestsAttestorsEntriesKe
 /// Rekor provides configuration for the Rekor transparency log service. If an empty object
 /// is provided the public instance of Rekor (https://rekor.sigstore.dev) is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateManifestsAttestorsEntriesKeylessRekor
 {
@@ -4237,7 +4237,7 @@ public partial class V1ClusterPolicySpecRulesValidateManifestsAttestorsEntriesKe
 /// Keyless is a set of attribute used to verify a Sigstore keyless attestor.
 /// See https://github.com/sigstore/cosign/blob/main/KEYLESS.md.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateManifestsAttestorsEntriesKeyless
 {
@@ -4287,7 +4287,7 @@ public partial class V1ClusterPolicySpecRulesValidateManifestsAttestorsEntriesKe
 /// CTLog (certificate timestamp log) provides a configuration for validation of Signed Certificate
 /// Timestamps (SCTs). If the value is unset, the default behavior by Cosign is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateManifestsAttestorsEntriesKeysCtlog
 {
@@ -4315,7 +4315,7 @@ public partial class V1ClusterPolicySpecRulesValidateManifestsAttestorsEntriesKe
 /// Rekor provides configuration for the Rekor transparency log service. If an empty object
 /// is provided the public instance of Rekor (https://rekor.sigstore.dev) is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateManifestsAttestorsEntriesKeysRekor
 {
@@ -4336,7 +4336,7 @@ public partial class V1ClusterPolicySpecRulesValidateManifestsAttestorsEntriesKe
 }
 
 /// <summary>Reference to a Secret resource that contains a public key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateManifestsAttestorsEntriesKeysSecret
 {
@@ -4350,7 +4350,7 @@ public partial class V1ClusterPolicySpecRulesValidateManifestsAttestorsEntriesKe
 }
 
 /// <summary>Keys specifies one or more public keys.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateManifestsAttestorsEntriesKeys
 {
@@ -4397,7 +4397,7 @@ public partial class V1ClusterPolicySpecRulesValidateManifestsAttestorsEntriesKe
     public string? SignatureAlgorithm { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateManifestsAttestorsEntries
 {
@@ -4440,7 +4440,7 @@ public partial class V1ClusterPolicySpecRulesValidateManifestsAttestorsEntries
     public string? SignatureAlgorithm { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateManifestsAttestors
 {
@@ -4461,7 +4461,7 @@ public partial class V1ClusterPolicySpecRulesValidateManifestsAttestors
 }
 
 /// <summary>DryRun configuration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateManifestsDryRun
 {
@@ -4472,7 +4472,7 @@ public partial class V1ClusterPolicySpecRulesValidateManifestsDryRun
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateManifestsIgnoreFieldsObjects
 {
@@ -4492,7 +4492,7 @@ public partial class V1ClusterPolicySpecRulesValidateManifestsIgnoreFieldsObject
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateManifestsIgnoreFields
 {
@@ -4504,7 +4504,7 @@ public partial class V1ClusterPolicySpecRulesValidateManifestsIgnoreFields
 }
 
 /// <summary>Manifest specifies conditions for manifest verification</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidateManifests
 {
@@ -4536,7 +4536,7 @@ public partial class V1ClusterPolicySpecRulesValidateManifests
 /// ControlName specifies the name of the Pod Security Standard control.
 /// See: https://kubernetes.io/docs/concepts/security/pod-security-standards/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesValidatePodSecurityExcludeControlNameEnum>))]
 public enum V1ClusterPolicySpecRulesValidatePodSecurityExcludeControlNameEnum
 {
@@ -4573,7 +4573,7 @@ public enum V1ClusterPolicySpecRulesValidatePodSecurityExcludeControlNameEnum
 }
 
 /// <summary>PodSecurityStandard specifies the Pod Security Standard controls to be excluded.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidatePodSecurityExclude
 {
@@ -4609,7 +4609,7 @@ public partial class V1ClusterPolicySpecRulesValidatePodSecurityExclude
 /// Level defines the Pod Security Standard level to be applied to workloads.
 /// Allowed values are privileged, baseline, and restricted.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesValidatePodSecurityLevelEnum>))]
 public enum V1ClusterPolicySpecRulesValidatePodSecurityLevelEnum
 {
@@ -4625,7 +4625,7 @@ public enum V1ClusterPolicySpecRulesValidatePodSecurityLevelEnum
 /// Version defines the Pod Security Standard versions that Kubernetes supports.
 /// Allowed values are v1.19, v1.20, v1.21, v1.22, v1.23, v1.24, v1.25, v1.26, v1.27, v1.28, v1.29, v1.30, v1.31, v1.32, latest. Defaults to latest.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesValidatePodSecurityVersionEnum>))]
 public enum V1ClusterPolicySpecRulesValidatePodSecurityVersionEnum
 {
@@ -4665,7 +4665,7 @@ public enum V1ClusterPolicySpecRulesValidatePodSecurityVersionEnum
 /// PodSecurity applies exemptions for Kubernetes Pod Security admission
 /// by specifying exclusions for Pod Security Standards controls.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidatePodSecurity
 {
@@ -4689,7 +4689,7 @@ public partial class V1ClusterPolicySpecRulesValidatePodSecurity
 }
 
 /// <summary>Validation is used to validate matching resources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesValidate
 {
@@ -4760,7 +4760,7 @@ public partial class V1ClusterPolicySpecRulesValidate
 /// CTLog (certificate timestamp log) provides a configuration for validation of Signed Certificate
 /// Timestamps (SCTs). If the value is unset, the default behavior by Cosign is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsAttestorsEntriesCertificatesCtlog
 {
@@ -4788,7 +4788,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsAttestorsEn
 /// Rekor provides configuration for the Rekor transparency log service. If an empty object
 /// is provided the public instance of Rekor (https://rekor.sigstore.dev) is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsAttestorsEntriesCertificatesRekor
 {
@@ -4809,7 +4809,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsAttestorsEn
 }
 
 /// <summary>Certificates specifies one or more certificates.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsAttestorsEntriesCertificates
 {
@@ -4840,7 +4840,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsAttestorsEn
 /// CTLog (certificate timestamp log) provides a configuration for validation of Signed Certificate
 /// Timestamps (SCTs). If the value is unset, the default behavior by Cosign is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsAttestorsEntriesKeylessCtlog
 {
@@ -4868,7 +4868,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsAttestorsEn
 /// Rekor provides configuration for the Rekor transparency log service. If an empty object
 /// is provided the public instance of Rekor (https://rekor.sigstore.dev) is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsAttestorsEntriesKeylessRekor
 {
@@ -4892,7 +4892,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsAttestorsEn
 /// Keyless is a set of attribute used to verify a Sigstore keyless attestor.
 /// See https://github.com/sigstore/cosign/blob/main/KEYLESS.md.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsAttestorsEntriesKeyless
 {
@@ -4942,7 +4942,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsAttestorsEn
 /// CTLog (certificate timestamp log) provides a configuration for validation of Signed Certificate
 /// Timestamps (SCTs). If the value is unset, the default behavior by Cosign is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsAttestorsEntriesKeysCtlog
 {
@@ -4970,7 +4970,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsAttestorsEn
 /// Rekor provides configuration for the Rekor transparency log service. If an empty object
 /// is provided the public instance of Rekor (https://rekor.sigstore.dev) is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsAttestorsEntriesKeysRekor
 {
@@ -4991,7 +4991,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsAttestorsEn
 }
 
 /// <summary>Reference to a Secret resource that contains a public key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsAttestorsEntriesKeysSecret
 {
@@ -5005,7 +5005,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsAttestorsEn
 }
 
 /// <summary>Keys specifies one or more public keys.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsAttestorsEntriesKeys
 {
@@ -5052,7 +5052,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsAttestorsEn
     public string? SignatureAlgorithm { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsAttestorsEntries
 {
@@ -5095,7 +5095,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsAttestorsEn
     public string? SignatureAlgorithm { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsAttestors
 {
@@ -5121,7 +5121,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsAttestors
 /// GreaterThan, LessThanOrEquals, LessThan, DurationGreaterThanOrEquals, DurationGreaterThan,
 /// DurationLessThanOrEquals, DurationLessThan
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesVerifyImagesAttestationsConditionsAllOperatorEnum>))]
 public enum V1ClusterPolicySpecRulesVerifyImagesAttestationsConditionsAllOperatorEnum
 {
@@ -5160,7 +5160,7 @@ public enum V1ClusterPolicySpecRulesVerifyImagesAttestationsConditionsAllOperato
 }
 
 /// <summary>Condition defines variable-based conditional criteria for rule execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsConditionsAll
 {
@@ -5195,7 +5195,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsConditionsA
 /// GreaterThan, LessThanOrEquals, LessThan, DurationGreaterThanOrEquals, DurationGreaterThan,
 /// DurationLessThanOrEquals, DurationLessThan
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesVerifyImagesAttestationsConditionsAnyOperatorEnum>))]
 public enum V1ClusterPolicySpecRulesVerifyImagesAttestationsConditionsAnyOperatorEnum
 {
@@ -5234,7 +5234,7 @@ public enum V1ClusterPolicySpecRulesVerifyImagesAttestationsConditionsAnyOperato
 }
 
 /// <summary>Condition defines variable-based conditional criteria for rule execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsConditionsAny
 {
@@ -5268,7 +5268,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsConditionsA
 /// AnyConditions get fulfilled when at least one of its sub-conditions passes.
 /// AllConditions get fulfilled only when all of its sub-conditions pass.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsConditions
 {
@@ -5296,7 +5296,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestationsConditions
 /// See https://github.com/in-toto/attestation. Kyverno fetches signed attestations from the
 /// OCI registry and decodes them into a list of Statements.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestations
 {
@@ -5328,7 +5328,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestations
 /// CTLog (certificate timestamp log) provides a configuration for validation of Signed Certificate
 /// Timestamps (SCTs). If the value is unset, the default behavior by Cosign is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestorsEntriesCertificatesCtlog
 {
@@ -5356,7 +5356,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestorsEntriesCertifi
 /// Rekor provides configuration for the Rekor transparency log service. If an empty object
 /// is provided the public instance of Rekor (https://rekor.sigstore.dev) is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestorsEntriesCertificatesRekor
 {
@@ -5377,7 +5377,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestorsEntriesCertifi
 }
 
 /// <summary>Certificates specifies one or more certificates.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestorsEntriesCertificates
 {
@@ -5408,7 +5408,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestorsEntriesCertifi
 /// CTLog (certificate timestamp log) provides a configuration for validation of Signed Certificate
 /// Timestamps (SCTs). If the value is unset, the default behavior by Cosign is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestorsEntriesKeylessCtlog
 {
@@ -5436,7 +5436,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestorsEntriesKeyless
 /// Rekor provides configuration for the Rekor transparency log service. If an empty object
 /// is provided the public instance of Rekor (https://rekor.sigstore.dev) is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestorsEntriesKeylessRekor
 {
@@ -5460,7 +5460,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestorsEntriesKeyless
 /// Keyless is a set of attribute used to verify a Sigstore keyless attestor.
 /// See https://github.com/sigstore/cosign/blob/main/KEYLESS.md.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestorsEntriesKeyless
 {
@@ -5510,7 +5510,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestorsEntriesKeyless
 /// CTLog (certificate timestamp log) provides a configuration for validation of Signed Certificate
 /// Timestamps (SCTs). If the value is unset, the default behavior by Cosign is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestorsEntriesKeysCtlog
 {
@@ -5538,7 +5538,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestorsEntriesKeysCtl
 /// Rekor provides configuration for the Rekor transparency log service. If an empty object
 /// is provided the public instance of Rekor (https://rekor.sigstore.dev) is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestorsEntriesKeysRekor
 {
@@ -5559,7 +5559,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestorsEntriesKeysRek
 }
 
 /// <summary>Reference to a Secret resource that contains a public key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestorsEntriesKeysSecret
 {
@@ -5573,7 +5573,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestorsEntriesKeysSec
 }
 
 /// <summary>Keys specifies one or more public keys.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestorsEntriesKeys
 {
@@ -5620,7 +5620,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestorsEntriesKeys
     public string? SignatureAlgorithm { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestorsEntries
 {
@@ -5663,7 +5663,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestorsEntries
     public string? SignatureAlgorithm { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesAttestors
 {
@@ -5684,7 +5684,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesAttestors
 }
 
 /// <summary>Allowed values are Audit or Enforce.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesVerifyImagesFailureActionEnum>))]
 public enum V1ClusterPolicySpecRulesVerifyImagesFailureActionEnum
 {
@@ -5695,7 +5695,7 @@ public enum V1ClusterPolicySpecRulesVerifyImagesFailureActionEnum
 }
 
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesVerifyImagesImageRegistryCredentialsProvidersEnum>))]
 public enum V1ClusterPolicySpecRulesVerifyImagesImageRegistryCredentialsProvidersEnum
 {
@@ -5712,7 +5712,7 @@ public enum V1ClusterPolicySpecRulesVerifyImagesImageRegistryCredentialsProvider
 }
 
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesImageRegistryCredentials
 {
@@ -5740,7 +5740,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesImageRegistryCredential
 /// Type specifies the method of signature validation. The allowed options
 /// are Cosign, Sigstore Bundle and Notary. By default Cosign is used if a type is not specified.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecRulesVerifyImagesTypeEnum>))]
 public enum V1ClusterPolicySpecRulesVerifyImagesTypeEnum
 {
@@ -5753,7 +5753,7 @@ public enum V1ClusterPolicySpecRulesVerifyImagesTypeEnum
 }
 
 /// <summary>Deny defines conditions used to pass or fail a validation rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesValidateDeny
 {
@@ -5771,7 +5771,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesValidateDeny
 /// Validation checks conditions across multiple image
 /// verification attestations or context entries
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImagesValidate
 {
@@ -5789,7 +5789,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImagesValidate
 /// are signed with the supplied public key. Once the image is verified it is
 /// mutated to include the SHA digest retrieved during the registration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRulesVerifyImages
 {
@@ -5913,7 +5913,7 @@ public partial class V1ClusterPolicySpecRulesVerifyImages
 /// Each rules contains a match declaration to select resources, and an optional exclude
 /// declaration to specify which resources to exclude.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecRules
 {
@@ -5996,7 +5996,7 @@ public partial class V1ClusterPolicySpecRules
 }
 
 /// <summary>Deprecated, use validationFailureAction under the validate rule instead.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecValidationFailureActionEnum>))]
 public enum V1ClusterPolicySpecValidationFailureActionEnum
 {
@@ -6011,7 +6011,7 @@ public enum V1ClusterPolicySpecValidationFailureActionEnum
 }
 
 /// <summary>ValidationFailureAction defines the policy validation failure action</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecValidationFailureActionOverridesActionEnum>))]
 public enum V1ClusterPolicySpecValidationFailureActionOverridesActionEnum
 {
@@ -6029,7 +6029,7 @@ public enum V1ClusterPolicySpecValidationFailureActionOverridesActionEnum
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecValidationFailureActionOverridesNamespaceSelectorMatchExpressions
 {
@@ -6059,7 +6059,7 @@ public partial class V1ClusterPolicySpecValidationFailureActionOverridesNamespac
 /// matchExpressions are ANDed. An empty label selector matches all objects. A null
 /// label selector matches no objects.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecValidationFailureActionOverridesNamespaceSelector
 {
@@ -6076,7 +6076,7 @@ public partial class V1ClusterPolicySpecValidationFailureActionOverridesNamespac
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecValidationFailureActionOverrides
 {
@@ -6102,7 +6102,7 @@ public partial class V1ClusterPolicySpecValidationFailureActionOverrides
 /// This field should not be accessed directly, instead `GetFailurePolicy()` should be used.
 /// Allowed values are Ignore or Fail. Defaults to Fail.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicySpecWebhookConfigurationFailurePolicyEnum>))]
 public enum V1ClusterPolicySpecWebhookConfigurationFailurePolicyEnum
 {
@@ -6113,7 +6113,7 @@ public enum V1ClusterPolicySpecWebhookConfigurationFailurePolicyEnum
 }
 
 /// <summary>MatchCondition represents a condition which must by fulfilled for a request to be sent to a webhook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecWebhookConfigurationMatchConditions
 {
@@ -6151,7 +6151,7 @@ public partial class V1ClusterPolicySpecWebhookConfigurationMatchConditions
 }
 
 /// <summary>WebhookConfiguration specifies the custom configuration for Kubernetes admission webhookconfiguration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpecWebhookConfiguration
 {
@@ -6181,7 +6181,7 @@ public partial class V1ClusterPolicySpecWebhookConfiguration
 }
 
 /// <summary>Spec declares policy behaviors.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicySpec
 {
@@ -6269,7 +6269,7 @@ public partial class V1ClusterPolicySpec
 }
 
 /// <summary>MatchCondition represents a condition which must by fulfilled for a request to be sent to a webhook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesCelPreconditions
 {
@@ -6307,7 +6307,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesCelPreconditions
 }
 
 /// <summary>RequestData contains the HTTP POST data</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesContextApiCallData
 {
@@ -6321,7 +6321,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesContextApiCallData
 }
 
 /// <summary>Method is the HTTP request type (GET or POST). Defaults to GET.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesContextApiCallMethodEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesContextApiCallMethodEnum
 {
@@ -6331,7 +6331,7 @@ public enum V1ClusterPolicyStatusAutogenRulesContextApiCallMethodEnum
     POST
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesContextApiCallServiceHeaders
 {
@@ -6349,7 +6349,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesContextApiCallServiceHeade
 /// This is used for non-Kubernetes API server calls.
 /// It&apos;s mutually exclusive with the URLPath field.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesContextApiCallService
 {
@@ -6376,7 +6376,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesContextApiCallService
 /// APICall is an HTTP request to the Kubernetes API server, or other JSON web service.
 /// The data returned is stored in the context with the name for the context entry.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesContextApiCall
 {
@@ -6429,7 +6429,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesContextApiCall
 }
 
 /// <summary>ConfigMap is the ConfigMap reference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesContextConfigMap
 {
@@ -6443,7 +6443,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesContextConfigMap
 }
 
 /// <summary>GlobalContextEntryReference is a reference to a cached global context entry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesContextGlobalReference
 {
@@ -6463,7 +6463,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesContextGlobalReference
 }
 
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesContextImageRegistryImageRegistryCredentialsProvidersEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesContextImageRegistryImageRegistryCredentialsProvidersEnum
 {
@@ -6480,7 +6480,7 @@ public enum V1ClusterPolicyStatusAutogenRulesContextImageRegistryImageRegistryCr
 }
 
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesContextImageRegistryImageRegistryCredentials
 {
@@ -6508,7 +6508,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesContextImageRegistryImageR
 /// ImageRegistry defines requests to an OCI/Docker V2 registry to fetch image
 /// details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesContextImageRegistry
 {
@@ -6533,7 +6533,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesContextImageRegistry
 }
 
 /// <summary>Variable defines an arbitrary JMESPath context variable that can be defined inline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesContextVariable
 {
@@ -6560,7 +6560,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesContextVariable
 /// ContextEntry adds variables and data sources to a rule Context. Either a
 /// ConfigMap reference or a APILookup must be provided.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesContext
 {
@@ -6599,7 +6599,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesContext
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesExcludeAllResourcesNamespaceSelectorMatchExpressions
 {
@@ -6631,7 +6631,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesExcludeAllResourcesNamespa
 /// [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that using [&quot;*&quot; : &quot;*&quot;] matches any key and value but
 /// does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesExcludeAllResourcesNamespaceSelector
 {
@@ -6649,7 +6649,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesExcludeAllResourcesNamespa
 }
 
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesExcludeAllResourcesOperationsEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesExcludeAllResourcesOperationsEnum
 {
@@ -6667,7 +6667,7 @@ public enum V1ClusterPolicyStatusAutogenRulesExcludeAllResourcesOperationsEnum
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesExcludeAllResourcesSelectorMatchExpressions
 {
@@ -6698,7 +6698,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesExcludeAllResourcesSelecto
 /// Wildcards allows writing label selectors like [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that
 /// using [&quot;*&quot; : &quot;*&quot;] matches any key and value but does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesExcludeAllResourcesSelector
 {
@@ -6716,7 +6716,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesExcludeAllResourcesSelecto
 }
 
 /// <summary>ResourceDescription contains information about the resource being created or modified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesExcludeAllResources
 {
@@ -6782,7 +6782,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesExcludeAllResources
 /// Subject contains a reference to the object or user identities a role binding applies to.  This can either hold a direct API object reference,
 /// or a value for non-objects such as user and group names.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesExcludeAllSubjects
 {
@@ -6814,7 +6814,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesExcludeAllSubjects
 }
 
 /// <summary>ResourceFilter allow users to &quot;AND&quot; or &quot;OR&quot; between resources</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesExcludeAll
 {
@@ -6839,7 +6839,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesExcludeAll
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesExcludeAnyResourcesNamespaceSelectorMatchExpressions
 {
@@ -6871,7 +6871,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesExcludeAnyResourcesNamespa
 /// [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that using [&quot;*&quot; : &quot;*&quot;] matches any key and value but
 /// does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesExcludeAnyResourcesNamespaceSelector
 {
@@ -6889,7 +6889,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesExcludeAnyResourcesNamespa
 }
 
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesExcludeAnyResourcesOperationsEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesExcludeAnyResourcesOperationsEnum
 {
@@ -6907,7 +6907,7 @@ public enum V1ClusterPolicyStatusAutogenRulesExcludeAnyResourcesOperationsEnum
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesExcludeAnyResourcesSelectorMatchExpressions
 {
@@ -6938,7 +6938,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesExcludeAnyResourcesSelecto
 /// Wildcards allows writing label selectors like [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that
 /// using [&quot;*&quot; : &quot;*&quot;] matches any key and value but does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesExcludeAnyResourcesSelector
 {
@@ -6956,7 +6956,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesExcludeAnyResourcesSelecto
 }
 
 /// <summary>ResourceDescription contains information about the resource being created or modified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesExcludeAnyResources
 {
@@ -7022,7 +7022,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesExcludeAnyResources
 /// Subject contains a reference to the object or user identities a role binding applies to.  This can either hold a direct API object reference,
 /// or a value for non-objects such as user and group names.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesExcludeAnySubjects
 {
@@ -7054,7 +7054,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesExcludeAnySubjects
 }
 
 /// <summary>ResourceFilter allow users to &quot;AND&quot; or &quot;OR&quot; between resources</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesExcludeAny
 {
@@ -7079,7 +7079,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesExcludeAny
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesExcludeResourcesNamespaceSelectorMatchExpressions
 {
@@ -7111,7 +7111,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesExcludeResourcesNamespaceS
 /// [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that using [&quot;*&quot; : &quot;*&quot;] matches any key and value but
 /// does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesExcludeResourcesNamespaceSelector
 {
@@ -7129,7 +7129,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesExcludeResourcesNamespaceS
 }
 
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesExcludeResourcesOperationsEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesExcludeResourcesOperationsEnum
 {
@@ -7147,7 +7147,7 @@ public enum V1ClusterPolicyStatusAutogenRulesExcludeResourcesOperationsEnum
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesExcludeResourcesSelectorMatchExpressions
 {
@@ -7178,7 +7178,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesExcludeResourcesSelectorMa
 /// Wildcards allows writing label selectors like [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that
 /// using [&quot;*&quot; : &quot;*&quot;] matches any key and value but does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesExcludeResourcesSelector
 {
@@ -7201,7 +7201,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesExcludeResourcesSelector
 /// Specifying ResourceDescription directly under match is being deprecated.
 /// Please specify under &quot;any&quot; or &quot;all&quot; instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesExcludeResources
 {
@@ -7267,7 +7267,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesExcludeResources
 /// Subject contains a reference to the object or user identities a role binding applies to.  This can either hold a direct API object reference,
 /// or a value for non-objects such as user and group names.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesExcludeSubjects
 {
@@ -7303,7 +7303,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesExcludeSubjects
 /// criteria can include resource information (e.g. kind, name, namespace, labels)
 /// and admission review request information like the name or role.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesExclude
 {
@@ -7342,7 +7342,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesExclude
 /// At most one of Data or Clone can be specified. If neither are provided, the generated
 /// resource will be created with default data only.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesGenerateClone
 {
@@ -7359,7 +7359,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesGenerateClone
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesGenerateCloneListSelectorMatchExpressions
 {
@@ -7388,7 +7388,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesGenerateCloneListSelectorM
 /// Selector is a label selector. Label keys and values in `matchLabels`.
 /// wildcard characters are not supported.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesGenerateCloneListSelector
 {
@@ -7406,7 +7406,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesGenerateCloneListSelector
 }
 
 /// <summary>CloneList specifies the list of source resource used to populate each generated resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesGenerateCloneList
 {
@@ -7431,7 +7431,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesGenerateCloneList
 /// At most one of Data or Clone can be specified. If neither are provided, the generated
 /// resource will be created with default data only.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachClone
 {
@@ -7448,7 +7448,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachClone
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachCloneListSelectorMatchExpressions
 {
@@ -7477,7 +7477,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachCloneListSe
 /// Selector is a label selector. Label keys and values in `matchLabels`.
 /// wildcard characters are not supported.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachCloneListSelector
 {
@@ -7495,7 +7495,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachCloneListSe
 }
 
 /// <summary>CloneList specifies the list of source resource used to populate each generated resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachCloneList
 {
@@ -7516,7 +7516,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachCloneList
 }
 
 /// <summary>RequestData contains the HTTP POST data</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachContextApiCallData
 {
@@ -7530,7 +7530,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachContextApiC
 }
 
 /// <summary>Method is the HTTP request type (GET or POST). Defaults to GET.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesGenerateForeachContextApiCallMethodEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesGenerateForeachContextApiCallMethodEnum
 {
@@ -7540,7 +7540,7 @@ public enum V1ClusterPolicyStatusAutogenRulesGenerateForeachContextApiCallMethod
     POST
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachContextApiCallServiceHeaders
 {
@@ -7558,7 +7558,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachContextApiC
 /// This is used for non-Kubernetes API server calls.
 /// It&apos;s mutually exclusive with the URLPath field.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachContextApiCallService
 {
@@ -7585,7 +7585,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachContextApiC
 /// APICall is an HTTP request to the Kubernetes API server, or other JSON web service.
 /// The data returned is stored in the context with the name for the context entry.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachContextApiCall
 {
@@ -7638,7 +7638,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachContextApiC
 }
 
 /// <summary>ConfigMap is the ConfigMap reference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachContextConfigMap
 {
@@ -7652,7 +7652,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachContextConf
 }
 
 /// <summary>GlobalContextEntryReference is a reference to a cached global context entry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachContextGlobalReference
 {
@@ -7672,7 +7672,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachContextGlob
 }
 
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesGenerateForeachContextImageRegistryImageRegistryCredentialsProvidersEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesGenerateForeachContextImageRegistryImageRegistryCredentialsProvidersEnum
 {
@@ -7689,7 +7689,7 @@ public enum V1ClusterPolicyStatusAutogenRulesGenerateForeachContextImageRegistry
 }
 
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachContextImageRegistryImageRegistryCredentials
 {
@@ -7717,7 +7717,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachContextImag
 /// ImageRegistry defines requests to an OCI/Docker V2 registry to fetch image
 /// details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachContextImageRegistry
 {
@@ -7742,7 +7742,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachContextImag
 }
 
 /// <summary>Variable defines an arbitrary JMESPath context variable that can be defined inline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachContextVariable
 {
@@ -7769,7 +7769,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachContextVari
 /// ContextEntry adds variables and data sources to a rule Context. Either a
 /// ConfigMap reference or a APILookup must be provided.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachContext
 {
@@ -7804,7 +7804,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeachContext
     public V1ClusterPolicyStatusAutogenRulesGenerateForeachContextVariable? Variable { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeach
 {
@@ -7869,7 +7869,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesGenerateForeach
 }
 
 /// <summary>Generation is used to create new resources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesGenerate
 {
@@ -7943,7 +7943,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesGenerate
     public string? Uid { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesImageExtractors
 {
@@ -7990,7 +7990,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesImageExtractors
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMatchAllResourcesNamespaceSelectorMatchExpressions
 {
@@ -8022,7 +8022,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMatchAllResourcesNamespace
 /// [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that using [&quot;*&quot; : &quot;*&quot;] matches any key and value but
 /// does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMatchAllResourcesNamespaceSelector
 {
@@ -8040,7 +8040,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMatchAllResourcesNamespace
 }
 
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesMatchAllResourcesOperationsEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesMatchAllResourcesOperationsEnum
 {
@@ -8058,7 +8058,7 @@ public enum V1ClusterPolicyStatusAutogenRulesMatchAllResourcesOperationsEnum
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMatchAllResourcesSelectorMatchExpressions
 {
@@ -8089,7 +8089,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMatchAllResourcesSelectorM
 /// Wildcards allows writing label selectors like [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that
 /// using [&quot;*&quot; : &quot;*&quot;] matches any key and value but does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMatchAllResourcesSelector
 {
@@ -8107,7 +8107,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMatchAllResourcesSelector
 }
 
 /// <summary>ResourceDescription contains information about the resource being created or modified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMatchAllResources
 {
@@ -8173,7 +8173,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMatchAllResources
 /// Subject contains a reference to the object or user identities a role binding applies to.  This can either hold a direct API object reference,
 /// or a value for non-objects such as user and group names.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMatchAllSubjects
 {
@@ -8205,7 +8205,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMatchAllSubjects
 }
 
 /// <summary>ResourceFilter allow users to &quot;AND&quot; or &quot;OR&quot; between resources</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMatchAll
 {
@@ -8230,7 +8230,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMatchAll
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMatchAnyResourcesNamespaceSelectorMatchExpressions
 {
@@ -8262,7 +8262,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMatchAnyResourcesNamespace
 /// [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that using [&quot;*&quot; : &quot;*&quot;] matches any key and value but
 /// does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMatchAnyResourcesNamespaceSelector
 {
@@ -8280,7 +8280,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMatchAnyResourcesNamespace
 }
 
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesMatchAnyResourcesOperationsEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesMatchAnyResourcesOperationsEnum
 {
@@ -8298,7 +8298,7 @@ public enum V1ClusterPolicyStatusAutogenRulesMatchAnyResourcesOperationsEnum
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMatchAnyResourcesSelectorMatchExpressions
 {
@@ -8329,7 +8329,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMatchAnyResourcesSelectorM
 /// Wildcards allows writing label selectors like [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that
 /// using [&quot;*&quot; : &quot;*&quot;] matches any key and value but does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMatchAnyResourcesSelector
 {
@@ -8347,7 +8347,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMatchAnyResourcesSelector
 }
 
 /// <summary>ResourceDescription contains information about the resource being created or modified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMatchAnyResources
 {
@@ -8413,7 +8413,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMatchAnyResources
 /// Subject contains a reference to the object or user identities a role binding applies to.  This can either hold a direct API object reference,
 /// or a value for non-objects such as user and group names.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMatchAnySubjects
 {
@@ -8445,7 +8445,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMatchAnySubjects
 }
 
 /// <summary>ResourceFilter allow users to &quot;AND&quot; or &quot;OR&quot; between resources</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMatchAny
 {
@@ -8470,7 +8470,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMatchAny
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMatchResourcesNamespaceSelectorMatchExpressions
 {
@@ -8502,7 +8502,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMatchResourcesNamespaceSel
 /// [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that using [&quot;*&quot; : &quot;*&quot;] matches any key and value but
 /// does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMatchResourcesNamespaceSelector
 {
@@ -8520,7 +8520,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMatchResourcesNamespaceSel
 }
 
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesMatchResourcesOperationsEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesMatchResourcesOperationsEnum
 {
@@ -8538,7 +8538,7 @@ public enum V1ClusterPolicyStatusAutogenRulesMatchResourcesOperationsEnum
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMatchResourcesSelectorMatchExpressions
 {
@@ -8569,7 +8569,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMatchResourcesSelectorMatc
 /// Wildcards allows writing label selectors like [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that
 /// using [&quot;*&quot; : &quot;*&quot;] matches any key and value but does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMatchResourcesSelector
 {
@@ -8592,7 +8592,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMatchResourcesSelector
 /// Specifying ResourceDescription directly under match is being deprecated.
 /// Please specify under &quot;any&quot; or &quot;all&quot; instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMatchResources
 {
@@ -8658,7 +8658,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMatchResources
 /// Subject contains a reference to the object or user identities a role binding applies to.  This can either hold a direct API object reference,
 /// or a value for non-objects such as user and group names.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMatchSubjects
 {
@@ -8695,7 +8695,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMatchSubjects
 /// and admission review request information like the user name or role.
 /// At least one kind is required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMatch
 {
@@ -8730,7 +8730,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMatch
 }
 
 /// <summary>RequestData contains the HTTP POST data</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutateForeachContextApiCallData
 {
@@ -8744,7 +8744,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutateForeachContextApiCal
 }
 
 /// <summary>Method is the HTTP request type (GET or POST). Defaults to GET.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesMutateForeachContextApiCallMethodEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesMutateForeachContextApiCallMethodEnum
 {
@@ -8754,7 +8754,7 @@ public enum V1ClusterPolicyStatusAutogenRulesMutateForeachContextApiCallMethodEn
     POST
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutateForeachContextApiCallServiceHeaders
 {
@@ -8772,7 +8772,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutateForeachContextApiCal
 /// This is used for non-Kubernetes API server calls.
 /// It&apos;s mutually exclusive with the URLPath field.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutateForeachContextApiCallService
 {
@@ -8799,7 +8799,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutateForeachContextApiCal
 /// APICall is an HTTP request to the Kubernetes API server, or other JSON web service.
 /// The data returned is stored in the context with the name for the context entry.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutateForeachContextApiCall
 {
@@ -8852,7 +8852,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutateForeachContextApiCal
 }
 
 /// <summary>ConfigMap is the ConfigMap reference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutateForeachContextConfigMap
 {
@@ -8866,7 +8866,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutateForeachContextConfig
 }
 
 /// <summary>GlobalContextEntryReference is a reference to a cached global context entry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutateForeachContextGlobalReference
 {
@@ -8886,7 +8886,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutateForeachContextGlobal
 }
 
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesMutateForeachContextImageRegistryImageRegistryCredentialsProvidersEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesMutateForeachContextImageRegistryImageRegistryCredentialsProvidersEnum
 {
@@ -8903,7 +8903,7 @@ public enum V1ClusterPolicyStatusAutogenRulesMutateForeachContextImageRegistryIm
 }
 
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutateForeachContextImageRegistryImageRegistryCredentials
 {
@@ -8931,7 +8931,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutateForeachContextImageR
 /// ImageRegistry defines requests to an OCI/Docker V2 registry to fetch image
 /// details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutateForeachContextImageRegistry
 {
@@ -8956,7 +8956,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutateForeachContextImageR
 }
 
 /// <summary>Variable defines an arbitrary JMESPath context variable that can be defined inline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutateForeachContextVariable
 {
@@ -8983,7 +8983,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutateForeachContextVariab
 /// ContextEntry adds variables and data sources to a rule Context. Either a
 /// ConfigMap reference or a APILookup must be provided.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutateForeachContext
 {
@@ -9022,7 +9022,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutateForeachContext
 /// Order defines the iteration order on the list.
 /// Can be Ascending to iterate from first to last element or Descending to iterate in from last to first element.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesMutateForeachOrderEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesMutateForeachOrderEnum
 {
@@ -9033,7 +9033,7 @@ public enum V1ClusterPolicyStatusAutogenRulesMutateForeachOrderEnum
 }
 
 /// <summary>ForEachMutation applies mutation rules to a list of sub-elements by creating a context for each entry in the list and looping over it to apply the specified logic.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutateForeach
 {
@@ -9084,7 +9084,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutateForeach
 }
 
 /// <summary>RequestData contains the HTTP POST data</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutateTargetsContextApiCallData
 {
@@ -9098,7 +9098,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutateTargetsContextApiCal
 }
 
 /// <summary>Method is the HTTP request type (GET or POST). Defaults to GET.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesMutateTargetsContextApiCallMethodEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesMutateTargetsContextApiCallMethodEnum
 {
@@ -9108,7 +9108,7 @@ public enum V1ClusterPolicyStatusAutogenRulesMutateTargetsContextApiCallMethodEn
     POST
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutateTargetsContextApiCallServiceHeaders
 {
@@ -9126,7 +9126,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutateTargetsContextApiCal
 /// This is used for non-Kubernetes API server calls.
 /// It&apos;s mutually exclusive with the URLPath field.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutateTargetsContextApiCallService
 {
@@ -9153,7 +9153,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutateTargetsContextApiCal
 /// APICall is an HTTP request to the Kubernetes API server, or other JSON web service.
 /// The data returned is stored in the context with the name for the context entry.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutateTargetsContextApiCall
 {
@@ -9206,7 +9206,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutateTargetsContextApiCal
 }
 
 /// <summary>ConfigMap is the ConfigMap reference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutateTargetsContextConfigMap
 {
@@ -9220,7 +9220,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutateTargetsContextConfig
 }
 
 /// <summary>GlobalContextEntryReference is a reference to a cached global context entry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutateTargetsContextGlobalReference
 {
@@ -9240,7 +9240,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutateTargetsContextGlobal
 }
 
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesMutateTargetsContextImageRegistryImageRegistryCredentialsProvidersEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesMutateTargetsContextImageRegistryImageRegistryCredentialsProvidersEnum
 {
@@ -9257,7 +9257,7 @@ public enum V1ClusterPolicyStatusAutogenRulesMutateTargetsContextImageRegistryIm
 }
 
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutateTargetsContextImageRegistryImageRegistryCredentials
 {
@@ -9285,7 +9285,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutateTargetsContextImageR
 /// ImageRegistry defines requests to an OCI/Docker V2 registry to fetch image
 /// details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutateTargetsContextImageRegistry
 {
@@ -9310,7 +9310,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutateTargetsContextImageR
 }
 
 /// <summary>Variable defines an arbitrary JMESPath context variable that can be defined inline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutateTargetsContextVariable
 {
@@ -9337,7 +9337,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutateTargetsContextVariab
 /// ContextEntry adds variables and data sources to a rule Context. Either a
 /// ConfigMap reference or a APILookup must be provided.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutateTargetsContext
 {
@@ -9376,7 +9376,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutateTargetsContext
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutateTargetsSelectorMatchExpressions
 {
@@ -9402,7 +9402,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutateTargetsSelectorMatch
 }
 
 /// <summary>Selector allows you to select target resources with their labels.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutateTargetsSelector
 {
@@ -9420,7 +9420,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutateTargetsSelector
 }
 
 /// <summary>TargetResourceSpec defines targets for mutating existing resources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutateTargets
 {
@@ -9464,7 +9464,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutateTargets
 }
 
 /// <summary>Mutation is used to modify matching resources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesMutate
 {
@@ -9497,7 +9497,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesMutate
 }
 
 /// <summary>AuditAnnotation describes how to produce an audit annotation for an API request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateCelAuditAnnotations
 {
@@ -9543,7 +9543,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateCelAuditAnnotation
 }
 
 /// <summary>Validation specifies the CEL expression which is used to apply the validation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateCelExpressions
 {
@@ -9633,7 +9633,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateCelExpressions
 }
 
 /// <summary>ParamKind is a tuple of Group Kind and Version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateCelParamKind
 {
@@ -9657,7 +9657,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateCelParamKind
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateCelParamRefSelectorMatchExpressions
 {
@@ -9692,7 +9692,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateCelParamRefSelecto
 /// One of `name` or `selector` must be set, but `name` and `selector` are
 /// mutually exclusive properties. If one is set, the other must be unset.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateCelParamRefSelector
 {
@@ -9710,7 +9710,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateCelParamRefSelecto
 }
 
 /// <summary>ParamRef references a parameter resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateCelParamRef
 {
@@ -9776,7 +9776,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateCelParamRef
 }
 
 /// <summary>Variable is the definition of a variable that is used for composition. A variable is defined as a named expression.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateCelVariables
 {
@@ -9797,7 +9797,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateCelVariables
 }
 
 /// <summary>CEL allows validation checks using the Common Expression Language (https://kubernetes.io/docs/reference/using-api/cel/).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateCel
 {
@@ -9834,7 +9834,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateCel
 }
 
 /// <summary>Deny defines conditions used to pass or fail a validation rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateDeny
 {
@@ -9854,7 +9854,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateDeny
 /// and report an error in a policy report. Optional.
 /// Allowed values are Audit or Enforce.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesValidateFailureActionEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesValidateFailureActionEnum
 {
@@ -9865,7 +9865,7 @@ public enum V1ClusterPolicyStatusAutogenRulesValidateFailureActionEnum
 }
 
 /// <summary>ValidationFailureAction defines the policy validation failure action</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesValidateFailureActionOverridesActionEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesValidateFailureActionOverridesActionEnum
 {
@@ -9883,7 +9883,7 @@ public enum V1ClusterPolicyStatusAutogenRulesValidateFailureActionOverridesActio
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateFailureActionOverridesNamespaceSelectorMatchExpressions
 {
@@ -9913,7 +9913,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateFailureActionOverr
 /// matchExpressions are ANDed. An empty label selector matches all objects. A null
 /// label selector matches no objects.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateFailureActionOverridesNamespaceSelector
 {
@@ -9930,7 +9930,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateFailureActionOverr
     public IDictionary<string, string>? MatchLabels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateFailureActionOverrides
 {
@@ -9951,7 +9951,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateFailureActionOverr
 }
 
 /// <summary>RequestData contains the HTTP POST data</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateForeachContextApiCallData
 {
@@ -9965,7 +9965,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateForeachContextApiC
 }
 
 /// <summary>Method is the HTTP request type (GET or POST). Defaults to GET.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesValidateForeachContextApiCallMethodEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesValidateForeachContextApiCallMethodEnum
 {
@@ -9975,7 +9975,7 @@ public enum V1ClusterPolicyStatusAutogenRulesValidateForeachContextApiCallMethod
     POST
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateForeachContextApiCallServiceHeaders
 {
@@ -9993,7 +9993,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateForeachContextApiC
 /// This is used for non-Kubernetes API server calls.
 /// It&apos;s mutually exclusive with the URLPath field.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateForeachContextApiCallService
 {
@@ -10020,7 +10020,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateForeachContextApiC
 /// APICall is an HTTP request to the Kubernetes API server, or other JSON web service.
 /// The data returned is stored in the context with the name for the context entry.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateForeachContextApiCall
 {
@@ -10073,7 +10073,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateForeachContextApiC
 }
 
 /// <summary>ConfigMap is the ConfigMap reference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateForeachContextConfigMap
 {
@@ -10087,7 +10087,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateForeachContextConf
 }
 
 /// <summary>GlobalContextEntryReference is a reference to a cached global context entry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateForeachContextGlobalReference
 {
@@ -10107,7 +10107,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateForeachContextGlob
 }
 
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesValidateForeachContextImageRegistryImageRegistryCredentialsProvidersEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesValidateForeachContextImageRegistryImageRegistryCredentialsProvidersEnum
 {
@@ -10124,7 +10124,7 @@ public enum V1ClusterPolicyStatusAutogenRulesValidateForeachContextImageRegistry
 }
 
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateForeachContextImageRegistryImageRegistryCredentials
 {
@@ -10152,7 +10152,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateForeachContextImag
 /// ImageRegistry defines requests to an OCI/Docker V2 registry to fetch image
 /// details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateForeachContextImageRegistry
 {
@@ -10177,7 +10177,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateForeachContextImag
 }
 
 /// <summary>Variable defines an arbitrary JMESPath context variable that can be defined inline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateForeachContextVariable
 {
@@ -10204,7 +10204,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateForeachContextVari
 /// ContextEntry adds variables and data sources to a rule Context. Either a
 /// ConfigMap reference or a APILookup must be provided.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateForeachContext
 {
@@ -10240,7 +10240,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateForeachContext
 }
 
 /// <summary>Deny defines conditions used to pass or fail a validation rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateForeachDeny
 {
@@ -10255,7 +10255,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateForeachDeny
 }
 
 /// <summary>ForEachValidation applies validate rules to a list of sub-elements by creating a context for each entry in the list and looping over it to apply the specified logic.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateForeach
 {
@@ -10310,7 +10310,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateForeach
 /// CTLog (certificate timestamp log) provides a configuration for validation of Signed Certificate
 /// Timestamps (SCTs). If the value is unset, the default behavior by Cosign is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsAttestorsEntriesCertificatesCtlog
 {
@@ -10338,7 +10338,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsAttestors
 /// Rekor provides configuration for the Rekor transparency log service. If an empty object
 /// is provided the public instance of Rekor (https://rekor.sigstore.dev) is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsAttestorsEntriesCertificatesRekor
 {
@@ -10359,7 +10359,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsAttestors
 }
 
 /// <summary>Certificates specifies one or more certificates.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsAttestorsEntriesCertificates
 {
@@ -10390,7 +10390,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsAttestors
 /// CTLog (certificate timestamp log) provides a configuration for validation of Signed Certificate
 /// Timestamps (SCTs). If the value is unset, the default behavior by Cosign is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsAttestorsEntriesKeylessCtlog
 {
@@ -10418,7 +10418,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsAttestors
 /// Rekor provides configuration for the Rekor transparency log service. If an empty object
 /// is provided the public instance of Rekor (https://rekor.sigstore.dev) is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsAttestorsEntriesKeylessRekor
 {
@@ -10442,7 +10442,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsAttestors
 /// Keyless is a set of attribute used to verify a Sigstore keyless attestor.
 /// See https://github.com/sigstore/cosign/blob/main/KEYLESS.md.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsAttestorsEntriesKeyless
 {
@@ -10492,7 +10492,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsAttestors
 /// CTLog (certificate timestamp log) provides a configuration for validation of Signed Certificate
 /// Timestamps (SCTs). If the value is unset, the default behavior by Cosign is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsAttestorsEntriesKeysCtlog
 {
@@ -10520,7 +10520,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsAttestors
 /// Rekor provides configuration for the Rekor transparency log service. If an empty object
 /// is provided the public instance of Rekor (https://rekor.sigstore.dev) is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsAttestorsEntriesKeysRekor
 {
@@ -10541,7 +10541,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsAttestors
 }
 
 /// <summary>Reference to a Secret resource that contains a public key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsAttestorsEntriesKeysSecret
 {
@@ -10555,7 +10555,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsAttestors
 }
 
 /// <summary>Keys specifies one or more public keys.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsAttestorsEntriesKeys
 {
@@ -10602,7 +10602,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsAttestors
     public string? SignatureAlgorithm { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsAttestorsEntries
 {
@@ -10645,7 +10645,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsAttestors
     public string? SignatureAlgorithm { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsAttestors
 {
@@ -10666,7 +10666,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsAttestors
 }
 
 /// <summary>DryRun configuration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsDryRun
 {
@@ -10677,7 +10677,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsDryRun
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsIgnoreFieldsObjects
 {
@@ -10697,7 +10697,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsIgnoreFie
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsIgnoreFields
 {
@@ -10709,7 +10709,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateManifestsIgnoreFie
 }
 
 /// <summary>Manifest specifies conditions for manifest verification</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidateManifests
 {
@@ -10741,7 +10741,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidateManifests
 /// ControlName specifies the name of the Pod Security Standard control.
 /// See: https://kubernetes.io/docs/concepts/security/pod-security-standards/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesValidatePodSecurityExcludeControlNameEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesValidatePodSecurityExcludeControlNameEnum
 {
@@ -10778,7 +10778,7 @@ public enum V1ClusterPolicyStatusAutogenRulesValidatePodSecurityExcludeControlNa
 }
 
 /// <summary>PodSecurityStandard specifies the Pod Security Standard controls to be excluded.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidatePodSecurityExclude
 {
@@ -10814,7 +10814,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidatePodSecurityExclude
 /// Level defines the Pod Security Standard level to be applied to workloads.
 /// Allowed values are privileged, baseline, and restricted.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesValidatePodSecurityLevelEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesValidatePodSecurityLevelEnum
 {
@@ -10830,7 +10830,7 @@ public enum V1ClusterPolicyStatusAutogenRulesValidatePodSecurityLevelEnum
 /// Version defines the Pod Security Standard versions that Kubernetes supports.
 /// Allowed values are v1.19, v1.20, v1.21, v1.22, v1.23, v1.24, v1.25, v1.26, v1.27, v1.28, v1.29, v1.30, v1.31, v1.32, latest. Defaults to latest.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesValidatePodSecurityVersionEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesValidatePodSecurityVersionEnum
 {
@@ -10870,7 +10870,7 @@ public enum V1ClusterPolicyStatusAutogenRulesValidatePodSecurityVersionEnum
 /// PodSecurity applies exemptions for Kubernetes Pod Security admission
 /// by specifying exclusions for Pod Security Standards controls.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidatePodSecurity
 {
@@ -10894,7 +10894,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidatePodSecurity
 }
 
 /// <summary>Validation is used to validate matching resources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesValidate
 {
@@ -10965,7 +10965,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesValidate
 /// CTLog (certificate timestamp log) provides a configuration for validation of Signed Certificate
 /// Timestamps (SCTs). If the value is unset, the default behavior by Cosign is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsAttestorsEntriesCertificatesCtlog
 {
@@ -10993,7 +10993,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsAt
 /// Rekor provides configuration for the Rekor transparency log service. If an empty object
 /// is provided the public instance of Rekor (https://rekor.sigstore.dev) is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsAttestorsEntriesCertificatesRekor
 {
@@ -11014,7 +11014,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsAt
 }
 
 /// <summary>Certificates specifies one or more certificates.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsAttestorsEntriesCertificates
 {
@@ -11045,7 +11045,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsAt
 /// CTLog (certificate timestamp log) provides a configuration for validation of Signed Certificate
 /// Timestamps (SCTs). If the value is unset, the default behavior by Cosign is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsAttestorsEntriesKeylessCtlog
 {
@@ -11073,7 +11073,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsAt
 /// Rekor provides configuration for the Rekor transparency log service. If an empty object
 /// is provided the public instance of Rekor (https://rekor.sigstore.dev) is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsAttestorsEntriesKeylessRekor
 {
@@ -11097,7 +11097,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsAt
 /// Keyless is a set of attribute used to verify a Sigstore keyless attestor.
 /// See https://github.com/sigstore/cosign/blob/main/KEYLESS.md.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsAttestorsEntriesKeyless
 {
@@ -11147,7 +11147,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsAt
 /// CTLog (certificate timestamp log) provides a configuration for validation of Signed Certificate
 /// Timestamps (SCTs). If the value is unset, the default behavior by Cosign is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsAttestorsEntriesKeysCtlog
 {
@@ -11175,7 +11175,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsAt
 /// Rekor provides configuration for the Rekor transparency log service. If an empty object
 /// is provided the public instance of Rekor (https://rekor.sigstore.dev) is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsAttestorsEntriesKeysRekor
 {
@@ -11196,7 +11196,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsAt
 }
 
 /// <summary>Reference to a Secret resource that contains a public key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsAttestorsEntriesKeysSecret
 {
@@ -11210,7 +11210,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsAt
 }
 
 /// <summary>Keys specifies one or more public keys.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsAttestorsEntriesKeys
 {
@@ -11257,7 +11257,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsAt
     public string? SignatureAlgorithm { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsAttestorsEntries
 {
@@ -11300,7 +11300,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsAt
     public string? SignatureAlgorithm { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsAttestors
 {
@@ -11326,7 +11326,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsAt
 /// GreaterThan, LessThanOrEquals, LessThan, DurationGreaterThanOrEquals, DurationGreaterThan,
 /// DurationLessThanOrEquals, DurationLessThan
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsConditionsAllOperatorEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsConditionsAllOperatorEnum
 {
@@ -11365,7 +11365,7 @@ public enum V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsConditionsA
 }
 
 /// <summary>Condition defines variable-based conditional criteria for rule execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsConditionsAll
 {
@@ -11400,7 +11400,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsCo
 /// GreaterThan, LessThanOrEquals, LessThan, DurationGreaterThanOrEquals, DurationGreaterThan,
 /// DurationLessThanOrEquals, DurationLessThan
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsConditionsAnyOperatorEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsConditionsAnyOperatorEnum
 {
@@ -11439,7 +11439,7 @@ public enum V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsConditionsA
 }
 
 /// <summary>Condition defines variable-based conditional criteria for rule execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsConditionsAny
 {
@@ -11473,7 +11473,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsCo
 /// AnyConditions get fulfilled when at least one of its sub-conditions passes.
 /// AllConditions get fulfilled only when all of its sub-conditions pass.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsConditions
 {
@@ -11501,7 +11501,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestationsCo
 /// See https://github.com/in-toto/attestation. Kyverno fetches signed attestations from the
 /// OCI registry and decodes them into a list of Statements.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestations
 {
@@ -11533,7 +11533,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestations
 /// CTLog (certificate timestamp log) provides a configuration for validation of Signed Certificate
 /// Timestamps (SCTs). If the value is unset, the default behavior by Cosign is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestorsEntriesCertificatesCtlog
 {
@@ -11561,7 +11561,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestorsEntri
 /// Rekor provides configuration for the Rekor transparency log service. If an empty object
 /// is provided the public instance of Rekor (https://rekor.sigstore.dev) is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestorsEntriesCertificatesRekor
 {
@@ -11582,7 +11582,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestorsEntri
 }
 
 /// <summary>Certificates specifies one or more certificates.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestorsEntriesCertificates
 {
@@ -11613,7 +11613,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestorsEntri
 /// CTLog (certificate timestamp log) provides a configuration for validation of Signed Certificate
 /// Timestamps (SCTs). If the value is unset, the default behavior by Cosign is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestorsEntriesKeylessCtlog
 {
@@ -11641,7 +11641,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestorsEntri
 /// Rekor provides configuration for the Rekor transparency log service. If an empty object
 /// is provided the public instance of Rekor (https://rekor.sigstore.dev) is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestorsEntriesKeylessRekor
 {
@@ -11665,7 +11665,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestorsEntri
 /// Keyless is a set of attribute used to verify a Sigstore keyless attestor.
 /// See https://github.com/sigstore/cosign/blob/main/KEYLESS.md.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestorsEntriesKeyless
 {
@@ -11715,7 +11715,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestorsEntri
 /// CTLog (certificate timestamp log) provides a configuration for validation of Signed Certificate
 /// Timestamps (SCTs). If the value is unset, the default behavior by Cosign is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestorsEntriesKeysCtlog
 {
@@ -11743,7 +11743,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestorsEntri
 /// Rekor provides configuration for the Rekor transparency log service. If an empty object
 /// is provided the public instance of Rekor (https://rekor.sigstore.dev) is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestorsEntriesKeysRekor
 {
@@ -11764,7 +11764,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestorsEntri
 }
 
 /// <summary>Reference to a Secret resource that contains a public key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestorsEntriesKeysSecret
 {
@@ -11778,7 +11778,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestorsEntri
 }
 
 /// <summary>Keys specifies one or more public keys.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestorsEntriesKeys
 {
@@ -11825,7 +11825,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestorsEntri
     public string? SignatureAlgorithm { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestorsEntries
 {
@@ -11868,7 +11868,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestorsEntri
     public string? SignatureAlgorithm { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestors
 {
@@ -11889,7 +11889,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesAttestors
 }
 
 /// <summary>Allowed values are Audit or Enforce.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesVerifyImagesFailureActionEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesVerifyImagesFailureActionEnum
 {
@@ -11900,7 +11900,7 @@ public enum V1ClusterPolicyStatusAutogenRulesVerifyImagesFailureActionEnum
 }
 
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesVerifyImagesImageRegistryCredentialsProvidersEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesVerifyImagesImageRegistryCredentialsProvidersEnum
 {
@@ -11917,7 +11917,7 @@ public enum V1ClusterPolicyStatusAutogenRulesVerifyImagesImageRegistryCredential
 }
 
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesImageRegistryCredentials
 {
@@ -11945,7 +11945,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesImageRegistryC
 /// Type specifies the method of signature validation. The allowed options
 /// are Cosign, Sigstore Bundle and Notary. By default Cosign is used if a type is not specified.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusAutogenRulesVerifyImagesTypeEnum>))]
 public enum V1ClusterPolicyStatusAutogenRulesVerifyImagesTypeEnum
 {
@@ -11958,7 +11958,7 @@ public enum V1ClusterPolicyStatusAutogenRulesVerifyImagesTypeEnum
 }
 
 /// <summary>Deny defines conditions used to pass or fail a validation rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesValidateDeny
 {
@@ -11976,7 +11976,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesValidateDeny
 /// Validation checks conditions across multiple image
 /// verification attestations or context entries
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesValidate
 {
@@ -11994,7 +11994,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImagesValidate
 /// are signed with the supplied public key. Once the image is verified it is
 /// mutated to include the SHA digest retrieved during the registration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRulesVerifyImages
 {
@@ -12118,7 +12118,7 @@ public partial class V1ClusterPolicyStatusAutogenRulesVerifyImages
 /// Each rules contains a match declaration to select resources, and an optional exclude
 /// declaration to specify which resources to exclude.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogenRules
 {
@@ -12201,7 +12201,7 @@ public partial class V1ClusterPolicyStatusAutogenRules
 }
 
 /// <summary>AutogenStatus contains autogen status information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusAutogen
 {
@@ -12211,7 +12211,7 @@ public partial class V1ClusterPolicyStatusAutogen
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterPolicyStatusConditionsStatusEnum>))]
 public enum V1ClusterPolicyStatusConditionsStatusEnum
 {
@@ -12224,7 +12224,7 @@ public enum V1ClusterPolicyStatusConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusConditions
 {
@@ -12273,7 +12273,7 @@ public partial class V1ClusterPolicyStatusConditions
 /// RuleCountStatus contains four variables which describes counts for
 /// validate, generate, mutate and verify images rules
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusRulecount
 {
@@ -12295,7 +12295,7 @@ public partial class V1ClusterPolicyStatusRulecount
 }
 
 /// <summary>ValidatingAdmissionPolicy contains status information</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatusValidatingadmissionpolicy
 {
@@ -12312,7 +12312,7 @@ public partial class V1ClusterPolicyStatusValidatingadmissionpolicy
 }
 
 /// <summary>Status contains policy runtime data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterPolicyStatus
 {
@@ -12340,7 +12340,7 @@ public partial class V1ClusterPolicyStatus
 }
 
 /// <summary>ClusterPolicy declares validation, mutation, and generation behaviors for matching resources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ClusterPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1ClusterPolicySpec>, IStatus<V1ClusterPolicyStatus?>

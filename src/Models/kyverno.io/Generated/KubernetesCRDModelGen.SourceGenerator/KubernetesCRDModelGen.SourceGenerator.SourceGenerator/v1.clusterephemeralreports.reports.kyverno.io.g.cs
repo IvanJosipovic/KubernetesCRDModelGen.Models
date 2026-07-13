@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.reports.kyverno.io;
 /// <summary>ClusterEphemeralReport is the Schema for the ClusterEphemeralReports API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ClusterEphemeralReportList : IKubernetesObject<V1ListMeta>, IItems<V1ClusterEphemeralReport>
@@ -37,7 +37,7 @@ public partial class V1ClusterEphemeralReportList : IKubernetesObject<V1ListMeta
 }
 
 /// <summary>Owner is a reference to the report owner (e.g. a Deployment, Namespace, or Node)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterEphemeralReportSpecOwner
 {
@@ -88,7 +88,7 @@ public partial class V1ClusterEphemeralReportSpecOwner
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterEphemeralReportSpecResultsResourceSelectorMatchExpressions
 {
@@ -119,7 +119,7 @@ public partial class V1ClusterEphemeralReportSpecResultsResourceSelectorMatchExp
 /// Either a Subject or a ResourceSelector can be specified. If neither are provided, the
 /// result is assumed to be for the policy report scope.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterEphemeralReportSpecResultsResourceSelector
 {
@@ -137,7 +137,7 @@ public partial class V1ClusterEphemeralReportSpecResultsResourceSelector
 }
 
 /// <summary>ObjectReference contains enough information to let you inspect or modify the referred object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterEphemeralReportSpecResultsResources
 {
@@ -194,7 +194,7 @@ public partial class V1ClusterEphemeralReportSpecResultsResources
 }
 
 /// <summary>Result indicates the outcome of the policy rule execution</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterEphemeralReportSpecResultsResultEnum>))]
 public enum V1ClusterEphemeralReportSpecResultsResultEnum
 {
@@ -211,7 +211,7 @@ public enum V1ClusterEphemeralReportSpecResultsResultEnum
 }
 
 /// <summary>Severity indicates policy check result criticality</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ClusterEphemeralReportSpecResultsSeverityEnum>))]
 public enum V1ClusterEphemeralReportSpecResultsSeverityEnum
 {
@@ -228,7 +228,7 @@ public enum V1ClusterEphemeralReportSpecResultsSeverityEnum
 }
 
 /// <summary>Timestamp indicates the time the result was found</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterEphemeralReportSpecResultsTimestamp
 {
@@ -251,7 +251,7 @@ public partial class V1ClusterEphemeralReportSpecResultsTimestamp
 }
 
 /// <summary>ReportResult provides the result for an individual policy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterEphemeralReportSpecResults
 {
@@ -314,7 +314,7 @@ public partial class V1ClusterEphemeralReportSpecResults
 }
 
 /// <summary>PolicyReportSummary provides a summary of results</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterEphemeralReportSpecSummary
 {
@@ -339,7 +339,7 @@ public partial class V1ClusterEphemeralReportSpecSummary
     public int? Warn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterEphemeralReportSpec
 {
@@ -357,7 +357,7 @@ public partial class V1ClusterEphemeralReportSpec
 }
 
 /// <summary>ClusterEphemeralReport is the Schema for the ClusterEphemeralReports API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ClusterEphemeralReport : IKubernetesObject<V1ObjectMeta>, ISpec<V1ClusterEphemeralReportSpec>

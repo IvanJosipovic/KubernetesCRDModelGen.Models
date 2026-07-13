@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.networkfirewall.services.k8s.aws;
 /// <summary>Firewall is the Schema for the Firewalls API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1FirewallList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1Firewall>
@@ -37,7 +37,7 @@ public partial class V1alpha1FirewallList : IKubernetesObject<V1ListMeta>, IItem
 }
 
 /// <summary>A complex type that contains settings for encryption of your firewall resources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallSpecEncryptionConfiguration
 {
@@ -56,7 +56,7 @@ public partial class V1alpha1FirewallSpecEncryptionConfiguration
 /// Network Firewall generates logs for stateful rule groups. You can save alert,
 /// flow, and TLS log types.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallSpecLoggingConfigurationLogDestinationConfigs
 {
@@ -74,7 +74,7 @@ public partial class V1alpha1FirewallSpecLoggingConfigurationLogDestinationConfi
 /// Defines how Network Firewall performs logging for a firewall. If you omit
 /// this setting, Network Firewall disables logging for the firewall.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallSpecLoggingConfiguration
 {
@@ -88,7 +88,7 @@ public partial class V1alpha1FirewallSpecLoggingConfiguration
 /// instance of the associated firewall in each subnet that you specify, to filter
 /// traffic in the subnet&apos;s Availability Zone.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallSpecSubnetMappings
 {
@@ -106,7 +106,7 @@ public partial class V1alpha1FirewallSpecSubnetMappings
 /// that category (such as &quot;test,&quot; &quot;development,&quot; or &quot;production&quot;). You can add
 /// up to 50 tags to each Amazon Web Services resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallSpecTags
 {
@@ -129,7 +129,7 @@ public partial class V1alpha1FirewallSpecTags
 /// traffic, is provided in the corresponding FirewallStatus. You can retrieve
 /// both objects by calling DescribeFirewall.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallSpec
 {
@@ -226,7 +226,7 @@ public partial class V1alpha1FirewallSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallStatusAckResourceMetadata
 {
@@ -263,7 +263,7 @@ public partial class V1alpha1FirewallStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallStatusConditions
 {
@@ -298,7 +298,7 @@ public partial class V1alpha1FirewallStatusConditions
 /// rest with Amazon Web Services Key Managment Service (https://docs.aws.amazon.com/kms/latest/developerguide/kms-encryption-at-rest.html)
 /// in the Network Firewall Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallStatusFirewallEncryptionConfiguration
 {
@@ -315,7 +315,7 @@ public partial class V1alpha1FirewallStatusFirewallEncryptionConfiguration
 /// instance of the associated firewall in each subnet that you specify, to filter
 /// traffic in the subnet&apos;s Availability Zone.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallStatusFirewallSubnetMappings
 {
@@ -333,7 +333,7 @@ public partial class V1alpha1FirewallStatusFirewallSubnetMappings
 /// that category (such as &quot;test,&quot; &quot;development,&quot; or &quot;production&quot;). You can add
 /// up to 50 tags to each Amazon Web Services resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallStatusFirewallTags
 {
@@ -348,7 +348,7 @@ public partial class V1alpha1FirewallStatusFirewallTags
 /// The configuration settings for the firewall. These settings include the firewall
 /// policy and the subnets in your VPC to use for the firewall endpoints.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallStatusFirewall
 {
@@ -400,7 +400,7 @@ public partial class V1alpha1FirewallStatusFirewall
 }
 
 /// <summary>General information about the IP set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallStatusFirewallStatusCapacityUsageSummaryCidrsIpSetReferences
 {
@@ -413,7 +413,7 @@ public partial class V1alpha1FirewallStatusFirewallStatusCapacityUsageSummaryCid
 /// Firewall calculates the number of CIDRs by taking an aggregated count of
 /// all CIDRs used by the IP sets you are referencing.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallStatusFirewallStatusCapacityUsageSummaryCidrs
 {
@@ -431,7 +431,7 @@ public partial class V1alpha1FirewallStatusFirewallStatusCapacityUsageSummaryCid
 /// The capacity usage summary of the resources used by the ReferenceSets in
 /// a firewall.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallStatusFirewallStatusCapacityUsageSummary
 {
@@ -448,7 +448,7 @@ public partial class V1alpha1FirewallStatusFirewallStatusCapacityUsageSummary
 /// The configuration and status for a single subnet that you&apos;ve specified for
 /// use by the Network Firewall firewall. This is part of the FirewallStatus.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallStatusFirewallStatusSyncStatesAttachment
 {
@@ -473,7 +473,7 @@ public partial class V1alpha1FirewallStatusFirewallStatusSyncStatesAttachment
 /// rules in the endpoint, so it can properly filter network traffic. This is
 /// part of a SyncState for a firewall.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallStatusFirewallStatusSyncStatesConfig
 {
@@ -500,7 +500,7 @@ public partial class V1alpha1FirewallStatusFirewallStatusSyncStatesConfig
 /// a rule group in the firewall policy, the affected sync states reflect out-of-sync
 /// or not ready status until the changes are complete.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallStatusFirewallStatusSyncStates
 {
@@ -520,7 +520,7 @@ public partial class V1alpha1FirewallStatusFirewallStatusSyncStates
 /// this for a firewall by calling DescribeFirewall and providing the firewall
 /// name and ARN.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallStatusFirewallStatus
 {
@@ -542,7 +542,7 @@ public partial class V1alpha1FirewallStatusFirewallStatus
 }
 
 /// <summary>FirewallStatus defines the observed state of Firewall</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1FirewallStatus
 {
@@ -580,7 +580,7 @@ public partial class V1alpha1FirewallStatus
 }
 
 /// <summary>Firewall is the Schema for the Firewalls API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1Firewall : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1FirewallSpec?>, IStatus<V1alpha1FirewallStatus?>

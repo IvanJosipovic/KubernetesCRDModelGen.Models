@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ec2.aws.m.upbound.io;
 /// <summary>SpotFleetRequest is the Schema for the SpotFleetRequests API. Provides a Spot Fleet Request resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SpotFleetRequestList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SpotFleetRequest>
@@ -36,7 +36,7 @@ public partial class V1beta1SpotFleetRequestList : IKubernetesObject<V1ListMeta>
     public required IList<V1beta1SpotFleetRequest> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationEbsBlockDevice
 {
@@ -71,7 +71,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationEb
     public string? VolumeType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationEphemeralBlockDevice
 {
@@ -90,7 +90,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationEp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnRefPolicyResolutionEnum>))]
 public enum V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnRefPolicyResolutionEnum
 {
@@ -106,7 +106,7 @@ public enum V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstance
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnRefPolicyResolveEnum>))]
 public enum V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnRefPolicyResolveEnum
 {
@@ -117,7 +117,7 @@ public enum V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstance
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnRefPolicy
 {
@@ -141,7 +141,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIa
 }
 
 /// <summary>Reference to a InstanceProfile in iam to populate iamInstanceProfileArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnRef
 {
@@ -164,7 +164,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnSelectorPolicyResolutionEnum
 {
@@ -180,7 +180,7 @@ public enum V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstance
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnSelectorPolicyResolveEnum>))]
 public enum V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnSelectorPolicyResolveEnum
 {
@@ -191,7 +191,7 @@ public enum V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstance
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnSelectorPolicy
 {
@@ -215,7 +215,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIa
 }
 
 /// <summary>Selector for a InstanceProfile in iam to populate iamInstanceProfileArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnSelector
 {
@@ -239,7 +239,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIa
     public V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationRootBlockDevice
 {
@@ -266,7 +266,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationRo
     public string? VolumeType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecification
 {
@@ -353,7 +353,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecification
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationIdRefPolicyResolutionEnum>))]
 public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationIdRefPolicyResolutionEnum
 {
@@ -369,7 +369,7 @@ public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemp
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationIdRefPolicyResolveEnum>))]
 public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationIdRefPolicyResolveEnum
 {
@@ -380,7 +380,7 @@ public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemp
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationIdRefPolicy
 {
@@ -404,7 +404,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigL
 }
 
 /// <summary>Reference to a LaunchTemplate in ec2 to populate id.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationIdRef
 {
@@ -427,7 +427,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigL
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationIdSelectorPolicyResolutionEnum
 {
@@ -443,7 +443,7 @@ public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemp
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationIdSelectorPolicyResolveEnum
 {
@@ -454,7 +454,7 @@ public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemp
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationIdSelectorPolicy
 {
@@ -478,7 +478,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigL
 }
 
 /// <summary>Selector for a LaunchTemplate in ec2 to populate id.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationIdSelector
 {
@@ -508,7 +508,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigL
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionRefPolicyResolutionEnum>))]
 public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionRefPolicyResolutionEnum
 {
@@ -524,7 +524,7 @@ public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemp
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionRefPolicyResolveEnum>))]
 public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionRefPolicyResolveEnum
 {
@@ -535,7 +535,7 @@ public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemp
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionRefPolicy
 {
@@ -559,7 +559,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigL
 }
 
 /// <summary>Reference to a LaunchTemplate in ec2 to populate version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionRef
 {
@@ -582,7 +582,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigL
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionSelectorPolicyResolutionEnum>))]
 public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionSelectorPolicyResolutionEnum
 {
@@ -598,7 +598,7 @@ public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemp
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionSelectorPolicyResolveEnum>))]
 public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionSelectorPolicyResolveEnum
 {
@@ -609,7 +609,7 @@ public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemp
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionSelectorPolicy
 {
@@ -633,7 +633,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigL
 }
 
 /// <summary>Selector for a LaunchTemplate in ec2 to populate version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionSelector
 {
@@ -658,7 +658,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigL
 }
 
 /// <summary>Launch template specification. See Launch Template Specification below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecification
 {
@@ -692,7 +692,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigL
 }
 
 /// <summary>Block describing the minimum and maximum number of accelerators (GPUs, FPGAs, or AWS Inferentia chips). Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorCount
 {
@@ -706,7 +706,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigO
 }
 
 /// <summary>Block describing the minimum and maximum total memory of the accelerators. Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorTotalMemoryMib
 {
@@ -720,7 +720,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigO
 }
 
 /// <summary>Block describing the minimum and maximum baseline EBS bandwidth, in Mbps. Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigOverridesInstanceRequirementsBaselineEbsBandwidthMbps
 {
@@ -734,7 +734,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigO
 }
 
 /// <summary>Block describing the minimum and maximum amount of memory (GiB) per vCPU. Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigOverridesInstanceRequirementsMemoryGibPerVcpu
 {
@@ -748,7 +748,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigO
 }
 
 /// <summary>Block describing the minimum and maximum amount of memory (MiB). Default is no maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigOverridesInstanceRequirementsMemoryMib
 {
@@ -762,7 +762,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigO
 }
 
 /// <summary>Block describing the minimum and maximum amount of network bandwidth, in gigabits per second (Gbps). Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbps
 {
@@ -776,7 +776,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigO
 }
 
 /// <summary>Block describing the minimum and maximum number of network interfaces. Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigOverridesInstanceRequirementsNetworkInterfaceCount
 {
@@ -790,7 +790,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigO
 }
 
 /// <summary>Block describing the minimum and maximum total local storage (GB). Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigOverridesInstanceRequirementsTotalLocalStorageGb
 {
@@ -804,7 +804,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigO
 }
 
 /// <summary>Block describing the minimum and maximum number of vCPUs. Default is no maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigOverridesInstanceRequirementsVcpuCount
 {
@@ -818,7 +818,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigO
 }
 
 /// <summary>The instance requirements. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigOverridesInstanceRequirements
 {
@@ -915,7 +915,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigO
     public V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigOverridesInstanceRequirementsVcpuCount? VcpuCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigOverrides
 {
@@ -948,7 +948,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigO
     public double? WeightedCapacity { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfig
 {
@@ -962,7 +962,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfig
 }
 
 /// <summary>Nested argument containing the capacity rebalance for your fleet request. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderSpotMaintenanceStrategiesCapacityRebalance
 {
@@ -972,7 +972,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderSpotMaintenanceStrate
 }
 
 /// <summary>Nested argument containing maintenance strategies for managing your Spot Instances that are at an elevated risk of being interrupted. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProviderSpotMaintenanceStrategies
 {
@@ -981,7 +981,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderSpotMaintenanceStrate
     public V1beta1SpotFleetRequestSpecForProviderSpotMaintenanceStrategiesCapacityRebalance? CapacityRebalance { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecForProvider
 {
@@ -1132,7 +1132,7 @@ public partial class V1beta1SpotFleetRequestSpecForProvider
     public bool? WaitForFulfillment { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationEbsBlockDevice
 {
@@ -1167,7 +1167,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationE
     public string? VolumeType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationEphemeralBlockDevice
 {
@@ -1186,7 +1186,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationE
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnRefPolicyResolutionEnum>))]
 public enum V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnRefPolicyResolutionEnum
 {
@@ -1202,7 +1202,7 @@ public enum V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanc
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnRefPolicyResolveEnum>))]
 public enum V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnRefPolicyResolveEnum
 {
@@ -1213,7 +1213,7 @@ public enum V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanc
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnRefPolicy
 {
@@ -1237,7 +1237,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationI
 }
 
 /// <summary>Reference to a InstanceProfile in iam to populate iamInstanceProfileArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnRef
 {
@@ -1260,7 +1260,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnSelectorPolicyResolutionEnum
 {
@@ -1276,7 +1276,7 @@ public enum V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanc
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnSelectorPolicyResolveEnum>))]
 public enum V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnSelectorPolicyResolveEnum
 {
@@ -1287,7 +1287,7 @@ public enum V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanc
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnSelectorPolicy
 {
@@ -1311,7 +1311,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationI
 }
 
 /// <summary>Selector for a InstanceProfile in iam to populate iamInstanceProfileArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnSelector
 {
@@ -1335,7 +1335,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationI
     public V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationRootBlockDevice
 {
@@ -1362,7 +1362,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationR
     public string? VolumeType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecification
 {
@@ -1449,7 +1449,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecification
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationIdRefPolicyResolutionEnum>))]
 public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationIdRefPolicyResolutionEnum
 {
@@ -1465,7 +1465,7 @@ public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTem
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationIdRefPolicyResolveEnum>))]
 public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationIdRefPolicyResolveEnum
 {
@@ -1476,7 +1476,7 @@ public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTem
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationIdRefPolicy
 {
@@ -1500,7 +1500,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 }
 
 /// <summary>Reference to a LaunchTemplate in ec2 to populate id.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationIdRef
 {
@@ -1523,7 +1523,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationIdSelectorPolicyResolutionEnum
 {
@@ -1539,7 +1539,7 @@ public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTem
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationIdSelectorPolicyResolveEnum
 {
@@ -1550,7 +1550,7 @@ public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTem
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationIdSelectorPolicy
 {
@@ -1574,7 +1574,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 }
 
 /// <summary>Selector for a LaunchTemplate in ec2 to populate id.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationIdSelector
 {
@@ -1604,7 +1604,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionRefPolicyResolutionEnum>))]
 public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionRefPolicyResolutionEnum
 {
@@ -1620,7 +1620,7 @@ public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTem
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionRefPolicyResolveEnum>))]
 public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionRefPolicyResolveEnum
 {
@@ -1631,7 +1631,7 @@ public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTem
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionRefPolicy
 {
@@ -1655,7 +1655,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 }
 
 /// <summary>Reference to a LaunchTemplate in ec2 to populate version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionRef
 {
@@ -1678,7 +1678,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionSelectorPolicyResolutionEnum>))]
 public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionSelectorPolicyResolutionEnum
 {
@@ -1694,7 +1694,7 @@ public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTem
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionSelectorPolicyResolveEnum>))]
 public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionSelectorPolicyResolveEnum
 {
@@ -1705,7 +1705,7 @@ public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTem
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionSelectorPolicy
 {
@@ -1729,7 +1729,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 }
 
 /// <summary>Selector for a LaunchTemplate in ec2 to populate version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionSelector
 {
@@ -1754,7 +1754,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 }
 
 /// <summary>Launch template specification. See Launch Template Specification below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecification
 {
@@ -1788,7 +1788,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 }
 
 /// <summary>Block describing the minimum and maximum number of accelerators (GPUs, FPGAs, or AWS Inferentia chips). Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorCount
 {
@@ -1802,7 +1802,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 }
 
 /// <summary>Block describing the minimum and maximum total memory of the accelerators. Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorTotalMemoryMib
 {
@@ -1816,7 +1816,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 }
 
 /// <summary>Block describing the minimum and maximum baseline EBS bandwidth, in Mbps. Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigOverridesInstanceRequirementsBaselineEbsBandwidthMbps
 {
@@ -1830,7 +1830,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 }
 
 /// <summary>Block describing the minimum and maximum amount of memory (GiB) per vCPU. Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigOverridesInstanceRequirementsMemoryGibPerVcpu
 {
@@ -1844,7 +1844,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 }
 
 /// <summary>Block describing the minimum and maximum amount of memory (MiB). Default is no maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigOverridesInstanceRequirementsMemoryMib
 {
@@ -1858,7 +1858,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 }
 
 /// <summary>Block describing the minimum and maximum amount of network bandwidth, in gigabits per second (Gbps). Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbps
 {
@@ -1872,7 +1872,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 }
 
 /// <summary>Block describing the minimum and maximum number of network interfaces. Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigOverridesInstanceRequirementsNetworkInterfaceCount
 {
@@ -1886,7 +1886,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 }
 
 /// <summary>Block describing the minimum and maximum total local storage (GB). Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigOverridesInstanceRequirementsTotalLocalStorageGb
 {
@@ -1900,7 +1900,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 }
 
 /// <summary>Block describing the minimum and maximum number of vCPUs. Default is no maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigOverridesInstanceRequirementsVcpuCount
 {
@@ -1914,7 +1914,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 }
 
 /// <summary>The instance requirements. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigOverridesInstanceRequirements
 {
@@ -2011,7 +2011,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
     public V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigOverridesInstanceRequirementsVcpuCount? VcpuCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigOverrides
 {
@@ -2044,7 +2044,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
     public double? WeightedCapacity { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 {
@@ -2058,7 +2058,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 }
 
 /// <summary>Nested argument containing the capacity rebalance for your fleet request. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderSpotMaintenanceStrategiesCapacityRebalance
 {
@@ -2068,7 +2068,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderSpotMaintenanceStrat
 }
 
 /// <summary>Nested argument containing maintenance strategies for managing your Spot Instances that are at an elevated risk of being interrupted. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProviderSpotMaintenanceStrategies
 {
@@ -2089,7 +2089,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderSpotMaintenanceStrat
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecInitProvider
 {
@@ -2237,7 +2237,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecManagementPoliciesEnum>))]
 public enum V1beta1SpotFleetRequestSpecManagementPoliciesEnum
 {
@@ -2260,7 +2260,7 @@ public enum V1beta1SpotFleetRequestSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecProviderConfigRef
 {
@@ -2279,7 +2279,7 @@ public partial class V1beta1SpotFleetRequestSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpecWriteConnectionSecretToRef
 {
@@ -2289,7 +2289,7 @@ public partial class V1beta1SpotFleetRequestSpecWriteConnectionSecretToRef
 }
 
 /// <summary>SpotFleetRequestSpec defines the desired state of SpotFleetRequest</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestSpec
 {
@@ -2340,7 +2340,7 @@ public partial class V1beta1SpotFleetRequestSpec
     public V1beta1SpotFleetRequestSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchSpecificationEbsBlockDevice
 {
@@ -2375,7 +2375,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchSpecificationE
     public string? VolumeType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchSpecificationEphemeralBlockDevice
 {
@@ -2388,7 +2388,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchSpecificationE
     public string? VirtualName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchSpecificationRootBlockDevice
 {
@@ -2415,7 +2415,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchSpecificationR
     public string? VolumeType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchSpecification
 {
@@ -2489,7 +2489,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchSpecification
 }
 
 /// <summary>Launch template specification. See Launch Template Specification below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigLaunchTemplateSpecification
 {
@@ -2507,7 +2507,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 }
 
 /// <summary>Block describing the minimum and maximum number of accelerators (GPUs, FPGAs, or AWS Inferentia chips). Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorCount
 {
@@ -2521,7 +2521,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 }
 
 /// <summary>Block describing the minimum and maximum total memory of the accelerators. Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorTotalMemoryMib
 {
@@ -2535,7 +2535,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 }
 
 /// <summary>Block describing the minimum and maximum baseline EBS bandwidth, in Mbps. Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigOverridesInstanceRequirementsBaselineEbsBandwidthMbps
 {
@@ -2549,7 +2549,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 }
 
 /// <summary>Block describing the minimum and maximum amount of memory (GiB) per vCPU. Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigOverridesInstanceRequirementsMemoryGibPerVcpu
 {
@@ -2563,7 +2563,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 }
 
 /// <summary>Block describing the minimum and maximum amount of memory (MiB). Default is no maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigOverridesInstanceRequirementsMemoryMib
 {
@@ -2577,7 +2577,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 }
 
 /// <summary>Block describing the minimum and maximum amount of network bandwidth, in gigabits per second (Gbps). Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbps
 {
@@ -2591,7 +2591,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 }
 
 /// <summary>Block describing the minimum and maximum number of network interfaces. Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigOverridesInstanceRequirementsNetworkInterfaceCount
 {
@@ -2605,7 +2605,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 }
 
 /// <summary>Block describing the minimum and maximum total local storage (GB). Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigOverridesInstanceRequirementsTotalLocalStorageGb
 {
@@ -2619,7 +2619,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 }
 
 /// <summary>Block describing the minimum and maximum number of vCPUs. Default is no maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigOverridesInstanceRequirementsVcpuCount
 {
@@ -2633,7 +2633,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 }
 
 /// <summary>The instance requirements. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigOverridesInstanceRequirements
 {
@@ -2730,7 +2730,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
     public V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigOverridesInstanceRequirementsVcpuCount? VcpuCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigOverrides
 {
@@ -2763,7 +2763,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
     public double? WeightedCapacity { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 {
@@ -2777,7 +2777,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 }
 
 /// <summary>Nested argument containing the capacity rebalance for your fleet request. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestStatusAtProviderSpotMaintenanceStrategiesCapacityRebalance
 {
@@ -2787,7 +2787,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderSpotMaintenanceStrat
 }
 
 /// <summary>Nested argument containing maintenance strategies for managing your Spot Instances that are at an elevated risk of being interrupted. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestStatusAtProviderSpotMaintenanceStrategies
 {
@@ -2796,7 +2796,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderSpotMaintenanceStrat
     public V1beta1SpotFleetRequestStatusAtProviderSpotMaintenanceStrategiesCapacityRebalance? CapacityRebalance { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestStatusAtProvider
 {
@@ -2963,7 +2963,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestStatusConditions
 {
@@ -3006,7 +3006,7 @@ public partial class V1beta1SpotFleetRequestStatusConditions
 }
 
 /// <summary>SpotFleetRequestStatus defines the observed state of SpotFleetRequest.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotFleetRequestStatus
 {
@@ -3027,7 +3027,7 @@ public partial class V1beta1SpotFleetRequestStatus
 }
 
 /// <summary>SpotFleetRequest is the Schema for the SpotFleetRequests API. Provides a Spot Fleet Request resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SpotFleetRequest : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SpotFleetRequestSpec>, IStatus<V1beta1SpotFleetRequestStatus?>

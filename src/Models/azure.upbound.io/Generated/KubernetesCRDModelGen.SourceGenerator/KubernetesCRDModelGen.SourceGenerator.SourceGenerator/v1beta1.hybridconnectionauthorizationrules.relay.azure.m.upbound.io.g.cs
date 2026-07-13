@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.relay.azure.m.upbound.io;
 /// <summary>HybridConnectionAuthorizationRule is the Schema for the HybridConnectionAuthorizationRules API. Manages an Azure Relay Hybrid Connection Authorization Rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1HybridConnectionAuthorizationRuleList : IKubernetesObject<V1ListMeta>, IItems<V1beta1HybridConnectionAuthorizationRule>
@@ -42,7 +42,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleList : IKubernetesO
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridConnectionAuthorizationRuleSpecForProviderHybridConnectionNameRefPolicyResolutionEnum>))]
 public enum V1beta1HybridConnectionAuthorizationRuleSpecForProviderHybridConnectionNameRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1HybridConnectionAuthorizationRuleSpecForProviderHybridConnect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridConnectionAuthorizationRuleSpecForProviderHybridConnectionNameRefPolicyResolveEnum>))]
 public enum V1beta1HybridConnectionAuthorizationRuleSpecForProviderHybridConnectionNameRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1HybridConnectionAuthorizationRuleSpecForProviderHybridConnect
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProviderHybridConnectionNameRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProviderHybr
 }
 
 /// <summary>Reference to a HybridConnection in relay to populate hybridConnectionName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProviderHybridConnectionNameRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProviderHybr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridConnectionAuthorizationRuleSpecForProviderHybridConnectionNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1HybridConnectionAuthorizationRuleSpecForProviderHybridConnectionNameSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1HybridConnectionAuthorizationRuleSpecForProviderHybridConnect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridConnectionAuthorizationRuleSpecForProviderHybridConnectionNameSelectorPolicyResolveEnum>))]
 public enum V1beta1HybridConnectionAuthorizationRuleSpecForProviderHybridConnectionNameSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1HybridConnectionAuthorizationRuleSpecForProviderHybridConnect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProviderHybridConnectionNameSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProviderHybr
 }
 
 /// <summary>Selector for a HybridConnection in relay to populate hybridConnectionName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProviderHybridConnectionNameSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProviderHybr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridConnectionAuthorizationRuleSpecForProviderNamespaceNameRefPolicyResolutionEnum>))]
 public enum V1beta1HybridConnectionAuthorizationRuleSpecForProviderNamespaceNameRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1HybridConnectionAuthorizationRuleSpecForProviderNamespaceName
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridConnectionAuthorizationRuleSpecForProviderNamespaceNameRefPolicyResolveEnum>))]
 public enum V1beta1HybridConnectionAuthorizationRuleSpecForProviderNamespaceNameRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1HybridConnectionAuthorizationRuleSpecForProviderNamespaceName
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProviderNamespaceNameRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProviderName
 }
 
 /// <summary>Reference to a EventRelayNamespace in relay to populate namespaceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProviderNamespaceNameRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProviderName
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridConnectionAuthorizationRuleSpecForProviderNamespaceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1HybridConnectionAuthorizationRuleSpecForProviderNamespaceNameSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1HybridConnectionAuthorizationRuleSpecForProviderNamespaceName
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridConnectionAuthorizationRuleSpecForProviderNamespaceNameSelectorPolicyResolveEnum>))]
 public enum V1beta1HybridConnectionAuthorizationRuleSpecForProviderNamespaceNameSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1HybridConnectionAuthorizationRuleSpecForProviderNamespaceName
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProviderNamespaceNameSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProviderName
 }
 
 /// <summary>Selector for a EventRelayNamespace in relay to populate namespaceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProviderNamespaceNameSelector
 {
@@ -352,7 +352,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProviderName
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridConnectionAuthorizationRuleSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1HybridConnectionAuthorizationRuleSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -368,7 +368,7 @@ public enum V1beta1HybridConnectionAuthorizationRuleSpecForProviderResourceGroup
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridConnectionAuthorizationRuleSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1HybridConnectionAuthorizationRuleSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -379,7 +379,7 @@ public enum V1beta1HybridConnectionAuthorizationRuleSpecForProviderResourceGroup
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProviderResourceGroupNameRefPolicy
 {
@@ -403,7 +403,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProviderReso
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProviderResourceGroupNameRef
 {
@@ -426,7 +426,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProviderReso
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridConnectionAuthorizationRuleSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1HybridConnectionAuthorizationRuleSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -442,7 +442,7 @@ public enum V1beta1HybridConnectionAuthorizationRuleSpecForProviderResourceGroup
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridConnectionAuthorizationRuleSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1HybridConnectionAuthorizationRuleSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -453,7 +453,7 @@ public enum V1beta1HybridConnectionAuthorizationRuleSpecForProviderResourceGroup
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -477,7 +477,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProviderReso
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProviderResourceGroupNameSelector
 {
@@ -501,7 +501,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProviderReso
     public V1beta1HybridConnectionAuthorizationRuleSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProvider
 {
@@ -560,7 +560,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridConnectionAuthorizationRuleSpecInitProviderNamespaceNameRefPolicyResolutionEnum>))]
 public enum V1beta1HybridConnectionAuthorizationRuleSpecInitProviderNamespaceNameRefPolicyResolutionEnum
 {
@@ -576,7 +576,7 @@ public enum V1beta1HybridConnectionAuthorizationRuleSpecInitProviderNamespaceNam
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridConnectionAuthorizationRuleSpecInitProviderNamespaceNameRefPolicyResolveEnum>))]
 public enum V1beta1HybridConnectionAuthorizationRuleSpecInitProviderNamespaceNameRefPolicyResolveEnum
 {
@@ -587,7 +587,7 @@ public enum V1beta1HybridConnectionAuthorizationRuleSpecInitProviderNamespaceNam
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridConnectionAuthorizationRuleSpecInitProviderNamespaceNameRefPolicy
 {
@@ -611,7 +611,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleSpecInitProviderNam
 }
 
 /// <summary>Reference to a EventRelayNamespace in relay to populate namespaceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridConnectionAuthorizationRuleSpecInitProviderNamespaceNameRef
 {
@@ -634,7 +634,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleSpecInitProviderNam
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridConnectionAuthorizationRuleSpecInitProviderNamespaceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1HybridConnectionAuthorizationRuleSpecInitProviderNamespaceNameSelectorPolicyResolutionEnum
 {
@@ -650,7 +650,7 @@ public enum V1beta1HybridConnectionAuthorizationRuleSpecInitProviderNamespaceNam
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridConnectionAuthorizationRuleSpecInitProviderNamespaceNameSelectorPolicyResolveEnum>))]
 public enum V1beta1HybridConnectionAuthorizationRuleSpecInitProviderNamespaceNameSelectorPolicyResolveEnum
 {
@@ -661,7 +661,7 @@ public enum V1beta1HybridConnectionAuthorizationRuleSpecInitProviderNamespaceNam
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridConnectionAuthorizationRuleSpecInitProviderNamespaceNameSelectorPolicy
 {
@@ -685,7 +685,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleSpecInitProviderNam
 }
 
 /// <summary>Selector for a EventRelayNamespace in relay to populate namespaceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridConnectionAuthorizationRuleSpecInitProviderNamespaceNameSelector
 {
@@ -721,7 +721,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleSpecInitProviderNam
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridConnectionAuthorizationRuleSpecInitProvider
 {
@@ -754,7 +754,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HybridConnectionAuthorizationRuleSpecManagementPoliciesEnum>))]
 public enum V1beta1HybridConnectionAuthorizationRuleSpecManagementPoliciesEnum
 {
@@ -777,7 +777,7 @@ public enum V1beta1HybridConnectionAuthorizationRuleSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridConnectionAuthorizationRuleSpecProviderConfigRef
 {
@@ -796,7 +796,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleSpecProviderConfigR
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridConnectionAuthorizationRuleSpecWriteConnectionSecretToRef
 {
@@ -806,7 +806,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleSpecWriteConnection
 }
 
 /// <summary>HybridConnectionAuthorizationRuleSpec defines the desired state of HybridConnectionAuthorizationRule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridConnectionAuthorizationRuleSpec
 {
@@ -857,7 +857,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleSpec
     public V1beta1HybridConnectionAuthorizationRuleSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridConnectionAuthorizationRuleStatusAtProvider
 {
@@ -891,7 +891,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridConnectionAuthorizationRuleStatusConditions
 {
@@ -934,7 +934,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleStatusConditions
 }
 
 /// <summary>HybridConnectionAuthorizationRuleStatus defines the observed state of HybridConnectionAuthorizationRule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HybridConnectionAuthorizationRuleStatus
 {
@@ -955,7 +955,7 @@ public partial class V1beta1HybridConnectionAuthorizationRuleStatus
 }
 
 /// <summary>HybridConnectionAuthorizationRule is the Schema for the HybridConnectionAuthorizationRules API. Manages an Azure Relay Hybrid Connection Authorization Rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1HybridConnectionAuthorizationRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1HybridConnectionAuthorizationRuleSpec>, IStatus<V1beta1HybridConnectionAuthorizationRuleStatus?>

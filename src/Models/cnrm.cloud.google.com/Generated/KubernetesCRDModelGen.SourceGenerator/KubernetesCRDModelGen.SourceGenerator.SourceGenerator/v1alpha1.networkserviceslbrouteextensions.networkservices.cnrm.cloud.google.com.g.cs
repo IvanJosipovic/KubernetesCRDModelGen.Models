@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.networkservices.cnrm.cloud.google.com;
 /// <summary>NetworkServicesLBRouteExtension is the Schema for the NetworkServicesLBRouteExtension API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1NetworkServicesLBRouteExtensionList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1NetworkServicesLBRouteExtension>
@@ -46,7 +46,7 @@ public partial class V1alpha1NetworkServicesLBRouteExtensionList : IKubernetesOb
 /// or
 /// `https://www.googleapis.com/compute/v1/projects/{project}/global/backendServices/{backendService}`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesLBRouteExtensionSpecExtensionChainsExtensionsBackendServiceRef
 {
@@ -79,7 +79,7 @@ public partial class V1alpha1NetworkServicesLBRouteExtensionSpecExtensionChainsE
 /// Note: Only the `external` subfield is supported as the
 /// `NetworkServicesWasmPlugin` resource is not yet supported in Config Connector.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesLBRouteExtensionSpecExtensionChainsExtensionsWasmPluginRef
 {
@@ -96,7 +96,7 @@ public partial class V1alpha1NetworkServicesLBRouteExtensionSpecExtensionChainsE
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesLBRouteExtensionSpecExtensionChainsExtensions
 {
@@ -231,7 +231,7 @@ public partial class V1alpha1NetworkServicesLBRouteExtensionSpecExtensionChainsE
 }
 
 /// <summary>Required. Conditions under which this chain is invoked for a request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesLBRouteExtensionSpecExtensionChainsMatchCondition
 {
@@ -246,7 +246,7 @@ public partial class V1alpha1NetworkServicesLBRouteExtensionSpecExtensionChainsM
     public required string CelExpression { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesLBRouteExtensionSpecExtensionChains
 {
@@ -264,7 +264,7 @@ public partial class V1alpha1NetworkServicesLBRouteExtensionSpecExtensionChains
 }
 
 /// <summary>ForwardingRuleRef defines the resource reference to ComputeForwardingRule, which &quot;External&quot; field holds the GCP identifier for the KRM object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesLBRouteExtensionSpecForwardingRuleRefs
 {
@@ -282,7 +282,7 @@ public partial class V1alpha1NetworkServicesLBRouteExtensionSpecForwardingRuleRe
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesLBRouteExtensionSpecProjectRef
 {
@@ -304,7 +304,7 @@ public partial class V1alpha1NetworkServicesLBRouteExtensionSpecProjectRef
 }
 
 /// <summary>NetworkServicesLBRouteExtensionSpec defines the desired state of NetworkServicesLBRouteExtension</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesLBRouteExtensionSpec
 {
@@ -341,7 +341,7 @@ public partial class V1alpha1NetworkServicesLBRouteExtensionSpec
     public string? ResourceID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesLBRouteExtensionStatusConditions
 {
@@ -367,7 +367,7 @@ public partial class V1alpha1NetworkServicesLBRouteExtensionStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesLBRouteExtensionStatusObservedState
 {
@@ -381,7 +381,7 @@ public partial class V1alpha1NetworkServicesLBRouteExtensionStatusObservedState
 }
 
 /// <summary>NetworkServicesLBRouteExtensionStatus defines the config connector machine state of NetworkServicesLBRouteExtension</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesLBRouteExtensionStatus
 {
@@ -403,7 +403,7 @@ public partial class V1alpha1NetworkServicesLBRouteExtensionStatus
 }
 
 /// <summary>NetworkServicesLBRouteExtension is the Schema for the NetworkServicesLBRouteExtension API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1NetworkServicesLBRouteExtension : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1NetworkServicesLBRouteExtensionSpec>, IStatus<V1alpha1NetworkServicesLBRouteExtensionStatus?>

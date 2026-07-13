@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.s3.aws.upbound.io;
 /// <summary>BucketLifecycleConfiguration is the Schema for the BucketLifecycleConfigurations API. Provides a S3 bucket lifecycle configuration resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2BucketLifecycleConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta2BucketLifecycleConfiguration>
@@ -45,7 +45,7 @@ public partial class V1beta2BucketLifecycleConfigurationList : IKubernetesObject
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketLifecycleConfigurationSpecDeletionPolicyEnum>))]
 public enum V1beta2BucketLifecycleConfigurationSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2BucketLifecycleConfigurationSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketLifecycleConfigurationSpecForProviderBucketRefPolicyResolutionEnum>))]
 public enum V1beta2BucketLifecycleConfigurationSpecForProviderBucketRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2BucketLifecycleConfigurationSpecForProviderBucketRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketLifecycleConfigurationSpecForProviderBucketRefPolicyResolveEnum>))]
 public enum V1beta2BucketLifecycleConfigurationSpecForProviderBucketRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2BucketLifecycleConfigurationSpecForProviderBucketRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecForProviderBucketRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecForProviderBucketRef
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecForProviderBucketRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecForProviderBucketRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketLifecycleConfigurationSpecForProviderBucketSelectorPolicyResolutionEnum>))]
 public enum V1beta2BucketLifecycleConfigurationSpecForProviderBucketSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2BucketLifecycleConfigurationSpecForProviderBucketSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketLifecycleConfigurationSpecForProviderBucketSelectorPolicyResolveEnum>))]
 public enum V1beta2BucketLifecycleConfigurationSpecForProviderBucketSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2BucketLifecycleConfigurationSpecForProviderBucketSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecForProviderBucketSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecForProviderBucketSel
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecForProviderBucketSelector
 {
@@ -202,7 +202,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecForProviderBucketSel
     public V1beta2BucketLifecycleConfigurationSpecForProviderBucketSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecForProviderRuleAbortIncompleteMultipartUpload
 {
@@ -211,7 +211,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecForProviderRuleAbort
     public double? DaysAfterInitiation { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecForProviderRuleExpiration
 {
@@ -228,7 +228,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecForProviderRuleExpir
     public bool? ExpiredObjectDeleteMarker { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecForProviderRuleFilterAnd
 {
@@ -253,7 +253,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecForProviderRuleFilte
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecForProviderRuleFilterTag
 {
@@ -266,7 +266,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecForProviderRuleFilte
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecForProviderRuleFilter
 {
@@ -291,7 +291,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecForProviderRuleFilte
     public IList<V1beta2BucketLifecycleConfigurationSpecForProviderRuleFilterTag>? Tag { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecForProviderRuleNoncurrentVersionExpiration
 {
@@ -304,7 +304,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecForProviderRuleNoncu
     public double? NoncurrentDays { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecForProviderRuleNoncurrentVersionTransition
 {
@@ -321,7 +321,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecForProviderRuleNoncu
     public string? StorageClass { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecForProviderRuleTransition
 {
@@ -338,7 +338,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecForProviderRuleTrans
     public string? StorageClass { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecForProviderRule
 {
@@ -386,7 +386,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecForProviderRule
     public IList<V1beta2BucketLifecycleConfigurationSpecForProviderRuleTransition>? Transition { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecForProvider
 {
@@ -428,7 +428,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketLifecycleConfigurationSpecInitProviderBucketRefPolicyResolutionEnum>))]
 public enum V1beta2BucketLifecycleConfigurationSpecInitProviderBucketRefPolicyResolutionEnum
 {
@@ -444,7 +444,7 @@ public enum V1beta2BucketLifecycleConfigurationSpecInitProviderBucketRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketLifecycleConfigurationSpecInitProviderBucketRefPolicyResolveEnum>))]
 public enum V1beta2BucketLifecycleConfigurationSpecInitProviderBucketRefPolicyResolveEnum
 {
@@ -455,7 +455,7 @@ public enum V1beta2BucketLifecycleConfigurationSpecInitProviderBucketRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderBucketRefPolicy
 {
@@ -479,7 +479,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderBucketRe
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderBucketRef
 {
@@ -498,7 +498,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderBucketRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketLifecycleConfigurationSpecInitProviderBucketSelectorPolicyResolutionEnum>))]
 public enum V1beta2BucketLifecycleConfigurationSpecInitProviderBucketSelectorPolicyResolutionEnum
 {
@@ -514,7 +514,7 @@ public enum V1beta2BucketLifecycleConfigurationSpecInitProviderBucketSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketLifecycleConfigurationSpecInitProviderBucketSelectorPolicyResolveEnum>))]
 public enum V1beta2BucketLifecycleConfigurationSpecInitProviderBucketSelectorPolicyResolveEnum
 {
@@ -525,7 +525,7 @@ public enum V1beta2BucketLifecycleConfigurationSpecInitProviderBucketSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderBucketSelectorPolicy
 {
@@ -549,7 +549,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderBucketSe
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderBucketSelector
 {
@@ -569,7 +569,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderBucketSe
     public V1beta2BucketLifecycleConfigurationSpecInitProviderBucketSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderRuleAbortIncompleteMultipartUpload
 {
@@ -578,7 +578,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderRuleAbor
     public double? DaysAfterInitiation { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderRuleExpiration
 {
@@ -595,7 +595,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderRuleExpi
     public bool? ExpiredObjectDeleteMarker { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderRuleFilterAnd
 {
@@ -620,7 +620,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderRuleFilt
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderRuleFilterTag
 {
@@ -633,7 +633,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderRuleFilt
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderRuleFilter
 {
@@ -658,7 +658,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderRuleFilt
     public IList<V1beta2BucketLifecycleConfigurationSpecInitProviderRuleFilterTag>? Tag { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderRuleNoncurrentVersionExpiration
 {
@@ -671,7 +671,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderRuleNonc
     public double? NoncurrentDays { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderRuleNoncurrentVersionTransition
 {
@@ -688,7 +688,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderRuleNonc
     public string? StorageClass { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderRuleTransition
 {
@@ -705,7 +705,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderRuleTran
     public string? StorageClass { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderRule
 {
@@ -765,7 +765,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderRule
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecInitProvider
 {
@@ -798,7 +798,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketLifecycleConfigurationSpecManagementPoliciesEnum>))]
 public enum V1beta2BucketLifecycleConfigurationSpecManagementPoliciesEnum
 {
@@ -822,7 +822,7 @@ public enum V1beta2BucketLifecycleConfigurationSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketLifecycleConfigurationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2BucketLifecycleConfigurationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -838,7 +838,7 @@ public enum V1beta2BucketLifecycleConfigurationSpecProviderConfigRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BucketLifecycleConfigurationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2BucketLifecycleConfigurationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -849,7 +849,7 @@ public enum V1beta2BucketLifecycleConfigurationSpecProviderConfigRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecProviderConfigRefPolicy
 {
@@ -877,7 +877,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecProviderConfigRefPol
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecProviderConfigRef
 {
@@ -896,7 +896,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpecWriteConnectionSecretToRef
 {
@@ -910,7 +910,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecWriteConnectionSecre
 }
 
 /// <summary>BucketLifecycleConfigurationSpec defines the desired state of BucketLifecycleConfiguration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationSpec
 {
@@ -977,7 +977,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpec
     public V1beta2BucketLifecycleConfigurationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationStatusAtProviderRuleAbortIncompleteMultipartUpload
 {
@@ -986,7 +986,7 @@ public partial class V1beta2BucketLifecycleConfigurationStatusAtProviderRuleAbor
     public double? DaysAfterInitiation { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationStatusAtProviderRuleExpiration
 {
@@ -1003,7 +1003,7 @@ public partial class V1beta2BucketLifecycleConfigurationStatusAtProviderRuleExpi
     public bool? ExpiredObjectDeleteMarker { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationStatusAtProviderRuleFilterAnd
 {
@@ -1028,7 +1028,7 @@ public partial class V1beta2BucketLifecycleConfigurationStatusAtProviderRuleFilt
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationStatusAtProviderRuleFilterTag
 {
@@ -1041,7 +1041,7 @@ public partial class V1beta2BucketLifecycleConfigurationStatusAtProviderRuleFilt
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationStatusAtProviderRuleFilter
 {
@@ -1066,7 +1066,7 @@ public partial class V1beta2BucketLifecycleConfigurationStatusAtProviderRuleFilt
     public IList<V1beta2BucketLifecycleConfigurationStatusAtProviderRuleFilterTag>? Tag { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationStatusAtProviderRuleNoncurrentVersionExpiration
 {
@@ -1079,7 +1079,7 @@ public partial class V1beta2BucketLifecycleConfigurationStatusAtProviderRuleNonc
     public double? NoncurrentDays { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationStatusAtProviderRuleNoncurrentVersionTransition
 {
@@ -1096,7 +1096,7 @@ public partial class V1beta2BucketLifecycleConfigurationStatusAtProviderRuleNonc
     public string? StorageClass { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationStatusAtProviderRuleTransition
 {
@@ -1113,7 +1113,7 @@ public partial class V1beta2BucketLifecycleConfigurationStatusAtProviderRuleTran
     public string? StorageClass { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationStatusAtProviderRule
 {
@@ -1161,7 +1161,7 @@ public partial class V1beta2BucketLifecycleConfigurationStatusAtProviderRule
     public IList<V1beta2BucketLifecycleConfigurationStatusAtProviderRuleTransition>? Transition { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationStatusAtProvider
 {
@@ -1194,7 +1194,7 @@ public partial class V1beta2BucketLifecycleConfigurationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationStatusConditions
 {
@@ -1237,7 +1237,7 @@ public partial class V1beta2BucketLifecycleConfigurationStatusConditions
 }
 
 /// <summary>BucketLifecycleConfigurationStatus defines the observed state of BucketLifecycleConfiguration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLifecycleConfigurationStatus
 {
@@ -1258,7 +1258,7 @@ public partial class V1beta2BucketLifecycleConfigurationStatus
 }
 
 /// <summary>BucketLifecycleConfiguration is the Schema for the BucketLifecycleConfigurations API. Provides a S3 bucket lifecycle configuration resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2BucketLifecycleConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2BucketLifecycleConfigurationSpec>, IStatus<V1beta2BucketLifecycleConfigurationStatus?>

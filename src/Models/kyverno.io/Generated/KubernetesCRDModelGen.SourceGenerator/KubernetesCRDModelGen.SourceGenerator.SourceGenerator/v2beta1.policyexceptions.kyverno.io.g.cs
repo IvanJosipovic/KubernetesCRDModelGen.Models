@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.kyverno.io;
 /// <summary>PolicyException declares resources to be excluded from specified policies.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -43,7 +43,7 @@ public partial class V2beta1PolicyExceptionList : IKubernetesObject<V1ListMeta>,
 /// GreaterThan, LessThanOrEquals, LessThan, DurationGreaterThanOrEquals, DurationGreaterThan,
 /// DurationLessThanOrEquals, DurationLessThan
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2beta1PolicyExceptionSpecConditionsAllOperatorEnum>))]
 [global::System.Obsolete]
 public enum V2beta1PolicyExceptionSpecConditionsAllOperatorEnum
@@ -78,7 +78,7 @@ public enum V2beta1PolicyExceptionSpecConditionsAllOperatorEnum
     DurationLessThan
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V2beta1PolicyExceptionSpecConditionsAll
@@ -114,7 +114,7 @@ public partial class V2beta1PolicyExceptionSpecConditionsAll
 /// GreaterThan, LessThanOrEquals, LessThan, DurationGreaterThanOrEquals, DurationGreaterThan,
 /// DurationLessThanOrEquals, DurationLessThan
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2beta1PolicyExceptionSpecConditionsAnyOperatorEnum>))]
 [global::System.Obsolete]
 public enum V2beta1PolicyExceptionSpecConditionsAnyOperatorEnum
@@ -149,7 +149,7 @@ public enum V2beta1PolicyExceptionSpecConditionsAnyOperatorEnum
     DurationLessThan
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V2beta1PolicyExceptionSpecConditionsAny
@@ -183,7 +183,7 @@ public partial class V2beta1PolicyExceptionSpecConditionsAny
 /// Conditions are used to determine if a resource applies to the exception by evaluating a
 /// set of conditions. The declaration can contain nested `any` or `all` statements.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V2beta1PolicyExceptionSpecConditions
@@ -208,7 +208,7 @@ public partial class V2beta1PolicyExceptionSpecConditions
 }
 
 /// <summary>Exception stores infos about a policy and rules</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V2beta1PolicyExceptionSpecExceptions
@@ -230,7 +230,7 @@ public partial class V2beta1PolicyExceptionSpecExceptions
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V2beta1PolicyExceptionSpecMatchAllResourcesNamespaceSelectorMatchExpressions
@@ -263,7 +263,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAllResourcesNamespaceSelecto
 /// [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that using [&quot;*&quot; : &quot;*&quot;] matches any key and value but
 /// does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V2beta1PolicyExceptionSpecMatchAllResourcesNamespaceSelector
@@ -282,7 +282,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAllResourcesNamespaceSelecto
 }
 
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2beta1PolicyExceptionSpecMatchAllResourcesOperationsEnum>))]
 [global::System.Obsolete]
 public enum V2beta1PolicyExceptionSpecMatchAllResourcesOperationsEnum
@@ -301,7 +301,7 @@ public enum V2beta1PolicyExceptionSpecMatchAllResourcesOperationsEnum
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V2beta1PolicyExceptionSpecMatchAllResourcesSelectorMatchExpressions
@@ -333,7 +333,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAllResourcesSelectorMatchExp
 /// Wildcards allows writing label selectors like [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that
 /// using [&quot;*&quot; : &quot;*&quot;] matches any key and value but does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V2beta1PolicyExceptionSpecMatchAllResourcesSelector
@@ -352,7 +352,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAllResourcesSelector
 }
 
 /// <summary>ResourceDescription contains information about the resource being created or modified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V2beta1PolicyExceptionSpecMatchAllResources
@@ -419,7 +419,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAllResources
 /// Subject contains a reference to the object or user identities a role binding applies to.  This can either hold a direct API object reference,
 /// or a value for non-objects such as user and group names.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V2beta1PolicyExceptionSpecMatchAllSubjects
@@ -452,7 +452,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAllSubjects
 }
 
 /// <summary>ResourceFilter allow users to &quot;AND&quot; or &quot;OR&quot; between resources</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V2beta1PolicyExceptionSpecMatchAll
@@ -478,7 +478,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAll
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V2beta1PolicyExceptionSpecMatchAnyResourcesNamespaceSelectorMatchExpressions
@@ -511,7 +511,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAnyResourcesNamespaceSelecto
 /// [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that using [&quot;*&quot; : &quot;*&quot;] matches any key and value but
 /// does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V2beta1PolicyExceptionSpecMatchAnyResourcesNamespaceSelector
@@ -530,7 +530,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAnyResourcesNamespaceSelecto
 }
 
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2beta1PolicyExceptionSpecMatchAnyResourcesOperationsEnum>))]
 [global::System.Obsolete]
 public enum V2beta1PolicyExceptionSpecMatchAnyResourcesOperationsEnum
@@ -549,7 +549,7 @@ public enum V2beta1PolicyExceptionSpecMatchAnyResourcesOperationsEnum
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V2beta1PolicyExceptionSpecMatchAnyResourcesSelectorMatchExpressions
@@ -581,7 +581,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAnyResourcesSelectorMatchExp
 /// Wildcards allows writing label selectors like [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that
 /// using [&quot;*&quot; : &quot;*&quot;] matches any key and value but does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V2beta1PolicyExceptionSpecMatchAnyResourcesSelector
@@ -600,7 +600,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAnyResourcesSelector
 }
 
 /// <summary>ResourceDescription contains information about the resource being created or modified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V2beta1PolicyExceptionSpecMatchAnyResources
@@ -667,7 +667,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAnyResources
 /// Subject contains a reference to the object or user identities a role binding applies to.  This can either hold a direct API object reference,
 /// or a value for non-objects such as user and group names.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V2beta1PolicyExceptionSpecMatchAnySubjects
@@ -700,7 +700,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAnySubjects
 }
 
 /// <summary>ResourceFilter allow users to &quot;AND&quot; or &quot;OR&quot; between resources</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V2beta1PolicyExceptionSpecMatchAny
@@ -723,7 +723,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAny
 }
 
 /// <summary>Match defines match clause used to check if a resource applies to the exception</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V2beta1PolicyExceptionSpecMatch
@@ -741,7 +741,7 @@ public partial class V2beta1PolicyExceptionSpecMatch
 /// ControlName specifies the name of the Pod Security Standard control.
 /// See: https://kubernetes.io/docs/concepts/security/pod-security-standards/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2beta1PolicyExceptionSpecPodSecurityControlNameEnum>))]
 [global::System.Obsolete]
 public enum V2beta1PolicyExceptionSpecPodSecurityControlNameEnum
@@ -779,7 +779,7 @@ public enum V2beta1PolicyExceptionSpecPodSecurityControlNameEnum
 }
 
 /// <summary>PodSecurityStandard specifies the Pod Security Standard controls to be excluded.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V2beta1PolicyExceptionSpecPodSecurity
@@ -813,7 +813,7 @@ public partial class V2beta1PolicyExceptionSpecPodSecurity
 }
 
 /// <summary>Spec declares policy exception behaviors.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 public partial class V2beta1PolicyExceptionSpec
@@ -850,7 +850,7 @@ public partial class V2beta1PolicyExceptionSpec
 }
 
 /// <summary>PolicyException declares resources to be excluded from specified policies.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

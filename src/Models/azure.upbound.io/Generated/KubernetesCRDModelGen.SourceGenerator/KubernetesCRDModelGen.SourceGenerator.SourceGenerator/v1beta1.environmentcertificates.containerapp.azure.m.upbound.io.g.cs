@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.containerapp.azure.m.upbound.io;
 /// <summary>EnvironmentCertificate is the Schema for the EnvironmentCertificates API. Manages a Container App Environment Certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EnvironmentCertificateList : IKubernetesObject<V1ListMeta>, IItems<V1beta1EnvironmentCertificate>
@@ -40,7 +40,7 @@ public partial class V1beta1EnvironmentCertificateList : IKubernetesObject<V1Lis
 /// The password for the Certificate. Changing this forces a new resource to be created.
 /// The password for the Certificate.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecForProviderCertificatePasswordSecretRef
 {
@@ -58,7 +58,7 @@ public partial class V1beta1EnvironmentCertificateSpecForProviderCertificatePass
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdRefPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdRefPolicyResolutionEnum
 {
@@ -74,7 +74,7 @@ public enum V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdRefPolicyResolveEnum>))]
 public enum V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdRefPolicyResolveEnum
 {
@@ -85,7 +85,7 @@ public enum V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentI
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdRefPolicy
 {
@@ -109,7 +109,7 @@ public partial class V1beta1EnvironmentCertificateSpecForProviderContainerAppEnv
 }
 
 /// <summary>Reference to a Environment in containerapp to populate containerAppEnvironmentId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1EnvironmentCertificateSpecForProviderContainerAppEnv
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdSelectorPolicyResolveEnum>))]
 public enum V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentI
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1EnvironmentCertificateSpecForProviderContainerAppEnv
 }
 
 /// <summary>Selector for a Environment in containerapp to populate containerAppEnvironmentId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdSelector
 {
@@ -207,7 +207,7 @@ public partial class V1beta1EnvironmentCertificateSpecForProviderContainerAppEnv
     public V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecForProvider
 {
@@ -249,7 +249,7 @@ public partial class V1beta1EnvironmentCertificateSpecForProvider
 /// The password for the Certificate. Changing this forces a new resource to be created.
 /// The password for the Certificate.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificatePasswordSecretRef
 {
@@ -273,7 +273,7 @@ public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificatePas
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecInitProvider
 {
@@ -300,7 +300,7 @@ public partial class V1beta1EnvironmentCertificateSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecManagementPoliciesEnum>))]
 public enum V1beta1EnvironmentCertificateSpecManagementPoliciesEnum
 {
@@ -323,7 +323,7 @@ public enum V1beta1EnvironmentCertificateSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecProviderConfigRef
 {
@@ -342,7 +342,7 @@ public partial class V1beta1EnvironmentCertificateSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecWriteConnectionSecretToRef
 {
@@ -352,7 +352,7 @@ public partial class V1beta1EnvironmentCertificateSpecWriteConnectionSecretToRef
 }
 
 /// <summary>EnvironmentCertificateSpec defines the desired state of EnvironmentCertificate</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpec
 {
@@ -403,7 +403,7 @@ public partial class V1beta1EnvironmentCertificateSpec
     public V1beta1EnvironmentCertificateSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateStatusAtProvider
 {
@@ -466,7 +466,7 @@ public partial class V1beta1EnvironmentCertificateStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateStatusConditions
 {
@@ -509,7 +509,7 @@ public partial class V1beta1EnvironmentCertificateStatusConditions
 }
 
 /// <summary>EnvironmentCertificateStatus defines the observed state of EnvironmentCertificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateStatus
 {
@@ -530,7 +530,7 @@ public partial class V1beta1EnvironmentCertificateStatus
 }
 
 /// <summary>EnvironmentCertificate is the Schema for the EnvironmentCertificates API. Manages a Container App Environment Certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EnvironmentCertificate : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1EnvironmentCertificateSpec>, IStatus<V1beta1EnvironmentCertificateStatus?>

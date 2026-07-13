@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ecs.aws.m.upbound.io;
 /// <summary>CapacityProvider is the Schema for the CapacityProviders API. Provides an ECS cluster capacity provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CapacityProviderList : IKubernetesObject<V1ListMeta>, IItems<V1beta1CapacityProvider>
@@ -42,7 +42,7 @@ public partial class V1beta1CapacityProviderList : IKubernetesObject<V1ListMeta>
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CapacityProviderSpecForProviderAutoScalingGroupProviderAutoScalingGroupArnRefPolicyResolutionEnum>))]
 public enum V1beta1CapacityProviderSpecForProviderAutoScalingGroupProviderAutoScalingGroupArnRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1CapacityProviderSpecForProviderAutoScalingGroupProviderAutoSc
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CapacityProviderSpecForProviderAutoScalingGroupProviderAutoScalingGroupArnRefPolicyResolveEnum>))]
 public enum V1beta1CapacityProviderSpecForProviderAutoScalingGroupProviderAutoScalingGroupArnRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1CapacityProviderSpecForProviderAutoScalingGroupProviderAutoSc
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderAutoScalingGroupProviderAutoScalingGroupArnRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1CapacityProviderSpecForProviderAutoScalingGroupProvi
 }
 
 /// <summary>Reference to a AutoscalingGroup in autoscaling to populate autoScalingGroupArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderAutoScalingGroupProviderAutoScalingGroupArnRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1CapacityProviderSpecForProviderAutoScalingGroupProvi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CapacityProviderSpecForProviderAutoScalingGroupProviderAutoScalingGroupArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1CapacityProviderSpecForProviderAutoScalingGroupProviderAutoScalingGroupArnSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1CapacityProviderSpecForProviderAutoScalingGroupProviderAutoSc
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CapacityProviderSpecForProviderAutoScalingGroupProviderAutoScalingGroupArnSelectorPolicyResolveEnum>))]
 public enum V1beta1CapacityProviderSpecForProviderAutoScalingGroupProviderAutoScalingGroupArnSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1CapacityProviderSpecForProviderAutoScalingGroupProviderAutoSc
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderAutoScalingGroupProviderAutoScalingGroupArnSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1CapacityProviderSpecForProviderAutoScalingGroupProvi
 }
 
 /// <summary>Selector for a AutoscalingGroup in autoscaling to populate autoScalingGroupArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderAutoScalingGroupProviderAutoScalingGroupArnSelector
 {
@@ -192,7 +192,7 @@ public partial class V1beta1CapacityProviderSpecForProviderAutoScalingGroupProvi
 }
 
 /// <summary>- Configuration block defining the parameters of the auto scaling. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderAutoScalingGroupProviderManagedScaling
 {
@@ -218,7 +218,7 @@ public partial class V1beta1CapacityProviderSpecForProviderAutoScalingGroupProvi
 }
 
 /// <summary>Configuration block for the provider for the ECS auto scaling group. Detailed below. Exactly one of auto_scaling_group_provider or managed_instances_provider must be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderAutoScalingGroupProvider
 {
@@ -248,7 +248,7 @@ public partial class V1beta1CapacityProviderSpecForProviderAutoScalingGroupProvi
 }
 
 /// <summary>Defines how Amazon ECS Managed Instances optimizes the infrastructure in your capacity provider. Configure it to turn on or off the infrastructure optimization in your capacity provider, and to control the idle EC2 instances optimization delay.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInfrastructureOptimization
 {
@@ -258,7 +258,7 @@ public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProvi
 }
 
 /// <summary>The minimum and maximum number of accelerators for the instance types. This is used when you need instances with specific numbers of GPUs or other accelerators.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorCount
 {
@@ -270,7 +270,7 @@ public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProvi
 }
 
 /// <summary>The minimum and maximum total accelerator memory in mebibytes (MiB). This is important for GPU workloads that require specific amounts of video memory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib
 {
@@ -282,7 +282,7 @@ public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProvi
 }
 
 /// <summary>The minimum and maximum baseline Amazon EBS bandwidth in megabits per second (Mbps). This is important for workloads with high storage I/O requirements.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps
 {
@@ -294,7 +294,7 @@ public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProvi
 }
 
 /// <summary>The minimum and maximum amount of memory per vCPU in gibibytes (GiB). This helps ensure that instance types have the appropriate memory-to-CPU ratio for your workloads.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryGibPerVcpu
 {
@@ -306,7 +306,7 @@ public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProvi
 }
 
 /// <summary>The minimum and maximum amount of memory in mebibytes (MiB) for the instance types. Amazon ECS selects instance types that have memory within this range.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryMib
 {
@@ -318,7 +318,7 @@ public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProvi
 }
 
 /// <summary>The minimum and maximum network bandwidth in gigabits per second (Gbps). This is crucial for network-intensive workloads that require high throughput.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkBandwidthGbps
 {
@@ -330,7 +330,7 @@ public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProvi
 }
 
 /// <summary>The minimum and maximum number of network interfaces for the instance types. This is useful for workloads that require multiple network interfaces.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkInterfaceCount
 {
@@ -342,7 +342,7 @@ public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProvi
 }
 
 /// <summary>The minimum and maximum total local storage in gigabytes (GB) for instance types with local storage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsTotalLocalStorageGb
 {
@@ -354,7 +354,7 @@ public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProvi
 }
 
 /// <summary>The minimum and maximum number of vCPUs for the instance types. Amazon ECS selects instance types that have vCPU counts within this range.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsVcpuCount
 {
@@ -366,7 +366,7 @@ public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProvi
 }
 
 /// <summary>The instance requirements. You can specify the instance types and instance requirements such as vCPU count, memory, network performance, and accelerator specifications. Amazon ECS automatically selects the instances that match the specified criteria. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirements
 {
@@ -468,7 +468,7 @@ public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProvi
 }
 
 /// <summary>The network configuration for Amazon ECS Managed Instances. This specifies the subnets and security groups that instances use for network connectivity. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateNetworkConfiguration
 {
@@ -482,7 +482,7 @@ public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProvi
 }
 
 /// <summary>The storage configuration for Amazon ECS Managed Instances. This defines the root volume size and type for the instances. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateStorageConfiguration
 {
@@ -492,7 +492,7 @@ public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProvi
 }
 
 /// <summary>The launch template configuration that specifies how Amazon ECS should launch Amazon EC2 instances. This includes the instance profile, network configuration, storage settings, and instance requirements for attribute-based instance type selection. For more information, see Store instance launch parameters in Amazon EC2 launch templates in the Amazon EC2 User Guide. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplate
 {
@@ -522,7 +522,7 @@ public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProvi
 }
 
 /// <summary>Configuration block for the managed instances provider. Detailed below. Exactly one of auto_scaling_group_provider or managed_instances_provider must be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProvider
 {
@@ -543,7 +543,7 @@ public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProvi
     public string? PropagateTags { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProvider
 {
@@ -577,7 +577,7 @@ public partial class V1beta1CapacityProviderSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProviderAutoScalingGroupArnRefPolicyResolutionEnum>))]
 public enum V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProviderAutoScalingGroupArnRefPolicyResolutionEnum
 {
@@ -593,7 +593,7 @@ public enum V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProviderAutoS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProviderAutoScalingGroupArnRefPolicyResolveEnum>))]
 public enum V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProviderAutoScalingGroupArnRefPolicyResolveEnum
 {
@@ -604,7 +604,7 @@ public enum V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProviderAutoS
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProviderAutoScalingGroupArnRefPolicy
 {
@@ -628,7 +628,7 @@ public partial class V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProv
 }
 
 /// <summary>Reference to a AutoscalingGroup in autoscaling to populate autoScalingGroupArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProviderAutoScalingGroupArnRef
 {
@@ -651,7 +651,7 @@ public partial class V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProv
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProviderAutoScalingGroupArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProviderAutoScalingGroupArnSelectorPolicyResolutionEnum
 {
@@ -667,7 +667,7 @@ public enum V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProviderAutoS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProviderAutoScalingGroupArnSelectorPolicyResolveEnum>))]
 public enum V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProviderAutoScalingGroupArnSelectorPolicyResolveEnum
 {
@@ -678,7 +678,7 @@ public enum V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProviderAutoS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProviderAutoScalingGroupArnSelectorPolicy
 {
@@ -702,7 +702,7 @@ public partial class V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProv
 }
 
 /// <summary>Selector for a AutoscalingGroup in autoscaling to populate autoScalingGroupArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProviderAutoScalingGroupArnSelector
 {
@@ -727,7 +727,7 @@ public partial class V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProv
 }
 
 /// <summary>- Configuration block defining the parameters of the auto scaling. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProviderManagedScaling
 {
@@ -753,7 +753,7 @@ public partial class V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProv
 }
 
 /// <summary>Configuration block for the provider for the ECS auto scaling group. Detailed below. Exactly one of auto_scaling_group_provider or managed_instances_provider must be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProvider
 {
@@ -783,7 +783,7 @@ public partial class V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProv
 }
 
 /// <summary>Defines how Amazon ECS Managed Instances optimizes the infrastructure in your capacity provider. Configure it to turn on or off the infrastructure optimization in your capacity provider, and to control the idle EC2 instances optimization delay.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInfrastructureOptimization
 {
@@ -793,7 +793,7 @@ public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProv
 }
 
 /// <summary>The minimum and maximum number of accelerators for the instance types. This is used when you need instances with specific numbers of GPUs or other accelerators.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorCount
 {
@@ -805,7 +805,7 @@ public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProv
 }
 
 /// <summary>The minimum and maximum total accelerator memory in mebibytes (MiB). This is important for GPU workloads that require specific amounts of video memory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib
 {
@@ -817,7 +817,7 @@ public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProv
 }
 
 /// <summary>The minimum and maximum baseline Amazon EBS bandwidth in megabits per second (Mbps). This is important for workloads with high storage I/O requirements.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps
 {
@@ -829,7 +829,7 @@ public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProv
 }
 
 /// <summary>The minimum and maximum amount of memory per vCPU in gibibytes (GiB). This helps ensure that instance types have the appropriate memory-to-CPU ratio for your workloads.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryGibPerVcpu
 {
@@ -841,7 +841,7 @@ public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProv
 }
 
 /// <summary>The minimum and maximum amount of memory in mebibytes (MiB) for the instance types. Amazon ECS selects instance types that have memory within this range.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryMib
 {
@@ -853,7 +853,7 @@ public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProv
 }
 
 /// <summary>The minimum and maximum network bandwidth in gigabits per second (Gbps). This is crucial for network-intensive workloads that require high throughput.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkBandwidthGbps
 {
@@ -865,7 +865,7 @@ public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProv
 }
 
 /// <summary>The minimum and maximum number of network interfaces for the instance types. This is useful for workloads that require multiple network interfaces.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkInterfaceCount
 {
@@ -877,7 +877,7 @@ public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProv
 }
 
 /// <summary>The minimum and maximum total local storage in gigabytes (GB) for instance types with local storage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsTotalLocalStorageGb
 {
@@ -889,7 +889,7 @@ public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProv
 }
 
 /// <summary>The minimum and maximum number of vCPUs for the instance types. Amazon ECS selects instance types that have vCPU counts within this range.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsVcpuCount
 {
@@ -901,7 +901,7 @@ public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProv
 }
 
 /// <summary>The instance requirements. You can specify the instance types and instance requirements such as vCPU count, memory, network performance, and accelerator specifications. Amazon ECS automatically selects the instances that match the specified criteria. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirements
 {
@@ -1003,7 +1003,7 @@ public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProv
 }
 
 /// <summary>The network configuration for Amazon ECS Managed Instances. This specifies the subnets and security groups that instances use for network connectivity. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateNetworkConfiguration
 {
@@ -1017,7 +1017,7 @@ public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProv
 }
 
 /// <summary>The storage configuration for Amazon ECS Managed Instances. This defines the root volume size and type for the instances. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateStorageConfiguration
 {
@@ -1027,7 +1027,7 @@ public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProv
 }
 
 /// <summary>The launch template configuration that specifies how Amazon ECS should launch Amazon EC2 instances. This includes the instance profile, network configuration, storage settings, and instance requirements for attribute-based instance type selection. For more information, see Store instance launch parameters in Amazon EC2 launch templates in the Amazon EC2 User Guide. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplate
 {
@@ -1057,7 +1057,7 @@ public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProv
 }
 
 /// <summary>Configuration block for the managed instances provider. Detailed below. Exactly one of auto_scaling_group_provider or managed_instances_provider must be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProvider
 {
@@ -1090,7 +1090,7 @@ public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProv
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProvider
 {
@@ -1115,7 +1115,7 @@ public partial class V1beta1CapacityProviderSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CapacityProviderSpecManagementPoliciesEnum>))]
 public enum V1beta1CapacityProviderSpecManagementPoliciesEnum
 {
@@ -1138,7 +1138,7 @@ public enum V1beta1CapacityProviderSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecProviderConfigRef
 {
@@ -1157,7 +1157,7 @@ public partial class V1beta1CapacityProviderSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecWriteConnectionSecretToRef
 {
@@ -1167,7 +1167,7 @@ public partial class V1beta1CapacityProviderSpecWriteConnectionSecretToRef
 }
 
 /// <summary>CapacityProviderSpec defines the desired state of CapacityProvider</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpec
 {
@@ -1219,7 +1219,7 @@ public partial class V1beta1CapacityProviderSpec
 }
 
 /// <summary>- Configuration block defining the parameters of the auto scaling. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderAutoScalingGroupProviderManagedScaling
 {
@@ -1245,7 +1245,7 @@ public partial class V1beta1CapacityProviderStatusAtProviderAutoScalingGroupProv
 }
 
 /// <summary>Configuration block for the provider for the ECS auto scaling group. Detailed below. Exactly one of auto_scaling_group_provider or managed_instances_provider must be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderAutoScalingGroupProvider
 {
@@ -1267,7 +1267,7 @@ public partial class V1beta1CapacityProviderStatusAtProviderAutoScalingGroupProv
 }
 
 /// <summary>Defines how Amazon ECS Managed Instances optimizes the infrastructure in your capacity provider. Configure it to turn on or off the infrastructure optimization in your capacity provider, and to control the idle EC2 instances optimization delay.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInfrastructureOptimization
 {
@@ -1277,7 +1277,7 @@ public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProv
 }
 
 /// <summary>The minimum and maximum number of accelerators for the instance types. This is used when you need instances with specific numbers of GPUs or other accelerators.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorCount
 {
@@ -1289,7 +1289,7 @@ public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProv
 }
 
 /// <summary>The minimum and maximum total accelerator memory in mebibytes (MiB). This is important for GPU workloads that require specific amounts of video memory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib
 {
@@ -1301,7 +1301,7 @@ public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProv
 }
 
 /// <summary>The minimum and maximum baseline Amazon EBS bandwidth in megabits per second (Mbps). This is important for workloads with high storage I/O requirements.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps
 {
@@ -1313,7 +1313,7 @@ public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProv
 }
 
 /// <summary>The minimum and maximum amount of memory per vCPU in gibibytes (GiB). This helps ensure that instance types have the appropriate memory-to-CPU ratio for your workloads.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryGibPerVcpu
 {
@@ -1325,7 +1325,7 @@ public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProv
 }
 
 /// <summary>The minimum and maximum amount of memory in mebibytes (MiB) for the instance types. Amazon ECS selects instance types that have memory within this range.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryMib
 {
@@ -1337,7 +1337,7 @@ public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProv
 }
 
 /// <summary>The minimum and maximum network bandwidth in gigabits per second (Gbps). This is crucial for network-intensive workloads that require high throughput.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkBandwidthGbps
 {
@@ -1349,7 +1349,7 @@ public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProv
 }
 
 /// <summary>The minimum and maximum number of network interfaces for the instance types. This is useful for workloads that require multiple network interfaces.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkInterfaceCount
 {
@@ -1361,7 +1361,7 @@ public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProv
 }
 
 /// <summary>The minimum and maximum total local storage in gigabytes (GB) for instance types with local storage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsTotalLocalStorageGb
 {
@@ -1373,7 +1373,7 @@ public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProv
 }
 
 /// <summary>The minimum and maximum number of vCPUs for the instance types. Amazon ECS selects instance types that have vCPU counts within this range.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsVcpuCount
 {
@@ -1385,7 +1385,7 @@ public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProv
 }
 
 /// <summary>The instance requirements. You can specify the instance types and instance requirements such as vCPU count, memory, network performance, and accelerator specifications. Amazon ECS automatically selects the instances that match the specified criteria. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirements
 {
@@ -1487,7 +1487,7 @@ public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProv
 }
 
 /// <summary>The network configuration for Amazon ECS Managed Instances. This specifies the subnets and security groups that instances use for network connectivity. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateNetworkConfiguration
 {
@@ -1501,7 +1501,7 @@ public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProv
 }
 
 /// <summary>The storage configuration for Amazon ECS Managed Instances. This defines the root volume size and type for the instances. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateStorageConfiguration
 {
@@ -1511,7 +1511,7 @@ public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProv
 }
 
 /// <summary>The launch template configuration that specifies how Amazon ECS should launch Amazon EC2 instances. This includes the instance profile, network configuration, storage settings, and instance requirements for attribute-based instance type selection. For more information, see Store instance launch parameters in Amazon EC2 launch templates in the Amazon EC2 User Guide. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplate
 {
@@ -1541,7 +1541,7 @@ public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProv
 }
 
 /// <summary>Configuration block for the managed instances provider. Detailed below. Exactly one of auto_scaling_group_provider or managed_instances_provider must be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProvider
 {
@@ -1562,7 +1562,7 @@ public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProv
     public string? PropagateTags { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProvider
 {
@@ -1602,7 +1602,7 @@ public partial class V1beta1CapacityProviderStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusConditions
 {
@@ -1645,7 +1645,7 @@ public partial class V1beta1CapacityProviderStatusConditions
 }
 
 /// <summary>CapacityProviderStatus defines the observed state of CapacityProvider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatus
 {
@@ -1666,7 +1666,7 @@ public partial class V1beta1CapacityProviderStatus
 }
 
 /// <summary>CapacityProvider is the Schema for the CapacityProviders API. Provides an ECS cluster capacity provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CapacityProvider : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1CapacityProviderSpec>, IStatus<V1beta1CapacityProviderStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.glue.aws.m.upbound.io;
 /// <summary>CatalogDatabase is the Schema for the CatalogDatabases API. Provides a Glue Catalog Database.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CatalogDatabaseList : IKubernetesObject<V1ListMeta>, IItems<V1beta1CatalogDatabase>
@@ -37,7 +37,7 @@ public partial class V1beta1CatalogDatabaseList : IKubernetesObject<V1ListMeta>,
 }
 
 /// <summary>The principal who is granted permissions.. See principal below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogDatabaseSpecForProviderCreateTableDefaultPermissionPrincipal
 {
@@ -46,7 +46,7 @@ public partial class V1beta1CatalogDatabaseSpecForProviderCreateTableDefaultPerm
     public string? DataLakePrincipalIdentifier { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogDatabaseSpecForProviderCreateTableDefaultPermission
 {
@@ -60,7 +60,7 @@ public partial class V1beta1CatalogDatabaseSpecForProviderCreateTableDefaultPerm
 }
 
 /// <summary>Configuration block that references an entity outside the AWS Glue Data Catalog. See federated_database below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogDatabaseSpecForProviderFederatedDatabase
 {
@@ -74,7 +74,7 @@ public partial class V1beta1CatalogDatabaseSpecForProviderFederatedDatabase
 }
 
 /// <summary>Configuration block for a target database for resource linking. See target_database below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogDatabaseSpecForProviderTargetDatabase
 {
@@ -91,7 +91,7 @@ public partial class V1beta1CatalogDatabaseSpecForProviderTargetDatabase
     public string? Region { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogDatabaseSpecForProvider
 {
@@ -136,7 +136,7 @@ public partial class V1beta1CatalogDatabaseSpecForProvider
 }
 
 /// <summary>The principal who is granted permissions.. See principal below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogDatabaseSpecInitProviderCreateTableDefaultPermissionPrincipal
 {
@@ -145,7 +145,7 @@ public partial class V1beta1CatalogDatabaseSpecInitProviderCreateTableDefaultPer
     public string? DataLakePrincipalIdentifier { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogDatabaseSpecInitProviderCreateTableDefaultPermission
 {
@@ -159,7 +159,7 @@ public partial class V1beta1CatalogDatabaseSpecInitProviderCreateTableDefaultPer
 }
 
 /// <summary>Configuration block that references an entity outside the AWS Glue Data Catalog. See federated_database below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogDatabaseSpecInitProviderFederatedDatabase
 {
@@ -173,7 +173,7 @@ public partial class V1beta1CatalogDatabaseSpecInitProviderFederatedDatabase
 }
 
 /// <summary>Configuration block for a target database for resource linking. See target_database below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogDatabaseSpecInitProviderTargetDatabase
 {
@@ -194,7 +194,7 @@ public partial class V1beta1CatalogDatabaseSpecInitProviderTargetDatabase
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogDatabaseSpecInitProvider
 {
@@ -231,7 +231,7 @@ public partial class V1beta1CatalogDatabaseSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogDatabaseSpecManagementPoliciesEnum>))]
 public enum V1beta1CatalogDatabaseSpecManagementPoliciesEnum
 {
@@ -254,7 +254,7 @@ public enum V1beta1CatalogDatabaseSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogDatabaseSpecProviderConfigRef
 {
@@ -273,7 +273,7 @@ public partial class V1beta1CatalogDatabaseSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogDatabaseSpecWriteConnectionSecretToRef
 {
@@ -283,7 +283,7 @@ public partial class V1beta1CatalogDatabaseSpecWriteConnectionSecretToRef
 }
 
 /// <summary>CatalogDatabaseSpec defines the desired state of CatalogDatabase</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogDatabaseSpec
 {
@@ -335,7 +335,7 @@ public partial class V1beta1CatalogDatabaseSpec
 }
 
 /// <summary>The principal who is granted permissions.. See principal below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogDatabaseStatusAtProviderCreateTableDefaultPermissionPrincipal
 {
@@ -344,7 +344,7 @@ public partial class V1beta1CatalogDatabaseStatusAtProviderCreateTableDefaultPer
     public string? DataLakePrincipalIdentifier { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogDatabaseStatusAtProviderCreateTableDefaultPermission
 {
@@ -358,7 +358,7 @@ public partial class V1beta1CatalogDatabaseStatusAtProviderCreateTableDefaultPer
 }
 
 /// <summary>Configuration block that references an entity outside the AWS Glue Data Catalog. See federated_database below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogDatabaseStatusAtProviderFederatedDatabase
 {
@@ -372,7 +372,7 @@ public partial class V1beta1CatalogDatabaseStatusAtProviderFederatedDatabase
 }
 
 /// <summary>Configuration block for a target database for resource linking. See target_database below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogDatabaseStatusAtProviderTargetDatabase
 {
@@ -389,7 +389,7 @@ public partial class V1beta1CatalogDatabaseStatusAtProviderTargetDatabase
     public string? Region { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogDatabaseStatusAtProvider
 {
@@ -446,7 +446,7 @@ public partial class V1beta1CatalogDatabaseStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogDatabaseStatusConditions
 {
@@ -489,7 +489,7 @@ public partial class V1beta1CatalogDatabaseStatusConditions
 }
 
 /// <summary>CatalogDatabaseStatus defines the observed state of CatalogDatabase.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogDatabaseStatus
 {
@@ -510,7 +510,7 @@ public partial class V1beta1CatalogDatabaseStatus
 }
 
 /// <summary>CatalogDatabase is the Schema for the CatalogDatabases API. Provides a Glue Catalog Database.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CatalogDatabase : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1CatalogDatabaseSpec>, IStatus<V1beta1CatalogDatabaseStatus?>

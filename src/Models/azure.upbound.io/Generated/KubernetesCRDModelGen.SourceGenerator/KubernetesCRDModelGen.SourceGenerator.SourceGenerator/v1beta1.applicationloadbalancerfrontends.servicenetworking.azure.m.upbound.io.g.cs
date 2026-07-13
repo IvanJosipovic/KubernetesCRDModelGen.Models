@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.servicenetworking.azure.m.upbound.io;
 /// <summary>ApplicationLoadBalancerFrontend is the Schema for the ApplicationLoadBalancerFrontends API. Manages an Application Gateway for Containers Frontend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ApplicationLoadBalancerFrontendList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ApplicationLoadBalancerFrontend>
@@ -42,7 +42,7 @@ public partial class V1beta1ApplicationLoadBalancerFrontendList : IKubernetesObj
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerFrontendSpecForProviderApplicationLoadBalancerIdRefPolicyResolutionEnum>))]
 public enum V1beta1ApplicationLoadBalancerFrontendSpecForProviderApplicationLoadBalancerIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1ApplicationLoadBalancerFrontendSpecForProviderApplicationLoad
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerFrontendSpecForProviderApplicationLoadBalancerIdRefPolicyResolveEnum>))]
 public enum V1beta1ApplicationLoadBalancerFrontendSpecForProviderApplicationLoadBalancerIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1ApplicationLoadBalancerFrontendSpecForProviderApplicationLoad
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerFrontendSpecForProviderApplicationLoadBalancerIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1ApplicationLoadBalancerFrontendSpecForProviderApplic
 }
 
 /// <summary>Reference to a ApplicationLoadBalancer in servicenetworking to populate applicationLoadBalancerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerFrontendSpecForProviderApplicationLoadBalancerIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1ApplicationLoadBalancerFrontendSpecForProviderApplic
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerFrontendSpecForProviderApplicationLoadBalancerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ApplicationLoadBalancerFrontendSpecForProviderApplicationLoadBalancerIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1ApplicationLoadBalancerFrontendSpecForProviderApplicationLoad
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerFrontendSpecForProviderApplicationLoadBalancerIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ApplicationLoadBalancerFrontendSpecForProviderApplicationLoadBalancerIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1ApplicationLoadBalancerFrontendSpecForProviderApplicationLoad
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerFrontendSpecForProviderApplicationLoadBalancerIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1ApplicationLoadBalancerFrontendSpecForProviderApplic
 }
 
 /// <summary>Selector for a ApplicationLoadBalancer in servicenetworking to populate applicationLoadBalancerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerFrontendSpecForProviderApplicationLoadBalancerIdSelector
 {
@@ -191,7 +191,7 @@ public partial class V1beta1ApplicationLoadBalancerFrontendSpecForProviderApplic
     public V1beta1ApplicationLoadBalancerFrontendSpecForProviderApplicationLoadBalancerIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerFrontendSpecForProvider
 {
@@ -224,7 +224,7 @@ public partial class V1beta1ApplicationLoadBalancerFrontendSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerFrontendSpecInitProvider
 {
@@ -237,7 +237,7 @@ public partial class V1beta1ApplicationLoadBalancerFrontendSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationLoadBalancerFrontendSpecManagementPoliciesEnum>))]
 public enum V1beta1ApplicationLoadBalancerFrontendSpecManagementPoliciesEnum
 {
@@ -260,7 +260,7 @@ public enum V1beta1ApplicationLoadBalancerFrontendSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerFrontendSpecProviderConfigRef
 {
@@ -279,7 +279,7 @@ public partial class V1beta1ApplicationLoadBalancerFrontendSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerFrontendSpecWriteConnectionSecretToRef
 {
@@ -289,7 +289,7 @@ public partial class V1beta1ApplicationLoadBalancerFrontendSpecWriteConnectionSe
 }
 
 /// <summary>ApplicationLoadBalancerFrontendSpec defines the desired state of ApplicationLoadBalancerFrontend</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerFrontendSpec
 {
@@ -340,7 +340,7 @@ public partial class V1beta1ApplicationLoadBalancerFrontendSpec
     public V1beta1ApplicationLoadBalancerFrontendSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerFrontendStatusAtProvider
 {
@@ -362,7 +362,7 @@ public partial class V1beta1ApplicationLoadBalancerFrontendStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerFrontendStatusConditions
 {
@@ -405,7 +405,7 @@ public partial class V1beta1ApplicationLoadBalancerFrontendStatusConditions
 }
 
 /// <summary>ApplicationLoadBalancerFrontendStatus defines the observed state of ApplicationLoadBalancerFrontend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationLoadBalancerFrontendStatus
 {
@@ -426,7 +426,7 @@ public partial class V1beta1ApplicationLoadBalancerFrontendStatus
 }
 
 /// <summary>ApplicationLoadBalancerFrontend is the Schema for the ApplicationLoadBalancerFrontends API. Manages an Application Gateway for Containers Frontend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ApplicationLoadBalancerFrontend : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ApplicationLoadBalancerFrontendSpec>, IStatus<V1beta1ApplicationLoadBalancerFrontendStatus?>

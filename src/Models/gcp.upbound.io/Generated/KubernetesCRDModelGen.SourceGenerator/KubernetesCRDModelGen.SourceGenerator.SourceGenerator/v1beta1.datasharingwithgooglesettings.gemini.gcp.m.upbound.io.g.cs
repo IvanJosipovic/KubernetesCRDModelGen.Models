@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.gemini.gcp.m.upbound.io;
 /// <summary>DataSharingWithGoogleSetting is the Schema for the DataSharingWithGoogleSettings API. The resource for managing DataSharingWithGoogle settings for Admin Control.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DataSharingWithGoogleSettingList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DataSharingWithGoogleSetting>
@@ -36,7 +36,7 @@ public partial class V1beta1DataSharingWithGoogleSettingList : IKubernetesObject
     public required IList<V1beta1DataSharingWithGoogleSetting> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSharingWithGoogleSettingSpecForProvider
 {
@@ -80,7 +80,7 @@ public partial class V1beta1DataSharingWithGoogleSettingSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSharingWithGoogleSettingSpecInitProvider
 {
@@ -112,7 +112,7 @@ public partial class V1beta1DataSharingWithGoogleSettingSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSharingWithGoogleSettingSpecManagementPoliciesEnum>))]
 public enum V1beta1DataSharingWithGoogleSettingSpecManagementPoliciesEnum
 {
@@ -135,7 +135,7 @@ public enum V1beta1DataSharingWithGoogleSettingSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSharingWithGoogleSettingSpecProviderConfigRef
 {
@@ -154,7 +154,7 @@ public partial class V1beta1DataSharingWithGoogleSettingSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSharingWithGoogleSettingSpecWriteConnectionSecretToRef
 {
@@ -164,7 +164,7 @@ public partial class V1beta1DataSharingWithGoogleSettingSpecWriteConnectionSecre
 }
 
 /// <summary>DataSharingWithGoogleSettingSpec defines the desired state of DataSharingWithGoogleSetting</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSharingWithGoogleSettingSpec
 {
@@ -215,7 +215,7 @@ public partial class V1beta1DataSharingWithGoogleSettingSpec
     public V1beta1DataSharingWithGoogleSettingSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSharingWithGoogleSettingStatusAtProvider
 {
@@ -277,7 +277,7 @@ public partial class V1beta1DataSharingWithGoogleSettingStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSharingWithGoogleSettingStatusConditions
 {
@@ -320,7 +320,7 @@ public partial class V1beta1DataSharingWithGoogleSettingStatusConditions
 }
 
 /// <summary>DataSharingWithGoogleSettingStatus defines the observed state of DataSharingWithGoogleSetting.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSharingWithGoogleSettingStatus
 {
@@ -341,7 +341,7 @@ public partial class V1beta1DataSharingWithGoogleSettingStatus
 }
 
 /// <summary>DataSharingWithGoogleSetting is the Schema for the DataSharingWithGoogleSettings API. The resource for managing DataSharingWithGoogle settings for Admin Control.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DataSharingWithGoogleSetting : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DataSharingWithGoogleSettingSpec>, IStatus<V1beta1DataSharingWithGoogleSettingStatus?>

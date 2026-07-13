@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appplatform.azure.m.upbound.io;
 /// <summary>SpringCloudCustomizedAccelerator is the Schema for the SpringCloudCustomizedAccelerators API. Manages a Spring Cloud Customized Accelerator.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SpringCloudCustomizedAcceleratorList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SpringCloudCustomizedAccelerator>
@@ -37,7 +37,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorList : IKubernetesOb
 }
 
 /// <summary>Specifies the password of git repository basic auth.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorSpecForProviderGitRepositoryBasicAuthPasswordSecretRef
 {
@@ -50,7 +50,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorSpecForProviderGitRe
 }
 
 /// <summary>A basic_auth block as defined below. Conflicts with git_repository[0].ssh_auth. Changing this forces a new Spring Cloud Customized Accelerator to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorSpecForProviderGitRepositoryBasicAuth
 {
@@ -64,7 +64,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorSpecForProviderGitRe
 }
 
 /// <summary>Specifies the Public SSH Key of git repository basic auth.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorSpecForProviderGitRepositorySshAuthHostKeySecretRef
 {
@@ -77,7 +77,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorSpecForProviderGitRe
 }
 
 /// <summary>Specifies the Private SSH Key of git repository basic auth.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorSpecForProviderGitRepositorySshAuthPrivateKeySecretRef
 {
@@ -90,7 +90,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorSpecForProviderGitRe
 }
 
 /// <summary>A ssh_auth block as defined below. Conflicts with git_repository[0].basic_auth. Changing this forces a new Spring Cloud Customized Accelerator to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorSpecForProviderGitRepositorySshAuth
 {
@@ -108,7 +108,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorSpecForProviderGitRe
 }
 
 /// <summary>A git_repository block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorSpecForProviderGitRepository
 {
@@ -155,7 +155,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorSpecForProviderGitRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudCustomizedAcceleratorSpecForProviderSpringCloudAcceleratorIdRefPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudCustomizedAcceleratorSpecForProviderSpringCloudAcceleratorIdRefPolicyResolutionEnum
 {
@@ -171,7 +171,7 @@ public enum V1beta1SpringCloudCustomizedAcceleratorSpecForProviderSpringCloudAcc
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudCustomizedAcceleratorSpecForProviderSpringCloudAcceleratorIdRefPolicyResolveEnum>))]
 public enum V1beta1SpringCloudCustomizedAcceleratorSpecForProviderSpringCloudAcceleratorIdRefPolicyResolveEnum
 {
@@ -182,7 +182,7 @@ public enum V1beta1SpringCloudCustomizedAcceleratorSpecForProviderSpringCloudAcc
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorSpecForProviderSpringCloudAcceleratorIdRefPolicy
 {
@@ -206,7 +206,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorSpecForProviderSprin
 }
 
 /// <summary>Reference to a SpringCloudAccelerator in appplatform to populate springCloudAcceleratorId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorSpecForProviderSpringCloudAcceleratorIdRef
 {
@@ -229,7 +229,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorSpecForProviderSprin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudCustomizedAcceleratorSpecForProviderSpringCloudAcceleratorIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudCustomizedAcceleratorSpecForProviderSpringCloudAcceleratorIdSelectorPolicyResolutionEnum
 {
@@ -245,7 +245,7 @@ public enum V1beta1SpringCloudCustomizedAcceleratorSpecForProviderSpringCloudAcc
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudCustomizedAcceleratorSpecForProviderSpringCloudAcceleratorIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SpringCloudCustomizedAcceleratorSpecForProviderSpringCloudAcceleratorIdSelectorPolicyResolveEnum
 {
@@ -256,7 +256,7 @@ public enum V1beta1SpringCloudCustomizedAcceleratorSpecForProviderSpringCloudAcc
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorSpecForProviderSpringCloudAcceleratorIdSelectorPolicy
 {
@@ -280,7 +280,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorSpecForProviderSprin
 }
 
 /// <summary>Selector for a SpringCloudAccelerator in appplatform to populate springCloudAcceleratorId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorSpecForProviderSpringCloudAcceleratorIdSelector
 {
@@ -304,7 +304,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorSpecForProviderSprin
     public V1beta1SpringCloudCustomizedAcceleratorSpecForProviderSpringCloudAcceleratorIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorSpecForProvider
 {
@@ -346,7 +346,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorSpecForProvider
 }
 
 /// <summary>Specifies the password of git repository basic auth.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorSpecInitProviderGitRepositoryBasicAuthPasswordSecretRef
 {
@@ -359,7 +359,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorSpecInitProviderGitR
 }
 
 /// <summary>A basic_auth block as defined below. Conflicts with git_repository[0].ssh_auth. Changing this forces a new Spring Cloud Customized Accelerator to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorSpecInitProviderGitRepositoryBasicAuth
 {
@@ -373,7 +373,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorSpecInitProviderGitR
 }
 
 /// <summary>Specifies the Public SSH Key of git repository basic auth.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorSpecInitProviderGitRepositorySshAuthHostKeySecretRef
 {
@@ -386,7 +386,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorSpecInitProviderGitR
 }
 
 /// <summary>Specifies the Private SSH Key of git repository basic auth.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorSpecInitProviderGitRepositorySshAuthPrivateKeySecretRef
 {
@@ -399,7 +399,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorSpecInitProviderGitR
 }
 
 /// <summary>A ssh_auth block as defined below. Conflicts with git_repository[0].basic_auth. Changing this forces a new Spring Cloud Customized Accelerator to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorSpecInitProviderGitRepositorySshAuth
 {
@@ -417,7 +417,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorSpecInitProviderGitR
 }
 
 /// <summary>A git_repository block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorSpecInitProviderGitRepository
 {
@@ -470,7 +470,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorSpecInitProviderGitR
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorSpecInitProvider
 {
@@ -503,7 +503,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudCustomizedAcceleratorSpecManagementPoliciesEnum>))]
 public enum V1beta1SpringCloudCustomizedAcceleratorSpecManagementPoliciesEnum
 {
@@ -526,7 +526,7 @@ public enum V1beta1SpringCloudCustomizedAcceleratorSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorSpecProviderConfigRef
 {
@@ -545,7 +545,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorSpecProviderConfigRe
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorSpecWriteConnectionSecretToRef
 {
@@ -555,7 +555,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorSpecWriteConnectionS
 }
 
 /// <summary>SpringCloudCustomizedAcceleratorSpec defines the desired state of SpringCloudCustomizedAccelerator</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorSpec
 {
@@ -607,7 +607,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorSpec
 }
 
 /// <summary>A basic_auth block as defined below. Conflicts with git_repository[0].ssh_auth. Changing this forces a new Spring Cloud Customized Accelerator to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorStatusAtProviderGitRepositoryBasicAuth
 {
@@ -617,7 +617,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorStatusAtProviderGitR
 }
 
 /// <summary>A ssh_auth block as defined below. Conflicts with git_repository[0].basic_auth. Changing this forces a new Spring Cloud Customized Accelerator to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorStatusAtProviderGitRepositorySshAuth
 {
@@ -627,7 +627,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorStatusAtProviderGitR
 }
 
 /// <summary>A git_repository block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorStatusAtProviderGitRepository
 {
@@ -668,7 +668,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorStatusAtProviderGitR
     public string? Url { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorStatusAtProvider
 {
@@ -706,7 +706,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorStatusConditions
 {
@@ -749,7 +749,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorStatusConditions
 }
 
 /// <summary>SpringCloudCustomizedAcceleratorStatus defines the observed state of SpringCloudCustomizedAccelerator.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorStatus
 {
@@ -770,7 +770,7 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorStatus
 }
 
 /// <summary>SpringCloudCustomizedAccelerator is the Schema for the SpringCloudCustomizedAccelerators API. Manages a Spring Cloud Customized Accelerator.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SpringCloudCustomizedAccelerator : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SpringCloudCustomizedAcceleratorSpec>, IStatus<V1beta1SpringCloudCustomizedAcceleratorStatus?>

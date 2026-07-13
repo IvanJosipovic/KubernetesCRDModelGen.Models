@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ec2.aws.upbound.io;
 /// <summary>VPCIpamPoolCidrAllocation is the Schema for the VPCIpamPoolCidrAllocations API. Allocates (reserves) a CIDR from an IPAM address pool, preventing usage by IPAM.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VPCIpamPoolCidrAllocationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1VPCIpamPoolCidrAllocation>
@@ -45,7 +45,7 @@ public partial class V1beta1VPCIpamPoolCidrAllocationList : IKubernetesObject<V1
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIpamPoolCidrAllocationSpecDeletionPolicyEnum>))]
 public enum V1beta1VPCIpamPoolCidrAllocationSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1VPCIpamPoolCidrAllocationSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIpamPoolCidrAllocationSpecForProviderIpamPoolIdRefPolicyResolutionEnum>))]
 public enum V1beta1VPCIpamPoolCidrAllocationSpecForProviderIpamPoolIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1VPCIpamPoolCidrAllocationSpecForProviderIpamPoolIdRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIpamPoolCidrAllocationSpecForProviderIpamPoolIdRefPolicyResolveEnum>))]
 public enum V1beta1VPCIpamPoolCidrAllocationSpecForProviderIpamPoolIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1VPCIpamPoolCidrAllocationSpecForProviderIpamPoolIdRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrAllocationSpecForProviderIpamPoolIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1VPCIpamPoolCidrAllocationSpecForProviderIpamPoolIdRe
 }
 
 /// <summary>Reference to a VPCIpamPool in ec2 to populate ipamPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrAllocationSpecForProviderIpamPoolIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1VPCIpamPoolCidrAllocationSpecForProviderIpamPoolIdRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIpamPoolCidrAllocationSpecForProviderIpamPoolIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPCIpamPoolCidrAllocationSpecForProviderIpamPoolIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1VPCIpamPoolCidrAllocationSpecForProviderIpamPoolIdSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIpamPoolCidrAllocationSpecForProviderIpamPoolIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VPCIpamPoolCidrAllocationSpecForProviderIpamPoolIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1VPCIpamPoolCidrAllocationSpecForProviderIpamPoolIdSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrAllocationSpecForProviderIpamPoolIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1VPCIpamPoolCidrAllocationSpecForProviderIpamPoolIdSe
 }
 
 /// <summary>Selector for a VPCIpamPool in ec2 to populate ipamPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrAllocationSpecForProviderIpamPoolIdSelector
 {
@@ -202,7 +202,7 @@ public partial class V1beta1VPCIpamPoolCidrAllocationSpecForProviderIpamPoolIdSe
     public V1beta1VPCIpamPoolCidrAllocationSpecForProviderIpamPoolIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrAllocationSpecForProvider
 {
@@ -248,7 +248,7 @@ public partial class V1beta1VPCIpamPoolCidrAllocationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIpamPoolCidrAllocationSpecInitProviderIpamPoolIdRefPolicyResolutionEnum>))]
 public enum V1beta1VPCIpamPoolCidrAllocationSpecInitProviderIpamPoolIdRefPolicyResolutionEnum
 {
@@ -264,7 +264,7 @@ public enum V1beta1VPCIpamPoolCidrAllocationSpecInitProviderIpamPoolIdRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIpamPoolCidrAllocationSpecInitProviderIpamPoolIdRefPolicyResolveEnum>))]
 public enum V1beta1VPCIpamPoolCidrAllocationSpecInitProviderIpamPoolIdRefPolicyResolveEnum
 {
@@ -275,7 +275,7 @@ public enum V1beta1VPCIpamPoolCidrAllocationSpecInitProviderIpamPoolIdRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrAllocationSpecInitProviderIpamPoolIdRefPolicy
 {
@@ -299,7 +299,7 @@ public partial class V1beta1VPCIpamPoolCidrAllocationSpecInitProviderIpamPoolIdR
 }
 
 /// <summary>Reference to a VPCIpamPool in ec2 to populate ipamPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrAllocationSpecInitProviderIpamPoolIdRef
 {
@@ -318,7 +318,7 @@ public partial class V1beta1VPCIpamPoolCidrAllocationSpecInitProviderIpamPoolIdR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIpamPoolCidrAllocationSpecInitProviderIpamPoolIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPCIpamPoolCidrAllocationSpecInitProviderIpamPoolIdSelectorPolicyResolutionEnum
 {
@@ -334,7 +334,7 @@ public enum V1beta1VPCIpamPoolCidrAllocationSpecInitProviderIpamPoolIdSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIpamPoolCidrAllocationSpecInitProviderIpamPoolIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VPCIpamPoolCidrAllocationSpecInitProviderIpamPoolIdSelectorPolicyResolveEnum
 {
@@ -345,7 +345,7 @@ public enum V1beta1VPCIpamPoolCidrAllocationSpecInitProviderIpamPoolIdSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrAllocationSpecInitProviderIpamPoolIdSelectorPolicy
 {
@@ -369,7 +369,7 @@ public partial class V1beta1VPCIpamPoolCidrAllocationSpecInitProviderIpamPoolIdS
 }
 
 /// <summary>Selector for a VPCIpamPool in ec2 to populate ipamPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrAllocationSpecInitProviderIpamPoolIdSelector
 {
@@ -401,7 +401,7 @@ public partial class V1beta1VPCIpamPoolCidrAllocationSpecInitProviderIpamPoolIdS
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrAllocationSpecInitProvider
 {
@@ -438,7 +438,7 @@ public partial class V1beta1VPCIpamPoolCidrAllocationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIpamPoolCidrAllocationSpecManagementPoliciesEnum>))]
 public enum V1beta1VPCIpamPoolCidrAllocationSpecManagementPoliciesEnum
 {
@@ -462,7 +462,7 @@ public enum V1beta1VPCIpamPoolCidrAllocationSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIpamPoolCidrAllocationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1VPCIpamPoolCidrAllocationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -478,7 +478,7 @@ public enum V1beta1VPCIpamPoolCidrAllocationSpecProviderConfigRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCIpamPoolCidrAllocationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1VPCIpamPoolCidrAllocationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -489,7 +489,7 @@ public enum V1beta1VPCIpamPoolCidrAllocationSpecProviderConfigRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrAllocationSpecProviderConfigRefPolicy
 {
@@ -517,7 +517,7 @@ public partial class V1beta1VPCIpamPoolCidrAllocationSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrAllocationSpecProviderConfigRef
 {
@@ -536,7 +536,7 @@ public partial class V1beta1VPCIpamPoolCidrAllocationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrAllocationSpecWriteConnectionSecretToRef
 {
@@ -550,7 +550,7 @@ public partial class V1beta1VPCIpamPoolCidrAllocationSpecWriteConnectionSecretTo
 }
 
 /// <summary>VPCIpamPoolCidrAllocationSpec defines the desired state of VPCIpamPoolCidrAllocation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrAllocationSpec
 {
@@ -617,7 +617,7 @@ public partial class V1beta1VPCIpamPoolCidrAllocationSpec
     public V1beta1VPCIpamPoolCidrAllocationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrAllocationStatusAtProvider
 {
@@ -670,7 +670,7 @@ public partial class V1beta1VPCIpamPoolCidrAllocationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrAllocationStatusConditions
 {
@@ -713,7 +713,7 @@ public partial class V1beta1VPCIpamPoolCidrAllocationStatusConditions
 }
 
 /// <summary>VPCIpamPoolCidrAllocationStatus defines the observed state of VPCIpamPoolCidrAllocation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamPoolCidrAllocationStatus
 {
@@ -734,7 +734,7 @@ public partial class V1beta1VPCIpamPoolCidrAllocationStatus
 }
 
 /// <summary>VPCIpamPoolCidrAllocation is the Schema for the VPCIpamPoolCidrAllocations API. Allocates (reserves) a CIDR from an IPAM address pool, preventing usage by IPAM.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VPCIpamPoolCidrAllocation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VPCIpamPoolCidrAllocationSpec>, IStatus<V1beta1VPCIpamPoolCidrAllocationStatus?>

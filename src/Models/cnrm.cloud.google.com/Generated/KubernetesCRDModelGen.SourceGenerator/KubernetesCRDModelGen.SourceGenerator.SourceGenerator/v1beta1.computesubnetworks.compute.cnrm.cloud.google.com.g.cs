@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.cnrm.cloud.google.com;
 /// <summary>ComputeSubnetwork is the Schema for the ComputeSubnetwork API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ComputeSubnetworkList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ComputeSubnetwork>
@@ -37,7 +37,7 @@ public partial class V1beta1ComputeSubnetworkList : IKubernetesObject<V1ListMeta
 }
 
 /// <summary>This field denotes the VPC flow logging options for this subnetwork. If logging is enabled, logs are exported to Cloud Logging. Flow logging isn&apos;t supported if the subnet &apos;purpose&apos; field is set to subnetwork is &apos;REGIONAL_MANAGED_PROXY&apos; or &apos;GLOBAL_MANAGED_PROXY&apos;.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSubnetworkSpecLogConfig
 {
@@ -63,7 +63,7 @@ public partial class V1beta1ComputeSubnetworkSpecLogConfig
 }
 
 /// <summary>The network this subnet belongs to. Only networks that are in the distributed mode can have subnetworks.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSubnetworkSpecNetworkRef
 {
@@ -80,7 +80,7 @@ public partial class V1beta1ComputeSubnetworkSpecNetworkRef
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSubnetworkSpecSecondaryIpRange
 {
@@ -94,7 +94,7 @@ public partial class V1beta1ComputeSubnetworkSpecSecondaryIpRange
 }
 
 /// <summary>ComputeSubnetworkSpec defines the desired state of ComputeSubnetwork</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSubnetworkSpec
 {
@@ -150,7 +150,7 @@ public partial class V1beta1ComputeSubnetworkSpec
     public string? StackType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSubnetworkStatusConditions
 {
@@ -176,7 +176,7 @@ public partial class V1beta1ComputeSubnetworkStatusConditions
 }
 
 /// <summary>ComputeSubnetworkStatus defines the config connector machine state of ComputeSubnetwork</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeSubnetworkStatus
 {
@@ -218,7 +218,7 @@ public partial class V1beta1ComputeSubnetworkStatus
 }
 
 /// <summary>ComputeSubnetwork is the Schema for the ComputeSubnetwork API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ComputeSubnetwork : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ComputeSubnetworkSpec>, IStatus<V1beta1ComputeSubnetworkStatus?>

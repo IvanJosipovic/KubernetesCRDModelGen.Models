@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.binaryauthorization.cnrm.cloud.google.com;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BinaryAuthorizationPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1BinaryAuthorizationPolicy>
@@ -35,7 +35,7 @@ public partial class V1beta1BinaryAuthorizationPolicyList : IKubernetesObject<V1
     public required IList<V1beta1BinaryAuthorizationPolicy> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BinaryAuthorizationPolicySpecAdmissionWhitelistPatterns
 {
@@ -44,7 +44,7 @@ public partial class V1beta1BinaryAuthorizationPolicySpecAdmissionWhitelistPatte
     public string? NamePattern { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BinaryAuthorizationPolicySpecClusterAdmissionRulesRequireAttestationsBy
 {
@@ -61,7 +61,7 @@ public partial class V1beta1BinaryAuthorizationPolicySpecClusterAdmissionRulesRe
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BinaryAuthorizationPolicySpecClusterAdmissionRules
 {
@@ -77,7 +77,7 @@ public partial class V1beta1BinaryAuthorizationPolicySpecClusterAdmissionRules
     public IList<V1beta1BinaryAuthorizationPolicySpecClusterAdmissionRulesRequireAttestationsBy>? RequireAttestationsBy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BinaryAuthorizationPolicySpecDefaultAdmissionRuleRequireAttestationsBy
 {
@@ -95,7 +95,7 @@ public partial class V1beta1BinaryAuthorizationPolicySpecDefaultAdmissionRuleReq
 }
 
 /// <summary>Required. Default admission rule for a cluster without a per-cluster, per-kubernetes-service-account, or per-istio-service-identity admission rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BinaryAuthorizationPolicySpecDefaultAdmissionRule
 {
@@ -111,7 +111,7 @@ public partial class V1beta1BinaryAuthorizationPolicySpecDefaultAdmissionRule
     public IList<V1beta1BinaryAuthorizationPolicySpecDefaultAdmissionRuleRequireAttestationsBy>? RequireAttestationsBy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BinaryAuthorizationPolicySpecIstioServiceIdentityAdmissionRulesRequireAttestationsBy
 {
@@ -128,7 +128,7 @@ public partial class V1beta1BinaryAuthorizationPolicySpecIstioServiceIdentityAdm
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BinaryAuthorizationPolicySpecIstioServiceIdentityAdmissionRules
 {
@@ -144,7 +144,7 @@ public partial class V1beta1BinaryAuthorizationPolicySpecIstioServiceIdentityAdm
     public IList<V1beta1BinaryAuthorizationPolicySpecIstioServiceIdentityAdmissionRulesRequireAttestationsBy>? RequireAttestationsBy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BinaryAuthorizationPolicySpecKubernetesNamespaceAdmissionRulesRequireAttestationsBy
 {
@@ -161,7 +161,7 @@ public partial class V1beta1BinaryAuthorizationPolicySpecKubernetesNamespaceAdmi
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BinaryAuthorizationPolicySpecKubernetesNamespaceAdmissionRules
 {
@@ -177,7 +177,7 @@ public partial class V1beta1BinaryAuthorizationPolicySpecKubernetesNamespaceAdmi
     public IList<V1beta1BinaryAuthorizationPolicySpecKubernetesNamespaceAdmissionRulesRequireAttestationsBy>? RequireAttestationsBy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BinaryAuthorizationPolicySpecKubernetesServiceAccountAdmissionRulesRequireAttestationsBy
 {
@@ -194,7 +194,7 @@ public partial class V1beta1BinaryAuthorizationPolicySpecKubernetesServiceAccoun
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BinaryAuthorizationPolicySpecKubernetesServiceAccountAdmissionRules
 {
@@ -211,7 +211,7 @@ public partial class V1beta1BinaryAuthorizationPolicySpecKubernetesServiceAccoun
 }
 
 /// <summary>Immutable. The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BinaryAuthorizationPolicySpecProjectRef
 {
@@ -232,7 +232,7 @@ public partial class V1beta1BinaryAuthorizationPolicySpecProjectRef
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BinaryAuthorizationPolicySpec
 {
@@ -273,7 +273,7 @@ public partial class V1beta1BinaryAuthorizationPolicySpec
     public required V1beta1BinaryAuthorizationPolicySpecProjectRef ProjectRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BinaryAuthorizationPolicyStatusConditions
 {
@@ -298,7 +298,7 @@ public partial class V1beta1BinaryAuthorizationPolicyStatusConditions
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BinaryAuthorizationPolicyStatus
 {
@@ -319,7 +319,7 @@ public partial class V1beta1BinaryAuthorizationPolicyStatus
     public DateTime? UpdateTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BinaryAuthorizationPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1BinaryAuthorizationPolicySpec>, IStatus<V1beta1BinaryAuthorizationPolicyStatus?>

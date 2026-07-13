@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.actions.github.m.upbound.io;
 /// <summary>ActionsSecret is the Schema for the ActionsSecrets API. Creates and manages an Action Secret within a GitHub repository</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ActionsSecretList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ActionsSecret>
@@ -40,7 +40,7 @@ public partial class V1alpha1ActionsSecretList : IKubernetesObject<V1ListMeta>, 
 /// Encrypted value of the secret using the GitHub public key in Base64 format.
 /// Encrypted value of the secret using the GitHub public key in Base64 format.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ActionsSecretSpecForProviderEncryptedValueSecretRef
 {
@@ -56,7 +56,7 @@ public partial class V1alpha1ActionsSecretSpecForProviderEncryptedValueSecretRef
 /// Plaintext value of the secret to be encrypted
 /// Plaintext value of the secret to be encrypted.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ActionsSecretSpecForProviderPlaintextValueSecretRef
 {
@@ -74,7 +74,7 @@ public partial class V1alpha1ActionsSecretSpecForProviderPlaintextValueSecretRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ActionsSecretSpecForProviderRepositoryRefPolicyResolutionEnum>))]
 public enum V1alpha1ActionsSecretSpecForProviderRepositoryRefPolicyResolutionEnum
 {
@@ -90,7 +90,7 @@ public enum V1alpha1ActionsSecretSpecForProviderRepositoryRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ActionsSecretSpecForProviderRepositoryRefPolicyResolveEnum>))]
 public enum V1alpha1ActionsSecretSpecForProviderRepositoryRefPolicyResolveEnum
 {
@@ -101,7 +101,7 @@ public enum V1alpha1ActionsSecretSpecForProviderRepositoryRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ActionsSecretSpecForProviderRepositoryRefPolicy
 {
@@ -125,7 +125,7 @@ public partial class V1alpha1ActionsSecretSpecForProviderRepositoryRefPolicy
 }
 
 /// <summary>Reference to a Repository in repo to populate repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ActionsSecretSpecForProviderRepositoryRef
 {
@@ -148,7 +148,7 @@ public partial class V1alpha1ActionsSecretSpecForProviderRepositoryRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ActionsSecretSpecForProviderRepositorySelectorPolicyResolutionEnum>))]
 public enum V1alpha1ActionsSecretSpecForProviderRepositorySelectorPolicyResolutionEnum
 {
@@ -164,7 +164,7 @@ public enum V1alpha1ActionsSecretSpecForProviderRepositorySelectorPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ActionsSecretSpecForProviderRepositorySelectorPolicyResolveEnum>))]
 public enum V1alpha1ActionsSecretSpecForProviderRepositorySelectorPolicyResolveEnum
 {
@@ -175,7 +175,7 @@ public enum V1alpha1ActionsSecretSpecForProviderRepositorySelectorPolicyResolveE
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ActionsSecretSpecForProviderRepositorySelectorPolicy
 {
@@ -199,7 +199,7 @@ public partial class V1alpha1ActionsSecretSpecForProviderRepositorySelectorPolic
 }
 
 /// <summary>Selector for a Repository in repo to populate repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ActionsSecretSpecForProviderRepositorySelector
 {
@@ -223,7 +223,7 @@ public partial class V1alpha1ActionsSecretSpecForProviderRepositorySelector
     public V1alpha1ActionsSecretSpecForProviderRepositorySelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ActionsSecretSpecForProvider
 {
@@ -268,7 +268,7 @@ public partial class V1alpha1ActionsSecretSpecForProvider
 /// Encrypted value of the secret using the GitHub public key in Base64 format.
 /// Encrypted value of the secret using the GitHub public key in Base64 format.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ActionsSecretSpecInitProviderEncryptedValueSecretRef
 {
@@ -284,7 +284,7 @@ public partial class V1alpha1ActionsSecretSpecInitProviderEncryptedValueSecretRe
 /// Plaintext value of the secret to be encrypted
 /// Plaintext value of the secret to be encrypted.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ActionsSecretSpecInitProviderPlaintextValueSecretRef
 {
@@ -302,7 +302,7 @@ public partial class V1alpha1ActionsSecretSpecInitProviderPlaintextValueSecretRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ActionsSecretSpecInitProviderRepositoryRefPolicyResolutionEnum>))]
 public enum V1alpha1ActionsSecretSpecInitProviderRepositoryRefPolicyResolutionEnum
 {
@@ -318,7 +318,7 @@ public enum V1alpha1ActionsSecretSpecInitProviderRepositoryRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ActionsSecretSpecInitProviderRepositoryRefPolicyResolveEnum>))]
 public enum V1alpha1ActionsSecretSpecInitProviderRepositoryRefPolicyResolveEnum
 {
@@ -329,7 +329,7 @@ public enum V1alpha1ActionsSecretSpecInitProviderRepositoryRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ActionsSecretSpecInitProviderRepositoryRefPolicy
 {
@@ -353,7 +353,7 @@ public partial class V1alpha1ActionsSecretSpecInitProviderRepositoryRefPolicy
 }
 
 /// <summary>Reference to a Repository in repo to populate repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ActionsSecretSpecInitProviderRepositoryRef
 {
@@ -376,7 +376,7 @@ public partial class V1alpha1ActionsSecretSpecInitProviderRepositoryRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ActionsSecretSpecInitProviderRepositorySelectorPolicyResolutionEnum>))]
 public enum V1alpha1ActionsSecretSpecInitProviderRepositorySelectorPolicyResolutionEnum
 {
@@ -392,7 +392,7 @@ public enum V1alpha1ActionsSecretSpecInitProviderRepositorySelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ActionsSecretSpecInitProviderRepositorySelectorPolicyResolveEnum>))]
 public enum V1alpha1ActionsSecretSpecInitProviderRepositorySelectorPolicyResolveEnum
 {
@@ -403,7 +403,7 @@ public enum V1alpha1ActionsSecretSpecInitProviderRepositorySelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ActionsSecretSpecInitProviderRepositorySelectorPolicy
 {
@@ -427,7 +427,7 @@ public partial class V1alpha1ActionsSecretSpecInitProviderRepositorySelectorPoli
 }
 
 /// <summary>Selector for a Repository in repo to populate repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ActionsSecretSpecInitProviderRepositorySelector
 {
@@ -463,7 +463,7 @@ public partial class V1alpha1ActionsSecretSpecInitProviderRepositorySelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ActionsSecretSpecInitProvider
 {
@@ -508,7 +508,7 @@ public partial class V1alpha1ActionsSecretSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ActionsSecretSpecManagementPoliciesEnum>))]
 public enum V1alpha1ActionsSecretSpecManagementPoliciesEnum
 {
@@ -531,7 +531,7 @@ public enum V1alpha1ActionsSecretSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ActionsSecretSpecProviderConfigRef
 {
@@ -550,7 +550,7 @@ public partial class V1alpha1ActionsSecretSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ActionsSecretSpecWriteConnectionSecretToRef
 {
@@ -560,7 +560,7 @@ public partial class V1alpha1ActionsSecretSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ActionsSecretSpec defines the desired state of ActionsSecret</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ActionsSecretSpec
 {
@@ -611,7 +611,7 @@ public partial class V1alpha1ActionsSecretSpec
     public V1alpha1ActionsSecretSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ActionsSecretStatusAtProvider
 {
@@ -648,7 +648,7 @@ public partial class V1alpha1ActionsSecretStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ActionsSecretStatusConditions
 {
@@ -691,7 +691,7 @@ public partial class V1alpha1ActionsSecretStatusConditions
 }
 
 /// <summary>ActionsSecretStatus defines the observed state of ActionsSecret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ActionsSecretStatus
 {
@@ -712,7 +712,7 @@ public partial class V1alpha1ActionsSecretStatus
 }
 
 /// <summary>ActionsSecret is the Schema for the ActionsSecrets API. Creates and manages an Action Secret within a GitHub repository</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ActionsSecret : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ActionsSecretSpec>, IStatus<V1alpha1ActionsSecretStatus?>

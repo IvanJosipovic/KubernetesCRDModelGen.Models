@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.clouddms.cnrm.cloud.google.com;
 /// <summary>CloudDMSMigrationJob is the Schema for the CloudDMSMigrationJob API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1CloudDMSMigrationJobList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1CloudDMSMigrationJob>
@@ -37,7 +37,7 @@ public partial class V1alpha1CloudDMSMigrationJobList : IKubernetesObject<V1List
 }
 
 /// <summary>The CMEK (customer-managed encryption key) fully qualified key name used for the migration job. This field supports all migration jobs types except for: * Mysql to Mysql (use the cmek field in the cloudsql connection profile instead). * PostrgeSQL to PostgreSQL (use the cmek field in the cloudsql connection profile instead). * PostgreSQL to AlloyDB (use the kms_key_name field in the alloydb connection profile instead). Each Cloud CMEK key has the following format: projects/[PROJECT]/locations/[REGION]/keyRings/[RING]/cryptoKeys/[KEY_NAME]</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDMSMigrationJobSpecCmekKeyNameRef
 {
@@ -55,7 +55,7 @@ public partial class V1alpha1CloudDMSMigrationJobSpecCmekKeyNameRef
 }
 
 /// <summary>The conversion workspace used by the migration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDMSMigrationJobSpecConversionWorkspace
 {
@@ -69,7 +69,7 @@ public partial class V1alpha1CloudDMSMigrationJobSpecConversionWorkspace
 }
 
 /// <summary>The database engine type and provider of the destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDMSMigrationJobSpecDestinationDatabase
 {
@@ -83,7 +83,7 @@ public partial class V1alpha1CloudDMSMigrationJobSpecDestinationDatabase
 }
 
 /// <summary>Required. The Connection Profile of the destination connection profile.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDMSMigrationJobSpecDestinationRef
 {
@@ -100,7 +100,7 @@ public partial class V1alpha1CloudDMSMigrationJobSpecDestinationRef
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDMSMigrationJobSpecDumpFlagsDumpFlags
 {
@@ -114,7 +114,7 @@ public partial class V1alpha1CloudDMSMigrationJobSpecDumpFlagsDumpFlags
 }
 
 /// <summary>The initial dump flags. This field and the &quot;dump_path&quot; field are mutually exclusive.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDMSMigrationJobSpecDumpFlags
 {
@@ -124,7 +124,7 @@ public partial class V1alpha1CloudDMSMigrationJobSpecDumpFlags
 }
 
 /// <summary>Optional. Data dump parallelism settings used by the migration. Currently applicable only for MySQL to Cloud SQL for MySQL migrations only.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDMSMigrationJobSpecPerformanceConfig
 {
@@ -134,7 +134,7 @@ public partial class V1alpha1CloudDMSMigrationJobSpecPerformanceConfig
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDMSMigrationJobSpecProjectRef
 {
@@ -156,7 +156,7 @@ public partial class V1alpha1CloudDMSMigrationJobSpecProjectRef
 }
 
 /// <summary>The name of the virtual machine (Compute Engine) used as the bastion server for the SSH tunnel.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDMSMigrationJobSpecReverseSSHConnectivityVmRef
 {
@@ -174,7 +174,7 @@ public partial class V1alpha1CloudDMSMigrationJobSpecReverseSSHConnectivityVmRef
 }
 
 /// <summary>The name of the VPC to peer with the Cloud SQL private network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDMSMigrationJobSpecReverseSSHConnectivityVpcRef
 {
@@ -192,7 +192,7 @@ public partial class V1alpha1CloudDMSMigrationJobSpecReverseSSHConnectivityVpcRe
 }
 
 /// <summary>The details needed to communicate to the source over Reverse SSH tunnel connectivity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDMSMigrationJobSpecReverseSSHConnectivity
 {
@@ -214,7 +214,7 @@ public partial class V1alpha1CloudDMSMigrationJobSpecReverseSSHConnectivity
 }
 
 /// <summary>The database engine type and provider of the source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDMSMigrationJobSpecSourceDatabase
 {
@@ -228,7 +228,7 @@ public partial class V1alpha1CloudDMSMigrationJobSpecSourceDatabase
 }
 
 /// <summary>Required. The Connection Profile resource of the source connection profile.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDMSMigrationJobSpecSourceRef
 {
@@ -246,14 +246,14 @@ public partial class V1alpha1CloudDMSMigrationJobSpecSourceRef
 }
 
 /// <summary>static ip connectivity data (default, no additional details needed).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDMSMigrationJobSpecStaticIPConnectivity
 {
 }
 
 /// <summary>The name of the VPC network to peer with the Cloud SQL private network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDMSMigrationJobSpecVpcPeeringConnectivityVpcRef
 {
@@ -271,7 +271,7 @@ public partial class V1alpha1CloudDMSMigrationJobSpecVpcPeeringConnectivityVpcRe
 }
 
 /// <summary>The details of the VPC network that the source database is located in.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDMSMigrationJobSpecVpcPeeringConnectivity
 {
@@ -281,7 +281,7 @@ public partial class V1alpha1CloudDMSMigrationJobSpecVpcPeeringConnectivity
 }
 
 /// <summary>CloudDMSMigrationJobSpec defines the desired state of CloudDMSMigrationJob</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDMSMigrationJobSpec
 {
@@ -358,7 +358,7 @@ public partial class V1alpha1CloudDMSMigrationJobSpec
     public V1alpha1CloudDMSMigrationJobSpecVpcPeeringConnectivity? VpcPeeringConnectivity { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDMSMigrationJobStatusConditions
 {
@@ -384,14 +384,14 @@ public partial class V1alpha1CloudDMSMigrationJobStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDMSMigrationJobStatusObservedState
 {
 }
 
 /// <summary>CloudDMSMigrationJobStatus defines the config connector machine state of CloudDMSMigrationJob</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDMSMigrationJobStatus
 {
@@ -413,7 +413,7 @@ public partial class V1alpha1CloudDMSMigrationJobStatus
 }
 
 /// <summary>CloudDMSMigrationJob is the Schema for the CloudDMSMigrationJob API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1CloudDMSMigrationJob : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1CloudDMSMigrationJobSpec>, IStatus<V1alpha1CloudDMSMigrationJobStatus?>

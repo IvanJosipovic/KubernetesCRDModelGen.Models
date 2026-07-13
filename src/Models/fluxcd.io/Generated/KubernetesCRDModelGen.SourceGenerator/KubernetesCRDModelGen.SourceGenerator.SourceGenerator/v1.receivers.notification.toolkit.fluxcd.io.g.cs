@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.notification.toolkit.fluxcd.io;
 /// <summary>Receiver is the Schema for the receivers API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ReceiverList : IKubernetesObject<V1ListMeta>, IItems<V1Receiver>
@@ -40,7 +40,7 @@ public partial class V1ReceiverList : IKubernetesObject<V1ListMeta>, IItems<V1Re
 /// OIDCValidation is a CEL boolean expression evaluated against the OIDC token
 /// claims and variables of a &apos;generic-oidc&apos; Receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ReceiverSpecOidcProvidersValidations
 {
@@ -57,7 +57,7 @@ public partial class V1ReceiverSpecOidcProvidersValidations
 /// OIDCVariable is a named CEL expression evaluated against the OIDC token
 /// claims of a &apos;generic-oidc&apos; Receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ReceiverSpecOidcProvidersVariables
 {
@@ -74,7 +74,7 @@ public partial class V1ReceiverSpecOidcProvidersVariables
 /// OIDCProvider configures an OIDC issuer used to authenticate requests for a
 /// &apos;generic-oidc&apos; Receiver.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ReceiverSpecOidcProviders
 {
@@ -117,7 +117,7 @@ public partial class V1ReceiverSpecOidcProviders
 }
 
 /// <summary>Kind of the referent</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ReceiverSpecResourcesKindEnum>))]
 public enum V1ReceiverSpecResourcesKindEnum
 {
@@ -151,7 +151,7 @@ public enum V1ReceiverSpecResourcesKindEnum
 /// ReceiverResource references a resource to be notified about changes, with an
 /// optional per-resource CEL filter.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ReceiverSpecResources
 {
@@ -209,7 +209,7 @@ public partial class V1ReceiverSpecResources
 /// Required for all receiver types except &apos;generic-oidc&apos;, which authenticates
 /// requests using the OIDC token instead and must not set this field.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ReceiverSpecSecretRef
 {
@@ -222,7 +222,7 @@ public partial class V1ReceiverSpecSecretRef
 /// Type of webhook sender, used to determine
 /// the validation procedure and payload deserialization.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ReceiverSpecTypeEnum>))]
 public enum V1ReceiverSpecTypeEnum
 {
@@ -255,7 +255,7 @@ public enum V1ReceiverSpecTypeEnum
 }
 
 /// <summary>ReceiverSpec defines the desired state of the Receiver.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ReceiverSpec
 {
@@ -328,7 +328,7 @@ public partial class V1ReceiverSpec
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ReceiverStatusConditionsStatusEnum>))]
 public enum V1ReceiverStatusConditionsStatusEnum
 {
@@ -341,7 +341,7 @@ public enum V1ReceiverStatusConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ReceiverStatusConditions
 {
@@ -387,7 +387,7 @@ public partial class V1ReceiverStatusConditions
 }
 
 /// <summary>ReceiverStatus defines the observed state of the Receiver.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ReceiverStatus
 {
@@ -416,7 +416,7 @@ public partial class V1ReceiverStatus
 }
 
 /// <summary>Receiver is the Schema for the receivers API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1Receiver : IKubernetesObject<V1ObjectMeta>, ISpec<V1ReceiverSpec?>, IStatus<V1ReceiverStatus?>

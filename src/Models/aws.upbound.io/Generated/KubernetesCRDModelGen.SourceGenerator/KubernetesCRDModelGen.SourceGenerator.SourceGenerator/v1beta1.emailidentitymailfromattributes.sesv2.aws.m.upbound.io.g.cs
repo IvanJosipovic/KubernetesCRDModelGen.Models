@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sesv2.aws.m.upbound.io;
 /// <summary>EmailIdentityMailFromAttributes is the Schema for the EmailIdentityMailFromAttributess API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EmailIdentityMailFromAttributesList : IKubernetesObject<V1ListMeta>, IItems<V1beta1EmailIdentityMailFromAttributes>
@@ -36,7 +36,7 @@ public partial class V1beta1EmailIdentityMailFromAttributesList : IKubernetesObj
     public required IList<V1beta1EmailIdentityMailFromAttributes> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EmailIdentityMailFromAttributesSpecForProvider
 {
@@ -68,7 +68,7 @@ public partial class V1beta1EmailIdentityMailFromAttributesSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EmailIdentityMailFromAttributesSpecInitProvider
 {
@@ -85,7 +85,7 @@ public partial class V1beta1EmailIdentityMailFromAttributesSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EmailIdentityMailFromAttributesSpecManagementPoliciesEnum>))]
 public enum V1beta1EmailIdentityMailFromAttributesSpecManagementPoliciesEnum
 {
@@ -108,7 +108,7 @@ public enum V1beta1EmailIdentityMailFromAttributesSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EmailIdentityMailFromAttributesSpecProviderConfigRef
 {
@@ -127,7 +127,7 @@ public partial class V1beta1EmailIdentityMailFromAttributesSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EmailIdentityMailFromAttributesSpecWriteConnectionSecretToRef
 {
@@ -137,7 +137,7 @@ public partial class V1beta1EmailIdentityMailFromAttributesSpecWriteConnectionSe
 }
 
 /// <summary>EmailIdentityMailFromAttributesSpec defines the desired state of EmailIdentityMailFromAttributes</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EmailIdentityMailFromAttributesSpec
 {
@@ -188,7 +188,7 @@ public partial class V1beta1EmailIdentityMailFromAttributesSpec
     public V1beta1EmailIdentityMailFromAttributesSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EmailIdentityMailFromAttributesStatusAtProvider
 {
@@ -212,7 +212,7 @@ public partial class V1beta1EmailIdentityMailFromAttributesStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EmailIdentityMailFromAttributesStatusConditions
 {
@@ -255,7 +255,7 @@ public partial class V1beta1EmailIdentityMailFromAttributesStatusConditions
 }
 
 /// <summary>EmailIdentityMailFromAttributesStatus defines the observed state of EmailIdentityMailFromAttributes.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EmailIdentityMailFromAttributesStatus
 {
@@ -276,7 +276,7 @@ public partial class V1beta1EmailIdentityMailFromAttributesStatus
 }
 
 /// <summary>EmailIdentityMailFromAttributes is the Schema for the EmailIdentityMailFromAttributess API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EmailIdentityMailFromAttributes : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1EmailIdentityMailFromAttributesSpec>, IStatus<V1beta1EmailIdentityMailFromAttributesStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.repo.github.upbound.io;
 /// <summary>RepositoryCustomProperty is the Schema for the RepositoryCustomPropertys API. Creates and a specific custom property for a GitHub repository</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1RepositoryCustomPropertyList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1RepositoryCustomProperty>
@@ -45,7 +45,7 @@ public partial class V1alpha1RepositoryCustomPropertyList : IKubernetesObject<V1
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCustomPropertySpecDeletionPolicyEnum>))]
 public enum V1alpha1RepositoryCustomPropertySpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1alpha1RepositoryCustomPropertySpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCustomPropertySpecForProviderRepositoryRefPolicyResolutionEnum>))]
 public enum V1alpha1RepositoryCustomPropertySpecForProviderRepositoryRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1alpha1RepositoryCustomPropertySpecForProviderRepositoryRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCustomPropertySpecForProviderRepositoryRefPolicyResolveEnum>))]
 public enum V1alpha1RepositoryCustomPropertySpecForProviderRepositoryRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1alpha1RepositoryCustomPropertySpecForProviderRepositoryRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryCustomPropertySpecForProviderRepositoryRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1alpha1RepositoryCustomPropertySpecForProviderRepositoryRe
 }
 
 /// <summary>Reference to a Repository in repo to populate repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryCustomPropertySpecForProviderRepositoryRef
 {
@@ -131,7 +131,7 @@ public partial class V1alpha1RepositoryCustomPropertySpecForProviderRepositoryRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCustomPropertySpecForProviderRepositorySelectorPolicyResolutionEnum>))]
 public enum V1alpha1RepositoryCustomPropertySpecForProviderRepositorySelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1alpha1RepositoryCustomPropertySpecForProviderRepositorySelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCustomPropertySpecForProviderRepositorySelectorPolicyResolveEnum>))]
 public enum V1alpha1RepositoryCustomPropertySpecForProviderRepositorySelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1alpha1RepositoryCustomPropertySpecForProviderRepositorySelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryCustomPropertySpecForProviderRepositorySelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1alpha1RepositoryCustomPropertySpecForProviderRepositorySe
 }
 
 /// <summary>Selector for a Repository in repo to populate repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryCustomPropertySpecForProviderRepositorySelector
 {
@@ -202,7 +202,7 @@ public partial class V1alpha1RepositoryCustomPropertySpecForProviderRepositorySe
     public V1alpha1RepositoryCustomPropertySpecForProviderRepositorySelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryCustomPropertySpecForProvider
 {
@@ -249,7 +249,7 @@ public partial class V1alpha1RepositoryCustomPropertySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCustomPropertySpecInitProviderRepositoryRefPolicyResolutionEnum>))]
 public enum V1alpha1RepositoryCustomPropertySpecInitProviderRepositoryRefPolicyResolutionEnum
 {
@@ -265,7 +265,7 @@ public enum V1alpha1RepositoryCustomPropertySpecInitProviderRepositoryRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCustomPropertySpecInitProviderRepositoryRefPolicyResolveEnum>))]
 public enum V1alpha1RepositoryCustomPropertySpecInitProviderRepositoryRefPolicyResolveEnum
 {
@@ -276,7 +276,7 @@ public enum V1alpha1RepositoryCustomPropertySpecInitProviderRepositoryRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryCustomPropertySpecInitProviderRepositoryRefPolicy
 {
@@ -300,7 +300,7 @@ public partial class V1alpha1RepositoryCustomPropertySpecInitProviderRepositoryR
 }
 
 /// <summary>Reference to a Repository in repo to populate repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryCustomPropertySpecInitProviderRepositoryRef
 {
@@ -319,7 +319,7 @@ public partial class V1alpha1RepositoryCustomPropertySpecInitProviderRepositoryR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCustomPropertySpecInitProviderRepositorySelectorPolicyResolutionEnum>))]
 public enum V1alpha1RepositoryCustomPropertySpecInitProviderRepositorySelectorPolicyResolutionEnum
 {
@@ -335,7 +335,7 @@ public enum V1alpha1RepositoryCustomPropertySpecInitProviderRepositorySelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCustomPropertySpecInitProviderRepositorySelectorPolicyResolveEnum>))]
 public enum V1alpha1RepositoryCustomPropertySpecInitProviderRepositorySelectorPolicyResolveEnum
 {
@@ -346,7 +346,7 @@ public enum V1alpha1RepositoryCustomPropertySpecInitProviderRepositorySelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryCustomPropertySpecInitProviderRepositorySelectorPolicy
 {
@@ -370,7 +370,7 @@ public partial class V1alpha1RepositoryCustomPropertySpecInitProviderRepositoryS
 }
 
 /// <summary>Selector for a Repository in repo to populate repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryCustomPropertySpecInitProviderRepositorySelector
 {
@@ -402,7 +402,7 @@ public partial class V1alpha1RepositoryCustomPropertySpecInitProviderRepositoryS
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryCustomPropertySpecInitProvider
 {
@@ -447,7 +447,7 @@ public partial class V1alpha1RepositoryCustomPropertySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCustomPropertySpecManagementPoliciesEnum>))]
 public enum V1alpha1RepositoryCustomPropertySpecManagementPoliciesEnum
 {
@@ -471,7 +471,7 @@ public enum V1alpha1RepositoryCustomPropertySpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCustomPropertySpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1alpha1RepositoryCustomPropertySpecProviderConfigRefPolicyResolutionEnum
 {
@@ -487,7 +487,7 @@ public enum V1alpha1RepositoryCustomPropertySpecProviderConfigRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCustomPropertySpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1alpha1RepositoryCustomPropertySpecProviderConfigRefPolicyResolveEnum
 {
@@ -498,7 +498,7 @@ public enum V1alpha1RepositoryCustomPropertySpecProviderConfigRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryCustomPropertySpecProviderConfigRefPolicy
 {
@@ -526,7 +526,7 @@ public partial class V1alpha1RepositoryCustomPropertySpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryCustomPropertySpecProviderConfigRef
 {
@@ -545,7 +545,7 @@ public partial class V1alpha1RepositoryCustomPropertySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryCustomPropertySpecWriteConnectionSecretToRef
 {
@@ -559,7 +559,7 @@ public partial class V1alpha1RepositoryCustomPropertySpecWriteConnectionSecretTo
 }
 
 /// <summary>RepositoryCustomPropertySpec defines the desired state of RepositoryCustomProperty</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryCustomPropertySpec
 {
@@ -626,7 +626,7 @@ public partial class V1alpha1RepositoryCustomPropertySpec
     public V1alpha1RepositoryCustomPropertySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryCustomPropertyStatusAtProvider
 {
@@ -663,7 +663,7 @@ public partial class V1alpha1RepositoryCustomPropertyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryCustomPropertyStatusConditions
 {
@@ -706,7 +706,7 @@ public partial class V1alpha1RepositoryCustomPropertyStatusConditions
 }
 
 /// <summary>RepositoryCustomPropertyStatus defines the observed state of RepositoryCustomProperty.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryCustomPropertyStatus
 {
@@ -727,7 +727,7 @@ public partial class V1alpha1RepositoryCustomPropertyStatus
 }
 
 /// <summary>RepositoryCustomProperty is the Schema for the RepositoryCustomPropertys API. Creates and a specific custom property for a GitHub repository</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1RepositoryCustomProperty : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1RepositoryCustomPropertySpec>, IStatus<V1alpha1RepositoryCustomPropertyStatus?>

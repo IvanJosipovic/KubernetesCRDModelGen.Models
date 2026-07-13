@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.iot.aws.m.upbound.io;
 /// <summary>Authorizer is the Schema for the Authorizers API. Creates and manages an AWS IoT Authorizer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AuthorizerList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Authorizer>
@@ -42,7 +42,7 @@ public partial class V1beta1AuthorizerList : IKubernetesObject<V1ListMeta>, IIte
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizerSpecForProviderAuthorizerFunctionArnRefPolicyResolutionEnum>))]
 public enum V1beta1AuthorizerSpecForProviderAuthorizerFunctionArnRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1AuthorizerSpecForProviderAuthorizerFunctionArnRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizerSpecForProviderAuthorizerFunctionArnRefPolicyResolveEnum>))]
 public enum V1beta1AuthorizerSpecForProviderAuthorizerFunctionArnRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1AuthorizerSpecForProviderAuthorizerFunctionArnRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizerSpecForProviderAuthorizerFunctionArnRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1AuthorizerSpecForProviderAuthorizerFunctionArnRefPol
 }
 
 /// <summary>Reference to a Function in lambda to populate authorizerFunctionArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizerSpecForProviderAuthorizerFunctionArnRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1AuthorizerSpecForProviderAuthorizerFunctionArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizerSpecForProviderAuthorizerFunctionArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1AuthorizerSpecForProviderAuthorizerFunctionArnSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1AuthorizerSpecForProviderAuthorizerFunctionArnSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizerSpecForProviderAuthorizerFunctionArnSelectorPolicyResolveEnum>))]
 public enum V1beta1AuthorizerSpecForProviderAuthorizerFunctionArnSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1AuthorizerSpecForProviderAuthorizerFunctionArnSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizerSpecForProviderAuthorizerFunctionArnSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1AuthorizerSpecForProviderAuthorizerFunctionArnSelect
 }
 
 /// <summary>Selector for a Function in lambda to populate authorizerFunctionArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizerSpecForProviderAuthorizerFunctionArnSelector
 {
@@ -192,7 +192,7 @@ public partial class V1beta1AuthorizerSpecForProviderAuthorizerFunctionArnSelect
 }
 
 /// <summary>The public keys used to verify the digital signature returned by your custom authentication service. This value is required if signing is enabled in your authorizer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizerSpecForProviderTokenSigningPublicKeysSecretRef
 {
@@ -201,7 +201,7 @@ public partial class V1beta1AuthorizerSpecForProviderTokenSigningPublicKeysSecre
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizerSpecForProvider
 {
@@ -255,7 +255,7 @@ public partial class V1beta1AuthorizerSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizerSpecInitProviderAuthorizerFunctionArnRefPolicyResolutionEnum>))]
 public enum V1beta1AuthorizerSpecInitProviderAuthorizerFunctionArnRefPolicyResolutionEnum
 {
@@ -271,7 +271,7 @@ public enum V1beta1AuthorizerSpecInitProviderAuthorizerFunctionArnRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizerSpecInitProviderAuthorizerFunctionArnRefPolicyResolveEnum>))]
 public enum V1beta1AuthorizerSpecInitProviderAuthorizerFunctionArnRefPolicyResolveEnum
 {
@@ -282,7 +282,7 @@ public enum V1beta1AuthorizerSpecInitProviderAuthorizerFunctionArnRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizerSpecInitProviderAuthorizerFunctionArnRefPolicy
 {
@@ -306,7 +306,7 @@ public partial class V1beta1AuthorizerSpecInitProviderAuthorizerFunctionArnRefPo
 }
 
 /// <summary>Reference to a Function in lambda to populate authorizerFunctionArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizerSpecInitProviderAuthorizerFunctionArnRef
 {
@@ -329,7 +329,7 @@ public partial class V1beta1AuthorizerSpecInitProviderAuthorizerFunctionArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizerSpecInitProviderAuthorizerFunctionArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1AuthorizerSpecInitProviderAuthorizerFunctionArnSelectorPolicyResolutionEnum
 {
@@ -345,7 +345,7 @@ public enum V1beta1AuthorizerSpecInitProviderAuthorizerFunctionArnSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizerSpecInitProviderAuthorizerFunctionArnSelectorPolicyResolveEnum>))]
 public enum V1beta1AuthorizerSpecInitProviderAuthorizerFunctionArnSelectorPolicyResolveEnum
 {
@@ -356,7 +356,7 @@ public enum V1beta1AuthorizerSpecInitProviderAuthorizerFunctionArnSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizerSpecInitProviderAuthorizerFunctionArnSelectorPolicy
 {
@@ -380,7 +380,7 @@ public partial class V1beta1AuthorizerSpecInitProviderAuthorizerFunctionArnSelec
 }
 
 /// <summary>Selector for a Function in lambda to populate authorizerFunctionArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizerSpecInitProviderAuthorizerFunctionArnSelector
 {
@@ -416,7 +416,7 @@ public partial class V1beta1AuthorizerSpecInitProviderAuthorizerFunctionArnSelec
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizerSpecInitProvider
 {
@@ -460,7 +460,7 @@ public partial class V1beta1AuthorizerSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AuthorizerSpecManagementPoliciesEnum>))]
 public enum V1beta1AuthorizerSpecManagementPoliciesEnum
 {
@@ -483,7 +483,7 @@ public enum V1beta1AuthorizerSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizerSpecProviderConfigRef
 {
@@ -502,7 +502,7 @@ public partial class V1beta1AuthorizerSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizerSpecWriteConnectionSecretToRef
 {
@@ -512,7 +512,7 @@ public partial class V1beta1AuthorizerSpecWriteConnectionSecretToRef
 }
 
 /// <summary>AuthorizerSpec defines the desired state of Authorizer</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizerSpec
 {
@@ -563,7 +563,7 @@ public partial class V1beta1AuthorizerSpec
     public V1beta1AuthorizerSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizerStatusAtProvider
 {
@@ -611,7 +611,7 @@ public partial class V1beta1AuthorizerStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizerStatusConditions
 {
@@ -654,7 +654,7 @@ public partial class V1beta1AuthorizerStatusConditions
 }
 
 /// <summary>AuthorizerStatus defines the observed state of Authorizer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthorizerStatus
 {
@@ -675,7 +675,7 @@ public partial class V1beta1AuthorizerStatus
 }
 
 /// <summary>Authorizer is the Schema for the Authorizers API. Creates and manages an AWS IoT Authorizer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Authorizer : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AuthorizerSpec>, IStatus<V1beta1AuthorizerStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.vertexai.cnrm.cloud.google.com;
 /// <summary>VertexAIDataLabelingJob is the Schema for the VertexAIDataLabelingJob API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1VertexAIDataLabelingJobList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1VertexAIDataLabelingJob>
@@ -37,7 +37,7 @@ public partial class V1alpha1VertexAIDataLabelingJobList : IKubernetesObject<V1L
 }
 
 /// <summary>Active learning data sampling config. For every active learning labeling iteration, it will select a batch of data based on the sampling strategy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDataLabelingJobSpecActiveLearningConfigSampleConfig
 {
@@ -55,7 +55,7 @@ public partial class V1alpha1VertexAIDataLabelingJobSpecActiveLearningConfigSamp
 }
 
 /// <summary>CMLE training config. For every active learning labeling iteration, system will train a machine learning model on CMLE. The trained model will be used by data sampling algorithm to select DataItems.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDataLabelingJobSpecActiveLearningConfigTrainingConfig
 {
@@ -65,7 +65,7 @@ public partial class V1alpha1VertexAIDataLabelingJobSpecActiveLearningConfigTrai
 }
 
 /// <summary>Parameters that configure the active learning pipeline. Active learning will label the data incrementally via several iterations. For every iteration, it will select a batch of data based on the sampling strategy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDataLabelingJobSpecActiveLearningConfig
 {
@@ -87,7 +87,7 @@ public partial class V1alpha1VertexAIDataLabelingJobSpecActiveLearningConfig
 }
 
 /// <summary>VertexAIDatasetRef is a reference to a VertexAIDataset resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDataLabelingJobSpecDatasetRefs
 {
@@ -105,7 +105,7 @@ public partial class V1alpha1VertexAIDataLabelingJobSpecDatasetRefs
 }
 
 /// <summary>Required. The Cloud KMS resource identifier of the customer managed encryption key used to protect a resource. The key needs to be in the same region as where the compute resource is created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDataLabelingJobSpecEncryptionSpecKmsKeyRef
 {
@@ -123,7 +123,7 @@ public partial class V1alpha1VertexAIDataLabelingJobSpecEncryptionSpecKmsKeyRef
 }
 
 /// <summary>Customer-managed encryption key spec for a DataLabelingJob. If set, this DataLabelingJob will be secured by this key.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDataLabelingJobSpecEncryptionSpec
 {
@@ -133,7 +133,7 @@ public partial class V1alpha1VertexAIDataLabelingJobSpecEncryptionSpec
 }
 
 /// <summary>The project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDataLabelingJobSpecProjectRef
 {
@@ -155,7 +155,7 @@ public partial class V1alpha1VertexAIDataLabelingJobSpecProjectRef
 }
 
 /// <summary>VertexAIDataLabelingJobSpec defines the desired state of VertexAIDataLabelingJob</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDataLabelingJobSpec
 {
@@ -225,7 +225,7 @@ public partial class V1alpha1VertexAIDataLabelingJobSpec
     public IList<string>? SpecialistPools { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDataLabelingJobStatusConditions
 {
@@ -251,7 +251,7 @@ public partial class V1alpha1VertexAIDataLabelingJobStatusConditions
 }
 
 /// <summary>Output only. Estimated cost(in US dollars) that the DataLabelingJob has incurred to date.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDataLabelingJobStatusObservedStateCurrentSpend
 {
@@ -268,7 +268,7 @@ public partial class V1alpha1VertexAIDataLabelingJobStatusObservedStateCurrentSp
     public long? Units { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDataLabelingJobStatusObservedStateErrorDetails
 {
@@ -310,7 +310,7 @@ public partial class V1alpha1VertexAIDataLabelingJobStatusObservedStateErrorDeta
 }
 
 /// <summary>Output only. DataLabelingJob errors. It is only populated when job&apos;s state is `JOB_STATE_FAILED` or `JOB_STATE_CANCELLED`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDataLabelingJobStatusObservedStateError
 {
@@ -328,7 +328,7 @@ public partial class V1alpha1VertexAIDataLabelingJobStatusObservedStateError
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDataLabelingJobStatusObservedState
 {
@@ -362,7 +362,7 @@ public partial class V1alpha1VertexAIDataLabelingJobStatusObservedState
 }
 
 /// <summary>VertexAIDataLabelingJobStatus defines the config connector machine state of VertexAIDataLabelingJob</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1VertexAIDataLabelingJobStatus
 {
@@ -384,7 +384,7 @@ public partial class V1alpha1VertexAIDataLabelingJobStatus
 }
 
 /// <summary>VertexAIDataLabelingJob is the Schema for the VertexAIDataLabelingJob API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1VertexAIDataLabelingJob : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1VertexAIDataLabelingJobSpec>, IStatus<V1alpha1VertexAIDataLabelingJobStatus?>

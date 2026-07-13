@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.elasticache.aws.m.upbound.io;
 /// <summary>GlobalReplicationGroup is the Schema for the GlobalReplicationGroups API. Provides an ElastiCache Global Replication Group resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1GlobalReplicationGroupList : IKubernetesObject<V1ListMeta>, IItems<V1beta1GlobalReplicationGroup>
@@ -42,7 +42,7 @@ public partial class V1beta1GlobalReplicationGroupList : IKubernetesObject<V1Lis
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GlobalReplicationGroupSpecForProviderPrimaryReplicationGroupIdRefPolicyResolutionEnum>))]
 public enum V1beta1GlobalReplicationGroupSpecForProviderPrimaryReplicationGroupIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1GlobalReplicationGroupSpecForProviderPrimaryReplicationGroupI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GlobalReplicationGroupSpecForProviderPrimaryReplicationGroupIdRefPolicyResolveEnum>))]
 public enum V1beta1GlobalReplicationGroupSpecForProviderPrimaryReplicationGroupIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1GlobalReplicationGroupSpecForProviderPrimaryReplicationGroupI
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalReplicationGroupSpecForProviderPrimaryReplicationGroupIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1GlobalReplicationGroupSpecForProviderPrimaryReplicat
 }
 
 /// <summary>Reference to a ReplicationGroup in elasticache to populate primaryReplicationGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalReplicationGroupSpecForProviderPrimaryReplicationGroupIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1GlobalReplicationGroupSpecForProviderPrimaryReplicat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GlobalReplicationGroupSpecForProviderPrimaryReplicationGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1GlobalReplicationGroupSpecForProviderPrimaryReplicationGroupIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1GlobalReplicationGroupSpecForProviderPrimaryReplicationGroupI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GlobalReplicationGroupSpecForProviderPrimaryReplicationGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta1GlobalReplicationGroupSpecForProviderPrimaryReplicationGroupIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1GlobalReplicationGroupSpecForProviderPrimaryReplicationGroupI
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalReplicationGroupSpecForProviderPrimaryReplicationGroupIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1GlobalReplicationGroupSpecForProviderPrimaryReplicat
 }
 
 /// <summary>Selector for a ReplicationGroup in elasticache to populate primaryReplicationGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalReplicationGroupSpecForProviderPrimaryReplicationGroupIdSelector
 {
@@ -191,7 +191,7 @@ public partial class V1beta1GlobalReplicationGroupSpecForProviderPrimaryReplicat
     public V1beta1GlobalReplicationGroupSpecForProviderPrimaryReplicationGroupIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalReplicationGroupSpecForProvider
 {
@@ -281,7 +281,7 @@ public partial class V1beta1GlobalReplicationGroupSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GlobalReplicationGroupSpecInitProviderPrimaryReplicationGroupIdRefPolicyResolutionEnum>))]
 public enum V1beta1GlobalReplicationGroupSpecInitProviderPrimaryReplicationGroupIdRefPolicyResolutionEnum
 {
@@ -297,7 +297,7 @@ public enum V1beta1GlobalReplicationGroupSpecInitProviderPrimaryReplicationGroup
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GlobalReplicationGroupSpecInitProviderPrimaryReplicationGroupIdRefPolicyResolveEnum>))]
 public enum V1beta1GlobalReplicationGroupSpecInitProviderPrimaryReplicationGroupIdRefPolicyResolveEnum
 {
@@ -308,7 +308,7 @@ public enum V1beta1GlobalReplicationGroupSpecInitProviderPrimaryReplicationGroup
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalReplicationGroupSpecInitProviderPrimaryReplicationGroupIdRefPolicy
 {
@@ -332,7 +332,7 @@ public partial class V1beta1GlobalReplicationGroupSpecInitProviderPrimaryReplica
 }
 
 /// <summary>Reference to a ReplicationGroup in elasticache to populate primaryReplicationGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalReplicationGroupSpecInitProviderPrimaryReplicationGroupIdRef
 {
@@ -355,7 +355,7 @@ public partial class V1beta1GlobalReplicationGroupSpecInitProviderPrimaryReplica
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GlobalReplicationGroupSpecInitProviderPrimaryReplicationGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1GlobalReplicationGroupSpecInitProviderPrimaryReplicationGroupIdSelectorPolicyResolutionEnum
 {
@@ -371,7 +371,7 @@ public enum V1beta1GlobalReplicationGroupSpecInitProviderPrimaryReplicationGroup
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GlobalReplicationGroupSpecInitProviderPrimaryReplicationGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta1GlobalReplicationGroupSpecInitProviderPrimaryReplicationGroupIdSelectorPolicyResolveEnum
 {
@@ -382,7 +382,7 @@ public enum V1beta1GlobalReplicationGroupSpecInitProviderPrimaryReplicationGroup
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalReplicationGroupSpecInitProviderPrimaryReplicationGroupIdSelectorPolicy
 {
@@ -406,7 +406,7 @@ public partial class V1beta1GlobalReplicationGroupSpecInitProviderPrimaryReplica
 }
 
 /// <summary>Selector for a ReplicationGroup in elasticache to populate primaryReplicationGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalReplicationGroupSpecInitProviderPrimaryReplicationGroupIdSelector
 {
@@ -442,7 +442,7 @@ public partial class V1beta1GlobalReplicationGroupSpecInitProviderPrimaryReplica
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalReplicationGroupSpecInitProvider
 {
@@ -523,7 +523,7 @@ public partial class V1beta1GlobalReplicationGroupSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GlobalReplicationGroupSpecManagementPoliciesEnum>))]
 public enum V1beta1GlobalReplicationGroupSpecManagementPoliciesEnum
 {
@@ -546,7 +546,7 @@ public enum V1beta1GlobalReplicationGroupSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalReplicationGroupSpecProviderConfigRef
 {
@@ -565,7 +565,7 @@ public partial class V1beta1GlobalReplicationGroupSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalReplicationGroupSpecWriteConnectionSecretToRef
 {
@@ -575,7 +575,7 @@ public partial class V1beta1GlobalReplicationGroupSpecWriteConnectionSecretToRef
 }
 
 /// <summary>GlobalReplicationGroupSpec defines the desired state of GlobalReplicationGroup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalReplicationGroupSpec
 {
@@ -626,7 +626,7 @@ public partial class V1beta1GlobalReplicationGroupSpec
     public V1beta1GlobalReplicationGroupSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalReplicationGroupStatusAtProviderGlobalNodeGroups
 {
@@ -639,7 +639,7 @@ public partial class V1beta1GlobalReplicationGroupStatusAtProviderGlobalNodeGrou
     public string? Slots { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalReplicationGroupStatusAtProvider
 {
@@ -755,7 +755,7 @@ public partial class V1beta1GlobalReplicationGroupStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalReplicationGroupStatusConditions
 {
@@ -798,7 +798,7 @@ public partial class V1beta1GlobalReplicationGroupStatusConditions
 }
 
 /// <summary>GlobalReplicationGroupStatus defines the observed state of GlobalReplicationGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalReplicationGroupStatus
 {
@@ -819,7 +819,7 @@ public partial class V1beta1GlobalReplicationGroupStatus
 }
 
 /// <summary>GlobalReplicationGroup is the Schema for the GlobalReplicationGroups API. Provides an ElastiCache Global Replication Group resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1GlobalReplicationGroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1GlobalReplicationGroupSpec>, IStatus<V1beta1GlobalReplicationGroupStatus?>

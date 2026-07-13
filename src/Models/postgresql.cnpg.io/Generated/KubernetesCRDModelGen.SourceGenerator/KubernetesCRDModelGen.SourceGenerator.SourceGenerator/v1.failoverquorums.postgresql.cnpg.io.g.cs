@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.postgresql.cnpg.io;
 /// of the primary node and reset to zero by the operator to trigger
 /// an update.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1FailoverQuorumList : IKubernetesObject<V1ListMeta>, IItems<V1FailoverQuorum>
@@ -42,7 +42,7 @@ public partial class V1FailoverQuorumList : IKubernetesObject<V1ListMeta>, IItem
 }
 
 /// <summary>Most recently observed status of the failover quorum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1FailoverQuorumStatus
 {
@@ -78,7 +78,7 @@ public partial class V1FailoverQuorumStatus
 /// of the primary node and reset to zero by the operator to trigger
 /// an update.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1FailoverQuorum : IKubernetesObject<V1ObjectMeta>, IStatus<V1FailoverQuorumStatus?>

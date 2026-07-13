@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.recoveryservices.azure.upbound.io;
 /// <summary>BackupPolicyVMWorkload is the Schema for the BackupPolicyVMWorkloads API. Manages an Azure VM Workload Backup Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2BackupPolicyVMWorkloadList : IKubernetesObject<V1ListMeta>, IItems<V1beta2BackupPolicyVMWorkload>
@@ -45,7 +45,7 @@ public partial class V1beta2BackupPolicyVMWorkloadList : IKubernetesObject<V1Lis
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupPolicyVMWorkloadSpecDeletionPolicyEnum>))]
 public enum V1beta2BackupPolicyVMWorkloadSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2BackupPolicyVMWorkloadSpecDeletionPolicyEnum
 }
 
 /// <summary>A backup block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderProtectionPolicyBackup
 {
@@ -78,7 +78,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderProtectionPolic
 }
 
 /// <summary>A retention_daily block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderProtectionPolicyRetentionDaily
 {
@@ -88,7 +88,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderProtectionPolic
 }
 
 /// <summary>A retention_monthly block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderProtectionPolicyRetentionMonthly
 {
@@ -114,7 +114,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderProtectionPolic
 }
 
 /// <summary>A retention_weekly block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderProtectionPolicyRetentionWeekly
 {
@@ -128,7 +128,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderProtectionPolic
 }
 
 /// <summary>A retention_yearly block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderProtectionPolicyRetentionYearly
 {
@@ -158,7 +158,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderProtectionPolic
 }
 
 /// <summary>A simple_retention block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderProtectionPolicySimpleRetention
 {
@@ -167,7 +167,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderProtectionPolic
     public double? Count { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderProtectionPolicy
 {
@@ -206,7 +206,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderProtectionPolic
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameRefPolicyResolutionEnum>))]
 public enum V1beta2BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameRefPolicyResolutionEnum
 {
@@ -222,7 +222,7 @@ public enum V1beta2BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameRefPolicyResolveEnum>))]
 public enum V1beta2BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameRefPolicyResolveEnum
 {
@@ -233,7 +233,7 @@ public enum V1beta2BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameRefPolicy
 {
@@ -257,7 +257,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNa
 }
 
 /// <summary>Reference to a Vault in recoveryservices to populate recoveryVaultName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameRef
 {
@@ -276,7 +276,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameSelectorPolicyResolutionEnum
 {
@@ -292,7 +292,7 @@ public enum V1beta2BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameSelectorPolicyResolveEnum>))]
 public enum V1beta2BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameSelectorPolicyResolveEnum
 {
@@ -303,7 +303,7 @@ public enum V1beta2BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameSelectorPolicy
 {
@@ -327,7 +327,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNa
 }
 
 /// <summary>Selector for a Vault in recoveryservices to populate recoveryVaultName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameSelector
 {
@@ -353,7 +353,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupPolicyVMWorkloadSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta2BackupPolicyVMWorkloadSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -369,7 +369,7 @@ public enum V1beta2BackupPolicyVMWorkloadSpecForProviderResourceGroupNameRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupPolicyVMWorkloadSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta2BackupPolicyVMWorkloadSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -380,7 +380,7 @@ public enum V1beta2BackupPolicyVMWorkloadSpecForProviderResourceGroupNameRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderResourceGroupNameRefPolicy
 {
@@ -404,7 +404,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderResourceGroupNa
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderResourceGroupNameRef
 {
@@ -423,7 +423,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderResourceGroupNa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupPolicyVMWorkloadSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2BackupPolicyVMWorkloadSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -439,7 +439,7 @@ public enum V1beta2BackupPolicyVMWorkloadSpecForProviderResourceGroupNameSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupPolicyVMWorkloadSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta2BackupPolicyVMWorkloadSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -450,7 +450,7 @@ public enum V1beta2BackupPolicyVMWorkloadSpecForProviderResourceGroupNameSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -474,7 +474,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderResourceGroupNa
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderResourceGroupNameSelector
 {
@@ -495,7 +495,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderResourceGroupNa
 }
 
 /// <summary>A settings block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderSettings
 {
@@ -508,7 +508,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecForProviderSettings
     public string? TimeZone { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecForProvider
 {
@@ -550,7 +550,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecForProvider
 }
 
 /// <summary>A backup block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecInitProviderProtectionPolicyBackup
 {
@@ -572,7 +572,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecInitProviderProtectionPoli
 }
 
 /// <summary>A retention_daily block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecInitProviderProtectionPolicyRetentionDaily
 {
@@ -582,7 +582,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecInitProviderProtectionPoli
 }
 
 /// <summary>A retention_monthly block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecInitProviderProtectionPolicyRetentionMonthly
 {
@@ -608,7 +608,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecInitProviderProtectionPoli
 }
 
 /// <summary>A retention_weekly block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecInitProviderProtectionPolicyRetentionWeekly
 {
@@ -622,7 +622,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecInitProviderProtectionPoli
 }
 
 /// <summary>A retention_yearly block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecInitProviderProtectionPolicyRetentionYearly
 {
@@ -652,7 +652,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecInitProviderProtectionPoli
 }
 
 /// <summary>A simple_retention block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecInitProviderProtectionPolicySimpleRetention
 {
@@ -661,7 +661,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecInitProviderProtectionPoli
     public double? Count { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecInitProviderProtectionPolicy
 {
@@ -695,7 +695,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecInitProviderProtectionPoli
 }
 
 /// <summary>A settings block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecInitProviderSettings
 {
@@ -720,7 +720,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecInitProviderSettings
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecInitProvider
 {
@@ -741,7 +741,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupPolicyVMWorkloadSpecManagementPoliciesEnum>))]
 public enum V1beta2BackupPolicyVMWorkloadSpecManagementPoliciesEnum
 {
@@ -765,7 +765,7 @@ public enum V1beta2BackupPolicyVMWorkloadSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupPolicyVMWorkloadSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2BackupPolicyVMWorkloadSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -781,7 +781,7 @@ public enum V1beta2BackupPolicyVMWorkloadSpecProviderConfigRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2BackupPolicyVMWorkloadSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2BackupPolicyVMWorkloadSpecProviderConfigRefPolicyResolveEnum
 {
@@ -792,7 +792,7 @@ public enum V1beta2BackupPolicyVMWorkloadSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecProviderConfigRefPolicy
 {
@@ -820,7 +820,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecProviderConfigRef
 {
@@ -839,7 +839,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpecWriteConnectionSecretToRef
 {
@@ -853,7 +853,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpecWriteConnectionSecretToRef
 }
 
 /// <summary>BackupPolicyVMWorkloadSpec defines the desired state of BackupPolicyVMWorkload</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadSpec
 {
@@ -921,7 +921,7 @@ public partial class V1beta2BackupPolicyVMWorkloadSpec
 }
 
 /// <summary>A backup block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadStatusAtProviderProtectionPolicyBackup
 {
@@ -943,7 +943,7 @@ public partial class V1beta2BackupPolicyVMWorkloadStatusAtProviderProtectionPoli
 }
 
 /// <summary>A retention_daily block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadStatusAtProviderProtectionPolicyRetentionDaily
 {
@@ -953,7 +953,7 @@ public partial class V1beta2BackupPolicyVMWorkloadStatusAtProviderProtectionPoli
 }
 
 /// <summary>A retention_monthly block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadStatusAtProviderProtectionPolicyRetentionMonthly
 {
@@ -979,7 +979,7 @@ public partial class V1beta2BackupPolicyVMWorkloadStatusAtProviderProtectionPoli
 }
 
 /// <summary>A retention_weekly block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadStatusAtProviderProtectionPolicyRetentionWeekly
 {
@@ -993,7 +993,7 @@ public partial class V1beta2BackupPolicyVMWorkloadStatusAtProviderProtectionPoli
 }
 
 /// <summary>A retention_yearly block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadStatusAtProviderProtectionPolicyRetentionYearly
 {
@@ -1023,7 +1023,7 @@ public partial class V1beta2BackupPolicyVMWorkloadStatusAtProviderProtectionPoli
 }
 
 /// <summary>A simple_retention block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadStatusAtProviderProtectionPolicySimpleRetention
 {
@@ -1032,7 +1032,7 @@ public partial class V1beta2BackupPolicyVMWorkloadStatusAtProviderProtectionPoli
     public double? Count { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadStatusAtProviderProtectionPolicy
 {
@@ -1066,7 +1066,7 @@ public partial class V1beta2BackupPolicyVMWorkloadStatusAtProviderProtectionPoli
 }
 
 /// <summary>A settings block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadStatusAtProviderSettings
 {
@@ -1079,7 +1079,7 @@ public partial class V1beta2BackupPolicyVMWorkloadStatusAtProviderSettings
     public string? TimeZone { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadStatusAtProvider
 {
@@ -1109,7 +1109,7 @@ public partial class V1beta2BackupPolicyVMWorkloadStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadStatusConditions
 {
@@ -1152,7 +1152,7 @@ public partial class V1beta2BackupPolicyVMWorkloadStatusConditions
 }
 
 /// <summary>BackupPolicyVMWorkloadStatus defines the observed state of BackupPolicyVMWorkload.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BackupPolicyVMWorkloadStatus
 {
@@ -1173,7 +1173,7 @@ public partial class V1beta2BackupPolicyVMWorkloadStatus
 }
 
 /// <summary>BackupPolicyVMWorkload is the Schema for the BackupPolicyVMWorkloads API. Manages an Azure VM Workload Backup Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2BackupPolicyVMWorkload : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2BackupPolicyVMWorkloadSpec>, IStatus<V1beta2BackupPolicyVMWorkloadStatus?>

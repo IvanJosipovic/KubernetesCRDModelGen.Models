@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appplatform.azure.upbound.io;
 /// <summary>SpringCloudAppMySQLAssociation is the Schema for the SpringCloudAppMySQLAssociations API. Associates a</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SpringCloudAppMySQLAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SpringCloudAppMySQLAssociation>
@@ -45,7 +45,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationList : IKubernetesObje
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecDeletionPolicyEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecForProviderDatabaseNameRefPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderDatabaseNameRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderDatabaseNameRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecForProviderDatabaseNameRefPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderDatabaseNameRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderDatabaseNameRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderDatabaseNameRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderDatabas
 }
 
 /// <summary>Reference to a FlexibleDatabase in dbformysql to populate databaseName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderDatabaseNameRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderDatabas
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecForProviderDatabaseNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderDatabaseNameSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderDatabaseNameSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecForProviderDatabaseNameSelectorPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderDatabaseNameSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderDatabaseNameSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderDatabaseNameSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderDatabas
 }
 
 /// <summary>Selector for a FlexibleDatabase in dbformysql to populate databaseName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderDatabaseNameSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderDatabas
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecForProviderMysqlServerIdRefPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderMysqlServerIdRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderMysqlServerIdRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecForProviderMysqlServerIdRefPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderMysqlServerIdRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderMysqlServerIdRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderMysqlServerIdRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderMysqlSe
 }
 
 /// <summary>Reference to a FlexibleServer in dbformysql to populate mysqlServerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderMysqlServerIdRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderMysqlSe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecForProviderMysqlServerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderMysqlServerIdSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderMysqlServerIdSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecForProviderMysqlServerIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderMysqlServerIdSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderMysqlServerIdSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderMysqlServerIdSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderMysqlSe
 }
 
 /// <summary>Selector for a FlexibleServer in dbformysql to populate mysqlServerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderMysqlServerIdSelector
 {
@@ -350,7 +350,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderMysqlSe
 }
 
 /// <summary>Specifies the password which should be used when connecting to the MySQL Database from the Spring Cloud App.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderPasswordSecretRef
 {
@@ -373,7 +373,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderPasswor
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecForProviderSpringCloudAppIdRefPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderSpringCloudAppIdRefPolicyResolutionEnum
 {
@@ -389,7 +389,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderSpringCloudAppId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecForProviderSpringCloudAppIdRefPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderSpringCloudAppIdRefPolicyResolveEnum
 {
@@ -400,7 +400,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderSpringCloudAppId
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderSpringCloudAppIdRefPolicy
 {
@@ -424,7 +424,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderSpringC
 }
 
 /// <summary>Reference to a SpringCloudApp in appplatform to populate springCloudAppId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderSpringCloudAppIdRef
 {
@@ -443,7 +443,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderSpringC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecForProviderSpringCloudAppIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderSpringCloudAppIdSelectorPolicyResolutionEnum
 {
@@ -459,7 +459,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderSpringCloudAppId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecForProviderSpringCloudAppIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderSpringCloudAppIdSelectorPolicyResolveEnum
 {
@@ -470,7 +470,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderSpringCloudAppId
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderSpringCloudAppIdSelectorPolicy
 {
@@ -494,7 +494,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderSpringC
 }
 
 /// <summary>Selector for a SpringCloudApp in appplatform to populate springCloudAppId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderSpringCloudAppIdSelector
 {
@@ -520,7 +520,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderSpringC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecForProviderUsernameRefPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderUsernameRefPolicyResolutionEnum
 {
@@ -536,7 +536,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderUsernameRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecForProviderUsernameRefPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderUsernameRefPolicyResolveEnum
 {
@@ -547,7 +547,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderUsernameRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderUsernameRefPolicy
 {
@@ -571,7 +571,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderUsernam
 }
 
 /// <summary>Reference to a FlexibleServer in dbformysql to populate username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderUsernameRef
 {
@@ -590,7 +590,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderUsernam
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecForProviderUsernameSelectorPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderUsernameSelectorPolicyResolutionEnum
 {
@@ -606,7 +606,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderUsernameSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecForProviderUsernameSelectorPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderUsernameSelectorPolicyResolveEnum
 {
@@ -617,7 +617,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecForProviderUsernameSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderUsernameSelectorPolicy
 {
@@ -641,7 +641,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderUsernam
 }
 
 /// <summary>Selector for a FlexibleServer in dbformysql to populate username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderUsernameSelector
 {
@@ -661,7 +661,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProviderUsernam
     public V1beta1SpringCloudAppMySQLAssociationSpecForProviderUsernameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProvider
 {
@@ -724,7 +724,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecInitProviderDatabaseNameRefPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecInitProviderDatabaseNameRefPolicyResolutionEnum
 {
@@ -740,7 +740,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecInitProviderDatabaseNameRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecInitProviderDatabaseNameRefPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecInitProviderDatabaseNameRefPolicyResolveEnum
 {
@@ -751,7 +751,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecInitProviderDatabaseNameRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderDatabaseNameRefPolicy
 {
@@ -775,7 +775,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderDataba
 }
 
 /// <summary>Reference to a FlexibleDatabase in dbformysql to populate databaseName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderDatabaseNameRef
 {
@@ -794,7 +794,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderDataba
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecInitProviderDatabaseNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecInitProviderDatabaseNameSelectorPolicyResolutionEnum
 {
@@ -810,7 +810,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecInitProviderDatabaseNameSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecInitProviderDatabaseNameSelectorPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecInitProviderDatabaseNameSelectorPolicyResolveEnum
 {
@@ -821,7 +821,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecInitProviderDatabaseNameSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderDatabaseNameSelectorPolicy
 {
@@ -845,7 +845,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderDataba
 }
 
 /// <summary>Selector for a FlexibleDatabase in dbformysql to populate databaseName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderDatabaseNameSelector
 {
@@ -871,7 +871,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderDataba
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecInitProviderMysqlServerIdRefPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecInitProviderMysqlServerIdRefPolicyResolutionEnum
 {
@@ -887,7 +887,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecInitProviderMysqlServerIdRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecInitProviderMysqlServerIdRefPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecInitProviderMysqlServerIdRefPolicyResolveEnum
 {
@@ -898,7 +898,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecInitProviderMysqlServerIdRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderMysqlServerIdRefPolicy
 {
@@ -922,7 +922,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderMysqlS
 }
 
 /// <summary>Reference to a FlexibleServer in dbformysql to populate mysqlServerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderMysqlServerIdRef
 {
@@ -941,7 +941,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderMysqlS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecInitProviderMysqlServerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecInitProviderMysqlServerIdSelectorPolicyResolutionEnum
 {
@@ -957,7 +957,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecInitProviderMysqlServerIdSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecInitProviderMysqlServerIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecInitProviderMysqlServerIdSelectorPolicyResolveEnum
 {
@@ -968,7 +968,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecInitProviderMysqlServerIdSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderMysqlServerIdSelectorPolicy
 {
@@ -992,7 +992,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderMysqlS
 }
 
 /// <summary>Selector for a FlexibleServer in dbformysql to populate mysqlServerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderMysqlServerIdSelector
 {
@@ -1013,7 +1013,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderMysqlS
 }
 
 /// <summary>Specifies the password which should be used when connecting to the MySQL Database from the Spring Cloud App.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderPasswordSecretRef
 {
@@ -1036,7 +1036,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderPasswo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecInitProviderUsernameRefPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecInitProviderUsernameRefPolicyResolutionEnum
 {
@@ -1052,7 +1052,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecInitProviderUsernameRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecInitProviderUsernameRefPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecInitProviderUsernameRefPolicyResolveEnum
 {
@@ -1063,7 +1063,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecInitProviderUsernameRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderUsernameRefPolicy
 {
@@ -1087,7 +1087,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderUserna
 }
 
 /// <summary>Reference to a FlexibleServer in dbformysql to populate username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderUsernameRef
 {
@@ -1106,7 +1106,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderUserna
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecInitProviderUsernameSelectorPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecInitProviderUsernameSelectorPolicyResolutionEnum
 {
@@ -1122,7 +1122,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecInitProviderUsernameSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecInitProviderUsernameSelectorPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecInitProviderUsernameSelectorPolicyResolveEnum
 {
@@ -1133,7 +1133,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecInitProviderUsernameSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderUsernameSelectorPolicy
 {
@@ -1157,7 +1157,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderUserna
 }
 
 /// <summary>Selector for a FlexibleServer in dbformysql to populate username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderUsernameSelector
 {
@@ -1189,7 +1189,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProviderUserna
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProvider
 {
@@ -1238,7 +1238,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecManagementPoliciesEnum
 {
@@ -1262,7 +1262,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1278,7 +1278,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecProviderConfigRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudAppMySQLAssociationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1SpringCloudAppMySQLAssociationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1289,7 +1289,7 @@ public enum V1beta1SpringCloudAppMySQLAssociationSpecProviderConfigRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecProviderConfigRefPolicy
 {
@@ -1317,7 +1317,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecProviderConfigRefP
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecProviderConfigRef
 {
@@ -1336,7 +1336,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpecWriteConnectionSecretToRef
 {
@@ -1350,7 +1350,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpecWriteConnectionSec
 }
 
 /// <summary>SpringCloudAppMySQLAssociationSpec defines the desired state of SpringCloudAppMySQLAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationSpec
 {
@@ -1417,7 +1417,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationSpec
     public V1beta1SpringCloudAppMySQLAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationStatusAtProvider
 {
@@ -1443,7 +1443,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationStatusConditions
 {
@@ -1486,7 +1486,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationStatusConditions
 }
 
 /// <summary>SpringCloudAppMySQLAssociationStatus defines the observed state of SpringCloudAppMySQLAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudAppMySQLAssociationStatus
 {
@@ -1507,7 +1507,7 @@ public partial class V1beta1SpringCloudAppMySQLAssociationStatus
 }
 
 /// <summary>SpringCloudAppMySQLAssociation is the Schema for the SpringCloudAppMySQLAssociations API. Associates a</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SpringCloudAppMySQLAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SpringCloudAppMySQLAssociationSpec>, IStatus<V1beta1SpringCloudAppMySQLAssociationStatus?>

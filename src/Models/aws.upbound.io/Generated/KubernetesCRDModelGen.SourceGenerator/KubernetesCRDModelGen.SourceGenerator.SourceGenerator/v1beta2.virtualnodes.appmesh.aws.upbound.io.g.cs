@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appmesh.aws.upbound.io;
 /// <summary>VirtualNode is the Schema for the VirtualNodes API. Provides an AWS App Mesh virtual node resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2VirtualNodeList : IKubernetesObject<V1ListMeta>, IItems<V1beta2VirtualNode>
@@ -45,7 +45,7 @@ public partial class V1beta2VirtualNodeList : IKubernetesObject<V1ListMeta>, IIt
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNodeSpecDeletionPolicyEnum>))]
 public enum V1beta2VirtualNodeSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2VirtualNodeSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNodeSpecForProviderMeshNameRefPolicyResolutionEnum>))]
 public enum V1beta2VirtualNodeSpecForProviderMeshNameRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2VirtualNodeSpecForProviderMeshNameRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNodeSpecForProviderMeshNameRefPolicyResolveEnum>))]
 public enum V1beta2VirtualNodeSpecForProviderMeshNameRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2VirtualNodeSpecForProviderMeshNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderMeshNameRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2VirtualNodeSpecForProviderMeshNameRefPolicy
 }
 
 /// <summary>Reference to a Mesh in appmesh to populate meshName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderMeshNameRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta2VirtualNodeSpecForProviderMeshNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNodeSpecForProviderMeshNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2VirtualNodeSpecForProviderMeshNameSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2VirtualNodeSpecForProviderMeshNameSelectorPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNodeSpecForProviderMeshNameSelectorPolicyResolveEnum>))]
 public enum V1beta2VirtualNodeSpecForProviderMeshNameSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2VirtualNodeSpecForProviderMeshNameSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderMeshNameSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2VirtualNodeSpecForProviderMeshNameSelectorPolicy
 }
 
 /// <summary>Selector for a Mesh in appmesh to populate meshName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderMeshNameSelector
 {
@@ -203,7 +203,7 @@ public partial class V1beta2VirtualNodeSpecForProviderMeshNameSelector
 }
 
 /// <summary>Local file certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceClientPolicyTlsCertificateFile
 {
@@ -217,7 +217,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceC
 }
 
 /// <summary>A Secret Discovery Service certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceClientPolicyTlsCertificateSds
 {
@@ -227,7 +227,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceC
 }
 
 /// <summary>Virtual node&apos;s client&apos;s Transport Layer Security (TLS) certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceClientPolicyTlsCertificate
 {
@@ -241,7 +241,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceC
 }
 
 /// <summary>Criteria for determining a SAN&apos;s match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch
 {
@@ -251,7 +251,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceC
 }
 
 /// <summary>SANs for a TLS validation context.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames
 {
@@ -261,7 +261,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceC
 }
 
 /// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm
 {
@@ -271,7 +271,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceC
 }
 
 /// <summary>Local file certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile
 {
@@ -281,7 +281,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceC
 }
 
 /// <summary>A Secret Discovery Service certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds
 {
@@ -291,7 +291,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceC
 }
 
 /// <summary>TLS validation context trust.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrust
 {
@@ -309,7 +309,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceC
 }
 
 /// <summary>TLS validation context.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceClientPolicyTlsValidation
 {
@@ -323,7 +323,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceC
 }
 
 /// <summary>Transport Layer Security (TLS) client policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceClientPolicyTls
 {
@@ -345,7 +345,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceC
 }
 
 /// <summary>Client policy for the backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceClientPolicy
 {
@@ -355,7 +355,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceC
 }
 
 /// <summary>Virtual service to use as a backend for a virtual node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualService
 {
@@ -368,7 +368,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualService
     public string? VirtualServiceName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackend
 {
@@ -378,7 +378,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackend
 }
 
 /// <summary>Local file certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientPolicyTlsCertificateFile
 {
@@ -392,7 +392,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientP
 }
 
 /// <summary>A Secret Discovery Service certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientPolicyTlsCertificateSds
 {
@@ -402,7 +402,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientP
 }
 
 /// <summary>Virtual node&apos;s client&apos;s Transport Layer Security (TLS) certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientPolicyTlsCertificate
 {
@@ -416,7 +416,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientP
 }
 
 /// <summary>Criteria for determining a SAN&apos;s match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch
 {
@@ -426,7 +426,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientP
 }
 
 /// <summary>SANs for a TLS validation context.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames
 {
@@ -436,7 +436,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientP
 }
 
 /// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientPolicyTlsValidationTrustAcm
 {
@@ -446,7 +446,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientP
 }
 
 /// <summary>Local file certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientPolicyTlsValidationTrustFile
 {
@@ -456,7 +456,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientP
 }
 
 /// <summary>A Secret Discovery Service certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientPolicyTlsValidationTrustSds
 {
@@ -466,7 +466,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientP
 }
 
 /// <summary>TLS validation context trust.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientPolicyTlsValidationTrust
 {
@@ -484,7 +484,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientP
 }
 
 /// <summary>TLS validation context.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientPolicyTlsValidation
 {
@@ -498,7 +498,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientP
 }
 
 /// <summary>Transport Layer Security (TLS) client policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientPolicyTls
 {
@@ -520,7 +520,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientP
 }
 
 /// <summary>Client policy for the backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientPolicy
 {
@@ -530,7 +530,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientP
 }
 
 /// <summary>Defaults for backends.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaults
 {
@@ -540,7 +540,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaults
 }
 
 /// <summary>Connection pool information for gRPC listeners.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerConnectionPoolGrpc
 {
@@ -549,7 +549,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerConnectionPool
     public double? MaxRequests { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerConnectionPoolHttp
 {
@@ -562,7 +562,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerConnectionPool
     public double? MaxPendingRequests { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerConnectionPoolHttp2
 {
@@ -571,7 +571,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerConnectionPool
     public double? MaxRequests { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerConnectionPoolTcp
 {
@@ -581,7 +581,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerConnectionPool
 }
 
 /// <summary>Connection pool information for the listener.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerConnectionPool
 {
@@ -603,7 +603,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerConnectionPool
 }
 
 /// <summary>Health check information for the listener.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerHealthCheck
 {
@@ -637,7 +637,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerHealthCheck
 }
 
 /// <summary>Base amount of time for which a host is ejected.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerOutlierDetectionBaseEjectionDuration
 {
@@ -651,7 +651,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerOutlierDetecti
 }
 
 /// <summary>Time interval between ejection sweep analysis.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerOutlierDetectionInterval
 {
@@ -665,7 +665,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerOutlierDetecti
 }
 
 /// <summary>Outlier detection information for the listener.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerOutlierDetection
 {
@@ -690,7 +690,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerOutlierDetecti
 }
 
 /// <summary>Port mapping information for the listener.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerPortMapping
 {
@@ -704,7 +704,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerPortMapping
 }
 
 /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutGrpcIdle
 {
@@ -718,7 +718,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutGrpcIdl
 }
 
 /// <summary>Per request timeout.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutGrpcPerRequest
 {
@@ -732,7 +732,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutGrpcPer
 }
 
 /// <summary>Connection pool information for gRPC listeners.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutGrpc
 {
@@ -746,7 +746,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutGrpc
 }
 
 /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttpIdle
 {
@@ -760,7 +760,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttpIdl
 }
 
 /// <summary>Per request timeout.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttpPerRequest
 {
@@ -774,7 +774,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttpPer
 }
 
 /// <summary>Connection pool information for HTTP listeners.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttp
 {
@@ -788,7 +788,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttp
 }
 
 /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttp2Idle
 {
@@ -802,7 +802,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttp2Id
 }
 
 /// <summary>Per request timeout.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttp2PerRequest
 {
@@ -816,7 +816,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttp2Pe
 }
 
 /// <summary>Connection pool information for HTTP2 listeners.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttp2
 {
@@ -830,7 +830,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttp2
 }
 
 /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutTcpIdle
 {
@@ -844,7 +844,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutTcpIdle
 }
 
 /// <summary>Connection pool information for TCP listeners.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutTcp
 {
@@ -854,7 +854,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutTcp
 }
 
 /// <summary>Timeouts for different protocols.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeout
 {
@@ -876,7 +876,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeout
 }
 
 /// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsCertificateAcm
 {
@@ -886,7 +886,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsCertificate
 }
 
 /// <summary>Local file certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsCertificateFile
 {
@@ -900,7 +900,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsCertificate
 }
 
 /// <summary>A Secret Discovery Service certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsCertificateSds
 {
@@ -910,7 +910,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsCertificate
 }
 
 /// <summary>Virtual node&apos;s client&apos;s Transport Layer Security (TLS) certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsCertificate
 {
@@ -928,7 +928,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsCertificate
 }
 
 /// <summary>Criteria for determining a SAN&apos;s match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsValidationSubjectAlternativeNamesMatch
 {
@@ -938,7 +938,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsValidationS
 }
 
 /// <summary>SANs for a TLS validation context.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsValidationSubjectAlternativeNames
 {
@@ -948,7 +948,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsValidationS
 }
 
 /// <summary>Local file certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsValidationTrustFile
 {
@@ -958,7 +958,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsValidationT
 }
 
 /// <summary>A Secret Discovery Service certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsValidationTrustSds
 {
@@ -968,7 +968,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsValidationT
 }
 
 /// <summary>TLS validation context trust.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsValidationTrust
 {
@@ -982,7 +982,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsValidationT
 }
 
 /// <summary>TLS validation context.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsValidation
 {
@@ -996,7 +996,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsValidation
 }
 
 /// <summary>Transport Layer Security (TLS) client policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTls
 {
@@ -1013,7 +1013,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTls
     public V1beta2VirtualNodeSpecForProviderSpecListenerTlsValidation? Validation { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListener
 {
@@ -1042,7 +1042,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListener
     public V1beta2VirtualNodeSpecForProviderSpecListenerTls? Tls { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecLoggingAccessLogFileFormatJson
 {
@@ -1056,7 +1056,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecLoggingAccessLogFileFo
 }
 
 /// <summary>The specified format for the logs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecLoggingAccessLogFileFormat
 {
@@ -1070,7 +1070,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecLoggingAccessLogFileFo
 }
 
 /// <summary>Local file certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecLoggingAccessLogFile
 {
@@ -1084,7 +1084,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecLoggingAccessLogFile
 }
 
 /// <summary>Access log configuration for a virtual node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecLoggingAccessLog
 {
@@ -1094,7 +1094,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecLoggingAccessLog
 }
 
 /// <summary>Inbound and outbound access logging information for the virtual node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecLogging
 {
@@ -1109,7 +1109,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecLogging
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameRefPolicyResolutionEnum>))]
 public enum V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameRefPolicyResolutionEnum
 {
@@ -1125,7 +1125,7 @@ public enum V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsCloudMapName
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameRefPolicyResolveEnum>))]
 public enum V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameRefPolicyResolveEnum
 {
@@ -1136,7 +1136,7 @@ public enum V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsCloudMapName
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameRefPolicy
 {
@@ -1160,7 +1160,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsClo
 }
 
 /// <summary>Reference to a HTTPNamespace in servicediscovery to populate namespaceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameRef
 {
@@ -1179,7 +1179,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsClo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameSelectorPolicyResolutionEnum
 {
@@ -1195,7 +1195,7 @@ public enum V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsCloudMapName
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameSelectorPolicyResolveEnum>))]
 public enum V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameSelectorPolicyResolveEnum
 {
@@ -1206,7 +1206,7 @@ public enum V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsCloudMapName
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameSelectorPolicy
 {
@@ -1230,7 +1230,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsClo
 }
 
 /// <summary>Selector for a HTTPNamespace in servicediscovery to populate namespaceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameSelector
 {
@@ -1251,7 +1251,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsClo
 }
 
 /// <summary>Any AWS Cloud Map information for the virtual node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsCloudMap
 {
@@ -1280,7 +1280,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsClo
 }
 
 /// <summary>DNS service name for the virtual node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryDns
 {
@@ -1298,7 +1298,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryDns
 }
 
 /// <summary>Service discovery information for the virtual node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecServiceDiscovery
 {
@@ -1312,7 +1312,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecServiceDiscovery
 }
 
 /// <summary>Virtual node specification to apply.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpec
 {
@@ -1337,7 +1337,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpec
     public V1beta2VirtualNodeSpecForProviderSpecServiceDiscovery? ServiceDiscovery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProvider
 {
@@ -1383,7 +1383,7 @@ public partial class V1beta2VirtualNodeSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNodeSpecInitProviderMeshNameRefPolicyResolutionEnum>))]
 public enum V1beta2VirtualNodeSpecInitProviderMeshNameRefPolicyResolutionEnum
 {
@@ -1399,7 +1399,7 @@ public enum V1beta2VirtualNodeSpecInitProviderMeshNameRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNodeSpecInitProviderMeshNameRefPolicyResolveEnum>))]
 public enum V1beta2VirtualNodeSpecInitProviderMeshNameRefPolicyResolveEnum
 {
@@ -1410,7 +1410,7 @@ public enum V1beta2VirtualNodeSpecInitProviderMeshNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderMeshNameRefPolicy
 {
@@ -1434,7 +1434,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderMeshNameRefPolicy
 }
 
 /// <summary>Reference to a Mesh in appmesh to populate meshName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderMeshNameRef
 {
@@ -1453,7 +1453,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderMeshNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNodeSpecInitProviderMeshNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2VirtualNodeSpecInitProviderMeshNameSelectorPolicyResolutionEnum
 {
@@ -1469,7 +1469,7 @@ public enum V1beta2VirtualNodeSpecInitProviderMeshNameSelectorPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNodeSpecInitProviderMeshNameSelectorPolicyResolveEnum>))]
 public enum V1beta2VirtualNodeSpecInitProviderMeshNameSelectorPolicyResolveEnum
 {
@@ -1480,7 +1480,7 @@ public enum V1beta2VirtualNodeSpecInitProviderMeshNameSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderMeshNameSelectorPolicy
 {
@@ -1504,7 +1504,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderMeshNameSelectorPolicy
 }
 
 /// <summary>Selector for a Mesh in appmesh to populate meshName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderMeshNameSelector
 {
@@ -1525,7 +1525,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderMeshNameSelector
 }
 
 /// <summary>Local file certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualServiceClientPolicyTlsCertificateFile
 {
@@ -1539,7 +1539,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualService
 }
 
 /// <summary>A Secret Discovery Service certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualServiceClientPolicyTlsCertificateSds
 {
@@ -1549,7 +1549,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualService
 }
 
 /// <summary>Virtual node&apos;s client&apos;s Transport Layer Security (TLS) certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualServiceClientPolicyTlsCertificate
 {
@@ -1563,7 +1563,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualService
 }
 
 /// <summary>Criteria for determining a SAN&apos;s match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch
 {
@@ -1573,7 +1573,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualService
 }
 
 /// <summary>SANs for a TLS validation context.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames
 {
@@ -1583,7 +1583,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualService
 }
 
 /// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm
 {
@@ -1593,7 +1593,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualService
 }
 
 /// <summary>Local file certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile
 {
@@ -1603,7 +1603,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualService
 }
 
 /// <summary>A Secret Discovery Service certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds
 {
@@ -1613,7 +1613,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualService
 }
 
 /// <summary>TLS validation context trust.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrust
 {
@@ -1631,7 +1631,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualService
 }
 
 /// <summary>TLS validation context.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualServiceClientPolicyTlsValidation
 {
@@ -1645,7 +1645,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualService
 }
 
 /// <summary>Transport Layer Security (TLS) client policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualServiceClientPolicyTls
 {
@@ -1667,7 +1667,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualService
 }
 
 /// <summary>Client policy for the backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualServiceClientPolicy
 {
@@ -1677,7 +1677,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualService
 }
 
 /// <summary>Virtual service to use as a backend for a virtual node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualService
 {
@@ -1690,7 +1690,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualService
     public string? VirtualServiceName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackend
 {
@@ -1700,7 +1700,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackend
 }
 
 /// <summary>Local file certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClientPolicyTlsCertificateFile
 {
@@ -1714,7 +1714,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClient
 }
 
 /// <summary>A Secret Discovery Service certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClientPolicyTlsCertificateSds
 {
@@ -1724,7 +1724,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClient
 }
 
 /// <summary>Virtual node&apos;s client&apos;s Transport Layer Security (TLS) certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClientPolicyTlsCertificate
 {
@@ -1738,7 +1738,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClient
 }
 
 /// <summary>Criteria for determining a SAN&apos;s match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch
 {
@@ -1748,7 +1748,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClient
 }
 
 /// <summary>SANs for a TLS validation context.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames
 {
@@ -1758,7 +1758,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClient
 }
 
 /// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationTrustAcm
 {
@@ -1768,7 +1768,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClient
 }
 
 /// <summary>Local file certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationTrustFile
 {
@@ -1778,7 +1778,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClient
 }
 
 /// <summary>A Secret Discovery Service certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationTrustSds
 {
@@ -1788,7 +1788,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClient
 }
 
 /// <summary>TLS validation context trust.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationTrust
 {
@@ -1806,7 +1806,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClient
 }
 
 /// <summary>TLS validation context.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClientPolicyTlsValidation
 {
@@ -1820,7 +1820,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClient
 }
 
 /// <summary>Transport Layer Security (TLS) client policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClientPolicyTls
 {
@@ -1842,7 +1842,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClient
 }
 
 /// <summary>Client policy for the backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClientPolicy
 {
@@ -1852,7 +1852,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClient
 }
 
 /// <summary>Defaults for backends.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaults
 {
@@ -1862,7 +1862,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaults
 }
 
 /// <summary>Connection pool information for gRPC listeners.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerConnectionPoolGrpc
 {
@@ -1871,7 +1871,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerConnectionPoo
     public double? MaxRequests { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerConnectionPoolHttp
 {
@@ -1884,7 +1884,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerConnectionPoo
     public double? MaxPendingRequests { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerConnectionPoolHttp2
 {
@@ -1893,7 +1893,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerConnectionPoo
     public double? MaxRequests { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerConnectionPoolTcp
 {
@@ -1903,7 +1903,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerConnectionPoo
 }
 
 /// <summary>Connection pool information for the listener.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerConnectionPool
 {
@@ -1925,7 +1925,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerConnectionPoo
 }
 
 /// <summary>Health check information for the listener.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerHealthCheck
 {
@@ -1959,7 +1959,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerHealthCheck
 }
 
 /// <summary>Base amount of time for which a host is ejected.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerOutlierDetectionBaseEjectionDuration
 {
@@ -1973,7 +1973,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerOutlierDetect
 }
 
 /// <summary>Time interval between ejection sweep analysis.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerOutlierDetectionInterval
 {
@@ -1987,7 +1987,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerOutlierDetect
 }
 
 /// <summary>Outlier detection information for the listener.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerOutlierDetection
 {
@@ -2012,7 +2012,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerOutlierDetect
 }
 
 /// <summary>Port mapping information for the listener.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerPortMapping
 {
@@ -2026,7 +2026,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerPortMapping
 }
 
 /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutGrpcIdle
 {
@@ -2040,7 +2040,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutGrpcId
 }
 
 /// <summary>Per request timeout.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutGrpcPerRequest
 {
@@ -2054,7 +2054,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutGrpcPe
 }
 
 /// <summary>Connection pool information for gRPC listeners.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutGrpc
 {
@@ -2068,7 +2068,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutGrpc
 }
 
 /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttpIdle
 {
@@ -2082,7 +2082,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttpId
 }
 
 /// <summary>Per request timeout.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttpPerRequest
 {
@@ -2096,7 +2096,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttpPe
 }
 
 /// <summary>Connection pool information for HTTP listeners.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttp
 {
@@ -2110,7 +2110,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttp
 }
 
 /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttp2Idle
 {
@@ -2124,7 +2124,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttp2I
 }
 
 /// <summary>Per request timeout.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttp2PerRequest
 {
@@ -2138,7 +2138,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttp2P
 }
 
 /// <summary>Connection pool information for HTTP2 listeners.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttp2
 {
@@ -2152,7 +2152,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttp2
 }
 
 /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutTcpIdle
 {
@@ -2166,7 +2166,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutTcpIdl
 }
 
 /// <summary>Connection pool information for TCP listeners.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutTcp
 {
@@ -2176,7 +2176,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutTcp
 }
 
 /// <summary>Timeouts for different protocols.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeout
 {
@@ -2198,7 +2198,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeout
 }
 
 /// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsCertificateAcm
 {
@@ -2208,7 +2208,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsCertificat
 }
 
 /// <summary>Local file certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsCertificateFile
 {
@@ -2222,7 +2222,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsCertificat
 }
 
 /// <summary>A Secret Discovery Service certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsCertificateSds
 {
@@ -2232,7 +2232,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsCertificat
 }
 
 /// <summary>Virtual node&apos;s client&apos;s Transport Layer Security (TLS) certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsCertificate
 {
@@ -2250,7 +2250,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsCertificat
 }
 
 /// <summary>Criteria for determining a SAN&apos;s match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsValidationSubjectAlternativeNamesMatch
 {
@@ -2260,7 +2260,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsValidation
 }
 
 /// <summary>SANs for a TLS validation context.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsValidationSubjectAlternativeNames
 {
@@ -2270,7 +2270,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsValidation
 }
 
 /// <summary>Local file certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsValidationTrustFile
 {
@@ -2280,7 +2280,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsValidation
 }
 
 /// <summary>A Secret Discovery Service certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsValidationTrustSds
 {
@@ -2290,7 +2290,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsValidation
 }
 
 /// <summary>TLS validation context trust.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsValidationTrust
 {
@@ -2304,7 +2304,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsValidation
 }
 
 /// <summary>TLS validation context.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsValidation
 {
@@ -2318,7 +2318,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsValidation
 }
 
 /// <summary>Transport Layer Security (TLS) client policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTls
 {
@@ -2335,7 +2335,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTls
     public V1beta2VirtualNodeSpecInitProviderSpecListenerTlsValidation? Validation { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListener
 {
@@ -2364,7 +2364,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListener
     public V1beta2VirtualNodeSpecInitProviderSpecListenerTls? Tls { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecLoggingAccessLogFileFormatJson
 {
@@ -2378,7 +2378,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecLoggingAccessLogFileF
 }
 
 /// <summary>The specified format for the logs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecLoggingAccessLogFileFormat
 {
@@ -2392,7 +2392,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecLoggingAccessLogFileF
 }
 
 /// <summary>Local file certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecLoggingAccessLogFile
 {
@@ -2406,7 +2406,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecLoggingAccessLogFile
 }
 
 /// <summary>Access log configuration for a virtual node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecLoggingAccessLog
 {
@@ -2416,7 +2416,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecLoggingAccessLog
 }
 
 /// <summary>Inbound and outbound access logging information for the virtual node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecLogging
 {
@@ -2431,7 +2431,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecLogging
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameRefPolicyResolutionEnum>))]
 public enum V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameRefPolicyResolutionEnum
 {
@@ -2447,7 +2447,7 @@ public enum V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCloudMapNam
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameRefPolicyResolveEnum>))]
 public enum V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameRefPolicyResolveEnum
 {
@@ -2458,7 +2458,7 @@ public enum V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCloudMapNam
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameRefPolicy
 {
@@ -2482,7 +2482,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCl
 }
 
 /// <summary>Reference to a HTTPNamespace in servicediscovery to populate namespaceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameRef
 {
@@ -2501,7 +2501,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCl
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameSelectorPolicyResolutionEnum
 {
@@ -2517,7 +2517,7 @@ public enum V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCloudMapNam
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameSelectorPolicyResolveEnum>))]
 public enum V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameSelectorPolicyResolveEnum
 {
@@ -2528,7 +2528,7 @@ public enum V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCloudMapNam
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameSelectorPolicy
 {
@@ -2552,7 +2552,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCl
 }
 
 /// <summary>Selector for a HTTPNamespace in servicediscovery to populate namespaceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameSelector
 {
@@ -2573,7 +2573,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCl
 }
 
 /// <summary>Any AWS Cloud Map information for the virtual node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCloudMap
 {
@@ -2602,7 +2602,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCl
 }
 
 /// <summary>DNS service name for the virtual node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryDns
 {
@@ -2620,7 +2620,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryDns
 }
 
 /// <summary>Service discovery information for the virtual node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecServiceDiscovery
 {
@@ -2634,7 +2634,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecServiceDiscovery
 }
 
 /// <summary>Virtual node specification to apply.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpec
 {
@@ -2671,7 +2671,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpec
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProvider
 {
@@ -2708,7 +2708,7 @@ public partial class V1beta2VirtualNodeSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNodeSpecManagementPoliciesEnum>))]
 public enum V1beta2VirtualNodeSpecManagementPoliciesEnum
 {
@@ -2732,7 +2732,7 @@ public enum V1beta2VirtualNodeSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNodeSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2VirtualNodeSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -2748,7 +2748,7 @@ public enum V1beta2VirtualNodeSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNodeSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2VirtualNodeSpecProviderConfigRefPolicyResolveEnum
 {
@@ -2759,7 +2759,7 @@ public enum V1beta2VirtualNodeSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecProviderConfigRefPolicy
 {
@@ -2787,7 +2787,7 @@ public partial class V1beta2VirtualNodeSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecProviderConfigRef
 {
@@ -2806,7 +2806,7 @@ public partial class V1beta2VirtualNodeSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecWriteConnectionSecretToRef
 {
@@ -2820,7 +2820,7 @@ public partial class V1beta2VirtualNodeSpecWriteConnectionSecretToRef
 }
 
 /// <summary>VirtualNodeSpec defines the desired state of VirtualNode</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpec
 {
@@ -2888,7 +2888,7 @@ public partial class V1beta2VirtualNodeSpec
 }
 
 /// <summary>Local file certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualServiceClientPolicyTlsCertificateFile
 {
@@ -2902,7 +2902,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualService
 }
 
 /// <summary>A Secret Discovery Service certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualServiceClientPolicyTlsCertificateSds
 {
@@ -2912,7 +2912,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualService
 }
 
 /// <summary>Virtual node&apos;s client&apos;s Transport Layer Security (TLS) certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualServiceClientPolicyTlsCertificate
 {
@@ -2926,7 +2926,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualService
 }
 
 /// <summary>Criteria for determining a SAN&apos;s match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch
 {
@@ -2936,7 +2936,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualService
 }
 
 /// <summary>SANs for a TLS validation context.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames
 {
@@ -2946,7 +2946,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualService
 }
 
 /// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm
 {
@@ -2956,7 +2956,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualService
 }
 
 /// <summary>Local file certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile
 {
@@ -2966,7 +2966,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualService
 }
 
 /// <summary>A Secret Discovery Service certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds
 {
@@ -2976,7 +2976,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualService
 }
 
 /// <summary>TLS validation context trust.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrust
 {
@@ -2994,7 +2994,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualService
 }
 
 /// <summary>TLS validation context.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualServiceClientPolicyTlsValidation
 {
@@ -3008,7 +3008,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualService
 }
 
 /// <summary>Transport Layer Security (TLS) client policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualServiceClientPolicyTls
 {
@@ -3030,7 +3030,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualService
 }
 
 /// <summary>Client policy for the backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualServiceClientPolicy
 {
@@ -3040,7 +3040,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualService
 }
 
 /// <summary>Virtual service to use as a backend for a virtual node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualService
 {
@@ -3053,7 +3053,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualService
     public string? VirtualServiceName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackend
 {
@@ -3063,7 +3063,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackend
 }
 
 /// <summary>Local file certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClientPolicyTlsCertificateFile
 {
@@ -3077,7 +3077,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClient
 }
 
 /// <summary>A Secret Discovery Service certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClientPolicyTlsCertificateSds
 {
@@ -3087,7 +3087,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClient
 }
 
 /// <summary>Virtual node&apos;s client&apos;s Transport Layer Security (TLS) certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClientPolicyTlsCertificate
 {
@@ -3101,7 +3101,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClient
 }
 
 /// <summary>Criteria for determining a SAN&apos;s match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch
 {
@@ -3111,7 +3111,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClient
 }
 
 /// <summary>SANs for a TLS validation context.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames
 {
@@ -3121,7 +3121,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClient
 }
 
 /// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationTrustAcm
 {
@@ -3131,7 +3131,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClient
 }
 
 /// <summary>Local file certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationTrustFile
 {
@@ -3141,7 +3141,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClient
 }
 
 /// <summary>A Secret Discovery Service certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationTrustSds
 {
@@ -3151,7 +3151,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClient
 }
 
 /// <summary>TLS validation context trust.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationTrust
 {
@@ -3169,7 +3169,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClient
 }
 
 /// <summary>TLS validation context.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidation
 {
@@ -3183,7 +3183,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClient
 }
 
 /// <summary>Transport Layer Security (TLS) client policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClientPolicyTls
 {
@@ -3205,7 +3205,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClient
 }
 
 /// <summary>Client policy for the backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClientPolicy
 {
@@ -3215,7 +3215,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClient
 }
 
 /// <summary>Defaults for backends.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaults
 {
@@ -3225,7 +3225,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaults
 }
 
 /// <summary>Connection pool information for gRPC listeners.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerConnectionPoolGrpc
 {
@@ -3234,7 +3234,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerConnectionPoo
     public double? MaxRequests { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerConnectionPoolHttp
 {
@@ -3247,7 +3247,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerConnectionPoo
     public double? MaxPendingRequests { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerConnectionPoolHttp2
 {
@@ -3256,7 +3256,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerConnectionPoo
     public double? MaxRequests { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerConnectionPoolTcp
 {
@@ -3266,7 +3266,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerConnectionPoo
 }
 
 /// <summary>Connection pool information for the listener.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerConnectionPool
 {
@@ -3288,7 +3288,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerConnectionPoo
 }
 
 /// <summary>Health check information for the listener.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerHealthCheck
 {
@@ -3322,7 +3322,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerHealthCheck
 }
 
 /// <summary>Base amount of time for which a host is ejected.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerOutlierDetectionBaseEjectionDuration
 {
@@ -3336,7 +3336,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerOutlierDetect
 }
 
 /// <summary>Time interval between ejection sweep analysis.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerOutlierDetectionInterval
 {
@@ -3350,7 +3350,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerOutlierDetect
 }
 
 /// <summary>Outlier detection information for the listener.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerOutlierDetection
 {
@@ -3375,7 +3375,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerOutlierDetect
 }
 
 /// <summary>Port mapping information for the listener.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerPortMapping
 {
@@ -3389,7 +3389,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerPortMapping
 }
 
 /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutGrpcIdle
 {
@@ -3403,7 +3403,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutGrpcId
 }
 
 /// <summary>Per request timeout.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutGrpcPerRequest
 {
@@ -3417,7 +3417,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutGrpcPe
 }
 
 /// <summary>Connection pool information for gRPC listeners.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutGrpc
 {
@@ -3431,7 +3431,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutGrpc
 }
 
 /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttpIdle
 {
@@ -3445,7 +3445,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttpId
 }
 
 /// <summary>Per request timeout.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttpPerRequest
 {
@@ -3459,7 +3459,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttpPe
 }
 
 /// <summary>Connection pool information for HTTP listeners.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttp
 {
@@ -3473,7 +3473,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttp
 }
 
 /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttp2Idle
 {
@@ -3487,7 +3487,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttp2I
 }
 
 /// <summary>Per request timeout.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttp2PerRequest
 {
@@ -3501,7 +3501,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttp2P
 }
 
 /// <summary>Connection pool information for HTTP2 listeners.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttp2
 {
@@ -3515,7 +3515,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttp2
 }
 
 /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutTcpIdle
 {
@@ -3529,7 +3529,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutTcpIdl
 }
 
 /// <summary>Connection pool information for TCP listeners.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutTcp
 {
@@ -3539,7 +3539,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutTcp
 }
 
 /// <summary>Timeouts for different protocols.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeout
 {
@@ -3561,7 +3561,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeout
 }
 
 /// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsCertificateAcm
 {
@@ -3571,7 +3571,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsCertificat
 }
 
 /// <summary>Local file certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsCertificateFile
 {
@@ -3585,7 +3585,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsCertificat
 }
 
 /// <summary>A Secret Discovery Service certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsCertificateSds
 {
@@ -3595,7 +3595,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsCertificat
 }
 
 /// <summary>Virtual node&apos;s client&apos;s Transport Layer Security (TLS) certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsCertificate
 {
@@ -3613,7 +3613,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsCertificat
 }
 
 /// <summary>Criteria for determining a SAN&apos;s match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsValidationSubjectAlternativeNamesMatch
 {
@@ -3623,7 +3623,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsValidation
 }
 
 /// <summary>SANs for a TLS validation context.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsValidationSubjectAlternativeNames
 {
@@ -3633,7 +3633,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsValidation
 }
 
 /// <summary>Local file certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsValidationTrustFile
 {
@@ -3643,7 +3643,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsValidation
 }
 
 /// <summary>A Secret Discovery Service certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsValidationTrustSds
 {
@@ -3653,7 +3653,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsValidation
 }
 
 /// <summary>TLS validation context trust.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsValidationTrust
 {
@@ -3667,7 +3667,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsValidation
 }
 
 /// <summary>TLS validation context.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsValidation
 {
@@ -3681,7 +3681,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsValidation
 }
 
 /// <summary>Transport Layer Security (TLS) client policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTls
 {
@@ -3698,7 +3698,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTls
     public V1beta2VirtualNodeStatusAtProviderSpecListenerTlsValidation? Validation { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListener
 {
@@ -3727,7 +3727,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListener
     public V1beta2VirtualNodeStatusAtProviderSpecListenerTls? Tls { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecLoggingAccessLogFileFormatJson
 {
@@ -3741,7 +3741,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecLoggingAccessLogFileF
 }
 
 /// <summary>The specified format for the logs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecLoggingAccessLogFileFormat
 {
@@ -3755,7 +3755,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecLoggingAccessLogFileF
 }
 
 /// <summary>Local file certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecLoggingAccessLogFile
 {
@@ -3769,7 +3769,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecLoggingAccessLogFile
 }
 
 /// <summary>Access log configuration for a virtual node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecLoggingAccessLog
 {
@@ -3779,7 +3779,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecLoggingAccessLog
 }
 
 /// <summary>Inbound and outbound access logging information for the virtual node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecLogging
 {
@@ -3789,7 +3789,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecLogging
 }
 
 /// <summary>Any AWS Cloud Map information for the virtual node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecServiceDiscoveryAwsCloudMap
 {
@@ -3810,7 +3810,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecServiceDiscoveryAwsCl
 }
 
 /// <summary>DNS service name for the virtual node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecServiceDiscoveryDns
 {
@@ -3828,7 +3828,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecServiceDiscoveryDns
 }
 
 /// <summary>Service discovery information for the virtual node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecServiceDiscovery
 {
@@ -3842,7 +3842,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecServiceDiscovery
 }
 
 /// <summary>Virtual node specification to apply.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpec
 {
@@ -3867,7 +3867,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpec
     public V1beta2VirtualNodeStatusAtProviderSpecServiceDiscovery? ServiceDiscovery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProvider
 {
@@ -3924,7 +3924,7 @@ public partial class V1beta2VirtualNodeStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusConditions
 {
@@ -3967,7 +3967,7 @@ public partial class V1beta2VirtualNodeStatusConditions
 }
 
 /// <summary>VirtualNodeStatus defines the observed state of VirtualNode.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatus
 {
@@ -3988,7 +3988,7 @@ public partial class V1beta2VirtualNodeStatus
 }
 
 /// <summary>VirtualNode is the Schema for the VirtualNodes API. Provides an AWS App Mesh virtual node resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2VirtualNode : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2VirtualNodeSpec>, IStatus<V1beta2VirtualNodeStatus?>

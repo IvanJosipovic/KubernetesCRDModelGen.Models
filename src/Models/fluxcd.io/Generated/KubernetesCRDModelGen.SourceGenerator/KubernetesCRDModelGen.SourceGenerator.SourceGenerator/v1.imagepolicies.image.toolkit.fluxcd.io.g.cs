@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.image.toolkit.fluxcd.io;
 /// <summary>ImagePolicy is the Schema for the imagepolicies API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ImagePolicyList : IKubernetesObject<V1ListMeta>, IItems<V1ImagePolicy>
@@ -49,7 +49,7 @@ public partial class V1ImagePolicyList : IKubernetesObject<V1ListMeta>, IItems<V
 /// 
 /// Default: Never.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ImagePolicySpecDigestReflectionPolicyEnum>))]
 public enum V1ImagePolicySpecDigestReflectionPolicyEnum
 {
@@ -66,7 +66,7 @@ public enum V1ImagePolicySpecDigestReflectionPolicyEnum
 /// rules. If no rules are provided, all the tags from the repository will be
 /// ordered and compared.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImagePolicySpecFilterTags
 {
@@ -89,7 +89,7 @@ public partial class V1ImagePolicySpecFilterTags
 /// ImageRepositoryRef points at the object specifying the image
 /// being scanned
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImagePolicySpecImageRepositoryRef
 {
@@ -107,7 +107,7 @@ public partial class V1ImagePolicySpecImageRepositoryRef
 /// alphabet as tags, ascending order would select Z, and descending order
 /// would select A.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ImagePolicySpecPolicyAlphabeticalOrderEnum>))]
 public enum V1ImagePolicySpecPolicyAlphabeticalOrderEnum
 {
@@ -118,7 +118,7 @@ public enum V1ImagePolicySpecPolicyAlphabeticalOrderEnum
 }
 
 /// <summary>Alphabetical set of rules to use for alphabetical ordering of the tags.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImagePolicySpecPolicyAlphabetical
 {
@@ -136,7 +136,7 @@ public partial class V1ImagePolicySpecPolicyAlphabetical
 /// from 0 to 9 as tags, ascending order would select 9, and descending order
 /// would select 0.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ImagePolicySpecPolicyNumericalOrderEnum>))]
 public enum V1ImagePolicySpecPolicyNumericalOrderEnum
 {
@@ -147,7 +147,7 @@ public enum V1ImagePolicySpecPolicyNumericalOrderEnum
 }
 
 /// <summary>Numerical set of rules to use for numerical ordering of the tags.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImagePolicySpecPolicyNumerical
 {
@@ -164,7 +164,7 @@ public partial class V1ImagePolicySpecPolicyNumerical
 /// SemVer gives a semantic version range to check against the tags
 /// available.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImagePolicySpecPolicySemver
 {
@@ -180,7 +180,7 @@ public partial class V1ImagePolicySpecPolicySemver
 /// Policy gives the particulars of the policy to be followed in
 /// selecting the most recent image
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImagePolicySpecPolicy
 {
@@ -204,7 +204,7 @@ public partial class V1ImagePolicySpecPolicy
 /// ImagePolicySpec defines the parameters for calculating the
 /// ImagePolicy.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImagePolicySpec
 {
@@ -265,7 +265,7 @@ public partial class V1ImagePolicySpec
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ImagePolicyStatusConditionsStatusEnum>))]
 public enum V1ImagePolicyStatusConditionsStatusEnum
 {
@@ -278,7 +278,7 @@ public enum V1ImagePolicyStatusConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImagePolicyStatusConditions
 {
@@ -328,7 +328,7 @@ public partial class V1ImagePolicyStatusConditions
 /// the image repository, when filtered and ordered according
 /// to the policy.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImagePolicyStatusLatestRef
 {
@@ -349,7 +349,7 @@ public partial class V1ImagePolicyStatusLatestRef
 /// ObservedPreviousRef is the observed previous LatestRef. It is used
 /// to keep track of the previous and current images.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImagePolicyStatusObservedPreviousRef
 {
@@ -367,7 +367,7 @@ public partial class V1ImagePolicyStatusObservedPreviousRef
 }
 
 /// <summary>ImagePolicyStatus defines the observed state of ImagePolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImagePolicyStatus
 {
@@ -402,7 +402,7 @@ public partial class V1ImagePolicyStatus
 }
 
 /// <summary>ImagePolicy is the Schema for the imagepolicies API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ImagePolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1ImagePolicySpec?>, IStatus<V1ImagePolicyStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datafactory.azure.m.upbound.io;
 /// <summary>DataSetDelimitedText is the Schema for the DataSetDelimitedTexts API. Manages an Azure Delimited Text Dataset inside an Azure Data Factory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DataSetDelimitedTextList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DataSetDelimitedText>
@@ -37,7 +37,7 @@ public partial class V1beta1DataSetDelimitedTextList : IKubernetesObject<V1ListM
 }
 
 /// <summary>An azure_blob_fs_location block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpecForProviderAzureBlobFsLocation
 {
@@ -67,7 +67,7 @@ public partial class V1beta1DataSetDelimitedTextSpecForProviderAzureBlobFsLocati
 }
 
 /// <summary>An azure_blob_storage_location block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpecForProviderAzureBlobStorageLocation
 {
@@ -102,7 +102,7 @@ public partial class V1beta1DataSetDelimitedTextSpecForProviderAzureBlobStorageL
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDelimitedTextSpecForProviderDataFactoryIdRefPolicyResolutionEnum>))]
 public enum V1beta1DataSetDelimitedTextSpecForProviderDataFactoryIdRefPolicyResolutionEnum
 {
@@ -118,7 +118,7 @@ public enum V1beta1DataSetDelimitedTextSpecForProviderDataFactoryIdRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDelimitedTextSpecForProviderDataFactoryIdRefPolicyResolveEnum>))]
 public enum V1beta1DataSetDelimitedTextSpecForProviderDataFactoryIdRefPolicyResolveEnum
 {
@@ -129,7 +129,7 @@ public enum V1beta1DataSetDelimitedTextSpecForProviderDataFactoryIdRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpecForProviderDataFactoryIdRefPolicy
 {
@@ -153,7 +153,7 @@ public partial class V1beta1DataSetDelimitedTextSpecForProviderDataFactoryIdRefP
 }
 
 /// <summary>Reference to a Factory in datafactory to populate dataFactoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpecForProviderDataFactoryIdRef
 {
@@ -176,7 +176,7 @@ public partial class V1beta1DataSetDelimitedTextSpecForProviderDataFactoryIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDelimitedTextSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSetDelimitedTextSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum
 {
@@ -192,7 +192,7 @@ public enum V1beta1DataSetDelimitedTextSpecForProviderDataFactoryIdSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDelimitedTextSpecForProviderDataFactoryIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSetDelimitedTextSpecForProviderDataFactoryIdSelectorPolicyResolveEnum
 {
@@ -203,7 +203,7 @@ public enum V1beta1DataSetDelimitedTextSpecForProviderDataFactoryIdSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpecForProviderDataFactoryIdSelectorPolicy
 {
@@ -227,7 +227,7 @@ public partial class V1beta1DataSetDelimitedTextSpecForProviderDataFactoryIdSele
 }
 
 /// <summary>Selector for a Factory in datafactory to populate dataFactoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpecForProviderDataFactoryIdSelector
 {
@@ -252,7 +252,7 @@ public partial class V1beta1DataSetDelimitedTextSpecForProviderDataFactoryIdSele
 }
 
 /// <summary>A http_server_location block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpecForProviderHttpServerLocation
 {
@@ -283,7 +283,7 @@ public partial class V1beta1DataSetDelimitedTextSpecForProviderHttpServerLocatio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDelimitedTextSpecForProviderLinkedServiceNameRefPolicyResolutionEnum>))]
 public enum V1beta1DataSetDelimitedTextSpecForProviderLinkedServiceNameRefPolicyResolutionEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1DataSetDelimitedTextSpecForProviderLinkedServiceNameRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDelimitedTextSpecForProviderLinkedServiceNameRefPolicyResolveEnum>))]
 public enum V1beta1DataSetDelimitedTextSpecForProviderLinkedServiceNameRefPolicyResolveEnum
 {
@@ -310,7 +310,7 @@ public enum V1beta1DataSetDelimitedTextSpecForProviderLinkedServiceNameRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpecForProviderLinkedServiceNameRefPolicy
 {
@@ -334,7 +334,7 @@ public partial class V1beta1DataSetDelimitedTextSpecForProviderLinkedServiceName
 }
 
 /// <summary>Reference to a LinkedServiceWeb in datafactory to populate linkedServiceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpecForProviderLinkedServiceNameRef
 {
@@ -357,7 +357,7 @@ public partial class V1beta1DataSetDelimitedTextSpecForProviderLinkedServiceName
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDelimitedTextSpecForProviderLinkedServiceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSetDelimitedTextSpecForProviderLinkedServiceNameSelectorPolicyResolutionEnum
 {
@@ -373,7 +373,7 @@ public enum V1beta1DataSetDelimitedTextSpecForProviderLinkedServiceNameSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDelimitedTextSpecForProviderLinkedServiceNameSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSetDelimitedTextSpecForProviderLinkedServiceNameSelectorPolicyResolveEnum
 {
@@ -384,7 +384,7 @@ public enum V1beta1DataSetDelimitedTextSpecForProviderLinkedServiceNameSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpecForProviderLinkedServiceNameSelectorPolicy
 {
@@ -408,7 +408,7 @@ public partial class V1beta1DataSetDelimitedTextSpecForProviderLinkedServiceName
 }
 
 /// <summary>Selector for a LinkedServiceWeb in datafactory to populate linkedServiceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpecForProviderLinkedServiceNameSelector
 {
@@ -432,7 +432,7 @@ public partial class V1beta1DataSetDelimitedTextSpecForProviderLinkedServiceName
     public V1beta1DataSetDelimitedTextSpecForProviderLinkedServiceNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpecForProviderSchemaColumn
 {
@@ -449,7 +449,7 @@ public partial class V1beta1DataSetDelimitedTextSpecForProviderSchemaColumn
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpecForProvider
 {
@@ -551,7 +551,7 @@ public partial class V1beta1DataSetDelimitedTextSpecForProvider
 }
 
 /// <summary>An azure_blob_fs_location block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpecInitProviderAzureBlobFsLocation
 {
@@ -581,7 +581,7 @@ public partial class V1beta1DataSetDelimitedTextSpecInitProviderAzureBlobFsLocat
 }
 
 /// <summary>An azure_blob_storage_location block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpecInitProviderAzureBlobStorageLocation
 {
@@ -611,7 +611,7 @@ public partial class V1beta1DataSetDelimitedTextSpecInitProviderAzureBlobStorage
 }
 
 /// <summary>A http_server_location block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpecInitProviderHttpServerLocation
 {
@@ -642,7 +642,7 @@ public partial class V1beta1DataSetDelimitedTextSpecInitProviderHttpServerLocati
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDelimitedTextSpecInitProviderLinkedServiceNameRefPolicyResolutionEnum>))]
 public enum V1beta1DataSetDelimitedTextSpecInitProviderLinkedServiceNameRefPolicyResolutionEnum
 {
@@ -658,7 +658,7 @@ public enum V1beta1DataSetDelimitedTextSpecInitProviderLinkedServiceNameRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDelimitedTextSpecInitProviderLinkedServiceNameRefPolicyResolveEnum>))]
 public enum V1beta1DataSetDelimitedTextSpecInitProviderLinkedServiceNameRefPolicyResolveEnum
 {
@@ -669,7 +669,7 @@ public enum V1beta1DataSetDelimitedTextSpecInitProviderLinkedServiceNameRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpecInitProviderLinkedServiceNameRefPolicy
 {
@@ -693,7 +693,7 @@ public partial class V1beta1DataSetDelimitedTextSpecInitProviderLinkedServiceNam
 }
 
 /// <summary>Reference to a LinkedServiceWeb in datafactory to populate linkedServiceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpecInitProviderLinkedServiceNameRef
 {
@@ -716,7 +716,7 @@ public partial class V1beta1DataSetDelimitedTextSpecInitProviderLinkedServiceNam
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDelimitedTextSpecInitProviderLinkedServiceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSetDelimitedTextSpecInitProviderLinkedServiceNameSelectorPolicyResolutionEnum
 {
@@ -732,7 +732,7 @@ public enum V1beta1DataSetDelimitedTextSpecInitProviderLinkedServiceNameSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDelimitedTextSpecInitProviderLinkedServiceNameSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSetDelimitedTextSpecInitProviderLinkedServiceNameSelectorPolicyResolveEnum
 {
@@ -743,7 +743,7 @@ public enum V1beta1DataSetDelimitedTextSpecInitProviderLinkedServiceNameSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpecInitProviderLinkedServiceNameSelectorPolicy
 {
@@ -767,7 +767,7 @@ public partial class V1beta1DataSetDelimitedTextSpecInitProviderLinkedServiceNam
 }
 
 /// <summary>Selector for a LinkedServiceWeb in datafactory to populate linkedServiceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpecInitProviderLinkedServiceNameSelector
 {
@@ -791,7 +791,7 @@ public partial class V1beta1DataSetDelimitedTextSpecInitProviderLinkedServiceNam
     public V1beta1DataSetDelimitedTextSpecInitProviderLinkedServiceNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpecInitProviderSchemaColumn
 {
@@ -820,7 +820,7 @@ public partial class V1beta1DataSetDelimitedTextSpecInitProviderSchemaColumn
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpecInitProvider
 {
@@ -913,7 +913,7 @@ public partial class V1beta1DataSetDelimitedTextSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetDelimitedTextSpecManagementPoliciesEnum>))]
 public enum V1beta1DataSetDelimitedTextSpecManagementPoliciesEnum
 {
@@ -936,7 +936,7 @@ public enum V1beta1DataSetDelimitedTextSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpecProviderConfigRef
 {
@@ -955,7 +955,7 @@ public partial class V1beta1DataSetDelimitedTextSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpecWriteConnectionSecretToRef
 {
@@ -965,7 +965,7 @@ public partial class V1beta1DataSetDelimitedTextSpecWriteConnectionSecretToRef
 }
 
 /// <summary>DataSetDelimitedTextSpec defines the desired state of DataSetDelimitedText</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextSpec
 {
@@ -1017,7 +1017,7 @@ public partial class V1beta1DataSetDelimitedTextSpec
 }
 
 /// <summary>An azure_blob_fs_location block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextStatusAtProviderAzureBlobFsLocation
 {
@@ -1047,7 +1047,7 @@ public partial class V1beta1DataSetDelimitedTextStatusAtProviderAzureBlobFsLocat
 }
 
 /// <summary>An azure_blob_storage_location block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextStatusAtProviderAzureBlobStorageLocation
 {
@@ -1077,7 +1077,7 @@ public partial class V1beta1DataSetDelimitedTextStatusAtProviderAzureBlobStorage
 }
 
 /// <summary>A http_server_location block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextStatusAtProviderHttpServerLocation
 {
@@ -1102,7 +1102,7 @@ public partial class V1beta1DataSetDelimitedTextStatusAtProviderHttpServerLocati
     public string? RelativeUrl { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextStatusAtProviderSchemaColumn
 {
@@ -1119,7 +1119,7 @@ public partial class V1beta1DataSetDelimitedTextStatusAtProviderSchemaColumn
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextStatusAtProvider
 {
@@ -1209,7 +1209,7 @@ public partial class V1beta1DataSetDelimitedTextStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextStatusConditions
 {
@@ -1252,7 +1252,7 @@ public partial class V1beta1DataSetDelimitedTextStatusConditions
 }
 
 /// <summary>DataSetDelimitedTextStatus defines the observed state of DataSetDelimitedText.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSetDelimitedTextStatus
 {
@@ -1273,7 +1273,7 @@ public partial class V1beta1DataSetDelimitedTextStatus
 }
 
 /// <summary>DataSetDelimitedText is the Schema for the DataSetDelimitedTexts API. Manages an Azure Delimited Text Dataset inside an Azure Data Factory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DataSetDelimitedText : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DataSetDelimitedTextSpec>, IStatus<V1beta1DataSetDelimitedTextStatus?>

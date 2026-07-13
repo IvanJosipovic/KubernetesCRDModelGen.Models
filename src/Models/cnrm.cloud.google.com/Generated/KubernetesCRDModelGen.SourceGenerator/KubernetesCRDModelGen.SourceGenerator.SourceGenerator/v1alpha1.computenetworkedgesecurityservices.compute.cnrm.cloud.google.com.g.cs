@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.cnrm.cloud.google.com;
 /// <summary>ComputeNetworkEdgeSecurityService is the Schema for the ComputeNetworkEdgeSecurityService API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ComputeNetworkEdgeSecurityServiceList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ComputeNetworkEdgeSecurityService>
@@ -37,7 +37,7 @@ public partial class V1alpha1ComputeNetworkEdgeSecurityServiceList : IKubernetes
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeNetworkEdgeSecurityServiceSpecProjectRef
 {
@@ -59,7 +59,7 @@ public partial class V1alpha1ComputeNetworkEdgeSecurityServiceSpecProjectRef
 }
 
 /// <summary>The resource URL for the network edge security service associated with this network edge security service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeNetworkEdgeSecurityServiceSpecSecurityPolicyRef
 {
@@ -77,7 +77,7 @@ public partial class V1alpha1ComputeNetworkEdgeSecurityServiceSpecSecurityPolicy
 }
 
 /// <summary>ComputeNetworkEdgeSecurityServiceSpec defines the desired state of ComputeNetworkEdgeSecurityService</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeNetworkEdgeSecurityServiceSpec
 {
@@ -105,7 +105,7 @@ public partial class V1alpha1ComputeNetworkEdgeSecurityServiceSpec
     public V1alpha1ComputeNetworkEdgeSecurityServiceSpecSecurityPolicyRef? SecurityPolicyRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeNetworkEdgeSecurityServiceStatusConditions
 {
@@ -131,7 +131,7 @@ public partial class V1alpha1ComputeNetworkEdgeSecurityServiceStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeNetworkEdgeSecurityServiceStatusObservedState
 {
@@ -161,7 +161,7 @@ public partial class V1alpha1ComputeNetworkEdgeSecurityServiceStatusObservedStat
 }
 
 /// <summary>ComputeNetworkEdgeSecurityServiceStatus defines the config connector machine state of ComputeNetworkEdgeSecurityService</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ComputeNetworkEdgeSecurityServiceStatus
 {
@@ -183,7 +183,7 @@ public partial class V1alpha1ComputeNetworkEdgeSecurityServiceStatus
 }
 
 /// <summary>ComputeNetworkEdgeSecurityService is the Schema for the ComputeNetworkEdgeSecurityService API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ComputeNetworkEdgeSecurityService : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ComputeNetworkEdgeSecurityServiceSpec>, IStatus<V1alpha1ComputeNetworkEdgeSecurityServiceStatus?>

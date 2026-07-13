@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.accesscontextmanager.cnrm.cloud.google.com;
 /// <summary>AccessContextManagerAccessLevel is the Schema for the AccessContextManagerAccessLevel API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AccessContextManagerAccessLevelList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AccessContextManagerAccessLevel>
@@ -37,7 +37,7 @@ public partial class V1beta1AccessContextManagerAccessLevelList : IKubernetesObj
 }
 
 /// <summary>The AccessPolicy that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessContextManagerAccessLevelSpecAccessPolicyRef
 {
@@ -54,7 +54,7 @@ public partial class V1beta1AccessContextManagerAccessLevelSpecAccessPolicyRef
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessContextManagerAccessLevelSpecBasicConditionsDevicePolicyOsConstraints
 {
@@ -72,7 +72,7 @@ public partial class V1beta1AccessContextManagerAccessLevelSpecBasicConditionsDe
 }
 
 /// <summary>Device specific restrictions, all restrictions must hold for the Condition to be true. If not specified, all devices are allowed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessContextManagerAccessLevelSpecBasicConditionsDevicePolicy
 {
@@ -101,7 +101,7 @@ public partial class V1beta1AccessContextManagerAccessLevelSpecBasicConditionsDe
     public bool? RequireScreenLock { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessContextManagerAccessLevelSpecBasicConditionsMembersServiceAccountRef
 {
@@ -118,7 +118,7 @@ public partial class V1beta1AccessContextManagerAccessLevelSpecBasicConditionsMe
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessContextManagerAccessLevelSpecBasicConditionsMembers
 {
@@ -130,7 +130,7 @@ public partial class V1beta1AccessContextManagerAccessLevelSpecBasicConditionsMe
 }
 
 /// <summary>AccessLevelRef is a reference to a AccessLevel resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessContextManagerAccessLevelSpecBasicConditionsRequiredAccessLevels
 {
@@ -147,7 +147,7 @@ public partial class V1beta1AccessContextManagerAccessLevelSpecBasicConditionsRe
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessContextManagerAccessLevelSpecBasicConditions
 {
@@ -177,7 +177,7 @@ public partial class V1beta1AccessContextManagerAccessLevelSpecBasicConditions
 }
 
 /// <summary>A `BasicLevel` composed of `Conditions`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessContextManagerAccessLevelSpecBasic
 {
@@ -191,7 +191,7 @@ public partial class V1beta1AccessContextManagerAccessLevelSpecBasic
 }
 
 /// <summary>Represents a textual expression in the Common Expression Language (CEL) syntax. CEL is a C-like expression language. This page details the objects and attributes that are used to the build the CEL expressions for custom access levels - https://cloud.google.com/access-context-manager/docs/custom-access-level-spec.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessContextManagerAccessLevelSpecCustomExpr
 {
@@ -213,7 +213,7 @@ public partial class V1beta1AccessContextManagerAccessLevelSpecCustomExpr
 }
 
 /// <summary>A `CustomLevel` written in the Common Expression Language.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessContextManagerAccessLevelSpecCustom
 {
@@ -223,7 +223,7 @@ public partial class V1beta1AccessContextManagerAccessLevelSpecCustom
 }
 
 /// <summary>AccessContextManagerAccessLevelSpec defines the desired state of AccessContextManagerAccessLevel</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessContextManagerAccessLevelSpec
 {
@@ -252,7 +252,7 @@ public partial class V1beta1AccessContextManagerAccessLevelSpec
     public string? Title { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessContextManagerAccessLevelStatusConditions
 {
@@ -278,14 +278,14 @@ public partial class V1beta1AccessContextManagerAccessLevelStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessContextManagerAccessLevelStatusObservedState
 {
 }
 
 /// <summary>AccessContextManagerAccessLevelStatus defines the config connector machine state of AccessContextManagerAccessLevel</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessContextManagerAccessLevelStatus
 {
@@ -307,7 +307,7 @@ public partial class V1beta1AccessContextManagerAccessLevelStatus
 }
 
 /// <summary>AccessContextManagerAccessLevel is the Schema for the AccessContextManagerAccessLevel API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AccessContextManagerAccessLevel : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AccessContextManagerAccessLevelSpec>, IStatus<V1beta1AccessContextManagerAccessLevelStatus?>

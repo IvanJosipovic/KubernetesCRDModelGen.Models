@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.gcp.vault.m.upbound.io;
 /// <summary>SecretImpersonatedAccount is the Schema for the SecretImpersonatedAccounts API. Creates a Impersonated Account for the GCP Secret Backend for Vault.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1SecretImpersonatedAccountList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1SecretImpersonatedAccount>
@@ -42,7 +42,7 @@ public partial class V1alpha1SecretImpersonatedAccountList : IKubernetesObject<V
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretImpersonatedAccountSpecForProviderBackendRefPolicyResolutionEnum>))]
 public enum V1alpha1SecretImpersonatedAccountSpecForProviderBackendRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1alpha1SecretImpersonatedAccountSpecForProviderBackendRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretImpersonatedAccountSpecForProviderBackendRefPolicyResolveEnum>))]
 public enum V1alpha1SecretImpersonatedAccountSpecForProviderBackendRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1alpha1SecretImpersonatedAccountSpecForProviderBackendRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretImpersonatedAccountSpecForProviderBackendRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1alpha1SecretImpersonatedAccountSpecForProviderBackendRefP
 }
 
 /// <summary>Reference to a SecretBackend in gcp to populate backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretImpersonatedAccountSpecForProviderBackendRef
 {
@@ -116,7 +116,7 @@ public partial class V1alpha1SecretImpersonatedAccountSpecForProviderBackendRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretImpersonatedAccountSpecForProviderBackendSelectorPolicyResolutionEnum>))]
 public enum V1alpha1SecretImpersonatedAccountSpecForProviderBackendSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1alpha1SecretImpersonatedAccountSpecForProviderBackendSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretImpersonatedAccountSpecForProviderBackendSelectorPolicyResolveEnum>))]
 public enum V1alpha1SecretImpersonatedAccountSpecForProviderBackendSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1alpha1SecretImpersonatedAccountSpecForProviderBackendSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretImpersonatedAccountSpecForProviderBackendSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1alpha1SecretImpersonatedAccountSpecForProviderBackendSele
 }
 
 /// <summary>Selector for a SecretBackend in gcp to populate backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretImpersonatedAccountSpecForProviderBackendSelector
 {
@@ -191,7 +191,7 @@ public partial class V1alpha1SecretImpersonatedAccountSpecForProviderBackendSele
     public V1alpha1SecretImpersonatedAccountSpecForProviderBackendSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretImpersonatedAccountSpecForProvider
 {
@@ -250,7 +250,7 @@ public partial class V1alpha1SecretImpersonatedAccountSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretImpersonatedAccountSpecInitProviderBackendRefPolicyResolutionEnum>))]
 public enum V1alpha1SecretImpersonatedAccountSpecInitProviderBackendRefPolicyResolutionEnum
 {
@@ -266,7 +266,7 @@ public enum V1alpha1SecretImpersonatedAccountSpecInitProviderBackendRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretImpersonatedAccountSpecInitProviderBackendRefPolicyResolveEnum>))]
 public enum V1alpha1SecretImpersonatedAccountSpecInitProviderBackendRefPolicyResolveEnum
 {
@@ -277,7 +277,7 @@ public enum V1alpha1SecretImpersonatedAccountSpecInitProviderBackendRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretImpersonatedAccountSpecInitProviderBackendRefPolicy
 {
@@ -301,7 +301,7 @@ public partial class V1alpha1SecretImpersonatedAccountSpecInitProviderBackendRef
 }
 
 /// <summary>Reference to a SecretBackend in gcp to populate backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretImpersonatedAccountSpecInitProviderBackendRef
 {
@@ -324,7 +324,7 @@ public partial class V1alpha1SecretImpersonatedAccountSpecInitProviderBackendRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretImpersonatedAccountSpecInitProviderBackendSelectorPolicyResolutionEnum>))]
 public enum V1alpha1SecretImpersonatedAccountSpecInitProviderBackendSelectorPolicyResolutionEnum
 {
@@ -340,7 +340,7 @@ public enum V1alpha1SecretImpersonatedAccountSpecInitProviderBackendSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretImpersonatedAccountSpecInitProviderBackendSelectorPolicyResolveEnum>))]
 public enum V1alpha1SecretImpersonatedAccountSpecInitProviderBackendSelectorPolicyResolveEnum
 {
@@ -351,7 +351,7 @@ public enum V1alpha1SecretImpersonatedAccountSpecInitProviderBackendSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretImpersonatedAccountSpecInitProviderBackendSelectorPolicy
 {
@@ -375,7 +375,7 @@ public partial class V1alpha1SecretImpersonatedAccountSpecInitProviderBackendSel
 }
 
 /// <summary>Selector for a SecretBackend in gcp to populate backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretImpersonatedAccountSpecInitProviderBackendSelector
 {
@@ -411,7 +411,7 @@ public partial class V1alpha1SecretImpersonatedAccountSpecInitProviderBackendSel
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretImpersonatedAccountSpecInitProvider
 {
@@ -468,7 +468,7 @@ public partial class V1alpha1SecretImpersonatedAccountSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SecretImpersonatedAccountSpecManagementPoliciesEnum>))]
 public enum V1alpha1SecretImpersonatedAccountSpecManagementPoliciesEnum
 {
@@ -491,7 +491,7 @@ public enum V1alpha1SecretImpersonatedAccountSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretImpersonatedAccountSpecProviderConfigRef
 {
@@ -510,7 +510,7 @@ public partial class V1alpha1SecretImpersonatedAccountSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretImpersonatedAccountSpecWriteConnectionSecretToRef
 {
@@ -520,7 +520,7 @@ public partial class V1alpha1SecretImpersonatedAccountSpecWriteConnectionSecretT
 }
 
 /// <summary>SecretImpersonatedAccountSpec defines the desired state of SecretImpersonatedAccount</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretImpersonatedAccountSpec
 {
@@ -571,7 +571,7 @@ public partial class V1alpha1SecretImpersonatedAccountSpec
     public V1alpha1SecretImpersonatedAccountSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretImpersonatedAccountStatusAtProvider
 {
@@ -627,7 +627,7 @@ public partial class V1alpha1SecretImpersonatedAccountStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretImpersonatedAccountStatusConditions
 {
@@ -670,7 +670,7 @@ public partial class V1alpha1SecretImpersonatedAccountStatusConditions
 }
 
 /// <summary>SecretImpersonatedAccountStatus defines the observed state of SecretImpersonatedAccount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SecretImpersonatedAccountStatus
 {
@@ -691,7 +691,7 @@ public partial class V1alpha1SecretImpersonatedAccountStatus
 }
 
 /// <summary>SecretImpersonatedAccount is the Schema for the SecretImpersonatedAccounts API. Creates a Impersonated Account for the GCP Secret Backend for Vault.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1SecretImpersonatedAccount : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1SecretImpersonatedAccountSpec>, IStatus<V1alpha1SecretImpersonatedAccountStatus?>

@@ -17,7 +17,7 @@ namespace KubernetesCRDModelGen.Models.pkg.crossplane.io;
 /// Read the Crossplane documentation for
 /// [more information about Configuration packages]( https://docs.crossplane.io/latest/packages/configurations/).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1Configuration>
@@ -47,7 +47,7 @@ public partial class V1ConfigurationList : IKubernetesObject<V1ListMeta>, IItems
 /// LocalObjectReference contains enough information to let you locate the
 /// referenced object inside the same namespace.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ConfigurationSpecPackagePullSecrets
 {
@@ -66,7 +66,7 @@ public partial class V1ConfigurationSpecPackagePullSecrets
 /// ConfigurationSpec specifies details about a request to install a
 /// configuration to Crossplane.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ConfigurationSpec
 {
@@ -146,7 +146,7 @@ public partial class V1ConfigurationSpec
 /// ImageConfigRef is a reference to an image config that indicates how the
 /// referenced image config was used by the package manager.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ConfigurationStatusAppliedImageConfigRefs
 {
@@ -160,7 +160,7 @@ public partial class V1ConfigurationStatusAppliedImageConfigRefs
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ConfigurationStatusConditions
 {
@@ -203,7 +203,7 @@ public partial class V1ConfigurationStatusConditions
 }
 
 /// <summary>ConfigurationStatus represents the observed state of a Configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ConfigurationStatus
 {
@@ -254,7 +254,7 @@ public partial class V1ConfigurationStatus
 /// Read the Crossplane documentation for
 /// [more information about Configuration packages]( https://docs.crossplane.io/latest/packages/configurations/).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1Configuration : IKubernetesObject<V1ObjectMeta>, ISpec<V1ConfigurationSpec?>, IStatus<V1ConfigurationStatus?>

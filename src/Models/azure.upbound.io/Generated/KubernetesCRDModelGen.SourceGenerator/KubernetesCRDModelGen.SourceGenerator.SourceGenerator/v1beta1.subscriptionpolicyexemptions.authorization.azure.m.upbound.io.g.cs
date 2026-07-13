@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.authorization.azure.m.upbound.io;
 /// <summary>SubscriptionPolicyExemption is the Schema for the SubscriptionPolicyExemptions API. Manages a Subscription Policy Exemption.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SubscriptionPolicyExemptionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SubscriptionPolicyExemption>
@@ -42,7 +42,7 @@ public partial class V1beta1SubscriptionPolicyExemptionList : IKubernetesObject<
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionPolicyExemptionSpecForProviderPolicyAssignmentIdRefPolicyResolutionEnum>))]
 public enum V1beta1SubscriptionPolicyExemptionSpecForProviderPolicyAssignmentIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1SubscriptionPolicyExemptionSpecForProviderPolicyAssignmentIdR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionPolicyExemptionSpecForProviderPolicyAssignmentIdRefPolicyResolveEnum>))]
 public enum V1beta1SubscriptionPolicyExemptionSpecForProviderPolicyAssignmentIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1SubscriptionPolicyExemptionSpecForProviderPolicyAssignmentIdR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionPolicyExemptionSpecForProviderPolicyAssignmentIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1SubscriptionPolicyExemptionSpecForProviderPolicyAssi
 }
 
 /// <summary>Reference to a SubscriptionPolicyAssignment in authorization to populate policyAssignmentId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionPolicyExemptionSpecForProviderPolicyAssignmentIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1SubscriptionPolicyExemptionSpecForProviderPolicyAssi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionPolicyExemptionSpecForProviderPolicyAssignmentIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SubscriptionPolicyExemptionSpecForProviderPolicyAssignmentIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1SubscriptionPolicyExemptionSpecForProviderPolicyAssignmentIdS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionPolicyExemptionSpecForProviderPolicyAssignmentIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SubscriptionPolicyExemptionSpecForProviderPolicyAssignmentIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1SubscriptionPolicyExemptionSpecForProviderPolicyAssignmentIdS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionPolicyExemptionSpecForProviderPolicyAssignmentIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1SubscriptionPolicyExemptionSpecForProviderPolicyAssi
 }
 
 /// <summary>Selector for a SubscriptionPolicyAssignment in authorization to populate policyAssignmentId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionPolicyExemptionSpecForProviderPolicyAssignmentIdSelector
 {
@@ -191,7 +191,7 @@ public partial class V1beta1SubscriptionPolicyExemptionSpecForProviderPolicyAssi
     public V1beta1SubscriptionPolicyExemptionSpecForProviderPolicyAssignmentIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionPolicyExemptionSpecForProvider
 {
@@ -242,7 +242,7 @@ public partial class V1beta1SubscriptionPolicyExemptionSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionPolicyExemptionSpecInitProviderPolicyAssignmentIdRefPolicyResolutionEnum>))]
 public enum V1beta1SubscriptionPolicyExemptionSpecInitProviderPolicyAssignmentIdRefPolicyResolutionEnum
 {
@@ -258,7 +258,7 @@ public enum V1beta1SubscriptionPolicyExemptionSpecInitProviderPolicyAssignmentId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionPolicyExemptionSpecInitProviderPolicyAssignmentIdRefPolicyResolveEnum>))]
 public enum V1beta1SubscriptionPolicyExemptionSpecInitProviderPolicyAssignmentIdRefPolicyResolveEnum
 {
@@ -269,7 +269,7 @@ public enum V1beta1SubscriptionPolicyExemptionSpecInitProviderPolicyAssignmentId
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionPolicyExemptionSpecInitProviderPolicyAssignmentIdRefPolicy
 {
@@ -293,7 +293,7 @@ public partial class V1beta1SubscriptionPolicyExemptionSpecInitProviderPolicyAss
 }
 
 /// <summary>Reference to a SubscriptionPolicyAssignment in authorization to populate policyAssignmentId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionPolicyExemptionSpecInitProviderPolicyAssignmentIdRef
 {
@@ -316,7 +316,7 @@ public partial class V1beta1SubscriptionPolicyExemptionSpecInitProviderPolicyAss
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionPolicyExemptionSpecInitProviderPolicyAssignmentIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SubscriptionPolicyExemptionSpecInitProviderPolicyAssignmentIdSelectorPolicyResolutionEnum
 {
@@ -332,7 +332,7 @@ public enum V1beta1SubscriptionPolicyExemptionSpecInitProviderPolicyAssignmentId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionPolicyExemptionSpecInitProviderPolicyAssignmentIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SubscriptionPolicyExemptionSpecInitProviderPolicyAssignmentIdSelectorPolicyResolveEnum
 {
@@ -343,7 +343,7 @@ public enum V1beta1SubscriptionPolicyExemptionSpecInitProviderPolicyAssignmentId
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionPolicyExemptionSpecInitProviderPolicyAssignmentIdSelectorPolicy
 {
@@ -367,7 +367,7 @@ public partial class V1beta1SubscriptionPolicyExemptionSpecInitProviderPolicyAss
 }
 
 /// <summary>Selector for a SubscriptionPolicyAssignment in authorization to populate policyAssignmentId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionPolicyExemptionSpecInitProviderPolicyAssignmentIdSelector
 {
@@ -403,7 +403,7 @@ public partial class V1beta1SubscriptionPolicyExemptionSpecInitProviderPolicyAss
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionPolicyExemptionSpecInitProvider
 {
@@ -452,7 +452,7 @@ public partial class V1beta1SubscriptionPolicyExemptionSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionPolicyExemptionSpecManagementPoliciesEnum>))]
 public enum V1beta1SubscriptionPolicyExemptionSpecManagementPoliciesEnum
 {
@@ -475,7 +475,7 @@ public enum V1beta1SubscriptionPolicyExemptionSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionPolicyExemptionSpecProviderConfigRef
 {
@@ -494,7 +494,7 @@ public partial class V1beta1SubscriptionPolicyExemptionSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionPolicyExemptionSpecWriteConnectionSecretToRef
 {
@@ -504,7 +504,7 @@ public partial class V1beta1SubscriptionPolicyExemptionSpecWriteConnectionSecret
 }
 
 /// <summary>SubscriptionPolicyExemptionSpec defines the desired state of SubscriptionPolicyExemption</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionPolicyExemptionSpec
 {
@@ -555,7 +555,7 @@ public partial class V1beta1SubscriptionPolicyExemptionSpec
     public V1beta1SubscriptionPolicyExemptionSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionPolicyExemptionStatusAtProvider
 {
@@ -597,7 +597,7 @@ public partial class V1beta1SubscriptionPolicyExemptionStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionPolicyExemptionStatusConditions
 {
@@ -640,7 +640,7 @@ public partial class V1beta1SubscriptionPolicyExemptionStatusConditions
 }
 
 /// <summary>SubscriptionPolicyExemptionStatus defines the observed state of SubscriptionPolicyExemption.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionPolicyExemptionStatus
 {
@@ -661,7 +661,7 @@ public partial class V1beta1SubscriptionPolicyExemptionStatus
 }
 
 /// <summary>SubscriptionPolicyExemption is the Schema for the SubscriptionPolicyExemptions API. Manages a Subscription Policy Exemption.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SubscriptionPolicyExemption : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SubscriptionPolicyExemptionSpec>, IStatus<V1beta1SubscriptionPolicyExemptionStatus?>

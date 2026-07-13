@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datafactory.azure.m.upbound.io;
 /// <summary>LinkedServiceAzureFileStorage is the Schema for the LinkedServiceAzureFileStorages API. Manages a Linked Service (connection) between an Azure File Storage Account and Azure Data Factory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LinkedServiceAzureFileStorageList : IKubernetesObject<V1ListMeta>, IItems<V1beta1LinkedServiceAzureFileStorage>
@@ -37,7 +37,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageList : IKubernetesObjec
 }
 
 /// <summary>The connection string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderConnectionStringSecretRef
 {
@@ -55,7 +55,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderConnecti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdRefPolicyResolutionEnum>))]
 public enum V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdRefPolicyResolutionEnum
 {
@@ -71,7 +71,7 @@ public enum V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdRefPolicyResolveEnum>))]
 public enum V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdRefPolicyResolveEnum
 {
@@ -82,7 +82,7 @@ public enum V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdRefPolicy
 {
@@ -106,7 +106,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFact
 }
 
 /// <summary>Reference to a Factory in datafactory to populate dataFactoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdRef
 {
@@ -129,7 +129,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFact
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum
 {
@@ -145,7 +145,7 @@ public enum V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdSelectorPolicyResolveEnum>))]
 public enum V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdSelectorPolicyResolveEnum
 {
@@ -156,7 +156,7 @@ public enum V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdSelectorPolicy
 {
@@ -180,7 +180,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFact
 }
 
 /// <summary>Selector for a Factory in datafactory to populate dataFactoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdSelector
 {
@@ -205,7 +205,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFact
 }
 
 /// <summary>A key_vault_password block as defined below. Use this argument to store Azure File Storage password in an existing Key Vault. It needs an existing Key Vault Data Factory Linked Service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderKeyVaultPassword
 {
@@ -219,7 +219,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderKeyVault
 }
 
 /// <summary>The password to log in the server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderPasswordSecretRef
 {
@@ -231,7 +231,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderPassword
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecForProvider
 {
@@ -293,7 +293,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecForProvider
 }
 
 /// <summary>The connection string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecInitProviderConnectionStringSecretRef
 {
@@ -306,7 +306,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecInitProviderConnect
 }
 
 /// <summary>A key_vault_password block as defined below. Use this argument to store Azure File Storage password in an existing Key Vault. It needs an existing Key Vault Data Factory Linked Service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecInitProviderKeyVaultPassword
 {
@@ -320,7 +320,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecInitProviderKeyVaul
 }
 
 /// <summary>The password to log in the server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecInitProviderPasswordSecretRef
 {
@@ -344,7 +344,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecInitProviderPasswor
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecInitProvider
 {
@@ -397,7 +397,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureFileStorageSpecManagementPoliciesEnum>))]
 public enum V1beta1LinkedServiceAzureFileStorageSpecManagementPoliciesEnum
 {
@@ -420,7 +420,7 @@ public enum V1beta1LinkedServiceAzureFileStorageSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecProviderConfigRef
 {
@@ -439,7 +439,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecWriteConnectionSecretToRef
 {
@@ -449,7 +449,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecWriteConnectionSecr
 }
 
 /// <summary>LinkedServiceAzureFileStorageSpec defines the desired state of LinkedServiceAzureFileStorage</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureFileStorageSpec
 {
@@ -501,7 +501,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpec
 }
 
 /// <summary>A key_vault_password block as defined below. Use this argument to store Azure File Storage password in an existing Key Vault. It needs an existing Key Vault Data Factory Linked Service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureFileStorageStatusAtProviderKeyVaultPassword
 {
@@ -514,7 +514,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageStatusAtProviderKeyVaul
     public string? SecretName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureFileStorageStatusAtProvider
 {
@@ -564,7 +564,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureFileStorageStatusConditions
 {
@@ -607,7 +607,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageStatusConditions
 }
 
 /// <summary>LinkedServiceAzureFileStorageStatus defines the observed state of LinkedServiceAzureFileStorage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureFileStorageStatus
 {
@@ -628,7 +628,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageStatus
 }
 
 /// <summary>LinkedServiceAzureFileStorage is the Schema for the LinkedServiceAzureFileStorages API. Manages a Linked Service (connection) between an Azure File Storage Account and Azure Data Factory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LinkedServiceAzureFileStorage : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1LinkedServiceAzureFileStorageSpec>, IStatus<V1beta1LinkedServiceAzureFileStorageStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.postgresql.cnpg.io;
 /// <summary>A Backup resource is a request for a PostgreSQL backup by the user.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1BackupList : IKubernetesObject<V1ListMeta>, IItems<V1Backup>
@@ -37,7 +37,7 @@ public partial class V1BackupList : IKubernetesObject<V1ListMeta>, IItems<V1Back
 }
 
 /// <summary>The cluster to backup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackupSpecCluster
 {
@@ -50,7 +50,7 @@ public partial class V1BackupSpecCluster
 /// The backup method to be used, possible options are `barmanObjectStore`,
 /// `volumeSnapshot` or `plugin`. Defaults to: `barmanObjectStore`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1BackupSpecMethodEnum>))]
 public enum V1BackupSpecMethodEnum
 {
@@ -66,7 +66,7 @@ public enum V1BackupSpecMethodEnum
 /// Configuration parameters to control the online/hot backup with volume snapshots
 /// Overrides the default settings specified in the cluster &apos;.backup.volumeSnapshot.onlineConfiguration&apos; stanza
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackupSpecOnlineConfiguration
 {
@@ -96,7 +96,7 @@ public partial class V1BackupSpecOnlineConfiguration
 }
 
 /// <summary>Configuration parameters passed to the plugin managing this backup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackupSpecPluginConfiguration
 {
@@ -120,7 +120,7 @@ public partial class V1BackupSpecPluginConfiguration
 /// `prefer-standby` to have backups run preferably on the most updated
 /// standby, if available.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1BackupSpecTargetEnum>))]
 public enum V1BackupSpecTargetEnum
 {
@@ -134,7 +134,7 @@ public enum V1BackupSpecTargetEnum
 /// Specification of the desired behavior of the backup.
 /// More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackupSpec
 {
@@ -181,7 +181,7 @@ public partial class V1BackupSpec
 }
 
 /// <summary>The connection string to be used</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackupStatusAzureCredentialsConnectionString
 {
@@ -195,7 +195,7 @@ public partial class V1BackupStatusAzureCredentialsConnectionString
 }
 
 /// <summary>The storage account where to upload data</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackupStatusAzureCredentialsStorageAccount
 {
@@ -212,7 +212,7 @@ public partial class V1BackupStatusAzureCredentialsStorageAccount
 /// The storage account key to be used in conjunction
 /// with the storage account name
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackupStatusAzureCredentialsStorageKey
 {
@@ -229,7 +229,7 @@ public partial class V1BackupStatusAzureCredentialsStorageKey
 /// A shared-access-signature to be used in conjunction with
 /// the storage account name
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackupStatusAzureCredentialsStorageSasToken
 {
@@ -243,7 +243,7 @@ public partial class V1BackupStatusAzureCredentialsStorageSasToken
 }
 
 /// <summary>The credentials to use to upload data to Azure Blob Storage</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackupStatusAzureCredentials
 {
@@ -286,7 +286,7 @@ public partial class V1BackupStatusAzureCredentials
 /// Useful when using self-signed certificates to avoid
 /// errors with certificate issuer and barman-cloud-wal-archive.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackupStatusEndpointCA
 {
@@ -300,7 +300,7 @@ public partial class V1BackupStatusEndpointCA
 }
 
 /// <summary>The secret containing the Google Cloud Storage JSON file with the credentials</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackupStatusGoogleCredentialsApplicationCredentials
 {
@@ -314,7 +314,7 @@ public partial class V1BackupStatusGoogleCredentialsApplicationCredentials
 }
 
 /// <summary>The credentials to use to upload data to Google Cloud Storage</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackupStatusGoogleCredentials
 {
@@ -331,7 +331,7 @@ public partial class V1BackupStatusGoogleCredentials
 }
 
 /// <summary>Information to identify the instance where the backup has been taken from</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackupStatusInstanceID
 {
@@ -354,7 +354,7 @@ public partial class V1BackupStatusInstanceID
 }
 
 /// <summary>The reference to the access key id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackupStatusS3CredentialsAccessKeyId
 {
@@ -368,7 +368,7 @@ public partial class V1BackupStatusS3CredentialsAccessKeyId
 }
 
 /// <summary>The reference to the secret containing the region name</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackupStatusS3CredentialsRegion
 {
@@ -382,7 +382,7 @@ public partial class V1BackupStatusS3CredentialsRegion
 }
 
 /// <summary>The reference to the secret access key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackupStatusS3CredentialsSecretAccessKey
 {
@@ -396,7 +396,7 @@ public partial class V1BackupStatusS3CredentialsSecretAccessKey
 }
 
 /// <summary>The references to the session key</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackupStatusS3CredentialsSessionToken
 {
@@ -410,7 +410,7 @@ public partial class V1BackupStatusS3CredentialsSessionToken
 }
 
 /// <summary>The credentials to use to upload data to S3</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackupStatusS3Credentials
 {
@@ -436,7 +436,7 @@ public partial class V1BackupStatusS3Credentials
 }
 
 /// <summary>BackupSnapshotElementStatus is a volume snapshot that is part of a volume snapshot method backup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackupStatusSnapshotBackupStatusElements
 {
@@ -457,7 +457,7 @@ public partial class V1BackupStatusSnapshotBackupStatusElements
 }
 
 /// <summary>Status of the volumeSnapshot backup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackupStatusSnapshotBackupStatus
 {
@@ -471,7 +471,7 @@ public partial class V1BackupStatusSnapshotBackupStatus
 /// date. Populated by the system. Read-only.
 /// More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BackupStatus
 {
@@ -614,7 +614,7 @@ public partial class V1BackupStatus
 }
 
 /// <summary>A Backup resource is a request for a PostgreSQL backup by the user.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1Backup : IKubernetesObject<V1ObjectMeta>, ISpec<V1BackupSpec>, IStatus<V1BackupStatus?>

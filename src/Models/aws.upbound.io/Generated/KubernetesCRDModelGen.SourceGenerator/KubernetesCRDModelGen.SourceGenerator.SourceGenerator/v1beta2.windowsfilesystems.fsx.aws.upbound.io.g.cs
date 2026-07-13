@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.fsx.aws.upbound.io;
 /// <summary>WindowsFileSystem is the Schema for the WindowsFileSystems API. Manages a FSx Windows File System.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2WindowsFileSystemList : IKubernetesObject<V1ListMeta>, IItems<V1beta2WindowsFileSystem>
@@ -45,7 +45,7 @@ public partial class V1beta2WindowsFileSystemList : IKubernetesObject<V1ListMeta
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecDeletionPolicyEnum>))]
 public enum V1beta2WindowsFileSystemSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2WindowsFileSystemSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecForProviderActiveDirectoryIdRefPolicyResolutionEnum>))]
 public enum V1beta2WindowsFileSystemSpecForProviderActiveDirectoryIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2WindowsFileSystemSpecForProviderActiveDirectoryIdRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecForProviderActiveDirectoryIdRefPolicyResolveEnum>))]
 public enum V1beta2WindowsFileSystemSpecForProviderActiveDirectoryIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2WindowsFileSystemSpecForProviderActiveDirectoryIdRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderActiveDirectoryIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderActiveDirectoryIdRef
 }
 
 /// <summary>Reference to a Directory in ds to populate activeDirectoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderActiveDirectoryIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderActiveDirectoryIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecForProviderActiveDirectoryIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2WindowsFileSystemSpecForProviderActiveDirectoryIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2WindowsFileSystemSpecForProviderActiveDirectoryIdSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecForProviderActiveDirectoryIdSelectorPolicyResolveEnum>))]
 public enum V1beta2WindowsFileSystemSpecForProviderActiveDirectoryIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2WindowsFileSystemSpecForProviderActiveDirectoryIdSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderActiveDirectoryIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderActiveDirectoryIdSel
 }
 
 /// <summary>Selector for a Directory in ds to populate activeDirectoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderActiveDirectoryIdSelector
 {
@@ -203,7 +203,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderActiveDirectoryIdSel
 }
 
 /// <summary>The configuration that Amazon FSx for Windows File Server uses to audit and log user accesses of files, folders, and file shares on the Amazon FSx for Windows File Server file system. See audit_log_configuration Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderAuditLogConfiguration
 {
@@ -221,7 +221,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderAuditLogConfiguratio
 }
 
 /// <summary>The SSD IOPS configuration for the Amazon FSx for Windows File Server file system. See disk_iops_configuration Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderDiskIopsConfiguration
 {
@@ -240,7 +240,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderDiskIopsConfiguratio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecForProviderKmsKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta2WindowsFileSystemSpecForProviderKmsKeyIdRefPolicyResolutionEnum
 {
@@ -256,7 +256,7 @@ public enum V1beta2WindowsFileSystemSpecForProviderKmsKeyIdRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecForProviderKmsKeyIdRefPolicyResolveEnum>))]
 public enum V1beta2WindowsFileSystemSpecForProviderKmsKeyIdRefPolicyResolveEnum
 {
@@ -267,7 +267,7 @@ public enum V1beta2WindowsFileSystemSpecForProviderKmsKeyIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderKmsKeyIdRefPolicy
 {
@@ -291,7 +291,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderKmsKeyIdRefPolicy
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderKmsKeyIdRef
 {
@@ -310,7 +310,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderKmsKeyIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecForProviderKmsKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2WindowsFileSystemSpecForProviderKmsKeyIdSelectorPolicyResolutionEnum
 {
@@ -326,7 +326,7 @@ public enum V1beta2WindowsFileSystemSpecForProviderKmsKeyIdSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecForProviderKmsKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta2WindowsFileSystemSpecForProviderKmsKeyIdSelectorPolicyResolveEnum
 {
@@ -337,7 +337,7 @@ public enum V1beta2WindowsFileSystemSpecForProviderKmsKeyIdSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderKmsKeyIdSelectorPolicy
 {
@@ -361,7 +361,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderKmsKeyIdSelectorPoli
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderKmsKeyIdSelector
 {
@@ -387,7 +387,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderKmsKeyIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecForProviderSecurityGroupIdRefsPolicyResolutionEnum>))]
 public enum V1beta2WindowsFileSystemSpecForProviderSecurityGroupIdRefsPolicyResolutionEnum
 {
@@ -403,7 +403,7 @@ public enum V1beta2WindowsFileSystemSpecForProviderSecurityGroupIdRefsPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecForProviderSecurityGroupIdRefsPolicyResolveEnum>))]
 public enum V1beta2WindowsFileSystemSpecForProviderSecurityGroupIdRefsPolicyResolveEnum
 {
@@ -414,7 +414,7 @@ public enum V1beta2WindowsFileSystemSpecForProviderSecurityGroupIdRefsPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderSecurityGroupIdRefsPolicy
 {
@@ -438,7 +438,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderSecurityGroupIdRefsP
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderSecurityGroupIdRefs
 {
@@ -457,7 +457,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderSecurityGroupIdRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecForProviderSecurityGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2WindowsFileSystemSpecForProviderSecurityGroupIdSelectorPolicyResolutionEnum
 {
@@ -473,7 +473,7 @@ public enum V1beta2WindowsFileSystemSpecForProviderSecurityGroupIdSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecForProviderSecurityGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta2WindowsFileSystemSpecForProviderSecurityGroupIdSelectorPolicyResolveEnum
 {
@@ -484,7 +484,7 @@ public enum V1beta2WindowsFileSystemSpecForProviderSecurityGroupIdSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderSecurityGroupIdSelectorPolicy
 {
@@ -508,7 +508,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderSecurityGroupIdSelec
 }
 
 /// <summary>Selector for a list of SecurityGroup in ec2 to populate securityGroupIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderSecurityGroupIdSelector
 {
@@ -534,7 +534,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderSecurityGroupIdSelec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretRefPolicyResolutionEnum>))]
 public enum V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretRefPolicyResolutionEnum
 {
@@ -550,7 +550,7 @@ public enum V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryDom
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretRefPolicyResolveEnum>))]
 public enum V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretRefPolicyResolveEnum
 {
@@ -561,7 +561,7 @@ public enum V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryDom
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretRefPolicy
 {
@@ -585,7 +585,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDir
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate domainJoinServiceAccountSecret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretRef
 {
@@ -604,7 +604,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDir
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretSelectorPolicyResolutionEnum>))]
 public enum V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretSelectorPolicyResolutionEnum
 {
@@ -620,7 +620,7 @@ public enum V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryDom
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretSelectorPolicyResolveEnum>))]
 public enum V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretSelectorPolicyResolveEnum
 {
@@ -631,7 +631,7 @@ public enum V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryDom
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretSelectorPolicy
 {
@@ -655,7 +655,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDir
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate domainJoinServiceAccountSecret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretSelector
 {
@@ -676,7 +676,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDir
 }
 
 /// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryPasswordSecretRef
 {
@@ -694,7 +694,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDir
 }
 
 /// <summary>Configuration block that Amazon FSx uses to join the Windows File Server instance to your self-managed (including on-premises) Microsoft Active Directory (AD) directory. Cannot be specified with active_directory_id. See self_managed_active_directory Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectory
 {
@@ -741,7 +741,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDir
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecForProviderSubnetIdRefsPolicyResolutionEnum>))]
 public enum V1beta2WindowsFileSystemSpecForProviderSubnetIdRefsPolicyResolutionEnum
 {
@@ -757,7 +757,7 @@ public enum V1beta2WindowsFileSystemSpecForProviderSubnetIdRefsPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecForProviderSubnetIdRefsPolicyResolveEnum>))]
 public enum V1beta2WindowsFileSystemSpecForProviderSubnetIdRefsPolicyResolveEnum
 {
@@ -768,7 +768,7 @@ public enum V1beta2WindowsFileSystemSpecForProviderSubnetIdRefsPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderSubnetIdRefsPolicy
 {
@@ -792,7 +792,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderSubnetIdRefsPolicy
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderSubnetIdRefs
 {
@@ -811,7 +811,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderSubnetIdRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecForProviderSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2WindowsFileSystemSpecForProviderSubnetIdSelectorPolicyResolutionEnum
 {
@@ -827,7 +827,7 @@ public enum V1beta2WindowsFileSystemSpecForProviderSubnetIdSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecForProviderSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2WindowsFileSystemSpecForProviderSubnetIdSelectorPolicyResolveEnum
 {
@@ -838,7 +838,7 @@ public enum V1beta2WindowsFileSystemSpecForProviderSubnetIdSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderSubnetIdSelectorPolicy
 {
@@ -862,7 +862,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderSubnetIdSelectorPoli
 }
 
 /// <summary>Selector for a list of Subnet in ec2 to populate subnetIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderSubnetIdSelector
 {
@@ -882,7 +882,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderSubnetIdSelector
     public V1beta2WindowsFileSystemSpecForProviderSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProvider
 {
@@ -1016,7 +1016,7 @@ public partial class V1beta2WindowsFileSystemSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecInitProviderActiveDirectoryIdRefPolicyResolutionEnum>))]
 public enum V1beta2WindowsFileSystemSpecInitProviderActiveDirectoryIdRefPolicyResolutionEnum
 {
@@ -1032,7 +1032,7 @@ public enum V1beta2WindowsFileSystemSpecInitProviderActiveDirectoryIdRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecInitProviderActiveDirectoryIdRefPolicyResolveEnum>))]
 public enum V1beta2WindowsFileSystemSpecInitProviderActiveDirectoryIdRefPolicyResolveEnum
 {
@@ -1043,7 +1043,7 @@ public enum V1beta2WindowsFileSystemSpecInitProviderActiveDirectoryIdRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderActiveDirectoryIdRefPolicy
 {
@@ -1067,7 +1067,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderActiveDirectoryIdRe
 }
 
 /// <summary>Reference to a Directory in ds to populate activeDirectoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderActiveDirectoryIdRef
 {
@@ -1086,7 +1086,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderActiveDirectoryIdRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecInitProviderActiveDirectoryIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2WindowsFileSystemSpecInitProviderActiveDirectoryIdSelectorPolicyResolutionEnum
 {
@@ -1102,7 +1102,7 @@ public enum V1beta2WindowsFileSystemSpecInitProviderActiveDirectoryIdSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecInitProviderActiveDirectoryIdSelectorPolicyResolveEnum>))]
 public enum V1beta2WindowsFileSystemSpecInitProviderActiveDirectoryIdSelectorPolicyResolveEnum
 {
@@ -1113,7 +1113,7 @@ public enum V1beta2WindowsFileSystemSpecInitProviderActiveDirectoryIdSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderActiveDirectoryIdSelectorPolicy
 {
@@ -1137,7 +1137,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderActiveDirectoryIdSe
 }
 
 /// <summary>Selector for a Directory in ds to populate activeDirectoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderActiveDirectoryIdSelector
 {
@@ -1158,7 +1158,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderActiveDirectoryIdSe
 }
 
 /// <summary>The configuration that Amazon FSx for Windows File Server uses to audit and log user accesses of files, folders, and file shares on the Amazon FSx for Windows File Server file system. See audit_log_configuration Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderAuditLogConfiguration
 {
@@ -1176,7 +1176,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderAuditLogConfigurati
 }
 
 /// <summary>The SSD IOPS configuration for the Amazon FSx for Windows File Server file system. See disk_iops_configuration Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderDiskIopsConfiguration
 {
@@ -1195,7 +1195,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderDiskIopsConfigurati
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecInitProviderKmsKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta2WindowsFileSystemSpecInitProviderKmsKeyIdRefPolicyResolutionEnum
 {
@@ -1211,7 +1211,7 @@ public enum V1beta2WindowsFileSystemSpecInitProviderKmsKeyIdRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecInitProviderKmsKeyIdRefPolicyResolveEnum>))]
 public enum V1beta2WindowsFileSystemSpecInitProviderKmsKeyIdRefPolicyResolveEnum
 {
@@ -1222,7 +1222,7 @@ public enum V1beta2WindowsFileSystemSpecInitProviderKmsKeyIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderKmsKeyIdRefPolicy
 {
@@ -1246,7 +1246,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderKmsKeyIdRefPolicy
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderKmsKeyIdRef
 {
@@ -1265,7 +1265,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderKmsKeyIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecInitProviderKmsKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2WindowsFileSystemSpecInitProviderKmsKeyIdSelectorPolicyResolutionEnum
 {
@@ -1281,7 +1281,7 @@ public enum V1beta2WindowsFileSystemSpecInitProviderKmsKeyIdSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecInitProviderKmsKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta2WindowsFileSystemSpecInitProviderKmsKeyIdSelectorPolicyResolveEnum
 {
@@ -1292,7 +1292,7 @@ public enum V1beta2WindowsFileSystemSpecInitProviderKmsKeyIdSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderKmsKeyIdSelectorPolicy
 {
@@ -1316,7 +1316,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderKmsKeyIdSelectorPol
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderKmsKeyIdSelector
 {
@@ -1342,7 +1342,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderKmsKeyIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecInitProviderSecurityGroupIdRefsPolicyResolutionEnum>))]
 public enum V1beta2WindowsFileSystemSpecInitProviderSecurityGroupIdRefsPolicyResolutionEnum
 {
@@ -1358,7 +1358,7 @@ public enum V1beta2WindowsFileSystemSpecInitProviderSecurityGroupIdRefsPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecInitProviderSecurityGroupIdRefsPolicyResolveEnum>))]
 public enum V1beta2WindowsFileSystemSpecInitProviderSecurityGroupIdRefsPolicyResolveEnum
 {
@@ -1369,7 +1369,7 @@ public enum V1beta2WindowsFileSystemSpecInitProviderSecurityGroupIdRefsPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderSecurityGroupIdRefsPolicy
 {
@@ -1393,7 +1393,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderSecurityGroupIdRefs
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderSecurityGroupIdRefs
 {
@@ -1412,7 +1412,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderSecurityGroupIdRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecInitProviderSecurityGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2WindowsFileSystemSpecInitProviderSecurityGroupIdSelectorPolicyResolutionEnum
 {
@@ -1428,7 +1428,7 @@ public enum V1beta2WindowsFileSystemSpecInitProviderSecurityGroupIdSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecInitProviderSecurityGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta2WindowsFileSystemSpecInitProviderSecurityGroupIdSelectorPolicyResolveEnum
 {
@@ -1439,7 +1439,7 @@ public enum V1beta2WindowsFileSystemSpecInitProviderSecurityGroupIdSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderSecurityGroupIdSelectorPolicy
 {
@@ -1463,7 +1463,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderSecurityGroupIdSele
 }
 
 /// <summary>Selector for a list of SecurityGroup in ec2 to populate securityGroupIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderSecurityGroupIdSelector
 {
@@ -1489,7 +1489,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderSecurityGroupIdSele
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretRefPolicyResolutionEnum>))]
 public enum V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretRefPolicyResolutionEnum
 {
@@ -1505,7 +1505,7 @@ public enum V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryDo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretRefPolicyResolveEnum>))]
 public enum V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretRefPolicyResolveEnum
 {
@@ -1516,7 +1516,7 @@ public enum V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryDo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretRefPolicy
 {
@@ -1540,7 +1540,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDi
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate domainJoinServiceAccountSecret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretRef
 {
@@ -1559,7 +1559,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretSelectorPolicyResolutionEnum>))]
 public enum V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretSelectorPolicyResolutionEnum
 {
@@ -1575,7 +1575,7 @@ public enum V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryDo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretSelectorPolicyResolveEnum>))]
 public enum V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretSelectorPolicyResolveEnum
 {
@@ -1586,7 +1586,7 @@ public enum V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryDo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretSelectorPolicy
 {
@@ -1610,7 +1610,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDi
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate domainJoinServiceAccountSecret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretSelector
 {
@@ -1631,7 +1631,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDi
 }
 
 /// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryPasswordSecretRef
 {
@@ -1649,7 +1649,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDi
 }
 
 /// <summary>Configuration block that Amazon FSx uses to join the Windows File Server instance to your self-managed (including on-premises) Microsoft Active Directory (AD) directory. Cannot be specified with active_directory_id. See self_managed_active_directory Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectory
 {
@@ -1696,7 +1696,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecInitProviderSubnetIdRefsPolicyResolutionEnum>))]
 public enum V1beta2WindowsFileSystemSpecInitProviderSubnetIdRefsPolicyResolutionEnum
 {
@@ -1712,7 +1712,7 @@ public enum V1beta2WindowsFileSystemSpecInitProviderSubnetIdRefsPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecInitProviderSubnetIdRefsPolicyResolveEnum>))]
 public enum V1beta2WindowsFileSystemSpecInitProviderSubnetIdRefsPolicyResolveEnum
 {
@@ -1723,7 +1723,7 @@ public enum V1beta2WindowsFileSystemSpecInitProviderSubnetIdRefsPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderSubnetIdRefsPolicy
 {
@@ -1747,7 +1747,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderSubnetIdRefsPolicy
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderSubnetIdRefs
 {
@@ -1766,7 +1766,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderSubnetIdRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecInitProviderSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2WindowsFileSystemSpecInitProviderSubnetIdSelectorPolicyResolutionEnum
 {
@@ -1782,7 +1782,7 @@ public enum V1beta2WindowsFileSystemSpecInitProviderSubnetIdSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecInitProviderSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2WindowsFileSystemSpecInitProviderSubnetIdSelectorPolicyResolveEnum
 {
@@ -1793,7 +1793,7 @@ public enum V1beta2WindowsFileSystemSpecInitProviderSubnetIdSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderSubnetIdSelectorPolicy
 {
@@ -1817,7 +1817,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderSubnetIdSelectorPol
 }
 
 /// <summary>Selector for a list of Subnet in ec2 to populate subnetIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderSubnetIdSelector
 {
@@ -1849,7 +1849,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderSubnetIdSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProvider
 {
@@ -1974,7 +1974,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecManagementPoliciesEnum>))]
 public enum V1beta2WindowsFileSystemSpecManagementPoliciesEnum
 {
@@ -1998,7 +1998,7 @@ public enum V1beta2WindowsFileSystemSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2WindowsFileSystemSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -2014,7 +2014,7 @@ public enum V1beta2WindowsFileSystemSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2WindowsFileSystemSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2WindowsFileSystemSpecProviderConfigRefPolicyResolveEnum
 {
@@ -2025,7 +2025,7 @@ public enum V1beta2WindowsFileSystemSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecProviderConfigRefPolicy
 {
@@ -2053,7 +2053,7 @@ public partial class V1beta2WindowsFileSystemSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecProviderConfigRef
 {
@@ -2072,7 +2072,7 @@ public partial class V1beta2WindowsFileSystemSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecWriteConnectionSecretToRef
 {
@@ -2086,7 +2086,7 @@ public partial class V1beta2WindowsFileSystemSpecWriteConnectionSecretToRef
 }
 
 /// <summary>WindowsFileSystemSpec defines the desired state of WindowsFileSystem</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpec
 {
@@ -2154,7 +2154,7 @@ public partial class V1beta2WindowsFileSystemSpec
 }
 
 /// <summary>The configuration that Amazon FSx for Windows File Server uses to audit and log user accesses of files, folders, and file shares on the Amazon FSx for Windows File Server file system. See audit_log_configuration Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemStatusAtProviderAuditLogConfiguration
 {
@@ -2172,7 +2172,7 @@ public partial class V1beta2WindowsFileSystemStatusAtProviderAuditLogConfigurati
 }
 
 /// <summary>The SSD IOPS configuration for the Amazon FSx for Windows File Server file system. See disk_iops_configuration Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemStatusAtProviderDiskIopsConfiguration
 {
@@ -2186,7 +2186,7 @@ public partial class V1beta2WindowsFileSystemStatusAtProviderDiskIopsConfigurati
 }
 
 /// <summary>Configuration block that Amazon FSx uses to join the Windows File Server instance to your self-managed (including on-premises) Microsoft Active Directory (AD) directory. Cannot be specified with active_directory_id. See self_managed_active_directory Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemStatusAtProviderSelfManagedActiveDirectory
 {
@@ -2215,7 +2215,7 @@ public partial class V1beta2WindowsFileSystemStatusAtProviderSelfManagedActiveDi
     public string? Username { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemStatusAtProvider
 {
@@ -2348,7 +2348,7 @@ public partial class V1beta2WindowsFileSystemStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemStatusConditions
 {
@@ -2391,7 +2391,7 @@ public partial class V1beta2WindowsFileSystemStatusConditions
 }
 
 /// <summary>WindowsFileSystemStatus defines the observed state of WindowsFileSystem.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemStatus
 {
@@ -2412,7 +2412,7 @@ public partial class V1beta2WindowsFileSystemStatus
 }
 
 /// <summary>WindowsFileSystem is the Schema for the WindowsFileSystems API. Manages a FSx Windows File System.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2WindowsFileSystem : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2WindowsFileSystemSpec>, IStatus<V1beta2WindowsFileSystemStatus?>

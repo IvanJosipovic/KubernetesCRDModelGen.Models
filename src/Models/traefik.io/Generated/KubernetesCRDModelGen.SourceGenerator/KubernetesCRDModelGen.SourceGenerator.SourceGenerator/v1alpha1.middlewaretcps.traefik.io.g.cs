@@ -13,7 +13,7 @@ namespace KubernetesCRDModelGen.Models.traefik.io;
 /// MiddlewareTCP is the CRD implementation of a Traefik TCP middleware.
 /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/middlewares/overview/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1MiddlewareTCPList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1MiddlewareTCP>
@@ -40,7 +40,7 @@ public partial class V1alpha1MiddlewareTCPList : IKubernetesObject<V1ListMeta>, 
 }
 
 /// <summary>InFlightConn defines the InFlightConn middleware configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareTCPSpecInFlightConn
 {
@@ -57,7 +57,7 @@ public partial class V1alpha1MiddlewareTCPSpecInFlightConn
 /// This middleware accepts/refuses connections based on the client IP.
 /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/middlewares/ipallowlist/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareTCPSpecIpAllowList
 {
@@ -73,7 +73,7 @@ public partial class V1alpha1MiddlewareTCPSpecIpAllowList
 /// 
 /// Deprecated: please use IPAllowList instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareTCPSpecIpWhiteList
 {
@@ -83,7 +83,7 @@ public partial class V1alpha1MiddlewareTCPSpecIpWhiteList
 }
 
 /// <summary>MiddlewareTCPSpec defines the desired state of a MiddlewareTCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MiddlewareTCPSpec
 {
@@ -114,7 +114,7 @@ public partial class V1alpha1MiddlewareTCPSpec
 /// MiddlewareTCP is the CRD implementation of a Traefik TCP middleware.
 /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/middlewares/overview/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1MiddlewareTCP : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1MiddlewareTCPSpec>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dataproc.cnrm.cloud.google.com;
 /// <summary>DataprocSession is the Schema for the DataprocSession API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1DataprocSessionList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1DataprocSession>
@@ -37,7 +37,7 @@ public partial class V1alpha1DataprocSessionList : IKubernetesObject<V1ListMeta>
 }
 
 /// <summary>Optional. The Cloud KMS key to use for encryption.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocSessionSpecEnvironmentConfigExecutionConfigKmsKeyRef
 {
@@ -55,7 +55,7 @@ public partial class V1alpha1DataprocSessionSpecEnvironmentConfigExecutionConfig
 }
 
 /// <summary>Optional. Service account that used to execute workload.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocSessionSpecEnvironmentConfigExecutionConfigServiceAccountRef
 {
@@ -73,7 +73,7 @@ public partial class V1alpha1DataprocSessionSpecEnvironmentConfigExecutionConfig
 }
 
 /// <summary>Optional. A Cloud Storage bucket used to stage workload dependencies, config files, and store workload output and other ephemeral data, such as Spark history files. If you do not specify a staging bucket, Cloud Dataproc will determine a Cloud Storage location according to the region where your workload is running, and then create and manage project-level, per-location staging and temporary buckets. **This field requires a Cloud Storage bucket name, not a `gs://...` URI to a Cloud Storage bucket.**</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocSessionSpecEnvironmentConfigExecutionConfigStagingBucketRef
 {
@@ -91,7 +91,7 @@ public partial class V1alpha1DataprocSessionSpecEnvironmentConfigExecutionConfig
 }
 
 /// <summary>Optional. Execution configuration for a workload.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocSessionSpecEnvironmentConfigExecutionConfig
 {
@@ -136,7 +136,7 @@ public partial class V1alpha1DataprocSessionSpecEnvironmentConfigExecutionConfig
 /// 
 ///  * `projects/[project_id]/regions/[region]/clusters/[cluster_name]`
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocSessionSpecEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigDataprocClusterRef
 {
@@ -154,7 +154,7 @@ public partial class V1alpha1DataprocSessionSpecEnvironmentConfigPeripheralsConf
 }
 
 /// <summary>Optional. The Spark History Server configuration for the workload.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocSessionSpecEnvironmentConfigPeripheralsConfigSparkHistoryServerConfig
 {
@@ -171,7 +171,7 @@ public partial class V1alpha1DataprocSessionSpecEnvironmentConfigPeripheralsConf
 }
 
 /// <summary>Optional. Peripherals configuration that workload has access to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocSessionSpecEnvironmentConfigPeripheralsConfig
 {
@@ -191,7 +191,7 @@ public partial class V1alpha1DataprocSessionSpecEnvironmentConfigPeripheralsConf
 }
 
 /// <summary>Optional. Environment configuration for the session execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocSessionSpecEnvironmentConfig
 {
@@ -205,7 +205,7 @@ public partial class V1alpha1DataprocSessionSpecEnvironmentConfig
 }
 
 /// <summary>Optional. Jupyter session config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocSessionSpecJupyterSession
 {
@@ -219,7 +219,7 @@ public partial class V1alpha1DataprocSessionSpecJupyterSession
 }
 
 /// <summary>The project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocSessionSpecProjectRef
 {
@@ -241,7 +241,7 @@ public partial class V1alpha1DataprocSessionSpecProjectRef
 }
 
 /// <summary>Optional. Autotuning configuration of the workload.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocSessionSpecRuntimeConfigAutotuningConfig
 {
@@ -251,7 +251,7 @@ public partial class V1alpha1DataprocSessionSpecRuntimeConfigAutotuningConfig
 }
 
 /// <summary>Optional. Configuration for PyPi repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocSessionSpecRuntimeConfigRepositoryConfigPypiRepositoryConfig
 {
@@ -261,7 +261,7 @@ public partial class V1alpha1DataprocSessionSpecRuntimeConfigRepositoryConfigPyp
 }
 
 /// <summary>Optional. Dependency repository configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocSessionSpecRuntimeConfigRepositoryConfig
 {
@@ -271,7 +271,7 @@ public partial class V1alpha1DataprocSessionSpecRuntimeConfigRepositoryConfig
 }
 
 /// <summary>Optional. Runtime configuration for the session execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocSessionSpecRuntimeConfig
 {
@@ -301,7 +301,7 @@ public partial class V1alpha1DataprocSessionSpecRuntimeConfig
 }
 
 /// <summary>DataprocSessionSpec defines the desired state of DataprocSession</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocSessionSpec
 {
@@ -353,7 +353,7 @@ public partial class V1alpha1DataprocSessionSpec
     public string? User { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocSessionStatusConditions
 {
@@ -391,7 +391,7 @@ public partial class V1alpha1DataprocSessionStatusConditions
 ///  for announcements, changes, fixes
 ///  and other Dataproc developments).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocSessionStatusObservedStateRuntimeInfoApproximateUsage
 {
@@ -413,7 +413,7 @@ public partial class V1alpha1DataprocSessionStatusObservedStateRuntimeInfoApprox
 }
 
 /// <summary>Output only. Snapshot of current workload resource usage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocSessionStatusObservedStateRuntimeInfoCurrentUsage
 {
@@ -447,7 +447,7 @@ public partial class V1alpha1DataprocSessionStatusObservedStateRuntimeInfoCurren
 }
 
 /// <summary>Output only. Runtime information about session execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocSessionStatusObservedStateRuntimeInfo
 {
@@ -484,7 +484,7 @@ public partial class V1alpha1DataprocSessionStatusObservedStateRuntimeInfo
     public string? OutputURI { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocSessionStatusObservedStateStateHistory
 {
@@ -502,7 +502,7 @@ public partial class V1alpha1DataprocSessionStatusObservedStateStateHistory
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocSessionStatusObservedState
 {
@@ -540,7 +540,7 @@ public partial class V1alpha1DataprocSessionStatusObservedState
 }
 
 /// <summary>DataprocSessionStatus defines the config connector machine state of DataprocSession</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataprocSessionStatus
 {
@@ -562,7 +562,7 @@ public partial class V1alpha1DataprocSessionStatus
 }
 
 /// <summary>DataprocSession is the Schema for the DataprocSession API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1DataprocSession : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1DataprocSessionSpec>, IStatus<V1alpha1DataprocSessionStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ecr.aws.m.upbound.io;
 /// <summary>PullThroughCacheRule is the Schema for the PullThroughCacheRules API. Provides an Elastic Container Registry Pull Through Cache Rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PullThroughCacheRuleList : IKubernetesObject<V1ListMeta>, IItems<V1beta1PullThroughCacheRule>
@@ -42,7 +42,7 @@ public partial class V1beta1PullThroughCacheRuleList : IKubernetesObject<V1ListM
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PullThroughCacheRuleSpecForProviderCustomRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1PullThroughCacheRuleSpecForProviderCustomRoleArnRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1PullThroughCacheRuleSpecForProviderCustomRoleArnRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PullThroughCacheRuleSpecForProviderCustomRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1PullThroughCacheRuleSpecForProviderCustomRoleArnRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1PullThroughCacheRuleSpecForProviderCustomRoleArnRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PullThroughCacheRuleSpecForProviderCustomRoleArnRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1PullThroughCacheRuleSpecForProviderCustomRoleArnRefP
 }
 
 /// <summary>Reference to a Role in iam to populate customRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PullThroughCacheRuleSpecForProviderCustomRoleArnRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1PullThroughCacheRuleSpecForProviderCustomRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PullThroughCacheRuleSpecForProviderCustomRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1PullThroughCacheRuleSpecForProviderCustomRoleArnSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1PullThroughCacheRuleSpecForProviderCustomRoleArnSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PullThroughCacheRuleSpecForProviderCustomRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1PullThroughCacheRuleSpecForProviderCustomRoleArnSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1PullThroughCacheRuleSpecForProviderCustomRoleArnSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PullThroughCacheRuleSpecForProviderCustomRoleArnSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1PullThroughCacheRuleSpecForProviderCustomRoleArnSele
 }
 
 /// <summary>Selector for a Role in iam to populate customRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PullThroughCacheRuleSpecForProviderCustomRoleArnSelector
 {
@@ -191,7 +191,7 @@ public partial class V1beta1PullThroughCacheRuleSpecForProviderCustomRoleArnSele
     public V1beta1PullThroughCacheRuleSpecForProviderCustomRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PullThroughCacheRuleSpecForProvider
 {
@@ -237,7 +237,7 @@ public partial class V1beta1PullThroughCacheRuleSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PullThroughCacheRuleSpecInitProviderCustomRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1PullThroughCacheRuleSpecInitProviderCustomRoleArnRefPolicyResolutionEnum
 {
@@ -253,7 +253,7 @@ public enum V1beta1PullThroughCacheRuleSpecInitProviderCustomRoleArnRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PullThroughCacheRuleSpecInitProviderCustomRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1PullThroughCacheRuleSpecInitProviderCustomRoleArnRefPolicyResolveEnum
 {
@@ -264,7 +264,7 @@ public enum V1beta1PullThroughCacheRuleSpecInitProviderCustomRoleArnRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PullThroughCacheRuleSpecInitProviderCustomRoleArnRefPolicy
 {
@@ -288,7 +288,7 @@ public partial class V1beta1PullThroughCacheRuleSpecInitProviderCustomRoleArnRef
 }
 
 /// <summary>Reference to a Role in iam to populate customRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PullThroughCacheRuleSpecInitProviderCustomRoleArnRef
 {
@@ -311,7 +311,7 @@ public partial class V1beta1PullThroughCacheRuleSpecInitProviderCustomRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PullThroughCacheRuleSpecInitProviderCustomRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1PullThroughCacheRuleSpecInitProviderCustomRoleArnSelectorPolicyResolutionEnum
 {
@@ -327,7 +327,7 @@ public enum V1beta1PullThroughCacheRuleSpecInitProviderCustomRoleArnSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PullThroughCacheRuleSpecInitProviderCustomRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1PullThroughCacheRuleSpecInitProviderCustomRoleArnSelectorPolicyResolveEnum
 {
@@ -338,7 +338,7 @@ public enum V1beta1PullThroughCacheRuleSpecInitProviderCustomRoleArnSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PullThroughCacheRuleSpecInitProviderCustomRoleArnSelectorPolicy
 {
@@ -362,7 +362,7 @@ public partial class V1beta1PullThroughCacheRuleSpecInitProviderCustomRoleArnSel
 }
 
 /// <summary>Selector for a Role in iam to populate customRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PullThroughCacheRuleSpecInitProviderCustomRoleArnSelector
 {
@@ -398,7 +398,7 @@ public partial class V1beta1PullThroughCacheRuleSpecInitProviderCustomRoleArnSel
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PullThroughCacheRuleSpecInitProvider
 {
@@ -435,7 +435,7 @@ public partial class V1beta1PullThroughCacheRuleSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PullThroughCacheRuleSpecManagementPoliciesEnum>))]
 public enum V1beta1PullThroughCacheRuleSpecManagementPoliciesEnum
 {
@@ -458,7 +458,7 @@ public enum V1beta1PullThroughCacheRuleSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PullThroughCacheRuleSpecProviderConfigRef
 {
@@ -477,7 +477,7 @@ public partial class V1beta1PullThroughCacheRuleSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PullThroughCacheRuleSpecWriteConnectionSecretToRef
 {
@@ -487,7 +487,7 @@ public partial class V1beta1PullThroughCacheRuleSpecWriteConnectionSecretToRef
 }
 
 /// <summary>PullThroughCacheRuleSpec defines the desired state of PullThroughCacheRule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PullThroughCacheRuleSpec
 {
@@ -538,7 +538,7 @@ public partial class V1beta1PullThroughCacheRuleSpec
     public V1beta1PullThroughCacheRuleSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PullThroughCacheRuleStatusAtProvider
 {
@@ -578,7 +578,7 @@ public partial class V1beta1PullThroughCacheRuleStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PullThroughCacheRuleStatusConditions
 {
@@ -621,7 +621,7 @@ public partial class V1beta1PullThroughCacheRuleStatusConditions
 }
 
 /// <summary>PullThroughCacheRuleStatus defines the observed state of PullThroughCacheRule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PullThroughCacheRuleStatus
 {
@@ -642,7 +642,7 @@ public partial class V1beta1PullThroughCacheRuleStatus
 }
 
 /// <summary>PullThroughCacheRule is the Schema for the PullThroughCacheRules API. Provides an Elastic Container Registry Pull Through Cache Rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PullThroughCacheRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PullThroughCacheRuleSpec>, IStatus<V1beta1PullThroughCacheRuleStatus?>

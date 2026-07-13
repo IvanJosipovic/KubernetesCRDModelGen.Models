@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.iotcentral.azure.upbound.io;
 /// <summary>ApplicationNetworkRuleSet is the Schema for the ApplicationNetworkRuleSets API. Manages an IoT Central Application Network Rule Set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ApplicationNetworkRuleSetList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ApplicationNetworkRuleSet>
@@ -45,7 +45,7 @@ public partial class V1beta1ApplicationNetworkRuleSetList : IKubernetesObject<V1
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationNetworkRuleSetSpecDeletionPolicyEnum>))]
 public enum V1beta1ApplicationNetworkRuleSetSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1ApplicationNetworkRuleSetSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationNetworkRuleSetSpecForProviderIotcentralApplicationIdRefPolicyResolutionEnum>))]
 public enum V1beta1ApplicationNetworkRuleSetSpecForProviderIotcentralApplicationIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1ApplicationNetworkRuleSetSpecForProviderIotcentralApplication
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationNetworkRuleSetSpecForProviderIotcentralApplicationIdRefPolicyResolveEnum>))]
 public enum V1beta1ApplicationNetworkRuleSetSpecForProviderIotcentralApplicationIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1ApplicationNetworkRuleSetSpecForProviderIotcentralApplication
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationNetworkRuleSetSpecForProviderIotcentralApplicationIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1ApplicationNetworkRuleSetSpecForProviderIotcentralAp
 }
 
 /// <summary>Reference to a Application in iotcentral to populate iotcentralApplicationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationNetworkRuleSetSpecForProviderIotcentralApplicationIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1ApplicationNetworkRuleSetSpecForProviderIotcentralAp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationNetworkRuleSetSpecForProviderIotcentralApplicationIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ApplicationNetworkRuleSetSpecForProviderIotcentralApplicationIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1ApplicationNetworkRuleSetSpecForProviderIotcentralApplication
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationNetworkRuleSetSpecForProviderIotcentralApplicationIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ApplicationNetworkRuleSetSpecForProviderIotcentralApplicationIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1ApplicationNetworkRuleSetSpecForProviderIotcentralApplication
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationNetworkRuleSetSpecForProviderIotcentralApplicationIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1ApplicationNetworkRuleSetSpecForProviderIotcentralAp
 }
 
 /// <summary>Selector for a Application in iotcentral to populate iotcentralApplicationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationNetworkRuleSetSpecForProviderIotcentralApplicationIdSelector
 {
@@ -202,7 +202,7 @@ public partial class V1beta1ApplicationNetworkRuleSetSpecForProviderIotcentralAp
     public V1beta1ApplicationNetworkRuleSetSpecForProviderIotcentralApplicationIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationNetworkRuleSetSpecForProviderIpRule
 {
@@ -215,7 +215,7 @@ public partial class V1beta1ApplicationNetworkRuleSetSpecForProviderIpRule
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationNetworkRuleSetSpecForProvider
 {
@@ -250,7 +250,7 @@ public partial class V1beta1ApplicationNetworkRuleSetSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationNetworkRuleSetSpecInitProviderIotcentralApplicationIdRefPolicyResolutionEnum>))]
 public enum V1beta1ApplicationNetworkRuleSetSpecInitProviderIotcentralApplicationIdRefPolicyResolutionEnum
 {
@@ -266,7 +266,7 @@ public enum V1beta1ApplicationNetworkRuleSetSpecInitProviderIotcentralApplicatio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationNetworkRuleSetSpecInitProviderIotcentralApplicationIdRefPolicyResolveEnum>))]
 public enum V1beta1ApplicationNetworkRuleSetSpecInitProviderIotcentralApplicationIdRefPolicyResolveEnum
 {
@@ -277,7 +277,7 @@ public enum V1beta1ApplicationNetworkRuleSetSpecInitProviderIotcentralApplicatio
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationNetworkRuleSetSpecInitProviderIotcentralApplicationIdRefPolicy
 {
@@ -301,7 +301,7 @@ public partial class V1beta1ApplicationNetworkRuleSetSpecInitProviderIotcentralA
 }
 
 /// <summary>Reference to a Application in iotcentral to populate iotcentralApplicationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationNetworkRuleSetSpecInitProviderIotcentralApplicationIdRef
 {
@@ -320,7 +320,7 @@ public partial class V1beta1ApplicationNetworkRuleSetSpecInitProviderIotcentralA
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationNetworkRuleSetSpecInitProviderIotcentralApplicationIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ApplicationNetworkRuleSetSpecInitProviderIotcentralApplicationIdSelectorPolicyResolutionEnum
 {
@@ -336,7 +336,7 @@ public enum V1beta1ApplicationNetworkRuleSetSpecInitProviderIotcentralApplicatio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationNetworkRuleSetSpecInitProviderIotcentralApplicationIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ApplicationNetworkRuleSetSpecInitProviderIotcentralApplicationIdSelectorPolicyResolveEnum
 {
@@ -347,7 +347,7 @@ public enum V1beta1ApplicationNetworkRuleSetSpecInitProviderIotcentralApplicatio
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationNetworkRuleSetSpecInitProviderIotcentralApplicationIdSelectorPolicy
 {
@@ -371,7 +371,7 @@ public partial class V1beta1ApplicationNetworkRuleSetSpecInitProviderIotcentralA
 }
 
 /// <summary>Selector for a Application in iotcentral to populate iotcentralApplicationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationNetworkRuleSetSpecInitProviderIotcentralApplicationIdSelector
 {
@@ -391,7 +391,7 @@ public partial class V1beta1ApplicationNetworkRuleSetSpecInitProviderIotcentralA
     public V1beta1ApplicationNetworkRuleSetSpecInitProviderIotcentralApplicationIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationNetworkRuleSetSpecInitProviderIpRule
 {
@@ -416,7 +416,7 @@ public partial class V1beta1ApplicationNetworkRuleSetSpecInitProviderIpRule
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationNetworkRuleSetSpecInitProvider
 {
@@ -449,7 +449,7 @@ public partial class V1beta1ApplicationNetworkRuleSetSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationNetworkRuleSetSpecManagementPoliciesEnum>))]
 public enum V1beta1ApplicationNetworkRuleSetSpecManagementPoliciesEnum
 {
@@ -473,7 +473,7 @@ public enum V1beta1ApplicationNetworkRuleSetSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationNetworkRuleSetSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1ApplicationNetworkRuleSetSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -489,7 +489,7 @@ public enum V1beta1ApplicationNetworkRuleSetSpecProviderConfigRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationNetworkRuleSetSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1ApplicationNetworkRuleSetSpecProviderConfigRefPolicyResolveEnum
 {
@@ -500,7 +500,7 @@ public enum V1beta1ApplicationNetworkRuleSetSpecProviderConfigRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationNetworkRuleSetSpecProviderConfigRefPolicy
 {
@@ -528,7 +528,7 @@ public partial class V1beta1ApplicationNetworkRuleSetSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationNetworkRuleSetSpecProviderConfigRef
 {
@@ -547,7 +547,7 @@ public partial class V1beta1ApplicationNetworkRuleSetSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationNetworkRuleSetSpecWriteConnectionSecretToRef
 {
@@ -561,7 +561,7 @@ public partial class V1beta1ApplicationNetworkRuleSetSpecWriteConnectionSecretTo
 }
 
 /// <summary>ApplicationNetworkRuleSetSpec defines the desired state of ApplicationNetworkRuleSet</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationNetworkRuleSetSpec
 {
@@ -628,7 +628,7 @@ public partial class V1beta1ApplicationNetworkRuleSetSpec
     public V1beta1ApplicationNetworkRuleSetSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationNetworkRuleSetStatusAtProviderIpRule
 {
@@ -641,7 +641,7 @@ public partial class V1beta1ApplicationNetworkRuleSetStatusAtProviderIpRule
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationNetworkRuleSetStatusAtProvider
 {
@@ -667,7 +667,7 @@ public partial class V1beta1ApplicationNetworkRuleSetStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationNetworkRuleSetStatusConditions
 {
@@ -710,7 +710,7 @@ public partial class V1beta1ApplicationNetworkRuleSetStatusConditions
 }
 
 /// <summary>ApplicationNetworkRuleSetStatus defines the observed state of ApplicationNetworkRuleSet.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationNetworkRuleSetStatus
 {
@@ -731,7 +731,7 @@ public partial class V1beta1ApplicationNetworkRuleSetStatus
 }
 
 /// <summary>ApplicationNetworkRuleSet is the Schema for the ApplicationNetworkRuleSets API. Manages an IoT Central Application Network Rule Set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ApplicationNetworkRuleSet : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ApplicationNetworkRuleSetSpec>, IStatus<V1beta1ApplicationNetworkRuleSetStatus?>

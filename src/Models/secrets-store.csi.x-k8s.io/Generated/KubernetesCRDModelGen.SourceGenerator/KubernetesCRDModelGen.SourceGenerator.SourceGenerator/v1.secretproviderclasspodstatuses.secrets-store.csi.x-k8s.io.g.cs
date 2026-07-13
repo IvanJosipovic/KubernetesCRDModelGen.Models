@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.secretsstore.csi.xk8s.io;
 /// <summary>SecretProviderClassPodStatus is the Schema for the secretproviderclassespodstatus API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1SecretProviderClassPodStatusList : IKubernetesObject<V1ListMeta>, IItems<V1SecretProviderClassPodStatus>
@@ -37,7 +37,7 @@ public partial class V1SecretProviderClassPodStatusList : IKubernetesObject<V1Li
 }
 
 /// <summary>SecretProviderClassObject defines the object fetched from external secrets store</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1SecretProviderClassPodStatusStatusObjects
 {
@@ -49,7 +49,7 @@ public partial class V1SecretProviderClassPodStatusStatusObjects
 }
 
 /// <summary>SecretProviderClassPodStatusStatus defines the observed state of SecretProviderClassPodStatus</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1SecretProviderClassPodStatusStatus
 {
@@ -70,7 +70,7 @@ public partial class V1SecretProviderClassPodStatusStatus
 }
 
 /// <summary>SecretProviderClassPodStatus is the Schema for the secretproviderclassespodstatus API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1SecretProviderClassPodStatus : IKubernetesObject<V1ObjectMeta>, IStatus<V1SecretProviderClassPodStatusStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.apprunner.aws.m.upbound.io;
 /// <summary>AutoScalingConfigurationVersion is the Schema for the AutoScalingConfigurationVersions API. Manages an App Runner AutoScaling Configuration Version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AutoScalingConfigurationVersionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AutoScalingConfigurationVersion>
@@ -36,7 +36,7 @@ public partial class V1beta1AutoScalingConfigurationVersionList : IKubernetesObj
     public required IList<V1beta1AutoScalingConfigurationVersion> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoScalingConfigurationVersionSpecForProvider
 {
@@ -80,7 +80,7 @@ public partial class V1beta1AutoScalingConfigurationVersionSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoScalingConfigurationVersionSpecInitProvider
 {
@@ -109,7 +109,7 @@ public partial class V1beta1AutoScalingConfigurationVersionSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoScalingConfigurationVersionSpecManagementPoliciesEnum>))]
 public enum V1beta1AutoScalingConfigurationVersionSpecManagementPoliciesEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1AutoScalingConfigurationVersionSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoScalingConfigurationVersionSpecProviderConfigRef
 {
@@ -151,7 +151,7 @@ public partial class V1beta1AutoScalingConfigurationVersionSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoScalingConfigurationVersionSpecWriteConnectionSecretToRef
 {
@@ -161,7 +161,7 @@ public partial class V1beta1AutoScalingConfigurationVersionSpecWriteConnectionSe
 }
 
 /// <summary>AutoScalingConfigurationVersionSpec defines the desired state of AutoScalingConfigurationVersion</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoScalingConfigurationVersionSpec
 {
@@ -212,7 +212,7 @@ public partial class V1beta1AutoScalingConfigurationVersionSpec
     public V1beta1AutoScalingConfigurationVersionSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoScalingConfigurationVersionStatusAtProvider
 {
@@ -274,7 +274,7 @@ public partial class V1beta1AutoScalingConfigurationVersionStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoScalingConfigurationVersionStatusConditions
 {
@@ -317,7 +317,7 @@ public partial class V1beta1AutoScalingConfigurationVersionStatusConditions
 }
 
 /// <summary>AutoScalingConfigurationVersionStatus defines the observed state of AutoScalingConfigurationVersion.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoScalingConfigurationVersionStatus
 {
@@ -338,7 +338,7 @@ public partial class V1beta1AutoScalingConfigurationVersionStatus
 }
 
 /// <summary>AutoScalingConfigurationVersion is the Schema for the AutoScalingConfigurationVersions API. Manages an App Runner AutoScaling Configuration Version.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AutoScalingConfigurationVersion : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AutoScalingConfigurationVersionSpec>, IStatus<V1beta1AutoScalingConfigurationVersionStatus?>

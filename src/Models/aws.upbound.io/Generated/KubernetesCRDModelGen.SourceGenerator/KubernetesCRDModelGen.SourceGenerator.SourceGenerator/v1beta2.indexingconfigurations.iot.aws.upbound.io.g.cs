@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.iot.aws.upbound.io;
 /// <summary>IndexingConfiguration is the Schema for the IndexingConfigurations API. Managing IoT Thing indexing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2IndexingConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta2IndexingConfiguration>
@@ -45,7 +45,7 @@ public partial class V1beta2IndexingConfigurationList : IKubernetesObject<V1List
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2IndexingConfigurationSpecDeletionPolicyEnum>))]
 public enum V1beta2IndexingConfigurationSpecDeletionPolicyEnum
 {
@@ -55,7 +55,7 @@ public enum V1beta2IndexingConfigurationSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationSpecForProviderThingGroupIndexingConfigurationCustomField
 {
@@ -68,7 +68,7 @@ public partial class V1beta2IndexingConfigurationSpecForProviderThingGroupIndexi
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationSpecForProviderThingGroupIndexingConfigurationManagedField
 {
@@ -82,7 +82,7 @@ public partial class V1beta2IndexingConfigurationSpecForProviderThingGroupIndexi
 }
 
 /// <summary>Thing group indexing configuration. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationSpecForProviderThingGroupIndexingConfiguration
 {
@@ -99,7 +99,7 @@ public partial class V1beta2IndexingConfigurationSpecForProviderThingGroupIndexi
     public string? ThingGroupIndexingMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationSpecForProviderThingIndexingConfigurationCustomField
 {
@@ -113,7 +113,7 @@ public partial class V1beta2IndexingConfigurationSpecForProviderThingIndexingCon
 }
 
 /// <summary>Required if named_shadow_indexing_mode is ON. Enables to add named shadows filtered by filter to fleet indexing configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationSpecForProviderThingIndexingConfigurationFilter
 {
@@ -122,7 +122,7 @@ public partial class V1beta2IndexingConfigurationSpecForProviderThingIndexingCon
     public IList<string>? NamedShadowNames { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationSpecForProviderThingIndexingConfigurationManagedField
 {
@@ -136,7 +136,7 @@ public partial class V1beta2IndexingConfigurationSpecForProviderThingIndexingCon
 }
 
 /// <summary>Thing indexing configuration. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationSpecForProviderThingIndexingConfiguration
 {
@@ -169,7 +169,7 @@ public partial class V1beta2IndexingConfigurationSpecForProviderThingIndexingCon
     public string? ThingIndexingMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationSpecForProvider
 {
@@ -189,7 +189,7 @@ public partial class V1beta2IndexingConfigurationSpecForProvider
     public V1beta2IndexingConfigurationSpecForProviderThingIndexingConfiguration? ThingIndexingConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationSpecInitProviderThingGroupIndexingConfigurationCustomField
 {
@@ -202,7 +202,7 @@ public partial class V1beta2IndexingConfigurationSpecInitProviderThingGroupIndex
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationSpecInitProviderThingGroupIndexingConfigurationManagedField
 {
@@ -216,7 +216,7 @@ public partial class V1beta2IndexingConfigurationSpecInitProviderThingGroupIndex
 }
 
 /// <summary>Thing group indexing configuration. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationSpecInitProviderThingGroupIndexingConfiguration
 {
@@ -233,7 +233,7 @@ public partial class V1beta2IndexingConfigurationSpecInitProviderThingGroupIndex
     public string? ThingGroupIndexingMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationSpecInitProviderThingIndexingConfigurationCustomField
 {
@@ -247,7 +247,7 @@ public partial class V1beta2IndexingConfigurationSpecInitProviderThingIndexingCo
 }
 
 /// <summary>Required if named_shadow_indexing_mode is ON. Enables to add named shadows filtered by filter to fleet indexing configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationSpecInitProviderThingIndexingConfigurationFilter
 {
@@ -256,7 +256,7 @@ public partial class V1beta2IndexingConfigurationSpecInitProviderThingIndexingCo
     public IList<string>? NamedShadowNames { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationSpecInitProviderThingIndexingConfigurationManagedField
 {
@@ -270,7 +270,7 @@ public partial class V1beta2IndexingConfigurationSpecInitProviderThingIndexingCo
 }
 
 /// <summary>Thing indexing configuration. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationSpecInitProviderThingIndexingConfiguration
 {
@@ -315,7 +315,7 @@ public partial class V1beta2IndexingConfigurationSpecInitProviderThingIndexingCo
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationSpecInitProvider
 {
@@ -332,7 +332,7 @@ public partial class V1beta2IndexingConfigurationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2IndexingConfigurationSpecManagementPoliciesEnum>))]
 public enum V1beta2IndexingConfigurationSpecManagementPoliciesEnum
 {
@@ -356,7 +356,7 @@ public enum V1beta2IndexingConfigurationSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2IndexingConfigurationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2IndexingConfigurationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -372,7 +372,7 @@ public enum V1beta2IndexingConfigurationSpecProviderConfigRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2IndexingConfigurationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2IndexingConfigurationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -383,7 +383,7 @@ public enum V1beta2IndexingConfigurationSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationSpecProviderConfigRefPolicy
 {
@@ -411,7 +411,7 @@ public partial class V1beta2IndexingConfigurationSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationSpecProviderConfigRef
 {
@@ -430,7 +430,7 @@ public partial class V1beta2IndexingConfigurationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationSpecWriteConnectionSecretToRef
 {
@@ -444,7 +444,7 @@ public partial class V1beta2IndexingConfigurationSpecWriteConnectionSecretToRef
 }
 
 /// <summary>IndexingConfigurationSpec defines the desired state of IndexingConfiguration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationSpec
 {
@@ -511,7 +511,7 @@ public partial class V1beta2IndexingConfigurationSpec
     public V1beta2IndexingConfigurationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationStatusAtProviderThingGroupIndexingConfigurationCustomField
 {
@@ -524,7 +524,7 @@ public partial class V1beta2IndexingConfigurationStatusAtProviderThingGroupIndex
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationStatusAtProviderThingGroupIndexingConfigurationManagedField
 {
@@ -538,7 +538,7 @@ public partial class V1beta2IndexingConfigurationStatusAtProviderThingGroupIndex
 }
 
 /// <summary>Thing group indexing configuration. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationStatusAtProviderThingGroupIndexingConfiguration
 {
@@ -555,7 +555,7 @@ public partial class V1beta2IndexingConfigurationStatusAtProviderThingGroupIndex
     public string? ThingGroupIndexingMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationStatusAtProviderThingIndexingConfigurationCustomField
 {
@@ -569,7 +569,7 @@ public partial class V1beta2IndexingConfigurationStatusAtProviderThingIndexingCo
 }
 
 /// <summary>Required if named_shadow_indexing_mode is ON. Enables to add named shadows filtered by filter to fleet indexing configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationStatusAtProviderThingIndexingConfigurationFilter
 {
@@ -578,7 +578,7 @@ public partial class V1beta2IndexingConfigurationStatusAtProviderThingIndexingCo
     public IList<string>? NamedShadowNames { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationStatusAtProviderThingIndexingConfigurationManagedField
 {
@@ -592,7 +592,7 @@ public partial class V1beta2IndexingConfigurationStatusAtProviderThingIndexingCo
 }
 
 /// <summary>Thing indexing configuration. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationStatusAtProviderThingIndexingConfiguration
 {
@@ -625,7 +625,7 @@ public partial class V1beta2IndexingConfigurationStatusAtProviderThingIndexingCo
     public string? ThingIndexingMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationStatusAtProvider
 {
@@ -649,7 +649,7 @@ public partial class V1beta2IndexingConfigurationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationStatusConditions
 {
@@ -692,7 +692,7 @@ public partial class V1beta2IndexingConfigurationStatusConditions
 }
 
 /// <summary>IndexingConfigurationStatus defines the observed state of IndexingConfiguration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IndexingConfigurationStatus
 {
@@ -713,7 +713,7 @@ public partial class V1beta2IndexingConfigurationStatus
 }
 
 /// <summary>IndexingConfiguration is the Schema for the IndexingConfigurations API. Managing IoT Thing indexing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2IndexingConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2IndexingConfigurationSpec>, IStatus<V1beta2IndexingConfigurationStatus?>

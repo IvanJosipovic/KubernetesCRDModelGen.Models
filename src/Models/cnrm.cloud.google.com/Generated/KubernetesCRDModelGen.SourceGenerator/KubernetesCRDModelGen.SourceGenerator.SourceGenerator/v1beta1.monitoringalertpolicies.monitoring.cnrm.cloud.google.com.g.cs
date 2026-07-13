@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.monitoring.cnrm.cloud.google.com;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MonitoringAlertPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MonitoringAlertPolicy>
@@ -35,7 +35,7 @@ public partial class V1beta1MonitoringAlertPolicyList : IKubernetesObject<V1List
     public required IList<V1beta1MonitoringAlertPolicy> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringAlertPolicySpecAlertStrategyNotificationChannelStrategy
 {
@@ -57,7 +57,7 @@ public partial class V1beta1MonitoringAlertPolicySpecAlertStrategyNotificationCh
 /// Required for alert policies with a LogMatch condition.
 /// This limit is not implemented for alert policies that are not log-based.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringAlertPolicySpecAlertStrategyNotificationRateLimit
 {
@@ -67,7 +67,7 @@ public partial class V1beta1MonitoringAlertPolicySpecAlertStrategyNotificationRa
 }
 
 /// <summary>Control over how this alert policy&apos;s notification channels are notified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringAlertPolicySpecAlertStrategy
 {
@@ -90,7 +90,7 @@ public partial class V1beta1MonitoringAlertPolicySpecAlertStrategy
     public V1beta1MonitoringAlertPolicySpecAlertStrategyNotificationRateLimit? NotificationRateLimit { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringAlertPolicySpecConditionsConditionAbsentAggregations
 {
@@ -196,7 +196,7 @@ public partial class V1beta1MonitoringAlertPolicySpecConditionsConditionAbsentAg
 /// is true for any of the time series that have
 /// been identified by filter and aggregations.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringAlertPolicySpecConditionsConditionAbsentTrigger
 {
@@ -221,7 +221,7 @@ public partial class V1beta1MonitoringAlertPolicySpecConditionsConditionAbsentTr
 /// A condition that checks that a time series
 /// continues to receive new data points.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringAlertPolicySpecConditionsConditionAbsent
 {
@@ -282,7 +282,7 @@ public partial class V1beta1MonitoringAlertPolicySpecConditionsConditionAbsent
 /// A condition that checks for log messages matching given constraints.
 /// If set, no other conditions can be present.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringAlertPolicySpecConditionsConditionMatchedLog
 {
@@ -313,7 +313,7 @@ public partial class V1beta1MonitoringAlertPolicySpecConditionsConditionMatchedL
 /// or by the ratio, if denominator_filter and
 /// denominator_aggregations are specified.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringAlertPolicySpecConditionsConditionMonitoringQueryLanguageTrigger
 {
@@ -335,7 +335,7 @@ public partial class V1beta1MonitoringAlertPolicySpecConditionsConditionMonitori
 }
 
 /// <summary>A Monitoring Query Language query that outputs a boolean stream.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringAlertPolicySpecConditionsConditionMonitoringQueryLanguage
 {
@@ -394,7 +394,7 @@ public partial class V1beta1MonitoringAlertPolicySpecConditionsConditionMonitori
 /// The PrometheusQueryLanguageCondition message contains information
 /// from a Prometheus alerting rule and its associated rule group.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringAlertPolicySpecConditionsConditionPrometheusQueryLanguage
 {
@@ -470,7 +470,7 @@ public partial class V1beta1MonitoringAlertPolicySpecConditionsConditionPromethe
     public string? RuleGroup { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringAlertPolicySpecConditionsConditionThresholdAggregations
 {
@@ -568,7 +568,7 @@ public partial class V1beta1MonitoringAlertPolicySpecConditionsConditionThreshol
     public string? PerSeriesAligner { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringAlertPolicySpecConditionsConditionThresholdDenominatorAggregations
 {
@@ -674,7 +674,7 @@ public partial class V1beta1MonitoringAlertPolicySpecConditionsConditionThreshol
 /// &apos;MetricThreshold&apos; tests the current value of the
 /// timeseries against the threshold.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringAlertPolicySpecConditionsConditionThresholdForecastOptions
 {
@@ -700,7 +700,7 @@ public partial class V1beta1MonitoringAlertPolicySpecConditionsConditionThreshol
 /// or by the ratio, if denominator_filter and
 /// denominator_aggregations are specified.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringAlertPolicySpecConditionsConditionThresholdTrigger
 {
@@ -725,7 +725,7 @@ public partial class V1beta1MonitoringAlertPolicySpecConditionsConditionThreshol
 /// A condition that compares a time series against a
 /// threshold.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringAlertPolicySpecConditionsConditionThreshold
 {
@@ -878,7 +878,7 @@ public partial class V1beta1MonitoringAlertPolicySpecConditionsConditionThreshol
     public V1beta1MonitoringAlertPolicySpecConditionsConditionThresholdTrigger? Trigger { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringAlertPolicySpecConditions
 {
@@ -948,7 +948,7 @@ public partial class V1beta1MonitoringAlertPolicySpecConditions
 /// problems detected by the alerting policy. Notification channels that have
 /// limited capacity might not show this documentation.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringAlertPolicySpecDocumentation
 {
@@ -970,7 +970,7 @@ public partial class V1beta1MonitoringAlertPolicySpecDocumentation
 }
 
 /// <summary>Identifies the notification channels to which notifications should be sent when incidents are opened or closed or when new violations occur on an already opened incident.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringAlertPolicySpecNotificationChannels
 {
@@ -987,7 +987,7 @@ public partial class V1beta1MonitoringAlertPolicySpecNotificationChannels
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringAlertPolicySpec
 {
@@ -1050,7 +1050,7 @@ public partial class V1beta1MonitoringAlertPolicySpec
     public string? Severity { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringAlertPolicyStatusConditions
 {
@@ -1075,7 +1075,7 @@ public partial class V1beta1MonitoringAlertPolicyStatusConditions
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringAlertPolicyStatusCreationRecord
 {
@@ -1088,7 +1088,7 @@ public partial class V1beta1MonitoringAlertPolicyStatusCreationRecord
     public string? MutatedBy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringAlertPolicyStatus
 {
@@ -1116,7 +1116,7 @@ public partial class V1beta1MonitoringAlertPolicyStatus
     public int? ObservedGeneration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MonitoringAlertPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MonitoringAlertPolicySpec>, IStatus<V1beta1MonitoringAlertPolicyStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.storagetransfer.gcp.m.upbound.io;
 /// <summary>Job is the Schema for the Jobs API. Creates a new Transfer Job in Google Cloud Storage Transfer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1JobList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Job>
@@ -37,7 +37,7 @@ public partial class V1beta1JobList : IKubernetesObject<V1ListMeta>, IItems<V1be
 }
 
 /// <summary>Specifies the Event-driven transfer options. Event-driven transfers listen to an event stream to transfer updated files. Structure documented below Either event_stream or schedule must be set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderEventStream
 {
@@ -55,7 +55,7 @@ public partial class V1beta1JobSpecForProviderEventStream
 }
 
 /// <summary>Logging configuration. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderLoggingConfig
 {
@@ -83,7 +83,7 @@ public partial class V1beta1JobSpecForProviderLoggingConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderNotificationConfigPubsubTopicRefPolicyResolutionEnum>))]
 public enum V1beta1JobSpecForProviderNotificationConfigPubsubTopicRefPolicyResolutionEnum
 {
@@ -99,7 +99,7 @@ public enum V1beta1JobSpecForProviderNotificationConfigPubsubTopicRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderNotificationConfigPubsubTopicRefPolicyResolveEnum>))]
 public enum V1beta1JobSpecForProviderNotificationConfigPubsubTopicRefPolicyResolveEnum
 {
@@ -110,7 +110,7 @@ public enum V1beta1JobSpecForProviderNotificationConfigPubsubTopicRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderNotificationConfigPubsubTopicRefPolicy
 {
@@ -134,7 +134,7 @@ public partial class V1beta1JobSpecForProviderNotificationConfigPubsubTopicRefPo
 }
 
 /// <summary>Reference to a Topic in pubsub to populate pubsubTopic.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderNotificationConfigPubsubTopicRef
 {
@@ -157,7 +157,7 @@ public partial class V1beta1JobSpecForProviderNotificationConfigPubsubTopicRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderNotificationConfigPubsubTopicSelectorPolicyResolutionEnum>))]
 public enum V1beta1JobSpecForProviderNotificationConfigPubsubTopicSelectorPolicyResolutionEnum
 {
@@ -173,7 +173,7 @@ public enum V1beta1JobSpecForProviderNotificationConfigPubsubTopicSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderNotificationConfigPubsubTopicSelectorPolicyResolveEnum>))]
 public enum V1beta1JobSpecForProviderNotificationConfigPubsubTopicSelectorPolicyResolveEnum
 {
@@ -184,7 +184,7 @@ public enum V1beta1JobSpecForProviderNotificationConfigPubsubTopicSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderNotificationConfigPubsubTopicSelectorPolicy
 {
@@ -208,7 +208,7 @@ public partial class V1beta1JobSpecForProviderNotificationConfigPubsubTopicSelec
 }
 
 /// <summary>Selector for a Topic in pubsub to populate pubsubTopic.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderNotificationConfigPubsubTopicSelector
 {
@@ -233,7 +233,7 @@ public partial class V1beta1JobSpecForProviderNotificationConfigPubsubTopicSelec
 }
 
 /// <summary>Notification configuration. This is not supported for transfers involving PosixFilesystem. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderNotificationConfig
 {
@@ -264,7 +264,7 @@ public partial class V1beta1JobSpecForProviderNotificationConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderReplicationSpecGcsDataSinkBucketNameRefPolicyResolutionEnum>))]
 public enum V1beta1JobSpecForProviderReplicationSpecGcsDataSinkBucketNameRefPolicyResolutionEnum
 {
@@ -280,7 +280,7 @@ public enum V1beta1JobSpecForProviderReplicationSpecGcsDataSinkBucketNameRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderReplicationSpecGcsDataSinkBucketNameRefPolicyResolveEnum>))]
 public enum V1beta1JobSpecForProviderReplicationSpecGcsDataSinkBucketNameRefPolicyResolveEnum
 {
@@ -291,7 +291,7 @@ public enum V1beta1JobSpecForProviderReplicationSpecGcsDataSinkBucketNameRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderReplicationSpecGcsDataSinkBucketNameRefPolicy
 {
@@ -315,7 +315,7 @@ public partial class V1beta1JobSpecForProviderReplicationSpecGcsDataSinkBucketNa
 }
 
 /// <summary>Reference to a Bucket in storage to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderReplicationSpecGcsDataSinkBucketNameRef
 {
@@ -338,7 +338,7 @@ public partial class V1beta1JobSpecForProviderReplicationSpecGcsDataSinkBucketNa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderReplicationSpecGcsDataSinkBucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1JobSpecForProviderReplicationSpecGcsDataSinkBucketNameSelectorPolicyResolutionEnum
 {
@@ -354,7 +354,7 @@ public enum V1beta1JobSpecForProviderReplicationSpecGcsDataSinkBucketNameSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderReplicationSpecGcsDataSinkBucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta1JobSpecForProviderReplicationSpecGcsDataSinkBucketNameSelectorPolicyResolveEnum
 {
@@ -365,7 +365,7 @@ public enum V1beta1JobSpecForProviderReplicationSpecGcsDataSinkBucketNameSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderReplicationSpecGcsDataSinkBucketNameSelectorPolicy
 {
@@ -389,7 +389,7 @@ public partial class V1beta1JobSpecForProviderReplicationSpecGcsDataSinkBucketNa
 }
 
 /// <summary>Selector for a Bucket in storage to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderReplicationSpecGcsDataSinkBucketNameSelector
 {
@@ -414,7 +414,7 @@ public partial class V1beta1JobSpecForProviderReplicationSpecGcsDataSinkBucketNa
 }
 
 /// <summary>A Google Cloud Storage data sink. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderReplicationSpecGcsDataSink
 {
@@ -441,7 +441,7 @@ public partial class V1beta1JobSpecForProviderReplicationSpecGcsDataSink
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderReplicationSpecGcsDataSourceBucketNameRefPolicyResolutionEnum>))]
 public enum V1beta1JobSpecForProviderReplicationSpecGcsDataSourceBucketNameRefPolicyResolutionEnum
 {
@@ -457,7 +457,7 @@ public enum V1beta1JobSpecForProviderReplicationSpecGcsDataSourceBucketNameRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderReplicationSpecGcsDataSourceBucketNameRefPolicyResolveEnum>))]
 public enum V1beta1JobSpecForProviderReplicationSpecGcsDataSourceBucketNameRefPolicyResolveEnum
 {
@@ -468,7 +468,7 @@ public enum V1beta1JobSpecForProviderReplicationSpecGcsDataSourceBucketNameRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderReplicationSpecGcsDataSourceBucketNameRefPolicy
 {
@@ -492,7 +492,7 @@ public partial class V1beta1JobSpecForProviderReplicationSpecGcsDataSourceBucket
 }
 
 /// <summary>Reference to a Bucket in storage to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderReplicationSpecGcsDataSourceBucketNameRef
 {
@@ -515,7 +515,7 @@ public partial class V1beta1JobSpecForProviderReplicationSpecGcsDataSourceBucket
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderReplicationSpecGcsDataSourceBucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1JobSpecForProviderReplicationSpecGcsDataSourceBucketNameSelectorPolicyResolutionEnum
 {
@@ -531,7 +531,7 @@ public enum V1beta1JobSpecForProviderReplicationSpecGcsDataSourceBucketNameSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderReplicationSpecGcsDataSourceBucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta1JobSpecForProviderReplicationSpecGcsDataSourceBucketNameSelectorPolicyResolveEnum
 {
@@ -542,7 +542,7 @@ public enum V1beta1JobSpecForProviderReplicationSpecGcsDataSourceBucketNameSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderReplicationSpecGcsDataSourceBucketNameSelectorPolicy
 {
@@ -566,7 +566,7 @@ public partial class V1beta1JobSpecForProviderReplicationSpecGcsDataSourceBucket
 }
 
 /// <summary>Selector for a Bucket in storage to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderReplicationSpecGcsDataSourceBucketNameSelector
 {
@@ -591,7 +591,7 @@ public partial class V1beta1JobSpecForProviderReplicationSpecGcsDataSourceBucket
 }
 
 /// <summary>A Google Cloud Storage data source. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderReplicationSpecGcsDataSource
 {
@@ -613,7 +613,7 @@ public partial class V1beta1JobSpecForProviderReplicationSpecGcsDataSource
 }
 
 /// <summary>Only objects that satisfy these object conditions are included in the set of data source and data sink objects. Object conditions based on objects&apos; last_modification_time do not exclude objects in a data sink. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderReplicationSpecObjectConditions
 {
@@ -642,7 +642,7 @@ public partial class V1beta1JobSpecForProviderReplicationSpecObjectConditions
     public string? MinTimeElapsedSinceLastModification { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderReplicationSpecTransferOptionsMetadataOptions
 {
@@ -675,7 +675,7 @@ public partial class V1beta1JobSpecForProviderReplicationSpecTransferOptionsMeta
 }
 
 /// <summary>Characteristics of how to treat files from datasource and sink during job. If the option delete_objects_unique_in_sink is true, object conditions based on objects&apos; last_modification_time are ignored and do not exclude objects in a data source or a data sink. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderReplicationSpecTransferOptions
 {
@@ -703,7 +703,7 @@ public partial class V1beta1JobSpecForProviderReplicationSpecTransferOptions
 }
 
 /// <summary>Replication specification. Structure documented below. User should not configure schedule, event_stream with this argument. One of transfer_spec, or replication_spec must be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderReplicationSpec
 {
@@ -725,7 +725,7 @@ public partial class V1beta1JobSpecForProviderReplicationSpec
 }
 
 /// <summary>The last day the recurring transfer will be run. If schedule_end_date is the same as schedule_start_date, the transfer will be executed only once. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderScheduleScheduleEndDate
 {
@@ -743,7 +743,7 @@ public partial class V1beta1JobSpecForProviderScheduleScheduleEndDate
 }
 
 /// <summary>The first day the recurring transfer is scheduled to run. If schedule_start_date is in the past, the transfer will run for the first time on the following day. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderScheduleScheduleStartDate
 {
@@ -761,7 +761,7 @@ public partial class V1beta1JobSpecForProviderScheduleScheduleStartDate
 }
 
 /// <summary>The time in UTC at which the transfer will be scheduled to start in a day. Transfers may start later than this time. If not specified, recurring and one-time transfers that are scheduled to run today will run immediately; recurring transfers that are scheduled to run on a future date will start at approximately midnight UTC on that date. Note that when configuring a transfer with the Cloud Platform Console, the transfer&apos;s start time in a day is specified in your local timezone. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderScheduleStartTimeOfDay
 {
@@ -783,7 +783,7 @@ public partial class V1beta1JobSpecForProviderScheduleStartTimeOfDay
 }
 
 /// <summary>Schedule specification defining when the Transfer Job should be scheduled to start, end and what time to run. Structure documented below. Either schedule or event_stream must be set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderSchedule
 {
@@ -805,7 +805,7 @@ public partial class V1beta1JobSpecForProviderSchedule
 }
 
 /// <summary>AWS Key ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecAwsS3DataSourceAwsAccessKeyAccessKeyIdSecretRef
 {
@@ -818,7 +818,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecAwsS3DataSourceAwsAcce
 }
 
 /// <summary>AWS Secret Access Key.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecAwsS3DataSourceAwsAccessKeySecretAccessKeySecretRef
 {
@@ -831,7 +831,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecAwsS3DataSourceAwsAcce
 }
 
 /// <summary>AWS credentials block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecAwsS3DataSourceAwsAccessKey
 {
@@ -845,7 +845,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecAwsS3DataSourceAwsAcce
 }
 
 /// <summary>An AWS S3 data source. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecAwsS3DataSource
 {
@@ -871,7 +871,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecAwsS3DataSource
 }
 
 /// <summary>Azure shared access signature. See Grant limited access to Azure Storage resources using shared access signatures (SAS).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecAzureBlobStorageDataSourceAzureCredentialsSasTokenSecretRef
 {
@@ -884,7 +884,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecAzureBlobStorageDataSo
 }
 
 /// <summary>Credentials used to authenticate API requests to Azure block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecAzureBlobStorageDataSourceAzureCredentials
 {
@@ -894,7 +894,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecAzureBlobStorageDataSo
 }
 
 /// <summary>An Azure Blob Storage data source. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecAzureBlobStorageDataSource
 {
@@ -921,7 +921,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecAzureBlobStorageDataSo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderTransferSpecGcsDataSinkBucketNameRefPolicyResolutionEnum>))]
 public enum V1beta1JobSpecForProviderTransferSpecGcsDataSinkBucketNameRefPolicyResolutionEnum
 {
@@ -937,7 +937,7 @@ public enum V1beta1JobSpecForProviderTransferSpecGcsDataSinkBucketNameRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderTransferSpecGcsDataSinkBucketNameRefPolicyResolveEnum>))]
 public enum V1beta1JobSpecForProviderTransferSpecGcsDataSinkBucketNameRefPolicyResolveEnum
 {
@@ -948,7 +948,7 @@ public enum V1beta1JobSpecForProviderTransferSpecGcsDataSinkBucketNameRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecGcsDataSinkBucketNameRefPolicy
 {
@@ -972,7 +972,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecGcsDataSinkBucketNameR
 }
 
 /// <summary>Reference to a Bucket in storage to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecGcsDataSinkBucketNameRef
 {
@@ -995,7 +995,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecGcsDataSinkBucketNameR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderTransferSpecGcsDataSinkBucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1JobSpecForProviderTransferSpecGcsDataSinkBucketNameSelectorPolicyResolutionEnum
 {
@@ -1011,7 +1011,7 @@ public enum V1beta1JobSpecForProviderTransferSpecGcsDataSinkBucketNameSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderTransferSpecGcsDataSinkBucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta1JobSpecForProviderTransferSpecGcsDataSinkBucketNameSelectorPolicyResolveEnum
 {
@@ -1022,7 +1022,7 @@ public enum V1beta1JobSpecForProviderTransferSpecGcsDataSinkBucketNameSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecGcsDataSinkBucketNameSelectorPolicy
 {
@@ -1046,7 +1046,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecGcsDataSinkBucketNameS
 }
 
 /// <summary>Selector for a Bucket in storage to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecGcsDataSinkBucketNameSelector
 {
@@ -1071,7 +1071,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecGcsDataSinkBucketNameS
 }
 
 /// <summary>A Google Cloud Storage data sink. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecGcsDataSink
 {
@@ -1098,7 +1098,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecGcsDataSink
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderTransferSpecGcsDataSourceBucketNameRefPolicyResolutionEnum>))]
 public enum V1beta1JobSpecForProviderTransferSpecGcsDataSourceBucketNameRefPolicyResolutionEnum
 {
@@ -1114,7 +1114,7 @@ public enum V1beta1JobSpecForProviderTransferSpecGcsDataSourceBucketNameRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderTransferSpecGcsDataSourceBucketNameRefPolicyResolveEnum>))]
 public enum V1beta1JobSpecForProviderTransferSpecGcsDataSourceBucketNameRefPolicyResolveEnum
 {
@@ -1125,7 +1125,7 @@ public enum V1beta1JobSpecForProviderTransferSpecGcsDataSourceBucketNameRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecGcsDataSourceBucketNameRefPolicy
 {
@@ -1149,7 +1149,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecGcsDataSourceBucketNam
 }
 
 /// <summary>Reference to a Bucket in storage to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecGcsDataSourceBucketNameRef
 {
@@ -1172,7 +1172,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecGcsDataSourceBucketNam
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderTransferSpecGcsDataSourceBucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1JobSpecForProviderTransferSpecGcsDataSourceBucketNameSelectorPolicyResolutionEnum
 {
@@ -1188,7 +1188,7 @@ public enum V1beta1JobSpecForProviderTransferSpecGcsDataSourceBucketNameSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderTransferSpecGcsDataSourceBucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta1JobSpecForProviderTransferSpecGcsDataSourceBucketNameSelectorPolicyResolveEnum
 {
@@ -1199,7 +1199,7 @@ public enum V1beta1JobSpecForProviderTransferSpecGcsDataSourceBucketNameSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecGcsDataSourceBucketNameSelectorPolicy
 {
@@ -1223,7 +1223,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecGcsDataSourceBucketNam
 }
 
 /// <summary>Selector for a Bucket in storage to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecGcsDataSourceBucketNameSelector
 {
@@ -1248,7 +1248,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecGcsDataSourceBucketNam
 }
 
 /// <summary>A Google Cloud Storage data source. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecGcsDataSource
 {
@@ -1270,7 +1270,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecGcsDataSource
 }
 
 /// <summary>An HDFS data source. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecHdfsDataSource
 {
@@ -1280,7 +1280,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecHdfsDataSource
 }
 
 /// <summary>A HTTP URL data source. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecHttpDataSource
 {
@@ -1290,7 +1290,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecHttpDataSource
 }
 
 /// <summary>Only objects that satisfy these object conditions are included in the set of data source and data sink objects. Object conditions based on objects&apos; last_modification_time do not exclude objects in a data sink. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecObjectConditions
 {
@@ -1320,7 +1320,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecObjectConditions
 }
 
 /// <summary>A POSIX data sink. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecPosixDataSink
 {
@@ -1330,7 +1330,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecPosixDataSink
 }
 
 /// <summary>A POSIX filesystem data source. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecPosixDataSource
 {
@@ -1339,7 +1339,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecPosixDataSource
     public string? RootDirectory { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecTransferOptionsMetadataOptions
 {
@@ -1372,7 +1372,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecTransferOptionsMetadat
 }
 
 /// <summary>Characteristics of how to treat files from datasource and sink during job. If the option delete_objects_unique_in_sink is true, object conditions based on objects&apos; last_modification_time are ignored and do not exclude objects in a data source or a data sink. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpecTransferOptions
 {
@@ -1400,7 +1400,7 @@ public partial class V1beta1JobSpecForProviderTransferSpecTransferOptions
 }
 
 /// <summary>Transfer specification. Structure documented below. One of transfer_spec, or replication_spec can be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderTransferSpec
 {
@@ -1453,7 +1453,7 @@ public partial class V1beta1JobSpecForProviderTransferSpec
     public V1beta1JobSpecForProviderTransferSpecTransferOptions? TransferOptions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProvider
 {
@@ -1502,7 +1502,7 @@ public partial class V1beta1JobSpecForProvider
 }
 
 /// <summary>Specifies the Event-driven transfer options. Event-driven transfers listen to an event stream to transfer updated files. Structure documented below Either event_stream or schedule must be set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderEventStream
 {
@@ -1520,7 +1520,7 @@ public partial class V1beta1JobSpecInitProviderEventStream
 }
 
 /// <summary>Logging configuration. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderLoggingConfig
 {
@@ -1548,7 +1548,7 @@ public partial class V1beta1JobSpecInitProviderLoggingConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderNotificationConfigPubsubTopicRefPolicyResolutionEnum>))]
 public enum V1beta1JobSpecInitProviderNotificationConfigPubsubTopicRefPolicyResolutionEnum
 {
@@ -1564,7 +1564,7 @@ public enum V1beta1JobSpecInitProviderNotificationConfigPubsubTopicRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderNotificationConfigPubsubTopicRefPolicyResolveEnum>))]
 public enum V1beta1JobSpecInitProviderNotificationConfigPubsubTopicRefPolicyResolveEnum
 {
@@ -1575,7 +1575,7 @@ public enum V1beta1JobSpecInitProviderNotificationConfigPubsubTopicRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderNotificationConfigPubsubTopicRefPolicy
 {
@@ -1599,7 +1599,7 @@ public partial class V1beta1JobSpecInitProviderNotificationConfigPubsubTopicRefP
 }
 
 /// <summary>Reference to a Topic in pubsub to populate pubsubTopic.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderNotificationConfigPubsubTopicRef
 {
@@ -1622,7 +1622,7 @@ public partial class V1beta1JobSpecInitProviderNotificationConfigPubsubTopicRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderNotificationConfigPubsubTopicSelectorPolicyResolutionEnum>))]
 public enum V1beta1JobSpecInitProviderNotificationConfigPubsubTopicSelectorPolicyResolutionEnum
 {
@@ -1638,7 +1638,7 @@ public enum V1beta1JobSpecInitProviderNotificationConfigPubsubTopicSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderNotificationConfigPubsubTopicSelectorPolicyResolveEnum>))]
 public enum V1beta1JobSpecInitProviderNotificationConfigPubsubTopicSelectorPolicyResolveEnum
 {
@@ -1649,7 +1649,7 @@ public enum V1beta1JobSpecInitProviderNotificationConfigPubsubTopicSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderNotificationConfigPubsubTopicSelectorPolicy
 {
@@ -1673,7 +1673,7 @@ public partial class V1beta1JobSpecInitProviderNotificationConfigPubsubTopicSele
 }
 
 /// <summary>Selector for a Topic in pubsub to populate pubsubTopic.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderNotificationConfigPubsubTopicSelector
 {
@@ -1698,7 +1698,7 @@ public partial class V1beta1JobSpecInitProviderNotificationConfigPubsubTopicSele
 }
 
 /// <summary>Notification configuration. This is not supported for transfers involving PosixFilesystem. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderNotificationConfig
 {
@@ -1729,7 +1729,7 @@ public partial class V1beta1JobSpecInitProviderNotificationConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderReplicationSpecGcsDataSinkBucketNameRefPolicyResolutionEnum>))]
 public enum V1beta1JobSpecInitProviderReplicationSpecGcsDataSinkBucketNameRefPolicyResolutionEnum
 {
@@ -1745,7 +1745,7 @@ public enum V1beta1JobSpecInitProviderReplicationSpecGcsDataSinkBucketNameRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderReplicationSpecGcsDataSinkBucketNameRefPolicyResolveEnum>))]
 public enum V1beta1JobSpecInitProviderReplicationSpecGcsDataSinkBucketNameRefPolicyResolveEnum
 {
@@ -1756,7 +1756,7 @@ public enum V1beta1JobSpecInitProviderReplicationSpecGcsDataSinkBucketNameRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderReplicationSpecGcsDataSinkBucketNameRefPolicy
 {
@@ -1780,7 +1780,7 @@ public partial class V1beta1JobSpecInitProviderReplicationSpecGcsDataSinkBucketN
 }
 
 /// <summary>Reference to a Bucket in storage to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderReplicationSpecGcsDataSinkBucketNameRef
 {
@@ -1803,7 +1803,7 @@ public partial class V1beta1JobSpecInitProviderReplicationSpecGcsDataSinkBucketN
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderReplicationSpecGcsDataSinkBucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1JobSpecInitProviderReplicationSpecGcsDataSinkBucketNameSelectorPolicyResolutionEnum
 {
@@ -1819,7 +1819,7 @@ public enum V1beta1JobSpecInitProviderReplicationSpecGcsDataSinkBucketNameSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderReplicationSpecGcsDataSinkBucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta1JobSpecInitProviderReplicationSpecGcsDataSinkBucketNameSelectorPolicyResolveEnum
 {
@@ -1830,7 +1830,7 @@ public enum V1beta1JobSpecInitProviderReplicationSpecGcsDataSinkBucketNameSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderReplicationSpecGcsDataSinkBucketNameSelectorPolicy
 {
@@ -1854,7 +1854,7 @@ public partial class V1beta1JobSpecInitProviderReplicationSpecGcsDataSinkBucketN
 }
 
 /// <summary>Selector for a Bucket in storage to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderReplicationSpecGcsDataSinkBucketNameSelector
 {
@@ -1879,7 +1879,7 @@ public partial class V1beta1JobSpecInitProviderReplicationSpecGcsDataSinkBucketN
 }
 
 /// <summary>A Google Cloud Storage data sink. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderReplicationSpecGcsDataSink
 {
@@ -1906,7 +1906,7 @@ public partial class V1beta1JobSpecInitProviderReplicationSpecGcsDataSink
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderReplicationSpecGcsDataSourceBucketNameRefPolicyResolutionEnum>))]
 public enum V1beta1JobSpecInitProviderReplicationSpecGcsDataSourceBucketNameRefPolicyResolutionEnum
 {
@@ -1922,7 +1922,7 @@ public enum V1beta1JobSpecInitProviderReplicationSpecGcsDataSourceBucketNameRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderReplicationSpecGcsDataSourceBucketNameRefPolicyResolveEnum>))]
 public enum V1beta1JobSpecInitProviderReplicationSpecGcsDataSourceBucketNameRefPolicyResolveEnum
 {
@@ -1933,7 +1933,7 @@ public enum V1beta1JobSpecInitProviderReplicationSpecGcsDataSourceBucketNameRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderReplicationSpecGcsDataSourceBucketNameRefPolicy
 {
@@ -1957,7 +1957,7 @@ public partial class V1beta1JobSpecInitProviderReplicationSpecGcsDataSourceBucke
 }
 
 /// <summary>Reference to a Bucket in storage to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderReplicationSpecGcsDataSourceBucketNameRef
 {
@@ -1980,7 +1980,7 @@ public partial class V1beta1JobSpecInitProviderReplicationSpecGcsDataSourceBucke
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderReplicationSpecGcsDataSourceBucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1JobSpecInitProviderReplicationSpecGcsDataSourceBucketNameSelectorPolicyResolutionEnum
 {
@@ -1996,7 +1996,7 @@ public enum V1beta1JobSpecInitProviderReplicationSpecGcsDataSourceBucketNameSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderReplicationSpecGcsDataSourceBucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta1JobSpecInitProviderReplicationSpecGcsDataSourceBucketNameSelectorPolicyResolveEnum
 {
@@ -2007,7 +2007,7 @@ public enum V1beta1JobSpecInitProviderReplicationSpecGcsDataSourceBucketNameSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderReplicationSpecGcsDataSourceBucketNameSelectorPolicy
 {
@@ -2031,7 +2031,7 @@ public partial class V1beta1JobSpecInitProviderReplicationSpecGcsDataSourceBucke
 }
 
 /// <summary>Selector for a Bucket in storage to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderReplicationSpecGcsDataSourceBucketNameSelector
 {
@@ -2056,7 +2056,7 @@ public partial class V1beta1JobSpecInitProviderReplicationSpecGcsDataSourceBucke
 }
 
 /// <summary>A Google Cloud Storage data source. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderReplicationSpecGcsDataSource
 {
@@ -2078,7 +2078,7 @@ public partial class V1beta1JobSpecInitProviderReplicationSpecGcsDataSource
 }
 
 /// <summary>Only objects that satisfy these object conditions are included in the set of data source and data sink objects. Object conditions based on objects&apos; last_modification_time do not exclude objects in a data sink. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderReplicationSpecObjectConditions
 {
@@ -2107,7 +2107,7 @@ public partial class V1beta1JobSpecInitProviderReplicationSpecObjectConditions
     public string? MinTimeElapsedSinceLastModification { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderReplicationSpecTransferOptionsMetadataOptions
 {
@@ -2140,7 +2140,7 @@ public partial class V1beta1JobSpecInitProviderReplicationSpecTransferOptionsMet
 }
 
 /// <summary>Characteristics of how to treat files from datasource and sink during job. If the option delete_objects_unique_in_sink is true, object conditions based on objects&apos; last_modification_time are ignored and do not exclude objects in a data source or a data sink. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderReplicationSpecTransferOptions
 {
@@ -2168,7 +2168,7 @@ public partial class V1beta1JobSpecInitProviderReplicationSpecTransferOptions
 }
 
 /// <summary>Replication specification. Structure documented below. User should not configure schedule, event_stream with this argument. One of transfer_spec, or replication_spec must be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderReplicationSpec
 {
@@ -2190,7 +2190,7 @@ public partial class V1beta1JobSpecInitProviderReplicationSpec
 }
 
 /// <summary>The last day the recurring transfer will be run. If schedule_end_date is the same as schedule_start_date, the transfer will be executed only once. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderScheduleScheduleEndDate
 {
@@ -2208,7 +2208,7 @@ public partial class V1beta1JobSpecInitProviderScheduleScheduleEndDate
 }
 
 /// <summary>The first day the recurring transfer is scheduled to run. If schedule_start_date is in the past, the transfer will run for the first time on the following day. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderScheduleScheduleStartDate
 {
@@ -2226,7 +2226,7 @@ public partial class V1beta1JobSpecInitProviderScheduleScheduleStartDate
 }
 
 /// <summary>The time in UTC at which the transfer will be scheduled to start in a day. Transfers may start later than this time. If not specified, recurring and one-time transfers that are scheduled to run today will run immediately; recurring transfers that are scheduled to run on a future date will start at approximately midnight UTC on that date. Note that when configuring a transfer with the Cloud Platform Console, the transfer&apos;s start time in a day is specified in your local timezone. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderScheduleStartTimeOfDay
 {
@@ -2248,7 +2248,7 @@ public partial class V1beta1JobSpecInitProviderScheduleStartTimeOfDay
 }
 
 /// <summary>Schedule specification defining when the Transfer Job should be scheduled to start, end and what time to run. Structure documented below. Either schedule or event_stream must be set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderSchedule
 {
@@ -2270,7 +2270,7 @@ public partial class V1beta1JobSpecInitProviderSchedule
 }
 
 /// <summary>AWS Key ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecAwsS3DataSourceAwsAccessKeyAccessKeyIdSecretRef
 {
@@ -2283,7 +2283,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecAwsS3DataSourceAwsAcc
 }
 
 /// <summary>AWS Secret Access Key.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecAwsS3DataSourceAwsAccessKeySecretAccessKeySecretRef
 {
@@ -2296,7 +2296,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecAwsS3DataSourceAwsAcc
 }
 
 /// <summary>AWS credentials block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecAwsS3DataSourceAwsAccessKey
 {
@@ -2310,7 +2310,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecAwsS3DataSourceAwsAcc
 }
 
 /// <summary>An AWS S3 data source. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecAwsS3DataSource
 {
@@ -2336,7 +2336,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecAwsS3DataSource
 }
 
 /// <summary>Azure shared access signature. See Grant limited access to Azure Storage resources using shared access signatures (SAS).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecAzureBlobStorageDataSourceAzureCredentialsSasTokenSecretRef
 {
@@ -2349,7 +2349,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecAzureBlobStorageDataS
 }
 
 /// <summary>Credentials used to authenticate API requests to Azure block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecAzureBlobStorageDataSourceAzureCredentials
 {
@@ -2359,7 +2359,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecAzureBlobStorageDataS
 }
 
 /// <summary>An Azure Blob Storage data source. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecAzureBlobStorageDataSource
 {
@@ -2386,7 +2386,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecAzureBlobStorageDataS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderTransferSpecGcsDataSinkBucketNameRefPolicyResolutionEnum>))]
 public enum V1beta1JobSpecInitProviderTransferSpecGcsDataSinkBucketNameRefPolicyResolutionEnum
 {
@@ -2402,7 +2402,7 @@ public enum V1beta1JobSpecInitProviderTransferSpecGcsDataSinkBucketNameRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderTransferSpecGcsDataSinkBucketNameRefPolicyResolveEnum>))]
 public enum V1beta1JobSpecInitProviderTransferSpecGcsDataSinkBucketNameRefPolicyResolveEnum
 {
@@ -2413,7 +2413,7 @@ public enum V1beta1JobSpecInitProviderTransferSpecGcsDataSinkBucketNameRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecGcsDataSinkBucketNameRefPolicy
 {
@@ -2437,7 +2437,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecGcsDataSinkBucketName
 }
 
 /// <summary>Reference to a Bucket in storage to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecGcsDataSinkBucketNameRef
 {
@@ -2460,7 +2460,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecGcsDataSinkBucketName
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderTransferSpecGcsDataSinkBucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1JobSpecInitProviderTransferSpecGcsDataSinkBucketNameSelectorPolicyResolutionEnum
 {
@@ -2476,7 +2476,7 @@ public enum V1beta1JobSpecInitProviderTransferSpecGcsDataSinkBucketNameSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderTransferSpecGcsDataSinkBucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta1JobSpecInitProviderTransferSpecGcsDataSinkBucketNameSelectorPolicyResolveEnum
 {
@@ -2487,7 +2487,7 @@ public enum V1beta1JobSpecInitProviderTransferSpecGcsDataSinkBucketNameSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecGcsDataSinkBucketNameSelectorPolicy
 {
@@ -2511,7 +2511,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecGcsDataSinkBucketName
 }
 
 /// <summary>Selector for a Bucket in storage to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecGcsDataSinkBucketNameSelector
 {
@@ -2536,7 +2536,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecGcsDataSinkBucketName
 }
 
 /// <summary>A Google Cloud Storage data sink. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecGcsDataSink
 {
@@ -2563,7 +2563,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecGcsDataSink
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderTransferSpecGcsDataSourceBucketNameRefPolicyResolutionEnum>))]
 public enum V1beta1JobSpecInitProviderTransferSpecGcsDataSourceBucketNameRefPolicyResolutionEnum
 {
@@ -2579,7 +2579,7 @@ public enum V1beta1JobSpecInitProviderTransferSpecGcsDataSourceBucketNameRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderTransferSpecGcsDataSourceBucketNameRefPolicyResolveEnum>))]
 public enum V1beta1JobSpecInitProviderTransferSpecGcsDataSourceBucketNameRefPolicyResolveEnum
 {
@@ -2590,7 +2590,7 @@ public enum V1beta1JobSpecInitProviderTransferSpecGcsDataSourceBucketNameRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecGcsDataSourceBucketNameRefPolicy
 {
@@ -2614,7 +2614,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecGcsDataSourceBucketNa
 }
 
 /// <summary>Reference to a Bucket in storage to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecGcsDataSourceBucketNameRef
 {
@@ -2637,7 +2637,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecGcsDataSourceBucketNa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderTransferSpecGcsDataSourceBucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1JobSpecInitProviderTransferSpecGcsDataSourceBucketNameSelectorPolicyResolutionEnum
 {
@@ -2653,7 +2653,7 @@ public enum V1beta1JobSpecInitProviderTransferSpecGcsDataSourceBucketNameSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderTransferSpecGcsDataSourceBucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta1JobSpecInitProviderTransferSpecGcsDataSourceBucketNameSelectorPolicyResolveEnum
 {
@@ -2664,7 +2664,7 @@ public enum V1beta1JobSpecInitProviderTransferSpecGcsDataSourceBucketNameSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecGcsDataSourceBucketNameSelectorPolicy
 {
@@ -2688,7 +2688,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecGcsDataSourceBucketNa
 }
 
 /// <summary>Selector for a Bucket in storage to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecGcsDataSourceBucketNameSelector
 {
@@ -2713,7 +2713,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecGcsDataSourceBucketNa
 }
 
 /// <summary>A Google Cloud Storage data source. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecGcsDataSource
 {
@@ -2735,7 +2735,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecGcsDataSource
 }
 
 /// <summary>An HDFS data source. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecHdfsDataSource
 {
@@ -2745,7 +2745,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecHdfsDataSource
 }
 
 /// <summary>A HTTP URL data source. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecHttpDataSource
 {
@@ -2755,7 +2755,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecHttpDataSource
 }
 
 /// <summary>Only objects that satisfy these object conditions are included in the set of data source and data sink objects. Object conditions based on objects&apos; last_modification_time do not exclude objects in a data sink. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecObjectConditions
 {
@@ -2785,7 +2785,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecObjectConditions
 }
 
 /// <summary>A POSIX data sink. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecPosixDataSink
 {
@@ -2795,7 +2795,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecPosixDataSink
 }
 
 /// <summary>A POSIX filesystem data source. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecPosixDataSource
 {
@@ -2804,7 +2804,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecPosixDataSource
     public string? RootDirectory { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecTransferOptionsMetadataOptions
 {
@@ -2837,7 +2837,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecTransferOptionsMetada
 }
 
 /// <summary>Characteristics of how to treat files from datasource and sink during job. If the option delete_objects_unique_in_sink is true, object conditions based on objects&apos; last_modification_time are ignored and do not exclude objects in a data source or a data sink. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpecTransferOptions
 {
@@ -2865,7 +2865,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpecTransferOptions
 }
 
 /// <summary>Transfer specification. Structure documented below. One of transfer_spec, or replication_spec can be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderTransferSpec
 {
@@ -2930,7 +2930,7 @@ public partial class V1beta1JobSpecInitProviderTransferSpec
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProvider
 {
@@ -2982,7 +2982,7 @@ public partial class V1beta1JobSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecManagementPoliciesEnum>))]
 public enum V1beta1JobSpecManagementPoliciesEnum
 {
@@ -3005,7 +3005,7 @@ public enum V1beta1JobSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecProviderConfigRef
 {
@@ -3024,7 +3024,7 @@ public partial class V1beta1JobSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecWriteConnectionSecretToRef
 {
@@ -3034,7 +3034,7 @@ public partial class V1beta1JobSpecWriteConnectionSecretToRef
 }
 
 /// <summary>JobSpec defines the desired state of Job</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpec
 {
@@ -3086,7 +3086,7 @@ public partial class V1beta1JobSpec
 }
 
 /// <summary>Specifies the Event-driven transfer options. Event-driven transfers listen to an event stream to transfer updated files. Structure documented below Either event_stream or schedule must be set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderEventStream
 {
@@ -3104,7 +3104,7 @@ public partial class V1beta1JobStatusAtProviderEventStream
 }
 
 /// <summary>Logging configuration. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderLoggingConfig
 {
@@ -3127,7 +3127,7 @@ public partial class V1beta1JobStatusAtProviderLoggingConfig
 }
 
 /// <summary>Notification configuration. This is not supported for transfers involving PosixFilesystem. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderNotificationConfig
 {
@@ -3145,7 +3145,7 @@ public partial class V1beta1JobStatusAtProviderNotificationConfig
 }
 
 /// <summary>A Google Cloud Storage data sink. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderReplicationSpecGcsDataSink
 {
@@ -3159,7 +3159,7 @@ public partial class V1beta1JobStatusAtProviderReplicationSpecGcsDataSink
 }
 
 /// <summary>A Google Cloud Storage data source. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderReplicationSpecGcsDataSource
 {
@@ -3173,7 +3173,7 @@ public partial class V1beta1JobStatusAtProviderReplicationSpecGcsDataSource
 }
 
 /// <summary>Only objects that satisfy these object conditions are included in the set of data source and data sink objects. Object conditions based on objects&apos; last_modification_time do not exclude objects in a data sink. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderReplicationSpecObjectConditions
 {
@@ -3202,7 +3202,7 @@ public partial class V1beta1JobStatusAtProviderReplicationSpecObjectConditions
     public string? MinTimeElapsedSinceLastModification { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderReplicationSpecTransferOptionsMetadataOptions
 {
@@ -3235,7 +3235,7 @@ public partial class V1beta1JobStatusAtProviderReplicationSpecTransferOptionsMet
 }
 
 /// <summary>Characteristics of how to treat files from datasource and sink during job. If the option delete_objects_unique_in_sink is true, object conditions based on objects&apos; last_modification_time are ignored and do not exclude objects in a data source or a data sink. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderReplicationSpecTransferOptions
 {
@@ -3263,7 +3263,7 @@ public partial class V1beta1JobStatusAtProviderReplicationSpecTransferOptions
 }
 
 /// <summary>Replication specification. Structure documented below. User should not configure schedule, event_stream with this argument. One of transfer_spec, or replication_spec must be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderReplicationSpec
 {
@@ -3285,7 +3285,7 @@ public partial class V1beta1JobStatusAtProviderReplicationSpec
 }
 
 /// <summary>The last day the recurring transfer will be run. If schedule_end_date is the same as schedule_start_date, the transfer will be executed only once. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderScheduleScheduleEndDate
 {
@@ -3303,7 +3303,7 @@ public partial class V1beta1JobStatusAtProviderScheduleScheduleEndDate
 }
 
 /// <summary>The first day the recurring transfer is scheduled to run. If schedule_start_date is in the past, the transfer will run for the first time on the following day. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderScheduleScheduleStartDate
 {
@@ -3321,7 +3321,7 @@ public partial class V1beta1JobStatusAtProviderScheduleScheduleStartDate
 }
 
 /// <summary>The time in UTC at which the transfer will be scheduled to start in a day. Transfers may start later than this time. If not specified, recurring and one-time transfers that are scheduled to run today will run immediately; recurring transfers that are scheduled to run on a future date will start at approximately midnight UTC on that date. Note that when configuring a transfer with the Cloud Platform Console, the transfer&apos;s start time in a day is specified in your local timezone. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderScheduleStartTimeOfDay
 {
@@ -3343,7 +3343,7 @@ public partial class V1beta1JobStatusAtProviderScheduleStartTimeOfDay
 }
 
 /// <summary>Schedule specification defining when the Transfer Job should be scheduled to start, end and what time to run. Structure documented below. Either schedule or event_stream must be set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderSchedule
 {
@@ -3365,7 +3365,7 @@ public partial class V1beta1JobStatusAtProviderSchedule
 }
 
 /// <summary>AWS Key ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderTransferSpecAwsS3DataSourceAwsAccessKeyAccessKeyIdSecretRef
 {
@@ -3378,7 +3378,7 @@ public partial class V1beta1JobStatusAtProviderTransferSpecAwsS3DataSourceAwsAcc
 }
 
 /// <summary>AWS Secret Access Key.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderTransferSpecAwsS3DataSourceAwsAccessKeySecretAccessKeySecretRef
 {
@@ -3391,7 +3391,7 @@ public partial class V1beta1JobStatusAtProviderTransferSpecAwsS3DataSourceAwsAcc
 }
 
 /// <summary>AWS credentials block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderTransferSpecAwsS3DataSourceAwsAccessKey
 {
@@ -3405,7 +3405,7 @@ public partial class V1beta1JobStatusAtProviderTransferSpecAwsS3DataSourceAwsAcc
 }
 
 /// <summary>An AWS S3 data source. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderTransferSpecAwsS3DataSource
 {
@@ -3431,7 +3431,7 @@ public partial class V1beta1JobStatusAtProviderTransferSpecAwsS3DataSource
 }
 
 /// <summary>Azure shared access signature. See Grant limited access to Azure Storage resources using shared access signatures (SAS).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderTransferSpecAzureBlobStorageDataSourceAzureCredentialsSasTokenSecretRef
 {
@@ -3444,7 +3444,7 @@ public partial class V1beta1JobStatusAtProviderTransferSpecAzureBlobStorageDataS
 }
 
 /// <summary>Credentials used to authenticate API requests to Azure block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderTransferSpecAzureBlobStorageDataSourceAzureCredentials
 {
@@ -3454,7 +3454,7 @@ public partial class V1beta1JobStatusAtProviderTransferSpecAzureBlobStorageDataS
 }
 
 /// <summary>An Azure Blob Storage data source. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderTransferSpecAzureBlobStorageDataSource
 {
@@ -3476,7 +3476,7 @@ public partial class V1beta1JobStatusAtProviderTransferSpecAzureBlobStorageDataS
 }
 
 /// <summary>A Google Cloud Storage data sink. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderTransferSpecGcsDataSink
 {
@@ -3490,7 +3490,7 @@ public partial class V1beta1JobStatusAtProviderTransferSpecGcsDataSink
 }
 
 /// <summary>A Google Cloud Storage data source. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderTransferSpecGcsDataSource
 {
@@ -3504,7 +3504,7 @@ public partial class V1beta1JobStatusAtProviderTransferSpecGcsDataSource
 }
 
 /// <summary>An HDFS data source. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderTransferSpecHdfsDataSource
 {
@@ -3514,7 +3514,7 @@ public partial class V1beta1JobStatusAtProviderTransferSpecHdfsDataSource
 }
 
 /// <summary>A HTTP URL data source. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderTransferSpecHttpDataSource
 {
@@ -3524,7 +3524,7 @@ public partial class V1beta1JobStatusAtProviderTransferSpecHttpDataSource
 }
 
 /// <summary>Only objects that satisfy these object conditions are included in the set of data source and data sink objects. Object conditions based on objects&apos; last_modification_time do not exclude objects in a data sink. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderTransferSpecObjectConditions
 {
@@ -3554,7 +3554,7 @@ public partial class V1beta1JobStatusAtProviderTransferSpecObjectConditions
 }
 
 /// <summary>A POSIX data sink. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderTransferSpecPosixDataSink
 {
@@ -3564,7 +3564,7 @@ public partial class V1beta1JobStatusAtProviderTransferSpecPosixDataSink
 }
 
 /// <summary>A POSIX filesystem data source. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderTransferSpecPosixDataSource
 {
@@ -3573,7 +3573,7 @@ public partial class V1beta1JobStatusAtProviderTransferSpecPosixDataSource
     public string? RootDirectory { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderTransferSpecTransferOptionsMetadataOptions
 {
@@ -3606,7 +3606,7 @@ public partial class V1beta1JobStatusAtProviderTransferSpecTransferOptionsMetada
 }
 
 /// <summary>Characteristics of how to treat files from datasource and sink during job. If the option delete_objects_unique_in_sink is true, object conditions based on objects&apos; last_modification_time are ignored and do not exclude objects in a data source or a data sink. Structure documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderTransferSpecTransferOptions
 {
@@ -3634,7 +3634,7 @@ public partial class V1beta1JobStatusAtProviderTransferSpecTransferOptions
 }
 
 /// <summary>Transfer specification. Structure documented below. One of transfer_spec, or replication_spec can be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderTransferSpec
 {
@@ -3687,7 +3687,7 @@ public partial class V1beta1JobStatusAtProviderTransferSpec
     public V1beta1JobStatusAtProviderTransferSpecTransferOptions? TransferOptions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProvider
 {
@@ -3751,7 +3751,7 @@ public partial class V1beta1JobStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusConditions
 {
@@ -3794,7 +3794,7 @@ public partial class V1beta1JobStatusConditions
 }
 
 /// <summary>JobStatus defines the observed state of Job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatus
 {
@@ -3815,7 +3815,7 @@ public partial class V1beta1JobStatus
 }
 
 /// <summary>Job is the Schema for the Jobs API. Creates a new Transfer Job in Google Cloud Storage Transfer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Job : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1JobSpec>, IStatus<V1beta1JobStatus?>

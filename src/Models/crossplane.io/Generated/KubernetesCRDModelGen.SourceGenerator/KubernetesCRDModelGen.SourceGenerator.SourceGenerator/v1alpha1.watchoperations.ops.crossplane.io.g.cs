@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ops.crossplane.io;
 /// <summary>A WatchOperation creates Operations when watched resources change.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1WatchOperationList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1WatchOperation>
@@ -40,7 +40,7 @@ public partial class V1alpha1WatchOperationList : IKubernetesObject<V1ListMeta>,
 /// ConcurrencyPolicy specifies how to treat concurrent executions of an
 /// operation.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1WatchOperationSpecConcurrencyPolicyEnum>))]
 public enum V1alpha1WatchOperationSpecConcurrencyPolicyEnum
 {
@@ -53,7 +53,7 @@ public enum V1alpha1WatchOperationSpecConcurrencyPolicyEnum
 }
 
 /// <summary>Standard object metadata.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WatchOperationSpecOperationTemplateMetadata
 {
@@ -65,7 +65,7 @@ public partial class V1alpha1WatchOperationSpecOperationTemplateMetadata
 /// &quot;Pipeline&quot; indicates that an Operation specifies a pipeline of
 /// functions, each of which is responsible for implementing its logic.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1WatchOperationSpecOperationTemplateSpecModeEnum>))]
 public enum V1alpha1WatchOperationSpecOperationTemplateSpecModeEnum
 {
@@ -77,7 +77,7 @@ public enum V1alpha1WatchOperationSpecOperationTemplateSpecModeEnum
 /// A SecretRef is a reference to a secret containing credentials that should
 /// be supplied to the function.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WatchOperationSpecOperationTemplateSpecPipelineCredentialsSecretRef
 {
@@ -91,7 +91,7 @@ public partial class V1alpha1WatchOperationSpecOperationTemplateSpecPipelineCred
 }
 
 /// <summary>Source of the function credentials.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1WatchOperationSpecOperationTemplateSpecPipelineCredentialsSourceEnum>))]
 public enum V1alpha1WatchOperationSpecOperationTemplateSpecPipelineCredentialsSourceEnum
 {
@@ -105,7 +105,7 @@ public enum V1alpha1WatchOperationSpecOperationTemplateSpecPipelineCredentialsSo
 /// FunctionCredentials are optional credentials that a function
 /// needs to run.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WatchOperationSpecOperationTemplateSpecPipelineCredentials
 {
@@ -129,7 +129,7 @@ public partial class V1alpha1WatchOperationSpecOperationTemplateSpecPipelineCred
 /// FunctionRef is a reference to the function this step should
 /// execute.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WatchOperationSpecOperationTemplateSpecPipelineFunctionRef
 {
@@ -142,7 +142,7 @@ public partial class V1alpha1WatchOperationSpecOperationTemplateSpecPipelineFunc
 /// RequiredResourceSelector selects resources that should be fetched before
 /// a pipeline step runs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WatchOperationSpecOperationTemplateSpecPipelineRequirementsRequiredResources
 {
@@ -184,7 +184,7 @@ public partial class V1alpha1WatchOperationSpecOperationTemplateSpecPipelineRequ
 /// RequiredSchemaSelector selects an OpenAPI schema that should be fetched
 /// before a pipeline step runs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WatchOperationSpecOperationTemplateSpecPipelineRequirementsRequiredSchemas
 {
@@ -210,7 +210,7 @@ public partial class V1alpha1WatchOperationSpecOperationTemplateSpecPipelineRequ
 /// pre-populating required resources without requiring a function to
 /// request them first.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WatchOperationSpecOperationTemplateSpecPipelineRequirements
 {
@@ -230,7 +230,7 @@ public partial class V1alpha1WatchOperationSpecOperationTemplateSpecPipelineRequ
 }
 
 /// <summary>A PipelineStep in an operation function pipeline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WatchOperationSpecOperationTemplateSpecPipeline
 {
@@ -268,7 +268,7 @@ public partial class V1alpha1WatchOperationSpecOperationTemplateSpecPipeline
 }
 
 /// <summary>Spec is the specification of the Operation to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WatchOperationSpecOperationTemplateSpec
 {
@@ -297,7 +297,7 @@ public partial class V1alpha1WatchOperationSpecOperationTemplateSpec
 }
 
 /// <summary>OperationTemplate is the template for the Operation to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WatchOperationSpecOperationTemplate
 {
@@ -311,7 +311,7 @@ public partial class V1alpha1WatchOperationSpecOperationTemplate
 }
 
 /// <summary>Watch specifies the resource to watch.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WatchOperationSpecWatch
 {
@@ -339,7 +339,7 @@ public partial class V1alpha1WatchOperationSpecWatch
 }
 
 /// <summary>WatchOperationSpec specifies the desired state of a WatchOperation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WatchOperationSpec
 {
@@ -368,7 +368,7 @@ public partial class V1alpha1WatchOperationSpec
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WatchOperationStatusConditions
 {
@@ -411,7 +411,7 @@ public partial class V1alpha1WatchOperationStatusConditions
 }
 
 /// <summary>A RunningOperationRef is a reference to a running operation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WatchOperationStatusRunningOperationRefs
 {
@@ -421,7 +421,7 @@ public partial class V1alpha1WatchOperationStatusRunningOperationRefs
 }
 
 /// <summary>WatchOperationStatus represents the observed state of a WatchOperation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WatchOperationStatus
 {
@@ -456,7 +456,7 @@ public partial class V1alpha1WatchOperationStatus
 }
 
 /// <summary>A WatchOperation creates Operations when watched resources change.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1WatchOperation : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1WatchOperationSpec?>, IStatus<V1alpha1WatchOperationStatus?>

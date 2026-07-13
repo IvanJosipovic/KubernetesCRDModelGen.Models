@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.discoveryengine.cnrm.cloud.google.com;
 /// <summary>DiscoveryEngineDataStore is the Schema for the DiscoveryEngineDataStore API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1DiscoveryEngineDataStoreList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1DiscoveryEngineDataStore>
@@ -37,7 +37,7 @@ public partial class V1alpha1DiscoveryEngineDataStoreList : IKubernetesObject<V1
 }
 
 /// <summary>The ID of the project in which the resource belongs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DiscoveryEngineDataStoreSpecProjectRef
 {
@@ -59,7 +59,7 @@ public partial class V1alpha1DiscoveryEngineDataStoreSpecProjectRef
 }
 
 /// <summary>Config to store data store type configuration for workspace data. This must be set when [DataStore.content_config][google.cloud.discoveryengine.v1.DataStore.content_config] is set as [DataStore.ContentConfig.GOOGLE_WORKSPACE][google.cloud.discoveryengine.v1.DataStore.ContentConfig.GOOGLE_WORKSPACE].</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DiscoveryEngineDataStoreSpecWorkspaceConfig
 {
@@ -81,7 +81,7 @@ public partial class V1alpha1DiscoveryEngineDataStoreSpecWorkspaceConfig
 }
 
 /// <summary>DiscoveryEngineDataStoreSpec defines the desired state of DiscoveryEngineDataStore</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DiscoveryEngineDataStoreSpec
 {
@@ -134,7 +134,7 @@ public partial class V1alpha1DiscoveryEngineDataStoreSpec
     public V1alpha1DiscoveryEngineDataStoreSpecWorkspaceConfig? WorkspaceConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DiscoveryEngineDataStoreStatusConditions
 {
@@ -160,7 +160,7 @@ public partial class V1alpha1DiscoveryEngineDataStoreStatusConditions
 }
 
 /// <summary>Output only. Data size estimation for billing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DiscoveryEngineDataStoreStatusObservedStateBillingEstimation
 {
@@ -190,7 +190,7 @@ public partial class V1alpha1DiscoveryEngineDataStoreStatusObservedStateBillingE
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DiscoveryEngineDataStoreStatusObservedState
 {
@@ -208,7 +208,7 @@ public partial class V1alpha1DiscoveryEngineDataStoreStatusObservedState
 }
 
 /// <summary>DiscoveryEngineDataStoreStatus defines the config connector machine state of DiscoveryEngineDataStore</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DiscoveryEngineDataStoreStatus
 {
@@ -230,7 +230,7 @@ public partial class V1alpha1DiscoveryEngineDataStoreStatus
 }
 
 /// <summary>DiscoveryEngineDataStore is the Schema for the DiscoveryEngineDataStore API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1DiscoveryEngineDataStore : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1DiscoveryEngineDataStoreSpec>, IStatus<V1alpha1DiscoveryEngineDataStoreStatus?>

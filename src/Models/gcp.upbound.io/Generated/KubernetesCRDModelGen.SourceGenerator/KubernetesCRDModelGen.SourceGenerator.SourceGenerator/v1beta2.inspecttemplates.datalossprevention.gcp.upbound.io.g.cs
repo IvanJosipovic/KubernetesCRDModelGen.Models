@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datalossprevention.gcp.upbound.io;
 /// <summary>InspectTemplate is the Schema for the InspectTemplates API. An inspect job template.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2InspectTemplateList : IKubernetesObject<V1ListMeta>, IItems<V1beta2InspectTemplate>
@@ -45,7 +45,7 @@ public partial class V1beta2InspectTemplateList : IKubernetesObject<V1ListMeta>,
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InspectTemplateSpecDeletionPolicyEnum>))]
 public enum V1beta2InspectTemplateSpecDeletionPolicyEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta2InspectTemplateSpecDeletionPolicyEnum
 /// Newline-delimited file of words in Cloud Storage. Only a single file is accepted.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigCustomInfoTypesDictionaryCloudStoragePath
 {
@@ -72,7 +72,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigCustomInf
 /// List of words or phrases to search for.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigCustomInfoTypesDictionaryWordList
 {
@@ -88,7 +88,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigCustomInf
 /// Dictionary which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigCustomInfoTypesDictionary
 {
@@ -111,7 +111,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigCustomInf
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigCustomInfoTypesInfoTypeSensitivityScore
 {
@@ -129,7 +129,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigCustomInf
 /// specified in another InfoTypeLimit.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigCustomInfoTypesInfoType
 {
@@ -156,7 +156,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigCustomInf
 /// Regular expression which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigCustomInfoTypesRegex
 {
@@ -176,7 +176,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigCustomInf
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigCustomInfoTypesSensitivityScore
 {
@@ -192,7 +192,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigCustomInf
 /// A reference to a StoredInfoType to use with scanning.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigCustomInfoTypesStoredType
 {
@@ -205,13 +205,13 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigCustomInf
 }
 
 /// <summary>Message for detecting output from deidentification transformations that support reversing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigCustomInfoTypesSurrogateType
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigCustomInfoTypes
 {
@@ -277,7 +277,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigCustomInf
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigInfoTypesSensitivityScore
 {
@@ -289,7 +289,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigInfoTypes
     public string? Score { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigInfoTypes
 {
@@ -316,7 +316,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigInfoTypes
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScore
 {
@@ -334,7 +334,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigLimitsMax
 /// specified in another InfoTypeLimit.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigLimitsMaxFindingsPerInfoTypeInfoType
 {
@@ -357,7 +357,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigLimitsMax
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigLimitsMaxFindingsPerInfoType
 {
@@ -379,7 +379,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigLimitsMax
 /// Configuration to control the number of findings returned.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigLimits
 {
@@ -403,7 +403,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigLimits
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetInfoTypesSensitivityScore
 {
@@ -415,7 +415,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetIn
     public string? Score { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetInfoTypes
 {
@@ -442,7 +442,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetIn
 /// Newline-delimited file of words in Cloud Storage. Only a single file is accepted.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePath
 {
@@ -455,7 +455,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRu
 /// List of words or phrases to search for.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRulesExclusionRuleDictionaryWordList
 {
@@ -471,7 +471,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRu
 /// Dictionary which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRulesExclusionRuleDictionary
 {
@@ -494,7 +494,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRu
 /// Regular expression pattern defining what qualifies as a hotword.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegex
 {
@@ -518,7 +518,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRu
 /// office using the hotword regex (xxx), where xxx is the area code in question.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximity
 {
@@ -536,7 +536,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRu
 /// For tabular data, the context includes the column name.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRulesExclusionRuleExcludeByHotword
 {
@@ -563,7 +563,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRu
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScore
 {
@@ -575,7 +575,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRu
     public string? Score { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes
 {
@@ -599,7 +599,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRu
 }
 
 /// <summary>When true, excludes type information of the findings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes
 {
@@ -615,7 +615,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRu
 /// Regular expression which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRulesExclusionRuleRegex
 {
@@ -635,7 +635,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRu
 /// The rule that specifies conditions when findings of infoTypes specified in InspectionRuleSet are removed from results.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRulesExclusionRule
 {
@@ -677,7 +677,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRu
 /// Regular expression pattern defining what qualifies as a hotword.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRulesHotwordRuleHotwordRegex
 {
@@ -697,7 +697,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRu
 /// Likelihood adjustment to apply to all matching findings.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustment
 {
@@ -728,7 +728,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRu
 /// office using the hotword regex (xxx), where xxx is the area code in question.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRulesHotwordRuleProximity
 {
@@ -745,7 +745,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRu
 /// Hotword-based detection rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRulesHotwordRule
 {
@@ -775,7 +775,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRu
     public V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRulesHotwordRuleProximity? Proximity { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRules
 {
@@ -794,7 +794,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRu
     public V1beta2InspectTemplateSpecForProviderInspectConfigRuleSetRulesHotwordRule? HotwordRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSet
 {
@@ -817,7 +817,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigRuleSet
 /// The core content of the template.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfig
 {
@@ -877,7 +877,7 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfig
     public IList<V1beta2InspectTemplateSpecForProviderInspectConfigRuleSet>? RuleSet { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecForProvider
 {
@@ -913,7 +913,7 @@ public partial class V1beta2InspectTemplateSpecForProvider
 /// Newline-delimited file of words in Cloud Storage. Only a single file is accepted.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigCustomInfoTypesDictionaryCloudStoragePath
 {
@@ -926,7 +926,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigCustomIn
 /// List of words or phrases to search for.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigCustomInfoTypesDictionaryWordList
 {
@@ -942,7 +942,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigCustomIn
 /// Dictionary which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigCustomInfoTypesDictionary
 {
@@ -965,7 +965,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigCustomIn
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigCustomInfoTypesInfoTypeSensitivityScore
 {
@@ -983,7 +983,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigCustomIn
 /// specified in another InfoTypeLimit.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigCustomInfoTypesInfoType
 {
@@ -1010,7 +1010,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigCustomIn
 /// Regular expression which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigCustomInfoTypesRegex
 {
@@ -1030,7 +1030,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigCustomIn
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigCustomInfoTypesSensitivityScore
 {
@@ -1046,7 +1046,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigCustomIn
 /// A reference to a StoredInfoType to use with scanning.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigCustomInfoTypesStoredType
 {
@@ -1059,13 +1059,13 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigCustomIn
 }
 
 /// <summary>Message for detecting output from deidentification transformations that support reversing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigCustomInfoTypesSurrogateType
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigCustomInfoTypes
 {
@@ -1131,7 +1131,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigCustomIn
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigInfoTypesSensitivityScore
 {
@@ -1143,7 +1143,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigInfoType
     public string? Score { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigInfoTypes
 {
@@ -1170,7 +1170,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigInfoType
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScore
 {
@@ -1188,7 +1188,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigLimitsMa
 /// specified in another InfoTypeLimit.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigLimitsMaxFindingsPerInfoTypeInfoType
 {
@@ -1211,7 +1211,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigLimitsMa
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigLimitsMaxFindingsPerInfoType
 {
@@ -1233,7 +1233,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigLimitsMa
 /// Configuration to control the number of findings returned.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigLimits
 {
@@ -1257,7 +1257,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigLimits
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetInfoTypesSensitivityScore
 {
@@ -1269,7 +1269,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetI
     public string? Score { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetInfoTypes
 {
@@ -1296,7 +1296,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetI
 /// Newline-delimited file of words in Cloud Storage. Only a single file is accepted.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePath
 {
@@ -1309,7 +1309,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetR
 /// List of words or phrases to search for.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetRulesExclusionRuleDictionaryWordList
 {
@@ -1325,7 +1325,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetR
 /// Dictionary which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetRulesExclusionRuleDictionary
 {
@@ -1348,7 +1348,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetR
 /// Regular expression pattern defining what qualifies as a hotword.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegex
 {
@@ -1372,7 +1372,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetR
 /// office using the hotword regex (xxx), where xxx is the area code in question.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximity
 {
@@ -1390,7 +1390,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetR
 /// For tabular data, the context includes the column name.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetRulesExclusionRuleExcludeByHotword
 {
@@ -1417,7 +1417,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetR
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScore
 {
@@ -1429,7 +1429,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetR
     public string? Score { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes
 {
@@ -1453,7 +1453,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetR
 }
 
 /// <summary>When true, excludes type information of the findings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes
 {
@@ -1469,7 +1469,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetR
 /// Regular expression which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetRulesExclusionRuleRegex
 {
@@ -1489,7 +1489,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetR
 /// The rule that specifies conditions when findings of infoTypes specified in InspectionRuleSet are removed from results.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetRulesExclusionRule
 {
@@ -1531,7 +1531,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetR
 /// Regular expression pattern defining what qualifies as a hotword.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetRulesHotwordRuleHotwordRegex
 {
@@ -1551,7 +1551,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetR
 /// Likelihood adjustment to apply to all matching findings.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustment
 {
@@ -1582,7 +1582,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetR
 /// office using the hotword regex (xxx), where xxx is the area code in question.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetRulesHotwordRuleProximity
 {
@@ -1599,7 +1599,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetR
 /// Hotword-based detection rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetRulesHotwordRule
 {
@@ -1629,7 +1629,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetR
     public V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetRulesHotwordRuleProximity? Proximity { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetRules
 {
@@ -1648,7 +1648,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetR
     public V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSetRulesHotwordRule? HotwordRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSet
 {
@@ -1671,7 +1671,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigRuleSet
 /// The core content of the template.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfig
 {
@@ -1743,7 +1743,7 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecInitProvider
 {
@@ -1779,7 +1779,7 @@ public partial class V1beta2InspectTemplateSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InspectTemplateSpecManagementPoliciesEnum>))]
 public enum V1beta2InspectTemplateSpecManagementPoliciesEnum
 {
@@ -1803,7 +1803,7 @@ public enum V1beta2InspectTemplateSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InspectTemplateSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2InspectTemplateSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1819,7 +1819,7 @@ public enum V1beta2InspectTemplateSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InspectTemplateSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2InspectTemplateSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1830,7 +1830,7 @@ public enum V1beta2InspectTemplateSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecProviderConfigRefPolicy
 {
@@ -1858,7 +1858,7 @@ public partial class V1beta2InspectTemplateSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecProviderConfigRef
 {
@@ -1877,7 +1877,7 @@ public partial class V1beta2InspectTemplateSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpecWriteConnectionSecretToRef
 {
@@ -1891,7 +1891,7 @@ public partial class V1beta2InspectTemplateSpecWriteConnectionSecretToRef
 }
 
 /// <summary>InspectTemplateSpec defines the desired state of InspectTemplate</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateSpec
 {
@@ -1962,7 +1962,7 @@ public partial class V1beta2InspectTemplateSpec
 /// Newline-delimited file of words in Cloud Storage. Only a single file is accepted.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigCustomInfoTypesDictionaryCloudStoragePath
 {
@@ -1975,7 +1975,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigCustomIn
 /// List of words or phrases to search for.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigCustomInfoTypesDictionaryWordList
 {
@@ -1991,7 +1991,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigCustomIn
 /// Dictionary which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigCustomInfoTypesDictionary
 {
@@ -2014,7 +2014,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigCustomIn
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigCustomInfoTypesInfoTypeSensitivityScore
 {
@@ -2032,7 +2032,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigCustomIn
 /// specified in another InfoTypeLimit.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigCustomInfoTypesInfoType
 {
@@ -2059,7 +2059,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigCustomIn
 /// Regular expression which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigCustomInfoTypesRegex
 {
@@ -2079,7 +2079,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigCustomIn
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigCustomInfoTypesSensitivityScore
 {
@@ -2095,7 +2095,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigCustomIn
 /// A reference to a StoredInfoType to use with scanning.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigCustomInfoTypesStoredType
 {
@@ -2108,13 +2108,13 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigCustomIn
 }
 
 /// <summary>Message for detecting output from deidentification transformations that support reversing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigCustomInfoTypesSurrogateType
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigCustomInfoTypes
 {
@@ -2180,7 +2180,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigCustomIn
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigInfoTypesSensitivityScore
 {
@@ -2192,7 +2192,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigInfoType
     public string? Score { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigInfoTypes
 {
@@ -2219,7 +2219,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigInfoType
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScore
 {
@@ -2237,7 +2237,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigLimitsMa
 /// specified in another InfoTypeLimit.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigLimitsMaxFindingsPerInfoTypeInfoType
 {
@@ -2260,7 +2260,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigLimitsMa
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigLimitsMaxFindingsPerInfoType
 {
@@ -2282,7 +2282,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigLimitsMa
 /// Configuration to control the number of findings returned.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigLimits
 {
@@ -2306,7 +2306,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigLimits
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetInfoTypesSensitivityScore
 {
@@ -2318,7 +2318,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetI
     public string? Score { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetInfoTypes
 {
@@ -2345,7 +2345,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetI
 /// Newline-delimited file of words in Cloud Storage. Only a single file is accepted.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePath
 {
@@ -2358,7 +2358,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetR
 /// List of words or phrases to search for.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetRulesExclusionRuleDictionaryWordList
 {
@@ -2374,7 +2374,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetR
 /// Dictionary which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetRulesExclusionRuleDictionary
 {
@@ -2397,7 +2397,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetR
 /// Regular expression pattern defining what qualifies as a hotword.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegex
 {
@@ -2421,7 +2421,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetR
 /// office using the hotword regex (xxx), where xxx is the area code in question.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximity
 {
@@ -2439,7 +2439,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetR
 /// For tabular data, the context includes the column name.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetRulesExclusionRuleExcludeByHotword
 {
@@ -2466,7 +2466,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetR
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScore
 {
@@ -2478,7 +2478,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetR
     public string? Score { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes
 {
@@ -2502,7 +2502,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetR
 }
 
 /// <summary>When true, excludes type information of the findings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes
 {
@@ -2518,7 +2518,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetR
 /// Regular expression which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetRulesExclusionRuleRegex
 {
@@ -2538,7 +2538,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetR
 /// The rule that specifies conditions when findings of infoTypes specified in InspectionRuleSet are removed from results.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetRulesExclusionRule
 {
@@ -2580,7 +2580,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetR
 /// Regular expression pattern defining what qualifies as a hotword.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetRulesHotwordRuleHotwordRegex
 {
@@ -2600,7 +2600,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetR
 /// Likelihood adjustment to apply to all matching findings.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustment
 {
@@ -2631,7 +2631,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetR
 /// office using the hotword regex (xxx), where xxx is the area code in question.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetRulesHotwordRuleProximity
 {
@@ -2648,7 +2648,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetR
 /// Hotword-based detection rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetRulesHotwordRule
 {
@@ -2678,7 +2678,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetR
     public V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetRulesHotwordRuleProximity? Proximity { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetRules
 {
@@ -2697,7 +2697,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetR
     public V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSetRulesHotwordRule? HotwordRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSet
 {
@@ -2720,7 +2720,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSet
 /// The core content of the template.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfig
 {
@@ -2780,7 +2780,7 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfig
     public IList<V1beta2InspectTemplateStatusAtProviderInspectConfigRuleSet>? RuleSet { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusAtProvider
 {
@@ -2821,7 +2821,7 @@ public partial class V1beta2InspectTemplateStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatusConditions
 {
@@ -2864,7 +2864,7 @@ public partial class V1beta2InspectTemplateStatusConditions
 }
 
 /// <summary>InspectTemplateStatus defines the observed state of InspectTemplate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InspectTemplateStatus
 {
@@ -2885,7 +2885,7 @@ public partial class V1beta2InspectTemplateStatus
 }
 
 /// <summary>InspectTemplate is the Schema for the InspectTemplates API. An inspect job template.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2InspectTemplate : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2InspectTemplateSpec>, IStatus<V1beta2InspectTemplateStatus?>

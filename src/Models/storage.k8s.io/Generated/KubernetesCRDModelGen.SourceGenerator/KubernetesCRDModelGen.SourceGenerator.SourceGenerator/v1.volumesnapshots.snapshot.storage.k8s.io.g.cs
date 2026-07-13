@@ -13,7 +13,7 @@ namespace KubernetesCRDModelGen.Models.snapshot.storage.k8s.io;
 /// VolumeSnapshot is a user&apos;s request for either creating a point-in-time
 /// snapshot of a persistent volume, or binding to a pre-existing snapshot.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1VolumeSnapshotList : IKubernetesObject<V1ListMeta>, IItems<V1VolumeSnapshot>
@@ -44,7 +44,7 @@ public partial class V1VolumeSnapshotList : IKubernetesObject<V1ListMeta>, IItem
 /// This field is immutable after creation.
 /// Required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1VolumeSnapshotSpecSource
 {
@@ -75,7 +75,7 @@ public partial class V1VolumeSnapshotSpecSource
 /// More info: https://kubernetes.io/docs/concepts/storage/volume-snapshots#volumesnapshots
 /// Required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1VolumeSnapshotSpec
 {
@@ -113,7 +113,7 @@ public partial class V1VolumeSnapshotSpec
 /// The snapshot controller will keep retrying when an error occurs during the
 /// snapshot creation. Upon success, this error field will be cleared.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1VolumeSnapshotStatusError
 {
@@ -138,7 +138,7 @@ public partial class V1VolumeSnapshotStatusError
 /// VolumeSnapshot and VolumeSnapshotContent point at each other) before
 /// using this object.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1VolumeSnapshotStatus
 {
@@ -219,7 +219,7 @@ public partial class V1VolumeSnapshotStatus
 /// VolumeSnapshot is a user&apos;s request for either creating a point-in-time
 /// snapshot of a persistent volume, or binding to a pre-existing snapshot.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1VolumeSnapshot : IKubernetesObject<V1ObjectMeta>, ISpec<V1VolumeSnapshotSpec>, IStatus<V1VolumeSnapshotStatus?>

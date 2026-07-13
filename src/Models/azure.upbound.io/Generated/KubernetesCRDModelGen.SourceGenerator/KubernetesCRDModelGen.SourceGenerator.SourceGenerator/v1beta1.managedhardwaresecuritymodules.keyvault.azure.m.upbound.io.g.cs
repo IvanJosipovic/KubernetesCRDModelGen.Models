@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.keyvault.azure.m.upbound.io;
 /// <summary>ManagedHardwareSecurityModule is the Schema for the ManagedHardwareSecurityModules API. Manages a Key Vault Managed Hardware Security Module.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ManagedHardwareSecurityModuleList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ManagedHardwareSecurityModule>
@@ -37,7 +37,7 @@ public partial class V1beta1ManagedHardwareSecurityModuleList : IKubernetesObjec
 }
 
 /// <summary>A network_acls block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedHardwareSecurityModuleSpecForProviderNetworkAcls
 {
@@ -56,7 +56,7 @@ public partial class V1beta1ManagedHardwareSecurityModuleSpecForProviderNetworkA
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedHardwareSecurityModuleSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1ManagedHardwareSecurityModuleSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -72,7 +72,7 @@ public enum V1beta1ManagedHardwareSecurityModuleSpecForProviderResourceGroupName
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedHardwareSecurityModuleSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1ManagedHardwareSecurityModuleSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -83,7 +83,7 @@ public enum V1beta1ManagedHardwareSecurityModuleSpecForProviderResourceGroupName
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedHardwareSecurityModuleSpecForProviderResourceGroupNameRefPolicy
 {
@@ -107,7 +107,7 @@ public partial class V1beta1ManagedHardwareSecurityModuleSpecForProviderResource
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedHardwareSecurityModuleSpecForProviderResourceGroupNameRef
 {
@@ -130,7 +130,7 @@ public partial class V1beta1ManagedHardwareSecurityModuleSpecForProviderResource
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedHardwareSecurityModuleSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ManagedHardwareSecurityModuleSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -146,7 +146,7 @@ public enum V1beta1ManagedHardwareSecurityModuleSpecForProviderResourceGroupName
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedHardwareSecurityModuleSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ManagedHardwareSecurityModuleSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -157,7 +157,7 @@ public enum V1beta1ManagedHardwareSecurityModuleSpecForProviderResourceGroupName
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedHardwareSecurityModuleSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -181,7 +181,7 @@ public partial class V1beta1ManagedHardwareSecurityModuleSpecForProviderResource
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedHardwareSecurityModuleSpecForProviderResourceGroupNameSelector
 {
@@ -205,7 +205,7 @@ public partial class V1beta1ManagedHardwareSecurityModuleSpecForProviderResource
     public V1beta1ManagedHardwareSecurityModuleSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedHardwareSecurityModuleSpecForProvider
 {
@@ -267,7 +267,7 @@ public partial class V1beta1ManagedHardwareSecurityModuleSpecForProvider
 }
 
 /// <summary>A network_acls block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedHardwareSecurityModuleSpecInitProviderNetworkAcls
 {
@@ -292,7 +292,7 @@ public partial class V1beta1ManagedHardwareSecurityModuleSpecInitProviderNetwork
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedHardwareSecurityModuleSpecInitProvider
 {
@@ -345,7 +345,7 @@ public partial class V1beta1ManagedHardwareSecurityModuleSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedHardwareSecurityModuleSpecManagementPoliciesEnum>))]
 public enum V1beta1ManagedHardwareSecurityModuleSpecManagementPoliciesEnum
 {
@@ -368,7 +368,7 @@ public enum V1beta1ManagedHardwareSecurityModuleSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedHardwareSecurityModuleSpecProviderConfigRef
 {
@@ -387,7 +387,7 @@ public partial class V1beta1ManagedHardwareSecurityModuleSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedHardwareSecurityModuleSpecWriteConnectionSecretToRef
 {
@@ -397,7 +397,7 @@ public partial class V1beta1ManagedHardwareSecurityModuleSpecWriteConnectionSecr
 }
 
 /// <summary>ManagedHardwareSecurityModuleSpec defines the desired state of ManagedHardwareSecurityModule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedHardwareSecurityModuleSpec
 {
@@ -449,7 +449,7 @@ public partial class V1beta1ManagedHardwareSecurityModuleSpec
 }
 
 /// <summary>A network_acls block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedHardwareSecurityModuleStatusAtProviderNetworkAcls
 {
@@ -462,7 +462,7 @@ public partial class V1beta1ManagedHardwareSecurityModuleStatusAtProviderNetwork
     public string? DefaultAction { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedHardwareSecurityModuleStatusAtProvider
 {
@@ -524,7 +524,7 @@ public partial class V1beta1ManagedHardwareSecurityModuleStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedHardwareSecurityModuleStatusConditions
 {
@@ -567,7 +567,7 @@ public partial class V1beta1ManagedHardwareSecurityModuleStatusConditions
 }
 
 /// <summary>ManagedHardwareSecurityModuleStatus defines the observed state of ManagedHardwareSecurityModule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedHardwareSecurityModuleStatus
 {
@@ -588,7 +588,7 @@ public partial class V1beta1ManagedHardwareSecurityModuleStatus
 }
 
 /// <summary>ManagedHardwareSecurityModule is the Schema for the ManagedHardwareSecurityModules API. Manages a Key Vault Managed Hardware Security Module.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ManagedHardwareSecurityModule : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ManagedHardwareSecurityModuleSpec>, IStatus<V1beta1ManagedHardwareSecurityModuleStatus?>

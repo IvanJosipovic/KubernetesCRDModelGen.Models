@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.containerregistry.azure.m.upbound.io;
 /// <summary>TokenPassword is the Schema for the TokenPasswords API. Manages a Container Registry Token Password.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TokenPasswordList : IKubernetesObject<V1ListMeta>, IItems<V1beta1TokenPassword>
@@ -42,7 +42,7 @@ public partial class V1beta1TokenPasswordList : IKubernetesObject<V1ListMeta>, I
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TokenPasswordSpecForProviderContainerRegistryTokenIdRefPolicyResolutionEnum>))]
 public enum V1beta1TokenPasswordSpecForProviderContainerRegistryTokenIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1TokenPasswordSpecForProviderContainerRegistryTokenIdRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TokenPasswordSpecForProviderContainerRegistryTokenIdRefPolicyResolveEnum>))]
 public enum V1beta1TokenPasswordSpecForProviderContainerRegistryTokenIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1TokenPasswordSpecForProviderContainerRegistryTokenIdRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TokenPasswordSpecForProviderContainerRegistryTokenIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1TokenPasswordSpecForProviderContainerRegistryTokenId
 }
 
 /// <summary>Reference to a Token in containerregistry to populate containerRegistryTokenId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TokenPasswordSpecForProviderContainerRegistryTokenIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1TokenPasswordSpecForProviderContainerRegistryTokenId
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TokenPasswordSpecForProviderContainerRegistryTokenIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1TokenPasswordSpecForProviderContainerRegistryTokenIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1TokenPasswordSpecForProviderContainerRegistryTokenIdSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TokenPasswordSpecForProviderContainerRegistryTokenIdSelectorPolicyResolveEnum>))]
 public enum V1beta1TokenPasswordSpecForProviderContainerRegistryTokenIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1TokenPasswordSpecForProviderContainerRegistryTokenIdSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TokenPasswordSpecForProviderContainerRegistryTokenIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1TokenPasswordSpecForProviderContainerRegistryTokenId
 }
 
 /// <summary>Selector for a Token in containerregistry to populate containerRegistryTokenId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TokenPasswordSpecForProviderContainerRegistryTokenIdSelector
 {
@@ -192,7 +192,7 @@ public partial class V1beta1TokenPasswordSpecForProviderContainerRegistryTokenId
 }
 
 /// <summary>One password block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TokenPasswordSpecForProviderPassword1
 {
@@ -202,7 +202,7 @@ public partial class V1beta1TokenPasswordSpecForProviderPassword1
 }
 
 /// <summary>One password block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TokenPasswordSpecForProviderPassword2
 {
@@ -211,7 +211,7 @@ public partial class V1beta1TokenPasswordSpecForProviderPassword2
     public string? Expiry { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TokenPasswordSpecForProvider
 {
@@ -242,7 +242,7 @@ public partial class V1beta1TokenPasswordSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TokenPasswordSpecInitProviderContainerRegistryTokenIdRefPolicyResolutionEnum>))]
 public enum V1beta1TokenPasswordSpecInitProviderContainerRegistryTokenIdRefPolicyResolutionEnum
 {
@@ -258,7 +258,7 @@ public enum V1beta1TokenPasswordSpecInitProviderContainerRegistryTokenIdRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TokenPasswordSpecInitProviderContainerRegistryTokenIdRefPolicyResolveEnum>))]
 public enum V1beta1TokenPasswordSpecInitProviderContainerRegistryTokenIdRefPolicyResolveEnum
 {
@@ -269,7 +269,7 @@ public enum V1beta1TokenPasswordSpecInitProviderContainerRegistryTokenIdRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TokenPasswordSpecInitProviderContainerRegistryTokenIdRefPolicy
 {
@@ -293,7 +293,7 @@ public partial class V1beta1TokenPasswordSpecInitProviderContainerRegistryTokenI
 }
 
 /// <summary>Reference to a Token in containerregistry to populate containerRegistryTokenId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TokenPasswordSpecInitProviderContainerRegistryTokenIdRef
 {
@@ -316,7 +316,7 @@ public partial class V1beta1TokenPasswordSpecInitProviderContainerRegistryTokenI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TokenPasswordSpecInitProviderContainerRegistryTokenIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1TokenPasswordSpecInitProviderContainerRegistryTokenIdSelectorPolicyResolutionEnum
 {
@@ -332,7 +332,7 @@ public enum V1beta1TokenPasswordSpecInitProviderContainerRegistryTokenIdSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TokenPasswordSpecInitProviderContainerRegistryTokenIdSelectorPolicyResolveEnum>))]
 public enum V1beta1TokenPasswordSpecInitProviderContainerRegistryTokenIdSelectorPolicyResolveEnum
 {
@@ -343,7 +343,7 @@ public enum V1beta1TokenPasswordSpecInitProviderContainerRegistryTokenIdSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TokenPasswordSpecInitProviderContainerRegistryTokenIdSelectorPolicy
 {
@@ -367,7 +367,7 @@ public partial class V1beta1TokenPasswordSpecInitProviderContainerRegistryTokenI
 }
 
 /// <summary>Selector for a Token in containerregistry to populate containerRegistryTokenId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TokenPasswordSpecInitProviderContainerRegistryTokenIdSelector
 {
@@ -392,7 +392,7 @@ public partial class V1beta1TokenPasswordSpecInitProviderContainerRegistryTokenI
 }
 
 /// <summary>One password block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TokenPasswordSpecInitProviderPassword1
 {
@@ -402,7 +402,7 @@ public partial class V1beta1TokenPasswordSpecInitProviderPassword1
 }
 
 /// <summary>One password block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TokenPasswordSpecInitProviderPassword2
 {
@@ -423,7 +423,7 @@ public partial class V1beta1TokenPasswordSpecInitProviderPassword2
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TokenPasswordSpecInitProvider
 {
@@ -452,7 +452,7 @@ public partial class V1beta1TokenPasswordSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TokenPasswordSpecManagementPoliciesEnum>))]
 public enum V1beta1TokenPasswordSpecManagementPoliciesEnum
 {
@@ -475,7 +475,7 @@ public enum V1beta1TokenPasswordSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TokenPasswordSpecProviderConfigRef
 {
@@ -494,7 +494,7 @@ public partial class V1beta1TokenPasswordSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TokenPasswordSpecWriteConnectionSecretToRef
 {
@@ -504,7 +504,7 @@ public partial class V1beta1TokenPasswordSpecWriteConnectionSecretToRef
 }
 
 /// <summary>TokenPasswordSpec defines the desired state of TokenPassword</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TokenPasswordSpec
 {
@@ -556,7 +556,7 @@ public partial class V1beta1TokenPasswordSpec
 }
 
 /// <summary>One password block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TokenPasswordStatusAtProviderPassword1
 {
@@ -566,7 +566,7 @@ public partial class V1beta1TokenPasswordStatusAtProviderPassword1
 }
 
 /// <summary>One password block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TokenPasswordStatusAtProviderPassword2
 {
@@ -575,7 +575,7 @@ public partial class V1beta1TokenPasswordStatusAtProviderPassword2
     public string? Expiry { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TokenPasswordStatusAtProvider
 {
@@ -597,7 +597,7 @@ public partial class V1beta1TokenPasswordStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TokenPasswordStatusConditions
 {
@@ -640,7 +640,7 @@ public partial class V1beta1TokenPasswordStatusConditions
 }
 
 /// <summary>TokenPasswordStatus defines the observed state of TokenPassword.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TokenPasswordStatus
 {
@@ -661,7 +661,7 @@ public partial class V1beta1TokenPasswordStatus
 }
 
 /// <summary>TokenPassword is the Schema for the TokenPasswords API. Manages a Container Registry Token Password.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TokenPassword : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1TokenPasswordSpec>, IStatus<V1beta1TokenPasswordStatus?>

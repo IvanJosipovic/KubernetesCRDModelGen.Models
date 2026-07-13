@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.acmpca.aws.upbound.io;
 /// <summary>CertificateAuthority is the Schema for the CertificateAuthoritys API. Provides a resource to manage AWS Certificate Manager Private Certificate Authorities</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2CertificateAuthorityList : IKubernetesObject<V1ListMeta>, IItems<V1beta2CertificateAuthority>
@@ -45,7 +45,7 @@ public partial class V1beta2CertificateAuthorityList : IKubernetesObject<V1ListM
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CertificateAuthoritySpecDeletionPolicyEnum>))]
 public enum V1beta2CertificateAuthoritySpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2CertificateAuthoritySpecDeletionPolicyEnum
 }
 
 /// <summary>Nested argument that contains X.500 distinguished name information. At least one nested attribute must be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CertificateAuthoritySpecForProviderCertificateAuthorityConfigurationSubject
 {
@@ -114,7 +114,7 @@ public partial class V1beta2CertificateAuthoritySpecForProviderCertificateAuthor
 }
 
 /// <summary>Nested argument containing algorithms and certificate subject information. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CertificateAuthoritySpecForProviderCertificateAuthorityConfiguration
 {
@@ -132,7 +132,7 @@ public partial class V1beta2CertificateAuthoritySpecForProviderCertificateAuthor
 }
 
 /// <summary>Nested argument containing configuration of the certificate revocation list (CRL), if any, maintained by the certificate authority. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CertificateAuthoritySpecForProviderRevocationConfigurationCrlConfiguration
 {
@@ -165,7 +165,7 @@ public partial class V1beta2CertificateAuthoritySpecForProviderRevocationConfigu
 /// Nested argument containing configuration of
 /// the custom OCSP responder endpoint. Defined below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CertificateAuthoritySpecForProviderRevocationConfigurationOcspConfiguration
 {
@@ -179,7 +179,7 @@ public partial class V1beta2CertificateAuthoritySpecForProviderRevocationConfigu
 }
 
 /// <summary>Nested argument containing revocation configuration. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CertificateAuthoritySpecForProviderRevocationConfiguration
 {
@@ -195,7 +195,7 @@ public partial class V1beta2CertificateAuthoritySpecForProviderRevocationConfigu
     public V1beta2CertificateAuthoritySpecForProviderRevocationConfigurationOcspConfiguration? OcspConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CertificateAuthoritySpecForProvider
 {
@@ -240,7 +240,7 @@ public partial class V1beta2CertificateAuthoritySpecForProvider
 }
 
 /// <summary>Nested argument that contains X.500 distinguished name information. At least one nested attribute must be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CertificateAuthoritySpecInitProviderCertificateAuthorityConfigurationSubject
 {
@@ -298,7 +298,7 @@ public partial class V1beta2CertificateAuthoritySpecInitProviderCertificateAutho
 }
 
 /// <summary>Nested argument containing algorithms and certificate subject information. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CertificateAuthoritySpecInitProviderCertificateAuthorityConfiguration
 {
@@ -316,7 +316,7 @@ public partial class V1beta2CertificateAuthoritySpecInitProviderCertificateAutho
 }
 
 /// <summary>Nested argument containing configuration of the certificate revocation list (CRL), if any, maintained by the certificate authority. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CertificateAuthoritySpecInitProviderRevocationConfigurationCrlConfiguration
 {
@@ -349,7 +349,7 @@ public partial class V1beta2CertificateAuthoritySpecInitProviderRevocationConfig
 /// Nested argument containing configuration of
 /// the custom OCSP responder endpoint. Defined below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CertificateAuthoritySpecInitProviderRevocationConfigurationOcspConfiguration
 {
@@ -363,7 +363,7 @@ public partial class V1beta2CertificateAuthoritySpecInitProviderRevocationConfig
 }
 
 /// <summary>Nested argument containing revocation configuration. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CertificateAuthoritySpecInitProviderRevocationConfiguration
 {
@@ -391,7 +391,7 @@ public partial class V1beta2CertificateAuthoritySpecInitProviderRevocationConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CertificateAuthoritySpecInitProvider
 {
@@ -432,7 +432,7 @@ public partial class V1beta2CertificateAuthoritySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CertificateAuthoritySpecManagementPoliciesEnum>))]
 public enum V1beta2CertificateAuthoritySpecManagementPoliciesEnum
 {
@@ -456,7 +456,7 @@ public enum V1beta2CertificateAuthoritySpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CertificateAuthoritySpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2CertificateAuthoritySpecProviderConfigRefPolicyResolutionEnum
 {
@@ -472,7 +472,7 @@ public enum V1beta2CertificateAuthoritySpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CertificateAuthoritySpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2CertificateAuthoritySpecProviderConfigRefPolicyResolveEnum
 {
@@ -483,7 +483,7 @@ public enum V1beta2CertificateAuthoritySpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CertificateAuthoritySpecProviderConfigRefPolicy
 {
@@ -511,7 +511,7 @@ public partial class V1beta2CertificateAuthoritySpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CertificateAuthoritySpecProviderConfigRef
 {
@@ -530,7 +530,7 @@ public partial class V1beta2CertificateAuthoritySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CertificateAuthoritySpecWriteConnectionSecretToRef
 {
@@ -544,7 +544,7 @@ public partial class V1beta2CertificateAuthoritySpecWriteConnectionSecretToRef
 }
 
 /// <summary>CertificateAuthoritySpec defines the desired state of CertificateAuthority</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CertificateAuthoritySpec
 {
@@ -612,7 +612,7 @@ public partial class V1beta2CertificateAuthoritySpec
 }
 
 /// <summary>Nested argument that contains X.500 distinguished name information. At least one nested attribute must be specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CertificateAuthorityStatusAtProviderCertificateAuthorityConfigurationSubject
 {
@@ -670,7 +670,7 @@ public partial class V1beta2CertificateAuthorityStatusAtProviderCertificateAutho
 }
 
 /// <summary>Nested argument containing algorithms and certificate subject information. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CertificateAuthorityStatusAtProviderCertificateAuthorityConfiguration
 {
@@ -688,7 +688,7 @@ public partial class V1beta2CertificateAuthorityStatusAtProviderCertificateAutho
 }
 
 /// <summary>Nested argument containing configuration of the certificate revocation list (CRL), if any, maintained by the certificate authority. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CertificateAuthorityStatusAtProviderRevocationConfigurationCrlConfiguration
 {
@@ -721,7 +721,7 @@ public partial class V1beta2CertificateAuthorityStatusAtProviderRevocationConfig
 /// Nested argument containing configuration of
 /// the custom OCSP responder endpoint. Defined below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CertificateAuthorityStatusAtProviderRevocationConfigurationOcspConfiguration
 {
@@ -735,7 +735,7 @@ public partial class V1beta2CertificateAuthorityStatusAtProviderRevocationConfig
 }
 
 /// <summary>Nested argument containing revocation configuration. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CertificateAuthorityStatusAtProviderRevocationConfiguration
 {
@@ -751,7 +751,7 @@ public partial class V1beta2CertificateAuthorityStatusAtProviderRevocationConfig
     public V1beta2CertificateAuthorityStatusAtProviderRevocationConfigurationOcspConfiguration? OcspConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CertificateAuthorityStatusAtProvider
 {
@@ -832,7 +832,7 @@ public partial class V1beta2CertificateAuthorityStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CertificateAuthorityStatusConditions
 {
@@ -875,7 +875,7 @@ public partial class V1beta2CertificateAuthorityStatusConditions
 }
 
 /// <summary>CertificateAuthorityStatus defines the observed state of CertificateAuthority.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CertificateAuthorityStatus
 {
@@ -896,7 +896,7 @@ public partial class V1beta2CertificateAuthorityStatus
 }
 
 /// <summary>CertificateAuthority is the Schema for the CertificateAuthoritys API. Provides a resource to manage AWS Certificate Manager Private Certificate Authorities</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2CertificateAuthority : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2CertificateAuthoritySpec>, IStatus<V1beta2CertificateAuthorityStatus?>

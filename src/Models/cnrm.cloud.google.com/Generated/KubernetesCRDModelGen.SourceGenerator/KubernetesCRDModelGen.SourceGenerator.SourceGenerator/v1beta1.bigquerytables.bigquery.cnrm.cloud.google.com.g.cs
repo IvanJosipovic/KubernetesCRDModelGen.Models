@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bigquery.cnrm.cloud.google.com;
 /// <summary>BigQueryTable is the Schema for the BigQueryTable API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BigQueryTableList : IKubernetesObject<V1ListMeta>, IItems<V1beta1BigQueryTable>
@@ -37,7 +37,7 @@ public partial class V1beta1BigQueryTableList : IKubernetesObject<V1ListMeta>, I
 }
 
 /// <summary>DatasetRef defines the resource reference to BigQueryDataset, which &quot;External&quot; field holds the GCP identifier for the KRM object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryTableSpecDatasetRef
 {
@@ -55,7 +55,7 @@ public partial class V1beta1BigQueryTableSpecDatasetRef
 }
 
 /// <summary>Describes the Cloud KMS encryption key that will be used to protect destination BigQuery table. The BigQuery Service Account associated with your project requires access to this encryption key.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryTableSpecEncryptionConfigurationKmsKeyRef
 {
@@ -73,7 +73,7 @@ public partial class V1beta1BigQueryTableSpecEncryptionConfigurationKmsKeyRef
 }
 
 /// <summary>Custom encryption configuration (e.g., Cloud KMS keys).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryTableSpecEncryptionConfiguration
 {
@@ -87,7 +87,7 @@ public partial class V1beta1BigQueryTableSpecEncryptionConfiguration
 }
 
 /// <summary>Additional properties to set if sourceFormat is set to AVRO.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryTableSpecExternalDataConfigurationAvroOptions
 {
@@ -97,7 +97,7 @@ public partial class V1beta1BigQueryTableSpecExternalDataConfigurationAvroOption
 }
 
 /// <summary>Additional properties to set if sourceFormat is set to CSV.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryTableSpecExternalDataConfigurationCsvOptions
 {
@@ -141,7 +141,7 @@ public partial class V1beta1BigQueryTableSpecExternalDataConfigurationCsvOptions
 }
 
 /// <summary>Additional options if sourceFormat is set to GOOGLE_SHEETS.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryTableSpecExternalDataConfigurationGoogleSheetsOptions
 {
@@ -155,7 +155,7 @@ public partial class V1beta1BigQueryTableSpecExternalDataConfigurationGoogleShee
 }
 
 /// <summary>When set, configures hive partitioning support. Not all storage formats support hive partitioning -- requesting hive partitioning on an unsupported format will lead to an error, as will providing an invalid specification.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryTableSpecExternalDataConfigurationHivePartitioningOptions
 {
@@ -220,7 +220,7 @@ public partial class V1beta1BigQueryTableSpecExternalDataConfigurationHivePartit
 }
 
 /// <summary>Additional properties to set if sourceFormat is set to JSON.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryTableSpecExternalDataConfigurationJsonOptions
 {
@@ -230,7 +230,7 @@ public partial class V1beta1BigQueryTableSpecExternalDataConfigurationJsonOption
 }
 
 /// <summary>Additional properties to set if sourceFormat is set to PARQUET.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryTableSpecExternalDataConfigurationParquetOptions
 {
@@ -244,7 +244,7 @@ public partial class V1beta1BigQueryTableSpecExternalDataConfigurationParquetOpt
 }
 
 /// <summary>Describes the data format, location, and other properties of a table stored outside of BigQuery. By defining these properties, the data source can then be queried as if it were a standard BigQuery table.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryTableSpecExternalDataConfiguration
 {
@@ -328,7 +328,7 @@ public partial class V1beta1BigQueryTableSpecExternalDataConfiguration
 }
 
 /// <summary>The materialized view definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryTableSpecMaterializedView
 {
@@ -350,7 +350,7 @@ public partial class V1beta1BigQueryTableSpecMaterializedView
 }
 
 /// <summary>Defines the ranges for range partitioning.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryTableSpecRangePartitioningRange
 {
@@ -368,7 +368,7 @@ public partial class V1beta1BigQueryTableSpecRangePartitioningRange
 }
 
 /// <summary>If specified, configures range partitioning for this table.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryTableSpecRangePartitioning
 {
@@ -382,7 +382,7 @@ public partial class V1beta1BigQueryTableSpecRangePartitioning
 }
 
 /// <summary>Required. The columns that compose the foreign key.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryTableSpecTableConstraintsForeignKeysColumnReferences
 {
@@ -396,7 +396,7 @@ public partial class V1beta1BigQueryTableSpecTableConstraintsForeignKeysColumnRe
 }
 
 /// <summary>Required. The table that holds the primary key and is referenced by this foreign key.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryTableSpecTableConstraintsForeignKeysReferencedTable
 {
@@ -413,7 +413,7 @@ public partial class V1beta1BigQueryTableSpecTableConstraintsForeignKeysReferenc
     public required string TableId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryTableSpecTableConstraintsForeignKeys
 {
@@ -431,7 +431,7 @@ public partial class V1beta1BigQueryTableSpecTableConstraintsForeignKeys
 }
 
 /// <summary>Represents a primary key constraint on a table&apos;s columns. Present only if the table has a primary key. The primary key is not enforced.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryTableSpecTableConstraintsPrimaryKey
 {
@@ -441,7 +441,7 @@ public partial class V1beta1BigQueryTableSpecTableConstraintsPrimaryKey
 }
 
 /// <summary>Tables Primary Key and Foreign Key information</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryTableSpecTableConstraints
 {
@@ -455,7 +455,7 @@ public partial class V1beta1BigQueryTableSpecTableConstraints
 }
 
 /// <summary>If specified, configures time-based partitioning for this table.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryTableSpecTimePartitioning
 {
@@ -477,7 +477,7 @@ public partial class V1beta1BigQueryTableSpecTimePartitioning
 }
 
 /// <summary>The view definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryTableSpecView
 {
@@ -499,7 +499,7 @@ public partial class V1beta1BigQueryTableSpecView
 }
 
 /// <summary>BigQueryTableSpec defines the desired state of BigQueryTable</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryTableSpec
 {
@@ -572,7 +572,7 @@ public partial class V1beta1BigQueryTableSpec
     public V1beta1BigQueryTableSpecView? View { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryTableStatusConditions
 {
@@ -598,14 +598,14 @@ public partial class V1beta1BigQueryTableStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryTableStatusObservedState
 {
 }
 
 /// <summary>BigQueryTableStatus defines the config connector machine state of BigQueryTable</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryTableStatus
 {
@@ -677,7 +677,7 @@ public partial class V1beta1BigQueryTableStatus
 }
 
 /// <summary>BigQueryTable is the Schema for the BigQueryTable API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BigQueryTable : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1BigQueryTableSpec>, IStatus<V1beta1BigQueryTableStatus?>

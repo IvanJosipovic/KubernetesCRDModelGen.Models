@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ec2.aws.m.upbound.io;
 /// <summary>SecurityGroupEgressRule is the Schema for the SecurityGroupEgressRules API. Provides a VPC security group egress rule resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SecurityGroupEgressRuleList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SecurityGroupEgressRule>
@@ -42,7 +42,7 @@ public partial class V1beta1SecurityGroupEgressRuleList : IKubernetesObject<V1Li
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecForProviderPrefixListIdRefPolicyResolutionEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecForProviderPrefixListIdRefPolicyResolutionEnum
 {
@@ -58,7 +58,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecForProviderPrefixListIdRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecForProviderPrefixListIdRefPolicyResolveEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecForProviderPrefixListIdRefPolicyResolveEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecForProviderPrefixListIdRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecForProviderPrefixListIdRefPolicy
 {
@@ -93,7 +93,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecForProviderPrefixListIdRe
 }
 
 /// <summary>Reference to a ManagedPrefixList in ec2 to populate prefixListId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecForProviderPrefixListIdRef
 {
@@ -116,7 +116,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecForProviderPrefixListIdRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecForProviderPrefixListIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecForProviderPrefixListIdSelectorPolicyResolutionEnum
 {
@@ -132,7 +132,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecForProviderPrefixListIdSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecForProviderPrefixListIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecForProviderPrefixListIdSelectorPolicyResolveEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecForProviderPrefixListIdSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecForProviderPrefixListIdSelectorPolicy
 {
@@ -167,7 +167,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecForProviderPrefixListIdSe
 }
 
 /// <summary>Selector for a ManagedPrefixList in ec2 to populate prefixListId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecForProviderPrefixListIdSelector
 {
@@ -197,7 +197,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecForProviderPrefixListIdSe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecForProviderReferencedSecurityGroupIdRefPolicyResolutionEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecForProviderReferencedSecurityGroupIdRefPolicyResolutionEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecForProviderReferencedSecurityGroup
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecForProviderReferencedSecurityGroupIdRefPolicyResolveEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecForProviderReferencedSecurityGroupIdRefPolicyResolveEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecForProviderReferencedSecurityGroup
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecForProviderReferencedSecurityGroupIdRefPolicy
 {
@@ -248,7 +248,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecForProviderReferencedSecu
 }
 
 /// <summary>Reference to a SecurityGroup in ec2 to populate referencedSecurityGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecForProviderReferencedSecurityGroupIdRef
 {
@@ -271,7 +271,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecForProviderReferencedSecu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecForProviderReferencedSecurityGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecForProviderReferencedSecurityGroupIdSelectorPolicyResolutionEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecForProviderReferencedSecurityGroup
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecForProviderReferencedSecurityGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecForProviderReferencedSecurityGroupIdSelectorPolicyResolveEnum
 {
@@ -298,7 +298,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecForProviderReferencedSecurityGroup
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecForProviderReferencedSecurityGroupIdSelectorPolicy
 {
@@ -322,7 +322,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecForProviderReferencedSecu
 }
 
 /// <summary>Selector for a SecurityGroup in ec2 to populate referencedSecurityGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecForProviderReferencedSecurityGroupIdSelector
 {
@@ -352,7 +352,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecForProviderReferencedSecu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecForProviderSecurityGroupIdRefPolicyResolutionEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecForProviderSecurityGroupIdRefPolicyResolutionEnum
 {
@@ -368,7 +368,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecForProviderSecurityGroupIdRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecForProviderSecurityGroupIdRefPolicyResolveEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecForProviderSecurityGroupIdRefPolicyResolveEnum
 {
@@ -379,7 +379,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecForProviderSecurityGroupIdRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecForProviderSecurityGroupIdRefPolicy
 {
@@ -403,7 +403,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecForProviderSecurityGroupI
 }
 
 /// <summary>Reference to a SecurityGroup in ec2 to populate securityGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecForProviderSecurityGroupIdRef
 {
@@ -426,7 +426,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecForProviderSecurityGroupI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecForProviderSecurityGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecForProviderSecurityGroupIdSelectorPolicyResolutionEnum
 {
@@ -442,7 +442,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecForProviderSecurityGroupIdSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecForProviderSecurityGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecForProviderSecurityGroupIdSelectorPolicyResolveEnum
 {
@@ -453,7 +453,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecForProviderSecurityGroupIdSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecForProviderSecurityGroupIdSelectorPolicy
 {
@@ -477,7 +477,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecForProviderSecurityGroupI
 }
 
 /// <summary>Selector for a SecurityGroup in ec2 to populate securityGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecForProviderSecurityGroupIdSelector
 {
@@ -501,7 +501,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecForProviderSecurityGroupI
     public V1beta1SecurityGroupEgressRuleSpecForProviderSecurityGroupIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecForProvider
 {
@@ -583,7 +583,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecInitProviderPrefixListIdRefPolicyResolutionEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecInitProviderPrefixListIdRefPolicyResolutionEnum
 {
@@ -599,7 +599,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecInitProviderPrefixListIdRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecInitProviderPrefixListIdRefPolicyResolveEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecInitProviderPrefixListIdRefPolicyResolveEnum
 {
@@ -610,7 +610,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecInitProviderPrefixListIdRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderPrefixListIdRefPolicy
 {
@@ -634,7 +634,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderPrefixListIdR
 }
 
 /// <summary>Reference to a ManagedPrefixList in ec2 to populate prefixListId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderPrefixListIdRef
 {
@@ -657,7 +657,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderPrefixListIdR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecInitProviderPrefixListIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecInitProviderPrefixListIdSelectorPolicyResolutionEnum
 {
@@ -673,7 +673,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecInitProviderPrefixListIdSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecInitProviderPrefixListIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecInitProviderPrefixListIdSelectorPolicyResolveEnum
 {
@@ -684,7 +684,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecInitProviderPrefixListIdSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderPrefixListIdSelectorPolicy
 {
@@ -708,7 +708,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderPrefixListIdS
 }
 
 /// <summary>Selector for a ManagedPrefixList in ec2 to populate prefixListId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderPrefixListIdSelector
 {
@@ -738,7 +738,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderPrefixListIdS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecInitProviderReferencedSecurityGroupIdRefPolicyResolutionEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecInitProviderReferencedSecurityGroupIdRefPolicyResolutionEnum
 {
@@ -754,7 +754,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecInitProviderReferencedSecurityGrou
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecInitProviderReferencedSecurityGroupIdRefPolicyResolveEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecInitProviderReferencedSecurityGroupIdRefPolicyResolveEnum
 {
@@ -765,7 +765,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecInitProviderReferencedSecurityGrou
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderReferencedSecurityGroupIdRefPolicy
 {
@@ -789,7 +789,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderReferencedSec
 }
 
 /// <summary>Reference to a SecurityGroup in ec2 to populate referencedSecurityGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderReferencedSecurityGroupIdRef
 {
@@ -812,7 +812,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderReferencedSec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecInitProviderReferencedSecurityGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecInitProviderReferencedSecurityGroupIdSelectorPolicyResolutionEnum
 {
@@ -828,7 +828,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecInitProviderReferencedSecurityGrou
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecInitProviderReferencedSecurityGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecInitProviderReferencedSecurityGroupIdSelectorPolicyResolveEnum
 {
@@ -839,7 +839,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecInitProviderReferencedSecurityGrou
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderReferencedSecurityGroupIdSelectorPolicy
 {
@@ -863,7 +863,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderReferencedSec
 }
 
 /// <summary>Selector for a SecurityGroup in ec2 to populate referencedSecurityGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderReferencedSecurityGroupIdSelector
 {
@@ -893,7 +893,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderReferencedSec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecInitProviderSecurityGroupIdRefPolicyResolutionEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecInitProviderSecurityGroupIdRefPolicyResolutionEnum
 {
@@ -909,7 +909,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecInitProviderSecurityGroupIdRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecInitProviderSecurityGroupIdRefPolicyResolveEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecInitProviderSecurityGroupIdRefPolicyResolveEnum
 {
@@ -920,7 +920,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecInitProviderSecurityGroupIdRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderSecurityGroupIdRefPolicy
 {
@@ -944,7 +944,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderSecurityGroup
 }
 
 /// <summary>Reference to a SecurityGroup in ec2 to populate securityGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderSecurityGroupIdRef
 {
@@ -967,7 +967,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderSecurityGroup
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecInitProviderSecurityGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecInitProviderSecurityGroupIdSelectorPolicyResolutionEnum
 {
@@ -983,7 +983,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecInitProviderSecurityGroupIdSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecInitProviderSecurityGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecInitProviderSecurityGroupIdSelectorPolicyResolveEnum
 {
@@ -994,7 +994,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecInitProviderSecurityGroupIdSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderSecurityGroupIdSelectorPolicy
 {
@@ -1018,7 +1018,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderSecurityGroup
 }
 
 /// <summary>Selector for a SecurityGroup in ec2 to populate securityGroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderSecurityGroupIdSelector
 {
@@ -1054,7 +1054,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecInitProviderSecurityGroup
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecInitProvider
 {
@@ -1127,7 +1127,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityGroupEgressRuleSpecManagementPoliciesEnum>))]
 public enum V1beta1SecurityGroupEgressRuleSpecManagementPoliciesEnum
 {
@@ -1150,7 +1150,7 @@ public enum V1beta1SecurityGroupEgressRuleSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecProviderConfigRef
 {
@@ -1169,7 +1169,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpecWriteConnectionSecretToRef
 {
@@ -1179,7 +1179,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpecWriteConnectionSecretToRe
 }
 
 /// <summary>SecurityGroupEgressRuleSpec defines the desired state of SecurityGroupEgressRule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleSpec
 {
@@ -1230,7 +1230,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpec
     public V1beta1SecurityGroupEgressRuleSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleStatusAtProvider
 {
@@ -1299,7 +1299,7 @@ public partial class V1beta1SecurityGroupEgressRuleStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleStatusConditions
 {
@@ -1342,7 +1342,7 @@ public partial class V1beta1SecurityGroupEgressRuleStatusConditions
 }
 
 /// <summary>SecurityGroupEgressRuleStatus defines the observed state of SecurityGroupEgressRule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleStatus
 {
@@ -1363,7 +1363,7 @@ public partial class V1beta1SecurityGroupEgressRuleStatus
 }
 
 /// <summary>SecurityGroupEgressRule is the Schema for the SecurityGroupEgressRules API. Provides a VPC security group egress rule resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SecurityGroupEgressRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SecurityGroupEgressRuleSpec>, IStatus<V1beta1SecurityGroupEgressRuleStatus?>

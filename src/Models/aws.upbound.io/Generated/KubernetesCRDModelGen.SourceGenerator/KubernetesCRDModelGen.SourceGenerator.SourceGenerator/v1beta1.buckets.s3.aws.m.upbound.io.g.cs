@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.s3.aws.m.upbound.io;
 /// <summary>Bucket is the Schema for the Buckets API. Provides a S3 bucket resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BucketList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Bucket>
@@ -36,7 +36,7 @@ public partial class V1beta1BucketList : IKubernetesObject<V1ListMeta>, IItems<V
     public required IList<V1beta1Bucket> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketSpecForProvider
 {
@@ -72,7 +72,7 @@ public partial class V1beta1BucketSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketSpecInitProvider
 {
@@ -93,7 +93,7 @@ public partial class V1beta1BucketSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketSpecManagementPoliciesEnum>))]
 public enum V1beta1BucketSpecManagementPoliciesEnum
 {
@@ -116,7 +116,7 @@ public enum V1beta1BucketSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketSpecProviderConfigRef
 {
@@ -135,7 +135,7 @@ public partial class V1beta1BucketSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketSpecWriteConnectionSecretToRef
 {
@@ -145,7 +145,7 @@ public partial class V1beta1BucketSpecWriteConnectionSecretToRef
 }
 
 /// <summary>BucketSpec defines the desired state of Bucket</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketSpec
 {
@@ -196,7 +196,7 @@ public partial class V1beta1BucketSpec
     public V1beta1BucketSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderCorsRule
 {
@@ -221,7 +221,7 @@ public partial class V1beta1BucketStatusAtProviderCorsRule
     public double? MaxAgeSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderGrant
 {
@@ -243,7 +243,7 @@ public partial class V1beta1BucketStatusAtProviderGrant
 }
 
 /// <summary>Specifies a period in the object&apos;s expire. See Expiration below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderLifecycleRuleExpiration
 {
@@ -261,7 +261,7 @@ public partial class V1beta1BucketStatusAtProviderLifecycleRuleExpiration
 }
 
 /// <summary>Specifies when noncurrent object versions expire. See Noncurrent Version Expiration below for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderLifecycleRuleNoncurrentVersionExpiration
 {
@@ -270,7 +270,7 @@ public partial class V1beta1BucketStatusAtProviderLifecycleRuleNoncurrentVersion
     public double? Days { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderLifecycleRuleNoncurrentVersionTransition
 {
@@ -283,7 +283,7 @@ public partial class V1beta1BucketStatusAtProviderLifecycleRuleNoncurrentVersion
     public string? StorageClass { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderLifecycleRuleTransition
 {
@@ -300,7 +300,7 @@ public partial class V1beta1BucketStatusAtProviderLifecycleRuleTransition
     public string? StorageClass { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderLifecycleRule
 {
@@ -345,7 +345,7 @@ public partial class V1beta1BucketStatusAtProviderLifecycleRule
 /// Configuration of S3 bucket logging parameters. See Logging below for details.
 /// Use the resource aws_s3_bucket_logging instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderLogging
 {
@@ -359,7 +359,7 @@ public partial class V1beta1BucketStatusAtProviderLogging
 }
 
 /// <summary>Default retention period that you want to apply to new objects placed in this bucket (documented below).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderObjectLockConfigurationRuleDefaultRetention
 {
@@ -377,7 +377,7 @@ public partial class V1beta1BucketStatusAtProviderObjectLockConfigurationRuleDef
 }
 
 /// <summary>Object Lock rule in place for this bucket (documented below).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderObjectLockConfigurationRule
 {
@@ -390,7 +390,7 @@ public partial class V1beta1BucketStatusAtProviderObjectLockConfigurationRule
 /// Configuration of S3 object locking. See Object Lock Configuration below for details.
 /// Use the object_lock_enabled parameter and the resource aws_s3_bucket_object_lock_configuration instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderObjectLockConfiguration
 {
@@ -404,7 +404,7 @@ public partial class V1beta1BucketStatusAtProviderObjectLockConfiguration
 }
 
 /// <summary>Specifies the overrides to use for object owners on replication (documented below). Must be used in conjunction with account_id owner override configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderReplicationConfigurationRulesDestinationAccessControlTranslation
 {
@@ -414,7 +414,7 @@ public partial class V1beta1BucketStatusAtProviderReplicationConfigurationRulesD
 }
 
 /// <summary>Enables replication metrics  (documented below).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderReplicationConfigurationRulesDestinationMetrics
 {
@@ -428,7 +428,7 @@ public partial class V1beta1BucketStatusAtProviderReplicationConfigurationRulesD
 }
 
 /// <summary>Enables S3 Replication Time Control (S3 RTC) (documented below).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderReplicationConfigurationRulesDestinationReplicationTime
 {
@@ -442,7 +442,7 @@ public partial class V1beta1BucketStatusAtProviderReplicationConfigurationRulesD
 }
 
 /// <summary>Specifies the destination for the rule (documented below).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderReplicationConfigurationRulesDestination
 {
@@ -479,7 +479,7 @@ public partial class V1beta1BucketStatusAtProviderReplicationConfigurationRulesD
 }
 
 /// <summary>Filter that identifies subset of objects to which the replication rule applies (documented below).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderReplicationConfigurationRulesFilter
 {
@@ -499,7 +499,7 @@ public partial class V1beta1BucketStatusAtProviderReplicationConfigurationRulesF
 /// Match SSE-KMS encrypted objects (documented below). If specified, replica_kms_key_id
 /// in destination must be specified as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjects
 {
@@ -509,7 +509,7 @@ public partial class V1beta1BucketStatusAtProviderReplicationConfigurationRulesS
 }
 
 /// <summary>Specifies special object selection criteria (documented below).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderReplicationConfigurationRulesSourceSelectionCriteria
 {
@@ -521,7 +521,7 @@ public partial class V1beta1BucketStatusAtProviderReplicationConfigurationRulesS
     public V1beta1BucketStatusAtProviderReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjects? SseKmsEncryptedObjects { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderReplicationConfigurationRules
 {
@@ -562,7 +562,7 @@ public partial class V1beta1BucketStatusAtProviderReplicationConfigurationRules
 /// Configuration of replication configuration. See Replication Configuration below for details.
 /// Use the resource aws_s3_bucket_replication_configuration instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderReplicationConfiguration
 {
@@ -576,7 +576,7 @@ public partial class V1beta1BucketStatusAtProviderReplicationConfiguration
 }
 
 /// <summary>Single object for setting server-side encryption by default. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault
 {
@@ -590,7 +590,7 @@ public partial class V1beta1BucketStatusAtProviderServerSideEncryptionConfigurat
 }
 
 /// <summary>Single object for server-side encryption by default configuration. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderServerSideEncryptionConfigurationRule
 {
@@ -607,7 +607,7 @@ public partial class V1beta1BucketStatusAtProviderServerSideEncryptionConfigurat
 /// Configuration of server-side encryption configuration. See Server Side Encryption Configuration below for details.
 /// Use the resource aws_s3_bucket_server_side_encryption_configuration instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderServerSideEncryptionConfiguration
 {
@@ -617,7 +617,7 @@ public partial class V1beta1BucketStatusAtProviderServerSideEncryptionConfigurat
 }
 
 /// <summary>Configuration of the S3 bucket versioning state. See Versioning below for details. Use the resource aws_s3_bucket_versioning instead.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderVersioning
 {
@@ -634,7 +634,7 @@ public partial class V1beta1BucketStatusAtProviderVersioning
 /// Configuration of the S3 bucket website. See Website below for details.
 /// Use the resource aws_s3_bucket_website_configuration instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProviderWebsite
 {
@@ -658,7 +658,7 @@ public partial class V1beta1BucketStatusAtProviderWebsite
     public string? RoutingRules { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusAtProvider
 {
@@ -800,7 +800,7 @@ public partial class V1beta1BucketStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatusConditions
 {
@@ -843,7 +843,7 @@ public partial class V1beta1BucketStatusConditions
 }
 
 /// <summary>BucketStatus defines the observed state of Bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketStatus
 {
@@ -864,7 +864,7 @@ public partial class V1beta1BucketStatus
 }
 
 /// <summary>Bucket is the Schema for the Buckets API. Provides a S3 bucket resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Bucket : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1BucketSpec>, IStatus<V1beta1BucketStatus?>

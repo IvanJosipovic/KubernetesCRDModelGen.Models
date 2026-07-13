@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.traefik.io;
 /// The default@internal tcpServersTransport can be configured in the static configuration.
 /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/serverstransport/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ServersTransportTCPList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ServersTransportTCP>
@@ -42,7 +42,7 @@ public partial class V1alpha1ServersTransportTCPList : IKubernetesObject<V1ListM
 }
 
 /// <summary>ProxyProtocol holds the PROXY Protocol configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServersTransportTCPSpecProxyProtocol
 {
@@ -55,7 +55,7 @@ public partial class V1alpha1ServersTransportTCPSpecProxyProtocol
 /// RootCA defines a reference to a Secret or a ConfigMap that holds a CA certificate.
 /// If both a Secret and a ConfigMap reference are defined, the Secret reference takes precedence.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServersTransportTCPSpecTlsRootCAs
 {
@@ -75,7 +75,7 @@ public partial class V1alpha1ServersTransportTCPSpecTlsRootCAs
 }
 
 /// <summary>Spiffe defines the SPIFFE configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServersTransportTCPSpecTlsSpiffe
 {
@@ -89,7 +89,7 @@ public partial class V1alpha1ServersTransportTCPSpecTlsSpiffe
 }
 
 /// <summary>TLS defines the TLS configuration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServersTransportTCPSpecTls
 {
@@ -130,7 +130,7 @@ public partial class V1alpha1ServersTransportTCPSpecTls
 }
 
 /// <summary>ServersTransportTCPSpec defines the desired state of a ServersTransportTCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServersTransportTCPSpec
 {
@@ -161,7 +161,7 @@ public partial class V1alpha1ServersTransportTCPSpec
 /// The default@internal tcpServersTransport can be configured in the static configuration.
 /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/serverstransport/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ServersTransportTCP : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ServersTransportTCPSpec>

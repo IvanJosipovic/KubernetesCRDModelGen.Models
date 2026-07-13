@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.firehose.services.k8s.aws;
 /// <summary>DeliveryStream is the Schema for the DeliveryStreams API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1DeliveryStreamList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1DeliveryStream>
@@ -40,7 +40,7 @@ public partial class V1alpha1DeliveryStreamList : IKubernetesObject<V1ListMeta>,
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecDeliveryStreamEncryptionConfigurationKeyRefFrom
 {
@@ -52,7 +52,7 @@ public partial class V1alpha1DeliveryStreamSpecDeliveryStreamEncryptionConfigura
 }
 
 /// <summary>Reference field for KeyARN</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecDeliveryStreamEncryptionConfigurationKeyRef
 {
@@ -68,7 +68,7 @@ public partial class V1alpha1DeliveryStreamSpecDeliveryStreamEncryptionConfigura
 /// Used to specify the type and Amazon Resource Name (ARN) of the KMS key needed
 /// for Server-Side Encryption (SSE).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecDeliveryStreamEncryptionConfiguration
 {
@@ -90,7 +90,7 @@ public partial class V1alpha1DeliveryStreamSpecDeliveryStreamEncryptionConfigura
 /// parameters are optional. However, if specify a value for one of them, you
 /// must also provide a value for the other.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationBufferingHints
 {
@@ -102,7 +102,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 }
 
 /// <summary>Describes the Amazon CloudWatch logging options for your Firehose stream.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationCloudWatchLoggingOptions
 {
@@ -120,7 +120,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 /// SecretKeyReference combines a k8s corev1.SecretReference with a
 /// specific key within the referred-to Secret
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationEndpointConfigurationAccessKey
 {
@@ -141,7 +141,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 /// Describes the configuration of the HTTP endpoint to which Kinesis Firehose
 /// delivers data.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationEndpointConfiguration
 {
@@ -160,7 +160,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 }
 
 /// <summary>Describes the processor parameter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationProcessingConfigurationProcessorsParameters
 {
@@ -178,7 +178,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 /// delivered to Amazon S3, choose AppendDelimiterToRecord as a processor type.
 /// You don’t have to put a processor parameter when you select AppendDelimiterToRecord.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationProcessingConfigurationProcessors
 {
@@ -190,7 +190,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 }
 
 /// <summary>Describes a data processing configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationProcessingConfiguration
 {
@@ -202,7 +202,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 }
 
 /// <summary>Describes the metadata that&apos;s delivered to the specified HTTP endpoint destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationRequestConfigurationCommonAttributes
 {
@@ -214,7 +214,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 }
 
 /// <summary>The configuration of the HTTP endpoint request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationRequestConfiguration
 {
@@ -230,7 +230,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 /// the specified HTTP endpoint destination, or if it doesn&apos;t receive a valid
 /// acknowledgment of receipt from the specified HTTP endpoint destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationRetryOptions
 {
@@ -242,7 +242,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationRoleRefFrom
 {
@@ -254,7 +254,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 }
 
 /// <summary>Reference field for RoleARN</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationRoleRef
 {
@@ -270,7 +270,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationS3ConfigurationBucketRefFrom
 {
@@ -282,7 +282,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 }
 
 /// <summary>Reference field for BucketARN</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationS3ConfigurationBucketRef
 {
@@ -301,7 +301,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 /// parameters are optional. However, if specify a value for one of them, you
 /// must also provide a value for the other.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationS3ConfigurationBufferingHints
 {
@@ -313,7 +313,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 }
 
 /// <summary>Describes the Amazon CloudWatch logging options for your Firehose stream.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationS3ConfigurationCloudWatchLoggingOptions
 {
@@ -331,7 +331,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationS3ConfigurationEncryptionConfigurationKmsEncryptionConfigAwsKMSKeyRefFrom
 {
@@ -343,7 +343,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 }
 
 /// <summary>Reference field for AWSKMSKeyARN</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationS3ConfigurationEncryptionConfigurationKmsEncryptionConfigAwsKMSKeyRef
 {
@@ -356,7 +356,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 }
 
 /// <summary>Describes an encryption key for a destination in Amazon S3.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationS3ConfigurationEncryptionConfigurationKmsEncryptionConfig
 {
@@ -369,7 +369,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 }
 
 /// <summary>Describes the encryption for a destination in Amazon S3.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationS3ConfigurationEncryptionConfiguration
 {
@@ -385,7 +385,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationS3ConfigurationRoleRefFrom
 {
@@ -397,7 +397,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 }
 
 /// <summary>Reference field for RoleARN</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationS3ConfigurationRoleRef
 {
@@ -410,7 +410,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 }
 
 /// <summary>Describes the configuration of a destination in Amazon S3.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationS3Configuration
 {
@@ -460,7 +460,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationSecretsManagerConfigurationRoleRefFrom
 {
@@ -472,7 +472,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 }
 
 /// <summary>Reference field for RoleARN</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationSecretsManagerConfigurationRoleRef
 {
@@ -488,7 +488,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationSecretsManagerConfigurationSecretRefFrom
 {
@@ -500,7 +500,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 }
 
 /// <summary>Reference field for SecretARN</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationSecretsManagerConfigurationSecretRef
 {
@@ -513,7 +513,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 }
 
 /// <summary>The structure that defines how Firehose accesses the secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurationSecretsManagerConfiguration
 {
@@ -539,7 +539,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 /// Enables configuring Kinesis Firehose to deliver data to any HTTP endpoint
 /// destination. You can specify only one destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfiguration
 {
@@ -603,7 +603,7 @@ public partial class V1alpha1DeliveryStreamSpecHttpEndpointDestinationConfigurat
 /// Metadata that you can assign to a Firehose stream, consisting of a key-value
 /// pair.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpecTags
 {
@@ -615,7 +615,7 @@ public partial class V1alpha1DeliveryStreamSpecTags
 }
 
 /// <summary>DeliveryStreamSpec defines the desired state of DeliveryStream.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamSpec
 {
@@ -688,7 +688,7 @@ public partial class V1alpha1DeliveryStreamSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamStatusAckResourceMetadata
 {
@@ -725,7 +725,7 @@ public partial class V1alpha1DeliveryStreamStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamStatusConditions
 {
@@ -755,7 +755,7 @@ public partial class V1alpha1DeliveryStreamStatusConditions
 /// error related to KMS: CreateDeliveryStream, DeleteDeliveryStream, StartDeliveryStreamEncryption,
 /// StopDeliveryStreamEncryption.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamStatusDeliveryStreamEncryptionConfigurationFailureDescription
 {
@@ -767,7 +767,7 @@ public partial class V1alpha1DeliveryStreamStatusDeliveryStreamEncryptionConfigu
 }
 
 /// <summary>DeliveryStreamStatus defines the observed state of DeliveryStream</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DeliveryStreamStatus
 {
@@ -843,7 +843,7 @@ public partial class V1alpha1DeliveryStreamStatus
 }
 
 /// <summary>DeliveryStream is the Schema for the DeliveryStreams API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1DeliveryStream : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1DeliveryStreamSpec?>, IStatus<V1alpha1DeliveryStreamStatus?>

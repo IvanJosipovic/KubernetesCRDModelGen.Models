@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cloudfront.services.k8s.aws;
 /// <summary>CachePolicy is the Schema for the CachePolicies API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1CachePolicyList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1CachePolicy>
@@ -37,7 +37,7 @@ public partial class V1alpha1CachePolicyList : IKubernetesObject<V1ListMeta>, II
 }
 
 /// <summary>Contains a list of cookie names.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CachePolicySpecCachePolicyConfigParametersInCacheKeyAndForwardedToOriginCookiesConfigCookies
 {
@@ -50,7 +50,7 @@ public partial class V1alpha1CachePolicySpecCachePolicyConfigParametersInCacheKe
 /// so, which cookies) are included in the cache key and in requests that CloudFront
 /// sends to the origin.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CachePolicySpecCachePolicyConfigParametersInCacheKeyAndForwardedToOriginCookiesConfig
 {
@@ -63,7 +63,7 @@ public partial class V1alpha1CachePolicySpecCachePolicyConfigParametersInCacheKe
 }
 
 /// <summary>Contains a list of HTTP header names.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CachePolicySpecCachePolicyConfigParametersInCacheKeyAndForwardedToOriginHeadersConfigHeaders
 {
@@ -76,7 +76,7 @@ public partial class V1alpha1CachePolicySpecCachePolicyConfigParametersInCacheKe
 /// are included in the cache key and in requests that CloudFront sends to the
 /// origin.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CachePolicySpecCachePolicyConfigParametersInCacheKeyAndForwardedToOriginHeadersConfig
 {
@@ -89,7 +89,7 @@ public partial class V1alpha1CachePolicySpecCachePolicyConfigParametersInCacheKe
 }
 
 /// <summary>Contains a list of query string names.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CachePolicySpecCachePolicyConfigParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStrings
 {
@@ -102,7 +102,7 @@ public partial class V1alpha1CachePolicySpecCachePolicyConfigParametersInCacheKe
 /// (and if so, which query strings) are included in the cache key and in requests
 /// that CloudFront sends to the origin.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CachePolicySpecCachePolicyConfigParametersInCacheKeyAndForwardedToOriginQueryStringsConfig
 {
@@ -126,7 +126,7 @@ public partial class V1alpha1CachePolicySpecCachePolicyConfigParametersInCacheKe
 /// request&apos;s cache key. If you want to send values to the origin but not include
 /// them in the cache key, use OriginRequestPolicy.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CachePolicySpecCachePolicyConfigParametersInCacheKeyAndForwardedToOrigin
 {
@@ -162,7 +162,7 @@ public partial class V1alpha1CachePolicySpecCachePolicyConfigParametersInCacheKe
 }
 
 /// <summary>A cache policy configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CachePolicySpecCachePolicyConfig
 {
@@ -218,7 +218,7 @@ public partial class V1alpha1CachePolicySpecCachePolicyConfig
 /// the request&apos;s cache key. If you want to send values to the origin but not
 /// include them in the cache key, use OriginRequestPolicy.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CachePolicySpec
 {
@@ -232,7 +232,7 @@ public partial class V1alpha1CachePolicySpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CachePolicyStatusAckResourceMetadata
 {
@@ -269,7 +269,7 @@ public partial class V1alpha1CachePolicyStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CachePolicyStatusConditions
 {
@@ -295,7 +295,7 @@ public partial class V1alpha1CachePolicyStatusConditions
 }
 
 /// <summary>CachePolicyStatus defines the observed state of CachePolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CachePolicyStatus
 {
@@ -330,7 +330,7 @@ public partial class V1alpha1CachePolicyStatus
 }
 
 /// <summary>CachePolicy is the Schema for the CachePolicies API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1CachePolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1CachePolicySpec?>, IStatus<V1alpha1CachePolicyStatus?>

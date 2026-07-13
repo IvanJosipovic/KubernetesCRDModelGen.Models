@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appengine.gcp.upbound.io;
 /// <summary>ServiceNetworkSettings is the Schema for the ServiceNetworkSettingss API. A NetworkSettings resource is a container for ingress settings for a version or service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ServiceNetworkSettingsList : IKubernetesObject<V1ListMeta>, IItems<V1beta2ServiceNetworkSettings>
@@ -45,7 +45,7 @@ public partial class V1beta2ServiceNetworkSettingsList : IKubernetesObject<V1Lis
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceNetworkSettingsSpecDeletionPolicyEnum>))]
 public enum V1beta2ServiceNetworkSettingsSpecDeletionPolicyEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta2ServiceNetworkSettingsSpecDeletionPolicyEnum
 /// Ingress settings for this service. Will apply to all versions.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceNetworkSettingsSpecForProviderNetworkSettings
 {
@@ -78,7 +78,7 @@ public partial class V1beta2ServiceNetworkSettingsSpecForProviderNetworkSettings
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceNetworkSettingsSpecForProviderServiceRefPolicyResolutionEnum>))]
 public enum V1beta2ServiceNetworkSettingsSpecForProviderServiceRefPolicyResolutionEnum
 {
@@ -94,7 +94,7 @@ public enum V1beta2ServiceNetworkSettingsSpecForProviderServiceRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceNetworkSettingsSpecForProviderServiceRefPolicyResolveEnum>))]
 public enum V1beta2ServiceNetworkSettingsSpecForProviderServiceRefPolicyResolveEnum
 {
@@ -105,7 +105,7 @@ public enum V1beta2ServiceNetworkSettingsSpecForProviderServiceRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceNetworkSettingsSpecForProviderServiceRefPolicy
 {
@@ -129,7 +129,7 @@ public partial class V1beta2ServiceNetworkSettingsSpecForProviderServiceRefPolic
 }
 
 /// <summary>Reference to a StandardAppVersion in appengine to populate service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceNetworkSettingsSpecForProviderServiceRef
 {
@@ -148,7 +148,7 @@ public partial class V1beta2ServiceNetworkSettingsSpecForProviderServiceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceNetworkSettingsSpecForProviderServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2ServiceNetworkSettingsSpecForProviderServiceSelectorPolicyResolutionEnum
 {
@@ -164,7 +164,7 @@ public enum V1beta2ServiceNetworkSettingsSpecForProviderServiceSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceNetworkSettingsSpecForProviderServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2ServiceNetworkSettingsSpecForProviderServiceSelectorPolicyResolveEnum
 {
@@ -175,7 +175,7 @@ public enum V1beta2ServiceNetworkSettingsSpecForProviderServiceSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceNetworkSettingsSpecForProviderServiceSelectorPolicy
 {
@@ -199,7 +199,7 @@ public partial class V1beta2ServiceNetworkSettingsSpecForProviderServiceSelector
 }
 
 /// <summary>Selector for a StandardAppVersion in appengine to populate service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceNetworkSettingsSpecForProviderServiceSelector
 {
@@ -219,7 +219,7 @@ public partial class V1beta2ServiceNetworkSettingsSpecForProviderServiceSelector
     public V1beta2ServiceNetworkSettingsSpecForProviderServiceSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceNetworkSettingsSpecForProvider
 {
@@ -254,7 +254,7 @@ public partial class V1beta2ServiceNetworkSettingsSpecForProvider
 /// Ingress settings for this service. Will apply to all versions.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceNetworkSettingsSpecInitProviderNetworkSettings
 {
@@ -273,7 +273,7 @@ public partial class V1beta2ServiceNetworkSettingsSpecInitProviderNetworkSetting
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceNetworkSettingsSpecInitProviderServiceRefPolicyResolutionEnum>))]
 public enum V1beta2ServiceNetworkSettingsSpecInitProviderServiceRefPolicyResolutionEnum
 {
@@ -289,7 +289,7 @@ public enum V1beta2ServiceNetworkSettingsSpecInitProviderServiceRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceNetworkSettingsSpecInitProviderServiceRefPolicyResolveEnum>))]
 public enum V1beta2ServiceNetworkSettingsSpecInitProviderServiceRefPolicyResolveEnum
 {
@@ -300,7 +300,7 @@ public enum V1beta2ServiceNetworkSettingsSpecInitProviderServiceRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceNetworkSettingsSpecInitProviderServiceRefPolicy
 {
@@ -324,7 +324,7 @@ public partial class V1beta2ServiceNetworkSettingsSpecInitProviderServiceRefPoli
 }
 
 /// <summary>Reference to a StandardAppVersion in appengine to populate service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceNetworkSettingsSpecInitProviderServiceRef
 {
@@ -343,7 +343,7 @@ public partial class V1beta2ServiceNetworkSettingsSpecInitProviderServiceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceNetworkSettingsSpecInitProviderServiceSelectorPolicyResolutionEnum>))]
 public enum V1beta2ServiceNetworkSettingsSpecInitProviderServiceSelectorPolicyResolutionEnum
 {
@@ -359,7 +359,7 @@ public enum V1beta2ServiceNetworkSettingsSpecInitProviderServiceSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceNetworkSettingsSpecInitProviderServiceSelectorPolicyResolveEnum>))]
 public enum V1beta2ServiceNetworkSettingsSpecInitProviderServiceSelectorPolicyResolveEnum
 {
@@ -370,7 +370,7 @@ public enum V1beta2ServiceNetworkSettingsSpecInitProviderServiceSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceNetworkSettingsSpecInitProviderServiceSelectorPolicy
 {
@@ -394,7 +394,7 @@ public partial class V1beta2ServiceNetworkSettingsSpecInitProviderServiceSelecto
 }
 
 /// <summary>Selector for a StandardAppVersion in appengine to populate service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceNetworkSettingsSpecInitProviderServiceSelector
 {
@@ -426,7 +426,7 @@ public partial class V1beta2ServiceNetworkSettingsSpecInitProviderServiceSelecto
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceNetworkSettingsSpecInitProvider
 {
@@ -461,7 +461,7 @@ public partial class V1beta2ServiceNetworkSettingsSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceNetworkSettingsSpecManagementPoliciesEnum>))]
 public enum V1beta2ServiceNetworkSettingsSpecManagementPoliciesEnum
 {
@@ -485,7 +485,7 @@ public enum V1beta2ServiceNetworkSettingsSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceNetworkSettingsSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2ServiceNetworkSettingsSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -501,7 +501,7 @@ public enum V1beta2ServiceNetworkSettingsSpecProviderConfigRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceNetworkSettingsSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2ServiceNetworkSettingsSpecProviderConfigRefPolicyResolveEnum
 {
@@ -512,7 +512,7 @@ public enum V1beta2ServiceNetworkSettingsSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceNetworkSettingsSpecProviderConfigRefPolicy
 {
@@ -540,7 +540,7 @@ public partial class V1beta2ServiceNetworkSettingsSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceNetworkSettingsSpecProviderConfigRef
 {
@@ -559,7 +559,7 @@ public partial class V1beta2ServiceNetworkSettingsSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceNetworkSettingsSpecWriteConnectionSecretToRef
 {
@@ -573,7 +573,7 @@ public partial class V1beta2ServiceNetworkSettingsSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ServiceNetworkSettingsSpec defines the desired state of ServiceNetworkSettings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceNetworkSettingsSpec
 {
@@ -644,7 +644,7 @@ public partial class V1beta2ServiceNetworkSettingsSpec
 /// Ingress settings for this service. Will apply to all versions.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceNetworkSettingsStatusAtProviderNetworkSettings
 {
@@ -657,7 +657,7 @@ public partial class V1beta2ServiceNetworkSettingsStatusAtProviderNetworkSetting
     public string? IngressTrafficAllowed { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceNetworkSettingsStatusAtProvider
 {
@@ -685,7 +685,7 @@ public partial class V1beta2ServiceNetworkSettingsStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceNetworkSettingsStatusConditions
 {
@@ -728,7 +728,7 @@ public partial class V1beta2ServiceNetworkSettingsStatusConditions
 }
 
 /// <summary>ServiceNetworkSettingsStatus defines the observed state of ServiceNetworkSettings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceNetworkSettingsStatus
 {
@@ -749,7 +749,7 @@ public partial class V1beta2ServiceNetworkSettingsStatus
 }
 
 /// <summary>ServiceNetworkSettings is the Schema for the ServiceNetworkSettingss API. A NetworkSettings resource is a container for ingress settings for a version or service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ServiceNetworkSettings : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2ServiceNetworkSettingsSpec>, IStatus<V1beta2ServiceNetworkSettingsStatus?>

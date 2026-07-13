@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.beyondcorp.gcp.upbound.io;
 /// <summary>AppConnection is the Schema for the AppConnections API. A BeyondCorp AppConnection resource represents a BeyondCorp protected AppConnection to a remote application.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2AppConnectionList : IKubernetesObject<V1ListMeta>, IItems<V1beta2AppConnection>
@@ -45,7 +45,7 @@ public partial class V1beta2AppConnectionList : IKubernetesObject<V1ListMeta>, I
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2AppConnectionSpecDeletionPolicyEnum>))]
 public enum V1beta2AppConnectionSpecDeletionPolicyEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta2AppConnectionSpecDeletionPolicyEnum
 /// Address of the remote application endpoint for the BeyondCorp AppConnection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecForProviderApplicationEndpoint
 {
@@ -78,7 +78,7 @@ public partial class V1beta2AppConnectionSpecForProviderApplicationEndpoint
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2AppConnectionSpecForProviderConnectorsRefsPolicyResolutionEnum>))]
 public enum V1beta2AppConnectionSpecForProviderConnectorsRefsPolicyResolutionEnum
 {
@@ -94,7 +94,7 @@ public enum V1beta2AppConnectionSpecForProviderConnectorsRefsPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2AppConnectionSpecForProviderConnectorsRefsPolicyResolveEnum>))]
 public enum V1beta2AppConnectionSpecForProviderConnectorsRefsPolicyResolveEnum
 {
@@ -105,7 +105,7 @@ public enum V1beta2AppConnectionSpecForProviderConnectorsRefsPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecForProviderConnectorsRefsPolicy
 {
@@ -129,7 +129,7 @@ public partial class V1beta2AppConnectionSpecForProviderConnectorsRefsPolicy
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecForProviderConnectorsRefs
 {
@@ -148,7 +148,7 @@ public partial class V1beta2AppConnectionSpecForProviderConnectorsRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2AppConnectionSpecForProviderConnectorsSelectorPolicyResolutionEnum>))]
 public enum V1beta2AppConnectionSpecForProviderConnectorsSelectorPolicyResolutionEnum
 {
@@ -164,7 +164,7 @@ public enum V1beta2AppConnectionSpecForProviderConnectorsSelectorPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2AppConnectionSpecForProviderConnectorsSelectorPolicyResolveEnum>))]
 public enum V1beta2AppConnectionSpecForProviderConnectorsSelectorPolicyResolveEnum
 {
@@ -175,7 +175,7 @@ public enum V1beta2AppConnectionSpecForProviderConnectorsSelectorPolicyResolveEn
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecForProviderConnectorsSelectorPolicy
 {
@@ -199,7 +199,7 @@ public partial class V1beta2AppConnectionSpecForProviderConnectorsSelectorPolicy
 }
 
 /// <summary>Selector for a list of AppConnector in beyondcorp to populate connectors.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecForProviderConnectorsSelector
 {
@@ -225,7 +225,7 @@ public partial class V1beta2AppConnectionSpecForProviderConnectorsSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2AppConnectionSpecForProviderGatewayAppGatewayRefPolicyResolutionEnum>))]
 public enum V1beta2AppConnectionSpecForProviderGatewayAppGatewayRefPolicyResolutionEnum
 {
@@ -241,7 +241,7 @@ public enum V1beta2AppConnectionSpecForProviderGatewayAppGatewayRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2AppConnectionSpecForProviderGatewayAppGatewayRefPolicyResolveEnum>))]
 public enum V1beta2AppConnectionSpecForProviderGatewayAppGatewayRefPolicyResolveEnum
 {
@@ -252,7 +252,7 @@ public enum V1beta2AppConnectionSpecForProviderGatewayAppGatewayRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecForProviderGatewayAppGatewayRefPolicy
 {
@@ -276,7 +276,7 @@ public partial class V1beta2AppConnectionSpecForProviderGatewayAppGatewayRefPoli
 }
 
 /// <summary>Reference to a AppGateway in beyondcorp to populate appGateway.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecForProviderGatewayAppGatewayRef
 {
@@ -295,7 +295,7 @@ public partial class V1beta2AppConnectionSpecForProviderGatewayAppGatewayRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2AppConnectionSpecForProviderGatewayAppGatewaySelectorPolicyResolutionEnum>))]
 public enum V1beta2AppConnectionSpecForProviderGatewayAppGatewaySelectorPolicyResolutionEnum
 {
@@ -311,7 +311,7 @@ public enum V1beta2AppConnectionSpecForProviderGatewayAppGatewaySelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2AppConnectionSpecForProviderGatewayAppGatewaySelectorPolicyResolveEnum>))]
 public enum V1beta2AppConnectionSpecForProviderGatewayAppGatewaySelectorPolicyResolveEnum
 {
@@ -322,7 +322,7 @@ public enum V1beta2AppConnectionSpecForProviderGatewayAppGatewaySelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecForProviderGatewayAppGatewaySelectorPolicy
 {
@@ -346,7 +346,7 @@ public partial class V1beta2AppConnectionSpecForProviderGatewayAppGatewaySelecto
 }
 
 /// <summary>Selector for a AppGateway in beyondcorp to populate appGateway.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecForProviderGatewayAppGatewaySelector
 {
@@ -370,7 +370,7 @@ public partial class V1beta2AppConnectionSpecForProviderGatewayAppGatewaySelecto
 /// Gateway used by the AppConnection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecForProviderGateway
 {
@@ -395,7 +395,7 @@ public partial class V1beta2AppConnectionSpecForProviderGateway
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecForProvider
 {
@@ -461,7 +461,7 @@ public partial class V1beta2AppConnectionSpecForProvider
 /// Address of the remote application endpoint for the BeyondCorp AppConnection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecInitProviderApplicationEndpoint
 {
@@ -480,7 +480,7 @@ public partial class V1beta2AppConnectionSpecInitProviderApplicationEndpoint
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2AppConnectionSpecInitProviderConnectorsRefsPolicyResolutionEnum>))]
 public enum V1beta2AppConnectionSpecInitProviderConnectorsRefsPolicyResolutionEnum
 {
@@ -496,7 +496,7 @@ public enum V1beta2AppConnectionSpecInitProviderConnectorsRefsPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2AppConnectionSpecInitProviderConnectorsRefsPolicyResolveEnum>))]
 public enum V1beta2AppConnectionSpecInitProviderConnectorsRefsPolicyResolveEnum
 {
@@ -507,7 +507,7 @@ public enum V1beta2AppConnectionSpecInitProviderConnectorsRefsPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecInitProviderConnectorsRefsPolicy
 {
@@ -531,7 +531,7 @@ public partial class V1beta2AppConnectionSpecInitProviderConnectorsRefsPolicy
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecInitProviderConnectorsRefs
 {
@@ -550,7 +550,7 @@ public partial class V1beta2AppConnectionSpecInitProviderConnectorsRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2AppConnectionSpecInitProviderConnectorsSelectorPolicyResolutionEnum>))]
 public enum V1beta2AppConnectionSpecInitProviderConnectorsSelectorPolicyResolutionEnum
 {
@@ -566,7 +566,7 @@ public enum V1beta2AppConnectionSpecInitProviderConnectorsSelectorPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2AppConnectionSpecInitProviderConnectorsSelectorPolicyResolveEnum>))]
 public enum V1beta2AppConnectionSpecInitProviderConnectorsSelectorPolicyResolveEnum
 {
@@ -577,7 +577,7 @@ public enum V1beta2AppConnectionSpecInitProviderConnectorsSelectorPolicyResolveE
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecInitProviderConnectorsSelectorPolicy
 {
@@ -601,7 +601,7 @@ public partial class V1beta2AppConnectionSpecInitProviderConnectorsSelectorPolic
 }
 
 /// <summary>Selector for a list of AppConnector in beyondcorp to populate connectors.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecInitProviderConnectorsSelector
 {
@@ -627,7 +627,7 @@ public partial class V1beta2AppConnectionSpecInitProviderConnectorsSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2AppConnectionSpecInitProviderGatewayAppGatewayRefPolicyResolutionEnum>))]
 public enum V1beta2AppConnectionSpecInitProviderGatewayAppGatewayRefPolicyResolutionEnum
 {
@@ -643,7 +643,7 @@ public enum V1beta2AppConnectionSpecInitProviderGatewayAppGatewayRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2AppConnectionSpecInitProviderGatewayAppGatewayRefPolicyResolveEnum>))]
 public enum V1beta2AppConnectionSpecInitProviderGatewayAppGatewayRefPolicyResolveEnum
 {
@@ -654,7 +654,7 @@ public enum V1beta2AppConnectionSpecInitProviderGatewayAppGatewayRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecInitProviderGatewayAppGatewayRefPolicy
 {
@@ -678,7 +678,7 @@ public partial class V1beta2AppConnectionSpecInitProviderGatewayAppGatewayRefPol
 }
 
 /// <summary>Reference to a AppGateway in beyondcorp to populate appGateway.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecInitProviderGatewayAppGatewayRef
 {
@@ -697,7 +697,7 @@ public partial class V1beta2AppConnectionSpecInitProviderGatewayAppGatewayRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2AppConnectionSpecInitProviderGatewayAppGatewaySelectorPolicyResolutionEnum>))]
 public enum V1beta2AppConnectionSpecInitProviderGatewayAppGatewaySelectorPolicyResolutionEnum
 {
@@ -713,7 +713,7 @@ public enum V1beta2AppConnectionSpecInitProviderGatewayAppGatewaySelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2AppConnectionSpecInitProviderGatewayAppGatewaySelectorPolicyResolveEnum>))]
 public enum V1beta2AppConnectionSpecInitProviderGatewayAppGatewaySelectorPolicyResolveEnum
 {
@@ -724,7 +724,7 @@ public enum V1beta2AppConnectionSpecInitProviderGatewayAppGatewaySelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecInitProviderGatewayAppGatewaySelectorPolicy
 {
@@ -748,7 +748,7 @@ public partial class V1beta2AppConnectionSpecInitProviderGatewayAppGatewaySelect
 }
 
 /// <summary>Selector for a AppGateway in beyondcorp to populate appGateway.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecInitProviderGatewayAppGatewaySelector
 {
@@ -772,7 +772,7 @@ public partial class V1beta2AppConnectionSpecInitProviderGatewayAppGatewaySelect
 /// Gateway used by the AppConnection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecInitProviderGateway
 {
@@ -809,7 +809,7 @@ public partial class V1beta2AppConnectionSpecInitProviderGateway
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecInitProvider
 {
@@ -875,7 +875,7 @@ public partial class V1beta2AppConnectionSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2AppConnectionSpecManagementPoliciesEnum>))]
 public enum V1beta2AppConnectionSpecManagementPoliciesEnum
 {
@@ -899,7 +899,7 @@ public enum V1beta2AppConnectionSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2AppConnectionSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2AppConnectionSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -915,7 +915,7 @@ public enum V1beta2AppConnectionSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2AppConnectionSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2AppConnectionSpecProviderConfigRefPolicyResolveEnum
 {
@@ -926,7 +926,7 @@ public enum V1beta2AppConnectionSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecProviderConfigRefPolicy
 {
@@ -954,7 +954,7 @@ public partial class V1beta2AppConnectionSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecProviderConfigRef
 {
@@ -973,7 +973,7 @@ public partial class V1beta2AppConnectionSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpecWriteConnectionSecretToRef
 {
@@ -987,7 +987,7 @@ public partial class V1beta2AppConnectionSpecWriteConnectionSecretToRef
 }
 
 /// <summary>AppConnectionSpec defines the desired state of AppConnection</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionSpec
 {
@@ -1058,7 +1058,7 @@ public partial class V1beta2AppConnectionSpec
 /// Address of the remote application endpoint for the BeyondCorp AppConnection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionStatusAtProviderApplicationEndpoint
 {
@@ -1075,7 +1075,7 @@ public partial class V1beta2AppConnectionStatusAtProviderApplicationEndpoint
 /// Gateway used by the AppConnection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionStatusAtProviderGateway
 {
@@ -1106,7 +1106,7 @@ public partial class V1beta2AppConnectionStatusAtProviderGateway
     public string? Uri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionStatusAtProvider
 {
@@ -1176,7 +1176,7 @@ public partial class V1beta2AppConnectionStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionStatusConditions
 {
@@ -1219,7 +1219,7 @@ public partial class V1beta2AppConnectionStatusConditions
 }
 
 /// <summary>AppConnectionStatus defines the observed state of AppConnection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppConnectionStatus
 {
@@ -1240,7 +1240,7 @@ public partial class V1beta2AppConnectionStatus
 }
 
 /// <summary>AppConnection is the Schema for the AppConnections API. A BeyondCorp AppConnection resource represents a BeyondCorp protected AppConnection to a remote application.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2AppConnection : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2AppConnectionSpec>, IStatus<V1beta2AppConnectionStatus?>

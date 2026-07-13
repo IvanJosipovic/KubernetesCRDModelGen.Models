@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ops.crossplane.io;
 /// <summary>A CronOperation creates Operations on a cron schedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1CronOperationList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1CronOperation>
@@ -40,7 +40,7 @@ public partial class V1alpha1CronOperationList : IKubernetesObject<V1ListMeta>, 
 /// ConcurrencyPolicy specifies how to treat concurrent executions of an
 /// operation.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1CronOperationSpecConcurrencyPolicyEnum>))]
 public enum V1alpha1CronOperationSpecConcurrencyPolicyEnum
 {
@@ -53,7 +53,7 @@ public enum V1alpha1CronOperationSpecConcurrencyPolicyEnum
 }
 
 /// <summary>Standard object metadata.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronOperationSpecOperationTemplateMetadata
 {
@@ -65,7 +65,7 @@ public partial class V1alpha1CronOperationSpecOperationTemplateMetadata
 /// &quot;Pipeline&quot; indicates that an Operation specifies a pipeline of
 /// functions, each of which is responsible for implementing its logic.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1CronOperationSpecOperationTemplateSpecModeEnum>))]
 public enum V1alpha1CronOperationSpecOperationTemplateSpecModeEnum
 {
@@ -77,7 +77,7 @@ public enum V1alpha1CronOperationSpecOperationTemplateSpecModeEnum
 /// A SecretRef is a reference to a secret containing credentials that should
 /// be supplied to the function.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronOperationSpecOperationTemplateSpecPipelineCredentialsSecretRef
 {
@@ -91,7 +91,7 @@ public partial class V1alpha1CronOperationSpecOperationTemplateSpecPipelineCrede
 }
 
 /// <summary>Source of the function credentials.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1CronOperationSpecOperationTemplateSpecPipelineCredentialsSourceEnum>))]
 public enum V1alpha1CronOperationSpecOperationTemplateSpecPipelineCredentialsSourceEnum
 {
@@ -105,7 +105,7 @@ public enum V1alpha1CronOperationSpecOperationTemplateSpecPipelineCredentialsSou
 /// FunctionCredentials are optional credentials that a function
 /// needs to run.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronOperationSpecOperationTemplateSpecPipelineCredentials
 {
@@ -129,7 +129,7 @@ public partial class V1alpha1CronOperationSpecOperationTemplateSpecPipelineCrede
 /// FunctionRef is a reference to the function this step should
 /// execute.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronOperationSpecOperationTemplateSpecPipelineFunctionRef
 {
@@ -142,7 +142,7 @@ public partial class V1alpha1CronOperationSpecOperationTemplateSpecPipelineFunct
 /// RequiredResourceSelector selects resources that should be fetched before
 /// a pipeline step runs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronOperationSpecOperationTemplateSpecPipelineRequirementsRequiredResources
 {
@@ -184,7 +184,7 @@ public partial class V1alpha1CronOperationSpecOperationTemplateSpecPipelineRequi
 /// RequiredSchemaSelector selects an OpenAPI schema that should be fetched
 /// before a pipeline step runs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronOperationSpecOperationTemplateSpecPipelineRequirementsRequiredSchemas
 {
@@ -210,7 +210,7 @@ public partial class V1alpha1CronOperationSpecOperationTemplateSpecPipelineRequi
 /// pre-populating required resources without requiring a function to
 /// request them first.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronOperationSpecOperationTemplateSpecPipelineRequirements
 {
@@ -230,7 +230,7 @@ public partial class V1alpha1CronOperationSpecOperationTemplateSpecPipelineRequi
 }
 
 /// <summary>A PipelineStep in an operation function pipeline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronOperationSpecOperationTemplateSpecPipeline
 {
@@ -268,7 +268,7 @@ public partial class V1alpha1CronOperationSpecOperationTemplateSpecPipeline
 }
 
 /// <summary>Spec is the specification of the Operation to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronOperationSpecOperationTemplateSpec
 {
@@ -297,7 +297,7 @@ public partial class V1alpha1CronOperationSpecOperationTemplateSpec
 }
 
 /// <summary>OperationTemplate is the template for the Operation to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronOperationSpecOperationTemplate
 {
@@ -311,7 +311,7 @@ public partial class V1alpha1CronOperationSpecOperationTemplate
 }
 
 /// <summary>CronOperationSpec specifies the desired state of a CronOperation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronOperationSpec
 {
@@ -347,7 +347,7 @@ public partial class V1alpha1CronOperationSpec
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronOperationStatusConditions
 {
@@ -390,7 +390,7 @@ public partial class V1alpha1CronOperationStatusConditions
 }
 
 /// <summary>A RunningOperationRef is a reference to a running operation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronOperationStatusRunningOperationRefs
 {
@@ -400,7 +400,7 @@ public partial class V1alpha1CronOperationStatusRunningOperationRefs
 }
 
 /// <summary>CronOperationStatus represents the observed state of a CronOperation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CronOperationStatus
 {
@@ -425,7 +425,7 @@ public partial class V1alpha1CronOperationStatus
 }
 
 /// <summary>A CronOperation creates Operations on a cron schedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1CronOperation : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1CronOperationSpec?>, IStatus<V1alpha1CronOperationStatus?>

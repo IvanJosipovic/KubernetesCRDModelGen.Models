@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.storage.azure.com;
 /// - Generated from: /storage/resource-manager/Microsoft.Storage/stable/2022-09-01/storage.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20220901StorageAccountList : IKubernetesObject<V1ListMeta>, IItems<V1api20220901StorageAccount>
@@ -45,7 +45,7 @@ public partial class V1api20220901StorageAccountList : IKubernetesObject<V1ListM
 /// access tier is the default value for premium block blobs storage account type and it cannot be changed for the premium
 /// block blobs storage account type.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecAccessTierEnum>))]
 public enum V1api20220901StorageAccountSpecAccessTierEnum
 {
@@ -58,7 +58,7 @@ public enum V1api20220901StorageAccountSpecAccessTierEnum
 }
 
 /// <summary>AllowedCopyScope: Restrict copy to and from Storage Accounts within an AAD tenant or with Private Links to the same VNet.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecAllowedCopyScopeEnum>))]
 public enum V1api20220901StorageAccountSpecAllowedCopyScopeEnum
 {
@@ -69,7 +69,7 @@ public enum V1api20220901StorageAccountSpecAllowedCopyScopeEnum
 }
 
 /// <summary>AccountType: Specifies the Active Directory account type for Azure Storage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecAzureFilesIdentityBasedAuthenticationActiveDirectoryPropertiesAccountTypeEnum>))]
 public enum V1api20220901StorageAccountSpecAzureFilesIdentityBasedAuthenticationActiveDirectoryPropertiesAccountTypeEnum
 {
@@ -80,7 +80,7 @@ public enum V1api20220901StorageAccountSpecAzureFilesIdentityBasedAuthentication
 }
 
 /// <summary>ActiveDirectoryProperties: Required if directoryServiceOptions are AD, optional if they are AADKERB.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecAzureFilesIdentityBasedAuthenticationActiveDirectoryProperties
 {
@@ -118,7 +118,7 @@ public partial class V1api20220901StorageAccountSpecAzureFilesIdentityBasedAuthe
 }
 
 /// <summary>DefaultSharePermission: Default share permission for users using Kerberos authentication if RBAC role is not assigned.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecAzureFilesIdentityBasedAuthenticationDefaultSharePermissionEnum>))]
 public enum V1api20220901StorageAccountSpecAzureFilesIdentityBasedAuthenticationDefaultSharePermissionEnum
 {
@@ -133,7 +133,7 @@ public enum V1api20220901StorageAccountSpecAzureFilesIdentityBasedAuthentication
 }
 
 /// <summary>DirectoryServiceOptions: Indicates the directory service used. Note that this enum may be extended in the future.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecAzureFilesIdentityBasedAuthenticationDirectoryServiceOptionsEnum>))]
 public enum V1api20220901StorageAccountSpecAzureFilesIdentityBasedAuthenticationDirectoryServiceOptionsEnum
 {
@@ -148,7 +148,7 @@ public enum V1api20220901StorageAccountSpecAzureFilesIdentityBasedAuthentication
 }
 
 /// <summary>AzureFilesIdentityBasedAuthentication: Provides the identity based authentication settings for Azure Files.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecAzureFilesIdentityBasedAuthentication
 {
@@ -170,7 +170,7 @@ public partial class V1api20220901StorageAccountSpecAzureFilesIdentityBasedAuthe
 /// per storage account at this time. To clear the existing custom domain, use an empty string for the custom domain name
 /// property.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecCustomDomain
 {
@@ -191,7 +191,7 @@ public partial class V1api20220901StorageAccountSpecCustomDomain
 /// accounts in a single subscription, which creates accounts in an Azure DNS Zone and the endpoint URL will have an
 /// alphanumeric DNS Zone identifier.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecDnsEndpointTypeEnum>))]
 public enum V1api20220901StorageAccountSpecDnsEndpointTypeEnum
 {
@@ -205,7 +205,7 @@ public enum V1api20220901StorageAccountSpecDnsEndpointTypeEnum
 /// UserAssignedIdentityReference: Resource identifier of the UserAssigned identity to be associated with server-side
 /// encryption on the storage account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecEncryptionIdentityUserAssignedIdentityReference
 {
@@ -231,7 +231,7 @@ public partial class V1api20220901StorageAccountSpecEncryptionIdentityUserAssign
 }
 
 /// <summary>Identity: The identity to be used with service-side encryption at rest.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecEncryptionIdentity
 {
@@ -254,7 +254,7 @@ public partial class V1api20220901StorageAccountSpecEncryptionIdentity
 /// KeySource: The encryption keySource (provider). Possible values (case-insensitive):  Microsoft.Storage,
 /// Microsoft.Keyvault
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecEncryptionKeySourceEnum>))]
 public enum V1api20220901StorageAccountSpecEncryptionKeySourceEnum
 {
@@ -265,7 +265,7 @@ public enum V1api20220901StorageAccountSpecEncryptionKeySourceEnum
 }
 
 /// <summary>Keyvaultproperties: Properties provided by key vault.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecEncryptionKeyvaultproperties
 {
@@ -286,7 +286,7 @@ public partial class V1api20220901StorageAccountSpecEncryptionKeyvaultproperties
 /// KeyType: Encryption key type to be used for the encryption service. &apos;Account&apos; key type implies that an account-scoped
 /// encryption key will be used. &apos;Service&apos; key type implies that a default service key is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecEncryptionServicesBlobKeyTypeEnum>))]
 public enum V1api20220901StorageAccountSpecEncryptionServicesBlobKeyTypeEnum
 {
@@ -297,7 +297,7 @@ public enum V1api20220901StorageAccountSpecEncryptionServicesBlobKeyTypeEnum
 }
 
 /// <summary>Blob: The encryption function of the blob storage service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecEncryptionServicesBlob
 {
@@ -320,7 +320,7 @@ public partial class V1api20220901StorageAccountSpecEncryptionServicesBlob
 /// KeyType: Encryption key type to be used for the encryption service. &apos;Account&apos; key type implies that an account-scoped
 /// encryption key will be used. &apos;Service&apos; key type implies that a default service key is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecEncryptionServicesFileKeyTypeEnum>))]
 public enum V1api20220901StorageAccountSpecEncryptionServicesFileKeyTypeEnum
 {
@@ -331,7 +331,7 @@ public enum V1api20220901StorageAccountSpecEncryptionServicesFileKeyTypeEnum
 }
 
 /// <summary>File: The encryption function of the file storage service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecEncryptionServicesFile
 {
@@ -354,7 +354,7 @@ public partial class V1api20220901StorageAccountSpecEncryptionServicesFile
 /// KeyType: Encryption key type to be used for the encryption service. &apos;Account&apos; key type implies that an account-scoped
 /// encryption key will be used. &apos;Service&apos; key type implies that a default service key is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecEncryptionServicesQueueKeyTypeEnum>))]
 public enum V1api20220901StorageAccountSpecEncryptionServicesQueueKeyTypeEnum
 {
@@ -365,7 +365,7 @@ public enum V1api20220901StorageAccountSpecEncryptionServicesQueueKeyTypeEnum
 }
 
 /// <summary>Queue: The encryption function of the queue storage service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecEncryptionServicesQueue
 {
@@ -388,7 +388,7 @@ public partial class V1api20220901StorageAccountSpecEncryptionServicesQueue
 /// KeyType: Encryption key type to be used for the encryption service. &apos;Account&apos; key type implies that an account-scoped
 /// encryption key will be used. &apos;Service&apos; key type implies that a default service key is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecEncryptionServicesTableKeyTypeEnum>))]
 public enum V1api20220901StorageAccountSpecEncryptionServicesTableKeyTypeEnum
 {
@@ -399,7 +399,7 @@ public enum V1api20220901StorageAccountSpecEncryptionServicesTableKeyTypeEnum
 }
 
 /// <summary>Table: The encryption function of the table storage service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecEncryptionServicesTable
 {
@@ -419,7 +419,7 @@ public partial class V1api20220901StorageAccountSpecEncryptionServicesTable
 }
 
 /// <summary>Services: List of services which support encryption.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecEncryptionServices
 {
@@ -441,7 +441,7 @@ public partial class V1api20220901StorageAccountSpecEncryptionServices
 }
 
 /// <summary>Encryption: Encryption settings to be used for server-side encryption for the storage account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecEncryption
 {
@@ -473,7 +473,7 @@ public partial class V1api20220901StorageAccountSpecEncryption
 }
 
 /// <summary>Type: The type of the extended location.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecExtendedLocationTypeEnum>))]
 public enum V1api20220901StorageAccountSpecExtendedLocationTypeEnum
 {
@@ -485,7 +485,7 @@ public enum V1api20220901StorageAccountSpecExtendedLocationTypeEnum
 /// ExtendedLocation: Optional. Set the extended location of the resource. If not set, the storage account will be created
 /// in Azure main region. Otherwise it will be created in the specified extended location
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecExtendedLocation
 {
@@ -499,7 +499,7 @@ public partial class V1api20220901StorageAccountSpecExtendedLocation
 }
 
 /// <summary>Type: The identity type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecIdentityTypeEnum>))]
 public enum V1api20220901StorageAccountSpecIdentityTypeEnum
 {
@@ -514,7 +514,7 @@ public enum V1api20220901StorageAccountSpecIdentityTypeEnum
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecIdentityUserAssignedIdentitiesReference
 {
@@ -540,7 +540,7 @@ public partial class V1api20220901StorageAccountSpecIdentityUserAssignedIdentiti
 }
 
 /// <summary>Information about the user assigned identity for the resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecIdentityUserAssignedIdentities
 {
@@ -550,7 +550,7 @@ public partial class V1api20220901StorageAccountSpecIdentityUserAssignedIdentiti
 }
 
 /// <summary>Identity: The identity of the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecIdentity
 {
@@ -574,7 +574,7 @@ public partial class V1api20220901StorageAccountSpecIdentity
 /// Disabled or Unlocked state and can be toggled between the two states. Only a policy in an Unlocked state can transition
 /// to a Locked state which cannot be reverted.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecImmutableStorageWithVersioningImmutabilityPolicyStateEnum>))]
 public enum V1api20220901StorageAccountSpecImmutableStorageWithVersioningImmutabilityPolicyStateEnum
 {
@@ -592,7 +592,7 @@ public enum V1api20220901StorageAccountSpecImmutableStorageWithVersioningImmutab
 /// precedence than the container-level immutability policy, which has a higher precedence than the account-level
 /// immutability policy.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecImmutableStorageWithVersioningImmutabilityPolicy
 {
@@ -626,7 +626,7 @@ public partial class V1api20220901StorageAccountSpecImmutableStorageWithVersioni
 /// ImmutableStorageWithVersioning: The property is immutable and can only be set to true at the account creation time. When
 /// set to true, it enables object level immutability for all the new containers in the account by default.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecImmutableStorageWithVersioning
 {
@@ -648,7 +648,7 @@ public partial class V1api20220901StorageAccountSpecImmutableStorageWithVersioni
 }
 
 /// <summary>KeyPolicy: KeyPolicy assigned to the storage account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecKeyPolicy
 {
@@ -658,7 +658,7 @@ public partial class V1api20220901StorageAccountSpecKeyPolicy
 }
 
 /// <summary>Kind: Required. Indicates the type of storage account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecKindEnum>))]
 public enum V1api20220901StorageAccountSpecKindEnum
 {
@@ -675,7 +675,7 @@ public enum V1api20220901StorageAccountSpecKindEnum
 }
 
 /// <summary>LargeFileSharesState: Allow large file shares if sets to Enabled. It cannot be disabled once it is enabled.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecLargeFileSharesStateEnum>))]
 public enum V1api20220901StorageAccountSpecLargeFileSharesStateEnum
 {
@@ -689,7 +689,7 @@ public enum V1api20220901StorageAccountSpecLargeFileSharesStateEnum
 /// MinimumTlsVersion: Set the minimum TLS version to be permitted on requests to storage. The default interpretation is TLS
 /// 1.0 for this property.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecMinimumTlsVersionEnum>))]
 public enum V1api20220901StorageAccountSpecMinimumTlsVersionEnum
 {
@@ -702,7 +702,7 @@ public enum V1api20220901StorageAccountSpecMinimumTlsVersionEnum
 }
 
 /// <summary>DefaultAction: Specifies the default action of allow or deny when no other rules match.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecNetworkAclsDefaultActionEnum>))]
 public enum V1api20220901StorageAccountSpecNetworkAclsDefaultActionEnum
 {
@@ -713,7 +713,7 @@ public enum V1api20220901StorageAccountSpecNetworkAclsDefaultActionEnum
 }
 
 /// <summary>Action: The action of IP ACL rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecNetworkAclsIpRulesActionEnum>))]
 public enum V1api20220901StorageAccountSpecNetworkAclsIpRulesActionEnum
 {
@@ -722,7 +722,7 @@ public enum V1api20220901StorageAccountSpecNetworkAclsIpRulesActionEnum
 }
 
 /// <summary>ValueFromConfig: Specifies the IP or IP range in CIDR format. Only IPV4 address is allowed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecNetworkAclsIpRulesValueFromConfig
 {
@@ -739,7 +739,7 @@ public partial class V1api20220901StorageAccountSpecNetworkAclsIpRulesValueFromC
 }
 
 /// <summary>IP rule with specific IP or IP range in CIDR format.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecNetworkAclsIpRules
 {
@@ -757,7 +757,7 @@ public partial class V1api20220901StorageAccountSpecNetworkAclsIpRules
 }
 
 /// <summary>ResourceReference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecNetworkAclsResourceAccessRulesResourceReference
 {
@@ -783,7 +783,7 @@ public partial class V1api20220901StorageAccountSpecNetworkAclsResourceAccessRul
 }
 
 /// <summary>Resource Access Rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecNetworkAclsResourceAccessRules
 {
@@ -797,7 +797,7 @@ public partial class V1api20220901StorageAccountSpecNetworkAclsResourceAccessRul
 }
 
 /// <summary>Action: The action of virtual network rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecNetworkAclsVirtualNetworkRulesActionEnum>))]
 public enum V1api20220901StorageAccountSpecNetworkAclsVirtualNetworkRulesActionEnum
 {
@@ -809,7 +809,7 @@ public enum V1api20220901StorageAccountSpecNetworkAclsVirtualNetworkRulesActionE
 /// Reference: Resource ID of a subnet, for example:
 /// /subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.Network/virtualNetworks/{vnetName}/subnets/{subnetName}.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecNetworkAclsVirtualNetworkRulesReference
 {
@@ -835,7 +835,7 @@ public partial class V1api20220901StorageAccountSpecNetworkAclsVirtualNetworkRul
 }
 
 /// <summary>State: Gets the state of virtual network rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecNetworkAclsVirtualNetworkRulesStateEnum>))]
 public enum V1api20220901StorageAccountSpecNetworkAclsVirtualNetworkRulesStateEnum
 {
@@ -852,7 +852,7 @@ public enum V1api20220901StorageAccountSpecNetworkAclsVirtualNetworkRulesStateEn
 }
 
 /// <summary>Virtual Network rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecNetworkAclsVirtualNetworkRules
 {
@@ -873,7 +873,7 @@ public partial class V1api20220901StorageAccountSpecNetworkAclsVirtualNetworkRul
 }
 
 /// <summary>NetworkAcls: Network rule set</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecNetworkAcls
 {
@@ -906,7 +906,7 @@ public partial class V1api20220901StorageAccountSpecNetworkAcls
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecOperatorSpecConfigMapExpressions
 {
@@ -943,7 +943,7 @@ public partial class V1api20220901StorageAccountSpecOperatorSpecConfigMapExpress
 }
 
 /// <summary>BlobEndpoint: indicates where the BlobEndpoint config map should be placed. If omitted, no config map will be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecOperatorSpecConfigMapsBlobEndpoint
 {
@@ -968,7 +968,7 @@ public partial class V1api20220901StorageAccountSpecOperatorSpecConfigMapsBlobEn
 }
 
 /// <summary>DfsEndpoint: indicates where the DfsEndpoint config map should be placed. If omitted, no config map will be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecOperatorSpecConfigMapsDfsEndpoint
 {
@@ -993,7 +993,7 @@ public partial class V1api20220901StorageAccountSpecOperatorSpecConfigMapsDfsEnd
 }
 
 /// <summary>FileEndpoint: indicates where the FileEndpoint config map should be placed. If omitted, no config map will be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecOperatorSpecConfigMapsFileEndpoint
 {
@@ -1018,7 +1018,7 @@ public partial class V1api20220901StorageAccountSpecOperatorSpecConfigMapsFileEn
 }
 
 /// <summary>QueueEndpoint: indicates where the QueueEndpoint config map should be placed. If omitted, no config map will be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecOperatorSpecConfigMapsQueueEndpoint
 {
@@ -1043,7 +1043,7 @@ public partial class V1api20220901StorageAccountSpecOperatorSpecConfigMapsQueueE
 }
 
 /// <summary>TableEndpoint: indicates where the TableEndpoint config map should be placed. If omitted, no config map will be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecOperatorSpecConfigMapsTableEndpoint
 {
@@ -1068,7 +1068,7 @@ public partial class V1api20220901StorageAccountSpecOperatorSpecConfigMapsTableE
 }
 
 /// <summary>WebEndpoint: indicates where the WebEndpoint config map should be placed. If omitted, no config map will be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecOperatorSpecConfigMapsWebEndpoint
 {
@@ -1093,7 +1093,7 @@ public partial class V1api20220901StorageAccountSpecOperatorSpecConfigMapsWebEnd
 }
 
 /// <summary>ConfigMaps: configures where to place operator written ConfigMaps.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecOperatorSpecConfigMaps
 {
@@ -1127,7 +1127,7 @@ public partial class V1api20220901StorageAccountSpecOperatorSpecConfigMaps
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecOperatorSpecSecretExpressions
 {
@@ -1167,7 +1167,7 @@ public partial class V1api20220901StorageAccountSpecOperatorSpecSecretExpression
 /// BlobEndpoint: indicates where the BlobEndpoint secret should be placed. If omitted, the secret will not be retrieved
 /// from Azure.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecOperatorSpecSecretsBlobEndpoint
 {
@@ -1195,7 +1195,7 @@ public partial class V1api20220901StorageAccountSpecOperatorSpecSecretsBlobEndpo
 /// DfsEndpoint: indicates where the DfsEndpoint secret should be placed. If omitted, the secret will not be retrieved from
 /// Azure.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecOperatorSpecSecretsDfsEndpoint
 {
@@ -1223,7 +1223,7 @@ public partial class V1api20220901StorageAccountSpecOperatorSpecSecretsDfsEndpoi
 /// FileEndpoint: indicates where the FileEndpoint secret should be placed. If omitted, the secret will not be retrieved
 /// from Azure.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecOperatorSpecSecretsFileEndpoint
 {
@@ -1248,7 +1248,7 @@ public partial class V1api20220901StorageAccountSpecOperatorSpecSecretsFileEndpo
 }
 
 /// <summary>Key1: indicates where the Key1 secret should be placed. If omitted, the secret will not be retrieved from Azure.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecOperatorSpecSecretsKey1
 {
@@ -1273,7 +1273,7 @@ public partial class V1api20220901StorageAccountSpecOperatorSpecSecretsKey1
 }
 
 /// <summary>Key2: indicates where the Key2 secret should be placed. If omitted, the secret will not be retrieved from Azure.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecOperatorSpecSecretsKey2
 {
@@ -1301,7 +1301,7 @@ public partial class V1api20220901StorageAccountSpecOperatorSpecSecretsKey2
 /// QueueEndpoint: indicates where the QueueEndpoint secret should be placed. If omitted, the secret will not be retrieved
 /// from Azure.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecOperatorSpecSecretsQueueEndpoint
 {
@@ -1329,7 +1329,7 @@ public partial class V1api20220901StorageAccountSpecOperatorSpecSecretsQueueEndp
 /// TableEndpoint: indicates where the TableEndpoint secret should be placed. If omitted, the secret will not be retrieved
 /// from Azure.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecOperatorSpecSecretsTableEndpoint
 {
@@ -1357,7 +1357,7 @@ public partial class V1api20220901StorageAccountSpecOperatorSpecSecretsTableEndp
 /// WebEndpoint: indicates where the WebEndpoint secret should be placed. If omitted, the secret will not be retrieved from
 /// Azure.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecOperatorSpecSecretsWebEndpoint
 {
@@ -1382,7 +1382,7 @@ public partial class V1api20220901StorageAccountSpecOperatorSpecSecretsWebEndpoi
 }
 
 /// <summary>Secrets: configures where to place Azure generated secrets.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecOperatorSpecSecrets
 {
@@ -1441,7 +1441,7 @@ public partial class V1api20220901StorageAccountSpecOperatorSpecSecrets
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecOperatorSpec
 {
@@ -1467,7 +1467,7 @@ public partial class V1api20220901StorageAccountSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecOwner
 {
@@ -1483,7 +1483,7 @@ public partial class V1api20220901StorageAccountSpecOwner
 /// PublicNetworkAccess: Allow or disallow public network access to Storage Account. Value is optional but if passed in,
 /// must be &apos;Enabled&apos; or &apos;Disabled&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecPublicNetworkAccessEnum>))]
 public enum V1api20220901StorageAccountSpecPublicNetworkAccessEnum
 {
@@ -1494,7 +1494,7 @@ public enum V1api20220901StorageAccountSpecPublicNetworkAccessEnum
 }
 
 /// <summary>RoutingChoice: Routing Choice defines the kind of network routing opted by the user.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecRoutingPreferenceRoutingChoiceEnum>))]
 public enum V1api20220901StorageAccountSpecRoutingPreferenceRoutingChoiceEnum
 {
@@ -1505,7 +1505,7 @@ public enum V1api20220901StorageAccountSpecRoutingPreferenceRoutingChoiceEnum
 }
 
 /// <summary>RoutingPreference: Maintains information about the network routing choice opted by the user for data transfer</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecRoutingPreference
 {
@@ -1523,7 +1523,7 @@ public partial class V1api20220901StorageAccountSpecRoutingPreference
 }
 
 /// <summary>ExpirationAction: The SAS expiration action. Can only be Log.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecSasPolicyExpirationActionEnum>))]
 public enum V1api20220901StorageAccountSpecSasPolicyExpirationActionEnum
 {
@@ -1532,7 +1532,7 @@ public enum V1api20220901StorageAccountSpecSasPolicyExpirationActionEnum
 }
 
 /// <summary>SasPolicy: SasPolicy assigned to the storage account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecSasPolicy
 {
@@ -1549,7 +1549,7 @@ public partial class V1api20220901StorageAccountSpecSasPolicy
 /// Name: The SKU name. Required for account creation; optional for update. Note that in older versions, SKU name was called
 ///  accountType.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecSkuNameEnum>))]
 public enum V1api20220901StorageAccountSpecSkuNameEnum
 {
@@ -1572,7 +1572,7 @@ public enum V1api20220901StorageAccountSpecSkuNameEnum
 }
 
 /// <summary>Tier: The SKU tier. This is based on the SKU name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220901StorageAccountSpecSkuTierEnum>))]
 public enum V1api20220901StorageAccountSpecSkuTierEnum
 {
@@ -1583,7 +1583,7 @@ public enum V1api20220901StorageAccountSpecSkuTierEnum
 }
 
 /// <summary>Sku: Required. Gets or sets the SKU name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpecSku
 {
@@ -1599,7 +1599,7 @@ public partial class V1api20220901StorageAccountSpecSku
     public V1api20220901StorageAccountSpecSkuTierEnum? Tier { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountSpec
 {
@@ -1791,7 +1791,7 @@ public partial class V1api20220901StorageAccountSpec
 }
 
 /// <summary>ActiveDirectoryProperties: Required if directoryServiceOptions are AD, optional if they are AADKERB.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusAzureFilesIdentityBasedAuthenticationActiveDirectoryProperties
 {
@@ -1829,7 +1829,7 @@ public partial class V1api20220901StorageAccountStatusAzureFilesIdentityBasedAut
 }
 
 /// <summary>AzureFilesIdentityBasedAuthentication: Provides the identity based authentication settings for Azure Files.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusAzureFilesIdentityBasedAuthentication
 {
@@ -1847,7 +1847,7 @@ public partial class V1api20220901StorageAccountStatusAzureFilesIdentityBasedAut
 }
 
 /// <summary>Blob range</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusBlobRestoreStatusParametersBlobRanges
 {
@@ -1861,7 +1861,7 @@ public partial class V1api20220901StorageAccountStatusBlobRestoreStatusParameter
 }
 
 /// <summary>Parameters: Blob restore request parameters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusBlobRestoreStatusParameters
 {
@@ -1875,7 +1875,7 @@ public partial class V1api20220901StorageAccountStatusBlobRestoreStatusParameter
 }
 
 /// <summary>BlobRestoreStatus: Blob restore status</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusBlobRestoreStatus
 {
@@ -1900,7 +1900,7 @@ public partial class V1api20220901StorageAccountStatusBlobRestoreStatus
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusConditions
 {
@@ -1946,7 +1946,7 @@ public partial class V1api20220901StorageAccountStatusConditions
 }
 
 /// <summary>CustomDomain: Gets the custom domain the user assigned to this storage account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusCustomDomain
 {
@@ -1963,7 +1963,7 @@ public partial class V1api20220901StorageAccountStatusCustomDomain
 }
 
 /// <summary>Identity: The identity to be used with service-side encryption at rest.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusEncryptionIdentity
 {
@@ -1983,7 +1983,7 @@ public partial class V1api20220901StorageAccountStatusEncryptionIdentity
 }
 
 /// <summary>Keyvaultproperties: Properties provided by key vault.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusEncryptionKeyvaultproperties
 {
@@ -2016,7 +2016,7 @@ public partial class V1api20220901StorageAccountStatusEncryptionKeyvaultproperti
 }
 
 /// <summary>Blob: The encryption function of the blob storage service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusEncryptionServicesBlob
 {
@@ -2043,7 +2043,7 @@ public partial class V1api20220901StorageAccountStatusEncryptionServicesBlob
 }
 
 /// <summary>File: The encryption function of the file storage service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusEncryptionServicesFile
 {
@@ -2070,7 +2070,7 @@ public partial class V1api20220901StorageAccountStatusEncryptionServicesFile
 }
 
 /// <summary>Queue: The encryption function of the queue storage service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusEncryptionServicesQueue
 {
@@ -2097,7 +2097,7 @@ public partial class V1api20220901StorageAccountStatusEncryptionServicesQueue
 }
 
 /// <summary>Table: The encryption function of the table storage service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusEncryptionServicesTable
 {
@@ -2124,7 +2124,7 @@ public partial class V1api20220901StorageAccountStatusEncryptionServicesTable
 }
 
 /// <summary>Services: List of services which support encryption.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusEncryptionServices
 {
@@ -2146,7 +2146,7 @@ public partial class V1api20220901StorageAccountStatusEncryptionServices
 }
 
 /// <summary>Encryption: Encryption settings to be used for server-side encryption for the storage account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusEncryption
 {
@@ -2178,7 +2178,7 @@ public partial class V1api20220901StorageAccountStatusEncryption
 }
 
 /// <summary>ExtendedLocation: The extendedLocation of the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusExtendedLocation
 {
@@ -2192,7 +2192,7 @@ public partial class V1api20220901StorageAccountStatusExtendedLocation
 }
 
 /// <summary>GeoReplicationStats: Geo Replication Stats</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusGeoReplicationStats
 {
@@ -2219,7 +2219,7 @@ public partial class V1api20220901StorageAccountStatusGeoReplicationStats
 }
 
 /// <summary>UserAssignedIdentity for the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusIdentityUserAssignedIdentities
 {
@@ -2233,7 +2233,7 @@ public partial class V1api20220901StorageAccountStatusIdentityUserAssignedIdenti
 }
 
 /// <summary>Identity: The identity of the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusIdentity
 {
@@ -2264,7 +2264,7 @@ public partial class V1api20220901StorageAccountStatusIdentity
 /// precedence than the container-level immutability policy, which has a higher precedence than the account-level
 /// immutability policy.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusImmutableStorageWithVersioningImmutabilityPolicy
 {
@@ -2298,7 +2298,7 @@ public partial class V1api20220901StorageAccountStatusImmutableStorageWithVersio
 /// ImmutableStorageWithVersioning: The property is immutable and can only be set to true at the account creation time. When
 /// set to true, it enables object level immutability for all the containers in the account by default.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusImmutableStorageWithVersioning
 {
@@ -2320,7 +2320,7 @@ public partial class V1api20220901StorageAccountStatusImmutableStorageWithVersio
 }
 
 /// <summary>KeyCreationTime: Storage account keys creation time.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusKeyCreationTime
 {
@@ -2332,7 +2332,7 @@ public partial class V1api20220901StorageAccountStatusKeyCreationTime
 }
 
 /// <summary>KeyPolicy: KeyPolicy assigned to the storage account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusKeyPolicy
 {
@@ -2342,7 +2342,7 @@ public partial class V1api20220901StorageAccountStatusKeyPolicy
 }
 
 /// <summary>IP rule with specific IP or IP range in CIDR format.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusNetworkAclsIpRules
 {
@@ -2356,7 +2356,7 @@ public partial class V1api20220901StorageAccountStatusNetworkAclsIpRules
 }
 
 /// <summary>Resource Access Rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusNetworkAclsResourceAccessRules
 {
@@ -2370,7 +2370,7 @@ public partial class V1api20220901StorageAccountStatusNetworkAclsResourceAccessR
 }
 
 /// <summary>Virtual Network rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusNetworkAclsVirtualNetworkRules
 {
@@ -2391,7 +2391,7 @@ public partial class V1api20220901StorageAccountStatusNetworkAclsVirtualNetworkR
 }
 
 /// <summary>NetworkAcls: Network rule set</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusNetworkAcls
 {
@@ -2420,7 +2420,7 @@ public partial class V1api20220901StorageAccountStatusNetworkAcls
 }
 
 /// <summary>InternetEndpoints: Gets the internet routing storage endpoints</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusPrimaryEndpointsInternetEndpoints
 {
@@ -2442,7 +2442,7 @@ public partial class V1api20220901StorageAccountStatusPrimaryEndpointsInternetEn
 }
 
 /// <summary>MicrosoftEndpoints: Gets the microsoft routing storage endpoints.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusPrimaryEndpointsMicrosoftEndpoints
 {
@@ -2475,7 +2475,7 @@ public partial class V1api20220901StorageAccountStatusPrimaryEndpointsMicrosoftE
 /// PrimaryEndpoints: Gets the URLs that are used to perform a retrieval of a public blob, queue, or table object. Note that
 /// Standard_ZRS and Premium_LRS accounts only return the blob endpoint.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusPrimaryEndpoints
 {
@@ -2513,7 +2513,7 @@ public partial class V1api20220901StorageAccountStatusPrimaryEndpoints
 }
 
 /// <summary>The Private Endpoint Connection resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusPrivateEndpointConnections
 {
@@ -2526,7 +2526,7 @@ public partial class V1api20220901StorageAccountStatusPrivateEndpointConnections
 }
 
 /// <summary>RoutingPreference: Maintains information about the network routing choice opted by the user for data transfer</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusRoutingPreference
 {
@@ -2544,7 +2544,7 @@ public partial class V1api20220901StorageAccountStatusRoutingPreference
 }
 
 /// <summary>SasPolicy: SasPolicy assigned to the storage account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusSasPolicy
 {
@@ -2558,7 +2558,7 @@ public partial class V1api20220901StorageAccountStatusSasPolicy
 }
 
 /// <summary>InternetEndpoints: Gets the internet routing storage endpoints</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusSecondaryEndpointsInternetEndpoints
 {
@@ -2580,7 +2580,7 @@ public partial class V1api20220901StorageAccountStatusSecondaryEndpointsInternet
 }
 
 /// <summary>MicrosoftEndpoints: Gets the microsoft routing storage endpoints.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusSecondaryEndpointsMicrosoftEndpoints
 {
@@ -2613,7 +2613,7 @@ public partial class V1api20220901StorageAccountStatusSecondaryEndpointsMicrosof
 /// SecondaryEndpoints: Gets the URLs that are used to perform a retrieval of a public blob, queue, or table object from the
 /// secondary location of the storage account. Only available if the SKU name is Standard_RAGRS.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusSecondaryEndpoints
 {
@@ -2651,7 +2651,7 @@ public partial class V1api20220901StorageAccountStatusSecondaryEndpoints
 }
 
 /// <summary>Sku: Gets the SKU.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusSku
 {
@@ -2671,7 +2671,7 @@ public partial class V1api20220901StorageAccountStatusSku
 /// StorageAccountSkuConversionStatus: This property is readOnly and is set by server during asynchronous storage account
 /// sku conversion operations.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatusStorageAccountSkuConversionStatus
 {
@@ -2693,7 +2693,7 @@ public partial class V1api20220901StorageAccountStatusStorageAccountSkuConversio
 }
 
 /// <summary>The storage account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220901StorageAccountStatus
 {
@@ -2950,7 +2950,7 @@ public partial class V1api20220901StorageAccountStatus
 /// - Generated from: /storage/resource-manager/Microsoft.Storage/stable/2022-09-01/storage.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20220901StorageAccount : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20220901StorageAccountSpec?>, IStatus<V1api20220901StorageAccountStatus?>

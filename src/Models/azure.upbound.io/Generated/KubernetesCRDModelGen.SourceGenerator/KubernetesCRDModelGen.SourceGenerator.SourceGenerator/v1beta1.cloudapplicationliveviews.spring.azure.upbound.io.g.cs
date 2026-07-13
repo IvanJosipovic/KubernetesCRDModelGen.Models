@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.spring.azure.upbound.io;
 /// <summary>CloudApplicationLiveView is the Schema for the CloudApplicationLiveViews API. Manages a Spring Cloud Application Live View.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CloudApplicationLiveViewList : IKubernetesObject<V1ListMeta>, IItems<V1beta1CloudApplicationLiveView>
@@ -45,7 +45,7 @@ public partial class V1beta1CloudApplicationLiveViewList : IKubernetesObject<V1L
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CloudApplicationLiveViewSpecDeletionPolicyEnum>))]
 public enum V1beta1CloudApplicationLiveViewSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1CloudApplicationLiveViewSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CloudApplicationLiveViewSpecForProviderSpringCloudServiceIdRefPolicyResolutionEnum>))]
 public enum V1beta1CloudApplicationLiveViewSpecForProviderSpringCloudServiceIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1CloudApplicationLiveViewSpecForProviderSpringCloudServiceIdRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CloudApplicationLiveViewSpecForProviderSpringCloudServiceIdRefPolicyResolveEnum>))]
 public enum V1beta1CloudApplicationLiveViewSpecForProviderSpringCloudServiceIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1CloudApplicationLiveViewSpecForProviderSpringCloudServiceIdRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CloudApplicationLiveViewSpecForProviderSpringCloudServiceIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1CloudApplicationLiveViewSpecForProviderSpringCloudSe
 }
 
 /// <summary>Reference to a SpringCloudService in appplatform to populate springCloudServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CloudApplicationLiveViewSpecForProviderSpringCloudServiceIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1CloudApplicationLiveViewSpecForProviderSpringCloudSe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CloudApplicationLiveViewSpecForProviderSpringCloudServiceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1CloudApplicationLiveViewSpecForProviderSpringCloudServiceIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1CloudApplicationLiveViewSpecForProviderSpringCloudServiceIdSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CloudApplicationLiveViewSpecForProviderSpringCloudServiceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1CloudApplicationLiveViewSpecForProviderSpringCloudServiceIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1CloudApplicationLiveViewSpecForProviderSpringCloudServiceIdSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CloudApplicationLiveViewSpecForProviderSpringCloudServiceIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1CloudApplicationLiveViewSpecForProviderSpringCloudSe
 }
 
 /// <summary>Selector for a SpringCloudService in appplatform to populate springCloudServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CloudApplicationLiveViewSpecForProviderSpringCloudServiceIdSelector
 {
@@ -202,7 +202,7 @@ public partial class V1beta1CloudApplicationLiveViewSpecForProviderSpringCloudSe
     public V1beta1CloudApplicationLiveViewSpecForProviderSpringCloudServiceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CloudApplicationLiveViewSpecForProvider
 {
@@ -231,7 +231,7 @@ public partial class V1beta1CloudApplicationLiveViewSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CloudApplicationLiveViewSpecInitProvider
 {
@@ -241,7 +241,7 @@ public partial class V1beta1CloudApplicationLiveViewSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CloudApplicationLiveViewSpecManagementPoliciesEnum>))]
 public enum V1beta1CloudApplicationLiveViewSpecManagementPoliciesEnum
 {
@@ -265,7 +265,7 @@ public enum V1beta1CloudApplicationLiveViewSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CloudApplicationLiveViewSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1CloudApplicationLiveViewSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -281,7 +281,7 @@ public enum V1beta1CloudApplicationLiveViewSpecProviderConfigRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CloudApplicationLiveViewSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1CloudApplicationLiveViewSpecProviderConfigRefPolicyResolveEnum
 {
@@ -292,7 +292,7 @@ public enum V1beta1CloudApplicationLiveViewSpecProviderConfigRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CloudApplicationLiveViewSpecProviderConfigRefPolicy
 {
@@ -320,7 +320,7 @@ public partial class V1beta1CloudApplicationLiveViewSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CloudApplicationLiveViewSpecProviderConfigRef
 {
@@ -339,7 +339,7 @@ public partial class V1beta1CloudApplicationLiveViewSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CloudApplicationLiveViewSpecWriteConnectionSecretToRef
 {
@@ -353,7 +353,7 @@ public partial class V1beta1CloudApplicationLiveViewSpecWriteConnectionSecretToR
 }
 
 /// <summary>CloudApplicationLiveViewSpec defines the desired state of CloudApplicationLiveView</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CloudApplicationLiveViewSpec
 {
@@ -420,7 +420,7 @@ public partial class V1beta1CloudApplicationLiveViewSpec
     public V1beta1CloudApplicationLiveViewSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CloudApplicationLiveViewStatusAtProvider
 {
@@ -434,7 +434,7 @@ public partial class V1beta1CloudApplicationLiveViewStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CloudApplicationLiveViewStatusConditions
 {
@@ -477,7 +477,7 @@ public partial class V1beta1CloudApplicationLiveViewStatusConditions
 }
 
 /// <summary>CloudApplicationLiveViewStatus defines the observed state of CloudApplicationLiveView.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CloudApplicationLiveViewStatus
 {
@@ -498,7 +498,7 @@ public partial class V1beta1CloudApplicationLiveViewStatus
 }
 
 /// <summary>CloudApplicationLiveView is the Schema for the CloudApplicationLiveViews API. Manages a Spring Cloud Application Live View.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CloudApplicationLiveView : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1CloudApplicationLiveViewSpec>, IStatus<V1beta1CloudApplicationLiveViewStatus?>

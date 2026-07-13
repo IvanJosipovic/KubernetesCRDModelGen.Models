@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.snapshot.storage.k8s.io;
 /// name in a VolumeSnapshot object.
 /// VolumeSnapshotClasses are non-namespaced
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1VolumeSnapshotClassList : IKubernetesObject<V1ListMeta>, IItems<V1VolumeSnapshotClass>
@@ -49,7 +49,7 @@ public partial class V1VolumeSnapshotClassList : IKubernetesObject<V1ListMeta>, 
 /// &quot;Delete&quot; means that the VolumeSnapshotContent and its physical snapshot on underlying storage system are deleted.
 /// Required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1VolumeSnapshotClassDeletionPolicyEnum>))]
 public enum V1VolumeSnapshotClassDeletionPolicyEnum
 {
@@ -65,7 +65,7 @@ public enum V1VolumeSnapshotClassDeletionPolicyEnum
 /// name in a VolumeSnapshot object.
 /// VolumeSnapshotClasses are non-namespaced
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1VolumeSnapshotClass : IKubernetesObject<V1ObjectMeta>

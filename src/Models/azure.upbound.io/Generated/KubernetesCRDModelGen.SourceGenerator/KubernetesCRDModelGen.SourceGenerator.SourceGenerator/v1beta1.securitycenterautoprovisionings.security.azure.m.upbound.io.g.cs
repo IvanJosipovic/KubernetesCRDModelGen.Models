@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.security.azure.m.upbound.io;
 /// <summary>SecurityCenterAutoProvisioning is the Schema for the SecurityCenterAutoProvisionings API. Manages the subscription&apos;s Security Center Auto Provisioning.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SecurityCenterAutoProvisioningList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SecurityCenterAutoProvisioning>
@@ -36,7 +36,7 @@ public partial class V1beta1SecurityCenterAutoProvisioningList : IKubernetesObje
     public required IList<V1beta1SecurityCenterAutoProvisioning> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityCenterAutoProvisioningSpecForProvider
 {
@@ -57,7 +57,7 @@ public partial class V1beta1SecurityCenterAutoProvisioningSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityCenterAutoProvisioningSpecInitProvider
 {
@@ -70,7 +70,7 @@ public partial class V1beta1SecurityCenterAutoProvisioningSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityCenterAutoProvisioningSpecManagementPoliciesEnum>))]
 public enum V1beta1SecurityCenterAutoProvisioningSpecManagementPoliciesEnum
 {
@@ -93,7 +93,7 @@ public enum V1beta1SecurityCenterAutoProvisioningSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityCenterAutoProvisioningSpecProviderConfigRef
 {
@@ -112,7 +112,7 @@ public partial class V1beta1SecurityCenterAutoProvisioningSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityCenterAutoProvisioningSpecWriteConnectionSecretToRef
 {
@@ -122,7 +122,7 @@ public partial class V1beta1SecurityCenterAutoProvisioningSpecWriteConnectionSec
 }
 
 /// <summary>SecurityCenterAutoProvisioningSpec defines the desired state of SecurityCenterAutoProvisioning</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityCenterAutoProvisioningSpec
 {
@@ -173,7 +173,7 @@ public partial class V1beta1SecurityCenterAutoProvisioningSpec
     public V1beta1SecurityCenterAutoProvisioningSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityCenterAutoProvisioningStatusAtProvider
 {
@@ -187,7 +187,7 @@ public partial class V1beta1SecurityCenterAutoProvisioningStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityCenterAutoProvisioningStatusConditions
 {
@@ -230,7 +230,7 @@ public partial class V1beta1SecurityCenterAutoProvisioningStatusConditions
 }
 
 /// <summary>SecurityCenterAutoProvisioningStatus defines the observed state of SecurityCenterAutoProvisioning.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityCenterAutoProvisioningStatus
 {
@@ -251,7 +251,7 @@ public partial class V1beta1SecurityCenterAutoProvisioningStatus
 }
 
 /// <summary>SecurityCenterAutoProvisioning is the Schema for the SecurityCenterAutoProvisionings API. Manages the subscription&apos;s Security Center Auto Provisioning.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SecurityCenterAutoProvisioning : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SecurityCenterAutoProvisioningSpec>, IStatus<V1beta1SecurityCenterAutoProvisioningStatus?>

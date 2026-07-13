@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
 /// <summary>Firewall is the Schema for the Firewalls API. Manages an Azure Firewall.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2FirewallList : IKubernetesObject<V1ListMeta>, IItems<V1beta2Firewall>
@@ -45,7 +45,7 @@ public partial class V1beta2FirewallList : IKubernetesObject<V1ListMeta>, IItems
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecDeletionPolicyEnum>))]
 public enum V1beta2FirewallSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2FirewallSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecForProviderIpConfigurationPublicIpAddressIdRefPolicyResolutionEnum>))]
 public enum V1beta2FirewallSpecForProviderIpConfigurationPublicIpAddressIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2FirewallSpecForProviderIpConfigurationPublicIpAddressIdRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecForProviderIpConfigurationPublicIpAddressIdRefPolicyResolveEnum>))]
 public enum V1beta2FirewallSpecForProviderIpConfigurationPublicIpAddressIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2FirewallSpecForProviderIpConfigurationPublicIpAddressIdRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecForProviderIpConfigurationPublicIpAddressIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2FirewallSpecForProviderIpConfigurationPublicIpAddres
 }
 
 /// <summary>Reference to a PublicIP in network to populate publicIpAddressId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecForProviderIpConfigurationPublicIpAddressIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta2FirewallSpecForProviderIpConfigurationPublicIpAddres
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecForProviderIpConfigurationPublicIpAddressIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2FirewallSpecForProviderIpConfigurationPublicIpAddressIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2FirewallSpecForProviderIpConfigurationPublicIpAddressIdSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecForProviderIpConfigurationPublicIpAddressIdSelectorPolicyResolveEnum>))]
 public enum V1beta2FirewallSpecForProviderIpConfigurationPublicIpAddressIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2FirewallSpecForProviderIpConfigurationPublicIpAddressIdSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecForProviderIpConfigurationPublicIpAddressIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2FirewallSpecForProviderIpConfigurationPublicIpAddres
 }
 
 /// <summary>Selector for a PublicIP in network to populate publicIpAddressId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecForProviderIpConfigurationPublicIpAddressIdSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta2FirewallSpecForProviderIpConfigurationPublicIpAddres
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecForProviderIpConfigurationSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2FirewallSpecForProviderIpConfigurationSubnetIdRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta2FirewallSpecForProviderIpConfigurationSubnetIdRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecForProviderIpConfigurationSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2FirewallSpecForProviderIpConfigurationSubnetIdRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta2FirewallSpecForProviderIpConfigurationSubnetIdRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecForProviderIpConfigurationSubnetIdRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta2FirewallSpecForProviderIpConfigurationSubnetIdRefPol
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecForProviderIpConfigurationSubnetIdRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta2FirewallSpecForProviderIpConfigurationSubnetIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecForProviderIpConfigurationSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2FirewallSpecForProviderIpConfigurationSubnetIdSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta2FirewallSpecForProviderIpConfigurationSubnetIdSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecForProviderIpConfigurationSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2FirewallSpecForProviderIpConfigurationSubnetIdSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta2FirewallSpecForProviderIpConfigurationSubnetIdSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecForProviderIpConfigurationSubnetIdSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta2FirewallSpecForProviderIpConfigurationSubnetIdSelect
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecForProviderIpConfigurationSubnetIdSelector
 {
@@ -349,7 +349,7 @@ public partial class V1beta2FirewallSpecForProviderIpConfigurationSubnetIdSelect
     public V1beta2FirewallSpecForProviderIpConfigurationSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecForProviderIpConfiguration
 {
@@ -388,7 +388,7 @@ public partial class V1beta2FirewallSpecForProviderIpConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecForProviderManagementIpConfigurationSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2FirewallSpecForProviderManagementIpConfigurationSubnetIdRefPolicyResolutionEnum
 {
@@ -404,7 +404,7 @@ public enum V1beta2FirewallSpecForProviderManagementIpConfigurationSubnetIdRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecForProviderManagementIpConfigurationSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2FirewallSpecForProviderManagementIpConfigurationSubnetIdRefPolicyResolveEnum
 {
@@ -415,7 +415,7 @@ public enum V1beta2FirewallSpecForProviderManagementIpConfigurationSubnetIdRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecForProviderManagementIpConfigurationSubnetIdRefPolicy
 {
@@ -439,7 +439,7 @@ public partial class V1beta2FirewallSpecForProviderManagementIpConfigurationSubn
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecForProviderManagementIpConfigurationSubnetIdRef
 {
@@ -458,7 +458,7 @@ public partial class V1beta2FirewallSpecForProviderManagementIpConfigurationSubn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecForProviderManagementIpConfigurationSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2FirewallSpecForProviderManagementIpConfigurationSubnetIdSelectorPolicyResolutionEnum
 {
@@ -474,7 +474,7 @@ public enum V1beta2FirewallSpecForProviderManagementIpConfigurationSubnetIdSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecForProviderManagementIpConfigurationSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2FirewallSpecForProviderManagementIpConfigurationSubnetIdSelectorPolicyResolveEnum
 {
@@ -485,7 +485,7 @@ public enum V1beta2FirewallSpecForProviderManagementIpConfigurationSubnetIdSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecForProviderManagementIpConfigurationSubnetIdSelectorPolicy
 {
@@ -509,7 +509,7 @@ public partial class V1beta2FirewallSpecForProviderManagementIpConfigurationSubn
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecForProviderManagementIpConfigurationSubnetIdSelector
 {
@@ -530,7 +530,7 @@ public partial class V1beta2FirewallSpecForProviderManagementIpConfigurationSubn
 }
 
 /// <summary>A management_ip_configuration block as documented below, which allows force-tunnelling of traffic to be performed by the firewall. Adding or removing this block or changing the subnet_id in an existing block forces a new resource to be created. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecForProviderManagementIpConfiguration
 {
@@ -561,7 +561,7 @@ public partial class V1beta2FirewallSpecForProviderManagementIpConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta2FirewallSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -577,7 +577,7 @@ public enum V1beta2FirewallSpecForProviderResourceGroupNameRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta2FirewallSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -588,7 +588,7 @@ public enum V1beta2FirewallSpecForProviderResourceGroupNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecForProviderResourceGroupNameRefPolicy
 {
@@ -612,7 +612,7 @@ public partial class V1beta2FirewallSpecForProviderResourceGroupNameRefPolicy
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecForProviderResourceGroupNameRef
 {
@@ -631,7 +631,7 @@ public partial class V1beta2FirewallSpecForProviderResourceGroupNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2FirewallSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -647,7 +647,7 @@ public enum V1beta2FirewallSpecForProviderResourceGroupNameSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta2FirewallSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -658,7 +658,7 @@ public enum V1beta2FirewallSpecForProviderResourceGroupNameSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -682,7 +682,7 @@ public partial class V1beta2FirewallSpecForProviderResourceGroupNameSelectorPoli
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecForProviderResourceGroupNameSelector
 {
@@ -703,7 +703,7 @@ public partial class V1beta2FirewallSpecForProviderResourceGroupNameSelector
 }
 
 /// <summary>A virtual_hub block as documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecForProviderVirtualHub
 {
@@ -716,7 +716,7 @@ public partial class V1beta2FirewallSpecForProviderVirtualHub
     public string? VirtualHubId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecForProvider
 {
@@ -791,7 +791,7 @@ public partial class V1beta2FirewallSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecInitProviderIpConfigurationPublicIpAddressIdRefPolicyResolutionEnum>))]
 public enum V1beta2FirewallSpecInitProviderIpConfigurationPublicIpAddressIdRefPolicyResolutionEnum
 {
@@ -807,7 +807,7 @@ public enum V1beta2FirewallSpecInitProviderIpConfigurationPublicIpAddressIdRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecInitProviderIpConfigurationPublicIpAddressIdRefPolicyResolveEnum>))]
 public enum V1beta2FirewallSpecInitProviderIpConfigurationPublicIpAddressIdRefPolicyResolveEnum
 {
@@ -818,7 +818,7 @@ public enum V1beta2FirewallSpecInitProviderIpConfigurationPublicIpAddressIdRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecInitProviderIpConfigurationPublicIpAddressIdRefPolicy
 {
@@ -842,7 +842,7 @@ public partial class V1beta2FirewallSpecInitProviderIpConfigurationPublicIpAddre
 }
 
 /// <summary>Reference to a PublicIP in network to populate publicIpAddressId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecInitProviderIpConfigurationPublicIpAddressIdRef
 {
@@ -861,7 +861,7 @@ public partial class V1beta2FirewallSpecInitProviderIpConfigurationPublicIpAddre
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecInitProviderIpConfigurationPublicIpAddressIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2FirewallSpecInitProviderIpConfigurationPublicIpAddressIdSelectorPolicyResolutionEnum
 {
@@ -877,7 +877,7 @@ public enum V1beta2FirewallSpecInitProviderIpConfigurationPublicIpAddressIdSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecInitProviderIpConfigurationPublicIpAddressIdSelectorPolicyResolveEnum>))]
 public enum V1beta2FirewallSpecInitProviderIpConfigurationPublicIpAddressIdSelectorPolicyResolveEnum
 {
@@ -888,7 +888,7 @@ public enum V1beta2FirewallSpecInitProviderIpConfigurationPublicIpAddressIdSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecInitProviderIpConfigurationPublicIpAddressIdSelectorPolicy
 {
@@ -912,7 +912,7 @@ public partial class V1beta2FirewallSpecInitProviderIpConfigurationPublicIpAddre
 }
 
 /// <summary>Selector for a PublicIP in network to populate publicIpAddressId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecInitProviderIpConfigurationPublicIpAddressIdSelector
 {
@@ -938,7 +938,7 @@ public partial class V1beta2FirewallSpecInitProviderIpConfigurationPublicIpAddre
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecInitProviderIpConfigurationSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2FirewallSpecInitProviderIpConfigurationSubnetIdRefPolicyResolutionEnum
 {
@@ -954,7 +954,7 @@ public enum V1beta2FirewallSpecInitProviderIpConfigurationSubnetIdRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecInitProviderIpConfigurationSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2FirewallSpecInitProviderIpConfigurationSubnetIdRefPolicyResolveEnum
 {
@@ -965,7 +965,7 @@ public enum V1beta2FirewallSpecInitProviderIpConfigurationSubnetIdRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecInitProviderIpConfigurationSubnetIdRefPolicy
 {
@@ -989,7 +989,7 @@ public partial class V1beta2FirewallSpecInitProviderIpConfigurationSubnetIdRefPo
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecInitProviderIpConfigurationSubnetIdRef
 {
@@ -1008,7 +1008,7 @@ public partial class V1beta2FirewallSpecInitProviderIpConfigurationSubnetIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecInitProviderIpConfigurationSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2FirewallSpecInitProviderIpConfigurationSubnetIdSelectorPolicyResolutionEnum
 {
@@ -1024,7 +1024,7 @@ public enum V1beta2FirewallSpecInitProviderIpConfigurationSubnetIdSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecInitProviderIpConfigurationSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2FirewallSpecInitProviderIpConfigurationSubnetIdSelectorPolicyResolveEnum
 {
@@ -1035,7 +1035,7 @@ public enum V1beta2FirewallSpecInitProviderIpConfigurationSubnetIdSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecInitProviderIpConfigurationSubnetIdSelectorPolicy
 {
@@ -1059,7 +1059,7 @@ public partial class V1beta2FirewallSpecInitProviderIpConfigurationSubnetIdSelec
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecInitProviderIpConfigurationSubnetIdSelector
 {
@@ -1079,7 +1079,7 @@ public partial class V1beta2FirewallSpecInitProviderIpConfigurationSubnetIdSelec
     public V1beta2FirewallSpecInitProviderIpConfigurationSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecInitProviderIpConfiguration
 {
@@ -1118,7 +1118,7 @@ public partial class V1beta2FirewallSpecInitProviderIpConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecInitProviderManagementIpConfigurationSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2FirewallSpecInitProviderManagementIpConfigurationSubnetIdRefPolicyResolutionEnum
 {
@@ -1134,7 +1134,7 @@ public enum V1beta2FirewallSpecInitProviderManagementIpConfigurationSubnetIdRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecInitProviderManagementIpConfigurationSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2FirewallSpecInitProviderManagementIpConfigurationSubnetIdRefPolicyResolveEnum
 {
@@ -1145,7 +1145,7 @@ public enum V1beta2FirewallSpecInitProviderManagementIpConfigurationSubnetIdRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecInitProviderManagementIpConfigurationSubnetIdRefPolicy
 {
@@ -1169,7 +1169,7 @@ public partial class V1beta2FirewallSpecInitProviderManagementIpConfigurationSub
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecInitProviderManagementIpConfigurationSubnetIdRef
 {
@@ -1188,7 +1188,7 @@ public partial class V1beta2FirewallSpecInitProviderManagementIpConfigurationSub
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecInitProviderManagementIpConfigurationSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2FirewallSpecInitProviderManagementIpConfigurationSubnetIdSelectorPolicyResolutionEnum
 {
@@ -1204,7 +1204,7 @@ public enum V1beta2FirewallSpecInitProviderManagementIpConfigurationSubnetIdSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecInitProviderManagementIpConfigurationSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2FirewallSpecInitProviderManagementIpConfigurationSubnetIdSelectorPolicyResolveEnum
 {
@@ -1215,7 +1215,7 @@ public enum V1beta2FirewallSpecInitProviderManagementIpConfigurationSubnetIdSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecInitProviderManagementIpConfigurationSubnetIdSelectorPolicy
 {
@@ -1239,7 +1239,7 @@ public partial class V1beta2FirewallSpecInitProviderManagementIpConfigurationSub
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecInitProviderManagementIpConfigurationSubnetIdSelector
 {
@@ -1260,7 +1260,7 @@ public partial class V1beta2FirewallSpecInitProviderManagementIpConfigurationSub
 }
 
 /// <summary>A management_ip_configuration block as documented below, which allows force-tunnelling of traffic to be performed by the firewall. Adding or removing this block or changing the subnet_id in an existing block forces a new resource to be created. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecInitProviderManagementIpConfiguration
 {
@@ -1286,7 +1286,7 @@ public partial class V1beta2FirewallSpecInitProviderManagementIpConfiguration
 }
 
 /// <summary>A virtual_hub block as documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecInitProviderVirtualHub
 {
@@ -1311,7 +1311,7 @@ public partial class V1beta2FirewallSpecInitProviderVirtualHub
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecInitProvider
 {
@@ -1372,7 +1372,7 @@ public partial class V1beta2FirewallSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecManagementPoliciesEnum>))]
 public enum V1beta2FirewallSpecManagementPoliciesEnum
 {
@@ -1396,7 +1396,7 @@ public enum V1beta2FirewallSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2FirewallSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1412,7 +1412,7 @@ public enum V1beta2FirewallSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FirewallSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2FirewallSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1423,7 +1423,7 @@ public enum V1beta2FirewallSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecProviderConfigRefPolicy
 {
@@ -1451,7 +1451,7 @@ public partial class V1beta2FirewallSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecProviderConfigRef
 {
@@ -1470,7 +1470,7 @@ public partial class V1beta2FirewallSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpecWriteConnectionSecretToRef
 {
@@ -1484,7 +1484,7 @@ public partial class V1beta2FirewallSpecWriteConnectionSecretToRef
 }
 
 /// <summary>FirewallSpec defines the desired state of Firewall</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallSpec
 {
@@ -1551,7 +1551,7 @@ public partial class V1beta2FirewallSpec
     public V1beta2FirewallSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallStatusAtProviderIpConfiguration
 {
@@ -1573,7 +1573,7 @@ public partial class V1beta2FirewallStatusAtProviderIpConfiguration
 }
 
 /// <summary>A management_ip_configuration block as documented below, which allows force-tunnelling of traffic to be performed by the firewall. Adding or removing this block or changing the subnet_id in an existing block forces a new resource to be created. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallStatusAtProviderManagementIpConfiguration
 {
@@ -1595,7 +1595,7 @@ public partial class V1beta2FirewallStatusAtProviderManagementIpConfiguration
 }
 
 /// <summary>A virtual_hub block as documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallStatusAtProviderVirtualHub
 {
@@ -1616,7 +1616,7 @@ public partial class V1beta2FirewallStatusAtProviderVirtualHub
     public string? VirtualHubId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallStatusAtProvider
 {
@@ -1682,7 +1682,7 @@ public partial class V1beta2FirewallStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallStatusConditions
 {
@@ -1725,7 +1725,7 @@ public partial class V1beta2FirewallStatusConditions
 }
 
 /// <summary>FirewallStatus defines the observed state of Firewall.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FirewallStatus
 {
@@ -1746,7 +1746,7 @@ public partial class V1beta2FirewallStatus
 }
 
 /// <summary>Firewall is the Schema for the Firewalls API. Manages an Azure Firewall.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2Firewall : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2FirewallSpec>, IStatus<V1beta2FirewallStatus?>

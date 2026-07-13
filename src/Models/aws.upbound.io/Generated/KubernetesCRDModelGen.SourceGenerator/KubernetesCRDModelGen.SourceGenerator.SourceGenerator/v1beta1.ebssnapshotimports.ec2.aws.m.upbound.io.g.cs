@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ec2.aws.m.upbound.io;
 /// <summary>EBSSnapshotImport is the Schema for the EBSSnapshotImports API. Provides an elastic block storage snapshot import resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EBSSnapshotImportList : IKubernetesObject<V1ListMeta>, IItems<V1beta1EBSSnapshotImport>
@@ -37,7 +37,7 @@ public partial class V1beta1EBSSnapshotImportList : IKubernetesObject<V1ListMeta
 }
 
 /// <summary>The client-specific data. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportSpecForProviderClientData
 {
@@ -59,7 +59,7 @@ public partial class V1beta1EBSSnapshotImportSpecForProviderClientData
 }
 
 /// <summary>The Amazon S3 bucket for the disk image. One of url or user_bucket must be set. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportSpecForProviderDiskContainerUserBucket
 {
@@ -73,7 +73,7 @@ public partial class V1beta1EBSSnapshotImportSpecForProviderDiskContainerUserBuc
 }
 
 /// <summary>Information about the disk container. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportSpecForProviderDiskContainer
 {
@@ -100,7 +100,7 @@ public partial class V1beta1EBSSnapshotImportSpecForProviderDiskContainer
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EBSSnapshotImportSpecForProviderKmsKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta1EBSSnapshotImportSpecForProviderKmsKeyIdRefPolicyResolutionEnum
 {
@@ -116,7 +116,7 @@ public enum V1beta1EBSSnapshotImportSpecForProviderKmsKeyIdRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EBSSnapshotImportSpecForProviderKmsKeyIdRefPolicyResolveEnum>))]
 public enum V1beta1EBSSnapshotImportSpecForProviderKmsKeyIdRefPolicyResolveEnum
 {
@@ -127,7 +127,7 @@ public enum V1beta1EBSSnapshotImportSpecForProviderKmsKeyIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportSpecForProviderKmsKeyIdRefPolicy
 {
@@ -151,7 +151,7 @@ public partial class V1beta1EBSSnapshotImportSpecForProviderKmsKeyIdRefPolicy
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportSpecForProviderKmsKeyIdRef
 {
@@ -174,7 +174,7 @@ public partial class V1beta1EBSSnapshotImportSpecForProviderKmsKeyIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EBSSnapshotImportSpecForProviderKmsKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1EBSSnapshotImportSpecForProviderKmsKeyIdSelectorPolicyResolutionEnum
 {
@@ -190,7 +190,7 @@ public enum V1beta1EBSSnapshotImportSpecForProviderKmsKeyIdSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EBSSnapshotImportSpecForProviderKmsKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1EBSSnapshotImportSpecForProviderKmsKeyIdSelectorPolicyResolveEnum
 {
@@ -201,7 +201,7 @@ public enum V1beta1EBSSnapshotImportSpecForProviderKmsKeyIdSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportSpecForProviderKmsKeyIdSelectorPolicy
 {
@@ -225,7 +225,7 @@ public partial class V1beta1EBSSnapshotImportSpecForProviderKmsKeyIdSelectorPoli
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportSpecForProviderKmsKeyIdSelector
 {
@@ -249,7 +249,7 @@ public partial class V1beta1EBSSnapshotImportSpecForProviderKmsKeyIdSelector
     public V1beta1EBSSnapshotImportSpecForProviderKmsKeyIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportSpecForProvider
 {
@@ -310,7 +310,7 @@ public partial class V1beta1EBSSnapshotImportSpecForProvider
 }
 
 /// <summary>The client-specific data. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportSpecInitProviderClientData
 {
@@ -332,7 +332,7 @@ public partial class V1beta1EBSSnapshotImportSpecInitProviderClientData
 }
 
 /// <summary>The Amazon S3 bucket for the disk image. One of url or user_bucket must be set. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportSpecInitProviderDiskContainerUserBucket
 {
@@ -346,7 +346,7 @@ public partial class V1beta1EBSSnapshotImportSpecInitProviderDiskContainerUserBu
 }
 
 /// <summary>Information about the disk container. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportSpecInitProviderDiskContainer
 {
@@ -373,7 +373,7 @@ public partial class V1beta1EBSSnapshotImportSpecInitProviderDiskContainer
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EBSSnapshotImportSpecInitProviderKmsKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta1EBSSnapshotImportSpecInitProviderKmsKeyIdRefPolicyResolutionEnum
 {
@@ -389,7 +389,7 @@ public enum V1beta1EBSSnapshotImportSpecInitProviderKmsKeyIdRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EBSSnapshotImportSpecInitProviderKmsKeyIdRefPolicyResolveEnum>))]
 public enum V1beta1EBSSnapshotImportSpecInitProviderKmsKeyIdRefPolicyResolveEnum
 {
@@ -400,7 +400,7 @@ public enum V1beta1EBSSnapshotImportSpecInitProviderKmsKeyIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportSpecInitProviderKmsKeyIdRefPolicy
 {
@@ -424,7 +424,7 @@ public partial class V1beta1EBSSnapshotImportSpecInitProviderKmsKeyIdRefPolicy
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportSpecInitProviderKmsKeyIdRef
 {
@@ -447,7 +447,7 @@ public partial class V1beta1EBSSnapshotImportSpecInitProviderKmsKeyIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EBSSnapshotImportSpecInitProviderKmsKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1EBSSnapshotImportSpecInitProviderKmsKeyIdSelectorPolicyResolutionEnum
 {
@@ -463,7 +463,7 @@ public enum V1beta1EBSSnapshotImportSpecInitProviderKmsKeyIdSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EBSSnapshotImportSpecInitProviderKmsKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1EBSSnapshotImportSpecInitProviderKmsKeyIdSelectorPolicyResolveEnum
 {
@@ -474,7 +474,7 @@ public enum V1beta1EBSSnapshotImportSpecInitProviderKmsKeyIdSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportSpecInitProviderKmsKeyIdSelectorPolicy
 {
@@ -498,7 +498,7 @@ public partial class V1beta1EBSSnapshotImportSpecInitProviderKmsKeyIdSelectorPol
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportSpecInitProviderKmsKeyIdSelector
 {
@@ -534,7 +534,7 @@ public partial class V1beta1EBSSnapshotImportSpecInitProviderKmsKeyIdSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportSpecInitProvider
 {
@@ -591,7 +591,7 @@ public partial class V1beta1EBSSnapshotImportSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EBSSnapshotImportSpecManagementPoliciesEnum>))]
 public enum V1beta1EBSSnapshotImportSpecManagementPoliciesEnum
 {
@@ -614,7 +614,7 @@ public enum V1beta1EBSSnapshotImportSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportSpecProviderConfigRef
 {
@@ -633,7 +633,7 @@ public partial class V1beta1EBSSnapshotImportSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportSpecWriteConnectionSecretToRef
 {
@@ -643,7 +643,7 @@ public partial class V1beta1EBSSnapshotImportSpecWriteConnectionSecretToRef
 }
 
 /// <summary>EBSSnapshotImportSpec defines the desired state of EBSSnapshotImport</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportSpec
 {
@@ -695,7 +695,7 @@ public partial class V1beta1EBSSnapshotImportSpec
 }
 
 /// <summary>The client-specific data. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportStatusAtProviderClientData
 {
@@ -717,7 +717,7 @@ public partial class V1beta1EBSSnapshotImportStatusAtProviderClientData
 }
 
 /// <summary>The Amazon S3 bucket for the disk image. One of url or user_bucket must be set. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportStatusAtProviderDiskContainerUserBucket
 {
@@ -731,7 +731,7 @@ public partial class V1beta1EBSSnapshotImportStatusAtProviderDiskContainerUserBu
 }
 
 /// <summary>Information about the disk container. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportStatusAtProviderDiskContainer
 {
@@ -752,7 +752,7 @@ public partial class V1beta1EBSSnapshotImportStatusAtProviderDiskContainer
     public V1beta1EBSSnapshotImportStatusAtProviderDiskContainerUserBucket? UserBucket { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportStatusAtProvider
 {
@@ -841,7 +841,7 @@ public partial class V1beta1EBSSnapshotImportStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportStatusConditions
 {
@@ -884,7 +884,7 @@ public partial class V1beta1EBSSnapshotImportStatusConditions
 }
 
 /// <summary>EBSSnapshotImportStatus defines the observed state of EBSSnapshotImport.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportStatus
 {
@@ -905,7 +905,7 @@ public partial class V1beta1EBSSnapshotImportStatus
 }
 
 /// <summary>EBSSnapshotImport is the Schema for the EBSSnapshotImports API. Provides an elastic block storage snapshot import resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EBSSnapshotImport : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1EBSSnapshotImportSpec>, IStatus<V1beta1EBSSnapshotImportStatus?>

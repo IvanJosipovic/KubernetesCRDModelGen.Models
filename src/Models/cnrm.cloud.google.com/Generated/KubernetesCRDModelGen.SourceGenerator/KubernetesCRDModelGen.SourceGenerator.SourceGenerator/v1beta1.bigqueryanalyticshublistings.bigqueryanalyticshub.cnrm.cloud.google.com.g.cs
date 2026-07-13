@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bigqueryanalyticshub.cnrm.cloud.google.com;
 /// <summary>BigQueryAnalyticsHubListing is the Schema for the BigQueryAnalyticsHubListing API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BigQueryAnalyticsHubListingList : IKubernetesObject<V1ListMeta>, IItems<V1beta1BigQueryAnalyticsHubListing>
@@ -37,7 +37,7 @@ public partial class V1beta1BigQueryAnalyticsHubListingList : IKubernetesObject<
 }
 
 /// <summary>BigQueryAnalyticsHubDataExchangeRef defines the resource reference to BigQueryAnalyticsHubDataExchange, which &quot;External&quot; field holds the GCP identifier for the KRM object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryAnalyticsHubListingSpecDataExchangeRef
 {
@@ -55,7 +55,7 @@ public partial class V1beta1BigQueryAnalyticsHubListingSpecDataExchangeRef
 }
 
 /// <summary>Optional. Details of the data provider who owns the source data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryAnalyticsHubListingSpecDataProvider
 {
@@ -69,7 +69,7 @@ public partial class V1beta1BigQueryAnalyticsHubListingSpecDataProvider
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryAnalyticsHubListingSpecProjectRef
 {
@@ -91,7 +91,7 @@ public partial class V1beta1BigQueryAnalyticsHubListingSpecProjectRef
 }
 
 /// <summary>Optional. Details of the publisher who owns the listing and who can share the source data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryAnalyticsHubListingSpecPublisher
 {
@@ -105,7 +105,7 @@ public partial class V1beta1BigQueryAnalyticsHubListingSpecPublisher
 }
 
 /// <summary>Resource name of the dataset source for this listing. e.g. `projects/myproject/datasets/123`</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryAnalyticsHubListingSpecSourceBigQueryDatasetSourceDatasetRef
 {
@@ -123,7 +123,7 @@ public partial class V1beta1BigQueryAnalyticsHubListingSpecSourceBigQueryDataset
 }
 
 /// <summary>Optional. If set, restricted export policy will be propagated and enforced on the linked dataset.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryAnalyticsHubListingSpecSourceBigQueryDatasetSourceRestrictedExportPolicy
 {
@@ -141,7 +141,7 @@ public partial class V1beta1BigQueryAnalyticsHubListingSpecSourceBigQueryDataset
 }
 
 /// <summary>Optional. A reference to a BigQueryTable. Format: `projects/{projectId}/datasets/{datasetId}/tables/{tableId}` Example:&quot;projects/test_project/datasets/test_dataset/tables/test_table&quot;</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryAnalyticsHubListingSpecSourceBigQueryDatasetSourceSelectedResourcesTableRef
 {
@@ -158,7 +158,7 @@ public partial class V1beta1BigQueryAnalyticsHubListingSpecSourceBigQueryDataset
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryAnalyticsHubListingSpecSourceBigQueryDatasetSourceSelectedResources
 {
@@ -168,7 +168,7 @@ public partial class V1beta1BigQueryAnalyticsHubListingSpecSourceBigQueryDataset
 }
 
 /// <summary>One of the following fields must be set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryAnalyticsHubListingSpecSourceBigQueryDatasetSource
 {
@@ -185,7 +185,7 @@ public partial class V1beta1BigQueryAnalyticsHubListingSpecSourceBigQueryDataset
     public IList<V1beta1BigQueryAnalyticsHubListingSpecSourceBigQueryDatasetSourceSelectedResources>? SelectedResources { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryAnalyticsHubListingSpecSource
 {
@@ -195,7 +195,7 @@ public partial class V1beta1BigQueryAnalyticsHubListingSpecSource
 }
 
 /// <summary>BigQueryAnalyticsHubListingSpec defines the desired state of BigQueryAnalyticsHubDataExchangeListing</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryAnalyticsHubListingSpec
 {
@@ -255,7 +255,7 @@ public partial class V1beta1BigQueryAnalyticsHubListingSpec
     public required V1beta1BigQueryAnalyticsHubListingSpecSource Source { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryAnalyticsHubListingStatusConditions
 {
@@ -281,7 +281,7 @@ public partial class V1beta1BigQueryAnalyticsHubListingStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryAnalyticsHubListingStatusObservedState
 {
@@ -291,7 +291,7 @@ public partial class V1beta1BigQueryAnalyticsHubListingStatusObservedState
 }
 
 /// <summary>BigQueryAnalyticsHubListingStatus defines the config connector machine state of BigQueryAnalyticsHubDataExchangeListing</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BigQueryAnalyticsHubListingStatus
 {
@@ -313,7 +313,7 @@ public partial class V1beta1BigQueryAnalyticsHubListingStatus
 }
 
 /// <summary>BigQueryAnalyticsHubListing is the Schema for the BigQueryAnalyticsHubListing API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BigQueryAnalyticsHubListing : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1BigQueryAnalyticsHubListingSpec?>, IStatus<V1beta1BigQueryAnalyticsHubListingStatus?>

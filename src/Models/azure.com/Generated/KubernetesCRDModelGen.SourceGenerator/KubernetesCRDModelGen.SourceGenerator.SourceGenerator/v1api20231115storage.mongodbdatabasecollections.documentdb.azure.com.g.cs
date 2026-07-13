@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.documentdb.azure.com;
 /// - Generated from: /cosmos-db/resource-manager/Microsoft.DocumentDB/DocumentDB/stable/2023-11-15/cosmos-db.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/mongodbDatabases/{databaseName}/collections/{collectionName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20231115storageMongodbDatabaseCollectionList : IKubernetesObject<V1ListMeta>, IItems<V1api20231115storageMongodbDatabaseCollection>
@@ -46,7 +46,7 @@ public partial class V1api20231115storageMongodbDatabaseCollectionList : IKubern
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageMongodbDatabaseCollectionSpecOperatorSpecConfigMapExpressions
 {
@@ -87,7 +87,7 @@ public partial class V1api20231115storageMongodbDatabaseCollectionSpecOperatorSp
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageMongodbDatabaseCollectionSpecOperatorSpecSecretExpressions
 {
@@ -127,7 +127,7 @@ public partial class V1api20231115storageMongodbDatabaseCollectionSpecOperatorSp
 /// Storage version of v1api20231115.MongodbDatabaseCollectionOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageMongodbDatabaseCollectionSpecOperatorSpec
 {
@@ -146,7 +146,7 @@ public partial class V1api20231115storageMongodbDatabaseCollectionSpecOperatorSp
 }
 
 /// <summary>Storage version of v1api20231115.AutoscaleSettings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageMongodbDatabaseCollectionSpecOptionsAutoscaleSettings
 {
@@ -166,7 +166,7 @@ public partial class V1api20231115storageMongodbDatabaseCollectionSpecOptionsAut
 /// CreateUpdateOptions are a list of key-value pairs that describe the resource. Supported keys are &quot;If-Match&quot;,
 /// &quot;If-None-Match&quot;, &quot;Session-Token&quot; and &quot;Throughput&quot;
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageMongodbDatabaseCollectionSpecOptions
 {
@@ -190,7 +190,7 @@ public partial class V1api20231115storageMongodbDatabaseCollectionSpecOptions
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a documentdb.azure.com/MongodbDatabase resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageMongodbDatabaseCollectionSpecOwner
 {
@@ -206,7 +206,7 @@ public partial class V1api20231115storageMongodbDatabaseCollectionSpecOwner
 /// Storage version of v1api20231115.MongoIndexKeys
 /// Cosmos DB MongoDB collection resource object
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageMongodbDatabaseCollectionSpecResourceIndexesKey
 {
@@ -225,7 +225,7 @@ public partial class V1api20231115storageMongodbDatabaseCollectionSpecResourceIn
 /// Storage version of v1api20231115.MongoIndexOptions
 /// Cosmos DB MongoDB collection index options
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageMongodbDatabaseCollectionSpecResourceIndexesOptions
 {
@@ -247,7 +247,7 @@ public partial class V1api20231115storageMongodbDatabaseCollectionSpecResourceIn
 /// Storage version of v1api20231115.MongoIndex
 /// Cosmos DB MongoDB collection index key
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageMongodbDatabaseCollectionSpecResourceIndexes
 {
@@ -277,7 +277,7 @@ public partial class V1api20231115storageMongodbDatabaseCollectionSpecResourceIn
 /// Storage version of v1api20231115.RestoreParametersBase
 /// Parameters to indicate the information about the restore.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageMongodbDatabaseCollectionSpecResourceRestoreParameters
 {
@@ -299,7 +299,7 @@ public partial class V1api20231115storageMongodbDatabaseCollectionSpecResourceRe
 /// Storage version of v1api20231115.MongoDBCollectionResource
 /// Cosmos DB MongoDB collection resource object
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageMongodbDatabaseCollectionSpecResource
 {
@@ -334,7 +334,7 @@ public partial class V1api20231115storageMongodbDatabaseCollectionSpecResource
 }
 
 /// <summary>Storage version of v1api20231115.MongodbDatabaseCollection_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageMongodbDatabaseCollectionSpec
 {
@@ -393,7 +393,7 @@ public partial class V1api20231115storageMongodbDatabaseCollectionSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageMongodbDatabaseCollectionStatusConditions
 {
@@ -439,7 +439,7 @@ public partial class V1api20231115storageMongodbDatabaseCollectionStatusConditio
 }
 
 /// <summary>Storage version of v1api20231115.AutoscaleSettings_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageMongodbDatabaseCollectionStatusOptionsAutoscaleSettings
 {
@@ -458,7 +458,7 @@ public partial class V1api20231115storageMongodbDatabaseCollectionStatusOptionsA
 /// Storage version of v1api20231115.OptionsResource_STATUS
 /// Cosmos DB options resource object
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageMongodbDatabaseCollectionStatusOptions
 {
@@ -481,7 +481,7 @@ public partial class V1api20231115storageMongodbDatabaseCollectionStatusOptions
 /// Storage version of v1api20231115.MongoIndexKeys_STATUS
 /// Cosmos DB MongoDB collection resource object
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageMongodbDatabaseCollectionStatusResourceIndexesKey
 {
@@ -500,7 +500,7 @@ public partial class V1api20231115storageMongodbDatabaseCollectionStatusResource
 /// Storage version of v1api20231115.MongoIndexOptions_STATUS
 /// Cosmos DB MongoDB collection index options
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageMongodbDatabaseCollectionStatusResourceIndexesOptions
 {
@@ -522,7 +522,7 @@ public partial class V1api20231115storageMongodbDatabaseCollectionStatusResource
 /// Storage version of v1api20231115.MongoIndex_STATUS
 /// Cosmos DB MongoDB collection index key
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageMongodbDatabaseCollectionStatusResourceIndexes
 {
@@ -552,7 +552,7 @@ public partial class V1api20231115storageMongodbDatabaseCollectionStatusResource
 /// Storage version of v1api20231115.RestoreParametersBase_STATUS
 /// Parameters to indicate the information about the restore.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageMongodbDatabaseCollectionStatusResourceRestoreParameters
 {
@@ -571,7 +571,7 @@ public partial class V1api20231115storageMongodbDatabaseCollectionStatusResource
 }
 
 /// <summary>Storage version of v1api20231115.MongoDBCollectionGetProperties_Resource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageMongodbDatabaseCollectionStatusResource
 {
@@ -615,7 +615,7 @@ public partial class V1api20231115storageMongodbDatabaseCollectionStatusResource
 }
 
 /// <summary>Storage version of v1api20231115.MongodbDatabaseCollection_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20231115storageMongodbDatabaseCollectionStatus
 {
@@ -662,7 +662,7 @@ public partial class V1api20231115storageMongodbDatabaseCollectionStatus
 /// - Generated from: /cosmos-db/resource-manager/Microsoft.DocumentDB/DocumentDB/stable/2023-11-15/cosmos-db.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}/mongodbDatabases/{databaseName}/collections/{collectionName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20231115storageMongodbDatabaseCollection : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20231115storageMongodbDatabaseCollectionSpec?>, IStatus<V1api20231115storageMongodbDatabaseCollectionStatus?>

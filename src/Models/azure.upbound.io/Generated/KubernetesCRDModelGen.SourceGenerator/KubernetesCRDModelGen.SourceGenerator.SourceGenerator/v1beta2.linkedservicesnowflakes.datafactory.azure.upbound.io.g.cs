@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datafactory.azure.upbound.io;
 /// <summary>LinkedServiceSnowflake is the Schema for the LinkedServiceSnowflakes API. Manages a Linked Service (connection) between Snowflake and Azure Data Factory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2LinkedServiceSnowflakeList : IKubernetesObject<V1ListMeta>, IItems<V1beta2LinkedServiceSnowflake>
@@ -45,7 +45,7 @@ public partial class V1beta2LinkedServiceSnowflakeList : IKubernetesObject<V1Lis
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinkedServiceSnowflakeSpecDeletionPolicyEnum>))]
 public enum V1beta2LinkedServiceSnowflakeSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta2LinkedServiceSnowflakeSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinkedServiceSnowflakeSpecForProviderDataFactoryIdRefPolicyResolutionEnum>))]
 public enum V1beta2LinkedServiceSnowflakeSpecForProviderDataFactoryIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta2LinkedServiceSnowflakeSpecForProviderDataFactoryIdRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinkedServiceSnowflakeSpecForProviderDataFactoryIdRefPolicyResolveEnum>))]
 public enum V1beta2LinkedServiceSnowflakeSpecForProviderDataFactoryIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta2LinkedServiceSnowflakeSpecForProviderDataFactoryIdRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceSnowflakeSpecForProviderDataFactoryIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta2LinkedServiceSnowflakeSpecForProviderDataFactoryIdRe
 }
 
 /// <summary>Reference to a Factory in datafactory to populate dataFactoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceSnowflakeSpecForProviderDataFactoryIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta2LinkedServiceSnowflakeSpecForProviderDataFactoryIdRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinkedServiceSnowflakeSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2LinkedServiceSnowflakeSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta2LinkedServiceSnowflakeSpecForProviderDataFactoryIdSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinkedServiceSnowflakeSpecForProviderDataFactoryIdSelectorPolicyResolveEnum>))]
 public enum V1beta2LinkedServiceSnowflakeSpecForProviderDataFactoryIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta2LinkedServiceSnowflakeSpecForProviderDataFactoryIdSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceSnowflakeSpecForProviderDataFactoryIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta2LinkedServiceSnowflakeSpecForProviderDataFactoryIdSe
 }
 
 /// <summary>Selector for a Factory in datafactory to populate dataFactoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceSnowflakeSpecForProviderDataFactoryIdSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta2LinkedServiceSnowflakeSpecForProviderDataFactoryIdSe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinkedServiceSnowflakeSpecForProviderKeyVaultPasswordLinkedServiceNameRefPolicyResolutionEnum>))]
 public enum V1beta2LinkedServiceSnowflakeSpecForProviderKeyVaultPasswordLinkedServiceNameRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta2LinkedServiceSnowflakeSpecForProviderKeyVaultPasswordLinkedSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinkedServiceSnowflakeSpecForProviderKeyVaultPasswordLinkedServiceNameRefPolicyResolveEnum>))]
 public enum V1beta2LinkedServiceSnowflakeSpecForProviderKeyVaultPasswordLinkedServiceNameRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta2LinkedServiceSnowflakeSpecForProviderKeyVaultPasswordLinkedSe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceSnowflakeSpecForProviderKeyVaultPasswordLinkedServiceNameRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta2LinkedServiceSnowflakeSpecForProviderKeyVaultPasswor
 }
 
 /// <summary>Reference to a LinkedServiceKeyVault in datafactory to populate linkedServiceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceSnowflakeSpecForProviderKeyVaultPasswordLinkedServiceNameRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta2LinkedServiceSnowflakeSpecForProviderKeyVaultPasswor
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinkedServiceSnowflakeSpecForProviderKeyVaultPasswordLinkedServiceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2LinkedServiceSnowflakeSpecForProviderKeyVaultPasswordLinkedServiceNameSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta2LinkedServiceSnowflakeSpecForProviderKeyVaultPasswordLinkedSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinkedServiceSnowflakeSpecForProviderKeyVaultPasswordLinkedServiceNameSelectorPolicyResolveEnum>))]
 public enum V1beta2LinkedServiceSnowflakeSpecForProviderKeyVaultPasswordLinkedServiceNameSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta2LinkedServiceSnowflakeSpecForProviderKeyVaultPasswordLinkedSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceSnowflakeSpecForProviderKeyVaultPasswordLinkedServiceNameSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta2LinkedServiceSnowflakeSpecForProviderKeyVaultPasswor
 }
 
 /// <summary>Selector for a LinkedServiceKeyVault in datafactory to populate linkedServiceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceSnowflakeSpecForProviderKeyVaultPasswordLinkedServiceNameSelector
 {
@@ -350,7 +350,7 @@ public partial class V1beta2LinkedServiceSnowflakeSpecForProviderKeyVaultPasswor
 }
 
 /// <summary>A key_vault_password block as defined below. Use this argument to store Snowflake password in an existing Key Vault. It needs an existing Key Vault Data Factory Linked Service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceSnowflakeSpecForProviderKeyVaultPassword
 {
@@ -371,7 +371,7 @@ public partial class V1beta2LinkedServiceSnowflakeSpecForProviderKeyVaultPasswor
     public string? SecretName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceSnowflakeSpecForProvider
 {
@@ -422,7 +422,7 @@ public partial class V1beta2LinkedServiceSnowflakeSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinkedServiceSnowflakeSpecInitProviderKeyVaultPasswordLinkedServiceNameRefPolicyResolutionEnum>))]
 public enum V1beta2LinkedServiceSnowflakeSpecInitProviderKeyVaultPasswordLinkedServiceNameRefPolicyResolutionEnum
 {
@@ -438,7 +438,7 @@ public enum V1beta2LinkedServiceSnowflakeSpecInitProviderKeyVaultPasswordLinkedS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinkedServiceSnowflakeSpecInitProviderKeyVaultPasswordLinkedServiceNameRefPolicyResolveEnum>))]
 public enum V1beta2LinkedServiceSnowflakeSpecInitProviderKeyVaultPasswordLinkedServiceNameRefPolicyResolveEnum
 {
@@ -449,7 +449,7 @@ public enum V1beta2LinkedServiceSnowflakeSpecInitProviderKeyVaultPasswordLinkedS
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceSnowflakeSpecInitProviderKeyVaultPasswordLinkedServiceNameRefPolicy
 {
@@ -473,7 +473,7 @@ public partial class V1beta2LinkedServiceSnowflakeSpecInitProviderKeyVaultPasswo
 }
 
 /// <summary>Reference to a LinkedServiceKeyVault in datafactory to populate linkedServiceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceSnowflakeSpecInitProviderKeyVaultPasswordLinkedServiceNameRef
 {
@@ -492,7 +492,7 @@ public partial class V1beta2LinkedServiceSnowflakeSpecInitProviderKeyVaultPasswo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinkedServiceSnowflakeSpecInitProviderKeyVaultPasswordLinkedServiceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2LinkedServiceSnowflakeSpecInitProviderKeyVaultPasswordLinkedServiceNameSelectorPolicyResolutionEnum
 {
@@ -508,7 +508,7 @@ public enum V1beta2LinkedServiceSnowflakeSpecInitProviderKeyVaultPasswordLinkedS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinkedServiceSnowflakeSpecInitProviderKeyVaultPasswordLinkedServiceNameSelectorPolicyResolveEnum>))]
 public enum V1beta2LinkedServiceSnowflakeSpecInitProviderKeyVaultPasswordLinkedServiceNameSelectorPolicyResolveEnum
 {
@@ -519,7 +519,7 @@ public enum V1beta2LinkedServiceSnowflakeSpecInitProviderKeyVaultPasswordLinkedS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceSnowflakeSpecInitProviderKeyVaultPasswordLinkedServiceNameSelectorPolicy
 {
@@ -543,7 +543,7 @@ public partial class V1beta2LinkedServiceSnowflakeSpecInitProviderKeyVaultPasswo
 }
 
 /// <summary>Selector for a LinkedServiceKeyVault in datafactory to populate linkedServiceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceSnowflakeSpecInitProviderKeyVaultPasswordLinkedServiceNameSelector
 {
@@ -564,7 +564,7 @@ public partial class V1beta2LinkedServiceSnowflakeSpecInitProviderKeyVaultPasswo
 }
 
 /// <summary>A key_vault_password block as defined below. Use this argument to store Snowflake password in an existing Key Vault. It needs an existing Key Vault Data Factory Linked Service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceSnowflakeSpecInitProviderKeyVaultPassword
 {
@@ -597,7 +597,7 @@ public partial class V1beta2LinkedServiceSnowflakeSpecInitProviderKeyVaultPasswo
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceSnowflakeSpecInitProvider
 {
@@ -634,7 +634,7 @@ public partial class V1beta2LinkedServiceSnowflakeSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinkedServiceSnowflakeSpecManagementPoliciesEnum>))]
 public enum V1beta2LinkedServiceSnowflakeSpecManagementPoliciesEnum
 {
@@ -658,7 +658,7 @@ public enum V1beta2LinkedServiceSnowflakeSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinkedServiceSnowflakeSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2LinkedServiceSnowflakeSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -674,7 +674,7 @@ public enum V1beta2LinkedServiceSnowflakeSpecProviderConfigRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2LinkedServiceSnowflakeSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2LinkedServiceSnowflakeSpecProviderConfigRefPolicyResolveEnum
 {
@@ -685,7 +685,7 @@ public enum V1beta2LinkedServiceSnowflakeSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceSnowflakeSpecProviderConfigRefPolicy
 {
@@ -713,7 +713,7 @@ public partial class V1beta2LinkedServiceSnowflakeSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceSnowflakeSpecProviderConfigRef
 {
@@ -732,7 +732,7 @@ public partial class V1beta2LinkedServiceSnowflakeSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceSnowflakeSpecWriteConnectionSecretToRef
 {
@@ -746,7 +746,7 @@ public partial class V1beta2LinkedServiceSnowflakeSpecWriteConnectionSecretToRef
 }
 
 /// <summary>LinkedServiceSnowflakeSpec defines the desired state of LinkedServiceSnowflake</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceSnowflakeSpec
 {
@@ -814,7 +814,7 @@ public partial class V1beta2LinkedServiceSnowflakeSpec
 }
 
 /// <summary>A key_vault_password block as defined below. Use this argument to store Snowflake password in an existing Key Vault. It needs an existing Key Vault Data Factory Linked Service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceSnowflakeStatusAtProviderKeyVaultPassword
 {
@@ -827,7 +827,7 @@ public partial class V1beta2LinkedServiceSnowflakeStatusAtProviderKeyVaultPasswo
     public string? SecretName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceSnowflakeStatusAtProvider
 {
@@ -869,7 +869,7 @@ public partial class V1beta2LinkedServiceSnowflakeStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceSnowflakeStatusConditions
 {
@@ -912,7 +912,7 @@ public partial class V1beta2LinkedServiceSnowflakeStatusConditions
 }
 
 /// <summary>LinkedServiceSnowflakeStatus defines the observed state of LinkedServiceSnowflake.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LinkedServiceSnowflakeStatus
 {
@@ -933,7 +933,7 @@ public partial class V1beta2LinkedServiceSnowflakeStatus
 }
 
 /// <summary>LinkedServiceSnowflake is the Schema for the LinkedServiceSnowflakes API. Manages a Linked Service (connection) between Snowflake and Azure Data Factory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2LinkedServiceSnowflake : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2LinkedServiceSnowflakeSpec>, IStatus<V1beta2LinkedServiceSnowflakeStatus?>

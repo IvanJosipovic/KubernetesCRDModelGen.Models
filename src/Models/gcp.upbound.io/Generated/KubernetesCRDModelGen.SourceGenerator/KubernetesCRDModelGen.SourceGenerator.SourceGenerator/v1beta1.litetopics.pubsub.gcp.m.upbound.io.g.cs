@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.pubsub.gcp.m.upbound.io;
 /// <summary>LiteTopic is the Schema for the LiteTopics API. A named resource to which messages are sent by publishers.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LiteTopicList : IKubernetesObject<V1ListMeta>, IItems<V1beta1LiteTopic>
@@ -40,7 +40,7 @@ public partial class V1beta1LiteTopicList : IKubernetesObject<V1ListMeta>, IItem
 /// The capacity configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicSpecForProviderPartitionConfigCapacity
 {
@@ -57,7 +57,7 @@ public partial class V1beta1LiteTopicSpecForProviderPartitionConfigCapacity
 /// The settings for this topic&apos;s partitions.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicSpecForProviderPartitionConfig
 {
@@ -79,7 +79,7 @@ public partial class V1beta1LiteTopicSpecForProviderPartitionConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LiteTopicSpecForProviderReservationConfigThroughputReservationRefPolicyResolutionEnum>))]
 public enum V1beta1LiteTopicSpecForProviderReservationConfigThroughputReservationRefPolicyResolutionEnum
 {
@@ -95,7 +95,7 @@ public enum V1beta1LiteTopicSpecForProviderReservationConfigThroughputReservatio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LiteTopicSpecForProviderReservationConfigThroughputReservationRefPolicyResolveEnum>))]
 public enum V1beta1LiteTopicSpecForProviderReservationConfigThroughputReservationRefPolicyResolveEnum
 {
@@ -106,7 +106,7 @@ public enum V1beta1LiteTopicSpecForProviderReservationConfigThroughputReservatio
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicSpecForProviderReservationConfigThroughputReservationRefPolicy
 {
@@ -130,7 +130,7 @@ public partial class V1beta1LiteTopicSpecForProviderReservationConfigThroughputR
 }
 
 /// <summary>Reference to a LiteReservation in pubsub to populate throughputReservation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicSpecForProviderReservationConfigThroughputReservationRef
 {
@@ -153,7 +153,7 @@ public partial class V1beta1LiteTopicSpecForProviderReservationConfigThroughputR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LiteTopicSpecForProviderReservationConfigThroughputReservationSelectorPolicyResolutionEnum>))]
 public enum V1beta1LiteTopicSpecForProviderReservationConfigThroughputReservationSelectorPolicyResolutionEnum
 {
@@ -169,7 +169,7 @@ public enum V1beta1LiteTopicSpecForProviderReservationConfigThroughputReservatio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LiteTopicSpecForProviderReservationConfigThroughputReservationSelectorPolicyResolveEnum>))]
 public enum V1beta1LiteTopicSpecForProviderReservationConfigThroughputReservationSelectorPolicyResolveEnum
 {
@@ -180,7 +180,7 @@ public enum V1beta1LiteTopicSpecForProviderReservationConfigThroughputReservatio
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicSpecForProviderReservationConfigThroughputReservationSelectorPolicy
 {
@@ -204,7 +204,7 @@ public partial class V1beta1LiteTopicSpecForProviderReservationConfigThroughputR
 }
 
 /// <summary>Selector for a LiteReservation in pubsub to populate throughputReservation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicSpecForProviderReservationConfigThroughputReservationSelector
 {
@@ -232,7 +232,7 @@ public partial class V1beta1LiteTopicSpecForProviderReservationConfigThroughputR
 /// The settings for this topic&apos;s Reservation usage.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicSpecForProviderReservationConfig
 {
@@ -253,7 +253,7 @@ public partial class V1beta1LiteTopicSpecForProviderReservationConfig
 /// The settings for a topic&apos;s message retention.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicSpecForProviderRetentionConfig
 {
@@ -275,7 +275,7 @@ public partial class V1beta1LiteTopicSpecForProviderRetentionConfig
     public string? Period { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicSpecForProvider
 {
@@ -320,7 +320,7 @@ public partial class V1beta1LiteTopicSpecForProvider
 /// The capacity configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicSpecInitProviderPartitionConfigCapacity
 {
@@ -337,7 +337,7 @@ public partial class V1beta1LiteTopicSpecInitProviderPartitionConfigCapacity
 /// The settings for this topic&apos;s partitions.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicSpecInitProviderPartitionConfig
 {
@@ -359,7 +359,7 @@ public partial class V1beta1LiteTopicSpecInitProviderPartitionConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LiteTopicSpecInitProviderReservationConfigThroughputReservationRefPolicyResolutionEnum>))]
 public enum V1beta1LiteTopicSpecInitProviderReservationConfigThroughputReservationRefPolicyResolutionEnum
 {
@@ -375,7 +375,7 @@ public enum V1beta1LiteTopicSpecInitProviderReservationConfigThroughputReservati
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LiteTopicSpecInitProviderReservationConfigThroughputReservationRefPolicyResolveEnum>))]
 public enum V1beta1LiteTopicSpecInitProviderReservationConfigThroughputReservationRefPolicyResolveEnum
 {
@@ -386,7 +386,7 @@ public enum V1beta1LiteTopicSpecInitProviderReservationConfigThroughputReservati
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicSpecInitProviderReservationConfigThroughputReservationRefPolicy
 {
@@ -410,7 +410,7 @@ public partial class V1beta1LiteTopicSpecInitProviderReservationConfigThroughput
 }
 
 /// <summary>Reference to a LiteReservation in pubsub to populate throughputReservation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicSpecInitProviderReservationConfigThroughputReservationRef
 {
@@ -433,7 +433,7 @@ public partial class V1beta1LiteTopicSpecInitProviderReservationConfigThroughput
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LiteTopicSpecInitProviderReservationConfigThroughputReservationSelectorPolicyResolutionEnum>))]
 public enum V1beta1LiteTopicSpecInitProviderReservationConfigThroughputReservationSelectorPolicyResolutionEnum
 {
@@ -449,7 +449,7 @@ public enum V1beta1LiteTopicSpecInitProviderReservationConfigThroughputReservati
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LiteTopicSpecInitProviderReservationConfigThroughputReservationSelectorPolicyResolveEnum>))]
 public enum V1beta1LiteTopicSpecInitProviderReservationConfigThroughputReservationSelectorPolicyResolveEnum
 {
@@ -460,7 +460,7 @@ public enum V1beta1LiteTopicSpecInitProviderReservationConfigThroughputReservati
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicSpecInitProviderReservationConfigThroughputReservationSelectorPolicy
 {
@@ -484,7 +484,7 @@ public partial class V1beta1LiteTopicSpecInitProviderReservationConfigThroughput
 }
 
 /// <summary>Selector for a LiteReservation in pubsub to populate throughputReservation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicSpecInitProviderReservationConfigThroughputReservationSelector
 {
@@ -512,7 +512,7 @@ public partial class V1beta1LiteTopicSpecInitProviderReservationConfigThroughput
 /// The settings for this topic&apos;s Reservation usage.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicSpecInitProviderReservationConfig
 {
@@ -533,7 +533,7 @@ public partial class V1beta1LiteTopicSpecInitProviderReservationConfig
 /// The settings for a topic&apos;s message retention.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicSpecInitProviderRetentionConfig
 {
@@ -567,7 +567,7 @@ public partial class V1beta1LiteTopicSpecInitProviderRetentionConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicSpecInitProvider
 {
@@ -608,7 +608,7 @@ public partial class V1beta1LiteTopicSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LiteTopicSpecManagementPoliciesEnum>))]
 public enum V1beta1LiteTopicSpecManagementPoliciesEnum
 {
@@ -631,7 +631,7 @@ public enum V1beta1LiteTopicSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicSpecProviderConfigRef
 {
@@ -650,7 +650,7 @@ public partial class V1beta1LiteTopicSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicSpecWriteConnectionSecretToRef
 {
@@ -660,7 +660,7 @@ public partial class V1beta1LiteTopicSpecWriteConnectionSecretToRef
 }
 
 /// <summary>LiteTopicSpec defines the desired state of LiteTopic</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicSpec
 {
@@ -715,7 +715,7 @@ public partial class V1beta1LiteTopicSpec
 /// The capacity configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicStatusAtProviderPartitionConfigCapacity
 {
@@ -732,7 +732,7 @@ public partial class V1beta1LiteTopicStatusAtProviderPartitionConfigCapacity
 /// The settings for this topic&apos;s partitions.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicStatusAtProviderPartitionConfig
 {
@@ -752,7 +752,7 @@ public partial class V1beta1LiteTopicStatusAtProviderPartitionConfig
 /// The settings for this topic&apos;s Reservation usage.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicStatusAtProviderReservationConfig
 {
@@ -765,7 +765,7 @@ public partial class V1beta1LiteTopicStatusAtProviderReservationConfig
 /// The settings for a topic&apos;s message retention.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicStatusAtProviderRetentionConfig
 {
@@ -787,7 +787,7 @@ public partial class V1beta1LiteTopicStatusAtProviderRetentionConfig
     public string? Period { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicStatusAtProvider
 {
@@ -833,7 +833,7 @@ public partial class V1beta1LiteTopicStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicStatusConditions
 {
@@ -876,7 +876,7 @@ public partial class V1beta1LiteTopicStatusConditions
 }
 
 /// <summary>LiteTopicStatus defines the observed state of LiteTopic.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LiteTopicStatus
 {
@@ -897,7 +897,7 @@ public partial class V1beta1LiteTopicStatus
 }
 
 /// <summary>LiteTopic is the Schema for the LiteTopics API. A named resource to which messages are sent by publishers.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LiteTopic : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1LiteTopicSpec>, IStatus<V1beta1LiteTopicStatus?>

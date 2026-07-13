@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dynamodb.aws.upbound.io;
 /// <summary>KinesisStreamingDestination is the Schema for the KinesisStreamingDestinations API. Enables a Kinesis streaming destination for a DynamoDB table</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1KinesisStreamingDestinationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1KinesisStreamingDestination>
@@ -45,7 +45,7 @@ public partial class V1beta1KinesisStreamingDestinationList : IKubernetesObject<
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KinesisStreamingDestinationSpecDeletionPolicyEnum>))]
 public enum V1beta1KinesisStreamingDestinationSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1KinesisStreamingDestinationSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KinesisStreamingDestinationSpecForProviderStreamArnRefPolicyResolutionEnum>))]
 public enum V1beta1KinesisStreamingDestinationSpecForProviderStreamArnRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1KinesisStreamingDestinationSpecForProviderStreamArnRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KinesisStreamingDestinationSpecForProviderStreamArnRefPolicyResolveEnum>))]
 public enum V1beta1KinesisStreamingDestinationSpecForProviderStreamArnRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1KinesisStreamingDestinationSpecForProviderStreamArnRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationSpecForProviderStreamArnRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1KinesisStreamingDestinationSpecForProviderStreamArnR
 }
 
 /// <summary>Reference to a Stream in kinesis to populate streamArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationSpecForProviderStreamArnRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1KinesisStreamingDestinationSpecForProviderStreamArnR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KinesisStreamingDestinationSpecForProviderStreamArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1KinesisStreamingDestinationSpecForProviderStreamArnSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1KinesisStreamingDestinationSpecForProviderStreamArnSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KinesisStreamingDestinationSpecForProviderStreamArnSelectorPolicyResolveEnum>))]
 public enum V1beta1KinesisStreamingDestinationSpecForProviderStreamArnSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1KinesisStreamingDestinationSpecForProviderStreamArnSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationSpecForProviderStreamArnSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1KinesisStreamingDestinationSpecForProviderStreamArnS
 }
 
 /// <summary>Selector for a Stream in kinesis to populate streamArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationSpecForProviderStreamArnSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1KinesisStreamingDestinationSpecForProviderStreamArnS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KinesisStreamingDestinationSpecForProviderTableNameRefPolicyResolutionEnum>))]
 public enum V1beta1KinesisStreamingDestinationSpecForProviderTableNameRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1KinesisStreamingDestinationSpecForProviderTableNameRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KinesisStreamingDestinationSpecForProviderTableNameRefPolicyResolveEnum>))]
 public enum V1beta1KinesisStreamingDestinationSpecForProviderTableNameRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1KinesisStreamingDestinationSpecForProviderTableNameRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationSpecForProviderTableNameRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1KinesisStreamingDestinationSpecForProviderTableNameR
 }
 
 /// <summary>Reference to a Table in dynamodb to populate tableName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationSpecForProviderTableNameRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1KinesisStreamingDestinationSpecForProviderTableNameR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KinesisStreamingDestinationSpecForProviderTableNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1KinesisStreamingDestinationSpecForProviderTableNameSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1KinesisStreamingDestinationSpecForProviderTableNameSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KinesisStreamingDestinationSpecForProviderTableNameSelectorPolicyResolveEnum>))]
 public enum V1beta1KinesisStreamingDestinationSpecForProviderTableNameSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1KinesisStreamingDestinationSpecForProviderTableNameSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationSpecForProviderTableNameSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1KinesisStreamingDestinationSpecForProviderTableNameS
 }
 
 /// <summary>Selector for a Table in dynamodb to populate tableName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationSpecForProviderTableNameSelector
 {
@@ -349,7 +349,7 @@ public partial class V1beta1KinesisStreamingDestinationSpecForProviderTableNameS
     public V1beta1KinesisStreamingDestinationSpecForProviderTableNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationSpecForProvider
 {
@@ -395,7 +395,7 @@ public partial class V1beta1KinesisStreamingDestinationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KinesisStreamingDestinationSpecInitProviderStreamArnRefPolicyResolutionEnum>))]
 public enum V1beta1KinesisStreamingDestinationSpecInitProviderStreamArnRefPolicyResolutionEnum
 {
@@ -411,7 +411,7 @@ public enum V1beta1KinesisStreamingDestinationSpecInitProviderStreamArnRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KinesisStreamingDestinationSpecInitProviderStreamArnRefPolicyResolveEnum>))]
 public enum V1beta1KinesisStreamingDestinationSpecInitProviderStreamArnRefPolicyResolveEnum
 {
@@ -422,7 +422,7 @@ public enum V1beta1KinesisStreamingDestinationSpecInitProviderStreamArnRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationSpecInitProviderStreamArnRefPolicy
 {
@@ -446,7 +446,7 @@ public partial class V1beta1KinesisStreamingDestinationSpecInitProviderStreamArn
 }
 
 /// <summary>Reference to a Stream in kinesis to populate streamArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationSpecInitProviderStreamArnRef
 {
@@ -465,7 +465,7 @@ public partial class V1beta1KinesisStreamingDestinationSpecInitProviderStreamArn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KinesisStreamingDestinationSpecInitProviderStreamArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1KinesisStreamingDestinationSpecInitProviderStreamArnSelectorPolicyResolutionEnum
 {
@@ -481,7 +481,7 @@ public enum V1beta1KinesisStreamingDestinationSpecInitProviderStreamArnSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KinesisStreamingDestinationSpecInitProviderStreamArnSelectorPolicyResolveEnum>))]
 public enum V1beta1KinesisStreamingDestinationSpecInitProviderStreamArnSelectorPolicyResolveEnum
 {
@@ -492,7 +492,7 @@ public enum V1beta1KinesisStreamingDestinationSpecInitProviderStreamArnSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationSpecInitProviderStreamArnSelectorPolicy
 {
@@ -516,7 +516,7 @@ public partial class V1beta1KinesisStreamingDestinationSpecInitProviderStreamArn
 }
 
 /// <summary>Selector for a Stream in kinesis to populate streamArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationSpecInitProviderStreamArnSelector
 {
@@ -542,7 +542,7 @@ public partial class V1beta1KinesisStreamingDestinationSpecInitProviderStreamArn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KinesisStreamingDestinationSpecInitProviderTableNameRefPolicyResolutionEnum>))]
 public enum V1beta1KinesisStreamingDestinationSpecInitProviderTableNameRefPolicyResolutionEnum
 {
@@ -558,7 +558,7 @@ public enum V1beta1KinesisStreamingDestinationSpecInitProviderTableNameRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KinesisStreamingDestinationSpecInitProviderTableNameRefPolicyResolveEnum>))]
 public enum V1beta1KinesisStreamingDestinationSpecInitProviderTableNameRefPolicyResolveEnum
 {
@@ -569,7 +569,7 @@ public enum V1beta1KinesisStreamingDestinationSpecInitProviderTableNameRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationSpecInitProviderTableNameRefPolicy
 {
@@ -593,7 +593,7 @@ public partial class V1beta1KinesisStreamingDestinationSpecInitProviderTableName
 }
 
 /// <summary>Reference to a Table in dynamodb to populate tableName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationSpecInitProviderTableNameRef
 {
@@ -612,7 +612,7 @@ public partial class V1beta1KinesisStreamingDestinationSpecInitProviderTableName
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KinesisStreamingDestinationSpecInitProviderTableNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1KinesisStreamingDestinationSpecInitProviderTableNameSelectorPolicyResolutionEnum
 {
@@ -628,7 +628,7 @@ public enum V1beta1KinesisStreamingDestinationSpecInitProviderTableNameSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KinesisStreamingDestinationSpecInitProviderTableNameSelectorPolicyResolveEnum>))]
 public enum V1beta1KinesisStreamingDestinationSpecInitProviderTableNameSelectorPolicyResolveEnum
 {
@@ -639,7 +639,7 @@ public enum V1beta1KinesisStreamingDestinationSpecInitProviderTableNameSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationSpecInitProviderTableNameSelectorPolicy
 {
@@ -663,7 +663,7 @@ public partial class V1beta1KinesisStreamingDestinationSpecInitProviderTableName
 }
 
 /// <summary>Selector for a Table in dynamodb to populate tableName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationSpecInitProviderTableNameSelector
 {
@@ -695,7 +695,7 @@ public partial class V1beta1KinesisStreamingDestinationSpecInitProviderTableName
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationSpecInitProvider
 {
@@ -732,7 +732,7 @@ public partial class V1beta1KinesisStreamingDestinationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KinesisStreamingDestinationSpecManagementPoliciesEnum>))]
 public enum V1beta1KinesisStreamingDestinationSpecManagementPoliciesEnum
 {
@@ -756,7 +756,7 @@ public enum V1beta1KinesisStreamingDestinationSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KinesisStreamingDestinationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1KinesisStreamingDestinationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -772,7 +772,7 @@ public enum V1beta1KinesisStreamingDestinationSpecProviderConfigRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KinesisStreamingDestinationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1KinesisStreamingDestinationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -783,7 +783,7 @@ public enum V1beta1KinesisStreamingDestinationSpecProviderConfigRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationSpecProviderConfigRefPolicy
 {
@@ -811,7 +811,7 @@ public partial class V1beta1KinesisStreamingDestinationSpecProviderConfigRefPoli
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationSpecProviderConfigRef
 {
@@ -830,7 +830,7 @@ public partial class V1beta1KinesisStreamingDestinationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationSpecWriteConnectionSecretToRef
 {
@@ -844,7 +844,7 @@ public partial class V1beta1KinesisStreamingDestinationSpecWriteConnectionSecret
 }
 
 /// <summary>KinesisStreamingDestinationSpec defines the desired state of KinesisStreamingDestination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationSpec
 {
@@ -911,7 +911,7 @@ public partial class V1beta1KinesisStreamingDestinationSpec
     public V1beta1KinesisStreamingDestinationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationStatusAtProvider
 {
@@ -940,7 +940,7 @@ public partial class V1beta1KinesisStreamingDestinationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationStatusConditions
 {
@@ -983,7 +983,7 @@ public partial class V1beta1KinesisStreamingDestinationStatusConditions
 }
 
 /// <summary>KinesisStreamingDestinationStatus defines the observed state of KinesisStreamingDestination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KinesisStreamingDestinationStatus
 {
@@ -1004,7 +1004,7 @@ public partial class V1beta1KinesisStreamingDestinationStatus
 }
 
 /// <summary>KinesisStreamingDestination is the Schema for the KinesisStreamingDestinations API. Enables a Kinesis streaming destination for a DynamoDB table</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1KinesisStreamingDestination : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1KinesisStreamingDestinationSpec>, IStatus<V1beta1KinesisStreamingDestinationStatus?>

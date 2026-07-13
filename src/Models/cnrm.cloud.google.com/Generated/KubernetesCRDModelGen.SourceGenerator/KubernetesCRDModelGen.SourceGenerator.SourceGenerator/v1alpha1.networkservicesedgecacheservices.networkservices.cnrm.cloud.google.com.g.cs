@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.networkservices.cnrm.cloud.google.com;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1NetworkServicesEdgeCacheService>
@@ -36,7 +36,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceList : IKubernetesOb
 }
 
 /// <summary>Specifies the logging options for the traffic served by this service. If logging is enabled, logs will be exported to Cloud Logging.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecLogConfig
 {
@@ -54,7 +54,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecLogConfig
 }
 
 /// <summary>The project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecProjectRef
 {
@@ -71,7 +71,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecProjectRef
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingHostRule
 {
@@ -107,7 +107,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingHostRule
     public required string PathMatcher { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatcherRouteRuleHeaderActionRequestHeaderToAdd
 {
@@ -124,7 +124,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatch
     public bool? Replace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatcherRouteRuleHeaderActionRequestHeaderToRemove
 {
@@ -133,7 +133,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatch
     public required string HeaderName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToAdd
 {
@@ -150,7 +150,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatch
     public bool? Replace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToRemove
 {
@@ -164,7 +164,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatch
 }
 
 /// <summary>The header actions, including adding &amp; removing headers, for requests that match this route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatcherRouteRuleHeaderAction
 {
@@ -189,7 +189,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatch
     public IList<V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToRemove>? ResponseHeaderToRemove { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatcherRouteRuleMatchRuleHeaderMatch
 {
@@ -221,7 +221,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatch
     public string? SuffixMatch { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatcherRouteRuleMatchRuleQueryParameterMatch
 {
@@ -238,7 +238,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatch
     public bool? PresentMatch { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatcherRouteRuleMatchRule
 {
@@ -282,7 +282,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatch
 /// 
 /// This field may only be specified when signedRequestMode is set to REQUIRE_TOKENS.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatcherRouteRuleRouteActionCdnPolicyAddSignatures
 {
@@ -355,7 +355,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatch
 }
 
 /// <summary>Defines the request parameters that contribute to the cache key.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatcherRouteRuleRouteActionCdnPolicyCacheKeyPolicy
 {
@@ -432,7 +432,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatch
 /// 
 /// signedTokenOptions may only be specified when signedRequestMode is REQUIRE_TOKENS.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatcherRouteRuleRouteActionCdnPolicySignedTokenOptions
 {
@@ -458,7 +458,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatch
 }
 
 /// <summary>The policy to use for defining caching and signed request behaviour for requests that match this route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatcherRouteRuleRouteActionCdnPolicy
 {
@@ -598,7 +598,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatch
 }
 
 /// <summary>CORSPolicy defines Cross-Origin-Resource-Sharing configuration, including which CORS response headers will be set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatcherRouteRuleRouteActionCorsPolicy
 {
@@ -648,7 +648,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatch
 }
 
 /// <summary>The URL rewrite configuration for requests that match this route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatcherRouteRuleRouteActionUrlRewrite
 {
@@ -681,7 +681,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatch
 }
 
 /// <summary>In response to a matching path, the routeAction performs advanced routing actions like URL rewrites, header transformations, etc. prior to forwarding the request to the selected origin.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatcherRouteRuleRouteAction
 {
@@ -699,7 +699,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatch
 }
 
 /// <summary>The URL redirect configuration for requests that match this route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatcherRouteRuleUrlRedirect
 {
@@ -752,7 +752,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatch
     public bool? StripQuery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatcherRouteRule
 {
@@ -799,7 +799,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatch
     public V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatcherRouteRuleUrlRedirect? UrlRedirect { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatcher
 {
@@ -817,7 +817,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatch
 }
 
 /// <summary>Defines how requests are routed, modified, cached and/or which origin content is filled from.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRouting
 {
@@ -830,7 +830,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceSpecRouting
     public required IList<V1alpha1NetworkServicesEdgeCacheServiceSpecRoutingPathMatcher> PathMatcher { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceSpec
 {
@@ -898,7 +898,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceSpec
     public string? SslPolicy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceStatusConditions
 {
@@ -923,7 +923,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceStatusConditions
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1NetworkServicesEdgeCacheServiceStatus
 {
@@ -944,7 +944,7 @@ public partial class V1alpha1NetworkServicesEdgeCacheServiceStatus
     public int? ObservedGeneration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1NetworkServicesEdgeCacheService : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1NetworkServicesEdgeCacheServiceSpec>, IStatus<V1alpha1NetworkServicesEdgeCacheServiceStatus?>

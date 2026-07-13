@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cloudbuild.cnrm.cloud.google.com;
 /// <summary>CloudBuildWorkerPool is the Schema for the CloudBuild WorkerPool API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1CloudBuildWorkerPoolList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1CloudBuildWorkerPool>
@@ -37,7 +37,7 @@ public partial class V1alpha1CloudBuildWorkerPoolList : IKubernetesObject<V1List
 }
 
 /// <summary>Immutable. The network definition that the workers are peered to. If this section is left empty, the workers will be peered to `WorkerPool.project_id` on the service producer network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBuildWorkerPoolSpecPrivatePoolV1ConfigNetworkConfigPeeredNetworkRef
 {
@@ -55,7 +55,7 @@ public partial class V1alpha1CloudBuildWorkerPoolSpecPrivatePoolV1ConfigNetworkC
 }
 
 /// <summary>Network configuration for the pool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBuildWorkerPoolSpecPrivatePoolV1ConfigNetworkConfig
 {
@@ -73,7 +73,7 @@ public partial class V1alpha1CloudBuildWorkerPoolSpecPrivatePoolV1ConfigNetworkC
 }
 
 /// <summary>Machine configuration for the workers in the pool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBuildWorkerPoolSpecPrivatePoolV1ConfigWorkerConfig
 {
@@ -87,7 +87,7 @@ public partial class V1alpha1CloudBuildWorkerPoolSpecPrivatePoolV1ConfigWorkerCo
 }
 
 /// <summary>Legacy Private Pool configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBuildWorkerPoolSpecPrivatePoolV1Config
 {
@@ -101,7 +101,7 @@ public partial class V1alpha1CloudBuildWorkerPoolSpecPrivatePoolV1Config
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBuildWorkerPoolSpecProjectRef
 {
@@ -123,7 +123,7 @@ public partial class V1alpha1CloudBuildWorkerPoolSpecProjectRef
 }
 
 /// <summary>CloudBuildWorkerPoolSpec defines the desired state of Instance</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBuildWorkerPoolSpec
 {
@@ -147,7 +147,7 @@ public partial class V1alpha1CloudBuildWorkerPoolSpec
     public string? ResourceID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBuildWorkerPoolStatusConditions
 {
@@ -173,7 +173,7 @@ public partial class V1alpha1CloudBuildWorkerPoolStatusConditions
 }
 
 /// <summary>Network configuration for the pool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBuildWorkerPoolStatusObservedStateNetworkConfig
 {
@@ -191,7 +191,7 @@ public partial class V1alpha1CloudBuildWorkerPoolStatusObservedStateNetworkConfi
 }
 
 /// <summary>Machine configuration for the workers in the pool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBuildWorkerPoolStatusObservedStateWorkerConfig
 {
@@ -205,7 +205,7 @@ public partial class V1alpha1CloudBuildWorkerPoolStatusObservedStateWorkerConfig
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBuildWorkerPoolStatusObservedState
 {
@@ -231,7 +231,7 @@ public partial class V1alpha1CloudBuildWorkerPoolStatusObservedState
 }
 
 /// <summary>CloudBuildWorkerPoolStatus defines the observed state of Instance</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudBuildWorkerPoolStatus
 {
@@ -253,7 +253,7 @@ public partial class V1alpha1CloudBuildWorkerPoolStatus
 }
 
 /// <summary>CloudBuildWorkerPool is the Schema for the CloudBuild WorkerPool API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1CloudBuildWorkerPool : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1CloudBuildWorkerPoolSpec?>, IStatus<V1alpha1CloudBuildWorkerPoolStatus?>

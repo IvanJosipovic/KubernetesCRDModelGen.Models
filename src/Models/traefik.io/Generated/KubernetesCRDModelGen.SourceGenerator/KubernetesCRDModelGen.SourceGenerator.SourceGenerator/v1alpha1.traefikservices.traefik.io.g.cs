@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.traefik.io;
 /// - Mirror traffic on services
 /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/kubernetes/crd/http/traefikservice/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1TraefikServiceList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1TraefikService>
@@ -43,7 +43,7 @@ public partial class V1alpha1TraefikServiceList : IKubernetesObject<V1ListMeta>,
 }
 
 /// <summary>Errors defines which errors should trigger the use of the fallback service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecFailoverErrors
 {
@@ -60,7 +60,7 @@ public partial class V1alpha1TraefikServiceSpecFailoverErrors
 }
 
 /// <summary>Healthcheck defines health checks for ExternalName services.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecFailoverFallbackHealthCheck
 {
@@ -131,7 +131,7 @@ public partial class V1alpha1TraefikServiceSpecFailoverFallbackHealthCheck
 }
 
 /// <summary>Kind defines the kind of the Service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TraefikServiceSpecFailoverFallbackKindEnum>))]
 public enum V1alpha1TraefikServiceSpecFailoverFallbackKindEnum
 {
@@ -142,7 +142,7 @@ public enum V1alpha1TraefikServiceSpecFailoverFallbackKindEnum
 }
 
 /// <summary>MiddlewareRef is a reference to a Middleware resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecFailoverFallbackMiddlewares
 {
@@ -156,7 +156,7 @@ public partial class V1alpha1TraefikServiceSpecFailoverFallbackMiddlewares
 }
 
 /// <summary>PassiveHealthCheck defines passive health checks for ExternalName services.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecFailoverFallbackPassiveHealthCheck
 {
@@ -170,7 +170,7 @@ public partial class V1alpha1TraefikServiceSpecFailoverFallbackPassiveHealthChec
 }
 
 /// <summary>ResponseForwarding defines how Traefik forwards the response from the upstream Kubernetes Service to the client.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecFailoverFallbackResponseForwarding
 {
@@ -189,7 +189,7 @@ public partial class V1alpha1TraefikServiceSpecFailoverFallbackResponseForwardin
 /// SameSite defines the same site policy.
 /// More info: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TraefikServiceSpecFailoverFallbackStickyCookieSameSiteEnum>))]
 public enum V1alpha1TraefikServiceSpecFailoverFallbackStickyCookieSameSiteEnum
 {
@@ -208,7 +208,7 @@ public enum V1alpha1TraefikServiceSpecFailoverFallbackStickyCookieSameSiteEnum
 }
 
 /// <summary>Cookie defines the sticky cookie configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecFailoverFallbackStickyCookie
 {
@@ -259,7 +259,7 @@ public partial class V1alpha1TraefikServiceSpecFailoverFallbackStickyCookie
 /// Sticky defines the sticky sessions configuration.
 /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecFailoverFallbackSticky
 {
@@ -273,7 +273,7 @@ public partial class V1alpha1TraefikServiceSpecFailoverFallbackSticky
 /// Supported values are: wrr (Weighed round-robin), p2c (Power of two choices), hrw (Highest Random Weight), and leasttime (Least-Time).
 /// RoundRobin value is deprecated and supported for backward compatibility.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TraefikServiceSpecFailoverFallbackStrategyEnum>))]
 public enum V1alpha1TraefikServiceSpecFailoverFallbackStrategyEnum
 {
@@ -290,7 +290,7 @@ public enum V1alpha1TraefikServiceSpecFailoverFallbackStrategyEnum
 }
 
 /// <summary>Fallback defines the fallback service to use when the main service returns an error.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecFailoverFallback
 {
@@ -396,7 +396,7 @@ public partial class V1alpha1TraefikServiceSpecFailoverFallback
 }
 
 /// <summary>Healthcheck defines health checks for ExternalName services.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecFailoverServiceHealthCheck
 {
@@ -467,7 +467,7 @@ public partial class V1alpha1TraefikServiceSpecFailoverServiceHealthCheck
 }
 
 /// <summary>Kind defines the kind of the Service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TraefikServiceSpecFailoverServiceKindEnum>))]
 public enum V1alpha1TraefikServiceSpecFailoverServiceKindEnum
 {
@@ -478,7 +478,7 @@ public enum V1alpha1TraefikServiceSpecFailoverServiceKindEnum
 }
 
 /// <summary>MiddlewareRef is a reference to a Middleware resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecFailoverServiceMiddlewares
 {
@@ -492,7 +492,7 @@ public partial class V1alpha1TraefikServiceSpecFailoverServiceMiddlewares
 }
 
 /// <summary>PassiveHealthCheck defines passive health checks for ExternalName services.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecFailoverServicePassiveHealthCheck
 {
@@ -506,7 +506,7 @@ public partial class V1alpha1TraefikServiceSpecFailoverServicePassiveHealthCheck
 }
 
 /// <summary>ResponseForwarding defines how Traefik forwards the response from the upstream Kubernetes Service to the client.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecFailoverServiceResponseForwarding
 {
@@ -525,7 +525,7 @@ public partial class V1alpha1TraefikServiceSpecFailoverServiceResponseForwarding
 /// SameSite defines the same site policy.
 /// More info: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TraefikServiceSpecFailoverServiceStickyCookieSameSiteEnum>))]
 public enum V1alpha1TraefikServiceSpecFailoverServiceStickyCookieSameSiteEnum
 {
@@ -544,7 +544,7 @@ public enum V1alpha1TraefikServiceSpecFailoverServiceStickyCookieSameSiteEnum
 }
 
 /// <summary>Cookie defines the sticky cookie configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecFailoverServiceStickyCookie
 {
@@ -595,7 +595,7 @@ public partial class V1alpha1TraefikServiceSpecFailoverServiceStickyCookie
 /// Sticky defines the sticky sessions configuration.
 /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecFailoverServiceSticky
 {
@@ -609,7 +609,7 @@ public partial class V1alpha1TraefikServiceSpecFailoverServiceSticky
 /// Supported values are: wrr (Weighed round-robin), p2c (Power of two choices), hrw (Highest Random Weight), and leasttime (Least-Time).
 /// RoundRobin value is deprecated and supported for backward compatibility.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TraefikServiceSpecFailoverServiceStrategyEnum>))]
 public enum V1alpha1TraefikServiceSpecFailoverServiceStrategyEnum
 {
@@ -626,7 +626,7 @@ public enum V1alpha1TraefikServiceSpecFailoverServiceStrategyEnum
 }
 
 /// <summary>Service defines the main service to use.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecFailoverService
 {
@@ -732,7 +732,7 @@ public partial class V1alpha1TraefikServiceSpecFailoverService
 }
 
 /// <summary>Failover defines the Failover service configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecFailover
 {
@@ -750,7 +750,7 @@ public partial class V1alpha1TraefikServiceSpecFailover
 }
 
 /// <summary>Healthcheck defines health checks for ExternalName services.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecHighestRandomWeightServicesHealthCheck
 {
@@ -821,7 +821,7 @@ public partial class V1alpha1TraefikServiceSpecHighestRandomWeightServicesHealth
 }
 
 /// <summary>Kind defines the kind of the Service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TraefikServiceSpecHighestRandomWeightServicesKindEnum>))]
 public enum V1alpha1TraefikServiceSpecHighestRandomWeightServicesKindEnum
 {
@@ -832,7 +832,7 @@ public enum V1alpha1TraefikServiceSpecHighestRandomWeightServicesKindEnum
 }
 
 /// <summary>MiddlewareRef is a reference to a Middleware resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecHighestRandomWeightServicesMiddlewares
 {
@@ -846,7 +846,7 @@ public partial class V1alpha1TraefikServiceSpecHighestRandomWeightServicesMiddle
 }
 
 /// <summary>PassiveHealthCheck defines passive health checks for ExternalName services.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecHighestRandomWeightServicesPassiveHealthCheck
 {
@@ -860,7 +860,7 @@ public partial class V1alpha1TraefikServiceSpecHighestRandomWeightServicesPassiv
 }
 
 /// <summary>ResponseForwarding defines how Traefik forwards the response from the upstream Kubernetes Service to the client.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecHighestRandomWeightServicesResponseForwarding
 {
@@ -879,7 +879,7 @@ public partial class V1alpha1TraefikServiceSpecHighestRandomWeightServicesRespon
 /// SameSite defines the same site policy.
 /// More info: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TraefikServiceSpecHighestRandomWeightServicesStickyCookieSameSiteEnum>))]
 public enum V1alpha1TraefikServiceSpecHighestRandomWeightServicesStickyCookieSameSiteEnum
 {
@@ -898,7 +898,7 @@ public enum V1alpha1TraefikServiceSpecHighestRandomWeightServicesStickyCookieSam
 }
 
 /// <summary>Cookie defines the sticky cookie configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecHighestRandomWeightServicesStickyCookie
 {
@@ -949,7 +949,7 @@ public partial class V1alpha1TraefikServiceSpecHighestRandomWeightServicesSticky
 /// Sticky defines the sticky sessions configuration.
 /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecHighestRandomWeightServicesSticky
 {
@@ -963,7 +963,7 @@ public partial class V1alpha1TraefikServiceSpecHighestRandomWeightServicesSticky
 /// Supported values are: wrr (Weighed round-robin), p2c (Power of two choices), hrw (Highest Random Weight), and leasttime (Least-Time).
 /// RoundRobin value is deprecated and supported for backward compatibility.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TraefikServiceSpecHighestRandomWeightServicesStrategyEnum>))]
 public enum V1alpha1TraefikServiceSpecHighestRandomWeightServicesStrategyEnum
 {
@@ -980,7 +980,7 @@ public enum V1alpha1TraefikServiceSpecHighestRandomWeightServicesStrategyEnum
 }
 
 /// <summary>Service defines an upstream HTTP service to proxy traffic to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecHighestRandomWeightServices
 {
@@ -1086,7 +1086,7 @@ public partial class V1alpha1TraefikServiceSpecHighestRandomWeightServices
 }
 
 /// <summary>HighestRandomWeight defines the highest random weight service configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecHighestRandomWeight
 {
@@ -1096,7 +1096,7 @@ public partial class V1alpha1TraefikServiceSpecHighestRandomWeight
 }
 
 /// <summary>Healthcheck defines health checks for ExternalName services.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecMirroringHealthCheck
 {
@@ -1167,7 +1167,7 @@ public partial class V1alpha1TraefikServiceSpecMirroringHealthCheck
 }
 
 /// <summary>Kind defines the kind of the Service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TraefikServiceSpecMirroringKindEnum>))]
 public enum V1alpha1TraefikServiceSpecMirroringKindEnum
 {
@@ -1178,7 +1178,7 @@ public enum V1alpha1TraefikServiceSpecMirroringKindEnum
 }
 
 /// <summary>MiddlewareRef is a reference to a Middleware resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecMirroringMiddlewares
 {
@@ -1192,7 +1192,7 @@ public partial class V1alpha1TraefikServiceSpecMirroringMiddlewares
 }
 
 /// <summary>Healthcheck defines health checks for ExternalName services.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecMirroringMirrorsHealthCheck
 {
@@ -1263,7 +1263,7 @@ public partial class V1alpha1TraefikServiceSpecMirroringMirrorsHealthCheck
 }
 
 /// <summary>Kind defines the kind of the Service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TraefikServiceSpecMirroringMirrorsKindEnum>))]
 public enum V1alpha1TraefikServiceSpecMirroringMirrorsKindEnum
 {
@@ -1274,7 +1274,7 @@ public enum V1alpha1TraefikServiceSpecMirroringMirrorsKindEnum
 }
 
 /// <summary>MiddlewareRef is a reference to a Middleware resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecMirroringMirrorsMiddlewares
 {
@@ -1288,7 +1288,7 @@ public partial class V1alpha1TraefikServiceSpecMirroringMirrorsMiddlewares
 }
 
 /// <summary>PassiveHealthCheck defines passive health checks for ExternalName services.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecMirroringMirrorsPassiveHealthCheck
 {
@@ -1302,7 +1302,7 @@ public partial class V1alpha1TraefikServiceSpecMirroringMirrorsPassiveHealthChec
 }
 
 /// <summary>ResponseForwarding defines how Traefik forwards the response from the upstream Kubernetes Service to the client.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecMirroringMirrorsResponseForwarding
 {
@@ -1321,7 +1321,7 @@ public partial class V1alpha1TraefikServiceSpecMirroringMirrorsResponseForwardin
 /// SameSite defines the same site policy.
 /// More info: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TraefikServiceSpecMirroringMirrorsStickyCookieSameSiteEnum>))]
 public enum V1alpha1TraefikServiceSpecMirroringMirrorsStickyCookieSameSiteEnum
 {
@@ -1340,7 +1340,7 @@ public enum V1alpha1TraefikServiceSpecMirroringMirrorsStickyCookieSameSiteEnum
 }
 
 /// <summary>Cookie defines the sticky cookie configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecMirroringMirrorsStickyCookie
 {
@@ -1391,7 +1391,7 @@ public partial class V1alpha1TraefikServiceSpecMirroringMirrorsStickyCookie
 /// Sticky defines the sticky sessions configuration.
 /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecMirroringMirrorsSticky
 {
@@ -1405,7 +1405,7 @@ public partial class V1alpha1TraefikServiceSpecMirroringMirrorsSticky
 /// Supported values are: wrr (Weighed round-robin), p2c (Power of two choices), hrw (Highest Random Weight), and leasttime (Least-Time).
 /// RoundRobin value is deprecated and supported for backward compatibility.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TraefikServiceSpecMirroringMirrorsStrategyEnum>))]
 public enum V1alpha1TraefikServiceSpecMirroringMirrorsStrategyEnum
 {
@@ -1422,7 +1422,7 @@ public enum V1alpha1TraefikServiceSpecMirroringMirrorsStrategyEnum
 }
 
 /// <summary>MirrorService holds the mirror configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecMirroringMirrors
 {
@@ -1535,7 +1535,7 @@ public partial class V1alpha1TraefikServiceSpecMirroringMirrors
 }
 
 /// <summary>PassiveHealthCheck defines passive health checks for ExternalName services.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecMirroringPassiveHealthCheck
 {
@@ -1549,7 +1549,7 @@ public partial class V1alpha1TraefikServiceSpecMirroringPassiveHealthCheck
 }
 
 /// <summary>ResponseForwarding defines how Traefik forwards the response from the upstream Kubernetes Service to the client.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecMirroringResponseForwarding
 {
@@ -1568,7 +1568,7 @@ public partial class V1alpha1TraefikServiceSpecMirroringResponseForwarding
 /// SameSite defines the same site policy.
 /// More info: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TraefikServiceSpecMirroringStickyCookieSameSiteEnum>))]
 public enum V1alpha1TraefikServiceSpecMirroringStickyCookieSameSiteEnum
 {
@@ -1587,7 +1587,7 @@ public enum V1alpha1TraefikServiceSpecMirroringStickyCookieSameSiteEnum
 }
 
 /// <summary>Cookie defines the sticky cookie configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecMirroringStickyCookie
 {
@@ -1638,7 +1638,7 @@ public partial class V1alpha1TraefikServiceSpecMirroringStickyCookie
 /// Sticky defines the sticky sessions configuration.
 /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecMirroringSticky
 {
@@ -1652,7 +1652,7 @@ public partial class V1alpha1TraefikServiceSpecMirroringSticky
 /// Supported values are: wrr (Weighed round-robin), p2c (Power of two choices), hrw (Highest Random Weight), and leasttime (Least-Time).
 /// RoundRobin value is deprecated and supported for backward compatibility.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TraefikServiceSpecMirroringStrategyEnum>))]
 public enum V1alpha1TraefikServiceSpecMirroringStrategyEnum
 {
@@ -1669,7 +1669,7 @@ public enum V1alpha1TraefikServiceSpecMirroringStrategyEnum
 }
 
 /// <summary>Mirroring defines the Mirroring service configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecMirroring
 {
@@ -1794,7 +1794,7 @@ public partial class V1alpha1TraefikServiceSpecMirroring
 }
 
 /// <summary>Healthcheck defines health checks for ExternalName services.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecWeightedServicesHealthCheck
 {
@@ -1865,7 +1865,7 @@ public partial class V1alpha1TraefikServiceSpecWeightedServicesHealthCheck
 }
 
 /// <summary>Kind defines the kind of the Service.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TraefikServiceSpecWeightedServicesKindEnum>))]
 public enum V1alpha1TraefikServiceSpecWeightedServicesKindEnum
 {
@@ -1876,7 +1876,7 @@ public enum V1alpha1TraefikServiceSpecWeightedServicesKindEnum
 }
 
 /// <summary>MiddlewareRef is a reference to a Middleware resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecWeightedServicesMiddlewares
 {
@@ -1890,7 +1890,7 @@ public partial class V1alpha1TraefikServiceSpecWeightedServicesMiddlewares
 }
 
 /// <summary>PassiveHealthCheck defines passive health checks for ExternalName services.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecWeightedServicesPassiveHealthCheck
 {
@@ -1904,7 +1904,7 @@ public partial class V1alpha1TraefikServiceSpecWeightedServicesPassiveHealthChec
 }
 
 /// <summary>ResponseForwarding defines how Traefik forwards the response from the upstream Kubernetes Service to the client.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecWeightedServicesResponseForwarding
 {
@@ -1923,7 +1923,7 @@ public partial class V1alpha1TraefikServiceSpecWeightedServicesResponseForwardin
 /// SameSite defines the same site policy.
 /// More info: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TraefikServiceSpecWeightedServicesStickyCookieSameSiteEnum>))]
 public enum V1alpha1TraefikServiceSpecWeightedServicesStickyCookieSameSiteEnum
 {
@@ -1942,7 +1942,7 @@ public enum V1alpha1TraefikServiceSpecWeightedServicesStickyCookieSameSiteEnum
 }
 
 /// <summary>Cookie defines the sticky cookie configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecWeightedServicesStickyCookie
 {
@@ -1993,7 +1993,7 @@ public partial class V1alpha1TraefikServiceSpecWeightedServicesStickyCookie
 /// Sticky defines the sticky sessions configuration.
 /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/http/load-balancing/service/#sticky-sessions
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecWeightedServicesSticky
 {
@@ -2007,7 +2007,7 @@ public partial class V1alpha1TraefikServiceSpecWeightedServicesSticky
 /// Supported values are: wrr (Weighed round-robin), p2c (Power of two choices), hrw (Highest Random Weight), and leasttime (Least-Time).
 /// RoundRobin value is deprecated and supported for backward compatibility.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TraefikServiceSpecWeightedServicesStrategyEnum>))]
 public enum V1alpha1TraefikServiceSpecWeightedServicesStrategyEnum
 {
@@ -2024,7 +2024,7 @@ public enum V1alpha1TraefikServiceSpecWeightedServicesStrategyEnum
 }
 
 /// <summary>Service defines an upstream HTTP service to proxy traffic to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecWeightedServices
 {
@@ -2133,7 +2133,7 @@ public partial class V1alpha1TraefikServiceSpecWeightedServices
 /// SameSite defines the same site policy.
 /// More info: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TraefikServiceSpecWeightedStickyCookieSameSiteEnum>))]
 public enum V1alpha1TraefikServiceSpecWeightedStickyCookieSameSiteEnum
 {
@@ -2152,7 +2152,7 @@ public enum V1alpha1TraefikServiceSpecWeightedStickyCookieSameSiteEnum
 }
 
 /// <summary>Cookie defines the sticky cookie configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecWeightedStickyCookie
 {
@@ -2203,7 +2203,7 @@ public partial class V1alpha1TraefikServiceSpecWeightedStickyCookie
 /// Sticky defines whether sticky sessions are enabled.
 /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/kubernetes/crd/http/traefikservice/#stickiness-and-load-balancing
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecWeightedSticky
 {
@@ -2213,7 +2213,7 @@ public partial class V1alpha1TraefikServiceSpecWeightedSticky
 }
 
 /// <summary>Weighted defines the Weighted Round Robin configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpecWeighted
 {
@@ -2230,7 +2230,7 @@ public partial class V1alpha1TraefikServiceSpecWeighted
 }
 
 /// <summary>TraefikServiceSpec defines the desired state of a TraefikService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TraefikServiceSpec
 {
@@ -2258,7 +2258,7 @@ public partial class V1alpha1TraefikServiceSpec
 /// - Mirror traffic on services
 /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/kubernetes/crd/http/traefikservice/
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1TraefikService : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1TraefikServiceSpec>

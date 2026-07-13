@@ -13,7 +13,7 @@ namespace KubernetesCRDModelGen.Models.groupsnapshot.storage.k8s.io;
 /// VolumeGroupSnapshotContent represents the actual &quot;on-disk&quot; group snapshot object
 /// in the underlying storage system
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2VolumeGroupSnapshotContentList : IKubernetesObject<V1ListMeta>, IItems<V1beta2VolumeGroupSnapshotContent>
@@ -55,7 +55,7 @@ public partial class V1beta2VolumeGroupSnapshotContentList : IKubernetesObject<V
 /// VolumeGroupSnapshotContent object.
 /// Required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VolumeGroupSnapshotContentSpecDeletionPolicyEnum>))]
 public enum V1beta2VolumeGroupSnapshotContentSpecDeletionPolicyEnum
 {
@@ -72,7 +72,7 @@ public enum V1beta2VolumeGroupSnapshotContentSpecDeletionPolicyEnum
 /// representation was (or should be) created.
 /// This field is immutable.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VolumeGroupSnapshotContentSpecSourceGroupSnapshotHandles
 {
@@ -103,7 +103,7 @@ public partial class V1beta2VolumeGroupSnapshotContentSpecSourceGroupSnapshotHan
 /// This field is immutable after creation.
 /// Required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VolumeGroupSnapshotContentSpecSource
 {
@@ -136,7 +136,7 @@ public partial class V1beta2VolumeGroupSnapshotContentSpecSource
 /// This field is immutable after creation.
 /// Required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VolumeGroupSnapshotContentSpecVolumeGroupSnapshotRef
 {
@@ -197,7 +197,7 @@ public partial class V1beta2VolumeGroupSnapshotContentSpecVolumeGroupSnapshotRef
 /// Spec defines properties of a VolumeGroupSnapshotContent created by the underlying storage system.
 /// Required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VolumeGroupSnapshotContentSpec
 {
@@ -269,7 +269,7 @@ public partial class V1beta2VolumeGroupSnapshotContentSpec
 /// Error is the last observed error during group snapshot creation, if any.
 /// Upon success after retry, this error field will be cleared.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VolumeGroupSnapshotContentStatusError
 {
@@ -291,7 +291,7 @@ public partial class V1beta2VolumeGroupSnapshotContentStatusError
 /// The VolumeSnapshotInfo struct is added in v1beta2
 /// VolumeSnapshotInfo contains information for a snapshot
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VolumeGroupSnapshotContentStatusVolumeSnapshotInfoList
 {
@@ -326,7 +326,7 @@ public partial class V1beta2VolumeGroupSnapshotContentStatusVolumeSnapshotInfoLi
 }
 
 /// <summary>status represents the current information of a group snapshot.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VolumeGroupSnapshotContentStatus
 {
@@ -378,7 +378,7 @@ public partial class V1beta2VolumeGroupSnapshotContentStatus
 /// VolumeGroupSnapshotContent represents the actual &quot;on-disk&quot; group snapshot object
 /// in the underlying storage system
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2VolumeGroupSnapshotContent : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2VolumeGroupSnapshotContentSpec>, IStatus<V1beta2VolumeGroupSnapshotContentStatus?>

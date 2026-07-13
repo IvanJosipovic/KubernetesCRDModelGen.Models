@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.acme.certmanager.io;
 /// <summary>Challenge is a type to represent a Challenge request with an ACME server</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ChallengeList : IKubernetesObject<V1ListMeta>, IItems<V1Challenge>
@@ -43,7 +43,7 @@ public partial class V1ChallengeList : IKubernetesObject<V1ListMeta>, IItems<V1C
 /// If the Issuer is not an &apos;ACME&apos; Issuer, an error will be returned and the
 /// Challenge will be marked as failed.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecIssuerRef
 {
@@ -70,7 +70,7 @@ public partial class V1ChallengeSpecIssuerRef
 /// A reference to a specific &apos;key&apos; within a Secret resource.
 /// In some instances, `key` is a required field.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01AcmeDNSAccountSecretRef
 {
@@ -94,7 +94,7 @@ public partial class V1ChallengeSpecSolverDns01AcmeDNSAccountSecretRef
 /// Use the &apos;ACME DNS&apos; (https://github.com/joohoi/acme-dns) API to manage
 /// DNS01 challenge records.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01AcmeDNS
 {
@@ -113,7 +113,7 @@ public partial class V1ChallengeSpecSolverDns01AcmeDNS
 /// A reference to a specific &apos;key&apos; within a Secret resource.
 /// In some instances, `key` is a required field.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01AkamaiAccessTokenSecretRef
 {
@@ -137,7 +137,7 @@ public partial class V1ChallengeSpecSolverDns01AkamaiAccessTokenSecretRef
 /// A reference to a specific &apos;key&apos; within a Secret resource.
 /// In some instances, `key` is a required field.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01AkamaiClientSecretSecretRef
 {
@@ -161,7 +161,7 @@ public partial class V1ChallengeSpecSolverDns01AkamaiClientSecretSecretRef
 /// A reference to a specific &apos;key&apos; within a Secret resource.
 /// In some instances, `key` is a required field.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01AkamaiClientTokenSecretRef
 {
@@ -182,7 +182,7 @@ public partial class V1ChallengeSpecSolverDns01AkamaiClientTokenSecretRef
 }
 
 /// <summary>Use the Akamai DNS zone management API to manage DNS01 challenge records.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01Akamai
 {
@@ -216,7 +216,7 @@ public partial class V1ChallengeSpecSolverDns01Akamai
 /// A reference to a Secret containing the password associated with the Service Principal.
 /// If set, ClientID and TenantID must also be set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01AzureDNSClientSecretSecretRef
 {
@@ -237,7 +237,7 @@ public partial class V1ChallengeSpecSolverDns01AzureDNSClientSecretSecretRef
 }
 
 /// <summary>name of the Azure environment (default AzurePublicCloud)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ChallengeSpecSolverDns01AzureDNSEnvironmentEnum>))]
 public enum V1ChallengeSpecSolverDns01AzureDNSEnvironmentEnum
 {
@@ -256,7 +256,7 @@ public enum V1ChallengeSpecSolverDns01AzureDNSEnvironmentEnum
 /// Settings to enable Azure Workload Identity or Azure Managed Service Identity
 /// If set, ClientID, ClientSecret and TenantID must not be set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01AzureDNSManagedIdentity
 {
@@ -288,7 +288,7 @@ public partial class V1ChallengeSpecSolverDns01AzureDNSManagedIdentity
 /// Support for Azure Private DNS zones is currently
 /// experimental and may change in future releases.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ChallengeSpecSolverDns01AzureDNSZoneTypeEnum>))]
 public enum V1ChallengeSpecSolverDns01AzureDNSZoneTypeEnum
 {
@@ -299,7 +299,7 @@ public enum V1ChallengeSpecSolverDns01AzureDNSZoneTypeEnum
 }
 
 /// <summary>Use the Microsoft Azure DNS API to manage DNS01 challenge records.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01AzureDNS
 {
@@ -371,7 +371,7 @@ public partial class V1ChallengeSpecSolverDns01AzureDNS
 /// A reference to a specific &apos;key&apos; within a Secret resource.
 /// In some instances, `key` is a required field.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01CloudDNSServiceAccountSecretRef
 {
@@ -392,7 +392,7 @@ public partial class V1ChallengeSpecSolverDns01CloudDNSServiceAccountSecretRef
 }
 
 /// <summary>Use the Google Cloud DNS API to manage DNS01 challenge records.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01CloudDNS
 {
@@ -420,7 +420,7 @@ public partial class V1ChallengeSpecSolverDns01CloudDNS
 /// Note: using an API token to authenticate is now the recommended method
 /// as it allows greater control of permissions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01CloudflareApiKeySecretRef
 {
@@ -441,7 +441,7 @@ public partial class V1ChallengeSpecSolverDns01CloudflareApiKeySecretRef
 }
 
 /// <summary>API token used to authenticate with Cloudflare.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01CloudflareApiTokenSecretRef
 {
@@ -462,7 +462,7 @@ public partial class V1ChallengeSpecSolverDns01CloudflareApiTokenSecretRef
 }
 
 /// <summary>Use the Cloudflare API to manage DNS01 challenge records.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01Cloudflare
 {
@@ -487,7 +487,7 @@ public partial class V1ChallengeSpecSolverDns01Cloudflare
 /// CNAMEStrategy configures how the DNS01 provider should handle CNAME
 /// records when found in DNS zones.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ChallengeSpecSolverDns01CnameStrategyEnum>))]
 public enum V1ChallengeSpecSolverDns01CnameStrategyEnum
 {
@@ -501,7 +501,7 @@ public enum V1ChallengeSpecSolverDns01CnameStrategyEnum
 /// A reference to a specific &apos;key&apos; within a Secret resource.
 /// In some instances, `key` is a required field.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01DigitaloceanTokenSecretRef
 {
@@ -522,7 +522,7 @@ public partial class V1ChallengeSpecSolverDns01DigitaloceanTokenSecretRef
 }
 
 /// <summary>Use the DigitalOcean DNS API to manage DNS01 challenge records.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01Digitalocean
 {
@@ -535,7 +535,7 @@ public partial class V1ChallengeSpecSolverDns01Digitalocean
 }
 
 /// <summary>Protocol to use for dynamic DNS update queries. Valid values are (case-sensitive) ``TCP`` and ``UDP``; ``UDP`` (default).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ChallengeSpecSolverDns01Rfc2136ProtocolEnum>))]
 public enum V1ChallengeSpecSolverDns01Rfc2136ProtocolEnum
 {
@@ -549,7 +549,7 @@ public enum V1ChallengeSpecSolverDns01Rfc2136ProtocolEnum
 /// The name of the secret containing the TSIG value.
 /// If ``tsigKeyName`` is defined, this field is required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01Rfc2136TsigSecretSecretRef
 {
@@ -573,7 +573,7 @@ public partial class V1ChallengeSpecSolverDns01Rfc2136TsigSecretSecretRef
 /// Use RFC2136 (&quot;Dynamic Updates in the Domain Name System&quot;) (https://datatracker.ietf.org/doc/rfc2136/)
 /// to manage DNS01 challenge records.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01Rfc2136
 {
@@ -622,7 +622,7 @@ public partial class V1ChallengeSpecSolverDns01Rfc2136
 /// vars, shared credentials file, or AWS Instance metadata,
 /// see: https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/configuring-sdk.html#specifying-credentials
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01Route53AccessKeyIDSecretRef
 {
@@ -647,7 +647,7 @@ public partial class V1ChallengeSpecSolverDns01Route53AccessKeyIDSecretRef
 /// token (also known as &quot;projected token&quot;). To use this field, you must
 /// configure an RBAC rule to let cert-manager request a token.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01Route53AuthKubernetesServiceAccountRef
 {
@@ -669,7 +669,7 @@ public partial class V1ChallengeSpecSolverDns01Route53AuthKubernetesServiceAccou
 /// Kubernetes authenticates with Route53 using AssumeRoleWithWebIdentity
 /// by passing a bound ServiceAccount token.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01Route53AuthKubernetes
 {
@@ -683,7 +683,7 @@ public partial class V1ChallengeSpecSolverDns01Route53AuthKubernetes
 }
 
 /// <summary>Auth configures how cert-manager authenticates.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01Route53Auth
 {
@@ -701,7 +701,7 @@ public partial class V1ChallengeSpecSolverDns01Route53Auth
 /// vars, shared credentials file, or AWS Instance metadata,
 /// see: https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/configuring-sdk.html#specifying-credentials
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01Route53SecretAccessKeySecretRef
 {
@@ -722,7 +722,7 @@ public partial class V1ChallengeSpecSolverDns01Route53SecretAccessKeySecretRef
 }
 
 /// <summary>Use the AWS Route53 API to manage DNS01 challenge records.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01Route53
 {
@@ -803,7 +803,7 @@ public partial class V1ChallengeSpecSolverDns01Route53
 /// Configure an external webhook based DNS01 challenge solver to manage
 /// DNS01 challenge records.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01Webhook
 {
@@ -842,7 +842,7 @@ public partial class V1ChallengeSpecSolverDns01Webhook
 /// Configures cert-manager to attempt to complete authorizations by
 /// performing the DNS01 challenge flow.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverDns01
 {
@@ -913,7 +913,7 @@ public partial class V1ChallengeSpecSolverDns01
 /// The API object must be valid in the cluster; the Group and Kind must
 /// be registered in the cluster for this reference to be valid.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRouteParentRefs
 {
@@ -1047,7 +1047,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRouteParentRefs
 /// If labels or annotations overlap with in-built values, the values here
 /// will override the in-built values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateMetadata
 {
@@ -1064,7 +1064,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateMetad
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions
 {
@@ -1094,7 +1094,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields
 {
@@ -1121,7 +1121,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 }
 
 /// <summary>A node selector term, associated with the corresponding weight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference
 {
@@ -1138,7 +1138,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// An empty preferred scheduling term matches all objects with implicit weight 0
 /// (i.e. it&apos;s a no-op). A null preferred scheduling term matches no objects (i.e. is also a no-op).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution
 {
@@ -1155,7 +1155,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions
 {
@@ -1185,7 +1185,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields
 {
@@ -1216,7 +1216,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// them are ANDed.
 /// The TopologySelectorTerm type implements a subset of the NodeSelectorTerm.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms
 {
@@ -1236,7 +1236,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// at some point during pod execution (e.g. due to an update), the system
 /// may or may not try to eventually evict the pod from its node.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution
 {
@@ -1246,7 +1246,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 }
 
 /// <summary>Describes node affinity scheduling rules for the pod.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityNodeAffinity
 {
@@ -1279,7 +1279,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
 {
@@ -1308,7 +1308,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// A label query over a set of resources, in this case pods.
 /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
 {
@@ -1329,7 +1329,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
 {
@@ -1361,7 +1361,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
 /// An empty selector ({}) matches all namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
 {
@@ -1379,7 +1379,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 }
 
 /// <summary>Required. A pod affinity term, associated with the corresponding weight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
 {
@@ -1447,7 +1447,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 }
 
 /// <summary>The weights of all of the matched WeightedPodAffinityTerm fields are added per-node to find the most preferred node(s)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution
 {
@@ -1467,7 +1467,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
 {
@@ -1496,7 +1496,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// A label query over a set of resources, in this case pods.
 /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
 {
@@ -1517,7 +1517,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
 {
@@ -1549,7 +1549,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
 /// An empty selector ({}) matches all namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
 {
@@ -1574,7 +1574,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// the label with key &lt;topologyKey&gt; matches that of any node on which
 /// a pod of the set of pods is running
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution
 {
@@ -1642,7 +1642,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 }
 
 /// <summary>Describes pod affinity scheduling rules (e.g. co-locate this pod in the same node, zone, etc. as some other pod(s)).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAffinity
 {
@@ -1677,7 +1677,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
 {
@@ -1706,7 +1706,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// A label query over a set of resources, in this case pods.
 /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
 {
@@ -1727,7 +1727,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
 {
@@ -1759,7 +1759,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
 /// An empty selector ({}) matches all namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
 {
@@ -1777,7 +1777,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 }
 
 /// <summary>Required. A pod affinity term, associated with the corresponding weight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
 {
@@ -1845,7 +1845,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 }
 
 /// <summary>The weights of all of the matched WeightedPodAffinityTerm fields are added per-node to find the most preferred node(s)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution
 {
@@ -1865,7 +1865,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
 {
@@ -1894,7 +1894,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// A label query over a set of resources, in this case pods.
 /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
 {
@@ -1915,7 +1915,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
 {
@@ -1947,7 +1947,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
 /// An empty selector ({}) matches all namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
 {
@@ -1972,7 +1972,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// the label with key &lt;topologyKey&gt; matches that of any node on which
 /// a pod of the set of pods is running
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution
 {
@@ -2040,7 +2040,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 }
 
 /// <summary>Describes pod anti-affinity scheduling rules (e.g. avoid putting this pod in the same node, zone, etc. as some other pod(s)).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinityPodAntiAffinity
 {
@@ -2072,7 +2072,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 }
 
 /// <summary>If specified, the pod&apos;s scheduling constraints</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecAffinity
 {
@@ -2093,7 +2093,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecA
 /// LocalObjectReference contains enough information to let you locate the
 /// referenced object inside the same namespace.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecImagePullSecrets
 {
@@ -2116,7 +2116,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecI
 /// (--acme-http01-solver-resource-request-cpu, --acme-http01-solver-resource-request-memory).
 /// Kubernetes will reject pod creation if limits are lower than requests, causing challenge failures.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecResources
 {
@@ -2145,7 +2145,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecR
 /// takes precedence for that container.
 /// Note that this field cannot be set when spec.os.name is windows.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecSecurityContextSeLinuxOptions
 {
@@ -2170,7 +2170,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecS
 /// The seccomp options to use by the containers in this pod.
 /// Note that this field cannot be set when spec.os.name is windows.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecSecurityContextSeccompProfile
 {
@@ -2196,7 +2196,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecS
 }
 
 /// <summary>Sysctl defines a kernel parameter to be set</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecSecurityContextSysctls
 {
@@ -2210,7 +2210,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecS
 }
 
 /// <summary>If specified, the pod&apos;s security context</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecSecurityContext
 {
@@ -2317,7 +2317,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecS
 /// The pod this Toleration is attached to tolerates any taint that matches
 /// the triple &lt;key,value,effect&gt; using the matching operator &lt;operator&gt;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecTolerations
 {
@@ -2367,7 +2367,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpecT
 /// Check ACMEChallengeSolverHTTP01IngressPodSpec to find out currently supported fields.
 /// All other fields will be ignored.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpec
 {
@@ -2419,7 +2419,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplateSpec
 /// Optional pod template used to configure the ACME challenge solver pods
 /// used for HTTP01 challenges.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplate
 {
@@ -2447,7 +2447,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoutePodTemplate
 /// create HTTPRoutes with the specified labels in the same namespace as the challenge.
 /// This solver is experimental, and fields / behaviour may change in the future.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoute
 {
@@ -2488,7 +2488,7 @@ public partial class V1ChallengeSpecSolverHttp01GatewayHTTPRoute
 /// If labels or annotations overlap with in-built values, the values here
 /// will override the in-built values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressIngressTemplateMetadata
 {
@@ -2505,7 +2505,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressIngressTemplateMetadata
 /// Optional ingress template used to configure the ACME challenge solver
 /// ingress used for HTTP01 challenges.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressIngressTemplate
 {
@@ -2525,7 +2525,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressIngressTemplate
 /// If labels or annotations overlap with in-built values, the values here
 /// will override the in-built values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateMetadata
 {
@@ -2542,7 +2542,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateMetadata
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions
 {
@@ -2572,7 +2572,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNo
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields
 {
@@ -2599,7 +2599,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNo
 }
 
 /// <summary>A node selector term, associated with the corresponding weight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference
 {
@@ -2616,7 +2616,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNo
 /// An empty preferred scheduling term matches all objects with implicit weight 0
 /// (i.e. it&apos;s a no-op). A null preferred scheduling term matches no objects (i.e. is also a no-op).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution
 {
@@ -2633,7 +2633,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNo
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions
 {
@@ -2663,7 +2663,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNo
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields
 {
@@ -2694,7 +2694,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNo
 /// them are ANDed.
 /// The TopologySelectorTerm type implements a subset of the NodeSelectorTerm.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms
 {
@@ -2714,7 +2714,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNo
 /// at some point during pod execution (e.g. due to an update), the system
 /// may or may not try to eventually evict the pod from its node.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution
 {
@@ -2724,7 +2724,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNo
 }
 
 /// <summary>Describes node affinity scheduling rules for the pod.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNodeAffinity
 {
@@ -2757,7 +2757,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityNo
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
 {
@@ -2786,7 +2786,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPo
 /// A label query over a set of resources, in this case pods.
 /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
 {
@@ -2807,7 +2807,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPo
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
 {
@@ -2839,7 +2839,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPo
 /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
 /// An empty selector ({}) matches all namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
 {
@@ -2857,7 +2857,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPo
 }
 
 /// <summary>Required. A pod affinity term, associated with the corresponding weight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
 {
@@ -2925,7 +2925,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPo
 }
 
 /// <summary>The weights of all of the matched WeightedPodAffinityTerm fields are added per-node to find the most preferred node(s)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution
 {
@@ -2945,7 +2945,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPo
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
 {
@@ -2974,7 +2974,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPo
 /// A label query over a set of resources, in this case pods.
 /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
 {
@@ -2995,7 +2995,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPo
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
 {
@@ -3027,7 +3027,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPo
 /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
 /// An empty selector ({}) matches all namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
 {
@@ -3052,7 +3052,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPo
 /// the label with key &lt;topologyKey&gt; matches that of any node on which
 /// a pod of the set of pods is running
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution
 {
@@ -3120,7 +3120,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPo
 }
 
 /// <summary>Describes pod affinity scheduling rules (e.g. co-locate this pod in the same node, zone, etc. as some other pod(s)).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAffinity
 {
@@ -3155,7 +3155,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPo
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
 {
@@ -3184,7 +3184,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPo
 /// A label query over a set of resources, in this case pods.
 /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
 {
@@ -3205,7 +3205,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPo
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
 {
@@ -3237,7 +3237,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPo
 /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
 /// An empty selector ({}) matches all namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
 {
@@ -3255,7 +3255,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPo
 }
 
 /// <summary>Required. A pod affinity term, associated with the corresponding weight.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
 {
@@ -3323,7 +3323,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPo
 }
 
 /// <summary>The weights of all of the matched WeightedPodAffinityTerm fields are added per-node to find the most preferred node(s)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution
 {
@@ -3343,7 +3343,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPo
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
 {
@@ -3372,7 +3372,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPo
 /// A label query over a set of resources, in this case pods.
 /// If it&apos;s null, this PodAffinityTerm matches with no Pods.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
 {
@@ -3393,7 +3393,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPo
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
 {
@@ -3425,7 +3425,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPo
 /// null selector and null or empty namespaces list means &quot;this pod&apos;s namespace&quot;.
 /// An empty selector ({}) matches all namespaces.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
 {
@@ -3450,7 +3450,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPo
 /// the label with key &lt;topologyKey&gt; matches that of any node on which
 /// a pod of the set of pods is running
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution
 {
@@ -3518,7 +3518,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPo
 }
 
 /// <summary>Describes pod anti-affinity scheduling rules (e.g. avoid putting this pod in the same node, zone, etc. as some other pod(s)).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPodAntiAffinity
 {
@@ -3550,7 +3550,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinityPo
 }
 
 /// <summary>If specified, the pod&apos;s scheduling constraints</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinity
 {
@@ -3571,7 +3571,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecAffinity
 /// LocalObjectReference contains enough information to let you locate the
 /// referenced object inside the same namespace.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecImagePullSecrets
 {
@@ -3594,7 +3594,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecImagePullS
 /// (--acme-http01-solver-resource-request-cpu, --acme-http01-solver-resource-request-memory).
 /// Kubernetes will reject pod creation if limits are lower than requests, causing challenge failures.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecResources
 {
@@ -3623,7 +3623,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecResources
 /// takes precedence for that container.
 /// Note that this field cannot be set when spec.os.name is windows.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecSecurityContextSeLinuxOptions
 {
@@ -3648,7 +3648,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecSecurityCo
 /// The seccomp options to use by the containers in this pod.
 /// Note that this field cannot be set when spec.os.name is windows.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecSecurityContextSeccompProfile
 {
@@ -3674,7 +3674,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecSecurityCo
 }
 
 /// <summary>Sysctl defines a kernel parameter to be set</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecSecurityContextSysctls
 {
@@ -3688,7 +3688,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecSecurityCo
 }
 
 /// <summary>If specified, the pod&apos;s security context</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecSecurityContext
 {
@@ -3795,7 +3795,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecSecurityCo
 /// The pod this Toleration is attached to tolerates any taint that matches
 /// the triple &lt;key,value,effect&gt; using the matching operator &lt;operator&gt;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecTolerations
 {
@@ -3845,7 +3845,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpecToleration
 /// Check ACMEChallengeSolverHTTP01IngressPodSpec to find out currently supported fields.
 /// All other fields will be ignored.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpec
 {
@@ -3897,7 +3897,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplateSpec
 /// Optional pod template used to configure the ACME challenge solver pods
 /// used for HTTP01 challenges.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01IngressPodTemplate
 {
@@ -3925,7 +3925,7 @@ public partial class V1ChallengeSpecSolverHttp01IngressPodTemplate
 /// &apos;/.well-known/acme-challenge/XYZ&apos; to &apos;challenge solver&apos; pods that are
 /// provisioned by cert-manager for each Challenge to be completed.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01Ingress
 {
@@ -3986,7 +3986,7 @@ public partial class V1ChallengeSpecSolverHttp01Ingress
 /// It is not possible to obtain certificates for wildcard domain names
 /// (e.g., `*.example.com`) using the HTTP01 challenge mechanism.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverHttp01
 {
@@ -4016,7 +4016,7 @@ public partial class V1ChallengeSpecSolverHttp01
 /// with the lowest priority, i.e. if any other solver has a more specific
 /// match, it will be used instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolverSelector
 {
@@ -4058,7 +4058,7 @@ public partial class V1ChallengeSpecSolverSelector
 /// Contains the domain solving configuration that should be used to
 /// solve this challenge resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpecSolver
 {
@@ -4113,7 +4113,7 @@ public partial class V1ChallengeSpecSolver
 /// The type of ACME challenge this resource represents.
 /// One of &quot;HTTP-01&quot; or &quot;DNS-01&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ChallengeSpecTypeEnum>))]
 public enum V1ChallengeSpecTypeEnum
 {
@@ -4123,7 +4123,7 @@ public enum V1ChallengeSpecTypeEnum
     DNS01
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeSpec
 {
@@ -4204,7 +4204,7 @@ public partial class V1ChallengeSpec
 /// Contains the current &apos;state&apos; of the challenge.
 /// If not set, the state of the challenge is unknown.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ChallengeStatusStateEnum>))]
 public enum V1ChallengeStatusStateEnum
 {
@@ -4224,7 +4224,7 @@ public enum V1ChallengeStatusStateEnum
     Errored
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ChallengeStatus
 {
@@ -4275,7 +4275,7 @@ public partial class V1ChallengeStatus
 }
 
 /// <summary>Challenge is a type to represent a Challenge request with an ACME server</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1Challenge : IKubernetesObject<V1ObjectMeta>, ISpec<V1ChallengeSpec>, IStatus<V1ChallengeStatus?>

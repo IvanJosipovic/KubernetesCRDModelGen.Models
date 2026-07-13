@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.osconfig.gcp.upbound.io;
 /// <summary>PatchDeployment is the Schema for the PatchDeployments API. Patch deployments are configurations that individual patch jobs use to complete a patch.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2PatchDeploymentList : IKubernetesObject<V1ListMeta>, IItems<V1beta2PatchDeployment>
@@ -45,7 +45,7 @@ public partial class V1beta2PatchDeploymentList : IKubernetesObject<V1ListMeta>,
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PatchDeploymentSpecDeletionPolicyEnum>))]
 public enum V1beta2PatchDeploymentSpecDeletionPolicyEnum
 {
@@ -55,7 +55,7 @@ public enum V1beta2PatchDeploymentSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderInstanceFilterGroupLabels
 {
@@ -70,7 +70,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderInstanceFilterGroupLab
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PatchDeploymentSpecForProviderInstanceFilterInstancesRefsPolicyResolutionEnum>))]
 public enum V1beta2PatchDeploymentSpecForProviderInstanceFilterInstancesRefsPolicyResolutionEnum
 {
@@ -86,7 +86,7 @@ public enum V1beta2PatchDeploymentSpecForProviderInstanceFilterInstancesRefsPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PatchDeploymentSpecForProviderInstanceFilterInstancesRefsPolicyResolveEnum>))]
 public enum V1beta2PatchDeploymentSpecForProviderInstanceFilterInstancesRefsPolicyResolveEnum
 {
@@ -97,7 +97,7 @@ public enum V1beta2PatchDeploymentSpecForProviderInstanceFilterInstancesRefsPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderInstanceFilterInstancesRefsPolicy
 {
@@ -121,7 +121,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderInstanceFilterInstance
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderInstanceFilterInstancesRefs
 {
@@ -140,7 +140,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderInstanceFilterInstance
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PatchDeploymentSpecForProviderInstanceFilterInstancesSelectorPolicyResolutionEnum>))]
 public enum V1beta2PatchDeploymentSpecForProviderInstanceFilterInstancesSelectorPolicyResolutionEnum
 {
@@ -156,7 +156,7 @@ public enum V1beta2PatchDeploymentSpecForProviderInstanceFilterInstancesSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PatchDeploymentSpecForProviderInstanceFilterInstancesSelectorPolicyResolveEnum>))]
 public enum V1beta2PatchDeploymentSpecForProviderInstanceFilterInstancesSelectorPolicyResolveEnum
 {
@@ -167,7 +167,7 @@ public enum V1beta2PatchDeploymentSpecForProviderInstanceFilterInstancesSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderInstanceFilterInstancesSelectorPolicy
 {
@@ -191,7 +191,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderInstanceFilterInstance
 }
 
 /// <summary>Selector for a list of Instance in compute to populate instances.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderInstanceFilterInstancesSelector
 {
@@ -215,7 +215,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderInstanceFilterInstance
 /// VM instances to patch.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderInstanceFilter
 {
@@ -262,7 +262,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderInstanceFilter
 /// Schedule a one-time execution.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderOneTimeSchedule
 {
@@ -278,7 +278,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderOneTimeSchedule
 /// Apt update settings. Use this setting to override the default apt patch rules.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigApt
 {
@@ -306,7 +306,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigApt
 /// goo update settings. Use this setting to override the default goo patch rules.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigGoo
 {
@@ -319,7 +319,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigGoo
 /// A Cloud Storage object containing the executable.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigPostStepLinuxExecStepConfigGcsObject
 {
@@ -340,7 +340,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigPostStepLin
 /// The ExecStepConfig for all Linux VMs targeted by the PatchJob.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigPostStepLinuxExecStepConfig
 {
@@ -372,7 +372,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigPostStepLin
 /// A Cloud Storage object containing the executable.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigPostStepWindowsExecStepConfigGcsObject
 {
@@ -393,7 +393,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigPostStepWin
 /// The ExecStepConfig for all Windows VMs targeted by the PatchJob.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigPostStepWindowsExecStepConfig
 {
@@ -425,7 +425,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigPostStepWin
 /// The ExecStep to run after the patch update.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigPostStep
 {
@@ -448,7 +448,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigPostStep
 /// A Cloud Storage object containing the executable.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigPreStepLinuxExecStepConfigGcsObject
 {
@@ -469,7 +469,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigPreStepLinu
 /// The ExecStepConfig for all Linux VMs targeted by the PatchJob.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigPreStepLinuxExecStepConfig
 {
@@ -501,7 +501,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigPreStepLinu
 /// A Cloud Storage object containing the executable.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigPreStepWindowsExecStepConfigGcsObject
 {
@@ -522,7 +522,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigPreStepWind
 /// The ExecStepConfig for all Windows VMs targeted by the PatchJob.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigPreStepWindowsExecStepConfig
 {
@@ -554,7 +554,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigPreStepWind
 /// The ExecStep to run before the patch update.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigPreStep
 {
@@ -577,7 +577,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigPreStep
 /// Windows update settings. Use this setting to override the default Windows patch rules.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigWindowsUpdate
 {
@@ -604,7 +604,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigWindowsUpda
 /// Yum update settings. Use this setting to override the default yum patch rules.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigYum
 {
@@ -633,7 +633,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigYum
 /// zypper update settings. Use this setting to override the default zypper patch rules.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigZypper
 {
@@ -669,7 +669,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderPatchConfigZypper
 /// Patch configuration that is applied.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderPatchConfig
 {
@@ -738,7 +738,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderPatchConfig
 /// Week day in a month.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderRecurringScheduleMonthlyWeekDayOfMonth
 {
@@ -762,7 +762,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderRecurringScheduleMonth
 /// Schedule with monthly executions.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderRecurringScheduleMonthly
 {
@@ -786,7 +786,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderRecurringScheduleMonth
 /// Time of the day to run a recurring deployment.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderRecurringScheduleTimeOfDay
 {
@@ -815,7 +815,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderRecurringScheduleTimeO
 /// determined by the chosen time zone.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderRecurringScheduleTimeZone
 {
@@ -832,7 +832,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderRecurringScheduleTimeZ
 /// Schedule with weekly executions.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderRecurringScheduleWeekly
 {
@@ -848,7 +848,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderRecurringScheduleWeekl
 /// Schedule recurring executions.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderRecurringSchedule
 {
@@ -904,7 +904,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderRecurringSchedule
 /// For example, if the disruption budget has a fixed value of 10, and 8 VMs fail to patch in the current zone, the patch job continues to patch 2 VMs at a time until the zone is completed. When that zone is completed successfully, patching begins with 10 VMs at a time in the next zone. If 10 VMs in the next zone fail to patch, the patch job stops.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderRolloutDisruptionBudget
 {
@@ -921,7 +921,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderRolloutDisruptionBudge
 /// Rollout strategy of the patch job.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProviderRollout
 {
@@ -944,7 +944,7 @@ public partial class V1beta2PatchDeploymentSpecForProviderRollout
     public string? Mode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecForProvider
 {
@@ -1002,7 +1002,7 @@ public partial class V1beta2PatchDeploymentSpecForProvider
     public V1beta2PatchDeploymentSpecForProviderRollout? Rollout { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderInstanceFilterGroupLabels
 {
@@ -1017,7 +1017,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderInstanceFilterGroupLa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PatchDeploymentSpecInitProviderInstanceFilterInstancesRefsPolicyResolutionEnum>))]
 public enum V1beta2PatchDeploymentSpecInitProviderInstanceFilterInstancesRefsPolicyResolutionEnum
 {
@@ -1033,7 +1033,7 @@ public enum V1beta2PatchDeploymentSpecInitProviderInstanceFilterInstancesRefsPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PatchDeploymentSpecInitProviderInstanceFilterInstancesRefsPolicyResolveEnum>))]
 public enum V1beta2PatchDeploymentSpecInitProviderInstanceFilterInstancesRefsPolicyResolveEnum
 {
@@ -1044,7 +1044,7 @@ public enum V1beta2PatchDeploymentSpecInitProviderInstanceFilterInstancesRefsPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderInstanceFilterInstancesRefsPolicy
 {
@@ -1068,7 +1068,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderInstanceFilterInstanc
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderInstanceFilterInstancesRefs
 {
@@ -1087,7 +1087,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderInstanceFilterInstanc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PatchDeploymentSpecInitProviderInstanceFilterInstancesSelectorPolicyResolutionEnum>))]
 public enum V1beta2PatchDeploymentSpecInitProviderInstanceFilterInstancesSelectorPolicyResolutionEnum
 {
@@ -1103,7 +1103,7 @@ public enum V1beta2PatchDeploymentSpecInitProviderInstanceFilterInstancesSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PatchDeploymentSpecInitProviderInstanceFilterInstancesSelectorPolicyResolveEnum>))]
 public enum V1beta2PatchDeploymentSpecInitProviderInstanceFilterInstancesSelectorPolicyResolveEnum
 {
@@ -1114,7 +1114,7 @@ public enum V1beta2PatchDeploymentSpecInitProviderInstanceFilterInstancesSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderInstanceFilterInstancesSelectorPolicy
 {
@@ -1138,7 +1138,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderInstanceFilterInstanc
 }
 
 /// <summary>Selector for a list of Instance in compute to populate instances.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderInstanceFilterInstancesSelector
 {
@@ -1162,7 +1162,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderInstanceFilterInstanc
 /// VM instances to patch.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderInstanceFilter
 {
@@ -1209,7 +1209,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderInstanceFilter
 /// Schedule a one-time execution.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderOneTimeSchedule
 {
@@ -1225,7 +1225,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderOneTimeSchedule
 /// Apt update settings. Use this setting to override the default apt patch rules.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigApt
 {
@@ -1253,7 +1253,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigApt
 /// goo update settings. Use this setting to override the default goo patch rules.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigGoo
 {
@@ -1266,7 +1266,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigGoo
 /// A Cloud Storage object containing the executable.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigPostStepLinuxExecStepConfigGcsObject
 {
@@ -1287,7 +1287,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigPostStepLi
 /// The ExecStepConfig for all Linux VMs targeted by the PatchJob.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigPostStepLinuxExecStepConfig
 {
@@ -1319,7 +1319,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigPostStepLi
 /// A Cloud Storage object containing the executable.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigPostStepWindowsExecStepConfigGcsObject
 {
@@ -1340,7 +1340,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigPostStepWi
 /// The ExecStepConfig for all Windows VMs targeted by the PatchJob.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigPostStepWindowsExecStepConfig
 {
@@ -1372,7 +1372,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigPostStepWi
 /// The ExecStep to run after the patch update.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigPostStep
 {
@@ -1395,7 +1395,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigPostStep
 /// A Cloud Storage object containing the executable.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigPreStepLinuxExecStepConfigGcsObject
 {
@@ -1416,7 +1416,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigPreStepLin
 /// The ExecStepConfig for all Linux VMs targeted by the PatchJob.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigPreStepLinuxExecStepConfig
 {
@@ -1448,7 +1448,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigPreStepLin
 /// A Cloud Storage object containing the executable.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigPreStepWindowsExecStepConfigGcsObject
 {
@@ -1469,7 +1469,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigPreStepWin
 /// The ExecStepConfig for all Windows VMs targeted by the PatchJob.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigPreStepWindowsExecStepConfig
 {
@@ -1501,7 +1501,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigPreStepWin
 /// The ExecStep to run before the patch update.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigPreStep
 {
@@ -1524,7 +1524,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigPreStep
 /// Windows update settings. Use this setting to override the default Windows patch rules.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigWindowsUpdate
 {
@@ -1551,7 +1551,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigWindowsUpd
 /// Yum update settings. Use this setting to override the default yum patch rules.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigYum
 {
@@ -1580,7 +1580,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigYum
 /// zypper update settings. Use this setting to override the default zypper patch rules.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigZypper
 {
@@ -1616,7 +1616,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfigZypper
 /// Patch configuration that is applied.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfig
 {
@@ -1685,7 +1685,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderPatchConfig
 /// Week day in a month.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderRecurringScheduleMonthlyWeekDayOfMonth
 {
@@ -1709,7 +1709,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderRecurringScheduleMont
 /// Schedule with monthly executions.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderRecurringScheduleMonthly
 {
@@ -1733,7 +1733,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderRecurringScheduleMont
 /// Time of the day to run a recurring deployment.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderRecurringScheduleTimeOfDay
 {
@@ -1762,7 +1762,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderRecurringScheduleTime
 /// determined by the chosen time zone.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderRecurringScheduleTimeZone
 {
@@ -1779,7 +1779,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderRecurringScheduleTime
 /// Schedule with weekly executions.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderRecurringScheduleWeekly
 {
@@ -1795,7 +1795,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderRecurringScheduleWeek
 /// Schedule recurring executions.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderRecurringSchedule
 {
@@ -1851,7 +1851,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderRecurringSchedule
 /// For example, if the disruption budget has a fixed value of 10, and 8 VMs fail to patch in the current zone, the patch job continues to patch 2 VMs at a time until the zone is completed. When that zone is completed successfully, patching begins with 10 VMs at a time in the next zone. If 10 VMs in the next zone fail to patch, the patch job stops.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderRolloutDisruptionBudget
 {
@@ -1868,7 +1868,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderRolloutDisruptionBudg
 /// Rollout strategy of the patch job.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProviderRollout
 {
@@ -1903,7 +1903,7 @@ public partial class V1beta2PatchDeploymentSpecInitProviderRollout
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecInitProvider
 {
@@ -1965,7 +1965,7 @@ public partial class V1beta2PatchDeploymentSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PatchDeploymentSpecManagementPoliciesEnum>))]
 public enum V1beta2PatchDeploymentSpecManagementPoliciesEnum
 {
@@ -1989,7 +1989,7 @@ public enum V1beta2PatchDeploymentSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PatchDeploymentSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2PatchDeploymentSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -2005,7 +2005,7 @@ public enum V1beta2PatchDeploymentSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2PatchDeploymentSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2PatchDeploymentSpecProviderConfigRefPolicyResolveEnum
 {
@@ -2016,7 +2016,7 @@ public enum V1beta2PatchDeploymentSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecProviderConfigRefPolicy
 {
@@ -2044,7 +2044,7 @@ public partial class V1beta2PatchDeploymentSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecProviderConfigRef
 {
@@ -2063,7 +2063,7 @@ public partial class V1beta2PatchDeploymentSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpecWriteConnectionSecretToRef
 {
@@ -2077,7 +2077,7 @@ public partial class V1beta2PatchDeploymentSpecWriteConnectionSecretToRef
 }
 
 /// <summary>PatchDeploymentSpec defines the desired state of PatchDeployment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentSpec
 {
@@ -2144,7 +2144,7 @@ public partial class V1beta2PatchDeploymentSpec
     public V1beta2PatchDeploymentSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderInstanceFilterGroupLabels
 {
@@ -2157,7 +2157,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderInstanceFilterGroupLa
 /// VM instances to patch.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderInstanceFilter
 {
@@ -2196,7 +2196,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderInstanceFilter
 /// Schedule a one-time execution.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderOneTimeSchedule
 {
@@ -2212,7 +2212,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderOneTimeSchedule
 /// Apt update settings. Use this setting to override the default apt patch rules.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigApt
 {
@@ -2240,7 +2240,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigApt
 /// goo update settings. Use this setting to override the default goo patch rules.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigGoo
 {
@@ -2253,7 +2253,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigGoo
 /// A Cloud Storage object containing the executable.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigPostStepLinuxExecStepConfigGcsObject
 {
@@ -2274,7 +2274,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigPostStepLi
 /// The ExecStepConfig for all Linux VMs targeted by the PatchJob.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigPostStepLinuxExecStepConfig
 {
@@ -2306,7 +2306,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigPostStepLi
 /// A Cloud Storage object containing the executable.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigPostStepWindowsExecStepConfigGcsObject
 {
@@ -2327,7 +2327,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigPostStepWi
 /// The ExecStepConfig for all Windows VMs targeted by the PatchJob.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigPostStepWindowsExecStepConfig
 {
@@ -2359,7 +2359,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigPostStepWi
 /// The ExecStep to run after the patch update.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigPostStep
 {
@@ -2382,7 +2382,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigPostStep
 /// A Cloud Storage object containing the executable.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigPreStepLinuxExecStepConfigGcsObject
 {
@@ -2403,7 +2403,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigPreStepLin
 /// The ExecStepConfig for all Linux VMs targeted by the PatchJob.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigPreStepLinuxExecStepConfig
 {
@@ -2435,7 +2435,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigPreStepLin
 /// A Cloud Storage object containing the executable.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigPreStepWindowsExecStepConfigGcsObject
 {
@@ -2456,7 +2456,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigPreStepWin
 /// The ExecStepConfig for all Windows VMs targeted by the PatchJob.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigPreStepWindowsExecStepConfig
 {
@@ -2488,7 +2488,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigPreStepWin
 /// The ExecStep to run before the patch update.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigPreStep
 {
@@ -2511,7 +2511,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigPreStep
 /// Windows update settings. Use this setting to override the default Windows patch rules.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigWindowsUpdate
 {
@@ -2538,7 +2538,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigWindowsUpd
 /// Yum update settings. Use this setting to override the default yum patch rules.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigYum
 {
@@ -2567,7 +2567,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigYum
 /// zypper update settings. Use this setting to override the default zypper patch rules.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigZypper
 {
@@ -2603,7 +2603,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfigZypper
 /// Patch configuration that is applied.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfig
 {
@@ -2672,7 +2672,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderPatchConfig
 /// Week day in a month.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderRecurringScheduleMonthlyWeekDayOfMonth
 {
@@ -2696,7 +2696,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderRecurringScheduleMont
 /// Schedule with monthly executions.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderRecurringScheduleMonthly
 {
@@ -2720,7 +2720,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderRecurringScheduleMont
 /// Time of the day to run a recurring deployment.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderRecurringScheduleTimeOfDay
 {
@@ -2749,7 +2749,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderRecurringScheduleTime
 /// determined by the chosen time zone.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderRecurringScheduleTimeZone
 {
@@ -2766,7 +2766,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderRecurringScheduleTime
 /// Schedule with weekly executions.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderRecurringScheduleWeekly
 {
@@ -2782,7 +2782,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderRecurringScheduleWeek
 /// Schedule recurring executions.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderRecurringSchedule
 {
@@ -2854,7 +2854,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderRecurringSchedule
 /// For example, if the disruption budget has a fixed value of 10, and 8 VMs fail to patch in the current zone, the patch job continues to patch 2 VMs at a time until the zone is completed. When that zone is completed successfully, patching begins with 10 VMs at a time in the next zone. If 10 VMs in the next zone fail to patch, the patch job stops.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderRolloutDisruptionBudget
 {
@@ -2871,7 +2871,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderRolloutDisruptionBudg
 /// Rollout strategy of the patch job.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProviderRollout
 {
@@ -2894,7 +2894,7 @@ public partial class V1beta2PatchDeploymentStatusAtProviderRollout
     public string? Mode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusAtProvider
 {
@@ -2985,7 +2985,7 @@ public partial class V1beta2PatchDeploymentStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatusConditions
 {
@@ -3028,7 +3028,7 @@ public partial class V1beta2PatchDeploymentStatusConditions
 }
 
 /// <summary>PatchDeploymentStatus defines the observed state of PatchDeployment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PatchDeploymentStatus
 {
@@ -3049,7 +3049,7 @@ public partial class V1beta2PatchDeploymentStatus
 }
 
 /// <summary>PatchDeployment is the Schema for the PatchDeployments API. Patch deployments are configurations that individual patch jobs use to complete a patch.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2PatchDeployment : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2PatchDeploymentSpec>, IStatus<V1beta2PatchDeploymentStatus?>

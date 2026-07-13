@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.glue.aws.m.upbound.io;
 /// <summary>Connection is the Schema for the Connections API. Provides an Glue Connection resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ConnectionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Connection>
@@ -37,7 +37,7 @@ public partial class V1beta1ConnectionList : IKubernetesObject<V1ListMeta>, IIte
 }
 
 /// <summary>Map of key-value pairs used as connection properties specific to the Athena compute environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecForProviderAthenaPropertiesSecretRef
 {
@@ -47,7 +47,7 @@ public partial class V1beta1ConnectionSpecForProviderAthenaPropertiesSecretRef
 }
 
 /// <summary>Map of key-value pairs used as parameters for this connection. For more information, see the AWS Documentation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecForProviderConnectionPropertiesSecretRef
 {
@@ -62,7 +62,7 @@ public partial class V1beta1ConnectionSpecForProviderConnectionPropertiesSecretR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvailabilityZoneRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvailabilityZoneRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvaila
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvailabilityZoneRefPolicyResolveEnum>))]
 public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvailabilityZoneRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvaila
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvailabilityZoneRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 }
 
 /// <summary>Reference to a Subnet in ec2 to populate availabilityZone.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvailabilityZoneRef
 {
@@ -136,7 +136,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvailabilityZoneSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvailabilityZoneSelectorPolicyResolutionEnum
 {
@@ -152,7 +152,7 @@ public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvaila
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvailabilityZoneSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvailabilityZoneSelectorPolicyResolveEnum
 {
@@ -163,7 +163,7 @@ public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvaila
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvailabilityZoneSelectorPolicy
 {
@@ -187,7 +187,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 }
 
 /// <summary>Selector for a Subnet in ec2 to populate availabilityZone.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvailabilityZoneSelector
 {
@@ -217,7 +217,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecurityGroupIdListRefsPolicyResolutionEnum>))]
 public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecurityGroupIdListRefsPolicyResolutionEnum
 {
@@ -233,7 +233,7 @@ public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecuri
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecurityGroupIdListRefsPolicyResolveEnum>))]
 public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecurityGroupIdListRefsPolicyResolveEnum
 {
@@ -244,7 +244,7 @@ public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecuri
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecurityGroupIdListRefsPolicy
 {
@@ -268,7 +268,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecurityGroupIdListRefs
 {
@@ -291,7 +291,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecurityGroupIdListSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecurityGroupIdListSelectorPolicyResolutionEnum
 {
@@ -307,7 +307,7 @@ public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecuri
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecurityGroupIdListSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecurityGroupIdListSelectorPolicyResolveEnum
 {
@@ -318,7 +318,7 @@ public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecuri
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecurityGroupIdListSelectorPolicy
 {
@@ -342,7 +342,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 }
 
 /// <summary>Selector for a list of SecurityGroup in ec2 to populate securityGroupIdList.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecurityGroupIdListSelector
 {
@@ -372,7 +372,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdRefPolicyResolutionEnum
 {
@@ -388,7 +388,7 @@ public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnet
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdRefPolicyResolveEnum
 {
@@ -399,7 +399,7 @@ public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnet
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdRefPolicy
 {
@@ -423,7 +423,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 }
 
 /// <summary>Reference to a Subnet in ec2 to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdRef
 {
@@ -446,7 +446,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdSelectorPolicyResolutionEnum
 {
@@ -462,7 +462,7 @@ public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnet
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdSelectorPolicyResolveEnum
 {
@@ -473,7 +473,7 @@ public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnet
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdSelectorPolicy
 {
@@ -497,7 +497,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 }
 
 /// <summary>Selector for a Subnet in ec2 to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdSelector
 {
@@ -522,7 +522,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 }
 
 /// <summary>Map of physical connection requirements, such as VPC and SecurityGroup. See physical_connection_requirements Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirements
 {
@@ -563,7 +563,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
     public V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdSelector? SubnetIdSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecForProvider
 {
@@ -613,7 +613,7 @@ public partial class V1beta1ConnectionSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvailabilityZoneRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvailabilityZoneRefPolicyResolutionEnum
 {
@@ -629,7 +629,7 @@ public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvail
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvailabilityZoneRefPolicyResolveEnum>))]
 public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvailabilityZoneRefPolicyResolveEnum
 {
@@ -640,7 +640,7 @@ public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvail
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvailabilityZoneRefPolicy
 {
@@ -664,7 +664,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 }
 
 /// <summary>Reference to a Subnet in ec2 to populate availabilityZone.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvailabilityZoneRef
 {
@@ -687,7 +687,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvailabilityZoneSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvailabilityZoneSelectorPolicyResolutionEnum
 {
@@ -703,7 +703,7 @@ public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvail
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvailabilityZoneSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvailabilityZoneSelectorPolicyResolveEnum
 {
@@ -714,7 +714,7 @@ public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvail
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvailabilityZoneSelectorPolicy
 {
@@ -738,7 +738,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 }
 
 /// <summary>Selector for a Subnet in ec2 to populate availabilityZone.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvailabilityZoneSelector
 {
@@ -768,7 +768,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecurityGroupIdListRefsPolicyResolutionEnum>))]
 public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecurityGroupIdListRefsPolicyResolutionEnum
 {
@@ -784,7 +784,7 @@ public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecur
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecurityGroupIdListRefsPolicyResolveEnum>))]
 public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecurityGroupIdListRefsPolicyResolveEnum
 {
@@ -795,7 +795,7 @@ public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecur
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecurityGroupIdListRefsPolicy
 {
@@ -819,7 +819,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecurityGroupIdListRefs
 {
@@ -842,7 +842,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecurityGroupIdListSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecurityGroupIdListSelectorPolicyResolutionEnum
 {
@@ -858,7 +858,7 @@ public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecur
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecurityGroupIdListSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecurityGroupIdListSelectorPolicyResolveEnum
 {
@@ -869,7 +869,7 @@ public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecur
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecurityGroupIdListSelectorPolicy
 {
@@ -893,7 +893,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 }
 
 /// <summary>Selector for a list of SecurityGroup in ec2 to populate securityGroupIdList.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecurityGroupIdListSelector
 {
@@ -923,7 +923,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubnetIdRefPolicyResolutionEnum
 {
@@ -939,7 +939,7 @@ public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubne
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubnetIdRefPolicyResolveEnum
 {
@@ -950,7 +950,7 @@ public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubne
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubnetIdRefPolicy
 {
@@ -974,7 +974,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 }
 
 /// <summary>Reference to a Subnet in ec2 to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubnetIdRef
 {
@@ -997,7 +997,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubnetIdSelectorPolicyResolutionEnum
 {
@@ -1013,7 +1013,7 @@ public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubne
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubnetIdSelectorPolicyResolveEnum
 {
@@ -1024,7 +1024,7 @@ public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubne
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubnetIdSelectorPolicy
 {
@@ -1048,7 +1048,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 }
 
 /// <summary>Selector for a Subnet in ec2 to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubnetIdSelector
 {
@@ -1073,7 +1073,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 }
 
 /// <summary>Map of physical connection requirements, such as VPC and SecurityGroup. See physical_connection_requirements Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirements
 {
@@ -1126,7 +1126,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecInitProvider
 {
@@ -1161,7 +1161,7 @@ public partial class V1beta1ConnectionSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecManagementPoliciesEnum>))]
 public enum V1beta1ConnectionSpecManagementPoliciesEnum
 {
@@ -1184,7 +1184,7 @@ public enum V1beta1ConnectionSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecProviderConfigRef
 {
@@ -1203,7 +1203,7 @@ public partial class V1beta1ConnectionSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecWriteConnectionSecretToRef
 {
@@ -1213,7 +1213,7 @@ public partial class V1beta1ConnectionSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ConnectionSpec defines the desired state of Connection</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpec
 {
@@ -1265,7 +1265,7 @@ public partial class V1beta1ConnectionSpec
 }
 
 /// <summary>Map of physical connection requirements, such as VPC and SecurityGroup. See physical_connection_requirements Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionStatusAtProviderPhysicalConnectionRequirements
 {
@@ -1282,7 +1282,7 @@ public partial class V1beta1ConnectionStatusAtProviderPhysicalConnectionRequirem
     public string? SubnetId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionStatusAtProvider
 {
@@ -1331,7 +1331,7 @@ public partial class V1beta1ConnectionStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionStatusConditions
 {
@@ -1374,7 +1374,7 @@ public partial class V1beta1ConnectionStatusConditions
 }
 
 /// <summary>ConnectionStatus defines the observed state of Connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionStatus
 {
@@ -1395,7 +1395,7 @@ public partial class V1beta1ConnectionStatus
 }
 
 /// <summary>Connection is the Schema for the Connections API. Provides an Glue Connection resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Connection : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ConnectionSpec>, IStatus<V1beta1ConnectionStatus?>

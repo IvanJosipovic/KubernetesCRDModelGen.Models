@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.monitoring.cnrm.cloud.google.com;
 /// <summary>MonitoringNotificationChannel is the Schema for the MonitoringNotificationChannel API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MonitoringNotificationChannelList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MonitoringNotificationChannel>
@@ -37,7 +37,7 @@ public partial class V1beta1MonitoringNotificationChannelList : IKubernetesObjec
 }
 
 /// <summary>Reference to a value with the given key in the given Secret in the resource&apos;s namespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringNotificationChannelSpecSensitiveLabelsAuthTokenValueFromSecretKeyRef
 {
@@ -51,7 +51,7 @@ public partial class V1beta1MonitoringNotificationChannelSpecSensitiveLabelsAuth
 }
 
 /// <summary>Source for the field&apos;s value. Cannot be used if &apos;value&apos; is specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringNotificationChannelSpecSensitiveLabelsAuthTokenValueFrom
 {
@@ -61,7 +61,7 @@ public partial class V1beta1MonitoringNotificationChannelSpecSensitiveLabelsAuth
 }
 
 /// <summary>An authorization token for a notification channel. Channel types that support this field include: slack.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringNotificationChannelSpecSensitiveLabelsAuthToken
 {
@@ -75,7 +75,7 @@ public partial class V1beta1MonitoringNotificationChannelSpecSensitiveLabelsAuth
 }
 
 /// <summary>Reference to a value with the given key in the given Secret in the resource&apos;s namespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringNotificationChannelSpecSensitiveLabelsPasswordValueFromSecretKeyRef
 {
@@ -89,7 +89,7 @@ public partial class V1beta1MonitoringNotificationChannelSpecSensitiveLabelsPass
 }
 
 /// <summary>Source for the field&apos;s value. Cannot be used if &apos;value&apos; is specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringNotificationChannelSpecSensitiveLabelsPasswordValueFrom
 {
@@ -99,7 +99,7 @@ public partial class V1beta1MonitoringNotificationChannelSpecSensitiveLabelsPass
 }
 
 /// <summary>An password for a notification channel. Channel types that support this field include: webhook_basicauth.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringNotificationChannelSpecSensitiveLabelsPassword
 {
@@ -113,7 +113,7 @@ public partial class V1beta1MonitoringNotificationChannelSpecSensitiveLabelsPass
 }
 
 /// <summary>Reference to a value with the given key in the given Secret in the resource&apos;s namespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringNotificationChannelSpecSensitiveLabelsServiceKeyValueFromSecretKeyRef
 {
@@ -127,7 +127,7 @@ public partial class V1beta1MonitoringNotificationChannelSpecSensitiveLabelsServ
 }
 
 /// <summary>Source for the field&apos;s value. Cannot be used if &apos;value&apos; is specified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringNotificationChannelSpecSensitiveLabelsServiceKeyValueFrom
 {
@@ -137,7 +137,7 @@ public partial class V1beta1MonitoringNotificationChannelSpecSensitiveLabelsServ
 }
 
 /// <summary>An servicekey token for a notification channel. Channel types that support this field include: pagerduty.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringNotificationChannelSpecSensitiveLabelsServiceKey
 {
@@ -159,7 +159,7 @@ public partial class V1beta1MonitoringNotificationChannelSpecSensitiveLabelsServ
 /// Credentials may not be specified in both locations and will cause an error. Changing from one location
 /// to a different credential configuration in the config will require an apply to update state.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringNotificationChannelSpecSensitiveLabels
 {
@@ -177,7 +177,7 @@ public partial class V1beta1MonitoringNotificationChannelSpecSensitiveLabels
 }
 
 /// <summary>MonitoringNotificationChannelSpec defines the desired state of MonitoringNotificationChannel</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringNotificationChannelSpec
 {
@@ -218,7 +218,7 @@ public partial class V1beta1MonitoringNotificationChannelSpec
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringNotificationChannelStatusConditions
 {
@@ -244,7 +244,7 @@ public partial class V1beta1MonitoringNotificationChannelStatusConditions
 }
 
 /// <summary>MonitoringNotificationChannelStatus defines the config connector machine state of MonitoringNotificationChannel</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringNotificationChannelStatus
 {
@@ -266,7 +266,7 @@ public partial class V1beta1MonitoringNotificationChannelStatus
 }
 
 /// <summary>MonitoringNotificationChannel is the Schema for the MonitoringNotificationChannel API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MonitoringNotificationChannel : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MonitoringNotificationChannelSpec>, IStatus<V1beta1MonitoringNotificationChannelStatus?>

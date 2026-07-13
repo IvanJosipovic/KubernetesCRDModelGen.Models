@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datalossprevention.gcp.upbound.io;
 /// <summary>JobTrigger is the Schema for the JobTriggers API. A job trigger configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2JobTriggerList : IKubernetesObject<V1ListMeta>, IItems<V1beta2JobTrigger>
@@ -45,7 +45,7 @@ public partial class V1beta2JobTriggerList : IKubernetesObject<V1ListMeta>, IIte
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2JobTriggerSpecDeletionPolicyEnum>))]
 public enum V1beta2JobTriggerSpecDeletionPolicyEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta2JobTriggerSpecDeletionPolicyEnum
 /// User specified deidentify templates and configs for structured, unstructured, and image files.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationConfig
 {
@@ -82,7 +82,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentify
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdRefPolicyResolutionEnum>))]
 public enum V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdRefPolicyResolutionEnum
 {
@@ -98,7 +98,7 @@ public enum V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransform
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdRefPolicyResolveEnum>))]
 public enum V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdRefPolicyResolveEnum
 {
@@ -109,7 +109,7 @@ public enum V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransform
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdRefPolicy
 {
@@ -133,7 +133,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentify
 }
 
 /// <summary>Reference to a Dataset in bigquery to populate datasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdRef
 {
@@ -152,7 +152,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentify
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdSelectorPolicyResolutionEnum
 {
@@ -168,7 +168,7 @@ public enum V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransform
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdSelectorPolicyResolveEnum
 {
@@ -179,7 +179,7 @@ public enum V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransform
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdSelectorPolicy
 {
@@ -203,7 +203,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentify
 }
 
 /// <summary>Selector for a Dataset in bigquery to populate datasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdSelector
 {
@@ -229,7 +229,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentify
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdRefPolicyResolutionEnum>))]
 public enum V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdRefPolicyResolutionEnum
 {
@@ -245,7 +245,7 @@ public enum V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransform
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdRefPolicyResolveEnum>))]
 public enum V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdRefPolicyResolveEnum
 {
@@ -256,7 +256,7 @@ public enum V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransform
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdRefPolicy
 {
@@ -280,7 +280,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentify
 }
 
 /// <summary>Reference to a Table in bigquery to populate tableId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdRef
 {
@@ -299,7 +299,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentify
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdSelectorPolicyResolutionEnum
 {
@@ -315,7 +315,7 @@ public enum V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransform
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdSelectorPolicyResolveEnum>))]
 public enum V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdSelectorPolicyResolveEnum
 {
@@ -326,7 +326,7 @@ public enum V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransform
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdSelectorPolicy
 {
@@ -350,7 +350,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentify
 }
 
 /// <summary>Selector for a Table in bigquery to populate tableId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdSelector
 {
@@ -374,7 +374,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentify
 /// The BigQuery table in which to store the output.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTable
 {
@@ -415,7 +415,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentify
 /// Config for storing transformation details.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfig
 {
@@ -431,7 +431,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentify
 /// Create a de-identified copy of the requested table or files.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentify
 {
@@ -470,7 +470,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsDeidentify
 }
 
 /// <summary>Sends an email when the job completes. The email goes to IAM project owners and technical Essential Contacts.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsJobNotificationEmails
 {
@@ -480,7 +480,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsJobNotific
 /// Publish a message into a given Pub/Sub topic when the job completes.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsPubSub
 {
@@ -490,21 +490,21 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsPubSub
 }
 
 /// <summary>Publish findings of a DlpJob to Data Catalog.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsPublishFindingsToCloudDataCatalog
 {
 }
 
 /// <summary>Publish the result summary of a DlpJob to the Cloud Security Command Center.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsPublishSummaryToCscc
 {
 }
 
 /// <summary>Enable Stackdriver metric dlp.googleapis.com/findingCount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsPublishToStackdriver
 {
@@ -514,7 +514,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsPublishToS
 /// The BigQuery table in which to store the output.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsSaveFindingsOutputConfigTable
 {
@@ -539,7 +539,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsSaveFindin
 /// Information on where to store output
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsSaveFindingsOutputConfig
 {
@@ -568,7 +568,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsSaveFindin
 /// If set, the detailed findings will be persisted to the specified OutputStorageConfig. Only a single instance of this action can be specified. Compatible with: Inspect, Risk
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsSaveFindings
 {
@@ -580,7 +580,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobActionsSaveFindin
     public V1beta2JobTriggerSpecForProviderInspectJobActionsSaveFindingsOutputConfig? OutputConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobActions
 {
@@ -626,7 +626,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobActions
 /// Newline-delimited file of words in Cloud Storage. Only a single file is accepted.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigCustomInfoTypesDictionaryCloudStoragePath
 {
@@ -639,7 +639,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigCust
 /// List of words or phrases to search for.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigCustomInfoTypesDictionaryWordList
 {
@@ -655,7 +655,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigCust
 /// Dictionary which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigCustomInfoTypesDictionary
 {
@@ -678,7 +678,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigCust
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigCustomInfoTypesInfoTypeSensitivityScore
 {
@@ -696,7 +696,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigCust
 /// specified in another InfoTypeLimit.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigCustomInfoTypesInfoType
 {
@@ -727,7 +727,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigCust
 /// Regular expression which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigCustomInfoTypesRegex
 {
@@ -747,7 +747,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigCust
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigCustomInfoTypesSensitivityScore
 {
@@ -763,7 +763,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigCust
 /// A reference to a StoredInfoType to use with scanning.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigCustomInfoTypesStoredType
 {
@@ -780,13 +780,13 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigCust
 }
 
 /// <summary>Message for detecting output from deidentification transformations that support reversing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigCustomInfoTypesSurrogateType
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigCustomInfoTypes
 {
@@ -852,7 +852,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigCust
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigInfoTypesSensitivityScore
 {
@@ -864,7 +864,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigInfo
     public string? Score { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigInfoTypes
 {
@@ -895,7 +895,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigInfo
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScore
 {
@@ -913,7 +913,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigLimi
 /// specified in another InfoTypeLimit.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoType
 {
@@ -940,7 +940,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigLimi
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigLimitsMaxFindingsPerInfoType
 {
@@ -962,7 +962,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigLimi
 /// Configuration to control the number of findings returned.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigLimits
 {
@@ -986,7 +986,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigLimi
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRuleSetInfoTypesSensitivityScore
 {
@@ -998,7 +998,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRule
     public string? Score { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRuleSetInfoTypes
 {
@@ -1029,7 +1029,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRule
 /// Newline-delimited file of words in Cloud Storage. Only a single file is accepted.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePath
 {
@@ -1042,7 +1042,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRule
 /// List of words or phrases to search for.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordList
 {
@@ -1058,7 +1058,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRule
 /// Dictionary which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesExclusionRuleDictionary
 {
@@ -1081,7 +1081,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRule
 /// Regular expression pattern defining what qualifies as a hotword.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegex
 {
@@ -1105,7 +1105,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRule
 /// office using the hotword regex (xxx), where xxx is the area code in question.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximity
 {
@@ -1122,7 +1122,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRule
 /// Drop if the hotword rule is contained in the proximate context.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotword
 {
@@ -1149,7 +1149,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRule
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScore
 {
@@ -1161,7 +1161,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRule
     public string? Score { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes
 {
@@ -1189,7 +1189,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRule
 }
 
 /// <summary>When true, excludes type information of the findings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes
 {
@@ -1205,7 +1205,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRule
 /// Regular expression which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesExclusionRuleRegex
 {
@@ -1225,7 +1225,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRule
 /// The rule that specifies conditions when findings of infoTypes specified in InspectionRuleSet are removed from results.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesExclusionRule
 {
@@ -1266,7 +1266,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRule
 /// Regular expression pattern defining what qualifies as a hotword.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesHotwordRuleHotwordRegex
 {
@@ -1286,7 +1286,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRule
 /// Likelihood adjustment to apply to all matching findings.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustment
 {
@@ -1317,7 +1317,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRule
 /// office using the hotword regex (xxx), where xxx is the area code in question.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesHotwordRuleProximity
 {
@@ -1334,7 +1334,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRule
 /// Hotword-based detection rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesHotwordRule
 {
@@ -1364,7 +1364,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRule
     public V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesHotwordRuleProximity? Proximity { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRules
 {
@@ -1383,7 +1383,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRule
     public V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesHotwordRule? HotwordRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRuleSet
 {
@@ -1406,7 +1406,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRule
 /// The core content of the template.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfig
 {
@@ -1456,7 +1456,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobInspectConfig
     public IList<V1beta2JobTriggerSpecForProviderInspectJobInspectConfigRuleSet>? RuleSet { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigBigQueryOptionsExcludedFields
 {
@@ -1472,7 +1472,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigBigQ
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigBigQueryOptionsIdentifyingFields
 {
@@ -1488,7 +1488,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigBigQ
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigBigQueryOptionsIncludedFields
 {
@@ -1508,7 +1508,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigBigQ
 /// Set of files to scan.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigBigQueryOptionsTableReference
 {
@@ -1533,7 +1533,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigBigQ
 /// Options defining BigQuery table and row identifiers.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigBigQueryOptions
 {
@@ -1597,7 +1597,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigBigQ
 /// The regex-filtered set of files to scan.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSet
 {
@@ -1626,7 +1626,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigClou
 /// Set of files to scan.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigCloudStorageOptionsFileSet
 {
@@ -1652,7 +1652,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigClou
 /// Options defining a file or a set of files within a Google Cloud Storage bucket.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigCloudStorageOptions
 {
@@ -1706,7 +1706,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigClou
 /// A representation of a Datastore kind.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigDatastoreOptionsKind
 {
@@ -1727,7 +1727,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigData
 /// is always by project and namespace, however the namespace ID may be empty.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigDatastoreOptionsPartitionId
 {
@@ -1744,7 +1744,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigData
 /// Options defining a data set within Google Cloud Datastore.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigDatastoreOptions
 {
@@ -1764,7 +1764,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigData
     public V1beta2JobTriggerSpecForProviderInspectJobStorageConfigDatastoreOptionsPartitionId? PartitionId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFields
 {
@@ -1784,7 +1784,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigHybr
 /// If the container is a table, additional information to make findings meaningful such as the columns that are primary keys.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigHybridOptionsTableOptions
 {
@@ -1802,7 +1802,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigHybr
 /// Configuration to control jobs where the content being inspected is outside of Google Cloud Platform.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigHybridOptions
 {
@@ -1841,7 +1841,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigHybr
 /// Specification of the field containing the timestamp of scanned items.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigTimespanConfigTimestampField
 {
@@ -1861,7 +1861,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigTime
 /// Configuration of the timespan of the items to include in scanning
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigTimespanConfig
 {
@@ -1894,7 +1894,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfigTime
 /// Information on where to inspect
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfig
 {
@@ -1938,7 +1938,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJobStorageConfig
 /// Controls what and how to inspect for findings.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderInspectJob
 {
@@ -1969,7 +1969,7 @@ public partial class V1beta2JobTriggerSpecForProviderInspectJob
 }
 
 /// <summary>For use with hybrid jobs. Jobs must be manually created and finished.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderTriggersManual
 {
@@ -1979,7 +1979,7 @@ public partial class V1beta2JobTriggerSpecForProviderTriggersManual
 /// Schedule for triggered jobs
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderTriggersSchedule
 {
@@ -1993,7 +1993,7 @@ public partial class V1beta2JobTriggerSpecForProviderTriggersSchedule
     public string? RecurrencePeriodDuration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProviderTriggers
 {
@@ -2009,7 +2009,7 @@ public partial class V1beta2JobTriggerSpecForProviderTriggers
     public V1beta2JobTriggerSpecForProviderTriggersSchedule? Schedule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecForProvider
 {
@@ -2063,7 +2063,7 @@ public partial class V1beta2JobTriggerSpecForProvider
 /// User specified deidentify templates and configs for structured, unstructured, and image files.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationConfig
 {
@@ -2086,7 +2086,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentif
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdRefPolicyResolutionEnum>))]
 public enum V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdRefPolicyResolutionEnum
 {
@@ -2102,7 +2102,7 @@ public enum V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransfor
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdRefPolicyResolveEnum>))]
 public enum V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdRefPolicyResolveEnum
 {
@@ -2113,7 +2113,7 @@ public enum V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransfor
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdRefPolicy
 {
@@ -2137,7 +2137,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentif
 }
 
 /// <summary>Reference to a Dataset in bigquery to populate datasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdRef
 {
@@ -2156,7 +2156,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentif
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdSelectorPolicyResolutionEnum
 {
@@ -2172,7 +2172,7 @@ public enum V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransfor
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdSelectorPolicyResolveEnum
 {
@@ -2183,7 +2183,7 @@ public enum V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransfor
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdSelectorPolicy
 {
@@ -2207,7 +2207,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentif
 }
 
 /// <summary>Selector for a Dataset in bigquery to populate datasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdSelector
 {
@@ -2233,7 +2233,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentif
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdRefPolicyResolutionEnum>))]
 public enum V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdRefPolicyResolutionEnum
 {
@@ -2249,7 +2249,7 @@ public enum V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransfor
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdRefPolicyResolveEnum>))]
 public enum V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdRefPolicyResolveEnum
 {
@@ -2260,7 +2260,7 @@ public enum V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransfor
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdRefPolicy
 {
@@ -2284,7 +2284,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentif
 }
 
 /// <summary>Reference to a Table in bigquery to populate tableId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdRef
 {
@@ -2303,7 +2303,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentif
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdSelectorPolicyResolutionEnum
 {
@@ -2319,7 +2319,7 @@ public enum V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransfor
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdSelectorPolicyResolveEnum>))]
 public enum V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdSelectorPolicyResolveEnum
 {
@@ -2330,7 +2330,7 @@ public enum V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransfor
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdSelectorPolicy
 {
@@ -2354,7 +2354,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentif
 }
 
 /// <summary>Selector for a Table in bigquery to populate tableId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdSelector
 {
@@ -2378,7 +2378,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentif
 /// The BigQuery table in which to store the output.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTable
 {
@@ -2419,7 +2419,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentif
 /// Config for storing transformation details.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfig
 {
@@ -2435,7 +2435,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentif
 /// Create a de-identified copy of the requested table or files.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentify
 {
@@ -2474,7 +2474,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsDeidentif
 }
 
 /// <summary>Sends an email when the job completes. The email goes to IAM project owners and technical Essential Contacts.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsJobNotificationEmails
 {
@@ -2484,7 +2484,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsJobNotifi
 /// Publish a message into a given Pub/Sub topic when the job completes.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsPubSub
 {
@@ -2494,21 +2494,21 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsPubSub
 }
 
 /// <summary>Publish findings of a DlpJob to Data Catalog.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsPublishFindingsToCloudDataCatalog
 {
 }
 
 /// <summary>Publish the result summary of a DlpJob to the Cloud Security Command Center.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsPublishSummaryToCscc
 {
 }
 
 /// <summary>Enable Stackdriver metric dlp.googleapis.com/findingCount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsPublishToStackdriver
 {
@@ -2518,7 +2518,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsPublishTo
 /// The BigQuery table in which to store the output.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsSaveFindingsOutputConfigTable
 {
@@ -2543,7 +2543,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsSaveFindi
 /// Information on where to store output
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsSaveFindingsOutputConfig
 {
@@ -2572,7 +2572,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsSaveFindi
 /// If set, the detailed findings will be persisted to the specified OutputStorageConfig. Only a single instance of this action can be specified. Compatible with: Inspect, Risk
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsSaveFindings
 {
@@ -2584,7 +2584,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobActionsSaveFindi
     public V1beta2JobTriggerSpecInitProviderInspectJobActionsSaveFindingsOutputConfig? OutputConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobActions
 {
@@ -2630,7 +2630,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobActions
 /// Newline-delimited file of words in Cloud Storage. Only a single file is accepted.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigCustomInfoTypesDictionaryCloudStoragePath
 {
@@ -2643,7 +2643,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigCus
 /// List of words or phrases to search for.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigCustomInfoTypesDictionaryWordList
 {
@@ -2659,7 +2659,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigCus
 /// Dictionary which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigCustomInfoTypesDictionary
 {
@@ -2682,7 +2682,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigCus
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigCustomInfoTypesInfoTypeSensitivityScore
 {
@@ -2700,7 +2700,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigCus
 /// specified in another InfoTypeLimit.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigCustomInfoTypesInfoType
 {
@@ -2731,7 +2731,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigCus
 /// Regular expression which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigCustomInfoTypesRegex
 {
@@ -2751,7 +2751,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigCus
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigCustomInfoTypesSensitivityScore
 {
@@ -2767,7 +2767,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigCus
 /// A reference to a StoredInfoType to use with scanning.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigCustomInfoTypesStoredType
 {
@@ -2784,13 +2784,13 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigCus
 }
 
 /// <summary>Message for detecting output from deidentification transformations that support reversing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigCustomInfoTypesSurrogateType
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigCustomInfoTypes
 {
@@ -2856,7 +2856,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigCus
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigInfoTypesSensitivityScore
 {
@@ -2868,7 +2868,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigInf
     public string? Score { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigInfoTypes
 {
@@ -2899,7 +2899,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigInf
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScore
 {
@@ -2917,7 +2917,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigLim
 /// specified in another InfoTypeLimit.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoType
 {
@@ -2944,7 +2944,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigLim
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigLimitsMaxFindingsPerInfoType
 {
@@ -2966,7 +2966,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigLim
 /// Configuration to control the number of findings returned.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigLimits
 {
@@ -2990,7 +2990,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigLim
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetInfoTypesSensitivityScore
 {
@@ -3002,7 +3002,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRul
     public string? Score { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetInfoTypes
 {
@@ -3033,7 +3033,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRul
 /// Newline-delimited file of words in Cloud Storage. Only a single file is accepted.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePath
 {
@@ -3046,7 +3046,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRul
 /// List of words or phrases to search for.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordList
 {
@@ -3062,7 +3062,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRul
 /// Dictionary which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesExclusionRuleDictionary
 {
@@ -3085,7 +3085,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRul
 /// Regular expression pattern defining what qualifies as a hotword.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegex
 {
@@ -3109,7 +3109,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRul
 /// office using the hotword regex (xxx), where xxx is the area code in question.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximity
 {
@@ -3126,7 +3126,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRul
 /// Drop if the hotword rule is contained in the proximate context.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotword
 {
@@ -3153,7 +3153,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRul
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScore
 {
@@ -3165,7 +3165,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRul
     public string? Score { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes
 {
@@ -3193,7 +3193,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRul
 }
 
 /// <summary>When true, excludes type information of the findings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes
 {
@@ -3209,7 +3209,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRul
 /// Regular expression which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesExclusionRuleRegex
 {
@@ -3229,7 +3229,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRul
 /// The rule that specifies conditions when findings of infoTypes specified in InspectionRuleSet are removed from results.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesExclusionRule
 {
@@ -3270,7 +3270,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRul
 /// Regular expression pattern defining what qualifies as a hotword.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesHotwordRuleHotwordRegex
 {
@@ -3290,7 +3290,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRul
 /// Likelihood adjustment to apply to all matching findings.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustment
 {
@@ -3321,7 +3321,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRul
 /// office using the hotword regex (xxx), where xxx is the area code in question.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesHotwordRuleProximity
 {
@@ -3338,7 +3338,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRul
 /// Hotword-based detection rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesHotwordRule
 {
@@ -3368,7 +3368,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRul
     public V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesHotwordRuleProximity? Proximity { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRules
 {
@@ -3387,7 +3387,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRul
     public V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesHotwordRule? HotwordRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRuleSet
 {
@@ -3410,7 +3410,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRul
 /// The core content of the template.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfig
 {
@@ -3460,7 +3460,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobInspectConfig
     public IList<V1beta2JobTriggerSpecInitProviderInspectJobInspectConfigRuleSet>? RuleSet { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigBigQueryOptionsExcludedFields
 {
@@ -3476,7 +3476,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigBig
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigBigQueryOptionsIdentifyingFields
 {
@@ -3492,7 +3492,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigBig
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigBigQueryOptionsIncludedFields
 {
@@ -3512,7 +3512,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigBig
 /// Set of files to scan.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigBigQueryOptionsTableReference
 {
@@ -3537,7 +3537,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigBig
 /// Options defining BigQuery table and row identifiers.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigBigQueryOptions
 {
@@ -3601,7 +3601,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigBig
 /// The regex-filtered set of files to scan.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSet
 {
@@ -3630,7 +3630,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigClo
 /// Set of files to scan.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigCloudStorageOptionsFileSet
 {
@@ -3656,7 +3656,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigClo
 /// Options defining a file or a set of files within a Google Cloud Storage bucket.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigCloudStorageOptions
 {
@@ -3710,7 +3710,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigClo
 /// A representation of a Datastore kind.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigDatastoreOptionsKind
 {
@@ -3731,7 +3731,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigDat
 /// is always by project and namespace, however the namespace ID may be empty.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigDatastoreOptionsPartitionId
 {
@@ -3748,7 +3748,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigDat
 /// Options defining a data set within Google Cloud Datastore.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigDatastoreOptions
 {
@@ -3768,7 +3768,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigDat
     public V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigDatastoreOptionsPartitionId? PartitionId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFields
 {
@@ -3788,7 +3788,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigHyb
 /// If the container is a table, additional information to make findings meaningful such as the columns that are primary keys.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigHybridOptionsTableOptions
 {
@@ -3806,7 +3806,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigHyb
 /// Configuration to control jobs where the content being inspected is outside of Google Cloud Platform.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigHybridOptions
 {
@@ -3845,7 +3845,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigHyb
 /// Specification of the field containing the timestamp of scanned items.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigTimespanConfigTimestampField
 {
@@ -3865,7 +3865,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigTim
 /// Configuration of the timespan of the items to include in scanning
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigTimespanConfig
 {
@@ -3898,7 +3898,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfigTim
 /// Information on where to inspect
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfig
 {
@@ -3942,7 +3942,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJobStorageConfig
 /// Controls what and how to inspect for findings.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderInspectJob
 {
@@ -3973,7 +3973,7 @@ public partial class V1beta2JobTriggerSpecInitProviderInspectJob
 }
 
 /// <summary>For use with hybrid jobs. Jobs must be manually created and finished.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderTriggersManual
 {
@@ -3983,7 +3983,7 @@ public partial class V1beta2JobTriggerSpecInitProviderTriggersManual
 /// Schedule for triggered jobs
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderTriggersSchedule
 {
@@ -3997,7 +3997,7 @@ public partial class V1beta2JobTriggerSpecInitProviderTriggersSchedule
     public string? RecurrencePeriodDuration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProviderTriggers
 {
@@ -4025,7 +4025,7 @@ public partial class V1beta2JobTriggerSpecInitProviderTriggers
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecInitProvider
 {
@@ -4079,7 +4079,7 @@ public partial class V1beta2JobTriggerSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2JobTriggerSpecManagementPoliciesEnum>))]
 public enum V1beta2JobTriggerSpecManagementPoliciesEnum
 {
@@ -4103,7 +4103,7 @@ public enum V1beta2JobTriggerSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2JobTriggerSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2JobTriggerSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -4119,7 +4119,7 @@ public enum V1beta2JobTriggerSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2JobTriggerSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2JobTriggerSpecProviderConfigRefPolicyResolveEnum
 {
@@ -4130,7 +4130,7 @@ public enum V1beta2JobTriggerSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecProviderConfigRefPolicy
 {
@@ -4158,7 +4158,7 @@ public partial class V1beta2JobTriggerSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecProviderConfigRef
 {
@@ -4177,7 +4177,7 @@ public partial class V1beta2JobTriggerSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpecWriteConnectionSecretToRef
 {
@@ -4191,7 +4191,7 @@ public partial class V1beta2JobTriggerSpecWriteConnectionSecretToRef
 }
 
 /// <summary>JobTriggerSpec defines the desired state of JobTrigger</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerSpec
 {
@@ -4262,7 +4262,7 @@ public partial class V1beta2JobTriggerSpec
 /// User specified deidentify templates and configs for structured, unstructured, and image files.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsDeidentifyTransformationConfig
 {
@@ -4283,7 +4283,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsDeidentif
 /// The BigQuery table in which to store the output.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTable
 {
@@ -4308,7 +4308,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsDeidentif
 /// Config for storing transformation details.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfig
 {
@@ -4324,7 +4324,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsDeidentif
 /// Create a de-identified copy of the requested table or files.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsDeidentify
 {
@@ -4363,7 +4363,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsDeidentif
 }
 
 /// <summary>Sends an email when the job completes. The email goes to IAM project owners and technical Essential Contacts.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsJobNotificationEmails
 {
@@ -4373,7 +4373,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsJobNotifi
 /// Publish a message into a given Pub/Sub topic when the job completes.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsPubSub
 {
@@ -4383,21 +4383,21 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsPubSub
 }
 
 /// <summary>Publish findings of a DlpJob to Data Catalog.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsPublishFindingsToCloudDataCatalog
 {
 }
 
 /// <summary>Publish the result summary of a DlpJob to the Cloud Security Command Center.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsPublishSummaryToCscc
 {
 }
 
 /// <summary>Enable Stackdriver metric dlp.googleapis.com/findingCount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsPublishToStackdriver
 {
@@ -4407,7 +4407,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsPublishTo
 /// The BigQuery table in which to store the output.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsSaveFindingsOutputConfigTable
 {
@@ -4432,7 +4432,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsSaveFindi
 /// Information on where to store output
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsSaveFindingsOutputConfig
 {
@@ -4461,7 +4461,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsSaveFindi
 /// If set, the detailed findings will be persisted to the specified OutputStorageConfig. Only a single instance of this action can be specified. Compatible with: Inspect, Risk
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsSaveFindings
 {
@@ -4473,7 +4473,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobActionsSaveFindi
     public V1beta2JobTriggerStatusAtProviderInspectJobActionsSaveFindingsOutputConfig? OutputConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobActions
 {
@@ -4519,7 +4519,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobActions
 /// Newline-delimited file of words in Cloud Storage. Only a single file is accepted.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigCustomInfoTypesDictionaryCloudStoragePath
 {
@@ -4532,7 +4532,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigCus
 /// List of words or phrases to search for.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigCustomInfoTypesDictionaryWordList
 {
@@ -4548,7 +4548,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigCus
 /// Dictionary which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigCustomInfoTypesDictionary
 {
@@ -4571,7 +4571,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigCus
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigCustomInfoTypesInfoTypeSensitivityScore
 {
@@ -4589,7 +4589,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigCus
 /// specified in another InfoTypeLimit.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigCustomInfoTypesInfoType
 {
@@ -4620,7 +4620,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigCus
 /// Regular expression which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigCustomInfoTypesRegex
 {
@@ -4640,7 +4640,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigCus
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigCustomInfoTypesSensitivityScore
 {
@@ -4656,7 +4656,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigCus
 /// A reference to a StoredInfoType to use with scanning.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigCustomInfoTypesStoredType
 {
@@ -4680,13 +4680,13 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigCus
 }
 
 /// <summary>Message for detecting output from deidentification transformations that support reversing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigCustomInfoTypesSurrogateType
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigCustomInfoTypes
 {
@@ -4752,7 +4752,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigCus
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigInfoTypesSensitivityScore
 {
@@ -4764,7 +4764,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigInf
     public string? Score { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigInfoTypes
 {
@@ -4795,7 +4795,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigInf
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScore
 {
@@ -4813,7 +4813,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigLim
 /// specified in another InfoTypeLimit.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoType
 {
@@ -4840,7 +4840,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigLim
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigLimitsMaxFindingsPerInfoType
 {
@@ -4862,7 +4862,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigLim
 /// Configuration to control the number of findings returned.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigLimits
 {
@@ -4886,7 +4886,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigLim
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetInfoTypesSensitivityScore
 {
@@ -4898,7 +4898,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRul
     public string? Score { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetInfoTypes
 {
@@ -4929,7 +4929,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRul
 /// Newline-delimited file of words in Cloud Storage. Only a single file is accepted.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePath
 {
@@ -4942,7 +4942,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRul
 /// List of words or phrases to search for.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordList
 {
@@ -4958,7 +4958,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRul
 /// Dictionary which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesExclusionRuleDictionary
 {
@@ -4981,7 +4981,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRul
 /// Regular expression pattern defining what qualifies as a hotword.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegex
 {
@@ -5005,7 +5005,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRul
 /// office using the hotword regex (xxx), where xxx is the area code in question.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximity
 {
@@ -5022,7 +5022,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRul
 /// Drop if the hotword rule is contained in the proximate context.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotword
 {
@@ -5049,7 +5049,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRul
 /// Optional custom sensitivity for this InfoType. This only applies to data profiling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScore
 {
@@ -5061,7 +5061,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRul
     public string? Score { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes
 {
@@ -5089,7 +5089,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRul
 }
 
 /// <summary>When true, excludes type information of the findings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes
 {
@@ -5105,7 +5105,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRul
 /// Regular expression which defines the rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesExclusionRuleRegex
 {
@@ -5125,7 +5125,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRul
 /// The rule that specifies conditions when findings of infoTypes specified in InspectionRuleSet are removed from results.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesExclusionRule
 {
@@ -5166,7 +5166,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRul
 /// Regular expression pattern defining what qualifies as a hotword.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesHotwordRuleHotwordRegex
 {
@@ -5186,7 +5186,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRul
 /// Likelihood adjustment to apply to all matching findings.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustment
 {
@@ -5217,7 +5217,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRul
 /// office using the hotword regex (xxx), where xxx is the area code in question.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesHotwordRuleProximity
 {
@@ -5234,7 +5234,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRul
 /// Hotword-based detection rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesHotwordRule
 {
@@ -5264,7 +5264,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRul
     public V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesHotwordRuleProximity? Proximity { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRules
 {
@@ -5283,7 +5283,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRul
     public V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesHotwordRule? HotwordRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRuleSet
 {
@@ -5306,7 +5306,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRul
 /// The core content of the template.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfig
 {
@@ -5356,7 +5356,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobInspectConfig
     public IList<V1beta2JobTriggerStatusAtProviderInspectJobInspectConfigRuleSet>? RuleSet { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigBigQueryOptionsExcludedFields
 {
@@ -5372,7 +5372,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigBig
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigBigQueryOptionsIdentifyingFields
 {
@@ -5388,7 +5388,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigBig
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigBigQueryOptionsIncludedFields
 {
@@ -5408,7 +5408,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigBig
 /// Set of files to scan.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigBigQueryOptionsTableReference
 {
@@ -5433,7 +5433,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigBig
 /// Options defining BigQuery table and row identifiers.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigBigQueryOptions
 {
@@ -5497,7 +5497,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigBig
 /// The regex-filtered set of files to scan.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSet
 {
@@ -5526,7 +5526,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigClo
 /// Set of files to scan.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigCloudStorageOptionsFileSet
 {
@@ -5552,7 +5552,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigClo
 /// Options defining a file or a set of files within a Google Cloud Storage bucket.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigCloudStorageOptions
 {
@@ -5606,7 +5606,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigClo
 /// A representation of a Datastore kind.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigDatastoreOptionsKind
 {
@@ -5627,7 +5627,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigDat
 /// is always by project and namespace, however the namespace ID may be empty.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigDatastoreOptionsPartitionId
 {
@@ -5644,7 +5644,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigDat
 /// Options defining a data set within Google Cloud Datastore.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigDatastoreOptions
 {
@@ -5664,7 +5664,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigDat
     public V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigDatastoreOptionsPartitionId? PartitionId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFields
 {
@@ -5684,7 +5684,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigHyb
 /// If the container is a table, additional information to make findings meaningful such as the columns that are primary keys.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigHybridOptionsTableOptions
 {
@@ -5702,7 +5702,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigHyb
 /// Configuration to control jobs where the content being inspected is outside of Google Cloud Platform.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigHybridOptions
 {
@@ -5741,7 +5741,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigHyb
 /// Specification of the field containing the timestamp of scanned items.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigTimespanConfigTimestampField
 {
@@ -5761,7 +5761,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigTim
 /// Configuration of the timespan of the items to include in scanning
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigTimespanConfig
 {
@@ -5794,7 +5794,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfigTim
 /// Information on where to inspect
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfig
 {
@@ -5838,7 +5838,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJobStorageConfig
 /// Controls what and how to inspect for findings.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderInspectJob
 {
@@ -5869,7 +5869,7 @@ public partial class V1beta2JobTriggerStatusAtProviderInspectJob
 }
 
 /// <summary>For use with hybrid jobs. Jobs must be manually created and finished.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderTriggersManual
 {
@@ -5879,7 +5879,7 @@ public partial class V1beta2JobTriggerStatusAtProviderTriggersManual
 /// Schedule for triggered jobs
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderTriggersSchedule
 {
@@ -5893,7 +5893,7 @@ public partial class V1beta2JobTriggerStatusAtProviderTriggersSchedule
     public string? RecurrencePeriodDuration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProviderTriggers
 {
@@ -5909,7 +5909,7 @@ public partial class V1beta2JobTriggerStatusAtProviderTriggers
     public V1beta2JobTriggerStatusAtProviderTriggersSchedule? Schedule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusAtProvider
 {
@@ -5980,7 +5980,7 @@ public partial class V1beta2JobTriggerStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatusConditions
 {
@@ -6023,7 +6023,7 @@ public partial class V1beta2JobTriggerStatusConditions
 }
 
 /// <summary>JobTriggerStatus defines the observed state of JobTrigger.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobTriggerStatus
 {
@@ -6044,7 +6044,7 @@ public partial class V1beta2JobTriggerStatus
 }
 
 /// <summary>JobTrigger is the Schema for the JobTriggers API. A job trigger configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2JobTrigger : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2JobTriggerSpec>, IStatus<V1beta2JobTriggerStatus?>
