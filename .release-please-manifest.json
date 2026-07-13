@@ -1,12 +1,2 @@
 {
-<<<<<<< HEAD
-  "src/Models/k8s.aws": "1.35.0",
-  "src/Models/aquasecurity.github.io": "1.6.0",
-  "src/Models/akuity.io": "1.0.0",
-  "src/Models/argoproj.io": "1.12.0"
-=======
-  "src/Models/akuity.io": "1.3.0",
-  "src/Models/aquasecurity.github.io": "1.2.0",
-  "src/Models/k8s.aws": "1.2.0"
->>>>>>> 5e25f8f07786c791624760d1d099a24ac0883026
 }
