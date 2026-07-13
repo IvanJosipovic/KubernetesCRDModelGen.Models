@@ -7,7 +7,7 @@
       "extra-files": [
         {
           "type": "xml",
-          "path": "Directory.Build.props",
+          "path": "src/Models/akuity.io/Directory.Build.props",
           "xpath": "//Project/PropertyGroup/Version"
         }
       ]
@@ -18,7 +18,7 @@
       "extra-files": [
         {
           "type": "xml",
-          "path": "Directory.Build.props",
+          "path": "src/Models/aquasecurity.github.io/Directory.Build.props",
           "xpath": "//Project/PropertyGroup/Version"
         }
       ]
@@ -29,7 +29,7 @@
       "extra-files": [
         {
           "type": "xml",
-          "path": "Directory.Build.props",
+          "path": "src/Models/k8s.aws/Directory.Build.props",
           "xpath": "//Project/PropertyGroup/Version"
         }
       ]
