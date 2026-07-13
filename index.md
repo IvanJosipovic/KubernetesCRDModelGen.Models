@@ -12,6 +12,7 @@ This repository uses [`KubernetesCRDModelGen.SourceGenerator`](https://www.nuget
 - [Generated Models](models/index.md)
 - [Repository documentation](docs/index.md)
 - [README](README.md)
+- [GitHub Repository](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models)
 
 ## Current Layout
 

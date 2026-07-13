@@ -146,7 +146,7 @@ static class DocFXGenerator
 
         var content = $"""
             # {group}
-            [![Nuget](https://img.shields.io/nuget/vpre/{ProjectGenerator.Namespace}.{group}.svg?style=flat-square)](https://www.nuget.org/packages/{ProjectGenerator.Namespace}.{group})[![Nuget)](https://img.shields.io/nuget/dt/{ProjectGenerator.Namespace}.{group}.svg?style=flat-square)](https://www.nuget.org/packages/{ProjectGenerator.Namespace}.{group})
+            [![Nuget](https://img.shields.io/nuget/v/{ProjectGenerator.Namespace}.{group}.svg?style=flat-square)](https://www.nuget.org/packages/{ProjectGenerator.Namespace}.{group})[![Nuget)](https://img.shields.io/nuget/dt/{ProjectGenerator.Namespace}.{group}.svg?style=flat-square)](https://www.nuget.org/packages/{ProjectGenerator.Namespace}.{group})
 
             C# models for Kubernetes CRDs in group `{group}`.
 

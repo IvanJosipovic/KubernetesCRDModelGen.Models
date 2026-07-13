@@ -12,9 +12,9 @@ Each CRD API group is published as its own NuGet package under the [`KubernetesC
 <!-- StartOfReplace -->
 | CRD group | Project docs | NuGet package |
 | --- | --- | --- |
-| `akuity.io` | [Docs](https://ivanjosipovic.github.io/KubernetesCRDModelGen.Models/models/akuity.io) | [KubernetesCRDModelGen.Models.akuity.io](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.akuity.io) |
-| `aquasecurity.github.io` | [Docs](https://ivanjosipovic.github.io/KubernetesCRDModelGen.Models/models/aquasecurity.github.io) | [KubernetesCRDModelGen.Models.aquasecurity.github.io](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.aquasecurity.github.io) |
-| `k8s.aws` | [Docs](https://ivanjosipovic.github.io/KubernetesCRDModelGen.Models/models/k8s.aws) | [KubernetesCRDModelGen.Models.k8s.aws](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.k8s.aws) |<!-- EndOfReplace -->
+| `akuity.io` | [Docs](https://ivanjosipovic.github.io/KubernetesCRDModelGen.Models/models/akuity.io) | [![Nuget](https://img.shields.io/nuget/vpre/KubernetesCRDModelGen.Models.akuity.io.svg?style=flat-square)](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.akuity.io)[![Nuget)](https://img.shields.io/nuget/dt/KubernetesCRDModelGen.Models.akuity.io.svg?style=flat-square)](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.akuity.io) |
+| `aquasecurity.github.io` | [Docs](https://ivanjosipovic.github.io/KubernetesCRDModelGen.Models/models/aquasecurity.github.io) | [![Nuget](https://img.shields.io/nuget/vpre/KubernetesCRDModelGen.Models.aquasecurity.github.io.svg?style=flat-square)](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.aquasecurity.github.io)[![Nuget)](https://img.shields.io/nuget/dt/KubernetesCRDModelGen.Models.aquasecurity.github.io.svg?style=flat-square)](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.aquasecurity.github.io) |
+| `k8s.aws` | [Docs](https://ivanjosipovic.github.io/KubernetesCRDModelGen.Models/models/k8s.aws) | [![Nuget](https://img.shields.io/nuget/vpre/KubernetesCRDModelGen.Models.k8s.aws.svg?style=flat-square)](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.k8s.aws)[![Nuget)](https://img.shields.io/nuget/dt/KubernetesCRDModelGen.Models.k8s.aws.svg?style=flat-square)](https://www.nuget.org/packages/KubernetesCRDModelGen.Models.k8s.aws) |<!-- EndOfReplace -->
 
 ## Using a generated package
 

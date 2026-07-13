@@ -2,3 +2,5 @@
   href: docs/
 - name: Models
   href: models/
+- name: GitHub
+  href: https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models

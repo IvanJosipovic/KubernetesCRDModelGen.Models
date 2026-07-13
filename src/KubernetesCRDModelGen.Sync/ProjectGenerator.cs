@@ -195,7 +195,7 @@ class ProjectGenerator
                 .Order(StringComparer.Ordinal)
                 .Select(projectName =>
                 {
-                    return $"| `{projectName}` | [Docs](https://ivanjosipovic.github.io/{Namespace}/models/{projectName}) | [{Namespace}.{projectName}](https://www.nuget.org/packages/{Namespace}.{projectName}) |";
+                    return $"| `{projectName}` | [Docs](https://ivanjosipovic.github.io/{Namespace}/models/{projectName}) | [![Nuget](https://img.shields.io/nuget/vpre/{Namespace}.{projectName}.svg?style=flat-square)](https://www.nuget.org/packages/{Namespace}.{projectName})[![Nuget)](https://img.shields.io/nuget/dt/{Namespace}.{projectName}.svg?style=flat-square)](https://www.nuget.org/packages/{Namespace}.{projectName}) |";
                 }).Aggregate((current, next) => current + "\n" + next);
 
         var replacementContent = readmeContent[..(startIndex + startMarker.Length)]
