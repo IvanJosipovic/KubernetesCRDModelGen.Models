@@ -88,7 +88,7 @@ class ProjectGenerator
         var csprojContent = $"""
             <Project Sdk="Microsoft.NET.Sdk">
                 <PropertyGroup>
-                    <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
+                    <TargetFrameworks>net8.0;net10.0</TargetFrameworks>
                     <PackageId>{Namespace}.{projectName}</PackageId>
                     <RepositoryUrl>https://github.com/IvanJosipovic/{Namespace}</RepositoryUrl>
                     <Description>C# models for Kubernetes CRDs in group {projectName}</Description>
