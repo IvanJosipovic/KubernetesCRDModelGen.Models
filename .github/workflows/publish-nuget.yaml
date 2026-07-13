@@ -36,6 +36,12 @@ jobs:
 
           project="$(find "src/Models/${component}" -name "*.csproj" | head -n 1)"
 
+          if [[ -z "$project" ]]; then
+            echo "::error::No .csproj found for component '${component}' from tag '${tag}'"
+            exit 1
+          fi
+
+          echo "project=${project}" >> "$GITHUB_OUTPUT"
           echo "component=${component}" >> "$GITHUB_OUTPUT"
 
           test -f "$project"
